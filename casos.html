@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Casos · Estante Livre</title>
-<meta name="description" content="Todos os registros do catálogo, com alegação, desfecho e as fontes que sustentam cada um.">
+<title>Quem retirou os livros e por quê · Estante Livre</title>
+<meta name="description" content="Identificação de quem pressionou, decidiu, assinou e executou a retirada de livros, com justificativas e fontes.">
 <link rel="icon" href="favicon.ico" sizes="32x32">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -13,7 +13,7 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Estante Livre">
-<meta property="og:title" content="Casos · Estante Livre">
+<meta property="og:title" content="Quem retirou os livros e por quê · Estante Livre">
 <meta property="og:description" content="Todos os registros do catálogo, com alegação, desfecho e as fontes que sustentam cada um.">
 <meta property="og:url" content="https://estante-livre-br.vercel.app/casos.html">
 <meta property="og:image" content="https://estante-livre-br.vercel.app/og-estante-livre.jpg">
@@ -35,7 +35,7 @@
       <a href="livros.html">Livros</a>
       <a href="cobertura.html">Cobertura</a>
       <a href="mundo.html">Mundo</a>
-      <a href="glossario.html">Glossário</a>
+      <a href="glossario.html">Glossário</a> <a href="metodologia.html">Metodologia</a>
       <a href="relate.html">Relate um caso</a>
     </nav>
   </div>
@@ -44,8 +44,8 @@
 
   <div class="wrap">
     <div class="hero-pg">
-      <h1>Casos</h1>
-      <p class="lede">Todos os registros do catálogo, com alegação, desfecho e as fontes que sustentam cada um.</p>
+      <h1>Quem tirou estes livros — e por quê</h1>
+      <p class="lede">Cada ficha separa quem pressionou, quem tomou a decisão, quem assinou o ato e quem executou a retirada. A justificativa aparece como foi apresentada por seus autores, acompanhada das fontes.</p>
     </div>
   </div>
 
@@ -53,7 +53,7 @@
   <div class="controls-in">
     <div class="ctrl-row">
       <div class="search"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#1A1A18" stroke-width="2.5"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.5-4.5"/></svg>
-        <input type="text" id="busca" placeholder="Buscar título, autoria, cidade, alegação…" aria-label="Buscar">
+        <input type="text" id="busca" placeholder="Buscar livro, responsável, órgão, cidade ou justificativa…" aria-label="Buscar">
       </div>
       <select id="ordem" aria-label="Ordenar">
         <option value="data-desc">Mais recentes primeiro</option>
@@ -72,6 +72,8 @@
       <select id="mod" aria-label="Modalidade">
         <option value="">Todas as modalidades</option>
       </select>
+      <select id="uf" aria-label="Filtrar por estado"><option value="">Todos os estados</option></select>
+      <select id="ano" aria-label="Filtrar por ano"><option value="">Todos os anos</option></select>
       <button class="btn ghost" id="limpar">Limpar</button>
       <button class="btn" id="csv">Baixar CSV</button>
     </div>
@@ -83,7 +85,7 @@
 <div class="wrap">
   <section style="border-bottom:0">
     <div class="sechead"><h2>Registros</h2><span class="count" id="count" role="status" aria-live="polite"></span></div>
-    <p class="note">A alegação aparece como foi declarada por quem pediu a retirada, não como interpretação do observatório. Cada registro traz as fontes que o sustentam.</p>
+    <p class="note">A justificativa reproduz o argumento apresentado por quem pediu ou determinou a restrição; não é endossada pelo observatório. Pressão, pedido, decisão, assinatura e execução são papéis diferentes. Quando a identidade do responsável não está comprovada, a ficha informa a lacuna.</p>
     <div id="lista"></div>
   </section>
 </div>
@@ -109,6 +111,12 @@ document.getElementById("mod").innerHTML = '<option value="">Todas as modalidade
   MODALIDADES.filter(m=>conta(CASOS,"modalidade",m)>0)
     .map(m=>`<option value="${m}">${m} (${conta(CASOS,"modalidade",m)})</option>`).join("");
 document.getElementById("mod").value = F.modalidade||"";
+document.getElementById("uf").innerHTML = '<option value="">Todos os estados</option>' +
+  [...new Set(CASOS.map(c=>c.uf).filter(Boolean))].sort().map(uf=>`<option value="${esc(uf)}">${esc(uf)}</option>`).join("");
+document.getElementById("uf").value = F.uf||"";
+document.getElementById("ano").innerHTML = '<option value="">Todos os anos</option>' +
+  [...new Set(CASOS.map(c=>c.data.slice(0,4)))].sort().reverse().map(ano=>`<option value="${ano}">${ano}</option>`).join("");
+document.getElementById("ano").value = F.ano||"";
 
 function render(){
   const sel = ordenar(aplicar(F), document.getElementById("ordem").value);
@@ -147,16 +155,20 @@ document.getElementById("busca").addEventListener("input", e=>{
 document.getElementById("ordem").addEventListener("change", render);
 document.getElementById("tipo").addEventListener("change", e=>{ F.tipo=e.target.value; render(); });
 document.getElementById("mod").addEventListener("change", e=>{ F.modalidade=e.target.value||null; render(); });
+document.getElementById("uf").addEventListener("change", e=>{ F.uf=e.target.value||null; render(); });
+document.getElementById("ano").addEventListener("change", e=>{ F.ano=e.target.value||null; render(); });
 document.getElementById("limpar").addEventListener("click", ()=>{
   F.busca=""; F.modalidade=null; F.eixo=""; F.uf=null; F.ano=null; F.tipo="";
   document.getElementById("busca").value=""; document.getElementById("tipo").value="";
-  document.getElementById("mod").value=""; render();
+  document.getElementById("mod").value=""; document.getElementById("uf").value=""; document.getElementById("ano").value=""; render();
 });
 document.getElementById("csv").addEventListener("click", ()=>{
   const cols=["id","data","titulo","autoria","editora","cidade","uf","tipo","rede","quem",
     "alegacao","eixo","modalidade","desfecho","verificado","pendencia","nota"];
   const sel = ordenar(aplicar(F), document.getElementById("ordem").value);
-  baixarCSV([cols.join(",")].concat(sel.map(c=>cols.map(k=>escCSV(c[k])).join(","))),
+  const extras=["pressao_identificada","decisor_identificado","assinantes_identificados","executor_identificado","fiscalizacao_ou_denuncia","resposta_ou_reversao","ato_ou_documento"];
+  const cab=[...cols,...extras];
+  baixarCSV([cab.join(",")].concat(sel.map(c=>{const r=RESPONSABILIDADES[c.id]||{};const vals=[r.pressao||c.pressao||"",r.decisor||"",r.assinantes||"",r.executor||"",r.fiscalizacao||"",r.resposta||"",DOCUMENTOS_ATOS[c.id]||""];return [...cols.map(k=>escCSV(c[k])),...vals.map(escCSV)].join(",");})),
     "estante-livre-casos.csv");
 });
 render();

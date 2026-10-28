@@ -604,3 +604,14 @@ main:focus{outline:none}
 .tab td{padding:10px;border-bottom:1px solid var(--linha);vertical-align:top;line-height:1.45}
 .tab td:first-child{white-space:nowrap;color:var(--verm);font-weight:500}
 .tab-wrap{overflow-x:auto}
+
+
+/* Ficha de responsabilização: separar os agentes e os atos de cada um. */
+.responsa{margin:18px 0;padding:17px 18px;background:#F1F2FC;border-left:5px solid var(--verm)}
+.responsa-tit{font-size:11px;font-weight:800;letter-spacing:.14em;color:var(--verm);margin-bottom:10px}
+.resp-linha{display:grid;grid-template-columns:150px 1fr;gap:12px;padding:8px 0;border-top:1px solid var(--linha);font-size:13.5px;line-height:1.5}
+.resp-linha .k{font-size:10px;letter-spacing:.1em;font-weight:800;color:var(--cinza)}
+.responsa-nota{margin-top:10px;padding-top:9px;border-top:1px solid var(--linha);font-size:12px;color:var(--cinza);line-height:1.5}
+.caso-aleg{padding:14px 16px;background:#FFF8E4;border-left:4px solid var(--neon);margin:14px 0;font-size:14px;line-height:1.55}
+.caso-aleg .k{display:block;font-size:10px;font-weight:800;letter-spacing:.12em;color:var(--cinza);margin-bottom:5px}
+@media(max-width:600px){.resp-linha{grid-template-columns:1fr;gap:3px}.responsa{padding:14px}}
