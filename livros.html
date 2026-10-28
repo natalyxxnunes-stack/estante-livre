@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Livros · Estante Livre</title>
+<meta name="description" content="Uma ficha por obra, reunindo todas as ocorrências registradas em qualquer estado.">
+<link rel="icon" href="favicon.ico" sizes="32x32">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="theme-color" content="#D62410">
+<link rel="canonical" href="https://estante-livre-br.vercel.app/livros.html">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Estante Livre">
+<meta property="og:title" content="Livros · Estante Livre">
+<meta property="og:description" content="Uma ficha por obra, reunindo todas as ocorrências registradas em qualquer estado.">
+<meta property="og:url" content="https://estante-livre-br.vercel.app/livros.html">
+<meta property="og:image" content="https://estante-livre-br.vercel.app/og-estante-livre.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Estante Livre, observatório de censura de livros">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="assets/estilo.css">
+</head>
+<body>
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="topo">
+  <div class="topo-in">
+    <a class="logo" href="index.html" aria-label="Estante Livre">Estante <span class="redact">Livre<span class="bar" aria-hidden="true"></span></span></a>
+    <div class="tagline">Observatório de censura de livros · o que tiraram das prateleiras, e por quê</div>
+    <nav class="nav">
+      <a href="index.html">Painel</a>
+      <a href="casos.html">Casos</a>
+      <a href="livros.html" class="on" aria-current="page">Livros</a>
+      <a href="cobertura.html">Cobertura</a>
+      <a href="mundo.html">Mundo</a>
+      <a href="glossario.html">Glossário</a>
+      <a href="relate.html">Relate um caso</a>
+    </nav>
+  </div>
+</header>
+<main id="conteudo" tabindex="-1">
+
+  <div class="wrap">
+    <div class="hero-pg">
+      <h1>Livros</h1>
+      <p class="lede">Uma ficha por obra, reunindo todas as ocorrências registradas em qualquer estado.</p>
+    </div>
+  </div>
+
+<div class="controls">
+  <div class="controls-in">
+    <div class="ctrl-row">
+      <div class="search"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#1A1A18" stroke-width="2.5"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.5-4.5"/></svg>
+        <input type="text" id="busca" placeholder="Buscar título ou autoria…" aria-label="Buscar">
+      </div>
+      <select id="ordem" aria-label="Ordenar">
+        <option value="ocorr">Mais ocorrências primeiro</option>
+        <option value="titulo">Título A–Z</option>
+        <option value="autoria">Autoria A–Z</option>
+      </select>
+      <button class="btn ghost" id="limpar">Limpar</button>
+      <button class="btn" id="csv">Baixar CSV</button>
+    </div>
+    <div class="chips" id="chips"></div>
+  </div>
+</div>
+
+
+<div class="wrap">
+  <section style="border-bottom:0">
+    <div class="sechead"><h2>Fichas</h2><span class="count" id="count" role="status" aria-live="polite"></span></div>
+    <p class="note">Cada obra reúne todas as ocorrências registradas. Quando o mesmo livro foi contestado em vários estados, tudo aparece numa ficha só.</p>
+    <div id="lista"></div>
+  </section>
+</div>
+
+
+</main>
+
+<footer class="foot">
+  <div class="foot-in">
+    <span>Estante Livre · um projeto de <a href="https://instagram.com/natalyxnunes" target="_blank" rel="noopener">Nataly Nunes</a></span>
+    <span id="foot-meta"></span>
+  </div>
+</footer>
+
+<script src="assets/dados.js"></script>
+<script src="assets/comum.js"></script>
+<script>
+
+const F = lerURL();
+document.getElementById("busca").value = F.busca;
+
+function render(){
+  const sel = aplicar(F);
+  const g = {};
+  sel.forEach(c=> (g[c.titulo] ||= []).push(c));
+  const modo = document.getElementById("ordem").value;
+  let tits = Object.keys(g);
+  if(modo==="titulo") tits.sort((a,b)=>a.localeCompare(b,"pt"));
+  else if(modo==="autoria") tits.sort((a,b)=>(g[a][0].autoria||"").localeCompare(g[b][0].autoria||"","pt"));
+  else tits.sort((a,b)=> g[b].length-g[a].length || a.localeCompare(b,"pt"));
+
+  document.getElementById("count").innerHTML =
+    `<b>${tits.length}</b> ${tits.length===1?"livro":"livros"} · ${sel.length} ${sel.length===1?"ocorrência":"ocorrências"}`;
+  document.getElementById("lista").innerHTML = tits.length===0
+    ? `<div class="vazio"><p>Nenhum livro corresponde a esse recorte.</p><div>Ajuste a busca.</div></div>`
+    : tits.map(t=>livroHTML(t,g[t],F.busca)).join("");
+  const at=[];
+  if(F.busca) at.push(["busca",`“${F.busca}”`]);
+  if(F.uf) at.push(["uf",F.uf]);
+  if(F.modalidade) at.push(["modalidade",F.modalidade]);
+  if(F.eixo) at.push(["eixo",F.eixo]);
+  if(F.ano) at.push(["ano",F.ano]);
+  if(F.tipo) at.push(["tipo",F.tipo]);
+  document.getElementById("chips").innerHTML = at.map(([k,v])=>
+    `<button class="chip" data-rm="${k}">${esc(v)}<span class="x" aria-hidden="true">×</span><span class="sr-only">remover filtro</span></button>`).join("");
+  gravarURL(F);
+}
+document.addEventListener("click", e=>{
+  const rm=e.target.closest("[data-rm]"); if(!rm) return;
+  const k=rm.dataset.rm;
+  if(k==="busca"){ F.busca=""; document.getElementById("busca").value=""; }
+  else F[k] = (k==="eixo"||k==="tipo") ? "" : null;
+  render();
+});
+let deb;
+document.getElementById("busca").addEventListener("input", e=>{
+  clearTimeout(deb); deb=setTimeout(()=>{ F.busca=e.target.value.trim(); render(); },160);
+});
+document.getElementById("ordem").addEventListener("change", render);
+document.getElementById("limpar").addEventListener("click", ()=>{
+  F.busca=""; F.modalidade=null; F.eixo=""; F.uf=null; F.ano=null; F.tipo="";
+  document.getElementById("busca").value=""; render();
+});
+document.getElementById("csv").addEventListener("click", ()=>{
+  const sel=aplicar(F), g={};
+  sel.forEach(c=> (g[c.titulo] ||= []).push(c));
+  const cols=["titulo","autoria","editora","ano","genero","ocorrencias","estados","motivos","modalidades","desfechos","ids"];
+  const uni=(a,k)=>[...new Set(a.map(o=>o[k]).filter(Boolean))].join("; ");
+  const linhas=[cols.join(",")].concat(Object.keys(g)
+    .sort((a,b)=>g[b].length-g[a].length||a.localeCompare(b,"pt"))
+    .map(t=>{ const o=g[t], L=LIVROS[t]||{};
+      return [t,o[0].autoria,o[0].editora,L.ano,L.genero,o.length,uni(o,"uf"),
+        uni(o,"eixo"),uni(o,"modalidade"),uni(o,"desfecho"),o.map(x=>x.id).join("; ")]
+        .map(escCSV).join(","); }));
+  baixarCSV(linhas,"estante-livre-livros.csv");
+});
+render();
+
+montarRodape();
+</script>
+</body>
+</html>

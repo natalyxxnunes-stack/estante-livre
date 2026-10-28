@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cobertura · Estante Livre</title>
+<meta name="description" content="As reportagens e pesquisas que sustentam o catálogo, do caso mais recente ao mais antigo.">
+<link rel="icon" href="favicon.ico" sizes="32x32">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="theme-color" content="#D62410">
+<link rel="canonical" href="https://estante-livre-br.vercel.app/cobertura.html">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Estante Livre">
+<meta property="og:title" content="Cobertura · Estante Livre">
+<meta property="og:description" content="As reportagens e pesquisas que sustentam o catálogo, do caso mais recente ao mais antigo.">
+<meta property="og:url" content="https://estante-livre-br.vercel.app/cobertura.html">
+<meta property="og:image" content="https://estante-livre-br.vercel.app/og-estante-livre.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Estante Livre, observatório de censura de livros">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="assets/estilo.css">
+</head>
+<body>
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="topo">
+  <div class="topo-in">
+    <a class="logo" href="index.html" aria-label="Estante Livre">Estante <span class="redact">Livre<span class="bar" aria-hidden="true"></span></span></a>
+    <div class="tagline">Observatório de censura de livros · o que tiraram das prateleiras, e por quê</div>
+    <nav class="nav">
+      <a href="index.html">Painel</a>
+      <a href="casos.html">Casos</a>
+      <a href="livros.html">Livros</a>
+      <a href="cobertura.html" class="on" aria-current="page">Cobertura</a>
+      <a href="mundo.html">Mundo</a>
+      <a href="glossario.html">Glossário</a>
+      <a href="relate.html">Relate um caso</a>
+    </nav>
+  </div>
+</header>
+<main id="conteudo" tabindex="-1">
+
+
+  <div class="wrap">
+    <div class="hero-pg">
+      <h1>Cobertura</h1>
+      <p class="lede">As reportagens e pesquisas que sustentam o catálogo, do caso mais recente ao mais antigo.</p>
+    </div>
+  </div>
+
+<div class="wrap">
+  <section style="border-bottom:0">
+    <div class="sechead"><h2>Referências</h2><span class="count" id="count"></span></div>
+    <p class="note">A distribuição também é um dado. Neste catálogo, os casos com cobertura nacional são os que têm desfecho conhecido; os que dependem de uma fonte só ficam marcados como parciais até ganhar a segunda.</p>
+    <div class="cobertura" id="cobertura"></div>
+  </section>
+</div>
+
+
+</main>
+
+<footer class="foot">
+  <div class="foot-in">
+    <span>Estante Livre · um projeto de <a href="https://instagram.com/natalyxnunes" target="_blank" rel="noopener">Nataly Nunes</a></span>
+    <span id="foot-meta"></span>
+  </div>
+</footer>
+
+<script src="assets/dados.js"></script>
+<script src="assets/comum.js"></script>
+<script>
+
+const usos = {};
+CASOS.forEach(c=> (c.fontes||[]).forEach(k=> (usos[k] ||= []).push(c)));
+const chaves = Object.keys(usos).sort((a,b)=>(FONTES[b].data||"0").localeCompare(FONTES[a].data||"0"));
+document.getElementById("count").innerHTML = `<b>${chaves.length}</b> referências`;
+document.getElementById("cobertura").innerHTML = chaves.map(k=>cardCoberturaHTML(k,usos[k])).join("");
+
+montarRodape();
+</script>
+</body>
+</html>

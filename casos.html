@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Casos · Estante Livre</title>
+<meta name="description" content="Todos os registros do catálogo, com alegação, desfecho e as fontes que sustentam cada um.">
+<link rel="icon" href="favicon.ico" sizes="32x32">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="theme-color" content="#D62410">
+<link rel="canonical" href="https://estante-livre-br.vercel.app/casos.html">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Estante Livre">
+<meta property="og:title" content="Casos · Estante Livre">
+<meta property="og:description" content="Todos os registros do catálogo, com alegação, desfecho e as fontes que sustentam cada um.">
+<meta property="og:url" content="https://estante-livre-br.vercel.app/casos.html">
+<meta property="og:image" content="https://estante-livre-br.vercel.app/og-estante-livre.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Estante Livre, observatório de censura de livros">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="assets/estilo.css">
+</head>
+<body>
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="topo">
+  <div class="topo-in">
+    <a class="logo" href="index.html" aria-label="Estante Livre">Estante <span class="redact">Livre<span class="bar" aria-hidden="true"></span></span></a>
+    <div class="tagline">Observatório de censura de livros · o que tiraram das prateleiras, e por quê</div>
+    <nav class="nav">
+      <a href="index.html">Painel</a>
+      <a href="casos.html" class="on" aria-current="page">Casos</a>
+      <a href="livros.html">Livros</a>
+      <a href="cobertura.html">Cobertura</a>
+      <a href="mundo.html">Mundo</a>
+      <a href="glossario.html">Glossário</a>
+      <a href="relate.html">Relate um caso</a>
+    </nav>
+  </div>
+</header>
+<main id="conteudo" tabindex="-1">
+
+  <div class="wrap">
+    <div class="hero-pg">
+      <h1>Casos</h1>
+      <p class="lede">Todos os registros do catálogo, com alegação, desfecho e as fontes que sustentam cada um.</p>
+    </div>
+  </div>
+
+<div class="controls">
+  <div class="controls-in">
+    <div class="ctrl-row">
+      <div class="search"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#1A1A18" stroke-width="2.5"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.5-4.5"/></svg>
+        <input type="text" id="busca" placeholder="Buscar título, autoria, cidade, alegação…" aria-label="Buscar">
+      </div>
+      <select id="ordem" aria-label="Ordenar">
+        <option value="data-desc">Mais recentes primeiro</option>
+        <option value="data-asc">Mais antigos primeiro</option>
+        <option value="titulo">Título A–Z</option>
+        <option value="uf">Estado A–Z</option>
+        <option value="id">Ordem de catalogação</option>
+      </select>
+      <select id="tipo" aria-label="Tipo de biblioteca">
+        <option value="">Todas as bibliotecas</option>
+        <option value="Escolar">Escolar</option>
+        <option value="Pública">Pública</option>
+        <option value="Universitária">Universitária</option>
+        <option value="Especializada">Especializada</option>
+      </select>
+      <select id="mod" aria-label="Modalidade">
+        <option value="">Todas as modalidades</option>
+      </select>
+      <button class="btn ghost" id="limpar">Limpar</button>
+      <button class="btn" id="csv">Baixar CSV</button>
+    </div>
+    <div class="chips" id="chips"></div>
+  </div>
+</div>
+
+
+<div class="wrap">
+  <section style="border-bottom:0">
+    <div class="sechead"><h2>Registros</h2><span class="count" id="count" role="status" aria-live="polite"></span></div>
+    <p class="note">A alegação aparece como foi declarada por quem pediu a retirada, não como interpretação do observatório. Cada registro traz as fontes que o sustentam.</p>
+    <div id="lista"></div>
+  </section>
+</div>
+
+
+</main>
+
+<footer class="foot">
+  <div class="foot-in">
+    <span>Estante Livre · um projeto de <a href="https://instagram.com/natalyxnunes" target="_blank" rel="noopener">Nataly Nunes</a></span>
+    <span id="foot-meta"></span>
+  </div>
+</footer>
+
+<script src="assets/dados.js"></script>
+<script src="assets/comum.js"></script>
+<script>
+
+const F = lerURL();
+document.getElementById("busca").value = F.busca;
+document.getElementById("tipo").value = F.tipo;
+document.getElementById("mod").innerHTML = '<option value="">Todas as modalidades</option>' +
+  MODALIDADES.filter(m=>conta(CASOS,"modalidade",m)>0)
+    .map(m=>`<option value="${m}">${m} (${conta(CASOS,"modalidade",m)})</option>`).join("");
+document.getElementById("mod").value = F.modalidade||"";
+
+function render(){
+  const sel = ordenar(aplicar(F), document.getElementById("ordem").value);
+  document.getElementById("count").innerHTML = sel.length===CASOS.length
+    ? `<b>${sel.length}</b> registros`
+    : `<b>${sel.length}</b> de ${CASOS.length} registros`;
+  document.getElementById("lista").innerHTML = sel.length===0
+    ? `<div class="vazio"><p>Nenhum registro corresponde a esse recorte.</p><div>Ajuste os filtros ou limpe a busca.</div></div>`
+    : sel.map(c=>casoHTML(c,F.busca)).join("");
+  const at = [];
+  if(F.modalidade) at.push(["modalidade",F.modalidade]);
+  if(F.eixo) at.push(["eixo",F.eixo]);
+  if(F.uf) at.push(["uf",F.uf]);
+  if(F.ano) at.push(["ano",F.ano]);
+  if(F.tipo) at.push(["tipo",F.tipo]);
+  if(F.busca) at.push(["busca",`“${F.busca}”`]);
+  document.getElementById("chips").innerHTML = at.map(([k,v])=>
+    `<button class="chip" data-rm="${k}">${esc(v)}<span class="x" aria-hidden="true">×</span><span class="sr-only">remover filtro</span></button>`).join("");
+  gravarURL(F);
+}
+
+document.addEventListener("click", e=>{
+  const rm = e.target.closest("[data-rm]");
+  if(!rm) return;
+  const k = rm.dataset.rm;
+  if(k==="busca"){ F.busca=""; document.getElementById("busca").value=""; }
+  else if(k==="tipo"){ F.tipo=""; document.getElementById("tipo").value=""; }
+  else if(k==="modalidade"){ F.modalidade=null; document.getElementById("mod").value=""; }
+  else F[k] = k==="eixo" ? "" : null;
+  render();
+});
+let deb;
+document.getElementById("busca").addEventListener("input", e=>{
+  clearTimeout(deb); deb=setTimeout(()=>{ F.busca=e.target.value.trim(); render(); },160);
+});
+document.getElementById("ordem").addEventListener("change", render);
+document.getElementById("tipo").addEventListener("change", e=>{ F.tipo=e.target.value; render(); });
+document.getElementById("mod").addEventListener("change", e=>{ F.modalidade=e.target.value||null; render(); });
+document.getElementById("limpar").addEventListener("click", ()=>{
+  F.busca=""; F.modalidade=null; F.eixo=""; F.uf=null; F.ano=null; F.tipo="";
+  document.getElementById("busca").value=""; document.getElementById("tipo").value="";
+  document.getElementById("mod").value=""; render();
+});
+document.getElementById("csv").addEventListener("click", ()=>{
+  const cols=["id","data","titulo","autoria","editora","cidade","uf","tipo","rede","quem",
+    "alegacao","eixo","modalidade","desfecho","verificado","pendencia","nota"];
+  const sel = ordenar(aplicar(F), document.getElementById("ordem").value);
+  baixarCSV([cols.join(",")].concat(sel.map(c=>cols.map(k=>escCSV(c[k])).join(","))),
+    "estante-livre-casos.csv");
+});
+render();
+
+/* abrir um caso pelo link casos.html#EL-016 */
+function irParaCaso(){
+  const id = decodeURIComponent(location.hash.slice(1));
+  if(!/^EL-\d+$/.test(id)) return;
+  if(!document.getElementById(id)){
+    Object.assign(F,{busca:"",modalidade:null,eixo:"",uf:null,ano:null,tipo:""});
+    document.getElementById("busca").value=""; document.getElementById("tipo").value=""; document.getElementById("mod").value="";
+    render();
+  }
+  const el = document.getElementById(id); if(!el) return;
+  document.querySelectorAll(".caso.alvo").forEach(x=>x.classList.remove("alvo"));
+  el.classList.add("alvo");
+  el.scrollIntoView({block:"start", behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth"});
+  el.setAttribute("tabindex","-1"); el.focus({preventScroll:true});
+}
+irParaCaso(); addEventListener("hashchange", irParaCaso);
+
+montarRodape();
+</script>
+</body>
+</html>

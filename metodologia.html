@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Metodologia · Estante Livre</title>
+<meta name="description" content="O que é um registro, o recorte, a regra de verificação, os vieses conhecidos, as correções e o que ainda falta apurar.">
+<link rel="icon" href="favicon.ico" sizes="32x32">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="theme-color" content="#D62410">
+<link rel="canonical" href="https://estante-livre-br.vercel.app/metodologia.html">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Estante Livre">
+<meta property="og:title" content="Metodologia · Estante Livre">
+<meta property="og:description" content="O que é um registro, o recorte, a regra de verificação, os vieses conhecidos, as correções e o que ainda falta apurar.">
+<meta property="og:url" content="https://estante-livre-br.vercel.app/metodologia.html">
+<meta property="og:image" content="https://estante-livre-br.vercel.app/og-estante-livre.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Estante Livre, observatório de censura de livros">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="assets/estilo.css">
+</head>
+<body>
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="topo">
+  <div class="topo-in">
+    <a class="logo" href="index.html" aria-label="Estante Livre">Estante <span class="redact">Livre<span class="bar" aria-hidden="true"></span></span></a>
+    <div class="tagline">Observatório de censura de livros · o que tiraram das prateleiras, e por quê</div>
+    <nav class="nav">
+      <a href="index.html">Painel</a>
+      <a href="casos.html">Casos</a>
+      <a href="livros.html">Livros</a>
+      <a href="cobertura.html">Cobertura</a>
+      <a href="mundo.html">Mundo</a>
+      <a href="glossario.html">Glossário</a>
+      <a href="relate.html">Relate um caso</a>
+    </nav>
+  </div>
+</header>
+<main id="conteudo" tabindex="-1">
+
+<div class="wrap">
+  <div class="hero-pg">
+    <h1>Metodologia</h1>
+    <p class="lede">Como um caso entra no catálogo, o que fica de fora, o que o observatório enxerga mal e tudo o que já foi corrigido.</p>
+  </div>
+</div>
+
+<div class="wrap">
+  <section>
+    <div class="sechead"><span class="kicker">01</span><h2>O que é um registro</h2></div>
+    <div class="gloss">
+      <div class="gterm"><h3>Um por título, por ato</h3><div class="gdef">Se um ofício atinge nove livros, são nove registros. Conjuntos sem lista título a título (os 19 livros de Rubem Fonseca, os 5.165 da Fundação Palmares) contam como um registro até serem desmembrados. Por isso o número de títulos é um piso.</div></div>
+      <div class="gterm"><h3>Ato</h3><div class="gdef">A decisão que gerou os registros: um memorando, um ofício, uma circular. O painel conta registros; a comparação entre governos, na página Mundo, conta atos, para que uma lista longa não pese mais que uma ordem isolada.</div></div>
+      <div class="gterm"><h3>Datas</h3><div class="gdef">Quando só o mês é conhecido, o registro usa o dia 1º. A data é a do ato; a da reportagem fica na fonte.</div></div>
+      <div class="gterm"><h3>Governo na época</h3><div class="gdef">Chefe do Executivo responsável pela rede na data do ato e o partido dele naquele momento. Quando a ordem partiu de órgão que o próprio governo desautorizou, isso aparece na nota.</div></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sechead"><span class="kicker">02</span><h2>Recorte</h2></div>
+    <p class="note">Desde 2019, em bibliotecas escolares, públicas, universitárias e especializadas, e em listas oficiais de leitura. Feiras, livrarias, apostilas e programas fora de acervo aparecem no painel como contexto e não entram na contagem. O que fica de fora está no <a href="glossario.html">Glossário</a>.</p>
+  </section>
+
+  <section>
+    <div class="sechead"><span class="kicker">03</span><h2>Verificação</h2></div>
+    <p class="note">Duas fontes independentes, ou o registro fica como parcialmente verificado. A regra é aplicada por código: o número de verificados no painel conta só registros com duas fontes. A alegação reproduz o que foi declarado por quem pediu a retirada; a leitura do observatório fica separada, na nota.</p>
+    <p class="note"><b id="n-parciais"></b></p>
+  </section>
+
+  <section>
+    <div class="sechead"><span class="kicker">04</span><h2>Vieses conhecidos</h2></div>
+    <p class="note">O catálogo enxerga bem o que vira ofício e notícia: listas de secretarias, decisões judiciais, casos com repercussão nacional. Enxerga mal a autocensura, a compra que não foi feita e o livro que foi para a estante alta. Também enxerga melhor o que acontece em capitais e em estados com imprensa local ativa. Ausência de registro num estado quer dizer ausência de registro, não ausência de censura.</p>
+  </section>
+
+  <section>
+    <div class="sechead"><span class="kicker">05</span><h2>O que ainda falta apurar</h2><span class="count" id="count-pend"></span></div>
+    <p class="note">Pendências abertas em cada registro. Se você tem documento ou informação sobre alguma delas, use o <a href="relate.html">formulário</a>.</p>
+    <div class="tab-wrap"><table class="tab"><thead><tr><th>CASO</th><th>LIVRO</th><th>PENDÊNCIA</th></tr></thead><tbody id="pend"></tbody></table></div>
+  </section>
+
+  <section>
+    <div class="sechead"><span class="kicker">06</span><h2>Correções</h2><span class="count" id="count-corr"></span></div>
+    <p class="note">Toda mudança de fato num registro publicado entra aqui, com data.</p>
+    <div class="tab-wrap"><table class="tab"><thead><tr><th>DATA</th><th>REGISTRO</th><th>O QUE MUDOU</th></tr></thead><tbody id="corr"></tbody></table></div>
+  </section>
+
+  <section>
+    <div class="sechead"><span class="kicker">07</span><h2>Pesquisas de referência</h2></div>
+    <div class="gloss">
+      <div class="gterm"><h3>Páginas proibidas</h3><div class="gdef">Viana, Muriel-Torrado e Prado, revista Em Questão (UFRGS), 2024. Questionário com 52 relatos válidos de quem presenciou censura de livros no Brasil.</div><div class="gex"><a href="https://seer.ufrgs.br/index.php/EmQuestao/article/view/138667" target="_blank" rel="noopener">Ler o artigo</a></div></div>
+      <div class="gterm"><h3>Tentativas de censura nos dois primeiros anos do governo Bolsonaro</h3><div class="gdef">Reimão, Nery e Maués, revista Literatura e Autoritarismo (UFSM). Levantamento de casos de 2019 e 2020.</div><div class="gex"><a href="https://periodicos.ufsm.br/LA/article/view/66347" target="_blank" rel="noopener">Ler o artigo</a></div></div>
+      <div class="gterm"><h3>Dois casos de cerceamento em 2021</h3><div class="gdef">Reimão, Nery e Maués, Revista de Estudos Culturais (USP), 2022. Sobre o expurgo da Fundação Palmares e a adulteração de postagens do padre Júlio Lancellotti.</div><div class="gex"><a href="https://revistas.usp.br/revistaec/article/view/195152" target="_blank" rel="noopener">Ler o artigo</a></div></div>
+    </div>
+  </section>
+
+  <section style="border-bottom:0">
+    <div class="sechead"><span class="kicker">08</span><h2>Como citar e usar os dados</h2></div>
+    <p class="note">Os dados podem ser reproduzidos com crédito: “Estante Livre, observatório de censura de livros, de Nataly Nunes Pinto”, com o link da página e a data de acesso. As tabelas completas saem em CSV nas páginas <a href="casos.html">Casos</a> e <a href="livros.html">Livros</a>. Capas de livros aparecem para identificar a obra em contexto crítico; para pedir a retirada de uma imagem, escreva pelo Instagram <a href="https://instagram.com/natalyxnunes" target="_blank" rel="noopener">@natalyxnunes</a>.</p>
+  </section>
+</div>
+
+</main>
+
+<footer class="foot">
+  <div class="foot-in">
+    <span>Estante Livre · um projeto de <a href="https://instagram.com/natalyxnunes" target="_blank" rel="noopener">Nataly Nunes</a></span>
+    <span id="foot-meta"></span>
+  </div>
+</footer>
+
+<script src="assets/dados.js"></script>
+<script src="assets/comum.js"></script>
+<script>
+const pend = CASOS.filter(c=>c.pendencia);
+document.getElementById("count-pend").innerHTML = `<b>${pend.length}</b> pendências`;
+document.getElementById("pend").innerHTML = pend.map(c=>
+  `<tr><td><a href="casos.html#${c.id}">${c.id}</a></td><td>${esc(c.titulo)}</td><td>${esc(c.pendencia)}</td></tr>`).join("");
+document.getElementById("count-corr").innerHTML = `<b>${CORRECOES.length}</b> correções`;
+document.getElementById("corr").innerHTML = [...CORRECOES].sort((a,b)=>b.data.localeCompare(a.data)).map(x=>
+  `<tr><td>${dataCurta(x.data)}</td><td>${/^EL-/.test(x.id)?`<a href="casos.html#${x.id}">${x.id}</a>`:esc(x.id)}</td><td>${esc(x.texto)}</td></tr>`).join("");
+const parc = CASOS.filter(c=>!verificado(c)).length;
+document.getElementById("n-parciais").textContent = `Hoje, ${CASOS.length - parc} de ${CASOS.length} registros têm duas fontes; ${parc} estão como parcialmente verificados.`;
+montarRodape();
+</script>
+</body>
+</html>
