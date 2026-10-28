@@ -44,8 +44,8 @@
 
   <div class="wrap">
     <div class="hero-pg">
-      <h1>Casos</h1>
-      <p class="lede">Todos os registros do catálogo, com alegação, desfecho e as fontes que sustentam cada um.</p>
+      <h1>Quem tirou estes livros — e por quê</h1>
+      <p class="lede">Cada ficha separa quem pressionou, quem tomou a decisão, quem assinou o ato e quem executou a retirada. A justificativa aparece como foi apresentada por seus autores, acompanhada das fontes.</p>
     </div>
   </div>
 
@@ -83,7 +83,7 @@
 <div class="wrap">
   <section style="border-bottom:0">
     <div class="sechead"><h2>Registros</h2><span class="count" id="count" role="status" aria-live="polite"></span></div>
-    <p class="note">A alegação aparece como foi declarada por quem pediu a retirada, não como interpretação do observatório. Cada registro traz as fontes que o sustentam.</p>
+    <p class="note">A justificativa reproduz o argumento apresentado por quem pediu ou determinou a restrição; não é endossada pelo observatório. Pressão, pedido, decisão, assinatura e execução são papéis diferentes. Quando a identidade do responsável não está comprovada, a ficha informa a lacuna.</p>
     <div id="lista"></div>
   </section>
 </div>
@@ -156,7 +156,9 @@ document.getElementById("csv").addEventListener("click", ()=>{
   const cols=["id","data","titulo","autoria","editora","cidade","uf","tipo","rede","quem",
     "alegacao","eixo","modalidade","desfecho","verificado","pendencia","nota"];
   const sel = ordenar(aplicar(F), document.getElementById("ordem").value);
-  baixarCSV([cols.join(",")].concat(sel.map(c=>cols.map(k=>escCSV(c[k])).join(","))),
+  const extras=["pressao_identificada","decisor_identificado","assinantes_identificados","executor_identificado"];
+  const cab=[...cols,...extras];
+  baixarCSV([cab.join(",")].concat(sel.map(c=>{const r=RESPONSABILIDADES[c.id]||{};const vals=[r.pressao||c.pressao||"",r.decisor||"",r.assinantes||"",r.executor||""];return [...cols.map(k=>escCSV(c[k])),...vals.map(escCSV)].join(",");})),
     "estante-livre-casos.csv");
 });
 render();
