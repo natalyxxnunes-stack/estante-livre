@@ -449,7 +449,7 @@ const MODALIDADES = ["Retirada total","Restrição de acesso","Ocultação","Vet
 const EIXOS = ["Cultura afro-brasileira","Sexualidade e gênero","Sobrenatural e mágico",
   "Política e ideologia","Religião","Linguagem e palavrão","Violência","Outro"];
 /* data da última revisão do catálogo (AAAA-MM-DD); aparece no rodapé */
-const ATUALIZADO = "2026-10-27";
+const ATUALIZADO = "2026-10-28";
 
 /* links dos três formulários de relato (Tally ou Google Forms).
    Enquanto um link estiver vazio, o botão dele não aparece. */
@@ -488,6 +488,7 @@ const CORRECOES = [
  {data:"2026-10-27", id:"EL-029", texto:"UniRV: data precisada (26 de abril de 2023), rede corrigida para municipal, fonte de blog substituída por duas reportagens."},
  {data:"2026-10-27", id:"EL-006", texto:"Santa Catarina 2023 (EL-006 a EL-014): coordenadoria regional não identificada nas fontes; quem acionou o MP foi um suplente de vereador; grafia Ronssem."},
  {data:"2026-10-27", id:"Painel", texto:"Retirada a atribuição de uma “hipótese” sobre temas censurados à pesquisadora Sandra Reimão, que não a formulou, e a referência a relatos da FEBAB de 2020, que não existem nesse formato. Corrigida a contagem de estados (eram oito e o DF)."},
+ {data:"2026-10-28", id:"Responsabilização", texto:"As fichas passaram a distinguir pressão/pedido, decisão, assinatura, execução, fiscalização e resposta/reversão. Os nomes são apresentados conforme as fontes já cadastradas; quando a pessoa responsável não está identificada, a lacuna permanece explícita."},
 ];
 
 
