@@ -166,9 +166,9 @@ document.getElementById("csv").addEventListener("click", ()=>{
   const cols=["id","data","titulo","autoria","editora","cidade","uf","tipo","rede","quem",
     "alegacao","eixo","modalidade","desfecho","verificado","pendencia","nota"];
   const sel = ordenar(aplicar(F), document.getElementById("ordem").value);
-  const extras=["pressao_identificada","decisor_identificado","assinantes_identificados","executor_identificado","fiscalizacao_ou_denuncia","resposta_ou_reversao"];
+  const extras=["pressao_identificada","decisor_identificado","assinantes_identificados","executor_identificado","fiscalizacao_ou_denuncia","resposta_ou_reversao","ato_ou_documento"];
   const cab=[...cols,...extras];
-  baixarCSV([cab.join(",")].concat(sel.map(c=>{const r=RESPONSABILIDADES[c.id]||{};const vals=[r.pressao||c.pressao||"",r.decisor||"",r.assinantes||"",r.executor||"",r.fiscalizacao||"",r.resposta||""];return [...cols.map(k=>escCSV(c[k])),...vals.map(escCSV)].join(",");})),
+  baixarCSV([cab.join(",")].concat(sel.map(c=>{const r=RESPONSABILIDADES[c.id]||{};const vals=[r.pressao||c.pressao||"",r.decisor||"",r.assinantes||"",r.executor||"",r.fiscalizacao||"",r.resposta||"",DOCUMENTOS_ATOS[c.id]||""];return [...cols.map(k=>escCSV(c[k])),...vals.map(escCSV)].join(",");})),
     "estante-livre-casos.csv");
 });
 render();
