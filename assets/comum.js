@@ -138,7 +138,7 @@ function casoHTML(c, q){
         '<div class="campo"><div class="k">ONDE</div><div class="v">'+m([c.cidade,c.uf].filter(Boolean).join(", "))+'</div></div>'+
         '<div class="campo"><div class="k">QUANDO</div><div class="v">'+dataLegivel(c)+'</div></div>'+
         '<div class="campo"><div class="k">BIBLIOTECA</div><div class="v">'+c.tipo+' · rede '+c.rede.toLowerCase()+'</div></div>'+
-        '<div class="campo"><div class="k">ÓRGÃO/INSTÂNCIA NO REGISTRO</div><div class="v">'+m(c.quem)+'</div></div>'+
+        '<div class="campo"><div class="k">AGENTE/INSTÂNCIA REGISTRADA</div><div class="v">'+m(c.quem)+'</div></div>'+
       '</div>'+
       (c.governo?'<div class="poder"><div><span class="k">GOVERNO NA ÉPOCA</span>'+m(c.governo)+'</div></div>':"")+
       '<div class="responsa">'+
@@ -149,7 +149,7 @@ function casoHTML(c, q){
         linhaResp("EXECUÇÃO",r.executor)+
         linhaResp("FISCALIZAÇÃO / DENÚNCIA",r.fiscalizacao)+
         linhaResp("RESPOSTA / REVERSÃO",r.resposta)+
-        linhaResp("RESPONSABILIDADE AINDA NÃO INDIVIDUALIZADA",r.responsavel)+
+        linhaResp("OBSERVAÇÃO SOBRE RESPONSABILIDADE INDIVIDUAL",r.responsavel)+
         linhaResp("PENDÊNCIA DE APURAÇÃO",r.pendencia)+
         '<p class="responsa-nota">Pressão, pedido, decisão, assinatura e execução são papéis diferentes. O observatório não atribui a uma pessoa a ordem formal sem documento ou fonte que sustente essa atribuição.</p>'+
       '</div>'+
