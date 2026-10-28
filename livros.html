@@ -138,7 +138,7 @@ document.getElementById("limpar").addEventListener("click", ()=>{
 document.getElementById("csv").addEventListener("click", ()=>{
   const sel=aplicar(F), g={};
   sel.forEach(c=> (g[c.titulo] ||= []).push(c));
-  const cols=["titulo","autoria","editora","ano","genero","ocorrencias","estados","motivos","modalidades","desfechos","ids","pressao_identificada","decisores","assinantes","executores"];
+  const cols=["titulo","autoria","editora","ano","genero","ocorrencias","estados","motivos","modalidades","desfechos","ids","pressao_identificada","decisores","assinantes","executores","atos_ou_documentos"];
   const uni=(a,k)=>[...new Set(a.map(o=>o[k]).filter(Boolean))].join("; ");
   const linhas=[cols.join(",")].concat(Object.keys(g)
     .sort((a,b)=>g[b].length-g[a].length||a.localeCompare(b,"pt"))
@@ -148,7 +148,8 @@ document.getElementById("csv").addEventListener("click", ()=>{
         [...new Set(o.map(x=>(RESPONSABILIDADES[x.id]||{}).pressao||x.pressao).filter(Boolean))].join("; "),
         [...new Set(o.map(x=>(RESPONSABILIDADES[x.id]||{}).decisor).filter(Boolean))].join("; "),
         [...new Set(o.map(x=>(RESPONSABILIDADES[x.id]||{}).assinantes).filter(Boolean))].join("; "),
-        [...new Set(o.map(x=>(RESPONSABILIDADES[x.id]||{}).executor).filter(Boolean))].join("; ")]
+        [...new Set(o.map(x=>(RESPONSABILIDADES[x.id]||{}).executor).filter(Boolean))].join("; "),
+        [...new Set(o.map(x=>DOCUMENTOS_ATOS[x.id]).filter(Boolean))].join("; ")]
         .map(escCSV).join(","); }));
   baixarCSV(linhas,"estante-livre-livros.csv");
 });
