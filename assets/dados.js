@@ -177,6 +177,18 @@ const FONTES = {
   "tit": "Tentativas de censura a livros nos primeiros dois anos do governo Bolsonaro · Reimão, Nery e Maués",
   "url": "https://periodicos.ufsm.br/LA/article/view/66347"
  },
+ "palmares-inventario": {"veic":"Fundação Cultural Palmares","data":"2024-08-08","tit":"Inventário Bibliográfico da Fundação Cultural Palmares","url":"https://www.gov.br/palmares/pt-br/centrais-de-conteudo/publicacoes/lista-de-livros-atualizada-8-8-2024-1.pdf"},
+ "palmares-politica": {"veic":"Fundação Cultural Palmares","data":"2021-12-21","tit":"Política de Formação, Desenvolvimento e Gestão do Acervo","url":"https://www.gov.br/palmares/pt-br/midias/arquivos/download/politicas-de-acervo-versao-final-21-12-2021.pdf"},
+ "oglobo-palm-300": {"veic":"O Globo · Lauro Jardim","data":"2021-07-23","tit":"Sérgio Camargo desiste de doar livros da Fundação Palmares","url":"https://blogs.oglobo.globo.com/lauro-jardim/post/acuado-pela-justica-sergio-camargo-volta-atras-e-desiste-de-doar-livros-da-fundacao-palmares.html"},
+ "oglobo-palm-ala": {"veic":"O Globo · Lauro Jardim","data":"2021-08-03","tit":"Sérgio Camargo pretende manter livros separados em seção da vergonha","url":"https://blogs.oglobo.globo.com/lauro-jardim/post/nova-investida-favor-dos-livros-que-sergio-camargo-tenta-excluir-do-acervo-da-fundacao-palmares.html"},
+ "comunicado-lafaiete": {"veic":"Prefeitura de Conselheiro Lafaiete · Secretaria Municipal de Educação","data":"2024-06-20","tit":"Comunicado oficial sobre O Menino Marrom","url":"https://conselheirolafaiete.mg.gov.br/v2/comunicado-secretaria-municipal-de-educacao/"},
+ "decisao-lafaiete": {"veic":"Poder Judiciário de Minas Gerais · cópia da decisão","data":"2024-06-28","tit":"Processo nº 5006658-14.2024.8.13.0183 · ação popular","url":"https://www.migalhas.com.br/arquivos/2024/6/C9AB64BF939FD5_%C2%B7ProcessoJudicialEletronico-1%C2%BA.pdf"},
+ "migalhas-sjc": {"veic":"Migalhas","data":"2026-07-29","tit":"Juíza vê censura e manda devolver às escolas livro que inclui Marielle Franco","url":"https://www.migalhas.com.br/quentes/461228/juiza-ve-censura-e-manda-devolver-as-escolas-livro-que-inclui-marielle-franco"},
+ "folha-unirv": {"veic":"Folha de S.Paulo","data":"2023-05-01","tit":"Livro de Marçal Aquino é retirado de lista de vestibular após polêmica com deputado","url":"https://www1.folha.uol.com.br/ilustrada/2023/05/livro-de-marcal-aquino-e-retirado-de-lista-de-vestibular-apos-polemica-com-deputado.shtml"},
+ "ovale-tau-abr10": {"veic":"OVALE","data":"2026-04-10","tit":"Livro sobre menina com duas mães é retirado de escolas em Taubaté","url":"https://sampi.net.br/ovale/noticias/2972973/sessao-extra/2026/04/livro-sobre-menina-com-duas-maes-e-retirado-de-escolas-em-taubate"},
+ "piaui-bolsa": {"veic":"revista piauí","data":"2026","tit":"Fábulas na fogueira","url":"https://piaui.uol.com.br/web/fabulas-fogueira-livros-infantojuvenis-bolsa-amarela/"},
+ "camara-limeira-req": {"veic":"Câmara Municipal de Limeira","data":"2019-08-12","tit":"Requerimento nº 451/2019 · Clayton Silva","url":"https://consulta.limeira.sp.leg.br/arquivo?Id=215235"},
+ "camara-limeira-resp": {"veic":"Prefeitura de Limeira · Secretaria Municipal de Educação","data":"2019-09-24","tit":"Ofício GSE nº 363/2019 · resposta sobre A bolsa amarela","url":"https://consulta.limeira.sp.leg.br/arquivo?Id=226368"},
  "uninter-bolsa": {
   "veic": "Uninter Notícias (artigo de opinião)",
   "data": "2026-05-26",
@@ -510,6 +522,12 @@ const CORRECOES = [
  {data:"2026-10-28", id:"EL-015 a EL-024", texto:"Rondônia 2020: corrigida a atribuição da assinatura. O fecho do Memorando-Circular nº 4/2020/SEDUC-DGE traz o nome do secretário Suamy Vivecananda; o registro eletrônico identifica Irany de Oliveira Lima Morais como signatária digital. A ficha passa a registrar a negativa da Seduc, a apuração preliminar do MPF e a execução não comprovada em toda a rede. Verificação rebaixada para parcial."},
  {data:"2026-10-28", id:"EL-006 a EL-014", texto:"Santa Catarina 2023: acrescentada a reportagem da Folha que confirma a orientação de armazenar as nove obras em local inacessível, identifica os dois signatários e registra que o ofício não apresentou justificativa; a explicação posterior do governo foi redistribuição por faixa etária."},
  {data:"2026-10-28", id:"EL-004", texto:"Mato Grosso do Sul 2024: acrescentada a confirmação da Secretaria à CartaCapital de que o recolhimento atendia a determinação do governador Eduardo Riedel, após análise da pasta."},
+ {data:"2026-10-28", id:"EL-025 e EL-026", texto:"Fundação Palmares: corrigida a unidade de contagem do anúncio de 2021 — 5.165 exemplares, não 5.165 títulos — e separado o anúncio de descarte da tentativa posterior de doar cerca de 300 livros e da segregação anunciada como “Acervo da Vergonha”."},
+ {data:"2026-10-28", id:"EL-027", texto:"Conselheiro Lafaiete: a documentação oficial confirma suspensão temporária de trabalhos pedagógicos, não retirada total comprovada dos exemplares. Acrescentados comunicado da Secretaria e cópia da decisão judicial que anulou o ato."},
+ {data:"2026-10-28", id:"EL-028", texto:"São José dos Campos: acrescentada a apuração judicial divulgada em julho de 2026, com ordem transmitida por WhatsApp, ausência de justificativa técnico-pedagógica contemporânea e determinação de devolução. A sentença integral está sob segredo de Justiça."},
+ {data:"2026-10-28", id:"EL-031", texto:"Distrito Federal: reclassificado. A apuração da piauí informa que não houve adoção de A bolsa amarela nem retirada de exemplares; o episódio envolveu link para resenha em atividade de interpretação."},
+ {data:"2026-10-28", id:"EL-033", texto:"Funap: corrigida a data para fevereiro de 2020, identificado o diretor-executivo Henrique Pereira de Souza Neto na reunião posterior e registrado o recuo após repercussão pública."},
+ {data:"2026-10-28", id:"EL-034", texto:"Limeira: corrigida a classificação após leitura do requerimento e da resposta oficiais. Clayton Silva pediu informações e questionou a temática; não pediu formalmente a retirada. A Secretaria defendeu o livro e seu uso pedagógico."},
  {data:"2026-10-28", id:"EL-002", texto:"Paraná: corrigida a descrição dos expedientes. Anderfábio Oliveira dos Santos assinou o ofício da Secretaria; Laura Patrícia Lopes assinou ofício de teor semelhante do Núcleo Regional de Educação de Curitiba. Não eram coassinantes do mesmo documento."},
 ];
 
@@ -564,59 +582,65 @@ const RESPONSABILIDADES = (() => {
     executor:"O memorando encaminhava a providência às coordenadorias regionais. A Seduc afirmou que não houve tramitação para escolas; há relatos de exemplares encaixotados em algumas unidades, mas o alcance da execução não está comprovado.",
     resposta:"A Seduc negou ter ordenado a retirada e declarou que encerrou o processo. O MPF instaurou procedimento preparatório e pediu a íntegra do memorando e do processo SEI 0029.051300/2020-91; o resultado posterior não está documentado na base."
   });
-  set(["EL-025","EL-026"], {
+  set(["EL-025"], {
+    decisor:"Presidência da Fundação Cultural Palmares, durante a gestão de Sérgio Camargo, que divulgou o relatório e anunciou a intenção de descartar 5.165 exemplares.",
+    responsavel:"Sérgio Camargo, então presidente da Fundação Cultural Palmares, apresentou publicamente a classificação e a proposta de descarte. O relatório original e a lista completa dos exemplares ainda precisam ser obtidos.",
+    executor:"Fundação Cultural Palmares; não há comprovação de que os 5.165 exemplares tenham sido efetivamente descartados.",
+    resposta:"Em 23 de junho de 2021, a Justiça Federal proibiu a doação de livros do acervo em ação popular. O alcance e o desfecho processual definitivo ainda precisam ser conferidos."
+  });
+  set(["EL-026"], {
     decisor:"Presidência da Fundação Cultural Palmares, durante a gestão de Sérgio Camargo.",
-    responsavel:"Sérgio Camargo, então presidente da Fundação Cultural Palmares. O registro associa a iniciativa à presidência e à gestão; a atribuição de cada ato individual deve ser lida junto dos documentos e fontes do caso.",
-    executor:"Fundação Cultural Palmares.",
-    resposta:"No caso EL-025, a Justiça Federal concedeu liminar para impedir a doação dos livros. No EL-026, foi anunciada a criação do chamado “Acervo da Vergonha”."
+    responsavel:"Sérgio Camargo anunciou publicamente a intenção de separar os livros em seção chamada “Acervo/Ala da Vergonha”.",
+    executor:"A Fundação Cultural Palmares; a efetiva separação física, sua duração e o regime de acesso público ainda precisam ser comprovados.",
+    resposta:"A Procuradoria-Geral Federal informou ao juízo que Camargo desistira da doação em julho de 2021. Em agosto, ele anunciou a segregação dos livros. Não foi localizado documento que comprove quando o acesso público foi restabelecido."
   });
   set(["EL-027"], {
-    pressao:"Grupo de pais de alunos.",
-    decisor:"Prefeitura municipal, por circular que suspendeu o uso da obra. O nome da autoridade que assinou a circular não está identificado.",
-    executor:"Rede municipal de ensino.",
-    resposta:"A 1ª Vara Cível de Conselheiro Lafaiete derrubou a suspensão."
+    pressao:"Pais, familiares e autoridades locais contestaram a abordagem pedagógica; o comunicado oficial não identifica nominalmente os reclamantes.",
+    decisor:"Secretaria Municipal de Educação, que em comunicado de 20 de junho reconheceu ter orientado a suspensão temporária dos trabalhos pedagógicos.",
+    executor:"Unidades escolares da rede municipal, quanto às atividades pedagógicas; não há comprovação de recolhimento geral de exemplares.",
+    resposta:"O juiz Espagner Wallysen Vaz Leite anulou o ato administrativo que suspendeu as atividades e confirmou a tutela judicial."
   });
   set(["EL-028"], {
-    pressao:"Thomaz Henrique (PL), vereador: criticou a presença de Marielle Franco e Débora Diniz entre as mulheres retratadas e acusou o livro de fazer “apologia ao aborto” e “doutrinação”.",
-    decisor:"Prefeitura e Secretaria Municipal de Educação, que recolheram a obra das salas de leitura. A autoridade individual que formalizou a decisão não está identificada.",
-    executor:"Rede municipal de ensino.",
-    resposta:"Em julho de 2026, a Justiça determinou a devolução do livro."
+    pressao:"Thomaz Henrique (PL), vereador, que acusou a obra de “apologia ao aborto” e “doutrinação ideológica”.",
+    decisor:"Secretaria Municipal de Educação e Cidadania; a autoridade individual que formalizou a retirada não foi identificada nas fontes públicas consultadas.",
+    executor:"Diretores das escolas municipais receberam a ordem de retirada por mensagens de WhatsApp, segundo a apuração divulgada com base no processo.",
+    resposta:"Em 20 de julho de 2026, a Justiça determinou a devolução dos exemplares e proibiu nova restrição político-ideológica. A sentença está sob segredo de Justiça."
   });
   set(["EL-029"], {
-    pressao:"Gustavo Gayer (PL-GO), deputado federal: publicou vídeo chamando o livro de “pornográfico”.",
-    decisor:"Administração da Universidade de Rio Verde (UniRV), que decidiu pela exclusão imediata da lista de leituras do vestibular.",
-    responsavel:"A universidade admitiu que a polêmica levantada pelo parlamentar pesou na decisão. O nome da autoridade individual que tomou a decisão não está identificado.",
+    pressao:"Gustavo Gayer (PL-GO), deputado federal, que publicou vídeo chamando o livro de “pornográfico”.",
+    decisor:"Administração da Universidade de Rio Verde (UniRV), que excluiu a obra da lista indicada para o vestibular.",
+    responsavel:"A universidade admitiu que a polêmica levantada pelo parlamentar pesou na decisão. A autoridade individual ou colegiado que formalizou a exclusão não está identificado.",
     executor:"Universidade de Rio Verde (UniRV)."
   });
   set(["EL-030"], {
-    pressao:"Jéssica Ramos Moreno (PP), vereadora: questionou o livro após encontrá-lo em uma creche.",
-    decisor:"Secretaria/gestão municipal, responsável pelo recolhimento. A autoridade individual que formalizou a decisão ainda precisa ser identificada.",
-    executor:"Rede municipal de ensino.",
-    pendencia:"Confirmar autoria, data exata e alcance do recolhimento."
+    pressao:"Jéssica Ramos Moreno (PP), vereadora, questionou a presença do livro na creche e pediu providências.",
+    decisor:"Secretaria Municipal de Educação, que teria determinado o recolhimento; a autoridade que assinou o ato não está identificada.",
+    executor:"Creches e unidades da rede municipal; o alcance do recolhimento ainda precisa ser comprovado.",
+    pendencia:"Obter ordem escrita da Secretaria e resposta oficial da prefeitura; confirmar o alcance e eventual devolução."
   });
   set(["EL-031"], {
-    pressao:"Pais de alunos do 4º ano, por mensagens e reclamações à escola.",
-    decisor:"Direção do Colégio Militar Dom Pedro II, administrado pelo Corpo de Bombeiros do Distrito Federal, que retirou preventivamente o material.",
-    executor:"Colégio Militar Dom Pedro II.",
-    resposta:"A escola disse não ter identificado prejuízo pedagógico nem direcionamento ideológico, mas não recolocou o material porque a atividade já havia terminado."
+    pressao:"Pais de alunos do 4º ano contestaram em grupos de mensagens o uso de uma resenha da obra em atividade de interpretação.",
+    decisor:"O colégio afirmou que a atividade atendia aos objetivos pedagógicos. Não há documento que comprove ordem formal de retirada da obra ou suspensão do acesso ao livro.",
+    executor:"Colégio Militar Dom Pedro II; o link da resenha não voltou a ser utilizado depois do encerramento do exercício.",
+    resposta:"A escola negou prejuízo pedagógico ou direcionamento ideológico. A apuração da piauí informa que não houve adoção da obra nem retirada de exemplares do acervo."
   });
   set(["EL-032"], {
-    pressao:"Zelinda Pastora (PRD), vereadora: contestou o livro por retratar uma família com duas mães e um pai.",
-    decisor:"Secretaria Municipal de Educação, cujo secretário teria ordenado a retirada. O nome do secretário não está identificado no cadastro.",
-    executor:"Rede municipal de ensino.",
-    resposta:"A prefeitura declarou que faria análise pedagógica; o cadastro registra que o livro voltou a aparecer em algumas unidades e houve nova ordem."
+    pressao:"Zelinda Pastora (PRD), vereadora da base governista, que disse ter pedido diretamente ao secretário o recolhimento após reclamação de uma mãe.",
+    decisor:"Secretaria Municipal de Educação, então sob responsabilidade do secretário Hélcio Carvalho dos Santos; a ordem escrita e seu signatário formal ainda não foram localizados.",
+    executor:"Rede municipal de ensino; a vereadora afirmou que a obra reapareceu em algumas unidades em 2026 e que pediu nova providência.",
+    resposta:"A prefeitura confirmou o recolhimento e informou que faria análise pedagógica, com previsão de conclusão até o fim do segundo bimestre de 2026. Não foi localizada a conclusão da análise."
   });
   set(["EL-033"], {
-    decisor:"Fundação Estadual de Amparo ao Trabalhador Preso (Funap), vinculada ao governo paulista, que suspendeu a parceria do projeto Remição em Rede.",
-    responsavel:semNome,
-    executor:"Funap e gestão do projeto de leitura no sistema prisional.",
-    resposta:"A Funap negou censura e propôs a criação de uma comissão avaliadora. O motivo específico para considerar três títulos inadequados não foi apresentado."
+    decisor:"Fundação Prof. Dr. Manoel Pedro Pimentel (Funap), que vetou a lista de doze livros do projeto Remição em Rede.",
+    responsavel:"O diretor-executivo da Funap, coronel Henrique Pereira de Souza Neto, convocou a reunião posterior e propôs comissão avaliadora; a autoridade que tomou a decisão inicial não está identificada.",
+    executor:"Funap e coordenação do projeto Remição em Rede.",
+    resposta:"Após repercussão pública, a Funap voltou atrás no veto. A justificativa específica para considerar três títulos inadequados e a identidade dos responsáveis pela decisão inicial não foram divulgadas."
   });
   set(["EL-034"], {
-    pressao:"Vereador não identificado pelo nome e partido nas fontes cadastradas.",
-    decisor:"O pedido foi dirigido à Secretaria Municipal de Educação, mas não foi atendido.",
-    executor:"Não houve retirada confirmada neste episódio.",
-    pendencia:"Identificar o vereador, o município, a data e localizar a reportagem/documento original."
+    pressao:"Clayton Silva (PSC), vereador, apresentou requerimento questionando a distribuição e a leitura da obra e afirmou que ela abordava “ideologia de gênero”.",
+    decisor:"Não houve decisão de retirada. A Secretaria Municipal de Educação respondeu ao Requerimento nº 451/2019 e defendeu a obra e seu uso no Clube de Leitura.",
+    executor:"Escolas da rede municipal, no âmbito do Clube de Leitura; a Secretaria informou que o livro já integrava acervo enviado pelo PNLD.",
+    resposta:"Em 24 de setembro de 2019, a Secretaria respondeu que a obra não afrontava princípios morais e descreveu seu valor literário e pedagógico."
   });
   return r;
 })();
@@ -633,15 +657,15 @@ const DOCUMENTOS_ATOS = (() => {
   set(["EL-004"],"Ordem de recolhimento da rede estadual de Mato Grosso do Sul; documento formal e signatário ainda precisam ser identificados.");
   set(["EL-005"],"Comunicado de revisão de acervo/redistribuição; documento original ainda não está identificado no cadastro.");
   set(["EL-006","EL-007","EL-008","EL-009","EL-010","EL-011","EL-012","EL-013","EL-014"],"Ofício circular de 7 de novembro de 2023, reproduzido e descrito pela imprensa; determina retirar nove obras de circulação e armazená-las em local inacessível à comunidade escolar. Assinaturas atribuídas a Waldemar Ronssem Júnior e Anelise dos Santos de Medeiros. O número do expediente e a cópia integral oficial ainda não estão cadastrados.");
-  set(["EL-025"],"Relatório “Retrato do Acervo: três décadas de dominação marxista na Fundação Cultural Palmares”; a relação completa dos títulos e o desfecho judicial final seguem pendentes.");
-  set(["EL-026"],"Anúncio da criação do chamado “Acervo da Vergonha”; documento formal de execução e destino posterior do acervo ainda não identificados.");
-  set(["EL-027"],"Circular da prefeitura que suspendeu o uso de O menino marrom; cópia e signatário ainda não identificados no cadastro.");
-  set(["EL-028"],"Ato de recolhimento das salas de leitura das escolas municipais; a autoridade signatária e a cópia do ato ainda não estão identificadas.");
+  set(["EL-025"],"Relatório “Retrato do Acervo: três décadas de dominação marxista na Fundação Cultural Palmares”, divulgado em 11 de junho de 2021; decisão liminar da 2ª Vara Federal de São Gonçalo, em 23 de junho de 2021, proibiu a doação de livros. O relatório original e a lista completa dos 5.165 exemplares ainda não estão cadastrados.");
+  set(["EL-026"],"Anúncio público de Sérgio Camargo em 3 de agosto de 2021 sobre a criação do “Acervo/Ala da Vergonha”, após a Procuradoria-Geral Federal informar ao juízo, em julho, a desistência da doação de cerca de 300 livros. O documento que formalize a segregação física e o regime de acesso não foi localizado.");
+  set(["EL-027"],"Comunicado oficial da Secretaria Municipal de Educação, publicado em 20 de junho de 2024, reconhecendo a orientação para suspender temporariamente os trabalhos pedagógicos; sentença da 1ª Vara Cível no processo nº 5006658-14.2024.8.13.0183 anulou o ato administrativo.");
+  set(["EL-028"],"Ordem de recolhimento transmitida aos diretores das escolas por mensagens de WhatsApp, segundo a apuração judicial divulgada em julho de 2026. A sentença que determinou a devolução está sob segredo de Justiça; não foi localizada cópia pública integral.");
   set(["EL-029"],"Nota da UniRV de 26 de abril de 2023, na qual a universidade reconhece que a polêmica pública pesou na exclusão do livro da lista do vestibular.");
   set(["EL-030"],"Ato específico de recolhimento ainda não identificado. O PL 79/2024 é contexto legislativo posterior, não deve ser confundido com a ordem de retirada.");
-  set(["EL-031"],"Comunicado/decisão da direção do Colégio Militar Dom Pedro II; documento formal não cadastrado.");
+  set(["EL-031"],"Atividade de Língua Portuguesa que utilizou link para resenha de A bolsa amarela; não foi localizado ato formal de retirada da obra, e a apuração da piauí afirma que não houve recolhimento de exemplares nem adoção da obra.");
   set(["EL-032"],"Ordem atribuída ao secretário municipal de Educação; documento e signatário ainda não identificados.");
   set(["EL-033"],"Comunicação da Funap sobre suspensão da parceria Remição em Rede; documento e signatário ainda não identificados.");
-  set(["EL-034"],"Pedido de vereador à Secretaria Municipal de Educação; reportagem e documento original ainda não localizados.");
+  set(["EL-034"],"Requerimento nº 451/2019, de autoria do vereador Clayton Silva (PSC), protocolado em 12 de agosto de 2019, e resposta da Secretaria Municipal de Educação por meio do Ofício GSE nº 363/2019, de 24 de setembro de 2019. Os documentos registram questionamento parlamentar e defesa institucional da obra, não ordem ou pedido formal de retirada.");
   return d;
 })();
