@@ -598,3 +598,29 @@ const RESPONSABILIDADES = (() => {
   });
   return r;
 })();
+
+
+/* Identificação do documento ou ato que sustenta a decisão. Quando o cadastro
+   ainda não tem o original ou o número do expediente, isso é explicitado. */
+const DOCUMENTOS_ATOS = (() => {
+  const d = {};
+  const set = (ids, texto) => ids.forEach(id => d[id] = texto);
+  set(["EL-001"],"Ofício da 6ª Coordenadoria Regional de Educação; número do expediente ainda não cadastrado.");
+  set(["EL-002"],"Ofício da Secretaria de Estado da Educação do Paraná, com prazo de recolhimento até 8 de março de 2024.");
+  set(["EL-003"],"Medida atribuída à Secretaria de Estado da Educação de Goiás; o documento original ainda não está identificado no cadastro.");
+  set(["EL-004"],"Ordem de recolhimento da rede estadual de Mato Grosso do Sul; documento formal e signatário ainda precisam ser identificados.");
+  set(["EL-005"],"Comunicado de revisão de acervo/redistribuição; documento original ainda não está identificado no cadastro.");
+  set(["EL-006","EL-007","EL-008","EL-009","EL-010","EL-011","EL-012","EL-013","EL-014"],"Ofício regional da Secretaria de Estado da Educação de Santa Catarina com a determinação de retirar as obras de circulação; número e cópia integral ainda não cadastrados.");
+  set(["EL-015","EL-016","EL-017","EL-018","EL-019","EL-020","EL-021","EL-022","EL-023","EL-024"],"Memorando-Circular 4/2020 da Secretaria de Estado da Educação de Rondônia; há também referência a adendo com a relação de títulos.");
+  set(["EL-025"],"Relatório “Retrato do Acervo: três décadas de dominação marxista na Fundação Cultural Palmares”; a relação completa dos títulos e o desfecho judicial final seguem pendentes.");
+  set(["EL-026"],"Anúncio da criação do chamado “Acervo da Vergonha”; documento formal de execução e destino posterior do acervo ainda não identificados.");
+  set(["EL-027"],"Circular da prefeitura que suspendeu o uso de O menino marrom; cópia e signatário ainda não identificados no cadastro.");
+  set(["EL-028"],"Ato de recolhimento das salas de leitura das escolas municipais; a autoridade signatária e a cópia do ato ainda não estão identificadas.");
+  set(["EL-029"],"Nota da UniRV de 26 de abril de 2023, na qual a universidade reconhece que a polêmica pública pesou na exclusão do livro da lista do vestibular.");
+  set(["EL-030"],"Ato específico de recolhimento ainda não identificado. O PL 79/2024 é contexto legislativo posterior, não deve ser confundido com a ordem de retirada.");
+  set(["EL-031"],"Comunicado/decisão da direção do Colégio Militar Dom Pedro II; documento formal não cadastrado.");
+  set(["EL-032"],"Ordem atribuída ao secretário municipal de Educação; documento e signatário ainda não identificados.");
+  set(["EL-033"],"Comunicação da Funap sobre suspensão da parceria Remição em Rede; documento e signatário ainda não identificados.");
+  set(["EL-034"],"Pedido de vereador à Secretaria Municipal de Educação; reportagem e documento original ainda não localizados.");
+  return d;
+})();
