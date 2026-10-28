@@ -145,6 +145,8 @@ document.addEventListener("click", e=>{
   if(k==="busca"){ F.busca=""; document.getElementById("busca").value=""; }
   else if(k==="tipo"){ F.tipo=""; document.getElementById("tipo").value=""; }
   else if(k==="modalidade"){ F.modalidade=null; document.getElementById("mod").value=""; }
+  else if(k==="uf"){ F.uf=null; document.getElementById("uf").value=""; }
+  else if(k==="ano"){ F.ano=null; document.getElementById("ano").value=""; }
   else F[k] = k==="eixo" ? "" : null;
   render();
 });
