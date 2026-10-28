@@ -477,7 +477,11 @@ const FONTES = {
 
 /* taxonomias completas; inclui as categorias em zero, de propósito */
 const MODALIDADES = ["Retirada total","Restrição de acesso","Ocultação","Veto a atividade",
-  "Veto a aquisição","Autocensura","Destruição","Contestação sem efeito"];
+  "Veto a aquisição","Autocensura","Destruição","Contestação sem efeito","Tentativa de descarte",
+  "Segregação do acervo / restrição de acesso","Suspensão temporária de atividade pedagógica","Retirada de acervo escolar",
+  "Exclusão de lista de leitura para vestibular","Pedido parlamentar de recolhimento; retirada não comprovada",
+  "Controvérsia sobre atividade; veto à obra não comprovado","Recolhimento reportado de escolas municipais",
+  "Veto a seleção de livros","Questionamento parlamentar; sem pedido formal de retirada"];
 const EIXOS = ["Cultura afro-brasileira","Sexualidade e gênero","Sobrenatural e mágico",
   "Política e ideologia","Religião","Linguagem e palavrão","Violência","Outro"];
 /* data da última revisão do catálogo (AAAA-MM-DD); aparece no rodapé */
