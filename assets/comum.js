@@ -85,7 +85,7 @@ function aplicar(F, base){
     if(F.busca){
       const alvo = norm([c.titulo,c.autoria,c.editora,c.cidade,c.uf,c.quem,
         c.alegacao,c.eixo,c.modalidade,c.desfecho,c.nota,c.id,c.governo,c.pressao,
-        ...Object.values((typeof RESPONSABILIDADES!=="undefined" && RESPONSABILIDADES[c.id])||{})].join(" "));
+        ...Object.values((typeof RESPONSABILIDADES!=="undefined" && RESPONSABILIDADES[c.id])||{}), (typeof DOCUMENTOS_ATOS!=="undefined" && DOCUMENTOS_ATOS[c.id])||""].join(" "));
       if(!alvo.includes(norm(F.busca))) return false;
     }
     return true;
@@ -144,6 +144,7 @@ function casoHTML(c, q){
       '<div class="responsa">'+
         '<div class="responsa-tit">QUEM FEZ O QUÊ</div>'+
         linhaResp("PRESSÃO / PEDIDO",r.pressao||c.pressao)+
+        linhaResp("ATO / DOCUMENTO",typeof DOCUMENTOS_ATOS!=="undefined"?DOCUMENTOS_ATOS[c.id]:"")+
         linhaResp("DECISÃO",r.decisor)+
         linhaResp("ASSINATURA DO ATO",r.assinantes)+
         linhaResp("EXECUÇÃO",r.executor)+
@@ -192,6 +193,7 @@ function livroHTML(titulo, ocs, q){
           r.pressao||o.pressao?'<div><b>PRESSÃO / PEDIDO:</b> '+esc(r.pressao||o.pressao)+'</div>':"",
           r.decisor?'<div><b>DECISÃO:</b> '+esc(r.decisor)+'</div>':"",
           r.assinantes?'<div><b>ASSINATURA:</b> '+esc(r.assinantes)+'</div>':"",
+          (typeof DOCUMENTOS_ATOS!=="undefined"&&DOCUMENTOS_ATOS[o.id])?'<div><b>ATO / DOCUMENTO:</b> '+esc(DOCUMENTOS_ATOS[o.id])+'</div>':"",
           r.executor?'<div><b>EXECUÇÃO:</b> '+esc(r.executor)+'</div>':""
         ].join("");})()}
       </div>
