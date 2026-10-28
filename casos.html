@@ -53,7 +53,7 @@
   <div class="controls-in">
     <div class="ctrl-row">
       <div class="search"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#1A1A18" stroke-width="2.5"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.5-4.5"/></svg>
-        <input type="text" id="busca" placeholder="Buscar título, autoria, cidade, alegação…" aria-label="Buscar">
+        <input type="text" id="busca" placeholder="Buscar livro, responsável, órgão, cidade ou justificativa…" aria-label="Buscar">
       </div>
       <select id="ordem" aria-label="Ordenar">
         <option value="data-desc">Mais recentes primeiro</option>
@@ -72,6 +72,8 @@
       <select id="mod" aria-label="Modalidade">
         <option value="">Todas as modalidades</option>
       </select>
+      <select id="uf" aria-label="Filtrar por estado"><option value="">Todos os estados</option></select>
+      <select id="ano" aria-label="Filtrar por ano"><option value="">Todos os anos</option></select>
       <button class="btn ghost" id="limpar">Limpar</button>
       <button class="btn" id="csv">Baixar CSV</button>
     </div>
@@ -109,6 +111,12 @@ document.getElementById("mod").innerHTML = '<option value="">Todas as modalidade
   MODALIDADES.filter(m=>conta(CASOS,"modalidade",m)>0)
     .map(m=>`<option value="${m}">${m} (${conta(CASOS,"modalidade",m)})</option>`).join("");
 document.getElementById("mod").value = F.modalidade||"";
+document.getElementById("uf").innerHTML = '<option value="">Todos os estados</option>' +
+  [...new Set(CASOS.map(c=>c.uf).filter(Boolean))].sort().map(uf=>`<option value="${esc(uf)}">${esc(uf)}</option>`).join("");
+document.getElementById("uf").value = F.uf||"";
+document.getElementById("ano").innerHTML = '<option value="">Todos os anos</option>' +
+  [...new Set(CASOS.map(c=>c.data.slice(0,4)))].sort().reverse().map(ano=>`<option value="${ano}">${ano}</option>`).join("");
+document.getElementById("ano").value = F.ano||"";
 
 function render(){
   const sel = ordenar(aplicar(F), document.getElementById("ordem").value);
@@ -147,18 +155,20 @@ document.getElementById("busca").addEventListener("input", e=>{
 document.getElementById("ordem").addEventListener("change", render);
 document.getElementById("tipo").addEventListener("change", e=>{ F.tipo=e.target.value; render(); });
 document.getElementById("mod").addEventListener("change", e=>{ F.modalidade=e.target.value||null; render(); });
+document.getElementById("uf").addEventListener("change", e=>{ F.uf=e.target.value||null; render(); });
+document.getElementById("ano").addEventListener("change", e=>{ F.ano=e.target.value||null; render(); });
 document.getElementById("limpar").addEventListener("click", ()=>{
   F.busca=""; F.modalidade=null; F.eixo=""; F.uf=null; F.ano=null; F.tipo="";
   document.getElementById("busca").value=""; document.getElementById("tipo").value="";
-  document.getElementById("mod").value=""; render();
+  document.getElementById("mod").value=""; document.getElementById("uf").value=""; document.getElementById("ano").value=""; render();
 });
 document.getElementById("csv").addEventListener("click", ()=>{
   const cols=["id","data","titulo","autoria","editora","cidade","uf","tipo","rede","quem",
     "alegacao","eixo","modalidade","desfecho","verificado","pendencia","nota"];
   const sel = ordenar(aplicar(F), document.getElementById("ordem").value);
-  const extras=["pressao_identificada","decisor_identificado","assinantes_identificados","executor_identificado"];
+  const extras=["pressao_identificada","decisor_identificado","assinantes_identificados","executor_identificado","fiscalizacao_ou_denuncia","resposta_ou_reversao"];
   const cab=[...cols,...extras];
-  baixarCSV([cab.join(",")].concat(sel.map(c=>{const r=RESPONSABILIDADES[c.id]||{};const vals=[r.pressao||c.pressao||"",r.decisor||"",r.assinantes||"",r.executor||""];return [...cols.map(k=>escCSV(c[k])),...vals.map(escCSV)].join(",");})),
+  baixarCSV([cab.join(",")].concat(sel.map(c=>{const r=RESPONSABILIDADES[c.id]||{};const vals=[r.pressao||c.pressao||"",r.decisor||"",r.assinantes||"",r.executor||"",r.fiscalizacao||"",r.resposta||""];return [...cols.map(k=>escCSV(c[k])),...vals.map(escCSV)].join(",");})),
     "estante-livre-casos.csv");
 });
 render();
