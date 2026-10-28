@@ -103,7 +103,7 @@ function ordenar(arr, modo){
 }
 
 /* ---------- componentes ---------- */
-const MOD_ALT = ["Restrição de acesso","Veto a aquisição","Ocultação","Autocensura"];
+const MOD_ALT = ["Restrição de acesso","Veto a aquisição","Ocultação","Autocensura","Contestação sem efeito","Tentativa de descarte","Pedido parlamentar de recolhimento; retirada não comprovada","Controvérsia sobre atividade; veto à obra não comprovado","Questionamento parlamentar; sem pedido formal de retirada"];
 const clsDesfecho = d => ({"Retirado":"ret","Revertido":"rev","Em aberto":"aberto","Mantido com restrição":"parcial"})[d] || "";
 
 function capaHTML(c, cls){
