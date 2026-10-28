@@ -489,3 +489,111 @@ const CORRECOES = [
  {data:"2026-10-27", id:"EL-006", texto:"Santa Catarina 2023 (EL-006 a EL-014): coordenadoria regional não identificada nas fontes; quem acionou o MP foi um suplente de vereador; grafia Ronssem."},
  {data:"2026-10-27", id:"Painel", texto:"Retirada a atribuição de uma “hipótese” sobre temas censurados à pesquisadora Sandra Reimão, que não a formulou, e a referência a relatos da FEBAB de 2020, que não existem nesse formato. Corrigida a contagem de estados (eram oito e o DF)."},
 ];
+
+
+/* Responsabilização: separar pressão, decisão administrativa, assinatura e execução.
+   Só são nomeadas pessoas quando o cadastro documental as identifica. */
+const RESPONSABILIDADES = (() => {
+  const r = {};
+  const set = (ids, dados) => ids.forEach(id => r[id] = dados);
+  const semNome = "A pessoa responsável pela decisão não está identificada nas fontes cadastradas.";
+  set(["EL-001"], {
+    pressao:"Janaína Venzon, diretora da Escola Estadual Ernesto Alves: fez a crítica pública em vídeo. O cadastro não sustenta que ela tenha expedido a ordem administrativa.",
+    decisor:"Luiz Ricardo Pinho de Moura, coordenador da 6ª Coordenadoria Regional de Educação: o ofício da coordenadoria determinou a retirada.",
+    assinantes:"Luiz Ricardo Pinho de Moura, coordenador da 6ª CRE.",
+    executor:"6ª Coordenadoria Regional de Educação, com alcance informado de 18 municípios do Vale do Rio Pardo.",
+    resposta:"A Secretaria de Educação do Rio Grande do Sul desautorizou a ordem no mesmo dia."
+  });
+  set(["EL-002"], {
+    decisor:"Secretaria de Estado da Educação do Paraná.",
+    assinantes:"Anderfábio Oliveira dos Santos, diretor de Educação, e Laura Patrícia Lopes, chefe do Núcleo Regional de Educação de Curitiba.",
+    executor:"Secretaria estadual e Núcleo Regional de Educação de Curitiba.",
+    resposta:"A obra voltou às escolas em abril de 2024, acompanhada de orientações pedagógicas."
+  });
+  set(["EL-003"], {
+    decisor:"Secretaria de Estado da Educação de Goiás.",
+    assinantes:semNome,
+    executor:"Rede estadual de ensino.",
+    resposta:"O livro voltou às escolas em abril de 2024."
+  });
+  set(["EL-004"], {
+    pressao:"Rinaldo Modesto (Podemos), deputado estadual: pediu a retirada na Assembleia Legislativa.",
+    decisor:"Eduardo Riedel, governador de Mato Grosso do Sul: segundo a apuração registrada, determinou o recolhimento.",
+    assinantes:"A autoridade que formalizou a ordem não está identificada no cadastro.",
+    executor:"Secretaria de Estado de Educação de Mato Grosso do Sul.",
+    resposta:"A Secretaria anunciou a devolução em 23 de abril de 2024, com orientações pedagógicas."
+  });
+  set(["EL-005"], {
+    decisor:"Secretaria de Estado de Educação de Mato Grosso do Sul.",
+    assinantes:semNome,
+    executor:"Rede estadual; exemplares foram redistribuídos para EJA e centros de educação profissional.",
+    resposta:"A justificativa pública foi apresentada como revisão de acervo e adequação por faixa etária."
+  });
+  set(["EL-006","EL-007","EL-008","EL-009","EL-010","EL-011","EL-012","EL-013","EL-014"], {
+    decisor:"Supervisão/estrutura regional da Secretaria de Estado da Educação de Santa Catarina.",
+    assinantes:"Waldemar Ronssem Júnior, supervisor regional de Educação, e Anelise dos Santos de Medeiros, integradora regional, assinaram o ofício que determinou a retirada de circulação.",
+    executor:"Estrutura regional da rede estadual de ensino. A coordenadoria específica ainda não foi identificada nas fontes cadastradas.",
+    fiscalizacao:"Leonel Camasão (PSOL), suplente de vereador, levou o caso ao Ministério Público. O cadastro o identifica como autor da denúncia posterior, não como autor do pedido de retirada."
+  });
+  set(["EL-015","EL-016","EL-017","EL-018","EL-019","EL-020","EL-021","EL-022","EL-023","EL-024"], {
+    decisor:"Secretaria de Estado da Educação de Rondônia, por meio do Memorando-Circular 4/2020.",
+    assinantes:"Irany Morais, diretora-geral de Educação, assinou eletronicamente o memorando em nome do secretário Suamy Vivecananda.",
+    executor:"Coordenadorias e escolas da rede estadual; há registro de que livros chegaram a ser encaixotados em algumas unidades.",
+    resposta:"A retirada foi cancelada no mesmo dia. A Secretaria tornou o processo sigiloso e depois comunicou o cancelamento."
+  });
+  set(["EL-025","EL-026"], {
+    decisor:"Presidência da Fundação Cultural Palmares, durante a gestão de Sérgio Camargo.",
+    responsavel:"Sérgio Camargo, então presidente da Fundação Cultural Palmares. O registro associa a iniciativa à presidência e à gestão; a atribuição de cada ato individual deve ser lida junto dos documentos e fontes do caso.",
+    executor:"Fundação Cultural Palmares.",
+    resposta:"No caso EL-025, a Justiça Federal concedeu liminar para impedir a doação dos livros. No EL-026, foi anunciada a criação do chamado “Acervo da Vergonha”."
+  });
+  set(["EL-027"], {
+    pressao:"Grupo de pais de alunos.",
+    decisor:"Prefeitura municipal, por circular que suspendeu o uso da obra. O nome da autoridade que assinou a circular não está identificado.",
+    executor:"Rede municipal de ensino.",
+    resposta:"A 1ª Vara Cível de Conselheiro Lafaiete derrubou a suspensão."
+  });
+  set(["EL-028"], {
+    pressao:"Thomaz Henrique (PL), vereador: criticou a presença de Marielle Franco e Débora Diniz entre as mulheres retratadas e acusou o livro de fazer “apologia ao aborto” e “doutrinação”.",
+    decisor:"Prefeitura e Secretaria Municipal de Educação, que recolheram a obra das salas de leitura. A autoridade individual que formalizou a decisão não está identificada.",
+    executor:"Rede municipal de ensino.",
+    resposta:"Em julho de 2026, a Justiça determinou a devolução do livro."
+  });
+  set(["EL-029"], {
+    pressao:"Gustavo Gayer (PL-GO), deputado federal: publicou vídeo chamando o livro de “pornográfico”.",
+    decisor:"Administração da Universidade de Rio Verde (UniRV), que decidiu pela exclusão imediata da lista de leituras do vestibular.",
+    responsavel:"A universidade admitiu que a polêmica levantada pelo parlamentar pesou na decisão. O nome da autoridade individual que tomou a decisão não está identificado.",
+    executor:"Universidade de Rio Verde (UniRV)."
+  });
+  set(["EL-030"], {
+    pressao:"Jéssica Ramos Moreno (PP), vereadora: questionou o livro após encontrá-lo em uma creche.",
+    decisor:"Secretaria/gestão municipal, responsável pelo recolhimento. A autoridade individual que formalizou a decisão ainda precisa ser identificada.",
+    executor:"Rede municipal de ensino.",
+    pendencia:"Confirmar autoria, data exata e alcance do recolhimento."
+  });
+  set(["EL-031"], {
+    pressao:"Pais de alunos do 4º ano, por mensagens e reclamações à escola.",
+    decisor:"Direção do Colégio Militar Dom Pedro II, administrado pelo Corpo de Bombeiros do Distrito Federal, que retirou preventivamente o material.",
+    executor:"Colégio Militar Dom Pedro II.",
+    resposta:"A escola disse não ter identificado prejuízo pedagógico nem direcionamento ideológico, mas não recolocou o material porque a atividade já havia terminado."
+  });
+  set(["EL-032"], {
+    pressao:"Zelinda Pastora (PRD), vereadora: contestou o livro por retratar uma família com duas mães e um pai.",
+    decisor:"Secretaria Municipal de Educação, cujo secretário teria ordenado a retirada. O nome do secretário não está identificado no cadastro.",
+    executor:"Rede municipal de ensino.",
+    resposta:"A prefeitura declarou que faria análise pedagógica; o cadastro registra que o livro voltou a aparecer em algumas unidades e houve nova ordem."
+  });
+  set(["EL-033"], {
+    decisor:"Fundação Estadual de Amparo ao Trabalhador Preso (Funap), vinculada ao governo paulista, que suspendeu a parceria do projeto Remição em Rede.",
+    responsavel:semNome,
+    executor:"Funap e gestão do projeto de leitura no sistema prisional.",
+    resposta:"A Funap negou censura e propôs a criação de uma comissão avaliadora. O motivo específico para considerar três títulos inadequados não foi apresentado."
+  });
+  set(["EL-034"], {
+    pressao:"Vereador não identificado pelo nome e partido nas fontes cadastradas.",
+    decisor:"O pedido foi dirigido à Secretaria Municipal de Educação, mas não foi atendido.",
+    executor:"Não houve retirada confirmada neste episódio.",
+    pendencia:"Identificar o vereador, o município, a data e localizar a reportagem/documento original."
+  });
+  return r;
+})();
