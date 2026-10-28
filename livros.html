@@ -53,7 +53,7 @@
   <div class="controls-in">
     <div class="ctrl-row">
       <div class="search"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#1A1A18" stroke-width="2.5"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.5-4.5"/></svg>
-        <input type="text" id="busca" placeholder="Buscar título ou autoria…" aria-label="Buscar">
+        <input type="text" id="busca" placeholder="Buscar livro, autoria ou responsável…" aria-label="Buscar">
       </div>
       <select id="ordem" aria-label="Ordenar">
         <option value="ocorr">Mais ocorrências primeiro</option>
@@ -138,13 +138,17 @@ document.getElementById("limpar").addEventListener("click", ()=>{
 document.getElementById("csv").addEventListener("click", ()=>{
   const sel=aplicar(F), g={};
   sel.forEach(c=> (g[c.titulo] ||= []).push(c));
-  const cols=["titulo","autoria","editora","ano","genero","ocorrencias","estados","motivos","modalidades","desfechos","ids"];
+  const cols=["titulo","autoria","editora","ano","genero","ocorrencias","estados","motivos","modalidades","desfechos","ids","pressao_identificada","decisores","assinantes","executores"];
   const uni=(a,k)=>[...new Set(a.map(o=>o[k]).filter(Boolean))].join("; ");
   const linhas=[cols.join(",")].concat(Object.keys(g)
     .sort((a,b)=>g[b].length-g[a].length||a.localeCompare(b,"pt"))
     .map(t=>{ const o=g[t], L=LIVROS[t]||{};
       return [t,o[0].autoria,o[0].editora,L.ano,L.genero,o.length,uni(o,"uf"),
-        uni(o,"eixo"),uni(o,"modalidade"),uni(o,"desfecho"),o.map(x=>x.id).join("; ")]
+        uni(o,"eixo"),uni(o,"modalidade"),uni(o,"desfecho"),o.map(x=>x.id).join("; "),
+        [...new Set(o.map(x=>(RESPONSABILIDADES[x.id]||{}).pressao||x.pressao).filter(Boolean))].join("; "),
+        [...new Set(o.map(x=>(RESPONSABILIDADES[x.id]||{}).decisor).filter(Boolean))].join("; "),
+        [...new Set(o.map(x=>(RESPONSABILIDADES[x.id]||{}).assinantes).filter(Boolean))].join("; "),
+        [...new Set(o.map(x=>(RESPONSABILIDADES[x.id]||{}).executor).filter(Boolean))].join("; ")]
         .map(escCSV).join(","); }));
   baixarCSV(linhas,"estante-livre-livros.csv");
 });
