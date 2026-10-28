@@ -84,7 +84,8 @@ function aplicar(F, base){
     if(F.tipo && c.tipo!==F.tipo) return false;
     if(F.busca){
       const alvo = norm([c.titulo,c.autoria,c.editora,c.cidade,c.uf,c.quem,
-        c.alegacao,c.eixo,c.modalidade,c.desfecho,c.nota,c.id,c.governo,c.pressao].join(" "));
+        c.alegacao,c.eixo,c.modalidade,c.desfecho,c.nota,c.id,c.governo,c.pressao,
+        ...Object.values((typeof RESPONSABILIDADES!=="undefined" && RESPONSABILIDADES[c.id])||{})].join(" "));
       if(!alvo.includes(norm(F.busca))) return false;
     }
     return true;
@@ -184,8 +185,16 @@ function livroHTML(titulo, ocs, q){
       <div class="ocorr-id">${o.id}</div>
       <div class="ocorr-onde">${[o.cidade,o.uf].filter(Boolean).join(", ")||o.uf}<br>
         <span style="font-size:11.5px;color:var(--cinza);font-weight:400">${dataLegivel(o)}</span></div>
-      <div class="ocorr-aleg">${m(o.alegacao)}<br>
-        <span style="font-style:normal;font-size:11.5px">${o.quem} · ${o.tipo.toLowerCase()}</span></div>
+      <div class="ocorr-aleg">
+        <b>JUSTIFICATIVA DECLARADA:</b> ${m(o.alegacao)}<br>
+        <span style="font-style:normal;font-size:11.5px">${esc(o.quem)} · ${esc(o.tipo.toLowerCase())}</span>
+        ${(()=>{const r=(typeof RESPONSABILIDADES!=="undefined"&&RESPONSABILIDADES[o.id])||{};return [
+          r.pressao||o.pressao?'<div><b>PRESSÃO / PEDIDO:</b> '+esc(r.pressao||o.pressao)+'</div>':"",
+          r.decisor?'<div><b>DECISÃO:</b> '+esc(r.decisor)+'</div>':"",
+          r.assinantes?'<div><b>ASSINATURA:</b> '+esc(r.assinantes)+'</div>':"",
+          r.executor?'<div><b>EXECUÇÃO:</b> '+esc(r.executor)+'</div>':""
+        ].join("");})()}
+      </div>
       <div class="ocorr-tags">
         <span class="tag t-mod ${MOD_ALT.includes(o.modalidade)?"alt":""}">${o.modalidade}</span>
         <span class="tag t-des ${clsDesfecho(o.desfecho)}">${o.desfecho}</span></div>
