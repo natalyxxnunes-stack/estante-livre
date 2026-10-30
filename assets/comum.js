@@ -124,7 +124,8 @@ function capaHTML(c, cls){
   if(c.capa) return `<div><img class="${k}" alt="Capa de ${esc(obraDe(c))}${c.editora?", "+esc(c.editora):""}" src="${RAIZ}assets/capas/${esc(c.capa)}.jpg" width="213" height="320" loading="lazy" decoding="async">
     ${c.editora?`<div class="capa-cred">Capa · ${esc(c.editora)}</div>`:""}</div>`;
   /* sem imagem: capa tipográfica na cor do mecanismo */
-  const t = c.conjunto ? "Conjunto de obras" : obraDe(c).split(":")[0];
+  const L = (typeof LIVROS!=="undefined" && LIVROS[obraDe(c)]) || {};
+  const t = c.conjunto ? (L.legenda || "Conjunto de obras") : obraDe(c).split(":")[0];
   return `<div><div class="${k}-tipo m-${slug(c.modalidade)}" aria-hidden="true"><b>${esc(t)}</b><span>${esc((c.autoria||"").split(",")[0])}</span></div></div>`;
 }
 
@@ -138,47 +139,72 @@ function linksFonte(ids){
     }).join("") + `</div>`;
 }
 
+const urlAto = a => RAIZ + "atos/" + a.toLowerCase() + ".html";
+/* agentes com papel no ato, agrupados por pessoa ou instituição */
+function agentesDoAto(ato){
+  if(typeof PAPEIS==="undefined") return [];
+  const g = {};
+  PAPEIS.filter(p=>p.ato===ato).forEach(p=>{
+    (g[p.agente] ||= {ag:AGENTES[p.agente], cargo:p.cargo, papeis:[]}).papeis.push(p.papel.toLowerCase()+(p.atribuido?" (atribuída)":""));
+  });
+  return Object.entries(g).map(([k,v])=>({id:k, ...v}));
+}
+const CARIMBO = {"Execução comprovada":"EXECUTADO","Decisão ou ordem":"ORDEM EMITIDA","Pedido formal":"PEDIDO FORMAL","Pressão pública":"PRESSÃO"};
+
+/* ficha no formato prontuário */
 function casoHTML(c, q, nivel){
   const m = t => marcar(t, q);
   const H = nivel || "h3";
   const r = (typeof RESPONSABILIDADES !== "undefined" && RESPONSABILIDADES[c.id]) || {};
+  const A = (typeof ATOS!=="undefined" && ATOS[c.ato]) || {};
   const linhaResp = (rotulo, valor) => valor ? '<div class="resp-linha"><span class="k">'+rotulo+'</span><div>'+esc(valor)+'</div></div>' : "";
-  const pend = r.pendencia || c.pendencia;
-  return '<article class="caso" id="'+c.id+'" aria-labelledby="t-'+c.id+'">'+
-    capaHTML(c)+
-    '<div class="caso-body">'+
-      '<div class="caso-top"><a class="caso-id" href="'+urlCaso(c.id)+'" title="Página deste caso">'+c.id+'</a>'+
+  const campo = (k, v) => v ? '<div class="pront-campo"><div class="k">'+k+'</div><div class="v">'+v+'</div></div>' : "";
+  const ags = agentesDoAto(c.ato);
+  const pend = c.pendencia;
+  return '<article class="caso pront" id="'+c.id+'" aria-labelledby="t-'+c.id+'">'+
+    '<div class="pront-cab">'+
+      '<a class="pront-num" href="'+urlCaso(c.id)+'" title="Página deste registro"><span>REGISTRO</span><b>'+c.id+'</b></a>'+
+      '<div class="pront-tit">'+
         '<'+H+' class="caso-tit" id="t-'+c.id+'">'+m(c.titulo)+'</'+H+'>'+
-        '<button class="copiar" type="button" data-copiar="'+c.id+'">copiar link</button></div>'+
-      '<div class="caso-aut">'+m([c.autoria,c.editora].filter(Boolean).join(" · "))+(c.pnld?" · no PNLD":"")+'</div>'+
-      '<div class="tags tags-topo">'+
-        '<span class="tag t-mod">'+esc(c.modalidade)+'</span>'+
-        '<span class="tag t-est '+clsEstagio(c.estagio)+'">'+esc(c.estagio)+'</span>'+
-        '<span class="tag t-des '+clsSituacao(c.situacao)+'">'+esc(c.situacao)+'</span>'+
+        '<div class="caso-aut">'+m([c.autoria,c.editora].filter(Boolean).join(" · "))+(c.pnld?" · no PNLD":"")+'</div>'+
       '</div>'+
-      '<div class="caso-grid">'+
-        '<div class="campo"><div class="k">ONDE</div><div class="v">'+m([c.cidade,c.uf].filter(Boolean).join(", "))+'</div></div>'+
-        '<div class="campo"><div class="k">QUANDO</div><div class="v">'+dataLegivel(c)+'</div></div>'+
-        '<div class="campo"><div class="k">BIBLIOTECA</div><div class="v">'+c.tipo+' · rede '+c.rede.toLowerCase()+'</div></div>'+
-        '<div class="campo"><div class="k">INSTÂNCIA REGISTRADA</div><div class="v">'+m(c.quem)+'</div></div>'+
+      '<div class="pront-carimbo '+clsEstagio(c.estagio)+'" aria-hidden="true">'+(CARIMBO[c.estagio]||"")+'<span>'+esc(c.uf)+' · '+c.data.slice(0,4)+'</span></div>'+
+    '</div>'+
+    '<div class="pront-corpo">'+
+      capaHTML(c)+
+      '<div class="caso-body">'+
+        '<div class="pront-grade">'+
+          campo("MECANISMO", '<span class="tag t-mod">'+esc(c.modalidade)+'</span>')+
+          campo("ATÉ ONDE CHEGOU", '<span class="tag t-est '+clsEstagio(c.estagio)+'">'+esc(c.estagio)+'</span>')+
+          campo("SITUAÇÃO", '<span class="tag t-des '+clsSituacao(c.situacao)+'">'+esc(c.situacao)+'</span>')+
+          campo("ONDE", m([c.cidade,c.uf].filter(Boolean).join(", ")))+
+          campo("QUANDO", dataLegivel(c))+
+          campo("BIBLIOTECA", c.tipo+' · rede '+c.rede.toLowerCase())+
+          campo("ATO", A.nome ? '<a href="'+urlAto(c.ato)+'">'+esc(A.nome)+'</a>' : esc(c.ato))+
+          campo("INSTÂNCIA REGISTRADA", m(c.quem))+
+          campo("GOVERNO NA ÉPOCA", m(c.governo||""))+
+        '</div>'+
+        '<div class="responsa">'+
+          '<div class="responsa-tit">QUEM FEZ O QUÊ</div>'+
+          linhaResp("PRESSÃO / PEDIDO",r.pressao||c.pressao)+
+          linhaResp("ATO / DOCUMENTO",A.documento)+
+          linhaResp("DECISÃO",r.decisor)+
+          linhaResp("ASSINATURA DO ATO",r.assinantes)+
+          linhaResp("EXECUÇÃO",r.executor)+
+          linhaResp("FISCALIZAÇÃO / DENÚNCIA",r.fiscalizacao)+
+          linhaResp("RESPOSTA / REVERSÃO",r.resposta)+
+          linhaResp("OBSERVAÇÃO SOBRE RESPONSABILIDADE INDIVIDUAL",r.responsavel)+
+          (ags.length ? '<div class="agentes-lin"><span class="k">AGENTES IDENTIFICADOS</span>'+ags.map(a=>
+            '<a class="ag" href="'+RAIZ+'atos.html#ag-'+a.id+'"><b>'+esc(a.ag.nome)+'</b>'+(a.cargo?' · '+esc(a.cargo):'')+' <i>'+esc(a.papeis.join(", "))+'</i></a>').join("")+'</div>' : "")+
+        '</div>'+
+        '<div class="caso-aleg"><span class="k">JUSTIFICATIVA DECLARADA</span><div>'+m(c.alegacao)+'</div></div>'+
+        (c.nota?'<div class="caso-nota">'+m(c.nota)+'</div>':"")+
+        '<div class="caso-desf"><span class="k">DESFECHO</span> '+m(c.desfecho)+'</div>'+
+        linksFonte(c.fontes)+
+        (pend?'<div class="caso-pend"><span class="k">O QUE AINDA APURAMOS</span><div>'+esc(pend)+'</div></div>':"")+
+        '<div class="pront-rod"><span>'+(c.verificado==="Sim"?"Verificado com duas ou mais fontes":"Parcialmente verificado")+'</span>'+
+          '<button class="copiar" type="button" data-copiar="'+c.id+'">copiar link</button></div>'+
       '</div>'+
-      (c.governo?'<div class="poder"><div><span class="k">GOVERNO NA ÉPOCA</span>'+m(c.governo)+'</div></div>':"")+
-      '<div class="responsa">'+
-        '<div class="responsa-tit">QUEM FEZ O QUÊ</div>'+
-        linhaResp("PRESSÃO / PEDIDO",r.pressao||c.pressao)+
-        linhaResp("ATO / DOCUMENTO",typeof DOCUMENTOS_ATOS!=="undefined"?DOCUMENTOS_ATOS[c.id]:"")+
-        linhaResp("DECISÃO",r.decisor)+
-        linhaResp("ASSINATURA DO ATO",r.assinantes)+
-        linhaResp("EXECUÇÃO",r.executor)+
-        linhaResp("FISCALIZAÇÃO / DENÚNCIA",r.fiscalizacao)+
-        linhaResp("RESPOSTA / REVERSÃO",r.resposta)+
-        linhaResp("OBSERVAÇÃO SOBRE RESPONSABILIDADE INDIVIDUAL",r.responsavel)+
-      '</div>'+
-      '<div class="caso-aleg"><span class="k">JUSTIFICATIVA DECLARADA</span><div>'+m(c.alegacao)+'</div></div>'+
-      (c.nota?'<div class="caso-nota">'+m(c.nota)+'</div>':"")+
-      '<div class="caso-desf"><span class="k">DESFECHO</span> '+m(c.desfecho)+'</div>'+
-      linksFonte(c.fontes)+
-      (pend?'<div class="caso-pend"><span class="k">O QUE AINDA APURAMOS</span><div>'+esc(pend)+'</div></div>':"")+
     '</div></article>';
 }
 /* copiar link de um caso */

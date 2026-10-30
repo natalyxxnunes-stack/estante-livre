@@ -21,10 +21,14 @@ Quando o domínio próprio estiver no ar, troque a constante `SITE` no topo de `
 
 ## Onde se edita
 
-Quase tudo fica em `assets/dados.js`:
+Quase tudo fica em `assets/dados.js`, organizado em quatro entidades ligadas por chave:
 
-- `CASOS`: um bloco por registro. Para acrescentar, copie um bloco e edite.
-- `LIVROS`: ficha de cada obra (ano, gênero, prêmio, sinopse, nota). A chave tem de ser igual ao `obra` do caso (ou ao `titulo`, quando não há `obra`).
+- `CASOS` (registros): um título atingido por um ato. Aponta para a obra (`obra`) e para o ato (`ato`) e guarda o que é próprio do registro: mecanismo, estágio, situação, alegação, desfecho, fontes, pendência, nota.
+- `LIVROS` (obras): autoria, editora, capa, PNLD, ano, gênero, prêmio, sinopse, nota. `conjunto:true` e `legenda` para lotes sem lista título a título.
+- `ATOS`: o documento ou episódio, com nome, data, UF, cidade, tipo de biblioteca, rede, governo, instância, documento e o texto de cada papel (`papeis`).
+- `AGENTES` e `PAPEIS`: pessoas e instituições com papel documentado em cada ato (pressão, pedido, decisão, assinatura, execução, denúncia, resposta), com o cargo na data. `atribuido:true` quando a fonte atribui o papel sem documento assinado.
+
+No fim do arquivo, uma etapa de montagem copia os campos do ato e da obra para cada registro; as páginas leem os registros já montados. Para um caso novo: crie a obra e o ato se forem novos, copie um bloco de `CASOS`, aponte para eles e rode o gerador.
 - `FONTES`: reportagens e pesquisas citadas pelos casos.
 - `CONTEXTO`: episódios fora de biblioteca que aparecem no painel sem entrar na contagem.
 - `CORRECOES`: registro público de correções, exibido na página Metodologia.
@@ -34,9 +38,9 @@ Quase tudo fica em `assets/dados.js`:
 
 A página Mundo lê `assets/mundo.js`.
 
-## Campos de um caso
+## Campos de um registro
 
-`id`, `data` (AAAA-MM-DD; dia 01 quando só o mês é conhecido), `ato`, `governo`, `pressao`, `fim`, `obra` (opcional: o livro, quando o título do registro descreve o episódio), `conjunto` (opcional: `true` para lotes sem lista título a título), `titulo`, `autoria`, `editora`, `pnld`, `capa`, `cidade`, `uf`, `tipo`, `rede`, `quem`, `alegacao`, `eixo`, `modalidade`, `estagio`, `situacao`, `desfecho`, `verificado`, `fontes`, `pendencia`, `nota`.
+`id`, `ato`, `obra`, `titulo` (opcional: só quando o registro descreve um episódio, e não a obra), `alegacao`, `eixo`, `modalidade`, `estagio`, `situacao`, `desfecho`, `verificado`, `fontes`, `pendencia`, `nota`. Datas dos atos em AAAA-MM-DD, com dia 01 quando só o mês é conhecido.
 
 Três campos usam listas fechadas, definidas em `dados.js` e explicadas no Glossário:
 
@@ -50,6 +54,6 @@ Um caso só conta como verificado com `verificado:"Sim"` e duas fontes. A regra 
 
 ## Páginas
 
-index (painel), casos, livros, analises, mundo, glossario, metodologia, sobre, cobertura, relate, e as páginas geradas em `casos/` e `livros/`.
+index (painel), casos, livros, analises, historia (linha do tempo, escrita à mão), mundo, glossario, metodologia, sobre, cobertura, relate. Geradas pelo script: atos.html e as páginas em `casos/`, `livros/` e `atos/`.
 
 Contornos do mapa: svg-maps, licença CC BY 4.0.

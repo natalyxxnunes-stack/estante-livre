@@ -4,12 +4,14 @@
   <url><loc>https://estante-livre-br.vercel.app/casos.html</loc><lastmod>2026-10-29</lastmod></url>
   <url><loc>https://estante-livre-br.vercel.app/livros.html</loc><lastmod>2026-10-29</lastmod></url>
   <url><loc>https://estante-livre-br.vercel.app/analises.html</loc><lastmod>2026-10-29</lastmod></url>
+  <url><loc>https://estante-livre-br.vercel.app/historia.html</loc><lastmod>2026-10-29</lastmod></url>
   <url><loc>https://estante-livre-br.vercel.app/mundo.html</loc><lastmod>2026-10-29</lastmod></url>
   <url><loc>https://estante-livre-br.vercel.app/glossario.html</loc><lastmod>2026-10-29</lastmod></url>
   <url><loc>https://estante-livre-br.vercel.app/metodologia.html</loc><lastmod>2026-10-29</lastmod></url>
   <url><loc>https://estante-livre-br.vercel.app/sobre.html</loc><lastmod>2026-10-29</lastmod></url>
   <url><loc>https://estante-livre-br.vercel.app/cobertura.html</loc><lastmod>2026-10-29</lastmod></url>
   <url><loc>https://estante-livre-br.vercel.app/relate.html</loc><lastmod>2026-10-29</lastmod></url>
+  <url><loc>https://estante-livre-br.vercel.app/atos.html</loc><lastmod>2026-10-29</lastmod></url>
   <url><loc>https://estante-livre-br.vercel.app/casos/el-001.html</loc><lastmod>2026-10-29</lastmod></url>
   <url><loc>https://estante-livre-br.vercel.app/casos/el-002.html</loc><lastmod>2026-10-29</lastmod></url>
   <url><loc>https://estante-livre-br.vercel.app/casos/el-003.html</loc><lastmod>2026-10-29</lastmod></url>
@@ -73,4 +75,21 @@
   <url><loc>https://estante-livre-br.vercel.app/livros/a-bolsa-amarela.html</loc><lastmod>2026-10-29</lastmod></url>
   <url><loc>https://estante-livre-br.vercel.app/livros/pipoca-e-picole.html</loc><lastmod>2026-10-29</lastmod></url>
   <url><loc>https://estante-livre-br.vercel.app/livros/veto-a-lista-de-doze-livros-do-projeto-remicao-em-rede.html</loc><lastmod>2026-10-29</lastmod></url>
+  <url><loc>https://estante-livre-br.vercel.app/atos/rs-2024.html</loc><lastmod>2026-10-29</lastmod></url>
+  <url><loc>https://estante-livre-br.vercel.app/atos/pr-2024.html</loc><lastmod>2026-10-29</lastmod></url>
+  <url><loc>https://estante-livre-br.vercel.app/atos/go-2024.html</loc><lastmod>2026-10-29</lastmod></url>
+  <url><loc>https://estante-livre-br.vercel.app/atos/ms-2024.html</loc><lastmod>2026-10-29</lastmod></url>
+  <url><loc>https://estante-livre-br.vercel.app/atos/sc-2024.html</loc><lastmod>2026-10-29</lastmod></url>
+  <url><loc>https://estante-livre-br.vercel.app/atos/sc-2023.html</loc><lastmod>2026-10-29</lastmod></url>
+  <url><loc>https://estante-livre-br.vercel.app/atos/ro-2020.html</loc><lastmod>2026-10-29</lastmod></url>
+  <url><loc>https://estante-livre-br.vercel.app/atos/palm-2021-06.html</loc><lastmod>2026-10-29</lastmod></url>
+  <url><loc>https://estante-livre-br.vercel.app/atos/palm-2021-08.html</loc><lastmod>2026-10-29</lastmod></url>
+  <url><loc>https://estante-livre-br.vercel.app/atos/mg-2024.html</loc><lastmod>2026-10-29</lastmod></url>
+  <url><loc>https://estante-livre-br.vercel.app/atos/sjc-2024.html</loc><lastmod>2026-10-29</lastmod></url>
+  <url><loc>https://estante-livre-br.vercel.app/atos/unirv-2023.html</loc><lastmod>2026-10-29</lastmod></url>
+  <url><loc>https://estante-livre-br.vercel.app/atos/lon-2024.html</loc><lastmod>2026-10-29</lastmod></url>
+  <url><loc>https://estante-livre-br.vercel.app/atos/df-2026.html</loc><lastmod>2026-10-29</lastmod></url>
+  <url><loc>https://estante-livre-br.vercel.app/atos/tau-2025.html</loc><lastmod>2026-10-29</lastmod></url>
+  <url><loc>https://estante-livre-br.vercel.app/atos/funap-2020.html</loc><lastmod>2026-10-29</lastmod></url>
+  <url><loc>https://estante-livre-br.vercel.app/atos/lim-2019.html</loc><lastmod>2026-10-29</lastmod></url>
 </urlset>

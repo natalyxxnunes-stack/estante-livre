@@ -1,137 +1,514 @@
 /* Estante Livre · dados do catálogo.
-   Para acrescentar um caso, copie um bloco de CASOS e edite.
-   Todas as páginas leem deste arquivo. */
+   A base tem quatro entidades, ligadas por chave:
+   - LIVROS (obras): o que a obra é. Chave: o nome da obra.
+   - ATOS: o documento ou episódio que gerou os registros, com órgão, governo e papéis. Chave: o código do ato.
+   - AGENTES e PAPEIS: pessoas e instituições com papel documentado em cada ato.
+   - CASOS (registros): um título atingido por um ato, com mecanismo, estágio, situação, alegação e fontes.
+   Para acrescentar um caso, copie um bloco de CASOS, aponte para a obra e o ato (criando-os se forem novos)
+   e rode  node scripts/gerar.js , que valida tudo. Todas as páginas leem deste arquivo. */
 
+/* ---------- REGISTROS ---------- */
 const CASOS = [
- {id:"EL-001", data:"2024-03-01", ato:"RS-2024", governo:"Eduardo Leite (PSDB) · governo do RS", fim:"2024-03-05", titulo:"O avesso da pele", autoria:"Jeferson Tenório", editora:"Companhia das Letras", pnld:true, capa:"avesso-da-pele", cidade:"Santa Cruz do Sul e outros 17 municípios", uf:"RS", tipo:"Escolar", rede:"Estadual", quem:"Coordenadoria regional de educação", alegacao:"“Vocabulário de baixo nível” · crítica da diretora Janaína Venzon, da Escola Estadual Ernesto Alves, em vídeo nas redes", eixo:"Linguagem e palavrão", modalidade:"Retirada", estagio:"Execução comprovada", situacao:"Revertido", desfecho:"Revertido", verificado:"Sim", fontes:["bdf-rs","pn-rs","icl-rs"], nota:"Depois do vídeo da diretora, um ofício do coordenador da 6ª Coordenadoria Regional de Educação, Luiz Ricardo Pinho de Moura, mandou retirar o livro das bibliotecas escolares de 18 municípios do Vale do Rio Pardo. A Secretaria estadual desautorizou a ordem no mesmo dia e a retirada durou poucas horas. Segundo a editora, a própria diretora havia assinado a ata de escolha da obra no PNLD. Foi o primeiro episódio de março de 2024; nas semanas seguintes vieram ordens no PR, em GO, no MS e em SC."},
- {id:"EL-002", data:"2024-03-04", ato:"PR-2024", governo:"Ratinho Júnior (PSD) · governo do PR", fim:"2024-04-09", titulo:"O avesso da pele", autoria:"Jeferson Tenório", editora:"Companhia das Letras", pnld:true, capa:"avesso-da-pele", cidade:"Curitiba e região", uf:"PR", tipo:"Escolar", rede:"Estadual", quem:"Secretaria estadual", alegacao:"Expressões, jargões e descrições de cenas de sexo que seriam “inadequados para exposição a menores de dezoito anos”", eixo:"Sexualidade e gênero", modalidade:"Retirada", estagio:"Execução comprovada", situacao:"Revertido", desfecho:"Revertido", verificado:"Sim", fontes:["cc-oficio","icl-pr","cc-pr","pn-volta"], nota:"A Secretaria encaminhou ofício assinado por Anderfábio Oliveira dos Santos, diretor de Educação; o Núcleo Regional de Educação de Curitiba também expediu ofício de teor semelhante, assinado por sua chefe, Laura Patrícia Lopes. A coleta foi programada para 5 a 8 de março. A Companhia das Letras foi à Justiça, e o livro voltou às escolas em abril de 2024, acompanhado de orientações pedagógicas."},
- {id:"EL-003", data:"2024-03-07", ato:"GO-2024", governo:"Ronaldo Caiado (União Brasil) · governo de GO", fim:"2024-04-09", titulo:"O avesso da pele", autoria:"Jeferson Tenório", editora:"Companhia das Letras", pnld:true, capa:"avesso-da-pele", cidade:"", uf:"GO", tipo:"Escolar", rede:"Estadual", quem:"Secretaria estadual", alegacao:"“Possibilitar uma análise do livro quanto ao atendimento da proposta pedagógica da rede”", eixo:"Linguagem e palavrão", modalidade:"Retirada", estagio:"Execução comprovada", situacao:"Revertido", desfecho:"Revertido", verificado:"Sim", fontes:["cc-go","pn-volta"], nota:"O livro voltou às escolas de Goiás em abril de 2024, um mês depois, junto com o Paraná."},
- {id:"EL-004", data:"2024-03-07", ato:"MS-2024", governo:"Eduardo Riedel (PSDB) · governo do MS", pressao:"Deputado estadual Rinaldo Modesto (Podemos)", fim:"2024-04-23", titulo:"O avesso da pele", autoria:"Jeferson Tenório", editora:"Companhia das Letras", pnld:true, capa:"avesso-da-pele", cidade:"", uf:"MS", tipo:"Escolar", rede:"Estadual", quem:"Governo estadual", alegacao:"“Expressões impróprias” para menores de 18 anos · termo usado pelo deputado estadual Rinaldo Modesto ao cobrar a retirada", eixo:"Linguagem e palavrão", modalidade:"Retirada", estagio:"Execução comprovada", situacao:"Revertido", desfecho:"Revertido", verificado:"Sim", fontes:["gp-estados","cgn-volta","cgn-alems","cc-ms-avesso"], pendencia:"Confirmar se o livro chegou de volta às 75 escolas", nota:"Na Assembleia, a crítica uniu deputados de partidos opostos: Rinaldo Modesto (Podemos) pediu a retirada, Lia Nogueira (PSDB) chamou o livro de “nojento” e Pedro Kemp (PT) disse ter “muitas reservas” sobre o uso no ensino médio. O governador Eduardo Riedel mandou recolher os exemplares das 75 escolas da rede que tinham recebido o livro. Em 23 de abril de 2024 a Secretaria de Educação anunciou a devolução às bibliotecas, “com as orientações pedagógicas quanto à indicação de uso”, sem detalhar quais."},
- {id:"EL-005", data:"2024-03-07", ato:"SC-2024", governo:"Jorginho Mello (PL) · governo de SC", titulo:"O avesso da pele", autoria:"Jeferson Tenório", editora:"Companhia das Letras", pnld:true, capa:"avesso-da-pele", cidade:"", uf:"SC", tipo:"Escolar", rede:"Estadual", quem:"Secretaria estadual", alegacao:"Evitar que obras para adolescentes e adultos cheguem a estudantes do ensino fundamental · exemplares redistribuídos para EJA e centros de educação profissional", eixo:"Sexualidade e gênero", modalidade:"Ocultação ou restrição de acesso", estagio:"Decisão ou ordem", situacao:"Em vigor", desfecho:"Mantido com restrição", verificado:"Parcialmente", fontes:["gp-estados"], pendencia:"Buscar segunda fonte", nota:"O governo anunciou análise de conteúdo e chamou a medida de revisão de acervo. Exemplo de restrição apresentada como gestão pedagógica."},
- {id:"EL-006", data:"2023-11-07", ato:"SC-2023", governo:"Jorginho Mello (PL) · governo de SC", titulo:"It: A coisa", autoria:"Stephen King", editora:"", cidade:"Coordenadoria regional", pendencia:"Identificar a coordenadoria regional", uf:"SC", tipo:"Escolar", rede:"Estadual", quem:"Secretaria estadual", alegacao:"Sem justificativa no ofício · determinava armazenar “em local não acessível à comunidade escolar”. A secretaria alegou depois “redistribuição por faixa etária”", eixo:"Sobrenatural e mágico", modalidade:"Ocultação ou restrição de acesso", estagio:"Decisão ou ordem", situacao:"Em aberto", desfecho:"Em aberto", verificado:"Sim", fontes:["cc-sc","gp-sc","p360-sc","cnn-sc","cf-sc","folha-sc"], nota:"Ofício assinado pelo supervisor regional de educação Waldemar Ronssem Júnior e pela integradora regional Anelise dos Santos de Medeiros: “Determinamos que as obras listadas abaixo sejam retiradas de circulação”. O suplente de vereador Leonel Camasão (PSOL) levou o caso ao Ministério Público estadual."},
- {id:"EL-007", data:"2023-11-07", ato:"SC-2023", governo:"Jorginho Mello (PL) · governo de SC", titulo:"Laranja Mecânica", autoria:"Anthony Burgess", editora:"", capa:"laranja-mecanica", cidade:"Coordenadoria regional", pendencia:"Identificar a coordenadoria regional", uf:"SC", tipo:"Escolar", rede:"Estadual", quem:"Secretaria estadual", alegacao:"Sem justificativa no ofício · determinava armazenar “em local não acessível à comunidade escolar”. A secretaria alegou depois “redistribuição por faixa etária”", eixo:"Violência", modalidade:"Ocultação ou restrição de acesso", estagio:"Decisão ou ordem", situacao:"Em aberto", desfecho:"Em aberto", verificado:"Sim", fontes:["cc-sc","gp-sc","p360-sc","cnn-sc","cf-sc","folha-sc"], nota:"Ofício assinado pelo supervisor regional de educação Waldemar Ronssem Júnior e pela integradora regional Anelise dos Santos de Medeiros: “Determinamos que as obras listadas abaixo sejam retiradas de circulação”. O suplente de vereador Leonel Camasão (PSOL) levou o caso ao Ministério Público estadual."},
- {id:"EL-008", data:"2023-11-07", ato:"SC-2023", governo:"Jorginho Mello (PL) · governo de SC", titulo:"Donnie Darko", autoria:"Richard Kelly", editora:"", cidade:"Coordenadoria regional", pendencia:"Identificar a coordenadoria regional", uf:"SC", tipo:"Escolar", rede:"Estadual", quem:"Secretaria estadual", alegacao:"Sem justificativa no ofício · determinava armazenar “em local não acessível à comunidade escolar”. A secretaria alegou depois “redistribuição por faixa etária”", eixo:"Sobrenatural e mágico", modalidade:"Ocultação ou restrição de acesso", estagio:"Decisão ou ordem", situacao:"Em aberto", desfecho:"Em aberto", verificado:"Sim", fontes:["cc-sc","gp-sc","p360-sc","cnn-sc","cf-sc","folha-sc"], nota:"Ofício assinado pelo supervisor regional de educação Waldemar Ronssem Júnior e pela integradora regional Anelise dos Santos de Medeiros: “Determinamos que as obras listadas abaixo sejam retiradas de circulação”. O suplente de vereador Leonel Camasão (PSOL) levou o caso ao Ministério Público estadual."},
- {id:"EL-009", data:"2023-11-07", ato:"SC-2023", governo:"Jorginho Mello (PL) · governo de SC", titulo:"Coração Satânico", autoria:"William Hjortsberg", editora:"", cidade:"Coordenadoria regional", pendencia:"Identificar a coordenadoria regional", uf:"SC", tipo:"Escolar", rede:"Estadual", quem:"Secretaria estadual", alegacao:"Sem justificativa no ofício · determinava armazenar “em local não acessível à comunidade escolar”. A secretaria alegou depois “redistribuição por faixa etária”", eixo:"Sobrenatural e mágico", modalidade:"Ocultação ou restrição de acesso", estagio:"Decisão ou ordem", situacao:"Em aberto", desfecho:"Em aberto", verificado:"Sim", fontes:["cc-sc","gp-sc","p360-sc","cnn-sc","cf-sc","folha-sc"], nota:"Ofício assinado pelo supervisor regional de educação Waldemar Ronssem Júnior e pela integradora regional Anelise dos Santos de Medeiros: “Determinamos que as obras listadas abaixo sejam retiradas de circulação”. O suplente de vereador Leonel Camasão (PSOL) levou o caso ao Ministério Público estadual."},
- {id:"EL-010", data:"2023-11-07", ato:"SC-2023", governo:"Jorginho Mello (PL) · governo de SC", titulo:"Exorcismo", autoria:"Thomas B. Allen", editora:"", cidade:"Coordenadoria regional", pendencia:"Identificar a coordenadoria regional", uf:"SC", tipo:"Escolar", rede:"Estadual", quem:"Secretaria estadual", alegacao:"Sem justificativa no ofício · determinava armazenar “em local não acessível à comunidade escolar”. A secretaria alegou depois “redistribuição por faixa etária”", eixo:"Sobrenatural e mágico", modalidade:"Ocultação ou restrição de acesso", estagio:"Decisão ou ordem", situacao:"Em aberto", desfecho:"Em aberto", verificado:"Sim", fontes:["cc-sc","gp-sc","p360-sc","cnn-sc","cf-sc","folha-sc"], nota:"Ofício assinado pelo supervisor regional de educação Waldemar Ronssem Júnior e pela integradora regional Anelise dos Santos de Medeiros: “Determinamos que as obras listadas abaixo sejam retiradas de circulação”. O suplente de vereador Leonel Camasão (PSOL) levou o caso ao Ministério Público estadual."},
- {id:"EL-011", data:"2023-11-07", ato:"SC-2023", governo:"Jorginho Mello (PL) · governo de SC", titulo:"Ed & Lorraine Warren: demonologistas — arquivos sobrenaturais", autoria:"Gerald Brittle", editora:"", cidade:"Coordenadoria regional", pendencia:"Identificar a coordenadoria regional", uf:"SC", tipo:"Escolar", rede:"Estadual", quem:"Secretaria estadual", alegacao:"Sem justificativa no ofício · determinava armazenar “em local não acessível à comunidade escolar”. A secretaria alegou depois “redistribuição por faixa etária”", eixo:"Sobrenatural e mágico", modalidade:"Ocultação ou restrição de acesso", estagio:"Decisão ou ordem", situacao:"Em aberto", desfecho:"Em aberto", verificado:"Sim", fontes:["cc-sc","gp-sc","p360-sc","cnn-sc","cf-sc","folha-sc"], nota:"Ofício assinado pelo supervisor regional de educação Waldemar Ronssem Júnior e pela integradora regional Anelise dos Santos de Medeiros: “Determinamos que as obras listadas abaixo sejam retiradas de circulação”. O suplente de vereador Leonel Camasão (PSOL) levou o caso ao Ministério Público estadual."},
- {id:"EL-012", data:"2023-11-07", ato:"SC-2023", governo:"Jorginho Mello (PL) · governo de SC", titulo:"O diário do diabo: os segredos de Alfred Rosenberg, o maior intelectual do nazismo", autoria:"Robert K. Wittman e David Kinney", editora:"", cidade:"Coordenadoria regional", pendencia:"Identificar a coordenadoria regional", uf:"SC", tipo:"Escolar", rede:"Estadual", quem:"Secretaria estadual", alegacao:"Sem justificativa no ofício · determinava armazenar “em local não acessível à comunidade escolar”. A secretaria alegou depois “redistribuição por faixa etária”", eixo:"Política e ideologia", modalidade:"Ocultação ou restrição de acesso", estagio:"Decisão ou ordem", situacao:"Em aberto", desfecho:"Em aberto", verificado:"Sim", fontes:["cc-sc","gp-sc","p360-sc","cnn-sc","cf-sc","folha-sc"], nota:"Ofício assinado pelo supervisor regional de educação Waldemar Ronssem Júnior e pela integradora regional Anelise dos Santos de Medeiros: “Determinamos que as obras listadas abaixo sejam retiradas de circulação”. O suplente de vereador Leonel Camasão (PSOL) levou o caso ao Ministério Público estadual."},
- {id:"EL-013", data:"2023-11-07", ato:"SC-2023", governo:"Jorginho Mello (PL) · governo de SC", titulo:"A química entre nós", autoria:"Larry Young e Brian Alexander", editora:"", cidade:"Coordenadoria regional", pendencia:"Identificar a coordenadoria regional", uf:"SC", tipo:"Escolar", rede:"Estadual", quem:"Secretaria estadual", alegacao:"Sem justificativa no ofício · determinava armazenar “em local não acessível à comunidade escolar”. A secretaria alegou depois “redistribuição por faixa etária”", eixo:"Sexualidade e gênero", modalidade:"Ocultação ou restrição de acesso", estagio:"Decisão ou ordem", situacao:"Em aberto", desfecho:"Em aberto", verificado:"Sim", fontes:["cc-sc","gp-sc","p360-sc","cnn-sc","cf-sc","folha-sc"], nota:"Ofício assinado pelo supervisor regional de educação Waldemar Ronssem Júnior e pela integradora regional Anelise dos Santos de Medeiros: “Determinamos que as obras listadas abaixo sejam retiradas de circulação”. O suplente de vereador Leonel Camasão (PSOL) levou o caso ao Ministério Público estadual."},
- {id:"EL-014", data:"2023-11-07", ato:"SC-2023", governo:"Jorginho Mello (PL) · governo de SC", titulo:"Os 13 porquês", autoria:"Jay Asher", editora:"", cidade:"Coordenadoria regional", pendencia:"Identificar a coordenadoria regional", uf:"SC", tipo:"Escolar", rede:"Estadual", quem:"Secretaria estadual", alegacao:"Sem justificativa no ofício · determinava armazenar “em local não acessível à comunidade escolar”. A secretaria alegou depois “redistribuição por faixa etária”", eixo:"Outro", modalidade:"Ocultação ou restrição de acesso", estagio:"Decisão ou ordem", situacao:"Em aberto", desfecho:"Em aberto", verificado:"Sim", fontes:["cc-sc","gp-sc","p360-sc","cnn-sc","cf-sc","folha-sc"], nota:"Ofício assinado pelo supervisor regional de educação Waldemar Ronssem Júnior e pela integradora regional Anelise dos Santos de Medeiros: “Determinamos que as obras listadas abaixo sejam retiradas de circulação”. O suplente de vereador Leonel Camasão (PSOL) levou o caso ao Ministério Público estadual."},
- {id:"EL-015", data:"2020-02-06", ato:"RO-2020", governo:"Marcos Rocha (PSL) · governo de RO", fim:"2020-02-06", titulo:"Macunaíma", autoria:"Mário de Andrade", editora:"", capa:"macunaima", cidade:"", uf:"RO", tipo:"Escolar", rede:"Estadual", quem:"Secretaria estadual", alegacao:"“Conteúdos inadequados às crianças e adolescentes”", eixo:"Política e ideologia", modalidade:"Retirada", estagio:"Decisão ou ordem", situacao:"Revertido", desfecho:"Ordem suspensa no mesmo dia; exemplares que chegaram a ser recolhidos foram devolvidos, segundo o MPF", verificado:"Parcialmente", fontes:["gp-ro","pn-ro","publico-ro","cc-ro","dp-ro","estudo-ro","mpf-ro-arquivamento"], pendencia:"Localizar a íntegra do processo SEI 0029.051300/2020-91, o resultado da sindicância administrativa da Seduc e a íntegra da recomendação do MP-RO. O MPF homologou o arquivamento do inquérito civil em 2021; isso não substitui a apuração administrativa estadual.", nota:"O Memorando-Circular nº 4/2020/SEDUC-DGE traz o nome do secretário Suamy Vivecananda no fecho; o registro eletrônico identifica Irany de Oliveira Lima Morais, diretora-geral de Educação, como signatária digital. A Seduc negou ter ordenado o recolhimento e afirmou que o processo foi encerrado antes de tramitar para escolas ou órgãos externos. Em decisão publicada no Diário do MPF em 30 de agosto de 2021, o órgão registrou que houve solicitação verbal de recolhimento, suspensa no mesmo dia, e que os livros que chegaram a ser recolhidos foram devolvidos às escolas. O MPF concluiu que o recolhimento não se concretizou, registrou a abertura de sindicância pela Seduc e a atuação do MP-RO, cuja recomendação foi acatada; o inquérito civil foi arquivado, com homologação do arquivamento pela Câmara competente. Um artigo acadêmico publicado em 2024 reproduz imagem do memorando e da relação de títulos. OAB-RO e Academia Brasileira de Letras enviaram notas de repúdio."},
- {id:"EL-016", data:"2020-02-06", ato:"RO-2020", governo:"Marcos Rocha (PSL) · governo de RO", fim:"2020-02-06", titulo:"Memórias póstumas de Brás Cubas", autoria:"Machado de Assis", editora:"", capa:"memorias-postumas", cidade:"", uf:"RO", tipo:"Escolar", rede:"Estadual", quem:"Secretaria estadual", alegacao:"“Conteúdos inadequados às crianças e adolescentes”", eixo:"Política e ideologia", modalidade:"Retirada", estagio:"Decisão ou ordem", situacao:"Revertido", desfecho:"Ordem suspensa no mesmo dia; exemplares que chegaram a ser recolhidos foram devolvidos, segundo o MPF", verificado:"Parcialmente", fontes:["gp-ro","pn-ro","publico-ro","cc-ro","dp-ro","estudo-ro","mpf-ro-arquivamento"], pendencia:"Localizar a íntegra do processo SEI 0029.051300/2020-91, o resultado da sindicância administrativa da Seduc e a íntegra da recomendação do MP-RO. O MPF homologou o arquivamento do inquérito civil em 2021; isso não substitui a apuração administrativa estadual.", nota:"O Memorando-Circular nº 4/2020/SEDUC-DGE traz o nome do secretário Suamy Vivecananda no fecho; o registro eletrônico identifica Irany de Oliveira Lima Morais, diretora-geral de Educação, como signatária digital. A Seduc negou ter ordenado o recolhimento e afirmou que o processo foi encerrado antes de tramitar para escolas ou órgãos externos. Em decisão publicada no Diário do MPF em 30 de agosto de 2021, o órgão registrou que houve solicitação verbal de recolhimento, suspensa no mesmo dia, e que os livros que chegaram a ser recolhidos foram devolvidos às escolas. O MPF concluiu que o recolhimento não se concretizou, registrou a abertura de sindicância pela Seduc e a atuação do MP-RO, cuja recomendação foi acatada; o inquérito civil foi arquivado, com homologação do arquivamento pela Câmara competente. Um artigo acadêmico publicado em 2024 reproduz imagem do memorando e da relação de títulos. OAB-RO e Academia Brasileira de Letras enviaram notas de repúdio."},
- {id:"EL-017", data:"2020-02-06", ato:"RO-2020", governo:"Marcos Rocha (PSL) · governo de RO", fim:"2020-02-06", titulo:"Os sertões", autoria:"Euclides da Cunha", editora:"", cidade:"", uf:"RO", tipo:"Escolar", rede:"Estadual", quem:"Secretaria estadual", alegacao:"“Conteúdos inadequados às crianças e adolescentes”", eixo:"Política e ideologia", modalidade:"Retirada", estagio:"Decisão ou ordem", situacao:"Revertido", desfecho:"Ordem suspensa no mesmo dia; exemplares que chegaram a ser recolhidos foram devolvidos, segundo o MPF", verificado:"Parcialmente", fontes:["gp-ro","pn-ro","publico-ro","cc-ro","dp-ro","estudo-ro","mpf-ro-arquivamento"], pendencia:"Localizar a íntegra do processo SEI 0029.051300/2020-91, o resultado da sindicância administrativa da Seduc e a íntegra da recomendação do MP-RO. O MPF homologou o arquivamento do inquérito civil em 2021; isso não substitui a apuração administrativa estadual.", nota:"O Memorando-Circular nº 4/2020/SEDUC-DGE traz o nome do secretário Suamy Vivecananda no fecho; o registro eletrônico identifica Irany de Oliveira Lima Morais, diretora-geral de Educação, como signatária digital. A Seduc negou ter ordenado o recolhimento e afirmou que o processo foi encerrado antes de tramitar para escolas ou órgãos externos. Em decisão publicada no Diário do MPF em 30 de agosto de 2021, o órgão registrou que houve solicitação verbal de recolhimento, suspensa no mesmo dia, e que os livros que chegaram a ser recolhidos foram devolvidos às escolas. O MPF concluiu que o recolhimento não se concretizou, registrou a abertura de sindicância pela Seduc e a atuação do MP-RO, cuja recomendação foi acatada; o inquérito civil foi arquivado, com homologação do arquivamento pela Câmara competente. Um artigo acadêmico publicado em 2024 reproduz imagem do memorando e da relação de títulos. OAB-RO e Academia Brasileira de Letras enviaram notas de repúdio."},
- {id:"EL-018", data:"2020-02-06", ato:"RO-2020", governo:"Marcos Rocha (PSL) · governo de RO", fim:"2020-02-06", titulo:"O castelo", autoria:"Franz Kafka", editora:"", cidade:"", uf:"RO", tipo:"Escolar", rede:"Estadual", quem:"Secretaria estadual", alegacao:"“Conteúdos inadequados às crianças e adolescentes”", eixo:"Política e ideologia", modalidade:"Retirada", estagio:"Decisão ou ordem", situacao:"Revertido", desfecho:"Ordem suspensa no mesmo dia; exemplares que chegaram a ser recolhidos foram devolvidos, segundo o MPF", verificado:"Parcialmente", fontes:["gp-ro","pn-ro","publico-ro","cc-ro","dp-ro","estudo-ro","mpf-ro-arquivamento"], pendencia:"Localizar a íntegra do processo SEI 0029.051300/2020-91, o resultado da sindicância administrativa da Seduc e a íntegra da recomendação do MP-RO. O MPF homologou o arquivamento do inquérito civil em 2021; isso não substitui a apuração administrativa estadual.", nota:"O Memorando-Circular nº 4/2020/SEDUC-DGE traz o nome do secretário Suamy Vivecananda no fecho; o registro eletrônico identifica Irany de Oliveira Lima Morais, diretora-geral de Educação, como signatária digital. A Seduc negou ter ordenado o recolhimento e afirmou que o processo foi encerrado antes de tramitar para escolas ou órgãos externos. Em decisão publicada no Diário do MPF em 30 de agosto de 2021, o órgão registrou que houve solicitação verbal de recolhimento, suspensa no mesmo dia, e que os livros que chegaram a ser recolhidos foram devolvidos às escolas. O MPF concluiu que o recolhimento não se concretizou, registrou a abertura de sindicância pela Seduc e a atuação do MP-RO, cuja recomendação foi acatada; o inquérito civil foi arquivado, com homologação do arquivamento pela Câmara competente. Um artigo acadêmico publicado em 2024 reproduz imagem do memorando e da relação de títulos. OAB-RO e Academia Brasileira de Letras enviaram notas de repúdio."},
- {id:"EL-019", data:"2020-02-06", ato:"RO-2020", governo:"Marcos Rocha (PSL) · governo de RO", fim:"2020-02-06", titulo:"Contos de terror, de mistério e de morte", autoria:"Edgar Allan Poe", editora:"", cidade:"", uf:"RO", tipo:"Escolar", rede:"Estadual", quem:"Secretaria estadual", alegacao:"“Conteúdos inadequados às crianças e adolescentes”", eixo:"Violência", modalidade:"Retirada", estagio:"Decisão ou ordem", situacao:"Revertido", desfecho:"Ordem suspensa no mesmo dia; exemplares que chegaram a ser recolhidos foram devolvidos, segundo o MPF", verificado:"Parcialmente", fontes:["gp-ro","pn-ro","publico-ro","cc-ro","dp-ro","estudo-ro","mpf-ro-arquivamento"], pendencia:"Localizar a íntegra do processo SEI 0029.051300/2020-91, o resultado da sindicância administrativa da Seduc e a íntegra da recomendação do MP-RO. O MPF homologou o arquivamento do inquérito civil em 2021; isso não substitui a apuração administrativa estadual.", nota:"O Memorando-Circular nº 4/2020/SEDUC-DGE traz o nome do secretário Suamy Vivecananda no fecho; o registro eletrônico identifica Irany de Oliveira Lima Morais, diretora-geral de Educação, como signatária digital. A Seduc negou ter ordenado o recolhimento e afirmou que o processo foi encerrado antes de tramitar para escolas ou órgãos externos. Em decisão publicada no Diário do MPF em 30 de agosto de 2021, o órgão registrou que houve solicitação verbal de recolhimento, suspensa no mesmo dia, e que os livros que chegaram a ser recolhidos foram devolvidos às escolas. O MPF concluiu que o recolhimento não se concretizou, registrou a abertura de sindicância pela Seduc e a atuação do MP-RO, cuja recomendação foi acatada; o inquérito civil foi arquivado, com homologação do arquivamento pela Câmara competente. Um artigo acadêmico publicado em 2024 reproduz imagem do memorando e da relação de títulos. OAB-RO e Academia Brasileira de Letras enviaram notas de repúdio."},
- {id:"EL-020", data:"2020-02-06", ato:"RO-2020", governo:"Marcos Rocha (PSL) · governo de RO", fim:"2020-02-06", titulo:"A vida como ela é", autoria:"Nelson Rodrigues", editora:"", cidade:"", uf:"RO", tipo:"Escolar", rede:"Estadual", quem:"Secretaria estadual", alegacao:"“Conteúdos inadequados às crianças e adolescentes”", eixo:"Sexualidade e gênero", modalidade:"Retirada", estagio:"Decisão ou ordem", situacao:"Revertido", desfecho:"Ordem suspensa no mesmo dia; exemplares que chegaram a ser recolhidos foram devolvidos, segundo o MPF", verificado:"Parcialmente", fontes:["gp-ro","pn-ro","publico-ro","cc-ro","dp-ro","estudo-ro","mpf-ro-arquivamento"], pendencia:"Localizar a íntegra do processo SEI 0029.051300/2020-91, o resultado da sindicância administrativa da Seduc e a íntegra da recomendação do MP-RO. O MPF homologou o arquivamento do inquérito civil em 2021; isso não substitui a apuração administrativa estadual.", nota:"O Memorando-Circular nº 4/2020/SEDUC-DGE traz o nome do secretário Suamy Vivecananda no fecho; o registro eletrônico identifica Irany de Oliveira Lima Morais, diretora-geral de Educação, como signatária digital. A Seduc negou ter ordenado o recolhimento e afirmou que o processo foi encerrado antes de tramitar para escolas ou órgãos externos. Em decisão publicada no Diário do MPF em 30 de agosto de 2021, o órgão registrou que houve solicitação verbal de recolhimento, suspensa no mesmo dia, e que os livros que chegaram a ser recolhidos foram devolvidos às escolas. O MPF concluiu que o recolhimento não se concretizou, registrou a abertura de sindicância pela Seduc e a atuação do MP-RO, cuja recomendação foi acatada; o inquérito civil foi arquivado, com homologação do arquivamento pela Câmara competente. Um artigo acadêmico publicado em 2024 reproduz imagem do memorando e da relação de títulos. OAB-RO e Academia Brasileira de Letras enviaram notas de repúdio."},
- {id:"EL-021", data:"2020-02-06", ato:"RO-2020", governo:"Marcos Rocha (PSL) · governo de RO", fim:"2020-02-06", titulo:"Beijo no asfalto", autoria:"Nelson Rodrigues", editora:"", cidade:"", uf:"RO", tipo:"Escolar", rede:"Estadual", quem:"Secretaria estadual", alegacao:"“Conteúdos inadequados às crianças e adolescentes”", eixo:"Sexualidade e gênero", modalidade:"Retirada", estagio:"Decisão ou ordem", situacao:"Revertido", desfecho:"Ordem suspensa no mesmo dia; exemplares que chegaram a ser recolhidos foram devolvidos, segundo o MPF", verificado:"Parcialmente", fontes:["gp-ro","pn-ro","publico-ro","cc-ro","dp-ro","estudo-ro","mpf-ro-arquivamento"], pendencia:"Localizar a íntegra do processo SEI 0029.051300/2020-91, o resultado da sindicância administrativa da Seduc e a íntegra da recomendação do MP-RO. O MPF homologou o arquivamento do inquérito civil em 2021; isso não substitui a apuração administrativa estadual.", nota:"O Memorando-Circular nº 4/2020/SEDUC-DGE traz o nome do secretário Suamy Vivecananda no fecho; o registro eletrônico identifica Irany de Oliveira Lima Morais, diretora-geral de Educação, como signatária digital. A Seduc negou ter ordenado o recolhimento e afirmou que o processo foi encerrado antes de tramitar para escolas ou órgãos externos. Em decisão publicada no Diário do MPF em 30 de agosto de 2021, o órgão registrou que houve solicitação verbal de recolhimento, suspensa no mesmo dia, e que os livros que chegaram a ser recolhidos foram devolvidos às escolas. O MPF concluiu que o recolhimento não se concretizou, registrou a abertura de sindicância pela Seduc e a atuação do MP-RO, cuja recomendação foi acatada; o inquérito civil foi arquivado, com homologação do arquivamento pela Câmara competente. Um artigo acadêmico publicado em 2024 reproduz imagem do memorando e da relação de títulos. OAB-RO e Academia Brasileira de Letras enviaram notas de repúdio."},
- {id:"EL-022", data:"2020-02-06", ato:"RO-2020", governo:"Marcos Rocha (PSL) · governo de RO", fim:"2020-02-06", conjunto:true, titulo:"Obra de Rubem Fonseca (19 títulos)", autoria:"Rubem Fonseca", editora:"", capaVazia:"19 títulos do mesmo autor", cidade:"", uf:"RO", tipo:"Escolar", rede:"Estadual", quem:"Secretaria estadual", alegacao:"“Conteúdos inadequados às crianças e adolescentes”", eixo:"Violência", modalidade:"Retirada", estagio:"Decisão ou ordem", situacao:"Revertido", desfecho:"Ordem suspensa no mesmo dia; exemplares que chegaram a ser recolhidos foram devolvidos, segundo o MPF", verificado:"Parcialmente", fontes:["gp-ro","pn-ro","publico-ro","cc-ro","dp-ro","estudo-ro","mpf-ro-arquivamento"], pendencia:"Desmembrar nos 19 títulos", nota:"O Memorando-Circular nº 4/2020/SEDUC-DGE traz o nome do secretário Suamy Vivecananda no fecho; o registro eletrônico identifica Irany de Oliveira Lima Morais, diretora-geral de Educação, como signatária digital. A Seduc negou ter ordenado o recolhimento e afirmou que o processo foi encerrado antes de tramitar para escolas ou órgãos externos. Em decisão publicada no Diário do MPF em 30 de agosto de 2021, o órgão registrou que houve solicitação verbal de recolhimento, suspensa no mesmo dia, e que os livros que chegaram a ser recolhidos foram devolvidos às escolas. O MPF concluiu que o recolhimento não se concretizou, registrou a abertura de sindicância pela Seduc e a atuação do MP-RO, cuja recomendação foi acatada; o inquérito civil foi arquivado, com homologação do arquivamento pela Câmara competente. Um artigo acadêmico publicado em 2024 reproduz imagem do memorando e da relação de títulos. OAB-RO e Academia Brasileira de Letras enviaram notas de repúdio."},
- {id:"EL-023", data:"2020-02-06", ato:"RO-2020", governo:"Marcos Rocha (PSL) · governo de RO", fim:"2020-02-06", conjunto:true, titulo:"Obra completa de Rubem Alves", autoria:"Rubem Alves", editora:"", capaVazia:"Obra completa, sem lista", cidade:"", uf:"RO", tipo:"Escolar", rede:"Estadual", quem:"Secretaria estadual", alegacao:"“Conteúdos inadequados às crianças e adolescentes”", eixo:"Política e ideologia", modalidade:"Retirada", estagio:"Decisão ou ordem", situacao:"Revertido", desfecho:"Ordem suspensa no mesmo dia; exemplares que chegaram a ser recolhidos foram devolvidos, segundo o MPF", verificado:"Parcialmente", fontes:["gp-ro","pn-ro","publico-ro","cc-ro","dp-ro","estudo-ro","mpf-ro-arquivamento"], pendencia:"Sem relação de títulos", nota:"O Memorando-Circular nº 4/2020/SEDUC-DGE traz o nome do secretário Suamy Vivecananda no fecho; o registro eletrônico identifica Irany de Oliveira Lima Morais, diretora-geral de Educação, como signatária digital. A Seduc negou ter ordenado o recolhimento e afirmou que o processo foi encerrado antes de tramitar para escolas ou órgãos externos. Em decisão publicada no Diário do MPF em 30 de agosto de 2021, o órgão registrou que houve solicitação verbal de recolhimento, suspensa no mesmo dia, e que os livros que chegaram a ser recolhidos foram devolvidos às escolas. O MPF concluiu que o recolhimento não se concretizou, registrou a abertura de sindicância pela Seduc e a atuação do MP-RO, cuja recomendação foi acatada; o inquérito civil foi arquivado, com homologação do arquivamento pela Câmara competente. Um artigo acadêmico publicado em 2024 reproduz imagem do memorando e da relação de títulos. OAB-RO e Academia Brasileira de Letras enviaram notas de repúdio."},
- {id:"EL-024", data:"2020-02-06", ato:"RO-2020", governo:"Marcos Rocha (PSL) · governo de RO", fim:"2020-02-06", conjunto:true, titulo:"Demais títulos da lista de Rondônia", autoria:"Vários, entre eles Caio Fernando Abreu, Carlos Heitor Cony e Ferreira Gullar", editora:"", capaVazia:"Títulos não identificados nas fontes", cidade:"", uf:"RO", tipo:"Escolar", rede:"Estadual", quem:"Secretaria estadual", alegacao:"“Conteúdos inadequados às crianças e adolescentes”", eixo:"Outro", modalidade:"Retirada", estagio:"Decisão ou ordem", situacao:"Revertido", desfecho:"Ordem suspensa no mesmo dia; exemplares que chegaram a ser recolhidos foram devolvidos, segundo o MPF", verificado:"Parcialmente", fontes:["gp-ro","pn-ro","publico-ro","cc-ro","dp-ro","estudo-ro","mpf-ro-arquivamento"], pendencia:"Obter o Adendo ID 10053329", nota:"O Memorando-Circular nº 4/2020/SEDUC-DGE traz o nome do secretário Suamy Vivecananda no fecho; o registro eletrônico identifica Irany de Oliveira Lima Morais, diretora-geral de Educação, como signatária digital. A Seduc negou ter ordenado o recolhimento e afirmou que o processo foi encerrado antes de tramitar para escolas ou órgãos externos. Em decisão publicada no Diário do MPF em 30 de agosto de 2021, o órgão registrou que houve solicitação verbal de recolhimento, suspensa no mesmo dia, e que os livros que chegaram a ser recolhidos foram devolvidos às escolas. O MPF concluiu que o recolhimento não se concretizou, registrou a abertura de sindicância pela Seduc e a atuação do MP-RO, cuja recomendação foi acatada; o inquérito civil foi arquivado, com homologação do arquivamento pela Câmara competente. Um artigo acadêmico publicado em 2024 reproduz imagem do memorando e da relação de títulos. OAB-RO e Academia Brasileira de Letras enviaram notas de repúdio."},
- {id:"EL-025", data:"2021-06-11", ato:"PALM-2021", governo:"Jair Bolsonaro · governo federal", pressao:"Sérgio Camargo, então presidente da Fundação Cultural Palmares, apresentou o relatório e defendeu a retirada dos exemplares classificados pela gestão como de temática alheia à negra.", conjunto:true, titulo:"Anúncio de descarte de 5.165 exemplares classificados como de “temática alheia à negra”", autoria:"Vários, entre eles Karl Marx, Max Weber, Eric Hobsbawm, Celso Furtado, Caio Prado Jr. e Machado de Assis", editora:"", capaVazia:"Relatório não oferece catálogo completo título a título", cidade:"Brasília", uf:"DF", tipo:"Especializada", rede:"Federal", quem:"Presidência da Fundação Cultural Palmares", alegacao:"Relatório “Retrato do Acervo: três décadas de dominação marxista na Fundação Cultural Palmares” · classificação de 5.165 exemplares como de “temática alheia à negra”", eixo:"Política e ideologia", modalidade:"Descarte ou destruição", estagio:"Decisão ou ordem", situacao:"Em aberto", desfecho:"Destino final dos 5.165 exemplares não comprovado", verificado:"Parcialmente", fontes:["em-palmares","sbt-palm","gp-palmares","opovo-palm","palmares-inventario","palmares-politica","relatorio-palmares-original","unesp-palmares"], pendencia:"Conferir no relatório original e em seu anexo a divergência de total do acervo: 9.565 exemplares na reportagem contemporânea do Estado de Minas e 9.546 obras na reportagem da Unesp. Recuperar a relação completa dos 5.165 exemplares e documentos sobre seu destino final. Não confundir exemplares com títulos nem com o conjunto distinto de cerca de 300 livros do EL-026.", nota:"A reportagem contemporânea do Estado de Minas atribuiu ao relatório a informação de que o acervo tinha 9.565 exemplares e classificou 5.165 (54%) como de temática alheia à negra. O Jornal da Unesp, também em junho de 2021, informou total de 9.546 obras e 478 títulos considerados adequados. Como os totais publicados divergem, o número-base precisa ser conferido diretamente no relatório e em seus anexos. Em qualquer caso, 5.165 é apresentado como quantidade de exemplares, não de títulos distintos. Não foi localizada comprovação de que esse conjunto tenha sido descartado ou doado. A decisão judicial sobre doação de cerca de 300 livros é tratada separadamente no EL-026. O inventário publicado pela Fundação em agosto de 2024 registra 9.696 títulos, levantamento posterior e unidade de contagem distinta."},
- {id:"EL-026", data:"2021-08-03", ato:"PALM-2021", governo:"Jair Bolsonaro · governo federal", pressao:"Sérgio Camargo, então presidente da Fundação Cultural Palmares, anunciou em suas redes a criação de uma “Ala/Acervo da Vergonha” para livros que classificava como marxistas, bandidólatras ou desviantes.", conjunto:true, titulo:"Segregação de cerca de 300 livros no chamado “Acervo da Vergonha”", autoria:"Vários, entre eles Antonio Gramsci, Marilena Chauí, Simone de Beauvoir, Karl Marx e Celso Furtado", editora:"", capaVazia:"Cerca de 300 livros; lista título a título a confirmar", cidade:"Brasília", uf:"DF", tipo:"Especializada", rede:"Federal", quem:"Presidência da Fundação Cultural Palmares", alegacao:"Camargo chamou as obras de “bibliografia imprestável para a Palmares”, “marxistas” e “bandidólatras”.", eixo:"Política e ideologia", modalidade:"Ocultação ou restrição de acesso", estagio:"Decisão ou ordem", situacao:"Em aberto", desfecho:"Segregação anunciada; acesso público posterior não verificado", verificado:"Parcialmente", fontes:["opovo-palm","sbt-museu","oglobo-palm-300","oglobo-palm-ala"], pendencia:"Obter inventário dos cerca de 300 livros, comprovar se foram fisicamente separados, por quanto tempo e quando voltaram à consulta pública.", nota:"A Justiça Federal já havia impedido a doação de cerca de 300 livros. Em 23 de julho de 2021, a Procuradoria-Geral Federal informou ao juízo que Sérgio Camargo desistira da doação, ao menos naquele momento. Em 3 de agosto, Camargo anunciou a criação de uma seção/sala para separar os livros que chamava de “vergonhosos e desviantes”. O anúncio público está documentado; a duração e o regime efetivo de acesso à sala ainda precisam de comprovação."},
- {id:"EL-027", data:"2024-06-19", ato:"MG-2024", governo:"Prefeitura de Conselheiro Lafaiete · gestão Mário Marcus Leão Dutra", pressao:"Pais, familiares e autoridades locais contestaram a abordagem pedagógica da obra; o comunicado oficial não identifica nominalmente os reclamantes.", fim:"2024-06-27", titulo:"O menino marrom", autoria:"Ziraldo", editora:"Melhoramentos", capa:"menino-marrom", cidade:"Conselheiro Lafaiete", uf:"MG", tipo:"Escolar", rede:"Municipal", quem:"Secretaria Municipal de Educação", alegacao:"Pais consideraram a obra “agressiva”, citando passagens sobre pacto de sangue e conflitos entre personagens.", eixo:"Cultura afro-brasileira", modalidade:"Veto a atividade", estagio:"Decisão ou ordem", situacao:"Revertido", desfecho:"Suspensão cancelada por decisão liminar", verificado:"Sim", fontes:["pn-ziraldo","dp-ziraldo","comunicado-lafaiete","decisao-lafaiete"], pendencia:"Identificar o signatário formal do ato administrativo e confirmar o trânsito em julgado da ação popular.", nota:"Em comunicado oficial de 20 de junho, a Secretaria Municipal de Educação afirmou que orientou a suspensão temporária dos trabalhos pedagógicos com o livro após manifestações de pais, familiares e autoridades locais — não declarou recolhimento de todos os exemplares. Em decisão liminar assinada em 27 de junho de 2024, o juiz Espagner Wallysen Vaz Leite, da 1ª Vara Cível, determinou o cancelamento imediato da suspensão temporária, sob multa diária de R$ 5 mil. A cópia consultada não permite identificar o autor da ação, cujo nome aparece ocultado."},
- {id:"EL-028", data:"2024-06-04", ato:"SJC-2024", governo:"Anderson Farias (PSD) · prefeitura de São José dos Campos", pressao:"Thomaz Henrique (PL), vereador, que acusou a obra de “apologia ao aborto” e “doutrinação ideológica” por incluir Marielle Franco e Débora Diniz.", fim:"2026-07-20", titulo:"Meninas sonhadoras, mulheres cientistas", autoria:"Flávia Martins de Carvalho", editora:"Mostarda", capa:"meninas-sonhadoras", cidade:"São José dos Campos", uf:"SP", tipo:"Escolar", rede:"Municipal", quem:"Secretaria Municipal de Educação e Cidadania", alegacao:"O vereador afirmou que a obra faria “apologia ao aborto” e promoveria “doutrinação ideológica”. A prefeitura apresentou justificativa técnico-pedagógica posteriormente.", eixo:"Sexualidade e gênero", modalidade:"Retirada", estagio:"Execução comprovada", situacao:"Revertido", desfecho:"Justiça determinou devolução e proibiu nova restrição político-ideológica", verificado:"Parcialmente", fontes:["pn-sjc","ap-sjc","op-sjc","migalhas-sjc","folha-sjc-ordem","uol-sjc-ordem"], pendencia:"Obter a sentença integral e comprovar o cumprimento da ordem de devolução; o processo tramita sob segredo de Justiça.", nota:"O livro foi recolhido das salas de leitura da rede municipal em junho de 2024, após a pressão pública do vereador. Segundo a apuração divulgada com base no processo, a ordem de retirada foi transmitida aos diretores por mensagens de WhatsApp, sem justificativa técnico-pedagógica contemporânea. Em 20 de julho de 2026, a juíza Renata Heloísa da Silva Salles, da Vara da Infância e Juventude, determinou que o município restituísse os exemplares às salas de leitura e bibliotecas das escolas onde integravam o acervo, no prazo de cinco dias a partir da intimação. A decisão também proibiu novas restrições político-ideológicas e fixou multa diária de R$ 500, limitada inicialmente a R$ 50 mil. A cobertura informa que a prefeitura ainda não havia respondido sobre o cumprimento da ordem; portanto, a devolução efetiva permanece sem confirmação pública."},
- {id:"EL-029", data:"2023-04-26", ato:"UNIRV-2023", governo:"UniRV · universidade municipal de Rio Verde", pressao:"Deputado federal Gustavo Gayer (PL-GO), que publicou vídeo chamando a obra de “pornográfica”.", titulo:"Eu receberia as piores notícias de seus lindos lábios", autoria:"Marçal Aquino", editora:"Companhia das Letras", capa:"piores-noticias", cidade:"Rio Verde", uf:"GO", tipo:"Universitária", rede:"Municipal", quem:"Coordenação do Vestibular da Universidade de Rio Verde (UniRV)", alegacao:"O parlamentar classificou a obra como “pornográfica”; a universidade afirmou que a polêmica pesou na exclusão.", eixo:"Sexualidade e gênero", modalidade:"Exclusão de lista de leitura", estagio:"Execução comprovada", situacao:"Em vigor", desfecho:"Retirado da lista; decisão institucional confirmada", verificado:"Parcialmente", fontes:["fp-unirv","jo-unirv","folha-unirv","unirv-nota"], pendencia:"Identificar nominalmente quem compunha a Coordenação do Vestibular e quem formalizou a decisão; a nota pública identifica o órgão decisor, mas não traz ata ou despacho nominal.", nota:"A nota oficial da UniRV, datada de 26 de abril de 2023 e publicada no site em 27 de abril, afirma que a Coordenação do Vestibular decidiu pela exclusão imediata da obra depois de tomar conhecimento do conteúdo e da polêmica. A universidade também registra que a indicação original havia sido feita por uma banca de professores. A nota não identifica nominalmente quem, dentro da Coordenação, tomou a decisão."},
- {id:"EL-030", data:"2024-11-26", ato:"LON-2024", governo:"Marcelo Belinati (PP) · prefeitura de Londrina", pressao:"Jéssica Ramos Moreno (PP), vereadora, encontrou a obra durante vistoria em creche após denúncia de uma família e apresentou requerimento pedindo seu recolhimento.", fim:"2025-03-21", obra:"A mamãe vai ter um bebê", titulo:"Pedido de recolhimento de A mamãe vai ter um bebê e aprovação da Lei nº 13.930/2025", autoria:"", editora:"", capaVazia:"Capa não disponível", cidade:"Londrina", uf:"PR", tipo:"Escolar", rede:"Municipal", quem:"Vereadora Jéssica Ramos Moreno (PP) · Secretaria Municipal de Educação como destinatária do pedido", alegacao:"A vereadora classificou como inadequada para crianças uma ilustração de casal sob um edredom em contexto de reprodução humana.", eixo:"Sexualidade e gênero", modalidade:"Retirada", estagio:"Pedido formal", situacao:"Em aberto", desfecho:"Pedido apresentado; resposta e execução não comprovadas. PL 79/2024 sancionado como Lei nº 13.930/2025.", verificado:"Parcialmente", fontes:["fl-londrina","bp-londrina","lei-londrina-13930","pedido-londrina"], pendencia:"Obter cópia integral do requerimento protocolado pela vereadora e resposta da Secretaria; confirmar se houve recolhimento efetivo e eventual devolução do exemplar.", nota:"Em 26 de novembro de 2024, a vereadora Jéssica Ramos Moreno (PP) divulgou que encontrou o livro em uma creche e pediu à Secretaria Municipal de Educação que o recolhesse. A reportagem contemporânea informou que a Secretaria ainda não havia respondido oficialmente ao requerimento; portanto, a retirada não está comprovada. Separadamente, o PL 79/2024, de autoria da vereadora, foi sancionado em 21 de março de 2025 como Lei Municipal nº 13.930, que proíbe uso e distribuição de livros com conteúdo erótico nas escolas municipais, com exceção para informação científico-biológica sobre reprodução adequada à idade. A lei não comprova, por si, a retirada deste exemplar."},
- {id:"EL-031", data:"2026-05-15", ato:"DF-2026", governo:"Colégio Militar Dom Pedro II · instituição administrada pelo Corpo de Bombeiros Militar do Distrito Federal", pressao:"Pais de alunos do 4º ano contestaram, em grupos de mensagens, o uso de uma resenha da obra em atividade de interpretação.", obra:"A bolsa amarela", titulo:"Controvérsia sobre atividade com resenha de A bolsa amarela", autoria:"Lygia Bojunga", editora:"", cidade:"Brasília", uf:"DF", tipo:"Escolar", rede:"Distrital", quem:"Colégio Militar Dom Pedro II", alegacao:"Pais consideraram inadequada para crianças de cerca de 9 anos uma passagem em que a protagonista deseja ter nascido menino.", eixo:"Sexualidade e gênero", modalidade:"Veto a atividade", estagio:"Pressão pública", situacao:"Sem efeito", desfecho:"Sem retirada de exemplares ou veto à obra comprovado", verificado:"Parcialmente", fontes:["met-bolsa1","met-bolsa2","piaui-bolsa"], pendencia:"Obter a nota oficial integral do colégio e esclarecer documentalmente se houve suspensão formal da atividade ou apenas encerramento do exercício já aplicado.", nota:"A apuração da revista piauí esclareceu que o colégio não havia adotado A bolsa amarela como leitura obrigatória nem retirado exemplares do acervo. O episódio envolveu um link para uma resenha utilizado em exercício de Língua Portuguesa. A escola declarou que a atividade atendia aos objetivos de leitura e interpretação; após a repercussão e o término do exercício, o link não voltou a ser utilizado. Este registro documenta pressão sobre uma atividade, não banimento ou retirada do livro."},
- {id:"EL-032", data:"2025-11-01", ato:"TAU-2025", governo:"Sérgio Victor (Novo) · prefeitura de Taubaté", pressao:"Zelinda Pastora (PRD), vereadora da base governista, declarou que pediu ao secretário de Educação o recolhimento após reclamação de uma mãe.", titulo:"Pipoca e Picolé", autoria:"Adriana Lisboa", editora:"Elo", capaVazia:"Capa não disponível", cidade:"Taubaté", uf:"SP", tipo:"Escolar", rede:"Municipal", quem:"Secretaria Municipal de Educação", alegacao:"A vereadora contestou a representação de uma família com duas mães e um pai e declarou: “Nós não vamos aceitar material como esse na nossa sala de aula”.", eixo:"Sexualidade e gênero", modalidade:"Retirada", estagio:"Execução comprovada", situacao:"Revertido", desfecho:"Prefeitura anunciou retorno ao uso pedagógico após análise técnica, em turmas consideradas adequadas; cumprimento nas escolas não verificado", verificado:"Parcialmente", fontes:["ovale-tau","ovale-tau-abr10","ovale-tau-jul14"], pendencia:"Obter o requerimento parlamentar, a resposta integral da prefeitura e o parecer técnico; confirmar a efetiva redistribuição dos exemplares às escolas e quais turmas foram consideradas adequadas.", nota:"A vereadora Zelinda Pastora (PRD) afirmou que pediu ao secretário Hélcio Carvalho dos Santos o recolhimento, após reclamação de uma mãe. A prefeitura confirmou à Câmara que retirou a obra. Em abril de 2026, informou que os exemplares estavam na Secretaria para análise técnica. Em 14 de julho de 2026, a prefeitura informou à imprensa que, após análise da Coordenação de Área e da Equipe de Práticas Pedagógicas da Educação Infantil, o livro voltaria a ser utilizado no plano de ensino das turmas consideradas adequadas. A notícia confirma a decisão administrativa de retomada, mas não comprova quando e em quais unidades os exemplares foram efetivamente devolvidos."},
- {id:"EL-033", data:"2020-02-11", ato:"FUNAP-2020", governo:"João Doria (PSDB) · governo de São Paulo", pressao:"A lista de doze livros do projeto Remição em Rede foi vetada pela Funap; a articuladora do projeto, Janine Durand, relatou que três títulos foram considerados inadequados, sem identificação pública.", fim:"2020-02-13", conjunto:true, titulo:"Veto à lista de doze livros do projeto Remição em Rede", autoria:"Vários, entre eles Gabriel García Márquez, Albert Camus, Harper Lee, Isabela Figueiredo e Édouard Louis", editora:"Record, Planeta, Todavia e Boitempo", capaVazia:"12 títulos; 240 exemplares doados pelas editoras", cidade:"São Paulo", uf:"SP", tipo:"Especializada", rede:"Estadual", quem:"Fundação Prof. Dr. Manoel Pedro Pimentel (Funap)", alegacao:"Em mensagem à articuladora, a Funap afirmou que um título não atendia às expectativas da gestão; em reunião, foram mencionadas três obras como problemáticas, sem identificação pública.", eixo:"Outro", modalidade:"Veto a aquisição ou doação", estagio:"Decisão ou ordem", situacao:"Revertido", desfecho:"Funap determinou a inclusão da lista original em 13 de fevereiro de 2020, após repercussão pública", verificado:"Parcialmente", fontes:["bdf-funap","reimao-2023","folha-funap-11fev","folha-funap-14fev"], pendencia:"Obter a mensagem original de Reginaldo Caetano da Silva, a ata da reunião de 13/02/2020 e a nota integral da Funap; identificar as três obras questionadas e confirmar a distribuição dos 240 exemplares aos presídios.", nota:"Em agosto de 2019, as editoras doaram 240 exemplares de doze títulos para a expansão do projeto. Segundo Janine Durand, articuladora do Remição em Rede, a lista completa foi riscada pelo então diretor-executivo da Funap, coronel Henrique Pereira de Souza Neto, e os livros não foram enviados aos presídios. A Folha identificou Reginaldo Caetano da Silva, superintendente da Diretoria de Atendimento e Promoção Humana, como autor de mensagem de 3 de dezembro que dizia que um título não atendia às expectativas da gestão; em reunião, segundo Durand, foram mencionadas três obras, mas sem identificação. Em 13 de fevereiro de 2020, a Funap determinou a inclusão da lista inicialmente indicada e anunciou uma equipe multidisciplinar para tratar da escolha das obras. A reportagem de 14 de fevereiro do Brasil de Fato registra o recuo após a repercussão pública. A distribuição efetiva dos 240 exemplares após a reversão ainda não foi comprovada."},
- {id:"EL-034", data:"2019-08-12", ato:"LIM-2019", governo:"Prefeitura de Limeira · gestão municipal em 2019", pressao:"Clayton Silva (PSC), vereador, apresentou requerimento com perguntas sobre a distribuição e leitura da obra e afirmou que ela abordava a chamada “ideologia de gênero”.", fim:"2019-10-15", obra:"A bolsa amarela", titulo:"Questionamento parlamentar sobre A bolsa amarela — sem retirada comprovada", autoria:"Lygia Bojunga", editora:"", capaVazia:"Capa não disponível", cidade:"Limeira", uf:"SP", tipo:"Escolar", rede:"Municipal", quem:"Vereador Clayton Silva (PSC)", alegacao:"No requerimento, o vereador perguntou se o livro afrontava princípios morais de pais e alunos e chamou sua temática de “ideologia de gênero”.", eixo:"Sexualidade e gênero", modalidade:"Veto a atividade", estagio:"Pressão pública", situacao:"Sem efeito", desfecho:"Sem retirada: Secretaria defendeu a obra e manteve o projeto de leitura", verificado:"Sim", fontes:["reimao-2023","uninter-bolsa","camara-limeira-req","camara-limeira-resp"], nota:"O Requerimento nº 451/2019, de autoria de Clayton Silva (PSC), pediu informações sobre distribuição, atividades e critérios de escolha de A bolsa amarela. Na justificativa, o vereador afirmou que o livro abordava “ideologia de gênero” e questionou se afrontava princípios morais. A Secretaria Municipal de Educação respondeu em 24 de setembro que a obra integrava o Clube de Leitura, descreveu seu valor literário e declarou que ela não afrontava princípios morais. O documento não registra pedido de retirada nem retirada da obra. Este caso documenta pressão discursiva e questionamento parlamentar, não censura ou banimento."},
+ {id:"EL-001", ato:"RS-2024", obra:"O avesso da pele", alegacao:"“Vocabulário de baixo nível” · crítica da diretora Janaína Venzon, da Escola Estadual Ernesto Alves, em vídeo nas redes", eixo:"Linguagem e palavrão", modalidade:"Retirada", estagio:"Execução comprovada", situacao:"Revertido", desfecho:"Revertido", verificado:"Sim", fontes:["bdf-rs","pn-rs","icl-rs"], nota:"Depois do vídeo da diretora, um ofício do coordenador da 6ª Coordenadoria Regional de Educação, Luiz Ricardo Pinho de Moura, mandou retirar o livro das bibliotecas escolares de 18 municípios do Vale do Rio Pardo. A Secretaria estadual desautorizou a ordem no mesmo dia e a retirada durou poucas horas. Segundo a editora, a própria diretora havia assinado a ata de escolha da obra no PNLD. Foi o primeiro episódio de março de 2024; nas semanas seguintes vieram ordens no PR, em GO, no MS e em SC."},
+ {id:"EL-002", ato:"PR-2024", obra:"O avesso da pele", alegacao:"Expressões, jargões e descrições de cenas de sexo que seriam “inadequados para exposição a menores de dezoito anos”", eixo:"Sexualidade e gênero", modalidade:"Retirada", estagio:"Execução comprovada", situacao:"Revertido", desfecho:"Revertido", verificado:"Sim", fontes:["cc-oficio","icl-pr","cc-pr","pn-volta"], nota:"A Secretaria encaminhou ofício assinado por Anderfábio Oliveira dos Santos, diretor de Educação; o Núcleo Regional de Educação de Curitiba também expediu ofício de teor semelhante, assinado por sua chefe, Laura Patrícia Lopes. A coleta foi programada para 5 a 8 de março. A Companhia das Letras foi à Justiça, e o livro voltou às escolas em abril de 2024, acompanhado de orientações pedagógicas."},
+ {id:"EL-003", ato:"GO-2024", obra:"O avesso da pele", alegacao:"“Possibilitar uma análise do livro quanto ao atendimento da proposta pedagógica da rede”", eixo:"Linguagem e palavrão", modalidade:"Retirada", estagio:"Execução comprovada", situacao:"Revertido", desfecho:"Revertido", verificado:"Sim", fontes:["cc-go","pn-volta"], nota:"O livro voltou às escolas de Goiás em abril de 2024, um mês depois, junto com o Paraná."},
+ {id:"EL-004", ato:"MS-2024", obra:"O avesso da pele", alegacao:"“Expressões impróprias” para menores de 18 anos · termo usado pelo deputado estadual Rinaldo Modesto ao cobrar a retirada", eixo:"Linguagem e palavrão", modalidade:"Retirada", estagio:"Execução comprovada", situacao:"Revertido", desfecho:"Revertido", verificado:"Sim", fontes:["gp-estados","cgn-volta","cgn-alems","cc-ms-avesso"], pendencia:"Confirmar se o livro chegou de volta às 75 escolas", nota:"Na Assembleia, a crítica uniu deputados de partidos opostos: Rinaldo Modesto (Podemos) pediu a retirada, Lia Nogueira (PSDB) chamou o livro de “nojento” e Pedro Kemp (PT) disse ter “muitas reservas” sobre o uso no ensino médio. O governador Eduardo Riedel mandou recolher os exemplares das 75 escolas da rede que tinham recebido o livro. Em 23 de abril de 2024 a Secretaria de Educação anunciou a devolução às bibliotecas, “com as orientações pedagógicas quanto à indicação de uso”, sem detalhar quais."},
+ {id:"EL-005", ato:"SC-2024", obra:"O avesso da pele", alegacao:"Evitar que obras para adolescentes e adultos cheguem a estudantes do ensino fundamental · exemplares redistribuídos para EJA e centros de educação profissional", eixo:"Sexualidade e gênero", modalidade:"Ocultação ou restrição de acesso", estagio:"Decisão ou ordem", situacao:"Em vigor", desfecho:"Mantido com restrição", verificado:"Parcialmente", fontes:["gp-estados"], pendencia:"Buscar segunda fonte", nota:"O governo anunciou análise de conteúdo e chamou a medida de revisão de acervo. Exemplo de restrição apresentada como gestão pedagógica."},
+ {id:"EL-006", ato:"SC-2023", obra:"It: A coisa", alegacao:"Sem justificativa no ofício · determinava armazenar “em local não acessível à comunidade escolar”. A secretaria alegou depois “redistribuição por faixa etária”", eixo:"Sobrenatural e mágico", modalidade:"Ocultação ou restrição de acesso", estagio:"Decisão ou ordem", situacao:"Em aberto", desfecho:"Em aberto", verificado:"Sim", fontes:["cc-sc","gp-sc","p360-sc","cnn-sc","cf-sc","folha-sc"], pendencia:"Identificar a coordenadoria regional", nota:"Ofício assinado pelo supervisor regional de educação Waldemar Ronssem Júnior e pela integradora regional Anelise dos Santos de Medeiros: “Determinamos que as obras listadas abaixo sejam retiradas de circulação”. O suplente de vereador Leonel Camasão (PSOL) levou o caso ao Ministério Público estadual."},
+ {id:"EL-007", ato:"SC-2023", obra:"Laranja Mecânica", alegacao:"Sem justificativa no ofício · determinava armazenar “em local não acessível à comunidade escolar”. A secretaria alegou depois “redistribuição por faixa etária”", eixo:"Violência", modalidade:"Ocultação ou restrição de acesso", estagio:"Decisão ou ordem", situacao:"Em aberto", desfecho:"Em aberto", verificado:"Sim", fontes:["cc-sc","gp-sc","p360-sc","cnn-sc","cf-sc","folha-sc"], pendencia:"Identificar a coordenadoria regional", nota:"Ofício assinado pelo supervisor regional de educação Waldemar Ronssem Júnior e pela integradora regional Anelise dos Santos de Medeiros: “Determinamos que as obras listadas abaixo sejam retiradas de circulação”. O suplente de vereador Leonel Camasão (PSOL) levou o caso ao Ministério Público estadual."},
+ {id:"EL-008", ato:"SC-2023", obra:"Donnie Darko", alegacao:"Sem justificativa no ofício · determinava armazenar “em local não acessível à comunidade escolar”. A secretaria alegou depois “redistribuição por faixa etária”", eixo:"Sobrenatural e mágico", modalidade:"Ocultação ou restrição de acesso", estagio:"Decisão ou ordem", situacao:"Em aberto", desfecho:"Em aberto", verificado:"Sim", fontes:["cc-sc","gp-sc","p360-sc","cnn-sc","cf-sc","folha-sc"], pendencia:"Identificar a coordenadoria regional", nota:"Ofício assinado pelo supervisor regional de educação Waldemar Ronssem Júnior e pela integradora regional Anelise dos Santos de Medeiros: “Determinamos que as obras listadas abaixo sejam retiradas de circulação”. O suplente de vereador Leonel Camasão (PSOL) levou o caso ao Ministério Público estadual."},
+ {id:"EL-009", ato:"SC-2023", obra:"Coração Satânico", alegacao:"Sem justificativa no ofício · determinava armazenar “em local não acessível à comunidade escolar”. A secretaria alegou depois “redistribuição por faixa etária”", eixo:"Sobrenatural e mágico", modalidade:"Ocultação ou restrição de acesso", estagio:"Decisão ou ordem", situacao:"Em aberto", desfecho:"Em aberto", verificado:"Sim", fontes:["cc-sc","gp-sc","p360-sc","cnn-sc","cf-sc","folha-sc"], pendencia:"Identificar a coordenadoria regional", nota:"Ofício assinado pelo supervisor regional de educação Waldemar Ronssem Júnior e pela integradora regional Anelise dos Santos de Medeiros: “Determinamos que as obras listadas abaixo sejam retiradas de circulação”. O suplente de vereador Leonel Camasão (PSOL) levou o caso ao Ministério Público estadual."},
+ {id:"EL-010", ato:"SC-2023", obra:"Exorcismo", alegacao:"Sem justificativa no ofício · determinava armazenar “em local não acessível à comunidade escolar”. A secretaria alegou depois “redistribuição por faixa etária”", eixo:"Sobrenatural e mágico", modalidade:"Ocultação ou restrição de acesso", estagio:"Decisão ou ordem", situacao:"Em aberto", desfecho:"Em aberto", verificado:"Sim", fontes:["cc-sc","gp-sc","p360-sc","cnn-sc","cf-sc","folha-sc"], pendencia:"Identificar a coordenadoria regional", nota:"Ofício assinado pelo supervisor regional de educação Waldemar Ronssem Júnior e pela integradora regional Anelise dos Santos de Medeiros: “Determinamos que as obras listadas abaixo sejam retiradas de circulação”. O suplente de vereador Leonel Camasão (PSOL) levou o caso ao Ministério Público estadual."},
+ {id:"EL-011", ato:"SC-2023", obra:"Ed & Lorraine Warren: demonologistas — arquivos sobrenaturais", alegacao:"Sem justificativa no ofício · determinava armazenar “em local não acessível à comunidade escolar”. A secretaria alegou depois “redistribuição por faixa etária”", eixo:"Sobrenatural e mágico", modalidade:"Ocultação ou restrição de acesso", estagio:"Decisão ou ordem", situacao:"Em aberto", desfecho:"Em aberto", verificado:"Sim", fontes:["cc-sc","gp-sc","p360-sc","cnn-sc","cf-sc","folha-sc"], pendencia:"Identificar a coordenadoria regional", nota:"Ofício assinado pelo supervisor regional de educação Waldemar Ronssem Júnior e pela integradora regional Anelise dos Santos de Medeiros: “Determinamos que as obras listadas abaixo sejam retiradas de circulação”. O suplente de vereador Leonel Camasão (PSOL) levou o caso ao Ministério Público estadual."},
+ {id:"EL-012", ato:"SC-2023", obra:"O diário do diabo: os segredos de Alfred Rosenberg, o maior intelectual do nazismo", alegacao:"Sem justificativa no ofício · determinava armazenar “em local não acessível à comunidade escolar”. A secretaria alegou depois “redistribuição por faixa etária”", eixo:"Política e ideologia", modalidade:"Ocultação ou restrição de acesso", estagio:"Decisão ou ordem", situacao:"Em aberto", desfecho:"Em aberto", verificado:"Sim", fontes:["cc-sc","gp-sc","p360-sc","cnn-sc","cf-sc","folha-sc"], pendencia:"Identificar a coordenadoria regional", nota:"Ofício assinado pelo supervisor regional de educação Waldemar Ronssem Júnior e pela integradora regional Anelise dos Santos de Medeiros: “Determinamos que as obras listadas abaixo sejam retiradas de circulação”. O suplente de vereador Leonel Camasão (PSOL) levou o caso ao Ministério Público estadual."},
+ {id:"EL-013", ato:"SC-2023", obra:"A química entre nós", alegacao:"Sem justificativa no ofício · determinava armazenar “em local não acessível à comunidade escolar”. A secretaria alegou depois “redistribuição por faixa etária”", eixo:"Sexualidade e gênero", modalidade:"Ocultação ou restrição de acesso", estagio:"Decisão ou ordem", situacao:"Em aberto", desfecho:"Em aberto", verificado:"Sim", fontes:["cc-sc","gp-sc","p360-sc","cnn-sc","cf-sc","folha-sc"], pendencia:"Identificar a coordenadoria regional", nota:"Ofício assinado pelo supervisor regional de educação Waldemar Ronssem Júnior e pela integradora regional Anelise dos Santos de Medeiros: “Determinamos que as obras listadas abaixo sejam retiradas de circulação”. O suplente de vereador Leonel Camasão (PSOL) levou o caso ao Ministério Público estadual."},
+ {id:"EL-014", ato:"SC-2023", obra:"Os 13 porquês", alegacao:"Sem justificativa no ofício · determinava armazenar “em local não acessível à comunidade escolar”. A secretaria alegou depois “redistribuição por faixa etária”", eixo:"Outro", modalidade:"Ocultação ou restrição de acesso", estagio:"Decisão ou ordem", situacao:"Em aberto", desfecho:"Em aberto", verificado:"Sim", fontes:["cc-sc","gp-sc","p360-sc","cnn-sc","cf-sc","folha-sc"], pendencia:"Identificar a coordenadoria regional", nota:"Ofício assinado pelo supervisor regional de educação Waldemar Ronssem Júnior e pela integradora regional Anelise dos Santos de Medeiros: “Determinamos que as obras listadas abaixo sejam retiradas de circulação”. O suplente de vereador Leonel Camasão (PSOL) levou o caso ao Ministério Público estadual."},
+ {id:"EL-015", ato:"RO-2020", obra:"Macunaíma", alegacao:"“Conteúdos inadequados às crianças e adolescentes”", eixo:"Política e ideologia", modalidade:"Retirada", estagio:"Decisão ou ordem", situacao:"Revertido", desfecho:"Ordem suspensa no mesmo dia; exemplares que chegaram a ser recolhidos foram devolvidos, segundo o MPF", verificado:"Parcialmente", fontes:["gp-ro","pn-ro","publico-ro","cc-ro","dp-ro","estudo-ro","mpf-ro-arquivamento"], pendencia:"Localizar a íntegra do processo SEI 0029.051300/2020-91, o resultado da sindicância administrativa da Seduc e a íntegra da recomendação do MP-RO. O MPF homologou o arquivamento do inquérito civil em 2021; isso não substitui a apuração administrativa estadual.", nota:"O Memorando-Circular nº 4/2020/SEDUC-DGE traz o nome do secretário Suamy Vivecananda no fecho; o registro eletrônico identifica Irany de Oliveira Lima Morais, diretora-geral de Educação, como signatária digital. A Seduc negou ter ordenado o recolhimento e afirmou que o processo foi encerrado antes de tramitar para escolas ou órgãos externos. Em decisão publicada no Diário do MPF em 30 de agosto de 2021, o órgão registrou que houve solicitação verbal de recolhimento, suspensa no mesmo dia, e que os livros que chegaram a ser recolhidos foram devolvidos às escolas. O MPF concluiu que o recolhimento não se concretizou, registrou a abertura de sindicância pela Seduc e a atuação do MP-RO, cuja recomendação foi acatada; o inquérito civil foi arquivado, com homologação do arquivamento pela Câmara competente. Um artigo acadêmico publicado em 2024 reproduz imagem do memorando e da relação de títulos. OAB-RO e Academia Brasileira de Letras enviaram notas de repúdio."},
+ {id:"EL-016", ato:"RO-2020", obra:"Memórias póstumas de Brás Cubas", alegacao:"“Conteúdos inadequados às crianças e adolescentes”", eixo:"Política e ideologia", modalidade:"Retirada", estagio:"Decisão ou ordem", situacao:"Revertido", desfecho:"Ordem suspensa no mesmo dia; exemplares que chegaram a ser recolhidos foram devolvidos, segundo o MPF", verificado:"Parcialmente", fontes:["gp-ro","pn-ro","publico-ro","cc-ro","dp-ro","estudo-ro","mpf-ro-arquivamento"], pendencia:"Localizar a íntegra do processo SEI 0029.051300/2020-91, o resultado da sindicância administrativa da Seduc e a íntegra da recomendação do MP-RO. O MPF homologou o arquivamento do inquérito civil em 2021; isso não substitui a apuração administrativa estadual.", nota:"O Memorando-Circular nº 4/2020/SEDUC-DGE traz o nome do secretário Suamy Vivecananda no fecho; o registro eletrônico identifica Irany de Oliveira Lima Morais, diretora-geral de Educação, como signatária digital. A Seduc negou ter ordenado o recolhimento e afirmou que o processo foi encerrado antes de tramitar para escolas ou órgãos externos. Em decisão publicada no Diário do MPF em 30 de agosto de 2021, o órgão registrou que houve solicitação verbal de recolhimento, suspensa no mesmo dia, e que os livros que chegaram a ser recolhidos foram devolvidos às escolas. O MPF concluiu que o recolhimento não se concretizou, registrou a abertura de sindicância pela Seduc e a atuação do MP-RO, cuja recomendação foi acatada; o inquérito civil foi arquivado, com homologação do arquivamento pela Câmara competente. Um artigo acadêmico publicado em 2024 reproduz imagem do memorando e da relação de títulos. OAB-RO e Academia Brasileira de Letras enviaram notas de repúdio."},
+ {id:"EL-017", ato:"RO-2020", obra:"Os sertões", alegacao:"“Conteúdos inadequados às crianças e adolescentes”", eixo:"Política e ideologia", modalidade:"Retirada", estagio:"Decisão ou ordem", situacao:"Revertido", desfecho:"Ordem suspensa no mesmo dia; exemplares que chegaram a ser recolhidos foram devolvidos, segundo o MPF", verificado:"Parcialmente", fontes:["gp-ro","pn-ro","publico-ro","cc-ro","dp-ro","estudo-ro","mpf-ro-arquivamento"], pendencia:"Localizar a íntegra do processo SEI 0029.051300/2020-91, o resultado da sindicância administrativa da Seduc e a íntegra da recomendação do MP-RO. O MPF homologou o arquivamento do inquérito civil em 2021; isso não substitui a apuração administrativa estadual.", nota:"O Memorando-Circular nº 4/2020/SEDUC-DGE traz o nome do secretário Suamy Vivecananda no fecho; o registro eletrônico identifica Irany de Oliveira Lima Morais, diretora-geral de Educação, como signatária digital. A Seduc negou ter ordenado o recolhimento e afirmou que o processo foi encerrado antes de tramitar para escolas ou órgãos externos. Em decisão publicada no Diário do MPF em 30 de agosto de 2021, o órgão registrou que houve solicitação verbal de recolhimento, suspensa no mesmo dia, e que os livros que chegaram a ser recolhidos foram devolvidos às escolas. O MPF concluiu que o recolhimento não se concretizou, registrou a abertura de sindicância pela Seduc e a atuação do MP-RO, cuja recomendação foi acatada; o inquérito civil foi arquivado, com homologação do arquivamento pela Câmara competente. Um artigo acadêmico publicado em 2024 reproduz imagem do memorando e da relação de títulos. OAB-RO e Academia Brasileira de Letras enviaram notas de repúdio."},
+ {id:"EL-018", ato:"RO-2020", obra:"O castelo", alegacao:"“Conteúdos inadequados às crianças e adolescentes”", eixo:"Política e ideologia", modalidade:"Retirada", estagio:"Decisão ou ordem", situacao:"Revertido", desfecho:"Ordem suspensa no mesmo dia; exemplares que chegaram a ser recolhidos foram devolvidos, segundo o MPF", verificado:"Parcialmente", fontes:["gp-ro","pn-ro","publico-ro","cc-ro","dp-ro","estudo-ro","mpf-ro-arquivamento"], pendencia:"Localizar a íntegra do processo SEI 0029.051300/2020-91, o resultado da sindicância administrativa da Seduc e a íntegra da recomendação do MP-RO. O MPF homologou o arquivamento do inquérito civil em 2021; isso não substitui a apuração administrativa estadual.", nota:"O Memorando-Circular nº 4/2020/SEDUC-DGE traz o nome do secretário Suamy Vivecananda no fecho; o registro eletrônico identifica Irany de Oliveira Lima Morais, diretora-geral de Educação, como signatária digital. A Seduc negou ter ordenado o recolhimento e afirmou que o processo foi encerrado antes de tramitar para escolas ou órgãos externos. Em decisão publicada no Diário do MPF em 30 de agosto de 2021, o órgão registrou que houve solicitação verbal de recolhimento, suspensa no mesmo dia, e que os livros que chegaram a ser recolhidos foram devolvidos às escolas. O MPF concluiu que o recolhimento não se concretizou, registrou a abertura de sindicância pela Seduc e a atuação do MP-RO, cuja recomendação foi acatada; o inquérito civil foi arquivado, com homologação do arquivamento pela Câmara competente. Um artigo acadêmico publicado em 2024 reproduz imagem do memorando e da relação de títulos. OAB-RO e Academia Brasileira de Letras enviaram notas de repúdio."},
+ {id:"EL-019", ato:"RO-2020", obra:"Contos de terror, de mistério e de morte", alegacao:"“Conteúdos inadequados às crianças e adolescentes”", eixo:"Violência", modalidade:"Retirada", estagio:"Decisão ou ordem", situacao:"Revertido", desfecho:"Ordem suspensa no mesmo dia; exemplares que chegaram a ser recolhidos foram devolvidos, segundo o MPF", verificado:"Parcialmente", fontes:["gp-ro","pn-ro","publico-ro","cc-ro","dp-ro","estudo-ro","mpf-ro-arquivamento"], pendencia:"Localizar a íntegra do processo SEI 0029.051300/2020-91, o resultado da sindicância administrativa da Seduc e a íntegra da recomendação do MP-RO. O MPF homologou o arquivamento do inquérito civil em 2021; isso não substitui a apuração administrativa estadual.", nota:"O Memorando-Circular nº 4/2020/SEDUC-DGE traz o nome do secretário Suamy Vivecananda no fecho; o registro eletrônico identifica Irany de Oliveira Lima Morais, diretora-geral de Educação, como signatária digital. A Seduc negou ter ordenado o recolhimento e afirmou que o processo foi encerrado antes de tramitar para escolas ou órgãos externos. Em decisão publicada no Diário do MPF em 30 de agosto de 2021, o órgão registrou que houve solicitação verbal de recolhimento, suspensa no mesmo dia, e que os livros que chegaram a ser recolhidos foram devolvidos às escolas. O MPF concluiu que o recolhimento não se concretizou, registrou a abertura de sindicância pela Seduc e a atuação do MP-RO, cuja recomendação foi acatada; o inquérito civil foi arquivado, com homologação do arquivamento pela Câmara competente. Um artigo acadêmico publicado em 2024 reproduz imagem do memorando e da relação de títulos. OAB-RO e Academia Brasileira de Letras enviaram notas de repúdio."},
+ {id:"EL-020", ato:"RO-2020", obra:"A vida como ela é", alegacao:"“Conteúdos inadequados às crianças e adolescentes”", eixo:"Sexualidade e gênero", modalidade:"Retirada", estagio:"Decisão ou ordem", situacao:"Revertido", desfecho:"Ordem suspensa no mesmo dia; exemplares que chegaram a ser recolhidos foram devolvidos, segundo o MPF", verificado:"Parcialmente", fontes:["gp-ro","pn-ro","publico-ro","cc-ro","dp-ro","estudo-ro","mpf-ro-arquivamento"], pendencia:"Localizar a íntegra do processo SEI 0029.051300/2020-91, o resultado da sindicância administrativa da Seduc e a íntegra da recomendação do MP-RO. O MPF homologou o arquivamento do inquérito civil em 2021; isso não substitui a apuração administrativa estadual.", nota:"O Memorando-Circular nº 4/2020/SEDUC-DGE traz o nome do secretário Suamy Vivecananda no fecho; o registro eletrônico identifica Irany de Oliveira Lima Morais, diretora-geral de Educação, como signatária digital. A Seduc negou ter ordenado o recolhimento e afirmou que o processo foi encerrado antes de tramitar para escolas ou órgãos externos. Em decisão publicada no Diário do MPF em 30 de agosto de 2021, o órgão registrou que houve solicitação verbal de recolhimento, suspensa no mesmo dia, e que os livros que chegaram a ser recolhidos foram devolvidos às escolas. O MPF concluiu que o recolhimento não se concretizou, registrou a abertura de sindicância pela Seduc e a atuação do MP-RO, cuja recomendação foi acatada; o inquérito civil foi arquivado, com homologação do arquivamento pela Câmara competente. Um artigo acadêmico publicado em 2024 reproduz imagem do memorando e da relação de títulos. OAB-RO e Academia Brasileira de Letras enviaram notas de repúdio."},
+ {id:"EL-021", ato:"RO-2020", obra:"Beijo no asfalto", alegacao:"“Conteúdos inadequados às crianças e adolescentes”", eixo:"Sexualidade e gênero", modalidade:"Retirada", estagio:"Decisão ou ordem", situacao:"Revertido", desfecho:"Ordem suspensa no mesmo dia; exemplares que chegaram a ser recolhidos foram devolvidos, segundo o MPF", verificado:"Parcialmente", fontes:["gp-ro","pn-ro","publico-ro","cc-ro","dp-ro","estudo-ro","mpf-ro-arquivamento"], pendencia:"Localizar a íntegra do processo SEI 0029.051300/2020-91, o resultado da sindicância administrativa da Seduc e a íntegra da recomendação do MP-RO. O MPF homologou o arquivamento do inquérito civil em 2021; isso não substitui a apuração administrativa estadual.", nota:"O Memorando-Circular nº 4/2020/SEDUC-DGE traz o nome do secretário Suamy Vivecananda no fecho; o registro eletrônico identifica Irany de Oliveira Lima Morais, diretora-geral de Educação, como signatária digital. A Seduc negou ter ordenado o recolhimento e afirmou que o processo foi encerrado antes de tramitar para escolas ou órgãos externos. Em decisão publicada no Diário do MPF em 30 de agosto de 2021, o órgão registrou que houve solicitação verbal de recolhimento, suspensa no mesmo dia, e que os livros que chegaram a ser recolhidos foram devolvidos às escolas. O MPF concluiu que o recolhimento não se concretizou, registrou a abertura de sindicância pela Seduc e a atuação do MP-RO, cuja recomendação foi acatada; o inquérito civil foi arquivado, com homologação do arquivamento pela Câmara competente. Um artigo acadêmico publicado em 2024 reproduz imagem do memorando e da relação de títulos. OAB-RO e Academia Brasileira de Letras enviaram notas de repúdio."},
+ {id:"EL-022", ato:"RO-2020", obra:"Obra de Rubem Fonseca (19 títulos)", alegacao:"“Conteúdos inadequados às crianças e adolescentes”", eixo:"Violência", modalidade:"Retirada", estagio:"Decisão ou ordem", situacao:"Revertido", desfecho:"Ordem suspensa no mesmo dia; exemplares que chegaram a ser recolhidos foram devolvidos, segundo o MPF", verificado:"Parcialmente", fontes:["gp-ro","pn-ro","publico-ro","cc-ro","dp-ro","estudo-ro","mpf-ro-arquivamento"], pendencia:"Desmembrar nos 19 títulos", nota:"O Memorando-Circular nº 4/2020/SEDUC-DGE traz o nome do secretário Suamy Vivecananda no fecho; o registro eletrônico identifica Irany de Oliveira Lima Morais, diretora-geral de Educação, como signatária digital. A Seduc negou ter ordenado o recolhimento e afirmou que o processo foi encerrado antes de tramitar para escolas ou órgãos externos. Em decisão publicada no Diário do MPF em 30 de agosto de 2021, o órgão registrou que houve solicitação verbal de recolhimento, suspensa no mesmo dia, e que os livros que chegaram a ser recolhidos foram devolvidos às escolas. O MPF concluiu que o recolhimento não se concretizou, registrou a abertura de sindicância pela Seduc e a atuação do MP-RO, cuja recomendação foi acatada; o inquérito civil foi arquivado, com homologação do arquivamento pela Câmara competente. Um artigo acadêmico publicado em 2024 reproduz imagem do memorando e da relação de títulos. OAB-RO e Academia Brasileira de Letras enviaram notas de repúdio."},
+ {id:"EL-023", ato:"RO-2020", obra:"Obra completa de Rubem Alves", alegacao:"“Conteúdos inadequados às crianças e adolescentes”", eixo:"Política e ideologia", modalidade:"Retirada", estagio:"Decisão ou ordem", situacao:"Revertido", desfecho:"Ordem suspensa no mesmo dia; exemplares que chegaram a ser recolhidos foram devolvidos, segundo o MPF", verificado:"Parcialmente", fontes:["gp-ro","pn-ro","publico-ro","cc-ro","dp-ro","estudo-ro","mpf-ro-arquivamento"], pendencia:"Sem relação de títulos", nota:"O Memorando-Circular nº 4/2020/SEDUC-DGE traz o nome do secretário Suamy Vivecananda no fecho; o registro eletrônico identifica Irany de Oliveira Lima Morais, diretora-geral de Educação, como signatária digital. A Seduc negou ter ordenado o recolhimento e afirmou que o processo foi encerrado antes de tramitar para escolas ou órgãos externos. Em decisão publicada no Diário do MPF em 30 de agosto de 2021, o órgão registrou que houve solicitação verbal de recolhimento, suspensa no mesmo dia, e que os livros que chegaram a ser recolhidos foram devolvidos às escolas. O MPF concluiu que o recolhimento não se concretizou, registrou a abertura de sindicância pela Seduc e a atuação do MP-RO, cuja recomendação foi acatada; o inquérito civil foi arquivado, com homologação do arquivamento pela Câmara competente. Um artigo acadêmico publicado em 2024 reproduz imagem do memorando e da relação de títulos. OAB-RO e Academia Brasileira de Letras enviaram notas de repúdio."},
+ {id:"EL-024", ato:"RO-2020", obra:"Demais títulos da lista de Rondônia", alegacao:"“Conteúdos inadequados às crianças e adolescentes”", eixo:"Outro", modalidade:"Retirada", estagio:"Decisão ou ordem", situacao:"Revertido", desfecho:"Ordem suspensa no mesmo dia; exemplares que chegaram a ser recolhidos foram devolvidos, segundo o MPF", verificado:"Parcialmente", fontes:["gp-ro","pn-ro","publico-ro","cc-ro","dp-ro","estudo-ro","mpf-ro-arquivamento"], pendencia:"Obter o Adendo ID 10053329", nota:"O Memorando-Circular nº 4/2020/SEDUC-DGE traz o nome do secretário Suamy Vivecananda no fecho; o registro eletrônico identifica Irany de Oliveira Lima Morais, diretora-geral de Educação, como signatária digital. A Seduc negou ter ordenado o recolhimento e afirmou que o processo foi encerrado antes de tramitar para escolas ou órgãos externos. Em decisão publicada no Diário do MPF em 30 de agosto de 2021, o órgão registrou que houve solicitação verbal de recolhimento, suspensa no mesmo dia, e que os livros que chegaram a ser recolhidos foram devolvidos às escolas. O MPF concluiu que o recolhimento não se concretizou, registrou a abertura de sindicância pela Seduc e a atuação do MP-RO, cuja recomendação foi acatada; o inquérito civil foi arquivado, com homologação do arquivamento pela Câmara competente. Um artigo acadêmico publicado em 2024 reproduz imagem do memorando e da relação de títulos. OAB-RO e Academia Brasileira de Letras enviaram notas de repúdio."},
+ {id:"EL-025", ato:"PALM-2021-06", obra:"Anúncio de descarte de 5.165 exemplares classificados como de “temática alheia à negra”", alegacao:"Relatório “Retrato do Acervo: três décadas de dominação marxista na Fundação Cultural Palmares” · classificação de 5.165 exemplares como de “temática alheia à negra”", eixo:"Política e ideologia", modalidade:"Descarte ou destruição", estagio:"Decisão ou ordem", situacao:"Em aberto", desfecho:"Destino final dos 5.165 exemplares não comprovado", verificado:"Parcialmente", fontes:["em-palmares","sbt-palm","gp-palmares","opovo-palm","palmares-inventario","palmares-politica","relatorio-palmares-original","unesp-palmares"], pendencia:"Conferir no relatório original e em seu anexo a divergência de total do acervo: 9.565 exemplares na reportagem contemporânea do Estado de Minas e 9.546 obras na reportagem da Unesp. Recuperar a relação completa dos 5.165 exemplares e documentos sobre seu destino final. Não confundir exemplares com títulos nem com o conjunto distinto de cerca de 300 livros do EL-026.", nota:"A reportagem contemporânea do Estado de Minas atribuiu ao relatório a informação de que o acervo tinha 9.565 exemplares e classificou 5.165 (54%) como de temática alheia à negra. O Jornal da Unesp, também em junho de 2021, informou total de 9.546 obras e 478 títulos considerados adequados. Como os totais publicados divergem, o número-base precisa ser conferido diretamente no relatório e em seus anexos. Em qualquer caso, 5.165 é apresentado como quantidade de exemplares, não de títulos distintos. Não foi localizada comprovação de que esse conjunto tenha sido descartado ou doado. A decisão judicial sobre doação de cerca de 300 livros é tratada separadamente no EL-026. O inventário publicado pela Fundação em agosto de 2024 registra 9.696 títulos, levantamento posterior e unidade de contagem distinta."},
+ {id:"EL-026", ato:"PALM-2021-08", obra:"Segregação de cerca de 300 livros no chamado “Acervo da Vergonha”", alegacao:"Camargo chamou as obras de “bibliografia imprestável para a Palmares”, “marxistas” e “bandidólatras”.", eixo:"Política e ideologia", modalidade:"Ocultação ou restrição de acesso", estagio:"Decisão ou ordem", situacao:"Em aberto", desfecho:"Segregação anunciada; acesso público posterior não verificado", verificado:"Parcialmente", fontes:["opovo-palm","sbt-museu","oglobo-palm-300","oglobo-palm-ala"], pendencia:"Obter inventário dos cerca de 300 livros, comprovar se foram fisicamente separados, por quanto tempo e quando voltaram à consulta pública.", nota:"A Justiça Federal já havia impedido a doação de cerca de 300 livros. Em 23 de julho de 2021, a Procuradoria-Geral Federal informou ao juízo que Sérgio Camargo desistira da doação, ao menos naquele momento. Em 3 de agosto, Camargo anunciou a criação de uma seção/sala para separar os livros que chamava de “vergonhosos e desviantes”. O anúncio público está documentado; a duração e o regime efetivo de acesso à sala ainda precisam de comprovação."},
+ {id:"EL-027", ato:"MG-2024", obra:"O menino marrom", alegacao:"Pais consideraram a obra “agressiva”, citando passagens sobre pacto de sangue e conflitos entre personagens.", eixo:"Cultura afro-brasileira", modalidade:"Veto a atividade", estagio:"Decisão ou ordem", situacao:"Revertido", desfecho:"Suspensão cancelada por decisão liminar", verificado:"Sim", fontes:["pn-ziraldo","dp-ziraldo","comunicado-lafaiete","decisao-lafaiete"], pendencia:"Identificar o signatário formal do ato administrativo e confirmar o trânsito em julgado da ação popular.", nota:"Em comunicado oficial de 20 de junho, a Secretaria Municipal de Educação afirmou que orientou a suspensão temporária dos trabalhos pedagógicos com o livro após manifestações de pais, familiares e autoridades locais — não declarou recolhimento de todos os exemplares. Em decisão liminar assinada em 27 de junho de 2024, o juiz Espagner Wallysen Vaz Leite, da 1ª Vara Cível, determinou o cancelamento imediato da suspensão temporária, sob multa diária de R$ 5 mil. A cópia consultada não permite identificar o autor da ação, cujo nome aparece ocultado."},
+ {id:"EL-028", ato:"SJC-2024", obra:"Meninas sonhadoras, mulheres cientistas", alegacao:"O vereador afirmou que a obra faria “apologia ao aborto” e promoveria “doutrinação ideológica”. A prefeitura apresentou justificativa técnico-pedagógica posteriormente.", eixo:"Sexualidade e gênero", modalidade:"Retirada", estagio:"Execução comprovada", situacao:"Revertido", desfecho:"Justiça determinou devolução e proibiu nova restrição político-ideológica", verificado:"Parcialmente", fontes:["pn-sjc","ap-sjc","op-sjc","migalhas-sjc","folha-sjc-ordem","uol-sjc-ordem"], pendencia:"Obter a sentença integral e comprovar o cumprimento da ordem de devolução; o processo tramita sob segredo de Justiça.", nota:"O livro foi recolhido das salas de leitura da rede municipal em junho de 2024, após a pressão pública do vereador. Segundo a apuração divulgada com base no processo, a ordem de retirada foi transmitida aos diretores por mensagens de WhatsApp, sem justificativa técnico-pedagógica contemporânea. Em 20 de julho de 2026, a juíza Renata Heloísa da Silva Salles, da Vara da Infância e Juventude, determinou que o município restituísse os exemplares às salas de leitura e bibliotecas das escolas onde integravam o acervo, no prazo de cinco dias a partir da intimação. A decisão também proibiu novas restrições político-ideológicas e fixou multa diária de R$ 500, limitada inicialmente a R$ 50 mil. A cobertura informa que a prefeitura ainda não havia respondido sobre o cumprimento da ordem; portanto, a devolução efetiva permanece sem confirmação pública."},
+ {id:"EL-029", ato:"UNIRV-2023", obra:"Eu receberia as piores notícias de seus lindos lábios", alegacao:"O parlamentar classificou a obra como “pornográfica”; a universidade afirmou que a polêmica pesou na exclusão.", eixo:"Sexualidade e gênero", modalidade:"Exclusão de lista de leitura", estagio:"Execução comprovada", situacao:"Em vigor", desfecho:"Retirado da lista; decisão institucional confirmada", verificado:"Parcialmente", fontes:["fp-unirv","jo-unirv","folha-unirv","unirv-nota"], pendencia:"Identificar nominalmente quem compunha a Coordenação do Vestibular e quem formalizou a decisão; a nota pública identifica o órgão decisor, mas não traz ata ou despacho nominal.", nota:"A nota oficial da UniRV, datada de 26 de abril de 2023 e publicada no site em 27 de abril, afirma que a Coordenação do Vestibular decidiu pela exclusão imediata da obra depois de tomar conhecimento do conteúdo e da polêmica. A universidade também registra que a indicação original havia sido feita por uma banca de professores. A nota não identifica nominalmente quem, dentro da Coordenação, tomou a decisão."},
+ {id:"EL-030", ato:"LON-2024", obra:"A mamãe vai ter um bebê", titulo:"Pedido de recolhimento de A mamãe vai ter um bebê e aprovação da Lei nº 13.930/2025", alegacao:"A vereadora classificou como inadequada para crianças uma ilustração de casal sob um edredom em contexto de reprodução humana.", eixo:"Sexualidade e gênero", modalidade:"Retirada", estagio:"Pedido formal", situacao:"Em aberto", desfecho:"Pedido apresentado; resposta e execução não comprovadas. PL 79/2024 sancionado como Lei nº 13.930/2025.", verificado:"Parcialmente", fontes:["fl-londrina","bp-londrina","lei-londrina-13930","pedido-londrina"], pendencia:"Obter cópia integral do requerimento protocolado pela vereadora e resposta da Secretaria; confirmar se houve recolhimento efetivo e eventual devolução do exemplar.", nota:"Em 26 de novembro de 2024, a vereadora Jéssica Ramos Moreno (PP) divulgou que encontrou o livro em uma creche e pediu à Secretaria Municipal de Educação que o recolhesse. A reportagem contemporânea informou que a Secretaria ainda não havia respondido oficialmente ao requerimento; portanto, a retirada não está comprovada. Separadamente, o PL 79/2024, de autoria da vereadora, foi sancionado em 21 de março de 2025 como Lei Municipal nº 13.930, que proíbe uso e distribuição de livros com conteúdo erótico nas escolas municipais, com exceção para informação científico-biológica sobre reprodução adequada à idade. A lei não comprova, por si, a retirada deste exemplar."},
+ {id:"EL-031", ato:"DF-2026", obra:"A bolsa amarela", titulo:"Controvérsia sobre atividade com resenha de A bolsa amarela", alegacao:"Pais consideraram inadequada para crianças de cerca de 9 anos uma passagem em que a protagonista deseja ter nascido menino.", eixo:"Sexualidade e gênero", modalidade:"Veto a atividade", estagio:"Pressão pública", situacao:"Sem efeito", desfecho:"Sem retirada de exemplares ou veto à obra comprovado", verificado:"Parcialmente", fontes:["met-bolsa1","met-bolsa2","piaui-bolsa"], pendencia:"Obter a nota oficial integral do colégio e esclarecer documentalmente se houve suspensão formal da atividade ou apenas encerramento do exercício já aplicado.", nota:"A apuração da revista piauí esclareceu que o colégio não havia adotado A bolsa amarela como leitura obrigatória nem retirado exemplares do acervo. O episódio envolveu um link para uma resenha utilizado em exercício de Língua Portuguesa. A escola declarou que a atividade atendia aos objetivos de leitura e interpretação; após a repercussão e o término do exercício, o link não voltou a ser utilizado. Este registro documenta pressão sobre uma atividade, não banimento ou retirada do livro."},
+ {id:"EL-032", ato:"TAU-2025", obra:"Pipoca e Picolé", alegacao:"A vereadora contestou a representação de uma família com duas mães e um pai e declarou: “Nós não vamos aceitar material como esse na nossa sala de aula”.", eixo:"Sexualidade e gênero", modalidade:"Retirada", estagio:"Execução comprovada", situacao:"Revertido", desfecho:"Prefeitura anunciou retorno ao uso pedagógico após análise técnica, em turmas consideradas adequadas; cumprimento nas escolas não verificado", verificado:"Parcialmente", fontes:["ovale-tau","ovale-tau-abr10","ovale-tau-jul14"], pendencia:"Obter o requerimento parlamentar, a resposta integral da prefeitura e o parecer técnico; confirmar a efetiva redistribuição dos exemplares às escolas e quais turmas foram consideradas adequadas.", nota:"A vereadora Zelinda Pastora (PRD) afirmou que pediu ao secretário Hélcio Carvalho dos Santos o recolhimento, após reclamação de uma mãe. A prefeitura confirmou à Câmara que retirou a obra. Em abril de 2026, informou que os exemplares estavam na Secretaria para análise técnica. Em 14 de julho de 2026, a prefeitura informou à imprensa que, após análise da Coordenação de Área e da Equipe de Práticas Pedagógicas da Educação Infantil, o livro voltaria a ser utilizado no plano de ensino das turmas consideradas adequadas. A notícia confirma a decisão administrativa de retomada, mas não comprova quando e em quais unidades os exemplares foram efetivamente devolvidos."},
+ {id:"EL-033", ato:"FUNAP-2020", obra:"Veto à lista de doze livros do projeto Remição em Rede", alegacao:"Em mensagem à articuladora, a Funap afirmou que um título não atendia às expectativas da gestão; em reunião, foram mencionadas três obras como problemáticas, sem identificação pública.", eixo:"Outro", modalidade:"Veto a aquisição ou doação", estagio:"Decisão ou ordem", situacao:"Revertido", desfecho:"Funap determinou a inclusão da lista original em 13 de fevereiro de 2020, após repercussão pública", verificado:"Parcialmente", fontes:["bdf-funap","reimao-2023","folha-funap-11fev","folha-funap-14fev"], pendencia:"Obter a mensagem original de Reginaldo Caetano da Silva, a ata da reunião de 13/02/2020 e a nota integral da Funap; identificar as três obras questionadas e confirmar a distribuição dos 240 exemplares aos presídios.", nota:"Em agosto de 2019, as editoras doaram 240 exemplares de doze títulos para a expansão do projeto. Segundo Janine Durand, articuladora do Remição em Rede, a lista completa foi riscada pelo então diretor-executivo da Funap, coronel Henrique Pereira de Souza Neto, e os livros não foram enviados aos presídios. A Folha identificou Reginaldo Caetano da Silva, superintendente da Diretoria de Atendimento e Promoção Humana, como autor de mensagem de 3 de dezembro que dizia que um título não atendia às expectativas da gestão; em reunião, segundo Durand, foram mencionadas três obras, mas sem identificação. Em 13 de fevereiro de 2020, a Funap determinou a inclusão da lista inicialmente indicada e anunciou uma equipe multidisciplinar para tratar da escolha das obras. A reportagem de 14 de fevereiro do Brasil de Fato registra o recuo após a repercussão pública. A distribuição efetiva dos 240 exemplares após a reversão ainda não foi comprovada."},
+ {id:"EL-034", ato:"LIM-2019", obra:"A bolsa amarela", titulo:"Questionamento parlamentar sobre A bolsa amarela — sem retirada comprovada", alegacao:"No requerimento, o vereador perguntou se o livro afrontava princípios morais de pais e alunos e chamou sua temática de “ideologia de gênero”.", eixo:"Sexualidade e gênero", modalidade:"Veto a atividade", estagio:"Pressão pública", situacao:"Sem efeito", desfecho:"Sem retirada: Secretaria defendeu a obra e manteve o projeto de leitura", verificado:"Sim", fontes:["reimao-2023","uninter-bolsa","camara-limeira-req","camara-limeira-resp"], nota:"O Requerimento nº 451/2019, de autoria de Clayton Silva (PSC), pediu informações sobre distribuição, atividades e critérios de escolha de A bolsa amarela. Na justificativa, o vereador afirmou que o livro abordava “ideologia de gênero” e questionou se afrontava princípios morais. A Secretaria Municipal de Educação respondeu em 24 de setembro que a obra integrava o Clube de Leitura, descreveu seu valor literário e declarou que ela não afrontava princípios morais. O documento não registra pedido de retirada nem retirada da obra. Este caso documenta pressão discursiva e questionamento parlamentar, não censura ou banimento."},
 ];
 
+/* ---------- OBRAS ----------
+   conjunto: true quando o registro é um lote sem lista título a título. */
 const LIVROS = {
  "O avesso da pele":{
-   ano:2020, genero:"Romance", premio:"Prêmio Jabuti 2021, categoria Romance Literário",
+   autoria:"Jeferson Tenório",
+   editora:"Companhia das Letras",
+   pnld:true,
+   capa:"avesso-da-pele",
+   ano:2020,
+   genero:"Romance",
+   premio:"Prêmio Jabuti 2021, categoria Romance Literário",
    sinopse:"Um professor negro é morto pela polícia em Porto Alegre. O filho reconstrói a vida do pai a partir dos objetos, dos silêncios e do que a cidade fez com o corpo dele.",
    nota:"Aprovado no PNLD antes das retiradas. O parecer do MEC, obtido pela Fiquem Sabendo via Lei de Acesso à Informação, avaliou que a linguagem tinha coerência interna com a narrativa. Voltou às escolas do PR e de GO em abril de 2024; no MS, a devolução foi anunciada no fim de abril."},
+ "It: A coisa":{
+   autoria:"Stephen King",
+   ano:1986,
+   genero:"Terror",
+   sinopse:"Sete crianças de uma cidade do Maine enfrentam uma entidade que se alimenta do medo, e voltam adultas para terminar o que começaram."},
  "Laranja Mecânica":{
-   ano:1962, genero:"Romance",
+   autoria:"Anthony Burgess",
+   capa:"laranja-mecanica",
+   ano:1962,
+   genero:"Romance",
    sinopse:"Numa Inglaterra distópica, um adolescente violento é submetido a um tratamento de condicionamento que o impede de escolher o mal — e, com isso, de escolher.",
    nota:"Livro sobre os limites do Estado ao suprimir a escolha individual, retirado por decisão de Estado."},
- "It: A coisa":{
-   ano:1986, genero:"Terror",
-   sinopse:"Sete crianças de uma cidade do Maine enfrentam uma entidade que se alimenta do medo, e voltam adultas para terminar o que começaram."},
- "Os 13 porquês":{
-   ano:2007, genero:"Juvenil",
-   sinopse:"Uma adolescente deixa treze fitas explicando as razões que a levaram ao suicídio, endereçadas a quem participou de cada uma.",
-   nota:"Único título da lista de SC cujo tema central é saúde mental adolescente."},
- "A química entre nós":{
-   ano:2012, genero:"Não ficção",
-   sinopse:"Um neurocientista e um jornalista investigam a base biológica do desejo, do amor e do vínculo humano.",
-   nota:"Obra de divulgação científica sobre a neurobiologia do vínculo, assinada por um neurocientista e um jornalista, guardada na mesma ordem que livros de terror."},
+ "Donnie Darko":{
+   autoria:"Richard Kelly",
+   genero:"Roteiro",
+   sinopse:"O roteiro do filme de 2001 sobre um adolescente que, depois de escapar de um acidente, passa a ter visões de um coelho que anuncia o fim do mundo."},
+ "Coração Satânico":{
+   autoria:"William Hjortsberg",
+   ano:1978,
+   genero:"Romance policial",
+   sinopse:"Um detetive de Nova York é contratado para achar um cantor desaparecido e descobre que o cliente tem planos para a alma de alguém."},
+ "Exorcismo":{
+   autoria:"Thomas B. Allen",
+   ano:1993,
+   genero:"Não ficção",
+   sinopse:"Reconstrução jornalística do caso de 1949 que inspirou O exorcista, a partir do diário de um dos padres envolvidos."},
+ "Ed & Lorraine Warren: demonologistas — arquivos sobrenaturais":{
+   autoria:"Gerald Brittle",
+   ano:1980,
+   genero:"Não ficção",
+   sinopse:"Relatos do casal de investigadores paranormais cujos casos viraram a série de filmes Invocação do Mal."},
  "O diário do diabo: os segredos de Alfred Rosenberg, o maior intelectual do nazismo":{
-   ano:2016, genero:"Não ficção, história",
+   autoria:"Robert K. Wittman e David Kinney",
+   ano:2016,
+   genero:"Não ficção, história",
    sinopse:"A partir de diários desaparecidos por décadas, reconstrói a trajetória do ideólogo racial do nazismo, condenado em Nuremberg.",
    nota:"Livro crítico ao nazismo, retirado sob a mesma ordem que atingiu obras de terror."},
+ "A química entre nós":{
+   autoria:"Larry Young e Brian Alexander",
+   ano:2012,
+   genero:"Não ficção",
+   sinopse:"Um neurocientista e um jornalista investigam a base biológica do desejo, do amor e do vínculo humano.",
+   nota:"Obra de divulgação científica sobre a neurobiologia do vínculo, assinada por um neurocientista e um jornalista, guardada na mesma ordem que livros de terror."},
+ "Os 13 porquês":{
+   autoria:"Jay Asher",
+   ano:2007,
+   genero:"Juvenil",
+   sinopse:"Uma adolescente deixa treze fitas explicando as razões que a levaram ao suicídio, endereçadas a quem participou de cada uma.",
+   nota:"Único título da lista de SC cujo tema central é saúde mental adolescente."},
  "Macunaíma":{
-   ano:1928, genero:"Rapsódia",
+   autoria:"Mário de Andrade",
+   capa:"macunaima",
+   ano:1928,
+   genero:"Rapsódia",
    sinopse:"O herói sem nenhum caráter atravessa um Brasil de mitos, cidades e línguas sobrepostas, no livro que fundou boa parte do modernismo brasileiro.",
    nota:"Estava na lista de Rondônia. O secretário de Educação declarou à imprensa que “Macunaíma é filme e o escambau”."},
  "Memórias póstumas de Brás Cubas":{
-   ano:1881, genero:"Romance",
+   autoria:"Machado de Assis",
+   capa:"memorias-postumas",
+   ano:1881,
+   genero:"Romance",
    sinopse:"Um defunto autor narra a própria vida com ironia, do leito de morte para trás, inaugurando o realismo machadiano.",
    nota:"Leitura obrigatória em vestibulares, listada como “conteúdo inadequado às crianças e adolescentes”."},
  "Os sertões":{
-   ano:1902, genero:"Não ficção",
+   autoria:"Euclides da Cunha",
+   ano:1902,
+   genero:"Não ficção",
    sinopse:"O relato de Euclides da Cunha sobre a Guerra de Canudos e a destruição do arraial pelo Exército, um dos livros fundadores do pensamento social brasileiro."},
  "O castelo":{
-   ano:1926, genero:"Romance",
+   autoria:"Franz Kafka",
+   ano:1926,
+   genero:"Romance",
    sinopse:"Um agrimensor tenta chegar ao castelo que o contratou e esbarra numa burocracia que nunca se explica nem se deixa alcançar."},
  "Contos de terror, de mistério e de morte":{
+   autoria:"Edgar Allan Poe",
    genero:"Contos",
    sinopse:"Reunião dos contos de Poe que fundaram a literatura de horror psicológico moderna."},
  "A vida como ela é":{
+   autoria:"Nelson Rodrigues",
    genero:"Crônicas",
    sinopse:"Crônicas do cotidiano carioca, publicadas originalmente em jornal, sobre traição, desejo e hipocrisia de classe média."},
  "Beijo no asfalto":{
-   ano:1961, genero:"Teatro",
+   autoria:"Nelson Rodrigues",
+   ano:1961,
+   genero:"Teatro",
    sinopse:"Um homem beija um desconhecido atropelado, e a imprensa transforma o gesto em escândalo que destrói sua vida.",
    nota:"Peça sobre linchamento moral fabricado pela imprensa."},
+ "Obra de Rubem Fonseca (19 títulos)":{
+   legenda:"19 títulos do mesmo autor",
+   autoria:"Rubem Fonseca",
+   conjunto:true,
+   nota:"Maior alvo isolado da lista de Rondônia: 19 dos 43 títulos. Fonseca já havia sido censurado na ditadura militar, quando Feliz Ano Novo foi proibido."},
+ "Obra completa de Rubem Alves":{
+   legenda:"Obra completa, sem lista",
+   autoria:"Rubem Alves",
+   conjunto:true,
+   nota:"O memorando determinava, em nota de rodapé, que todos os livros do autor fossem recolhidos. Educador e teólogo, é considerado um dos principais pedagogos brasileiros ao lado de Paulo Freire."},
+ "Demais títulos da lista de Rondônia":{
+   legenda:"Títulos ainda não identificados",
+   autoria:"Vários, entre eles Caio Fernando Abreu, Carlos Heitor Cony e Ferreira Gullar",
+   conjunto:true,
+   nota:"Os títulos da lista de 43 obras que ainda não têm registro próprio no catálogo. O adendo do memorando precisa ser obtido para desmembrá-los."},
+ "Anúncio de descarte de 5.165 exemplares classificados como de “temática alheia à negra”":{
+   legenda:"5.165 exemplares",
+   autoria:"Vários, entre eles Karl Marx, Max Weber, Eric Hobsbawm, Celso Furtado, Caio Prado Jr. e Machado de Assis",
+   conjunto:true,
+   nota:"O relatório classificou 5.165 exemplares do acervo, perto de metade do total, como de temática alheia à negra. O Conselho Federal de Biblioteconomia apontou que o relatório que embasou o expurgo não constitui política de desenvolvimento de coleções e foi feito sem bibliotecários."},
+ "Segregação de cerca de 300 livros no chamado “Acervo da Vergonha”":{
+   legenda:"Cerca de 300 livros",
+   autoria:"Vários, entre eles Antonio Gramsci, Marilena Chauí, Simone de Beauvoir, Karl Marx e Celso Furtado",
+   conjunto:true,
+   nota:"Resposta institucional à decisão judicial: impedido de descartar, o órgão isolou as obras em sala própria, o que o catálogo classifica como ocultação ou restrição de acesso."},
  "O menino marrom":{
-   ano:1986, genero:"Infantil",
+   autoria:"Ziraldo",
+   editora:"Melhoramentos",
+   capa:"menino-marrom",
+   ano:1986,
+   genero:"Infantil",
    sinopse:"A amizade entre um menino marrom e um menino cor-de-rosa, e as perguntas dos dois sobre cor, diferença e preconceito.",
    nota:"Clássico de Ziraldo sobre racismo para crianças, suspenso por “conteúdo agressivo” e devolvido por decisão judicial."},
  "Meninas sonhadoras, mulheres cientistas":{
+   autoria:"Flávia Martins de Carvalho",
+   editora:"Mostarda",
+   capa:"meninas-sonhadoras",
    genero:"Infantojuvenil, não ficção",
    sinopse:"Trajetórias de mulheres brasileiras na pesquisa e na vida pública, escrito por uma juíza do TJSP.",
    nota:"Recolhido depois que um vereador criticou a presença de Marielle Franco e Débora Diniz entre as retratadas. Dois anos depois, a Justiça chamou a retirada de censura."},
  "Eu receberia as piores notícias de seus lindos lábios":{
-   ano:2005, genero:"Romance",
+   autoria:"Marçal Aquino",
+   editora:"Companhia das Letras",
+   capa:"piores-noticias",
+   ano:2005,
+   genero:"Romance",
    sinopse:"Num garimpo do Pará, um fotógrafo se envolve com a mulher de um pastor. O desejo e a violência dividem o mesmo território.",
    nota:"Saiu da lista de leituras do vestibular, o que o catálogo registra como exclusão de lista de leitura. A decisão veio dias depois de um deputado chamar o livro de pornográfico em vídeo."},
- "Obra de Rubem Fonseca (19 títulos)":{
-   nota:"Maior alvo isolado da lista de Rondônia: 19 dos 43 títulos. Fonseca já havia sido censurado na ditadura militar, quando Feliz Ano Novo foi proibido."},
- "Obra completa de Rubem Alves":{
-   nota:"O memorando determinava, em nota de rodapé, que todos os livros do autor fossem recolhidos. Educador e teólogo, é considerado um dos principais pedagogos brasileiros ao lado de Paulo Freire."},
- "Donnie Darko":{
-   genero:"Roteiro",
-   sinopse:"O roteiro do filme de 2001 sobre um adolescente que, depois de escapar de um acidente, passa a ter visões de um coelho que anuncia o fim do mundo."},
- "Coração Satânico":{
-   ano:1978, genero:"Romance policial",
-   sinopse:"Um detetive de Nova York é contratado para achar um cantor desaparecido e descobre que o cliente tem planos para a alma de alguém."},
- "Exorcismo":{
-   ano:1993, genero:"Não ficção",
-   sinopse:"Reconstrução jornalística do caso de 1949 que inspirou O exorcista, a partir do diário de um dos padres envolvidos."},
- "Ed & Lorraine Warren: demonologistas — arquivos sobrenaturais":{
-   ano:1980, genero:"Não ficção",
-   sinopse:"Relatos do casal de investigadores paranormais cujos casos viraram a série de filmes Invocação do Mal."},
+ "A mamãe vai ter um bebê":{
+   genero:"Infantil",
+   nota:"Livro de educação sexual para crianças pequenas. A lei aprovada em seguida pela Câmara de Londrina permite explicação científica sobre reprodução, que é o assunto do livro."},
  "A bolsa amarela":{
-   ano:1976, genero:"Infantojuvenil",
+   autoria:"Lygia Bojunga",
+   ano:1976,
+   genero:"Infantojuvenil",
    sinopse:"Raquel esconde numa bolsa amarela três vontades que não cabem em casa: crescer, ter nascido menino e escrever.",
    nota:"Clássico de Lygia Bojunga, primeira autora fora da Europa e dos EUA a receber o Prêmio Hans Christian Andersen, em 1982."},
  "Pipoca e Picolé":{
+   autoria:"Adriana Lisboa",
+   editora:"Elo",
    genero:"Infantil",
    sinopse:"A menina Pipoca e o cachorro Picolé numa família com um pai e duas mães.",
    nota:"Comprado pela própria prefeitura um ano antes, por R$ 1,2 milhão, e retirado das escolas pela gestão seguinte."},
  "Veto à lista de doze livros do projeto Remição em Rede":{
+   legenda:"12 títulos, 240 exemplares",
+   autoria:"Vários, entre eles Gabriel García Márquez, Albert Camus, Harper Lee, Isabela Figueiredo e Édouard Louis",
+   editora:"Record, Planeta, Todavia e Boitempo",
+   conjunto:true,
    nota:"Livros para presos reduzirem a pena pela leitura, direito previsto em lei. Entre os doados, um romance de um Nobel de Literatura."},
- "A mamãe vai ter um bebê":{
-   genero:"Infantil",
-   nota:"Livro de educação sexual para crianças pequenas. A lei aprovada em seguida pela Câmara de Londrina permite explicação científica sobre reprodução, que é o assunto do livro."},
- "Anúncio de descarte de 5.165 exemplares classificados como de “temática alheia à negra”":{
-   nota:"O relatório classificou 5.165 exemplares do acervo, perto de metade do total, como de temática alheia à negra. O Conselho Federal de Biblioteconomia apontou que o relatório que embasou o expurgo não constitui política de desenvolvimento de coleções e foi feito sem bibliotecários."},
- "Segregação de cerca de 300 livros no chamado “Acervo da Vergonha”":{
-   nota:"Resposta institucional à decisão judicial: impedido de descartar, o órgão isolou as obras em sala própria, o que o catálogo classifica como ocultação ou restrição de acesso."},
+};
+
+/* ---------- ATOS ----------
+   papeis: o texto de cada papel, como aparece na ficha. Só se nomeia quem tem fonte. */
+const ATOS = {
+ "RS-2024":{
+   nome:"Ofício da 6ª Coordenadoria Regional de Educação (RS)",
+   data:"2024-03-01",
+   fim:"2024-03-05",
+   uf:"RS",
+   cidade:"Santa Cruz do Sul e outros 17 municípios",
+   tipo:"Escolar",
+   rede:"Estadual",
+   governo:"Eduardo Leite (PSDB) · governo do RS",
+   quem:"Coordenadoria regional de educação",
+   documento:"Ofício da 6ª Coordenadoria Regional de Educação; número do expediente ainda não cadastrado.",
+   papeis:{
+     pressao:"Janaína Venzon, diretora da Escola Estadual Ernesto Alves: fez a crítica pública em vídeo. O cadastro não sustenta que ela tenha expedido a ordem administrativa.",
+     decisor:"Luiz Ricardo Pinho de Moura, coordenador da 6ª Coordenadoria Regional de Educação: o ofício da coordenadoria determinou a retirada.",
+     assinantes:"Luiz Ricardo Pinho de Moura, coordenador da 6ª CRE.",
+     executor:"6ª Coordenadoria Regional de Educação, com alcance informado de 18 municípios do Vale do Rio Pardo.",
+     resposta:"A Secretaria de Educação do Rio Grande do Sul desautorizou a ordem no mesmo dia."
+   }},
+ "PR-2024":{
+   nome:"Ofícios da Secretaria da Educação do Paraná e do Núcleo Regional de Curitiba",
+   data:"2024-03-04",
+   fim:"2024-04-09",
+   uf:"PR",
+   cidade:"Curitiba e região",
+   tipo:"Escolar",
+   rede:"Estadual",
+   governo:"Ratinho Júnior (PSD) · governo do PR",
+   quem:"Secretaria estadual",
+   documento:"Ofício da Secretaria de Estado da Educação do Paraná, encaminhado em 4 de março de 2024 aos núcleos regionais; a reportagem reproduz o teor e identifica Anderfábio Oliveira dos Santos como signatário do ofício da Secretaria e Laura Patrícia Lopes como signatária de ofício subsequente do NRE de Curitiba.",
+   papeis:{
+     decisor:"Secretaria de Estado da Educação do Paraná, que encaminhou ofício aos chefes dos núcleos regionais em 4 de março de 2024; o recolhimento seria realizado entre os dias 5 e 8.",
+     assinantes:"Anderfábio Oliveira dos Santos, diretor de Educação, e Laura Patrícia Lopes, chefe do Núcleo Regional de Educação de Curitiba.",
+     executor:"Secretaria estadual e Núcleo Regional de Educação de Curitiba.",
+     resposta:"A obra voltou às escolas em abril de 2024, acompanhada de orientações pedagógicas."
+   }},
+ "GO-2024":{
+   nome:"Recolhimento na rede estadual de Goiás",
+   data:"2024-03-07",
+   fim:"2024-04-09",
+   uf:"GO",
+   tipo:"Escolar",
+   rede:"Estadual",
+   governo:"Ronaldo Caiado (União Brasil) · governo de GO",
+   quem:"Secretaria estadual",
+   documento:"Medida atribuída à Secretaria de Estado da Educação de Goiás; o documento original ainda não está identificado no cadastro.",
+   papeis:{
+     decisor:"Secretaria de Estado da Educação de Goiás.",
+     assinantes:"A pessoa responsável pela decisão não está identificada nas fontes cadastradas.",
+     executor:"Rede estadual de ensino.",
+     resposta:"O livro voltou às escolas em abril de 2024."
+   }},
+ "MS-2024":{
+   nome:"Recolhimento na rede estadual de Mato Grosso do Sul",
+   data:"2024-03-07",
+   fim:"2024-04-23",
+   uf:"MS",
+   tipo:"Escolar",
+   rede:"Estadual",
+   governo:"Eduardo Riedel (PSDB) · governo do MS",
+   quem:"Governo estadual",
+   pressao:"Deputado estadual Rinaldo Modesto (Podemos)",
+   documento:"Ordem de recolhimento da rede estadual de Mato Grosso do Sul; documento formal e signatário ainda precisam ser identificados.",
+   papeis:{
+     pressao:"Rinaldo Modesto (Podemos), deputado estadual: pediu a retirada na Assembleia Legislativa.",
+     decisor:"Eduardo Riedel, governador de Mato Grosso do Sul: a Secretaria confirmou à CartaCapital que o recolhimento atendia a uma determinação do governador, após análise da própria pasta.",
+     assinantes:"A autoridade que formalizou a ordem não está identificada no cadastro.",
+     executor:"Secretaria de Estado de Educação de Mato Grosso do Sul.",
+     resposta:"A Secretaria anunciou a devolução em 23 de abril de 2024, com orientações pedagógicas."
+   }},
+ "SC-2024":{
+   nome:"Redistribuição de O avesso da pele na rede estadual de Santa Catarina",
+   data:"2024-03-07",
+   uf:"SC",
+   tipo:"Escolar",
+   rede:"Estadual",
+   governo:"Jorginho Mello (PL) · governo de SC",
+   quem:"Secretaria estadual",
+   documento:"Comunicado de revisão de acervo/redistribuição; documento original ainda não está identificado no cadastro.",
+   papeis:{
+     decisor:"Secretaria de Estado da Educação de Santa Catarina.",
+     assinantes:"A pessoa responsável pela decisão não está identificada nas fontes cadastradas.",
+     executor:"Rede estadual; exemplares foram redistribuídos para EJA e centros de educação profissional.",
+     resposta:"A justificativa pública foi apresentada como revisão de acervo e adequação por faixa etária."
+   }},
+ "SC-2023":{
+   nome:"Ofício circular de 7 de novembro de 2023 (SC)",
+   data:"2023-11-07",
+   uf:"SC",
+   cidade:"Coordenadoria regional",
+   tipo:"Escolar",
+   rede:"Estadual",
+   governo:"Jorginho Mello (PL) · governo de SC",
+   quem:"Secretaria estadual",
+   documento:"Ofício circular de 7 de novembro de 2023, reproduzido e descrito pela imprensa; determina retirar nove obras de circulação e armazená-las em local inacessível à comunidade escolar. Assinaturas atribuídas a Waldemar Ronssem Júnior e Anelise dos Santos de Medeiros. O número do expediente e a cópia integral oficial ainda não estão cadastrados.",
+   papeis:{
+     decisor:"Supervisão/estrutura regional da Secretaria de Estado da Educação de Santa Catarina.",
+     assinantes:"Waldemar Ronssem Júnior, supervisor regional de Educação, e Anelise dos Santos de Medeiros, integradora regional, assinaram o ofício que determinou a retirada de circulação.",
+     executor:"Estrutura regional da rede estadual de ensino. A coordenadoria específica ainda não foi identificada nas fontes cadastradas.",
+     fiscalizacao:"Leonel Camasão (PSOL), suplente de vereador, levou o caso ao Ministério Público. O cadastro o identifica como autor da denúncia posterior, não como autor do pedido de retirada."
+   }},
+ "RO-2020":{
+   nome:"Memorando-Circular nº 4/2020/SEDUC-DGE (RO)",
+   data:"2020-02-06",
+   fim:"2020-02-06",
+   uf:"RO",
+   tipo:"Escolar",
+   rede:"Estadual",
+   governo:"Marcos Rocha (PSL) · governo de RO",
+   quem:"Secretaria estadual",
+   documento:"Memorando-Circular nº 4/2020/SEDUC-DGE, processo SEI 0029.051300/2020-91, com adendo que contém a relação de títulos. O artigo acadêmico de 2024 reproduz imagem do memorando. Como fonte primária de desfecho, o Diário do MPF nº 161/2021, publicado em 30 de agosto de 2021, registra o resultado do inquérito civil nº 1.31.000.000213/2020-61: solicitação verbal suspensa no mesmo dia, devolução dos livros recolhidos, ausência de recolhimento concretizado, sindicância aberta pela Seduc, recomendação do MP-RO acatada e arquivamento homologado. A íntegra do processo SEI e da sindicância estadual ainda não foi localizada.",
+   papeis:{
+     decisor:"O Memorando-Circular nº 4/2020/SEDUC-DGE traz a determinação em nome do secretário de Educação Suamy Vivecananda. A Seduc depois negou ter ordenado o recolhimento e afirmou que o processo foi encerrado antes de tramitar para escolas ou órgãos externos.",
+     assinantes:"O fecho do documento traz o nome de Suamy Vivecananda; o registro eletrônico aponta assinatura digital de Irany de Oliveira Lima Morais, diretora-geral de Educação. São funções documentais distintas: nome indicado no fecho e signatária eletrônica.",
+     executor:"O memorando encaminhava a providência às coordenadorias regionais. A Seduc afirmou que não houve tramitação para escolas; há relatos de exemplares encaixotados em algumas unidades, mas o alcance da execução não está comprovado.",
+     resposta:"O MPF registrou que a solicitação verbal foi suspensa no mesmo dia, que exemplares recolhidos foram devolvidos às escolas e que o recolhimento não se concretizou. A Seduc abriu sindicância; o MP-RO instaurou procedimento e emitiu recomendação, acatada pela Secretaria. O inquérito civil do MPF foi arquivado e o arquivamento homologado em 2021."
+   }},
+ "PALM-2021-06":{
+   nome:"Relatório “Retrato do Acervo” e anúncio de descarte (Fundação Palmares)",
+   data:"2021-06-11",
+   uf:"DF",
+   cidade:"Brasília",
+   tipo:"Especializada",
+   rede:"Federal",
+   governo:"Jair Bolsonaro · governo federal",
+   quem:"Presidência da Fundação Cultural Palmares",
+   pressao:"Sérgio Camargo, então presidente da Fundação Cultural Palmares, apresentou o relatório e defendeu a retirada dos exemplares classificados pela gestão como de temática alheia à negra.",
+   documento:"Relatório Público 01 – CNIRC, “Retrato do Acervo: três décadas de dominação marxista na Fundação Cultural Palmares”, divulgado em 11 de junho de 2021 (link original recuperado; acesso técnico ao PDF não confirmado nesta revisão). A lista completa dos 5.165 exemplares e a conferência do total de itens permanecem pendentes; há divergência entre os totais publicados contemporaneamente. A decisão judicial sobre cerca de 300 livros é registrada separadamente no EL-026.",
+   papeis:{
+     decisor:"Presidência da Fundação Cultural Palmares, durante a gestão de Sérgio Camargo, que divulgou o relatório e anunciou a intenção de descartar 5.165 exemplares.",
+     responsavel:"Sérgio Camargo, então presidente da Fundação Cultural Palmares, apresentou publicamente a classificação e a proposta de descarte. O relatório original e a lista completa dos exemplares ainda precisam ser obtidos.",
+     executor:"Fundação Cultural Palmares; não há comprovação de que os 5.165 exemplares tenham sido efetivamente descartados.",
+     resposta:"Não foi localizada comprovação do destino final dos 5.165 exemplares. A decisão judicial sobre a doação de cerca de 300 livros, em ação distinta, está registrada no EL-026."
+   }},
+ "PALM-2021-08":{
+   nome:"Anúncio do “Acervo da Vergonha” (Fundação Palmares)",
+   data:"2021-08-03",
+   uf:"DF",
+   cidade:"Brasília",
+   tipo:"Especializada",
+   rede:"Federal",
+   governo:"Jair Bolsonaro · governo federal",
+   quem:"Presidência da Fundação Cultural Palmares",
+   pressao:"Sérgio Camargo, então presidente da Fundação Cultural Palmares, anunciou em suas redes a criação de uma “Ala/Acervo da Vergonha” para livros que classificava como marxistas, bandidólatras ou desviantes.",
+   documento:"Anúncio público de Sérgio Camargo em 3 de agosto de 2021 sobre a criação do “Acervo/Ala da Vergonha”, após a Procuradoria-Geral Federal informar ao juízo, em julho, a desistência da doação de cerca de 300 livros. O documento que formalize a segregação física e o regime de acesso não foi localizado.",
+   papeis:{
+     decisor:"Presidência da Fundação Cultural Palmares, durante a gestão de Sérgio Camargo.",
+     responsavel:"Sérgio Camargo anunciou publicamente a intenção de separar os livros em seção chamada “Acervo/Ala da Vergonha”.",
+     executor:"A Fundação Cultural Palmares; a efetiva separação física, sua duração e o regime de acesso público ainda precisam ser comprovados.",
+     resposta:"A Procuradoria-Geral Federal informou ao juízo que Camargo desistira da doação em julho de 2021. Em agosto, ele anunciou a segregação dos livros. Não foi localizado documento que comprove quando o acesso público foi restabelecido."
+   }},
+ "MG-2024":{
+   nome:"Suspensão de atividades com O menino marrom (Conselheiro Lafaiete)",
+   data:"2024-06-19",
+   fim:"2024-06-27",
+   uf:"MG",
+   cidade:"Conselheiro Lafaiete",
+   tipo:"Escolar",
+   rede:"Municipal",
+   governo:"Prefeitura de Conselheiro Lafaiete · gestão Mário Marcus Leão Dutra",
+   quem:"Secretaria Municipal de Educação",
+   pressao:"Pais, familiares e autoridades locais contestaram a abordagem pedagógica da obra; o comunicado oficial não identifica nominalmente os reclamantes.",
+   documento:"Comunicado oficial da Secretaria Municipal de Educação, publicado em 20 de junho de 2024, reconhecendo a orientação para suspender temporariamente os trabalhos pedagógicos; decisão liminar da 1ª Vara Cível no processo nº 5006658-14.2024.8.13.0183 determinou o cancelamento imediato da suspensão temporária.",
+   papeis:{
+     pressao:"Pais, familiares e autoridades locais contestaram a abordagem pedagógica; o comunicado oficial não identifica nominalmente os reclamantes.",
+     decisor:"Secretaria Municipal de Educação, que em comunicado de 20 de junho reconheceu ter orientado a suspensão temporária dos trabalhos pedagógicos.",
+     executor:"Unidades escolares da rede municipal, quanto às atividades pedagógicas; não há comprovação de recolhimento geral de exemplares.",
+     resposta:"Em 27 de junho de 2024, o juiz Espagner Wallysen Vaz Leite deferiu medida liminar e determinou o cancelamento imediato da suspensão temporária dos trabalhos pedagógicos."
+   }},
+ "SJC-2024":{
+   nome:"Recolhimento de Meninas sonhadoras (São José dos Campos)",
+   data:"2024-06-04",
+   fim:"2026-07-20",
+   uf:"SP",
+   cidade:"São José dos Campos",
+   tipo:"Escolar",
+   rede:"Municipal",
+   governo:"Anderson Farias (PSD) · prefeitura de São José dos Campos",
+   quem:"Secretaria Municipal de Educação e Cidadania",
+   pressao:"Thomaz Henrique (PL), vereador, que acusou a obra de “apologia ao aborto” e “doutrinação ideológica” por incluir Marielle Franco e Débora Diniz.",
+   documento:"Ordem de recolhimento transmitida aos diretores das escolas por mensagens de WhatsApp, segundo a apuração judicial divulgada em julho de 2026. Decisão da Vara da Infância e Juventude de 20 de julho de 2026 determinou a restituição dos exemplares em cinco dias após a intimação e proibiu restrições político-ideológicas. A cobertura não confirmou o cumprimento da ordem; cópia pública integral da decisão não foi localizada.",
+   papeis:{
+     pressao:"Thomaz Henrique (PL), vereador, que acusou a obra de “apologia ao aborto” e “doutrinação ideológica”.",
+     decisor:"Secretaria Municipal de Educação e Cidadania; a autoridade individual que formalizou a retirada não foi identificada nas fontes públicas consultadas.",
+     executor:"Diretores das escolas municipais receberam a ordem de retirada por mensagens de WhatsApp, segundo a apuração divulgada com base no processo.",
+     resposta:"Em 20 de julho de 2026, a Vara da Infância e Juventude determinou a restituição dos exemplares no prazo de cinco dias após a intimação e proibiu novas restrições político-ideológicas. A prefeitura não havia confirmado publicamente o cumprimento quando as reportagens foram publicadas."
+   }},
+ "UNIRV-2023":{
+   nome:"Exclusão da lista do vestibular da UniRV",
+   data:"2023-04-26",
+   uf:"GO",
+   cidade:"Rio Verde",
+   tipo:"Universitária",
+   rede:"Municipal",
+   governo:"UniRV · universidade municipal de Rio Verde",
+   quem:"Coordenação do Vestibular da Universidade de Rio Verde (UniRV)",
+   pressao:"Deputado federal Gustavo Gayer (PL-GO), que publicou vídeo chamando a obra de “pornográfica”.",
+   documento:"Nota oficial da UniRV, datada de 26 de abril e publicada em 27 de abril de 2023, atribui à Coordenação do Vestibular a decisão de excluir imediatamente a obra após a polêmica. A nota não identifica o responsável individual nem apresenta ato nominal de formalização.",
+   papeis:{
+     pressao:"Gustavo Gayer (PL-GO), deputado federal, que publicou vídeo chamando o livro de “pornográfico”.",
+     decisor:"Coordenação do Vestibular da UniRV, que declarou ter decidido pela exclusão imediata da obra após a polêmica.",
+     responsavel:"A nota oficial atribui a decisão à Coordenação do Vestibular. Não identifica a pessoa responsável nem apresenta ata, despacho ou ato nominal de formalização.",
+     executor:"Universidade de Rio Verde (UniRV)."
+   }},
+ "LON-2024":{
+   nome:"Requerimento de recolhimento de A mamãe vai ter um bebê (Londrina)",
+   data:"2024-11-26",
+   fim:"2025-03-21",
+   uf:"PR",
+   cidade:"Londrina",
+   tipo:"Escolar",
+   rede:"Municipal",
+   governo:"Marcelo Belinati (PP) · prefeitura de Londrina",
+   quem:"Vereadora Jéssica Ramos Moreno (PP) · Secretaria Municipal de Educação como destinatária do pedido",
+   pressao:"Jéssica Ramos Moreno (PP), vereadora, encontrou a obra durante vistoria em creche após denúncia de uma família e apresentou requerimento pedindo seu recolhimento.",
+   documento:"Requerimento parlamentar de Jéssica Ramos Moreno (PP), apresentado após vistoria em creche em 26 de novembro de 2024, solicitando à Secretaria Municipal de Educação o recolhimento da obra; cópia e resposta administrativa ainda não localizadas. Separadamente, o PL 79/2024 foi sancionado como Lei Municipal nº 13.930, de 21 de março de 2025.",
+   papeis:{
+     pressao:"Jéssica Ramos Moreno (PP), vereadora, pediu formalmente à Secretaria Municipal de Educação o recolhimento do livro após encontrá-lo em uma creche.",
+     decisor:"A Secretaria Municipal de Educação recebeu o pedido; não foi localizada resposta oficial nem decisão administrativa que confirme a retirada.",
+     executor:"Não identificado. A presença de um exemplar na creche foi relatada pela vereadora; a execução do recolhimento não está comprovada."
+   }},
+ "DF-2026":{
+   nome:"Controvérsia sobre atividade no Colégio Militar Dom Pedro II (DF)",
+   data:"2026-05-15",
+   uf:"DF",
+   cidade:"Brasília",
+   tipo:"Escolar",
+   rede:"Distrital",
+   governo:"Colégio Militar Dom Pedro II · instituição administrada pelo Corpo de Bombeiros Militar do Distrito Federal",
+   quem:"Colégio Militar Dom Pedro II",
+   pressao:"Pais de alunos do 4º ano contestaram, em grupos de mensagens, o uso de uma resenha da obra em atividade de interpretação.",
+   documento:"Atividade de Língua Portuguesa que utilizou link para resenha de A bolsa amarela; não foi localizado ato formal de retirada da obra, e a apuração da piauí afirma que não houve recolhimento de exemplares nem adoção da obra.",
+   papeis:{
+     pressao:"Pais de alunos do 4º ano contestaram em grupos de mensagens o uso de uma resenha da obra em atividade de interpretação.",
+     decisor:"O colégio afirmou que a atividade atendia aos objetivos pedagógicos. Não há documento que comprove ordem formal de retirada da obra ou suspensão do acesso ao livro.",
+     executor:"Colégio Militar Dom Pedro II; o link da resenha não voltou a ser utilizado depois do encerramento do exercício.",
+     resposta:"A escola negou prejuízo pedagógico ou direcionamento ideológico. A apuração da piauí informa que não houve adoção da obra nem retirada de exemplares do acervo."
+   }},
+ "TAU-2025":{
+   nome:"Recolhimento de Pipoca e Picolé (Taubaté)",
+   data:"2025-11-01",
+   uf:"SP",
+   cidade:"Taubaté",
+   tipo:"Escolar",
+   rede:"Municipal",
+   governo:"Sérgio Victor (Novo) · prefeitura de Taubaté",
+   quem:"Secretaria Municipal de Educação",
+   pressao:"Zelinda Pastora (PRD), vereadora da base governista, declarou que pediu ao secretário de Educação o recolhimento após reclamação de uma mãe.",
+   documento:"Ordem de recolhimento atribuída pela vereadora Zelinda Pastora ao secretário Hélcio Carvalho dos Santos; documento formal não localizado. Em 14 de julho de 2026, a prefeitura informou publicamente a retomada do uso pedagógico após análise técnica; o parecer e o ato administrativo correspondente ainda não foram localizados.",
+   papeis:{
+     pressao:"Zelinda Pastora (PRD), vereadora da base governista, que disse ter pedido diretamente ao secretário o recolhimento após reclamação de uma mãe.",
+     decisor:"Secretaria Municipal de Educação, então sob responsabilidade do secretário Hélcio Carvalho dos Santos; a ordem escrita e seu signatário formal ainda não foram localizados.",
+     executor:"Rede municipal de ensino; a vereadora afirmou que a obra reapareceu em algumas unidades em 2026 e que pediu nova providência.",
+     resposta:"Em 14 de julho de 2026, a prefeitura informou que, após análise técnica da Coordenação de Área e da Equipe de Práticas Pedagógicas da Educação Infantil, o livro voltaria ao plano de ensino das turmas consideradas adequadas. A efetiva devolução dos exemplares às unidades escolares não foi confirmada."
+   }},
+ "FUNAP-2020":{
+   nome:"Veto à lista do projeto Remição em Rede (Funap)",
+   data:"2020-02-11",
+   fim:"2020-02-13",
+   uf:"SP",
+   cidade:"São Paulo",
+   tipo:"Especializada",
+   rede:"Estadual",
+   governo:"João Doria (PSDB) · governo de São Paulo",
+   quem:"Fundação Prof. Dr. Manoel Pedro Pimentel (Funap)",
+   pressao:"A lista de doze livros do projeto Remição em Rede foi vetada pela Funap; a articuladora do projeto, Janine Durand, relatou que três títulos foram considerados inadequados, sem identificação pública.",
+   documento:"Ato de veto original e ata da reunião ainda não localizados. A Folha publicou o teor de mensagem de 3 de dezembro de 2019 enviada por Reginaldo Caetano da Silva, superintendente da Diretoria de Atendimento e Promoção Humana, e registrou o relato de Janine Durand de que a lista foi riscada pelo diretor-executivo Henrique Pereira de Souza Neto. Em 13 de fevereiro de 2020, a Funap informou ter determinado a inclusão da lista original e a criação de equipe multidisciplinar. Falta obter a comunicação institucional integral e comprovar a distribuição dos 240 exemplares.",
+   papeis:{
+     decisor:"A lista foi riscada, segundo Janine Durand, pelo então diretor-executivo da Funap, coronel Henrique Pereira de Souza Neto. A Funap determinou em 13 de fevereiro de 2020 a inclusão da lista originalmente indicada.",
+     responsavel:"Reginaldo Caetano da Silva, superintendente da Diretoria de Atendimento e Promoção Humana, enviou a mensagem de 3 de dezembro de 2019 que dizia que um título não atendia às expectativas da gestão. A decisão de riscar a lista é atribuída por Janine Durand ao diretor-executivo Henrique Pereira de Souza Neto.",
+     executor:"Funap; a lista original não havia sido encaminhada aos presídios antes da reversão, segundo a reportagem da Folha.",
+     resposta:"Em 13 de fevereiro de 2020, a Funap determinou a inclusão da lista inicial e anunciou uma equipe multidisciplinar para tratar da seleção. Não foi comprovado se os 240 exemplares chegaram depois às unidades prisionais."
+   }},
+ "LIM-2019":{
+   nome:"Requerimento nº 451/2019 sobre A bolsa amarela (Limeira)",
+   data:"2019-08-12",
+   fim:"2019-10-15",
+   uf:"SP",
+   cidade:"Limeira",
+   tipo:"Escolar",
+   rede:"Municipal",
+   governo:"Prefeitura de Limeira · gestão municipal em 2019",
+   quem:"Vereador Clayton Silva (PSC)",
+   pressao:"Clayton Silva (PSC), vereador, apresentou requerimento com perguntas sobre a distribuição e leitura da obra e afirmou que ela abordava a chamada “ideologia de gênero”.",
+   documento:"Requerimento nº 451/2019, de autoria do vereador Clayton Silva (PSC), protocolado em 12 de agosto de 2019, e resposta da Secretaria Municipal de Educação por meio do Ofício GSE nº 363/2019, de 24 de setembro de 2019. Os documentos registram questionamento parlamentar e defesa institucional da obra, não ordem ou pedido formal de retirada.",
+   papeis:{
+     pressao:"Clayton Silva (PSC), vereador, apresentou requerimento questionando a distribuição e a leitura da obra e afirmou que ela abordava “ideologia de gênero”.",
+     decisor:"Não houve decisão de retirada. A Secretaria Municipal de Educação respondeu ao Requerimento nº 451/2019 e defendeu a obra e seu uso no Clube de Leitura.",
+     executor:"Escolas da rede municipal, no âmbito do Clube de Leitura; a Secretaria informou que o livro já integrava acervo enviado pelo PNLD.",
+     resposta:"Em 24 de setembro de 2019, a Secretaria respondeu que a obra não afrontava princípios morais e descreveu seu valor literário e pedagógico."
+   }},
 };
 
 const FONTES = {
@@ -526,6 +903,9 @@ const CONTEXTO = [
 
 /* Registro público de correções. Toda mudança de fato num caso entra aqui. */
 const CORRECOES = [
+ {data:"2026-10-30", id:"EL-005", texto:"A ficha atribuía a decisão à Secretaria de Educação de Mato Grosso do Sul. O caso é de Santa Catarina: a decisão é da Secretaria de Estado da Educação de Santa Catarina."},
+ {data:"2026-10-30", id:"EL-025 e EL-026", texto:"Os dois registros da Fundação Palmares passam a constar como atos distintos: o anúncio de descarte de junho de 2021 e o anúncio do “Acervo da Vergonha” de agosto de 2021."},
+ {data:"2026-10-30", id:"Base de dados", texto:"A base passa a ter quatro entidades ligadas: obras, atos, agentes e registros. Dados do ato (órgão, governo, documento, papéis) e da obra (autoria, editora, capa) deixam de ser repetidos em cada título, e cada ato ganha página própria."},
  {data:"2026-10-29", id:"Classificação", texto:"As 18 modalidades foram substituídas por três eixos com listas fechadas: mecanismo, estágio e situação. Os 34 registros foram reclassificados. Rondônia 2020 (EL-015 a EL-024) deixa de constar como “contestação sem efeito” e passa a retirada, no estágio de decisão ou ordem, revertida: houve memorando oficial, e o MPF registrou que exemplares chegaram a ser recolhidos e foram devolvidos."},
  {data:"2026-10-29", id:"O avesso da pele", texto:"O livro venceu o Prêmio Jabuti 2021 na categoria Romance Literário. A ficha dizia “Livro do Ano”, prêmio que naquela edição foi para Sagatrissuinorana."},
  {data:"2026-10-29", id:"EL-030, EL-031 e EL-034", texto:"Os registros passam a apontar para as obras (A mamãe vai ter um bebê e A bolsa amarela), e A bolsa amarela reúne as duas ocorrências numa só ficha."},
@@ -561,141 +941,113 @@ const CORRECOES = [
 ];
 
 
-/* Responsabilização: separar pressão, decisão administrativa, assinatura e execução.
-   Só são nomeadas pessoas quando o cadastro documental as identifica. */
-const RESPONSABILIDADES = (() => {
-  const r = {};
-  const set = (ids, dados) => ids.forEach(id => r[id] = dados);
-  const semNome = "A pessoa responsável pela decisão não está identificada nas fontes cadastradas.";
-  set(["EL-001"], {
-    pressao:"Janaína Venzon, diretora da Escola Estadual Ernesto Alves: fez a crítica pública em vídeo. O cadastro não sustenta que ela tenha expedido a ordem administrativa.",
-    decisor:"Luiz Ricardo Pinho de Moura, coordenador da 6ª Coordenadoria Regional de Educação: o ofício da coordenadoria determinou a retirada.",
-    assinantes:"Luiz Ricardo Pinho de Moura, coordenador da 6ª CRE.",
-    executor:"6ª Coordenadoria Regional de Educação, com alcance informado de 18 municípios do Vale do Rio Pardo.",
-    resposta:"A Secretaria de Educação do Rio Grande do Sul desautorizou a ordem no mesmo dia."
-  });
-  set(["EL-002"], {
-    decisor:"Secretaria de Estado da Educação do Paraná, que encaminhou ofício aos chefes dos núcleos regionais em 4 de março de 2024; o recolhimento seria realizado entre os dias 5 e 8.",
-    assinantes:"Anderfábio Oliveira dos Santos, diretor de Educação, e Laura Patrícia Lopes, chefe do Núcleo Regional de Educação de Curitiba.",
-    executor:"Secretaria estadual e Núcleo Regional de Educação de Curitiba.",
-    resposta:"A obra voltou às escolas em abril de 2024, acompanhada de orientações pedagógicas."
-  });
-  set(["EL-003"], {
-    decisor:"Secretaria de Estado da Educação de Goiás.",
-    assinantes:semNome,
-    executor:"Rede estadual de ensino.",
-    resposta:"O livro voltou às escolas em abril de 2024."
-  });
-  set(["EL-004"], {
-    pressao:"Rinaldo Modesto (Podemos), deputado estadual: pediu a retirada na Assembleia Legislativa.",
-    decisor:"Eduardo Riedel, governador de Mato Grosso do Sul: a Secretaria confirmou à CartaCapital que o recolhimento atendia a uma determinação do governador, após análise da própria pasta.",
-    assinantes:"A autoridade que formalizou a ordem não está identificada no cadastro.",
-    executor:"Secretaria de Estado de Educação de Mato Grosso do Sul.",
-    resposta:"A Secretaria anunciou a devolução em 23 de abril de 2024, com orientações pedagógicas."
-  });
-  set(["EL-005"], {
-    decisor:"Secretaria de Estado de Educação de Mato Grosso do Sul.",
-    assinantes:semNome,
-    executor:"Rede estadual; exemplares foram redistribuídos para EJA e centros de educação profissional.",
-    resposta:"A justificativa pública foi apresentada como revisão de acervo e adequação por faixa etária."
-  });
-  set(["EL-006","EL-007","EL-008","EL-009","EL-010","EL-011","EL-012","EL-013","EL-014"], {
-    decisor:"Supervisão/estrutura regional da Secretaria de Estado da Educação de Santa Catarina.",
-    assinantes:"Waldemar Ronssem Júnior, supervisor regional de Educação, e Anelise dos Santos de Medeiros, integradora regional, assinaram o ofício que determinou a retirada de circulação.",
-    executor:"Estrutura regional da rede estadual de ensino. A coordenadoria específica ainda não foi identificada nas fontes cadastradas.",
-    fiscalizacao:"Leonel Camasão (PSOL), suplente de vereador, levou o caso ao Ministério Público. O cadastro o identifica como autor da denúncia posterior, não como autor do pedido de retirada."
-  });
-  set(["EL-015","EL-016","EL-017","EL-018","EL-019","EL-020","EL-021","EL-022","EL-023","EL-024"], {
-    decisor:"O Memorando-Circular nº 4/2020/SEDUC-DGE traz a determinação em nome do secretário de Educação Suamy Vivecananda. A Seduc depois negou ter ordenado o recolhimento e afirmou que o processo foi encerrado antes de tramitar para escolas ou órgãos externos.",
-    assinantes:"O fecho do documento traz o nome de Suamy Vivecananda; o registro eletrônico aponta assinatura digital de Irany de Oliveira Lima Morais, diretora-geral de Educação. São funções documentais distintas: nome indicado no fecho e signatária eletrônica.",
-    executor:"O memorando encaminhava a providência às coordenadorias regionais. A Seduc afirmou que não houve tramitação para escolas; há relatos de exemplares encaixotados em algumas unidades, mas o alcance da execução não está comprovado.",
-    resposta:"O MPF registrou que a solicitação verbal foi suspensa no mesmo dia, que exemplares recolhidos foram devolvidos às escolas e que o recolhimento não se concretizou. A Seduc abriu sindicância; o MP-RO instaurou procedimento e emitiu recomendação, acatada pela Secretaria. O inquérito civil do MPF foi arquivado e o arquivamento homologado em 2021."
-  });
-  set(["EL-025"], {
-    decisor:"Presidência da Fundação Cultural Palmares, durante a gestão de Sérgio Camargo, que divulgou o relatório e anunciou a intenção de descartar 5.165 exemplares.",
-    responsavel:"Sérgio Camargo, então presidente da Fundação Cultural Palmares, apresentou publicamente a classificação e a proposta de descarte. O relatório original e a lista completa dos exemplares ainda precisam ser obtidos.",
-    executor:"Fundação Cultural Palmares; não há comprovação de que os 5.165 exemplares tenham sido efetivamente descartados.",
-    resposta:"Não foi localizada comprovação do destino final dos 5.165 exemplares. A decisão judicial sobre a doação de cerca de 300 livros, em ação distinta, está registrada no EL-026."
-  });
-  set(["EL-026"], {
-    decisor:"Presidência da Fundação Cultural Palmares, durante a gestão de Sérgio Camargo.",
-    responsavel:"Sérgio Camargo anunciou publicamente a intenção de separar os livros em seção chamada “Acervo/Ala da Vergonha”.",
-    executor:"A Fundação Cultural Palmares; a efetiva separação física, sua duração e o regime de acesso público ainda precisam ser comprovados.",
-    resposta:"A Procuradoria-Geral Federal informou ao juízo que Camargo desistira da doação em julho de 2021. Em agosto, ele anunciou a segregação dos livros. Não foi localizado documento que comprove quando o acesso público foi restabelecido."
-  });
-  set(["EL-027"], {
-    pressao:"Pais, familiares e autoridades locais contestaram a abordagem pedagógica; o comunicado oficial não identifica nominalmente os reclamantes.",
-    decisor:"Secretaria Municipal de Educação, que em comunicado de 20 de junho reconheceu ter orientado a suspensão temporária dos trabalhos pedagógicos.",
-    executor:"Unidades escolares da rede municipal, quanto às atividades pedagógicas; não há comprovação de recolhimento geral de exemplares.",
-    resposta:"Em 27 de junho de 2024, o juiz Espagner Wallysen Vaz Leite deferiu medida liminar e determinou o cancelamento imediato da suspensão temporária dos trabalhos pedagógicos."
-  });
-  set(["EL-028"], {
-    pressao:"Thomaz Henrique (PL), vereador, que acusou a obra de “apologia ao aborto” e “doutrinação ideológica”.",
-    decisor:"Secretaria Municipal de Educação e Cidadania; a autoridade individual que formalizou a retirada não foi identificada nas fontes públicas consultadas.",
-    executor:"Diretores das escolas municipais receberam a ordem de retirada por mensagens de WhatsApp, segundo a apuração divulgada com base no processo.",
-    resposta:"Em 20 de julho de 2026, a Vara da Infância e Juventude determinou a restituição dos exemplares no prazo de cinco dias após a intimação e proibiu novas restrições político-ideológicas. A prefeitura não havia confirmado publicamente o cumprimento quando as reportagens foram publicadas."
-  });
-  set(["EL-029"], {
-    pressao:"Gustavo Gayer (PL-GO), deputado federal, que publicou vídeo chamando o livro de “pornográfico”.",
-    decisor:"Coordenação do Vestibular da UniRV, que declarou ter decidido pela exclusão imediata da obra após a polêmica.",
-    responsavel:"A nota oficial atribui a decisão à Coordenação do Vestibular. Não identifica a pessoa responsável nem apresenta ata, despacho ou ato nominal de formalização.",
-    executor:"Universidade de Rio Verde (UniRV)."
-  });
-  set(["EL-030"], {
-    pressao:"Jéssica Ramos Moreno (PP), vereadora, pediu formalmente à Secretaria Municipal de Educação o recolhimento do livro após encontrá-lo em uma creche.",
-    decisor:"A Secretaria Municipal de Educação recebeu o pedido; não foi localizada resposta oficial nem decisão administrativa que confirme a retirada.",
-    executor:"Não identificado. A presença de um exemplar na creche foi relatada pela vereadora; a execução do recolhimento não está comprovada.",
-    pendencia:"Obter cópia integral do requerimento e resposta da Secretaria; confirmar eventual recolhimento e devolução."
-  });
-  set(["EL-031"], {
-    pressao:"Pais de alunos do 4º ano contestaram em grupos de mensagens o uso de uma resenha da obra em atividade de interpretação.",
-    decisor:"O colégio afirmou que a atividade atendia aos objetivos pedagógicos. Não há documento que comprove ordem formal de retirada da obra ou suspensão do acesso ao livro.",
-    executor:"Colégio Militar Dom Pedro II; o link da resenha não voltou a ser utilizado depois do encerramento do exercício.",
-    resposta:"A escola negou prejuízo pedagógico ou direcionamento ideológico. A apuração da piauí informa que não houve adoção da obra nem retirada de exemplares do acervo."
-  });
-  set(["EL-032"], {
-    pressao:"Zelinda Pastora (PRD), vereadora da base governista, que disse ter pedido diretamente ao secretário o recolhimento após reclamação de uma mãe.",
-    decisor:"Secretaria Municipal de Educação, então sob responsabilidade do secretário Hélcio Carvalho dos Santos; a ordem escrita e seu signatário formal ainda não foram localizados.",
-    executor:"Rede municipal de ensino; a vereadora afirmou que a obra reapareceu em algumas unidades em 2026 e que pediu nova providência.",
-    resposta:"Em 14 de julho de 2026, a prefeitura informou que, após análise técnica da Coordenação de Área e da Equipe de Práticas Pedagógicas da Educação Infantil, o livro voltaria ao plano de ensino das turmas consideradas adequadas. A efetiva devolução dos exemplares às unidades escolares não foi confirmada."
-  });
-  set(["EL-033"], {
-    decisor:"A lista foi riscada, segundo Janine Durand, pelo então diretor-executivo da Funap, coronel Henrique Pereira de Souza Neto. A Funap determinou em 13 de fevereiro de 2020 a inclusão da lista originalmente indicada.",
-    responsavel:"Reginaldo Caetano da Silva, superintendente da Diretoria de Atendimento e Promoção Humana, enviou a mensagem de 3 de dezembro de 2019 que dizia que um título não atendia às expectativas da gestão. A decisão de riscar a lista é atribuída por Janine Durand ao diretor-executivo Henrique Pereira de Souza Neto.",
-    executor:"Funap; a lista original não havia sido encaminhada aos presídios antes da reversão, segundo a reportagem da Folha.",
-    resposta:"Em 13 de fevereiro de 2020, a Funap determinou a inclusão da lista inicial e anunciou uma equipe multidisciplinar para tratar da seleção. Não foi comprovado se os 240 exemplares chegaram depois às unidades prisionais."
-  });
-  set(["EL-034"], {
-    pressao:"Clayton Silva (PSC), vereador, apresentou requerimento questionando a distribuição e a leitura da obra e afirmou que ela abordava “ideologia de gênero”.",
-    decisor:"Não houve decisão de retirada. A Secretaria Municipal de Educação respondeu ao Requerimento nº 451/2019 e defendeu a obra e seu uso no Clube de Leitura.",
-    executor:"Escolas da rede municipal, no âmbito do Clube de Leitura; a Secretaria informou que o livro já integrava acervo enviado pelo PNLD.",
-    resposta:"Em 24 de setembro de 2019, a Secretaria respondeu que a obra não afrontava princípios morais e descreveu seu valor literário e pedagógico."
-  });
-  return r;
-})();
+/* ---------- AGENTES ----------
+   Pessoas e instituições com papel documentado nas fontes já cadastradas.
+   Pessoas aparecem só pelo papel que exerceram num ato, nunca por dados pessoais. */
+const AGENTES = {
+ "janaina-venzon":{nome:"Janaína Venzon", tipo:"Pessoa"},
+ "luiz-ricardo-pinho-de-moura":{nome:"Luiz Ricardo Pinho de Moura", tipo:"Pessoa"},
+ "cre-6-rs":{nome:"6ª Coordenadoria Regional de Educação (RS)", tipo:"Instituição"},
+ "seduc-rs":{nome:"Secretaria da Educação do Rio Grande do Sul", tipo:"Instituição"},
+ "seed-pr":{nome:"Secretaria de Estado da Educação do Paraná", tipo:"Instituição"},
+ "anderfabio-oliveira-dos-santos":{nome:"Anderfábio Oliveira dos Santos", tipo:"Pessoa"},
+ "laura-patricia-lopes":{nome:"Laura Patrícia Lopes", tipo:"Pessoa"},
+ "nre-curitiba":{nome:"Núcleo Regional de Educação de Curitiba", tipo:"Instituição"},
+ "seduc-go":{nome:"Secretaria de Estado da Educação de Goiás", tipo:"Instituição"},
+ "rinaldo-modesto":{nome:"Rinaldo Modesto", tipo:"Pessoa"},
+ "eduardo-riedel":{nome:"Eduardo Riedel", tipo:"Pessoa"},
+ "sed-ms":{nome:"Secretaria de Estado de Educação de Mato Grosso do Sul", tipo:"Instituição"},
+ "sed-sc":{nome:"Secretaria de Estado da Educação de Santa Catarina", tipo:"Instituição"},
+ "waldemar-ronssem-junior":{nome:"Waldemar Ronssem Júnior", tipo:"Pessoa"},
+ "anelise-dos-santos-de-medeiros":{nome:"Anelise dos Santos de Medeiros", tipo:"Pessoa"},
+ "leonel-camasao":{nome:"Leonel Camasão", tipo:"Pessoa"},
+ "seduc-ro":{nome:"Secretaria de Estado da Educação de Rondônia", tipo:"Instituição"},
+ "suamy-vivecananda":{nome:"Suamy Vivecananda", tipo:"Pessoa"},
+ "irany-morais":{nome:"Irany de Oliveira Lima Morais", tipo:"Pessoa"},
+ "mpf":{nome:"Ministério Público Federal", tipo:"Instituição"},
+ "fundacao-palmares":{nome:"Fundação Cultural Palmares", tipo:"Instituição"},
+ "sergio-camargo":{nome:"Sérgio Camargo", tipo:"Pessoa"},
+ "seme-conselheiro-lafaiete":{nome:"Secretaria Municipal de Educação de Conselheiro Lafaiete", tipo:"Instituição"},
+ "espagner-wallysen-vaz-leite":{nome:"Espagner Wallysen Vaz Leite", tipo:"Pessoa"},
+ "thomaz-henrique":{nome:"Thomaz Henrique", tipo:"Pessoa"},
+ "seme-sjc":{nome:"Secretaria Municipal de Educação e Cidadania de São José dos Campos", tipo:"Instituição"},
+ "gustavo-gayer":{nome:"Gustavo Gayer", tipo:"Pessoa"},
+ "unirv":{nome:"Coordenação do Vestibular da UniRV", tipo:"Instituição"},
+ "jessica-ramos-moreno":{nome:"Jéssica Ramos Moreno", tipo:"Pessoa"},
+ "sme-londrina":{nome:"Secretaria Municipal de Educação de Londrina", tipo:"Instituição"},
+ "colegio-militar-dom-pedro-ii":{nome:"Colégio Militar Dom Pedro II (DF)", tipo:"Instituição"},
+ "zelinda-pastora":{nome:"Zelinda Pastora", tipo:"Pessoa"},
+ "helcio-carvalho-dos-santos":{nome:"Hélcio Carvalho dos Santos", tipo:"Pessoa"},
+ "seme-taubate":{nome:"Secretaria Municipal de Educação de Taubaté", tipo:"Instituição"},
+ "funap":{nome:"Fundação Prof. Dr. Manoel Pedro Pimentel (Funap)", tipo:"Instituição"},
+ "henrique-pereira-de-souza-neto":{nome:"Henrique Pereira de Souza Neto", tipo:"Pessoa"},
+ "reginaldo-caetano-da-silva":{nome:"Reginaldo Caetano da Silva", tipo:"Pessoa"},
+ "clayton-silva":{nome:"Clayton Silva", tipo:"Pessoa"},
+ "sme-limeira":{nome:"Secretaria Municipal de Educação de Limeira", tipo:"Instituição"},
+};
 
+/* Papel de cada agente em cada ato. cargo = cargo na data do ato.
+   atribuido: true quando a fonte atribui o papel sem documento assinado que o comprove. */
+const TIPOS_PAPEL = ["Pressão","Pedido","Destinatário do pedido","Decisão","Assinatura","Execução","Denúncia ou fiscalização","Resposta ou reversão"];
+const PAPEIS = [
+ {ato:"RS-2024", agente:"janaina-venzon", papel:"Pressão", cargo:"diretora da Escola Estadual Ernesto Alves", nota:"Crítica pública em vídeo; o cadastro não sustenta que tenha expedido a ordem."},
+ {ato:"RS-2024", agente:"luiz-ricardo-pinho-de-moura", papel:"Decisão", cargo:"coordenador da 6ª Coordenadoria Regional de Educação"},
+ {ato:"RS-2024", agente:"luiz-ricardo-pinho-de-moura", papel:"Assinatura", cargo:"coordenador da 6ª Coordenadoria Regional de Educação"},
+ {ato:"RS-2024", agente:"cre-6-rs", papel:"Execução"},
+ {ato:"RS-2024", agente:"seduc-rs", papel:"Resposta ou reversão", nota:"Desautorizou a ordem no mesmo dia."},
+ {ato:"PR-2024", agente:"seed-pr", papel:"Decisão"},
+ {ato:"PR-2024", agente:"anderfabio-oliveira-dos-santos", papel:"Assinatura", cargo:"diretor de Educação da Secretaria", nota:"Assinou o ofício da Secretaria."},
+ {ato:"PR-2024", agente:"laura-patricia-lopes", papel:"Assinatura", cargo:"chefe do Núcleo Regional de Educação de Curitiba", nota:"Assinou ofício de teor semelhante do Núcleo Regional; não era coassinante do ofício da Secretaria."},
+ {ato:"PR-2024", agente:"nre-curitiba", papel:"Execução"},
+ {ato:"GO-2024", agente:"seduc-go", papel:"Decisão", nota:"A pessoa responsável não está identificada nas fontes."},
+ {ato:"MS-2024", agente:"rinaldo-modesto", papel:"Pedido", cargo:"deputado estadual (Podemos)", nota:"Pediu a retirada na Assembleia Legislativa."},
+ {ato:"MS-2024", agente:"eduardo-riedel", papel:"Decisão", cargo:"governador de Mato Grosso do Sul", atribuido:true, nota:"A Secretaria informou à CartaCapital que o recolhimento atendia a determinação do governador; o ato formal não está identificado."},
+ {ato:"MS-2024", agente:"sed-ms", papel:"Execução"},
+ {ato:"MS-2024", agente:"sed-ms", papel:"Resposta ou reversão", nota:"Anunciou a devolução em 23 de abril de 2024."},
+ {ato:"SC-2024", agente:"sed-sc", papel:"Decisão", nota:"A pessoa responsável não está identificada nas fontes."},
+ {ato:"SC-2023", agente:"sed-sc", papel:"Decisão", nota:"Estrutura regional da Secretaria; a coordenadoria específica não está identificada."},
+ {ato:"SC-2023", agente:"waldemar-ronssem-junior", papel:"Assinatura", cargo:"supervisor regional de Educação"},
+ {ato:"SC-2023", agente:"anelise-dos-santos-de-medeiros", papel:"Assinatura", cargo:"integradora regional"},
+ {ato:"SC-2023", agente:"leonel-camasao", papel:"Denúncia ou fiscalização", cargo:"suplente de vereador (PSOL)", nota:"Levou o caso ao Ministério Público."},
+ {ato:"RO-2020", agente:"seduc-ro", papel:"Decisão", nota:"Depois negou ter ordenado o recolhimento."},
+ {ato:"RO-2020", agente:"suamy-vivecananda", papel:"Decisão", cargo:"secretário de Estado da Educação", nota:"Nome no fecho do memorando."},
+ {ato:"RO-2020", agente:"irany-morais", papel:"Assinatura", cargo:"diretora-geral de Educação", nota:"Signatária eletrônica do memorando."},
+ {ato:"RO-2020", agente:"mpf", papel:"Denúncia ou fiscalização", nota:"Abriu inquérito civil; arquivado em 2021 após registrar a suspensão e a devolução dos exemplares."},
+ {ato:"PALM-2021-06", agente:"sergio-camargo", papel:"Decisão", cargo:"presidente da Fundação Cultural Palmares", nota:"Apresentou o relatório e anunciou a intenção de descartar os exemplares."},
+ {ato:"PALM-2021-06", agente:"fundacao-palmares", papel:"Execução", nota:"Não há comprovação de que os exemplares tenham sido descartados."},
+ {ato:"PALM-2021-08", agente:"sergio-camargo", papel:"Decisão", cargo:"presidente da Fundação Cultural Palmares", nota:"Anunciou a separação dos livros no “Acervo da Vergonha”."},
+ {ato:"PALM-2021-08", agente:"fundacao-palmares", papel:"Execução", nota:"A separação física e sua duração não estão comprovadas."},
+ {ato:"MG-2024", agente:"seme-conselheiro-lafaiete", papel:"Decisão", nota:"Reconheceu em comunicado ter orientado a suspensão temporária dos trabalhos pedagógicos."},
+ {ato:"MG-2024", agente:"espagner-wallysen-vaz-leite", papel:"Resposta ou reversão", cargo:"juiz da 1ª Vara Cível de Conselheiro Lafaiete", nota:"Concedeu liminar que cancelou a suspensão."},
+ {ato:"SJC-2024", agente:"thomaz-henrique", papel:"Pressão", cargo:"vereador (PL)"},
+ {ato:"SJC-2024", agente:"seme-sjc", papel:"Decisão", nota:"A autoridade individual que formalizou a retirada não foi identificada."},
+ {ato:"UNIRV-2023", agente:"gustavo-gayer", papel:"Pressão", cargo:"deputado federal (PL-GO)", nota:"Publicou vídeo chamando o livro de pornográfico."},
+ {ato:"UNIRV-2023", agente:"unirv", papel:"Decisão", nota:"A nota oficial não identifica a pessoa responsável."},
+ {ato:"LON-2024", agente:"jessica-ramos-moreno", papel:"Pedido", cargo:"vereadora (PP)"},
+ {ato:"LON-2024", agente:"sme-londrina", papel:"Destinatário do pedido", nota:"Resposta oficial não localizada."},
+ {ato:"DF-2026", agente:"colegio-militar-dom-pedro-ii", papel:"Resposta ou reversão", nota:"Afirmou que a atividade atendia aos objetivos pedagógicos."},
+ {ato:"TAU-2025", agente:"zelinda-pastora", papel:"Pedido", cargo:"vereadora (PRD)", nota:"Disse ter pedido o recolhimento diretamente ao secretário."},
+ {ato:"TAU-2025", agente:"helcio-carvalho-dos-santos", papel:"Destinatário do pedido", cargo:"secretário municipal de Educação", nota:"Ordem escrita e signatário formal não localizados."},
+ {ato:"TAU-2025", agente:"seme-taubate", papel:"Decisão"},
+ {ato:"TAU-2025", agente:"seme-taubate", papel:"Resposta ou reversão", nota:"Anunciou em julho de 2026 a retomada do uso do livro."},
+ {ato:"FUNAP-2020", agente:"henrique-pereira-de-souza-neto", papel:"Decisão", cargo:"diretor-executivo da Funap", atribuido:true, nota:"Decisão de riscar a lista atribuída a ele pela articuladora do projeto."},
+ {ato:"FUNAP-2020", agente:"reginaldo-caetano-da-silva", papel:"Pressão", cargo:"superintendente da Diretoria de Atendimento e Promoção Humana", nota:"Enviou a mensagem que dizia que um título não atendia às expectativas da gestão."},
+ {ato:"FUNAP-2020", agente:"funap", papel:"Resposta ou reversão", nota:"Determinou a inclusão da lista original em 13 de fevereiro de 2020."},
+ {ato:"LIM-2019", agente:"clayton-silva", papel:"Pressão", cargo:"vereador (PSC)", nota:"Requerimento de informações; não pediu formalmente a retirada."},
+ {ato:"LIM-2019", agente:"sme-limeira", papel:"Resposta ou reversão", nota:"Defendeu a obra e manteve o projeto de leitura."},
+];
 
-/* Identificação do documento ou ato que sustenta a decisão. Quando o cadastro
-   ainda não tem o original ou o número do expediente, isso é explicitado. */
-const DOCUMENTOS_ATOS = (() => {
-  const d = {};
-  const set = (ids, texto) => ids.forEach(id => d[id] = texto);
-  set(["EL-001"],"Ofício da 6ª Coordenadoria Regional de Educação; número do expediente ainda não cadastrado.");
-  set(["EL-002"],"Ofício da Secretaria de Estado da Educação do Paraná, encaminhado em 4 de março de 2024 aos núcleos regionais; a reportagem reproduz o teor e identifica Anderfábio Oliveira dos Santos como signatário do ofício da Secretaria e Laura Patrícia Lopes como signatária de ofício subsequente do NRE de Curitiba.");
-  set(["EL-003"],"Medida atribuída à Secretaria de Estado da Educação de Goiás; o documento original ainda não está identificado no cadastro.");
-  set(["EL-004"],"Ordem de recolhimento da rede estadual de Mato Grosso do Sul; documento formal e signatário ainda precisam ser identificados.");
-  set(["EL-005"],"Comunicado de revisão de acervo/redistribuição; documento original ainda não está identificado no cadastro.");
-  set(["EL-006","EL-007","EL-008","EL-009","EL-010","EL-011","EL-012","EL-013","EL-014"],"Ofício circular de 7 de novembro de 2023, reproduzido e descrito pela imprensa; determina retirar nove obras de circulação e armazená-las em local inacessível à comunidade escolar. Assinaturas atribuídas a Waldemar Ronssem Júnior e Anelise dos Santos de Medeiros. O número do expediente e a cópia integral oficial ainda não estão cadastrados.");
-  set(["EL-015","EL-016","EL-017","EL-018","EL-019","EL-020","EL-021","EL-022","EL-023","EL-024"],"Memorando-Circular nº 4/2020/SEDUC-DGE, processo SEI 0029.051300/2020-91, com adendo que contém a relação de títulos. O artigo acadêmico de 2024 reproduz imagem do memorando. Como fonte primária de desfecho, o Diário do MPF nº 161/2021, publicado em 30 de agosto de 2021, registra o resultado do inquérito civil nº 1.31.000.000213/2020-61: solicitação verbal suspensa no mesmo dia, devolução dos livros recolhidos, ausência de recolhimento concretizado, sindicância aberta pela Seduc, recomendação do MP-RO acatada e arquivamento homologado. A íntegra do processo SEI e da sindicância estadual ainda não foi localizada.");
-  set(["EL-025"],"Relatório Público 01 – CNIRC, “Retrato do Acervo: três décadas de dominação marxista na Fundação Cultural Palmares”, divulgado em 11 de junho de 2021 (link original recuperado; acesso técnico ao PDF não confirmado nesta revisão). A lista completa dos 5.165 exemplares e a conferência do total de itens permanecem pendentes; há divergência entre os totais publicados contemporaneamente. A decisão judicial sobre cerca de 300 livros é registrada separadamente no EL-026.");
-  set(["EL-026"],"Anúncio público de Sérgio Camargo em 3 de agosto de 2021 sobre a criação do “Acervo/Ala da Vergonha”, após a Procuradoria-Geral Federal informar ao juízo, em julho, a desistência da doação de cerca de 300 livros. O documento que formalize a segregação física e o regime de acesso não foi localizado.");
-  set(["EL-027"],"Comunicado oficial da Secretaria Municipal de Educação, publicado em 20 de junho de 2024, reconhecendo a orientação para suspender temporariamente os trabalhos pedagógicos; decisão liminar da 1ª Vara Cível no processo nº 5006658-14.2024.8.13.0183 determinou o cancelamento imediato da suspensão temporária.");
-  set(["EL-028"],"Ordem de recolhimento transmitida aos diretores das escolas por mensagens de WhatsApp, segundo a apuração judicial divulgada em julho de 2026. Decisão da Vara da Infância e Juventude de 20 de julho de 2026 determinou a restituição dos exemplares em cinco dias após a intimação e proibiu restrições político-ideológicas. A cobertura não confirmou o cumprimento da ordem; cópia pública integral da decisão não foi localizada.");
-  set(["EL-029"],"Nota oficial da UniRV, datada de 26 de abril e publicada em 27 de abril de 2023, atribui à Coordenação do Vestibular a decisão de excluir imediatamente a obra após a polêmica. A nota não identifica o responsável individual nem apresenta ato nominal de formalização.");
-  set(["EL-030"],"Requerimento parlamentar de Jéssica Ramos Moreno (PP), apresentado após vistoria em creche em 26 de novembro de 2024, solicitando à Secretaria Municipal de Educação o recolhimento da obra; cópia e resposta administrativa ainda não localizadas. Separadamente, o PL 79/2024 foi sancionado como Lei Municipal nº 13.930, de 21 de março de 2025.");
-  set(["EL-031"],"Atividade de Língua Portuguesa que utilizou link para resenha de A bolsa amarela; não foi localizado ato formal de retirada da obra, e a apuração da piauí afirma que não houve recolhimento de exemplares nem adoção da obra.");
-  set(["EL-032"],"Ordem de recolhimento atribuída pela vereadora Zelinda Pastora ao secretário Hélcio Carvalho dos Santos; documento formal não localizado. Em 14 de julho de 2026, a prefeitura informou publicamente a retomada do uso pedagógico após análise técnica; o parecer e o ato administrativo correspondente ainda não foram localizados.");
-  set(["EL-033"],"Ato de veto original e ata da reunião ainda não localizados. A Folha publicou o teor de mensagem de 3 de dezembro de 2019 enviada por Reginaldo Caetano da Silva, superintendente da Diretoria de Atendimento e Promoção Humana, e registrou o relato de Janine Durand de que a lista foi riscada pelo diretor-executivo Henrique Pereira de Souza Neto. Em 13 de fevereiro de 2020, a Funap informou ter determinado a inclusão da lista original e a criação de equipe multidisciplinar. Falta obter a comunicação institucional integral e comprovar a distribuição dos 240 exemplares.");
-  set(["EL-034"],"Requerimento nº 451/2019, de autoria do vereador Clayton Silva (PSC), protocolado em 12 de agosto de 2019, e resposta da Secretaria Municipal de Educação por meio do Ofício GSE nº 363/2019, de 24 de setembro de 2019. Os documentos registram questionamento parlamentar e defesa institucional da obra, não ordem ou pedido formal de retirada.");
-  return d;
-})();
+/* ---------- montagem ----------
+   As páginas leem os campos do ato e da obra diretamente em cada registro.
+   Esta etapa copia esses campos para o registro. Não edite aqui; edite ATOS e LIVROS. */
+const CAMPOS_DO_ATO = ["data","fim","uf","cidade","tipo","rede","governo","quem","pressao"];
+const CAMPOS_DA_OBRA = ["autoria","editora","pnld","capa","conjunto"];
+CASOS.forEach(c=>{
+  const A = ATOS[c.ato] || {}, L = LIVROS[c.obra] || {};
+  CAMPOS_DO_ATO.forEach(k=>{ if(c[k]===undefined && A[k]!==undefined) c[k]=A[k]; });
+  CAMPOS_DA_OBRA.forEach(k=>{ if(c[k]===undefined && L[k]!==undefined) c[k]=L[k]; });
+  if(c.titulo===undefined) c.titulo = c.obra;
+  if(c.cidade===undefined) c.cidade = "";
+});
+const RESPONSABILIDADES = Object.fromEntries(CASOS.map(c=>[c.id, (ATOS[c.ato]||{}).papeis || {}]));
+const DOCUMENTOS_ATOS = Object.fromEntries(CASOS.map(c=>[c.id, (ATOS[c.ato]||{}).documento || ""]));

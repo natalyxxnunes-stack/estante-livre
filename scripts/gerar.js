@@ -26,14 +26,14 @@ function contexto(raiz){
     console
   };
   vm.createContext(ctx);
-  vm.runInContext(ler("assets/dados.js") + "\n;this.__D={CASOS,LIVROS,FONTES,MODALIDADES,ESTAGIOS,SITUACOES,EIXOS,CORRECOES,RESPONSABILIDADES,DOCUMENTOS_ATOS,ATUALIZADO,CONTATO};", ctx);
-  vm.runInContext(ler("assets/comum.js") + "\n;this.__F={esc,obraDe,slug,ordenar,casoHTML,livroHTML,dataLegivel,urlCaso,urlLivro};", ctx);
+  vm.runInContext(ler("assets/dados.js") + "\n;this.__D={ATOS,AGENTES,PAPEIS,TIPOS_PAPEL,CASOS,LIVROS,FONTES,MODALIDADES,ESTAGIOS,SITUACOES,EIXOS,CORRECOES,RESPONSABILIDADES,DOCUMENTOS_ATOS,ATUALIZADO,CONTATO};", ctx);
+  vm.runInContext(ler("assets/comum.js") + "\n;this.__F={esc,obraDe,slug,ordenar,casoHTML,livroHTML,dataLegivel,urlCaso,urlLivro,urlAto,agentesDoAto};", ctx);
   return Object.assign(ctx.__F, {__D: ctx.__D});
 }
 const R = contexto("");      // páginas na raiz
 const S = contexto("../");   // páginas em casos/ e livros/
 const D = R.__D;
-const { CASOS, LIVROS, FONTES, MODALIDADES, ESTAGIOS, SITUACOES, EIXOS, ATUALIZADO } = D;
+const { CASOS, LIVROS, FONTES, MODALIDADES, ESTAGIOS, SITUACOES, EIXOS, ATUALIZADO, ATOS, AGENTES, PAPEIS, TIPOS_PAPEL } = D;
 const esc = R.esc, obraDe = R.obraDe, slug = R.slug;
 
 /* ---------- 1. validação ---------- */
@@ -55,12 +55,26 @@ for(const c of CASOS){
 for(const t of Object.keys(LIVROS)) if(!CASOS.some(c=>obraDe(c)===t)) erros.push(`LIVROS: ficha sem caso correspondente: “${t}”`);
 const obras = [...new Set(CASOS.map(obraDe))];
 const slugs = {};
+for(const c of CASOS){
+  if(!ATOS[c.ato]) erros.push(`${c.id}: ato inexistente em ATOS: ${c.ato}`);
+  if(!LIVROS[obraDe(c)]) erros.push(`${c.id}: obra sem ficha em LIVROS: ${obraDe(c)}`);
+}
+for(const [k,a] of Object.entries(ATOS)){
+  for(const f of ["nome","data","uf","tipo","rede","quem"]) if(!a[f]) erros.push(`ATOS ${k}: campo ${f} vazio`);
+  if(!CASOS.some(c=>c.ato===k)) erros.push(`ATOS ${k}: ato sem registro`);
+}
+for(const p of PAPEIS){
+  if(!ATOS[p.ato]) erros.push(`PAPEIS: ato inexistente ${p.ato}`);
+  if(!AGENTES[p.agente]) erros.push(`PAPEIS: agente inexistente ${p.agente}`);
+  if(!TIPOS_PAPEL.includes(p.papel)) erros.push(`PAPEIS: papel fora da lista: ${p.papel}`);
+}
+for(const k of Object.keys(AGENTES)) if(!PAPEIS.some(p=>p.agente===k)) erros.push(`AGENTES ${k}: sem papel em nenhum ato`);
 for(const t of obras){ const s = slug(t); if(slugs[s] && slugs[s]!==t) erros.push(`endereço repetido para “${t}” e “${slugs[s]}”`); slugs[s]=t; }
 if(erros.length){ console.error("Erros nos dados:\n- " + erros.join("\n- ")); process.exit(1); }
 
 /* ---------- 2. cabeçalho, menu e rodapé ---------- */
-const NAV = [["index.html","Painel"],["casos.html","Casos"],["livros.html","Livros"],["analises.html","Análises"],
-  ["mundo.html","Mundo"],["glossario.html","Glossário"],["metodologia.html","Metodologia"],["sobre.html","Sobre"]];
+const NAV = [["index.html","Painel"],["casos.html","Casos"],["livros.html","Livros"],["atos.html","Atos"],["analises.html","Análises"],
+  ["historia.html","História"],["mundo.html","Mundo"],["metodologia.html","Metodologia"],["sobre.html","Sobre"]];
 const TAGLINE = "Observatório de censura de livros · quem mandou tirar da estante, com qual ato, e o que aconteceu depois";
 
 function cabecalho(raiz, atual){
@@ -81,7 +95,7 @@ function rodape(raiz){
   return `<footer class="foot">
   <div class="foot-in">
     <span>Estante Livre · um projeto de Nataly Nunes Pinto</span>
-    <span class="foot-links"><a href="${raiz}cobertura.html">Cobertura</a><a href="${raiz}relate.html">Relate um caso</a><a href="${raiz}dados/estante-livre-casos.csv">Dados abertos</a><a href="${raiz}sobre.html">Contato</a></span>
+    <span class="foot-links"><a href="${raiz}glossario.html">Glossário</a><a href="${raiz}cobertura.html">Cobertura</a><a href="${raiz}relate.html">Relate um caso</a><a href="${raiz}dados/estante-livre-casos.csv">Dados abertos</a><a href="${raiz}sobre.html">Contato</a></span>
     <span id="foot-meta"></span>
   </div>
 </footer>`;
@@ -110,7 +124,7 @@ const DATASET = {"@context":"https://schema.org","@type":"Dataset",
     {"@type":"DataDownload","encodingFormat":"text/csv","contentUrl":SITE+"/dados/estante-livre-casos.csv"},
     {"@type":"DataDownload","encodingFormat":"application/json","contentUrl":SITE+"/dados/estante-livre-casos.json"}]};
 
-const PAGINAS = ["index.html","casos.html","livros.html","analises.html","mundo.html","glossario.html","metodologia.html","sobre.html","cobertura.html","relate.html"];
+const PAGINAS = ["index.html","casos.html","livros.html","analises.html","historia.html","mundo.html","glossario.html","metodologia.html","sobre.html","cobertura.html","relate.html"];
 for(const f of PAGINAS){
   let h = ler(f);
   h = h.replace(/<header class="topo">[\s\S]*?<\/header>/, cabecalho("", f));
@@ -262,11 +276,91 @@ for(const obra of obras){
   gravar(`livros/${slug(obra)}.html`, pagina({titulo, descricao, url, raiz:"../", atual:"livros.html", ld, corpo}));
 }
 
+/* páginas de ato e índice de atos e agentes */
+fs.rmSync(path.join(RAIZ_REPO,"atos"), {recursive:true, force:true});
+const urlsAtos = [];
+const tabPapeis = (ato, raiz) => {
+  const ps = PAPEIS.filter(p=>p.ato===ato);
+  if(!ps.length) return "";
+  return `<div class="tab-wrap"><table class="tab"><thead><tr><th>PAPEL</th><th>QUEM</th><th>CARGO NA DATA</th><th>OBSERVAÇÃO</th></tr></thead><tbody>${
+    ps.map(p=>`<tr><td>${esc(p.papel)}${p.atribuido?" (atribuída pela fonte)":""}</td><td><a href="${raiz}atos.html#ag-${p.agente}">${esc(AGENTES[p.agente].nome)}</a></td><td>${esc(p.cargo||"")}</td><td>${esc(p.nota||"")}</td></tr>`).join("")
+  }</tbody></table></div>`;
+};
+for(const [k,A] of Object.entries(ATOS)){
+  const regs = CASOS.filter(c=>c.ato===k);
+  const url = `${SITE}/atos/${k.toLowerCase()}.html`; urlsAtos.push(url);
+  const fontesIds = [...new Set(regs.flatMap(c=>c.fontes||[]))];
+  const titulo = `${A.nome} · Estante Livre`;
+  const descricao = `${A.nome}: ${regs.length} ${regs.length===1?"título atingido":"títulos atingidos"}, ${A.uf}, ${R.dataLegivel(A).toLowerCase()}. Quem pediu, quem decidiu, quem assinou e quem executou, com fontes.`;
+  const ld = {"@context":"https://schema.org","@type":"Article","headline":A.nome,"description":descricao,"url":url,"inLanguage":"pt-BR",
+    "dateModified":ATUALIZADO,"author":{"@type":"Person","name":"Nataly Nunes Pinto"},"publisher":ORG,
+    "contentLocation":{"@type":"Place","name":`${[A.cidade,A.uf].filter(Boolean).join(", ")}, Brasil`},"temporalCoverage":A.data.slice(0,7),
+    "hasPart":regs.map(c=>({"@type":"Article","url":`${SITE}/casos/${c.id.toLowerCase()}.html`,"name":`${c.id} · ${obraDe(c)}`})),
+    "mentions":PAPEIS.filter(p=>p.ato===k).map(p=>({"@type":AGENTES[p.agente].tipo==="Pessoa"?"Person":"Organization","name":AGENTES[p.agente].nome}))};
+  const r = A.papeis||{};
+  const linha = (rot,v)=> v?`<div class="resp-linha"><span class="k">${rot}</span><div>${esc(v)}</div></div>`:"";
+  const corpo = `<div class="wrap">
+  <div class="hero-pg">
+    <p class="migalha"><a href="../index.html">Painel</a> › <a href="../atos.html">Atos</a> › ${esc(k)}</p>
+    <h1>${esc(A.nome)}</h1>
+    <p class="lede">${esc([A.cidade,A.uf].filter(Boolean).join(", "))} · ${R.dataLegivel(A)} · biblioteca ${esc(A.tipo.toLowerCase())}, rede ${esc(A.rede.toLowerCase())}${A.governo?` · ${esc(A.governo)}`:""}</p>
+  </div>
+</div>
+<div class="wrap">
+  <section>
+    <div class="sechead"><span class="kicker">01</span><h2>O documento</h2></div>
+    <p class="note">${esc(A.documento||"Documento ainda não identificado no cadastro.")}</p>
+  </section>
+  <section>
+    <div class="sechead"><span class="kicker">02</span><h2>Quem fez o quê</h2></div>
+    ${tabPapeis(k,"../")}
+    <div class="responsa">${linha("PRESSÃO / PEDIDO",r.pressao||A.pressao)}${linha("DECISÃO",r.decisor)}${linha("ASSINATURA",r.assinantes)}${linha("EXECUÇÃO",r.executor)}${linha("FISCALIZAÇÃO / DENÚNCIA",r.fiscalizacao)}${linha("RESPOSTA / REVERSÃO",r.resposta)}${linha("OBSERVAÇÃO",r.responsavel)}</div>
+  </section>
+  <section>
+    <div class="sechead"><span class="kicker">03</span><h2>${regs.length===1?"Título atingido":`${regs.length} títulos atingidos`}</h2></div>
+    <div class="irmaos">${regs.map(c=>`<a href="../casos/${c.id.toLowerCase()}.html">${esc(c.id)} · ${esc(c.titulo)}</a> <span class="mini-tags">${esc(c.modalidade.toLowerCase())} · ${esc(c.estagio.toLowerCase())} · ${esc(c.situacao.toLowerCase())}</span>`).join("<br>")}</div>
+  </section>
+  <section style="border-bottom:0">
+    <div class="sechead"><span class="kicker">04</span><h2>Fontes</h2></div>
+    <div class="fontes">${fontesIds.map(f=>FONTES[f]).filter(Boolean).map(f=>`<a class="flink" href="${esc(f.url)}" target="_blank" rel="noopener"><span class="v">${esc(f.veic)}</span><span class="t">${esc(f.tit)}</span></a>`).join("")}</div>
+    <div class="como-citar"><span class="k">COMO CITAR</span>Estante Livre, observatório de censura de livros, de Nataly Nunes Pinto. Ato ${esc(k)}: ${esc(A.nome)}. Disponível em: ${url}. Acesso em: [data].</div>
+  </section>
+</div>`;
+  gravar(`atos/${k.toLowerCase()}.html`, pagina({titulo, descricao, url, raiz:"../", atual:"atos.html", ld, corpo}));
+}
+{
+  const atosOrd = Object.entries(ATOS).sort((a,b)=>b[1].data.localeCompare(a[1].data));
+  const pessoas = Object.entries(AGENTES).sort((a,b)=>a[1].tipo.localeCompare(b[1].tipo)||a[1].nome.localeCompare(b[1].nome,"pt"));
+  const corpo = `<div class="wrap">
+  <div class="hero-pg">
+    <h1>Atos e responsáveis</h1>
+    <p class="lede">Cada ato é o documento ou episódio que gerou um ou mais registros: um memorando, um ofício, um requerimento, um anúncio. Aqui estão os ${atosOrd.length} atos do catálogo e as ${pessoas.length} pessoas e instituições com papel documentado neles.</p>
+  </div>
+</div>
+<div class="wrap">
+  <section>
+    <div class="sechead"><span class="kicker">01</span><h2>Atos</h2><span class="count"><b>${atosOrd.length}</b> atos · ${CASOS.length} registros</span></div>
+    <div class="tab-wrap"><table class="tab"><thead><tr><th>DATA</th><th>ATO</th><th>UF</th><th>TÍTULOS</th><th>ATÉ ONDE CHEGOU</th></tr></thead><tbody>${
+      atosOrd.map(([k,A])=>{const regs=CASOS.filter(c=>c.ato===k); const est=[...new Set(regs.map(c=>c.estagio))].join(", ");
+        return `<tr><td>${R.dataLegivel(A)}</td><td><a href="atos/${k.toLowerCase()}.html">${esc(A.nome)}</a></td><td>${esc(A.uf)}</td><td>${regs.length}</td><td>${esc(est)}</td></tr>`;}).join("")
+    }</tbody></table></div>
+  </section>
+  <section style="border-bottom:0">
+    <div class="sechead"><span class="kicker">02</span><h2>Pessoas e instituições</h2></div>
+    <p class="note">Pessoas aparecem só pelo papel que exerceram num ato documentado, com o cargo que ocupavam na data. Papel “atribuído” quer dizer que a fonte atribui a decisão a alguém sem documento assinado que a comprove. Denunciar ou reverter uma medida também é papel, e está identificado como tal.</p>
+    <div class="agentes-idx">${pessoas.map(([id,ag])=>`<div class="agente" id="ag-${id}"><h3>${esc(ag.nome)} <span>${esc(ag.tipo)}</span></h3>${
+      PAPEIS.filter(p=>p.agente===id).map(p=>`<div class="ag-papel"><b>${esc(p.papel)}${p.atribuido?" (atribuída)":""}</b>${p.cargo?` · ${esc(p.cargo)}`:""} · <a href="atos/${p.ato.toLowerCase()}.html">${esc(ATOS[p.ato].nome)}</a>${p.nota?`<div class="ag-nota">${esc(p.nota)}</div>`:""}</div>`).join("")
+    }</div>`).join("")}</div>
+  </section>
+</div>`;
+  gravar("atos.html", pagina({titulo:"Atos e responsáveis · Estante Livre", descricao:`Os ${atosOrd.length} atos que geraram os registros do Estante Livre e as pessoas e instituições com papel documentado em cada um.`, url:`${SITE}/atos.html`, raiz:"", atual:"atos.html", ogType:"website", corpo}));
+}
+
 /* ---------- 4. dados abertos ---------- */
 const RESP = D.RESPONSABILIDADES, DOC = D.DOCUMENTOS_ATOS;
 const linhas = R.ordenar(CASOS,"id").map(c=>{
   const r = RESP[c.id]||{};
-  return {id:c.id, url:`${SITE}/casos/${c.id.toLowerCase()}.html`, data:c.data, ato:c.ato, obra:obraDe(c), titulo_registro:c.titulo,
+  return {id:c.id, url:`${SITE}/casos/${c.id.toLowerCase()}.html`, data:c.data, ato:c.ato, ato_nome:ATOS[c.ato].nome, obra:obraDe(c), titulo_registro:c.titulo,
     conjunto:!!c.conjunto, autoria:c.autoria||"", editora:c.editora||"", ano_publicacao:(LIVROS[obraDe(c)]||{}).ano||"",
     cidade:c.cidade||"", uf:c.uf, tipo_biblioteca:c.tipo, rede:c.rede, governo_na_epoca:c.governo||"",
     instancia_registrada:c.quem, mecanismo:c.modalidade, estagio:c.estagio, situacao:c.situacao, desfecho:c.desfecho,
@@ -274,6 +368,7 @@ const linhas = R.ordenar(CASOS,"id").map(c=>{
     pressao_ou_pedido:r.pressao||c.pressao||"", decisao:r.decisor||"", assinatura:r.assinantes||"", execucao:r.executor||"",
     resposta_ou_reversao:r.resposta||"", ato_ou_documento:DOC[c.id]||"", verificado:c.verificado,
     pendencia:r.pendencia||c.pendencia||"", nota:c.nota||"",
+    agentes:PAPEIS.filter(p=>p.ato===c.ato).map(p=>({nome:AGENTES[p.agente].nome, tipo:AGENTES[p.agente].tipo, papel:p.papel, cargo:p.cargo||"", atribuido:!!p.atribuido})),
     fontes:(c.fontes||[]).map(k=>FONTES[k]).filter(Boolean).map(f=>({veiculo:f.veic, titulo:f.tit, data:f.data||"", url:f.url}))};
 });
 gravar("dados/estante-livre-casos.json", JSON.stringify({
@@ -282,14 +377,14 @@ gravar("dados/estante-livre-casos.json", JSON.stringify({
   como_citar:"Estante Livre, observatório de censura de livros, de Nataly Nunes Pinto",
   metodologia:SITE+"/metodologia.html", registros:linhas}, null, 1));
 const colunas = Object.keys(linhas[0]);
-const csv = v => `"${(Array.isArray(v) ? v.map(f=>f.url).join(" ") : v??"").toString().replace(/"/g,'""')}"`;
+const csv = v => `"${(Array.isArray(v) ? v.map(x=>x.url || `${x.nome} (${x.papel.toLowerCase()})`).join("; ") : v??"").toString().replace(/"/g,'""')}"`;
 gravar("dados/estante-livre-casos.csv", "\uFEFF" + [colunas.join(","), ...linhas.map(l=>colunas.map(k=>csv(l[k])).join(","))].join("\n") + "\n");
 
 /* ---------- 5. sitemap, robots, llms.txt, 404 ---------- */
-const topo = PAGINAS.map(f => f==="index.html" ? SITE+"/" : `${SITE}/${f}`);
+const topo = [...PAGINAS, "atos.html"].map(f => f==="index.html" ? SITE+"/" : `${SITE}/${f}`);
 gravar("sitemap.xml", `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${[...topo, ...urlsCasos, ...urlsLivros].map(u=>`  <url><loc>${u}</loc><lastmod>${ATUALIZADO}</lastmod></url>`).join("\n")}
+${[...topo, ...urlsCasos, ...urlsLivros, ...urlsAtos].map(u=>`  <url><loc>${u}</loc><lastmod>${ATUALIZADO}</lastmod></url>`).join("\n")}
 </urlset>
 `);
 gravar("robots.txt", `User-agent: *\nAllow: /\n\nSitemap: ${SITE}/sitemap.xml\n`);
@@ -316,4 +411,4 @@ gravar("404.html", pagina({titulo:"Página não encontrada · Estante Livre", de
   corpo:`<div class="wrap"><div class="hero-pg"><h1>Esta página não está na estante</h1>
   <p class="lede">O endereço pode ter mudado. Os casos estão em <a href="/casos.html">Casos</a> e as obras em <a href="/livros.html">Livros</a>; a busca da página de casos encontra livro, cidade, órgão ou justificativa.</p></div></div>`}));
 
-console.log(`ok · ${CASOS.length} casos · ${obras.length} obras · ${PAGINAS.length} páginas padronizadas · sitemap com ${topo.length+urlsCasos.length+urlsLivros.length} URLs`);
+console.log(`ok · ${CASOS.length} casos · ${obras.length} obras · ${Object.keys(ATOS).length} atos · ${Object.keys(AGENTES).length} agentes · ${PAGINAS.length} páginas padronizadas · sitemap com ${topo.length+urlsCasos.length+urlsLivros.length+urlsAtos.length} URLs`);
