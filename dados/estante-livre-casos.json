@@ -365,8 +365,8 @@
    "resposta_ou_reversao": "A justificativa pública foi apresentada como revisão de acervo e adequação por faixa etária.",
    "ato_ou_documento": "Comunicado de revisão de acervo/redistribuição; documento original ainda não está identificado no cadastro.",
    "verificado": "Parcialmente",
-   "pendencia": "Buscar segunda fonte",
-   "nota": "O governo anunciou análise de conteúdo e chamou a medida de revisão de acervo. Exemplo de restrição apresentada como gestão pedagógica.",
+   "pendencia": "Buscar segunda fonte independente ou o documento da Secretaria. A busca de 30/10/2026 não localizou outra reportagem sobre o caso catarinense: as coberturas consultadas sobre o recolhimento da obra tratam de RS, PR, GO e MS.",
+   "nota": "O governo anunciou análise de conteúdo e chamou a medida de revisão de acervo. Exemplo de restrição apresentada como gestão pedagógica. A informação vem de nota do governo estadual à Gazeta do Povo, que relata exemplares localizados em escolas estaduais e redistribuição de parte deles a Centros de Educação Profissional (CEDUPs) e centros de EJA.",
    "agentes": [
     {
      "nome": "Secretaria de Estado da Educação de Santa Catarina",
@@ -2664,10 +2664,10 @@
    "assinatura": "",
    "execucao": "Diretores das escolas municipais receberam a ordem de retirada por mensagens de WhatsApp, segundo a apuração divulgada com base no processo.",
    "resposta_ou_reversao": "Em 20 de julho de 2026, a Vara da Infância e Juventude determinou a restituição dos exemplares no prazo de cinco dias após a intimação e proibiu novas restrições político-ideológicas. A prefeitura não havia confirmado publicamente o cumprimento quando as reportagens foram publicadas.",
-   "ato_ou_documento": "Ordem de recolhimento transmitida aos diretores das escolas por mensagens de WhatsApp, segundo a apuração judicial divulgada em julho de 2026. Decisão da Vara da Infância e Juventude de 20 de julho de 2026 determinou a restituição dos exemplares em cinco dias após a intimação e proibiu restrições político-ideológicas. A cobertura não confirmou o cumprimento da ordem; cópia pública integral da decisão não foi localizada.",
+   "ato_ou_documento": "Ordem de recolhimento transmitida aos diretores das escolas por mensagens de WhatsApp, segundo a apuração judicial divulgada em julho de 2026. Liminar de 2024 que determinava a redistribuição foi suspensa pelo TJSP em outubro de 2024. Decisão da Vara da Infância e Juventude de 20 de julho de 2026 determinou a restituição dos exemplares em cinco dias após a intimação e proibiu restrições político-ideológicas. A cobertura não confirmou o cumprimento da ordem; cópia pública integral da decisão não foi localizada.",
    "verificado": "Parcialmente",
-   "pendencia": "Obter a sentença integral e comprovar o cumprimento da ordem de devolução; o processo tramita sob segredo de Justiça.",
-   "nota": "O livro foi recolhido das salas de leitura da rede municipal em junho de 2024, após a pressão pública do vereador. Segundo a apuração divulgada com base no processo, a ordem de retirada foi transmitida aos diretores por mensagens de WhatsApp, sem justificativa técnico-pedagógica contemporânea. Em 20 de julho de 2026, a juíza Renata Heloísa da Silva Salles, da Vara da Infância e Juventude, determinou que o município restituísse os exemplares às salas de leitura e bibliotecas das escolas onde integravam o acervo, no prazo de cinco dias a partir da intimação. A decisão também proibiu novas restrições político-ideológicas e fixou multa diária de R$ 500, limitada inicialmente a R$ 50 mil. A cobertura informa que a prefeitura ainda não havia respondido sobre o cumprimento da ordem; portanto, a devolução efetiva permanece sem confirmação pública.",
+   "pendencia": "Obter a sentença integral e comprovar o cumprimento da ordem de devolução; o processo tramita sob segredo de Justiça. Verificar se houve recurso ao TJSP contra a sentença e se a ordem segue em vigor.",
+   "nota": "O livro foi recolhido das salas de leitura da rede municipal em junho de 2024, após a pressão pública do vereador. Segundo a apuração divulgada com base no processo, a ordem de retirada foi transmitida aos diretores por mensagens de WhatsApp, sem justificativa técnico-pedagógica contemporânea. Ainda em 2024, na ação movida pelo Ministério Público e pela Defensoria Pública, uma liminar determinou a redistribuição da obra; no início de outubro de 2024, o relator Sulaiman Miguel Neto, do Tribunal de Justiça de São Paulo, suspendeu a liminar a pedido da prefeitura. Em 20 de julho de 2026, a juíza Renata Heloísa da Silva Salles, da Vara da Infância e Juventude, determinou que o município restituísse os exemplares às salas de leitura e bibliotecas das escolas onde integravam o acervo, no prazo de cinco dias a partir da intimação. A decisão também proibiu novas restrições político-ideológicas e fixou multa diária de R$ 500, limitada inicialmente a R$ 50 mil. A cobertura informa que a prefeitura ainda não havia respondido sobre o cumprimento da ordem; portanto, a devolução efetiva permanece sem confirmação pública. Após a sentença, o vereador Thomaz Henrique declarou que recorreria ao Tribunal de Justiça.",
    "agentes": [
     {
      "nome": "Thomaz Henrique",
@@ -2720,6 +2720,12 @@
      "titulo": "Juíza vê censura e manda prefeitura devolver às escolas livro com Marielle",
      "data": "2026-07-29",
      "url": "https://noticias.uol.com.br/cotidiano/ultimas-noticias/2026/07/29/juiza-manda-prefeitura-devolver-as-escolas-livro-com-marielle-em-sao-jose.ghtm"
+    },
+    {
+     "veiculo": "Jurinews",
+     "titulo": "Liminar que determinava redistribuição de livro que cita Marielle Franco em escolas municipais é suspensa",
+     "data": "2024-10-09",
+     "url": "https://jurinews.com.br/sp/liminar-que-determinava-redistribuicao-de-livro-que-cita-marielle-franco-em-escolas-municipais-e-suspensa/"
     }
    ]
   },
@@ -3053,8 +3059,8 @@
    "resposta_ou_reversao": "Em 13 de fevereiro de 2020, a Funap determinou a inclusão da lista inicial e anunciou uma equipe multidisciplinar para tratar da seleção. Não foi comprovado se os 240 exemplares chegaram depois às unidades prisionais.",
    "ato_ou_documento": "Ato de veto original e ata da reunião ainda não localizados. A Folha publicou o teor de mensagem de 3 de dezembro de 2019 enviada por Reginaldo Caetano da Silva, superintendente da Diretoria de Atendimento e Promoção Humana, e registrou o relato de Janine Durand de que a lista foi riscada pelo diretor-executivo Henrique Pereira de Souza Neto. Em 13 de fevereiro de 2020, a Funap informou ter determinado a inclusão da lista original e a criação de equipe multidisciplinar. Falta obter a comunicação institucional integral e comprovar a distribuição dos 240 exemplares.",
    "verificado": "Parcialmente",
-   "pendencia": "Obter a mensagem original de Reginaldo Caetano da Silva, a ata da reunião de 13/02/2020 e a nota integral da Funap; identificar as três obras questionadas e confirmar a distribuição dos 240 exemplares aos presídios.",
-   "nota": "Em agosto de 2019, as editoras doaram 240 exemplares de doze títulos para a expansão do projeto. Segundo Janine Durand, articuladora do Remição em Rede, a lista completa foi riscada pelo então diretor-executivo da Funap, coronel Henrique Pereira de Souza Neto, e os livros não foram enviados aos presídios. A Folha identificou Reginaldo Caetano da Silva, superintendente da Diretoria de Atendimento e Promoção Humana, como autor de mensagem de 3 de dezembro que dizia que um título não atendia às expectativas da gestão; em reunião, segundo Durand, foram mencionadas três obras, mas sem identificação. Em 13 de fevereiro de 2020, a Funap determinou a inclusão da lista inicialmente indicada e anunciou uma equipe multidisciplinar para tratar da escolha das obras. A reportagem de 14 de fevereiro do Brasil de Fato registra o recuo após a repercussão pública. A distribuição efetiva dos 240 exemplares após a reversão ainda não foi comprovada.",
+   "pendencia": "Obter a mensagem original de Reginaldo Caetano da Silva, a ata da reunião de 13/02/2020 e a nota integral da Funap; identificar as três obras questionadas; confirmar se os exemplares chegaram aos presídios depois de fevereiro de 2020 e esclarecer a divergência entre 240 e 228 exemplares.",
+   "nota": "Em agosto de 2019, as editoras doaram 240 exemplares de doze títulos para a expansão do projeto. Segundo Janine Durand, articuladora do Remição em Rede, a lista completa foi riscada pelo então diretor-executivo da Funap, coronel Henrique Pereira de Souza Neto, e os livros não foram enviados aos presídios. A Folha identificou Reginaldo Caetano da Silva, superintendente da Diretoria de Atendimento e Promoção Humana, como autor de mensagem de 3 de dezembro que dizia que um título não atendia às expectativas da gestão; em reunião, segundo Durand, foram mencionadas três obras, mas sem identificação. Em 13 de fevereiro de 2020, a Funap determinou a inclusão da lista inicialmente indicada e anunciou uma equipe multidisciplinar para tratar da escolha das obras. A reportagem de 14 de fevereiro do Brasil de Fato registra o recuo após a repercussão pública. A distribuição efetiva dos 240 exemplares após a reversão ainda não foi comprovada. Artigo de Benaglia e Heller publicado em 2022 reproduz a lista dos doze títulos e informa que, até a redação do texto, os livros aguardavam liberação para o acervo itinerante; nas considerações finais, o mesmo artigo fala em 228 livros. O artigo não identifica as três obras questionadas.",
    "agentes": [
     {
      "nome": "Henrique Pereira de Souza Neto",
@@ -3102,6 +3108,12 @@
      "titulo": "Governo Doria cria comissão para analisar escolha de livros para presidiários de SP",
      "data": "2020-02-14",
      "url": "https://www1.folha.uol.com.br/cotidiano/2020/02/governo-doria-cria-comissao-para-analisar-escolha-de-livros-para-presidiarios-de-sp.shtml"
+    },
+    {
+     "veiculo": "Anamorphosis – Revista Internacional de Direito e Literatura",
+     "titulo": "Prisão intelectual: a censura do Estado em livros que compõem projetos de remição de pena · Benaglia e Heller",
+     "data": "2022",
+     "url": "https://dialnet.unirioja.es/descarga/articulo/9513222.pdf"
     }
    ]
   },
