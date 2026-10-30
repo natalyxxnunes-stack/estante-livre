@@ -874,6 +874,26 @@ const SITUACOES = ["Em vigor","Revertido","Sem efeito","Em aberto"];
 const EIXOS = ["Cultura afro-brasileira","Sexualidade e gênero","Sobrenatural e mágico",
   "Política e ideologia","Religião","Linguagem e palavrão","Violência","Outro"];
 /* data da última revisão do catálogo (AAAA-MM-DD); aparece no rodapé */
+
+/* Lacunas: o que falta apurar em cada ato com pendência, o tipo de obstáculo e o caminho para fechar.
+   Obstáculos vêm da lista fechada OBSTACULOS. O gerador recusa ato com pendência e sem lacuna cadastrada. */
+const OBSTACULOS = ["Fonte única","Documento interno não publicado","Sigilo judicial","Cumprimento não confirmado","Lista de títulos incompleta","Responsável não identificado","Divergência entre fontes"];
+const LACUNAS = {
+ "MS-2024":{obstaculos:["Cumprimento não confirmado"], caminho:"Pedido via Lei de Acesso à Informação à Secretaria de Estado de Educação de Mato Grosso do Sul sobre a devolução dos exemplares às escolas."},
+ "SC-2023":{obstaculos:["Responsável não identificado"], caminho:"Pedido via Lei de Acesso à Informação à Secretaria de Estado da Educação de Santa Catarina do ofício e da unidade regional que o expediu."},
+ "SC-2024":{obstaculos:["Fonte única","Documento interno não publicado"], caminho:"Pedido via Lei de Acesso à Informação à Secretaria de Estado da Educação de Santa Catarina do comunicado de revisão de acervo e da lista de unidades que receberam os exemplares."},
+ "RO-2020":{obstaculos:["Documento interno não publicado","Lista de títulos incompleta"], caminho:"Pedido via Lei de Acesso à Informação à Seduc de Rondônia da íntegra do processo SEI 0029.051300/2020-91, do adendo com a lista de títulos e do resultado da sindicância; consulta ao Ministério Público de Rondônia sobre a recomendação."},
+ "PALM-2021-06":{obstaculos:["Documento interno não publicado","Divergência entre fontes"], caminho:"Pedido via Fala.BR à Fundação Cultural Palmares do relatório com anexo e de documentos sobre o destino dos exemplares."},
+ "PALM-2021-08":{obstaculos:["Documento interno não publicado","Lista de títulos incompleta"], caminho:"Pedido via Fala.BR à Fundação Cultural Palmares do inventário da seção separada e de registros sobre o acesso a esse acervo."},
+ "MG-2024":{obstaculos:["Responsável não identificado"], caminho:"Pedido via Lei de Acesso à Informação à Prefeitura de Conselheiro Lafaiete do ato de suspensão; consulta processual ao Tribunal de Justiça de Minas Gerais sobre o trânsito em julgado."},
+ "SJC-2024":{obstaculos:["Sigilo judicial","Cumprimento não confirmado"], caminho:"Pedido via Lei de Acesso à Informação à Prefeitura de São José dos Campos sobre a devolução dos exemplares às escolas. A sentença tramita em segredo de Justiça e fica fora do alcance desse caminho."},
+ "UNIRV-2023":{obstaculos:["Responsável não identificado"], caminho:"Pedido via Lei de Acesso à Informação à Universidade de Rio Verde da ata ou do despacho que excluiu a obra da lista do vestibular."},
+ "LON-2024":{obstaculos:["Documento interno não publicado","Cumprimento não confirmado"], caminho:"Pedido via Lei de Acesso à Informação à Prefeitura de Londrina da resposta ao requerimento; consulta ao sistema da Câmara Municipal pelo texto do requerimento."},
+ "DF-2026":{obstaculos:["Documento interno não publicado"], caminho:"Pedido via Lei de Acesso à Informação ao Governo do Distrito Federal, por meio do Corpo de Bombeiros Militar, que administra o colégio, da nota oficial integral."},
+ "TAU-2025":{obstaculos:["Documento interno não publicado","Cumprimento não confirmado"], caminho:"Pedido via Lei de Acesso à Informação à Prefeitura de Taubaté do parecer técnico e da lista de escolas que receberam os exemplares; consulta à Câmara Municipal pelo requerimento."},
+ "FUNAP-2020":{obstaculos:["Documento interno não publicado","Cumprimento não confirmado","Divergência entre fontes"], caminho:"Pedido via Lei de Acesso à Informação à Funap, do governo de São Paulo, da mensagem de 3 de dezembro de 2019, da ata de 13 de fevereiro de 2020 e do registro de envio dos exemplares às unidades."},
+};
+
 const ATUALIZADO = "2026-10-30";
 
 /* contato institucional exibido na página Sobre. Vazio, a linha não aparece. */

@@ -32,9 +32,10 @@ No fim do arquivo, uma etapa de montagem copia os campos do ato e da obra para c
 - `FONTES`: reportagens e pesquisas citadas pelos casos.
 - `CONTEXTO`: episódios fora de biblioteca que aparecem no painel sem entrar na contagem.
 - `CORRECOES`: registro público de correções, exibido na página Metodologia.
+- `LACUNAS`: para cada ato com pendência, os obstáculos (da lista fechada `OBSTACULOS`) e o caminho para fechar. Alimenta a página O que falta apurar. O gerador recusa ato com pendência e sem lacuna, e lacuna de ato sem pendência.
 - `ATUALIZADO`: data da última revisão, mostrada no rodapé e no sitemap.
 - `CONTATO`: e-mail e Instagram exibidos na página Sobre. E-mail vazio não aparece.
-- `FORMULARIOS`: os links dos três formulários de relato. Botão sem link não aparece.
+- `FORMULARIOS`: os links dos três formulários de relato. Botão sem link não aparece. Com pelo menos um link preenchido, a página Relate um caso troca sozinha o aviso de canal fechado pelo protocolo do canal aberto.
 
 A página Mundo lê `assets/mundo.js`.
 

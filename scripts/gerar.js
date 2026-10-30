@@ -26,14 +26,14 @@ function contexto(raiz){
     console
   };
   vm.createContext(ctx);
-  vm.runInContext(ler("assets/dados.js") + "\n;this.__D={ATOS,AGENTES,PAPEIS,TIPOS_PAPEL,CASOS,LIVROS,FONTES,MODALIDADES,ESTAGIOS,SITUACOES,EIXOS,CORRECOES,RESPONSABILIDADES,DOCUMENTOS_ATOS,ATUALIZADO,CONTATO};", ctx);
+  vm.runInContext(ler("assets/dados.js") + "\n;this.__D={ATOS,AGENTES,PAPEIS,TIPOS_PAPEL,CASOS,LIVROS,FONTES,MODALIDADES,ESTAGIOS,SITUACOES,EIXOS,CORRECOES,RESPONSABILIDADES,DOCUMENTOS_ATOS,ATUALIZADO,CONTATO,OBSTACULOS,LACUNAS};", ctx);
   vm.runInContext(ler("assets/comum.js") + "\n;this.__F={esc,obraDe,slug,ordenar,casoHTML,livroHTML,dataLegivel,urlCaso,urlLivro,urlAto,agentesDoAto};", ctx);
   return Object.assign(ctx.__F, {__D: ctx.__D});
 }
 const R = contexto("");      // páginas na raiz
 const S = contexto("../");   // páginas em casos/ e livros/
 const D = R.__D;
-const { CASOS, LIVROS, FONTES, MODALIDADES, ESTAGIOS, SITUACOES, EIXOS, ATUALIZADO, ATOS, AGENTES, PAPEIS, TIPOS_PAPEL } = D;
+const { CASOS, LIVROS, FONTES, MODALIDADES, ESTAGIOS, SITUACOES, EIXOS, ATUALIZADO, ATOS, AGENTES, PAPEIS, TIPOS_PAPEL, OBSTACULOS, LACUNAS } = D;
 const esc = R.esc, obraDe = R.obraDe, slug = R.slug;
 
 /* ---------- 1. validação ---------- */
@@ -70,6 +70,14 @@ for(const p of PAPEIS){
 }
 for(const k of Object.keys(AGENTES)) if(!PAPEIS.some(p=>p.agente===k)) erros.push(`AGENTES ${k}: sem papel em nenhum ato`);
 for(const t of obras){ const s = slug(t); if(slugs[s] && slugs[s]!==t) erros.push(`endereço repetido para “${t}” e “${slugs[s]}”`); slugs[s]=t; }
+for(const k of new Set(CASOS.filter(c=>c.pendencia).map(c=>c.ato))) if(!LACUNAS[k]) erros.push(`LACUNAS: o ato ${k} tem pendência e não tem lacuna cadastrada`);
+for(const [k,L] of Object.entries(LACUNAS)){
+  if(!ATOS[k]) erros.push(`LACUNAS ${k}: ato inexistente`);
+  if(!CASOS.some(c=>c.ato===k && c.pendencia)) erros.push(`LACUNAS ${k}: nenhum registro do ato tem pendência; retire a lacuna ou registre a pendência`);
+  if(!L.obstaculos?.length) erros.push(`LACUNAS ${k}: sem obstáculo`);
+  for(const o of L.obstaculos||[]) if(!OBSTACULOS.includes(o)) erros.push(`LACUNAS ${k}: obstáculo fora da lista: ${o}`);
+  if(!L.caminho) erros.push(`LACUNAS ${k}: sem caminho`);
+}
 if(erros.length){ console.error("Erros nos dados:\n- " + erros.join("\n- ")); process.exit(1); }
 
 /* ---------- 2. cabeçalho, menu e rodapé ---------- */
@@ -95,7 +103,7 @@ function rodape(raiz){
   return `<footer class="foot">
   <div class="foot-in">
     <span>Estante Livre · um projeto de Nataly Nunes Pinto</span>
-    <span class="foot-links"><a href="${raiz}glossario.html">Glossário</a><a href="${raiz}cobertura.html">Cobertura</a><a href="${raiz}relate.html">Relate um caso</a><a href="${raiz}dados/estante-livre-casos.csv">Dados abertos</a><a href="${raiz}sobre.html">Contato</a></span>
+    <span class="foot-links"><a href="${raiz}glossario.html">Glossário</a><a href="${raiz}cobertura.html">Cobertura</a><a href="${raiz}pendencias.html">O que falta apurar</a><a href="${raiz}relate.html">Relate um caso</a><a href="${raiz}dados/estante-livre-casos.csv">Dados abertos</a><a href="${raiz}sobre.html">Contato</a></span>
     <span id="foot-meta"></span>
   </div>
 </footer>`;
@@ -356,6 +364,62 @@ for(const [k,A] of Object.entries(ATOS)){
   gravar("atos.html", pagina({titulo:"Atos e responsáveis · Estante Livre", descricao:`Os ${atosOrd.length} atos que geraram os registros do Estante Livre e as pessoas e instituições com papel documentado em cada um.`, url:`${SITE}/atos.html`, raiz:"", atual:"atos.html", ogType:"website", corpo}));
 }
 
+/* ---------- página O que falta apurar ---------- */
+{
+  const comPend = CASOS.filter(c=>c.pendencia);
+  const parciais = CASOS.filter(c=>c.verificado!=="Sim");
+  const atosPend = Object.keys(LACUNAS).sort((a,b)=>{
+    const pa = CASOS.some(c=>c.ato===a && c.verificado!=="Sim"), pb = CASOS.some(c=>c.ato===b && c.verificado!=="Sim");
+    return (pb-pa) || ATOS[b].data.localeCompare(ATOS[a].data);
+  });
+  const contagem = OBSTACULOS.map(o=>[o, atosPend.filter(k=>LACUNAS[k].obstaculos.includes(o)).length]).filter(x=>x[1]);
+  const cartao = k => {
+    const A = ATOS[k], L = LACUNAS[k], regs = CASOS.filter(c=>c.ato===k);
+    const pend = regs.filter(c=>c.pendencia);
+    const textos = [...new Set(pend.map(c=>c.pendencia))];
+    const nParc = regs.filter(c=>c.verificado!=="Sim").length;
+    const porTexto = t => pend.filter(c=>c.pendencia===t).map(c=>`<a href="casos/${c.id.toLowerCase()}.html">${esc(c.id)}</a>`).join(", ");
+    return `<article class="lac" id="${k.toLowerCase()}">
+      <div class="lac-cab"><h3><a href="atos/${k.toLowerCase()}.html">${esc(A.nome)}</a></h3>
+        <span class="lac-meta">${esc([A.cidade,A.uf].filter(Boolean).join(", "))} · ${A.data.slice(0,4)} · ${regs.length} ${regs.length>1?"registros":"registro"}${nParc?` · <b>${nParc} parcialmente ${nParc>1?"verificados":"verificado"}</b>`:" · verificado"}</span></div>
+      <div class="lac-tags">${L.obstaculos.map(o=>`<span class="lac-tag">${esc(o)}</span>`).join("")}</div>
+      <div class="lac-bloco"><span class="k">O QUE FALTA</span>${textos.map(t=>`<p>${esc(t)}${textos.length>1||pend.length<regs.length?` <span class="lac-ids">(${porTexto(t)})</span>`:""}</p>`).join("")}</div>
+      <div class="lac-bloco"><span class="k">CAMINHO PARA FECHAR</span><p>${esc(L.caminho)}</p></div>
+    </article>`;
+  };
+  const parc = atosPend.filter(k=>CASOS.some(c=>c.ato===k && c.verificado!=="Sim"));
+  const verif = atosPend.filter(k=>!parc.includes(k));
+  const corpo = `<div class="wrap">
+  <div class="hero-pg">
+    <h1>O que falta apurar</h1>
+    <p class="lede">O catálogo publica o que está documentado e também o que ainda não conseguiu comprovar. Esta página reúne as lacunas de todos os registros, o tipo de obstáculo de cada uma e o caminho para fechá-la. Quando uma lacuna é fechada, a mudança entra no <a href="metodologia.html">registro público de correções</a>.</p>
+  </div>
+  <div class="lac-nums">
+    <div><b>${parciais.length}</b><span>de ${CASOS.length} registros parcialmente verificados</span></div>
+    <div><b>${comPend.length}</b><span>registros com alguma pendência</span></div>
+    <div><b>${atosPend.length}</b><span>de ${Object.keys(ATOS).length} atos com lacuna aberta</span></div>
+  </div>
+  <div class="lac-resumo"><span class="k">OBSTÁCULOS MAIS FREQUENTES</span>${contagem.sort((a,b)=>b[1]-a[1]).map(([o,n])=>`<span class="lac-tag">${esc(o)} <b>${n}</b></span>`).join("")}</div>
+</div>
+<div class="wrap">
+  <section>
+    <div class="sechead"><span class="kicker">01</span><h2>Atos com registros parcialmente verificados</h2><span class="count"><b>${parc.length}</b> atos</span></div>
+    <p class="note">“Parcialmente verificado” quer dizer que o registro tem documentação pública, mas falta uma segunda fonte, um documento original ou a confirmação do desfecho. Esses registros entram nos totais do painel e aparecem sempre com essa marcação.</p>
+    ${parc.map(cartao).join("")}
+  </section>
+  <section>
+    <div class="sechead"><span class="kicker">02</span><h2>Registros verificados com detalhe em aberto</h2><span class="count"><b>${verif.length}</b> atos</span></div>
+    <p class="note">O fato central destes registros tem duas ou mais fontes. Falta um detalhe, como o nome de quem assinou ou a confirmação de que os livros voltaram às escolas.</p>
+    ${verif.map(cartao).join("")}
+  </section>
+  <section style="border-bottom:0">
+    <div class="sechead"><span class="kicker">03</span><h2>Se você tem um desses documentos</h2></div>
+    <p class="note">Ofícios, respostas a pedidos de acesso à informação, atas, listas de títulos e decisões judiciais públicas ajudam a fechar as lacunas acima. Veja como enviar em <a href="relate.html">Relate um caso</a>. Pedidos via Lei de Acesso à Informação podem ser feitos por qualquer pessoa, sem justificar o motivo.</p>
+  </section>
+</div>`;
+  gravar("pendencias.html", pagina({titulo:"O que falta apurar · Estante Livre", descricao:`As lacunas de cada registro do Estante Livre: ${parciais.length} de ${CASOS.length} registros parcialmente verificados, o tipo de obstáculo e o caminho para fechar cada um.`, url:`${SITE}/pendencias.html`, raiz:"", atual:"", ogType:"website", corpo}));
+}
+
 /* ---------- 4. dados abertos ---------- */
 const RESP = D.RESPONSABILIDADES, DOC = D.DOCUMENTOS_ATOS;
 const linhas = R.ordenar(CASOS,"id").map(c=>{
@@ -381,7 +445,7 @@ const csv = v => `"${(Array.isArray(v) ? v.map(x=>x.url || `${x.nome} (${x.papel
 gravar("dados/estante-livre-casos.csv", "\uFEFF" + [colunas.join(","), ...linhas.map(l=>colunas.map(k=>csv(l[k])).join(","))].join("\n") + "\n");
 
 /* ---------- 5. sitemap, robots, llms.txt, 404 ---------- */
-const topo = [...PAGINAS, "atos.html"].map(f => f==="index.html" ? SITE+"/" : `${SITE}/${f}`);
+const topo = [...PAGINAS, "atos.html", "pendencias.html"].map(f => f==="index.html" ? SITE+"/" : `${SITE}/${f}`);
 gravar("sitemap.xml", `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${[...topo, ...urlsCasos, ...urlsLivros, ...urlsAtos].map(u=>`  <url><loc>${u}</loc><lastmod>${ATUALIZADO}</lastmod></url>`).join("\n")}

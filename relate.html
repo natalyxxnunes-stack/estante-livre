@@ -56,7 +56,16 @@
   <section>
     <p class="note" style="font-size:15px;max-width:66ch">Este observatório enxerga bem o que vira ofício e notícia. Enxerga mal o resto: o livro que foi para a estante alta, o empréstimo que passou a exigir autorização, a compra que deixou de ser feita por receio. Essas modalidades estão em zero ou perto de zero no catálogo porque quase nunca deixam documento. Elas só aparecem se alguém de dentro contar.</p>
 
-    <div class="aviso">
+    <div class="aviso" id="canal-aberto" hidden>
+      <h2>Como seu relato é tratado</h2>
+      <p><strong>Os formulários são do Google Forms.</strong> As respostas ficam numa planilha na conta Google do projeto, e o Google armazena esses dados nos servidores dele.</p>
+      <p><strong>Só Nataly Nunes Pinto, responsável pelo Estante Livre, lê as respostas.</strong> Nenhuma outra pessoa tem acesso à planilha.</p>
+      <p><strong>O contato é opcional.</strong> Você pode enviar o relato sem nome, e-mail ou telefone. Se deixar contato, ele serve só para tirar dúvidas sobre o caso e é apagado quando a verificação termina, seja o caso publicado ou não. Para pedir a exclusão antes disso, use o mesmo canal pelo qual deixou o contato.</p>
+      <p><strong>Os formulários não aceitam anexos</strong>, porque o envio de arquivos no Google Forms exige login e registra o e-mail de quem envia. Se você tem um documento, diga isso no formulário e, se quiser, deixe um contato: combinamos depois uma forma de envio.</p>
+      <p><strong>Se você corre risco no trabalho</strong>, evite detalhes que identifiquem você, como cargo único na escola ou datas muito precisas, e use uma rede que não seja a do trabalho.</p>
+    </div>
+
+    <div class="aviso" id="canal-fechado">
       <h2>Canal de relato ainda não habilitado</h2>
       <p><strong>Não há, neste momento, um formulário seguro ativo para receber relatos.</strong> Os links de envio ainda não foram configurados.</p>
       <p>Por isso, o Estante Livre ainda não pode garantir anonimato, confidencialidade, armazenamento protegido, controle de acesso ou descarte de contatos. A descrição abaixo apresenta o protocolo que deverá ser implementado, não um serviço já em funcionamento.</p>
@@ -75,7 +84,7 @@
 
   <section>
     <div class="sechead"><span class="kicker">O QUE PERGUNTAMOS</span><h2>As perguntas previstas</h2></div>
-    <p class="note">Estas são as informações que o formulário deverá solicitar quando houver um canal seguro ativo.</p>
+    <p class="note" id="nota-perguntas">Estas são as informações que o formulário deverá solicitar quando houver um canal seguro ativo.</p>
     <div class="gloss">
       <div class="gterm"><h3>O que aconteceu</h3><div class="gdef">Retirada, restrição, ocultação, veto a atividade, recusa de compra, autocensura, destruição, ou pedido que não foi atendido.</div></div>
       <div class="gterm"><h3>Quando e onde</h3><div class="gdef">Mês e ano aproximados, município e estado, tipo de biblioteca e rede.</div></div>
@@ -83,19 +92,19 @@
       <div class="gterm"><h3>Quem fez o quê</h3><div class="gdef">Quem pressionou ou pediu a retirada; quem decidiu; quem assinou o documento; quem executou; quem contestou ou revogou. Se algum nome não for conhecido, isso também deve ser informado.</div></div>
       <div class="gterm"><h3>Qual foi a justificativa</h3><div class="gdef">Se possível, nas palavras usadas por quem pediu.</div></div>
       <div class="gterm"><h3>Houve consequência para alguém</h3><div class="gdef">Advertência, afastamento, transferência, demissão, assédio. Este campo é o que mais falta no catálogo.</div></div>
-      <div class="gterm"><h3>Existe registro</h3><div class="gdef">Ofício, e-mail, ata, foto de documento, link de notícia. Anexo opcional.</div></div>
+      <div class="gterm"><h3>Existe registro</h3><div class="gdef">Ofício, e-mail, ata, foto de documento, link de notícia. O formulário pede o link ou a descrição; o arquivo, se houver, é combinado depois.</div></div>
       <div class="gterm"><h3>Podemos publicar</h3><div class="gdef">Tudo, sem o nome da instituição, apenas na contagem geral, ou conversar antes de decidir.</div></div>
     </div>
   </section>
 
   <section style="border-bottom:0">
-    <div class="sechead"><span class="kicker">PROTOCOLO A IMPLEMENTAR</span><h2>Como os relatos deverão ser tratados</h2></div>
+    <div class="sechead"><span class="kicker" id="kick-prot">PROTOCOLO A IMPLEMENTAR</span><h2 id="tit-prot">Como os relatos deverão ser tratados</h2></div>
     <div class="gloss">
-      <div class="gterm"><h3>1 · Triagem</h3><div class="gdef">Quando o canal seguro estiver ativo, o relato deverá entrar em triagem como não verificado e não publicado.</div></div>
+      <div class="gterm"><h3>1 · Triagem</h3><div class="gdef">Todo relato entra em triagem como não verificado e não publicado.</div></div>
       <div class="gterm"><h3>2 · Verificação</h3><div class="gdef">Busca por notícia, ofício, ata ou diário oficial que corrobore.</div></div>
       <div class="gterm"><h3>3 · Sem segunda fonte</h3><div class="gdef">Fica como parcialmente verificado. Conta na estatística, não é apresentado como confirmado.</div></div>
       <div class="gterm"><h3>4 · Publicação</h3><div class="gdef">Só o que estiver autorizado, e no nível de detalhe que você autorizou.</div></div>
-      <div class="gterm"><h3>5 · Descarte de contato</h3><div class="gdef">O prazo de retenção e o procedimento de descarte ainda precisam ser definidos e publicados antes de abrir o recebimento. Não há coleta ativa por formulário neste momento.</div></div>
+      <div class="gterm"><h3>5 · Descarte de contato</h3><div class="gdef">O contato, quando informado, é apagado quando a verificação do caso termina, seja ele publicado ou não. O conteúdo do relato fica guardado sem dados de identificação.</div></div>
       <div class="gterm zero"><h3>Não é denúncia formal</h3><div class="gdef">O Estante Livre não encaminha casos ao Ministério Público automaticamente. Se quiser fazer denúncia, o caminho é o MP estadual, o Conselho Regional de Biblioteconomia ou a FEBAB.</div></div>
     </div>
   </section>
@@ -107,7 +116,7 @@
 <footer class="foot">
   <div class="foot-in">
     <span>Estante Livre · um projeto de Nataly Nunes Pinto</span>
-    <span class="foot-links"><a href="glossario.html">Glossário</a><a href="cobertura.html">Cobertura</a><a href="relate.html">Relate um caso</a><a href="dados/estante-livre-casos.csv">Dados abertos</a><a href="sobre.html">Contato</a></span>
+    <span class="foot-links"><a href="glossario.html">Glossário</a><a href="cobertura.html">Cobertura</a><a href="pendencias.html">O que falta apurar</a><a href="relate.html">Relate um caso</a><a href="dados/estante-livre-casos.csv">Dados abertos</a><a href="sobre.html">Contato</a></span>
     <span id="foot-meta"></span>
   </div>
 </footer>
@@ -122,6 +131,9 @@ document.querySelectorAll("[data-form]").forEach(a=>{
   if(/^https:\/\//.test(u)){ a.href=u; a.target="_blank"; a.rel="noopener"; a.hidden=false; algum=true; }
 });
 if(!algum) document.getElementById("form-pendente").hidden=false;
+else { document.getElementById("canal-aberto").hidden=false; document.getElementById("canal-fechado").hidden=true;
+  document.getElementById("nota-perguntas").textContent="Estas são as informações que os formulários pedem. Só o primeiro bloco é obrigatório.";
+  document.getElementById("kick-prot").textContent="PROTOCOLO"; document.getElementById("tit-prot").textContent="Como os relatos são tratados"; }
 montarRodape();
 </script>
 </body>
