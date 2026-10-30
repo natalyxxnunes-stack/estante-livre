@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sobre o projeto · Estante Livre</title>
+<meta name="description" content="Quem faz o Estante Livre, observatório independente de censura de livros em bibliotecas e escolas brasileiras, e como entrar em contato.">
+<link rel="icon" href="favicon.ico" sizes="32x32">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="theme-color" content="#D62410">
+<link rel="canonical" href="https://estante-livre-br.vercel.app/sobre.html">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Estante Livre">
+<meta property="og:title" content="Sobre o projeto · Estante Livre">
+<meta property="og:description" content="Quem faz o observatório, como ele funciona e como entrar em contato.">
+<meta property="og:url" content="https://estante-livre-br.vercel.app/sobre.html">
+<meta property="og:image" content="https://estante-livre-br.vercel.app/og-estante-livre.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="assets/estilo.css">
+</head>
+<body>
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+<header class="topo">
+  <div class="topo-in">
+    <a class="logo" href="index.html" aria-label="Estante Livre, página inicial">Estante <span class="redact">Livre<span class="bar" aria-hidden="true"></span></span></a>
+    <div class="tagline">Observatório de censura de livros · quem mandou tirar da estante, com qual ato, e o que aconteceu depois</div>
+    <nav class="nav" aria-label="Seções">
+      <a href="index.html">Painel</a>
+      <a href="casos.html">Casos</a>
+      <a href="livros.html">Livros</a>
+      <a href="analises.html">Análises</a>
+      <a href="mundo.html">Mundo</a>
+      <a href="glossario.html">Glossário</a>
+      <a href="metodologia.html">Metodologia</a>
+      <a href="sobre.html" class="on" aria-current="page">Sobre</a>
+    </nav>
+  </div>
+</header>
+
+<main id="conteudo" tabindex="-1">
+<div class="wrap">
+  <div class="hero-pg">
+    <h1>Sobre o projeto</h1>
+    <p class="lede">O Estante Livre documenta tentativas de tirar livros de bibliotecas e escolas brasileiras desde 2019: quem pediu, quem decidiu, quem assinou, quem executou e o que aconteceu depois.</p>
+  </div>
+</div>
+
+<div class="wrap">
+  <section>
+    <div class="sechead"><span class="kicker">01</span><h2>Por que existe</h2></div>
+    <p class="note">Casos de censura de livros viram notícia por uma semana e somem. O Brasil não tem uma base pública, contínua e verificável que diga quantos foram, onde, por qual mecanismo e com qual desfecho. O Estante Livre reúne esses episódios num só lugar, com fontes, e volta a eles quando aparece informação nova.</p>
+  </section>
+
+  <section>
+    <div class="sechead"><span class="kicker">02</span><h2>Quem faz</h2></div>
+    <p class="note">O projeto é criado e editado por Nataly Nunes Pinto, jornalista formada pela UniCarioca, com trajetória no mercado editorial e em programas de leitura. Ela cursa pós-graduação em Teoria Crítica da Sociedade (FESPSP) e em Literatura, Artes e Filosofia (PUC-RS).</p>
+  </section>
+
+  <section>
+    <div class="sechead"><span class="kicker">03</span><h2>Independência</h2></div>
+    <p class="note">O Estante Livre é um projeto autoral e independente, mantido pela autora. Não recebe recursos de partidos, governos ou editoras. O compromisso editorial é com o direito à leitura, e cada afirmação do catálogo precisa estar sustentada por documento ou reportagem identificada. Correções são públicas e datadas na <a href="metodologia.html">Metodologia</a>.</p>
+  </section>
+
+  <section style="border-bottom:0">
+    <div class="sechead"><span class="kicker">04</span><h2>Contato</h2></div>
+    <p class="note" id="contato"></p>
+    <p class="note">Para imprensa e pesquisa: os dados completos estão em <a href="dados/estante-livre-casos.csv">CSV</a> e <a href="dados/estante-livre-casos.json">JSON</a>, e cada caso tem página própria com sugestão de citação.</p>
+  </section>
+</div>
+</main>
+
+<footer class="foot">
+  <div class="foot-in">
+    <span>Estante Livre · um projeto de Nataly Nunes Pinto</span>
+    <span class="foot-links"><a href="cobertura.html">Cobertura</a><a href="relate.html">Relate um caso</a><a href="dados/estante-livre-casos.csv">Dados abertos</a><a href="sobre.html">Contato</a></span>
+    <span id="foot-meta"></span>
+  </div>
+</footer>
+
+<script src="assets/dados.js"></script>
+<script src="assets/comum.js"></script>
+<script>
+{
+  const linhas = [];
+  if(CONTATO.email) linhas.push(`E-mail: <a href="mailto:${esc(CONTATO.email)}">${esc(CONTATO.email)}</a>.`);
+  if(CONTATO.instagram) linhas.push(`Instagram: <a href="https://instagram.com/${esc(CONTATO.instagram)}" target="_blank" rel="noopener">@${esc(CONTATO.instagram)}</a>.`);
+  linhas.push("Pedidos de correção e de retirada de imagens de capa são respondidos pelo mesmo canal.");
+  document.getElementById("contato").innerHTML = linhas.join(" ");
+}
+montarRodape();
+</script>
+</body>
+</html>

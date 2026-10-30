@@ -8,6 +8,13 @@ const esc = s => String(s ?? "").replace(/[&<>"']/g,
 /* O selo editorial é manual. O código só confere se há ao menos duas referências cadastradas; não prova sozinho que sejam independentes. */
 const verificado = c => c.verificado === "Sim" && (c.fontes||[]).length >= 2;
 const conta = (arr,campo,val) => arr.filter(c=>c[campo]===val).length;
+/* obra a que o registro se refere; registros de episódio (EL-030, EL-031, EL-034) apontam para o livro */
+const obraDe = c => c.obra || c.titulo;
+/* prefixo de caminho: páginas geradas em casos/ e livros/ definem RAIZ_SITE = "../" */
+const RAIZ = (typeof RAIZ_SITE!=="undefined") ? RAIZ_SITE : "";
+const slug = s => norm(s).replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"").slice(0,70).replace(/-+$/,"");
+const urlCaso = id => RAIZ + "casos/" + id.toLowerCase() + ".html";
+const urlLivro = t => RAIZ + "livros/" + slug(t) + ".html";
 const unicos = (arr,campo) => new Set(arr.map(c=>c[campo]).filter(Boolean)).size;
 
 const MES = {"01":"Janeiro","02":"Fevereiro","03":"Março","04":"Abril","05":"Maio","06":"Junho",
@@ -57,6 +64,8 @@ function lerURL(){
   return {
     busca: (p.get("q")||"").slice(0,80),
     modalidade: so(p.get("mod"), MODALIDADES),
+    estagio: so(p.get("est"), ESTAGIOS),
+    situacao: so(p.get("sit"), SITUACOES),
     eixo: so(p.get("eixo"), EIXOS) || "",
     uf: so((p.get("uf")||"").toUpperCase(), ufs),
     ano: so(p.get("ano"), anos),
@@ -67,6 +76,8 @@ function gravarURL(F){
   const p = new URLSearchParams();
   if(F.busca) p.set("q",F.busca);
   if(F.modalidade) p.set("mod",F.modalidade);
+  if(F.estagio) p.set("est",F.estagio);
+  if(F.situacao) p.set("sit",F.situacao);
   if(F.eixo) p.set("eixo",F.eixo);
   if(F.uf) p.set("uf",F.uf);
   if(F.ano) p.set("ano",F.ano);
@@ -78,12 +89,14 @@ function gravarURL(F){
 function aplicar(F, base){
   return (base||CASOS).filter(c=>{
     if(F.modalidade && c.modalidade!==F.modalidade) return false;
+    if(F.estagio && c.estagio!==F.estagio) return false;
+    if(F.situacao && c.situacao!==F.situacao) return false;
     if(F.eixo && c.eixo!==F.eixo) return false;
     if(F.uf && c.uf!==F.uf) return false;
     if(F.ano && ano(c)!==F.ano) return false;
     if(F.tipo && c.tipo!==F.tipo) return false;
     if(F.busca){
-      const alvo = norm([c.titulo,c.autoria,c.editora,c.cidade,c.uf,c.quem,
+      const alvo = norm([c.titulo,c.obra,c.estagio,c.situacao,c.autoria,c.editora,c.cidade,c.uf,c.quem,
         c.alegacao,c.eixo,c.modalidade,c.desfecho,c.nota,c.id,c.governo,c.pressao,
         ...Object.values((typeof RESPONSABILIDADES!=="undefined" && RESPONSABILIDADES[c.id])||{}), (typeof DOCUMENTOS_ATOS!=="undefined" && DOCUMENTOS_ATOS[c.id])||""].join(" "));
       if(!alvo.includes(norm(F.busca))) return false;
@@ -96,21 +109,23 @@ function ordenar(arr, modo){
   const a=[...arr];
   if(modo==="data-desc") a.sort((x,y)=> y.data.localeCompare(x.data) || x.id.localeCompare(y.id));
   else if(modo==="data-asc") a.sort((x,y)=> x.data.localeCompare(y.data) || x.id.localeCompare(y.id));
-  else if(modo==="titulo") a.sort((x,y)=> x.titulo.localeCompare(y.titulo,"pt"));
+  else if(modo==="titulo") a.sort((x,y)=> obraDe(x).localeCompare(obraDe(y),"pt"));
   else if(modo==="uf") a.sort((x,y)=> x.uf.localeCompare(y.uf) || x.data.localeCompare(y.data));
   else a.sort((x,y)=> x.id.localeCompare(y.id));
   return a;
 }
 
 /* ---------- componentes ---------- */
-const MOD_ALT = ["Restrição de acesso","Veto a aquisição","Ocultação","Autocensura","Contestação sem efeito","Tentativa de descarte","Pedido parlamentar de recolhimento; retirada não comprovada","Controvérsia sobre atividade; veto à obra não comprovado","Questionamento parlamentar; sem pedido formal de retirada"];
-const clsDesfecho = d => ({"Retirado":"ret","Revertido":"rev","Em aberto":"aberto","Mantido com restrição":"parcial"})[d] || "";
+const clsSituacao = d => ({"Em vigor":"ret","Revertido":"rev","Em aberto":"aberto","Sem efeito":"parcial"})[d] || "";
+const clsEstagio = e => ({"Execução comprovada":"e4","Decisão ou ordem":"e3","Pedido formal":"e2","Pressão pública":"e1"})[e] || "";
 
 function capaHTML(c, cls){
   const k = cls||"capa";
-  if(c.capa) return `<div><img class="${k}" alt="Capa de ${esc(c.titulo)}" src="assets/capas/${esc(c.capa)}.jpg" width="213" height="320" loading="lazy" decoding="async">
-    ${c.editora?`<div class="capa-cred">Capa · ${c.editora}</div>`:""}</div>`;
-  return `<div><div class="${k}-vazia"><span>${c.capaVazia||"Capa não disponível"}</span></div></div>`;
+  if(c.capa) return `<div><img class="${k}" alt="Capa de ${esc(obraDe(c))}${c.editora?", "+esc(c.editora):""}" src="${RAIZ}assets/capas/${esc(c.capa)}.jpg" width="213" height="320" loading="lazy" decoding="async">
+    ${c.editora?`<div class="capa-cred">Capa · ${esc(c.editora)}</div>`:""}</div>`;
+  /* sem imagem: capa tipográfica na cor do mecanismo */
+  const t = c.conjunto ? "Conjunto de obras" : obraDe(c).split(":")[0];
+  return `<div><div class="${k}-tipo m-${slug(c.modalidade)}" aria-hidden="true"><b>${esc(t)}</b><span>${esc((c.autoria||"").split(",")[0])}</span></div></div>`;
 }
 
 function linksFonte(ids){
@@ -118,27 +133,34 @@ function linksFonte(ids){
   return `<div class="fontes"><div class="fontes-lab">FONTES</div>` +
     ids.map(k=>{ const f=FONTES[k]; if(!f) return "";
       return `<a class="flink" href="${esc(f.url)}" target="_blank" rel="noopener">
-        <span class="v">${f.veic}${f.data?` · ${dataCurta(f.data)}`:""}</span>
-        <span class="t">${f.tit}</span></a>`;
+        <span class="v">${esc(f.veic)}${f.data?` · ${dataCurta(f.data)}`:""}</span>
+        <span class="t">${esc(f.tit)}</span></a>`;
     }).join("") + `</div>`;
 }
 
-function casoHTML(c, q){
+function casoHTML(c, q, nivel){
   const m = t => marcar(t, q);
+  const H = nivel || "h3";
   const r = (typeof RESPONSABILIDADES !== "undefined" && RESPONSABILIDADES[c.id]) || {};
   const linhaResp = (rotulo, valor) => valor ? '<div class="resp-linha"><span class="k">'+rotulo+'</span><div>'+esc(valor)+'</div></div>' : "";
+  const pend = r.pendencia || c.pendencia;
   return '<article class="caso" id="'+c.id+'" aria-labelledby="t-'+c.id+'">'+
     capaHTML(c)+
     '<div class="caso-body">'+
-      '<div class="caso-top"><a class="caso-id" href="#'+c.id+'" title="Link para este caso">'+c.id+'</a>'+
-        '<h3 class="caso-tit" id="t-'+c.id+'">'+m(c.titulo)+'</h3>'+
+      '<div class="caso-top"><a class="caso-id" href="'+urlCaso(c.id)+'" title="Página deste caso">'+c.id+'</a>'+
+        '<'+H+' class="caso-tit" id="t-'+c.id+'">'+m(c.titulo)+'</'+H+'>'+
         '<button class="copiar" type="button" data-copiar="'+c.id+'">copiar link</button></div>'+
       '<div class="caso-aut">'+m([c.autoria,c.editora].filter(Boolean).join(" · "))+(c.pnld?" · no PNLD":"")+'</div>'+
+      '<div class="tags tags-topo">'+
+        '<span class="tag t-mod">'+esc(c.modalidade)+'</span>'+
+        '<span class="tag t-est '+clsEstagio(c.estagio)+'">'+esc(c.estagio)+'</span>'+
+        '<span class="tag t-des '+clsSituacao(c.situacao)+'">'+esc(c.situacao)+'</span>'+
+      '</div>'+
       '<div class="caso-grid">'+
         '<div class="campo"><div class="k">ONDE</div><div class="v">'+m([c.cidade,c.uf].filter(Boolean).join(", "))+'</div></div>'+
         '<div class="campo"><div class="k">QUANDO</div><div class="v">'+dataLegivel(c)+'</div></div>'+
         '<div class="campo"><div class="k">BIBLIOTECA</div><div class="v">'+c.tipo+' · rede '+c.rede.toLowerCase()+'</div></div>'+
-        '<div class="campo"><div class="k">AGENTE/INSTÂNCIA REGISTRADA</div><div class="v">'+m(c.quem)+'</div></div>'+
+        '<div class="campo"><div class="k">INSTÂNCIA REGISTRADA</div><div class="v">'+m(c.quem)+'</div></div>'+
       '</div>'+
       (c.governo?'<div class="poder"><div><span class="k">GOVERNO NA ÉPOCA</span>'+m(c.governo)+'</div></div>':"")+
       '<div class="responsa">'+
@@ -151,77 +173,74 @@ function casoHTML(c, q){
         linhaResp("FISCALIZAÇÃO / DENÚNCIA",r.fiscalizacao)+
         linhaResp("RESPOSTA / REVERSÃO",r.resposta)+
         linhaResp("OBSERVAÇÃO SOBRE RESPONSABILIDADE INDIVIDUAL",r.responsavel)+
-        linhaResp("PENDÊNCIA DE APURAÇÃO",r.pendencia)+
-        '<p class="responsa-nota">Pressão, pedido, decisão, assinatura e execução são papéis diferentes. O observatório não atribui a uma pessoa a ordem formal sem documento ou fonte que sustente essa atribuição.</p>'+
       '</div>'+
-      '<div class="caso-aleg"><span class="k">JUSTIFICATIVA DECLARADA PARA A RETIRADA</span><div>'+m(c.alegacao)+'</div></div>'+
+      '<div class="caso-aleg"><span class="k">JUSTIFICATIVA DECLARADA</span><div>'+m(c.alegacao)+'</div></div>'+
       (c.nota?'<div class="caso-nota">'+m(c.nota)+'</div>':"")+
-      '<div class="tags">'+
-        '<span class="tag t-mod '+(MOD_ALT.includes(c.modalidade)?"alt":"")+'">'+c.modalidade+'</span>'+
-        '<span class="tag t-des '+clsDesfecho(c.desfecho)+'">'+c.desfecho+'</span>'+
-        (c.pendencia?'<span class="tag t-pend">'+c.pendencia+'</span>':"")+
-      '</div>'+
+      '<div class="caso-desf"><span class="k">DESFECHO</span> '+m(c.desfecho)+'</div>'+
       linksFonte(c.fontes)+
+      (pend?'<div class="caso-pend"><span class="k">O QUE AINDA APURAMOS</span><div>'+esc(pend)+'</div></div>':"")+
     '</div></article>';
 }
 /* copiar link de um caso */
 document.addEventListener("click", e=>{
   const b = e.target.closest("[data-copiar]"); if(!b) return;
-  const url = location.origin + location.pathname.replace(/[^/]*$/,"") + "casos.html#" + b.dataset.copiar;
+  const url = new URL(urlCaso(b.dataset.copiar), location.href).href;
   const ok = ()=>{ const t=b.textContent; b.textContent="link copiado"; setTimeout(()=>b.textContent=t,1600); };
   if(navigator.clipboard) navigator.clipboard.writeText(url).then(ok, ()=>prompt("Copie o link:", url));
   else prompt("Copie o link:", url);
 });
 
-function livroHTML(titulo, ocs, q){
+function livroHTML(titulo, ocs, q, nivel){
   const m = t => marcar(t, q);
+  const H = nivel || "h3";
   const ref = ocs[0], L = LIVROS[titulo] || {};
-  const ficha = [L.ano, L.genero, ref.editora, L.premio, ref.pnld?"No PNLD":null].filter(Boolean).join(" · ");
+  const ficha = [L.ano, L.genero, ref.editora, L.premio, ref.pnld?"No PNLD":null].filter(Boolean).map(esc).join(" · ");
   const ufs = [...new Set(ocs.map(o=>o.uf))];
   const motivos = [...new Set(ocs.map(o=>o.eixo))];
   const mods = [...new Set(ocs.map(o=>o.modalidade))];
-  const rev = ocs.filter(o=>o.desfecho==="Revertido").length;
+  const rev = ocs.filter(o=>o.situacao==="Revertido").length;
   const linhas = [...ocs].sort((a,b)=>a.data.localeCompare(b.data)).map(o=>`
     <div class="ocorr">
-      <div class="ocorr-id">${o.id}</div>
-      <div class="ocorr-onde">${[o.cidade,o.uf].filter(Boolean).join(", ")||o.uf}<br>
-        <span style="font-size:11.5px;color:var(--cinza);font-weight:400">${dataLegivel(o)}</span></div>
+      <a class="ocorr-id" href="${urlCaso(o.id)}">${o.id}</a>
+      <div class="ocorr-onde">${esc([o.cidade,o.uf].filter(Boolean).join(", ")||o.uf)}<br>
+        <span class="ocorr-data">${dataLegivel(o)}</span></div>
       <div class="ocorr-aleg">
+        ${o.titulo!==titulo?`<div class="ocorr-ep">${esc(o.titulo)}</div>`:""}
         <b>JUSTIFICATIVA DECLARADA:</b> ${m(o.alegacao)}<br>
-        <span style="font-style:normal;font-size:11.5px">${esc(o.quem)} · ${esc(o.tipo.toLowerCase())}</span>
+        <span class="ocorr-quem">${esc(o.quem)} · ${esc(o.tipo.toLowerCase())}</span>
         ${(()=>{const r=(typeof RESPONSABILIDADES!=="undefined"&&RESPONSABILIDADES[o.id])||{};return [
           r.pressao||o.pressao?'<div><b>PRESSÃO / PEDIDO:</b> '+esc(r.pressao||o.pressao)+'</div>':"",
           r.decisor?'<div><b>DECISÃO:</b> '+esc(r.decisor)+'</div>':"",
           r.assinantes?'<div><b>ASSINATURA:</b> '+esc(r.assinantes)+'</div>':"",
-          (typeof DOCUMENTOS_ATOS!=="undefined"&&DOCUMENTOS_ATOS[o.id])?'<div><b>ATO / DOCUMENTO:</b> '+esc(DOCUMENTOS_ATOS[o.id])+'</div>':"",
           r.executor?'<div><b>EXECUÇÃO:</b> '+esc(r.executor)+'</div>':""
         ].join("");})()}
       </div>
       <div class="ocorr-tags">
-        <span class="tag t-mod ${MOD_ALT.includes(o.modalidade)?"alt":""}">${o.modalidade}</span>
-        <span class="tag t-des ${clsDesfecho(o.desfecho)}">${o.desfecho}</span></div>
+        <span class="tag t-mod">${esc(o.modalidade)}</span>
+        <span class="tag t-est ${clsEstagio(o.estagio)}">${esc(o.estagio)}</span>
+        <span class="tag t-des ${clsSituacao(o.situacao)}">${esc(o.situacao)}</span></div>
     </div>`).join("");
 
-  return `<div class="livro">
+  return `<div class="livro" id="${slug(titulo)}">
     <div class="livro-head">
       ${capaHTML(ref,"livro-capa")}
       <div>
-        <div class="livro-tit">${m(titulo)}</div>
+        <${H} class="livro-tit"><a href="${urlLivro(titulo)}">${m(titulo)}</a></${H}>
         <div class="livro-aut">${m(ref.autoria||"")}</div>
         ${ficha?`<div class="livro-ficha">${ficha}</div>`:""}
-        ${L.sinopse?`<div class="livro-sin">${L.sinopse}</div>`:""}
-        ${L.nota?`<div class="livro-nota">${L.nota}</div>`:""}
+        ${L.sinopse?`<div class="livro-sin">${esc(L.sinopse)}</div>`:""}
+        ${L.nota?`<div class="livro-nota">${esc(L.nota)}</div>`:""}
         <div class="livro-stats">
           <div class="lstat"><div class="n">${ocs.length}</div><div class="l">${ocs.length===1?"OCORRÊNCIA":"OCORRÊNCIAS"}</div></div>
-          <div class="lstat"><div class="n">${ufs.length}</div><div class="l">${ufs.length===1?"ESTADO":"ESTADOS"}</div></div>
+          <div class="lstat"><div class="n">${ufs.length}</div><div class="l">${ufs.length===1?"UNIDADE DA FEDERAÇÃO":"UNIDADES DA FEDERAÇÃO"}</div></div>
           ${rev?`<div class="lstat"><div class="n">${rev}</div><div class="l">${rev===1?"REVERTIDA":"REVERTIDAS"}</div></div>`:""}
         </div>
       </div>
     </div>
     <div class="livro-motivos">
-      <span class="mini">Estados: <b>${ufs.join(", ")}</b></span>
-      <span class="mini">Motivos: <b>${motivos.join(", ")}</b></span>
-      <span class="mini">Modalidades: <b>${mods.join(", ")}</b></span>
+      <span class="mini">UF: <b>${ufs.join(", ")}</b></span>
+      <span class="mini">Motivos: <b>${motivos.map(esc).join(", ")}</b></span>
+      <span class="mini">Mecanismos: <b>${mods.map(esc).join(", ")}</b></span>
     </div>
     <div class="livro-ocorr">${linhas}</div>
   </div>`;
@@ -247,7 +266,7 @@ function tipoFonte(f, cs){
   const v = f.veic.toLowerCase();
   if(v.includes("pesquisa") || v.includes("eca-usp")) return "PESQUISA";
   if(v.includes("substack") || v.includes("blog") || v.includes("gênio")) return "ANÁLISE";
-  if(cs.some(c=>c.desfecho==="Revertido")) return "REVERSÃO";
+  if(cs.some(c=>c.situacao==="Revertido")) return "REVERSÃO";
   return "REPORTAGEM";
 }
 
@@ -269,26 +288,20 @@ function pontosSVG(){
 function cardCoberturaHTML(chave, cs){
   const f = FONTES[chave];
   const p = PALETA[hashN(f.veic) % PALETA.length];
-  const tits = [...new Set(cs.map(c=>c.titulo))];
+  const tits = [...new Set(cs.map(obraDe))];
   const et = tipoFonte(f, cs);
-  const capaRef = cs.find(c=>c.capa);
-  const vis = capaRef
-    ? `<div class="cvis" style="background:${p.bg}">
-         <img src="assets/capas/${capaRef.capa}.jpg" alt="" loading="lazy">
-         <span class="cetiq" style="background:${p.et};color:${p.etTxt}">${et}</span></div>`
-    : `<div class="cvis" style="background:${p.bg}">
-         ${ondasSVG("#fff")}${pontosSVG()}
-         <span class="sigla">${sigla(f.veic)}</span>
-         <span class="cetiq" style="background:${p.et};color:${p.etTxt}">${et}</span></div>`;
+  const vis = `<div class="cvis" style="background:${p.bg}" aria-hidden="true">
+         ${ondasSVG(p.bg==="#FFFFFF"?"#1B2BD6":"#fff")}
+         <span class="sigla" style="color:${p.bg==="#FFFFFF"?"#1B2BD6":"#fff"}">${sigla(f.veic)}</span></div>`;
   const resumo = tits.length===1 ? tits[0] : `${cs.length} casos · ${tits.length} títulos`;
-  return `<a class="ccard" href="${f.url}" target="_blank" rel="noopener">
+  return `<a class="ccard" href="${esc(f.url)}" target="_blank" rel="noopener">
     ${vis}
     <div class="cbody">
       <div class="ckicker"><span class="cdot" style="background:${p.bg}"></span>${et}</div>
-      <div class="ctit">${f.tit}</div>
-      <div class="cdesc">Sustenta ${resumo}</div>
+      <div class="ctit">${esc(f.tit)}</div>
+      <div class="cdesc">Sustenta ${esc(resumo)}</div>
       <div class="cfoot">
-        <div class="cmeta"><b>${f.veic}</b>${dataCurta(f.data)}</div>
+        <div class="cmeta"><b>${esc(f.veic)}</b>${dataCurta(f.data)}</div>
         <svg class="cseta" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17L17 7M17 7H8M17 7v9"/></svg>
       </div>
     </div></a>`;
@@ -310,5 +323,5 @@ function montarRodape(){
   const as = CASOS.map(ano).sort();
   const [ya,ma] = (typeof ATUALIZADO!=="undefined" ? ATUALIZADO : "").split("-");
   const quando = ya ? `${MES[ma].toLowerCase()} de ${ya}` : "";
-  el.innerHTML = `${CASOS.length} registros · ${as[0]} a ${as[as.length-1]}` + (quando?` · base revisada em <time datetime="${ATUALIZADO}">${quando}</time>`:"") + ` · <a href="metodologia.html">Metodologia</a>`;
+  el.innerHTML = `${CASOS.length} registros · ${as[0]} a ${as[as.length-1]}` + (quando?` · base revisada em <time datetime="${ATUALIZADO}">${quando}</time>`:"") + ` · <a href="${RAIZ}metodologia.html">Metodologia</a>`;
 }

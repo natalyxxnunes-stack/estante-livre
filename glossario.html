@@ -27,16 +27,17 @@
 
 <header class="topo">
   <div class="topo-in">
-    <a class="logo" href="index.html" aria-label="Estante Livre">Estante <span class="redact">Livre<span class="bar" aria-hidden="true"></span></span></a>
-    <div class="tagline">Observatório de censura de livros · o que tentaram restringir — e o que aconteceu</div>
-    <nav class="nav">
+    <a class="logo" href="index.html" aria-label="Estante Livre, página inicial">Estante <span class="redact">Livre<span class="bar" aria-hidden="true"></span></span></a>
+    <div class="tagline">Observatório de censura de livros · quem mandou tirar da estante, com qual ato, e o que aconteceu depois</div>
+    <nav class="nav" aria-label="Seções">
       <a href="index.html">Painel</a>
-      <a href="analises.html">Análises</a><a href="casos.html">Casos</a>
+      <a href="casos.html">Casos</a>
       <a href="livros.html">Livros</a>
-      <a href="cobertura.html">Cobertura</a>
+      <a href="analises.html">Análises</a>
       <a href="mundo.html">Mundo</a>
-      <a href="glossario.html" class="on" aria-current="page">Glossário</a> <a href="metodologia.html">Metodologia</a>
-      <a href="relate.html">Relate um caso</a>
+      <a href="glossario.html" class="on" aria-current="page">Glossário</a>
+      <a href="metodologia.html">Metodologia</a>
+      <a href="sobre.html">Sobre</a>
     </nav>
   </div>
 </header>
@@ -46,13 +47,13 @@
   <div class="wrap">
     <div class="hero-pg">
       <h1>Glossário</h1>
-      <p class="lede">O que cada modalidade significa, o que entra no catálogo, o que fica de fora e como um caso é registrado.</p>
+      <p class="lede">Os papéis de cada episódio, os três eixos que classificam um registro, o que entra no catálogo e o que fica de fora.</p>
     </div>
   </div>
 
 <div class="wrap">
   <section>
-    <div class="sechead"><span class="kicker">ANTES DAS MODALIDADES</span><h2>Quem faz o quê num episódio de restrição ou pressão</h2></div>
+    <div class="sechead"><span class="kicker">PAPÉIS</span><h2>Quem faz o quê num episódio de restrição ou pressão</h2></div>
     <div class="gloss">
       <div class="gterm"><h3>Pressão</h3><div class="gdef">Crítica pública, campanha, reclamação ou mobilização que tenta influenciar a circulação de uma obra. Pressionar não é necessariamente expedir a ordem de retirada.</div></div>
       <div class="gterm"><h3>Pedido</h3><div class="gdef">Solicitação formal ou informal para retirar, restringir, ocultar ou deixar de adquirir um livro. A ficha identifica quem pediu quando as fontes permitem.</div></div>
@@ -66,9 +67,18 @@
 </div>
 <div class="wrap">
   <section>
-    <div class="sechead"><span class="kicker">MODALIDADES</span><h2>Como o catálogo classifica</h2></div>
-    <p class="note">Censura raramente é retirada limpa. Estas oito modalidades separam o que costuma ser tratado como uma coisa só. O número indica quantos registros o catálogo tem em cada uma.</p>
+    <div class="sechead"><span class="kicker">EIXO 1</span><h2>Mecanismo: o que a medida pretendia fazer com o livro</h2></div>
+    <p class="note">Cada registro recebe um mecanismo, um estágio e uma situação, avaliados de forma independente. Uma ordem de retirada revogada no mesmo dia continua sendo uma retirada no mecanismo; o estágio e a situação dizem até onde ela chegou. O número indica quantos registros o catálogo tem em cada categoria.</p>
     <div class="gloss" id="gloss"></div>
+  </section>
+  <section>
+    <div class="sechead"><span class="kicker">EIXO 2</span><h2>Estágio: até onde chegou</h2></div>
+    <div class="gloss" id="gloss-est"></div>
+  </section>
+  <section>
+    <div class="sechead"><span class="kicker">EIXO 3</span><h2>Situação: como está hoje</h2></div>
+    <p class="note">O detalhe do desfecho, com datas e decisões, fica no campo “Desfecho” de cada ficha.</p>
+    <div class="gloss" id="gloss-sit"></div>
   </section>
 
   <section>
@@ -85,12 +95,12 @@
   <section style="border-bottom:0">
     <div class="sechead"><span class="kicker">MÉTODO</span><h2>Como um caso é registrado</h2></div>
     <div class="gloss">
-      <div class="gterm"><h3>Um registro por título</h3><div class="gdef">Se um único ofício atinge nove livros, são nove registros. É o que permite contar obras, não só episódios.</div></div>
+      <div class="gterm"><h3>Um registro por título</h3><div class="gdef">Se um único ofício atinge nove livros, são nove registros. É o que permite contar obras, não só episódios. Quando a fonte não traz a lista título a título (a obra completa de um autor, um lote de exemplares), o conjunto conta como um registro até ser desmembrado.</div></div>
       <div class="gterm"><h3>A alegação é literal</h3><div class="gdef">O campo reproduz o que foi declarado por quem pediu a retirada, entre aspas. A leitura do observatório fica separada, na nota.</div></div>
       <div class="gterm"><h3>Duas fontes, ou fica parcial</h3><div class="gdef">Registro com fonte única entra como parcialmente verificado e não é apresentado como confirmado.</div></div>
       <div class="gterm"><h3>Nunca nomear quem relatou</h3><div class="gdef">Aluno, professor ou bibliotecário que denunciou não aparece nominalmente, mesmo com autorização.</div></div>
       <div class="gterm"><h3>Agente público, só com documento</h3><div class="gdef">Nomes de quem assinou aparecem apenas quando constam de ofício ou de reportagem, e sempre ligados ao ato, não à pessoa.</div></div>
-      <div class="gterm"><h3>Registrar o que não se sabe</h3><div class="gdef">Campo vazio é diferente de “não se sabe”. A pendência fica visível na etiqueta tracejada do registro.</div></div>
+      <div class="gterm"><h3>Registrar o que não se sabe</h3><div class="gdef">Campo vazio é diferente de “não se sabe”. O que falta apurar aparece no fim de cada ficha, em “O que ainda apuramos”.</div></div>
     </div>
   </section>
 </div>
@@ -100,7 +110,8 @@
 
 <footer class="foot">
   <div class="foot-in">
-    <span>Estante Livre · um projeto de <a href="https://instagram.com/natalyxnunes" target="_blank" rel="noopener">Nataly Nunes</a></span>
+    <span>Estante Livre · um projeto de Nataly Nunes Pinto</span>
+    <span class="foot-links"><a href="cobertura.html">Cobertura</a><a href="relate.html">Relate um caso</a><a href="dados/estante-livre-casos.csv">Dados abertos</a><a href="sobre.html">Contato</a></span>
     <span id="foot-meta"></span>
   </div>
 </footer>
@@ -108,15 +119,35 @@
 <script src="assets/dados.js"></script>
 <script src="assets/comum.js"></script>
 <script>
-const GLOSS = [["Retirada total", "Livro removido do acervo por ordem de qualquer instância.", "Meninas sonhadoras, mulheres cientistas saiu das salas de leitura de todas as escolas municipais de São José dos Campos depois de críticas de um vereador. A Justiça mandou devolver."], ["Restrição de acesso", "O livro permanece, mas com empréstimo limitado por idade, turma ou autorização prévia.", "Santa Catarina redistribuiu os exemplares de O avesso da pele para a EJA e centros profissionalizantes, alegando adequação de faixa etária."], ["Ocultação", "O livro é escondido, movido para local inacessível, retirado da exposição ou deixa de ser catalogado de propósito. Continua no patrimônio, some da circulação.", "O ofício de Santa Catarina mandou armazenar nove títulos “em local não acessível à comunidade escolar”."], ["Veto a atividade", "Contação de história, oficina, sarau, clube de leitura ou exposição barrados por causa do conteúdo do livro.", "No Colégio Militar Dom Pedro II, a atividade usou um link para uma resenha de A bolsa amarela. Após reclamações de pais, o link não voltou a ser usado depois do encerramento do exercício; não houve prova de retirada de exemplares nem veto à obra."], ["Veto a aquisição", "Compra ou doação recusada por causa do tema, ou obra que deixa de ser indicada em lista oficial.", "A UniRV retirou o romance de Marçal Aquino da lista de leituras obrigatórias do vestibular."], ["Autocensura", "O profissional deixa de expor, comprar ou indicar por antecipar represália. Conta como caso, porque o efeito sobre o acervo é o mesmo.", "Ainda sem registro. Só aparece se quem trabalha na biblioteca contar."], ["Destruição", "Exemplar rasgado, descartado, queimado ou com páginas coladas.", "Ainda sem registro no catálogo."], ["Contestação sem efeito", "Pedido formal ou informal de retirada que não chegou a ser cumprido, ou que foi revogado. Entra porque mede a pressão, não só o resultado.", "Rondônia, 2020: o memorando com 43 títulos foi revogado no mesmo dia, depois da repercussão, mas em algumas escolas os livros já estavam encaixotados."]];
-document.getElementById("gloss").innerHTML = GLOSS.map(([t,d,ex])=>{
-  const n = conta(CASOS,"modalidade",t);
+const GLOSS = [
+ ["Retirada","O livro é recolhido ou retirado de bibliotecas, salas de leitura ou de uma rede inteira.","Rondônia, 2020: o Memorando-Circular nº 4 mandou recolher 43 títulos das escolas estaduais. A ordem foi suspensa no mesmo dia; segundo o MPF, os exemplares que chegaram a ser recolhidos foram devolvidos."],
+ ["Ocultação ou restrição de acesso","O livro continua no patrimônio, mas é escondido, isolado em sala própria ou tem o empréstimo limitado por idade, turma ou autorização.","O ofício de Santa Catarina de 2023 mandou armazenar nove títulos “em local não acessível à comunidade escolar”."],
+ ["Exclusão de lista de leitura","A obra sai de uma lista oficial: vestibular, programa de leitura, indicação da rede.","A UniRV retirou o romance de Marçal Aquino da lista de leituras do vestibular, em 2023."],
+ ["Veto a atividade","Leitura em sala, contação de história, clube de leitura ou trabalho pedagógico com o livro é suspenso ou contestado.","Conselheiro Lafaiete, 2024: a prefeitura suspendeu os trabalhos pedagógicos com O menino marrom; uma liminar cancelou a suspensão."],
+ ["Veto a aquisição ou doação","Compra, doação ou seleção de livros recusada por causa do conteúdo.","A Funap vetou a lista de doze livros doados ao projeto Remição em Rede e recuou depois da repercussão."],
+ ["Descarte ou destruição","Anúncio ou execução de descarte, doação forçada, destruição ou mutilação de exemplares por causa do conteúdo.","A Fundação Cultural Palmares anunciou em 2021 a retirada de 5.165 exemplares classificados como de “temática alheia à negra”."],
+ ["Autocensura","O profissional deixa de expor, comprar ou indicar por antecipar represália. O efeito sobre o acervo é o mesmo.","Ainda sem registro. Só aparece se quem trabalha na biblioteca contar."]];
+const GLOSS_EST = [
+ ["Pressão pública","Crítica, campanha, vídeo ou questionamento que não chegou a pedir formalmente a restrição.","Limeira, 2019: um vereador questionou A bolsa amarela em requerimento de informações; a Secretaria defendeu o livro."],
+ ["Pedido formal","Requerimento, ofício ou solicitação documentada pedindo a restrição, sem prova de que tenha sido atendida.","Londrina, 2024: uma vereadora pediu à Secretaria o recolhimento de A mamãe vai ter um bebê."],
+ ["Decisão ou ordem","Ato da autoridade que determina a restrição: memorando, ofício, comunicado, anúncio oficial. A execução não está comprovada em toda a extensão.","O ofício de Santa Catarina de 2023."],
+ ["Execução comprovada","Há prova de que o livro saiu da estante, da lista ou da atividade, ainda que por pouco tempo.","O avesso da pele foi recolhido das escolas do Paraná em março de 2024 e voltou em abril."]];
+const GLOSS_SIT = [
+ ["Em vigor","A restrição continua valendo, até onde as fontes mostram."],
+ ["Revertido","A medida foi revogada, suspensa ou anulada pela própria administração ou pela Justiça. A reversão não apaga a tentativa."],
+ ["Sem efeito","O episódio não produziu restrição: o pedido foi negado ou a pressão não virou ato."],
+ ["Em aberto","Não há informação pública suficiente sobre o que aconteceu depois."]];
+const termo = (campo) => ([t,d,ex])=>{
+  const n = conta(CASOS,campo,t);
   return `<div class="gterm ${n===0?"zero":""}">
     <span class="gn">${n}</span>
     <h3>${t}</h3>
     <div class="gdef">${d}</div>
-    <div class="gex">${ex}</div></div>`;
-}).join("");
+    ${ex?`<div class="gex">${ex}</div>`:""}</div>`;
+};
+document.getElementById("gloss").innerHTML = GLOSS.map(termo("modalidade")).join("");
+document.getElementById("gloss-est").innerHTML = GLOSS_EST.map(termo("estagio")).join("");
+document.getElementById("gloss-sit").innerHTML = GLOSS_SIT.map(termo("situacao")).join("");
 
 montarRodape();
 </script>

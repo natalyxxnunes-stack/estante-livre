@@ -648,3 +648,55 @@ main:focus{outline:none}
 .analysis-unknown>div{padding:18px;border-right:1px solid var(--linha);border-bottom:1px solid var(--linha)}
 .analysis-links{display:flex;gap:22px;flex-wrap:wrap}
 @media(max-width:680px){.analysis-metrics{grid-template-columns:1fr}.analysis-metrics>div{border-right:0;border-bottom:1px solid var(--linha)}.analysis-metrics>div:last-child{border-bottom:0}.analysis-grid{grid-template-columns:1fr}.analysis-grid article{border-right:0;border-bottom:1px solid var(--linha)}.analysis-grid article:last-child{border-bottom:0}.analysis-unknown{grid-template-columns:1fr}.analysis-bar-row{grid-template-columns:76px 1fr 20px 24px;gap:6px}}
+
+/* ---------- auditoria 10/2026: três eixos, capas tipográficas, fichas ---------- */
+/* Função das cores: vermelho = ato de restrição; azul = dado e contagem; amarelo = o que foi revertido. */
+.t-des.parcial{background:#fff;color:var(--cinza);box-shadow:inset 0 0 0 1.5px var(--linha-forte)} /* sem efeito */
+.t-est{background:#fff;color:var(--tinta);box-shadow:inset 0 0 0 1.5px var(--tinta)}
+.t-est.e4{background:var(--vinho);color:#fff;box-shadow:none}
+.t-est.e3{background:#fff;color:var(--vinho);box-shadow:inset 0 0 0 1.5px var(--vinho)}
+.t-est.e2,.t-est.e1{background:#fff;color:var(--cinza);box-shadow:inset 0 0 0 1.5px var(--linha-forte)}
+.tags-topo{margin:2px 0 14px}
+.caso-desf{font-size:13px;line-height:1.55;margin:0 0 12px;padding:9px 12px;background:var(--papel)}
+.caso-desf .k,.caso-pend .k{font-size:10px;font-weight:800;letter-spacing:.12em;color:var(--cinza);margin-right:6px}
+.caso-pend{margin-top:14px;padding:10px 12px;font-size:12.5px;color:var(--cinza);line-height:1.5;outline:1.5px dashed var(--linha-forte);outline-offset:-1.5px}
+.caso-pend .k{display:block;margin-bottom:4px}
+.ocorr-id{text-decoration:none}
+.ocorr-id:hover{text-decoration:underline}
+.ocorr-data{font-size:11.5px;color:var(--cinza);font-weight:400}
+.ocorr-quem{font-style:normal;font-size:11.5px}
+.ocorr-ep{font-style:normal;font-weight:600;color:var(--tinta);margin-bottom:3px}
+.livro-tit a{color:inherit;text-decoration:none}
+.livro-tit a:hover{text-decoration:underline;text-decoration-thickness:1px}
+/* capa tipográfica para obras sem imagem, no lugar da caixa tracejada */
+.capa-tipo,.livro-capa-tipo{display:flex;flex-direction:column;justify-content:space-between;padding:10px 9px;color:#fff;background:var(--azul);box-shadow:var(--sombra)}
+.capa-tipo{width:104px;height:156px}
+.livro-capa-tipo{width:118px;height:177px;padding:12px 11px}
+.capa-tipo b,.livro-capa-tipo b{font-family:var(--f);font-weight:400;font-size:15px;line-height:1.12}
+.livro-capa-tipo b{font-size:17px}
+.capa-tipo span,.livro-capa-tipo span{font-size:9px;letter-spacing:.12em;text-transform:uppercase;font-weight:600;opacity:.9}
+.m-ocultacao-ou-restricao-de-acesso,.m-descarte-ou-destruicao{background:var(--vinho)}
+.m-veto-a-atividade,.m-exclusao-de-lista-de-leitura,.m-veto-a-aquisicao-ou-doacao{background:#2B2A6B}
+@media(max-width:820px){.capa-tipo{width:74px;height:111px}.capa-tipo b{font-size:12px}.livro-capa-tipo{width:84px;height:126px}.livro-capa-tipo b{font-size:13px}}
+.prat-carimbo{white-space:normal;line-height:1.25}
+/* página individual */
+.migalha{font-size:12.5px;color:var(--cinza);margin-bottom:14px}
+.migalha a{color:var(--azul)}
+.resumo-fato{font-size:15px;line-height:1.6;max-width:68ch;margin:0 0 22px;color:var(--tinta)}
+.irmaos{margin-top:26px;font-size:13.5px;line-height:1.7}
+.irmaos h2{font-family:var(--f);font-weight:400;font-size:21px;color:var(--vinho);margin-bottom:8px}
+.irmaos a{color:var(--azul)}
+.como-citar{margin-top:26px;padding:14px 16px;background:var(--papel);font-size:13px;line-height:1.55}
+.como-citar .k{display:block;font-size:10px;font-weight:800;letter-spacing:.12em;color:var(--cinza);margin-bottom:4px}
+/* rodapé com links */
+.foot-links{display:flex;gap:14px;flex-wrap:wrap}
+.foot-links a{color:inherit}
+/* painel: barras de estágio */
+.bars + .sub-tit{margin-top:26px}
+.sub-tit{font-size:11px;letter-spacing:.14em;font-weight:700;color:var(--cinza);text-transform:uppercase;margin-bottom:10px}
+.prat-carimbo{font-size:9px;letter-spacing:.06em;padding:4px 4px;line-height:1.3}
+.prat-carimbo b,.prat-carimbo span{display:block;font-weight:700}
+.prat-carimbo span{font-weight:600;opacity:.85}
+h1.caso-tit{font-size:30px;line-height:1.15}
+h1.livro-tit{font-size:32px;line-height:1.12}
+@media(max-width:600px){h1.caso-tit{font-size:24px}h1.livro-tit{font-size:26px}}

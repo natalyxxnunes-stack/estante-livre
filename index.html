@@ -21,22 +21,24 @@
 <meta property="og:image:alt" content="Estante Livre, observatório de censura de livros">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="stylesheet" href="assets/estilo.css">
+<!-- GERADO:jsonld --><script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebSite","name":"Estante Livre","url":"https://estante-livre-br.vercel.app/","inLanguage":"pt-BR","publisher":{"@type":"Organization","name":"Estante Livre","url":"https://estante-livre-br.vercel.app/","founder":{"@type":"Person","name":"Nataly Nunes Pinto"}}},{"@type":"Organization","name":"Estante Livre","url":"https://estante-livre-br.vercel.app/","founder":{"@type":"Person","name":"Nataly Nunes Pinto"}}]}</script><!-- /GERADO:jsonld -->
 </head>
 <body>
 <a class="pular" href="#conteudo">Pular para o conteúdo</a>
 
 <header class="topo">
   <div class="topo-in">
-    <a class="logo" href="index.html" aria-label="Estante Livre">Estante <span class="redact">Livre<span class="bar" aria-hidden="true"></span></span></a>
-    <div class="tagline">Observatório de censura de livros · o que tiraram das prateleiras, e por quê</div>
-    <nav class="nav">
+    <a class="logo" href="index.html" aria-label="Estante Livre, página inicial">Estante <span class="redact">Livre<span class="bar" aria-hidden="true"></span></span></a>
+    <div class="tagline">Observatório de censura de livros · quem mandou tirar da estante, com qual ato, e o que aconteceu depois</div>
+    <nav class="nav" aria-label="Seções">
       <a href="index.html" class="on" aria-current="page">Painel</a>
-      <a href="analises.html">Análises</a><a href="casos.html">Casos</a>
+      <a href="casos.html">Casos</a>
       <a href="livros.html">Livros</a>
-      <a href="cobertura.html">Cobertura</a>
+      <a href="analises.html">Análises</a>
       <a href="mundo.html">Mundo</a>
-      <a href="glossario.html">Glossário</a> <a href="metodologia.html">Metodologia</a>
-      <a href="relate.html">Relate um caso</a>
+      <a href="glossario.html">Glossário</a>
+      <a href="metodologia.html">Metodologia</a>
+      <a href="sobre.html">Sobre</a>
     </nav>
   </div>
 </header>
@@ -47,7 +49,7 @@
 <div class="wrap">
   <div class="abre">
     <h1>Quando tentam tirar livros de circulação</h1>
-    <p class="lede" id="abre-lede">Machado de Assis, Kafka, Euclides da Cunha, Ziraldo e um vencedor do Jabuti aparecem neste catálogo. Ele reúne retiradas, suspensões, pedidos e pressões sobre livros — e distingue o que foi executado do que ficou apenas na tentativa. Cada registro investiga quem pressionou, quem decidiu, quem assinou, quem executou e qual justificativa apresentou.</p>
+    <p class="lede" id="abre-lede">Machado de Assis, Kafka, Euclides da Cunha, Ziraldo e um vencedor do Jabuti aparecem neste catálogo de livros que governos, escolas e instituições brasileiras tentaram tirar de circulação desde 2019. Cada registro diz até onde a medida chegou, quem pediu, quem decidiu e assinou, e o que aconteceu depois.</p>
   </div>
 </div>
 
@@ -75,9 +77,14 @@
 
 <div class="wrap">
   <section>
-    <div class="sechead"><span class="kicker">01</span><h2>Que formas de pressão e restrição aparecem</h2></div>
-    <p class="note"><span id="txt-mod"></span> As linhas tracejadas seguem em zero porque dependem de relato de quem trabalha na biblioteca. Clique para ver os casos.</p>
+    <div class="sechead"><span class="kicker">01</span><h2>O que tentaram fazer com os livros, e até onde chegou</h2></div>
+    <p class="note"><span id="txt-mod"></span> Autocensura segue em zero porque depende de relato de quem trabalha na biblioteca. Clique numa barra para ver os casos.</p>
+    <div class="sub-tit">Mecanismo</div>
     <div class="bars" id="bars-mod"></div>
+    <div class="sub-tit">Até onde chegou</div>
+    <div class="bars" id="bars-est"></div>
+    <div class="sub-tit">Situação hoje</div>
+    <div class="bars" id="bars-sit"></div>
   </section>
 
   <section>
@@ -97,7 +104,7 @@
 
   <section>
     <div class="sechead"><span class="kicker">04</span><h2>Quantos anos o livro tinha</h2></div>
-    <p class="note">Idade de cada obra no dia em que a ordem de retirada foi assinada, para os livros com ano de publicação conhecido. Clique para ver a ficha.</p>
+    <p class="note">Anos entre a publicação de cada obra e o primeiro episódio registrado, para os livros com ano de publicação conhecido. Clique para ver a ficha.</p>
     <div class="idades" id="idades"></div>
   </section>
 
@@ -108,10 +115,9 @@
   </section>
 
   <section>
-    <div class="sechead"><span class="kicker">06</span><h2>Quem pressiona, quem decide</h2></div>
-    <p class="note">A pressão e a decisão não são a mesma coisa. Uma crítica pode partir de parlamentar, direção escolar ou grupo de pais; a retirada pode ser formalizada por secretaria, coordenadoria, prefeitura, fundação ou direção de escola. Nas fichas, o observatório identifica separadamente quem pressionou, quem decidiu, quem assinou o ato e quem executou — sempre que as fontes permitem. Quando o nome não está documentado, a lacuna fica explícita.</p>
+    <div class="sechead"><span class="kicker">06</span><h2>Que instância aparece em cada ato</h2></div>
+    <p class="note">Contagem por ato, para que uma lista de dez títulos pese o mesmo que uma ordem isolada. Secretarias estaduais e suas coordenadorias aparecem em mais atos que qualquer outra instância. Os nomes de quem pediu, decidiu, assinou e executou estão em cada ficha.</p>
     <div class="bars" id="bars-quem"></div>
-    <p class="note" style="margin-top:16px">O gráfico agrupa as expressões registradas no campo “quem”; não é ranking de pessoas nem substitui a identificação dos papéis. Os nomes e a distinção entre pressão, decisão, assinatura e execução estão nas fichas individuais. Governo e partido de cada ato aparecem como contexto, não como substitutos da identificação de quem assinou e executou a ordem.</p>
   </section>
 
   <section>
@@ -123,10 +129,10 @@
 
 <div class="alert">
   <div class="alert-in">
-    <h3>O que o catálogo ainda <em>não</em> alcança.</h3>
+    <h3>O que o catálogo ainda deixa de fora.</h3>
     <p><strong>Casos com retaliação: nenhum registrado.</strong> Eles existem. A pesquisa Páginas proibidas registra uma bibliotecária afastada no Rio de Janeiro por liderar leituras sobre gênero e sexualidade. A imprensa cobre o livro; quase ninguém acompanha o que acontece com quem trabalha na biblioteca.</p>
     <p><strong>Autocensura e destruição: zero.</strong> Deixar de comprar por receio, não expor, não indicar. São modalidades que não deixam ofício e por isso raramente viram notícia. Só aparecem se alguém de dentro contar.</p>
-    <p><strong>Só três atos administrativos respondem pela maior parte dos registros.</strong> Isso não significa que a censura seja rara: significa que o catálogo enxerga bem o que vira lista oficial e enxerga mal o caso isolado, municipal, sem documento. <a href="relate.html">Relate um caso</a>.</p>
+    <p><strong>Três atos administrativos respondem pela maior parte dos registros.</strong> O catálogo enxerga bem o que vira lista oficial e mal o caso isolado, municipal, sem documento. Ausência de registro num estado quer dizer ausência de registro.</p>
   </div>
 </div>
 
@@ -135,7 +141,8 @@
 
 <footer class="foot">
   <div class="foot-in">
-    <span>Estante Livre · um projeto de <a href="https://instagram.com/natalyxnunes" target="_blank" rel="noopener">Nataly Nunes</a></span>
+    <span>Estante Livre · um projeto de Nataly Nunes Pinto</span>
+    <span class="foot-links"><a href="cobertura.html">Cobertura</a><a href="relate.html">Relate um caso</a><a href="dados/estante-livre-casos.csv">Dados abertos</a><a href="sobre.html">Contato</a></span>
     <span id="foot-meta"></span>
   </div>
 </footer>
@@ -150,33 +157,48 @@ const T = CASOS;
 
 document.getElementById("n-casos").textContent = T.length;
 document.getElementById("n-estados").textContent = unicos(T,"uf");
-document.getElementById("n-titulos").textContent = unicos(T,"titulo");
+document.getElementById("n-titulos").textContent = new Set(T.map(obraDe)).size;
 document.getElementById("n-verif").textContent = T.filter(verificado).length;
 {
   const ord = MODALIDADES.map(m=>[m,conta(T,"modalidade",m)]).filter(x=>x[1]).sort((a,b)=>b[1]-a[1]);
   const top = ord.slice(0,2).map(x=>x[0].toLowerCase());
-  document.getElementById("txt-mod").textContent = `${top[0][0].toUpperCase()+top[0].slice(1)} e ${top[1]} lideram o catálogo.`;
+  const exec = conta(T,"estagio","Execução comprovada");
+  document.getElementById("txt-mod").textContent = `${top[0][0].toUpperCase()+top[0].slice(1)} e ${top[1]} lideram o catálogo. Em ${exec} dos ${T.length} registros a execução está comprovada; nos demais, houve ordem, pedido ou pressão sem prova de que o livro saiu da estante.`;
 }
 
-const maxMod = Math.max(...MODALIDADES.map(m=>conta(T,"modalidade",m)),1);
-document.getElementById("bars-mod").innerHTML = MODALIDADES.map(m=>{
-  const n = conta(T,"modalidade",m);
-  if(n===0) return `<div class="bar-row"><div class="bar-lab zero">${m}</div>
-    <div class="bar-track"><div class="bar-ghost"></div></div><div class="bar-val zero">0</div></div>`;
-  return `<a class="bar-row clic" style="text-decoration:none;color:inherit" href="casos.html?mod=${encodeURIComponent(m)}">
-    <div class="bar-lab">${m}</div>
-    <div class="bar-track"><div class="bar-fill" style="width:${n/maxMod*100}%;background:var(--verm)"></div></div>
-    <div class="bar-val">${n}</div></a>`;
-}).join("");
+/* barras clicáveis de um eixo: lista fechada, inclui zeros de propósito */
+function barras(alvo, lista, campo, param, cor){
+  const max = Math.max(...lista.map(v=>conta(T,campo,v)),1);
+  document.getElementById(alvo).innerHTML = lista.map(v=>{
+    const n = conta(T,campo,v);
+    if(n===0) return `<div class="bar-row"><div class="bar-lab zero">${v}</div>
+      <div class="bar-track"><div class="bar-ghost"></div></div><div class="bar-val zero">0</div></div>`;
+    return `<a class="bar-row clic" style="text-decoration:none;color:inherit" href="casos.html?${param}=${encodeURIComponent(v)}">
+      <div class="bar-lab">${v}</div>
+      <div class="bar-track"><div class="bar-fill" style="width:${n/max*100}%;background:${cor}"></div></div>
+      <div class="bar-val">${n}</div></a>`;
+  }).join("");
+}
+barras("bars-mod", MODALIDADES, "modalidade", "mod", "var(--verm)");
+barras("bars-est", ESTAGIOS, "estagio", "est", "var(--vinho)");
+barras("bars-sit", SITUACOES, "situacao", "sit", "var(--azul)");
 
-const quens = [...new Set(T.map(c=>c.quem))].sort((a,b)=>conta(T,"quem",b)-conta(T,"quem",a));
-const maxQ = Math.max(...quens.map(q=>conta(T,"quem",q)),1);
-document.getElementById("bars-quem").innerHTML = quens.map(q=>{
-  const n = conta(T,"quem",q);
-  return `<div class="bar-row"><div class="bar-lab">${q}</div>
-    <div class="bar-track"><div class="bar-fill" style="width:${n/maxQ*100}%;background:var(--azul)"></div></div>
-    <div class="bar-val">${n}</div></div>`;
-}).join("");
+/* instância por ato: agrupa as expressões do campo "quem" em tipos */
+const instancia = c => {
+  const q = c.quem||"";
+  if(/vereador|deputad|parlamentar/i.test(q)) return "Parlamentar (pressão ou pedido)";
+  if(/Secretaria Municipal|prefeitura/i.test(q)) return "Prefeitura ou secretaria municipal";
+  if(/Secretaria estadual|Governo estadual|Coordenadoria/i.test(q)) return "Governo estadual, secretaria ou coordenadoria";
+  if(/Funda/i.test(q)) return "Fundação pública";
+  return "Instituição de ensino";
+};
+const atosUnicos = Object.values(T.reduce((o,c)=>(o[c.ato] ||= c, o), {}));
+const porInst = {}; atosUnicos.forEach(c=>{ const k=instancia(c); porInst[k]=(porInst[k]||0)+1; });
+const insts = Object.keys(porInst).sort((a,b)=>porInst[b]-porInst[a]);
+const maxQ = Math.max(...Object.values(porInst),1);
+document.getElementById("bars-quem").innerHTML = insts.map(q=>`<div class="bar-row"><div class="bar-lab">${q}</div>
+    <div class="bar-track"><div class="bar-fill" style="width:${porInst[q]/maxQ*100}%;background:var(--azul)"></div></div>
+    <div class="bar-val">${porInst[q]}</div></div>`).join("");
 
 const a0 = 2019, a1 = Math.max(...T.map(c=>+ano(c)), +ATUALIZADO.slice(0,4), a0);
 const anos = Array.from({length:a1-a0+1},(_,i)=>String(a0+i));
@@ -218,12 +240,12 @@ document.getElementById("tl-labels").innerHTML = anos.map(a=>`<div class="tlyear
 
 /* idade do livro no dia da ordem */
 {
-  const dataOrdem = t => +T.filter(c=>c.titulo===t).map(ano).sort()[0];
-  const idades = Object.entries(LIVROS).filter(([t,L])=>L.ano && T.some(c=>c.titulo===t))
+  const dataOrdem = t => +T.filter(c=>obraDe(c)===t).map(ano).sort()[0];
+  const idades = Object.entries(LIVROS).filter(([t,L])=>L.ano && T.some(c=>obraDe(c)===t))
     .map(([t,L])=>({t, a: dataOrdem(t)-L.ano, pub:L.ano})).sort((x,y)=>y.a-x.a);
   const maxI = Math.max(1,...idades.map(o=>o.a));
   document.getElementById("idades").innerHTML = idades.map((o,i)=>
-    `<a class="idade-row ${i===0?"destaque":""}" href="livros.html?q=${encodeURIComponent(o.t.split(":")[0])}" aria-label="${esc(o.t)}: ${o.a} anos entre a publicação, em ${o.pub}, e a ordem de retirada">
+    `<a class="idade-row ${i===0?"destaque":""}" href="${urlLivro(o.t)}" aria-label="${esc(o.t)}: ${o.a} anos entre a publicação, em ${o.pub}, e o episódio">
        <span class="t">${esc(o.t.split(":")[0])}</span><span class="trilho"><span class="barra" style="width:${Math.max(o.a/maxI*100,1)}%;display:block"></span></span>
        <span class="v">${o.a}</span></a>`).join("");
 }

@@ -1,0 +1,18 @@
+# Estante Livre
+
+> Observatório de censura de livros em bibliotecas e escolas brasileiras, desde 2019. Cada registro identifica quem pediu, quem decidiu, quem assinou e quem executou a medida, a justificativa declarada, até onde a medida chegou e o que aconteceu depois, com fontes. Projeto de Nataly Nunes Pinto.
+
+Registro não equivale a banimento consumado: cada caso traz o estágio (pressão pública, pedido formal, decisão ou ordem, execução comprovada) e a situação (em vigor, revertido, sem efeito, em aberto).
+
+## Dados
+- [Base completa em JSON](https://estante-livre-br.vercel.app/dados/estante-livre-casos.json)
+- [Base completa em CSV](https://estante-livre-br.vercel.app/dados/estante-livre-casos.csv)
+
+## Páginas
+- [Casos](https://estante-livre-br.vercel.app/casos.html): todos os registros
+- [Livros](https://estante-livre-br.vercel.app/livros.html): uma ficha por obra
+- [Metodologia](https://estante-livre-br.vercel.app/metodologia.html): critérios, vieses conhecidos e correções
+- [Glossário](https://estante-livre-br.vercel.app/glossario.html): definições de mecanismo, estágio e situação
+- [Análises](https://estante-livre-br.vercel.app/analises.html): leitura dos dados
+
+Atualizado em 2026-10-29. Citação: Estante Livre, observatório de censura de livros, de Nataly Nunes Pinto.

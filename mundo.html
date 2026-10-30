@@ -27,16 +27,17 @@
 
 <header class="topo">
   <div class="topo-in">
-    <a class="logo" href="index.html" aria-label="Estante Livre">Estante <span class="redact">Livre<span class="bar" aria-hidden="true"></span></span></a>
-    <div class="tagline">Observatório de censura de livros · o que tiraram das prateleiras, e por quê</div>
-    <nav class="nav">
+    <a class="logo" href="index.html" aria-label="Estante Livre, página inicial">Estante <span class="redact">Livre<span class="bar" aria-hidden="true"></span></span></a>
+    <div class="tagline">Observatório de censura de livros · quem mandou tirar da estante, com qual ato, e o que aconteceu depois</div>
+    <nav class="nav" aria-label="Seções">
       <a href="index.html">Painel</a>
-      <a href="analises.html">Análises</a><a href="casos.html">Casos</a>
+      <a href="casos.html">Casos</a>
       <a href="livros.html">Livros</a>
-      <a href="cobertura.html">Cobertura</a>
+      <a href="analises.html">Análises</a>
       <a href="mundo.html" class="on" aria-current="page">Mundo</a>
-      <a href="glossario.html">Glossário</a> <a href="metodologia.html">Metodologia</a>
-      <a href="relate.html">Relate um caso</a>
+      <a href="glossario.html">Glossário</a>
+      <a href="metodologia.html">Metodologia</a>
+      <a href="sobre.html">Sobre</a>
     </nav>
   </div>
 </header>
@@ -50,8 +51,8 @@
 <div class="wrap">
   <section>
     <div class="sechead"><span class="kicker">01</span><h2>Como ler esta página</h2></div>
-    <p class="note">O foco é a responsabilização. Cada caso informa quem governava, qual instituição ou autoridade aparece nas fontes, que mecanismo foi usado e qual justificativa foi apresentada. Quando a fonte não identifica a pessoa que assinou ou executou a medida, isso é dito. A classificação política do governo não substitui a identificação do agente responsável.</p>
-    <p class="note">Os números abaixo medem coisas diferentes: episódios de banimento, exemplares retirados, multas, apreensões ou pessoas condenadas. Eles contextualizam cada caso; não permitem comparar países em uma única escala nem concluir que um espectro político censura mais do que outro.</p>
+    <p class="note">Cada caso informa quem governava, qual instituição ou autoridade aparece nas fontes, que mecanismo foi usado e qual justificativa foi apresentada. Quando a fonte não identifica a pessoa que assinou ou executou a medida, isso é dito.</p>
+    <p class="note">Os números medem coisas diferentes (episódios de banimento, exemplares retirados, multas, apreensões, pessoas condenadas) e servem para dimensionar cada caso isoladamente.</p>
   </section>
   <section>
     <div class="sechead"><span class="kicker">02</span><h2>Casos documentados</h2><span class="count" id="count"></span></div>
@@ -60,15 +61,15 @@
   <section>
     <div class="sechead"><span class="kicker">03</span><h2>E o Brasil?</h2></div>
     <p class="note" id="txt-brasil"></p>
-    <div class="bars" id="bars-partido"></div>
-    <p class="note" style="margin-top:16px">A contagem é por ato, não por livro. O partido é o do chefe do Executivo responsável pela rede na data do ato; isso não significa que o governador ou prefeito tenha assinado pessoalmente cada ordem. Para identificar quem pediu, decidiu, assinou e executou, consulte a ficha de cada caso.</p>
+    <p class="note">Os números desta página e os do catálogo brasileiro usam unidades diferentes e não devem ser comparados entre si. A PEN America conta episódios de banimento por distrito escolar; o Estante Livre conta um registro por título atingido por um ato, e separa pressão, pedido, ordem e execução.</p>
   </section>
 </div>
 </main>
 
 <footer class="foot">
   <div class="foot-in">
-    <span>Estante Livre · um projeto de <a href="https://instagram.com/natalyxnunes" target="_blank" rel="noopener">Nataly Nunes</a></span>
+    <span>Estante Livre · um projeto de Nataly Nunes Pinto</span>
+    <span class="foot-links"><a href="cobertura.html">Cobertura</a><a href="relate.html">Relate um caso</a><a href="dados/estante-livre-casos.csv">Dados abertos</a><a href="sobre.html">Contato</a></span>
     <span id="foot-meta"></span>
   </div>
 </footer>
@@ -91,28 +92,13 @@ document.getElementById("paises").innerHTML = MUNDO.map(m=>`
     <div class="pais-fontes">${m.fontes.map(([t,u])=>`<a href="${esc(u)}" target="_blank" rel="noopener">${esc(t)}</a>`).join(" · ")}</div>
   </article>`).join("");
 
-/* Brasil: atos distintos por código, não número de títulos atingidos. */
-const atos = {};
-CASOS.forEach(c=>{ if(c.ato && !atos[c.ato]) atos[c.ato]=c; });
-const partido = g => {
-  const m=(g||"").match(/\(([^)]+)\)/);
-  if(/UniRV/.test(g||"")) return "Universidade municipal · não se aplica";
-  if(!m) return "Partido a confirmar";
-  if(m[1]==="sem partido") return "Sem partido · governo Bolsonaro";
-  if(m[1]==="partido a confirmar") return "Partido a confirmar";
-  return m[1];
-};
-const porP = {};
-Object.values(atos).forEach(c=>{const p=partido(c.governo);porP[p]=(porP[p]||0)+1;});
-const ps=Object.keys(porP).sort((a,b)=>porP[b]-porP[a]||a.localeCompare(b));
-const maxP=Math.max(...ps.map(p=>porP[p]),1);
-document.getElementById("bars-partido").innerHTML=ps.map(p=>`
-  <a class="bar-row clic" style="text-decoration:none;color:inherit" href="casos.html?q=${encodeURIComponent(p)}">
-    <div class="bar-lab">${esc(p)}</div>
-    <div class="bar-track"><div class="bar-fill" style="width:${porP[p]/maxP*100}%;background:var(--azul)"></div></div>
-    <div class="bar-val">${porP[p]}</div></a>`).join("");
-document.getElementById("txt-brasil").textContent =
-  `Na base atual, ${Object.keys(atos).length} atos distintos estão registrados desde 2019. O gráfico distribui esses atos pelo partido do chefe do Executivo responsável pela rede na data. É um retrato do catálogo disponível, não um censo de toda a censura no país. A identificação de quem efetivamente pediu, decidiu, assinou e executou cada medida está nas fichas individuais.`;
+/* Brasil: só a contagem de atos e de registros, sem atribuição partidária. */
+{
+  const atos = new Set(CASOS.map(c=>c.ato));
+  const exec = CASOS.filter(c=>c.estagio==="Execução comprovada").length;
+  document.getElementById("txt-brasil").innerHTML =
+    `O catálogo brasileiro reúne ${CASOS.length} registros, originados de ${atos.size} atos ou episódios desde 2019; em ${exec} deles a retirada ou restrição está comprovada. Cada ficha identifica quem pediu, quem decidiu, quem assinou e quem executou. Veja os <a href="casos.html">casos</a> e a <a href="analises.html">leitura dos dados</a>.`;
+}
 montarRodape();
 </script>
 </body>
