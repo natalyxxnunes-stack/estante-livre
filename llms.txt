@@ -15,4 +15,4 @@ Registro não equivale a banimento consumado: cada caso traz o estágio (pressã
 - [Glossário](https://estante-livre-br.vercel.app/glossario.html): definições de mecanismo, estágio e situação
 - [Análises](https://estante-livre-br.vercel.app/analises.html): leitura dos dados
 
-Atualizado em 2026-10-29. Citação: Estante Livre, observatório de censura de livros, de Nataly Nunes Pinto.
+Atualizado em 2026-10-30. Citação: Estante Livre, observatório de censura de livros, de Nataly Nunes Pinto.

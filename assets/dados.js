@@ -872,7 +872,7 @@ const SITUACOES = ["Em vigor","Revertido","Sem efeito","Em aberto"];
 const EIXOS = ["Cultura afro-brasileira","Sexualidade e gênero","Sobrenatural e mágico",
   "Política e ideologia","Religião","Linguagem e palavrão","Violência","Outro"];
 /* data da última revisão do catálogo (AAAA-MM-DD); aparece no rodapé */
-const ATUALIZADO = "2026-10-29";
+const ATUALIZADO = "2026-10-30";
 
 /* contato institucional exibido na página Sobre. Vazio, a linha não aparece. */
 const CONTATO = { email: "", instagram: "natalyxnunes" };
