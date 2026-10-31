@@ -121,12 +121,20 @@ const clsEstagio = e => ({"Execução comprovada":"e4","Decisão ou ordem":"e3",
 
 function capaHTML(c, cls){
   const k = cls||"capa";
-  if(c.capa) return `<div><img class="${k}" alt="Capa de ${esc(obraDe(c))}${c.editora?", "+esc(c.editora):""}" src="${RAIZ}assets/capas/${esc(c.capa)}.jpg" width="213" height="320" loading="lazy" decoding="async">
-    ${c.editora?`<div class="capa-cred">Capa · ${esc(c.editora)}</div>`:""}</div>`;
-  /* sem imagem: capa tipográfica na cor do mecanismo */
   const L = (typeof LIVROS!=="undefined" && LIVROS[obraDe(c)]) || {};
+  const src = c.capa ? `${RAIZ}assets/capas/${esc(c.capa)}.jpg` : L.capaUrl;
+  if(src){
+    const alt = `Capa de referência de ${obraDe(c)}${c.autoria?", de "+c.autoria:""}`;
+    const credito = L.capaFonte
+      ? `<a href="${esc(L.capaFonte)}" target="_blank" rel="noopener noreferrer">${esc(L.capaEdicao||c.editora||"fonte da imagem")}</a>`
+      : esc(c.editora||"edição catalogada");
+    const nota = L.capaUrl ? `<span class="capa-nota">Imagem de referência; a edição envolvida no episódio pode ser outra.</span>` : "";
+    return `<div class="capa-wrap"><img class="${k}" alt="${esc(alt)}" src="${src}" width="213" height="320" loading="lazy" decoding="async" referrerpolicy="no-referrer">
+      <div class="capa-cred">Capa · ${credito}</div>${nota}</div>`;
+  }
+  /* Sem capa identificada: representação tipográfica, nunca uma falsa capa editorial. */
   const t = c.conjunto ? (L.legenda || "Conjunto de obras") : obraDe(c).split(":")[0];
-  return `<div><div class="${k}-tipo m-${slug(c.modalidade)}" aria-hidden="true"><b>${esc(t)}</b><span>${esc((c.autoria||"").split(",")[0])}</span></div></div>`;
+  return `<div><div class="${k}-tipo m-${slug(c.modalidade)}" aria-hidden="true"><b>${esc(t)}</b><span>${esc((c.autoria||"").split(",")[0])}</span></div>${c.conjunto?'<div class="capa-cred">Conjunto de obras · sem capa individual identificada</div>':""}</div>`;
 }
 
 function linksFonte(ids){
@@ -343,6 +351,37 @@ function baixarCSV(linhas, nome){
 const escCSV = v => `"${(v??"").toString().replace(/"/g,'""')}"`;
 
 /* ---------- rodapé ---------- */
+function hidratarCapas(){
+  if(typeof LIVROS==="undefined" || typeof CASOS==="undefined") return;
+  document.querySelectorAll(".livro-capa-tipo, .capa-tipo").forEach(el=>{
+    const artigo=el.closest(".caso");
+    const card=el.closest(".livro");
+    const tituloEl=(card||document).querySelector(".livro-tit");
+    let titulo="";
+    if(artigo){
+      const c=CASOS.find(x=>x.id===artigo.id);
+      if(c) titulo=obraDe(c);
+    }else if(tituloEl) titulo=tituloEl.textContent.trim();
+    const L=LIVROS[titulo];
+    if(!L?.capaUrl) return;
+    const wrap=el.parentElement;
+    if(!wrap || wrap.querySelector("img")) return;
+    const img=document.createElement("img");
+    img.className=card?"livro-capa":"capa";
+    img.src=L.capaUrl;
+    img.alt=`Capa de referência de ${titulo}${L.autoria?", de "+L.autoria:""}`;
+    img.width=213; img.height=320; img.loading="lazy"; img.decoding="async";
+    img.referrerPolicy="no-referrer";
+    const cred=document.createElement("div"); cred.className="capa-cred";
+    const link=document.createElement("a"); link.href=L.capaFonte||"#"; link.target="_blank"; link.rel="noopener noreferrer";
+    link.textContent=L.capaEdicao||"fonte da imagem";
+    cred.append("Capa · ",link);
+    const note=document.createElement("span"); note.className="capa-nota"; note.textContent="Imagem de referência; a edição envolvida no episódio pode ser outra.";
+    wrap.replaceChildren(img,cred,note);
+  });
+}
+hidratarCapas();
+
 function montarRodape(){
   const el = document.getElementById("foot-meta");
   if(!el) return;
