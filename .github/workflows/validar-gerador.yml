@@ -1,0 +1,21 @@
+name: Validar dados e gerar páginas
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+      - feature/capas-redesign-ux
+
+jobs:
+  validar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Baixar repositório
+        uses: actions/checkout@v4
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Validar dados e executar gerador
+        run: node scripts/gerar.js

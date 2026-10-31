@@ -784,3 +784,59 @@ h1.livro-tit{font-size:32px;line-height:1.12}
 .lac-ids{font-size:12px;color:var(--cinza)}
 .caso-pend a{white-space:nowrap}
 @media (max-width:520px){.lac{padding:14px}.lac-nums b{font-size:28px}}
+
+
+/* ---------- capas de referência e leitura responsiva ---------- */
+.capa-wrap{min-width:0}
+.capa,.livro-capa{height:auto;aspect-ratio:2/3;object-fit:contain;background:#f4f1e8}
+.capa-nota{display:block;margin-top:3px;font-size:9px;line-height:1.35;color:var(--cinza);letter-spacing:0}
+.capa-cred a{color:var(--azul);text-decoration:underline;text-underline-offset:2px}
+.capa-cred a:hover{color:var(--verm)}
+.prat-capa img{object-fit:contain;background:#f4f1e8}
+.livro-head{grid-template-columns:118px minmax(0,1fr)}
+.livro-head>div{min-width:0}
+.livro-tit,.livro-sin,.livro-nota{overflow-wrap:anywhere}
+@media(max-width:700px){
+  .pront-corpo{grid-template-columns:76px minmax(0,1fr);gap:12px;align-items:start}
+  .pront-corpo>div:first-child{display:block!important;min-width:0}
+  .pront-corpo .capa{width:100%;max-width:76px;height:auto}
+  .pront-grade{grid-template-columns:1fr 1fr}
+  .pront-campo{padding:7px 8px}
+  .pront-campo .v{font-size:12px}
+  .capa-cred{font-size:8px;overflow-wrap:anywhere}
+  .capa-nota{font-size:8px}
+  .livro-head{grid-template-columns:82px minmax(0,1fr);gap:13px;padding:14px}
+  .livro-capa{width:82px}
+  .livro-head .capa-cred{max-width:82px}
+}
+@media(max-width:390px){
+  .pront-corpo{grid-template-columns:64px minmax(0,1fr);gap:10px}
+  .pront-corpo .capa{max-width:64px}
+  .livro-head{grid-template-columns:72px minmax(0,1fr);gap:11px;padding:12px}
+  .livro-capa{width:72px}
+}
+
+
+/* ---------- investigação política e cadeia de responsabilidade ---------- */
+.politica-intro{max-width:900px;margin:18px 0 30px;padding:18px 20px;border-left:4px solid var(--verm);background:var(--papel);font-size:14px;line-height:1.65}
+.politica-section{margin:42px 0}
+.politica-section>p{max-width:78ch;font-size:14px;line-height:1.65}
+.politica-kpis{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--linha-forte);border-bottom:1px solid var(--linha-forte);margin:22px 0}
+.politica-kpis>div{padding:17px;border-right:1px solid var(--linha);display:flex;flex-direction:column;gap:5px}
+.politica-kpis>div:last-child{border:0}
+.politica-kpis strong{font:500 clamp(28px,4vw,42px)/1 var(--f);color:var(--verm)}
+.politica-kpis span{font-size:12px;color:var(--cinza);line-height:1.4}
+.politica-table-wrap{overflow-x:auto;margin:18px 0}
+.politica-table{width:100%;border-collapse:collapse;font-size:13px;min-width:760px}
+.politica-table th{text-align:left;font-size:10px;letter-spacing:.12em;color:var(--cinza);padding:9px;border-bottom:1.5px solid var(--linha-forte)}
+.politica-table td{padding:11px 9px;border-bottom:1px solid var(--linha);vertical-align:top;line-height:1.5}
+.politica-table td a{color:var(--azul)}
+.politica-table .sub{display:block;color:var(--cinza);font-size:11px;margin-top:3px}
+.politica-tag{display:inline-block;border:1px solid var(--linha-forte);padding:2px 6px;font-size:10px;white-space:nowrap}
+.politica-ator{border-top:1px solid var(--linha-forte);padding:14px 0;display:grid;grid-template-columns:minmax(150px,1fr) 2fr minmax(110px,.7fr);gap:14px;align-items:start}
+.politica-ator h3{font:500 18px/1.25 var(--f);color:var(--vinho)}
+.politica-ator p{font-size:13px;line-height:1.5}
+.politica-ator .papel{font-size:10px;font-weight:800;letter-spacing:.1em;color:var(--verm);display:block;margin-bottom:4px}
+.politica-ator .casos{font-size:12px}
+.politica-limite{font-size:12px;color:var(--cinza);line-height:1.6;padding:12px 14px;border:1px dashed var(--linha-forte);margin:16px 0}
+@media(max-width:680px){.politica-kpis{grid-template-columns:1fr}.politica-kpis>div{border-right:0;border-bottom:1px solid var(--linha)}.politica-kpis>div:last-child{border:0}.politica-ator{grid-template-columns:1fr;gap:5px;padding:13px 0}}

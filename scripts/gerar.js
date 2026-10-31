@@ -53,6 +53,17 @@ for(const c of CASOS){
   if(c.capa && !fs.existsSync(path.join(RAIZ_REPO,"assets/capas",c.capa+".jpg"))) erros.push(`${c.id}: capa inexistente: ${c.capa}.jpg`);
 }
 for(const t of Object.keys(LIVROS)) if(!CASOS.some(c=>obraDe(c)===t)) erros.push(`LIVROS: ficha sem caso correspondente: “${t}”`);
+for(const [t,L] of Object.entries(LIVROS)){
+  if(L.capaUrl){
+    try{
+      const u=new URL(L.capaUrl);
+      if(u.protocol!=="https:") erros.push(`LIVROS “${t}”: URL da capa deve usar HTTPS`);
+    }catch{ erros.push(`LIVROS “${t}”: URL da capa inválida`); }
+    if(!L.capaFonte) erros.push(`LIVROS “${t}”: imagem externa sem fonte de crédito`);
+    if(!L.capaEdicao) erros.push(`LIVROS “${t}”: imagem externa sem identificação da edição`);
+    if(L.capa) erros.push(`LIVROS “${t}”: escolha capa local ou URL externa, não ambas`);
+  }
+}
 const obras = [...new Set(CASOS.map(obraDe))];
 const slugs = {};
 for(const c of CASOS){
@@ -81,7 +92,7 @@ for(const [k,L] of Object.entries(LACUNAS)){
 if(erros.length){ console.error("Erros nos dados:\n- " + erros.join("\n- ")); process.exit(1); }
 
 /* ---------- 2. cabeçalho, menu e rodapé ---------- */
-const NAV = [["index.html","Painel"],["casos.html","Casos"],["livros.html","Livros"],["atos.html","Atos"],["analises.html","Análises"],
+const NAV = [["index.html","Painel"],["casos.html","Casos"],["livros.html","Livros"],["atos.html","Atos"],["analises.html","Análises"],["politica.html","Política e poder"],
   ["historia.html","História"],["mundo.html","Mundo"],["metodologia.html","Metodologia"],["sobre.html","Sobre"]];
 const TAGLINE = "Observatório de censura de livros · quem mandou tirar da estante, com qual ato, e o que aconteceu depois";
 
@@ -132,7 +143,7 @@ const DATASET = {"@context":"https://schema.org","@type":"Dataset",
     {"@type":"DataDownload","encodingFormat":"text/csv","contentUrl":SITE+"/dados/estante-livre-casos.csv"},
     {"@type":"DataDownload","encodingFormat":"application/json","contentUrl":SITE+"/dados/estante-livre-casos.json"}]};
 
-const PAGINAS = ["index.html","casos.html","livros.html","analises.html","historia.html","mundo.html","glossario.html","metodologia.html","sobre.html","cobertura.html","relate.html"];
+const PAGINAS = ["index.html","casos.html","livros.html","analises.html","politica.html","historia.html","mundo.html","glossario.html","metodologia.html","sobre.html","cobertura.html","relate.html"];
 for(const f of PAGINAS){
   let h = ler(f);
   h = h.replace(/<header class="topo">[\s\S]*?<\/header>/, cabecalho("", f));

@@ -10,10 +10,10 @@
 /* ---------- REGISTROS ---------- */
 const CASOS = [
  {id:"EL-001", ato:"RS-2024", obra:"O avesso da pele", alegacao:"“Vocabulário de baixo nível” · crítica da diretora Janaína Venzon, da Escola Estadual Ernesto Alves, em vídeo nas redes", eixo:"Linguagem e palavrão", modalidade:"Retirada", estagio:"Execução comprovada", situacao:"Revertido", desfecho:"Revertido", verificado:"Sim", fontes:["bdf-rs","pn-rs","icl-rs"], nota:"Depois do vídeo da diretora, um ofício do coordenador da 6ª Coordenadoria Regional de Educação, Luiz Ricardo Pinho de Moura, mandou retirar o livro das bibliotecas escolares de 18 municípios do Vale do Rio Pardo. A Secretaria estadual desautorizou a ordem no mesmo dia e a retirada durou poucas horas. Segundo a editora, a própria diretora havia assinado a ata de escolha da obra no PNLD. Foi o primeiro episódio de março de 2024; nas semanas seguintes vieram ordens no PR, em GO, no MS e em SC."},
- {id:"EL-002", ato:"PR-2024", obra:"O avesso da pele", alegacao:"Expressões, jargões e descrições de cenas de sexo que seriam “inadequados para exposição a menores de dezoito anos”", eixo:"Sexualidade e gênero", modalidade:"Retirada", estagio:"Execução comprovada", situacao:"Revertido", desfecho:"Revertido", verificado:"Sim", fontes:["cc-oficio","icl-pr","cc-pr","pn-volta"], nota:"A Secretaria encaminhou ofício assinado por Anderfábio Oliveira dos Santos, diretor de Educação; o Núcleo Regional de Educação de Curitiba também expediu ofício de teor semelhante, assinado por sua chefe, Laura Patrícia Lopes. A coleta foi programada para 5 a 8 de março. A Companhia das Letras foi à Justiça, e o livro voltou às escolas em abril de 2024, acompanhado de orientações pedagógicas."},
- {id:"EL-003", ato:"GO-2024", obra:"O avesso da pele", alegacao:"“Possibilitar uma análise do livro quanto ao atendimento da proposta pedagógica da rede”", eixo:"Linguagem e palavrão", modalidade:"Retirada", estagio:"Execução comprovada", situacao:"Revertido", desfecho:"Revertido", verificado:"Sim", fontes:["cc-go","pn-volta"], nota:"O livro voltou às escolas de Goiás em abril de 2024, um mês depois, junto com o Paraná."},
- {id:"EL-004", ato:"MS-2024", obra:"O avesso da pele", alegacao:"“Expressões impróprias” para menores de 18 anos · termo usado pelo deputado estadual Rinaldo Modesto ao cobrar a retirada", eixo:"Linguagem e palavrão", modalidade:"Retirada", estagio:"Execução comprovada", situacao:"Revertido", desfecho:"Revertido", verificado:"Sim", fontes:["gp-estados","cgn-volta","cgn-alems","cc-ms-avesso"], pendencia:"Confirmar se o livro chegou de volta às 75 escolas", nota:"Na Assembleia, a crítica uniu deputados de partidos opostos: Rinaldo Modesto (Podemos) pediu a retirada, Lia Nogueira (PSDB) chamou o livro de “nojento” e Pedro Kemp (PT) disse ter “muitas reservas” sobre o uso no ensino médio. O governador Eduardo Riedel mandou recolher os exemplares das 75 escolas da rede que tinham recebido o livro. Em 23 de abril de 2024 a Secretaria de Educação anunciou a devolução às bibliotecas, “com as orientações pedagógicas quanto à indicação de uso”, sem detalhar quais."},
- {id:"EL-005", ato:"SC-2024", obra:"O avesso da pele", alegacao:"Evitar que obras para adolescentes e adultos cheguem a estudantes do ensino fundamental · exemplares redistribuídos para EJA e centros de educação profissional", eixo:"Sexualidade e gênero", modalidade:"Ocultação ou restrição de acesso", estagio:"Decisão ou ordem", situacao:"Em vigor", desfecho:"Mantido com restrição", verificado:"Parcialmente", fontes:["gp-estados"], pendencia:"Buscar segunda fonte independente ou o documento da Secretaria. A busca de 30/10/2026 não localizou outra reportagem sobre o caso catarinense: as coberturas consultadas sobre o recolhimento da obra tratam de RS, PR, GO e MS.", nota:"O governo anunciou análise de conteúdo e chamou a medida de revisão de acervo. Exemplo de restrição apresentada como gestão pedagógica. A informação vem de nota do governo estadual à Gazeta do Povo, que relata exemplares localizados em escolas estaduais e redistribuição de parte deles a Centros de Educação Profissional (CEDUPs) e centros de EJA."},
+ {id:"EL-002", ato:"PR-2024", obra:"O avesso da pele", alegacao:"Expressões, jargões e descrições de cenas de sexo que seriam “inadequados para exposição a menores de dezoito anos”", eixo:"Sexualidade e gênero", modalidade:"Retirada", estagio:"Execução comprovada", situacao:"Revertido", desfecho:"Revertido", verificado:"Sim", fontes:["cc-oficio","icl-pr","cc-pr","pn-volta","uol-pr-oficio-2024"], nota:"A Secretaria encaminhou ofício assinado por Anderfábio Oliveira dos Santos, diretor de Educação; o Núcleo Regional de Educação de Curitiba também expediu ofício de teor semelhante, assinado por sua chefe, Laura Patrícia Lopes. A coleta foi programada para 5 a 8 de março. A Companhia das Letras foi à Justiça, e o livro voltou às escolas em abril de 2024, acompanhado de orientações pedagógicas."},
+ {id:"EL-003", ato:"GO-2024", obra:"O avesso da pele", alegacao:"“Possibilitar uma análise do livro quanto ao atendimento da proposta pedagógica da rede”", eixo:"Linguagem e palavrão", modalidade:"Retirada", estagio:"Execução comprovada", situacao:"Revertido", desfecho:"Revertido", verificado:"Sim", fontes:["cc-go","pn-volta","alego-amauri-2024"], nota:"O livro voltou às escolas de Goiás em abril de 2024, um mês depois, junto com o Paraná."},
+ {id:"EL-004", ato:"MS-2024", obra:"O avesso da pele", alegacao:"“Expressões impróprias” para menores de 18 anos · termo usado pelo deputado estadual Rinaldo Modesto ao cobrar a retirada", eixo:"Linguagem e palavrão", modalidade:"Retirada", estagio:"Execução comprovada", situacao:"Revertido", desfecho:"Revertido", verificado:"Sim", fontes:["gp-estados","cgn-volta","cgn-alems","cc-ms-avesso","rinaldo-alms-2024","rinaldo-eleicao-2022","folha-ms-ordem-2024","cgn-ms-devolucao-2024"], pendencia:"Confirmar se o livro chegou de volta às 75 escolas", nota:"Na Assembleia, a crítica uniu deputados de partidos opostos: Rinaldo Modesto, eleito em 2022 pelo Podemos, pediu a retirada; a lista oficial da Alems atualmente acessível o registra no Podemos em julho de 2024, depois do pedido. A filiação exata em março de 2024 ainda não está comprovada por fonte primária. Lia Nogueira (PSDB) chamou o livro de “nojento” e Pedro Kemp (PT) disse ter “muitas reservas” sobre o uso no ensino médio. O governador Eduardo Riedel mandou recolher os exemplares das 75 escolas da rede que tinham recebido o livro. Em 23 de abril de 2024 a Secretaria de Educação anunciou a devolução às bibliotecas, “com as orientações pedagógicas quanto à indicação de uso”, sem detalhar quais."},
+ {id:"EL-005", ato:"SC-2024", obra:"O avesso da pele", alegacao:"A Secretaria afirmou que recolheu a obra das bibliotecas para análise pedagógica do livro e de todo o acervo escolar, considerando faixa etária e projeto político-pedagógico", eixo:"Sexualidade e gênero", modalidade:"Retirada", estagio:"Decisão ou ordem", situacao:"Em aberto", desfecho:"Ordem de recolhimento confirmada pela própria Seduc; devolução e acesso posterior não documentados", verificado:"Sim", fontes:["alesc-ind-sc-0154","alesc-oficio-gp-233","alesc-info-sc-304","alesc-oficio-sc-1017","gp-estados","alesc-sergio-motta"], pendencia:"Obter a íntegra da ordem operacional enviada às escolas, os registros de execução e a informação oficial sobre devolução/disponibilidade dos exemplares. A Indicação IND/0154/2024 de Sérgio Motta antecede a informação técnica da Seduc, mas a documentação não prova que tenha causado a orientação administrativa.", nota:"A Informação nº 304/2024/SED/DIEN, de 23 de abril, afirma que a própria Secretaria orientou o recolhimento de O avesso da pele das bibliotecas escolares para análise pedagógica do livro e do acervo. O documento não confirma redistribuição efetiva para EJA ou CEDUPs, nem comprova a execução em cada escola. Separadamente, a Alesc registra que o deputado Sérgio Motta (Republicanos) apresentou, em 6 de março, indicação sugerindo a retirada da obra. A relação causal entre a indicação e a orientação da Seduc não está demonstrada."},
  {id:"EL-006", ato:"SC-2023", obra:"It: A coisa", alegacao:"Sem justificativa no ofício · determinava armazenar “em local não acessível à comunidade escolar”. A secretaria alegou depois “redistribuição por faixa etária”", eixo:"Sobrenatural e mágico", modalidade:"Ocultação ou restrição de acesso", estagio:"Decisão ou ordem", situacao:"Em aberto", desfecho:"Em aberto", verificado:"Sim", fontes:["cc-sc","gp-sc","p360-sc","cnn-sc","cf-sc","folha-sc"], pendencia:"Identificar a coordenadoria regional", nota:"Ofício assinado pelo supervisor regional de educação Waldemar Ronssem Júnior e pela integradora regional Anelise dos Santos de Medeiros: “Determinamos que as obras listadas abaixo sejam retiradas de circulação”. O suplente de vereador Leonel Camasão (PSOL) levou o caso ao Ministério Público estadual."},
  {id:"EL-007", ato:"SC-2023", obra:"Laranja Mecânica", alegacao:"Sem justificativa no ofício · determinava armazenar “em local não acessível à comunidade escolar”. A secretaria alegou depois “redistribuição por faixa etária”", eixo:"Violência", modalidade:"Ocultação ou restrição de acesso", estagio:"Decisão ou ordem", situacao:"Em aberto", desfecho:"Em aberto", verificado:"Sim", fontes:["cc-sc","gp-sc","p360-sc","cnn-sc","cf-sc","folha-sc"], pendencia:"Identificar a coordenadoria regional", nota:"Ofício assinado pelo supervisor regional de educação Waldemar Ronssem Júnior e pela integradora regional Anelise dos Santos de Medeiros: “Determinamos que as obras listadas abaixo sejam retiradas de circulação”. O suplente de vereador Leonel Camasão (PSOL) levou o caso ao Ministério Público estadual."},
  {id:"EL-008", ato:"SC-2023", obra:"Donnie Darko", alegacao:"Sem justificativa no ofício · determinava armazenar “em local não acessível à comunidade escolar”. A secretaria alegou depois “redistribuição por faixa etária”", eixo:"Sobrenatural e mágico", modalidade:"Ocultação ou restrição de acesso", estagio:"Decisão ou ordem", situacao:"Em aberto", desfecho:"Em aberto", verificado:"Sim", fontes:["cc-sc","gp-sc","p360-sc","cnn-sc","cf-sc","folha-sc"], pendencia:"Identificar a coordenadoria regional", nota:"Ofício assinado pelo supervisor regional de educação Waldemar Ronssem Júnior e pela integradora regional Anelise dos Santos de Medeiros: “Determinamos que as obras listadas abaixo sejam retiradas de circulação”. O suplente de vereador Leonel Camasão (PSOL) levou o caso ao Ministério Público estadual."},
@@ -36,14 +36,18 @@ const CASOS = [
  {id:"EL-025", ato:"PALM-2021-06", obra:"Anúncio de descarte de 5.165 exemplares classificados como de “temática alheia à negra”", alegacao:"Relatório “Retrato do Acervo: três décadas de dominação marxista na Fundação Cultural Palmares” · classificação de 5.165 exemplares como de “temática alheia à negra”", eixo:"Política e ideologia", modalidade:"Descarte ou destruição", estagio:"Decisão ou ordem", situacao:"Em aberto", desfecho:"Destino final dos 5.165 exemplares não comprovado", verificado:"Parcialmente", fontes:["em-palmares","sbt-palm","gp-palmares","opovo-palm","palmares-inventario","palmares-politica","relatorio-palmares-original","unesp-palmares"], pendencia:"Conferir no relatório original e em seu anexo a divergência de total do acervo: 9.565 exemplares na reportagem contemporânea do Estado de Minas e 9.546 obras na reportagem da Unesp. Recuperar a relação completa dos 5.165 exemplares e documentos sobre seu destino final. Não confundir exemplares com títulos nem com o conjunto distinto de cerca de 300 livros do EL-026.", nota:"A reportagem contemporânea do Estado de Minas atribuiu ao relatório a informação de que o acervo tinha 9.565 exemplares e classificou 5.165 (54%) como de temática alheia à negra. O Jornal da Unesp, também em junho de 2021, informou total de 9.546 obras e 478 títulos considerados adequados. Como os totais publicados divergem, o número-base precisa ser conferido diretamente no relatório e em seus anexos. Em qualquer caso, 5.165 é apresentado como quantidade de exemplares, não de títulos distintos. Não foi localizada comprovação de que esse conjunto tenha sido descartado ou doado. A decisão judicial sobre doação de cerca de 300 livros é tratada separadamente no EL-026. O inventário publicado pela Fundação em agosto de 2024 registra 9.696 títulos, levantamento posterior e unidade de contagem distinta."},
  {id:"EL-026", ato:"PALM-2021-08", obra:"Segregação de cerca de 300 livros no chamado “Acervo da Vergonha”", alegacao:"Camargo chamou as obras de “bibliografia imprestável para a Palmares”, “marxistas” e “bandidólatras”.", eixo:"Política e ideologia", modalidade:"Ocultação ou restrição de acesso", estagio:"Decisão ou ordem", situacao:"Em aberto", desfecho:"Segregação anunciada; acesso público posterior não verificado", verificado:"Parcialmente", fontes:["opovo-palm","sbt-museu","oglobo-palm-300","oglobo-palm-ala"], pendencia:"Obter inventário dos cerca de 300 livros, comprovar se foram fisicamente separados, por quanto tempo e quando voltaram à consulta pública.", nota:"A Justiça Federal já havia impedido a doação de cerca de 300 livros. Em 23 de julho de 2021, a Procuradoria-Geral Federal informou ao juízo que Sérgio Camargo desistira da doação, ao menos naquele momento. Em 3 de agosto, Camargo anunciou a criação de uma seção/sala para separar os livros que chamava de “vergonhosos e desviantes”. O anúncio público está documentado; a duração e o regime efetivo de acesso à sala ainda precisam de comprovação."},
  {id:"EL-027", ato:"MG-2024", obra:"O menino marrom", alegacao:"Pais consideraram a obra “agressiva”, citando passagens sobre pacto de sangue e conflitos entre personagens.", eixo:"Cultura afro-brasileira", modalidade:"Veto a atividade", estagio:"Decisão ou ordem", situacao:"Revertido", desfecho:"Suspensão cancelada por decisão liminar", verificado:"Sim", fontes:["pn-ziraldo","dp-ziraldo","comunicado-lafaiete","decisao-lafaiete"], pendencia:"Identificar o signatário formal do ato administrativo e confirmar o trânsito em julgado da ação popular.", nota:"Em comunicado oficial de 20 de junho, a Secretaria Municipal de Educação afirmou que orientou a suspensão temporária dos trabalhos pedagógicos com o livro após manifestações de pais, familiares e autoridades locais — não declarou recolhimento de todos os exemplares. Em decisão liminar assinada em 27 de junho de 2024, o juiz Espagner Wallysen Vaz Leite, da 1ª Vara Cível, determinou o cancelamento imediato da suspensão temporária, sob multa diária de R$ 5 mil. A cópia consultada não permite identificar o autor da ação, cujo nome aparece ocultado."},
- {id:"EL-028", ato:"SJC-2024", obra:"Meninas sonhadoras, mulheres cientistas", alegacao:"O vereador afirmou que a obra faria “apologia ao aborto” e promoveria “doutrinação ideológica”. A prefeitura apresentou justificativa técnico-pedagógica posteriormente.", eixo:"Sexualidade e gênero", modalidade:"Retirada", estagio:"Execução comprovada", situacao:"Revertido", desfecho:"Justiça determinou devolução e proibiu nova restrição político-ideológica", verificado:"Parcialmente", fontes:["pn-sjc","ap-sjc","op-sjc","migalhas-sjc","folha-sjc-ordem","uol-sjc-ordem","jurinews-sjc-2024"], pendencia:"Obter a sentença integral e comprovar o cumprimento da ordem de devolução; o processo tramita sob segredo de Justiça. Verificar se houve recurso ao TJSP contra a sentença e se a ordem segue em vigor.", nota:"O livro foi recolhido das salas de leitura da rede municipal em junho de 2024, após a pressão pública do vereador. Segundo a apuração divulgada com base no processo, a ordem de retirada foi transmitida aos diretores por mensagens de WhatsApp, sem justificativa técnico-pedagógica contemporânea. Ainda em 2024, na ação movida pelo Ministério Público e pela Defensoria Pública, uma liminar determinou a redistribuição da obra; no início de outubro de 2024, o relator Sulaiman Miguel Neto, do Tribunal de Justiça de São Paulo, suspendeu a liminar a pedido da prefeitura. Em 20 de julho de 2026, a juíza Renata Heloísa da Silva Salles, da Vara da Infância e Juventude, determinou que o município restituísse os exemplares às salas de leitura e bibliotecas das escolas onde integravam o acervo, no prazo de cinco dias a partir da intimação. A decisão também proibiu novas restrições político-ideológicas e fixou multa diária de R$ 500, limitada inicialmente a R$ 50 mil. A cobertura informa que a prefeitura ainda não havia respondido sobre o cumprimento da ordem; portanto, a devolução efetiva permanece sem confirmação pública. Após a sentença, o vereador Thomaz Henrique declarou que recorreria ao Tribunal de Justiça."},
- {id:"EL-029", ato:"UNIRV-2023", obra:"Eu receberia as piores notícias de seus lindos lábios", alegacao:"O parlamentar classificou a obra como “pornográfica”; a universidade afirmou que a polêmica pesou na exclusão.", eixo:"Sexualidade e gênero", modalidade:"Exclusão de lista de leitura", estagio:"Execução comprovada", situacao:"Em vigor", desfecho:"Retirado da lista; decisão institucional confirmada", verificado:"Parcialmente", fontes:["fp-unirv","jo-unirv","folha-unirv","unirv-nota"], pendencia:"Identificar nominalmente quem compunha a Coordenação do Vestibular e quem formalizou a decisão; a nota pública identifica o órgão decisor, mas não traz ata ou despacho nominal.", nota:"A nota oficial da UniRV, datada de 26 de abril de 2023 e publicada no site em 27 de abril, afirma que a Coordenação do Vestibular decidiu pela exclusão imediata da obra depois de tomar conhecimento do conteúdo e da polêmica. A universidade também registra que a indicação original havia sido feita por uma banca de professores. A nota não identifica nominalmente quem, dentro da Coordenação, tomou a decisão."},
- {id:"EL-030", ato:"LON-2024", obra:"A mamãe vai ter um bebê", titulo:"Pedido de recolhimento de A mamãe vai ter um bebê e aprovação da Lei nº 13.930/2025", alegacao:"A vereadora classificou como inadequada para crianças uma ilustração de casal sob um edredom em contexto de reprodução humana.", eixo:"Sexualidade e gênero", modalidade:"Retirada", estagio:"Pedido formal", situacao:"Em aberto", desfecho:"Pedido apresentado; resposta e execução não comprovadas. PL 79/2024 sancionado como Lei nº 13.930/2025.", verificado:"Parcialmente", fontes:["fl-londrina","bp-londrina","lei-londrina-13930","pedido-londrina"], pendencia:"Obter cópia integral do requerimento protocolado pela vereadora e resposta da Secretaria; confirmar se houve recolhimento efetivo e eventual devolução do exemplar.", nota:"Em 26 de novembro de 2024, a vereadora Jéssica Ramos Moreno (PP) divulgou que encontrou o livro em uma creche e pediu à Secretaria Municipal de Educação que o recolhesse. A reportagem contemporânea informou que a Secretaria ainda não havia respondido oficialmente ao requerimento; portanto, a retirada não está comprovada. Separadamente, o PL 79/2024, de autoria da vereadora, foi sancionado em 21 de março de 2025 como Lei Municipal nº 13.930, que proíbe uso e distribuição de livros com conteúdo erótico nas escolas municipais, com exceção para informação científico-biológica sobre reprodução adequada à idade. A lei não comprova, por si, a retirada deste exemplar."},
+ {id:"EL-028", ato:"SJC-2024", obra:"Meninas sonhadoras, mulheres cientistas", alegacao:"O vereador afirmou que a obra faria “apologia ao aborto” e promoveria “doutrinação ideológica”. A prefeitura apresentou justificativa técnico-pedagógica posteriormente.", eixo:"Sexualidade e gênero", modalidade:"Retirada", estagio:"Execução comprovada", situacao:"Revertido", desfecho:"Justiça determinou devolução e proibiu nova restrição político-ideológica", verificado:"Parcialmente", fontes:["pn-sjc","ap-sjc","op-sjc","migalhas-sjc","folha-sjc-ordem","uol-sjc-ordem","jurinews-sjc-2024","thomaz-eleicao-2024"], pendencia:"Obter a sentença integral e comprovar o cumprimento da ordem de devolução; o processo tramita sob segredo de Justiça. Verificar se houve recurso ao TJSP contra a sentença e se a ordem segue em vigor.", nota:"O livro foi recolhido das salas de leitura da rede municipal em junho de 2024, após a pressão pública do vereador. Segundo a apuração divulgada com base no processo, a ordem de retirada foi transmitida aos diretores por mensagens de WhatsApp, sem justificativa técnico-pedagógica contemporânea. Ainda em 2024, na ação movida pelo Ministério Público e pela Defensoria Pública, uma liminar determinou a redistribuição da obra; no início de outubro de 2024, o relator Sulaiman Miguel Neto, do Tribunal de Justiça de São Paulo, suspendeu a liminar a pedido da prefeitura. Em 20 de julho de 2026, a juíza Renata Heloísa da Silva Salles, da Vara da Infância e Juventude, determinou que o município restituísse os exemplares às salas de leitura e bibliotecas das escolas onde integravam o acervo, no prazo de cinco dias a partir da intimação. A decisão também proibiu novas restrições político-ideológicas e fixou multa diária de R$ 500, limitada inicialmente a R$ 50 mil. A cobertura informa que a prefeitura ainda não havia respondido sobre o cumprimento da ordem; portanto, a devolução efetiva permanece sem confirmação pública. Após a sentença, o vereador Thomaz Henrique declarou que recorreria ao Tribunal de Justiça."},
+ {id:"EL-029", ato:"UNIRV-2023", obra:"Eu receberia as piores notícias de seus lindos lábios", alegacao:"O parlamentar classificou a obra como “pornográfica”; a universidade afirmou que a polêmica pesou na exclusão.", eixo:"Sexualidade e gênero", modalidade:"Exclusão de lista de leitura", estagio:"Execução comprovada", situacao:"Em vigor", desfecho:"Retirado da lista; decisão institucional confirmada", verificado:"Parcialmente", fontes:["fp-unirv","jo-unirv","folha-unirv","unirv-nota","gayer-camara-2023"], pendencia:"Identificar nominalmente quem compunha a Coordenação do Vestibular e quem formalizou a decisão; a nota pública identifica o órgão decisor, mas não traz ata ou despacho nominal.", nota:"A nota oficial da UniRV, datada de 26 de abril de 2023 e publicada no site em 27 de abril, afirma que a Coordenação do Vestibular decidiu pela exclusão imediata da obra depois de tomar conhecimento do conteúdo e da polêmica. A universidade também registra que a indicação original havia sido feita por uma banca de professores. A nota não identifica nominalmente quem, dentro da Coordenação, tomou a decisão."},
+ {id:"EL-030", ato:"LON-2024", obra:"A mamãe vai ter um bebê", titulo:"Pedido de recolhimento de A mamãe vai ter um bebê e aprovação da Lei nº 13.930/2025", alegacao:"A vereadora classificou como inadequada para crianças uma ilustração de casal sob um edredom em contexto de reprodução humana.", eixo:"Sexualidade e gênero", modalidade:"Retirada", estagio:"Pedido formal", situacao:"Em aberto", desfecho:"Pedido apresentado; resposta e execução não comprovadas. PL 79/2024 sancionado como Lei nº 13.930/2025.", verificado:"Parcialmente", fontes:["fl-londrina","bp-londrina","lei-londrina-13930","pedido-londrina","jessicao-eleicao-2024"], pendencia:"Obter cópia integral do requerimento protocolado pela vereadora e resposta da Secretaria; confirmar se houve recolhimento efetivo e eventual devolução do exemplar.", nota:"Em 26 de novembro de 2024, a vereadora Jéssica Ramos Moreno (PP) divulgou que encontrou o livro em uma creche e pediu à Secretaria Municipal de Educação que o recolhesse. A reportagem contemporânea informou que a Secretaria ainda não havia respondido oficialmente ao requerimento; portanto, a retirada não está comprovada. Separadamente, o PL 79/2024, de autoria da vereadora, foi sancionado em 21 de março de 2025 como Lei Municipal nº 13.930, que proíbe uso e distribuição de livros com conteúdo erótico nas escolas municipais, com exceção para informação científico-biológica sobre reprodução adequada à idade. A lei não comprova, por si, a retirada deste exemplar."},
  {id:"EL-031", ato:"DF-2026", obra:"A bolsa amarela", titulo:"Controvérsia sobre atividade com resenha de A bolsa amarela", alegacao:"Pais consideraram inadequada para crianças de cerca de 9 anos uma passagem em que a protagonista deseja ter nascido menino.", eixo:"Sexualidade e gênero", modalidade:"Veto a atividade", estagio:"Pressão pública", situacao:"Sem efeito", desfecho:"Sem retirada de exemplares ou veto à obra comprovado", verificado:"Parcialmente", fontes:["met-bolsa1","met-bolsa2","piaui-bolsa"], pendencia:"Obter a nota oficial integral do colégio e esclarecer documentalmente se houve suspensão formal da atividade ou apenas encerramento do exercício já aplicado.", nota:"A apuração da revista piauí esclareceu que o colégio não havia adotado A bolsa amarela como leitura obrigatória nem retirado exemplares do acervo. O episódio envolveu um link para uma resenha utilizado em exercício de Língua Portuguesa. A escola declarou que a atividade atendia aos objetivos de leitura e interpretação; após a repercussão e o término do exercício, o link não voltou a ser utilizado. Este registro documenta pressão sobre uma atividade, não banimento ou retirada do livro."},
- {id:"EL-032", ato:"TAU-2025", obra:"Pipoca e Picolé", alegacao:"A vereadora contestou a representação de uma família com duas mães e um pai e declarou: “Nós não vamos aceitar material como esse na nossa sala de aula”.", eixo:"Sexualidade e gênero", modalidade:"Retirada", estagio:"Execução comprovada", situacao:"Revertido", desfecho:"Prefeitura anunciou retorno ao uso pedagógico após análise técnica, em turmas consideradas adequadas; cumprimento nas escolas não verificado", verificado:"Parcialmente", fontes:["ovale-tau","ovale-tau-abr10","ovale-tau-jul14"], pendencia:"Obter o requerimento parlamentar, a resposta integral da prefeitura e o parecer técnico; confirmar a efetiva redistribuição dos exemplares às escolas e quais turmas foram consideradas adequadas.", nota:"A vereadora Zelinda Pastora (PRD) afirmou que pediu ao secretário Hélcio Carvalho dos Santos o recolhimento, após reclamação de uma mãe. A prefeitura confirmou à Câmara que retirou a obra. Em abril de 2026, informou que os exemplares estavam na Secretaria para análise técnica. Em 14 de julho de 2026, a prefeitura informou à imprensa que, após análise da Coordenação de Área e da Equipe de Práticas Pedagógicas da Educação Infantil, o livro voltaria a ser utilizado no plano de ensino das turmas consideradas adequadas. A notícia confirma a decisão administrativa de retomada, mas não comprova quando e em quais unidades os exemplares foram efetivamente devolvidos."},
+ {id:"EL-032", ato:"TAU-2025", obra:"Pipoca e Picolé", alegacao:"A vereadora contestou a representação de uma família com duas mães e um pai e declarou: “Nós não vamos aceitar material como esse na nossa sala de aula”.", eixo:"Sexualidade e gênero", modalidade:"Retirada", estagio:"Execução comprovada", situacao:"Revertido", desfecho:"Prefeitura anunciou retorno ao uso pedagógico após análise técnica, em turmas consideradas adequadas; cumprimento nas escolas não verificado", verificado:"Parcialmente", fontes:["ovale-tau","ovale-tau-abr10","ovale-tau-jul14","zelinda-eleicao-2024"], pendencia:"Obter o requerimento parlamentar, a resposta integral da prefeitura e o parecer técnico; confirmar a efetiva redistribuição dos exemplares às escolas e quais turmas foram consideradas adequadas.", nota:"A vereadora Zelinda Pastora (PRD) afirmou que pediu ao secretário Hélcio Carvalho dos Santos o recolhimento, após reclamação de uma mãe. A prefeitura confirmou à Câmara que retirou a obra. Em abril de 2026, informou que os exemplares estavam na Secretaria para análise técnica. Em 14 de julho de 2026, a prefeitura informou à imprensa que, após análise da Coordenação de Área e da Equipe de Práticas Pedagógicas da Educação Infantil, o livro voltaria a ser utilizado no plano de ensino das turmas consideradas adequadas. A notícia confirma a decisão administrativa de retomada, mas não comprova quando e em quais unidades os exemplares foram efetivamente devolvidos."},
  {id:"EL-033", ato:"FUNAP-2020", obra:"Veto à lista de doze livros do projeto Remição em Rede", alegacao:"Em mensagem à articuladora, a Funap afirmou que um título não atendia às expectativas da gestão; em reunião, foram mencionadas três obras como problemáticas, sem identificação pública.", eixo:"Outro", modalidade:"Veto a aquisição ou doação", estagio:"Decisão ou ordem", situacao:"Revertido", desfecho:"Funap determinou a inclusão da lista original em 13 de fevereiro de 2020, após repercussão pública", verificado:"Parcialmente", fontes:["bdf-funap","reimao-2023","folha-funap-11fev","folha-funap-14fev","benaglia-heller-2022"], pendencia:"Obter a mensagem original de Reginaldo Caetano da Silva, a ata da reunião de 13/02/2020 e a nota integral da Funap; identificar as três obras questionadas; confirmar se os exemplares chegaram aos presídios depois de fevereiro de 2020 e esclarecer a divergência entre 240 e 228 exemplares.", nota:"Em agosto de 2019, as editoras doaram 240 exemplares de doze títulos para a expansão do projeto. Segundo Janine Durand, articuladora do Remição em Rede, a lista completa foi riscada pelo então diretor-executivo da Funap, coronel Henrique Pereira de Souza Neto, e os livros não foram enviados aos presídios. A Folha identificou Reginaldo Caetano da Silva, superintendente da Diretoria de Atendimento e Promoção Humana, como autor de mensagem de 3 de dezembro que dizia que um título não atendia às expectativas da gestão; em reunião, segundo Durand, foram mencionadas três obras, mas sem identificação. Em 13 de fevereiro de 2020, a Funap determinou a inclusão da lista inicialmente indicada e anunciou uma equipe multidisciplinar para tratar da escolha das obras. A reportagem de 14 de fevereiro do Brasil de Fato registra o recuo após a repercussão pública. A distribuição efetiva dos 240 exemplares após a reversão ainda não foi comprovada. Artigo de Benaglia e Heller publicado em 2022 reproduz a lista dos doze títulos e informa que, até a redação do texto, os livros aguardavam liberação para o acervo itinerante; nas considerações finais, o mesmo artigo fala em 228 livros. O artigo não identifica as três obras questionadas."},
- {id:"EL-034", ato:"LIM-2019", obra:"A bolsa amarela", titulo:"Questionamento parlamentar sobre A bolsa amarela — sem retirada comprovada", alegacao:"No requerimento, o vereador perguntou se o livro afrontava princípios morais de pais e alunos e chamou sua temática de “ideologia de gênero”.", eixo:"Sexualidade e gênero", modalidade:"Veto a atividade", estagio:"Pressão pública", situacao:"Sem efeito", desfecho:"Sem retirada: Secretaria defendeu a obra e manteve o projeto de leitura", verificado:"Sim", fontes:["reimao-2023","uninter-bolsa","camara-limeira-req","camara-limeira-resp"], nota:"O Requerimento nº 451/2019, de autoria de Clayton Silva (PSC), pediu informações sobre distribuição, atividades e critérios de escolha de A bolsa amarela. Na justificativa, o vereador afirmou que o livro abordava “ideologia de gênero” e questionou se afrontava princípios morais. A Secretaria Municipal de Educação respondeu em 24 de setembro que a obra integrava o Clube de Leitura, descreveu seu valor literário e declarou que ela não afrontava princípios morais. O documento não registra pedido de retirada nem retirada da obra. Este caso documenta pressão discursiva e questionamento parlamentar, não censura ou banimento."},
+ {id:"EL-034", ato:"LIM-2019", obra:"A bolsa amarela", titulo:"Questionamento parlamentar sobre A bolsa amarela — sem retirada comprovada", alegacao:"No requerimento, o vereador perguntou se o livro afrontava princípios morais de pais e alunos e chamou sua temática de “ideologia de gênero”.", eixo:"Sexualidade e gênero", modalidade:"Veto a atividade", estagio:"Pressão pública", situacao:"Sem efeito", desfecho:"Sem retirada: Secretaria defendeu a obra e manteve o projeto de leitura", verificado:"Sim", fontes:["reimao-2023","uninter-bolsa","camara-limeira-req","camara-limeira-resp","clayton-eleicao-psc","clayton-troca-partido"], nota:"O Requerimento nº 451/2019, de autoria de Clayton Silva (PSC), pediu informações sobre distribuição, atividades e critérios de escolha de A bolsa amarela. Na justificativa, o vereador afirmou que o livro abordava “ideologia de gênero” e questionou se afrontava princípios morais. A Secretaria Municipal de Educação respondeu em 24 de setembro que a obra integrava o Clube de Leitura, descreveu seu valor literário e declarou que ela não afrontava princípios morais. O documento não registra pedido de retirada nem retirada da obra. Este caso documenta pressão discursiva e questionamento parlamentar, não censura ou banimento."},
 ];
+
+
+
+
 
 /* ---------- OBRAS ----------
    conjunto: true quando o registro é um lote sem lista título a título. */
@@ -59,6 +63,9 @@ const LIVROS = {
    sinopse:"Um professor negro é morto pela polícia em Porto Alegre. O filho reconstrói a vida do pai a partir dos objetos, dos silêncios e do que a cidade fez com o corpo dele.",
    nota:"Aprovado no PNLD antes das retiradas. O parecer do MEC, obtido pela Fiquem Sabendo via Lei de Acesso à Informação, avaliou que a linguagem tinha coerência interna com a narrativa. Voltou às escolas do PR e de GO em abril de 2024; no MS, a devolução foi anunciada no fim de abril."},
  "It: A coisa":{
+   capaUrl:"https://down-br.img.susercontent.com/file/19ccdf30f6dd38c91f322a1ffbd1c82d",
+   capaFonte:"https://shopee.com.br/-Livro-ItACoisa-StephenKing-EditoraSuma-i.314157771.13111340497",
+   capaEdicao:"Suma, edição brasileira",
    autoria:"Stephen King",
    ano:1986,
    genero:"Terror",
@@ -71,37 +78,58 @@ const LIVROS = {
    sinopse:"Numa Inglaterra distópica, um adolescente violento é submetido a um tratamento de condicionamento que o impede de escolher o mal — e, com isso, de escolher.",
    nota:"Livro sobre os limites do Estado ao suprimir a escolha individual, retirado por decisão de Estado."},
  "Donnie Darko":{
+   capaUrl:"https://i5.walmartimages.com/seo/The-Donnie-Darko-Book-Paperback-9780571221240_17a3bdec-64d7-46a4-8e44-4c3c3baafd59_1.09197a3eaed6e4d9a4f9772b4db9c440.jpeg?odnBg=FFFFFF&odnHeight=768&odnWidth=768",
+   capaFonte:"https://www.walmart.com/ip/2386875",
+   capaEdicao:"The Donnie Darko Book, edição em inglês",
    autoria:"Richard Kelly",
    genero:"Roteiro",
    sinopse:"O roteiro do filme de 2001 sobre um adolescente que, depois de escapar de um acidente, passa a ter visões de um coelho que anuncia o fim do mundo."},
  "Coração Satânico":{
+   capaUrl:"https://martinsfontespaulista.vteximg.com.br/arquivos/ids/371505-1000-1000/811510_ampliada.jpg?v=637262233034400000",
+   capaFonte:"https://www.martinsfontespaulista.com.br/coracao-satanico-811510/p",
+   capaEdicao:"DarkSide Books, edição brasileira",
    autoria:"William Hjortsberg",
    ano:1978,
    genero:"Romance policial",
    sinopse:"Um detetive de Nova York é contratado para achar um cantor desaparecido e descobre que o cliente tem planos para a alma de alguém."},
  "Exorcismo":{
+   capaUrl:"https://darkside.vteximg.com.br/arquivos/ids/168430-1000-1000/64-exorcismo-thomas-b-allen.jpg?v=636851504887630000",
+   capaFonte:"https://www.darksidebooks.com.br/exorcismo-thomas-b-allen/p",
+   capaEdicao:"DarkSide Books, edição brasileira",
    autoria:"Thomas B. Allen",
    ano:1993,
    genero:"Não ficção",
    sinopse:"Reconstrução jornalística do caso de 1949 que inspirou O exorcista, a partir do diário de um dos padres envolvidos."},
  "Ed & Lorraine Warren: demonologistas — arquivos sobrenaturais":{
+   capaUrl:"https://down-br.img.susercontent.com/file/br-11134207-7r98o-magfyallleofa6",
+   capaFonte:"https://shopee.com.br/Livro-Ed-Lorraine-Warren-i.630533556.20998187194",
+   capaEdicao:"DarkSide Books, edição brasileira",
    autoria:"Gerald Brittle",
    ano:1980,
    genero:"Não ficção",
    sinopse:"Relatos do casal de investigadores paranormais cujos casos viraram a série de filmes Invocação do Mal."},
  "O diário do diabo: os segredos de Alfred Rosenberg, o maior intelectual do nazismo":{
+   capaUrl:"https://martinsfontespaulista.vteximg.com.br/arquivos/ids/1657135-1000-1000/805495.jpg?v=638616831228700000",
+   capaFonte:"https://www.martinsfontespaulista.com.br/o-diario-do-diabo-805495/p",
+   capaEdicao:"Record, edição brasileira",
    autoria:"Robert K. Wittman e David Kinney",
    ano:2016,
    genero:"Não ficção, história",
    sinopse:"A partir de diários desaparecidos por décadas, reconstrói a trajetória do ideólogo racial do nazismo, condenado em Nuremberg.",
    nota:"Livro crítico ao nazismo, retirado sob a mesma ordem que atingiu obras de terror."},
  "A química entre nós":{
+   capaUrl:"https://www.record.com.br/cdn/shop/files/a3cfcf7c9f618c19a08cac8fffcab22b_1000x.jpg?v=1783743873",
+   capaFonte:"https://www.record.com.br/products/a-quimica-entre-nos",
+   capaEdicao:"BestSeller, edição brasileira",
    autoria:"Larry Young e Brian Alexander",
    ano:2012,
    genero:"Não ficção",
    sinopse:"Um neurocientista e um jornalista investigam a base biológica do desejo, do amor e do vínculo humano.",
    nota:"Obra de divulgação científica sobre a neurobiologia do vínculo, assinada por um neurocientista e um jornalista, guardada na mesma ordem que livros de terror."},
  "Os 13 porquês":{
+   capaUrl:"https://myrecadosdaredacao.wordpress.com/wp-content/uploads/2021/06/20210624_235735.jpg",
+   capaFonte:"https://myrecadosdaredacao.wordpress.com/2021/06/26/resumo-resenha-os-13-porques-13-reasons-why-do-autor-jay-asher/",
+   capaEdicao:"Ática, edição brasileira",
    autoria:"Jay Asher",
    ano:2007,
    genero:"Juvenil",
@@ -122,24 +150,39 @@ const LIVROS = {
    sinopse:"Um defunto autor narra a própria vida com ironia, do leito de morte para trás, inaugurando o realismo machadiano.",
    nota:"Leitura obrigatória em vestibulares, listada como “conteúdo inadequado às crianças e adolescentes”."},
  "Os sertões":{
+   capaUrl:"https://martinsfontespaulista.vteximg.com.br/arquivos/ids/1613519-1000-1000/1086627.jpg?v=638482702986130000",
+   capaFonte:"https://www.martinsfontespaulista.com.br/os-sertoes-1086627/p",
+   capaEdicao:"Martin Claret, edição brasileira",
    autoria:"Euclides da Cunha",
    ano:1902,
    genero:"Não ficção",
    sinopse:"O relato de Euclides da Cunha sobre a Guerra de Canudos e a destruição do arraial pelo Exército, um dos livros fundadores do pensamento social brasileiro."},
  "O castelo":{
+   capaUrl:"https://down-br.img.susercontent.com/file/br-11134207-7qukw-leprlf7igviq88",
+   capaFonte:"https://shopee.com.br/Franz-Kafka-O-castelo-i.652268159.20717848791",
+   capaEdicao:"Companhia de Bolso, edição brasileira",
    autoria:"Franz Kafka",
    ano:1926,
    genero:"Romance",
    sinopse:"Um agrimensor tenta chegar ao castelo que o contratou e esbarra numa burocracia que nunca se explica nem se deixa alcançar."},
  "Contos de terror, de mistério e de morte":{
+   capaUrl:"https://acdn-us.mitiendanube.com/stores/003/791/470/products/sem-titulo-b38404ea8bd86d90fd17030750925022-1024-1024.webp",
+   capaFonte:"https://www.mundodoscolecionaveis.com.br/produtos/livro-colecao-classicos-de-ouro-contos-de-terror-de-misterio-e-de-morte-edgar-allan-poe/",
+   capaEdicao:"Clássicos de Ouro, edição brasileira",
    autoria:"Edgar Allan Poe",
    genero:"Contos",
    sinopse:"Reunião dos contos de Poe que fundaram a literatura de horror psicológico moderna."},
  "A vida como ela é":{
+   capaUrl:"https://cdn.awsli.com.br/2088/2088593/produto/173012922/dc7cb49641.jpg",
+   capaFonte:"https://www.novafronteira.com.br/produto/a-vida-como-ela-e-2022-08-24-15-20-51.html",
+   capaEdicao:"Nova Fronteira, edição brasileira",
    autoria:"Nelson Rodrigues",
    genero:"Crônicas",
    sinopse:"Crônicas do cotidiano carioca, publicadas originalmente em jornal, sobre traição, desejo e hipocrisia de classe média."},
  "Beijo no asfalto":{
+   capaUrl:"https://livrariadavila.vtexassets.com/arquivos/ids/9147114-150-auto?aspect=true&height=auto&v=639135138002500000&width=150",
+   capaFonte:"https://www.livrariadavila.com.br/777590-o-beijo-no-asfalto-tragedia-carioca-em/p",
+   capaEdicao:"Nova Fronteira, edição brasileira",
    autoria:"Nelson Rodrigues",
    ano:1961,
    genero:"Teatro",
@@ -194,15 +237,24 @@ const LIVROS = {
    sinopse:"Num garimpo do Pará, um fotógrafo se envolve com a mulher de um pastor. O desejo e a violência dividem o mesmo território.",
    nota:"Saiu da lista de leituras do vestibular, o que o catálogo registra como exclusão de lista de leitura. A decisão veio dias depois de um deputado chamar o livro de pornográfico em vídeo."},
  "A mamãe vai ter um bebê":{
+   capaUrl:"https://todolivro.vtexassets.com/arquivos/ids/159598-1600-1600/9788537633854.jpg?v=638522481874400000",
+   capaFonte:"https://www.todolivro.com.br/biblioteca-de-literatura--a-mamae-vai-ter-um-bebe--nivel-3---paradidaticos-todolivro-/p?skuId=1230",
+   capaEdicao:"Todo Livro, edição brasileira",
    genero:"Infantil",
    nota:"Livro de educação sexual para crianças pequenas. A lei aprovada em seguida pela Câmara de Londrina permite explicação científica sobre reprodução, que é o assunto do livro."},
  "A bolsa amarela":{
+   capaUrl:"https://cdn.awsli.com.br/800x800/2653/2653452/produto/388998981/img_4345-s3pq59fj8b-fjsjmj0lkk.jpg",
+   capaFonte:"https://cdn.awsli.com.br/800x800/2653/2653452/produto/388998981/img_4345-s3pq59fj8b-fjsjmj0lkk.jpg",
+   capaEdicao:"Edição brasileira fotografada pelo Sebo Caravelas",
    autoria:"Lygia Bojunga",
    ano:1976,
    genero:"Infantojuvenil",
    sinopse:"Raquel esconde numa bolsa amarela três vontades que não cabem em casa: crescer, ter nascido menino e escrever.",
    nota:"Clássico de Lygia Bojunga, primeira autora fora da Europa e dos EUA a receber o Prêmio Hans Christian Andersen, em 1982."},
  "Pipoca e Picolé":{
+   capaUrl:"https://m.magazineluiza.com.br/a-static/420x420/livro-pipoca-e-picole/rcn/8793174/bef41d7fcdbc0dd267de2a67e412a5ba.png",
+   capaFonte:"https://www.magazineluiza.com.br/livro-pipoca-e-picole/p/gbckkd1b32/li/lltj/",
+   capaEdicao:"Elo, edição brasileira",
    autoria:"Adriana Lisboa",
    editora:"Elo",
    genero:"Infantil",
@@ -247,7 +299,7 @@ const ATOS = {
    rede:"Estadual",
    governo:"Ratinho Júnior (PSD) · governo do PR",
    quem:"Secretaria estadual",
-   documento:"Ofício da Secretaria de Estado da Educação do Paraná, encaminhado em 4 de março de 2024 aos núcleos regionais; a reportagem reproduz o teor e identifica Anderfábio Oliveira dos Santos como signatário do ofício da Secretaria e Laura Patrícia Lopes como signatária de ofício subsequente do NRE de Curitiba.",
+   documento:"Ofício da Secretaria de Estado da Educação do Paraná, assinado em 4 de março de 2024 pelo diretor de Educação Anderfábio Oliveira dos Santos e encaminhado aos núcleos regionais. O UOL reproduziu o teor e informou que a coleta deveria ocorrer até 8 de março. A íntegra do ofício estadual ainda não foi localizada em repositório oficial.",
    papeis:{
      decisor:"Secretaria de Estado da Educação do Paraná, que encaminhou ofício aos chefes dos núcleos regionais em 4 de março de 2024; o recolhimento seria realizado entre os dias 5 e 8.",
      assinantes:"Anderfábio Oliveira dos Santos, diretor de Educação, e Laura Patrícia Lopes, chefe do Núcleo Regional de Educação de Curitiba.",
@@ -263,10 +315,11 @@ const ATOS = {
    rede:"Estadual",
    governo:"Ronaldo Caiado (União Brasil) · governo de GO",
    quem:"Secretaria estadual",
-   documento:"Medida atribuída à Secretaria de Estado da Educação de Goiás; o documento original ainda não está identificado no cadastro.",
+   documento:"Recolhimento determinado pela Secretaria de Estado da Educação de Goiás, segundo cobertura contemporânea. A publicação de 1º de abril de 2024 no portal institucional da Alego, em conteúdo identificado como notícia de gabinete, atribui a Amauri Ribeiro a liderança do movimento parlamentar pela retirada. A ordem administrativa original e seu signatário ainda não foram identificados.",
    papeis:{
-     decisor:"Secretaria de Estado da Educação de Goiás.",
+     decisor:"Secretaria de Estado da Educação de Goiás, que determinou o recolhimento segundo cobertura contemporânea.",
      assinantes:"A pessoa responsável pela decisão não está identificada nas fontes cadastradas.",
+     pressao:"Amauri Ribeiro (União Brasil) liderou movimento parlamentar pela retirada, conforme notícia de gabinete publicada no portal da Alego em 1º de abril de 2024. A publicação é produzida pelo gabinete e não substitui ata, requerimento ou pronunciamento integral.",
      executor:"Rede estadual de ensino.",
      resposta:"O livro voltou às escolas em abril de 2024."
    }},
@@ -279,29 +332,28 @@ const ATOS = {
    rede:"Estadual",
    governo:"Eduardo Riedel (PSDB) · governo do MS",
    quem:"Governo estadual",
-   pressao:"Deputado estadual Rinaldo Modesto (Podemos)",
-   documento:"Ordem de recolhimento da rede estadual de Mato Grosso do Sul; documento formal e signatário ainda precisam ser identificados.",
+   pressao:"Rinaldo Modesto, deputado estadual eleito pelo Podemos em 2022. A lista oficial da Assembleia atualmente acessível o registra no Podemos em julho de 2024, depois da manifestação de março; a filiação exata na data do pedido ainda não está confirmada por fonte primária.",
+   documento:"Nota oficial da Secretaria, reproduzida pela Folha em 8 de março de 2024, afirma expressamente que o recolhimento ocorreu por determinação do governador Eduardo Riedel, após avaliação da SED. A íntegra do ato administrativo e a identificação de seu signatário ainda não foram localizadas.",
    papeis:{
-     pressao:"Rinaldo Modesto (Podemos), deputado estadual: pediu a retirada na Assembleia Legislativa.",
+     pressao:"Rinaldo Modesto, deputado estadual eleito pelo Podemos em 2022, pediu a retirada na Assembleia Legislativa. A filiação exata em março de 2024 ainda não está confirmada por fonte primária.",
      decisor:"Eduardo Riedel, governador de Mato Grosso do Sul: a Secretaria confirmou à CartaCapital que o recolhimento atendia a uma determinação do governador, após análise da própria pasta.",
      assinantes:"A autoridade que formalizou a ordem não está identificada no cadastro.",
      executor:"Secretaria de Estado de Educação de Mato Grosso do Sul.",
-     resposta:"A Secretaria anunciou a devolução em 23 de abril de 2024, com orientações pedagógicas."
+     resposta:"A Secretaria anunciou em 23 de abril de 2024 que a obra estava em processo de devolução às bibliotecas, após análise técnica. A notícia não comprova, escola por escola, a conclusão da entrega às 75 unidades."
    }},
  "SC-2024":{
-   nome:"Redistribuição de O avesso da pele na rede estadual de Santa Catarina",
-   data:"2024-03-07",
-   uf:"SC",
-   tipo:"Escolar",
-   rede:"Estadual",
+   nome:"Orientação da Seduc para recolher O avesso da pele das bibliotecas escolares e analisar o acervo",
+   data:"2024-03-07", fim:"2024-04-23", uf:"SC", tipo:"Escolar", rede:"Estadual",
    governo:"Jorginho Mello (PL) · governo de SC",
-   quem:"Secretaria estadual",
-   documento:"Comunicado de revisão de acervo/redistribuição; documento original ainda não está identificado no cadastro.",
+   quem:"Secretaria de Estado da Educação de Santa Catarina",
+   pressao:"Em 6 de março de 2024, o deputado estadual Sérgio Motta (Republicanos) apresentou a Indicação IND/0154/2024, dirigida ao governador e ao secretário de Educação, sugerindo a retirada da obra das escolas estaduais. A documentação disponível não demonstra que a indicação tenha causado a orientação administrativa.",
+   documento:"A Indicação IND/0154/2024, de Sérgio Motta, foi protocolada na Alesc em 6 de março de 2024 e encaminhada ao governador pelo Ofício GP/DL/0233/2024, de 11 de março. Em resposta oficial, a Informação nº 304/2024/SED/DIEN, de 23 de abril, afirma expressamente que a Secretaria de Estado da Educação orientou as escolas a recolherem O avesso da pele das bibliotecas escolares para análise pedagógica, junto com o restante do acervo. O Ofício/Gabs nº 1017/2024, de 28 de maio, encaminhou essa informação; em 3 de junho, o Ofício nº 1064/SCC-DIAL-GEAPI, assinado pelo secretário da Casa Civil designado, Marcelo Mendes, encaminhou a resposta à Alesc “de ordem do senhor Governador”. Essa fórmula documenta o encaminhamento da resposta, não prova que o governador tenha ordenado o recolhimento. A íntegra da ordem operacional enviada às escolas e a comprovação de execução em cada unidade ainda não foram localizadas.",
    papeis:{
-     decisor:"Secretaria de Estado da Educação de Santa Catarina.",
-     assinantes:"A pessoa responsável pela decisão não está identificada nas fontes cadastradas.",
-     executor:"Rede estadual; exemplares foram redistribuídos para EJA e centros de educação profissional.",
-     resposta:"A justificativa pública foi apresentada como revisão de acervo e adequação por faixa etária."
+     pressao:"A Indicação IND/0154/2024, apresentada por Sérgio Motta em 6 de março, sugeriu ao governador e ao secretário a retirada do livro. A relação causal entre a indicação e a orientação da Seduc não está demonstrada.",
+     decisor:"A própria Secretaria de Estado da Educação confirmou, na Informação nº 304/2024/SED/DIEN, que orientou as escolas a recolherem a obra das bibliotecas para análise pedagógica do livro e do acervo.",
+     assinantes:"A Informação técnica nº 304/2024 foi assinada digitalmente por Márcia Loch, diretora da Diretoria de Ensino, e Jocelete Isaltina da Silveira dos Santos, gerente do Ensino Médio e Profissional. O Ofício/Gabs nº 1017/2024, que encaminhou a informação, foi assinado digitalmente pelo secretário Aristides Cimadon. O Ofício nº 1064/SCC-DIAL-GEAPI, de 3 de junho, foi assinado por Marcelo Mendes, secretário da Casa Civil designado. Essas assinaturas se referem a documentos técnicos e de resposta, não à ordem operacional original enviada às escolas.",
+     executor:"A orientação foi dirigida às escolas estaduais. A documentação confirma a ordem de recolhimento para análise, mas não comprova a execução em cada unidade nem o destino final dos exemplares.",
+     resposta:"A resposta técnica da Seduc justificou a análise com base em faixa etária, objetivos pedagógicos e projetos político-pedagógicos das escolas. A documentação consultada não comprova a data de devolução ou a disponibilidade posterior da obra aos estudantes."
    }},
  "SC-2023":{
    nome:"Ofício circular de 7 de novembro de 2023 (SC)",
@@ -512,11 +564,15 @@ const ATOS = {
 };
 
 const FONTES = {
+ "uol-pr-oficio-2024": {"veic":"UOL Educação","data":"2024-03-06","tit":"O Avesso da Pele: recolhimento foi determinado em ofício da Secretaria da Educação do Paraná","url":"https://educacao.uol.com.br/noticias/2024/03/06/livro-escolas-bancada-partidos-inquerito.htm"},
+ "alego-amauri-2024": {"veic":"Assembleia Legislativa de Goiás · notícia de gabinete","data":"2024-04-01","tit":"Amauri Ribeiro lidera movimento para retirada de livro com conteúdo pornográfico que estava sendo usado em escolas de Goiás","url":"https://portal.al.go.leg.br/noticias-dos-gabinetes/143079/amauri-ribeiro-lidera-movimento-para-retirada-de-livro-com-conteudo-pornografico-que-estava-sendo-usado-em-escolas-de-goias"},
+ "folha-ms-ordem-2024": {"veic":"Folha de S.Paulo","data":"2024-03-08","tit":"Livro 'O Avesso da Pele' é recolhido em Mato Grosso do Sul","url":"https://www1.folha.uol.com.br/ilustrada/2024/03/livro-o-avesso-da-pele-e-removido-de-escolas-no-mato-grosso-do-sul-apos-pr-e-go.shtml"},
+ "cgn-ms-devolucao-2024": {"veic":"Campo Grande News","data":"2024-04-23","tit":"Governo devolve livro polêmico às escolas estaduais","url":"https://www.campograndenews.com.br/educacao-e-tecnologia/governo-devolve-livro-polemico-as-escolas-estaduais"},
  "bdf-bienal": {
   "veic": "Brasil de Fato",
   "data": "2019-09-08",
   "tit": "Presidente do STF reverte decisão judicial que permitia censura na Bienal do Rio",
-  "url": "https://www.brasildefato.com.br/2019/09/08/presidente-do-stf-reverte-decisao-judicial-que-permitia-censura-na-bienal-do-rio/"
+  "url": "https://www.brasildefato.com.br/2019/09/08/presidente-do-stf-reverte-decisao-judicial-que-permitia-censura-na-bienal-do-rio/",
  },
  "bdf-doria": {
   "veic": "Brasil de Fato",
@@ -860,7 +916,37 @@ const FONTES = {
   "data": "2024-03-07",
   "tit": "Mato Grosso do Sul é o 3º estado que determina retirada de O Avesso da Pele das escolas",
   "url": "https://www.cartacapital.com.br/cartaexpressa/mato-grosso-do-sul-e-o-3o-estado-que-determina-retirada-de-o-avesso-da-pele-das-escolas/"
- }
+ },
+ "alesc-ind-sc-0154":{veic:"Assembleia Legislativa de Santa Catarina · e-Legis",data:"2024-03-06",tit:"Indicação IND/0154/2024 · documento assinado por Sérgio Motta que sugere a retirada de O avesso da pele das escolas estaduais",url:"https://portalelegis.alesc.sc.gov.br/documentos/z8a3m"},
+ "alesc-oficio-gp-233":{veic:"Assembleia Legislativa de Santa Catarina · Ofício GP/DL/0233/2024",data:"2024-03-11",tit:"Ofício da Presidência da Alesc encaminha a Indicação 0154/2024 ao governador Jorginho Mello",url:"https://portalelegis.alesc.sc.gov.br/documentos/zedDY"},
+ "alesc-info-sc-304":{veic:"Secretaria de Estado da Educação de Santa Catarina · Informação nº 304/2024/SED/DIEN",data:"2024-04-23",tit:"Informação técnica confirma orientação da Seduc para recolher O avesso da pele das bibliotecas escolares para análise pedagógica",url:"https://portalelegis.alesc.sc.gov.br/documentos/5aogB/download"},
+ "alesc-oficio-sc-1017":{veic:"Secretaria de Estado da Educação de Santa Catarina · Ofício/Gabs nº 1017/2024",data:"2024-05-28",tit:"Ofício do secretário Aristides Cimadon encaminha resposta oficial sobre a retirada de O avesso da pele",url:"https://portalelegis.alesc.sc.gov.br/documentos/5aogB/download"},
+ "alesc-sergio-motta":{veic:"Assembleia Legislativa de Santa Catarina · Memória Política",data:"2023-02-01",tit:"Biografia e mandato de Sérgio Motta Ribeiro · partido Republicanos na 20ª Legislatura",url:"https://memoriapolitica.alesc.sc.gov.br/biografia/1008-Sergio_Motta"},
+ "rinaldo-eleicao-2022":{veic:"Folha de S.Paulo · dados de candidatura",data:"2022",tit:"Professor Rinaldo Modesto · candidato eleito a deputado estadual pelo Podemos (PODE) em 2022",url:"https://www1.folha.uol.com.br/poder/eleicoes/candidatos/2022/ms/deputado-estadual/professor-rinaldo-modesto-120001615778.shtml"},
+ "jessicao-eleicao-2024":{veic:"Folha de S.Paulo · dados de candidatura",data:"2024",tit:"Jéssica Ramos Moreno (Jessicão) · candidata a vereadora de Londrina pelo PP em 2024",url:"https://www1.folha.uol.com.br/poder/eleicoes/candidatos/2024/pr/vereador/jessicao-160002026792.shtml"},
+ "sergio-victor-eleicao-2024":{veic:"Folha de S.Paulo · dados de candidatura",data:"2024",tit:"Sérgio Victor · candidato eleito a prefeito de Taubaté pelo Novo em 2024",url:"https://www1.folha.uol.com.br/poder/eleicoes/candidatos/2024/sp/prefeito/sergio-victor-250001928721.shtml"},
+ "anderson-eleicao-2024":{veic:"Folha de S.Paulo · dados de candidatura",data:"2024",tit:"Anderson Farias · candidato a prefeito de São José dos Campos pelo PSD em 2024",url:"https://www1.folha.uol.com.br/poder/eleicoes/candidatos/2024/sp/prefeito/anderson-250001946210.shtml"},
+ "ratinho-tse-2022":{veic:"Tribunal Superior Eleitoral",data:"2022-10-02",tit:"Ratinho Júnior (PSD) se reelege governador do Paraná",url:"https://www.tse.jus.br/comunicacao/noticias/2022/Outubro/ratinho-junior-psd-se-reelege-governador-do-parana"},
+ "caiado-eleicao-2022":{veic:"Folha de S.Paulo · dados de candidatura",data:"2022",tit:"Ronaldo Caiado · candidato a governador de Goiás pelo União Brasil em 2022",url:"https://www1.folha.uol.com.br/poder/eleicoes/candidatos/2022/go/governador/ronaldo-caiado-90001646326.shtml"},
+ "jorginho-mello-alesc":{veic:"Assembleia Legislativa de Santa Catarina · Memória Política",data:"2023",tit:"Biografia e mandato de Jorginho Mello · governador pelo PL desde 2023",url:"https://memoriapolitica.alesc.sc.gov.br/biografia/514-Jorginho_Mello"},
+ "eduardo-leite-filiacao":{veic:"UOL",data:"2025-05-09",tit:"Eduardo Leite deixa o PSDB e se filia ao PSD em maio de 2025",url:"https://noticias.uol.com.br/politica/ultimas-noticias/2025/05/09/eduardo-leite-se-filia-ao-psd-de-kassab.ghtm"},
+ "riedel-filiacao":{veic:"UOL · Agência Estado",data:"2025-08-19",tit:"Eduardo Riedel deixa o PSDB e se filia ao PP em agosto de 2025",url:"https://noticias.uol.com.br/ultimas-noticias/agencia-estado/2025/08/19/ultimo-governador-do-psdb-eduardo-riedel-do-ms-assina-filiacao-ao-pp.amp.htm"},
+ "marcos-rocha-eleicao-2018":{veic:"Dados de candidatura · DivulgaCandContas/TSE",data:"2018",tit:"Marcos Rocha concorreu ao governo de Rondônia pelo PSL em 2018",url:"https://agenciasertao.com/eleicoes/candidato/RO/coronel-marcos-rocha-psl-ro--220000625838/?ano=2018"},
+ "marcelo-belinati-historico":{veic:"Prefeitura de Londrina · Perfil de Londrina 2025",data:"2025",tit:"Histórico oficial dos prefeitos de Londrina registra Marcelo Belinati eleito pelo PP em 2017 e 2021",url:"https://repositorio.londrina.pr.gov.br/index.php/menu-planejamento/gpi/perfil-de-londrina-2025/68692-1-1-1-4/file"},
+ "gov-ms-riedel-psdb":{veic:"PSDB-MS",data:"2022",tit:"Perfil de Eduardo Riedel como governador eleito pelo PSDB",url:"https://www.psdb.org.br/ms/conheca-nossos-representantes/governador/"},
+ "thomaz-eleicao-2024":{veic:"Folha de S.Paulo · dados de candidatura",data:"2024",tit:"Thomaz Henrique Barbosa da Silva · candidato a vereador de São José dos Campos pelo PL em 2024",url:"https://www1.folha.uol.com.br/poder/eleicoes/candidatos/2024/sp/vereador/thomaz-henrique-250002124819.shtml"},
+ "thomaz-camara-junho-2024":{veic:"Câmara Municipal de São José dos Campos · Diário Oficial",data:"2024-06-07",tit:"Lista oficial de vereadores registra Thomaz Henrique como integrante do PL em 7 de junho de 2024, três dias após o episódio",url:"https://diario.camarasjc.sp.gov.br/uploads/dio/publicacoes/2024/diariooficialsjc648-1717720847.pdf"},
+ "gayer-eleicao-2022":{veic:"Folha de S.Paulo · dados de candidatura",data:"2022",tit:"Gustavo Gayer · candidato eleito a deputado federal por Goiás pelo PL em 2022",url:"https://www1.folha.uol.com.br/poder/eleicoes/candidatos/2022/go/deputado-federal/gustavo-gayer-90001652508.shtml"},
+ "zelinda-eleicao-2024":{veic:"Folha de S.Paulo · dados de candidatura",data:"2024",tit:"Zelinda Pastora · candidata eleita a vereadora de Taubaté pelo PRD em 2024",url:"https://www1.folha.uol.com.br/poder/eleicoes/candidatos/2024/sp/vereador/zelinda-pastora-250002194882.shtml"},
+ "leonel-eleicao-2024":{veic:"Tribunal Regional Eleitoral de Santa Catarina",data:"2024-10-06",tit:"Resultado oficial de votação de Leonel Camasão · PSOL em Florianópolis",url:"https://apps.tre-sc.jus.br/site/fileadmin/arquivos/eleicoes/eleicoes2024/resultados_turno_1/votacao_secao/pdfs/VotSecao_81051_50500.pdf"},
+ "lia-nogueira-psdb":{veic:"Assembleia Legislativa de Mato Grosso do Sul",data:"2022",tit:"Perfil parlamentar de Lia Nogueira · PSDB",url:"https://hmlalems.easynet.com.br/Deputados/Visualizar/1045"},
+ "clayton-eleicao-psc":{veic:"Câmara Municipal de Limeira",data:"2017-01-02",tit:"Posse de Clayton Silva como vereador eleito pelo PSC em Limeira",url:"https://www.limeira.sp.leg.br/noticias/view/2017-01-02_vereadores-prefeito-e-vice-prefeito-tomam-posse"},
+ "clayton-troca-partido":{veic:"eLimeira · Jornalismo local",data:"2020-04-06",tit:"Clayton Silva deixa o PSC e se filia ao PTC em abril de 2020",url:"https://elimeira.com.br/noticias/limeira/seis-vereadores-de-limeira-mudaram-de-partido/"},
+
+
+ "rinaldo-alms-2024":{veic:"Assembleia Legislativa de Mato Grosso do Sul",data:"2024-07-09",tit:"Lista oficial de autoridades da Alems registra o deputado Rinaldo Modesto como integrante do Podemos (PODE) em julho de 2024, após o pedido de março",url:"https://al.ms.gov.br/upload/Pdf/2024_07_09_12_25_33_lista-de-autoridades-09-07-24.pdf"},
+ "gayer-camara-2023":{veic:"Câmara dos Deputados",data:"2023",tit:"Perfil institucional de Gustavo Gayer registra mandato 2023–2027 e partido PL-GO",url:"https://www.camara.leg.br/deputados/220568?ano=2023"},
+
 };
 
 /* taxonomias completas; inclui as categorias em zero, de propósito */
@@ -979,6 +1065,7 @@ const AGENTES = {
  "laura-patricia-lopes":{nome:"Laura Patrícia Lopes", tipo:"Pessoa"},
  "nre-curitiba":{nome:"Núcleo Regional de Educação de Curitiba", tipo:"Instituição"},
  "seduc-go":{nome:"Secretaria de Estado da Educação de Goiás", tipo:"Instituição"},
+ "amauri-ribeiro":{nome:"Amauri Ribeiro", tipo:"Pessoa"},
  "rinaldo-modesto":{nome:"Rinaldo Modesto", tipo:"Pessoa"},
  "eduardo-riedel":{nome:"Eduardo Riedel", tipo:"Pessoa"},
  "sed-ms":{nome:"Secretaria de Estado de Educação de Mato Grosso do Sul", tipo:"Instituição"},
@@ -986,6 +1073,11 @@ const AGENTES = {
  "waldemar-ronssem-junior":{nome:"Waldemar Ronssem Júnior", tipo:"Pessoa"},
  "anelise-dos-santos-de-medeiros":{nome:"Anelise dos Santos de Medeiros", tipo:"Pessoa"},
  "leonel-camasao":{nome:"Leonel Camasão", tipo:"Pessoa"},
+ "sergio-motta":{nome:"Sérgio Motta Ribeiro", tipo:"Pessoa"},
+ "marcia-loch":{nome:"Márcia Loch", tipo:"Pessoa"},
+ "jocelete-silveira":{nome:"Jocelete Isaltina da Silveira dos Santos", tipo:"Pessoa"},
+ "aristides-cimadon":{nome:"Aristides Cimadon", tipo:"Pessoa"},
+ "marcelo-mendes":{nome:"Marcelo Mendes", tipo:"Pessoa"},
  "seduc-ro":{nome:"Secretaria de Estado da Educação de Rondônia", tipo:"Instituição"},
  "suamy-vivecananda":{nome:"Suamy Vivecananda", tipo:"Pessoa"},
  "irany-morais":{nome:"Irany de Oliveira Lima Morais", tipo:"Pessoa"},
@@ -1013,7 +1105,7 @@ const AGENTES = {
 
 /* Papel de cada agente em cada ato. cargo = cargo na data do ato.
    atribuido: true quando a fonte atribui o papel sem documento assinado que o comprove. */
-const TIPOS_PAPEL = ["Pressão","Pedido","Destinatário do pedido","Decisão","Assinatura","Execução","Denúncia ou fiscalização","Resposta ou reversão"];
+const TIPOS_PAPEL = ["Pressão","Pedido","Reivindicação pública de autoria","Destinatário do pedido","Decisão","Assinatura","Execução","Denúncia ou fiscalização","Resposta ou reversão"];
 const PAPEIS = [
  {ato:"RS-2024", agente:"janaina-venzon", papel:"Pressão", cargo:"diretora da Escola Estadual Ernesto Alves", nota:"Crítica pública em vídeo; o cadastro não sustenta que tenha expedido a ordem."},
  {ato:"RS-2024", agente:"luiz-ricardo-pinho-de-moura", papel:"Decisão", cargo:"coordenador da 6ª Coordenadoria Regional de Educação"},
@@ -1024,12 +1116,18 @@ const PAPEIS = [
  {ato:"PR-2024", agente:"anderfabio-oliveira-dos-santos", papel:"Assinatura", cargo:"diretor de Educação da Secretaria", nota:"Assinou o ofício da Secretaria."},
  {ato:"PR-2024", agente:"laura-patricia-lopes", papel:"Assinatura", cargo:"chefe do Núcleo Regional de Educação de Curitiba", nota:"Assinou ofício de teor semelhante do Núcleo Regional; não era coassinante do ofício da Secretaria."},
  {ato:"PR-2024", agente:"nre-curitiba", papel:"Execução"},
- {ato:"GO-2024", agente:"seduc-go", papel:"Decisão", nota:"A pessoa responsável não está identificada nas fontes."},
- {ato:"MS-2024", agente:"rinaldo-modesto", papel:"Pedido", cargo:"deputado estadual (Podemos)", nota:"Pediu a retirada na Assembleia Legislativa."},
+ {ato:"GO-2024", agente:"amauri-ribeiro", papel:"Reivindicação pública de autoria", cargo:"deputado estadual (União Brasil)", nota:"Notícia de gabinete publicada no portal da Alego em 1º de abril de 2024, depois do recolhimento de março, reivindica para o deputado a liderança do movimento pela retirada. É evidência de reivindicação pública posterior; não prova que ele tenha pressionado antes da decisão nem identifica quem assinou a ordem da Seduc."},
+ {ato:"GO-2024", agente:"seduc-go", papel:"Decisão", nota:"A Secretaria determinou o recolhimento; a autoridade individual signatária não foi identificada."},
+ {ato:"MS-2024", agente:"rinaldo-modesto", papel:"Pedido", cargo:"deputado estadual; eleito em 2022 pelo Podemos", nota:"Pediu a retirada na Assembleia Legislativa. A lista oficial atualmente acessível registra o parlamentar no Podemos em julho de 2024, após o pedido de março; a filiação exata na data do pedido ainda não está confirmada por fonte primária."},
  {ato:"MS-2024", agente:"eduardo-riedel", papel:"Decisão", cargo:"governador de Mato Grosso do Sul", atribuido:true, nota:"A Secretaria informou à CartaCapital que o recolhimento atendia a determinação do governador; o ato formal não está identificado."},
  {ato:"MS-2024", agente:"sed-ms", papel:"Execução"},
  {ato:"MS-2024", agente:"sed-ms", papel:"Resposta ou reversão", nota:"Anunciou a devolução em 23 de abril de 2024."},
- {ato:"SC-2024", agente:"sed-sc", papel:"Decisão", nota:"A pessoa responsável não está identificada nas fontes."},
+ {ato:"SC-2024", agente:"sergio-motta", papel:"Pedido", cargo:"deputado estadual (Republicanos)", nota:"Autor da Indicação IND/0154/2024, protocolada em 6 de março de 2024, que sugeriu ao governador e ao secretário de Educação a retirada da obra. Não há prova documental de que o pedido tenha causado a orientação posterior da Seduc."},
+ {ato:"SC-2024", agente:"sed-sc", papel:"Decisão", nota:"A Informação nº 304/2024/SED/DIEN confirma que a Secretaria orientou as escolas a recolherem o livro das bibliotecas para análise pedagógica."},
+ {ato:"SC-2024", agente:"marcia-loch", papel:"Assinatura", cargo:"diretora da Diretoria de Ensino", nota:"Assinou digitalmente a Informação nº 304/2024/SED/DIEN, que documenta a orientação da Seduc; não é a ordem operacional original enviada às escolas."},
+ {ato:"SC-2024", agente:"jocelete-silveira", papel:"Assinatura", cargo:"gerente do Ensino Médio e Profissional", nota:"Assinou digitalmente a Informação nº 304/2024/SED/DIEN, que documenta a orientação da Seduc; não é a ordem operacional original enviada às escolas."},
+ {ato:"SC-2024", agente:"aristides-cimadon", papel:"Resposta ou reversão", cargo:"secretário de Estado da Educação", nota:"Assinou digitalmente o Ofício/Gabs nº 1017/2024, de 28 de maio, que encaminhou à Casa Civil a informação técnica sobre a orientação de recolhimento."},
+ {ato:"SC-2024", agente:"marcelo-mendes", papel:"Assinatura", cargo:"secretário de Estado da Casa Civil, designado", nota:"Assinou o Ofício nº 1064/SCC-DIAL-GEAPI, de 3 de junho, encaminhando à Alesc a resposta da Seduc. O texto diz “de ordem do senhor Governador” para o encaminhamento da resposta; isso não comprova que Jorginho Mello tenha ordenado o recolhimento."},
  {ato:"SC-2023", agente:"sed-sc", papel:"Decisão", nota:"Estrutura regional da Secretaria; a coordenadoria específica não está identificada."},
  {ato:"SC-2023", agente:"waldemar-ronssem-junior", papel:"Assinatura", cargo:"supervisor regional de Educação"},
  {ato:"SC-2023", agente:"anelise-dos-santos-de-medeiros", papel:"Assinatura", cargo:"integradora regional"},
@@ -1061,6 +1159,30 @@ const PAPEIS = [
  {ato:"LIM-2019", agente:"clayton-silva", papel:"Pressão", cargo:"vereador (PSC)", nota:"Requerimento de informações; não pediu formalmente a retirada."},
  {ato:"LIM-2019", agente:"sme-limeira", papel:"Resposta ou reversão", nota:"Defendeu a obra e manteve o projeto de leitura."},
 ];
+
+
+/* Filiações partidárias com referência temporal e fonte verificável. */
+const FILIACOES = {
+ "eduardo-leite":{partido:"PSDB",periodo:"Governador do RS em 2024; filiou-se ao PSD em 09/05/2025",fontes:["eduardo-leite-filiacao"]},
+ "eduardo-riedel":{partido:"PSDB",periodo:"Governador do MS em março/abril de 2024; filiou-se ao PP em 19/08/2025",fontes:["gov-ms-riedel-psdb","riedel-filiacao"]},
+ "ratinho-junior":{partido:"PSD",periodo:"Governador do PR em março/abril de 2024",fontes:["ratinho-tse-2022"]},
+ "ronaldo-caiado":{partido:"União Brasil",periodo:"Governador de GO em março/abril de 2024",fontes:["caiado-eleicao-2022"]},
+ "jorginho-mello":{partido:"PL",periodo:"Governador de SC desde 2023",fontes:["jorginho-mello-alesc"]},
+ "marcos-rocha":{partido:"PSL",periodo:"Governador eleito em 2018; partido no início do mandato em 2020",fontes:["marcos-rocha-eleicao-2018"]},
+ "anderson-farias":{partido:"PSD",periodo:"Prefeito de São José dos Campos em 2024; filiado ao PSD desde 2022",fontes:["anderson-eleicao-2024"]},
+ "marcelo-belinati":{partido:"PP",periodo:"Prefeito de Londrina no mandato 2021–2024",fontes:["marcelo-belinati-historico"]},
+ "sergio-victor":{partido:"Novo",periodo:"Eleito em outubro de 2024; prefeito a partir de janeiro de 2025",fontes:["sergio-victor-eleicao-2024"]},
+ "sergio-motta":{partido:"Republicanos",periodo:"Deputado estadual na 20ª Legislatura (2023–2027)",fontes:["alesc-sergio-motta"]},
+ "jessica-ramos-moreno":{partido:"PP",periodo:"Candidata a vereadora em Londrina nas eleições de 2024",fontes:["jessicao-eleicao-2024"]},
+ "amauri-ribeiro":{partido:"União Brasil",periodo:"Deputado estadual em Goiás; notícia do gabinete publicada no portal da Alego em 01/04/2024 identifica a legenda",fontes:["alego-amauri-2024"]},
+ "rinaldo-modesto":{partido:"Podemos (PODE)",periodo:"Eleito em 2022 pelo Podemos; a lista oficial atualmente acessível o registra no partido em julho de 2024, depois do pedido de março. Filiação exata em 07/03/2024 ainda não confirmada",fontes:["rinaldo-alms-2024","rinaldo-eleicao-2022"]},
+ "thomaz-henrique":{partido:"PL",periodo:"Diário Oficial da Câmara o registra no PL em 07/06/2024, três dias após o episódio; filiação no dia 04/06 não documentada por fonte primária",fontes:["thomaz-camara-junho-2024","thomaz-eleicao-2024"]},
+ "gustavo-gayer":{partido:"PL",periodo:"Deputado federal por Goiás, mandato 2023–2027; PL confirmado pela Câmara dos Deputados em 2023",fontes:["gayer-camara-2023","gayer-eleicao-2022"]},
+ "zelinda-pastora":{partido:"PRD",periodo:"Eleita vereadora pelo PRD em 2024; filiação na data do pedido de recolhimento em 2025 ainda precisa de confirmação",fontes:["zelinda-eleicao-2024"]},
+ "leonel-camasao":{partido:"PSOL",periodo:"Candidato a vereador em Florianópolis nas eleições de 2024; fonte eleitoral confirma a legenda",fontes:["leonel-eleicao-2024"]},
+ "lia-nogueira":{partido:"PSDB",periodo:"Deputada estadual em 2024; filiou-se ao PSDB em 2022",fontes:["lia-nogueira-psdb"]},
+ "clayton-silva":{partido:"PSC",periodo:"Vereador de Limeira em 2019; deixou o PSC e filiou-se ao PTC em abril de 2020",fontes:["clayton-eleicao-psc","clayton-troca-partido"]},
+};
 
 /* ---------- montagem ----------
    As páginas leem os campos do ato e da obra diretamente em cada registro.
