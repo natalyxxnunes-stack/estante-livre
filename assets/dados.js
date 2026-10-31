@@ -1186,6 +1186,7 @@ const FILIACOES = {
  "zelinda-pastora":{partido:"PRD",periodo:"Candidata eleita a vereadora de Taubaté em 2024",fontes:["zelinda-eleicao-2024"]},
  "leonel-camasao":{partido:"PSOL",periodo:"Candidato a vereador em Florianópolis nas eleições de 2024; fonte eleitoral confirma a legenda",fontes:["leonel-eleicao-2024"]},
  "lia-nogueira":{partido:"PSDB",periodo:"Deputada estadual em 2024; filiou-se ao PSDB em 2022",fontes:["lia-nogueira-psdb"]},
+ "clayton-silva":{partido:"PSC",periodo:"Vereador de Limeira em 2019; deixou o PSC e filiou-se ao PTC em abril de 2020",fontes:["clayton-eleicao-psc","clayton-troca-partido"]},
 };
 
 /* ---------- montagem ----------
