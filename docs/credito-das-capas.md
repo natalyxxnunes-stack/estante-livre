@@ -42,6 +42,10 @@ Não há uma capa única que represente com precisão estes registros agregados.
 
 Nesses casos, a interface identifica explicitamente o conjunto documental, em vez de simular uma capa de livro.
 
+## Capas que já estavam no repositório
+
+As sete capas locais anteriores foram preservadas sem alteração. A origem, a licença e a correspondência exata de edição dessas sete imagens ainda precisam passar pela mesma revisão documental; esta rodada não presume que a presença de um arquivo local comprove autorização de uso ou identidade da edição.
+
 ## Próxima etapa de preservação
 
 1. Confirmar se a capa exibida corresponde a uma edição brasileira bibliograficamente identificada.
