@@ -39,9 +39,12 @@
      `${ufs.size} ${ufs.size===1?"unidade da federação":"unidades da federação"}`, premiados?`${premiados} premiado${premiados>1?"s":""}`:null]
      .filter(Boolean).join(" · ");
 
-  const capa = (l,i) => l.ref.capa
-    ? `<img src="${BASE}capas/${esc(l.ref.capa)}.jpg" alt="" width="213" height="320" loading="lazy" decoding="async">`
-    : `<div class="prat-tipo" aria-hidden="true"><b>${esc(curto(l.titulo))}</b><span>${esc(l.ref.autoria)}</span></div>`;
+  const capa = (l,i) => {
+    const src = l.ref.capa ? `${BASE}capas/${esc(l.ref.capa)}.jpg` : l.L.capaUrl;
+    return src
+      ? `<img src="${src}" alt="Capa de referência de ${esc(l.titulo)}" width="213" height="320" loading="lazy" decoding="async" referrerpolicy="no-referrer">`
+      : `<div class="prat-tipo" aria-hidden="true"><b>${esc(curto(l.titulo))}</b><span>${esc(l.ref.autoria)}</span></div>`;
+  };
 
   const ul = document.getElementById("prat-lista");
   ul.innerHTML = livros.map((l,i)=>{
