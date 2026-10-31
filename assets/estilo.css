@@ -784,3 +784,34 @@ h1.livro-tit{font-size:32px;line-height:1.12}
 .lac-ids{font-size:12px;color:var(--cinza)}
 .caso-pend a{white-space:nowrap}
 @media (max-width:520px){.lac{padding:14px}.lac-nums b{font-size:28px}}
+
+
+/* ---------- capas de referência e leitura responsiva ---------- */
+.capa-wrap{min-width:0}
+.capa,.livro-capa{height:auto;aspect-ratio:2/3;object-fit:contain;background:#f4f1e8}
+.capa-nota{display:block;margin-top:3px;font-size:9px;line-height:1.35;color:var(--cinza);letter-spacing:0}
+.capa-cred a{color:var(--azul);text-decoration:underline;text-underline-offset:2px}
+.capa-cred a:hover{color:var(--verm)}
+.prat-capa img{object-fit:contain;background:#f4f1e8}
+.livro-head{grid-template-columns:118px minmax(0,1fr)}
+.livro-head>div{min-width:0}
+.livro-tit,.livro-sin,.livro-nota{overflow-wrap:anywhere}
+@media(max-width:700px){
+  .pront-corpo{grid-template-columns:76px minmax(0,1fr);gap:12px;align-items:start}
+  .pront-corpo>div:first-child{display:block!important;min-width:0}
+  .pront-corpo .capa{width:100%;max-width:76px;height:auto}
+  .pront-grade{grid-template-columns:1fr 1fr}
+  .pront-campo{padding:7px 8px}
+  .pront-campo .v{font-size:12px}
+  .capa-cred{font-size:8px;overflow-wrap:anywhere}
+  .capa-nota{font-size:8px}
+  .livro-head{grid-template-columns:82px minmax(0,1fr);gap:13px;padding:14px}
+  .livro-capa{width:82px}
+  .livro-head .capa-cred{max-width:82px}
+}
+@media(max-width:390px){
+  .pront-corpo{grid-template-columns:64px minmax(0,1fr);gap:10px}
+  .pront-corpo .capa{max-width:64px}
+  .livro-head{grid-template-columns:72px minmax(0,1fr);gap:11px;padding:12px}
+  .livro-capa{width:72px}
+}
