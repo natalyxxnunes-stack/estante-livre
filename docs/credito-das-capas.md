@@ -26,8 +26,8 @@ As imagens externas permanecem hospedadas nos endereços de origem. Isso é uma 
 | A vida como ela é | Nova Fronteira, edição brasileira | https://www.novafronteira.com.br/produto/a-vida-como-ela-e-2022-08-24-15-20-51.html |
 | Beijo no asfalto | Nova Fronteira, edição brasileira | https://www.livrariadavila.com.br/777590-o-beijo-no-asfalto-tragedia-carioca-em/p |
 | A mamãe vai ter um bebê | Todo Livro, edição brasileira | https://www.todolivro.com.br/biblioteca-de-literatura--a-mamae-vai-ter-um-bebe--nivel-3---paradidaticos-todolivro-/p?skuId=1230 |
-| A bolsa amarela | Edição brasileira fotografada pelo Sebo Caravelas | https://www.sebocaravelas.com.br/a-bolsa-amarela-lygia-bojunga--- |
-| Pipoca e Picolé | Elo, edição brasileira | https://jornaldobras.com.br/noticia/22614/domingao-com-literatura-para-criancas-adriana-lisboa-apresenta-o-livro-pipoca-e-picole-no-rio-de-janeiro/amp |
+| A bolsa amarela | Edição brasileira fotografada pelo Sebo Caravelas | https://cdn.awsli.com.br/800x800/2653/2653452/produto/388998981/img_4345-s3pq59fj8b-fjsjmj0lkk.jpg |
+| Pipoca e Picolé | Elo, edição brasileira | https://www.magazineluiza.com.br/livro-pipoca-e-picole/p/gbckkd1b32/li/lltj/ |
 
 ## Registros que permanecem com representação tipográfica
 
