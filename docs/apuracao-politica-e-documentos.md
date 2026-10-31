@@ -47,6 +47,46 @@ A página Política e poder apresenta filiações com recorte temporal e fonte. 
 - Rinaldo Modesto: a candidatura de 2022 pelo Podemos está documentada. O arquivo da lista oficial de autoridades da Alems originalmente indexado com caminho de 04/03/2024 redireciona atualmente para a versão de 09/07/2024, que também o registra no Podemos. Essa versão é posterior à manifestação de março e não comprova, sozinha, a filiação no dia do pedido. Fonte eleitoral: https://www1.folha.uol.com.br/poder/eleicoes/candidatos/2022/ms/deputado-estadual/professor-rinaldo-modesto-120001615778.shtml. Lista oficial atualmente acessível: https://al.ms.gov.br/upload/Pdf/2024_07_09_12_25_33_lista-de-autoridades-09-07-24.pdf
 - Clayton Silva: PSC durante o mandato em Limeira em 2019; deixou o PSC e filiou-se ao PTC em abril de 2020. Fontes: https://www.limeira.sp.leg.br/noticias/view/2017-01-02_vereadores-prefeito-e-vice-prefeito-tomam-posse e https://elimeira.com.br/noticias/limeira/seis-vereadores-de-limeira-mudaram-de-partido/
 
+## Paraná, Goiás e Mato Grosso do Sul — reconstituição complementar
+
+### Paraná, 2024 — EL-002
+
+A cobertura contemporânea do UOL identifica dois níveis de ordem:
+
+- **4 de março de 2024:** ofício da Secretaria de Estado da Educação, assinado pelo diretor de Educação Anderfábio Oliveira dos Santos, determinou que os Núcleos Regionais recolhessem os exemplares. A Secretaria informou ao UOL que o ofício havia sido assinado naquela segunda-feira.
+- **5 a 8 de março:** a coleta deveria ocorrer nas instituições sob a jurisdição dos núcleos. Em Curitiba, a chefe do NRE, Laura Patrícia Lopes, assinou orientação semelhante, com instruções de acondicionamento, identificação e entrega dos livros.
+- **Abril de 2024:** a obra voltou às escolas, acompanhada de orientações pedagógicas, após contestação judicial da editora.
+
+**O que isso permite afirmar:** a decisão administrativa não foi apenas uma fala pública ou uma pressão parlamentar; houve ofício da Secretaria assinado por um diretor e orientação regional executiva.
+
+**O que continua faltando:** a íntegra do ofício estadual em repositório oficial, o número do expediente, a lista de escolas que entregaram exemplares e os comprovantes de retorno. Não se deve tratar a chefe do NRE como signatária do ofício estadual: são documentos distintos.
+
+Fonte contemporânea: https://educacao.uol.com.br/noticias/2024/03/06/livro-escolas-bancada-partidos-inquerito.htm
+
+### Goiás, 2024 — EL-003
+
+A Secretaria de Estado da Educação determinou o recolhimento do livro na rede estadual, conforme cobertura contemporânea. A documentação consultada ainda não identifica o signatário da ordem administrativa.
+
+Há, contudo, uma fonte política institucional relevante: em **1º de abril de 2024**, o portal da Assembleia Legislativa de Goiás publicou, na seção “Notícias dos Gabinetes”, texto do gabinete de Amauri Ribeiro (União Brasil) com o título “Amauri Ribeiro lidera movimento para retirada de livro...”. A publicação afirma que o deputado liderou o movimento parlamentar e apresenta a retirada como uma conquista sua.
+
+**Limite da evidência:** trata-se de conteúdo produzido pelo gabinete parlamentar e hospedado no portal da Alego. É evidência direta de que o próprio gabinete reivindicou liderança política pela retirada; não substitui ata, requerimento, gravação integral de sessão ou documento administrativo, e não prova que o deputado tenha assinado ou emitido a ordem da Seduc.
+
+Fonte: https://portal.al.go.leg.br/noticias-dos-gabinetes/143079/amauri-ribeiro-lidera-movimento-para-retirada-de-livro-com-conteudo-pornografico-que-estava-sendo-usado-em-escolas-de-goias
+
+### Mato Grosso do Sul, 2024 — EL-004
+
+A nota da Secretaria de Estado de Educação, reproduzida pela Folha em **8 de março de 2024**, afirma: “Por determinação do governador Eduardo Riedel” haveria recolhimento imediato dos exemplares enviados a 75 das 349 escolas estaduais, após avaliação da SED. A mesma nota justifica a medida por expressões consideradas impróprias para a faixa etária dos estudantes.
+
+Em **23 de abril de 2024**, a Secretaria informou que, após análise técnica, a obra estava em processo de devolução às bibliotecas escolares, com orientações pedagógicas.
+
+**O que está documentado:** a própria comunicação oficial atribuiu a determinação ao governador; a escala anunciada foi de 75 escolas; e a Secretaria posteriormente anunciou o processo de devolução.
+
+**O que ainda não está documentado:** o ato administrativo assinado, a autoridade que o formalizou, a lista das 75 escolas e comprovantes individualizados de retirada e devolução. “Em processo de devolução” não equivale a prova de que todos os exemplares chegaram às 75 bibliotecas.
+
+Fontes:
+- Folha de S.Paulo, 8/3/2024: https://www1.folha.uol.com.br/ilustrada/2024/03/livro-o-avesso-da-pele-e-removido-de-escolas-no-mato-grosso-do-sul-apos-pr-e-go.shtml
+- Campo Grande News, 23/4/2024: https://www.campograndenews.com.br/educacao-e-tecnologia/governo-devolve-livro-polemico-as-escolas-estaduais
+
 ## Documentos que continuam pendentes
 
 1. **RS-2024:** cópia integral do ofício da 6ª CRE e número do expediente; documento formal de reversão da Seduc.
