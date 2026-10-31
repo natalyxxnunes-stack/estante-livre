@@ -352,7 +352,7 @@ const escCSV = v => `"${(v??"").toString().replace(/"/g,'""')}"`;
 
 /* ---------- rodapé ---------- */
 function hidratarCapas(){
-  if(typeof LIVROS==="undefined" || typeof CASOS==="undefined") return;
+  if(typeof LIVROS==="undefined" || typeof CASOS==="undefined" || typeof document.querySelectorAll!=="function") return;
   document.querySelectorAll(".livro-capa-tipo, .capa-tipo").forEach(el=>{
     const artigo=el.closest(".caso");
     const card=el.closest(".livro");
