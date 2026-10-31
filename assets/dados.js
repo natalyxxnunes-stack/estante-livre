@@ -1105,7 +1105,7 @@ const AGENTES = {
 
 /* Papel de cada agente em cada ato. cargo = cargo na data do ato.
    atribuido: true quando a fonte atribui o papel sem documento assinado que o comprove. */
-const TIPOS_PAPEL = ["Pressão","Pedido","Destinatário do pedido","Decisão","Assinatura","Execução","Denúncia ou fiscalização","Resposta ou reversão"];
+const TIPOS_PAPEL = ["Pressão","Pedido","Reivindicação pública de autoria","Destinatário do pedido","Decisão","Assinatura","Execução","Denúncia ou fiscalização","Resposta ou reversão"];
 const PAPEIS = [
  {ato:"RS-2024", agente:"janaina-venzon", papel:"Pressão", cargo:"diretora da Escola Estadual Ernesto Alves", nota:"Crítica pública em vídeo; o cadastro não sustenta que tenha expedido a ordem."},
  {ato:"RS-2024", agente:"luiz-ricardo-pinho-de-moura", papel:"Decisão", cargo:"coordenador da 6ª Coordenadoria Regional de Educação"},
@@ -1116,7 +1116,7 @@ const PAPEIS = [
  {ato:"PR-2024", agente:"anderfabio-oliveira-dos-santos", papel:"Assinatura", cargo:"diretor de Educação da Secretaria", nota:"Assinou o ofício da Secretaria."},
  {ato:"PR-2024", agente:"laura-patricia-lopes", papel:"Assinatura", cargo:"chefe do Núcleo Regional de Educação de Curitiba", nota:"Assinou ofício de teor semelhante do Núcleo Regional; não era coassinante do ofício da Secretaria."},
  {ato:"PR-2024", agente:"nre-curitiba", papel:"Execução"},
- {ato:"GO-2024", agente:"amauri-ribeiro", papel:"Pressão", cargo:"deputado estadual (União Brasil)", nota:"Notícia de gabinete publicada no portal da Alego em 1º de abril de 2024 o descreve como líder do movimento parlamentar pela retirada. Não identifica a autoridade que assinou a ordem da Seduc."},
+ {ato:"GO-2024", agente:"amauri-ribeiro", papel:"Reivindicação pública de autoria", cargo:"deputado estadual (União Brasil)", nota:"Notícia de gabinete publicada no portal da Alego em 1º de abril de 2024, depois do recolhimento de março, reivindica para o deputado a liderança do movimento pela retirada. É evidência de reivindicação pública posterior; não prova que ele tenha pressionado antes da decisão nem identifica quem assinou a ordem da Seduc."},
  {ato:"GO-2024", agente:"seduc-go", papel:"Decisão", nota:"A Secretaria determinou o recolhimento; a autoridade individual signatária não foi identificada."},
  {ato:"MS-2024", agente:"rinaldo-modesto", papel:"Pedido", cargo:"deputado estadual; eleito em 2022 pelo Podemos", nota:"Pediu a retirada na Assembleia Legislativa. A lista oficial atualmente acessível registra o parlamentar no Podemos em julho de 2024, após o pedido de março; a filiação exata na data do pedido ainda não está confirmada por fonte primária."},
  {ato:"MS-2024", agente:"eduardo-riedel", papel:"Decisão", cargo:"governador de Mato Grosso do Sul", atribuido:true, nota:"A Secretaria informou à CartaCapital que o recolhimento atendia a determinação do governador; o ato formal não está identificado."},
@@ -1174,6 +1174,7 @@ const FILIACOES = {
  "sergio-victor":{partido:"Novo",periodo:"Eleito em outubro de 2024; prefeito a partir de janeiro de 2025",fontes:["sergio-victor-eleicao-2024"]},
  "sergio-motta":{partido:"Republicanos",periodo:"Deputado estadual na 20ª Legislatura (2023–2027)",fontes:["alesc-sergio-motta"]},
  "jessica-ramos-moreno":{partido:"PP",periodo:"Candidata a vereadora em Londrina nas eleições de 2024",fontes:["jessicao-eleicao-2024"]},
+ "amauri-ribeiro":{partido:"União Brasil",periodo:"Deputado estadual em Goiás; notícia do gabinete publicada no portal da Alego em 01/04/2024 identifica a legenda",fontes:["alego-amauri-2024"]},
  "rinaldo-modesto":{partido:"Podemos (PODE)",periodo:"Eleito em 2022 pelo Podemos; a lista oficial atualmente acessível o registra no partido em julho de 2024, depois do pedido de março. Filiação exata em 07/03/2024 ainda não confirmada",fontes:["rinaldo-alms-2024","rinaldo-eleicao-2022"]},
  "thomaz-henrique":{partido:"PL",periodo:"Diário Oficial da Câmara o registra no PL em 07/06/2024, três dias após o episódio; filiação no dia 04/06 não documentada por fonte primária",fontes:["thomaz-camara-junho-2024","thomaz-eleicao-2024"]},
  "gustavo-gayer":{partido:"PL",periodo:"Deputado federal por Goiás, mandato 2023–2027; PL confirmado pela Câmara dos Deputados em 2023",fontes:["gayer-camara-2023","gayer-eleicao-2022"]},
