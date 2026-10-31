@@ -911,8 +911,7 @@ const FONTES = {
   "data": "2024-03-07",
   "tit": "Mato Grosso do Sul é o 3º estado que determina retirada de O Avesso da Pele das escolas",
   "url": "https://www.cartacapital.com.br/cartaexpressa/mato-grosso-do-sul-e-o-3o-estado-que-determina-retirada-de-o-avesso-da-pele-das-escolas/"
- }
-
+ },
  "alesc-ind-sc-0154":{veic:"Assembleia Legislativa de Santa Catarina · e-Legis",data:"2024-03-06",tit:"Indicação IND/0154/2024 · Sérgio Motta sugere a retirada de O avesso da pele das escolas estaduais",url:"https://portalelegis.alesc.sc.gov.br/proposicoes/KXWdD/documentos"},
  "alesc-info-sc-304":{veic:"Secretaria de Estado da Educação de Santa Catarina · Informação nº 304/2024/SED/DIEN",data:"2024-04-23",tit:"Informação técnica confirma orientação da Seduc para recolher O avesso da pele das bibliotecas escolares para análise pedagógica",url:"https://portalelegis.alesc.sc.gov.br/documentos/5aogB/download"},
  "alesc-oficio-sc-1017":{veic:"Secretaria de Estado da Educação de Santa Catarina · Ofício/Gabs nº 1017/2024",data:"2024-05-28",tit:"Ofício do secretário Aristides Cimadon encaminha resposta oficial sobre a retirada de O avesso da pele",url:"https://portalelegis.alesc.sc.gov.br/documentos/5aogB/download"},
