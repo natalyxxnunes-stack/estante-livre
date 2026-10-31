@@ -65,6 +65,14 @@ Fonte contemporânea: https://educacao.uol.com.br/noticias/2024/03/06/livro-esco
 
 ### Goiás, 2024 — EL-003
 
+A Secretaria de Estado da Educação determinou o recolhimento do livro na rede estadual, conforme cobertura contemporânea. A autoridade que assinou a ordem ainda não foi identificada.
+
+Em **1º de abril de 2024**, o portal da Assembleia Legislativa de Goiás publicou, na seção “Notícias dos Gabinetes”, texto do gabinete do deputado Amauri Ribeiro (União Brasil) com o título “Amauri Ribeiro lidera movimento para retirada de livro...”. O texto reivindica para o parlamentar a liderança do movimento e apresenta a retirada como uma conquista.
+
+**Cuidado cronológico e de atribuição:** a notícia é posterior ao recolhimento ocorrido em março. Por isso, o cadastro classifica o episódio como **reivindicação pública de autoria**, e não como prova de pressão parlamentar anterior à decisão. O texto documenta a versão pública do gabinete, mas não substitui ata, requerimento, gravação integral da sessão ou ordem administrativa; tampouco identifica quem assinou o ato da Seduc.
+
+Fonte: https://portal.al.go.leg.br/noticias-dos-gabinetes/143079/amauri-ribeiro-lidera-movimento-para-retirada-de-livro-com-conteudo-pornografico-que-estava-sendo-usado-em-escolas-de-goias
+
 A Secretaria de Estado da Educação determinou o recolhimento do livro na rede estadual, conforme cobertura contemporânea. A documentação consultada ainda não identifica o signatário da ordem administrativa.
 
 Há, contudo, uma fonte política institucional relevante: em **1º de abril de 2024**, o portal da Assembleia Legislativa de Goiás publicou, na seção “Notícias dos Gabinetes”, texto do gabinete de Amauri Ribeiro (União Brasil) com o título “Amauri Ribeiro lidera movimento para retirada de livro...”. A publicação afirma que o deputado liderou o movimento parlamentar e apresenta a retirada como uma conquista sua.
