@@ -73,14 +73,6 @@ Em **1º de abril de 2024**, o portal da Assembleia Legislativa de Goiás public
 
 Fonte: https://portal.al.go.leg.br/noticias-dos-gabinetes/143079/amauri-ribeiro-lidera-movimento-para-retirada-de-livro-com-conteudo-pornografico-que-estava-sendo-usado-em-escolas-de-goias
 
-A Secretaria de Estado da Educação determinou o recolhimento do livro na rede estadual, conforme cobertura contemporânea. A documentação consultada ainda não identifica o signatário da ordem administrativa.
-
-Há, contudo, uma fonte política institucional relevante: em **1º de abril de 2024**, o portal da Assembleia Legislativa de Goiás publicou, na seção “Notícias dos Gabinetes”, texto do gabinete de Amauri Ribeiro (União Brasil) com o título “Amauri Ribeiro lidera movimento para retirada de livro...”. A publicação afirma que o deputado liderou o movimento parlamentar e apresenta a retirada como uma conquista sua.
-
-**Limite da evidência:** trata-se de conteúdo produzido pelo gabinete parlamentar e hospedado no portal da Alego. É evidência direta de que o próprio gabinete reivindicou liderança política pela retirada; não substitui ata, requerimento, gravação integral de sessão ou documento administrativo, e não prova que o deputado tenha assinado ou emitido a ordem da Seduc.
-
-Fonte: https://portal.al.go.leg.br/noticias-dos-gabinetes/143079/amauri-ribeiro-lidera-movimento-para-retirada-de-livro-com-conteudo-pornografico-que-estava-sendo-usado-em-escolas-de-goias
-
 ### Mato Grosso do Sul, 2024 — EL-004
 
 A nota da Secretaria de Estado de Educação, reproduzida pela Folha em **8 de março de 2024**, afirma: “Por determinação do governador Eduardo Riedel” haveria recolhimento imediato dos exemplares enviados a 75 das 349 escolas estaduais, após avaliação da SED. A mesma nota justifica a medida por expressões consideradas impróprias para a faixa etária dos estudantes.
