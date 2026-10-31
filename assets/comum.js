@@ -390,3 +390,18 @@ function montarRodape(){
   const quando = ya ? `${MES[ma].toLowerCase()} de ${ya}` : "";
   el.innerHTML = `${CASOS.length} registros · ${as[0]} a ${as[as.length-1]}` + (quando?` · base revisada em <time datetime="${ATUALIZADO}">${quando}</time>`:"") + ` · <a href="${RAIZ}metodologia.html">Metodologia</a>`;
 }
+
+
+/* Acesso direto à investigação política em todas as páginas que carregam o núcleo comum.
+   O gerador também mantém este destino na navegação canônica. */
+(function incluirNavPolitica(){
+  const nav=document.querySelector(".nav");
+  if(!nav || nav.querySelector('a[href$="politica.html"]')) return;
+  const a=document.createElement("a");
+  a.href=RAIZ+"politica.html";
+  a.textContent="Política e poder";
+  if((location.pathname||"").endsWith("/politica.html")){a.className="on";a.setAttribute("aria-current","page");}
+  const analises=nav.querySelector('a[href$="analises.html"]');
+  if(analises) analises.insertAdjacentElement("afterend",a);
+  else nav.appendChild(a);
+})();
