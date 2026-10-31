@@ -395,7 +395,7 @@ function montarRodape(){
 /* Acesso direto à investigação política em todas as páginas que carregam o núcleo comum.
    O gerador também mantém este destino na navegação canônica. */
 (function incluirNavPolitica(){
-  const nav=document.querySelector(".nav");
+  const nav=typeof document.querySelector==="function" ? document.querySelector(".nav") : null;
   if(!nav || nav.querySelector('a[href$="politica.html"]')) return;
   const a=document.createElement("a");
   a.href=RAIZ+"politica.html";
