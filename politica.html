@@ -40,7 +40,7 @@
   </table></div>
  </section>
  <section class="politica-section">
-  <div class="sechead"><span class="kicker">02</span><h2>Quem pressionou ou pediu</h2></div>
+  <div class="sechead"><span class="kicker">02</span><h2>Quem pressionou, pediu ou reivindicou participação</h2></div>
   <p>Aqui estão pessoas identificadas nas fontes como autoras de pressão pública ou de pedidos. A lista não inclui automaticamente quem apenas criticou a obra, denunciou a retirada ou fiscalizou o ato: esses papéis são diferentes.</p>
   <div id="pol-pressao-lista"></div>
  </section>
@@ -92,7 +92,7 @@ document.getElementById('pol-governos').innerHTML=governoRows;
 const NOMES_FILIACAO={"eduardo-leite":"Eduardo Leite","eduardo-riedel":"Eduardo Riedel","ratinho-junior":"Ratinho Júnior","ronaldo-caiado":"Ronaldo Caiado","jorginho-mello":"Jorginho Mello","marcos-rocha":"Marcos Rocha","anderson-farias":"Anderson Farias","marcelo-belinati":"Marcelo Belinati","sergio-victor":"Sérgio Victor","sergio-motta":"Sérgio Motta Ribeiro","jessica-ramos-moreno":"Jéssica Ramos Moreno","amauri-ribeiro":"Amauri Ribeiro","rinaldo-modesto":"Rinaldo Modesto","thomaz-henrique":"Thomaz Henrique","gustavo-gayer":"Gustavo Gayer","zelinda-pastora":"Zelinda Pastora","leonel-camasao":"Leonel Camasão","lia-nogueira":"Lia Nogueira","clayton-silva":"Clayton Silva"};
 const filiacaoRows=Object.entries(FILIACOES).map(([id,f])=>'<tr><td>'+e(NOMES_FILIACAO[id]||AGENTES[id]?.nome||id)+'</td><td><span class="politica-tag">'+e(f.partido)+'</span></td><td>'+e(f.periodo)+'</td><td>'+linkFontes(f.fontes)+'</td></tr>').join('');
 document.getElementById('pol-filiacoes').innerHTML=filiacaoRows;
-const rolesPoliticos=PAPEIS.filter(p=>['Pressão','Pedido'].includes(p.papel));
+const rolesPoliticos=PAPEIS.filter(p=>['Pressão','Pedido','Reivindicação pública de autoria'].includes(p.papel));
 const renderAgente=(p)=>{
  const a=AGENTES[p.agente]||{nome:p.agente};
  const cs=listaCasos(p.ato);
