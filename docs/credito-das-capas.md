@@ -19,7 +19,7 @@ As imagens externas permanecem hospedadas nos endereços de origem. Isso é uma 
 | Ed & Lorraine Warren: demonologistas — arquivos sobrenaturais | DarkSide Books, edição brasileira | https://shopee.com.br/Livro-Ed-Lorraine-Warren-i.630533556.20998187194 |
 | O diário do diabo | Record, edição brasileira | https://www.martinsfontespaulista.com.br/o-diario-do-diabo-805495/p |
 | A química entre nós | BestSeller, edição brasileira | https://www.record.com.br/products/a-quimica-entre-nos |
-| Os 13 porquês | Ática, edição brasileira | https://www.clubederegatas.com.br/noticias/livro-os-13-porques/ |
+| Os 13 porquês | Ática, edição brasileira; imagem localizada em resenha de leitor | https://myrecadosdaredacao.wordpress.com/2021/06/26/resumo-resenha-os-13-porques-13-reasons-why-do-autor-jay-asher/ |
 | Os sertões | Martin Claret, edição brasileira | https://www.martinsfontespaulista.com.br/os-sertoes-1086627/p |
 | O castelo | Companhia de Bolso, edição brasileira | https://shopee.com.br/Franz-Kafka-O-castelo-i.652268159.20717848791 |
 | Contos de terror, de mistério e de morte | Clássicos de Ouro, edição brasileira | https://www.mundodoscolecionaveis.com.br/produtos/livro-colecao-classicos-de-ouro-contos-de-terror-de-misterio-e-de-morte-edgar-allan-poe/ |
