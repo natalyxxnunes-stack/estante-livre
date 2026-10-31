@@ -939,7 +939,7 @@ const FONTES = {
  "clayton-troca-partido":{veic:"eLimeira · Jornalismo local",data:"2020-04-06",tit:"Clayton Silva deixa o PSC e se filia ao PTC em abril de 2020",url:"https://elimeira.com.br/noticias/limeira/seis-vereadores-de-limeira-mudaram-de-partido/"},
 
 
- "rinaldo-alms-2024":{veic:"Assembleia Legislativa de Mato Grosso do Sul",data:"2024-03-04",tit:"Lista oficial de autoridades da Alems registra o deputado Rinaldo Modesto como integrante do Podemos (PODE) em 4 de março de 2024",url:"https://al.ms.gov.br/upload/Pdf/2024_07_09_12_25_33_lista-de-autoridades-09-07-24.pdf"},
+ "rinaldo-alms-2024":{veic:"Assembleia Legislativa de Mato Grosso do Sul",data:"2024-07-09",tit:"Lista oficial de autoridades da Alems registra o deputado Rinaldo Modesto como integrante do Podemos (PODE) em julho de 2024, após o pedido de março",url:"https://al.ms.gov.br/upload/Pdf/2024_07_09_12_25_33_lista-de-autoridades-09-07-24.pdf"},
  "gayer-camara-2023":{veic:"Câmara dos Deputados",data:"2023",tit:"Perfil institucional de Gustavo Gayer registra mandato 2023–2027 e partido PL-GO",url:"https://www.camara.leg.br/deputados/220568?ano=2023"},
 
 };
