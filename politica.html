@@ -14,7 +14,9 @@
 <header class="topo"><div class="topo-in">
 <a class="logo" href="index.html">Estante <span class="redact">Livre<span class="bar" aria-hidden="true"></span></span></a>
 <div class="tagline">Observatório de censura de livros · quem mandou tirar da estante, com qual ato, e o que aconteceu depois</div>
-<nav class="nav" aria-label="Seções"></nav>
+<nav class="nav" aria-label="Seções">
+<a href="index.html">Painel</a><a href="casos.html">Casos</a><a href="livros.html">Livros</a><a href="atos.html">Atos</a><a href="analises.html">Análises</a><a href="politica.html" class="on" aria-current="page">Política e poder</a><a href="historia.html">História</a><a href="mundo.html">Mundo</a><a href="metodologia.html">Metodologia</a><a href="sobre.html">Sobre</a>
+</nav>
 </div></header>
 <main id="conteudo" tabindex="-1">
 <div class="wrap">
@@ -66,7 +68,7 @@
 const e = s => esc(s);
 const listaCasos = ato => CASOS.filter(c=>c.ato===ato);
 const linkCasos = ato => listaCasos(ato).map(c=>'<a href="casos/'+c.id.toLowerCase()+'.html">'+c.id+'</a>').join(' · ');
-const partidoDe = texto => {const m=(texto||'').match(/\\(([^)]+)\\)/);return m?m[1]:'Não identificado';};
+const partidoDe = texto => {const m=(texto||'').match(/\(([^)]+)\)/);return m?m[1]:'Não identificado';};
 const governoRows = Object.entries(ATOS).sort((a,b)=>(a[1].data||'').localeCompare(b[1].data||'')).map(([id,a])=>{
  const cs=listaCasos(id), pap=PAPEIS.filter(p=>p.ato===id);
  const agentes=[...new Set(pap.map(p=>p.agente))].map(k=>AGENTES[k]?.nome).filter(Boolean);
