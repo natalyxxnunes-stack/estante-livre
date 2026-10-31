@@ -240,7 +240,7 @@ const LIVROS = {
    nota:"Livro de educação sexual para crianças pequenas. A lei aprovada em seguida pela Câmara de Londrina permite explicação científica sobre reprodução, que é o assunto do livro."},
  "A bolsa amarela":{
    capaUrl:"https://cdn.awsli.com.br/800x800/2653/2653452/produto/388998981/img_4345-s3pq59fj8b-fjsjmj0lkk.jpg",
-   capaFonte:"https://www.sebocaravelas.com.br/a-bolsa-amarela-lygia-bojunga---",
+   capaFonte:"https://cdn.awsli.com.br/800x800/2653/2653452/produto/388998981/img_4345-s3pq59fj8b-fjsjmj0lkk.jpg",
    capaEdicao:"Edição brasileira fotografada pelo Sebo Caravelas",
    autoria:"Lygia Bojunga",
    ano:1976,
@@ -248,8 +248,8 @@ const LIVROS = {
    sinopse:"Raquel esconde numa bolsa amarela três vontades que não cabem em casa: crescer, ter nascido menino e escrever.",
    nota:"Clássico de Lygia Bojunga, primeira autora fora da Europa e dos EUA a receber o Prêmio Hans Christian Andersen, em 1982."},
  "Pipoca e Picolé":{
-   capaUrl:"https://jornaldobras.com.br/images/noticias/22614/12063050_Captura_de.png.png",
-   capaFonte:"https://jornaldobras.com.br/noticia/22614/domingao-com-literatura-para-criancas-adriana-lisboa-apresenta-o-livro-pipoca-e-picole-no-rio-de-janeiro/amp",
+   capaUrl:"https://m.magazineluiza.com.br/a-static/420x420/livro-pipoca-e-picole/rcn/8793174/bef41d7fcdbc0dd267de2a67e412a5ba.png",
+   capaFonte:"https://www.magazineluiza.com.br/livro-pipoca-e-picole/p/gbckkd1b32/li/lltj/",
    capaEdicao:"Elo, edição brasileira",
    autoria:"Adriana Lisboa",
    editora:"Elo",
