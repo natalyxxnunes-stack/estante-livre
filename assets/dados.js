@@ -123,8 +123,8 @@ const LIVROS = {
    sinopse:"Um neurocientista e um jornalista investigam a base biológica do desejo, do amor e do vínculo humano.",
    nota:"Obra de divulgação científica sobre a neurobiologia do vínculo, assinada por um neurocientista e um jornalista, guardada na mesma ordem que livros de terror."},
  "Os 13 porquês":{
-   capaUrl:"https://www.clubederegatas.com.br/wp-content/uploads/2017/12/CAPA-OS-13-PORQU%C3%8AS.jpg",
-   capaFonte:"https://www.clubederegatas.com.br/noticias/livro-os-13-porques/",
+   capaUrl:"https://myrecadosdaredacao.wordpress.com/wp-content/uploads/2021/06/20210624_235735.jpg",
+   capaFonte:"https://myrecadosdaredacao.wordpress.com/2021/06/26/resumo-resenha-os-13-porques-13-reasons-why-do-autor-jay-asher/",
    capaEdicao:"Ática, edição brasileira",
    autoria:"Jay Asher",
    ano:2007,
@@ -176,7 +176,7 @@ const LIVROS = {
    genero:"Crônicas",
    sinopse:"Crônicas do cotidiano carioca, publicadas originalmente em jornal, sobre traição, desejo e hipocrisia de classe média."},
  "Beijo no asfalto":{
-   capaUrl:"https://livrariadavila.vtexassets.com/arquivos/ids/8781396-800-800?aspect=true&height=800&v=639071350582700000&width=800",
+   capaUrl:"https://livrariadavila.vtexassets.com/arquivos/ids/9147114-150-auto?aspect=true&height=auto&v=639135138002500000&width=150",
    capaFonte:"https://www.livrariadavila.com.br/777590-o-beijo-no-asfalto-tragedia-carioca-em/p",
    capaEdicao:"Nova Fronteira, edição brasileira",
    autoria:"Nelson Rodrigues",
