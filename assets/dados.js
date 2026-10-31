@@ -331,10 +331,10 @@ const ATOS = {
    rede:"Estadual",
    governo:"Eduardo Riedel (PSDB) · governo do MS",
    quem:"Governo estadual",
-   pressao:"Deputado estadual Rinaldo Modesto (Podemos), conforme lista oficial de autoridades da Assembleia Legislativa de MS de 4 de março de 2024",
+   pressao:"Rinaldo Modesto, deputado estadual eleito pelo Podemos em 2022. A lista oficial da Assembleia atualmente acessível o registra no Podemos em julho de 2024, depois da manifestação de março; a filiação exata na data do pedido ainda não está confirmada por fonte primária.",
    documento:"Ordem de recolhimento da rede estadual de Mato Grosso do Sul; documento formal e signatário ainda precisam ser identificados.",
    papeis:{
-     pressao:"Rinaldo Modesto (Podemos), deputado estadual, pediu a retirada na Assembleia Legislativa.",
+     pressao:"Rinaldo Modesto, deputado estadual eleito pelo Podemos em 2022, pediu a retirada na Assembleia Legislativa. A filiação exata em março de 2024 ainda não está confirmada por fonte primária.",
      decisor:"Eduardo Riedel, governador de Mato Grosso do Sul: a Secretaria confirmou à CartaCapital que o recolhimento atendia a uma determinação do governador, após análise da própria pasta.",
      assinantes:"A autoridade que formalizou a ordem não está identificada no cadastro.",
      executor:"Secretaria de Estado de Educação de Mato Grosso do Sul.",
@@ -939,7 +939,7 @@ const FONTES = {
  "clayton-troca-partido":{veic:"eLimeira · Jornalismo local",data:"2020-04-06",tit:"Clayton Silva deixa o PSC e se filia ao PTC em abril de 2020",url:"https://elimeira.com.br/noticias/limeira/seis-vereadores-de-limeira-mudaram-de-partido/"},
 
 
- "rinaldo-alms-2024":{veic:"Assembleia Legislativa de Mato Grosso do Sul",data:"2024-03-04",tit:"Lista oficial de autoridades da Alems registra o deputado Rinaldo Modesto como integrante do Podemos (PODE) em 4 de março de 2024",url:"https://al.ms.gov.br/upload/Pdf/2024_03_04_12_22_56_lista-de-autoridades-04-03-24.pdf"},
+ "rinaldo-alms-2024":{veic:"Assembleia Legislativa de Mato Grosso do Sul",data:"2024-03-04",tit:"Lista oficial de autoridades da Alems registra o deputado Rinaldo Modesto como integrante do Podemos (PODE) em 4 de março de 2024",url:"https://al.ms.gov.br/upload/Pdf/2024_07_09_12_25_33_lista-de-autoridades-09-07-24.pdf"},
  "gayer-camara-2023":{veic:"Câmara dos Deputados",data:"2023",tit:"Perfil institucional de Gustavo Gayer registra mandato 2023–2027 e partido PL-GO",url:"https://www.camara.leg.br/deputados/220568?ano=2023"},
 
 };
@@ -1111,7 +1111,7 @@ const PAPEIS = [
  {ato:"PR-2024", agente:"laura-patricia-lopes", papel:"Assinatura", cargo:"chefe do Núcleo Regional de Educação de Curitiba", nota:"Assinou ofício de teor semelhante do Núcleo Regional; não era coassinante do ofício da Secretaria."},
  {ato:"PR-2024", agente:"nre-curitiba", papel:"Execução"},
  {ato:"GO-2024", agente:"seduc-go", papel:"Decisão", nota:"A pessoa responsável não está identificada nas fontes."},
- {ato:"MS-2024", agente:"rinaldo-modesto", papel:"Pedido", cargo:"deputado estadual (Podemos)", nota:"Pediu a retirada na Assembleia Legislativa. A lista oficial de autoridades da Assembleia Legislativa de MS, de 4 de março de 2024, registra o parlamentar no Podemos."},
+ {ato:"MS-2024", agente:"rinaldo-modesto", papel:"Pedido", cargo:"deputado estadual; eleito em 2022 pelo Podemos", nota:"Pediu a retirada na Assembleia Legislativa. A lista oficial atualmente acessível registra o parlamentar no Podemos em julho de 2024, após o pedido de março; a filiação exata na data do pedido ainda não está confirmada por fonte primária."},
  {ato:"MS-2024", agente:"eduardo-riedel", papel:"Decisão", cargo:"governador de Mato Grosso do Sul", atribuido:true, nota:"A Secretaria informou à CartaCapital que o recolhimento atendia a determinação do governador; o ato formal não está identificado."},
  {ato:"MS-2024", agente:"sed-ms", papel:"Execução"},
  {ato:"MS-2024", agente:"sed-ms", papel:"Resposta ou reversão", nota:"Anunciou a devolução em 23 de abril de 2024."},
@@ -1167,7 +1167,7 @@ const FILIACOES = {
  "sergio-victor":{partido:"Novo",periodo:"Eleito em outubro de 2024; prefeito a partir de janeiro de 2025",fontes:["sergio-victor-eleicao-2024"]},
  "sergio-motta":{partido:"Republicanos",periodo:"Deputado estadual na 20ª Legislatura (2023–2027)",fontes:["alesc-sergio-motta"]},
  "jessica-ramos-moreno":{partido:"PP",periodo:"Candidata a vereadora em Londrina nas eleições de 2024",fontes:["jessicao-eleicao-2024"]},
- "rinaldo-modesto":{partido:"Podemos (PODE)",periodo:"Deputado estadual listado pela Assembleia Legislativa de MS como Podemos em 04/03/2024, três dias antes da manifestação",fontes:["rinaldo-alms-2024","rinaldo-eleicao-2022"]},
+ "rinaldo-modesto":{partido:"Podemos (PODE)",periodo:"Eleito em 2022 pelo Podemos; a lista oficial atualmente acessível o registra no partido em julho de 2024, depois do pedido de março. Filiação exata em 07/03/2024 ainda não confirmada",fontes:["rinaldo-alms-2024","rinaldo-eleicao-2022"]},
  "thomaz-henrique":{partido:"PL",periodo:"Diário Oficial da Câmara o registra no PL em 07/06/2024, três dias após o episódio; filiação no dia 04/06 não documentada por fonte primária",fontes:["thomaz-camara-junho-2024","thomaz-eleicao-2024"]},
  "gustavo-gayer":{partido:"PL",periodo:"Deputado federal por Goiás, mandato 2023–2027; PL confirmado pela Câmara dos Deputados em 2023",fontes:["gayer-camara-2023","gayer-eleicao-2022"]},
  "zelinda-pastora":{partido:"PRD",periodo:"Eleita vereadora pelo PRD em 2024; filiação na data do pedido de recolhimento em 2025 ainda precisa de confirmação",fontes:["zelinda-eleicao-2024"]},
