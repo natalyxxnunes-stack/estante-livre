@@ -53,6 +53,17 @@ for(const c of CASOS){
   if(c.capa && !fs.existsSync(path.join(RAIZ_REPO,"assets/capas",c.capa+".jpg"))) erros.push(`${c.id}: capa inexistente: ${c.capa}.jpg`);
 }
 for(const t of Object.keys(LIVROS)) if(!CASOS.some(c=>obraDe(c)===t)) erros.push(`LIVROS: ficha sem caso correspondente: “${t}”`);
+for(const [t,L] of Object.entries(LIVROS)){
+  if(L.capaUrl){
+    try{
+      const u=new URL(L.capaUrl);
+      if(u.protocol!=="https:") erros.push(`LIVROS “${t}”: URL da capa deve usar HTTPS`);
+    }catch{ erros.push(`LIVROS “${t}”: URL da capa inválida`); }
+    if(!L.capaFonte) erros.push(`LIVROS “${t}”: imagem externa sem fonte de crédito`);
+    if(!L.capaEdicao) erros.push(`LIVROS “${t}”: imagem externa sem identificação da edição`);
+    if(L.capa) erros.push(`LIVROS “${t}”: escolha capa local ou URL externa, não ambas`);
+  }
+}
 const obras = [...new Set(CASOS.map(obraDe))];
 const slugs = {};
 for(const c of CASOS){
