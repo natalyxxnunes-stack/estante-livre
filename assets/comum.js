@@ -367,7 +367,7 @@ function hidratarCapas(){
     const wrap=el.parentElement;
     if(!wrap || wrap.querySelector("img")) return;
     const img=document.createElement("img");
-    img.className=card?"livro-capa":"capa";
+    img.className=el.classList.contains("livro-capa-tipo")?"livro-capa":"capa";
     img.src=L.capaUrl;
     img.alt=`Capa de referência de ${titulo}${L.autoria?", de "+L.autoria:""}`;
     img.width=213; img.height=320; img.loading="lazy"; img.decoding="async";
