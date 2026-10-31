@@ -45,12 +45,20 @@
   <div id="pol-pressao-lista"></div>
  </section>
  <section class="politica-section">
-  <div class="sechead"><span class="kicker">03</span><h2>Quem decidiu, assinou e executou</h2></div>
+  <div class="sechead"><span class="kicker">03</span><h2>Filiações partidárias verificadas</h2></div>
+  <p>Esta relação registra o partido comprovado por fontes e o intervalo temporal que a fonte permite afirmar. Quando há apenas registro eleitoral de uma eleição anterior, isso não será apresentado como prova automática de filiação em todos os dias do mandato.</p>
+  <div class="politica-table-wrap"><table class="politica-table">
+   <thead><tr><th>Agente</th><th>Partido documentado</th><th>Recorte temporal</th><th>Comprovação</th></tr></thead>
+   <tbody id="pol-filiacoes"></tbody>
+  </table></div>
+ </section>
+ <section class="politica-section">
+  <div class="sechead"><span class="kicker">04</span><h2>Quem decidiu, assinou e executou</h2></div>
   <p>O foco sai do discurso público e chega à máquina administrativa. A identificação pode ser institucional ou individual. Uma pessoa que aparece como signatária não será tratada automaticamente como autora intelectual da decisão; a função documental de cada uma fica especificada na ficha do ato.</p>
   <div id="pol-decisao-lista"></div>
  </section>
  <section class="politica-section">
-  <div class="sechead"><span class="kicker">04</span><h2>O que já é possível afirmar — e o que ainda falta provar</h2></div>
+  <div class="sechead"><span class="kicker">05</span><h2>O que já é possível afirmar — e o que ainda falta provar</h2></div>
   <div class="analysis-grid">
    <article><span class="analysis-id">PADRÃO DOCUMENTADO</span><h3>Pressão política pode anteceder a decisão administrativa</h3><p>Em episódios como Mato Grosso do Sul, São José dos Campos e Rio Verde, há registro de atuação pública de agentes políticos e, em separado, de uma decisão atribuída a uma secretaria, governo ou instituição. A ficha de cada ato permite verificar a conexão e seus limites.</p></article>
    <article><span class="analysis-id">RESPONSABILIDADE FORMAL</span><h3>O cargo mais alto nem sempre é o signatário</h3><p>Uma ordem pode ser atribuída ao chefe do Executivo, formalizada por uma secretaria e executada por unidades regionais. É preciso documentar cada elo antes de afirmar quem ordenou, assinou ou cumpriu.</p></article>
@@ -69,18 +77,29 @@ const e = s => esc(s);
 const listaCasos = ato => CASOS.filter(c=>c.ato===ato);
 const linkCasos = ato => listaCasos(ato).map(c=>'<a href="casos/'+c.id.toLowerCase()+'.html">'+c.id+'</a>').join(' · ');
 const partidoDe = texto => {const m=(texto||'').match(/\(([^)]+)\)/);return m?m[1]:'Não identificado';};
+const GOVKEY = {"Eduardo Leite":"eduardo-leite","Ratinho Júnior":"ratinho-junior","Ronaldo Caiado":"ronaldo-caiado","Eduardo Riedel":"eduardo-riedel","Jorginho Mello":"jorginho-mello","Marcos Rocha":"marcos-rocha","Anderson Farias":"anderson-farias","Marcelo Belinati":"marcelo-belinati","Sérgio Victor":"sergio-victor"};
+const linkFontes = ids => (ids||[]).map(id=>FONTES[id]?'<a href="'+e(FONTES[id].url)+'" target="_blank" rel="noopener noreferrer">'+e(FONTES[id].veic||'fonte')+'</a>':"").filter(Boolean).join(' · ');
+const nomeGov = texto => (texto||'').split(' (')[0].split(' · ')[0];
 const governoRows = Object.entries(ATOS).sort((a,b)=>(a[1].data||'').localeCompare(b[1].data||'')).map(([id,a])=>{
- const cs=listaCasos(id), pap=PAPEIS.filter(p=>p.ato===id);
+ const pap=PAPEIS.filter(p=>p.ato===id);
  const agentes=[...new Set(pap.map(p=>p.agente))].map(k=>AGENTES[k]?.nome).filter(Boolean);
- return '<tr><td>'+e(a.data||'Sem data')+'</td><td>'+e([a.cidade,a.uf].filter(Boolean).join(', ')||a.uf||'—')+'</td><td>'+e(a.governo||'Governo não identificado')+'</td><td><span class="politica-tag">'+e(partidoDe(a.governo))+'</span></td><td>'+e(agentes.join(', ')||'Agentes não identificados')+'</td><td>'+linkCasos(id)+'</td></tr>';
+ const f=FILIACOES[GOVKEY[nomeGov(a.governo)]||""];
+ const partido=f?.partido||partidoDe(a.governo);
+ const fonte=f?linkFontes(f.fontes):"";
+ return '<tr><td>'+e(a.data||'Sem data')+'</td><td>'+e([a.cidade,a.uf].filter(Boolean).join(', ')||a.uf||'—')+'</td><td>'+e(a.governo||'Governo não identificado')+'</td><td><span class="politica-tag">'+e(partido)+'</span><span class="sub">'+(f?e(f.periodo):"Filiação não individualizada nesta apuração")+'</span></td><td>'+e(agentes.join(', ')||'Agentes não identificados')+'</td><td>'+fonte+' '+linkCasos(id)+'</td></tr>';
 }).join('');
 document.getElementById('pol-governos').innerHTML=governoRows;
+const NOMES_FILIACAO={"eduardo-leite":"Eduardo Leite","eduardo-riedel":"Eduardo Riedel","ratinho-junior":"Ratinho Júnior","ronaldo-caiado":"Ronaldo Caiado","jorginho-mello":"Jorginho Mello","marcos-rocha":"Marcos Rocha","anderson-farias":"Anderson Farias","marcelo-belinati":"Marcelo Belinati","sergio-victor":"Sérgio Victor","sergio-motta":"Sérgio Motta Ribeiro","jessica-ramos-moreno":"Jéssica Ramos Moreno","rinaldo-modesto":"Rinaldo Modesto"};
+const filiacaoRows=Object.entries(FILIACOES).map(([id,f])=>'<tr><td>'+e(NOMES_FILIACAO[id]||AGENTES[id]?.nome||id)+'</td><td><span class="politica-tag">'+e(f.partido)+'</span></td><td>'+e(f.periodo)+'</td><td>'+linkFontes(f.fontes)+'</td></tr>').join('');
+document.getElementById('pol-filiacoes').innerHTML=filiacaoRows;
 const rolesPoliticos=PAPEIS.filter(p=>['Pressão','Pedido'].includes(p.papel));
 const renderAgente=(p)=>{
  const a=AGENTES[p.agente]||{nome:p.agente};
  const cs=listaCasos(p.ato);
  const c=cs[0];
- return '<article class="politica-ator"><div><span class="papel">'+e(p.papel.toUpperCase())+'</span><h3>'+e(a.nome)+'</h3><p>'+e(p.cargo||'')+'</p></div><p>'+e(p.nota||'Papel registrado na ficha do ato.')+'<span class="sub">Governo da época: '+e(ATOS[p.ato]?.governo||'não identificado')+'</span></p><div class="casos">'+linkCasos(p.ato)+'</div></article>';
+ const f=FILIACOES[p.agente];
+ const partido=f?'<span class="sub">Partido: '+e(f.partido)+' · '+e(f.periodo)+' · '+linkFontes(f.fontes)+'</span>':'';
+ return '<article class="politica-ator"><div><span class="papel">'+e(p.papel.toUpperCase())+'</span><h3>'+e(a.nome)+'</h3><p>'+e(p.cargo||'')+'</p>'+partido+'</div><p>'+e(p.nota||'Papel registrado na ficha do ato.')+'<span class="sub">Governo da época: '+e(ATOS[p.ato]?.governo||'não identificado')+'</span></p><div class="casos">'+linkCasos(p.ato)+'</div></article>';
 };
 document.getElementById('pol-pressao-lista').innerHTML=rolesPoliticos.map(renderAgente).join('')||'<p>Nenhum agente cadastrado.</p>';
 const rolesDecisao=PAPEIS.filter(p=>['Decisão','Assinatura','Execução'].includes(p.papel));
