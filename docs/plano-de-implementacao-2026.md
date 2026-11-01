@@ -20,7 +20,7 @@
 | Taxonomia de fontes | Tipos documentais e critérios de independência publicados | Protocolo publicado; 81/82 fontes classificadas; uma fonte de blog pendente |
 | Documentos originais | Link ou cópia legalmente preservada para cada ato disponível | Parcial; lista de solicitações no relatório P0 |
 | Cidades e localidades | Localidade sustentada por fonte; desconhecido continua explícito | 12 registros anteriormente sem município receberam abrangência estadual explícita (GO-2024, MS-2024, RO-2020 e EL-005); nenhum município foi inferido |
-| Linha do tempo | Cada marco com data, contexto e duas fontes pertinentes, preferencialmente primárias | Revisão histórica ainda necessária |
+| Linha do tempo | Cada marco com data, contexto e duas fontes pertinentes, preferencialmente primárias | Atualizada a 2026, com 19 marcos e fontes para Londrina e São José dos Campos; revisão bibliográfica aprofundada ainda necessária |
 | Análises automatizadas | Números e tabelas derivados de CASOS, ATOS, AGENTES e PAPEIS | Implementação nesta branch |
 | Poder e censura | Consulta de agentes e papéis derivados da base | Implementado nesta branch, com perfis individuais gerados por agente |
 | Domínio próprio | Domínio escolhido, DNS, HTTPS e canonical conferidos | Depende de decisão e acesso da responsável |
