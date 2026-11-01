@@ -174,8 +174,9 @@ function gerarPoder(){
     }).join("");
     const busca=[agente.nome,agente.tipo,...papeis.flatMap(p=>[p.papel,p.cargo,p.nota,ATOS[p.ato]?.governo,ATOS[p.ato]?.nome,ATOS[p.ato]?.uf])].filter(Boolean).join(" ");
     return `<article class="poder-card" data-poder-card data-search="${esc(busca)}">
-      <div class="poder-card-cab"><h3>${esc(agente.nome)}</h3><span>${esc(agente.tipo)}</span></div>
+      <div class="poder-card-cab"><h3><a href="agentes/${id}.html">${esc(agente.nome)}</a></h3><span>${esc(agente.tipo)}</span></div>
       ${relacoes}
+      <p class="poder-perfil"><a href="agentes/${id}.html">Abrir perfil documental →</a></p>
     </article>`;
   }).join("");
   return `<div class="poder-metricas">
