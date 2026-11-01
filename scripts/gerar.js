@@ -66,7 +66,7 @@ for(const c of CASOS){
     }
   }
   if(c.verificado==="Sim" && (c.fontes||[]).length<2) erros.push(`${c.id}: registro verificado precisa de ao menos duas referências`);
-  if(!c.cidade) avisos.push(`${c.id}: cidade não informada; não preencher por inferência`);
+  if(!c.cidade && !ATOS[c.ato]?.abrangencia) avisos.push(`${c.id}: cidade não informada; não preencher por inferência`);
   if(c.estagio==="Decisão ou ordem" || c.estagio==="Execução comprovada") {
     const temAssinatura = PAPEIS.some(p=>p.ato===c.ato && p.papel==="Assinatura");
     const assinaturaDescrita = !!(ATOS[c.ato]?.papeis?.assinantes);
@@ -271,7 +271,7 @@ ${rodape(raiz)}
 }
 
 const mesAno = c => R.dataLegivel(c).replace(/^./, x=>x.toLowerCase());
-const ondeTxt = c => [c.cidade, c.uf].filter(Boolean).join(", ");
+const ondeTxt = c => [c.cidade || ATOS[c.ato]?.abrangencia, c.uf].filter(Boolean).join(", ");
 function verboTitulo(c){
   if(c.estagio==="Pressão pública") return "quem contestou";
   if(c.estagio==="Pedido formal") return "quem pediu a retirada";
@@ -429,7 +429,7 @@ for(const [k,A] of Object.entries(ATOS)){
   <div class="hero-pg">
     <p class="migalha"><a href="../index.html">Painel</a> › <a href="../atos.html">Atos</a> › ${esc(k)}</p>
     <h1>${esc(A.nome)}</h1>
-    <p class="lede">${esc([A.cidade,A.uf].filter(Boolean).join(", "))} · ${R.dataLegivel(A)} · biblioteca ${esc(A.tipo.toLowerCase())}, rede ${esc(A.rede.toLowerCase())}${A.governo?` · ${esc(A.governo)}`:""}</p>
+    <p class="lede">${esc([A.cidade||A.abrangencia,A.uf].filter(Boolean).join(", "))} · ${R.dataLegivel(A)} · biblioteca ${esc(A.tipo.toLowerCase())}, rede ${esc(A.rede.toLowerCase())}${A.governo?` · ${esc(A.governo)}`:""}</p>
   </div>
 </div>
 <div class="wrap">
@@ -499,7 +499,7 @@ for(const [k,A] of Object.entries(ATOS)){
     const porTexto = t => pend.filter(c=>c.pendencia===t).map(c=>`<a href="casos/${c.id.toLowerCase()}.html">${esc(c.id)}</a>`).join(", ");
     return `<article class="lac" id="${k.toLowerCase()}">
       <div class="lac-cab"><h3><a href="atos/${k.toLowerCase()}.html">${esc(A.nome)}</a></h3>
-        <span class="lac-meta">${esc([A.cidade,A.uf].filter(Boolean).join(", "))} · ${A.data.slice(0,4)} · ${regs.length} ${regs.length>1?"registros":"registro"}${nParc?` · <b>${nParc} parcialmente ${nParc>1?"verificados":"verificado"}</b>`:" · verificado"}</span></div>
+        <span class="lac-meta">${esc([A.cidade||A.abrangencia,A.uf].filter(Boolean).join(", "))} · ${A.data.slice(0,4)} · ${regs.length} ${regs.length>1?"registros":"registro"}${nParc?` · <b>${nParc} parcialmente ${nParc>1?"verificados":"verificado"}</b>`:" · verificado"}</span></div>
       <div class="lac-tags">${L.obstaculos.map(o=>`<span class="lac-tag">${esc(o)}</span>`).join("")}</div>
       <div class="lac-bloco"><span class="k">O QUE FALTA</span>${textos.map(t=>`<p>${esc(t)}${textos.length>1||pend.length<regs.length?` <span class="lac-ids">(${porTexto(t)})</span>`:""}</p>`).join("")}</div>
       <div class="lac-bloco"><span class="k">CAMINHO PARA FECHAR</span><p>${esc(L.caminho)}</p></div>
@@ -544,7 +544,7 @@ const linhas = R.ordenar(CASOS,"id").map(c=>{
   const r = RESP[c.id]||{};
   return {id:c.id, url:`${SITE}/casos/${c.id.toLowerCase()}.html`, data:c.data, ato:c.ato, ato_nome:ATOS[c.ato].nome, obra:obraDe(c), titulo_registro:c.titulo,
     conjunto:!!c.conjunto, autoria:c.autoria||"", editora:c.editora||"", ano_publicacao:(LIVROS[obraDe(c)]||{}).ano||"",
-    cidade:c.cidade||"", uf:c.uf, tipo_biblioteca:c.tipo, rede:c.rede, governo_na_epoca:c.governo||"",
+    cidade:c.cidade||"", abrangencia:ATOS[c.ato].abrangencia||"", uf:c.uf, tipo_biblioteca:c.tipo, rede:c.rede, governo_na_epoca:c.governo||"",
     instancia_registrada:c.quem, mecanismo:c.modalidade, estagio:c.estagio, situacao:c.situacao, desfecho:c.desfecho,
     eixo_tematico:c.eixo, justificativa_declarada:c.alegacao,
     pressao_ou_pedido:r.pressao||c.pressao||"", decisao:r.decisor||"", assinatura:r.assinantes||"", execucao:r.executor||"",
