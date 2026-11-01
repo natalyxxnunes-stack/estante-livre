@@ -20,7 +20,7 @@
 
 A ausência de cidade não deve ser preenchida com a capital do estado por conveniência. A ausência de assinatura também não deve ser resolvida atribuindo a autoria ao chefe do Executivo em exercício.
 
-**Atualização de 1º/11/2026:** o registro EL-005 foi fechado quanto ao núcleo factual após localização da IND/0154/2024 e da Informação nº 304/2024/SED/DIEN. O documento oficial comprova a orientação de recolhimento e identifica signatários; a execução por escola e a situação atual permanecem pendentes. Restam 18 registros parcialmente verificados nesta branch.
+**Atualização de 1º/11/2026:** o registro EL-005 foi fechado quanto ao núcleo factual após localização da IND/0154/2024 e da Informação nº 304/2024/SED/DIEN. O documento oficial comprova a orientação de recolhimento e identifica signatários; a execução por escola e a situação atual permanecem pendentes. Restam 18 registros parcialmente verificados nesta branch. O EL-005 passou a ter três referências cadastradas; nenhum registro permanece com fonte única. O campo de assinatura está preenchido para EL-005 e EL-034; nove registros (EL-025 a EL-033) continuam sem signatário formal identificado ou documento nominal suficiente.
 
 ## 2. Registros parcialmente verificados na base de 30/10/2026 — 19 (EL-005 fechado em 1º/11/2026; 18 permanecem)
 
