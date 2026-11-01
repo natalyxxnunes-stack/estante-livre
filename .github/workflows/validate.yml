@@ -29,11 +29,14 @@ jobs:
       - name: Check JavaScript syntax
         run: |
           node --check scripts/gerar.js
+          node --check scripts/acessibilidade.js
           node --check assets/dados.js
           node --check assets/comum.js
           node --check assets/mundo.js
       - name: Validate catalogue and generate static pages
         run: node scripts/gerar.js
+      - name: Static accessibility checks
+        run: node scripts/acessibilidade.js
       - name: Check inline page scripts
         run: |
           node <<'NODE'
