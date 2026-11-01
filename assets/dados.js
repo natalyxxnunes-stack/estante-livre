@@ -508,6 +508,7 @@ const ATOS = {
      decisor:"Não houve decisão de retirada. A Secretaria Municipal de Educação respondeu ao Requerimento nº 451/2019 e defendeu a obra e seu uso no Clube de Leitura.",
      executor:"Escolas da rede municipal, no âmbito do Clube de Leitura; a Secretaria informou que o livro já integrava acervo enviado pelo PNLD.",
      resposta:"Em 24 de setembro de 2019, a Secretaria respondeu que a obra não afrontava princípios morais e descreveu seu valor literário e pedagógico."
+     assinantes:"Clayton Silva, vereador (PSC), assinou digitalmente o Requerimento nº 451/2019 em 12 de agosto de 2019; o documento pede informações sobre a distribuição e leitura da obra, não sua retirada."
    }},
 };
 
@@ -1059,6 +1060,7 @@ const PAPEIS = [
  {ato:"FUNAP-2020", agente:"reginaldo-caetano-da-silva", papel:"Pressão", cargo:"superintendente da Diretoria de Atendimento e Promoção Humana", nota:"Enviou a mensagem que dizia que um título não atendia às expectativas da gestão."},
  {ato:"FUNAP-2020", agente:"funap", papel:"Resposta ou reversão", nota:"Determinou a inclusão da lista original em 13 de fevereiro de 2020."},
  {ato:"LIM-2019", agente:"clayton-silva", papel:"Pressão", cargo:"vereador (PSC)", nota:"Requerimento de informações; não pediu formalmente a retirada."},
+ {ato:"LIM-2019", agente:"clayton-silva", papel:"Assinatura", cargo:"vereador (PSC)", nota:"Assinou digitalmente o Requerimento nº 451/2019, de 12/08/2019; o documento questiona a distribuição e leitura, mas não pede formalmente a retirada."},
  {ato:"LIM-2019", agente:"sme-limeira", papel:"Resposta ou reversão", nota:"Defendeu a obra e manteve o projeto de leitura."},
 ];
 
