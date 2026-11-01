@@ -19,7 +19,7 @@
 |---|---|---|
 | Taxonomia de fontes | Tipos documentais e critérios de independência publicados | Protocolo publicado; 80/81 fontes classificadas; uma fonte de blog pendente |
 | Documentos originais | Link ou cópia legalmente preservada para cada ato disponível | Parcial; lista de solicitações no relatório P0 |
-| Cidades e localidades | Localidade sustentada por fonte; desconhecido continua explícito | 13 registros identificados para revisão |
+| Cidades e localidades | Localidade sustentada por fonte; desconhecido continua explícito | 12 registros com município a confirmar; um caso tem abrangência estadual explicitada |
 | Linha do tempo | Cada marco com data, contexto e duas fontes pertinentes, preferencialmente primárias | Revisão histórica ainda necessária |
 | Análises automatizadas | Números e tabelas derivados de CASOS, ATOS, AGENTES e PAPEIS | Implementação nesta branch |
 | Poder e censura | Consulta de agentes e papéis derivados da base | Implementado nesta branch, com perfis individuais gerados por agente |
