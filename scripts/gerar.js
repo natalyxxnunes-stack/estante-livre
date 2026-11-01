@@ -238,14 +238,18 @@ function gerarRelatorio(){
       ${tabela(sourceRows)}
       <p>Há <b>${semCidade.length} registros sem município identificado</b> (exceto atos com abrangência territorial explicitada) e <b>${semAssinatura.length} registros com signatário formal não identificado</b>. A ausência de nome não é preenchida por inferência a partir do governo em exercício.</p>
     </section>
-    <section><div class="sechead"><span class="kicker">04</span><h2>Registros que ainda exigem apuração</h2></div>
+    <section><div class="sechead"><span class="kicker">04</span><h2>Bibliotecas públicas: uma lacuna de cobertura</h2></div>
+      <p>Na data de corte, nenhum registro está classificado como ocorrido em biblioteca pública. A base contém ${CASOS.filter(c=>c.tipo==="Escolar").length} registros escolares, ${CASOS.filter(c=>c.tipo==="Especializada").length} especializados e ${CASOS.filter(c=>c.tipo==="Universitária").length} universitários. A ausência de registros de bibliotecas públicas é uma lacuna de cobertura, não evidência de que não existam episódios.</p>
+      <p>Pesquisas acadêmicas registram episódios anteriores ao recorte temporal atual: uma pesquisa sobre censura em bibliotecas menciona casos em biblioteca pública do Amazonas entre 2012 e 2018 (<a href="https://www.scielo.br/j/emquestao/a/S4FMzsSS6Ytx5x3x7Djd3QJ/?lang=pt" target="_blank" rel="noopener">Páginas proibidas</a>) e a retirada do catálogo Queermuseu de bibliotecas públicas gaúchas em 2017 (<a href="https://new.scielo.br/j/emquestao/a/ggMgXJkZcHjqwkfwV5NDH8n/?ilang=en&lang=pt" target="_blank" rel="noopener">Bibliotecários, censura e os novos mediadores</a>). Por antecederem 2019, esses episódios não entram na contagem do observatório. A expansão para bibliotecas públicas exige apuração própria e separação entre biblioteca pública, biblioteca escolar e biblioteca especializada.</p>
+    </section>
+    <section><div class="sechead"><span class="kicker">05</span><h2>Registros que ainda exigem apuração</h2></div>
       <p>Os ${parciais} registros abaixo têm evidência do episódio, mas ainda possuem lacunas relevantes. “Parcialmente verificado” não significa que o caso seja falso; indica que parte do núcleo documental ou da atribuição ainda não foi confirmada.</p>
       <ul class="relatorio-pendencias">${pendencias}</ul>
     </section>
-    <section><div class="sechead"><span class="kicker">05</span><h2>O que estes números não permitem afirmar</h2></div>
+    <section><div class="sechead"><span class="kicker">06</span><h2>O que estes números não permitem afirmar</h2></div>
       <ul><li>Não representam todos os casos de censura de livros no Brasil.</li><li>Não medem prevalência por estado: ausência de registro pode significar ausência de cobertura ou de documento acessível.</li><li>Registros por título não equivalem a atos únicos, e lotes sem lista completa não equivalem a títulos individualizados.</li><li>Partido do governo, pressão pública, pedido, decisão, assinatura e execução são variáveis distintas; não se atribui autoria a uma pessoa ou partido sem evidência específica.</li><li>Os dados não são diretamente comparáveis a levantamentos estrangeiros que usam unidades e critérios diferentes.</li></ul>
     </section>
-    <section><div class="sechead"><span class="kicker">06</span><h2>Dados e método</h2></div>
+    <section><div class="sechead"><span class="kicker">07</span><h2>Dados e método</h2></div>
       <p>Consulte a base em <a href="dados/estante-livre-casos.json">JSON</a> e <a href="dados/estante-livre-casos.csv">CSV</a>. Leia a <a href="metodologia.html">metodologia</a>, a <a href="docs/classificacao-e-verificacao-de-fontes.md">classificação das fontes</a> e a página <a href="pendencias.html">O que falta apurar</a>.</p>
     </section>
   </div>`;
