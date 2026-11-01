@@ -107,7 +107,7 @@ for(const [k,L] of Object.entries(LACUNAS)){
 if(erros.length){ console.error("Erros nos dados:\n- " + erros.join("\n- ")); process.exit(1); }
 if(avisos.length) console.warn("Alertas editoriais (não bloqueiam a geração):\n- " + [...new Set(avisos)].join("\n- "));
 /* ---------- 2. cabeçalho, menu e rodapé ---------- */
-const NAV = [["index.html","Painel"],["casos.html","Casos"],["livros.html","Livros"],["atos.html","Atos"],["analises.html","Análises"],["poder.html","Poder e censura"],
+const NAV = [["index.html","Painel"],["casos.html","Casos"],["livros.html","Livros"],["atos.html","Atos"],["analises.html","Análises"],["poder.html","Poder e censura"],["dossies.html","Dossiês"],
   ["historia.html","História"],["mundo.html","Mundo"],["metodologia.html","Metodologia"],["sobre.html","Sobre"]];
 const TAGLINE = "Observatório de censura de livros · quem mandou tirar da estante, com qual ato, e o que aconteceu depois";
 
@@ -129,7 +129,7 @@ function rodape(raiz){
   return `<footer class="foot">
   <div class="foot-in">
     <span>Estante Livre · um projeto de Nataly Nunes Pinto</span>
-    <span class="foot-links"><a href="${raiz}glossario.html">Glossário</a><a href="${raiz}cobertura.html">Cobertura</a><a href="${raiz}pendencias.html">O que falta apurar</a><a href="${raiz}relate.html">Relate um caso</a><a href="${raiz}dados/estante-livre-casos.csv">Dados abertos</a><a href="${raiz}poder.html">Poder e censura</a><a href="${raiz}sobre.html">Contato</a></span>
+    <span class="foot-links"><a href="${raiz}glossario.html">Glossário</a><a href="${raiz}cobertura.html">Cobertura</a><a href="${raiz}pendencias.html">O que falta apurar</a><a href="${raiz}relate.html">Relate um caso</a><a href="${raiz}dados/estante-livre-casos.csv">Dados abertos</a><a href="${raiz}poder.html">Poder e censura</a><a href="${raiz}dossies.html">Dossiês</a><a href="${raiz}relatorio-2026.html">Relatório 2026</a><a href="${raiz}sobre.html">Contato</a></span>
     <span id="foot-meta"></span>
   </div>
 </footer>`;
@@ -188,6 +188,69 @@ function gerarPoder(){
   <div class="poder-lista">${cards}</div>`;
 }
 
+function gerarDossies(){
+  const idsListas=["EL-015","EL-016","EL-017","EL-018","EL-019","EL-020","EL-021","EL-022","EL-023","EL-024","EL-025","EL-026","EL-033"];
+  const idsInfancia=["EL-027","EL-028","EL-030","EL-031","EL-032"];
+  const grupos=[
+    {id:"avesso-da-pele",titulo:"O avesso da pele: recolhimento e circulação",descricao:"Um mesmo título aparece em atos distintos e em diferentes redes. O recorte reúne as fichas da obra e permite comparar quem pediu, quem decidiu, o alcance da orientação e o que se sabe sobre o retorno às bibliotecas.",registros:CASOS.filter(c=>obraDe(c)==="O avesso da pele")},
+    {id:"listas-e-acervos",titulo:"Listas, lotes e acervos",descricao:"Episódios em que a restrição alcança listas de leitura, conjuntos de títulos ou partes de um acervo. Os totais de exemplares, títulos e registros não são intercambiáveis.",registros:CASOS.filter(c=>idsListas.includes(c.id))},
+    {id:"pressao-parlamentar",titulo:"Pressão parlamentar e cadeia de decisão",descricao:"Casos em que agentes políticos aparecem em papéis de pressão ou pedido. A ficha separa esses papéis da decisão administrativa, da assinatura e da execução.",registros:CASOS.filter(c=>PAPEIS.some(p=>p.ato===c.ato && ["Pressão","Pedido"].includes(p.papel) && AGENTES[p.agente]?.tipo==="Pessoa" && /deputado|vereador/i.test(p.cargo||"")))},
+    {id:"infancia-e-escola",titulo:"Infância, escola e disputa sobre leitura",descricao:"Obras infantis e juvenis em episódios que envolveram bibliotecas escolares, listas de leitura, atividades pedagógicas ou pedidos de providência.",registros:CASOS.filter(c=>idsInfancia.includes(c.id))},
+    {id:"bibliotecas-prisionais",titulo:"Bibliotecas prisionais e remição de pena",descricao:"Registros ligados à seleção de obras em projetos de leitura e remição de pena no sistema prisional.",registros:CASOS.filter(c=>/prisional/i.test(ATOS[c.ato]?.tipo||"") || /prisional/i.test(ATOS[c.ato]?.rede||""))}
+  ].filter(g=>g.registros.length);
+  return grupos.map((g,i)=>{
+    const atos=[...new Set(g.registros.map(c=>c.ato))];
+    const obras=[...new Set(g.registros.map(c=>obraDe(c)))];
+    const ufs=[...new Set(g.registros.map(c=>c.uf).filter(Boolean))].sort();
+    const linhas=g.registros.map(c=>`<li><a href="casos/${c.id.toLowerCase()}.html"><b>${esc(c.id)} · ${esc(obraDe(c))}</b></a><span>${esc(ondeTxt(c))} · ${esc(mesAno(c))} · ${esc(c.estagio)}</span><span class="dossie-status">${esc(c.verificado==="Sim"?"Núcleo verificado":"Verificação parcial")} · ${esc(c.situacao)}</span></li>`).join("");
+    return `<article class="dossie-card" id="${g.id}">
+      <div class="dossie-num">DOSSIÊ ${String(i+1).padStart(2,"0")}</div>
+      <h3>${esc(g.titulo)}</h3>
+      <p>${esc(g.descricao)}</p>
+      <div class="dossie-metricas"><span><b>${g.registros.length}</b> registros</span><span><b>${obras.length}</b> obras/conjuntos</span><span><b>${atos.length}</b> atos</span><span><b>${ufs.length}</b> UFs</span></div>
+      <ul class="dossie-casos">${linhas}</ul>
+    </article>`;
+  }).join("");
+}
+
+function gerarRelatorio(){
+  const n=CASOS.length, obras=[...new Set(CASOS.map(obraDe))], atos=new Set(CASOS.map(c=>c.ato));
+  const ufs=[...new Set(CASOS.map(c=>c.uf).filter(Boolean))].sort();
+  const verificados=CASOS.filter(c=>c.verificado==="Sim").length;
+  const parciais=CASOS.filter(c=>c.verificado==="Parcialmente").length;
+  const fontes=Object.values(FONTES), urls=[...new Set(fontes.map(f=>f.url).filter(Boolean))];
+  const classificadas=fontes.filter(f=>f.tipo).length;
+  const semCidade=CASOS.filter(c=>!c.cidade && !ATOS[c.ato]?.abrangencia);
+  const semAssinatura=CASOS.filter(c=>(c.estagio==="Decisão ou ordem"||c.estagio==="Execução comprovada") && !PAPEIS.some(p=>p.ato===c.ato&&p.papel==="Assinatura") && !ATOS[c.ato]?.papeis?.assinantes);
+  const contar=(campo)=>Object.entries(CASOS.reduce((o,c)=>{const k=c[campo]||"Não informado";o[k]=(o[k]||0)+1;return o;},{})).sort((a,b)=>b[1]-a[1]);
+  const tabela=(linhas)=>'<table class="relatorio-tabela"><thead><tr><th>Categoria</th><th>Registros</th></tr></thead><tbody>'+linhas.map(([k,v])=>'<tr><td>'+esc(k)+'</td><td>'+v+'</td></tr>').join("")+'</tbody></table>';
+  const pendencias=CASOS.filter(c=>c.verificado==="Parcialmente").map(c=>'<li><a href="casos/'+c.id.toLowerCase()+'.html"><b>'+esc(c.id)+' · '+esc(obraDe(c))+'</b></a><span>'+esc(c.pendencia||"Pendência não detalhada.")+'</span></li>').join("");
+  const sourceRows=Object.entries(fontes.reduce((o,f)=>{const k=f.tipo||"Não classificada";o[k]=(o[k]||0)+1;return o;},{})).sort((a,b)=>b[1]-a[1]);
+  return `<div class="relatorio-data">
+    <div class="relatorio-meta">Data de corte: <b>${esc(ATUALIZADO)}</b> · Base estática versionada no repositório</div>
+    <div class="relatorio-metricas">
+      <div><b>${n}</b><span>registros</span></div><div><b>${obras.length}</b><span>obras e conjuntos</span></div><div><b>${atos.size}</b><span>atos</span></div><div><b>${ufs.length}</b><span>UFs com registros</span></div>
+      <div><b>${verificados}</b><span>núcleo verificado</span></div><div><b>${parciais}</b><span>verificação parcial</span></div>
+    </div>
+    <section><div class="sechead"><span class="kicker">02</span><h2>Como os registros se distribuem</h2></div><div class="relatorio-duas-colunas"><div><h3>Por estágio</h3>${tabela(contar("estagio"))}</div><div><h3>Por situação</h3>${tabela(contar("situacao"))}</div><div><h3>Por mecanismo</h3>${tabela(contar("modalidade"))}</div><div><h3>Por unidade da Federação</h3>${tabela(Object.entries(CASOS.reduce((o,c)=>{o[c.uf]=(o[c.uf]||0)+1;return o;},{})).sort((a,b)=>b[1]-a[1]))}</div></div></section>
+    <section><div class="sechead"><span class="kicker">03</span><h2>Qualidade e cobertura documental</h2></div>
+      <p>O cadastro contém <b>${fontes.length} entradas de fonte</b>, distribuídas em <b>${urls.length} URLs distintas</b>. ${classificadas} entradas estão classificadas por natureza documental; ${fontes.length-classificadas} permanecem sem classificação.</p>
+      ${tabela(sourceRows)}
+      <p>Há <b>${semCidade.length} registros sem município identificado</b> (exceto atos com abrangência territorial explicitada) e <b>${semAssinatura.length} registros com signatário formal não identificado</b>. A ausência de nome não é preenchida por inferência a partir do governo em exercício.</p>
+    </section>
+    <section><div class="sechead"><span class="kicker">04</span><h2>Registros que ainda exigem apuração</h2></div>
+      <p>Os ${parciais} registros abaixo têm evidência do episódio, mas ainda possuem lacunas relevantes. “Parcialmente verificado” não significa que o caso seja falso; indica que parte do núcleo documental ou da atribuição ainda não foi confirmada.</p>
+      <ul class="relatorio-pendencias">${pendencias}</ul>
+    </section>
+    <section><div class="sechead"><span class="kicker">05</span><h2>O que estes números não permitem afirmar</h2></div>
+      <ul><li>Não representam todos os casos de censura de livros no Brasil.</li><li>Não medem prevalência por estado: ausência de registro pode significar ausência de cobertura ou de documento acessível.</li><li>Registros por título não equivalem a atos únicos, e lotes sem lista completa não equivalem a títulos individualizados.</li><li>Partido do governo, pressão pública, pedido, decisão, assinatura e execução são variáveis distintas; não se atribui autoria a uma pessoa ou partido sem evidência específica.</li><li>Os dados não são diretamente comparáveis a levantamentos estrangeiros que usam unidades e critérios diferentes.</li></ul>
+    </section>
+    <section><div class="sechead"><span class="kicker">06</span><h2>Dados e método</h2></div>
+      <p>Consulte a base em <a href="dados/estante-livre-casos.json">JSON</a> e <a href="dados/estante-livre-casos.csv">CSV</a>. Leia a <a href="metodologia.html">metodologia</a>, a <a href="docs/classificacao-e-verificacao-de-fontes.md">classificação das fontes</a> e a página <a href="pendencias.html">O que falta apurar</a>.</p>
+    </section>
+  </div>`;
+}
+
 const ORG = {"@type":"Organization","name":"Estante Livre","url":SITE+"/","founder":{"@type":"Person","name":"Nataly Nunes Pinto"}};
 const DATASET = {"@context":"https://schema.org","@type":"Dataset",
   "name":"Estante Livre: catálogo de censura de livros em bibliotecas e escolas brasileiras",
@@ -200,13 +263,15 @@ const DATASET = {"@context":"https://schema.org","@type":"Dataset",
     {"@type":"DataDownload","encodingFormat":"text/csv","contentUrl":SITE+"/dados/estante-livre-casos.csv"},
     {"@type":"DataDownload","encodingFormat":"application/json","contentUrl":SITE+"/dados/estante-livre-casos.json"}]};
 
-const PAGINAS = ["index.html","casos.html","livros.html","analises.html","poder.html","historia.html","mundo.html","glossario.html","metodologia.html","sobre.html","cobertura.html","relate.html"];
+const PAGINAS = ["index.html","casos.html","livros.html","analises.html","poder.html","dossies.html","relatorio-2026.html","historia.html","mundo.html","glossario.html","metodologia.html","sobre.html","cobertura.html","relate.html"];
 for(const f of PAGINAS){
   let h = ler(f);
   h = h.replace(/<header class="topo">[\s\S]*?<\/header>/, cabecalho("", f));
   h = h.replace(/<footer class="(?:foot|rodape)">[\s\S]*?<\/footer>/, rodape(""));
   h = h.split("https://estante-livre-br.vercel.app").join(SITE);
   if(f==="poder.html") h = blocoGerado(h, "poder", gerarPoder());
+  if(f==="dossies.html") h = blocoGerado(h, "dossies", gerarDossies());
+  if(f==="relatorio-2026.html") h = blocoGerado(h, "relatorio", gerarRelatorio());
   if(f==="index.html") h = comJsonLd(h, {"@context":"https://schema.org","@graph":[
     {"@type":"WebSite","name":"Estante Livre","url":SITE+"/","inLanguage":"pt-BR","publisher":ORG}, ORG]});
   if(f==="casos.html"){
@@ -586,7 +651,7 @@ Registro não equivale a banimento consumado: cada caso traz o estágio (pressã
 - [Metodologia](${SITE}/metodologia.html): critérios, vieses conhecidos e correções
 - [Glossário](${SITE}/glossario.html): definições de mecanismo, estágio e situação
 - [Análises](${SITE}/analises.html): leitura dos dados
-- [Poder e censura](${SITE}/poder.html): pessoas, instituições e papéis documentados
+- [Poder e censura](${SITE}/poder.html): pessoas, instituições e papéis documentados\n- [Dossiês temáticos](${SITE}/dossies.html): recortes de casos por tema\n- [Relatório-base 2026](${SITE}/relatorio-2026.html): fotografia da base e limites de interpretação
 
 Atualizado em ${ATUALIZADO}. Citação: Estante Livre, observatório de censura de livros, de Nataly Nunes Pinto.
 `);
