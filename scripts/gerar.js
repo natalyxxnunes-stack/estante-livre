@@ -37,7 +37,7 @@ const { CASOS, LIVROS, FONTES, MODALIDADES, ESTAGIOS, SITUACOES, EIXOS, ATUALIZA
 const esc = R.esc, obraDe = R.obraDe, slug = R.slug;
 
 /* ---------- 1. validação ---------- */
-const erros = [];
+const erros = [], avisos = [];
 const ids = new Set();
 const OBRIG = ["id","data","ato","titulo","uf","tipo","rede","quem","alegacao","eixo","modalidade","estagio","situacao","desfecho","verificado","fontes"];
 for(const c of CASOS){
@@ -49,7 +49,25 @@ for(const c of CASOS){
   if(!SITUACOES.includes(c.situacao)) erros.push(`${c.id}: situação fora da lista: ${c.situacao}`);
   if(!EIXOS.includes(c.eixo)) erros.push(`${c.id}: eixo fora da lista: ${c.eixo}`);
   if(!["Sim","Parcialmente"].includes(c.verificado)) erros.push(`${c.id}: verificado deve ser "Sim" ou "Parcialmente"`);
-  for(const f of c.fontes||[]) if(!FONTES[f]) erros.push(`${c.id}: fonte inexistente: ${f}`);
+  for(const f of c.fontes||[]) {
+    const fonte = FONTES[f];
+    if(!fonte) erros.push(`${c.id}: fonte inexistente: ${f}`);
+    else {
+      try { const u = new URL(fonte.url); if(!["https:","http:"].includes(u.protocol)) erros.push(`${c.id}: protocolo inválido na fonte ${f}`); }
+      catch { erros.push(`${c.id}: URL inválida na fonte ${f}: ${fonte.url}`); }
+    }
+  }
+  if(c.verificado==="Sim" && (c.fontes||[]).length<2) erros.push(`${c.id}: registro verificado precisa de ao menos duas referências`);
+  if(!c.cidade) avisos.push(`${c.id}: cidade não informada; não preencher por inferência`);
+  if(c.estagio==="Decisão ou ordem" || c.estagio==="Execução comprovada") {
+    const temAssinatura = PAPEIS.some(p=>p.ato===c.ato && p.papel==="Assinatura");
+    const assinaturaDescrita = !!(ATOS[c.ato]?.papeis?.assinantes);
+    if(!temAssinatura && !assinaturaDescrita) avisos.push(`${c.id}: signatário formal não identificado no cadastro`);
+  }
+  if(c.verificado==="Sim") {
+    const hosts = new Set((c.fontes||[]).map(k=>{ try { return new URL(FONTES[k].url).hostname.toLowerCase().replace(/^www\\./,""); } catch { return ""; } }).filter(Boolean));
+    if(hosts.size<2) avisos.push(`${c.id}: fontes em menos de dois domínios; conferir independência editorial`);
+  }
   if(c.capa && !fs.existsSync(path.join(RAIZ_REPO,"assets/capas",c.capa+".jpg"))) erros.push(`${c.id}: capa inexistente: ${c.capa}.jpg`);
 }
 for(const t of Object.keys(LIVROS)) if(!CASOS.some(c=>obraDe(c)===t)) erros.push(`LIVROS: ficha sem caso correspondente: “${t}”`);
@@ -79,9 +97,9 @@ for(const [k,L] of Object.entries(LACUNAS)){
   if(!L.caminho) erros.push(`LACUNAS ${k}: sem caminho`);
 }
 if(erros.length){ console.error("Erros nos dados:\n- " + erros.join("\n- ")); process.exit(1); }
-
+if(avisos.length) console.warn("Alertas editoriais (não bloqueiam a geração):\\n- " + [...new Set(avisos)].join("\\n- "));
 /* ---------- 2. cabeçalho, menu e rodapé ---------- */
-const NAV = [["index.html","Painel"],["casos.html","Casos"],["livros.html","Livros"],["atos.html","Atos"],["analises.html","Análises"],
+const NAV = [["index.html","Painel"],["casos.html","Casos"],["livros.html","Livros"],["atos.html","Atos"],["analises.html","Análises"],["poder.html","Poder e censura"],
   ["historia.html","História"],["mundo.html","Mundo"],["metodologia.html","Metodologia"],["sobre.html","Sobre"]];
 const TAGLINE = "Observatório de censura de livros · quem mandou tirar da estante, com qual ato, e o que aconteceu depois";
 
@@ -103,7 +121,7 @@ function rodape(raiz){
   return `<footer class="foot">
   <div class="foot-in">
     <span>Estante Livre · um projeto de Nataly Nunes Pinto</span>
-    <span class="foot-links"><a href="${raiz}glossario.html">Glossário</a><a href="${raiz}cobertura.html">Cobertura</a><a href="${raiz}pendencias.html">O que falta apurar</a><a href="${raiz}relate.html">Relate um caso</a><a href="${raiz}dados/estante-livre-casos.csv">Dados abertos</a><a href="${raiz}sobre.html">Contato</a></span>
+    <span class="foot-links"><a href="${raiz}glossario.html">Glossário</a><a href="${raiz}cobertura.html">Cobertura</a><a href="${raiz}pendencias.html">O que falta apurar</a><a href="${raiz}relate.html">Relate um caso</a><a href="${raiz}dados/estante-livre-casos.csv">Dados abertos</a><a href="${raiz}poder.html">Poder e censura</a><a href="${raiz}sobre.html">Contato</a></span>
     <span id="foot-meta"></span>
   </div>
 </footer>`;
@@ -120,6 +138,47 @@ function comJsonLd(html, obj){
   return html.replace("</head>", bloco + "\n</head>");
 }
 
+function gerarPoder(){
+  const agentes = Object.entries(AGENTES).map(([id,agente])=>({
+    id, agente, papeis:PAPEIS.filter(p=>p.agente===id)
+  })).filter(x=>x.papeis.length).sort((a,b)=>a.agente.nome.localeCompare(b.agente.nome,"pt-BR"));
+  const pessoas = agentes.filter(x=>x.agente.tipo==="Pessoa").length;
+  const instituicoes = agentes.filter(x=>x.agente.tipo!=="Pessoa").length;
+  const atos = new Set(PAPEIS.map(p=>p.ato)).size;
+  const cards = agentes.map(({id,agente,papeis})=>{
+    const relacoes = papeis.map(p=>{
+      const A=ATOS[p.ato]||{};
+      const registros=CASOS.filter(c=>c.ato===p.ato);
+      const fontes=[...new Set(registros.flatMap(c=>c.fontes||[]))].map(k=>FONTES[k]).filter(Boolean).slice(0,3);
+      const ids=registros.map(c=>`<a href="casos/${c.id.toLowerCase()}.html">${esc(c.id)}</a>`).join(" · ");
+      const atribuicao=p.atribuido?'<p class="poder-atribuido">Atribuição feita pela fonte; não há documento assinado identificado que confirme diretamente este papel.</p>':"";
+      const governo=A.governo?'<p class="poder-contexto"><b>Governo em exercício (contexto, não prova de autoria):</b> '+esc(A.governo)+'</p>':"";
+      const links=fontes.length?'<p class="poder-fontes"><b>Fontes cadastradas:</b> '+fontes.map(f=>'<a href="'+esc(f.url)+'" target="_blank" rel="noopener">'+esc(f.veic)+'</a>').join(" · ")+'</p>':"";
+      return `<div class="poder-relacao">
+        <div class="poder-relacao-topo"><span class="poder-papel">${esc(p.papel)}</span><span class="poder-ato">${esc(p.ato)} · ${esc(A.uf||"UF não informada")} · ${A.data?A.data.slice(0,4):"data não informada"}</span></div>
+        <h4><a href="atos/${p.ato.toLowerCase()}.html">${esc(A.nome||p.ato)}</a></h4>
+        ${p.cargo?'<p class="poder-cargo">'+esc(p.cargo)+'</p>':""}
+        ${p.nota?'<p>'+esc(p.nota)+'</p>':""}
+        ${atribuicao}${governo}
+        <p class="poder-registros"><b>Registros:</b> ${ids||"sem ficha vinculada"}</p>
+        ${links}
+      </div>`;
+    }).join("");
+    const busca=[agente.nome,agente.tipo,...papeis.flatMap(p=>[p.papel,p.cargo,p.nota,ATOS[p.ato]?.governo,ATOS[p.ato]?.nome,ATOS[p.ato]?.uf])].filter(Boolean).join(" ");
+    return `<article class="poder-card" data-poder-card data-search="${esc(busca)}">
+      <div class="poder-card-cab"><h3>${esc(agente.nome)}</h3><span>${esc(agente.tipo)}</span></div>
+      ${relacoes}
+    </article>`;
+  }).join("");
+  return `<div class="poder-metricas">
+    <div><b>${pessoas}</b><span>pessoas identificadas</span></div>
+    <div><b>${instituicoes}</b><span>instituições identificadas</span></div>
+    <div><b>${atos}</b><span>atos com papéis cadastrados</span></div>
+  </div>
+  <p class="note">A lista é gerada diretamente de AGENTES e PAPEIS. Uma pessoa pode aparecer em mais de um papel e um ato pode ter vários registros por título. A filiação partidária aparece somente quando consta do cargo cadastrado; o governo em exercício é apresentado separadamente.</p>
+  <div class="poder-lista">${cards}</div>`;
+}
+
 const ORG = {"@type":"Organization","name":"Estante Livre","url":SITE+"/","founder":{"@type":"Person","name":"Nataly Nunes Pinto"}};
 const DATASET = {"@context":"https://schema.org","@type":"Dataset",
   "name":"Estante Livre: catálogo de censura de livros em bibliotecas e escolas brasileiras",
@@ -132,12 +191,13 @@ const DATASET = {"@context":"https://schema.org","@type":"Dataset",
     {"@type":"DataDownload","encodingFormat":"text/csv","contentUrl":SITE+"/dados/estante-livre-casos.csv"},
     {"@type":"DataDownload","encodingFormat":"application/json","contentUrl":SITE+"/dados/estante-livre-casos.json"}]};
 
-const PAGINAS = ["index.html","casos.html","livros.html","analises.html","historia.html","mundo.html","glossario.html","metodologia.html","sobre.html","cobertura.html","relate.html"];
+const PAGINAS = ["index.html","casos.html","livros.html","analises.html","poder.html","historia.html","mundo.html","glossario.html","metodologia.html","sobre.html","cobertura.html","relate.html"];
 for(const f of PAGINAS){
   let h = ler(f);
   h = h.replace(/<header class="topo">[\s\S]*?<\/header>/, cabecalho("", f));
   h = h.replace(/<footer class="(?:foot|rodape)">[\s\S]*?<\/footer>/, rodape(""));
   h = h.split("https://estante-livre-br.vercel.app").join(SITE);
+  if(f==="poder.html") h = blocoGerado(h, "poder", gerarPoder());
   if(f==="index.html") h = comJsonLd(h, {"@context":"https://schema.org","@graph":[
     {"@type":"WebSite","name":"Estante Livre","url":SITE+"/","inLanguage":"pt-BR","publisher":ORG}, ORG]});
   if(f==="casos.html"){
@@ -468,6 +528,7 @@ Registro não equivale a banimento consumado: cada caso traz o estágio (pressã
 - [Metodologia](${SITE}/metodologia.html): critérios, vieses conhecidos e correções
 - [Glossário](${SITE}/glossario.html): definições de mecanismo, estágio e situação
 - [Análises](${SITE}/analises.html): leitura dos dados
+- [Poder e censura](${SITE}/poder.html): pessoas, instituições e papéis documentados
 
 Atualizado em ${ATUALIZADO}. Citação: Estante Livre, observatório de censura de livros, de Nataly Nunes Pinto.
 `);
