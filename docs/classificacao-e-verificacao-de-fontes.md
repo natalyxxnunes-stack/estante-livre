@@ -92,6 +92,6 @@ Não preencher esses campos por inferência automática. A classificação preci
 
 ## Estado da base na auditoria de 1º de novembro de 2026
 
-A exportação consultada tinha 34 registros, 184 referências associadas e 69 URLs distintas; o cadastro de fontes continha 81 chaves. Nesta branch, 80 das 81 entradas de fonte foram classificadas por natureza documental; uma fonte de blog permanece sem classificação até revisão individual. O EL-005, antes marcado como parcialmente verificado por fonte única, foi atualizado com dois documentos primários da ALESC/Secretaria e passou a verificado quanto ao núcleo factual. Restam 14 registros parcialmente verificados; a execução e situação atual do EL-005 continuam em aberto.
+A exportação consultada tinha 34 registros, 186 referências associadas e 71 URLs distintas; o cadastro de fontes continha 81 chaves. Nesta branch, 80 das 81 entradas de fonte foram classificadas por natureza documental; uma fonte de blog permanece sem classificação até revisão individual. O EL-005, antes marcado como parcialmente verificado por fonte única, foi atualizado com dois documentos primários da ALESC/Secretaria e passou a verificado quanto ao núcleo factual. Restam 14 registros parcialmente verificados; a execução e situação atual do EL-005 continuam em aberto.
 
 Esses números são uma fotografia da base exportada em 30 de outubro de 2026, não uma afirmação de que todos os links foram testados novamente em 1º de novembro.
