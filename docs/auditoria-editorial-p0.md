@@ -59,9 +59,9 @@ A ausência de cidade não deve ser preenchida com a capital do estado por conve
 - **Ação:** solicitar ao Colégio/CBMDF a nota e o registro da avaliação, sem pedir dados pessoais de alunos ou familiares. Manter o caso como pressão sobre atividade, não banimento da obra.
 
 ### EL-032 — *Pipoca e Picolé* (Taubaté, 2025)
-- **Atualização:** OVALE documenta que a Prefeitura confirmou a retirada à Câmara; a vereadora Zelinda Pastora disse ter pedido o recolhimento ao secretário Hélcio Carvalho dos Santos. Em requerimento aprovado em 10/03/2026, Isaac do Carmo (PT) e Talita (PSB) cobraram explicações — papel de fiscalização, não de pressão pela retirada. Em abril, a Prefeitura informou que os exemplares estavam na Secretaria para análise; em 14/07/2026, declarou que o parecer pedagógico era favorável ao uso nas turmas adequadas.
-- **Pendência:** requerimento, resposta integral, parecer técnico e prova da redistribuição física às unidades.
-- **Ação:** solicitar documentos à Câmara e Prefeitura; conferir lista de escolas e turmas atendidas. Não converter anúncio de retomada em prova de devolução.
+- **Atualização:** OVALE documenta que a Prefeitura confirmou a retirada à Câmara; a vereadora Zelinda Pastora disse ter pedido o recolhimento ao secretário Hélcio Carvalho dos Santos. Em requerimento aprovado em 10/03/2026, Isaac do Carmo (PT) e Talita (PSB) cobraram explicações — papel de fiscalização, não de pressão pela retirada. A resposta do prefeito informa que a obra foi comprada em 2024, na gestão José Saud (PP), como parte de 3.280 kits para alunos e 116 para professores, totalizando R$ 1,216 milhão; no fim de 2025, parte dos exemplares ainda disponíveis foi encaminhada à Secretaria para análise, enquanto grande parte já havia sido distribuída. Em 14/07/2026, a Prefeitura declarou que o parecer pedagógico era favorável ao uso nas turmas adequadas.
+- **Pendência:** requerimento, resposta integral, parecer técnico, processo de aquisição/distribuição dos kits e prova da redistribuição física dos exemplares ainda disponíveis às unidades.
+- **Ação:** solicitar documentos à Câmara e Prefeitura; conferir processo de compra dos kits, distribuição às famílias, lista de escolas e turmas atendidas. Não converter anúncio de retomada em prova de devolução.
 
 ## Registros com núcleo factual verificado; diligências ainda abertas
 
