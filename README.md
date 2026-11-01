@@ -12,7 +12,8 @@ node scripts/gerar.js
 
 Ele valida os dados e para com uma lista de erros se algo estiver fora do padrão (mecanismo fora da lista, fonte inexistente, ficha de livro sem caso). Se tudo estiver certo, ele:
 
-- padroniza cabeçalho, menu e rodapé de todas as páginas;\n- gera a página `poder.html` a partir de `AGENTES`, `PAPEIS`, `ATOS` e `CASOS`;\n- gera dossiês temáticos e o relatório-base de 2026 diretamente da base, com recortes, contagens e limites de interpretação;\n- emite alertas editoriais não bloqueantes para localidades ausentes, signatários não identificados e fontes concentradas em um único domínio;
+- padroniza cabeçalho, menu e rodapé de todas as páginas;
+- gera a página `poder.html` a partir de `AGENTES`, `PAPEIS`, `ATOS` e `CASOS`;\n- gera dossiês temáticos e o relatório-base de 2026 diretamente da base, com recortes, contagens e limites de interpretação;\n- emite alertas editoriais não bloqueantes para localidades ausentes, signatários não identificados e fontes concentradas em um único domínio;
 - escreve o HTML das fichas dentro de `casos.html` e `livros.html`, para buscadores e ferramentas de IA lerem sem JavaScript;
 - gera uma página por caso (`casos/el-001.html`), obra (`livros/<nome>.html`) e agente (`agentes/<id>.html`), com dados estruturados, papéis documentados, fontes e sugestão de citação;
 - gera `dados/estante-livre-casos.csv` e `.json`, `sitemap.xml`, `robots.txt`, `llms.txt` e `404.html`.
@@ -55,7 +56,7 @@ Um caso só conta como verificado com `verificado:"Sim"` e pelo menos duas refer
 
 ## Páginas
 
-index (painel), casos, livros, analises, poder, perfis de agentes, dossies, relatorio-2026, historia (linha do tempo, escrita à mão), mundo, glossario, metodologia, sobre, cobertura, relate. Geradas pelo script: atos.html e as páginas em `casos/`, `livros/` e `atos/`.
+index (painel), casos, livros, analises, poder, perfis de agentes, dossies, relatorio-2026, historia (linha do tempo, escrita à mão), mundo, glossario, metodologia, sobre, cobertura, relate. Geradas pelo script: `atos.html`, `dossies.html`, `relatorio-2026.html` e as páginas em `casos/`, `livros/`, `atos/` e `agentes/`.
 
 ## Documentação editorial
 
