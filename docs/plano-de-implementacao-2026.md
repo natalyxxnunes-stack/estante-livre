@@ -32,9 +32,9 @@
 |---|---|
 | Mapa interativo | O painel já possui mapa navegável por UF; evolução para geolocalização depende de completar e validar localidades, sem inventar coordenadas |
 | Perfis de responsáveis | Página individual por agente com papéis, atos, fontes, cargos na data e ressalvas | Implementado nesta branch; geração automática em `agentes/<id>.html`
-| Dossiês temáticos | Reportagem autoral com documentação e metodologia de seleção |
+| Dossiês temáticos | Recortes de dados por tema, com vínculos para casos e fontes; reportagens longas continuam sendo trabalho editorial futuro | Índice temático automatizado implementado; ensaios aprofundados pendentes
 | Bibliotecas públicas | Recorte, fontes e protocolo de coleta próprios; não misturar automaticamente com bibliotecas escolares |
-| Relatórios periódicos | Data de corte, metodologia, alterações e limites explicitados |
+| Relatórios periódicos | Data de corte, metodologia, alterações e limites explicitados | Relatório-base 2026 gerado da base; cadência anual e edição analítica continuam pendentes
 | Parcerias acadêmicas | Acordo de revisão, pesquisa ou distribuição com responsabilidades definidas |
 
 ## P3 — Futuro
