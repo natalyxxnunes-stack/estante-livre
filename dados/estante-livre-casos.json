@@ -3057,9 +3057,9 @@
    "obra": "A mamãe vai ter um bebê",
    "titulo_registro": "Pedido de recolhimento de A mamãe vai ter um bebê e aprovação da Lei nº 13.930/2025",
    "conjunto": false,
-   "autoria": "",
-   "editora": "",
-   "ano_publicacao": "",
+   "autoria": "Dori Hillestad Butler",
+   "editora": "Todolivro",
+   "ano_publicacao": 2016,
    "cidade": "Londrina",
    "abrangencia": "",
    "uf": "PR",
@@ -3078,7 +3078,7 @@
    "assinatura": "",
    "execucao": "Não identificado. A presença de um exemplar na creche foi relatada pela vereadora; a execução do recolhimento não está comprovada.",
    "resposta_ou_reversao": "",
-   "ato_ou_documento": "Requerimento parlamentar de Jéssica Ramos Moreno (PP), apresentado após vistoria em creche em 26 de novembro de 2024, solicitando à Secretaria Municipal de Educação o recolhimento da obra; cópia e resposta administrativa ainda não localizadas. Separadamente, o PL 79/2024 foi sancionado como Lei Municipal nº 13.930, de 21 de março de 2025.",
+   "ato_ou_documento": "Requerimento parlamentar de Jéssica Ramos Moreno (PP), apresentado após vistoria em creche em 26 de novembro de 2024, solicitando à Secretaria Municipal de Educação o recolhimento da obra; cópia e resposta administrativa ainda não localizadas. A Lei Municipal nº 13.930/2025, originada do PL 79/2024, é contexto normativo posterior e não comprova a execução deste pedido.",
    "verificado": "Parcialmente",
    "pendencia": "Obter cópia integral do requerimento protocolado pela vereadora e resposta da Secretaria; confirmar se houve recolhimento efetivo e eventual devolução do exemplar.",
    "nota": "Em 26 de novembro de 2024, a vereadora Jéssica Ramos Moreno (PP) divulgou que encontrou o livro em uma creche e pediu à Secretaria Municipal de Educação que o recolhesse. A reportagem contemporânea informou que a Secretaria ainda não havia respondido oficialmente ao requerimento; portanto, a retirada não está comprovada. Separadamente, o PL 79/2024, de autoria da vereadora, foi sancionado em 21 de março de 2025 como Lei Municipal nº 13.930, que proíbe uso e distribuição de livros com conteúdo erótico nas escolas municipais, com exceção para informação científico-biológica sobre reprodução adequada à idade. A lei não comprova, por si, a retirada deste exemplar.",
@@ -3099,13 +3099,6 @@
     }
    ],
    "fontes": [
-    {
-     "veiculo": "Folha de Londrina",
-     "tipo": "S2",
-     "titulo": "Educação vai recolher livro infantil com ‘conteúdo sensível’",
-     "data": "2024-11",
-     "url": "https://www.folhadelondrina.com.br/politica/educacao-vai-recolher-livro-infantil-com-conteudo-sensivel-3292131e.html"
-    },
     {
      "veiculo": "Brasil Paralelo",
      "tipo": "S2",
@@ -3485,6 +3478,94 @@
      "titulo": "Ofício GSE nº 363/2019 · resposta sobre A bolsa amarela",
      "data": "2019-09-24",
      "url": "https://consulta.limeira.sp.leg.br/arquivo?Id=226368"
+    }
+   ]
+  },
+  {
+   "id": "EL-035",
+   "url": "https://estante-livre-br.vercel.app/casos/el-035.html",
+   "data": "2026-03-12",
+   "ato": "LON-2026",
+   "ato_nome": "Levantamento e recolhimento para análise de O bebê vem com a cegonha?!? (Londrina)",
+   "obra": "O bebê vem com a cegonha?!?",
+   "titulo_registro": "O bebê vem com a cegonha?!?",
+   "conjunto": false,
+   "autoria": "Patrícia Engel Secco",
+   "editora": "Melhoramentos",
+   "ano_publicacao": 2003,
+   "cidade": "Londrina",
+   "abrangencia": "",
+   "uf": "PR",
+   "tipo_biblioteca": "Escolar",
+   "rede": "Municipal",
+   "governo_na_epoca": "Tiago Amaral (PSD) · prefeitura de Londrina",
+   "instancia_registrada": "Secretaria Municipal de Educação de Londrina",
+   "mecanismo": "Retirada",
+   "estagio": "Decisão ou ordem",
+   "situacao": "Em aberto",
+   "desfecho": "A SME iniciou levantamento na rede e recolhimento de exemplares para análise pedagógica; não há confirmação pública do alcance por unidade nem da decisão final sobre retorno ou exclusão.",
+   "eixo_tematico": "Sexualidade e gênero",
+   "justificativa_declarada": "A gerência e a diretoria pedagógica de uma unidade municipal classificaram trechos como “sensíveis” e disseram que poderiam gerar questionamentos junto às famílias.",
+   "pressao_ou_pedido": "",
+   "decisao": "Secretaria Municipal de Educação de Londrina, que informou ter iniciado levantamento em toda a rede e recolhimento de exemplares para análise. A autoridade individual que autorizou a providência não foi identificada.",
+   "assinatura": "A Folha de Londrina informa que o pedido foi assinado pela gerente da unidade e pela diretora pedagógica; nomes e unidade não foram divulgados.",
+   "execucao": "SME e unidades da rede municipal, quanto ao levantamento e à retirada para análise. Não há confirmação do recolhimento integral em cada escola.",
+   "resposta_ou_reversao": "A SME apresentou nota sobre adequação etária e qualidade dos materiais. A editora Melhoramentos afirmou que não havia sido previamente notificada. A decisão final sobre retorno ou exclusão não foi localizada.",
+   "ato_ou_documento": "Pedido de providências assinado pela gerente da unidade e pela diretora pedagógica, cujo conteúdo foi consultado pela Folha de Londrina, mas cuja íntegra e número do processo SEI ainda não estão cadastrados. A SME informou que iniciou levantamento em toda a rede para identificar e retirar exemplares de circulação para análise pedagógica. Não foi localizada decisão final sobre a permanência da obra no acervo.",
+   "verificado": "Parcialmente",
+   "pendencia": "Obter o processo SEI e o pedido de providências integral; identificar os cargos e os signatários do documento sem expor dados pessoais desnecessários; obter o despacho da SME, o quantitativo recolhido, a avaliação técnica e a decisão final sobre o acervo.",
+   "nota": "Em 12 de março de 2026, a Folha de Londrina informou ter tido acesso a um pedido de providências assinado pela gerente da unidade e pela diretora pedagógica, que consideraram o conteúdo “sensível”. A CBN Londrina informou que a Secretaria Municipal de Educação iniciou levantamento em todas as escolas para localizar e retirar exemplares para análise. A reportagem da CBN também reproduziu a posição institucional da SME e a resposta da editora Melhoramentos, que afirmou não ter sido previamente notificada. As fontes consultadas não identificam nominalmente as profissionais nem a unidade escolar, e não comprovam que todos os exemplares tenham sido retirados ou que a obra tenha sido excluída definitivamente. O prefeito e o partido do governo municipal são contexto institucional, não autoria individual da decisão.",
+   "agentes": [
+    {
+     "nome": "Gerência e Diretoria Pedagógica da unidade escolar (não identificada publicamente)",
+     "tipo": "Instituição",
+     "papel": "Pedido",
+     "cargo": "",
+     "atribuido": false
+    },
+    {
+     "nome": "Gerência e Diretoria Pedagógica da unidade escolar (não identificada publicamente)",
+     "tipo": "Instituição",
+     "papel": "Assinatura",
+     "cargo": "",
+     "atribuido": false
+    },
+    {
+     "nome": "Secretaria Municipal de Educação de Londrina",
+     "tipo": "Instituição",
+     "papel": "Decisão",
+     "cargo": "",
+     "atribuido": false
+    },
+    {
+     "nome": "Secretaria Municipal de Educação de Londrina",
+     "tipo": "Instituição",
+     "papel": "Execução",
+     "cargo": "",
+     "atribuido": false
+    },
+    {
+     "nome": "Secretaria Municipal de Educação de Londrina",
+     "tipo": "Instituição",
+     "papel": "Resposta ou reversão",
+     "cargo": "",
+     "atribuido": false
+    }
+   ],
+   "fontes": [
+    {
+     "veiculo": "Folha de Londrina",
+     "tipo": "S2",
+     "titulo": "Educação vai recolher livro infantil com ‘conteúdo sensível’",
+     "data": "2024-11",
+     "url": "https://www.folhadelondrina.com.br/politica/educacao-vai-recolher-livro-infantil-com-conteudo-sensivel-3292131e.html"
+    },
+    {
+     "veiculo": "CBN Londrina",
+     "tipo": "S1",
+     "titulo": "Londrina recolhe livro infantil de escolas após polêmica com ‘conteúdo sensível’",
+     "data": "2026-03-12",
+     "url": "https://cbnlondrina.com.br/materias/londrina-recolhe-livro-infantil-de-escolas-apos-polemica-com-conteudo-sensivel"
     }
    ]
   }
