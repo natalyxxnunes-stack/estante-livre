@@ -50,6 +50,6 @@ Manter um inventário com:
 | Data de obtenção | Data |
 | Restrições | Limites de reprodução, resolução ou território |
 
-## Estado atual
+## Inventário atual\n\nO inventário arquivo a arquivo está em `docs/inventario-de-imagens.md`. Foram identificadas sete capas; a origem e a autorização individual de reprodução não estão registradas no repositório.\n\n## Estado atual
 
 A auditoria de código identificou sete capas cadastradas no objeto de dados. A presença de um arquivo no repositório não comprova, por si só, autorização de reprodução. O inventário de direitos deve ser preenchido antes de ampliar a coleção visual.
