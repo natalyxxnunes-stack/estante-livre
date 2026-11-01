@@ -14,7 +14,7 @@ Ele valida os dados e para com uma lista de erros se algo estiver fora do padrã
 
 - padroniza cabeçalho, menu e rodapé de todas as páginas;\n- gera a página `poder.html` a partir de `AGENTES`, `PAPEIS`, `ATOS` e `CASOS`;\n- emite alertas editoriais não bloqueantes para localidades ausentes, signatários não identificados e fontes concentradas em um único domínio;
 - escreve o HTML das fichas dentro de `casos.html` e `livros.html`, para buscadores e ferramentas de IA lerem sem JavaScript;
-- gera uma página por caso (`casos/el-001.html`) e por obra (`livros/<nome>.html`), com dados estruturados e sugestão de citação;
+- gera uma página por caso (`casos/el-001.html`), obra (`livros/<nome>.html`) e agente (`agentes/<id>.html`), com dados estruturados, papéis documentados, fontes e sugestão de citação;
 - gera `dados/estante-livre-casos.csv` e `.json`, `sitemap.xml`, `robots.txt`, `llms.txt` e `404.html`.
 
 Quando o domínio próprio estiver no ar, troque a constante `SITE` no topo de `scripts/gerar.js` e rode de novo.
@@ -55,7 +55,7 @@ Um caso só conta como verificado com `verificado:"Sim"` e pelo menos duas refer
 
 ## Páginas
 
-index (painel), casos, livros, analises, poder, historia (linha do tempo, escrita à mão), mundo, glossario, metodologia, sobre, cobertura, relate. Geradas pelo script: atos.html e as páginas em `casos/`, `livros/` e `atos/`.
+index (painel), casos, livros, analises, poder, perfis de agentes, historia (linha do tempo, escrita à mão), mundo, glossario, metodologia, sobre, cobertura, relate. Geradas pelo script: atos.html e as páginas em `casos/`, `livros/` e `atos/`.
 
 ## Documentação editorial
 
