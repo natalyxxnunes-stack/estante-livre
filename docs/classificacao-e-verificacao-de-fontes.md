@@ -1,7 +1,7 @@
 # Classificação e verificação de fontes
 
 **Documento operacional do Estante Livre**  
-**Versão:** 1.0 · **Data:** 1º de novembro de 2026
+**Versão:** 1.1 · **Data:** 1º de novembro de 2026
 
 ## Objetivo
 
@@ -92,6 +92,6 @@ Não preencher esses campos por inferência automática. A classificação preci
 
 ## Estado da base na auditoria de 1º de novembro de 2026
 
-A exportação consultada tinha 34 registros, 186 referências associadas e 71 URLs distintas; o cadastro de fontes continha 81 chaves. Nesta branch, 80 das 81 entradas de fonte foram classificadas por natureza documental; uma fonte de blog permanece sem classificação até revisão individual. O EL-005, antes marcado como parcialmente verificado por fonte única, foi atualizado com dois documentos primários da ALESC/Secretaria e passou a verificado quanto ao núcleo factual. Restam 14 registros parcialmente verificados; a execução e situação atual do EL-005 continuam em aberto.
+A base atual nesta branch contém 35 registros, 187 referências associadas e 82 entradas de fonte. O cadastro tem 81 fontes classificadas por natureza documental; uma fonte de blog permanece sem classificação até revisão individual. O EL-005 passou a verificado quanto ao núcleo factual após inclusão de documentos primários da ALESC/Secretaria. Os registros individuais EL-015 a EL-021 passaram a verificados quanto ao núcleo factual após consulta à decisão de arquivamento do MPF; os conjuntos EL-022 a EL-024 continuam parciais pela ausência das relações completas de títulos e peças originais. A ficha EL-035, sobre o recolhimento iniciado em Londrina em 2026, foi criada separadamente do pedido parlamentar de 2024 (EL-030). Restam oito registros parcialmente verificados. A execução por escola e a situação atual do EL-005 continuam em aberto.
 
 Esses números são uma fotografia da base exportada em 30 de outubro de 2026, não uma afirmação de que todos os links foram testados novamente em 1º de novembro.
