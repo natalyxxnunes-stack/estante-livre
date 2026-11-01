@@ -987,7 +987,7 @@ const FONTES = {
   "data": "2024-03-07",
   "tit": "Mato Grosso do Sul é o 3º estado que determina retirada de O Avesso da Pele das escolas",
   "url": "https://www.cartacapital.com.br/cartaexpressa/mato-grosso-do-sul-e-o-3o-estado-que-determina-retirada-de-o-avesso-da-pele-das-escolas/"
- }
+ },
  "cbn-londrina-2026": {
   "tipo":"S1","veic":"CBN Londrina","data":"2026-03-12","tit":"Londrina recolhe livro infantil de escolas após polêmica com ‘conteúdo sensível’","url":"https://cbnlondrina.com.br/materias/londrina-recolhe-livro-infantil-de-escolas-apos-polemica-com-conteudo-sensivel"
  },
