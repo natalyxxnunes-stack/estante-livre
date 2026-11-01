@@ -161,7 +161,7 @@ function gerarPoder(){
       const ids=registros.map(c=>`<a href="casos/${c.id.toLowerCase()}.html">${esc(c.id)}</a>`).join(" · ");
       const atribuicao=p.atribuido?'<p class="poder-atribuido">Atribuição feita pela fonte; não há documento assinado identificado que confirme diretamente este papel.</p>':"";
       const governo=A.governo?'<p class="poder-contexto"><b>Governo em exercício (contexto, não prova de autoria):</b> '+esc(A.governo)+'</p>':"";
-      const links=fontes.length?'<p class="poder-fontes"><b>Fontes cadastradas:</b> '+fontes.map(f=>'<a href="'+esc(f.url)+'" target="_blank" rel="noopener">'+esc(f.veic)+'</a>').join(" · ")+'</p>':"";
+      const links=fontes.length?'<p class="poder-fontes"><b>Fontes cadastradas:</b> '+fontes.map(f=>'<a href="'+esc(f.url)+'" target="_blank" rel="noopener">'+esc(f.veic)+' ('+esc(f.tipo||"Não classificada")+')</a>').join(" · ")+'</p>':"";
       return `<div class="poder-relacao">
         <div class="poder-relacao-topo"><span class="poder-papel">${esc(p.papel)}</span><span class="poder-ato">${esc(p.ato)} · ${esc(A.uf||"UF não informada")} · ${A.data?A.data.slice(0,4):"data não informada"}</span></div>
         <h4><a href="atos/${p.ato.toLowerCase()}.html">${esc(A.nome||p.ato)}</a></h4>
