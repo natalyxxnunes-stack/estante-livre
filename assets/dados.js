@@ -13,7 +13,7 @@ const CASOS = [
  {id:"EL-002", ato:"PR-2024", obra:"O avesso da pele", alegacao:"Expressões, jargões e descrições de cenas de sexo que seriam “inadequados para exposição a menores de dezoito anos”", eixo:"Sexualidade e gênero", modalidade:"Retirada", estagio:"Execução comprovada", situacao:"Revertido", desfecho:"Revertido", verificado:"Sim", fontes:["cc-oficio","icl-pr","cc-pr","pn-volta"], nota:"A Secretaria encaminhou ofício assinado por Anderfábio Oliveira dos Santos, diretor de Educação; o Núcleo Regional de Educação de Curitiba também expediu ofício de teor semelhante, assinado por sua chefe, Laura Patrícia Lopes. A coleta foi programada para 5 a 8 de março. A Companhia das Letras foi à Justiça, e o livro voltou às escolas em abril de 2024, acompanhado de orientações pedagógicas."},
  {id:"EL-003", ato:"GO-2024", obra:"O avesso da pele", alegacao:"“Possibilitar uma análise do livro quanto ao atendimento da proposta pedagógica da rede”", eixo:"Linguagem e palavrão", modalidade:"Retirada", estagio:"Execução comprovada", situacao:"Revertido", desfecho:"Revertido", verificado:"Sim", fontes:["cc-go","pn-volta"], nota:"O livro voltou às escolas de Goiás em abril de 2024, um mês depois, junto com o Paraná."},
  {id:"EL-004", ato:"MS-2024", obra:"O avesso da pele", alegacao:"“Expressões impróprias” para menores de 18 anos · termo usado pelo deputado estadual Rinaldo Modesto ao cobrar a retirada", eixo:"Linguagem e palavrão", modalidade:"Retirada", estagio:"Execução comprovada", situacao:"Revertido", desfecho:"Revertido", verificado:"Sim", fontes:["gp-estados","cgn-volta","cgn-alems","cc-ms-avesso"], pendencia:"Confirmar se o livro chegou de volta às 75 escolas", nota:"Na Assembleia, a crítica uniu deputados de partidos opostos: Rinaldo Modesto (Podemos) pediu a retirada, Lia Nogueira (PSDB) chamou o livro de “nojento” e Pedro Kemp (PT) disse ter “muitas reservas” sobre o uso no ensino médio. O governador Eduardo Riedel mandou recolher os exemplares das 75 escolas da rede que tinham recebido o livro. Em 23 de abril de 2024 a Secretaria de Educação anunciou a devolução às bibliotecas, “com as orientações pedagógicas quanto à indicação de uso”, sem detalhar quais."},
- {id:"EL-005", ato:"SC-2024", obra:"O avesso da pele", alegacao:"Evitar que obras para adolescentes e adultos cheguem a estudantes do ensino fundamental · exemplares redistribuídos para EJA e centros de educação profissional", eixo:"Sexualidade e gênero", modalidade:"Ocultação ou restrição de acesso", estagio:"Decisão ou ordem", situacao:"Em vigor", desfecho:"Mantido com restrição", verificado:"Parcialmente", fontes:["gp-estados"], pendencia:"Buscar segunda fonte independente ou o documento da Secretaria. A busca de 30/10/2026 não localizou outra reportagem sobre o caso catarinense: as coberturas consultadas sobre o recolhimento da obra tratam de RS, PR, GO e MS.", nota:"O governo anunciou análise de conteúdo e chamou a medida de revisão de acervo. Exemplo de restrição apresentada como gestão pedagógica. A informação vem de nota do governo estadual à Gazeta do Povo, que relata exemplares localizados em escolas estaduais e redistribuição de parte deles a Centros de Educação Profissional (CEDUPs) e centros de EJA."},
+ {id:"EL-005", ato:"SC-2024", obra:"O avesso da pele", alegacao:"A Secretaria afirmou que orientou escolas a recolher exemplares das bibliotecas para análise pedagógica, após indicação parlamentar que sugeria a retirada da obra.", eixo:"Sexualidade e gênero", modalidade:"Ocultação ou restrição de acesso", estagio:"Decisão ou ordem", situacao:"Em aberto", desfecho:"A orientação administrativa está documentada. A execução em cada escola, eventual revogação e retorno dos exemplares às bibliotecas não foram confirmados.", verificado:"Sim", fontes:["gp-estados","alesc-ind-0154-2024","alesc-sc-304-2024"], pendencia:"Confirmar quais escolas receberam a orientação, se a medida foi executada e se houve revogação ou retorno do livro às bibliotecas. A documentação comprova a orientação da Secretaria, mas não individualiza as unidades escolares nem o cumprimento em cada uma.", nota:"A Informação nº 304/2024/SED/DIEN, de 23/04/2024, registra que a Secretaria de Estado da Educação orientou escolas a recolher O avesso da pele das bibliotecas e fazer análise pedagógica da obra e de todo o acervo. A resposta integra o processo da IND/0154/2024, apresentada pelo deputado estadual Sérgio Motta em 06/03/2024. A Informação foi assinada digitalmente por Márcia Loch e Jocelete Isaltina da Silveira dos Santos. O secretário Aristides Cimadon assinou o Ofício/Gabs nº 1017/2024, que encaminhou a manifestação técnica. Não atribuir a ordem ao governador: os documentos consultados identificam a orientação da Secretaria."},
  {id:"EL-006", ato:"SC-2023", obra:"It: A coisa", alegacao:"Sem justificativa no ofício · determinava armazenar “em local não acessível à comunidade escolar”. A secretaria alegou depois “redistribuição por faixa etária”", eixo:"Sobrenatural e mágico", modalidade:"Ocultação ou restrição de acesso", estagio:"Decisão ou ordem", situacao:"Em aberto", desfecho:"Em aberto", verificado:"Sim", fontes:["cc-sc","gp-sc","p360-sc","cnn-sc","cf-sc","folha-sc"], pendencia:"Identificar a coordenadoria regional", nota:"Ofício assinado pelo supervisor regional de educação Waldemar Ronssem Júnior e pela integradora regional Anelise dos Santos de Medeiros: “Determinamos que as obras listadas abaixo sejam retiradas de circulação”. O suplente de vereador Leonel Camasão (PSOL) levou o caso ao Ministério Público estadual."},
  {id:"EL-007", ato:"SC-2023", obra:"Laranja Mecânica", alegacao:"Sem justificativa no ofício · determinava armazenar “em local não acessível à comunidade escolar”. A secretaria alegou depois “redistribuição por faixa etária”", eixo:"Violência", modalidade:"Ocultação ou restrição de acesso", estagio:"Decisão ou ordem", situacao:"Em aberto", desfecho:"Em aberto", verificado:"Sim", fontes:["cc-sc","gp-sc","p360-sc","cnn-sc","cf-sc","folha-sc"], pendencia:"Identificar a coordenadoria regional", nota:"Ofício assinado pelo supervisor regional de educação Waldemar Ronssem Júnior e pela integradora regional Anelise dos Santos de Medeiros: “Determinamos que as obras listadas abaixo sejam retiradas de circulação”. O suplente de vereador Leonel Camasão (PSOL) levou o caso ao Ministério Público estadual."},
  {id:"EL-008", ato:"SC-2023", obra:"Donnie Darko", alegacao:"Sem justificativa no ofício · determinava armazenar “em local não acessível à comunidade escolar”. A secretaria alegou depois “redistribuição por faixa etária”", eixo:"Sobrenatural e mágico", modalidade:"Ocultação ou restrição de acesso", estagio:"Decisão ou ordem", situacao:"Em aberto", desfecho:"Em aberto", verificado:"Sim", fontes:["cc-sc","gp-sc","p360-sc","cnn-sc","cf-sc","folha-sc"], pendencia:"Identificar a coordenadoria regional", nota:"Ofício assinado pelo supervisor regional de educação Waldemar Ronssem Júnior e pela integradora regional Anelise dos Santos de Medeiros: “Determinamos que as obras listadas abaixo sejam retiradas de circulação”. O suplente de vereador Leonel Camasão (PSOL) levou o caso ao Ministério Público estadual."},
@@ -289,19 +289,21 @@ const ATOS = {
      resposta:"A Secretaria anunciou a devolução em 23 de abril de 2024, com orientações pedagógicas."
    }},
  "SC-2024":{
-   nome:"Redistribuição de O avesso da pele na rede estadual de Santa Catarina",
-   data:"2024-03-07",
+   nome:"Orientação para recolher O avesso da pele das bibliotecas escolares (Santa Catarina)",
+   data:"2024-04-23",
+   fim:"2024-06-04",
    uf:"SC",
    tipo:"Escolar",
    rede:"Estadual",
    governo:"Jorginho Mello (PL) · governo de SC",
-   quem:"Secretaria estadual",
-   documento:"Comunicado de revisão de acervo/redistribuição; documento original ainda não está identificado no cadastro.",
+   quem:"Secretaria de Estado da Educação de Santa Catarina",
+   documento:"Informação nº 304/2024/SED/DIEN, de 23/04/2024, e Ofício/Gabs nº 1017/2024, de 28/05/2024, em resposta à IND/0154/2024, de autoria do deputado estadual Sérgio Motta. A Informação registra que a Secretaria orientou escolas a recolher a obra das bibliotecas e fazer análise pedagógica do livro e de todo o acervo. O Ofício/Gabs encaminhou a manifestação técnica à Casa Civil; o Ofício nº 1064/SCC-DIAL-GEAPI, de 03/06/2024, remeteu a resposta à ALESC. A documentação não individualiza as escolas nem comprova o cumprimento em cada unidade.",
    papeis:{
-     decisor:"Secretaria de Estado da Educação de Santa Catarina.",
-     assinantes:"A pessoa responsável pela decisão não está identificada nas fontes cadastradas.",
-     executor:"Rede estadual; exemplares foram redistribuídos para EJA e centros de educação profissional.",
-     resposta:"A justificativa pública foi apresentada como revisão de acervo e adequação por faixa etária."
+     pressao:"Deputado estadual Sérgio Motta apresentou a IND/0154/2024 em 06/03/2024, sugerindo a retirada da obra das escolas estaduais.",
+     decisor:"A Secretaria de Estado da Educação, por meio da Diretoria de Ensino, informou que orientou as escolas a recolher os exemplares das bibliotecas e realizar análise pedagógica da obra e de todo o acervo.",
+     assinantes:"Márcia Loch e Jocelete Isaltina da Silveira dos Santos assinaram digitalmente a Informação nº 304/2024/SED/DIEN. Aristides Cimadon assinou o Ofício/Gabs nº 1017/2024, que encaminhou a manifestação técnica. Marcelo Mendes assinou o Ofício nº 1064/SCC-DIAL-GEAPI, que remeteu a resposta à ALESC. Apenas as duas primeiras assinaturas constam da Informação que registra a orientação de recolhimento.",
+     executor:"Escolas da rede estadual; a orientação para recolhimento está documentada, mas a execução em cada unidade não foi comprovada.",
+     resposta:"A Secretaria justificou a orientação como análise pedagógica e adequação às faixas etárias. A resposta foi encaminhada à ALESC em 04/06/2024; não foi localizada comprovação pública de revogação ou retorno dos exemplares às bibliotecas."
    }},
  "SC-2023":{
    nome:"Ofício circular de 7 de novembro de 2023 (SC)",
@@ -775,6 +777,20 @@ const FONTES = {
   "tit": "Santa Catarina retira de escolas livros sobre regimes autoritários e nazismo; secretaria alega 'redistribuição'",
   "url": "https://www.cartacapital.com.br/educacao/santa-catarina-retira-de-escolas-livros-sobre-regimes-autoritarios-e-nazismo-secretaria-alega-redistribuicao/"
  },
+ "alesc-ind-0154-2024": {
+  "veic": "Assembleia Legislativa de Santa Catarina",
+  "data": "2024-03-06",
+  "tit": "IND/0154/2024 · Sérgio Motta sugere retirada de O avesso da pele das escolas estaduais",
+  "url": "https://portalelegis.alesc.sc.gov.br/proposicoes/KXWdD/documentos",
+  "tipo": "P1"
+ },
+ "alesc-sc-304-2024": {
+  "veic": "Assembleia Legislativa de Santa Catarina · documentos da Secretaria de Estado da Educação",
+  "data": "2024-04-23",
+  "tit": "Informação nº 304/2024/SED/DIEN e Ofício/Gabs nº 1017/2024 · resposta à IND/0154/2024",
+  "url": "https://portalelegis.alesc.sc.gov.br/documentos/5aogB",
+  "tipo": "P1"
+ },
  "gp-sc": {
   "veic": "Gazeta do Povo",
   "data": "2023-11-09",
@@ -901,7 +917,7 @@ const OBSTACULOS = ["Fonte única","Documento interno não publicado","Sigilo ju
 const LACUNAS = {
  "MS-2024":{obstaculos:["Cumprimento não confirmado"], caminho:"Pedido via Lei de Acesso à Informação à Secretaria de Estado de Educação de Mato Grosso do Sul sobre a devolução dos exemplares às escolas."},
  "SC-2023":{obstaculos:["Responsável não identificado"], caminho:"Pedido via Lei de Acesso à Informação à Secretaria de Estado da Educação de Santa Catarina do ofício e da unidade regional que o expediu."},
- "SC-2024":{obstaculos:["Fonte única","Documento interno não publicado"], caminho:"Pedido via Lei de Acesso à Informação à Secretaria de Estado da Educação de Santa Catarina do comunicado de revisão de acervo e da lista de unidades que receberam os exemplares."},
+ "SC-2024":{obstaculos:["Cumprimento não confirmado","Documento interno não publicado"], caminho:"Pedido via Lei de Acesso à Informação à Secretaria de Estado da Educação de Santa Catarina da lista de escolas que receberam a orientação, dos registros de recolhimento, dos pareceres pedagógicos produzidos e de eventual ato de revogação ou devolução dos exemplares."},
  "RO-2020":{obstaculos:["Documento interno não publicado","Lista de títulos incompleta"], caminho:"Pedido via Lei de Acesso à Informação à Seduc de Rondônia da íntegra do processo SEI 0029.051300/2020-91, do adendo com a lista de títulos e do resultado da sindicância; consulta ao Ministério Público de Rondônia sobre a recomendação."},
  "PALM-2021-06":{obstaculos:["Documento interno não publicado","Divergência entre fontes"], caminho:"Pedido via Fala.BR à Fundação Cultural Palmares do relatório com anexo e de documentos sobre o destino dos exemplares."},
  "PALM-2021-08":{obstaculos:["Documento interno não publicado","Lista de títulos incompleta"], caminho:"Pedido via Fala.BR à Fundação Cultural Palmares do inventário da seção separada e de registros sobre o acesso a esse acervo."},
@@ -983,6 +999,7 @@ const CORRECOES = [
  {data:"2026-10-28", id:"EL-034", texto:"Limeira: corrigida a classificação após leitura do requerimento e da resposta oficiais. Clayton Silva pediu informações e questionou a temática; não pediu formalmente a retirada. A Secretaria defendeu o livro e seu uso pedagógico."},
  {data:"2026-10-28", id:"EL-030", texto:"Londrina: separado o pedido parlamentar de recolhimento, ainda sem execução comprovada, da Lei Municipal nº 13.930/2025, originada do PL 79/2024. Acrescentada a publicação no Jornal Oficial do Município."},
  {data:"2026-10-28", id:"EL-002", texto:"Paraná: corrigida a descrição dos expedientes. Anderfábio Oliveira dos Santos assinou o ofício da Secretaria; Laura Patrícia Lopes assinou ofício de teor semelhante do Núcleo Regional de Educação de Curitiba. Não eram coassinantes do mesmo documento."},
+ {data:"2026-11-01", id:"EL-005", texto:"Santa Catarina: incluídos a IND/0154/2024 e a Informação nº 304/2024/SED/DIEN, que comprova a orientação da Secretaria para recolher O avesso da pele das bibliotecas escolares e realizar análise pedagógica. Identificados os signatários da Informação e os signatários dos ofícios de encaminhamento; o registro passou a verificado. Permanecem em aberto a execução por escola e a situação atual da orientação."},
  {data:"2026-11-01", id:"EL-034", texto:"Limeira: consultado o Requerimento nº 451/2019 original. O documento identifica Clayton Silva (PSC) como signatário digital; o conteúdo pede informações sobre distribuição e leitura de A bolsa amarela, não sua retirada. A autoria e a assinatura do requerimento foram separadas do papel de pressão."},
  {data:"2026-11-01", id:"Fontes", texto:"Iniciada a classificação tipológica das fontes: documentos primários, judiciais e institucionais e pesquisas acadêmicas recebem metadados próprios; as demais fontes permanecem explicitamente não classificadas até revisão individual."},
 ];
@@ -1005,6 +1022,11 @@ const AGENTES = {
  "eduardo-riedel":{nome:"Eduardo Riedel", tipo:"Pessoa"},
  "sed-ms":{nome:"Secretaria de Estado de Educação de Mato Grosso do Sul", tipo:"Instituição"},
  "sed-sc":{nome:"Secretaria de Estado da Educação de Santa Catarina", tipo:"Instituição"},
+ "sergio-motta":{nome:"Sérgio Motta", tipo:"Pessoa"},
+ "marcia-loch":{nome:"Márcia Loch", tipo:"Pessoa"},
+ "jocelete-isaltina-da-silveira-dos-santos":{nome:"Jocelete Isaltina da Silveira dos Santos", tipo:"Pessoa"},
+ "aristides-cimadon":{nome:"Aristides Cimadon", tipo:"Pessoa"},
+ "marcelo-mendes":{nome:"Marcelo Mendes", tipo:"Pessoa"},
  "waldemar-ronssem-junior":{nome:"Waldemar Ronssem Júnior", tipo:"Pessoa"},
  "anelise-dos-santos-de-medeiros":{nome:"Anelise dos Santos de Medeiros", tipo:"Pessoa"},
  "leonel-camasao":{nome:"Leonel Camasão", tipo:"Pessoa"},
@@ -1051,7 +1073,12 @@ const PAPEIS = [
  {ato:"MS-2024", agente:"eduardo-riedel", papel:"Decisão", cargo:"governador de Mato Grosso do Sul", atribuido:true, nota:"A Secretaria informou à CartaCapital que o recolhimento atendia a determinação do governador; o ato formal não está identificado."},
  {ato:"MS-2024", agente:"sed-ms", papel:"Execução"},
  {ato:"MS-2024", agente:"sed-ms", papel:"Resposta ou reversão", nota:"Anunciou a devolução em 23 de abril de 2024."},
- {ato:"SC-2024", agente:"sed-sc", papel:"Decisão", nota:"A pessoa responsável não está identificada nas fontes."},
+ {ato:"SC-2024", agente:"sergio-motta", papel:"Pedido", cargo:"deputado estadual", nota:"Autor da IND/0154/2024, que sugeriu a retirada de O avesso da pele das escolas estaduais."},
+ {ato:"SC-2024", agente:"sed-sc", papel:"Decisão", nota:"A Informação nº 304/2024/SED/DIEN registra que a Secretaria orientou as escolas a recolher a obra das bibliotecas e fazer análise pedagógica."},
+ {ato:"SC-2024", agente:"marcia-loch", papel:"Assinatura", cargo:"diretora da Diretoria de Ensino (DIEN)", nota:"Assinou digitalmente a Informação nº 304/2024/SED/DIEN, que registra a orientação de recolhimento."},
+ {ato:"SC-2024", agente:"jocelete-isaltina-da-silveira-dos-santos", papel:"Assinatura", cargo:"gerente da Gerência do Ensino Médio e Profissional (GEMP)", nota:"Assinou digitalmente a Informação nº 304/2024/SED/DIEN, que registra a orientação de recolhimento."},
+ {ato:"SC-2024", agente:"aristides-cimadon", papel:"Assinatura", cargo:"secretário de Estado da Educação de Santa Catarina", nota:"Assinou o Ofício/Gabs nº 1017/2024, que encaminhou a manifestação técnica; não é identificado como signatário da Informação que registra a orientação."},
+ {ato:"SC-2024", agente:"marcelo-mendes", papel:"Assinatura", cargo:"secretário da Casa Civil, designado", nota:"Assinou o Ofício nº 1064/SCC-DIAL-GEAPI, que encaminhou a resposta à ALESC; não é identificado como signatário da Informação que registra a orientação."},
  {ato:"SC-2023", agente:"sed-sc", papel:"Decisão", nota:"Estrutura regional da Secretaria; a coordenadoria específica não está identificada."},
  {ato:"SC-2023", agente:"waldemar-ronssem-junior", papel:"Assinatura", cargo:"supervisor regional de Educação"},
  {ato:"SC-2023", agente:"anelise-dos-santos-de-medeiros", papel:"Assinatura", cargo:"integradora regional"},
