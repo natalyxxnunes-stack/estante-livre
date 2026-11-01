@@ -80,7 +80,7 @@ Obras: *Macunaíma*, *Memórias póstumas de Brás Cubas*, *Os sertões*, *O cas
 
 ## 3. Assinatura e identificação de responsáveis
 
-A exportação apresenta campo de assinatura vazio em EL-025 a EL-034. Isso não significa que os dez registros tenham necessariamente um signatário formal a identificar: os estágios variam entre pressão pública, pedido formal, decisão e execução.
+Na exportação de 30/10/2026, o campo de assinatura estava vazio em EL-025 a EL-034. Nesta branch, a assinatura digital do Requerimento nº 451/2019 (EL-034) foi confirmada em documento primário e adicionada ao cadastro de papéis do ato; o gerador deverá atualizar a exportação JSON/CSV na próxima execução. Isso não significa que os dez registros tenham necessariamente um signatário formal a identificar: os estágios variam entre pressão pública, pedido formal, decisão e execução.
 
 | Registro | Situação editorial | Próximo passo |
 |---|---|---|
@@ -95,7 +95,7 @@ A exportação apresenta campo de assinatura vazio em EL-025 a EL-034. Isso não
 | EL-033 | Decisão atribuída por fonte a dirigente da Funap; ata e mensagem originais ausentes | Obter documentos e manter atribuição como atribuída pela fonte |
 | EL-034 | Assinatura digital comprovada no Requerimento nº 451/2019; não equivale a pedido formal de retirada | O documento oficial identifica Clayton Silva como vereador e informa “ASSINADO DIGITALMENTE”. Registrar o papel como autor/signatário do requerimento de informação, sem classificá-lo como autor de ordem ou pedido de retirada. [Documento original da Câmara de Limeira](https://consulta.limeira.sp.leg.br/arquivo?Id=215235).
 
-**Correção documental confirmada:** o Requerimento nº 451/2019, de 12/08/2019, identifica Clayton Silva como vereador (PSC) e contém a indicação “ASSINADO DIGITALMENTE”. O texto questiona a distribuição e a leitura da obra e inclui perguntas sobre a alegada afronta a princípios morais e sobre outros livros; não pede formalmente a retirada. O registro deve separar autoria/assinatura do requerimento de qualquer decisão de retirada. [Documento original](https://consulta.limeira.sp.leg.br/arquivo?Id=215235).
+**Correção documental confirmada nesta branch (1º/11/2026):** o Requerimento nº 451/2019, de 12/08/2019, identifica Clayton Silva como vereador (PSC) e contém a indicação “ASSINADO DIGITALMENTE”. O texto questiona a distribuição e a leitura da obra e inclui perguntas sobre a alegada afronta a princípios morais e sobre outros livros; não pede formalmente a retirada. O registro deve separar autoria/assinatura do requerimento de qualquer decisão de retirada. [Documento original](https://consulta.limeira.sp.leg.br/arquivo?Id=215235).
 
 ## 4. Localidades ausentes
 
