@@ -982,6 +982,7 @@ const FONTES = {
   "url": "https://www1.folha.uol.com.br/amp/cotidiano/2023/11/governo-de-sc-manda-recolher-livros-de-escolas-publicas.shtml"
  },
  "cc-ms-avesso": {
+  "tipo": "S2",
   "veic": "CartaCapital",
   "data": "2024-03-07",
   "tit": "Mato Grosso do Sul é o 3º estado que determina retirada de O Avesso da Pele das escolas",
