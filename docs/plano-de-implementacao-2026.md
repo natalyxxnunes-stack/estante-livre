@@ -24,7 +24,7 @@
 | Análises automatizadas | Números e tabelas derivados de CASOS, ATOS, AGENTES e PAPEIS | Implementação nesta branch |
 | Poder e censura | Consulta de agentes e papéis derivados da base | Implementado nesta branch, com perfis individuais gerados por agente |
 | Domínio próprio | Domínio escolhido, DNS, HTTPS e canonical conferidos | Depende de decisão e acesso da responsável |
-| Acessibilidade e mobile | Testes manuais e automatizados documentados; sem falhas críticas | CSS/estrutura preparados; auditoria de navegador pendente |
+| Acessibilidade e mobile | Testes manuais e automatizados documentados; sem falhas críticas | Auditoria estática no CI: 148 páginas e 36 imagens, zero erros bloqueantes/alertas; testes manuais de teclado, leitor de tela, contraste e dispositivos reais pendentes |
 
 ## P2 — Estratégico
 
