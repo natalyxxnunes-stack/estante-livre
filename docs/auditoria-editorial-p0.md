@@ -13,23 +13,18 @@
 | Atos | 17 |
 | Referências associadas aos registros | 184 |
 | URLs distintas | 69 |
-| Registros parcialmente verificados | 19 |
+| Registros parcialmente verificados na fotografia inicial | 19 |
 | Registros com cidade não informada | 13 |
 | Registros com campo de assinatura vazio na exportação | 10 |
 | Registros com apenas uma fonte | 1 |
 
 A ausência de cidade não deve ser preenchida com a capital do estado por conveniência. A ausência de assinatura também não deve ser resolvida atribuindo a autoria ao chefe do Executivo em exercício.
 
-**Atualização de 1º/11/2026:** o registro EL-005 foi fechado quanto ao núcleo factual após localização da IND/0154/2024 e da Informação nº 304/2024/SED/DIEN. O documento oficial comprova a orientação de recolhimento e identifica signatários; a execução por escola e a situação atual permanecem pendentes. Restam 14 registros parcialmente verificados nesta branch. O EL-005 passou a ter três referências cadastradas; nenhum registro permanece com fonte única. O campo de assinatura está preenchido para EL-005 e EL-034; nove registros (EL-025 a EL-033) continuam sem signatário formal identificado ou documento nominal suficiente. A abrangência do EL-005 foi registrada como rede estadual; restam 12 registros com município não identificado ou a confirmar.
+**Atualização de 1º/11/2026:** o registro EL-005 foi fechado quanto ao núcleo factual após localização da IND/0154/2024 e da Informação nº 304/2024/SED/DIEN. O documento oficial comprova a orientação de recolhimento e identifica signatários; a execução por escola e a situação atual permanecem pendentes. Após a revisão dos sete registros individuais de Rondônia (EL-015 a EL-021), restam sete registros parcialmente verificados nesta branch: EL-022, EL-023, EL-024, EL-028, EL-030, EL-031 e EL-032. O EL-005 passou a ter três referências cadastradas; nenhum registro permanece com fonte única. O campo de assinatura está preenchido para EL-005 e EL-034; nove registros (EL-025 a EL-033) continuam sem signatário formal identificado ou documento nominal suficiente. A abrangência do EL-005 foi registrada como rede estadual; restam 12 registros com município não identificado ou a confirmar.
 
-## 2. Registros parcialmente verificados na base atual — 14 (EL-005 fechado em 1º/11/2026; EL-025, EL-026, EL-027, EL-029 e EL-033 têm núcleo factual verificado)
+## 2. Registros parcialmente verificados na base atual — 7 (EL-005, EL-015 a EL-021, EL-025, EL-026, EL-027, EL-029 e EL-033 têm núcleo factual verificado)
 
-### EL-015 a EL-021 — episódio de Rondônia (2020)
-Obras: *Macunaíma*, *Memórias póstumas de Brás Cubas*, *Os sertões*, *O castelo*, *Contos de terror, de mistério e de morte*, *A vida como ela é* e *Beijo no asfalto*.
-- **Pendência comum:** íntegra do processo SEI 0029.051300/2020-91, resultado da sindicância administrativa da Seduc e íntegra da recomendação do MP-RO.
-- **Evidência já cadastrada:** o Diário do MPF registra solicitação verbal de recolhimento feita pela Seduc, suspensa na mesma data, e devolução dos livros que chegaram a ser recolhidos; o inquérito civil foi arquivado e o arquivamento homologado. O registro do MPF é mais preciso que a afirmação genérica de que a ordem não chegou a ser executada: houve recolhimento pontual de exemplares, mas não se concretizou o recolhimento geral descrito no memorando.
-- **Ação:** obter o processo SEI 0029.051300/2020-91, a íntegra do Memorando-Circular nº 4/2020/SEDUC-DGE e anexos, a sindicância e seu resultado, a recomendação do MP-RO e os comprovantes administrativos de devolução.
-
+### EL-022 a EL-024 — conjuntos de títulos do episódio de Rondônia (2020)
 ### EL-022 — Obra de Rubem Fonseca (19 títulos)
 - **Pendência:** desmembrar o conjunto em títulos individuais.
 - **Ação:** obter e transcrever a lista original; criar uma ficha por título somente quando a relação estiver documentada.
@@ -63,6 +58,15 @@ Obras: *Macunaíma*, *Memórias póstumas de Brás Cubas*, *Os sertões*, *O cas
 
 ## Registros com núcleo factual verificado; diligências ainda abertas
 
+### EL-015 a EL-021 — episódio de Rondônia (2020)
+Obras: *Macunaíma*, *Memórias póstumas de Brás Cubas*, *Os sertões*, *O castelo*, *Contos de terror, de mistério e de morte*, *A vida como ela é* e *Beijo no asfalto*.
+- **Núcleo verificado:** o Diário Eletrônico do MPF nº 161/2021, publicado em 30/08/2021, registra que a Seduc fez solicitação verbal de recolhimento para análise e classificação por faixa etária; a solicitação foi suspensa no mesmo dia e os exemplares que chegaram a ser recolhidos foram devolvidos às escolas. A ementa registra que não se concretizou o recolhimento geral das obras, que a Seduc instaurou sindicância para apurar o contexto e eventual responsabilidade administrativa, e que recomendação do MP-RO foi acatada. O arquivamento do inquérito civil foi homologado.
+- **Limite da conclusão:** a decisão do MPF comprova o núcleo factual do episódio e seu desfecho institucional, mas não identifica quem fez a solicitação verbal, não traz o resultado da sindicância nem substitui o processo SEI integral ou a recomendação do MP-RO.
+- **Pendência:** íntegra do processo SEI 0029.051300/2020-91, resultado da sindicância administrativa e íntegra da recomendação do MP-RO.
+- **Ação:** obter as peças para aprofundar a responsabilização administrativa. Manter separado o ato formal de circulação do memorando, a solicitação verbal relatada à Coordenadoria, a suspensão e o recolhimento pontual de exemplares.
+- **Fonte primária:** [Diário Eletrônico do MPF nº 161/2021, p. 26](https://transparencia.mpf.mp.br/conteudo/diarios-e-boletins/diario-eletronico-dmpf-e/2021/DMPF-EXTRAJUDICIAL-2021-08-30.pdf).
+
+
 ### EL-025 — Fundação Cultural Palmares: anúncio de descarte de 5.165 exemplares
 - **Núcleo verificado:** o relatório oficial “Retrato do Acervo” e a cobertura independente documentam a classificação de 5.165 exemplares como de “temática alheia à negra” e a intenção de retirá-los do acervo.
 - **Atualização documental:** o Inventário Bibliográfico oficial publicado em 08/08/2024 informa 9.696 títulos e declara que o levantamento foi realizado entre julho e outubro de 2021. Essa cifra posterior não deve ser comparada automaticamente aos totais jornalísticos de 9.565 e 9.546: é necessário esclarecer unidade de contagem, versão do inventário e método.
@@ -90,7 +94,7 @@ Obras: *Macunaíma*, *Memórias póstumas de Brás Cubas*, *Os sertões*, *O cas
 
 ## 3. Assinatura e identificação de responsáveis
 
-Na exportação de 30/10/2026, o campo de assinatura estava vazio em EL-025 a EL-034. Nesta branch, a assinatura digital do Requerimento nº 451/2019 (EL-034) foi confirmada em documento primário e adicionada ao cadastro de papéis do ato; o gerador deverá atualizar a exportação JSON/CSV na próxima execução. Isso não significa que os dez registros tenham necessariamente um signatário formal a identificar: os estágios variam entre pressão pública, pedido formal, decisão e execução.
+Na exportação de 30/10/2026, o campo de assinatura estava vazio em EL-025 a EL-034. Nesta branch, as assinaturas de Rondônia (EL-015 a EL-021), além da assinatura digital do Requerimento nº 451/2019 (EL-034), foram confirmadas em documento primário e adicionada ao cadastro de papéis do ato; o gerador deverá atualizar a exportação JSON/CSV na próxima execução. Isso não significa que os dez registros tenham necessariamente um signatário formal a identificar: os estágios variam entre pressão pública, pedido formal, decisão e execução.
 
 | Registro | Situação editorial | Próximo passo |
 |---|---|---|
@@ -109,7 +113,7 @@ Na exportação de 30/10/2026, o campo de assinatura estava vazio em EL-025 a EL
 
 ## 4. Localidades ausentes
 
-A exportação não informa cidade em EL-003, EL-004, EL-005 e EL-015 a EL-024. O preenchimento exige evidência do alcance geográfico do ato. Para episódios estaduais, usar “rede estadual de [UF]” quando a cidade não for aplicável, em vez de inventar município.
+A exportação não informa cidade em EL-003, EL-004 e EL-015 a EL-024. EL-005 tem abrangência estadual explicitada. O preenchimento exige evidência do alcance geográfico do ato. Para episódios estaduais, usar “rede estadual de [UF]” quando a cidade não for aplicável, em vez de inventar município.
 
 ## 5. Regras de publicação até o fechamento das lacunas
 
