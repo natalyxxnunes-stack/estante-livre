@@ -14,10 +14,10 @@ jobs:
       - name: Checkout pull request branch
         uses: actions/checkout@v4
         with:
-          ref: ${{ github.event.pull_request.head.ref }}
+          ref: \${{ github.event.pull_request.head.ref }}
       - name: Sync latest branch head
         run: |
-          TARGET_BRANCH="${{ github.event.pull_request.head.ref }}"
+          TARGET_BRANCH="\${{ github.event.pull_request.head.ref }}"
           echo "TARGET_BRANCH=$TARGET_BRANCH" >> "$GITHUB_ENV"
           git fetch origin "$TARGET_BRANCH:refs/remotes/origin/$TARGET_BRANCH"
           git reset --hard "origin/$TARGET_BRANCH"
@@ -39,10 +39,10 @@ jobs:
           const fs = require("fs");
           for (const file of ["analises.html", "poder.html"]) {
             const html = fs.readFileSync(file, "utf8");
-            const scripts = [...html.matchAll(/<script(?:\\s[^>]*)?>([\\s\\S]*?)<\\/script>/g)]
+            const scripts = [...html.matchAll(/<script(?:\s[^>]*)?>([\s\S]*?)<\/script>/g)]
               .map(match => match[1]).filter(script => script.trim());
             if (!scripts.length) throw new Error("No inline script found in " + file);
-            fs.writeFileSync("/tmp/" + file + ".js", scripts.join("\\n"));
+            fs.writeFileSync("/tmp/" + file + ".js", scripts.join("\n"));
           }
           NODE
           node --check /tmp/analises.html.js
