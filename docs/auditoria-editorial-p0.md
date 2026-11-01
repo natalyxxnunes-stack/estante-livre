@@ -18,9 +18,11 @@
 | Registros com campo de assinatura vazio na exportação | 10 |
 | Registros com apenas uma fonte | 1 |
 
-A ausência de cidade não deve ser preenchida com a capital do estado por conveniência. A ausência de assinatura também não deve ser resolvida atribuindo a autoria ao chefe do Executivo em exercício.\n\n**Atualização de 1º/11/2026:** o registro EL-005 foi fechado quanto ao núcleo factual após localização da IND/0154/2024 e da Informação nº 304/2024/SED/DIEN. O documento oficial comprova a orientação de recolhimento e identifica signatários; a execução por escola e a situação atual permanecem pendentes. Restam 18 registros parcialmente verificados nesta branch.
+A ausência de cidade não deve ser preenchida com a capital do estado por conveniência. A ausência de assinatura também não deve ser resolvida atribuindo a autoria ao chefe do Executivo em exercício.
 
-## 2. Registros parcialmente verificados — 19
+**Atualização de 1º/11/2026:** o registro EL-005 foi fechado quanto ao núcleo factual após localização da IND/0154/2024 e da Informação nº 304/2024/SED/DIEN. O documento oficial comprova a orientação de recolhimento e identifica signatários; a execução por escola e a situação atual permanecem pendentes. Restam 18 registros parcialmente verificados nesta branch.
+
+## 2. Registros parcialmente verificados na base de 30/10/2026 — 19 (EL-005 fechado em 1º/11/2026; 18 permanecem)
 
 ### EL-015 a EL-021 — episódio de Rondônia (2020)
 Obras: *Macunaíma*, *Memórias póstumas de Brás Cubas*, *Os sertões*, *O castelo*, *Contos de terror, de mistério e de morte*, *A vida como ela é* e *Beijo no asfalto*.
