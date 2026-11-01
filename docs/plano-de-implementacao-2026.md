@@ -7,8 +7,8 @@
 
 | Entrega | Critério de conclusão | Estado |
 |---|---|---|
-| Revisão dos registros parcialmente verificados | Cada pendência encerrada por documento/fonte ou mantida explicitamente com justificativa | EL-005 e EL-015 a EL-021 verificados no núcleo factual; 7 registros parcialmente verificados permanecem (EL-022 a EL-024, EL-028, EL-030 a EL-032) |
-| Identificação de signatários | Nome, papel, documento e fonte primária; ou indicação explícita de que não foi identificado | Nove registros (EL-025 a EL-033) ainda sem signatário formal identificado ou documento nominal suficiente; não preencher por inferência |
+| Revisão dos registros parcialmente verificados | Cada pendência encerrada por documento/fonte ou mantida explicitamente com justificativa | EL-005 e EL-015 a EL-021 verificados no núcleo factual; 8 registros parcialmente verificados permanecem (EL-022 a EL-024, EL-028, EL-030 a EL-032 e EL-035) |
+| Identificação de signatários | Nome, papel, documento e fonte primária; ou indicação explícita de que não foi identificado | Oito registros com decisão/retirada (EL-025 a EL-030, EL-032 e EL-033) ainda sem signatário formal individual identificado; EL-035 tem pedido assinado por cargos não identificados nominalmente. EL-031 não tem ordem de retirada cuja assinatura seja aplicável; não preencher por inferência |
 | Revisão de fontes e links | URL testada, tipo de fonte, afirmação sustentada e independência avaliadas | Protocolo criado; classificação individual pendente |
 | Revisão de atribuições políticas | Governo, partido, agente e papel separados; relação causal documentada | Regra editorial definida; revisão caso a caso pendente |
 | Direitos e créditos de capas | Origem, titular, licença/permissão, crédito e uso registrado | Inventário de sete capas criado; origem e autorização individual ainda precisam ser verificadas antes de ampliar ou manter a reprodução |
@@ -17,7 +17,7 @@
 
 | Entrega | Critério de conclusão | Estado |
 |---|---|---|
-| Taxonomia de fontes | Tipos documentais e critérios de independência publicados | Protocolo publicado; 80/81 fontes classificadas; uma fonte de blog pendente |
+| Taxonomia de fontes | Tipos documentais e critérios de independência publicados | Protocolo publicado; 81/82 fontes classificadas; uma fonte de blog pendente |
 | Documentos originais | Link ou cópia legalmente preservada para cada ato disponível | Parcial; lista de solicitações no relatório P0 |
 | Cidades e localidades | Localidade sustentada por fonte; desconhecido continua explícito | 12 registros com município não identificado ou a confirmar; casos estaduais devem manter a abrangência da rede, sem inventar cidade |
 | Linha do tempo | Cada marco com data, contexto e duas fontes pertinentes, preferencialmente primárias | Revisão histórica ainda necessária |
