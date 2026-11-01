@@ -129,12 +129,15 @@ function capaHTML(c, cls){
   return `<div><div class="${k}-tipo m-${slug(c.modalidade)}" aria-hidden="true"><b>${esc(t)}</b><span>${esc((c.autoria||"").split(",")[0])}</span></div></div>`;
 }
 
+const ROTULOS_FONTE = {P1:"Documento primário",P2:"Documento judicial ou de controle",P3:"Registro institucional",S1:"Reportagem com apuração própria",S2:"Reportagem de cobertura",A1:"Pesquisa acadêmica",O1:"Manifestação de organização",R1:"Reprodução ou republicação"};
 function linksFonte(ids){
   if(!ids || !ids.length) return "";
   return `<div class="fontes"><div class="fontes-lab">FONTES</div>` +
     ids.map(k=>{ const f=FONTES[k]; if(!f) return "";
+      const tipo = f.tipo ? (ROTULOS_FONTE[f.tipo] || f.tipo) : "Tipo não classificado";
       return `<a class="flink" href="${esc(f.url)}" target="_blank" rel="noopener">
         <span class="v">${esc(f.veic)}${f.data?` · ${dataCurta(f.data)}`:""}</span>
+        <span class="tipo-fonte">${esc(tipo)}</span>
         <span class="t">${esc(f.tit)}</span></a>`;
     }).join("") + `</div>`;
 }
