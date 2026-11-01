@@ -17,7 +17,7 @@ jobs:
           ref: ${{ github.event.pull_request.head.ref }}
       - name: Sync latest branch head
         run: |
-          TARGET_BRANCH="\${{ github.event.pull_request.head.ref }}"
+          TARGET_BRANCH="${{ github.event.pull_request.head.ref }}"
           echo "TARGET_BRANCH=$TARGET_BRANCH" >> "$GITHUB_ENV"
           git fetch origin "$TARGET_BRANCH:refs/remotes/origin/$TARGET_BRANCH"
           git reset --hard "origin/$TARGET_BRANCH"
