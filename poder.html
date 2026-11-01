@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Poder e censura · Estante Livre</title>
+<meta name="description" content="Consulta os papéis documentados de pessoas e instituições em episódios de restrição à circulação de livros: pressão, pedido, decisão, assinatura, execução e reversão.">
+<link rel="stylesheet" href="assets/estilo.css">
+</head>
+<body>
+<main id="conteudo" tabindex="-1">
+<div class="wrap">
+  <div class="hero-pg">
+    <p class="kicker">RESPONSABILIZAÇÃO · BASE DOCUMENTAL</p>
+    <h1>Poder e censura</h1>
+    <p class="lede">Quem pressionou, pediu, decidiu, assinou, executou, fiscalizou ou reverteu cada medida. Os papéis são apresentados conforme os registros e suas fontes; não são intercambiáveis.</p>
+  </div>
+  <section>
+    <div class="analysis-alert"><strong>Como interpretar.</strong> A presença de um agente em um episódio não prova que ele tenha ordenado a medida. Governo em exercício é contexto institucional, não evidência de autoria. Quando a atribuição depende de relato de fonte, isso aparece indicado; quando não há pessoa identificada, a lacuna permanece visível.</div>
+    <div class="poder-tools">
+      <label for="poder-busca">Buscar pessoa, instituição, cargo, partido ou episódio</label>
+      <input id="poder-busca" type="search" placeholder="Ex.: secretaria, governador, assinatura, PL…">
+      <p id="poder-contagem" class="note" role="status" aria-live="polite"></p>
+    </div>
+  </section>
+  <section>
+    <div class="sechead"><span class="kicker">01</span><h2>Agentes e papéis documentados</h2></div>
+    <!-- GERADO:poder -->
+    <div id="poder-lista"></div>
+    <!-- /GERADO:poder -->
+  </section>
+  <section>
+    <div class="sechead"><span class="kicker">02</span><h2>O que esta página não conclui</h2></div>
+    <div class="analysis-unknown">
+      <div><h3>Partido não é prova de autoria</h3><p>O partido de um chefe do Executivo não permite atribuir automaticamente a ele uma decisão tomada por uma secretaria, coordenadoria ou escola. A relação precisa estar documentada.</p></div>
+      <div><h3>Pressão não é decisão</h3><p>Uma crítica pública, requerimento ou pedido pode anteceder uma medida, mas não comprova que a pessoa que pressionou tenha expedido ou executado a ordem.</p></div>
+      <div><h3>Assinatura não é sinônimo de autoria intelectual</h3><p>O signatário formal, a autoridade que determinou a medida e a instituição que a executou podem ser pessoas ou órgãos diferentes. O cadastro preserva essas distinções.</p></div>
+      <div><h3>Ausência de nome é uma lacuna</h3><p>Quando as fontes identificam apenas a instituição, a página não tenta adivinhar o agente individual. A pendência deve ser resolvida por documento ou resposta oficial.</p></div>
+    </div>
+  </section>
+  <section>
+    <p class="note">A base pode ser consultada e reutilizada em <a href="dados/estante-livre-casos.json">JSON</a> e <a href="dados/estante-livre-casos.csv">CSV</a>. Leia também a <a href="metodologia.html">metodologia</a> e a página <a href="pendencias.html">O que falta apurar</a>.</p>
+  </section>
+</div>
+</main>
+<script src="assets/dados.js"></script>
+<script src="assets/comum.js"></script>
+<script>
+const campoPoder = document.getElementById("poder-busca");
+const listaPoder = document.getElementById("poder-lista");
+const contagemPoder = document.getElementById("poder-contagem");
+function filtrarPoder(){
+  const termo = (campoPoder.value || "").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().trim();
+  let visiveis = 0;
+  listaPoder.querySelectorAll("[data-poder-card]").forEach(card=>{
+    const texto = (card.dataset.search || "").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+    const mostrar = !termo || texto.includes(termo);
+    card.hidden = !mostrar;
+    if(mostrar) visiveis++;
+  });
+  contagemPoder.textContent = visiveis + (visiveis===1 ? " agente visível" : " agentes visíveis");
+}
+campoPoder.addEventListener("input",filtrarPoder);
+montarRodape();
+</script>
+</body>
+</html>
