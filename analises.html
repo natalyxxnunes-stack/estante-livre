@@ -59,8 +59,8 @@
  </section>
  <section>
   <div class="sechead"><span class="kicker">02</span><h2>Quem pressiona: o recorte parlamentar</h2></div>
-  <p class="analysis-lead">Nos seis registros em que o catálogo identifica nominalmente um parlamentar como autor de pressão ou pedido relacionado à obra, as seis pessoas pertencem a partidos geralmente posicionados à direita ou à centro-direita.</p>
-  <p>São Rinaldo Modesto (Podemos), Thomaz Henrique (PL), Gustavo Gayer (PL), Jéssica Ramos Moreno (PP), Zelinda Pastora (PRD) e Clayton Silva (PSC). Essa recorrência é um achado relevante do conjunto documentado. Não autoriza, porém, afirmar que toda tentativa de censura no Brasil venha da direita, nem que esses parlamentares tenham sido os responsáveis formais por todas as decisões.</p>
+  <p class="analysis-lead" id="politicos-resumo">A relação abaixo é calculada a partir dos papéis cadastrados em cada ato.</p>
+  <p>Partidos e cargos são apresentados conforme constam das fontes cadastradas. A presença de um parlamentar em um episódio não prova que ele tenha tomado a decisão administrativa ou executado a medida. A página não atribui autoria ao partido do governo sem evidência documental específica.</p>
   <div class="table-wrap"><table class="tab analysis-table">
    <thead><tr><th>Parlamentar</th><th>Partido à época</th><th>O que o registro documenta</th><th>Quem decidiu — ou o que se sabe</th><th>Ficha</th></tr></thead>
    <tbody id="politicos-rows"></tbody>
@@ -107,14 +107,21 @@
 <script src="assets/dados.js"></script>
 <script src="assets/comum.js"></script>
 <script>
-const idsPoliticos = [
- {id:"EL-004",nome:"Rinaldo Modesto",partido:"Podemos",papel:"Pediu a retirada na Assembleia; a ordem foi atribuída ao governador Eduardo Riedel.",decisao:"Governador Eduardo Riedel; signatário formal não identificado."},
- {id:"EL-028",nome:"Thomaz Henrique",partido:"PL",papel:"Contestou publicamente a obra e a acusou de doutrinação.",decisao:"Secretaria Municipal de Educação e Cidadania; agente individual não identificado."},
- {id:"EL-029",nome:"Gustavo Gayer",partido:"PL",papel:"Publicou vídeo chamando a obra de pornográfica.",decisao:"Coordenação do Vestibular da UniRV."},
- {id:"EL-030",nome:"Jéssica Ramos Moreno",partido:"PP",papel:"Apresentou pedido formal de recolhimento.",decisao:"Não há decisão administrativa nem retirada comprovada."},
- {id:"EL-032",nome:"Zelinda Pastora",partido:"PRD",papel:"Disse ter pedido diretamente ao secretário o recolhimento após reclamação de uma mãe.",decisao:"Secretaria Municipal de Educação; ordem escrita e signatário ainda não localizados."},
- {id:"EL-034",nome:"Clayton Silva",partido:"PSC",papel:"Apresentou requerimento questionando a distribuição e a leitura da obra; não pediu formalmente sua retirada.",decisao:"Não houve decisão de retirada; a Secretaria defendeu a obra."}
-];
+const politicos = [];
+const vistosPoliticos = new Set();
+for(const p of PAPEIS){
+ if(AGENTES[p.agente]?.tipo!=="Pessoa" || !/(deputado|vereador|vereadora)/i.test(p.cargo||"")) continue;
+ const chave=p.agente+"|"+p.ato;
+ if(vistosPoliticos.has(chave)) continue;
+ vistosPoliticos.add(chave);
+ const partido=(p.cargo.match(/\(([^)]+)\)/)||[])[1]||"Não informado";
+ const registros=CASOS.filter(c=>c.ato===p.ato);
+ const decisores=PAPEIS.filter(q=>q.ato===p.ato && q.papel==="Decisão").map(q=>{
+   const nome=AGENTES[q.agente]?.nome||q.agente;
+   return nome+(q.nota?": "+q.nota:"");
+ });
+ politicos.push({nome:AGENTES[p.agente].nome,partido,papel:p.nota||("Participação registrada como "+p.papel.toLowerCase()+"."),decisao:decisores.join(" · ")||"Não há decisão administrativa individual identificada no cadastro.",registros});
+}
 const el = id => document.getElementById(id);
 const atos = new Map(CASOS.map(c=>[c.ato,c]));
 const porAto = {};
@@ -132,10 +139,13 @@ el("chart-atos").innerHTML=labels.map(([ato,n])=>{
  return '<div class="analysis-bar-row"><span>'+ato+'</span><span class="analysis-track"><i style="width:'+(n/max*100)+'%"></i></span><b>'+n+'</b><small>'+(c?c.uf:"")+'</small></div>';
 }).join("");
 function fontes(c){return (c.fontes||[]).map(k=>FONTES[k]).filter(Boolean).slice(0,3).map(f=>'<a href="'+f.url+'" target="_blank" rel="noopener">'+f.veic+'</a>').join(" · ");}
-el("politicos-rows").innerHTML=idsPoliticos.map(p=>{
- const c=CASOS.find(x=>x.id===p.id);
- return '<tr><td><strong>'+p.nome+'</strong></td><td>'+p.partido+'</td><td>'+p.papel+(c?'<div class="analysis-source">'+fontes(c)+'</div>':'')+'</td><td>'+p.decisao+'</td><td><a href="casos.html#'+p.id+'">'+p.id+'</a></td></tr>';
-}).join("");
+const partidosVisiveis=[...new Set(politicos.map(p=>p.partido).filter(p=>p!=="Não informado"))].sort((x,y)=>x.localeCompare(y,"pt-BR"));
+el("politicos-resumo").textContent="O cadastro identifica "+politicos.length+" participações de agentes políticos em atos com pressão ou pedido. As siglas registradas são: "+partidosVisiveis.join(", ")+". O recorte descreve os casos encontrados, não mede a totalidade das tentativas de censura."; 
+el("politicos-rows").innerHTML=politicos.map(p=>{
+ const fontesReg=p.registros.map(fontes).filter(Boolean).join(" · ");
+ const ids=p.registros.map(c=>'<a href="casos/'+c.id.toLowerCase()+'.html">'+c.id+'</a>').join(' · ');
+ return '<tr><td><strong>'+p.nome+'</strong></td><td>'+p.partido+'</td><td>'+p.papel+(fontesReg?'<div class="analysis-source">'+fontesReg+'</div>':'')+'</td><td>'+p.decisao+'</td><td>'+ids+'</td></tr>';
+}).join('');
 montarRodape();
 </script>
 </body></html>
