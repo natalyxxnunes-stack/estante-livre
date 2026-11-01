@@ -92,6 +92,6 @@ Não preencher esses campos por inferência automática. A classificação preci
 
 ## Estado da base na auditoria de 1º de novembro de 2026
 
-A exportação consultada tinha 34 registros, 184 referências associadas e 69 URLs distintas. Um registro (EL-005) tinha uma única fonte e estava corretamente marcado como parcialmente verificado. Os 19 registros parciais estão discriminados em `docs/auditoria-editorial-p0.md`.
+A exportação consultada tinha 34 registros, 184 referências associadas e 69 URLs distintas; o cadastro de fontes continha 79 chaves. Nesta branch, 19 fontes foram classificadas em primeira revisão e 60 permanecem sem tipo atribuído. Um registro (EL-005) tinha uma única fonte e estava corretamente marcado como parcialmente verificado. Os 19 registros parciais estão discriminados em `docs/auditoria-editorial-p0.md`.
 
 Esses números são uma fotografia da base exportada em 30 de outubro de 2026, não uma afirmação de que todos os links foram testados novamente em 1º de novembro.
