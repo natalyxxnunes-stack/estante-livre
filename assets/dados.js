@@ -293,6 +293,7 @@ const ATOS = {
    data:"2024-04-23",
    fim:"2024-06-04",
    uf:"SC",
+   abrangencia:"Rede estadual (âmbito estadual)",
    tipo:"Escolar",
    rede:"Estadual",
    governo:"Jorginho Mello (PL) · governo de SC",
