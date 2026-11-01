@@ -12,7 +12,7 @@ node scripts/gerar.js
 
 Ele valida os dados e para com uma lista de erros se algo estiver fora do padrão (mecanismo fora da lista, fonte inexistente, ficha de livro sem caso). Se tudo estiver certo, ele:
 
-- padroniza cabeçalho, menu e rodapé de todas as páginas;
+- padroniza cabeçalho, menu e rodapé de todas as páginas;\n- gera a página `poder.html` a partir de `AGENTES`, `PAPEIS`, `ATOS` e `CASOS`;\n- emite alertas editoriais não bloqueantes para localidades ausentes, signatários não identificados e fontes concentradas em um único domínio;
 - escreve o HTML das fichas dentro de `casos.html` e `livros.html`, para buscadores e ferramentas de IA lerem sem JavaScript;
 - gera uma página por caso (`casos/el-001.html`) e por obra (`livros/<nome>.html`), com dados estruturados e sugestão de citação;
 - gera `dados/estante-livre-casos.csv` e `.json`, `sitemap.xml`, `robots.txt`, `llms.txt` e `404.html`.
@@ -29,7 +29,7 @@ Quase tudo fica em `assets/dados.js`, organizado em quatro entidades ligadas por
 - `AGENTES` e `PAPEIS`: pessoas e instituições com papel documentado em cada ato (pressão, pedido, decisão, assinatura, execução, denúncia, resposta), com o cargo na data. `atribuido:true` quando a fonte atribui o papel sem documento assinado.
 
 No fim do arquivo, uma etapa de montagem copia os campos do ato e da obra para cada registro; as páginas leem os registros já montados. Para um caso novo: crie a obra e o ato se forem novos, copie um bloco de `CASOS`, aponte para eles e rode o gerador.
-- `FONTES`: reportagens e pesquisas citadas pelos casos.
+- `FONTES`: documentos, reportagens, pesquisas e demais referências citadas pelos casos. A classificação por tipo e os critérios de independência estão em `docs/classificacao-e-verificacao-de-fontes.md`.
 - `CONTEXTO`: episódios fora de biblioteca que aparecem no painel sem entrar na contagem.
 - `CORRECOES`: registro público de correções, exibido na página Metodologia.
 - `LACUNAS`: para cada ato com pendência, os obstáculos (da lista fechada `OBSTACULOS`) e o caminho para fechar. Alimenta a página O que falta apurar. O gerador recusa ato com pendência e sem lacuna, e lacuna de ato sem pendência.
@@ -51,10 +51,10 @@ Três campos usam listas fechadas, definidas em `dados.js` e explicadas no Gloss
 
 O texto livre do que aconteceu depois fica em `desfecho`.
 
-Um caso só conta como verificado com `verificado:"Sim"` e duas fontes. A regra é aplicada pelo código.
+Um caso só conta como verificado com `verificado:"Sim"` e pelo menos duas referências. O gerador bloqueia menos de duas referências e alerta quando as fontes estão em menos de dois domínios. A independência editorial continua sendo avaliada caso a caso; domínio diferente não é prova suficiente.
 
 ## Páginas
 
-index (painel), casos, livros, analises, historia (linha do tempo, escrita à mão), mundo, glossario, metodologia, sobre, cobertura, relate. Geradas pelo script: atos.html e as páginas em `casos/`, `livros/` e `atos/`.
+index (painel), casos, livros, analises, poder, historia (linha do tempo, escrita à mão), mundo, glossario, metodologia, sobre, cobertura, relate. Geradas pelo script: atos.html e as páginas em `casos/`, `livros/` e `atos/`.
 
-Contornos do mapa: svg-maps, licença CC BY 4.0.
+## Documentação editorial\n\n- `docs/auditoria-editorial-p0.md`: pendências críticas mapeadas.\n- `docs/classificacao-e-verificacao-de-fontes.md`: taxonomia e protocolo de verificação.\n- `docs/politica-de-direitos-e-imagens.md`: créditos, direitos e preservação visual.\n- `docs/plano-de-implementacao-2026.md`: sequência P0–P3 e critérios de conclusão.\n\nContornos do mapa: svg-maps, licença CC BY 4.0.
