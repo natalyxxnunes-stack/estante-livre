@@ -17,7 +17,7 @@
 
 | Entrega | Critério de conclusão | Estado |
 |---|---|---|
-| Taxonomia de fontes | Tipos documentais e critérios de independência publicados | Documento operacional criado |
+| Taxonomia de fontes | Tipos documentais e critérios de independência publicados | Protocolo publicado; 80/81 fontes classificadas; uma fonte de blog pendente |
 | Documentos originais | Link ou cópia legalmente preservada para cada ato disponível | Parcial; lista de solicitações no relatório P0 |
 | Cidades e localidades | Localidade sustentada por fonte; desconhecido continua explícito | 13 registros identificados para revisão |
 | Linha do tempo | Cada marco com data, contexto e duas fontes pertinentes, preferencialmente primárias | Revisão histórica ainda necessária |
