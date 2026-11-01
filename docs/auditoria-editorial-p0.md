@@ -1,28 +1,28 @@
 # Auditoria editorial P0 — Estante Livre
 
 **Data da auditoria:** 1º de novembro de 2026  
-**Base examinada:** exportação JSON atualizada em 30 de outubro de 2026  
+**Base examinada:** branch de auditoria, atualizada em 1º de novembro de 2026  
 **Escopo:** registros parcialmente verificados, signatários, localidade, documentação e atribuições.
 
 ## 1. Fotografia da base
 
 | Indicador | Resultado |
 |---|---:|
-| Registros | 34 |
-| Obras e conjuntos | 29 |
-| Atos | 17 |
-| Referências associadas aos registros | 184 |
-| URLs distintas | 69 |
-| Registros parcialmente verificados na fotografia inicial | 19 |
+| Registros | 35 |
+| Obras e conjuntos | 30 |
+| Atos | 18 |
+| Referências associadas aos registros | 187 |
+| URLs distintas | 82 |
+| Registros parcialmente verificados | 8 |
 | Registros com cidade não informada | 13 |
-| Registros com campo de assinatura vazio na exportação | 10 |
-| Registros com apenas uma fonte | 1 |
+| Registros sem signatário individual identificado (ou nomes não divulgados) | 9 |
+| Registros com apenas uma fonte | 0 |
 
 A ausência de cidade não deve ser preenchida com a capital do estado por conveniência. A ausência de assinatura também não deve ser resolvida atribuindo a autoria ao chefe do Executivo em exercício.
 
-**Atualização de 1º/11/2026:** o registro EL-005 foi fechado quanto ao núcleo factual após localização da IND/0154/2024 e da Informação nº 304/2024/SED/DIEN. O documento oficial comprova a orientação de recolhimento e identifica signatários; a execução por escola e a situação atual permanecem pendentes. Após a revisão dos sete registros individuais de Rondônia (EL-015 a EL-021), restam sete registros parcialmente verificados nesta branch: EL-022, EL-023, EL-024, EL-028, EL-030, EL-031 e EL-032. O EL-005 passou a ter três referências cadastradas; nenhum registro permanece com fonte única. O campo de assinatura está preenchido para EL-005 e EL-034; nove registros (EL-025 a EL-033) continuam sem signatário formal identificado ou documento nominal suficiente. A abrangência do EL-005 foi registrada como rede estadual; restam 12 registros com município não identificado ou a confirmar.
+**Atualização de 1º/11/2026:** o registro EL-005 foi fechado quanto ao núcleo factual após localização da IND/0154/2024 e da Informação nº 304/2024/SED/DIEN. O documento oficial comprova a orientação de recolhimento e identifica signatários; a execução por escola e a situação atual permanecem pendentes. Após a revisão dos sete registros individuais de Rondônia (EL-015 a EL-021), a separação dos dois episódios de Londrina e a inclusão do caso de 2026, restam oito registros parcialmente verificados: EL-022, EL-023, EL-024, EL-028, EL-030, EL-031, EL-032 e EL-035. O EL-005 passou a ter três referências cadastradas; nenhum registro permanece com fonte única. O campo de assinatura está preenchido para EL-005 e EL-034. Oito registros com pedido, decisão ou execução (EL-025 a EL-030, EL-032 e EL-033) ainda não têm signatário formal individual identificado; EL-035 tem pedido assinado por cargos, mas os nomes não foram divulgados. EL-031 documenta pressão sobre atividade e não tem ordem de retirada cuja assinatura seja aplicável. A abrangência do EL-005 foi registrada como rede estadual; restam 12 registros com município não identificado ou a confirmar.
 
-## 2. Registros parcialmente verificados na base atual — 7 (EL-005, EL-015 a EL-021, EL-025, EL-026, EL-027, EL-029 e EL-033 têm núcleo factual verificado)
+## 2. Registros parcialmente verificados na base atual — 8 (EL-005, EL-015 a EL-021, EL-025, EL-026, EL-027, EL-029 e EL-033 têm núcleo factual verificado)
 
 ### EL-022 a EL-024 — conjuntos de títulos do episódio de Rondônia (2020)
 ### EL-022 — Obra de Rubem Fonseca (19 títulos)
@@ -43,8 +43,15 @@ A ausência de cidade não deve ser preenchida com a capital do estado por conve
 - **Ação:** solicitar à Prefeitura confirmação administrativa da intimação e do cumprimento, com data e unidades atendidas; consultar apenas movimentações e decisões públicas. Não solicitar nem tentar acessar peças protegidas por segredo de Justiça.
 
 ### EL-030 — *A mamãe vai ter um bebê* (Londrina, 2024)
-- **Pendência:** cópia integral do requerimento, resposta da Secretaria e confirmação de eventual recolhimento/devolução.
-- **Ação:** consultar Câmara e Prefeitura; distinguir pedido parlamentar de execução.
+- **Correção:** a reportagem da Folha de Londrina publicada em 12/03/2026 trata de outro título, *O bebê vem com a cegonha?!?*, e foi removida desta ficha e transferida para EL-035. A obra de EL-030 é *Biblioteca de Literatura: A Mamãe Vai Ter um Bebê*, de Dori Hillestad Butler, publicada pela Todolivro em 2016 (ISBN 9788537633854).
+- **Pendência:** cópia integral do requerimento parlamentar de Jéssica Ramos Moreno, resposta da Secretaria e confirmação de eventual recolhimento/devolução.
+- **Ação:** consultar Câmara e Prefeitura; distinguir pedido parlamentar de execução. A Lei nº 13.930/2025 é contexto normativo posterior, não prova de retirada deste exemplar.
+
+### EL-035 — *O bebê vem com a cegonha?!?* (Londrina, 2026)
+- **Atualização:** a Folha de Londrina informou em 12/03/2026 ter consultado pedido de providências assinado pela gerente da unidade e pela diretora pedagógica; a CBN Londrina informou que a SME iniciou levantamento em toda a rede e recolhimento de exemplares para análise pedagógica.
+- **Distinção de responsabilidade:** o pedido partiu de profissionais da unidade escolar, cujos nomes e escola não foram divulgados. A Secretaria iniciou a providência em âmbito da rede; não há identificação da autoridade individual que autorizou o recolhimento. O prefeito e o partido do governo municipal são contexto, não autoria comprovada.
+- **Pendência:** processo SEI integral, identificação dos cargos e da unidade, quantidade de exemplares recolhidos, parecer técnico e decisão final sobre retorno ou exclusão.
+- **Ação:** solicitar o processo SEI e o pedido de providências, preservar a identificação da escola/profissionais apenas se necessária e legalmente justificável, e confirmar o destino dos exemplares.
 
 ### EL-031 — *A bolsa amarela* (Distrito Federal, 2026)
 - **Atualização:** a apuração da piauí informa que a obra não foi adotada nem retirada do acervo; o episódio envolveu link para uma resenha em exercício de Língua Portuguesa. O link foi retirado temporariamente para avaliação, a equipe pedagógica não identificou problema e a atividade foi considerada alinhada ao planejamento. O capitão Sidemar da Silva Neves, chefe da seção de relações públicas e ouvidoria, foi o porta-voz ouvido pela reportagem.
