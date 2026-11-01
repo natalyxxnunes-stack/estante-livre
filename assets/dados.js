@@ -195,8 +195,13 @@ const LIVROS = {
    sinopse:"Num garimpo do Pará, um fotógrafo se envolve com a mulher de um pastor. O desejo e a violência dividem o mesmo território.",
    nota:"Saiu da lista de leituras do vestibular, o que o catálogo registra como exclusão de lista de leitura. A decisão veio dias depois de um deputado chamar o livro de pornográfico em vídeo."},
  "A mamãe vai ter um bebê":{
+   autoria:"Dori Hillestad Butler",
+   editora:"Todolivro",
+   ano:2016,
    genero:"Infantil",
-   nota:"Livro de educação sexual para crianças pequenas. A lei aprovada em seguida pela Câmara de Londrina permite explicação científica sobre reprodução, que é o assunto do livro."},
+   isbn:"9788537633854",
+   sinopse:"Elisabete acompanha a gravidez da mãe e aprende sobre o desenvolvimento do bebê, a concepção e o nascimento.",
+   nota:"A edição identificada é Biblioteca de Literatura: A Mamãe Vai Ter um Bebê, de Dori Hillestad Butler, publicada pela Todolivro em 2016. Não confundir com O bebê vem com a cegonha?!?, de Patrícia Engel Secco, objeto de episódio distinto em 2026."},
  "A bolsa amarela":{
    autoria:"Lygia Bojunga",
    ano:1976,
@@ -437,7 +442,6 @@ const ATOS = {
  "LON-2024":{
    nome:"Requerimento de recolhimento de A mamãe vai ter um bebê (Londrina)",
    data:"2024-11-26",
-   fim:"2025-03-21",
    uf:"PR",
    cidade:"Londrina",
    tipo:"Escolar",
@@ -445,7 +449,7 @@ const ATOS = {
    governo:"Marcelo Belinati (PP) · prefeitura de Londrina",
    quem:"Vereadora Jéssica Ramos Moreno (PP) · Secretaria Municipal de Educação como destinatária do pedido",
    pressao:"Jéssica Ramos Moreno (PP), vereadora, encontrou a obra durante vistoria em creche após denúncia de uma família e apresentou requerimento pedindo seu recolhimento.",
-   documento:"Requerimento parlamentar de Jéssica Ramos Moreno (PP), apresentado após vistoria em creche em 26 de novembro de 2024, solicitando à Secretaria Municipal de Educação o recolhimento da obra; cópia e resposta administrativa ainda não localizadas. Separadamente, o PL 79/2024 foi sancionado como Lei Municipal nº 13.930, de 21 de março de 2025.",
+   documento:"Requerimento parlamentar de Jéssica Ramos Moreno (PP), apresentado após vistoria em creche em 26 de novembro de 2024, solicitando à Secretaria Municipal de Educação o recolhimento da obra; cópia e resposta administrativa ainda não localizadas. A Lei Municipal nº 13.930/2025, originada do PL 79/2024, é contexto normativo posterior e não comprova a execução deste pedido.",
    papeis:{
      pressao:"Jéssica Ramos Moreno (PP), vereadora, pediu formalmente à Secretaria Municipal de Educação o recolhimento do livro após encontrá-lo em uma creche.",
      decisor:"A Secretaria Municipal de Educação recebeu o pedido; não foi localizada resposta oficial nem decisão administrativa que confirme a retirada.",
