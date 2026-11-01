@@ -30,8 +30,8 @@
 
 | Entrega | Critério de conclusão |
 |---|---|
-| Mapa interativo | Localização geográfica apenas quando cidade/endereço forem confiáveis; mapa não deve inventar precisão |
-| Perfis de responsáveis | Página por agente com papéis, atos, fontes, cargos na data e ressalvas |
+| Mapa interativo | O painel já possui mapa navegável por UF; evolução para geolocalização depende de completar e validar localidades, sem inventar coordenadas |
+| Perfis de responsáveis | Página individual por agente com papéis, atos, fontes, cargos na data e ressalvas | Implementado nesta branch; geração automática em `agentes/<id>.html`
 | Dossiês temáticos | Reportagem autoral com documentação e metodologia de seleção |
 | Bibliotecas públicas | Recorte, fontes e protocolo de coleta próprios; não misturar automaticamente com bibliotecas escolares |
 | Relatórios periódicos | Data de corte, metodologia, alterações e limites explicitados |
