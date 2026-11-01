@@ -38,8 +38,16 @@ const esc = R.esc, obraDe = R.obraDe, slug = R.slug;
 
 /* ---------- 1. validação ---------- */
 const erros = [], avisos = [];
+const TIPOS_FONTE = ["P1","P2","P3","S1","S2","A1","O1","R1"];
 const ids = new Set();
 const OBRIG = ["id","data","ato","titulo","uf","tipo","rede","quem","alegacao","eixo","modalidade","estagio","situacao","desfecho","verificado","fontes"];
+for(const [id,f] of Object.entries(FONTES)){
+  if(f.tipo && !TIPOS_FONTE.includes(f.tipo)) erros.push(`FONTES ${id}: tipo de fonte inválido: ${f.tipo}`);
+  if(!f.url) erros.push(`FONTES ${id}: URL vazia`);
+  else { try { const u=new URL(f.url); if(!["https:","http:"].includes(u.protocol)) erros.push(`FONTES ${id}: protocolo inválido`); } catch { erros.push(`FONTES ${id}: URL inválida: ${f.url}`); } }
+}
+const fontesSemTipo=Object.entries(FONTES).filter(([,f])=>!f.tipo).length;
+if(fontesSemTipo) avisos.push(`${fontesSemTipo} fontes ainda não classificadas por tipo; concluir revisão editorial`);
 for(const c of CASOS){
   for(const k of OBRIG) if(c[k]===undefined || c[k]==="") erros.push(`${c.id||"?"}: campo ${k} vazio`);
   if(ids.has(c.id)) erros.push(`${c.id}: id repetido`); ids.add(c.id);
@@ -493,7 +501,7 @@ const linhas = R.ordenar(CASOS,"id").map(c=>{
     resposta_ou_reversao:r.resposta||"", ato_ou_documento:DOC[c.id]||"", verificado:c.verificado,
     pendencia:r.pendencia||c.pendencia||"", nota:c.nota||"",
     agentes:PAPEIS.filter(p=>p.ato===c.ato).map(p=>({nome:AGENTES[p.agente].nome, tipo:AGENTES[p.agente].tipo, papel:p.papel, cargo:p.cargo||"", atribuido:!!p.atribuido})),
-    fontes:(c.fontes||[]).map(k=>FONTES[k]).filter(Boolean).map(f=>({veiculo:f.veic, titulo:f.tit, data:f.data||"", url:f.url}))};
+    fontes:(c.fontes||[]).map(k=>FONTES[k]).filter(Boolean).map(f=>({veiculo:f.veic, tipo:f.tipo||"Não classificada", titulo:f.tit, data:f.data||"", url:f.url}))};
 });
 gravar("dados/estante-livre-casos.json", JSON.stringify({
   nome:"Estante Livre: catálogo de censura de livros em bibliotecas e escolas brasileiras",
