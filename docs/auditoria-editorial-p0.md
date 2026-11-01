@@ -20,7 +20,7 @@
 
 A ausência de cidade não deve ser preenchida com a capital do estado por conveniência. A ausência de assinatura também não deve ser resolvida atribuindo a autoria ao chefe do Executivo em exercício.
 
-**Atualização de 1º/11/2026:** o registro EL-005 foi fechado quanto ao núcleo factual após localização da IND/0154/2024 e da Informação nº 304/2024/SED/DIEN. O documento oficial comprova a orientação de recolhimento e identifica signatários; a execução por escola e a situação atual permanecem pendentes. Restam 18 registros parcialmente verificados nesta branch. O EL-005 passou a ter três referências cadastradas; nenhum registro permanece com fonte única. O campo de assinatura está preenchido para EL-005 e EL-034; nove registros (EL-025 a EL-033) continuam sem signatário formal identificado ou documento nominal suficiente.
+**Atualização de 1º/11/2026:** o registro EL-005 foi fechado quanto ao núcleo factual após localização da IND/0154/2024 e da Informação nº 304/2024/SED/DIEN. O documento oficial comprova a orientação de recolhimento e identifica signatários; a execução por escola e a situação atual permanecem pendentes. Restam 14 registros parcialmente verificados nesta branch. O EL-005 passou a ter três referências cadastradas; nenhum registro permanece com fonte única. O campo de assinatura está preenchido para EL-005 e EL-034; nove registros (EL-025 a EL-033) continuam sem signatário formal identificado ou documento nominal suficiente.
 
 ## 2. Registros parcialmente verificados na base de 30/10/2026 — 19 (EL-005 fechado em 1º/11/2026; 18 permanecem)
 
@@ -42,22 +42,9 @@ Obras: *Macunaíma*, *Memórias póstumas de Brás Cubas*, *Os sertões*, *O cas
 - **Pendência:** obter o Adendo ID 10053329.
 - **Ação:** solicitar a peça integral e conferir a quantidade e os títulos antes de criar novos registros.
 
-### EL-025 — Anúncio de descarte de 5.165 exemplares (Fundação Cultural Palmares, 2021)
-- **Pendência:** divergência no total do acervo reportado (9.565 versus 9.546); relação completa dos 5.165 exemplares e destino final não comprovados.
-- **Ação:** recuperar o relatório original e anexos; conferir unidade de contagem; obter documentos de destinação.
-- **Cuidado:** não confundir exemplares com títulos nem com o conjunto distinto de cerca de 300 livros do EL-026.
-
-### EL-026 — “Acervo da Vergonha” (Fundação Cultural Palmares, 2021)
-- **Pendência:** inventário dos cerca de 300 livros, comprovação da separação física, duração e restabelecimento de acesso.
-- **Ação:** obter inventário, registros de movimentação e regras de consulta.
-
 ### EL-028 — *Meninas sonhadoras, mulheres cientistas* (São José dos Campos, 2024)
 - **Pendência:** sentença integral sob segredo de Justiça; cumprimento da ordem de devolução e eventual recurso ainda precisam de confirmação pública.
 - **Ação:** solicitar à Prefeitura informação administrativa sobre cumprimento e acompanhar movimentação processual pública, sem tentar contornar o segredo de Justiça.
-
-### EL-029 — *Eu receberia as piores notícias de seus lindos lábios* (UniRV, 2023)
-- **Pendência:** identificar integrantes da Coordenação do Vestibular e quem formalizou a decisão.
-- **Ação:** solicitar ata, despacho ou registro administrativo; manter a atribuição à instituição enquanto não houver identificação nominal.
 
 ### EL-030 — *A mamãe vai ter um bebê* (Londrina, 2024)
 - **Pendência:** cópia integral do requerimento, resposta da Secretaria e confirmação de eventual recolhimento/devolução.
@@ -71,11 +58,23 @@ Obras: *Macunaíma*, *Memórias póstumas de Brás Cubas*, *Os sertões*, *O cas
 - **Pendência:** requerimento parlamentar, resposta integral, parecer técnico e comprovação da redistribuição efetiva.
 - **Ação:** solicitar documentos à Câmara e Prefeitura; conferir lista de escolas e turmas atendidas.
 
-### EL-033 — lista do projeto Remição em Rede (Funap, 2020)
-- **Pendência:** mensagem original, ata de 13/02/2020, nota integral da Funap, três obras questionadas e divergência entre 240 e 228 exemplares.
-- **Ação:** solicitar mensagem, ata, nota e registros de envio às unidades prisionais.
+## Registros com núcleo factual verificado; diligências ainda abertas
 
-## Registro fechado durante a auditoria
+### EL-025 — Fundação Cultural Palmares: anúncio de descarte de 5.165 exemplares
+- **Núcleo verificado:** o relatório oficial “Retrato do Acervo” e a cobertura independente documentam a classificação de 5.165 exemplares como de “temática alheia à negra” e a intenção de retirá-los do acervo.
+- **Ainda pendente:** divergência entre os totais de acervo (9.565 e 9.546), lista completa dos exemplares e destino final. Não afirmar que houve destruição.
+
+### EL-026 — Fundação Cultural Palmares: “Acervo da Vergonha”
+- **Núcleo verificado:** o anúncio público de criação de uma seção denominada “Acervo da Vergonha” e de separação de cerca de 300 livros foi documentado por reportagens independentes.
+- **Ainda pendente:** inventário, prova de segregação física, duração e condições de acesso.
+
+### EL-029 — *Eu receberia as piores notícias de seus lindos lábios* (UniRV)
+- **Núcleo verificado:** a nota oficial da UniRV confirma a retirada da obra da lista do vestibular de 2023; a cobertura independente documenta a pressão pública anterior.
+- **Ainda pendente:** identificar os integrantes da Coordenação do Vestibular e quem formalizou a decisão. A responsabilidade institucional está documentada; não atribuir a uma pessoa sem prova.
+
+### EL-033 — Funap / Remição em Rede
+- **Núcleo verificado:** reportagens independentes e pesquisa acadêmica documentam o veto à lista de obras e a intervenção da Funap.
+- **Ainda pendente:** mensagem original, ata de 13/02/2020, três obras questionadas e divergência entre 240 e 228 exemplares.
 
 ### EL-005 — O avesso da pele (Santa Catarina, 2024)
 - **Documento primário localizado:** Informação nº 304/2024/SED/DIEN, de 23/04/2024, com resposta e ofícios de encaminhamento à ALESC.
