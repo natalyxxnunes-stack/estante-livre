@@ -7,7 +7,7 @@
 
 | Entrega | Critério de conclusão | Estado |
 |---|---|---|
-| Revisão dos 18 registros parciais remanescentes | Cada pendência encerrada por documento/fonte ou mantida explicitamente com justificativa | EL-005 fechado no núcleo factual; 18 registros parciais seguem em apuração |
+| Revisão dos 18 registros parciais remanescentes | Cada pendência encerrada por documento/fonte ou mantida explicitamente com justificativa | EL-005 fechado no núcleo factual; 14 registros parciais seguem em apuração |
 | Identificação de signatários | Nome, papel, documento e fonte primária; ou indicação explícita de que não foi identificado | Em apuração; não preencher por inferência |
 | Revisão de fontes e links | URL testada, tipo de fonte, afirmação sustentada e independência avaliadas | Protocolo criado; classificação individual pendente |
 | Revisão de atribuições políticas | Governo, partido, agente e papel separados; relação causal documentada | Regra editorial definida; revisão caso a caso pendente |
