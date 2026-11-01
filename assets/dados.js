@@ -516,30 +516,35 @@ const ATOS = {
 
 const FONTES = {
  "bdf-bienal": {
+  "tipo": "S2",
   "veic": "Brasil de Fato",
   "data": "2019-09-08",
   "tit": "Presidente do STF reverte decisão judicial que permitia censura na Bienal do Rio",
   "url": "https://www.brasildefato.com.br/2019/09/08/presidente-do-stf-reverte-decisao-judicial-que-permitia-censura-na-bienal-do-rio/"
  },
  "bdf-doria": {
+  "tipo": "S2",
   "veic": "Brasil de Fato",
   "data": "2019-09-03",
   "tit": "Doria manda recolher apostilas com página sobre diversidade sexual",
   "url": "https://www.brasildefato.com.br/2019/09/03/doria-manda-recolher-apostilas-com-pagina-sobre-diversidade-sexual"
  },
  "met-doria": {
+  "tipo": "S2",
   "veic": "Metrópoles",
   "data": "2019-09-10",
   "tit": "Justiça manda governo devolver apostilas recolhidas por ordem de Doria",
   "url": "https://www.metropoles.com/brasil/justica/justica-manda-governo-devolver-apostilas-recolhidas-por-ordem-de-doria"
  },
  "mobile-apex": {
+  "tipo": "O1",
   "veic": "Mobile · observatório de censura",
   "data": "2021-01-26",
   "tit": "Apex censura lista com livros de autoras brasileiras críticas ao governo Bolsonaro",
   "url": "https://movimentomobile.org.br/caso/apex-censura-lista-com-livros-de-autoras-brasileiras-criticas-ao-governo-bolsonaro-2/"
  },
  "ovale-tau": {
+  "tipo": "S2",
   "veic": "OVALE",
   "data": "2026-04-16",
   "tit": "Obra sobre menina com duas mães passa por análise, diz Prefeitura",
@@ -567,128 +572,157 @@ const FONTES = {
   "tipo": "S1","veic":"Folha de S.Paulo","data":"2020-02-11","tit":"Governo Doria censura lista de livros de projeto em presídios de São Paulo","url":"https://www1.folha.uol.com.br/cotidiano/2020/02/governo-doria-censura-lista-de-livros-de-projeto-em-presidios-de-sao-paulo.shtml"},
  "folha-funap-14fev": {
   "tipo": "S1","veic":"Folha de S.Paulo","data":"2020-02-14","tit":"Governo Doria cria comissão para analisar escolha de livros para presidiários de SP","url":"https://www1.folha.uol.com.br/cotidiano/2020/02/governo-doria-cria-comissao-para-analisar-escolha-de-livros-para-presidiarios-de-sp.shtml"},
- "ovale-tau-jul14": {"veic":"OVALE/Sampi","data":"2026-07-14","tit":"Taubaté: escolas voltarão a usar livro sobre menina com duas mães","url":"https://sampi.net.br/ovale/noticias/2991910/vale-do-paraiba/2026/07/taubate-escolas-voltarao-a-usar-livro-sobre-menina-com-duas-maes"},
- "jurinews-sjc-2024": {"veic":"Jurinews","data":"2024-10-09","tit":"Liminar que determinava redistribuição de livro que cita Marielle Franco em escolas municipais é suspensa","url":"https://jurinews.com.br/sp/liminar-que-determinava-redistribuicao-de-livro-que-cita-marielle-franco-em-escolas-municipais-e-suspensa/"},
- "folha-sjc-ordem": {"veic":"Folha de S.Paulo","data":"2026-07-30","tit":"Justiça determina volta de livro que retrata Marielle a escolas em São José dos Campos","url":"https://www1.folha.uol.com.br/ciencia/2026/07/justica-determina-volta-de-livro-que-retrata-marielle-a-escolas-em-sao-jose-dos-campos.shtml"},
- "uol-sjc-ordem": {"veic":"UOL","data":"2026-07-29","tit":"Juíza vê censura e manda prefeitura devolver às escolas livro com Marielle","url":"https://noticias.uol.com.br/cotidiano/ultimas-noticias/2026/07/29/juiza-manda-prefeitura-devolver-as-escolas-livro-com-marielle-em-sao-jose.ghtm"},
+ "ovale-tau-jul14": {
+  "tipo": "S2","veic":"OVALE/Sampi","data":"2026-07-14","tit":"Taubaté: escolas voltarão a usar livro sobre menina com duas mães","url":"https://sampi.net.br/ovale/noticias/2991910/vale-do-paraiba/2026/07/taubate-escolas-voltarao-a-usar-livro-sobre-menina-com-duas-maes"},
+ "jurinews-sjc-2024": {
+  "tipo": "S2","veic":"Jurinews","data":"2024-10-09","tit":"Liminar que determinava redistribuição de livro que cita Marielle Franco em escolas municipais é suspensa","url":"https://jurinews.com.br/sp/liminar-que-determinava-redistribuicao-de-livro-que-cita-marielle-franco-em-escolas-municipais-e-suspensa/"},
+ "folha-sjc-ordem": {
+  "tipo": "S2","veic":"Folha de S.Paulo","data":"2026-07-30","tit":"Justiça determina volta de livro que retrata Marielle a escolas em São José dos Campos","url":"https://www1.folha.uol.com.br/ciencia/2026/07/justica-determina-volta-de-livro-que-retrata-marielle-a-escolas-em-sao-jose-dos-campos.shtml"},
+ "uol-sjc-ordem": {
+  "tipo": "S2","veic":"UOL","data":"2026-07-29","tit":"Juíza vê censura e manda prefeitura devolver às escolas livro com Marielle","url":"https://noticias.uol.com.br/cotidiano/ultimas-noticias/2026/07/29/juiza-manda-prefeitura-devolver-as-escolas-livro-com-marielle-em-sao-jose.ghtm"},
  "relatorio-palmares-original": {
   "tipo": "P1","veic":"Fundação Cultural Palmares · CNIRC","data":"2021-06-11","tit":"Relatório Público 01 – Retrato do Acervo: três décadas de dominação marxista na Fundação Cultural Palmares","url":"https://www.palmares.gov.br/wp-content/uploads/2021/06/cnirc-01-gab-10-06-21.pdf"},
- "unesp-palmares": {"veic":"Jornal da Unesp","data":"2021-06-15","tit":"Em cruzada obscurantista, Fundação Palmares pensa em se desfazer de 54% dos livros de seu acervo","url":"https://jornal.unesp.br/2021/06/15/em-cruzada-obscurantista-fundacao-palmares-pensa-em-se-desfazer-de-54-dos-livros-de-seu-acerco/"},
+ "unesp-palmares": {
+  "tipo": "S2","veic":"Jornal da Unesp","data":"2021-06-15","tit":"Em cruzada obscurantista, Fundação Palmares pensa em se desfazer de 54% dos livros de seu acervo","url":"https://jornal.unesp.br/2021/06/15/em-cruzada-obscurantista-fundacao-palmares-pensa-em-se-desfazer-de-54-dos-livros-de-seu-acerco/"},
  "palmares-inventario": {
   "tipo": "P3","veic":"Fundação Cultural Palmares","data":"2024-08-08","tit":"Inventário Bibliográfico da Fundação Cultural Palmares","url":"https://www.gov.br/palmares/pt-br/centrais-de-conteudo/publicacoes/lista-de-livros-atualizada-8-8-2024-1.pdf"},
  "palmares-politica": {
   "tipo": "P3","veic":"Fundação Cultural Palmares","data":"2021-12-21","tit":"Política de Formação, Desenvolvimento e Gestão do Acervo","url":"https://www.gov.br/palmares/pt-br/midias/arquivos/download/politicas-de-acervo-versao-final-21-12-2021.pdf"},
- "oglobo-palm-300": {"veic":"O Globo · Lauro Jardim","data":"2021-07-23","tit":"Sérgio Camargo desiste de doar livros da Fundação Palmares","url":"https://blogs.oglobo.globo.com/lauro-jardim/post/acuado-pela-justica-sergio-camargo-volta-atras-e-desiste-de-doar-livros-da-fundacao-palmares.html"},
- "oglobo-palm-ala": {"veic":"O Globo · Lauro Jardim","data":"2021-08-03","tit":"Sérgio Camargo pretende manter livros separados em seção da vergonha","url":"https://blogs.oglobo.globo.com/lauro-jardim/post/nova-investida-favor-dos-livros-que-sergio-camargo-tenta-excluir-do-acervo-da-fundacao-palmares.html"},
+ "oglobo-palm-300": {
+  "tipo": "S2","veic":"O Globo · Lauro Jardim","data":"2021-07-23","tit":"Sérgio Camargo desiste de doar livros da Fundação Palmares","url":"https://blogs.oglobo.globo.com/lauro-jardim/post/acuado-pela-justica-sergio-camargo-volta-atras-e-desiste-de-doar-livros-da-fundacao-palmares.html"},
+ "oglobo-palm-ala": {
+  "tipo": "S2","veic":"O Globo · Lauro Jardim","data":"2021-08-03","tit":"Sérgio Camargo pretende manter livros separados em seção da vergonha","url":"https://blogs.oglobo.globo.com/lauro-jardim/post/nova-investida-favor-dos-livros-que-sergio-camargo-tenta-excluir-do-acervo-da-fundacao-palmares.html"},
  "comunicado-lafaiete": {
+  "tipo": "P3",
   "tipo": "P3","veic":"Prefeitura de Conselheiro Lafaiete · Secretaria Municipal de Educação","data":"2024-06-20","tit":"Comunicado oficial sobre O Menino Marrom","url":"https://conselheirolafaiete.mg.gov.br/v2/comunicado-secretaria-municipal-de-educacao/"},
  "decisao-lafaiete": {
   "tipo": "P2","veic":"Poder Judiciário de Minas Gerais · cópia da decisão","data":"2024-06-27","tit":"Processo nº 5006658-14.2024.8.13.0183 · decisão liminar em ação popular","url":"https://www.migalhas.com.br/arquivos/2024/6/C9AB64BF939FD5_%C2%B7ProcessoJudicialEletronico-1%C2%BA.pdf"},
- "migalhas-sjc": {"veic":"Migalhas","data":"2026-07-29","tit":"Juíza vê censura e manda devolver às escolas livro que inclui Marielle Franco","url":"https://www.migalhas.com.br/quentes/461228/juiza-ve-censura-e-manda-devolver-as-escolas-livro-que-inclui-marielle-franco"},
- "folha-unirv": {"veic":"Folha de S.Paulo","data":"2023-05-01","tit":"Livro de Marçal Aquino é retirado de lista de vestibular após polêmica com deputado","url":"https://www1.folha.uol.com.br/ilustrada/2023/05/livro-de-marcal-aquino-e-retirado-de-lista-de-vestibular-apos-polemica-com-deputado.shtml"},
- "ovale-tau-abr10": {"veic":"OVALE","data":"2026-04-10","tit":"Livro sobre menina com duas mães é retirado de escolas em Taubaté","url":"https://sampi.net.br/ovale/noticias/2972973/sessao-extra/2026/04/livro-sobre-menina-com-duas-maes-e-retirado-de-escolas-em-taubate"},
- "piaui-bolsa": {"veic":"revista piauí","data":"2026","tit":"Fábulas na fogueira","url":"https://piaui.uol.com.br/web/fabulas-fogueira-livros-infantojuvenis-bolsa-amarela/"},
+ "migalhas-sjc": {
+  "tipo": "S2","veic":"Migalhas","data":"2026-07-29","tit":"Juíza vê censura e manda devolver às escolas livro que inclui Marielle Franco","url":"https://www.migalhas.com.br/quentes/461228/juiza-ve-censura-e-manda-devolver-as-escolas-livro-que-inclui-marielle-franco"},
+ "folha-unirv": {
+  "tipo": "S2","veic":"Folha de S.Paulo","data":"2023-05-01","tit":"Livro de Marçal Aquino é retirado de lista de vestibular após polêmica com deputado","url":"https://www1.folha.uol.com.br/ilustrada/2023/05/livro-de-marcal-aquino-e-retirado-de-lista-de-vestibular-apos-polemica-com-deputado.shtml"},
+ "ovale-tau-abr10": {
+  "tipo": "S2","veic":"OVALE","data":"2026-04-10","tit":"Livro sobre menina com duas mães é retirado de escolas em Taubaté","url":"https://sampi.net.br/ovale/noticias/2972973/sessao-extra/2026/04/livro-sobre-menina-com-duas-maes-e-retirado-de-escolas-em-taubate"},
+ "piaui-bolsa": {
+  "tipo": "S2","veic":"revista piauí","data":"2026","tit":"Fábulas na fogueira","url":"https://piaui.uol.com.br/web/fabulas-fogueira-livros-infantojuvenis-bolsa-amarela/"},
  "camara-limeira-req": {
   "tipo": "P1","veic":"Câmara Municipal de Limeira","data":"2019-08-12","tit":"Requerimento nº 451/2019 · Clayton Silva","url":"https://consulta.limeira.sp.leg.br/arquivo?Id=215235"},
  "camara-limeira-resp": {
   "tipo": "P3","veic":"Prefeitura de Limeira · Secretaria Municipal de Educação","data":"2019-09-24","tit":"Ofício GSE nº 363/2019 · resposta sobre A bolsa amarela","url":"https://consulta.limeira.sp.leg.br/arquivo?Id=226368"},
  "uninter-bolsa": {
+  "tipo": "O1",
   "veic": "Uninter Notícias (artigo de opinião)",
   "data": "2026-05-26",
   "tit": "A bolsa amarela, a censura e o direito à leitura",
   "url": "https://www.uninter.com/noticias/?p=77595"
  },
  "cgn-alems": {
+  "tipo": "S2",
   "veic": "Campo Grande News",
   "data": "2024-03",
   "tit": "Direita e esquerda se unem na Assembleia contra livro sobre sexo e racismo",
   "url": "https://www.campograndenews.com.br/politica/direita-e-esquerda-se-unem-na-assembleia-contra-livro-sobre-sexo-e-racismo"
  },
  "bdf-rs": {
+  "tipo": "S2",
   "veic": "Brasil de Fato",
   "data": "2024-03-05",
   "tit": "Ofício da 6ª CRE manda retirar O avesso da pele de escolas de 18 municípios; Seduc desautoriza",
   "url": "https://brasildefato.com.br/?p=601142"
  },
  "pn-rs": {
+  "tipo": "S2",
   "veic": "PublishNews",
   "data": "2024-03-06",
   "tit": "‘O avesso da pele’ continua a ser alvo de ataques e tentativas de censura",
   "url": "https://www.publishnews.com.br/materias/2024/03/06/o-avesso-da-pele-continua-a-ser-alvo-de-ataques-e-tentativas-de-censura"
  },
  "icl-rs": {
+  "tipo": "S2",
   "veic": "ICL Notícias",
   "data": "2024-03-04",
   "tit": "Obra-prima de Jeferson Tenório é censurada em cidade do Rio Grande do Sul",
   "url": "https://iclnoticias.com.br/?p=11537"
  },
  "icl-pr": {
+  "tipo": "S2",
   "veic": "ICL Notícias",
   "data": "2024-03-06",
   "tit": "Após censura no RS, livro ‘O avesso da pele’ será recolhido de escolas de Curitiba",
   "url": "https://iclnoticias.com.br/?p=11837"
  },
  "pn-volta": {
+  "tipo": "S2",
   "veic": "PublishNews",
   "data": "2024-04-12",
   "tit": "Livro ‘O avesso da pele’ volta a circular nas escolas do Paraná e de Goiás",
   "url": "https://www.publishnews.com.br/materias/2024/04/12/apanhadao-da-semana-livro-o-avesso-da-pele-volta-a-circular-nas-escola-do-parana-e-de-goias"
  },
  "cgn-volta": {
+  "tipo": "S2",
   "veic": "Campo Grande News",
   "data": "2024-04-23",
   "tit": "Governo devolve livro polêmico às escolas estaduais",
   "url": "https://www.campograndenews.com.br/educacao-e-tecnologia/governo-devolve-livro-polemico-as-escolas-estaduais"
  },
  "cf-sc": {
+  "tipo": "S2",
   "veic": "Congresso em Foco",
   "data": "2023-11-09",
   "tit": "Governo de SC determina retirada de livros em escolas; veja lista",
   "url": "https://congressoemfoco.com.br/area/pais/governo-de-sc-determina-retirada-de-livros-em-escolas-veja-lista"
  },
  "dp-ro": {
+  "tipo": "S2",
   "veic": "Diario de Pernambuco",
   "data": "2020-02-06",
   "tit": "Governo de RO manda recolher Macunaíma e mais 42 livros e depois recua",
   "url": "https://www.diariodepernambuco.com.br/noticia/brasil/2020/02/governo-de-ro-manda-recolher-macunaima-e-mais-42-livros-e-depois-rec.html"
  },
  "sbt-palm": {
+  "tipo": "S2",
   "veic": "SBT News",
   "data": "2021-06-24",
   "tit": "Justiça Federal proíbe Sérgio Camargo de doar obras da Fundação Palmares",
   "url": "https://sbtnews.sbt.com.br/noticia/justica/171771-justica-federal-proibe-sergio-camargo-de-doar-obras-da-fundacao-palmares"
  },
  "sbt-museu": {
+  "tipo": "S2",
   "veic": "SBT News",
   "data": "2021-08",
   "tit": "Palmares quer colocar obras em ‘museu da vergonha’",
   "url": "https://sbtnews.sbt.com.br/noticia/brasil/176037-palmares-quer-colocar-obras-em-museu-da-vergonha-historiador-critica"
  },
  "pn-ziraldo": {
+  "tipo": "S2",
   "veic": "PublishNews",
   "data": "2024-06-21",
   "tit": "Livro de Ziraldo é censurado em Minas Gerais e entidades do livro se manifestam",
   "url": "https://www.publishnews.com.br/materias/2024/06/21/apanhadao-da-semana-livro-de-ziraldo-e-censurado-em-minas-gerais-e-entidades-do-livro-se-manifestam"
  },
  "dp-ziraldo": {
+  "tipo": "S2",
   "veic": "Diario de Pernambuco",
   "data": "2024-06-27",
   "tit": "Justiça derruba censura ao livro ‘O menino marrom’ em Minas Gerais",
   "url": "https://www.diariodepernambuco.com.br/noticia/viver/2024/06/justica-derruba-censura-ao-livro-o-menino-marrom-em-minas-gerais.html"
  },
  "pn-sjc": {
+  "tipo": "S2",
   "veic": "PublishNews",
   "data": "2024-06-21",
   "tit": "Prefeitura de São José dos Campos retira obra da Editora Mostarda das salas de leitura das escolas",
   "url": "https://www.publishnews.com.br/materias/2024/06/21/prefeitura-de-sao-jose-dos-campos-retira-obra-da-editora-mostarda-das-salas-de-leitura-das-escolas"
  },
  "ap-sjc": {
+  "tipo": "S2",
   "veic": "Alma Preta",
   "data": "2024-09-11",
   "tit": "Livro acusado de doutrinação religiosa retorna às escolas de São José dos Campos",
   "url": "https://almapreta.com.br/sessao/cotidiano/livro-acusado-de-doutrinacao-religiosa-retorna-as-escolas-de-sao-jose-dos-campos/"
  },
  "op-sjc": {
+  "tipo": "S2",
   "veic": "O Povo",
   "data": "2026-07-28",
   "tit": "Juíza vê censura e manda devolver livro com Marielle às escolas de São José dos Campos",
@@ -697,12 +731,14 @@ const FONTES = {
  "unirv-nota": {
   "tipo": "P3","veic":"Universidade de Rio Verde (UniRV)","data":"2023-04-27","tit":"Nota de esclarecimento: Obra literária Vestibular Medicina","url":"https://www.unirv.edu.br/ver_noticias.php?codabr=18353"},
  "fp-unirv": {
+  "tipo": "S2",
   "veic": "Folha de Pernambuco",
   "data": "2023-05-02",
   "tit": "ABL repudia censura a livro de Marçal Aquino em vestibular",
   "url": "https://www.folhape.com.br/cultura/abl-repudia-censura-a-livro-de-marcal-aquino-em-vestibular/268713/"
  },
  "jo-unirv": {
+  "tipo": "S2",
   "veic": "Jornal Opção",
   "data": "2023-04",
   "tit": "Escritor critica UniRV por retirada de livro após ataques de deputado",
@@ -710,68 +746,80 @@ const FONTES = {
  },
  "lei-londrina-13930": {
   "tipo": "P1","veic":"Prefeitura de Londrina · Jornal Oficial do Município","data":"2025-03-21","tit":"Lei Municipal nº 13.930/2025 · PL 79/2024","url":"https://portal.londrina.pr.gov.br/images/stories/jornalOficial/Jornal-5446-Assinado.pdf"},
- "pedido-londrina": {"veic":"Nova Lima News · reprodução de informação do Pleno.News","data":"2024-11-27","tit":"Livro erótico é encontrado em creche de Londrina; vereadora pede providências","url":"https://novalima.news/livro-erotico-e-encontrado-em-creche-de-londrina-vereadora-pede-providencias/"},
+ "pedido-londrina": {
+  "tipo": "R1","veic":"Nova Lima News · reprodução de informação do Pleno.News","data":"2024-11-27","tit":"Livro erótico é encontrado em creche de Londrina; vereadora pede providências","url":"https://novalima.news/livro-erotico-e-encontrado-em-creche-de-londrina-vereadora-pede-providencias/"},
  "fl-londrina": {
+  "tipo": "S2",
   "veic": "Folha de Londrina",
   "data": "2024-11",
   "tit": "Educação vai recolher livro infantil com ‘conteúdo sensível’",
   "url": "https://www.folhadelondrina.com.br/politica/educacao-vai-recolher-livro-infantil-com-conteudo-sensivel-3292131e.html"
  },
  "bp-londrina": {
+  "tipo": "S2",
   "veic": "Brasil Paralelo",
   "data": "2025-02-21",
   "tit": "Londrina proíbe livros com teor erótico em escolas municipais",
   "url": "https://www.brasilparalelo.com.br/noticias/londrina-proibe-livros-com-teor-erotico-em-escolas-municipais"
  },
  "met-bolsa1": {
+  "tipo": "S2",
   "veic": "Metrópoles",
   "data": "2026-05-15",
   "tit": "Treta sobre livro adotado por escola do CBMDF revolta pais",
   "url": "https://www.metropoles.com/distrito-federal/na-mira/treta-sobre-livro-adotado-por-escola-do-cbmdf-revolta-pais-podre"
  },
  "met-bolsa2": {
+  "tipo": "S2",
   "veic": "Metrópoles",
   "data": "2026-05-25",
   "tit": "Colégio militar do DF reavalia inclusão de livro após treta com pais",
   "url": "https://www.metropoles.com/distrito-federal/colegio-militar-do-df-reavalia-inclusao-de-livro-apos-treta-com-pais"
  },
  "cc-pr": {
+  "tipo": "S2",
   "veic": "CartaCapital",
   "data": "2024-03-12",
   "tit": "Editora vai à Justiça contra decisão do Paraná de recolher 'O Avesso da Pele' nas escolas",
   "url": "https://www.cartacapital.com.br/cultura/editora-vai-a-justica-contra-decisao-do-parana-de-recolher-o-avesso-da-pele-nas-escolas/"
  },
  "cc-oficio": {
+  "tipo": "S2",
   "veic": "CartaCapital",
   "data": "2024-03-06",
   "tit": "Secretaria de Educação do Paraná ordena recolhimento de livro 'O Avesso da Pele'",
   "url": "https://www.cartacapital.com.br/educacao/secretaria-de-educacao-do-parana-ordena-recolhimento-de-livro-o-avesso-da-pele/"
  },
  "cc-go": {
+  "tipo": "S2",
   "veic": "CartaCapital",
   "data": "2024-03-07",
   "tit": "'O Avesso da Pele': Goiás encampa cruzada e determina a retirada do livro das escolas",
   "url": "https://www.cartacapital.com.br/educacao/o-avesso-da-pele-goias-encampa-cruzada-e-determina-a-retirada-do-livro-das-escolas/"
  },
  "cc-volta": {
+  "tipo": "S2",
   "veic": "CartaCapital",
   "data": "2024-04-09",
   "tit": "'O Avesso da Pele' volta às escolas do Paraná e de Goiás após recolhimento",
   "url": "https://www.cartacapital.com.br/educacao/o-avesso-da-pele-volta-as-escolas-do-parana-e-de-goias-apos-recolhimento/"
  },
  "gp-estados": {
+  "tipo": "S2",
   "veic": "Gazeta do Povo",
   "data": "2024-03",
   "tit": "Estados recolhem livro por descrição de cenas de sexo e jargões inadequados",
   "url": "https://www.gazetadopovo.com.br/brasil/estados-recolhem-livro-por-descricao-de-cenas-de-sexo-e-jargoes-inadequados/"
  },
  "am-jabuti": {
+  "tipo": "S2",
   "veic": "Alessandra Magalhães (Substack)",
   "data": "2024-03",
   "tit": "Livro ganhador do Jabuti é censurado",
   "url": "https://alessandramagalhes.substack.com/p/livro-ganhador-do-jabuti-e-censurado"
  },
  "cc-sc": {
+  "tipo": "S2",
   "veic": "CartaCapital",
   "data": "2023-11-09",
   "tit": "Santa Catarina retira de escolas livros sobre regimes autoritários e nazismo; secretaria alega 'redistribuição'",
@@ -792,66 +840,77 @@ const FONTES = {
   "tipo": "P1"
  },
  "gp-sc": {
+  "tipo": "S2",
   "veic": "Gazeta do Povo",
   "data": "2023-11-09",
   "tit": "Governo de SC retira livros de escolas públicas para 'adequar às faixas etárias'",
   "url": "https://www.gazetadopovo.com.br/vida-e-cidadania/governo-sc-retira-livros-escolas-publicas-adequar-faixas-etarias/"
  },
  "p360-sc": {
+  "tipo": "S2",
   "veic": "Poder360",
   "data": "2023-11-09",
   "tit": "Governo de SC manda retirar livros de ficção de escolas públicas",
   "url": "https://www.poder360.com.br/educacao/leia-lista-de-livros-que-o-governo-de-sc-proibe-em-escolas/"
  },
  "cnn-sc": {
+  "tipo": "S2",
   "veic": "CNN Brasil",
   "data": "2023-11",
   "tit": "Sem justificar, governo de SC retira 9 livros das escolas públicas",
   "url": "https://www.cnnbrasil.com.br/politica/sem-justificar-governo-de-sc-retira-9-livros-das-escolas-publicas/"
  },
  "gp-ro": {
+  "tipo": "S2",
   "veic": "Gazeta do Povo",
   "data": "2020-02-07",
   "tit": "Governo de Rondônia determina recolhimento de 43 livros das escolas, mas volta atrás",
   "url": "https://www.gazetadopovo.com.br/vida-e-cidadania/governo-de-rondonia-determina-recolhimento-43-livros-das-escolas-veja-lista/"
  },
  "pn-ro": {
+  "tipo": "S2",
   "veic": "PublishNews",
   "data": "2020-02-10",
   "tit": "Após tentativa de censura, governo de Rondônia recua",
   "url": "https://www.publishnews.com.br/materias/2020/02/10/apos-tentativa-de-censura-governo-de-rondonia-recua"
  },
  "publico-ro": {
+  "tipo": "S2",
   "veic": "Público (Portugal)",
   "data": "2020-02-09",
   "tit": "Machado de Assis, Rubem Fonseca e Franz Kafka censurados em estado brasileiro (que entretanto recua)",
   "url": "https://www.publico.pt/2020/02/09/culturaipsilon/noticia/machado-assis-rubem-fonseca-franz-kafka-censurados-estado-brasileiro-entretanto-recua-1903411"
  },
  "cc-ro": {
+  "tipo": "S2",
   "veic": "CartaCapital",
   "data": "2020-02-07",
   "tit": "Rondônia: relembre a história de cinco livros que o Estado quis vetar",
   "url": "https://www.cartacapital.com.br/educacao/rondonia-relembre-a-historia-de-cinco-livros-que-o-estado-quis-vetar/"
  },
  "em-palmares": {
+  "tipo": "S2",
   "veic": "Estado de Minas",
   "data": "2021-06-17",
   "tit": "Conselho de Biblioteconomia repudia retirada de livros da Fundação Palmares",
   "url": "https://www.em.com.br/app/noticia/nacional/2021/06/17/interna_nacional,1277740/conselho-de-biblioteconomia-repudia-retirada-de-livros-da-fundacao-palmares.shtml"
  },
  "gp-palmares": {
+  "tipo": "S2",
   "veic": "Gazeta do Povo",
   "data": "2022-01-15",
   "tit": "Justiça proíbe Fundação Palmares de doar livros sobre socialismo e comunismo do seu acervo",
   "url": "https://www.gazetadopovo.com.br/vida-e-cidadania/breves/justica-proibe-fundacao-palmares-doar-livros-socialismo-comunismo-acervo/"
  },
  "opovo-palm": {
+  "tipo": "S2",
   "veic": "O Povo",
   "data": "2021-08-04",
   "tit": "Presidente da Fundação Palmares cria 'acervo da vergonha' para livros",
   "url": "https://www.opovo.com.br/vidaearte/2021/08/04/presidente-da-fundacao-palmares-cria-acervo-da-vergonha-para-livros.html"
  },
  "pn-2025": {
+  "tipo": "S2",
   "veic": "PublishNews",
   "data": "2025-08-14",
   "tit": "Livros sobre cultura afro-brasileira e sexualidade são alvo de tentativas de censura no Brasil e no mundo",
