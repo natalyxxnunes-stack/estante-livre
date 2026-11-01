@@ -18,14 +18,9 @@
 | Registros com campo de assinatura vazio na exportação | 10 |
 | Registros com apenas uma fonte | 1 |
 
-A ausência de cidade não deve ser preenchida com a capital do estado por conveniência. A ausência de assinatura também não deve ser resolvida atribuindo a autoria ao chefe do Executivo em exercício.
+A ausência de cidade não deve ser preenchida com a capital do estado por conveniência. A ausência de assinatura também não deve ser resolvida atribuindo a autoria ao chefe do Executivo em exercício.\n\n**Atualização de 1º/11/2026:** o registro EL-005 foi fechado quanto ao núcleo factual após localização da IND/0154/2024 e da Informação nº 304/2024/SED/DIEN. O documento oficial comprova a orientação de recolhimento e identifica signatários; a execução por escola e a situação atual permanecem pendentes. Restam 18 registros parcialmente verificados nesta branch.
 
 ## 2. Registros parcialmente verificados — 19
-
-### EL-005 — O avesso da pele (Santa Catarina, 2024)
-- **Pendência:** fonte única, uma nota do governo estadual à Gazeta do Povo; documento original da Secretaria não localizado.
-- **Ação:** obter comunicado, lista de unidades e documento de redistribuição por LAI; buscar apuração independente.
-- **Regra editorial:** manter “Parcialmente verificado” até haver segunda fonte independente ou documento primário suficiente.
 
 ### EL-015 a EL-021 — episódio de Rondônia (2020)
 Obras: *Macunaíma*, *Memórias póstumas de Brás Cubas*, *Os sertões*, *O castelo*, *Contos de terror, de mistério e de morte*, *A vida como ela é* e *Beijo no asfalto*.
@@ -77,6 +72,16 @@ Obras: *Macunaíma*, *Memórias póstumas de Brás Cubas*, *Os sertões*, *O cas
 ### EL-033 — lista do projeto Remição em Rede (Funap, 2020)
 - **Pendência:** mensagem original, ata de 13/02/2020, nota integral da Funap, três obras questionadas e divergência entre 240 e 228 exemplares.
 - **Ação:** solicitar mensagem, ata, nota e registros de envio às unidades prisionais.
+
+## Registro fechado durante a auditoria
+
+### EL-005 — O avesso da pele (Santa Catarina, 2024)
+- **Documento primário localizado:** Informação nº 304/2024/SED/DIEN, de 23/04/2024, com resposta e ofícios de encaminhamento à ALESC.
+- **Pedido antecedente:** IND/0154/2024, de autoria do deputado estadual Sérgio Motta, entrada em 06/03/2024, sugerindo a retirada da obra das escolas estaduais.
+- **Fato comprovado:** a Secretaria de Estado da Educação informou que orientou escolas a recolher os exemplares das bibliotecas para análise pedagógica do livro e de todo o acervo.
+- **Assinaturas:** Márcia Loch e Jocelete Isaltina da Silveira dos Santos assinaram digitalmente a Informação nº 304/2024/SED/DIEN. Aristides Cimadon assinou o Ofício/Gabs nº 1017/2024, de encaminhamento. Marcelo Mendes assinou o Ofício nº 1064/SCC-DIAL-GEAPI, que remeteu a resposta à ALESC. As funções de assinatura foram separadas por documento.
+- **Resultado editorial:** o núcleo factual passou a “Verificado”. O estágio continua “Decisão ou ordem”; a situação passou a “Em aberto”, pois a documentação consultada não comprova a execução em cada escola nem a revogação/retorno dos exemplares.
+- **Fontes primárias:** [IND/0154/2024](https://portalelegis.alesc.sc.gov.br/proposicoes/KXWdD/documentos) · [Informação nº 304/2024/SED/DIEN e ofícios](https://portalelegis.alesc.sc.gov.br/documentos/5aogB).
 
 ## 3. Assinatura e identificação de responsáveis
 
