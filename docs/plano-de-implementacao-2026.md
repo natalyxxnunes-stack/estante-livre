@@ -11,7 +11,7 @@
 | Identificação de signatários | Nome, papel, documento e fonte primária; ou indicação explícita de que não foi identificado | Em apuração; não preencher por inferência |
 | Revisão de fontes e links | URL testada, tipo de fonte, afirmação sustentada e independência avaliadas | Protocolo criado; classificação individual pendente |
 | Revisão de atribuições políticas | Governo, partido, agente e papel separados; relação causal documentada | Regra editorial definida; revisão caso a caso pendente |
-| Direitos e créditos de capas | Origem, titular, licença/permissão, crédito e uso registrado | Protocolo a implementar antes de ampliar as imagens |
+| Direitos e créditos de capas | Origem, titular, licença/permissão, crédito e uso registrado | Inventário de sete capas criado; origem e autorização individual ainda precisam ser verificadas antes de ampliar ou manter a reprodução |
 
 ## P1 — Essencial
 
