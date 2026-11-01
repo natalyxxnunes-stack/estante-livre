@@ -13,7 +13,9 @@ node scripts/gerar.js
 Ele valida os dados e para com uma lista de erros se algo estiver fora do padrão (mecanismo fora da lista, fonte inexistente, ficha de livro sem caso). Se tudo estiver certo, ele:
 
 - padroniza cabeçalho, menu e rodapé de todas as páginas;
-- gera a página `poder.html` a partir de `AGENTES`, `PAPEIS`, `ATOS` e `CASOS`;\n- gera dossiês temáticos e o relatório-base de 2026 diretamente da base, com recortes, contagens e limites de interpretação;\n- emite alertas editoriais não bloqueantes para localidades ausentes, signatários não identificados e fontes concentradas em um único domínio;
+- gera a página `poder.html` a partir de `AGENTES`, `PAPEIS`, `ATOS` e `CASOS`;
+- gera dossiês temáticos e o relatório-base de 2026 diretamente da base, com recortes, contagens e limites de interpretação;
+- emite alertas editoriais não bloqueantes para localidades ausentes, signatários não identificados e fontes concentradas em um único domínio;
 - escreve o HTML das fichas dentro de `casos.html` e `livros.html`, para buscadores e ferramentas de IA lerem sem JavaScript;
 - gera uma página por caso (`casos/el-001.html`), obra (`livros/<nome>.html`) e agente (`agentes/<id>.html`), com dados estruturados, papéis documentados, fontes e sugestão de citação;
 - gera `dados/estante-livre-casos.csv` e `.json`, `sitemap.xml`, `robots.txt`, `llms.txt` e `404.html`.
