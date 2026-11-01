@@ -121,7 +121,7 @@ for(const p of PAPEIS){
    const nome=AGENTES[q.agente]?.nome||q.agente;
    return nome+(q.nota?": "+q.nota:"");
  });
- politicos.push({nome:AGENTES[p.agente].nome,partido,papel:p.nota||("Participação registrada como "+p.papel.toLowerCase()+"."),decisao:decisores.join(" · ")||"Não há decisão administrativa individual identificada no cadastro.",registros});
+ politicos.push({nome:AGENTES[p.agente].nome,partido,papel:p.nota||("Participação registrada como "+p.papel.toLowerCase()+"."),decisao:decisores.join(" · ")||"Não há decisão de retirada documentada neste episódio.",registros});
 }
 const el = id => document.getElementById(id);
 const atos = new Map(CASOS.map(c=>[c.ato,c]));
