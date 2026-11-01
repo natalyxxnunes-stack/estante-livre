@@ -57,4 +57,11 @@ Um caso só conta como verificado com `verificado:"Sim"` e pelo menos duas refer
 
 index (painel), casos, livros, analises, poder, historia (linha do tempo, escrita à mão), mundo, glossario, metodologia, sobre, cobertura, relate. Geradas pelo script: atos.html e as páginas em `casos/`, `livros/` e `atos/`.
 
-## Documentação editorial\n\n- `docs/auditoria-editorial-p0.md`: pendências críticas mapeadas.\n- `docs/classificacao-e-verificacao-de-fontes.md`: taxonomia e protocolo de verificação.\n- `docs/politica-de-direitos-e-imagens.md`: créditos, direitos e preservação visual.\n- `docs/plano-de-implementacao-2026.md`: sequência P0–P3 e critérios de conclusão.\n\nContornos do mapa: svg-maps, licença CC BY 4.0.
+## Documentação editorial
+
+- `docs/auditoria-editorial-p0.md`: pendências críticas mapeadas.
+- `docs/classificacao-e-verificacao-de-fontes.md`: taxonomia e protocolo de verificação.
+- `docs/politica-de-direitos-e-imagens.md`: créditos, direitos e preservação visual.
+- `docs/plano-de-implementacao-2026.md`: sequência P0–P3 e critérios de conclusão.
+
+Contornos do mapa: svg-maps, licença CC BY 4.0.
