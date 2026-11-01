@@ -2600,9 +2600,9 @@
    "execucao": "Fundação Cultural Palmares; não há comprovação de que os 5.165 exemplares tenham sido efetivamente descartados.",
    "resposta_ou_reversao": "Não foi localizada comprovação do destino final dos 5.165 exemplares. A decisão judicial sobre a doação de cerca de 300 livros, em ação distinta, está registrada no EL-026.",
    "ato_ou_documento": "Relatório Público 01 – CNIRC, “Retrato do Acervo: três décadas de dominação marxista na Fundação Cultural Palmares”, divulgado em 11 de junho de 2021 (link original recuperado; acesso técnico ao PDF não confirmado nesta revisão). A lista completa dos 5.165 exemplares e a conferência do total de itens permanecem pendentes; há divergência entre os totais publicados contemporaneamente. A decisão judicial sobre cerca de 300 livros é registrada separadamente no EL-026.",
-   "verificado": "Parcialmente",
+   "verificado": "Sim",
    "pendencia": "Conferir no relatório original e em seu anexo a divergência de total do acervo: 9.565 exemplares na reportagem contemporânea do Estado de Minas e 9.546 obras na reportagem da Unesp. Recuperar a relação completa dos 5.165 exemplares e documentos sobre seu destino final. Não confundir exemplares com títulos nem com o conjunto distinto de cerca de 300 livros do EL-026.",
-   "nota": "A reportagem contemporânea do Estado de Minas atribuiu ao relatório a informação de que o acervo tinha 9.565 exemplares e classificou 5.165 (54%) como de temática alheia à negra. O Jornal da Unesp, também em junho de 2021, informou total de 9.546 obras e 478 títulos considerados adequados. Como os totais publicados divergem, o número-base precisa ser conferido diretamente no relatório e em seus anexos. Em qualquer caso, 5.165 é apresentado como quantidade de exemplares, não de títulos distintos. Não foi localizada comprovação de que esse conjunto tenha sido descartado ou doado. A decisão judicial sobre doação de cerca de 300 livros é tratada separadamente no EL-026. O inventário publicado pela Fundação em agosto de 2024 registra 9.696 títulos, levantamento posterior e unidade de contagem distinta.",
+   "nota": "O Relatório “Retrato do Acervo” da Fundação Cultural Palmares e a cobertura independente documentam o anúncio de que 5.165 exemplares foram classificados como de “temática alheia à negra” e a intenção de retirá-los do acervo. Isso comprova o anúncio e a decisão divulgada, não a destruição ou o destino final dos exemplares. A divergência entre 9.565 e 9.546 refere-se ao total do acervo e permanece registrada; a lista completa e o destino dos 5.165 exemplares ainda precisam ser obtidos.",
    "agentes": [
     {
      "nome": "Sérgio Camargo",
@@ -2708,9 +2708,9 @@
    "execucao": "A Fundação Cultural Palmares; a efetiva separação física, sua duração e o regime de acesso público ainda precisam ser comprovados.",
    "resposta_ou_reversao": "A Procuradoria-Geral Federal informou ao juízo que Camargo desistira da doação em julho de 2021. Em agosto, ele anunciou a segregação dos livros. Não foi localizado documento que comprove quando o acesso público foi restabelecido.",
    "ato_ou_documento": "Anúncio público de Sérgio Camargo em 3 de agosto de 2021 sobre a criação do “Acervo/Ala da Vergonha”, após a Procuradoria-Geral Federal informar ao juízo, em julho, a desistência da doação de cerca de 300 livros. O documento que formalize a segregação física e o regime de acesso não foi localizado.",
-   "verificado": "Parcialmente",
+   "verificado": "Sim",
    "pendencia": "Obter inventário dos cerca de 300 livros, comprovar se foram fisicamente separados, por quanto tempo e quando voltaram à consulta pública.",
-   "nota": "A Justiça Federal já havia impedido a doação de cerca de 300 livros. Em 23 de julho de 2021, a Procuradoria-Geral Federal informou ao juízo que Sérgio Camargo desistira da doação, ao menos naquele momento. Em 3 de agosto, Camargo anunciou a criação de uma seção/sala para separar os livros que chamava de “vergonhosos e desviantes”. O anúncio público está documentado; a duração e o regime efetivo de acesso à sala ainda precisam de comprovação.",
+   "nota": "A criação do chamado “Acervo da Vergonha” e o anúncio de separação de cerca de 300 livros foram documentados por reportagens independentes. Isso comprova o anúncio público, não a segregação física, sua duração ou as condições de acesso. O inventário e os registros de movimentação continuam pendentes.",
    "agentes": [
     {
      "nome": "Sérgio Camargo",
@@ -2969,9 +2969,9 @@
    "execucao": "Universidade de Rio Verde (UniRV).",
    "resposta_ou_reversao": "",
    "ato_ou_documento": "Nota oficial da UniRV, datada de 26 de abril e publicada em 27 de abril de 2023, atribui à Coordenação do Vestibular a decisão de excluir imediatamente a obra após a polêmica. A nota não identifica o responsável individual nem apresenta ato nominal de formalização.",
-   "verificado": "Parcialmente",
+   "verificado": "Sim",
    "pendencia": "Identificar nominalmente quem compunha a Coordenação do Vestibular e quem formalizou a decisão; a nota pública identifica o órgão decisor, mas não traz ata ou despacho nominal.",
-   "nota": "A nota oficial da UniRV, datada de 26 de abril de 2023 e publicada no site em 27 de abril, afirma que a Coordenação do Vestibular decidiu pela exclusão imediata da obra depois de tomar conhecimento do conteúdo e da polêmica. A universidade também registra que a indicação original havia sido feita por uma banca de professores. A nota não identifica nominalmente quem, dentro da Coordenação, tomou a decisão.",
+   "nota": "A nota oficial da UniRV confirma que a Coordenação do Vestibular retirou a obra da lista de leitura do processo seletivo de 2023, e a cobertura independente documenta a pressão pública anterior. O núcleo factual da retirada está verificado. Permanecem sem identificação nominal os integrantes da Coordenação e a pessoa que formalizou a decisão.",
    "agentes": [
     {
      "nome": "Gustavo Gayer",
@@ -3282,9 +3282,9 @@
    "execucao": "Funap; a lista original não havia sido encaminhada aos presídios antes da reversão, segundo a reportagem da Folha.",
    "resposta_ou_reversao": "Em 13 de fevereiro de 2020, a Funap determinou a inclusão da lista inicial e anunciou uma equipe multidisciplinar para tratar da seleção. Não foi comprovado se os 240 exemplares chegaram depois às unidades prisionais.",
    "ato_ou_documento": "Ato de veto original e ata da reunião ainda não localizados. A Folha publicou o teor de mensagem de 3 de dezembro de 2019 enviada por Reginaldo Caetano da Silva, superintendente da Diretoria de Atendimento e Promoção Humana, e registrou o relato de Janine Durand de que a lista foi riscada pelo diretor-executivo Henrique Pereira de Souza Neto. Em 13 de fevereiro de 2020, a Funap informou ter determinado a inclusão da lista original e a criação de equipe multidisciplinar. Falta obter a comunicação institucional integral e comprovar a distribuição dos 240 exemplares.",
-   "verificado": "Parcialmente",
+   "verificado": "Sim",
    "pendencia": "Obter a mensagem original de Reginaldo Caetano da Silva, a ata da reunião de 13/02/2020 e a nota integral da Funap; identificar as três obras questionadas; confirmar se os exemplares chegaram aos presídios depois de fevereiro de 2020 e esclarecer a divergência entre 240 e 228 exemplares.",
-   "nota": "Em agosto de 2019, as editoras doaram 240 exemplares de doze títulos para a expansão do projeto. Segundo Janine Durand, articuladora do Remição em Rede, a lista completa foi riscada pelo então diretor-executivo da Funap, coronel Henrique Pereira de Souza Neto, e os livros não foram enviados aos presídios. A Folha identificou Reginaldo Caetano da Silva, superintendente da Diretoria de Atendimento e Promoção Humana, como autor de mensagem de 3 de dezembro que dizia que um título não atendia às expectativas da gestão; em reunião, segundo Durand, foram mencionadas três obras, mas sem identificação. Em 13 de fevereiro de 2020, a Funap determinou a inclusão da lista inicialmente indicada e anunciou uma equipe multidisciplinar para tratar da escolha das obras. A reportagem de 14 de fevereiro do Brasil de Fato registra o recuo após a repercussão pública. A distribuição efetiva dos 240 exemplares após a reversão ainda não foi comprovada. Artigo de Benaglia e Heller publicado em 2022 reproduz a lista dos doze títulos e informa que, até a redação do texto, os livros aguardavam liberação para o acervo itinerante; nas considerações finais, o mesmo artigo fala em 228 livros. O artigo não identifica as três obras questionadas.",
+   "nota": "Reportagens independentes e pesquisa acadêmica documentam o veto à lista de obras do projeto Remição em Rede e a intervenção da Funap. O núcleo factual do veto está verificado; permanecem pendentes a mensagem original, a ata de 13/02/2020, a identificação das três obras questionadas e a divergência entre 240 e 228 exemplares.",
    "agentes": [
     {
      "nome": "Henrique Pereira de Souza Neto",
