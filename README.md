@@ -25,7 +25,7 @@ Quase tudo fica em `assets/dados.js`, organizado em quatro entidades ligadas por
 
 - `CASOS` (registros): um título atingido por um ato. Aponta para a obra (`obra`) e para o ato (`ato`) e guarda o que é próprio do registro: mecanismo, estágio, situação, alegação, desfecho, fontes, pendência, nota.
 - `LIVROS` (obras): autoria, editora, capa, PNLD, ano, gênero, prêmio, sinopse, nota. `conjunto:true` e `legenda` para lotes sem lista título a título.
-- `ATOS`: o documento ou episódio, com nome, data, UF, cidade, tipo de biblioteca, rede, governo, instância, documento e o texto de cada papel (`papeis`).
+- `ATOS`: o documento ou episódio, com nome, data, UF, cidade ou abrangência, tipo de biblioteca, rede, governo, instância, documento e o texto de cada papel (`papeis`).
 - `AGENTES` e `PAPEIS`: pessoas e instituições com papel documentado em cada ato (pressão, pedido, decisão, assinatura, execução, denúncia, resposta), com o cargo na data. `atribuido:true` quando a fonte atribui o papel sem documento assinado.
 
 No fim do arquivo, uma etapa de montagem copia os campos do ato e da obra para cada registro; as páginas leem os registros já montados. Para um caso novo: crie a obra e o ato se forem novos, copie um bloco de `CASOS`, aponte para eles e rode o gerador.
