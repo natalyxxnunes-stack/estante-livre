@@ -202,7 +202,7 @@ function gerarDossies(){
     const atos=[...new Set(g.registros.map(c=>c.ato))];
     const obras=[...new Set(g.registros.map(c=>obraDe(c)))];
     const ufs=[...new Set(g.registros.map(c=>c.uf).filter(Boolean))].sort();
-    const linhas=g.registros.map(c=>`<li><a href="casos/${c.id.toLowerCase()}.html"><b>${esc(c.id)} · ${esc(obraDe(c))}</b></a><span>${esc(ondeTxt(c))} · ${esc(mesAno(c))} · ${esc(c.estagio)}</span><span class="dossie-status">${esc(c.verificado==="Sim"?"Núcleo verificado":"Verificação parcial")} · ${esc(c.situacao)}</span></li>`).join("");
+    const linhas=g.registros.map(c=>{const local=[c.cidade||ATOS[c.ato]?.abrangencia,c.uf].filter(Boolean).join(", ");const data=R.dataLegivel(c).replace(/^./,x=>x.toLowerCase());return `<li><a href="casos/${c.id.toLowerCase()}.html"><b>${esc(c.id)} · ${esc(obraDe(c))}</b></a><span>${esc(local)} · ${esc(data)} · ${esc(c.estagio)}</span><span class="dossie-status">${esc(c.verificado==="Sim"?"Núcleo verificado":"Verificação parcial")} · ${esc(c.situacao)}</span></li>`;}).join("");
     return `<article class="dossie-card" id="${g.id}">
       <div class="dossie-num">DOSSIÊ ${String(i+1).padStart(2,"0")}</div>
       <h3>${esc(g.titulo)}</h3>
