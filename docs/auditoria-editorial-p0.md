@@ -14,7 +14,7 @@
 | Referências associadas aos registros | 187 |
 | URLs distintas | 82 |
 | Registros parcialmente verificados | 8 |
-| Registros com cidade não informada | 13 |
+| Registros com cidade não informada | 12 |
 | Registros em decisão/execução sem signatário formal identificado | 7 |
 | Registros com apenas uma fonte | 0 |
 
