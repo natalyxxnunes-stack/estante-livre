@@ -64,7 +64,8 @@ index (painel), casos, livros, analises, poder, perfis de agentes, dossies, rela
 
 - `docs/auditoria-editorial-p0.md`: pendências críticas mapeadas.
 - `docs/classificacao-e-verificacao-de-fontes.md`: taxonomia e protocolo de verificação.
-- `docs/politica-de-direitos-e-imagens.md`: créditos, direitos e preservação visual.\n- `docs/inventario-de-imagens.md`: inventário das sete capas e situação dos direitos.
+- `docs/politica-de-direitos-e-imagens.md`: créditos, direitos e preservação visual.
+- `docs/inventario-de-imagens.md`: inventário das sete capas e situação dos direitos.
 - `docs/plano-de-implementacao-2026.md`: sequência P0–P3 e critérios de conclusão.
 
 Contornos do mapa: svg-maps, licença CC BY 4.0.
