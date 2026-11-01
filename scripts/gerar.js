@@ -185,7 +185,7 @@ function gerarPoder(){
     <div><b>${atos}</b><span>atos com papéis cadastrados</span></div>
   </div>
   <p class="note">A lista é gerada diretamente de AGENTES e PAPEIS. Uma pessoa pode aparecer em mais de um papel e um ato pode ter vários registros por título. A filiação partidária aparece somente quando consta do cargo cadastrado; o governo em exercício é apresentado separadamente.</p>
-  <div class="poder-lista">${cards}</div>`;
+  <div class="poder-lista">${cards}</div>\n  <p class="note">Continue a investigação em <a href="dossies.html">Dossiês temáticos</a> e consulte o <a href="relatorio-2026.html">Relatório-base 2026</a> para conhecer a distribuição e os limites da base.</p>`;
 }
 
 function gerarDossies(){
