@@ -65,7 +65,7 @@ for(const c of CASOS){
     if(!temAssinatura && !assinaturaDescrita) avisos.push(`${c.id}: signatário formal não identificado no cadastro`);
   }
   if(c.verificado==="Sim") {
-    const hosts = new Set((c.fontes||[]).map(k=>{ try { return new URL(FONTES[k].url).hostname.toLowerCase().replace(/^www\\./,""); } catch { return ""; } }).filter(Boolean));
+    const hosts = new Set((c.fontes||[]).map(k=>{ try { return new URL(FONTES[k].url).hostname.toLowerCase().replace(/^www\./,""); } catch { return ""; } }).filter(Boolean));
     if(hosts.size<2) avisos.push(`${c.id}: fontes em menos de dois domínios; conferir independência editorial`);
   }
   if(c.capa && !fs.existsSync(path.join(RAIZ_REPO,"assets/capas",c.capa+".jpg"))) erros.push(`${c.id}: capa inexistente: ${c.capa}.jpg`);
@@ -97,7 +97,7 @@ for(const [k,L] of Object.entries(LACUNAS)){
   if(!L.caminho) erros.push(`LACUNAS ${k}: sem caminho`);
 }
 if(erros.length){ console.error("Erros nos dados:\n- " + erros.join("\n- ")); process.exit(1); }
-if(avisos.length) console.warn("Alertas editoriais (não bloqueiam a geração):\\n- " + [...new Set(avisos)].join("\\n- "));
+if(avisos.length) console.warn("Alertas editoriais (não bloqueiam a geração):\n- " + [...new Set(avisos)].join("\n- "));
 /* ---------- 2. cabeçalho, menu e rodapé ---------- */
 const NAV = [["index.html","Painel"],["casos.html","Casos"],["livros.html","Livros"],["atos.html","Atos"],["analises.html","Análises"],["poder.html","Poder e censura"],
   ["historia.html","História"],["mundo.html","Mundo"],["metodologia.html","Metodologia"],["sobre.html","Sobre"]];
