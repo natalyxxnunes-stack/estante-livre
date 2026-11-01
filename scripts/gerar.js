@@ -282,6 +282,7 @@ const curto = t => t.length>70 ? t.slice(0,67).replace(/\s+\S*$/,"")+"…" : t;
 
 fs.rmSync(path.join(RAIZ_REPO,"casos"), {recursive:true, force:true});
 fs.rmSync(path.join(RAIZ_REPO,"livros"), {recursive:true, force:true});
+fs.rmSync(path.join(RAIZ_REPO,"agentes"), {recursive:true, force:true});
 
 const urlsCasos = [];
 for(const c of CASOS){
@@ -350,6 +351,54 @@ for(const obra of obras){
   </section>
 </div>`;
   gravar(`livros/${slug(obra)}.html`, pagina({titulo, descricao, url, raiz:"../", atual:"livros.html", ld, corpo}));
+}
+
+/* ---------- perfis individuais de agentes ---------- */
+const urlsAgentes = [];
+for(const [id,agente] of Object.entries(AGENTES)){
+  const papeis=PAPEIS.filter(p=>p.agente===id);
+  if(!papeis.length) continue;
+  const url=`${SITE}/agentes/${id}.html`; urlsAgentes.push(url);
+  const titulo=`${agente.nome}: papéis documentados · Estante Livre`;
+  const resumo=`${agente.nome} — ${papeis.map(p=>p.papel.toLowerCase()).join(", ")} em atos registrados no Estante Livre.`;
+  const ld={"@context":"https://schema.org","@type":agente.tipo==="Pessoa"?"Person":"Organization",
+    "name":agente.nome,"url":url,"description":resumo,"dateModified":ATUALIZADO,
+    "publisher":ORG,"isPartOf":{"@type":"Dataset","name":DATASET.name,"url":DATASET.url}};
+  const relacoes=papeis.map(p=>{
+    const A=ATOS[p.ato]||{};
+    const regs=CASOS.filter(c=>c.ato===p.ato);
+    const fonteIds=[...new Set(regs.flatMap(c=>c.fontes||[]))];
+    const fontes=fonteIds.map(k=>FONTES[k]).filter(Boolean);
+    const ids=regs.map(c=>`<a href="../casos/${c.id.toLowerCase()}.html">${esc(c.id)} · ${esc(obraDe(c))}</a>`).join("<br>");
+    const atribuida=p.atribuido?'<p class="poder-atribuido">Atribuição feita pela fonte; não há documento assinado identificado que confirme diretamente este papel.</p>':"";
+    const governo=A.governo?'<p class="poder-contexto"><b>Governo em exercício (contexto, não prova de autoria):</b> '+esc(A.governo)+'</p>':"";
+    const fontesHtml=fontes.length?'<div class="fontes"><div class="fontes-lab">FONTES DO ATO</div>'+fontes.map(f=>'<a class="flink" href="'+esc(f.url)+'" target="_blank" rel="noopener"><span class="v">'+esc(f.veic)+'</span><span class="tipo-fonte">'+esc(f.tipo||"Tipo não classificado")+'</span><span class="t">'+esc(f.tit)+'</span></a>').join("")+'</div>':"";
+    return `<article class="poder-card">
+      <div class="poder-relacao-topo"><span class="poder-papel">${esc(p.papel)}</span><span class="poder-ato">${esc(p.ato)} · ${esc(A.uf||"UF não informada")} · ${A.data?A.data.slice(0,4):"data não informada"}</span></div>
+      <h2><a href="../atos/${p.ato.toLowerCase()}.html">${esc(A.nome||p.ato)}</a></h2>
+      ${p.cargo?'<p class="poder-cargo">'+esc(p.cargo)+'</p>':""}
+      ${p.nota?'<p>'+esc(p.nota)+'</p>':""}
+      ${atribuida}${governo}
+      <div class="poder-registros"><b>Registros vinculados:</b><p>${ids||"Sem ficha de caso vinculada."}</p></div>
+      ${fontesHtml}
+    </article>`;
+  }).join("");
+  const corpo=`<div class="wrap">
+  <div class="hero-pg">
+    <p class="migalha"><a href="../index.html">Painel</a> › <a href="../poder.html">Poder e censura</a> › ${esc(agente.nome)}</p>
+    <h1>${esc(agente.nome)}</h1>
+    <p class="lede">${esc(agente.tipo)} · ${papeis.length} ${papeis.length===1?"papel documentado":"papéis documentados"} em atos do catálogo.</p>
+  </div>
+  <div class="analysis-alert"><strong>Limite da atribuição.</strong> Esta página descreve papéis registrados em fontes e documentos. Governo em exercício, cargo e partido são contexto; não provam, isoladamente, autoria de uma decisão. Pressão, pedido, decisão, assinatura, execução e reversão são categorias distintas.</div>
+  <section>
+    <div class="sechead"><span class="kicker">01</span><h2>Atuação documentada</h2></div>
+    <div class="poder-lista">${relacoes}</div>
+  </section>
+  <section style="border-bottom:0">
+    <p class="note">Consulte também <a href="../poder.html">Poder e censura</a>, <a href="../metodologia.html">Metodologia</a> e <a href="../pendencias.html">O que falta apurar</a>. Os dados abertos estão disponíveis em <a href="../dados/estante-livre-casos.json">JSON</a> e <a href="../dados/estante-livre-casos.csv">CSV</a>.</p>
+  </section>
+</div>`;
+  gravar(`agentes/${id}.html`,pagina({titulo,descricao:resumo.slice(0,290),url,raiz:"../",atual:"poder.html",ld,corpo}));
 }
 
 /* páginas de ato e índice de atos e agentes */
@@ -424,7 +473,7 @@ for(const [k,A] of Object.entries(ATOS)){
   <section style="border-bottom:0">
     <div class="sechead"><span class="kicker">02</span><h2>Pessoas e instituições</h2></div>
     <p class="note">Pessoas aparecem só pelo papel que exerceram num ato documentado, com o cargo que ocupavam na data. Papel “atribuído” quer dizer que a fonte atribui a decisão a alguém sem documento assinado que a comprove. Denunciar ou reverter uma medida também é papel, e está identificado como tal.</p>
-    <div class="agentes-idx">${pessoas.map(([id,ag])=>`<div class="agente" id="ag-${id}"><h3>${esc(ag.nome)} <span>${esc(ag.tipo)}</span></h3>${
+    <div class="agentes-idx">${pessoas.map(([id,ag])=>`<div class="agente" id="ag-${id}"><h3><a href="agentes/${id}.html">${esc(ag.nome)}</a> <span>${esc(ag.tipo)}</span></h3>${
       PAPEIS.filter(p=>p.agente===id).map(p=>`<div class="ag-papel"><b>${esc(p.papel)}${p.atribuido?" (atribuída)":""}</b>${p.cargo?` · ${esc(p.cargo)}`:""} · <a href="atos/${p.ato.toLowerCase()}.html">${esc(ATOS[p.ato].nome)}</a>${p.nota?`<div class="ag-nota">${esc(p.nota)}</div>`:""}</div>`).join("")
     }</div>`).join("")}</div>
   </section>
@@ -516,7 +565,7 @@ gravar("dados/estante-livre-casos.csv", "\uFEFF" + [colunas.join(","), ...linhas
 const topo = [...PAGINAS, "atos.html", "pendencias.html"].map(f => f==="index.html" ? SITE+"/" : `${SITE}/${f}`);
 gravar("sitemap.xml", `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${[...topo, ...urlsCasos, ...urlsLivros, ...urlsAtos].map(u=>`  <url><loc>${u}</loc><lastmod>${ATUALIZADO}</lastmod></url>`).join("\n")}
+${[...topo, ...urlsCasos, ...urlsLivros, ...urlsAtos, ...urlsAgentes].map(u=>`  <url><loc>${u}</loc><lastmod>${ATUALIZADO}</lastmod></url>`).join("\n")}
 </urlset>
 `);
 gravar("robots.txt", `User-agent: *\nAllow: /\n\nSitemap: ${SITE}/sitemap.xml\n`);
@@ -544,4 +593,4 @@ gravar("404.html", pagina({titulo:"Página não encontrada · Estante Livre", de
   corpo:`<div class="wrap"><div class="hero-pg"><h1>Esta página não está na estante</h1>
   <p class="lede">O endereço pode ter mudado. Os casos estão em <a href="/casos.html">Casos</a> e as obras em <a href="/livros.html">Livros</a>; a busca da página de casos encontra livro, cidade, órgão ou justificativa.</p></div></div>`}));
 
-console.log(`ok · ${CASOS.length} casos · ${obras.length} obras · ${Object.keys(ATOS).length} atos · ${Object.keys(AGENTES).length} agentes · ${PAGINAS.length} páginas padronizadas · sitemap com ${topo.length+urlsCasos.length+urlsLivros.length+urlsAtos.length} URLs`);
+console.log(`ok · ${CASOS.length} casos · ${obras.length} obras · ${Object.keys(ATOS).length} atos · ${Object.keys(AGENTES).length} agentes · ${PAGINAS.length} páginas padronizadas · sitemap com ${topo.length+urlsCasos.length+urlsLivros.length+urlsAtos.length+urlsAgentes.length} URLs`);
