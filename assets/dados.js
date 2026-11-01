@@ -914,7 +914,7 @@ const LACUNAS = {
  "FUNAP-2020":{obstaculos:["Documento interno não publicado","Cumprimento não confirmado","Divergência entre fontes"], caminho:"Pedido via Lei de Acesso à Informação à Funap, do governo de São Paulo, da mensagem de 3 de dezembro de 2019, da ata de 13 de fevereiro de 2020 e do registro de envio dos exemplares às unidades."},
 };
 
-const ATUALIZADO = "2026-10-30";
+const ATUALIZADO = "2026-11-01";
 
 /* contato institucional exibido na página Sobre. Vazio, a linha não aparece. */
 const CONTATO = { email: "", instagram: "natalyxnunes" };
@@ -983,6 +983,8 @@ const CORRECOES = [
  {data:"2026-10-28", id:"EL-034", texto:"Limeira: corrigida a classificação após leitura do requerimento e da resposta oficiais. Clayton Silva pediu informações e questionou a temática; não pediu formalmente a retirada. A Secretaria defendeu o livro e seu uso pedagógico."},
  {data:"2026-10-28", id:"EL-030", texto:"Londrina: separado o pedido parlamentar de recolhimento, ainda sem execução comprovada, da Lei Municipal nº 13.930/2025, originada do PL 79/2024. Acrescentada a publicação no Jornal Oficial do Município."},
  {data:"2026-10-28", id:"EL-002", texto:"Paraná: corrigida a descrição dos expedientes. Anderfábio Oliveira dos Santos assinou o ofício da Secretaria; Laura Patrícia Lopes assinou ofício de teor semelhante do Núcleo Regional de Educação de Curitiba. Não eram coassinantes do mesmo documento."},
+ {data:"2026-11-01", id:"EL-034", texto:"Limeira: consultado o Requerimento nº 451/2019 original. O documento identifica Clayton Silva (PSC) como signatário digital; o conteúdo pede informações sobre distribuição e leitura de A bolsa amarela, não sua retirada. A autoria e a assinatura do requerimento foram separadas do papel de pressão."},
+ {data:"2026-11-01", id:"Fontes", texto:"Iniciada a classificação tipológica das fontes: documentos primários, judiciais e institucionais e pesquisas acadêmicas recebem metadados próprios; as demais fontes permanecem explicitamente não classificadas até revisão individual."},
 ];
 
 
