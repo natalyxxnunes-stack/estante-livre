@@ -10,7 +10,25 @@
 </head>
 <body>
 <a class="pular" href="#conteudo">Pular para o conteúdo</a>
-<header class="topo"></header>
+<header class="topo">
+  <div class="topo-in">
+    <a class="logo" href="index.html" aria-label="Estante Livre, página inicial">Estante <span class="redact">Livre<span class="bar" aria-hidden="true"></span></span></a>
+    <div class="tagline">Observatório de censura de livros · quem mandou tirar da estante, com qual ato, e o que aconteceu depois</div>
+    <nav class="nav" aria-label="Seções">
+      <a href="index.html">Painel</a>
+      <a href="casos.html">Casos</a>
+      <a href="livros.html">Livros</a>
+      <a href="atos.html">Atos</a>
+      <a href="analises.html">Análises</a>
+      <a href="poder.html">Poder e censura</a>
+      <a href="dossies.html">Dossiês</a>
+      <a href="historia.html">História</a>
+      <a href="mundo.html">Mundo</a>
+      <a href="metodologia.html">Metodologia</a>
+      <a href="sobre.html">Sobre</a>
+    </nav>
+  </div>
+</header>
 <main id="conteudo" tabindex="-1">
 <div class="wrap">
   <div class="hero-pg">
@@ -23,13 +41,39 @@
   </section>
   <section>
     <div class="sechead"><span class="kicker">01</span><h2>A base em números</h2></div>
-    <!-- GERADO:relatorio -->
-    <div id="relatorio-dados"></div>
-    <!-- /GERADO:relatorio -->
+    <!-- GERADO:relatorio --><div class="relatorio-data">
+    <div class="relatorio-meta">Data de corte: <b>2026-11-01</b> · Base estática versionada no repositório</div>
+    <div class="relatorio-metricas">
+      <div><b>34</b><span>registros</span></div><div><b>29</b><span>obras e conjuntos</span></div><div><b>17</b><span>atos</span></div><div><b>9</b><span>UFs com registros</span></div>
+      <div><b>20</b><span>núcleo verificado</span></div><div><b>14</b><span>verificação parcial</span></div>
+    </div>
+    <section><div class="sechead"><span class="kicker">02</span><h2>Como os registros se distribuem</h2></div><div class="relatorio-duas-colunas"><div><h3>Por estágio</h3><table class="relatorio-tabela"><thead><tr><th>Categoria</th><th>Registros</th></tr></thead><tbody><tr><td>Decisão ou ordem</td><td>24</td></tr><tr><td>Execução comprovada</td><td>7</td></tr><tr><td>Pressão pública</td><td>2</td></tr><tr><td>Pedido formal</td><td>1</td></tr></tbody></table></div><div><h3>Por situação</h3><table class="relatorio-tabela"><thead><tr><th>Categoria</th><th>Registros</th></tr></thead><tbody><tr><td>Revertido</td><td>18</td></tr><tr><td>Em aberto</td><td>13</td></tr><tr><td>Sem efeito</td><td>2</td></tr><tr><td>Em vigor</td><td>1</td></tr></tbody></table></div><div><h3>Por mecanismo</h3><table class="relatorio-tabela"><thead><tr><th>Categoria</th><th>Registros</th></tr></thead><tbody><tr><td>Retirada</td><td>17</td></tr><tr><td>Ocultação ou restrição de acesso</td><td>11</td></tr><tr><td>Veto a atividade</td><td>3</td></tr><tr><td>Descarte ou destruição</td><td>1</td></tr><tr><td>Exclusão de lista de leitura</td><td>1</td></tr><tr><td>Veto a aquisição ou doação</td><td>1</td></tr></tbody></table></div><div><h3>Por unidade da Federação</h3><table class="relatorio-tabela"><thead><tr><th>Categoria</th><th>Registros</th></tr></thead><tbody><tr><td>SC</td><td>10</td></tr><tr><td>RO</td><td>10</td></tr><tr><td>SP</td><td>4</td></tr><tr><td>DF</td><td>3</td></tr><tr><td>PR</td><td>2</td></tr><tr><td>GO</td><td>2</td></tr><tr><td>RS</td><td>1</td></tr><tr><td>MS</td><td>1</td></tr><tr><td>MG</td><td>1</td></tr></tbody></table></div></div></section>
+    <section><div class="sechead"><span class="kicker">03</span><h2>Qualidade e cobertura documental</h2></div>
+      <p>O cadastro contém <b>81 entradas de fonte</b>, distribuídas em <b>81 URLs distintas</b>. 79 entradas estão classificadas por natureza documental; 2 permanecem sem classificação.</p>
+      <table class="relatorio-tabela"><thead><tr><th>Categoria</th><th>Registros</th></tr></thead><tbody><tr><td>S2</td><td>55</td></tr><tr><td>A1</td><td>5</td></tr><tr><td>P1</td><td>5</td></tr><tr><td>P3</td><td>5</td></tr><tr><td>S1</td><td>4</td></tr><tr><td>O1</td><td>2</td></tr><tr><td>P2</td><td>2</td></tr><tr><td>Não classificada</td><td>2</td></tr><tr><td>R1</td><td>1</td></tr></tbody></table>
+      <p>Há <b>12 registros sem município identificado</b> (exceto atos com abrangência territorial explicitada) e <b>7 registros com signatário formal não identificado</b>. A ausência de nome não é preenchida por inferência a partir do governo em exercício.</p>
+    </section>
+    <section><div class="sechead"><span class="kicker">04</span><h2>Registros que ainda exigem apuração</h2></div>
+      <p>Os 14 registros abaixo têm evidência do episódio, mas ainda possuem lacunas relevantes. “Parcialmente verificado” não significa que o caso seja falso; indica que parte do núcleo documental ou da atribuição ainda não foi confirmada.</p>
+      <ul class="relatorio-pendencias"><li><a href="casos/el-015.html"><b>EL-015 · Macunaíma</b></a><span>Localizar a íntegra do processo SEI 0029.051300/2020-91, o resultado da sindicância administrativa da Seduc e a íntegra da recomendação do MP-RO. O MPF homologou o arquivamento do inquérito civil em 2021; isso não substitui a apuração administrativa estadual.</span></li><li><a href="casos/el-016.html"><b>EL-016 · Memórias póstumas de Brás Cubas</b></a><span>Localizar a íntegra do processo SEI 0029.051300/2020-91, o resultado da sindicância administrativa da Seduc e a íntegra da recomendação do MP-RO. O MPF homologou o arquivamento do inquérito civil em 2021; isso não substitui a apuração administrativa estadual.</span></li><li><a href="casos/el-017.html"><b>EL-017 · Os sertões</b></a><span>Localizar a íntegra do processo SEI 0029.051300/2020-91, o resultado da sindicância administrativa da Seduc e a íntegra da recomendação do MP-RO. O MPF homologou o arquivamento do inquérito civil em 2021; isso não substitui a apuração administrativa estadual.</span></li><li><a href="casos/el-018.html"><b>EL-018 · O castelo</b></a><span>Localizar a íntegra do processo SEI 0029.051300/2020-91, o resultado da sindicância administrativa da Seduc e a íntegra da recomendação do MP-RO. O MPF homologou o arquivamento do inquérito civil em 2021; isso não substitui a apuração administrativa estadual.</span></li><li><a href="casos/el-019.html"><b>EL-019 · Contos de terror, de mistério e de morte</b></a><span>Localizar a íntegra do processo SEI 0029.051300/2020-91, o resultado da sindicância administrativa da Seduc e a íntegra da recomendação do MP-RO. O MPF homologou o arquivamento do inquérito civil em 2021; isso não substitui a apuração administrativa estadual.</span></li><li><a href="casos/el-020.html"><b>EL-020 · A vida como ela é</b></a><span>Localizar a íntegra do processo SEI 0029.051300/2020-91, o resultado da sindicância administrativa da Seduc e a íntegra da recomendação do MP-RO. O MPF homologou o arquivamento do inquérito civil em 2021; isso não substitui a apuração administrativa estadual.</span></li><li><a href="casos/el-021.html"><b>EL-021 · Beijo no asfalto</b></a><span>Localizar a íntegra do processo SEI 0029.051300/2020-91, o resultado da sindicância administrativa da Seduc e a íntegra da recomendação do MP-RO. O MPF homologou o arquivamento do inquérito civil em 2021; isso não substitui a apuração administrativa estadual.</span></li><li><a href="casos/el-022.html"><b>EL-022 · Obra de Rubem Fonseca (19 títulos)</b></a><span>Desmembrar nos 19 títulos</span></li><li><a href="casos/el-023.html"><b>EL-023 · Obra completa de Rubem Alves</b></a><span>Sem relação de títulos</span></li><li><a href="casos/el-024.html"><b>EL-024 · Demais títulos da lista de Rondônia</b></a><span>Obter o Adendo ID 10053329</span></li><li><a href="casos/el-028.html"><b>EL-028 · Meninas sonhadoras, mulheres cientistas</b></a><span>Obter a sentença integral e comprovar o cumprimento da ordem de devolução; o processo tramita sob segredo de Justiça. Verificar se houve recurso ao TJSP contra a sentença e se a ordem segue em vigor.</span></li><li><a href="casos/el-030.html"><b>EL-030 · A mamãe vai ter um bebê</b></a><span>Obter cópia integral do requerimento protocolado pela vereadora e resposta da Secretaria; confirmar se houve recolhimento efetivo e eventual devolução do exemplar.</span></li><li><a href="casos/el-031.html"><b>EL-031 · A bolsa amarela</b></a><span>Obter a nota oficial integral do colégio e esclarecer documentalmente se houve suspensão formal da atividade ou apenas encerramento do exercício já aplicado.</span></li><li><a href="casos/el-032.html"><b>EL-032 · Pipoca e Picolé</b></a><span>Obter o requerimento parlamentar, a resposta integral da prefeitura e o parecer técnico; confirmar a efetiva redistribuição dos exemplares às escolas e quais turmas foram consideradas adequadas.</span></li></ul>
+    </section>
+    <section><div class="sechead"><span class="kicker">05</span><h2>O que estes números não permitem afirmar</h2></div>
+      <ul><li>Não representam todos os casos de censura de livros no Brasil.</li><li>Não medem prevalência por estado: ausência de registro pode significar ausência de cobertura ou de documento acessível.</li><li>Registros por título não equivalem a atos únicos, e lotes sem lista completa não equivalem a títulos individualizados.</li><li>Partido do governo, pressão pública, pedido, decisão, assinatura e execução são variáveis distintas; não se atribui autoria a uma pessoa ou partido sem evidência específica.</li><li>Os dados não são diretamente comparáveis a levantamentos estrangeiros que usam unidades e critérios diferentes.</li></ul>
+    </section>
+    <section><div class="sechead"><span class="kicker">06</span><h2>Dados e método</h2></div>
+      <p>Consulte a base em <a href="dados/estante-livre-casos.json">JSON</a> e <a href="dados/estante-livre-casos.csv">CSV</a>. Leia a <a href="metodologia.html">metodologia</a>, a <a href="docs/classificacao-e-verificacao-de-fontes.md">classificação das fontes</a> e a página <a href="pendencias.html">O que falta apurar</a>.</p>
+    </section>
+  </div><!-- /GERADO:relatorio -->
   </section>
 </div>
 </main>
-<footer class="foot"></footer>
+<footer class="foot">
+  <div class="foot-in">
+    <span>Estante Livre · um projeto de Nataly Nunes Pinto</span>
+    <span class="foot-links"><a href="glossario.html">Glossário</a><a href="cobertura.html">Cobertura</a><a href="pendencias.html">O que falta apurar</a><a href="relate.html">Relate um caso</a><a href="dados/estante-livre-casos.csv">Dados abertos</a><a href="poder.html">Poder e censura</a><a href="dossies.html">Dossiês</a><a href="relatorio-2026.html">Relatório 2026</a><a href="sobre.html">Contato</a></span>
+    <span id="foot-meta"></span>
+  </div>
+</footer>
 <script src="assets/dados.js"></script>
 <script src="assets/comum.js"></script>
 <script>montarRodape();</script>
