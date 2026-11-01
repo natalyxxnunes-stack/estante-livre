@@ -535,7 +535,6 @@ const ATOS = {
    rede:"Municipal",
    governo:"Tiago Amaral (PSD) · prefeitura de Londrina",
    quem:"Secretaria Municipal de Educação de Londrina",
-   pressao:"A gerência e a diretoria pedagógica de uma unidade municipal encaminharam pedido de providências à SME; os nomes das profissionais e a unidade não foram divulgados nas reportagens consultadas.",
    documento:"Pedido de providências assinado pela gerente da unidade e pela diretora pedagógica, cujo conteúdo foi consultado pela Folha de Londrina, mas cuja íntegra e número do processo SEI ainda não estão cadastrados. A SME informou que iniciou levantamento em toda a rede para identificar e retirar exemplares de circulação para análise pedagógica. Não foi localizada decisão final sobre a permanência da obra no acervo.",
    papeis:{
      pedido:"Gerência e diretoria pedagógica de uma unidade municipal encaminharam pedido formal de providências; nomes e unidade não identificados nas fontes públicas consultadas.",
