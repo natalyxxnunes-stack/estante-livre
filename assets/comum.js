@@ -206,6 +206,7 @@ function casoHTML(c, q, nivel){
         (c.nota?'<div class="caso-nota">'+m(c.nota)+'</div>':"")+
         '<div class="caso-desf"><span class="k">DESFECHO</span> '+m(c.desfecho)+'</div>'+
         linksFonte(c.fontes)+
+        (H==="h1"?'<p class="fonte-contexto">As referências estão vinculadas a este registro. Cada fonte sustenta afirmações específicas; não presuma que todas comprovem todos os detalhes. Consulte o conteúdo original e seu contexto.</p>':"")+
         (pend?'<div class="caso-pend"><span class="k">O QUE AINDA APURAMOS</span><div>'+esc(pend)+' <a href="'+RAIZ+'pendencias.html#'+String(c.ato).toLowerCase()+'">Todas as lacunas do catálogo</a></div></div>':"")+
         '<div class="pront-rod"><span>'+(c.verificado==="Sim"?"Verificado com duas ou mais fontes":"Parcialmente verificado")+'</span>'+
           '<button class="copiar" type="button" data-copiar="'+c.id+'">copiar link</button></div>'+
