@@ -111,20 +111,23 @@ Obras: *Macunaíma*, *Memórias póstumas de Brás Cubas*, *Os sertões*, *O cas
 
 ## 3. Assinatura e identificação de responsáveis
 
-Na exportação de 30/10/2026, o campo de assinatura estava vazio em EL-025 a EL-034. Nesta branch, as assinaturas de Rondônia (EL-015 a EL-021), além da assinatura digital do Requerimento nº 451/2019 (EL-034), foram confirmadas em documento primário e adicionada ao cadastro de papéis do ato; o gerador deverá atualizar a exportação JSON/CSV na próxima execução. Isso não significa que os dez registros tenham necessariamente um signatário formal a identificar: os estágios variam entre pressão pública, pedido formal, decisão e execução.
+A revisão distingue assinatura de documento, autoridade que aparece no fecho, autoria de pedido, decisão administrativa e execução. Nem todo episódio tem um ato formal assinado: pressão pública, pedido verbal ou avaliação pedagógica podem não gerar documento decisório identificável. A ausência de nome não autoriza atribuir a decisão ao titular do Executivo por presunção. Na base atual, os papéis identificados devem ser lidos com as ressalvas abaixo.
 
-| Registro | Situação editorial | Próximo passo |
+| Registro | Situação documental | Próximo passo |
 |---|---|---|
-| EL-025 | Anúncio público de descarte; documento formal e assinatura não identificados | Obter relatório, anexos e eventual ato de destinação |
-| EL-026 | Anúncio público de segregação; ato de execução física não localizado | Obter inventário e registros de acesso |
-| EL-027 | Decisão institucional da Secretaria; signatário formal não identificado | Obter ato administrativo de suspensão |
-| EL-028 | Ordem transmitida por mensagem, autoridade individual formalizadora não identificada | Preservar atribuição à Secretaria e obter documento administrativo |
-| EL-029 | Nota atribui decisão à Coordenação do Vestibular, sem pessoa nomeada | Solicitar ata ou despacho |
-| EL-030 | Pedido formal atribuído à vereadora; requerimento integral não cadastrado | Obter requerimento original e conferir autoria/assinatura |
-| EL-031 | Pressão/controvérsia sobre atividade; não há retirada de livro comprovada | Obter nota e registro pedagógico; assinatura de ordem pode não ser aplicável |
-| EL-032 | Pedido atribuído à vereadora e resposta/decisão institucional; signatário não localizado | Obter requerimento, parecer e ato de redistribuição |
-| EL-033 | Decisão atribuída por fonte a dirigente da Funap; ata e mensagem originais ausentes | Obter documentos e manter atribuição como atribuída pela fonte |
-| EL-034 | Assinatura digital comprovada no Requerimento nº 451/2019; não equivale a pedido formal de retirada | O documento oficial identifica Clayton Silva como vereador e informa “ASSINADO DIGITALMENTE”. Registrar o papel como autor/signatário do requerimento de informação, sem classificá-lo como autor de ordem ou pedido de retirada. [Documento original da Câmara de Limeira](https://consulta.limeira.sp.leg.br/arquivo?Id=215235). |
+| EL-022 a EL-024 (Rondônia, 2020) | O Memorando-Circular nº 4/2020/SEDUC-DGE está disponível em cópia e identifica Suamy Vivecananda no fecho e Irany de Oliveira Lima Morais como signatária eletrônica. O texto manda recolher títulos listados no Adendo SEI 10053329; o anexo não foi localizado. | Obter o Adendo 10053329 e conferir a correspondência entre a lista nominal e os três agrupamentos cadastrados. Não confundir o signatário eletrônico com o nome que consta no fecho. |
+| EL-025 | Anúncio público de descarte; documento formal e assinatura não identificados. | Obter relatório, anexos e eventual ato de destinação. |
+| EL-026 | Anúncio público de segregação; ato de execução física não localizado. | Obter inventário e registros de acesso. |
+| EL-027 | Decisão institucional da Secretaria; signatário formal não identificado. | Obter ato administrativo de suspensão. |
+| EL-028 | Ordem transmitida por mensagem, autoridade individual formalizadora não identificada; sentença de 20/07/2026 determina restituição, mas cumprimento não comprovado. | Obter sentença integral, certidão de intimação, eventual recurso e comprovação da devolução. |
+| EL-029 | Nota atribui decisão à Coordenação do Vestibular, sem pessoa nomeada. | Solicitar ata ou despacho. |
+| EL-030 | Pedido atribuído à vereadora Jéssica Ramos Moreno; cópia integral do requerimento e resposta formal ainda não cadastradas. | Obter requerimento original e resposta da Secretaria; não presumir execução. |
+| EL-031 | Pressão/controvérsia sobre atividade; a apuração identifica o capitão Sidemar da Silva Neves como porta-voz, não como autor de decisão de censura. Não há retirada de livro comprovada. | Tentar obter a nota oficial e o registro pedagógico; assinatura de ordem pode não ser aplicável. |
+| EL-032 | Zelinda Pastora afirmou ter pedido recolhimento ao secretário Hélcio Carvalho dos Santos; Prefeitura confirmou retirada e anunciou retorno após avaliação. Signatário do ato de retirada e cumprimento do retorno não comprovados. | Obter requerimento parlamentar, resposta integral, parecer técnico e registro de redistribuição. |
+| EL-033 | Decisão atribuída por fonte a dirigente da Funap; ata e mensagem originais ausentes. | Obter documentos e manter atribuição como atribuída pela fonte. |
+| EL-034 | Assinatura digital comprovada no Requerimento nº 451/2019; não equivale a pedido formal de retirada. | Manter Clayton Silva como autor/signatário do requerimento de informação, sem classificá-lo como autor de ordem ou pedido de retirada. [Documento original](https://consulta.limeira.sp.leg.br/arquivo?Id=215235). |
+| EL-035 | Pedido de providências assinado por gerente e diretora pedagógica, mas as fontes públicas consultadas não identificam nominalmente as profissionais nem a unidade. A SME iniciou levantamento/recolhimento para análise. | Obter processo SEI, despacho da SME, identificação funcional necessária, quantitativo recolhido e avaliação final. |
+| EL-036 e EL-037 | O requerimento de oito vereadores é identificável; não é ordem de retirada. A prefeita aparece no vídeo; a Prefeitura informou a retirada. O TCE-SC concluiu que os livros não foram jogados no lixo e estavam com a Fundação Cultural. Não foi localizado ato formal de retirada assinado. | Obter nota integral, inventário e movimentação posterior; consultar resultado da notícia de fato do MPSC e situação atual dos exemplares. |
 
 **Correção documental confirmada nesta branch (1º/11/2026):** o Requerimento nº 451/2019, de 12/08/2019, identifica Clayton Silva como vereador (PSC) e contém a indicação “ASSINADO DIGITALMENTE”. O texto questiona a distribuição e a leitura da obra e inclui perguntas sobre a alegada afronta a princípios morais e sobre outros livros; não pede formalmente a retirada. O registro deve separar autoria/assinatura do requerimento de qualquer decisão de retirada. [Documento original](https://consulta.limeira.sp.leg.br/arquivo?Id=215235).
 
