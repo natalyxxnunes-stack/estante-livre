@@ -27,7 +27,7 @@ function contexto(raiz){
   };
   vm.createContext(ctx);
   vm.runInContext(ler("assets/dados.js") + "\n;this.__D={ATOS,AGENTES,PAPEIS,TIPOS_PAPEL,CASOS,LIVROS,FONTES,MODALIDADES,ESTAGIOS,SITUACOES,EIXOS,CORRECOES,RESPONSABILIDADES,DOCUMENTOS_ATOS,ATUALIZADO,CONTATO,OBSTACULOS,LACUNAS};", ctx);
-  vm.runInContext(ler("assets/comum.js") + "\n;this.__F={esc,obraDe,slug,ordenar,casoHTML,livroHTML,dataLegivel,urlCaso,urlLivro,urlAto,agentesDoAto};", ctx);
+  vm.runInContext(ler("assets/comum.js") + "\n;this.__F={esc,obraDe,slug,ordenar,casoHTML,livroHTML,dataLegivel,urlCaso,urlLivro,urlAto,agentesDoAto,linksFonte};", ctx);
   return Object.assign(ctx.__F, {__D: ctx.__D});
 }
 const R = contexto("");      // páginas na raiz
@@ -479,7 +479,7 @@ const tabPapeis = (ato, raiz) => {
   const ps = PAPEIS.filter(p=>p.ato===ato);
   if(!ps.length) return "";
   return `<div class="tab-wrap"><table class="tab"><thead><tr><th>PAPEL</th><th>QUEM</th><th>CARGO NA DATA</th><th>OBSERVAÇÃO</th></tr></thead><tbody>${
-    ps.map(p=>`<tr><td>${esc(p.papel)}${p.atribuido?" (atribuída pela fonte)":""}</td><td><a href="${raiz}atos.html#ag-${p.agente}">${esc(AGENTES[p.agente].nome)}</a></td><td>${esc(p.cargo||"")}</td><td>${esc(p.nota||"")}</td></tr>`).join("")
+    ps.map(p=>`<tr><td>${esc(p.papel)}${p.atribuido?" (atribuída pela fonte)":""}</td><td><a href="${raiz}agentes/${p.agente}.html">${esc(AGENTES[p.agente].nome)}</a></td><td>${esc(p.cargo||"")}</td><td>${esc(p.nota||"")}</td></tr>`).join("")
   }</tbody></table></div>`;
 };
 for(const [k,A] of Object.entries(ATOS)){
@@ -495,6 +495,8 @@ for(const [k,A] of Object.entries(ATOS)){
     "mentions":PAPEIS.filter(p=>p.ato===k).map(p=>({"@type":AGENTES[p.agente].tipo==="Pessoa"?"Person":"Organization","name":AGENTES[p.agente].nome}))};
   const r = A.papeis||{};
   const linha = (rot,v)=> v?`<div class="resp-linha"><span class="k">${rot}</span><div>${esc(v)}</div></div>`:"";
+  const agentesAto = [...new Set(PAPEIS.filter(p=>p.ato===k).map(p=>p.agente))];
+  const rotaAto = `<section class="rota-ato"><div class="sechead"><span class="kicker">TRILHA</span><h2>Do ato aos registros e responsáveis</h2></div><div class="rota-ato-grade">${regs.map(c=>`<article><span class="rota-num">${esc(c.id)}</span><h3><a href="../casos/${c.id.toLowerCase()}.html">${esc(obraDe(c))}</a></h3><p>${esc(c.uf)} · ${esc(R.dataLegivel(c))} · ${esc(c.estagio)}</p><a class="rota-link" href="../livros/${slug(obraDe(c))}.html">Ficha da obra ↗</a><a class="rota-link" href="../casos/${c.id.toLowerCase()}.html">Abrir registro e justificativa ↗</a></article>`).join("")}</div><div class="rota-ato-agentes"><b>AGENTES E INSTITUIÇÕES NESTE ATO</b><div>${agentesAto.map(id=>`<a href="../agentes/${id}.html">${esc(AGENTES[id].nome)}</a>`).join(" · ")||"Nenhum agente individualizado no cadastro."}</div></div></section>`;
   const corpo = `<div class="wrap">
   <div class="hero-pg">
     <p class="migalha"><a href="../index.html">Painel</a> › <a href="../atos.html">Atos</a> › ${esc(k)}</p>
@@ -507,6 +509,7 @@ for(const [k,A] of Object.entries(ATOS)){
     <div class="sechead"><span class="kicker">01</span><h2>O documento</h2></div>
     <p class="note">${esc(A.documento||"Documento ainda não identificado no cadastro.")}</p>
   </section>
+  ${rotaAto}
   <section>
     <div class="sechead"><span class="kicker">02</span><h2>Quem fez o quê</h2></div>
     ${tabPapeis(k,"../")}
@@ -518,7 +521,8 @@ for(const [k,A] of Object.entries(ATOS)){
   </section>
   <section style="border-bottom:0">
     <div class="sechead"><span class="kicker">04</span><h2>Fontes</h2></div>
-    <div class="fontes">${fontesIds.map(f=>FONTES[f]).filter(Boolean).map(f=>`<a class="flink" href="${esc(f.url)}" target="_blank" rel="noopener"><span class="v">${esc(f.veic)}</span><span class="t">${esc(f.tit)}</span></a>`).join("")}</div>
+    <p class="fonte-contexto">Referências vinculadas aos registros deste ato. A associação indica pertinência editorial ao episódio; não significa que cada fonte sustente todas as afirmações. Consulte o conteúdo original e a classificação documental antes de atribuir uma conclusão.</p>
+    ${R.linksFonte(fontesIds)}
     <div class="como-citar"><span class="k">COMO CITAR</span>Estante Livre, observatório de censura de livros, de Nataly Nunes Pinto. Ato ${esc(k)}: ${esc(A.nome)}. Disponível em: ${url}. Acesso em: [data].</div>
   </section>
 </div>`;
