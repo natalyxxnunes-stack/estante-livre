@@ -38,7 +38,7 @@ const esc = R.esc, obraDe = R.obraDe, slug = R.slug;
 
 /* ---------- 1. validação ---------- */
 const erros = [], avisos = [];
-const TIPOS_FONTE = ["P1","P2","P3","S1","S2","A1","O1","R1"];
+const TIPOS_FONTE = ["P1","P2","P3","S1","S2","A1","O1","R1","B1"];
 const ids = new Set();
 const OBRIG = ["id","data","ato","titulo","uf","tipo","rede","quem","alegacao","eixo","modalidade","estagio","situacao","desfecho","verificado","fontes"];
 for(const [id,f] of Object.entries(FONTES)){
