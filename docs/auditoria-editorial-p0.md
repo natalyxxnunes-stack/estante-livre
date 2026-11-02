@@ -25,7 +25,7 @@ A ausência de cidade não deve ser preenchida com a capital do estado por conve
 ## 2. Registros parcialmente verificados na base atual — 10 (EL-005, EL-015 a EL-021, EL-025, EL-026, EL-027, EL-029 e EL-033 têm núcleo factual verificado)
 
 ### EL-022 a EL-024 — conjuntos de títulos do episódio de Rondônia (2020)
-### EL-022 — Obra de Rubem Fonseca (19 títulos)
+### EL-022 — Obra de Rubem Fonseca (19 entradas na reprodução; 18 títulos distintos)
 - **Pendência:** desmembrar o conjunto em títulos individuais.
 - **Ação:** obter e transcrever a lista original; criar uma ficha por título somente quando a relação estiver documentada.
 
@@ -217,3 +217,26 @@ As fontes já cadastradas confirmam a apresentação de iniciativa legislativa p
 - EL-031 deve permanecer claramente descrito como controvérsia sobre atividade/link, não banimento do livro.
 - EL-036 e EL-037 não podem afirmar que os livros foram destruídos; a decisão do TCE-SC aponta que permaneceram sob guarda da Fundação Cultural para análise de destinação.
 - Os pedidos de acesso à informação já preparados em `docs/pedidos-lai-prontos.md` continuam sendo o próximo passo operacional para obter os documentos faltantes.
+
+
+## Matriz de comprovação por afirmação
+
+Foi criada a matriz `docs/matriz-afirmacao-evidencia-p0.md`, que registra para os dez registros parcialmente verificados:
+- afirmação examinada;
+- fonte e localização precisa (página/linhas ou parágrafos);
+- tipo de evidência;
+- o que a fonte sustenta;
+- limites da fonte;
+- documento ou diligência ainda necessária;
+- tratamento editorial recomendado.
+
+A matriz também registra correções obrigatórias:
+- Rondônia: a reprodução tem 43 posições; Rubem Fonseca aparece em 19 posições, mas em 18 títulos distintos porque `O Seminarista` está duplicado.
+- Rondônia: o nome do secretário no fecho do memorando e a pessoa indicada como signatária eletrônica são distintos; não confundir autoria institucional e assinatura digital.
+- EL-030: pedido parlamentar não prova recolhimento.
+- EL-031: episódio diz respeito a link de atividade pedagógica, não à retirada do livro.
+- EL-032: declaração de retorno ao plano pedagógico não comprova redistribuição física.
+- EL-035: não atribuir decisão a autoridade individual sem o processo.
+- EL-036 e EL-037: não afirmar destruição; o TCE-SC registra guarda na Fundação Cultural para análise de destinação.
+
+**Status:** matriz criada; documentos primários ainda pendentes em parte relevante dos casos; nenhum dos dez registros promovido a “Verificado”.
