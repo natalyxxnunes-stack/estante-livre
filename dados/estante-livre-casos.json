@@ -3591,7 +3591,7 @@
    "mecanismo": "Retirada",
    "estagio": "Execução comprovada",
    "situacao": "Em aberto",
-   "desfecho": "A Prefeitura afirmou que o exemplar foi retirado da Mundoteca e que seria encaminhado aos responsáveis pelo projeto. O vídeo mostra a prefeita colocando livros em uma lixeira, mas a destruição material e a entrega efetiva não foram comprovadas.",
+   "desfecho": "O TCE-SC concluiu que os livros não foram efetivamente jogados no lixo e estavam em poder da Fundação Cultural de Canoinhas para análise de destinação. A retirada do espaço foi informada pela Prefeitura; o destino posterior e a eventual reinserção no acervo não foram comprovados.",
    "eixo_tematico": "Sexualidade e gênero",
    "justificativa_declarada": "A prefeita Juliana Maciel chamou os livros de “porcaria” e afirmou que não eram adequados a crianças e adolescentes; o Requerimento nº 149/2024 falava genericamente em acesso infantil a materiais “pornográficos”.",
    "pressao_ou_pedido": "Canoinhas Online relata que Tati Carvalho exibiu vídeo e classificou o conteúdo como pornografia; Osmar Oleskovicz pediu a retirada imediata e Willian Godoy defendeu a incineração. Essas falas são atribuídas a uma reportagem local; a gravação oficial da sessão e as atas correspondentes ainda não foram localizadas.",
@@ -3601,8 +3601,8 @@
    "resposta_ou_reversao": "A FGM/Mundoteca afirmou que os livros eram controlados por faixa etária e não haviam sido emprestados a crianças. O MPSC abriu notícia de fato para apurar o descarte; o resultado não foi localizado. A Secom esclareceu que a Mundoteca era projeto privado incentivado e que a unidade já estava sob gestão municipal.",
    "ato_ou_documento": "Em 16/04/2024, a Câmara aprovou o Requerimento nº 149/2024, assinado por oito vereadores, solicitando revisão e reorganização do acervo e separação de materiais por faixa etária; o texto não pede expressamente a retirada dos títulos. Em 17/04, a prefeita publicou vídeo em que aparece colocando livros numa lixeira e os chama de “porcaria”, além de convocar outros prefeitos a fazerem uma revisão de seus acervos. Nota da Prefeitura reproduzida pelo Canoinhas Online afirmou que os livros foram retirados da Mundoteca. O MPSC abriu notícia de fato para apurar o descarte. A Mundoteca/FGM contestou a alegação de acesso infantil, afirmando que havia controle etário e que os livros não eram emprestados a crianças. Não foi localizada ordem administrativa escrita nem comprovação de destruição física ou destinação final.",
    "verificado": "Parcialmente",
-   "pendencia": "Obter a nota oficial integral da Prefeitura, inventário do acervo, registros de retirada e destinação dos exemplares, procedimento/notícia de fato do MPSC e informação atual sobre a presença da obra na Mundoteca.",
-   "nota": "Em 16/04/2024, a Câmara aprovou o Requerimento nº 149/2024, assinado por oito vereadores, pedindo revisão e reorganização da disposição dos livros e separação por faixa etária. O texto não pediu expressamente a retirada deste título. Separadamente, Canoinhas Online relata que Tati Carvalho exibiu um vídeo e chamou o conteúdo de pornografia, Osmar Oleskovicz pediu a retirada imediata e Willian Godoy defendeu a incineração; a gravação oficial da sessão não foi localizada. Em 17/04, a prefeita Juliana Maciel (PL) publicou vídeo em que aparece colocando livros em uma lixeira e os chama de “porcaria”; a Prefeitura declarou, em nota reproduzida pela imprensa local, que os livros foram retirados da Mundoteca e seriam encaminhados aos responsáveis pelo projeto. O MPSC abriu notícia de fato para apurar o descarte. A Mundoteca/FGM afirmou que o livro tinha indicação juvenil e não havia sido emprestado a crianças; o projeto não era um programa federal e a unidade já estava sob gestão municipal. Não há comprovação de destruição física nem de destino final. A prefeita e o partido são identificados como agentes do ato público, sem atribuir aos vereadores a decisão de retirada.",
+   "pendencia": "Obter a nota oficial integral da Prefeitura, inventário do acervo e registros de movimentação posteriores à entrega à Fundação Cultural; consultar o resultado da notícia de fato do MPSC e confirmar a situação atual dos exemplares e sua eventual reinserção na Mundoteca.",
+   "nota": "Em 16/04/2024, a Câmara aprovou o Requerimento nº 149/2024, assinado por oito vereadores, pedindo revisão e reorganização da disposição dos livros e separação por faixa etária. O texto não pediu expressamente a retirada deste título. Separadamente, Canoinhas Online relata que Tati Carvalho exibiu um vídeo e chamou o conteúdo de pornografia, Osmar Oleskovicz pediu a retirada imediata e Willian Godoy defendeu a incineração; a gravação oficial da sessão não foi localizada. Em 17/04, a prefeita Juliana Maciel (PL) publicou vídeo em que aparece colocando livros em uma lixeira e os chama de “porcaria”; a Prefeitura declarou, em nota reproduzida pela imprensa local, que os livros foram retirados da Mundoteca e seriam encaminhados aos responsáveis pelo projeto. O MPSC abriu notícia de fato para apurar o descarte. A Mundoteca/FGM afirmou que o livro tinha indicação juvenil e não havia sido emprestado a crianças; o projeto não era um programa federal e a unidade já estava sob gestão municipal. O TCE-SC concluiu, na Decisão Singular GCS/GSS-861/2024 e no Relatório DGE-328/2024, que os livros não foram efetivamente jogados no lixo: a Prefeitura informou que os entregou à gestora da Fundação Cultural de Canoinhas para análise de destinação. O Tribunal arquivou o levantamento, mas criticou a divulgação de uma destruição que não ocorreu. A situação posterior dos exemplares e sua eventual volta à Mundoteca continuam sem comprovação. A prefeita e o partido são identificados como agentes do ato público, sem atribuir aos vereadores a decisão de retirada.",
    "agentes": [
     {
      "nome": "Tatiane Carvalho (Tati Carvalho)",
@@ -3778,6 +3778,13 @@
      "papel": "Execução",
      "cargo": "",
      "atribuido": false
+    },
+    {
+     "nome": "Tribunal de Contas do Estado de Santa Catarina (TCE-SC)",
+     "tipo": "Instituição",
+     "papel": "Denúncia ou fiscalização",
+     "cargo": "",
+     "atribuido": false
     }
    ],
    "fontes": [
@@ -3850,6 +3857,13 @@
      "titulo": "Prefeita de Canoinhas (SC) destrói livros e mente ao dizer que foram produzidos pelo governo federal",
      "data": "2024-04-19",
      "url": "https://coletivobereia.com.br/prefeita-de-canoinhas-sc-destroi-livros-e-mente-ao-dizer-que-foram-produzidos-pelo-governo-federal/"
+    },
+    {
+     "veiculo": "Tribunal de Contas do Estado de Santa Catarina",
+     "tipo": "P1",
+     "titulo": "Decisão Singular GCS/GSS-861/2024 e Relatório DGE-328/2024 · Processo @LEV 24/80041829",
+     "data": "2024-07-08",
+     "url": "https://consulta.tce.sc.gov.br/Diario/dotc-e2024-07-08.pdf"
     }
    ]
   },
@@ -3875,7 +3889,7 @@
    "mecanismo": "Retirada",
    "estagio": "Execução comprovada",
    "situacao": "Em aberto",
-   "desfecho": "A Prefeitura afirmou que o exemplar foi retirado da Mundoteca e que seria encaminhado aos responsáveis pelo projeto. O vídeo mostra a prefeita colocando livros em uma lixeira, mas a destruição material e a entrega efetiva não foram comprovadas.",
+   "desfecho": "O TCE-SC concluiu que os livros não foram efetivamente jogados no lixo e estavam em poder da Fundação Cultural de Canoinhas para análise de destinação. A retirada do espaço foi informada pela Prefeitura; o destino posterior e a eventual reinserção no acervo não foram comprovados.",
    "eixo_tematico": "Outro",
    "justificativa_declarada": "A prefeita Juliana Maciel incluiu o título no vídeo em que chamou os livros de “porcaria” e afirmou que não eram adequados a crianças e adolescentes; o requerimento parlamentar falava genericamente em materiais “pornográficos”.",
    "pressao_ou_pedido": "Canoinhas Online relata que Tati Carvalho exibiu vídeo e classificou o conteúdo como pornografia; Osmar Oleskovicz pediu a retirada imediata e Willian Godoy defendeu a incineração. Essas falas são atribuídas a uma reportagem local; a gravação oficial da sessão e as atas correspondentes ainda não foram localizadas.",
@@ -3885,8 +3899,8 @@
    "resposta_ou_reversao": "A FGM/Mundoteca afirmou que os livros eram controlados por faixa etária e não haviam sido emprestados a crianças. O MPSC abriu notícia de fato para apurar o descarte; o resultado não foi localizado. A Secom esclareceu que a Mundoteca era projeto privado incentivado e que a unidade já estava sob gestão municipal.",
    "ato_ou_documento": "Em 16/04/2024, a Câmara aprovou o Requerimento nº 149/2024, assinado por oito vereadores, solicitando revisão e reorganização do acervo e separação de materiais por faixa etária; o texto não pede expressamente a retirada dos títulos. Em 17/04, a prefeita publicou vídeo em que aparece colocando livros numa lixeira e os chama de “porcaria”, além de convocar outros prefeitos a fazerem uma revisão de seus acervos. Nota da Prefeitura reproduzida pelo Canoinhas Online afirmou que os livros foram retirados da Mundoteca. O MPSC abriu notícia de fato para apurar o descarte. A Mundoteca/FGM contestou a alegação de acesso infantil, afirmando que havia controle etário e que os livros não eram emprestados a crianças. Não foi localizada ordem administrativa escrita nem comprovação de destruição física ou destinação final.",
    "verificado": "Parcialmente",
-   "pendencia": "Obter a nota oficial integral da Prefeitura, inventário do acervo, registros de retirada e destinação dos exemplares, procedimento/notícia de fato do MPSC e informação atual sobre a presença da obra na Mundoteca. Resolver a divergência de classificação etária entre as fontes com consulta à edição e à editora.",
-   "nota": "Em 16/04/2024, a Câmara aprovou o Requerimento nº 149/2024, assinado por oito vereadores, pedindo revisão e reorganização da disposição dos livros e separação por faixa etária. O texto não pediu expressamente a retirada deste título. Separadamente, Canoinhas Online relata que Tati Carvalho exibiu um vídeo e chamou o conteúdo de pornografia, Osmar Oleskovicz pediu a retirada imediata e Willian Godoy defendeu a incineração; a gravação oficial da sessão não foi localizada. Em 17/04, a prefeita Juliana Maciel (PL) publicou vídeo em que aparece colocando livros em uma lixeira e os chama de “porcaria”; a Prefeitura declarou, em nota reproduzida pela imprensa local, que os livros foram retirados da Mundoteca e seriam encaminhados aos responsáveis pelo projeto. O MPSC abriu notícia de fato para apurar o descarte. Há divergência sobre a classificação etária: a nota da Mundoteca reproduzida pelo UOL diz que a obra era indicada a adultos, enquanto o Coletivo Bereia a descreve como juvenil. Não há comprovação de destruição física nem de destino final. O requerimento parlamentar formal, as falas públicas atribuídas a três vereadores e o vídeo da prefeita são atos distintos. A proximidade temporal não prova que o requerimento tenha causado a retirada.",
+   "pendencia": "Obter a nota oficial integral da Prefeitura, inventário do acervo e registros de movimentação posteriores à entrega à Fundação Cultural; consultar o resultado da notícia de fato do MPSC e confirmar a situação atual dos exemplares e sua eventual reinserção na Mundoteca.",
+   "nota": "Em 16/04/2024, a Câmara aprovou o Requerimento nº 149/2024, assinado por oito vereadores, pedindo revisão e reorganização da disposição dos livros e separação por faixa etária. O texto não pediu expressamente a retirada deste título. Separadamente, Canoinhas Online relata que Tati Carvalho exibiu um vídeo e chamou o conteúdo de pornografia, Osmar Oleskovicz pediu a retirada imediata e Willian Godoy defendeu a incineração; a gravação oficial da sessão não foi localizada. Em 17/04, a prefeita Juliana Maciel (PL) publicou vídeo em que aparece colocando livros em uma lixeira e os chama de “porcaria”; a Prefeitura declarou, em nota reproduzida pela imprensa local, que os livros foram retirados da Mundoteca e seriam encaminhados aos responsáveis pelo projeto. O MPSC abriu notícia de fato para apurar o descarte. Há divergência sobre a classificação etária: a nota da Mundoteca reproduzida pelo UOL diz que a obra era indicada a adultos, enquanto o Coletivo Bereia a descreve como juvenil. O TCE-SC concluiu, na Decisão Singular GCS/GSS-861/2024 e no Relatório DGE-328/2024, que os livros não foram efetivamente jogados no lixo: a Prefeitura informou que os entregou à gestora da Fundação Cultural de Canoinhas para análise de destinação. O Tribunal arquivou o levantamento, mas criticou a divulgação de uma destruição que não ocorreu. A situação posterior dos exemplares e sua eventual volta à Mundoteca continuam sem comprovação. O requerimento parlamentar formal, as falas públicas atribuídas a três vereadores e o vídeo da prefeita são atos distintos. A proximidade temporal não prova que o requerimento tenha causado a retirada.",
    "agentes": [
     {
      "nome": "Tatiane Carvalho (Tati Carvalho)",
@@ -4062,6 +4076,13 @@
      "papel": "Execução",
      "cargo": "",
      "atribuido": false
+    },
+    {
+     "nome": "Tribunal de Contas do Estado de Santa Catarina (TCE-SC)",
+     "tipo": "Instituição",
+     "papel": "Denúncia ou fiscalização",
+     "cargo": "",
+     "atribuido": false
     }
    ],
    "fontes": [
@@ -4134,6 +4155,13 @@
      "titulo": "Prefeita de Canoinhas (SC) destrói livros e mente ao dizer que foram produzidos pelo governo federal",
      "data": "2024-04-19",
      "url": "https://coletivobereia.com.br/prefeita-de-canoinhas-sc-destroi-livros-e-mente-ao-dizer-que-foram-produzidos-pelo-governo-federal/"
+    },
+    {
+     "veiculo": "Tribunal de Contas do Estado de Santa Catarina",
+     "tipo": "P1",
+     "titulo": "Decisão Singular GCS/GSS-861/2024 e Relatório DGE-328/2024 · Processo @LEV 24/80041829",
+     "data": "2024-07-08",
+     "url": "https://consulta.tce.sc.gov.br/Diario/dotc-e2024-07-08.pdf"
     }
    ]
   }
