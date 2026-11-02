@@ -1,15 +1,15 @@
 # Plano de implementação — Estante Livre
 
-**Versão:** 1.0 · **Data:** 1º de novembro de 2026  
+**Versão:** 1.1 · **Data:** 2 de novembro de 2026  
 **Princípio:** priorizar segurança documental e utilidade editorial antes de ampliar funcionalidades.
 
 ## P0 — Crítico
 
 | Entrega | Critério de conclusão | Estado |
 |---|---|---|
-| Revisão dos registros parcialmente verificados | Cada pendência encerrada por documento/fonte ou mantida explicitamente com justificativa | EL-005 e EL-015 a EL-021 verificados no núcleo factual; 8 registros parcialmente verificados permanecem (EL-022 a EL-024, EL-028, EL-030 a EL-032 e EL-035) |
+| Revisão dos registros parcialmente verificados | Cada pendência encerrada por documento/fonte ou mantida explicitamente com justificativa | EL-005 e EL-015 a EL-021 verificados no núcleo factual; 10 registros parcialmente verificados permanecem (EL-022 a EL-024, EL-028, EL-030 a EL-032, EL-035 a EL-037) |
 | Identificação de signatários | Nome, papel, documento e fonte primária; ou indicação explícita de que não foi identificado | Sete registros em estágio de decisão/execução (EL-025 a EL-029, EL-032 e EL-033) ainda sem signatário formal identificado. EL-030 é pedido parlamentar de autoria nominal; EL-035 tem pedido assinado por cargos, mas nomes não divulgados e autoridade individual da SME não identificada. EL-031 não tem ordem de retirada cuja assinatura seja aplicável; não preencher por inferência |
-| Revisão de fontes e links | URL testada, tipo de fonte, afirmação sustentada e independência avaliadas | Protocolo criado; classificação individual pendente |
+| Revisão de fontes e links | URL testada, tipo de fonte, afirmação sustentada e independência avaliadas | Protocolo publicado; 91/92 fontes classificadas; uma entrada de blog (Gênio Criador) permanece sem classificação por natureza documental |
 | Revisão de atribuições políticas | Governo, partido, agente e papel separados; relação causal documentada | Regra editorial definida; revisão caso a caso pendente |
 | Direitos e créditos de capas | Origem, titular, licença/permissão, crédito e uso registrado | Inventário de sete capas criado; origem e autorização individual ainda precisam ser verificadas antes de ampliar ou manter a reprodução |
 
@@ -17,10 +17,10 @@
 
 | Entrega | Critério de conclusão | Estado |
 |---|---|---|
-| Taxonomia de fontes | Tipos documentais e critérios de independência publicados | Protocolo publicado; 81/82 fontes classificadas; uma fonte de blog pendente |
+| Taxonomia de fontes | Tipos documentais e critérios de independência publicados | Protocolo publicado; 91/92 fontes classificadas; uma entrada de blog (Gênio Criador) pendente |
 | Documentos originais | Link ou cópia legalmente preservada para cada ato disponível | Parcial; lista de solicitações no relatório P0 |
 | Cidades e localidades | Localidade sustentada por fonte; desconhecido continua explícito | 12 registros anteriormente sem município receberam abrangência estadual explícita (GO-2024, MS-2024, RO-2020 e EL-005); nenhum município foi inferido |
-| Linha do tempo | Cada marco com data, contexto e duas fontes pertinentes, preferencialmente primárias | Atualizada a 2026, com 19 marcos e fontes para Londrina e São José dos Campos; revisão bibliográfica aprofundada ainda necessária |
+| Linha do tempo | Cada marco com data, contexto e duas fontes pertinentes, preferencialmente primárias | Atualizada a 2026, com 20 marcos e inclusão do episódio da Mundoteca em Canoinhas; revisão bibliográfica aprofundada ainda necessária; revisão bibliográfica aprofundada ainda necessária |
 | Análises automatizadas | Números e tabelas derivados de CASOS, ATOS, AGENTES e PAPEIS | Implementação nesta branch |
 | Poder e censura | Consulta de agentes e papéis derivados da base | Implementado nesta branch, com perfis individuais gerados por agente |
 | Domínio próprio | Domínio escolhido, DNS, HTTPS e canonical conferidos | Depende de decisão e acesso da responsável |
@@ -33,7 +33,7 @@
 | Mapa interativo | O painel já possui mapa navegável por UF; evolução para geolocalização depende de completar e validar localidades, sem inventar coordenadas |
 | Perfis de responsáveis | Página individual por agente com papéis, atos, fontes, cargos na data e ressalvas | Implementado nesta branch; geração automática em `agentes/<id>.html`
 | Dossiês temáticos | Recortes de dados por tema, com vínculos para casos e fontes; reportagens longas continuam sendo trabalho editorial futuro | Índice temático automatizado implementado; ensaios aprofundados pendentes
-| Bibliotecas públicas | Recorte, fontes e protocolo de coleta próprios; não misturar automaticamente com bibliotecas escolares |
+| Bibliotecas públicas | Recorte, fontes e protocolo de coleta próprios; não misturar automaticamente com bibliotecas escolares | Primeiro episódio incluído: Mundoteca/Canoinhas (dois títulos, um ato); ampliar cobertura geográfica e obter documentos municipais pendentes |
 | Relatórios periódicos | Data de corte, metodologia, alterações e limites explicitados | Relatório-base 2026 gerado da base; cadência anual e edição analítica continuam pendentes
 | Parcerias acadêmicas | Acordo de revisão, pesquisa ou distribuição com responsabilidades definidas |
 
