@@ -240,3 +240,14 @@ A matriz também registra correções obrigatórias:
 - EL-036 e EL-037: não afirmar destruição; o TCE-SC registra guarda na Fundação Cultural para análise de destinação.
 
 **Status:** matriz criada; documentos primários ainda pendentes em parte relevante dos casos; nenhum dos dez registros promovido a “Verificado”.
+
+
+## Fechamento operacional da etapa — 02/11/2026
+
+O detalhamento final dos dez registros, a separação de responsabilidades, as lacunas por órgão e o critério de encerramento factual estão em [Fechamento operacional P0](fechamento-p0.md). A matriz afirmação–evidência permanece em [Matriz P0](matriz-afirmacao-evidencia-p0.md).
+
+As minutas de acesso à informação foram ampliadas para incluir também Mato Grosso do Sul (EL-004) e Paraná (EL-002), além das diligências dos dez registros parcialmente verificados. Consulte [Pedidos LAI prontos](pedidos-lai-prontos.md). As minutas não foram protocoladas; não há números de protocolo nem respostas externas nesta atualização.
+
+Correção sincronizada no JSON e no CSV: EL-022 passa a ser descrito como 19 entradas atribuídas a Rubem Fonseca na reprodução consultada, correspondentes a 18 títulos distintos, devido à duplicação de *O Seminarista*. Nenhum dos dez registros foi promovido a “Verificado”.
+
+**Estado da etapa:** revisão editorial e preparação documental concluídas; confirmação factual externa pendente de protocolo e resposta dos órgãos. PR #5 permanece aberto; sem merge ou deploy.
