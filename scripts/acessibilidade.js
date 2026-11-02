@@ -34,14 +34,14 @@ for (const file of htmlFiles) {
   }
 }
 /* Integridade da trilha de investigação nas páginas estáticas geradas. */
-const casePages = htmlFiles.filter(file => /^casos\\/el-\\d+\\.html$/i.test(path.relative(root, file)));
-const bookPages = htmlFiles.filter(file => /^livros\\/.+\\.html$/i.test(path.relative(root, file)));
-const actPages = htmlFiles.filter(file => /^atos\\/.+\\.html$/i.test(path.relative(root, file)));
+const casePages = htmlFiles.filter(file => /^casos\/el-\d+\.html$/i.test(path.relative(root, file)));
+const bookPages = htmlFiles.filter(file => /^livros\/.+\.html$/i.test(path.relative(root, file)));
+const actPages = htmlFiles.filter(file => /^atos\/.+\.html$/i.test(path.relative(root, file)));
 for (const file of casePages) {
   const html = fs.readFileSync(file, "utf8"), rel = path.relative(root, file);
   if (!html.includes('class="rota-investigacao"')) errors.push(rel + ": trilha livro → ato → agentes ausente");
   if (!html.includes('class="fontes"')) errors.push(rel + ": referências vinculadas ao registro ausentes");
-  if (/atos\\.html#ag-/.test(html)) errors.push(rel + ": agente ainda aponta para âncora genérica, não para perfil documental");
+  if (/atos\.html#ag-/.test(html)) errors.push(rel + ": agente ainda aponta para âncora genérica, não para perfil documental");
 }
 for (const file of bookPages) {
   const html = fs.readFileSync(file, "utf8"), rel = path.relative(root, file);
