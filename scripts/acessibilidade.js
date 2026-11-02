@@ -33,6 +33,28 @@ for (const file of htmlFiles) {
     if (!/\brel="[^"]*noopener/i.test(tag)) warnings.push(rel + ": link target=_blank sem rel=noopener");
   }
 }
+/* Integridade da trilha de investigação nas páginas estáticas geradas. */
+const casePages = htmlFiles.filter(file => /^casos\\/el-\\d+\\.html$/i.test(path.relative(root, file)));
+const bookPages = htmlFiles.filter(file => /^livros\\/.+\\.html$/i.test(path.relative(root, file)));
+const actPages = htmlFiles.filter(file => /^atos\\/.+\\.html$/i.test(path.relative(root, file)));
+for (const file of casePages) {
+  const html = fs.readFileSync(file, "utf8"), rel = path.relative(root, file);
+  if (!html.includes('class="rota-investigacao"')) errors.push(rel + ": trilha livro → ato → agentes ausente");
+  if (!html.includes('class="fontes"')) errors.push(rel + ": referências vinculadas ao registro ausentes");
+  if (/atos\\.html#ag-/.test(html)) errors.push(rel + ": agente ainda aponta para âncora genérica, não para perfil documental");
+}
+for (const file of bookPages) {
+  const html = fs.readFileSync(file, "utf8"), rel = path.relative(root, file);
+  if (!html.includes('class="trilha-livro"')) errors.push(rel + ": ligação do livro com registro, ato e agentes ausente");
+  if (!html.includes('class="provas-ocorrencia"')) errors.push(rel + ": consulta de fontes por ocorrência ausente");
+}
+for (const file of actPages) {
+  const html = fs.readFileSync(file, "utf8"), rel = path.relative(root, file);
+  if (!html.includes('class="rota-ato"')) errors.push(rel + ": percurso do ato para registros e agentes ausente");
+  if (!html.includes('class="fonte-contexto"')) errors.push(rel + ": orientação sobre o alcance das fontes ausente");
+}
+console.log("Trilha de investigação: " + casePages.length + " fichas de registro, " + bookPages.length + " fichas de obra e " + actPages.length + " páginas de ato verificadas.");
+
 const cssPath = path.join(root, "assets", "estilo.css");
 const css = fs.existsSync(cssPath) ? fs.readFileSync(cssPath, "utf8") : "";
 if (!css.includes("@media")) errors.push("assets/estilo.css: media query responsiva ausente");
