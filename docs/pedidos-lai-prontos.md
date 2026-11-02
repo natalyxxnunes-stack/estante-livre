@@ -107,6 +107,35 @@ Ao MPSC, solicito o número e o resultado da notícia de fato instaurada em abri
 
 O Requerimento nº 149/2024 deve ser distinguido do ato municipal de retirada: seu texto pede revisão/reorganização do acervo e separação por faixa etária, não a retirada nominal desses dois títulos. Não afirmar destruição, pois a decisão do TCE-SC registra que os livros não foram jogados no lixo e estavam com a Fundação Cultural para análise de destinação.
 
+
+## 8. Mato Grosso do Sul — EL-004 (*O avesso da pele*, 2024)
+
+**Destinatário:** Secretaria de Estado de Educação de Mato Grosso do Sul (SED/MS).
+
+Solicito:
+1. Cópia integral do processo administrativo que fundamentou a retirada de *O avesso da pele* das bibliotecas das 75 escolas estaduais que receberam a obra, incluindo despachos, pareceres e comunicações internas.
+2. Cópia da determinação atribuída publicamente ao governador Eduardo Riedel, com identificação da autoridade que a formalizou e do respectivo signatário.
+3. Cópia da análise técnica mencionada pela Secretaria antes da retirada, com critérios, responsáveis e data.
+4. Cópia da comunicação de 23/04/2024 sobre a devolução dos exemplares e das orientações pedagógicas que a acompanharam.
+5. Relação quantitativa das escolas que receberam, devolveram ou mantiveram os exemplares, com datas e sem dados pessoais de estudantes.
+6. Informação sobre a situação atual do acervo e confirmação documental da redisponibilização nas unidades.
+
+A solicitação busca distinguir a determinação política relatada, a formalização administrativa, a execução pela Secretaria e a devolução anunciada. Não se presume que o anúncio de devolução comprove o retorno físico a todas as 75 escolas.
+
+## 9. Paraná — EL-002 (*O avesso da pele*, 2024)
+
+**Destinatários:** Secretaria de Estado da Educação do Paraná (SEED-PR) e Núcleo Regional de Educação de Curitiba.
+
+Solicito:
+1. Cópia integral do ofício encaminhado pela Secretaria aos Núcleos Regionais em 04/03/2024, incluindo anexos, comprovantes de envio e tramitação.
+2. Cópia integral do ofício subsequente expedido pelo Núcleo Regional de Educação de Curitiba, incluindo anexos e comprovantes de envio às unidades.
+3. Identificação dos signatários e respectivos cargos na data dos documentos, preservados os registros de assinatura eletrônica.
+4. Cópia das orientações que determinaram a coleta entre 05 e 08/03/2024 e dos registros de execução por unidade escolar.
+5. Cópia da decisão, comunicação ou orientação de abril de 2024 que autorizou a volta da obra às escolas, incluindo os critérios pedagógicos mencionados.
+6. Quantitativo de exemplares recolhidos e devolvidos, por unidade, caso esse controle exista.
+
+O pedido busca confirmar a extensão da execução e o ato formal de reversão, sem tratar reportagens como substitutas dos documentos administrativos.
+
 ---
 
 ## Controle de protocolo e retorno
