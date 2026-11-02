@@ -28,14 +28,14 @@
 
 ## P2 — Estratégico
 
-| Entrega | Critério de conclusão |
-|---|---|
-| Mapa interativo | O painel já possui mapa navegável por UF; evolução para geolocalização depende de completar e validar localidades, sem inventar coordenadas |
-| Perfis de responsáveis | Página individual por agente com papéis, atos, fontes, cargos na data e ressalvas | Implementado nesta branch; geração automática em `agentes/<id>.html`
-| Dossiês temáticos | Recortes de dados por tema, com vínculos para casos e fontes; reportagens longas continuam sendo trabalho editorial futuro | Índice temático automatizado implementado; ensaios aprofundados pendentes
-| Bibliotecas públicas | Recorte, fontes e protocolo de coleta próprios; não misturar automaticamente com bibliotecas escolares | Primeiro episódio incluído: Mundoteca/Canoinhas (dois títulos, um ato); ampliar cobertura geográfica e obter documentos municipais pendentes |
-| Relatórios periódicos | Data de corte, metodologia, alterações e limites explicitados | Relatório-base 2026 gerado da base; cadência anual e edição analítica continuam pendentes
-| Parcerias acadêmicas | Acordo de revisão, pesquisa ou distribuição com responsabilidades definidas |
+| Entrega | Critério de conclusão | Estado |
+|---|---|---|
+| Mapa interativo | Painel navegável por UF; geolocalização depende de localidades comprovadas, sem coordenadas inferidas | Mapa por UF implementado; geocodificação individual pendente |
+| Perfis de responsáveis | Página individual com papéis, atos, fontes, cargos na data e ressalvas | Implementado nesta branch; geração automática em `agentes/<id>.html` |
+| Dossiês temáticos | Recortes de dados por tema, com vínculos para casos e fontes; reportagens longas são trabalho editorial futuro | Índice temático automatizado implementado; ensaios aprofundados pendentes |
+| Bibliotecas públicas | Recorte, fontes e protocolo próprios; não misturar com bibliotecas escolares | Primeiro episódio incluído: Mundoteca/Canoinhas (dois títulos, um ato); ampliar cobertura e obter documentos municipais |
+| Relatórios periódicos | Data de corte, metodologia, alterações e limites explicitados | Relatório-base 2026 gerado da base; cadência anual e edição analítica pendentes |
+| Parcerias acadêmicas | Acordo de revisão, pesquisa ou distribuição com responsabilidades definidas | A iniciar |
 
 ## P3 — Futuro
 
