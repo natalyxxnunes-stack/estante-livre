@@ -68,7 +68,7 @@ for(const c of CASOS){
   if(c.verificado==="Sim" && (c.fontes||[]).length<2) erros.push(`${c.id}: registro verificado precisa de ao menos duas referências`);
   if(!c.cidade && !ATOS[c.ato]?.abrangencia) avisos.push(`${c.id}: cidade não informada; não preencher por inferência`);
   if(c.estagio==="Decisão ou ordem" || c.estagio==="Execução comprovada") {
-    const temAssinatura = PAPEIS.some(p=>p.ato===c.ato && p.papel==="Assinatura");
+    const temAssinatura = PAPEIS.some(p=>p.ato===c.ato && p.papel==="Assinatura" && p.escopo!=="requerimento");
     const assinaturaDescrita = !!(ATOS[c.ato]?.papeis?.assinantes);
     if(!temAssinatura && !assinaturaDescrita) avisos.push(`${c.id}: signatário formal não identificado no cadastro`);
   }
