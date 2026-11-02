@@ -856,3 +856,114 @@ h1.livro-tit{font-size:32px;line-height:1.12}
 .relatorio-pendencias a{display:block;color:var(--azul);font-size:12px}
 .relatorio-pendencias span{display:block;font-size:11px;color:var(--cinza);margin-top:3px}
 @media(max-width:650px){.dossie-casos li{grid-template-columns:1fr;gap:3px}.dossie-card{padding:13px}.relatorio-metricas{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+
+/* ==========================================================
+   IDENTIDADE EDITORIAL 2026
+   Direção de arte: revista jornalística contemporânea.
+   Paleta saturada + papel quente + contraste documental.
+   ========================================================== */
+:root{
+  --verm:#E4472E;
+  --neon:#F2D23C;
+  --azul:#2447D8;
+  --branco:#FFFCF5;
+  --vinho:#8F241B;
+  --cinza:#625B52;
+  --linha:#D8D0C2;
+  --papel:#F5F1E8;
+  --linha-forte:#8A8175;
+  --tinta:#191817;
+  --azul-claro:#E3E8FF;
+  --azul-medio:#4665E8;
+  --verm-escuro:#B93424;
+  --sombra:0 8px 24px rgba(25,24,23,.10);
+  --verde:#286B50;
+}
+html{background:var(--papel)}
+body{background:var(--papel);color:var(--tinta)}
+::selection{background:var(--neon);color:var(--tinta)}
+a{ text-underline-offset:3px }
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{
+  outline:3px solid var(--azul)!important;outline-offset:3px
+}
+.topo{
+  background:var(--verm);
+  padding:30px 32px 0;
+  border-bottom:7px solid var(--tinta)
+}
+.topo-in{max-width:1160px;text-align:left}
+.logo{font-size:clamp(42px,5vw,62px);letter-spacing:-.055em}
+.redact .bar{height:.15em;background:var(--neon)}
+.tagline{font-size:12px;line-height:1.4;max-width:620px;letter-spacing:.025em}
+.nav{max-width:none;justify-content:flex-start;gap:4px;margin-top:24px}
+.nav a{
+  padding:10px 13px 12px;background:rgba(25,24,23,.16);
+  border-top:2px solid transparent;font-size:11px;letter-spacing:.055em;
+  text-transform:uppercase
+}
+.nav a:hover{background:var(--tinta);color:var(--neon)}
+.nav a.on{background:var(--papel);color:var(--tinta);border-top-color:var(--neon)}
+.wrap{max-width:1160px}
+.hero-pg{padding:54px 0 38px;border-bottom:2px solid var(--tinta)}
+h1{font-size:clamp(42px,6vw,68px);letter-spacing:-.045em;color:var(--tinta);max-width:17ch}
+h2{color:var(--tinta);letter-spacing:-.025em}
+.lede{font-size:17px;color:var(--cinza);max-width:68ch}
+section{padding:42px 0;border-bottom:1px solid var(--linha)}
+.sechead{gap:12px;margin-bottom:10px}
+.sechead h2{font-size:clamp(25px,3vw,34px)}
+.kicker{background:var(--verm);color:#fff;padding:5px 8px;letter-spacing:.12em}
+.note{font-size:13px;color:var(--cinza)}
+.bignums{background:var(--tinta);padding:28px 32px;border-top:7px solid var(--neon);border-bottom:7px solid var(--verm)}
+.bignums-in{max-width:1160px;gap:18px}
+.bignum .n{font-size:clamp(44px,5vw,64px);color:var(--neon);letter-spacing:-.04em}
+.bignum .l{font-size:10px;line-height:1.35;color:var(--branco);letter-spacing:.12em}
+.bar-row{padding:7px 8px;border-bottom:1px solid var(--linha)}
+.bar-row:hover{background:rgba(255,252,245,.8)}
+.bar-track{height:26px;background:#E6E0D4}
+.bar-val{color:var(--tinta);font-weight:700}
+.controls{background:var(--papel);border-bottom:2px solid var(--tinta);box-shadow:0 5px 15px rgba(25,24,23,.06)}
+.search input,select{background:var(--branco);border-color:var(--linha-forte);border-radius:0}
+.btn{border:2px solid var(--tinta);background:var(--tinta);color:var(--branco);font-weight:700}
+.btn:hover{background:var(--verm);border-color:var(--verm);color:#fff}
+.btn.ghost{background:transparent;border-color:var(--linha-forte);color:var(--tinta)}
+.btn.ghost:hover{background:var(--neon);border-color:var(--tinta);color:var(--tinta)}
+.chip{background:var(--azul);color:#fff}
+.caso{border-bottom:1px solid var(--linha);padding:26px 0}
+.caso-tit,.livro-tit{color:var(--tinta);letter-spacing:-.025em}
+.caso-id{color:var(--verm);font-weight:800}
+.caso-aleg,.livro-nota{background:#FFF8DF;border-left-color:var(--verm)}
+.capa,.livro-capa{box-shadow:5px 5px 0 var(--tinta)}
+.livro{border:1px solid var(--tinta);background:var(--branco)}
+.livro-head{background:var(--branco)}
+.livro-ocorr{background:var(--branco)}
+.ccard{background:var(--branco);border:1px solid var(--tinta)}
+.ccard:hover{box-shadow:7px 7px 0 var(--azul);border-color:var(--tinta)}
+.poder-card,.dossie-card{background:var(--branco);border:1px solid var(--tinta);box-shadow:4px 4px 0 rgba(25,24,23,.08)}
+.poder-card-cab{background:var(--azul);border-color:var(--tinta)}
+.poder-card-cab h3,.poder-card-cab>span{color:#fff}
+.poder-relacao h4 a,.poder-registros a,.dossie-casos a,.relatorio-pendencias a{color:var(--azul)}
+.poder-contexto{background:var(--azul-claro);border-left-color:var(--azul)}
+.poder-papel{background:var(--neon);color:var(--tinta)}
+.dossie-num{color:var(--verm)}
+.dossie-card h3{color:var(--tinta)}
+.poder-metricas>div,.relatorio-metricas>div{background:var(--branco);border:1px solid var(--tinta)}
+.poder-metricas b,.relatorio-metricas b,.lac-nums b{color:var(--verm)}
+.foot{background:var(--tinta);color:var(--branco);border-top:7px solid var(--verm)}
+.foot a{color:var(--neon)}
+@media(max-width:700px){
+  .topo{padding:23px 18px 0}
+  .topo-in{text-align:left}
+  .logo{font-size:43px}
+  .nav{gap:3px;margin-top:18px}
+  .nav a{padding:9px 10px;font-size:10px}
+  .wrap{padding-left:20px;padding-right:20px}
+  .hero-pg{padding:36px 0 28px}
+  .bignums{padding:22px 20px}
+  .bignums-in{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 14px}
+  .bignum .n{font-size:46px}
+  section{padding:32px 0}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+}
