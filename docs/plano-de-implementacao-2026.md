@@ -9,7 +9,7 @@
 |---|---|---|
 | Revisão dos registros parcialmente verificados | Cada pendência encerrada por documento/fonte ou mantida explicitamente com justificativa | EL-005 e EL-015 a EL-021 verificados no núcleo factual; 10 registros parcialmente verificados permanecem (EL-022 a EL-024, EL-028, EL-030 a EL-032, EL-035 a EL-037) |
 | Identificação de signatários | Nome, papel, documento e fonte primária; ou indicação explícita de que não foi identificado | Sete registros em estágio de decisão/execução (EL-025 a EL-029, EL-032 e EL-033) ainda sem signatário formal identificado. EL-030 é pedido parlamentar de autoria nominal; EL-035 tem pedido assinado por cargos, mas nomes não divulgados e autoridade individual da SME não identificada. EL-031 não tem ordem de retirada cuja assinatura seja aplicável; não preencher por inferência |
-| Revisão de fontes e links | URL testada, tipo de fonte, afirmação sustentada e independência avaliadas | Protocolo publicado; 93/94 fontes classificadas; uma entrada de blog (Gênio Criador) permanece sem classificação por natureza documental |
+| Revisão de fontes e links | URL testada, tipo de fonte, afirmação sustentada e independência avaliadas | Protocolo publicado; 94/94 entradas de fonte classificadas; o artigo do Gênio Criador foi classificado como blog institucional/editorial (B1), sem tratá-lo como confirmação independente |
 | Revisão de atribuições políticas | Governo, partido, agente e papel separados; relação causal documentada | Regra editorial definida; revisão caso a caso pendente |
 | Direitos e créditos de capas | Origem, titular, licença/permissão, crédito e uso registrado | Inventário de sete capas criado; origem e autorização individual ainda precisam ser verificadas antes de ampliar ou manter a reprodução |
 
@@ -17,7 +17,7 @@
 
 | Entrega | Critério de conclusão | Estado |
 |---|---|---|
-| Taxonomia de fontes | Tipos documentais e critérios de independência publicados | Protocolo publicado; 91/92 fontes classificadas; uma entrada de blog (Gênio Criador) pendente |
+| Taxonomia de fontes | Tipos documentais e critérios de independência publicados | Protocolo publicado; 94/94 entradas de fonte classificadas; independência e pertinência seguem avaliação editorial caso a caso |
 | Documentos originais | Link ou cópia legalmente preservada para cada ato disponível | Parcial; lista de solicitações no relatório P0 |
 | Cidades e localidades | Localidade sustentada por fonte; desconhecido continua explícito | 12 registros anteriormente sem município receberam abrangência estadual explícita (GO-2024, MS-2024, RO-2020 e EL-005); nenhum município foi inferido |
 | Linha do tempo | Cada marco com data, contexto e duas fontes pertinentes, preferencialmente primárias | Atualizada a 2026, com 20 marcos e inclusão do episódio da Mundoteca em Canoinhas; revisão bibliográfica aprofundada ainda necessária; revisão bibliográfica aprofundada ainda necessária |
