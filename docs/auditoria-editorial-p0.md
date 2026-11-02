@@ -149,3 +149,71 @@ A exportação não informa cidade em EL-003, EL-004 e EL-015 a EL-024. EL-005 t
 ## 6. Limites desta auditoria
 
 Este documento organiza as pendências identificadas no cadastro e na exportação. Não afirma ter obtido os documentos que faltam nem ter revalidado individualmente todos os links externos. O fechamento de cada item depende de consulta documental, resposta institucional ou apuração independente.
+
+
+## 4. Diligência complementar — 2 de novembro de 2026
+
+Esta rodada consultou fontes públicas adicionais para os registros P0. Os achados abaixo atualizam o mapa de apuração, mas **não autorizam, por si só, a mudança de nenhum registro de “Parcialmente” para “Verificado”**.
+
+### EL-022, EL-023 e EL-024 — Rondônia: relação reproduzida, anexo original ainda pendente
+
+Foi localizada uma reprodução em PDF intitulada “Relação dos livros a serem recolhidos”, seguida do Memorando-Circular nº 4/2020/SEDUC-DGE. A reprodução contém 43 linhas de títulos e a observação “Todos os livros do Rubem Alves devem ser recolhidos”. O memorando menciona expressamente o Adendo SEI 10053329 e o processo 0029.051300/2020-91.
+
+- Cópia reproduzida: https://questoesrelevantes.wordpress.com/wp-content/uploads/2020/02/rondonia-livros-proibidos.pdf
+- Reprodução jornalística da lista e do recuo da Seduc: https://exame.com/brasil/rondonia-manda-recolher-classicos-da-literatura-brasileira-e-depois-recua/
+- Consulta pública do SEI-RO: https://sei.ro.gov.br/consulta_publica/
+
+**Limites:** a cópia localizada está hospedada fora do domínio oficial e não substitui a obtenção do Adendo 10053329 no processo original. A lista contém 43 linhas e repete “O Seminarista” em duas posições; a repetição deve ser preservada no cotejo e não eliminada automaticamente. A observação sobre Rubem Alves não enumera os títulos. Manter EL-022, EL-023 e EL-024 como parcialmente verificados até obter o anexo original ou confirmação formal da Seduc.
+
+### EL-028 — São José dos Campos: sentença e fundamentos mais bem documentados; cumprimento em aberto
+
+A reportagem da Folha de S.Paulo de 30/07/2026 detalha que a sentença de 20/07/2026 determinou a restituição do livro às salas de leitura e bibliotecas, com prazo de cinco dias a contar da intimação; prevê multa diária de R$ 500, limitada inicialmente a R$ 50 mil, e proíbe restrições político-ideológicas. A matéria também relata que a juíza considerou que a justificativa municipal foi construída posteriormente para dar aparência de legalidade a uma decisão tomada sob pressão externa.
+
+Fonte: https://www1.folha.uol.com.br/ciencia/2026/07/justica-determina-volta-de-livro-que-retrata-marielle-a-escolas-em-sao-jose-dos-campos.shtml
+
+**Pendência preservada:** data da intimação, comprovação da devolução por escola/unidade, eventual recurso e situação atual do cumprimento. Não solicitar nem acessar peças protegidas por segredo de Justiça.
+
+### EL-031 — Distrito Federal: delimitar como pressão sobre atividade, não retirada de livro
+
+A reportagem da revista piauí, publicada em 28/07/2026, informa que o colégio retirou temporariamente do ar o link de uma resenha de *A bolsa amarela* para avaliação pedagógica; após a avaliação, a atividade foi considerada alinhada ao planejamento. A reportagem afirma que a obra não foi adotada pelo Colégio Militar Dom Pedro II e não relata retirada de exemplares de acervo.
+
+Fonte: https://piaui.uol.com.br/web/fabulas-fogueira-livros-infantojuvenis-bolsa-amarela/
+
+**Orientação editorial:** manter o registro como episódio de pressão/controvérsia sobre atividade pedagógica. Não o apresentar como banimento, recolhimento ou retirada do livro. Segue pendente a íntegra da nota oficial e o registro administrativo da avaliação do link.
+
+### EL-032 — Taubaté: nova declaração da vereadora; retorno físico não comprovado
+
+Em 14/07/2026, OVALE publicou declaração da Prefeitura segundo a qual a análise pedagógica foi favorável ao uso de *Pipoca e Picolé* em turmas adequadas, com planejamento e mediação docente. Na mesma reportagem, Zelinda Pastora afirmou que pediu ao secretário Hélcio Carvalho dos Santos a retirada e que ele tomou providências imediatamente. A vereadora também disse que alguns exemplares voltaram a aparecer em unidades no início de 2026, antes de novo contato com o secretário.
+
+Fonte: https://sampi.net.br/ovale/noticias/2991910/vale-do-paraiba/2026/07/taubate-escolas-voltarao-a-usar-livro-sobre-menina-com-duas-maes
+
+**Limite:** a declaração da vereadora é atribuição jornalística relevante, mas não substitui o documento administrativo nem prova a redistribuição dos exemplares. Permanecem pendentes parecer integral, resposta formal, ato de retomada e registros de disponibilização por unidade.
+
+### EL-035 — Londrina: confirmação de levantamento e recolhimento em toda a rede; processo integral pendente
+
+A CBN Londrina publicou, em 12/03/2026, que a SME iniciou levantamento e retirada de exemplares de *O Bebê Vem com a Cegonha* para análise pedagógica, após documento encaminhado pela gerência e pela diretoria pedagógica de uma escola municipal. A reportagem informa que a Secretaria declarou estar levantando exemplares em toda a rede e que o livro permanecia sob análise técnica naquela data.
+
+Fonte: https://cbnlondrina.com.br/materias/londrina-recolhe-livro-infantil-de-escolas-apos-polemica-com-conteudo-sensivel
+
+**Pendência preservada:** processo SEI integral, unidade escolar, documento original do pedido, despacho da SME, quantitativo recolhido e decisão final sobre retorno ou exclusão.
+
+### EL-036 e EL-037 — Canoinhas: decisão do TCE-SC confirma guarda na Fundação Cultural, não destruição
+
+A Decisão Singular GCS/GSS-861/2024 e o Relatório DGE-328/2024, publicados no Diário Oficial do TCE-SC de 08/07/2024, registram que havia um exemplar de cada título. A Prefeitura informou ao Tribunal que os livros não foram jogados no lixo e que foram entregues à gestora da Fundação Cultural para análise de destinação. O TCE arquivou o levantamento por baixa materialidade financeira, mas registrou crítica severa à comunicação pública da prefeita, que teria apresentado como destruição um fato que não ocorreu.
+
+Fonte: https://consulta.tce.sc.gov.br/Diario/dotc-e2024-07-08.pdf
+
+**Limite:** o TCE não comprovou o destino posterior nem a reinserção dos livros na Mundoteca. O resultado da notícia de fato do MPSC e os registros atuais de guarda/destinação continuam pendentes. Não afirmar destruição física.
+
+### EL-030 — Londrina, 2024: pedido parlamentar e execução continuam sendo perguntas separadas
+
+As fontes já cadastradas confirmam a apresentação de iniciativa legislativa posterior sobre restrição de livros considerados eróticos e a repercussão do episódio envolvendo *A mamãe vai ter um bebê*. Isso não comprova, por si só, que o exemplar específico tenha sido recolhido da creche ou de outras unidades.
+
+**Pendência preservada:** requerimento original atribuído à vereadora Jéssica Ramos Moreno, resposta da SME, eventual despacho e prova de recolhimento/devolução. Não usar a Lei Municipal nº 13.930/2025 como prova retroativa da execução em 2024.
+
+### Resultado da rodada
+
+- Nenhum dos dez registros foi promovido a “Verificado”.
+- EL-031 deve permanecer claramente descrito como controvérsia sobre atividade/link, não banimento do livro.
+- EL-036 e EL-037 não podem afirmar que os livros foram destruídos; a decisão do TCE-SC aponta que permaneceram sob guarda da Fundação Cultural para análise de destinação.
+- Os pedidos de acesso à informação já preparados em `docs/pedidos-lai-prontos.md` continuam sendo o próximo passo operacional para obter os documentos faltantes.
