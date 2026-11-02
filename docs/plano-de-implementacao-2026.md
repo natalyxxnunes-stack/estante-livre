@@ -32,7 +32,7 @@
 | Entrega | Critério de conclusão | Estado |
 |---|---|---|
 | Mapa interativo | Painel navegável por UF; geolocalização depende de localidades comprovadas, sem coordenadas inferidas | Mapa por UF implementado; geocodificação individual pendente |
-| Perfis de responsáveis | Página individual com papéis, atos, fontes, cargos na data e ressalvas | Implementado nesta branch; geração automática em `agentes/<id>.html` |
+| Perfis de responsáveis | Página individual com papéis, atos, fontes, cargos na data e ressalvas | Implementado nesta branch; geração automática em `agentes/<id>.html` |\n| Trilha de investigação | Navegação livro → registro → ato → agentes → fontes; ligações verificadas pelo CI | Implementada nas fichas individuais de livros, casos e atos; fontes classificadas e alcance documental explicitado. Mapeamento fonte-afirmação em nível de frase continua como evolução editorial |
 | Dossiês temáticos | Recortes de dados por tema, com vínculos para casos e fontes; reportagens longas são trabalho editorial futuro | Índice temático automatizado implementado; ensaios aprofundados pendentes |
 | Bibliotecas públicas | Recorte, fontes e protocolo próprios; não misturar com bibliotecas escolares | Primeiro episódio incluído: Mundoteca/Canoinhas (dois títulos, um ato); ampliar cobertura e obter documentos municipais |
 | Relatórios periódicos | Data de corte, metodologia, alterações e limites explicitados | Relatório-base 2026 gerado da base; cadência anual e edição analítica pendentes |
