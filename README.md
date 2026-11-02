@@ -18,6 +18,7 @@ Ele valida os dados e para com uma lista de erros se algo estiver fora do padrã
 - emite alertas editoriais não bloqueantes para localidades ausentes, signatários não identificados e fontes concentradas em um único domínio;
 - escreve o HTML das fichas dentro de `casos.html` e `livros.html`, para buscadores e ferramentas de IA lerem sem JavaScript;
 - gera uma página por caso (`casos/el-001.html`), obra (`livros/<nome>.html`) e agente (`agentes/<id>.html`), com dados estruturados, papéis documentados, fontes e sugestão de citação;
+- conecta a ficha do livro ao registro, ao ato administrativo, aos perfis de agentes e às fontes vinculadas; as páginas de ato também reúnem esses caminhos;
 - gera `dados/estante-livre-casos.csv` e `.json`, `sitemap.xml`, `robots.txt`, `llms.txt` e `404.html`.
 
 Quando o domínio próprio estiver no ar, troque a constante `SITE` no topo de `scripts/gerar.js` e rode de novo.
@@ -32,7 +33,7 @@ Quase tudo fica em `assets/dados.js`, organizado em quatro entidades ligadas por
 - `AGENTES` e `PAPEIS`: pessoas e instituições com papel documentado em cada ato (pressão, pedido, decisão, assinatura, execução, denúncia, resposta), com o cargo na data. `atribuido:true` quando a fonte atribui o papel sem documento assinado.
 
 No fim do arquivo, uma etapa de montagem copia os campos do ato e da obra para cada registro; as páginas leem os registros já montados. Para um caso novo: crie a obra e o ato se forem novos, copie um bloco de `CASOS`, aponte para eles e rode o gerador.
-- `FONTES`: documentos, reportagens, pesquisas e demais referências citadas pelos casos. O campo opcional `tipo` usa os códigos P1, P2, P3, S1, S2, A1, O1 e R1. A classificação por tipo e os critérios de independência estão em `docs/classificacao-e-verificacao-de-fontes.md`.
+- `FONTES`: documentos, reportagens, pesquisas e demais referências citadas pelos casos. O campo opcional `tipo` usa os códigos P1, P2, P3, S1, S2, A1, O1, R1 e B1. A classificação por tipo e os critérios de independência estão em `docs/classificacao-e-verificacao-de-fontes.md`.
 - `CONTEXTO`: episódios fora de biblioteca que aparecem no painel sem entrar na contagem.
 - `CORRECOES`: registro público de correções, exibido na página Metodologia.
 - `LACUNAS`: para cada ato com pendência, os obstáculos (da lista fechada `OBSTACULOS`) e o caminho para fechar. Alimenta a página O que falta apurar. O gerador recusa ato com pendência e sem lacuna, e lacuna de ato sem pendência.
