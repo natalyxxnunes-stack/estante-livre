@@ -37,6 +37,30 @@ const cssPath = path.join(root, "assets", "estilo.css");
 const css = fs.existsSync(cssPath) ? fs.readFileSync(cssPath, "utf8") : "";
 if (!css.includes("@media")) errors.push("assets/estilo.css: media query responsiva ausente");
 if (!css.includes("prefers-reduced-motion")) warnings.push("assets/estilo.css: prefers-reduced-motion não encontrado");
+
+function luminancia(hex) {
+  const rgb = hex.replace("#", "").match(/../g).map(v => parseInt(v, 16) / 255);
+  const linear = rgb.map(v => v <= 0.04045 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4));
+  return 0.2126 * linear[0] + 0.7152 * linear[1] + 0.0722 * linear[2];
+}
+function contraste(a, b) {
+  const x = luminancia(a), y = luminancia(b);
+  return (Math.max(x, y) + 0.05) / (Math.min(x, y) + 0.05);
+}
+const paresDeContraste = [
+  ["texto claro sobre vermelho editorial", "#FFFCF5", "#C83220"],
+  ["texto vermelho editorial sobre papel", "#C83220", "#F5F1E8"],
+  ["texto amarelo sobre azul", "#F2D23C", "#2447D8"],
+  ["texto escuro sobre amarelo", "#191817", "#F2D23C"],
+  ["texto claro sobre azul", "#FFFCF5", "#2447D8"],
+  ["texto claro sobre verde", "#FFFCF5", "#286B50"]
+];
+for (const [nome, frente, fundo] of paresDeContraste) {
+  const ratio = contraste(frente, fundo);
+  console.log("Contraste " + nome + ": " + ratio.toFixed(2) + ":1");
+  if (ratio < 4.5) errors.push("contraste insuficiente (WCAG AA texto normal): " + nome + " = " + ratio.toFixed(2) + ":1");
+}
+
 console.log("Auditoria estática: " + htmlFiles.length + " páginas HTML e " + images + " imagens.");
 console.log("Resultado: " + errors.length + " erro(s) bloqueante(s), " + warnings.length + " alerta(s) para revisão manual.");
 for (const warning of warnings) console.warn("AVISO: " + warning);
