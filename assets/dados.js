@@ -44,6 +44,8 @@ const CASOS = [
  {id:"EL-033", ato:"FUNAP-2020", obra:"Veto à lista de doze livros do projeto Remição em Rede", alegacao:"Em mensagem à articuladora, a Funap afirmou que um título não atendia às expectativas da gestão; em reunião, foram mencionadas três obras como problemáticas, sem identificação pública.", eixo:"Outro", modalidade:"Veto a aquisição ou doação", estagio:"Decisão ou ordem", situacao:"Revertido", desfecho:"Funap determinou a inclusão da lista original em 13 de fevereiro de 2020, após repercussão pública", verificado:"Sim", fontes:["bdf-funap","reimao-2023","folha-funap-11fev","folha-funap-14fev","benaglia-heller-2022"], pendencia:"Obter a mensagem original de Reginaldo Caetano da Silva, a ata da reunião de 13/02/2020 e a nota integral da Funap; identificar as três obras questionadas; confirmar se os exemplares chegaram aos presídios depois de fevereiro de 2020 e esclarecer a divergência entre 240 e 228 exemplares.", nota:"Reportagens independentes e pesquisa acadêmica documentam o veto à lista de obras do projeto Remição em Rede e a intervenção da Funap. O núcleo factual do veto está verificado; permanecem pendentes a mensagem original, a ata de 13/02/2020, a identificação das três obras questionadas e a divergência entre 240 e 228 exemplares."},
  {id:"EL-034", ato:"LIM-2019", obra:"A bolsa amarela", titulo:"Questionamento parlamentar sobre A bolsa amarela — sem retirada comprovada", alegacao:"No requerimento, o vereador perguntou se o livro afrontava princípios morais de pais e alunos e chamou sua temática de “ideologia de gênero”.", eixo:"Sexualidade e gênero", modalidade:"Veto a atividade", estagio:"Pressão pública", situacao:"Sem efeito", desfecho:"Sem retirada: Secretaria defendeu a obra e manteve o projeto de leitura", verificado:"Sim", fontes:["reimao-2023","uninter-bolsa","camara-limeira-req","camara-limeira-resp"], nota:"O Requerimento nº 451/2019, de autoria de Clayton Silva (PSC), pediu informações sobre distribuição, atividades e critérios de escolha de A bolsa amarela. Na justificativa, o vereador afirmou que o livro abordava “ideologia de gênero” e questionou se afrontava princípios morais. A Secretaria Municipal de Educação respondeu em 24 de setembro que a obra integrava o Clube de Leitura, descreveu seu valor literário e declarou que ela não afrontava princípios morais. O documento não registra pedido de retirada nem retirada da obra. Este caso documenta pressão discursiva e questionamento parlamentar, não censura ou banimento."},
  {id:"EL-035", ato:"LON-2026", obra:"O bebê vem com a cegonha?!?", alegacao:"A gerência e a diretoria pedagógica de uma unidade municipal classificaram trechos como “sensíveis” e disseram que poderiam gerar questionamentos junto às famílias.", eixo:"Sexualidade e gênero", modalidade:"Retirada", estagio:"Decisão ou ordem", situacao:"Em aberto", desfecho:"A SME iniciou levantamento na rede e recolhimento de exemplares para análise pedagógica; não há confirmação pública do alcance por unidade nem da decisão final sobre retorno ou exclusão.", verificado:"Parcialmente", fontes:["fl-londrina","cbn-londrina-2026"], pendencia:"Obter o processo SEI e o pedido de providências integral; identificar os cargos e os signatários do documento sem expor dados pessoais desnecessários; obter o despacho da SME, o quantitativo recolhido, a avaliação técnica e a decisão final sobre o acervo.", nota:"Em 12 de março de 2026, a Folha de Londrina informou ter tido acesso a um pedido de providências assinado pela gerente da unidade e pela diretora pedagógica, que consideraram o conteúdo “sensível”. A CBN Londrina informou que a Secretaria Municipal de Educação iniciou levantamento em todas as escolas para localizar e retirar exemplares para análise. A reportagem da CBN também reproduziu a posição institucional da SME e a resposta da editora Melhoramentos, que afirmou não ter sido previamente notificada. As fontes consultadas não identificam nominalmente as profissionais nem a unidade escolar, e não comprovam que todos os exemplares tenham sido retirados ou que a obra tenha sido excluída definitivamente. O prefeito e o partido do governo municipal são contexto institucional, não autoria individual da decisão."},
+ {id:"EL-036", ato:"CAN-2024", obra:"Aparelho Sexual e Cia.", alegacao:"A prefeita Juliana Maciel chamou os livros de “porcaria” e afirmou que não eram adequados a crianças e adolescentes; o Requerimento nº 149/2024 falava genericamente em acesso infantil a materiais “pornográficos”.", eixo:"Sexualidade e gênero", modalidade:"Retirada", estagio:"Execução comprovada", situacao:"Em aberto", desfecho:"A Prefeitura afirmou que o exemplar foi retirado da Mundoteca. O vídeo mostra a prefeita colocando livros em uma lixeira, mas a destruição material e a destinação final não foram comprovadas.", verificado:"Parcialmente", fontes:["canoinhas-req149","canoinhas-sapl-req149","canoinhas-instagram-juliana","canoinhas-uol-investigacao","canoinhas-uol-resposta","canoinhas-uol-comprova","canoinhas-local-nota","canoinhas-secom-mundoteca","canoinhas-tse-juliana","canoinhas-bereia"], pendencia:"Obter a nota oficial integral da Prefeitura, inventário do acervo, registros de retirada e destinação dos exemplares, procedimento/notícia de fato do MPSC e informação atual sobre a presença da obra na Mundoteca.", nota:"Em 16/04/2024, a Câmara aprovou o Requerimento nº 149/2024, assinado por oito vereadores, pedindo revisão e reorganização da disposição dos livros e separação por faixa etária. O texto não pediu expressamente a retirada deste título. Em 17/04, a prefeita Juliana Maciel (PL) publicou vídeo em que aparece colocando livros em uma lixeira e os chama de “porcaria”; a Prefeitura declarou, em nota reproduzida pela imprensa local, que os livros foram retirados da Mundoteca. O MPSC abriu notícia de fato para apurar o descarte. A Mundoteca/FGM afirmou que o livro tinha indicação juvenil e não havia sido emprestado a crianças; o projeto não era um programa federal e a unidade já estava sob gestão municipal. Não há comprovação de destruição física nem de destino final. A prefeita e o partido são identificados como agentes do ato público, sem atribuir aos vereadores a decisão de retirada."},
+ {id:"EL-037", ato:"CAN-2024", obra:"As Melhores do Analista de Bagé", alegacao:"A prefeita Juliana Maciel incluiu o título no vídeo em que chamou os livros de “porcaria” e afirmou que não eram adequados a crianças e adolescentes; o requerimento parlamentar falava genericamente em materiais “pornográficos”.", eixo:"Outro", modalidade:"Retirada", estagio:"Execução comprovada", situacao:"Em aberto", desfecho:"A Prefeitura afirmou que o exemplar foi retirado da Mundoteca. O vídeo mostra a prefeita colocando livros em uma lixeira, mas a destruição material e a destinação final não foram comprovadas.", verificado:"Parcialmente", fontes:["canoinhas-req149","canoinhas-sapl-req149","canoinhas-instagram-juliana","canoinhas-uol-investigacao","canoinhas-uol-resposta","canoinhas-uol-comprova","canoinhas-local-nota","canoinhas-secom-mundoteca","canoinhas-tse-juliana","canoinhas-bereia"], pendencia:"Obter a nota oficial integral da Prefeitura, inventário do acervo, registros de retirada e destinação dos exemplares, procedimento/notícia de fato do MPSC e informação atual sobre a presença da obra na Mundoteca. Resolver a divergência de classificação etária entre as fontes com consulta à edição e à editora.", nota:"Em 16/04/2024, a Câmara aprovou o Requerimento nº 149/2024, assinado por oito vereadores, pedindo revisão e reorganização da disposição dos livros e separação por faixa etária. O texto não pediu expressamente a retirada deste título. Em 17/04, a prefeita Juliana Maciel (PL) publicou vídeo em que aparece colocando livros em uma lixeira e os chama de “porcaria”; a Prefeitura declarou, em nota reproduzida pela imprensa local, que os livros foram retirados da Mundoteca. O MPSC abriu notícia de fato para apurar o descarte. Há divergência sobre a classificação etária: a nota da Mundoteca reproduzida pelo UOL diz que a obra era indicada a adultos, enquanto o Coletivo Bereia a descreve como juvenil. Não há comprovação de destruição física nem de destino final. O requerimento parlamentar e o vídeo da prefeita são atos distintos; a proximidade temporal não prova que o primeiro tenha causado o segundo."},
 ];
 
 /* ---------- OBRAS ----------
@@ -227,6 +229,22 @@ const LIVROS = {
    genero:"Infantil",
    sinopse:"Pedro tenta descobrir de onde vêm os bebês e recebe explicações fantasiosas até que sua mãe explica a fecundação e a reprodução humana.",
    nota:"Obra presente na rede municipal de Londrina pelo menos desde 2009, segundo registros de aquisição citados pela imprensa. Em março de 2026, a SME iniciou levantamento e recolhimento para análise pedagógica; a decisão final sobre o acervo não foi localizada."
+ },
+ "Aparelho Sexual e Cia.":{
+   autoria:"Zep (Philippe Chappuis) e Hélène Bruller",
+   editora:"Seguinte / Companhia das Letras",
+   ano:2018,
+   genero:"Infantojuvenil",
+   isbn:"9788555340789",
+   sinopse:"Guia ilustrado sobre anatomia, sexualidade e puberdade, voltado a leitores de 11 a 15 anos.",
+   nota:"A Mundoteca/FGM informou que a obra tinha indicação juvenil e havia sido emprestada uma vez a uma pessoa adulta. O Requerimento nº 149/2024 e a prefeita a trataram como material impróprio para crianças. A classificação etária deve ser lida conforme a edição brasileira identificada."
+ },
+ "As Melhores do Analista de Bagé":{
+   autoria:"Luis Fernando Verissimo",
+   editora:"Objetiva",
+   ano:2007,
+   genero:"Crônicas / humor",
+   nota:"As fontes divergem sobre a indicação etária: a nota da Mundoteca reproduzida pelo UOL a descreve como adulta; o Coletivo Bereia a descreve como juvenil. Não fixar classificação sem conferir a edição e o catálogo editorial."
  },
 };
 
@@ -546,6 +564,24 @@ const ATOS = {
      executor:"SME e unidades da rede municipal, quanto ao levantamento e à retirada para análise. Não há confirmação do recolhimento integral em cada escola.",
      resposta:"A SME apresentou nota sobre adequação etária e qualidade dos materiais. A editora Melhoramentos afirmou que não havia sido previamente notificada. A decisão final sobre retorno ou exclusão não foi localizada."
    }},
+ "CAN-2024":{
+   nome:"Retirada de livros da biblioteca Mundoteca (Canoinhas)",
+   data:"2024-04-17",
+   uf:"SC",
+   cidade:"Canoinhas",
+   tipo:"Pública",
+   rede:"Municipal",
+   governo:"Juliana Maciel Hoppe (PL) · prefeitura de Canoinhas",
+   quem:"Prefeitura de Canoinhas, sob a prefeita Juliana Maciel Hoppe",
+   documento:"Em 16/04/2024, a Câmara aprovou o Requerimento nº 149/2024, assinado por oito vereadores, solicitando revisão e reorganização do acervo e separação de materiais por faixa etária; o texto não pede expressamente a retirada dos títulos. Em 17/04, a prefeita publicou vídeo em que aparece colocando livros numa lixeira e os chama de “porcaria”, além de convocar outros prefeitos a fazerem uma revisão de seus acervos. Nota da Prefeitura reproduzida pelo Canoinhas Online afirmou que os livros foram retirados da Mundoteca. O MPSC abriu notícia de fato para apurar o descarte. A Mundoteca/FGM contestou a alegação de acesso infantil, afirmando que havia controle etário e que os livros não eram emprestados a crianças. Não foi localizada ordem administrativa escrita nem comprovação de destruição física ou destinação final.",
+   papeis:{
+     pedido:"O Requerimento nº 149/2024, de Tati Carvalho, Wilmar Sudoski, Mauricio Zimmermann, Willian Godoy, Adilson Steidel, Professor Osmar, André Flenik e Chico Mineiro, pediu revisão e reorganização da disposição dos livros, com separação por faixa etária. O documento não pediu expressamente a retirada dos dois títulos.",
+     destinatario:"O requerimento foi dirigido à prefeita Juliana Maciel Hoppe e ao coordenador de Biblioteca Ryan Pablo Klengues.",
+     decisor:"A prefeita Juliana Maciel publicou vídeo em que declara que os livros seriam retirados da biblioteca e os chama de “porcaria”. A Prefeitura confirmou posteriormente a retirada em nota reproduzida pela imprensa local. Não foi localizada ordem escrita nem identificado signatário formal de ato administrativo.",
+     executor:"A prefeita aparece no vídeo colocando exemplares numa lixeira; a Prefeitura informou que os livros foram retirados da Mundoteca. A destruição física e a destinação final não foram comprovadas.",
+     resposta:"A FGM/Mundoteca afirmou que os livros eram controlados por faixa etária e não haviam sido emprestados a crianças. O MPSC abriu notícia de fato para apurar o descarte; o resultado não foi localizado. A Secom esclareceu que a Mundoteca era projeto privado incentivado e que a unidade já estava sob gestão municipal."
+   }},
+
 };
 
 const FONTES = {
@@ -994,6 +1030,36 @@ const FONTES = {
  "cbn-londrina-2026": {
   "tipo":"S1","veic":"CBN Londrina","data":"2026-03-12","tit":"Londrina recolhe livro infantil de escolas após polêmica com ‘conteúdo sensível’","url":"https://cbnlondrina.com.br/materias/londrina-recolhe-livro-infantil-de-escolas-apos-polemica-com-conteudo-sensivel"
  },
+ "canoinhas-req149": {
+  "tipo":"P1","veic":"Câmara Municipal de Canoinhas · Requerimento nº 149/2024","data":"2024-04-16","tit":"Requerimento nº 149/2024 (PDF assinado)","url":"https://sapl.canoinhas.sc.leg.br/media/sapl/public/materialegislativa/2024/15355/req_149.pdf"
+ },
+ "canoinhas-sapl-req149": {
+  "tipo":"P1","veic":"SAPL · Câmara Municipal de Canoinhas","data":"2024-04-16","tit":"Registro legislativo do Requerimento nº 149/2024","url":"https://sapl.canoinhas.sc.leg.br/materia/pesquisar-materia?ano=2024&autoria__autor=51&autoria__primeiro_autor=False&tipo=14"
+ },
+ "canoinhas-instagram-juliana": {
+  "tipo":"P1","veic":"Instagram · Juliana Maciel","data":"2024-04-17","tit":"Vídeo da prefeita sobre os livros da Mundoteca","url":"https://www.instagram.com/p/C56x9I6PtJh/?img_index=1"
+ },
+ "canoinhas-uol-investigacao": {
+  "tipo":"S1","veic":"UOL","data":"2024-04-20","tit":"MP abre investigação contra prefeita que admitiu jogar livros no lixo","url":"https://noticias.uol.com.br/politica/ultimas-noticias/2024/04/20/mpsc-investigacao-prefeita-santa-catarina-jogar-livros-lixo-pt-pl-bolsonaro.htm"
+ },
+ "canoinhas-uol-resposta": {
+  "tipo":"S1","veic":"UOL","data":"2024-04-23","tit":"Livros jogados no lixo não foram emprestados a crianças, diz biblioteca","url":"https://noticias.uol.com.br/politica/ultimas-noticias/2024/04/23/livros-jogados-no-lixo-prefeita-sc-biblioteca.htm"
+ },
+ "canoinhas-uol-comprova": {
+  "tipo":"S1","veic":"UOL Comprova","data":"2024-04-25","tit":"Projeto Mundoteca não é do governo federal como disse prefeita de SC","url":"https://noticias.uol.com.br/comprova/ultimas-noticias/2024/04/25/projeto-mundoteca-nao-e-do-governo-federal-como-disse-prefeita-sc.htm"
+ },
+ "canoinhas-local-nota": {
+  "tipo":"S1","veic":"Canoinhas Online","data":"2024-04-19","tit":"Vídeo de prefeita jogando livros no lixo repercute no país","url":"https://canoinhasonline.com.br/2024/04/canoinhas-em-destaque-nacional-video-de-prefeita-jogando-livros-no-lixo-repercute-no-pais.html"
+ },
+ "canoinhas-secom-mundoteca": {
+  "tipo":"P1","veic":"Secretaria de Comunicação Social da Presidência da República","data":"2023-03-01","tit":"Mundoteca não é um projeto do governo federal","url":"https://www.gov.br/secom/pt-br/fatos/brasil-contra-fake/noticias/2023/3/mundoteca-nao-e-um-projeto-do-governo-federal"
+ },
+ "canoinhas-tse-juliana": {
+  "tipo":"P1","veic":"Tribunal Regional Eleitoral de Santa Catarina","data":"2024-10-10","tit":"Resultado oficial de votação por seção — Canoinhas, Juliana Maciel Hoppe (PL)","url":"https://apps.tre-sc.jus.br/site/fileadmin/arquivos/eleicoes/eleicoes2024/resultados_turno_1/votacao_secao/pdfs/VotSecao_80730_22.pdf"
+ },
+ "canoinhas-bereia": {
+  "tipo":"S2","veic":"Coletivo Bereia","data":"2024-04-19","tit":"Prefeita de Canoinhas (SC) destrói livros e mente ao dizer que foram produzidos pelo governo federal","url":"https://coletivobereia.com.br/prefeita-de-canoinhas-sc-destroi-livros-e-mente-ao-dizer-que-foram-produzidos-pelo-governo-federal/"
+ },
 };
 
 /* taxonomias completas; inclui as categorias em zero, de propósito */
@@ -1026,6 +1092,7 @@ const LACUNAS = {
  "LON-2026":{obstaculos:["Documento interno não publicado","Responsável não identificado","Cumprimento não confirmado"], caminho:"Pedido via Lei de Acesso à Informação à Secretaria Municipal de Educação de Londrina da íntegra do processo SEI, do pedido de providências, do despacho que iniciou o levantamento/recolhimento, do quantitativo de exemplares, do parecer pedagógico e da decisão final sobre retorno ou exclusão."},
  "TAU-2025":{obstaculos:["Documento interno não publicado","Cumprimento não confirmado"], caminho:"Pedido via Lei de Acesso à Informação à Prefeitura de Taubaté do parecer técnico, da resposta integral do prefeito, do processo de aquisição dos kits, dos registros de distribuição e da lista de escolas que receberam exemplares; consulta à Câmara Municipal pelo requerimento aprovado em 10/03/2026."},
  "FUNAP-2020":{obstaculos:["Documento interno não publicado","Cumprimento não confirmado","Divergência entre fontes"], caminho:"Pedido via Lei de Acesso à Informação à Funap, do governo de São Paulo, da mensagem de 3 de dezembro de 2019, da ata de 13 de fevereiro de 2020 e do registro de envio dos exemplares às unidades."},
+ "CAN-2024":{obstaculos:["Documento interno não publicado","Cumprimento não confirmado","Divergência entre fontes"], caminho:"Pedido via Lei de Acesso à Informação à Prefeitura de Canoinhas da nota oficial sobre a retirada, inventário e destinação dos exemplares, além do ato administrativo que autorizou a retirada. Solicitar ao MPSC o número e o resultado da notícia de fato aberta em abril de 2024. Consultar a FGM/Mundoteca sobre a situação atual do acervo e a classificação etária das edições."},
 };
 
 const ATUALIZADO = "2026-11-01";
@@ -1102,6 +1169,7 @@ const CORRECOES = [
  {data:"2026-11-01", id:"Fontes", texto:"Iniciada a classificação tipológica das fontes: documentos primários, judiciais e institucionais e pesquisas acadêmicas recebem metadados próprios; as demais fontes permanecem explicitamente não classificadas até revisão individual."},
  {data:"2026-11-01", id:"EL-015 a EL-021", texto:"Rondônia 2020: após nova leitura da ementa oficial do Inquérito Civil nº 1.31.000.000213/2020-61 no Diário Eletrônico do MPF nº 161/2021, o núcleo factual dos sete registros individuais passou a Verificado. O documento registra solicitação verbal da Seduc, suspensão no mesmo dia, devolução de exemplares recolhidos, sindicância administrativa, recomendação do MP-RO acatada e homologação do arquivamento. Permanecem pendentes a íntegra do processo SEI, o resultado da sindicância e a recomendação do MP-RO. Os conjuntos EL-022 a EL-024 continuam parciais por falta de relação completa de títulos."},
  {data:"2026-11-01", id:"EL-030 e EL-035", texto:"Londrina: corrigida a associação indevida da reportagem da Folha publicada em 12/03/2026 ao caso parlamentar de 2024. EL-030 permanece dedicado ao pedido de Jéssica Ramos Moreno sobre A mamãe vai ter um bebê. Criado EL-035 para o episódio distinto envolvendo O bebê vem com a cegonha?!?, com solicitação de profissionais de uma unidade escolar e levantamento/recolhimento iniciado pela SME. Os nomes das profissionais, a unidade, o processo SEI integral e a decisão final permanecem pendentes."},
+ {data:"2026-11-01", id:"EL-036 e EL-037", texto:"Canoinhas/SC: ampliado o recorte para biblioteca pública com dois registros da Mundoteca. Incluídos o Requerimento nº 149/2024 assinado por oito vereadores (pedido de revisão e separação etária, não de retirada), o vídeo público da prefeita Juliana Maciel, a informação municipal reproduzida pela imprensa de que os livros foram retirados, a resposta da FGM/Mundoteca e a notícia de fato aberta pelo MPSC. A destruição física e a destinação final permanecem não comprovadas."},
 ];
 
 
@@ -1157,6 +1225,18 @@ const AGENTES = {
  "sergio-victor":{nome:"Sérgio Victor", tipo:"Pessoa"},
  "sme-limeira":{nome:"Secretaria Municipal de Educação de Limeira", tipo:"Instituição"},
  "gerencia-diretoria-pedagogica-unidade-londrina":{nome:"Gerência e Diretoria Pedagógica da unidade escolar (não identificada publicamente)", tipo:"Instituição"},
+ "juliana-maciel-hoppe":{nome:"Juliana Maciel Hoppe", tipo:"Pessoa"},
+ "ryan-pablo-klengues":{nome:"Ryan Pablo Klengues", tipo:"Pessoa"},
+ "tati-carvalho":{nome:"Tati Carvalho", tipo:"Pessoa"},
+ "wilmar-sudoski":{nome:"Wilmar Sudoski", tipo:"Pessoa"},
+ "mauricio-zimmermann":{nome:"Mauricio Zimmermann", tipo:"Pessoa"},
+ "willian-godoy":{nome:"Willian Godoy", tipo:"Pessoa"},
+ "adilson-steidel":{nome:"Adilson Steidel", tipo:"Pessoa"},
+ "professor-osmar":{nome:"Professor Osmar", tipo:"Pessoa"},
+ "andre-flenik":{nome:"André Flenik", tipo:"Pessoa"},
+ "chico-mineiro":{nome:"Chico Mineiro", tipo:"Pessoa"},
+ "fgm-producoes":{nome:"FGM Produções · projeto Mundoteca", tipo:"Instituição"},
+ "mpsc":{nome:"Ministério Público de Santa Catarina (MPSC)", tipo:"Instituição"},
 };
 
 /* Papel de cada agente em cada ato. cargo = cargo na data do ato.
@@ -1222,6 +1302,27 @@ const PAPEIS = [
  {ato:"LON-2026", agente:"sme-londrina", papel:"Decisão", nota:"Informou que iniciou levantamento em toda a rede e recolhimento de exemplares para análise pedagógica; a autoridade individual que autorizou a providência não foi identificada."},
  {ato:"LON-2026", agente:"sme-londrina", papel:"Execução", nota:"Iniciou levantamento e retirada de circulação para análise; o alcance efetivo em cada unidade não está comprovado."},
  {ato:"LON-2026", agente:"sme-londrina", papel:"Resposta ou reversão", nota:"Divulgou nota sobre adequação etária e qualidade dos materiais; não foi localizada decisão final sobre a permanência da obra no acervo."},
+ {ato:"CAN-2024", agente:"tati-carvalho", papel:"Pedido", cargo:"vereadora", nota:"Coautora do Requerimento nº 149/2024, que pediu revisão e separação etária do acervo; não pediu expressamente a retirada dos títulos."},
+ {ato:"CAN-2024", agente:"tati-carvalho", papel:"Assinatura", cargo:"vereadora", escopo:"requerimento", nota:"Assinou o Requerimento nº 149/2024; a assinatura é do pedido de revisão, não de uma ordem de retirada."},
+ {ato:"CAN-2024", agente:"wilmar-sudoski", papel:"Pedido", cargo:"vereador", nota:"Coautor do Requerimento nº 149/2024, que pediu revisão e separação etária do acervo."},
+ {ato:"CAN-2024", agente:"wilmar-sudoski", papel:"Assinatura", cargo:"vereador", escopo:"requerimento", nota:"Assinou o Requerimento nº 149/2024; não é signatário de ordem de retirada."},
+ {ato:"CAN-2024", agente:"mauricio-zimmermann", papel:"Pedido", cargo:"vereador e presidente da Câmara", nota:"Coautor do Requerimento nº 149/2024."},
+ {ato:"CAN-2024", agente:"mauricio-zimmermann", papel:"Assinatura", cargo:"vereador e presidente da Câmara", escopo:"requerimento", nota:"Assinou o Requerimento nº 149/2024 e a aprovação como presidente da Câmara; não assinou ordem de retirada."},
+ {ato:"CAN-2024", agente:"willian-godoy", papel:"Pedido", cargo:"vereador", nota:"Coautor do Requerimento nº 149/2024."},
+ {ato:"CAN-2024", agente:"willian-godoy", papel:"Assinatura", cargo:"vereador", escopo:"requerimento", nota:"Assinou o Requerimento nº 149/2024; não é signatário de ordem de retirada."},
+ {ato:"CAN-2024", agente:"adilson-steidel", papel:"Pedido", cargo:"vereador", nota:"Coautor do Requerimento nº 149/2024."},
+ {ato:"CAN-2024", agente:"adilson-steidel", papel:"Assinatura", cargo:"vereador", escopo:"requerimento", nota:"Assinou o Requerimento nº 149/2024; não é signatário de ordem de retirada."},
+ {ato:"CAN-2024", agente:"professor-osmar", papel:"Pedido", cargo:"vereador", nota:"Coautor do Requerimento nº 149/2024."},
+ {ato:"CAN-2024", agente:"professor-osmar", papel:"Assinatura", cargo:"vereador", escopo:"requerimento", nota:"Assinou o Requerimento nº 149/2024; não é signatário de ordem de retirada."},
+ {ato:"CAN-2024", agente:"andre-flenik", papel:"Pedido", cargo:"vereador", nota:"Coautor do Requerimento nº 149/2024."},
+ {ato:"CAN-2024", agente:"andre-flenik", papel:"Assinatura", cargo:"vereador", escopo:"requerimento", nota:"Assinou o Requerimento nº 149/2024; não é signatário de ordem de retirada."},
+ {ato:"CAN-2024", agente:"chico-mineiro", papel:"Pedido", cargo:"vereador", nota:"Coautor do Requerimento nº 149/2024."},
+ {ato:"CAN-2024", agente:"chico-mineiro", papel:"Assinatura", cargo:"vereador", escopo:"requerimento", nota:"Assinou o Requerimento nº 149/2024; não é signatário de ordem de retirada."},
+ {ato:"CAN-2024", agente:"juliana-maciel-hoppe", papel:"Decisão", cargo:"prefeita de Canoinhas (PL)", atribuido:true, nota:"O vídeo público e a nota municipal indicam a retirada dos livros; não foi localizado ato administrativo escrito ou signatário formal."},
+ {ato:"CAN-2024", agente:"juliana-maciel-hoppe", papel:"Execução", cargo:"prefeita de Canoinhas (PL)", atribuido:true, nota:"Aparece no vídeo colocando exemplares em uma lixeira; a Prefeitura confirmou a retirada da Mundoteca, mas não há prova de destruição física."},
+ {ato:"CAN-2024", agente:"ryan-pablo-klengues", papel:"Destinatário do pedido", cargo:"coordenador de Biblioteca", nota:"Destinatário nominal do Requerimento nº 149/2024; não há evidência de que tenha decidido a retirada."},
+ {ato:"CAN-2024", agente:"fgm-producoes", papel:"Resposta ou reversão", nota:"A FGM/Mundoteca afirmou que havia controle etário e que os livros não foram emprestados a crianças."},
+ {ato:"CAN-2024", agente:"mpsc", papel:"Denúncia ou fiscalização", nota:"A 1ª Promotoria de Justiça de Canoinhas abriu notícia de fato para apurar o descarte; resultado não localizado."},
 ];
 
 /* ---------- montagem ----------
