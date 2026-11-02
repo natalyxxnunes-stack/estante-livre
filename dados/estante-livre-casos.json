@@ -3568,6 +3568,518 @@
      "url": "https://cbnlondrina.com.br/materias/londrina-recolhe-livro-infantil-de-escolas-apos-polemica-com-conteudo-sensivel"
     }
    ]
+  },
+  {
+   "id": "EL-036",
+   "url": "https://estante-livre-br.vercel.app/casos/el-036.html",
+   "data": "2024-04-17",
+   "ato": "CAN-2024",
+   "ato_nome": "Retirada de livros da biblioteca Mundoteca (Canoinhas)",
+   "obra": "Aparelho Sexual e Cia.",
+   "titulo_registro": "Aparelho Sexual e Cia.",
+   "conjunto": false,
+   "autoria": "Zep (Philippe Chappuis) e Hélène Bruller",
+   "editora": "Seguinte / Companhia das Letras",
+   "ano_publicacao": 2018,
+   "cidade": "Canoinhas",
+   "abrangencia": "",
+   "uf": "SC",
+   "tipo_biblioteca": "Pública",
+   "rede": "Municipal",
+   "governo_na_epoca": "Juliana Maciel Hoppe (PL) · prefeitura de Canoinhas",
+   "instancia_registrada": "Prefeitura de Canoinhas, sob a prefeita Juliana Maciel Hoppe",
+   "mecanismo": "Retirada",
+   "estagio": "Execução comprovada",
+   "situacao": "Em aberto",
+   "desfecho": "A Prefeitura afirmou que o exemplar foi retirado da Mundoteca. O vídeo mostra a prefeita colocando livros em uma lixeira, mas a destruição material e a destinação final não foram comprovadas.",
+   "eixo_tematico": "Sexualidade e gênero",
+   "justificativa_declarada": "A prefeita Juliana Maciel chamou os livros de “porcaria” e afirmou que não eram adequados a crianças e adolescentes; o Requerimento nº 149/2024 falava genericamente em acesso infantil a materiais “pornográficos”.",
+   "pressao_ou_pedido": "",
+   "decisao": "A prefeita Juliana Maciel publicou vídeo em que declara que os livros seriam retirados da biblioteca e os chama de “porcaria”. A Prefeitura confirmou posteriormente a retirada em nota reproduzida pela imprensa local. Não foi localizada ordem escrita nem identificado signatário formal de ato administrativo.",
+   "assinatura": "",
+   "execucao": "A prefeita aparece no vídeo colocando exemplares numa lixeira; a Prefeitura informou que os livros foram retirados da Mundoteca. A destruição física e a destinação final não foram comprovadas.",
+   "resposta_ou_reversao": "A FGM/Mundoteca afirmou que os livros eram controlados por faixa etária e não haviam sido emprestados a crianças. O MPSC abriu notícia de fato para apurar o descarte; o resultado não foi localizado. A Secom esclareceu que a Mundoteca era projeto privado incentivado e que a unidade já estava sob gestão municipal.",
+   "ato_ou_documento": "Em 16/04/2024, a Câmara aprovou o Requerimento nº 149/2024, assinado por oito vereadores, solicitando revisão e reorganização do acervo e separação de materiais por faixa etária; o texto não pede expressamente a retirada dos títulos. Em 17/04, a prefeita publicou vídeo em que aparece colocando livros numa lixeira e os chama de “porcaria”, além de convocar outros prefeitos a fazerem uma revisão de seus acervos. Nota da Prefeitura reproduzida pelo Canoinhas Online afirmou que os livros foram retirados da Mundoteca. O MPSC abriu notícia de fato para apurar o descarte. A Mundoteca/FGM contestou a alegação de acesso infantil, afirmando que havia controle etário e que os livros não eram emprestados a crianças. Não foi localizada ordem administrativa escrita nem comprovação de destruição física ou destinação final.",
+   "verificado": "Parcialmente",
+   "pendencia": "Obter a nota oficial integral da Prefeitura, inventário do acervo, registros de retirada e destinação dos exemplares, procedimento/notícia de fato do MPSC e informação atual sobre a presença da obra na Mundoteca.",
+   "nota": "Em 16/04/2024, a Câmara aprovou o Requerimento nº 149/2024, assinado por oito vereadores, pedindo revisão e reorganização da disposição dos livros e separação por faixa etária. O texto não pediu expressamente a retirada deste título. Em 17/04, a prefeita Juliana Maciel (PL) publicou vídeo em que aparece colocando livros em uma lixeira e os chama de “porcaria”; a Prefeitura declarou, em nota reproduzida pela imprensa local, que os livros foram retirados da Mundoteca. O MPSC abriu notícia de fato para apurar o descarte. A Mundoteca/FGM afirmou que o livro tinha indicação juvenil e não havia sido emprestado a crianças; o projeto não era um programa federal e a unidade já estava sob gestão municipal. Não há comprovação de destruição física nem de destino final. A prefeita e o partido são identificados como agentes do ato público, sem atribuir aos vereadores a decisão de retirada.",
+   "agentes": [
+    {
+     "nome": "Tati Carvalho",
+     "tipo": "Pessoa",
+     "papel": "Pedido",
+     "cargo": "vereadora",
+     "atribuido": false
+    },
+    {
+     "nome": "Tati Carvalho",
+     "tipo": "Pessoa",
+     "papel": "Assinatura",
+     "cargo": "vereadora",
+     "atribuido": false
+    },
+    {
+     "nome": "Wilmar Sudoski",
+     "tipo": "Pessoa",
+     "papel": "Pedido",
+     "cargo": "vereador",
+     "atribuido": false
+    },
+    {
+     "nome": "Wilmar Sudoski",
+     "tipo": "Pessoa",
+     "papel": "Assinatura",
+     "cargo": "vereador",
+     "atribuido": false
+    },
+    {
+     "nome": "Mauricio Zimmermann",
+     "tipo": "Pessoa",
+     "papel": "Pedido",
+     "cargo": "vereador e presidente da Câmara",
+     "atribuido": false
+    },
+    {
+     "nome": "Mauricio Zimmermann",
+     "tipo": "Pessoa",
+     "papel": "Assinatura",
+     "cargo": "vereador e presidente da Câmara",
+     "atribuido": false
+    },
+    {
+     "nome": "Willian Godoy",
+     "tipo": "Pessoa",
+     "papel": "Pedido",
+     "cargo": "vereador",
+     "atribuido": false
+    },
+    {
+     "nome": "Willian Godoy",
+     "tipo": "Pessoa",
+     "papel": "Assinatura",
+     "cargo": "vereador",
+     "atribuido": false
+    },
+    {
+     "nome": "Adilson Steidel",
+     "tipo": "Pessoa",
+     "papel": "Pedido",
+     "cargo": "vereador",
+     "atribuido": false
+    },
+    {
+     "nome": "Adilson Steidel",
+     "tipo": "Pessoa",
+     "papel": "Assinatura",
+     "cargo": "vereador",
+     "atribuido": false
+    },
+    {
+     "nome": "Professor Osmar",
+     "tipo": "Pessoa",
+     "papel": "Pedido",
+     "cargo": "vereador",
+     "atribuido": false
+    },
+    {
+     "nome": "Professor Osmar",
+     "tipo": "Pessoa",
+     "papel": "Assinatura",
+     "cargo": "vereador",
+     "atribuido": false
+    },
+    {
+     "nome": "André Flenik",
+     "tipo": "Pessoa",
+     "papel": "Pedido",
+     "cargo": "vereador",
+     "atribuido": false
+    },
+    {
+     "nome": "André Flenik",
+     "tipo": "Pessoa",
+     "papel": "Assinatura",
+     "cargo": "vereador",
+     "atribuido": false
+    },
+    {
+     "nome": "Chico Mineiro",
+     "tipo": "Pessoa",
+     "papel": "Pedido",
+     "cargo": "vereador",
+     "atribuido": false
+    },
+    {
+     "nome": "Chico Mineiro",
+     "tipo": "Pessoa",
+     "papel": "Assinatura",
+     "cargo": "vereador",
+     "atribuido": false
+    },
+    {
+     "nome": "Juliana Maciel Hoppe",
+     "tipo": "Pessoa",
+     "papel": "Decisão",
+     "cargo": "prefeita de Canoinhas (PL)",
+     "atribuido": true
+    },
+    {
+     "nome": "Juliana Maciel Hoppe",
+     "tipo": "Pessoa",
+     "papel": "Execução",
+     "cargo": "prefeita de Canoinhas (PL)",
+     "atribuido": true
+    },
+    {
+     "nome": "Ryan Pablo Klengues",
+     "tipo": "Pessoa",
+     "papel": "Destinatário do pedido",
+     "cargo": "coordenador de Biblioteca",
+     "atribuido": false
+    },
+    {
+     "nome": "FGM Produções · projeto Mundoteca",
+     "tipo": "Instituição",
+     "papel": "Resposta ou reversão",
+     "cargo": "",
+     "atribuido": false
+    },
+    {
+     "nome": "Ministério Público de Santa Catarina (MPSC)",
+     "tipo": "Instituição",
+     "papel": "Denúncia ou fiscalização",
+     "cargo": "",
+     "atribuido": false
+    }
+   ],
+   "fontes": [
+    {
+     "veiculo": "Câmara Municipal de Canoinhas · Requerimento nº 149/2024",
+     "tipo": "P1",
+     "titulo": "Requerimento nº 149/2024 (PDF assinado)",
+     "data": "2024-04-16",
+     "url": "https://sapl.canoinhas.sc.leg.br/media/sapl/public/materialegislativa/2024/15355/req_149.pdf"
+    },
+    {
+     "veiculo": "SAPL · Câmara Municipal de Canoinhas",
+     "tipo": "P1",
+     "titulo": "Registro legislativo do Requerimento nº 149/2024",
+     "data": "2024-04-16",
+     "url": "https://sapl.canoinhas.sc.leg.br/materia/pesquisar-materia?ano=2024&autoria__autor=51&autoria__primeiro_autor=False&tipo=14"
+    },
+    {
+     "veiculo": "Instagram · Juliana Maciel",
+     "tipo": "P1",
+     "titulo": "Vídeo da prefeita sobre os livros da Mundoteca",
+     "data": "2024-04-17",
+     "url": "https://www.instagram.com/p/C56x9I6PtJh/?img_index=1"
+    },
+    {
+     "veiculo": "UOL",
+     "tipo": "S1",
+     "titulo": "MP abre investigação contra prefeita que admitiu jogar livros no lixo",
+     "data": "2024-04-20",
+     "url": "https://noticias.uol.com.br/politica/ultimas-noticias/2024/04/20/mpsc-investigacao-prefeita-santa-catarina-jogar-livros-lixo-pt-pl-bolsonaro.htm"
+    },
+    {
+     "veiculo": "UOL",
+     "tipo": "S1",
+     "titulo": "Livros jogados no lixo não foram emprestados a crianças, diz biblioteca",
+     "data": "2024-04-23",
+     "url": "https://noticias.uol.com.br/politica/ultimas-noticias/2024/04/23/livros-jogados-no-lixo-prefeita-sc-biblioteca.htm"
+    },
+    {
+     "veiculo": "UOL Comprova",
+     "tipo": "S1",
+     "titulo": "Projeto Mundoteca não é do governo federal como disse prefeita de SC",
+     "data": "2024-04-25",
+     "url": "https://noticias.uol.com.br/comprova/ultimas-noticias/2024/04/25/projeto-mundoteca-nao-e-do-governo-federal-como-disse-prefeita-sc.htm"
+    },
+    {
+     "veiculo": "Canoinhas Online",
+     "tipo": "S1",
+     "titulo": "Vídeo de prefeita jogando livros no lixo repercute no país",
+     "data": "2024-04-19",
+     "url": "https://canoinhasonline.com.br/2024/04/canoinhas-em-destaque-nacional-video-de-prefeita-jogando-livros-no-lixo-repercute-no-pais.html"
+    },
+    {
+     "veiculo": "Secretaria de Comunicação Social da Presidência da República",
+     "tipo": "P1",
+     "titulo": "Mundoteca não é um projeto do governo federal",
+     "data": "2023-03-01",
+     "url": "https://www.gov.br/secom/pt-br/fatos/brasil-contra-fake/noticias/2023/3/mundoteca-nao-e-um-projeto-do-governo-federal"
+    },
+    {
+     "veiculo": "Tribunal Regional Eleitoral de Santa Catarina",
+     "tipo": "P1",
+     "titulo": "Resultado oficial de votação por seção — Canoinhas, Juliana Maciel Hoppe (PL)",
+     "data": "2024-10-10",
+     "url": "https://apps.tre-sc.jus.br/site/fileadmin/arquivos/eleicoes/eleicoes2024/resultados_turno_1/votacao_secao/pdfs/VotSecao_80730_22.pdf"
+    },
+    {
+     "veiculo": "Coletivo Bereia",
+     "tipo": "S2",
+     "titulo": "Prefeita de Canoinhas (SC) destrói livros e mente ao dizer que foram produzidos pelo governo federal",
+     "data": "2024-04-19",
+     "url": "https://coletivobereia.com.br/prefeita-de-canoinhas-sc-destroi-livros-e-mente-ao-dizer-que-foram-produzidos-pelo-governo-federal/"
+    }
+   ]
+  },
+  {
+   "id": "EL-037",
+   "url": "https://estante-livre-br.vercel.app/casos/el-037.html",
+   "data": "2024-04-17",
+   "ato": "CAN-2024",
+   "ato_nome": "Retirada de livros da biblioteca Mundoteca (Canoinhas)",
+   "obra": "As Melhores do Analista de Bagé",
+   "titulo_registro": "As Melhores do Analista de Bagé",
+   "conjunto": false,
+   "autoria": "Luis Fernando Verissimo",
+   "editora": "Objetiva",
+   "ano_publicacao": 2007,
+   "cidade": "Canoinhas",
+   "abrangencia": "",
+   "uf": "SC",
+   "tipo_biblioteca": "Pública",
+   "rede": "Municipal",
+   "governo_na_epoca": "Juliana Maciel Hoppe (PL) · prefeitura de Canoinhas",
+   "instancia_registrada": "Prefeitura de Canoinhas, sob a prefeita Juliana Maciel Hoppe",
+   "mecanismo": "Retirada",
+   "estagio": "Execução comprovada",
+   "situacao": "Em aberto",
+   "desfecho": "A Prefeitura afirmou que o exemplar foi retirado da Mundoteca. O vídeo mostra a prefeita colocando livros em uma lixeira, mas a destruição material e a destinação final não foram comprovadas.",
+   "eixo_tematico": "Outro",
+   "justificativa_declarada": "A prefeita Juliana Maciel incluiu o título no vídeo em que chamou os livros de “porcaria” e afirmou que não eram adequados a crianças e adolescentes; o requerimento parlamentar falava genericamente em materiais “pornográficos”.",
+   "pressao_ou_pedido": "",
+   "decisao": "A prefeita Juliana Maciel publicou vídeo em que declara que os livros seriam retirados da biblioteca e os chama de “porcaria”. A Prefeitura confirmou posteriormente a retirada em nota reproduzida pela imprensa local. Não foi localizada ordem escrita nem identificado signatário formal de ato administrativo.",
+   "assinatura": "",
+   "execucao": "A prefeita aparece no vídeo colocando exemplares numa lixeira; a Prefeitura informou que os livros foram retirados da Mundoteca. A destruição física e a destinação final não foram comprovadas.",
+   "resposta_ou_reversao": "A FGM/Mundoteca afirmou que os livros eram controlados por faixa etária e não haviam sido emprestados a crianças. O MPSC abriu notícia de fato para apurar o descarte; o resultado não foi localizado. A Secom esclareceu que a Mundoteca era projeto privado incentivado e que a unidade já estava sob gestão municipal.",
+   "ato_ou_documento": "Em 16/04/2024, a Câmara aprovou o Requerimento nº 149/2024, assinado por oito vereadores, solicitando revisão e reorganização do acervo e separação de materiais por faixa etária; o texto não pede expressamente a retirada dos títulos. Em 17/04, a prefeita publicou vídeo em que aparece colocando livros numa lixeira e os chama de “porcaria”, além de convocar outros prefeitos a fazerem uma revisão de seus acervos. Nota da Prefeitura reproduzida pelo Canoinhas Online afirmou que os livros foram retirados da Mundoteca. O MPSC abriu notícia de fato para apurar o descarte. A Mundoteca/FGM contestou a alegação de acesso infantil, afirmando que havia controle etário e que os livros não eram emprestados a crianças. Não foi localizada ordem administrativa escrita nem comprovação de destruição física ou destinação final.",
+   "verificado": "Parcialmente",
+   "pendencia": "Obter a nota oficial integral da Prefeitura, inventário do acervo, registros de retirada e destinação dos exemplares, procedimento/notícia de fato do MPSC e informação atual sobre a presença da obra na Mundoteca. Resolver a divergência de classificação etária entre as fontes com consulta à edição e à editora.",
+   "nota": "Em 16/04/2024, a Câmara aprovou o Requerimento nº 149/2024, assinado por oito vereadores, pedindo revisão e reorganização da disposição dos livros e separação por faixa etária. O texto não pediu expressamente a retirada deste título. Em 17/04, a prefeita Juliana Maciel (PL) publicou vídeo em que aparece colocando livros em uma lixeira e os chama de “porcaria”; a Prefeitura declarou, em nota reproduzida pela imprensa local, que os livros foram retirados da Mundoteca. O MPSC abriu notícia de fato para apurar o descarte. Há divergência sobre a classificação etária: a nota da Mundoteca reproduzida pelo UOL diz que a obra era indicada a adultos, enquanto o Coletivo Bereia a descreve como juvenil. Não há comprovação de destruição física nem de destino final. O requerimento parlamentar e o vídeo da prefeita são atos distintos; a proximidade temporal não prova que o primeiro tenha causado o segundo.",
+   "agentes": [
+    {
+     "nome": "Tati Carvalho",
+     "tipo": "Pessoa",
+     "papel": "Pedido",
+     "cargo": "vereadora",
+     "atribuido": false
+    },
+    {
+     "nome": "Tati Carvalho",
+     "tipo": "Pessoa",
+     "papel": "Assinatura",
+     "cargo": "vereadora",
+     "atribuido": false
+    },
+    {
+     "nome": "Wilmar Sudoski",
+     "tipo": "Pessoa",
+     "papel": "Pedido",
+     "cargo": "vereador",
+     "atribuido": false
+    },
+    {
+     "nome": "Wilmar Sudoski",
+     "tipo": "Pessoa",
+     "papel": "Assinatura",
+     "cargo": "vereador",
+     "atribuido": false
+    },
+    {
+     "nome": "Mauricio Zimmermann",
+     "tipo": "Pessoa",
+     "papel": "Pedido",
+     "cargo": "vereador e presidente da Câmara",
+     "atribuido": false
+    },
+    {
+     "nome": "Mauricio Zimmermann",
+     "tipo": "Pessoa",
+     "papel": "Assinatura",
+     "cargo": "vereador e presidente da Câmara",
+     "atribuido": false
+    },
+    {
+     "nome": "Willian Godoy",
+     "tipo": "Pessoa",
+     "papel": "Pedido",
+     "cargo": "vereador",
+     "atribuido": false
+    },
+    {
+     "nome": "Willian Godoy",
+     "tipo": "Pessoa",
+     "papel": "Assinatura",
+     "cargo": "vereador",
+     "atribuido": false
+    },
+    {
+     "nome": "Adilson Steidel",
+     "tipo": "Pessoa",
+     "papel": "Pedido",
+     "cargo": "vereador",
+     "atribuido": false
+    },
+    {
+     "nome": "Adilson Steidel",
+     "tipo": "Pessoa",
+     "papel": "Assinatura",
+     "cargo": "vereador",
+     "atribuido": false
+    },
+    {
+     "nome": "Professor Osmar",
+     "tipo": "Pessoa",
+     "papel": "Pedido",
+     "cargo": "vereador",
+     "atribuido": false
+    },
+    {
+     "nome": "Professor Osmar",
+     "tipo": "Pessoa",
+     "papel": "Assinatura",
+     "cargo": "vereador",
+     "atribuido": false
+    },
+    {
+     "nome": "André Flenik",
+     "tipo": "Pessoa",
+     "papel": "Pedido",
+     "cargo": "vereador",
+     "atribuido": false
+    },
+    {
+     "nome": "André Flenik",
+     "tipo": "Pessoa",
+     "papel": "Assinatura",
+     "cargo": "vereador",
+     "atribuido": false
+    },
+    {
+     "nome": "Chico Mineiro",
+     "tipo": "Pessoa",
+     "papel": "Pedido",
+     "cargo": "vereador",
+     "atribuido": false
+    },
+    {
+     "nome": "Chico Mineiro",
+     "tipo": "Pessoa",
+     "papel": "Assinatura",
+     "cargo": "vereador",
+     "atribuido": false
+    },
+    {
+     "nome": "Juliana Maciel Hoppe",
+     "tipo": "Pessoa",
+     "papel": "Decisão",
+     "cargo": "prefeita de Canoinhas (PL)",
+     "atribuido": true
+    },
+    {
+     "nome": "Juliana Maciel Hoppe",
+     "tipo": "Pessoa",
+     "papel": "Execução",
+     "cargo": "prefeita de Canoinhas (PL)",
+     "atribuido": true
+    },
+    {
+     "nome": "Ryan Pablo Klengues",
+     "tipo": "Pessoa",
+     "papel": "Destinatário do pedido",
+     "cargo": "coordenador de Biblioteca",
+     "atribuido": false
+    },
+    {
+     "nome": "FGM Produções · projeto Mundoteca",
+     "tipo": "Instituição",
+     "papel": "Resposta ou reversão",
+     "cargo": "",
+     "atribuido": false
+    },
+    {
+     "nome": "Ministério Público de Santa Catarina (MPSC)",
+     "tipo": "Instituição",
+     "papel": "Denúncia ou fiscalização",
+     "cargo": "",
+     "atribuido": false
+    }
+   ],
+   "fontes": [
+    {
+     "veiculo": "Câmara Municipal de Canoinhas · Requerimento nº 149/2024",
+     "tipo": "P1",
+     "titulo": "Requerimento nº 149/2024 (PDF assinado)",
+     "data": "2024-04-16",
+     "url": "https://sapl.canoinhas.sc.leg.br/media/sapl/public/materialegislativa/2024/15355/req_149.pdf"
+    },
+    {
+     "veiculo": "SAPL · Câmara Municipal de Canoinhas",
+     "tipo": "P1",
+     "titulo": "Registro legislativo do Requerimento nº 149/2024",
+     "data": "2024-04-16",
+     "url": "https://sapl.canoinhas.sc.leg.br/materia/pesquisar-materia?ano=2024&autoria__autor=51&autoria__primeiro_autor=False&tipo=14"
+    },
+    {
+     "veiculo": "Instagram · Juliana Maciel",
+     "tipo": "P1",
+     "titulo": "Vídeo da prefeita sobre os livros da Mundoteca",
+     "data": "2024-04-17",
+     "url": "https://www.instagram.com/p/C56x9I6PtJh/?img_index=1"
+    },
+    {
+     "veiculo": "UOL",
+     "tipo": "S1",
+     "titulo": "MP abre investigação contra prefeita que admitiu jogar livros no lixo",
+     "data": "2024-04-20",
+     "url": "https://noticias.uol.com.br/politica/ultimas-noticias/2024/04/20/mpsc-investigacao-prefeita-santa-catarina-jogar-livros-lixo-pt-pl-bolsonaro.htm"
+    },
+    {
+     "veiculo": "UOL",
+     "tipo": "S1",
+     "titulo": "Livros jogados no lixo não foram emprestados a crianças, diz biblioteca",
+     "data": "2024-04-23",
+     "url": "https://noticias.uol.com.br/politica/ultimas-noticias/2024/04/23/livros-jogados-no-lixo-prefeita-sc-biblioteca.htm"
+    },
+    {
+     "veiculo": "UOL Comprova",
+     "tipo": "S1",
+     "titulo": "Projeto Mundoteca não é do governo federal como disse prefeita de SC",
+     "data": "2024-04-25",
+     "url": "https://noticias.uol.com.br/comprova/ultimas-noticias/2024/04/25/projeto-mundoteca-nao-e-do-governo-federal-como-disse-prefeita-sc.htm"
+    },
+    {
+     "veiculo": "Canoinhas Online",
+     "tipo": "S1",
+     "titulo": "Vídeo de prefeita jogando livros no lixo repercute no país",
+     "data": "2024-04-19",
+     "url": "https://canoinhasonline.com.br/2024/04/canoinhas-em-destaque-nacional-video-de-prefeita-jogando-livros-no-lixo-repercute-no-pais.html"
+    },
+    {
+     "veiculo": "Secretaria de Comunicação Social da Presidência da República",
+     "tipo": "P1",
+     "titulo": "Mundoteca não é um projeto do governo federal",
+     "data": "2023-03-01",
+     "url": "https://www.gov.br/secom/pt-br/fatos/brasil-contra-fake/noticias/2023/3/mundoteca-nao-e-um-projeto-do-governo-federal"
+    },
+    {
+     "veiculo": "Tribunal Regional Eleitoral de Santa Catarina",
+     "tipo": "P1",
+     "titulo": "Resultado oficial de votação por seção — Canoinhas, Juliana Maciel Hoppe (PL)",
+     "data": "2024-10-10",
+     "url": "https://apps.tre-sc.jus.br/site/fileadmin/arquivos/eleicoes/eleicoes2024/resultados_turno_1/votacao_secao/pdfs/VotSecao_80730_22.pdf"
+    },
+    {
+     "veiculo": "Coletivo Bereia",
+     "tipo": "S2",
+     "titulo": "Prefeita de Canoinhas (SC) destrói livros e mente ao dizer que foram produzidos pelo governo federal",
+     "data": "2024-04-19",
+     "url": "https://coletivobereia.com.br/prefeita-de-canoinhas-sc-destroi-livros-e-mente-ao-dizer-que-foram-produzidos-pelo-governo-federal/"
+    }
+   ]
   }
  ]
 }
