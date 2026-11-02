@@ -18,7 +18,7 @@ O script `scripts/acessibilidade.js` percorre os arquivos HTML do repositório e
 
 O teste é executado no workflow de validação depois da geração das páginas estáticas. Na execução 111, foram verificadas 166 páginas HTML e 36 imagens, com zero erros bloqueantes e zero alertas.
 
-## Limites
+## Checagem adicional de contraste da paleta editorial\n\nNa revisão de 2 de novembro de 2026, o vermelho vivo `#E4472E` foi mantido como cor de acento, mas não é adequado para texto branco pequeno: a relação de contraste calculada era 3,91:1. Para superfícies e textos vermelhos com conteúdo, o token `--verm` passou a `#C83220`; o vermelho vivo fica em `--verm-vivo`. Os pares centrais da paleta agora são testados pelo script de acessibilidade e exigem 4,5:1 para texto normal. Isso é uma checagem de tokens e pares escolhidos, não uma auditoria automática de todos os elementos renderizados.\n\n## Limites
 
 Esta é uma auditoria estática inicial, não uma certificação WCAG 2.2 AA. Ela não substitui:
 
