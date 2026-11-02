@@ -66,6 +66,6 @@ index (painel), casos, livros, analises, poder, perfis de agentes, dossies, rela
 - `docs/classificacao-e-verificacao-de-fontes.md`: taxonomia e protocolo de verificação.
 - `docs/politica-de-direitos-e-imagens.md`: créditos, direitos e preservação visual.
 - `docs/inventario-de-imagens.md`: inventário das sete capas e situação dos direitos.
-- `docs/plano-de-implementacao-2026.md`: sequência P0–P3 e critérios de conclusão.
+- `docs/plano-de-implementacao-2026.md`: sequência P0–P3 e critérios de conclusão.\n- `docs/revisao-das-seis-prioridades.md`: estado das seis prioridades críticas e limites de validação.\n- `docs/pedidos-lai-prontos.md`: minutas para diligências dos dez registros parcialmente verificados.
 
 Contornos do mapa: svg-maps, licença CC BY 4.0.
