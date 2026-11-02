@@ -129,7 +129,7 @@ function capaHTML(c, cls){
   return `<div><div class="${k}-tipo m-${slug(c.modalidade)}" aria-hidden="true"><b>${esc(t)}</b><span>${esc((c.autoria||"").split(",")[0])}</span></div></div>`;
 }
 
-const ROTULOS_FONTE = {P1:"Documento primário",P2:"Documento judicial ou de controle",P3:"Registro institucional",S1:"Reportagem com apuração própria",S2:"Reportagem de cobertura",A1:"Pesquisa acadêmica",O1:"Manifestação de organização",R1:"Reprodução ou republicação"};
+const ROTULOS_FONTE = {B1:"Blog institucional/editorial",P1:"Documento primário",P2:"Documento judicial ou de controle",P3:"Registro institucional",S1:"Reportagem com apuração própria",S2:"Reportagem de cobertura",A1:"Pesquisa acadêmica",O1:"Manifestação de organização",R1:"Reprodução ou republicação"};
 function linksFonte(ids){
   if(!ids || !ids.length) return "";
   return `<div class="fontes"><div class="fontes-lab">FONTES</div>` +
