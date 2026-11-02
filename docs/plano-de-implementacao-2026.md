@@ -25,6 +25,7 @@
 | Poder e censura | Consulta de agentes e papéis derivados da base | Implementado nesta branch, com perfis individuais gerados por agente |
 | Domínio próprio | Domínio escolhido, DNS, HTTPS e canonical conferidos | Depende de decisão e acesso da responsável |
 | Acessibilidade e mobile | Testes manuais e automatizados documentados; sem falhas críticas | Auditoria estática no CI: 166 páginas HTML e 36 imagens, zero erros bloqueantes/alertas; testes manuais de teclado, leitor de tela, contraste e dispositivos reais pendentes |
+| Identidade editorial | Paleta, tipografia, hierarquia e componentes coerentes; inspeção visual e contraste aprovados | Direção de arte implementada em `assets/estilo.css` e documentada em `docs/direcao-de-arte-identidade-editorial.md`; inspeção visual manual e teste WCAG pendentes |
 
 ## P2 — Estratégico
 
