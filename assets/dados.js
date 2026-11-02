@@ -1009,8 +1009,9 @@ const FONTES = {
   "url": "https://revistas.usp.br/revistaec/article/view/195152"
  },
  "gc": {
-  "veic": "Gênio Criador",
-  "data": "",
+  "tipo": "B1",
+  "veic": "Gênio Criador Editora · Blog",
+  "data": "2024-03-28",
   "tit": "O avesso da liberdade: 10 livros que já foram censurados no Brasil e no mundo",
   "url": "https://www.geniocriador.com.br/blog-genio/273-o-avesso-da-liberdade-10-livros-que-ja-foram-censurados-no-brasil-e-no-mundo"
  },
