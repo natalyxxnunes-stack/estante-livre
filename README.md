@@ -62,7 +62,7 @@ index (painel), casos, livros, analises, poder, perfis de agentes, dossies, rela
 
 ## Documentação editorial
 
-- `docs/auditoria-editorial-p0.md`: pendências críticas mapeadas.
+- `docs/direcao-de-arte-identidade-editorial.md`: conceito visual, paleta, tipografia, composição e critérios de acessibilidade.\n- `docs/auditoria-editorial-p0.md`: pendências críticas mapeadas.
 - `docs/classificacao-e-verificacao-de-fontes.md`: taxonomia e protocolo de verificação.
 - `docs/politica-de-direitos-e-imagens.md`: créditos, direitos e preservação visual.
 - `docs/inventario-de-imagens.md`: inventário das sete capas e situação dos direitos.
