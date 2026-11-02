@@ -520,7 +520,7 @@ for(const [k,A] of Object.entries(ATOS)){
     <div class="irmaos">${regs.map(c=>`<a href="../casos/${c.id.toLowerCase()}.html">${esc(c.id)} · ${esc(c.titulo)}</a> <span class="mini-tags">${esc(c.modalidade.toLowerCase())} · ${esc(c.estagio.toLowerCase())} · ${esc(c.situacao.toLowerCase())}</span>`).join("<br>")}</div>
   </section>
   <section style="border-bottom:0">
-    <div class="sechead"><span class="kicker">04</span><h2>Fontes</h2></div>
+    <div class="sechead"><span class="kicker">04</span><h2>Fontes e documentos</h2></div>
     <p class="fonte-contexto">Referências vinculadas aos registros deste ato. A associação indica pertinência editorial ao episódio; não significa que cada fonte sustente todas as afirmações. Consulte o conteúdo original e a classificação documental antes de atribuir uma conclusão.</p>
     ${R.linksFonte(fontesIds)}
     <div class="como-citar"><span class="k">COMO CITAR</span>Estante Livre, observatório de censura de livros, de Nataly Nunes Pinto. Ato ${esc(k)}: ${esc(A.nome)}. Disponível em: ${url}. Acesso em: [data].</div>
