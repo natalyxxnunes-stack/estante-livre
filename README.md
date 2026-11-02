@@ -23,6 +23,8 @@ Ele valida os dados e para com uma lista de erros se algo estiver fora do padrã
 
 Quando o domínio próprio estiver no ar, troque a constante `SITE` no topo de `scripts/gerar.js` e rode de novo.
 
+A navegação investigativa e seus limites editoriais estão descritos em `docs/trilha-de-investigacao.md`.
+
 ## Onde se edita
 
 Quase tudo fica em `assets/dados.js`, organizado em quatro entidades ligadas por chave:
