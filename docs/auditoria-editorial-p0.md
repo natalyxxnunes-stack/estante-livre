@@ -11,8 +11,8 @@
 | Registros | 37 |
 | Obras e conjuntos | 32 |
 | Atos | 19 |
-| Referências associadas aos registros | 209 |
-| URLs distintas | 93 |
+| Referências associadas aos registros | 212 |
+| URLs distintas | 94 |
 | Registros parcialmente verificados | 10 |
 | Registros sem cidade nem abrangência territorial explícita | 0 |
 | Registros em decisão/execução sem signatário formal identificado | 7 |
