@@ -164,6 +164,7 @@ function casoHTML(c, q, nivel){
   const campo = (k, v) => v ? '<div class="pront-campo"><div class="k">'+k+'</div><div class="v">'+v+'</div></div>' : "";
   const ags = agentesDoAto(c.ato);
   const pend = c.pendencia;
+  const trilha = H==="h1" ? '<nav class="rota-investigacao" aria-label="Trilha de investigação"><span class="rota-titulo">TRILHA DE INVESTIGAÇÃO</span>'+(!c.conjunto?'<a href="'+urlLivro(obraDe(c))+'"><b>01 · Livro</b><span>Ficha da obra</span></a>':"")+'<a href="'+urlAto(c.ato)+'"><b>02 · Ato administrativo</b><span>Documento, decisão e contexto</span></a>'+(ags.length?'<div class="rota-agentes"><b>03 · Agentes e instituições</b><span>'+ags.map(a=>'<a href="'+RAIZ+'agentes/'+a.id+'.html">'+esc(a.ag?.nome||a.id)+'</a>').join(" · ")+'</span></div>':"")+'</nav>' : "";
   return '<article class="caso pront" id="'+c.id+'" aria-labelledby="t-'+c.id+'">'+
     '<div class="pront-cab">'+
       '<a class="pront-num" href="'+urlCaso(c.id)+'" title="Página deste registro"><span>REGISTRO</span><b>'+c.id+'</b></a>'+
@@ -174,6 +175,7 @@ function casoHTML(c, q, nivel){
       '<div class="pront-carimbo '+clsEstagio(c.estagio)+'" aria-hidden="true">'+(CARIMBO[c.estagio]||"")+'<span>'+esc(c.uf)+' · '+c.data.slice(0,4)+'</span></div>'+
     '</div>'+
     '<div class="pront-corpo">'+
+      trilha+
       capaHTML(c)+
       '<div class="caso-body">'+
         '<div class="pront-grade">'+
@@ -198,7 +200,7 @@ function casoHTML(c, q, nivel){
           linhaResp("RESPOSTA / REVERSÃO",r.resposta)+
           linhaResp("OBSERVAÇÃO SOBRE RESPONSABILIDADE INDIVIDUAL",r.responsavel)+
           (ags.length ? '<div class="agentes-lin"><span class="k">AGENTES IDENTIFICADOS</span>'+ags.map(a=>
-            '<a class="ag" href="'+RAIZ+'atos.html#ag-'+a.id+'"><b>'+esc(a.ag.nome)+'</b>'+(a.cargo?' · '+esc(a.cargo):'')+' <i>'+esc(a.papeis.join(", "))+'</i></a>').join("")+'</div>' : "")+
+            '<a class="ag" href="'+RAIZ+'agentes/'+a.id+'.html"><b>'+esc(a.ag.nome)+'</b>'+(a.cargo?' · '+esc(a.cargo):'')+' <i>'+esc(a.papeis.join(", "))+'</i></a>').join("")+'</div>' : "")+
         '</div>'+
         '<div class="caso-aleg"><span class="k">JUSTIFICATIVA DECLARADA</span><div>'+m(c.alegacao)+'</div></div>'+
         (c.nota?'<div class="caso-nota">'+m(c.nota)+'</div>':"")+
@@ -228,7 +230,10 @@ function livroHTML(titulo, ocs, q, nivel){
   const motivos = [...new Set(ocs.map(o=>o.eixo))];
   const mods = [...new Set(ocs.map(o=>o.modalidade))];
   const rev = ocs.filter(o=>o.situacao==="Revertido").length;
-  const linhas = [...ocs].sort((a,b)=>a.data.localeCompare(b.data)).map(o=>`
+  const linhas = [...ocs].sort((a,b)=>a.data.localeCompare(b.data)).map(o=>{
+    const agentes = agentesDoAto(o.ato);
+    const trilha = H==="h1" ? `<div class="trilha-livro"><a href="${urlCaso(o.id)}">Abrir registro ${esc(o.id)} ↗</a><a href="${urlAto(o.ato)}">Consultar ato administrativo ↗</a>${agentes.length?`<div class="trilha-livro-ag"><b>Agentes:</b> ${agentes.map(a=>`<a href="${RAIZ}agentes/${a.id}.html">${esc(a.ag?.nome||a.id)}</a>`).join(" · ")}</div>`:""}<details class="provas-ocorrencia"><summary>Consultar fontes vinculadas a este registro</summary>${linksFonte(o.fontes)}<p class="fonte-contexto">As referências estão associadas ao registro. Cada uma deve ser consultada no contexto da afirmação que documenta.</p></details></div>` : "";
+    return `
     <div class="ocorr">
       <a class="ocorr-id" href="${urlCaso(o.id)}">${o.id}</a>
       <div class="ocorr-onde">${esc([o.cidade,o.uf].filter(Boolean).join(", ")||o.uf)}<br>
@@ -248,7 +253,8 @@ function livroHTML(titulo, ocs, q, nivel){
         <span class="tag t-mod">${esc(o.modalidade)}</span>
         <span class="tag t-est ${clsEstagio(o.estagio)}">${esc(o.estagio)}</span>
         <span class="tag t-des ${clsSituacao(o.situacao)}">${esc(o.situacao)}</span></div>
-    </div>`).join("");
+      ${trilha}
+    </div>`;}).join("");
 
   return `<div class="livro" id="${slug(titulo)}">
     <div class="livro-head">
