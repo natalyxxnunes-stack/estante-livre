@@ -72,3 +72,8 @@ index (painel), casos, livros, analises, poder, perfis de agentes, dossies, rela
 - `docs/plano-de-implementacao-2026.md`: sequência P0–P3 e critérios de conclusão.\n- `docs/revisao-das-seis-prioridades.md`: estado das seis prioridades críticas e limites de validação.\n- `docs/pedidos-lai-prontos.md`: minutas para diligências dos dez registros parcialmente verificados.
 
 Contornos do mapa: svg-maps, licença CC BY 4.0.
+
+
+## Revisão editorial complementar
+
+A revisão dos registros EL-025 a EL-037, com limites probatórios e diligências documentais, está em `docs/revisao-registros-el-025-a-037-2026-11-03.md`.
