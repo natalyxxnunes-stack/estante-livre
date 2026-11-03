@@ -76,4 +76,4 @@ Contornos do mapa: svg-maps, licença CC BY 4.0.
 
 ## Revisão editorial complementar
 
-A revisão dos registros EL-025 a EL-037, com limites probatórios e diligências documentais, está em `docs/revisao-registros-el-025-a-037-2026-11-03.md`.
+A revisão dos registros EL-025 a EL-037, com limites probatórios e diligências documentais, está em `docs/revisao-registros-el-025-a-037-2026-11-03.md`. A base de dados também referencia o Ofício nº 216/2024/SEMED/PMCL em EL-027.
