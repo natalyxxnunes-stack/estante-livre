@@ -172,7 +172,7 @@ Os pedidos abaixo devem ser enviados separadamente a cada órgão que detenha os
 9. SED-MS — um pedido.
 10. SEED-PR/NRE Curitiba — um pedido.
 
-Total: **13 protocolos**, se os documentos forem encaminhados a todos os órgãos detentores conforme a divisão acima. Antes de enviar, verificar se a busca pública já disponibiliza a peça específica; não duplicar pedidos por conveniência.
+Total: **14 protocolos**, se os documentos forem encaminhados a todos os órgãos detentores conforme a divisão acima. Antes de enviar, verificar se a busca pública já disponibiliza a peça específica; não duplicar pedidos por conveniência.
 
 ### Texto de abertura para cada protocolo
 
