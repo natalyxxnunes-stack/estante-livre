@@ -1,6 +1,6 @@
 # Auditoria editorial P0 — Estante Livre
 
-**Data da atualização:** 2 de novembro de 2026  
+**Data da atualização:** 3 de novembro de 2026  
 **Base examinada:** branch de auditoria, atualizada em 2 de novembro de 2026  
 **Escopo:** registros parcialmente verificados, signatários, localidade, documentação e atribuições.
 
