@@ -19,7 +19,7 @@ Cada pedido deve buscar documentos que esclareçam uma etapa específica: press�
 - registros administrativos de recolhimento e devolução dos exemplares, com datas e unidades envolvidas;
 - identificação dos signatários eletrônicos e das autoridades que determinaram, suspenderam ou executaram providências.
 
-**Ponto de controle:** o Diário Eletrônico do MPF registra solicitação verbal de recolhimento feita pela Seduc, suspensa na mesma data, e devolução dos livros que chegaram a ser recolhidos. Portanto, não escrever que nada foi recolhido; distinguir o recolhimento pontual da execução geral prevista no memorando. O MPF também registra a abertura de sindicância estadual, cuja conclusão ainda precisa ser localizada.
+**Canal de consulta:** [Consulta Pública do SEI-RO](https://sei.ro.gov.br/consulta_publica/) permite consultar andamento com número do processo e código de verificação; para cópias/vistas, o portal orienta contato com a unidade geradora. O pedido formal de acesso deve ser protocolado também pelo [e-SIC estadual](https://esic.cge.ro.gov.br/).\n\n**Ponto de controle:** o Diário Eletrônico do MPF registra solicitação verbal de recolhimento feita pela Seduc, suspensa na mesma data, e devolução dos livros que chegaram a ser recolhidos. Portanto, não escrever que nada foi recolhido; distinguir o recolhimento pontual da execução geral prevista no memorando. O MPF também registra a abertura de sindicância estadual, cuja conclusão ainda precisa ser localizada.
 
 ## 2. Fundação Cultural Palmares — 5.165 itens e “Acervo da Vergonha”
 
