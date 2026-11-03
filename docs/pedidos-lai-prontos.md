@@ -1,6 +1,6 @@
 # Minutas de pedidos de acesso à informação — Estante Livre
 
-**Versão:** 1.0 · **Data:** 2 de novembro de 2026  
+**Versão:** 1.1 · **Data:** 3 de novembro de 2026  
 **Uso:** textos-base para revisão e protocolo pela responsável do projeto. Nenhum pedido foi enviado por este documento.
 
 ## Texto comum para todos os pedidos
@@ -24,7 +24,9 @@ Solicito:
 4. Comunicações às coordenadorias e escolas sobre solicitação, suspensão, recolhimento pontual e devolução de exemplares.
 5. Identificação documental dos signatários eletrônicos e das autoridades que determinaram, suspenderam ou executaram providências.
 
-Solicito que o órgão indique expressamente se o Adendo 10053329 não estiver localizado ou não existir no processo.\n\n**Canal de consulta complementar:** o Governo de Rondônia mantém [Consulta Pública do SEI](https://sei.ro.gov.br/consulta_publica/). A página informa que a consulta de andamento exige o número do processo e código de verificação; para obter cópias/vistas, orienta contato com a unidade geradora por telefone, e-mail ou ofício. O pedido de acesso ao conteúdo e anexos deve seguir também pelo [e-SIC estadual](https://esic.cge.ro.gov.br/).
+Solicito que o órgão indique expressamente se o Adendo 10053329 não estiver localizado ou não existir no processo.
+
+**Canal de consulta complementar:** o Governo de Rondônia mantém [Consulta Pública do SEI](https://sei.ro.gov.br/consulta_publica/). A página informa que a consulta de andamento exige o número do processo e código de verificação; para obter cópias/vistas, orienta contato com a unidade geradora por telefone, e-mail ou ofício. O pedido de acesso ao conteúdo e anexos deve seguir também pelo [e-SIC estadual](https://esic.cge.ro.gov.br/).
 
 ## 2. São José dos Campos — EL-028
 
@@ -137,6 +139,53 @@ Solicito:
 O pedido busca confirmar a extensão da execução e o ato formal de reversão, sem tratar reportagens como substitutas dos documentos administrativos.
 
 ---
+
+## 10. Como protocolar — canais oficiais conferidos em 03/11/2026
+
+Os pedidos abaixo devem ser enviados separadamente a cada órgão que detenha os documentos. Não encaminhar uma única solicitação a dois entes distintos: Câmara, Prefeitura, Secretaria e fundação possuem protocolos e acervos próprios.
+
+| Frente | Canal oficial de protocolo | Observação operacional |
+|---|---|---|
+| Rondônia — Seduc-RO | [e-SIC estadual](https://esic.cge.ro.gov.br/) | O portal informa que permite pedidos, acompanhamento, recursos e reclamações. Consulta pública do SEI não substitui o pedido de cópias. |
+| Fundação Cultural Palmares — EL-025/026 | [Fala.BR](https://falabr.cgu.gov.br/web/home) | A própria FCP determina que pedidos LAI sejam registrados no formulário “Acesso à Informação” do Fala.BR; e-mail/telefone são apenas para orientação. Fazer dois pedidos: relatório/inventário de 5.165 itens e acervo de cerca de 300 livros. |
+| São José dos Campos — EL-028 | [Prefeitura — SIC](https://siteprefeitura.sjc.sp.gov.br/servicos/governanca/portal-da-transparencia/servico-de-informacoes-ao-cidadao/) | O Município informa protocolo on-line pelo Prefbook e atendimento presencial. Selecionar Secretaria de Educação e Cidadania. |
+| Londrina — EL-030/035 | [Ouvidoria-Geral — pedido LAI](https://ouvidoria.londrina.pr.gov.br/index.php/pedido-de-acesso-a-informacao) | O Município registra pedidos no SEI por formulário eletrônico. Abrir dois pedidos distintos: episódio de 2024 e procedimento de 2026. |
+| CBMDF / Colégio Militar Dom Pedro II — EL-031 | [CBMDF — SIC](https://www.cbm.df.gov.br/ouvidoria/servico-de-informacoes-ao-cidadao-sic/) | A página direciona ao sistema Participa-DF. O órgão exige identificação, documento válido, descrição precisa e endereço para resposta. |
+| Taubaté — Prefeitura/SME — EL-032 | [Central 1Doc — Pedido e-SIC](https://taubate.1doc.com.br/atendimento/) | Selecionar o serviço “Pedido E-sic” e direcionar à Secretaria de Educação. A Prefeitura informa prazo de 20 dias, prorrogável por mais 10 mediante justificativa. |
+| Taubaté — Câmara — EL-032 | [Câmara de Taubaté — SIC](https://www.camarataubate.sp.gov.br/portal/sic) | Usar “Nova Solicitação”; pedir requerimento e resposta legislativa, sem incluir pareceres/ordens que estejam exclusivamente na Prefeitura. |
+| Funap — EL-033 | [Fala.BR](https://falabr.cgu.gov.br/web/home) | A Funap é fundação pública estadual paulista vinculada à Secretaria da Administração Penitenciária. No Fala.BR, selecionar Governo do Estado de São Paulo e localizar a Funap/Secretaria da Administração Penitenciária. Se a unidade não aparecer, registrar para a SAP e pedir encaminhamento à Funap. |
+| Canoinhas — Prefeitura/Fundação Cultural — EL-036/037 | [Portal oficial da Prefeitura de Canoinhas](https://www.pmc.sc.gov.br/) | Não foi possível confirmar, nesta conferência, um formulário LAI eletrônico específico e ativo. Usar o Serviço de Informação ao Cidadão/protocolo geral indicado no portal e exigir número de protocolo; não enviar a endereço de e-mail não confirmado. |
+| Canoinhas — MPSC — EL-036/037 | [MPSC — Acesso à Informação](https://webserver-mpsc-prd.lfr.cloud/acesso-a-informacao) | Formulário próprio para documentos e informações mantidos pelo Ministério Público. Solicitar número e resultado da notícia de fato e peças públicas/certidão de encerramento. |
+| Mato Grosso do Sul — SED/MS — EL-004 | [Fala.BR](https://falabr.cgu.gov.br/web/home) | O serviço oficial estadual orienta registrar pedido no Fala.BR e selecionar o órgão do Executivo estadual. |
+| Paraná — SEED-PR/NRE Curitiba — EL-002 | [eProtocolo Paraná](https://www.eprotocolo.pr.gov.br/) | O Estado informa que cidadãos podem protocolar solicitações a órgãos do Executivo pelo eProtocolo. Direcionar à SEED-PR e pedir encaminhamento ao NRE Curitiba para documentos sob sua guarda. |
+
+### Separação recomendada dos protocolos
+
+1. Seduc-RO — um pedido.
+2. FCP — dois pedidos separados (5.165 itens; cerca de 300 livros).
+3. Prefeitura de São José dos Campos — um pedido.
+4. Prefeitura de Londrina — dois pedidos separados (2024; 2026). A Câmara de Londrina deve receber pedido autônomo apenas se o requerimento parlamentar não estiver acessível em seu sistema público.
+5. CBMDF — um pedido.
+6. Prefeitura de Taubaté — um pedido; Câmara de Taubaté — outro pedido.
+7. Funap/SAP — um pedido.
+8. Prefeitura/Fundação Cultural de Canoinhas — um pedido; MPSC — outro pedido.
+9. SED-MS — um pedido.
+10. SEED-PR/NRE Curitiba — um pedido.
+
+Total: **13 protocolos**, se os documentos forem encaminhados a todos os órgãos detentores conforme a divisão acima. Antes de enviar, verificar se a busca pública já disponibiliza a peça específica; não duplicar pedidos por conveniência.
+
+### Texto de abertura para cada protocolo
+
+> Solicito, com fundamento na Lei Federal nº 12.527/2011, acesso aos documentos e informações administrativas descritos a seguir, preferencialmente em formato digital pesquisável. O pedido se limita a documentos existentes e registros sob guarda do órgão, sem solicitar produção de análise nova, opinião ou consolidação inédita. Caso algum documento não exista ou não esteja sob guarda dessa unidade, solicito que isso seja informado expressamente e, se possível, que o pedido seja encaminhado ao órgão/unidade competente, com indicação do encaminhamento. Se houver dados pessoais protegidos, solicito acesso à versão pública, com ocultação apenas dos trechos protegidos e indicação do fundamento legal.
+
+### Prazos e acompanhamento
+
+- Regra geral da LAI: resposta em até 20 dias, prorrogáveis por mais 10 mediante justificativa expressa. Confirmar o prazo aplicável no sistema estadual/municipal antes de calcular vencimentos.
+- Salvar comprovante de protocolo, número/NUP, data e íntegra do texto enviado.
+- Registrar a data-limite inicial e, se houver prorrogação, a justificativa e a nova data.
+- Se houver negativa total/parcial, ausência de resposta ou resposta incompleta, avaliar recurso administrativo dentro do prazo indicado pelo próprio sistema e pela norma local.
+- Não enviar CPF, documento de identidade ou endereço por e-mail comum. Inserir dados pessoais apenas nos campos oficiais do portal.
+- Os pedidos não foram protocolados por esta atualização. O protocolo exige identificação e autenticação da pessoa requerente em sistemas oficiais; não vou usar nem solicitar credenciais pessoais para agir em nome da usuária.
 
 ## Controle de protocolo e retorno
 
