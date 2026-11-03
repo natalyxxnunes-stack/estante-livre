@@ -242,9 +242,9 @@ Solicito, com fundamento na Lei nº 12.527/2011, acesso aos seguintes registros 
 
 1. Endereço, horário, regras e canal de agendamento atualmente vigentes para consulta presencial da Biblioteca Oliveira Silveira; confirmação de que qualquer cidadão pode consultar o acervo.
 2. URL atual do catálogo público SOPHIA e instruções de pesquisa. Se não estiver disponível ao público, informar a razão e a data da indisponibilidade.
-3. Relação nominal dos cerca de 300 livros que compuseram o “Acervo da Vergonha”, com número de registro bibliográfico, quantidade de exemplares, localização atual e status de consulta; ou declaração expressa de inexistência dessa relação.
+3. Cópia do anexo, planilha ou documento-fonte original que deu origem à lista de 300 títulos divulgada em 2021, preservando os registros/edições repetidos, identificadores bibliográficos e quantitativos por exemplar. Já foi localizada reprodução jornalística pública com 261 entradas após exclusão de edições repetidas; solicita-se a fonte administrativa primária e os registros que expliquem a diferença entre 300 itens e 261 entradas publicadas.
 4. Registros administrativos da dissolução do espaço e reintegração ao acervo geral, com datas, unidades responsáveis, autoridade decisora e quantitativos conferidos.
-5. Registros de catalogação e digitalização dos títulos, com identificadores e links no SOPHIA.
+5. Registros de catalogação e digitalização dos títulos, com identificadores e links no SOPHIA, incluindo correspondência com os registros do inventário bibliográfico institucional publicado em 08/08/2024.
 6. Informação se algum exemplar dessa relação foi doado, transferido, descartado ou movimentado após a dissolução. Em caso positivo, fornecer lista, termo, processo SEI e comprovantes de saída.
 7. Planilha que fundamenta o total de 35.674 exemplares distribuídos em 2025, com títulos, quantidades, datas, destinos institucionais e processos SEI, resguardados dados pessoais desnecessários.
 8. Esclarecimento se algum título da antiga relação integrou as distribuições de 2025; se sim, indicar título, quantidade, data, destino e processo SEI.
