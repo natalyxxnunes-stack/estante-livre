@@ -200,3 +200,33 @@ Após o envio de cada pedido, preencher no próprio controle editorial:
 - decisão editorial decorrente da resposta.
 
 Não publicar dados pessoais desnecessários. Não considerar ausência de resposta como confirmação do fato investigado.
+
+
+---
+
+## Aditamento — FCP EL-026: pedido focalizado após nova evidência (03/11/2026)
+
+A pesquisa acadêmica de Lucas dos Santos de Paulo (UnB, 2024) registra que, em visita presencial à Biblioteca Oliveira Silveira em 29/02/2024, os livros que integraram o “Acervo da vergonha” já haviam sido reintegrados ao acervo geral. Os Relatórios de Gestão da FCP de 2024 e 2025 descrevem, respectivamente, restrições de acesso durante a organização e avanços posteriores de catalogação/digitalização. Portanto, substituir a minuta genérica anterior para EL-026 pelo texto abaixo. Não solicitar entrevistas ou dados protegidos dos participantes da pesquisa.
+
+**Destinatário:** Fundação Cultural Palmares — Biblioteca Oliveira Silveira / Centro de Informação e Acervo da Memória e da Cultura Afro-Brasileira.
+
+**Assunto:** Registros de reintegração e situação atual dos livros separados no chamado “Acervo da Vergonha”.
+
+Solicito, com fundamento na Lei nº 12.527/2011, acesso aos documentos administrativos e registros existentes relativos à separação, dissolução do espaço denominado “Acervo da Vergonha” e reintegração dos livros ao acervo geral da Biblioteca Oliveira Silveira.
+
+A solicitação é delimitada pelos seguintes itens:
+
+1. Cópia de termo, relatório, despacho, inventário ou registro de movimentação que formalizou a dissolução do espaço e a reintegração dos livros ao acervo geral, com data, unidade responsável e autoridade que autorizou.
+2. Relação nominal dos títulos e quantitativos efetivamente separados em 2021, com identificadores bibliográficos disponíveis, e relação ou registro que demonstre sua reintegração.
+3. Número de registro bibliográfico atual, localização e situação de acesso de cada título dessa relação, admitida resposta por planilha.
+4. Relatórios de processamento técnico, catalogação e digitalização desses títulos, inclusive identificadores ou links públicos no sistema SOPHIA, se existentes.
+5. Caso algum exemplar tenha sido doado, transferido, descartado, perdido ou permaneça em depósito separado, cópia do ato que autorizou a providência e dos registros de execução, com datas e quantitativos.
+6. Informação sobre a possibilidade atual de consulta presencial aos exemplares e as regras de acesso aplicáveis.
+7. Registros administrativos de transporte, guarda e conferência do acervo durante a mudança da Biblioteca Oliveira Silveira para a sede atual, na parte necessária para rastrear os livros que integraram o conjunto.
+8. Caso a relação nominal dos títulos não esteja disponível, informar expressamente a inexistência e fornecer a lista, planilha ou documento-fonte usado pela Fundação para formar o conjunto.
+
+Solicito versões públicas dos documentos, com ocultação apenas de dados legalmente protegidos e indicação do fundamento da restrição. Não solicito entrevistas, áudios, termos de consentimento ou dados que identifiquem participantes de pesquisa acadêmica.
+
+A finalidade é confirmar documentalmente, título a título, a reintegração e a situação atual dos exemplares, sem presumir que a informação acadêmica ou o relatório geral de gestão substituam os registros administrativos individuais.
+
+**Nota editorial:** a evidência acadêmica já localizada aponta reintegração física ao acervo geral em 29/02/2024. Este pedido busca fechar a rastreabilidade administrativa e confirmar a situação atual; não deve ser apresentado como se ainda não houvesse qualquer evidência sobre o destino do conjunto.
