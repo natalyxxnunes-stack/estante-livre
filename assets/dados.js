@@ -148,7 +148,7 @@ const LIVROS = {
    genero:"Teatro",
    sinopse:"Um homem beija um desconhecido atropelado, e a imprensa transforma o gesto em escândalo que destrói sua vida.",
    nota:"Peça sobre linchamento moral fabricado pela imprensa."},
- "Obra de Rubem Fonseca (19 títulos)":{
+ "Obra de Rubem Fonseca (18 títulos distintos; 19 entradas na reprodução)":{
    legenda:"19 títulos do mesmo autor",
    autoria:"Rubem Fonseca",
    conjunto:true,
