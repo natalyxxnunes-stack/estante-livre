@@ -266,3 +266,61 @@ A dissertação de Lucas dos Santos de Paulo (UnB, 2024), disponível em https:/
 - o desfecho judicial definitivo da Ação Popular.
 
 **Conclusão editorial:** a lacuna sobre a existência do espaço e a reintegração geral dos livros está substancialmente fechada por evidência documental pública e observação acadêmica presencial. A lacuna remanescente é de rastreabilidade individual e disponibilidade atual, não mais de comprovação de que o espaço existiu ou de que foi desfeito.
+
+
+## 9. Aditamento — relação nominal pública dos títulos e cruzamento amostral com o inventário oficial (03/11/2026)
+
+### 9.1 Relação nominal dos títulos: cópia pública localizada
+
+Foi localizada uma reprodução integral da lista publicada em junho de 2021, em página aberta do veículo Por Dentro do RN:
+
+https://pordentrodorn.com.br/2021/06/17/veja-lista-de-livros-banidos-pela-fundacao-palmares/
+
+A página informa expressamente que reproduz a lista encerrando o relatório *Retrato do Acervo* e que, dos 300 registros/títulos apresentados, foram retiradas as edições repetidas, resultando em 261 entradas na relação publicada. A lista está numerada de 1 a 261 e inclui autores, títulos e, em muitos casos, ano de edição.
+
+A página é uma reprodução jornalística, não o anexo original assinado ou a planilha SEI. É suficiente para reconstruir e auditar publicamente a relação que circulou em 2021, desde que o Estante Livre a identifique como **reprodução da lista divulgada**, não como documento primário autenticado. A fonte original do relatório continua sendo o documento institucional *Retrato do Acervo* hospedado pela FCP: https://www.gov.br/palmares/pt-br/midias/arquivos/retrato_do_acervo.pdf
+
+O texto jornalístico relata 261 entradas após deduplicação de edições repetidas. Não se deve converter automaticamente 261 entradas em 261 exemplares, nem em 300 títulos bibliograficamente únicos: a própria relação mistura títulos, edições e registros com descrições incompletas.
+
+### 9.2 Cruzamento amostral verificável com o inventário institucional de 2024
+
+A consulta direta ao PDF oficial de inventário (9.696 registros, compilados em 2021 e publicados em 08/08/2024) confirmou as seguintes correspondências nominais:
+
+| Relação pública de 2021 | Inventário FCP | Registro / quantidade | Resultado |
+|---|---|---:|---|
+| Nicolai Gogol, *Almas Mortas* (1937) | *Almas Mortas*, Nicolau Gogol, Brasil Editora, 1937 | 1139 / 2 | Correspondência forte de título, autor e ano |
+| Luís Câmara Cascudo, *Dicionário do Folclore Brasileiro* | *Dicionário do folclore brasileiro*, Luís Câmara Cascudo, Instituto Nacional do Livro, 1972 | 2996 / 2 | Correspondência de título e autor; edição diferente |
+| Luís Câmara Cascudo, *Dicionário do Folclore Brasileiro* | *Dicionário do Folclore Brasileiro*, Luís da Câmara Cascudo, editora não indicada | 2997 / 2 | Correspondência de título e autor; dados editoriais incompletos |
+| Luís Câmara Cascudo, *Dicionário do Folclore Brasileiro* | *Dicionário do Folclore Brasileiro*, Global, 2001 | 2998 / 2 | Correspondência de título e autor; edição diferente |
+| Luís Câmara Cascudo, *Dicionário do Folclore Brasileiro* | *Dicionário do Folclore Brasileiro*, Global, 2012 | 2999 / 2 | Correspondência de título e autor; edição diferente |
+| E. J. Hobsbawm, *Bandidos* (1975) | *Bandidos*, E. J. Hobsbawm, Forense-Universitária, 1975 | 1651 / 1 | Correspondência forte de título, autor e ano |
+| Hans Peter Blewel, *O Sexo na Alemanha Nazista* (1972) | *O Sexo na Alemanha Nazista*, Hans Peter Bleual, Distribuidora Record, ano não indicado | 6708 / 1 | Correspondência provável; divergência na grafia do sobrenome e ano não registrado |
+| Karl Marx, *O Capital: livros 1, 2 e 3 — várias edições* | *O Capital*, Karl Marx, múltiplas editoras/edições | 6069–6080 / 14 exemplares somados nos registros listados | Correspondência temática e nominal; não permite identificar edição/exemplar específico |
+| Caio Prado Jr., *O Mundo do Socialismo* (1961) | *O Mundo do Socialismo*, Caio Prado Júnior, Brasiliense, 1962 | 6393 / 1 | Correspondência forte de título e autor; divergência de ano (1961 na lista, 1962 no inventário) |
+| Celso Furtado, *A Pré-Revolução Brasileira* (1962) | *A Pré-Revolução Brasileira*, Celso Furtado, Fundo de Cultura, 1962 | 657 / 1 | Correspondência forte de título, autor e ano |
+
+**Nota metodológica:** este é um cruzamento amostral, não o resultado de uma comparação automatizada e completa das 261 entradas. A grafia dos nomes, títulos, edições e anos varia entre as fontes. A existência de um registro no inventário de 2024 demonstra que o título constava da lista institucional compilada em 2021; não prova por si só que o exemplar estava fisicamente disponível, consultável ou reintegrado em 2024. A quantidade do inventário se refere aos exemplares indicados naquele registro, não necessariamente aos exemplares separados em 2021.
+
+### 9.3 Evidência documental adicional sobre o espaço físico em 2021
+
+O PDF oficial consolidado pela FCP (https://www.gov.br/palmares/pt-br/midias/arquivos/download/resposta.pdf) contém, em sequência, a Nota Informativa nº 0166090/2021 e o relatório técnico da Coordenação de Preservação de Conteúdos Informacionais da Câmara dos Deputados.
+
+- A Nota Informativa da FCP, assinada eletronicamente por Marco Aurélio Franco em 06/11/2021 e juntada ao consolidado de novembro, reconhece que em 30/06/2021 havia livros em caixas na Sala 1 e afirma que, posteriormente, foram colocados em estantes (PDF p. 4; linhas extraídas 56–62).
+- O relatório técnico da Câmara identifica a Sala 11 como “sala da vergonha (livros)” no primeiro andar (PDF p. 26; linhas 765–768).
+- A seção fotográfica do relatório identifica a Sala 11 como espaço com livros classificados como inadequados e caixas contendo livros para doação, na diligência de 30/06/2021 (PDF pp. 86–88; linhas 1845–1863).
+- A descrição técnica registra portas com fechaduras simples, caixas e condições ambientais; não comprova que a sala estivesse trancada ou inacessível ao público de modo permanente. Evitar a palavra “trancados” como fato comprovado sem outra evidência.
+- Há uma diferença importante de identificação: a FCP chama de Sala 1 o espaço onde livros estavam em caixas e depois foram postos em estantes; o relatório técnico da Câmara chama Sala 11 de “sala da vergonha”. Não fundir as duas salas nem presumir que se referem ao mesmo conjunto de livros.
+
+### 9.4 Consequência editorial
+
+A relação nominal deixa de ser uma lacuna absoluta. Existe uma cópia pública, extensa e numerada de 261 entradas, suficiente para iniciar cruzamento título a título. A formulação correta é “relação reproduzida pela imprensa a partir da lista divulgada em 2021”; a autenticação definitiva ainda depende do arquivo original do relatório/anexo.
+
+O cruzamento amostral demonstra correspondências em pelo menos oito grupos de títulos/autores, incluindo *Almas Mortas*, *Bandidos*, *O Sexo na Alemanha Nazista*, *O Capital*, *O Mundo do Socialismo* e *A Pré-Revolução Brasileira*. Isso fortalece a conexão entre a lista de 2021 e o inventário institucional, mas não autoriza dizer que todos os itens da lista foram localizados nem que o conjunto integral de 300 livros foi preservado.
+
+### 9.5 Pendências reclassificadas
+
+1. **Lista nominal:** parcialmente resolvida — cópia jornalística pública com 261 entradas; falta autenticar a versão original e recuperar os registros/edições repetidos que perfazem os 300 itens anunciados.
+2. **Cruzamento com inventário:** iniciado com correspondências amostrais; falta comparação integral das 261 entradas, com normalização e revisão humana.
+3. **Rastreabilidade física:** permanece pendente — o inventário de 2024 não identifica os exemplares separados nem registra sua movimentação posterior.
+4. **Acesso atual:** permanece pendente — relatório 2025 comprova digitalização e disponibilização de títulos no SOPHIA, mas não fornece identificadores de catálogo para cada título da lista.
+5. **Processo judicial:** permanece pendente — a pesquisa pública ainda não recuperou sentença/andamento final da Ação Popular 5006660-67.2021.4.02.5117/RJ.
