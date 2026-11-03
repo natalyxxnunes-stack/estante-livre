@@ -1,146 +1,134 @@
 # Inventário de capas e imagens — Estante Livre
 
 **Data de revisão:** 3 de novembro de 2026  
-**Escopo:** arquivos de capa presentes em `assets/capas/` e referências exibidas nas fichas.  
+**Escopo:** sete arquivos em `assets/capas/`.  
 **Política aplicável:** `docs/politica-de-direitos-e-imagens.md`.
 
-## Resultado da verificação individual
+## Resultado da comparação visual
 
-Foram identificados sete arquivos de capa no repositório. A pesquisa em catálogos oficiais permitiu localizar dados bibliográficos e possíveis edições de referência para as sete obras. **Isso não prova que o arquivo local reproduza exatamente aquela edição, nem identifica a origem de obtenção do JPG.** A correspondência visual precisa ser conferida comparando cada arquivo local com a capa da edição catalogada.
+Os sete arquivos locais foram abertos e comparados com referências editoriais, bibliográficas e acadêmicas disponíveis. A comparação permitiu identificar com segurança cinco edições/variantes e apontar duas correspondências com alto grau de confiança, com ressalvas descritas abaixo.
 
-É importante separar:
-
-- **Autorização/licença:** permissão expressa ou licença comprovada. Não localizada para os sete arquivos no repositório.
-- **Crédito:** autoria da obra, editora e eventual crédito da arte. Crédito não equivale a autorização.
-- **Referência bibliográfica:** ficha oficial de uma edição da obra. Não prova que seja a edição mostrada no arquivo local.
-- **Fundamento editorial:** análise do uso concreto em contexto jornalístico/documental. Precisa ser registrada por ativo e não deve ser classificada como autorização.
+**Limite importante:** identificar a edição representada não revela de onde o JPG foi baixado, nem comprova licença ou autorização para reprodução. Para os sete arquivos, a origem histórica do arquivo local e a autorização/licença continuam não localizadas.
 
 ## Inventário individual
 
 ### 1. `avesso-da-pele.jpg` — *O avesso da pele*
 
 - **Autor:** Jeferson Tenório.
-- **Referência oficial localizada:** Companhia das Letras, ISBN **978-85-359-3339-0**, lançamento em 10/08/2020.
+- **Correspondência visual:** confirmada com a capa da edição Companhia das Letras lançada em 10/08/2020.
+- **ISBN:** 978-85-359-3339-0.
 - **Crédito de capa informado pela editora:** Alceu Chiesorin Nunes.
-- **Fonte bibliográfica:** https://www.companhiadasletras.com.br/livro/9788535933390/
-- **Correspondência com o arquivo local:** ainda não confirmada por comparação visual.
-- **Origem do JPG:** não localizada.
+- **Fonte editorial:** https://www.companhiadasletras.com.br/livro/9788535933390/
+- **Origem do JPG no repositório:** não localizada.
 - **Autorização/licença:** não localizada.
-- **Fundamento editorial:** uso da miniatura para identificar a obra objeto de registro jornalístico; avaliação específica do arquivo e de sua proporcionalidade ainda precisa ser documentada.
-- **Crédito recomendado, se a edição for confirmada:** *O avesso da pele*, Jeferson Tenório. Companhia das Letras, 2020. Capa: Alceu Chiesorin Nunes.
+- **Crédito bibliográfico recomendado:** Jeferson Tenório. *O avesso da pele*. Companhia das Letras, 2020. Capa: Alceu Chiesorin Nunes.
 
 ### 2. `piores-noticias.jpg` — *Eu receberia as piores notícias dos seus lindos lábios*
 
 - **Autor:** Marçal Aquino.
-- **Referência oficial localizada para a edição original:** Companhia das Letras, ISBN **978-85-359-0736-0**, lançamento em 31/10/2005, 232 páginas.
-- **Fonte bibliográfica:** https://www.companhiadasletras.com.br/livro/9788535907360/
-- **Outra edição oficial localizada:** nova edição de 2025, ISBN **978-85-359-3807-4**, com crédito de capa para Alceu Chiesorin Nunes.
-- **Fonte da nova edição:** https://www.companhiadasletras.com.br/livro/9788535938074/eu-receberia-as-piores-noticias-dos-seus-lindos-labios-nova-edicao
-- **Correspondência com o arquivo local:** não confirmada. Não atribuir o crédito de Alceu Chiesorin Nunes ao JPG sem verificar se ele corresponde à edição de 2025.
-- **Origem do JPG:** não localizada.
+- **Correspondência visual:** confirmada com a nova edição da Companhia das Letras, lançada em 21/10/2025.
+- **ISBN:** 978-85-359-3807-4.
+- **Crédito de capa informado pela editora:** Alceu Chiesorin Nunes.
+- **Fonte editorial:** https://www.companhiadasletras.com.br/9788535938074-eu-receberia-as-piores-noticias-dos-seus-lindos-labios--nova-edicao--3160/p
+- **Observação:** não confundir com a edição original de 2005, ISBN 978-85-359-0736-0. O arquivo local corresponde à imagem da nova edição de 2025, não à edição original.
+- **Origem do JPG no repositório:** não localizada.
 - **Autorização/licença:** não localizada.
-- **Fundamento editorial:** uso de miniatura para identificar a obra investigada; avaliação específica pendente.
-- **Crédito recomendado:** preencher após identificar a edição mostrada no arquivo local. O crédito da edição de 2025 não deve ser aplicado automaticamente à edição de 2005.
+- **Crédito bibliográfico recomendado:** Marçal Aquino. *Eu receberia as piores notícias dos seus lindos lábios*. Nova edição. Companhia das Letras, 2025. Capa: Alceu Chiesorin Nunes.
 
 ### 3. `laranja-mecanica.jpg` — *Laranja Mecânica*
 
 - **Autor:** Anthony Burgess.
-- **Referência oficial localizada:** Editora Aleph, edição lançada em 20/06/2019, ISBN **978-85-7657-446-0**, 288 páginas.
+- **Correspondência visual:** confirmada com a capa da quarta edição da Aleph, lançada em 2019, que reproduz uma cena do filme de Stanley Kubrick.
+- **ISBN:** 978-85-7657-446-0.
 - **Crédito de capa informado pela editora:** Giovanna Cianelli.
-- **Fonte bibliográfica:** https://aleph.com.br/products/laranja-mecanica
-- **Outra edição oficial localizada:** edição comemorativa de 50 anos, lançada em 2012, ISBN **978-85-7657-136-0**, crédito de capa para Pedro Inoue.
-- **Fonte da edição comemorativa:** https://aleph.com.br/products/laranja-mecanica-edicao-comemorativa-de-50-anos
-- **Correspondência com o arquivo local:** não confirmada; há mais de uma edição com capas e créditos diferentes.
-- **Origem do JPG:** não localizada.
+- **Fonte bibliográfica/editorial:** https://aleph.com.br/products/laranja-mecanica
+- **Confirmação acadêmica da variante:** dissertação de Rodrigo Bilhalva Moncks, UFSC (2020), *A Laranja Mecânica no Brasil*, p. 61–62, identifica as diferentes capas brasileiras e descreve a quarta capa da Aleph como cena do filme; a sequência editorial identifica as reedições Aleph de 2004, 2012, 2014 e 2019.
+- **Fonte acadêmica:** https://repositorio.ufsc.br/xmlui/bitstream/handle/123456789/216249/PGET0468-D.pdf?isAllowed=y&sequence=-1
+- **Origem do JPG no repositório:** não localizada.
 - **Autorização/licença:** não localizada.
-- **Fundamento editorial:** uso de miniatura para identificação da obra objeto da apuração; avaliação específica pendente.
-- **Crédito recomendado:** somente após identificar qual edição está representada. Não escolher entre Giovanna Cianelli e Pedro Inoue por suposição.
+- **Crédito bibliográfico recomendado:** Anthony Burgess. *Laranja Mecânica*. Aleph, 2019. Capa: Giovanna Cianelli.
 
 ### 4. `macunaima.jpg` — *Macunaíma*
 
 - **Autor:** Mário de Andrade.
-- **Referência oficial localizada 1:** Penguin-Companhia, edição de 2016, ISBN **978-85-8285-041-1**, 240 páginas.
-- **Fonte bibliográfica:** https://www.companhiadasletras.com.br/livro/9788582850411/macunaima
-- **Referência oficial localizada 2:** José Olympio/Record, edição lançada em 07/02/2022, ISBN **978-65-5847-065-6**, 127 páginas; a editora informa que reproduz o projeto gráfico clássico de 1937.
-- **Fonte bibliográfica:** https://www.record.com.br/products/macunaima/
-- **Correspondência com o arquivo local:** não confirmada. As duas edições não devem ser tratadas como a mesma capa.
-- **Origem do JPG:** não localizada.
-- **Autorização/licença:** não localizada.
-- **Fundamento editorial:** uso de miniatura para identificar a obra objeto da apuração; avaliação específica pendente.
-- **Crédito recomendado:** completar após identificar edição e responsável pela arte na ficha correspondente. A página da edição Record consultada não informa, no texto recuperado, crédito nominal da capa.
+- **Correspondência visual:** identificada com a capa histórica da segunda edição da Livraria José Olympio Editora, com o título, a indicação “2ª edição” e a vinheta ilustrada central. Não corresponde à capa das edições contemporâneas Penguin ou José Olympio/Record.
+- **Projeto gráfico/ilustração:** Santa Rosa.
+- **Referência acadêmica:** dissertação da Universidade de Brasília sobre a editora José Olympio identifica a imagem como *Macunaíma*, 1935–1939, e credita projeto e ilustração a Santa Rosa.
+- **Fonte acadêmica:** https://repositorio.unb.br/bitstream/10482/12012/1/2012_IaraCarneiroTabosaPena.pdf
+- **Edição/ISBN:** a imagem indica segunda edição; não foi possível estabelecer, a partir do arquivo isolado, o ano exato do exemplar fotografado nem ISBN.
+- **Origem do JPG no repositório:** não localizada.
+- **Autorização/licença:** não localizada. A antiguidade da edição não basta para concluir que a arte de capa esteja em domínio público; é necessário apurar os direitos da ilustração e do projeto gráfico.
+- **Crédito bibliográfico recomendado:** Mário de Andrade. *Macunaíma*. 2ª edição, Livraria José Olympio Editora. Capa/projeto gráfico: Santa Rosa. Ano do exemplar não confirmado.
 
 ### 5. `memorias-postumas.jpg` — *Memórias póstumas de Brás Cubas*
 
 - **Autor:** Machado de Assis.
-- **Referência oficial localizada 1:** Penguin-Companhia, edição de 2014, ISBN **978-85-8285-001-5**, 368 páginas.
-- **Fonte bibliográfica:** https://www.companhiadasletras.com.br/livro/9788582850015/memorias-postumas-de-bras-cubas
-- **Referência oficial localizada 2:** Clássicos Zahar, edição de bolso de luxo de 2023, ISBN **978-65-8495-205-8**, 424 páginas; a editora credita a capa a Rafael Nobre.
-- **Fonte bibliográfica:** https://www.companhiadasletras.com.br/livro/9786584952058/memorias-postumas-de-bras-cubas-edicao-bolso-de-luxo
-- **Correspondência com o arquivo local:** não confirmada. Não atribuir o crédito de Rafael Nobre ao JPG sem confirmar que se trata da edição Zahar.
-- **Origem do JPG:** não localizada.
+- **Correspondência visual:** confirmada com a edição Penguin-Companhia lançada em 16/09/2014.
+- **ISBN:** 978-85-8285-001-5.
+- **Fonte editorial:** https://www.companhiadasletras.com.br/livro/9788582850015/memorias-postumas-de-bras-cubas
+- **Crédito nominal de capa:** não informado na ficha editorial consultada.
+- **Observação:** não corresponde à edição Zahar de 2023, ISBN 978-65-8495-205-8; portanto, não atribuir a Rafael Nobre o crédito daquela outra edição.
+- **Origem do JPG no repositório:** não localizada.
 - **Autorização/licença:** não localizada.
-- **Fundamento editorial:** uso de miniatura para identificar a obra objeto da apuração; avaliação específica pendente.
-- **Crédito recomendado:** preencher após identificar qual das edições (ou outra) aparece no arquivo.
+- **Crédito bibliográfico recomendado:** Machado de Assis. *Memórias póstumas de Brás Cubas*. Penguin-Companhia, 2014. ISBN 978-85-8285-001-5. Crédito da capa não informado na ficha consultada.
 
 ### 6. `menino-marrom.jpg` — *O menino marrom*
 
 - **Autor e ilustrador:** Ziraldo.
 - **Editora:** Melhoramentos.
-- **Referência institucional localizada:** Instituto Ziraldo informa a edição atual como 1986 e lista os ISBNs **85-06-02998-8**, **85-06-01009-8**, **978-85-06-01009-9**, **978-85-06-05674-5** e **978-85-06-00519-4**.
-- **Fonte bibliográfica:** https://institutoziraldo.art.br/editorial/o-menino-marrom/
-- **Referência adicional de edição:** catálogo de compras públicas de Erechim identifica edição Melhoramentos de 2012, ISBN **9788506005194**, capa dura, 32 páginas. Esse registro não comprova que seja a edição do arquivo local.
-- **Fonte adicional:** https://www.pmerechim.rs.gov.br/uploads/licitacoes/88e9f2e4474f0ebc7283b794dbf2e193.pdf
-- **Correspondência com o arquivo local:** não confirmada; há múltiplos ISBNs/edições.
-- **Origem do JPG:** não localizada.
+- **Correspondência visual/bibliográfica:** compatível com a edição Melhoramentos de 2012, ISBN **978-85-06-00519-4** (também grafado 9788506005194), 32 páginas. O registro bibliográfico aparece em documentos de compras públicas e em catálogos de livrarias; a imagem local apresenta a composição da capa dessa edição.
+- **Referência institucional sobre a obra e os créditos:** Instituto Ziraldo identifica Ziraldo como escritor e ilustrador e Melhoramentos como editora; registra diferentes ISBNs para edições da obra.
+- **Fonte institucional:** https://institutoziraldo.art.br/editorial/o-menino-marrom/
+- **Referência bibliográfica complementar:** https://www.livrariadatarde.com.br/produto/o-menino-marrom-pinto-ziraldo-alves.html
+- **Origem do JPG no repositório:** não localizada.
 - **Autorização/licença:** não localizada.
-- **Fundamento editorial:** uso de miniatura para identificar a obra objeto da apuração; avaliação específica pendente.
-- **Crédito recomendado:** *O menino marrom*, Ziraldo. Melhoramentos. Crédito da ilustração: Ziraldo. Confirmar a edição antes de acrescentar ano/ISBN.
+- **Crédito bibliográfico recomendado:** Ziraldo. *O menino marrom*. Melhoramentos, edição de 2012. Autor e ilustração: Ziraldo. ISBN 978-85-06-00519-4.
 
-### 7. `meninas-sonhadoras.jpg` — *Meninas sonhadoras, mulheres cientistas*
+### 7. `meninas-sonhadoras.jpg` — *Meninas sonhadoras, mulheres cientistas: Linguagens e Ciências Humanas*
 
 - **Autora:** Flávia Martins de Carvalho.
 - **Ilustrador:** Leonardo Malavazzi.
 - **Editora:** Editora Mostarda.
-- **Problema de identificação:** a editora publicou volumes distintos para Matemática e Ciências da Natureza (ISBN **978-65-88183-75-5**) e Linguagens e Ciências Humanas (ISBN **978-65-88183-76-2**), além de um box (ISBN **978-65-88183-71-7**). O nome genérico do arquivo não permite saber qual volume está representado.
-- **Fonte oficial — Matemática e Ciências da Natureza:** https://www.editoramostarda.com.br/produto/meninas-sonhadoras-ciencias-naturais/
-- **Fonte oficial — Linguagens e Ciências Humanas:** https://www.editoramostarda.com.br/produto/meninas-sonhadoras-ciencias-humanas/
-- **Fonte oficial — box:** https://www.editoramostarda.com.br/produto/box-meninas-sonhadoras-mulheres-cientistas/
-- **Catálogo oficial da editora:** https://www.editoramostarda.com.br/wp-content/uploads/2025/07/Catalogo-Trade-Jul-25.pdf
-- **Correspondência com o arquivo local:** não confirmada; é necessário identificar o volume pela capa.
-- **Origem do JPG:** não localizada.
+- **Correspondência visual:** confirmada com o volume **Linguagens e Ciências Humanas**, não com o volume Matemática e Ciências da Natureza nem com o box.
+- **ISBN:** 978-65-88183-76-2.
+- **Fonte oficial da editora:** https://www.editoramostarda.com.br/produto/meninas-sonhadoras-ciencias-humanas/
+- **Catálogo oficial:** https://www.editoramostarda.com.br/wp-content/uploads/2025/07/Catalogo-Trade-Jul-25.pdf
+- **Origem do JPG no repositório:** não localizada.
 - **Autorização/licença:** não localizada.
-- **Fundamento editorial:** uso de miniatura para identificar a obra objeto da apuração; avaliação específica pendente.
-- **Crédito recomendado:** Flávia Martins de Carvalho (texto) e Leonardo Malavazzi (ilustrações). Confirmar o volume/ISBN antes de publicar a referência completa.
+- **Crédito bibliográfico recomendado:** Flávia Martins de Carvalho (texto); Leonardo Malavazzi (ilustrações). *Meninas sonhadoras, mulheres cientistas: Linguagens e Ciências Humanas*. Editora Mostarda. ISBN 978-65-88183-76-2.
 
-## Síntese da verificação
+## Quadro de conferência
 
-| Arquivo | Referência editorial oficial localizada | Edição do JPG confirmada? | Crédito da arte identificado? |
+| Arquivo | Edição/variante identificada | ISBN | Crédito da capa/arte |
 |---|---|---|---|
-| `avesso-da-pele.jpg` | Sim — ISBN 9788535933390 | Não | Sim, Alceu Chiesorin Nunes (para a edição de 2020) |
-| `piores-noticias.jpg` | Sim — edições de 2005 e 2025 | Não | Sim, Alceu Chiesorin Nunes apenas para a edição de 2025 |
-| `laranja-mecanica.jpg` | Sim — Aleph 2012 e 2019 | Não | Sim, créditos diferentes por edição |
-| `macunaima.jpg` | Sim — Penguin 2016 e José Olympio 2022 | Não | Não confirmado para o arquivo local |
-| `memorias-postumas.jpg` | Sim — Penguin 2014 e Zahar 2023 | Não | Sim, Rafael Nobre para a edição Zahar de 2023 |
-| `menino-marrom.jpg` | Sim — Instituto Ziraldo e Melhoramentos | Não | Ziraldo, autor e ilustrador; edição local não confirmada |
-| `meninas-sonhadoras.jpg` | Sim — Mostarda, volumes distintos | Não | Leonardo Malavazzi, ilustrador; volume local não confirmado |
+| `avesso-da-pele.jpg` | Companhia das Letras, 2020 | 9788535933390 | Alceu Chiesorin Nunes |
+| `piores-noticias.jpg` | Companhia das Letras, nova edição, 2025 | 9788535938074 | Alceu Chiesorin Nunes |
+| `laranja-mecanica.jpg` | Aleph, 2019 | 9788576574460 | Giovanna Cianelli |
+| `macunaima.jpg` | 2ª edição histórica, José Olympio, 1935–1939 | Não confirmado | Santa Rosa |
+| `memorias-postumas.jpg` | Penguin-Companhia, 2014 | 9788582850015 | Não informado na ficha consultada |
+| `menino-marrom.jpg` | Melhoramentos, 2012 | 9788506005194 | Ziraldo |
+| `meninas-sonhadoras.jpg` | Mostarda, Linguagens e Ciências Humanas | 9786588183762 | Leonardo Malavazzi |
 
-## Próxima conferência necessária
+## Pendências que permanecem
 
-A pesquisa bibliográfica não permite concluir qual edição está retratada em cada JPG. Para fechar essa etapa, é necessário comparar visualmente os sete arquivos do repositório com as capas das edições oficiais identificadas. Até essa comparação, não inserir ISBN, ano ou crédito específico de uma edição no cadastro público como se estivesse confirmado.
-
-Também é necessário localizar a origem histórica de cada arquivo (URL/meio e data de obtenção), caso essa informação exista em registros de download, histórico de commits ou arquivos de trabalho. O caminho atual no GitHub prova apenas que o arquivo está no repositório, não de onde foi obtido.
+1. **Origem dos JPGs:** não foi possível recuperar a URL, o canal ou a data de obtenção de nenhum dos sete arquivos. O caminho atual no GitHub não comprova a origem.
+2. **Licença/autorização:** não foi localizada autorização individual ou licença para nenhum dos sete arquivos.
+3. **Direitos da capa histórica de Macunaíma:** a identificação de Santa Rosa como autor do projeto/ilustração não resolve, por si só, o status jurídico dos direitos da arte.
+4. **Memórias póstumas:** a editora não informa crédito nominal da capa na ficha consultada; não inventar esse crédito.
+5. **Fundamento editorial:** registrar na ficha de cada ocorrência a finalidade de identificação documental, a necessidade da miniatura, a dimensão proporcional e a relação com a apuração. A análise contextual não equivale a autorização.
 
 ## Decisão editorial provisória
 
-- **Não remover automaticamente as sete capas** apenas porque o repositório ainda não registra autorização individual.
-- Não declarar que as capas estão autorizadas ou em domínio público.
-- Manter as miniaturas apenas no contexto informativo/documental da obra e em dimensão proporcional; não reaproveitá-las isoladamente em publicidade ou material promocional sem nova avaliação.
-- Não adicionar novas capas até registrar origem, crédito e avaliação do fundamento de uso.
-- Se a edição não puder ser identificada, não inventar crédito ou ISBN: manter a identificação bibliográfica da obra e sinalizar internamente a edição como não confirmada.
+- Não remover automaticamente as sete capas apenas porque não há autorização arquivada.
+- Não declarar que as imagens estão licenciadas ou em domínio público.
+- Manter miniaturas somente no contexto informativo/documental da obra, em dimensão proporcional, sem reutilização promocional isolada.
+- Não adicionar novas capas sem origem, crédito e avaliação documental.
+- Se a imagem não for necessária à compreensão da apuração, considerar substituí-la por metadados bibliográficos e link para a editora.
+- Preservar registro da edição identificada e das limitações acima para que futuras revisões não atribuam capa, ISBN ou crédito de uma edição diferente.
 
 ## Referências jurídicas e técnicas
 
 - BRASIL. Lei nº 9.610/1998, especialmente arts. 45 e 46: https://www.planalto.gov.br/ccivil_03/leis/l9610.htm
 - ABTU/CNU. *Manual Prático de Direitos Autorais*. 2012, p. 22–23. Orientação setorial sobre capas em contexto jornalístico; não equivale a decisão judicial ou garantia universal.
 
-**Status:** pesquisa de referências editoriais oficiais realizada para as sete obras. A edição efetivamente reproduzida em cada JPG, a origem histórica dos arquivos, a autorização/licença e a avaliação editorial individual continuam sem confirmação. Não houve remoção nem substituição de capas.
+**Status:** comparação visual das sete capas realizada. Edições identificadas para seis arquivos e variante histórica identificada para *Macunaíma*, com as ressalvas acima. Origem dos JPGs, autorização/licença e avaliação editorial individual ainda pendentes. Nenhuma imagem foi removida ou substituída.
