@@ -687,7 +687,10 @@ const FONTES = {
   "tipo": "P1","veic":"Câmara Municipal de Limeira","data":"2019-08-08","tit":"Requerimento nº 451/2019 · Clayton Silva","url":"https://consulta.limeira.sp.leg.br/arquivo?Id=215235"},
  "camara-limeira-resp": {
   "tipo": "P3","veic":"Prefeitura de Limeira · Secretaria Municipal de Educação","data":"2019-09-24","tit":"Ofício GSE nº 363/2019 · resposta sobre A bolsa amarela","url":"https://consulta.limeira.sp.leg.br/arquivo?Id=226368"},
- "camara-limeira-tramitacao": {\n  "tipo":"P1","veic":"Câmara Municipal de Limeira","data":"2019-10-15","tit":"Tramitação oficial do Requerimento nº 451/2019 e registro da resposta","url":"https://consulta.limeira.sp.leg.br/Documentos/Documento/204159"\n },\n "uninter-bolsa": {
+ "camara-limeira-tramitacao": {
+  "tipo":"P1","veic":"Câmara Municipal de Limeira","data":"2019-10-15","tit":"Tramitação oficial do Requerimento nº 451/2019 e registro da resposta","url":"https://consulta.limeira.sp.leg.br/Documentos/Documento/204159"
+ },
+ "uninter-bolsa": {
   "tipo": "O1",
   "veic": "Uninter Notícias (artigo de opinião)",
   "data": "2026-05-26",
