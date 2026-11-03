@@ -104,3 +104,96 @@
 **Pergunta central da investigação:** após a ordem judicial que impediu a movimentação do acervo e a comunicação de desistência da doação, qual foi a destinação física e a condição de acesso aos livros classificados e aos cerca de 300 títulos individualizados?
 
 ---
+
+
+## 7. Aditamento — nova evidência sobre a destinação dos cerca de 300 livros
+
+**Atualização da pesquisa:** 3 de novembro de 2026. Esta seção prevalece sobre a avaliação provisória da lacuna no item 4 e nas próximas diligências.
+
+### 7.1 Evidência acadêmica direta sobre reintegração
+
+Foi localizada a dissertação de mestrado de Lucas dos Santos de Paulo, *O Acervo da vergonha: atos e intencionalidades na Fundação Cultural Palmares*, defendida e aprovada na Universidade de Brasília em 22/05/2024. Repositório institucional:  
+https://repositorio.unb.br/bitstream/10482/50687/1/LucasDosSantosDePaulo_DISSERT.pdf
+
+Na página impressa 86 (linhas extraídas 1371–1380 do PDF), o pesquisador informa que:
+- após a mudança de gestão, entre o fim de 2022 e o início de 2023, o “Acervo da vergonha” foi desfeito;
+- em visita presencial à Biblioteca Oliveira Silveira, em 29/02/2024, constatou que os livros que fizeram parte do “Acervo da vergonha” haviam sido reintegrados ao acervo geral da biblioteca;
+- naquela data, parte da coleção estava em caixas em razão de mudança de sede prevista para maio de 2024.
+
+A dissertação contém fotografias da visita e entrevistas semiestruturadas com 11 pessoas, incluindo três funcionários da FCP. As identidades dos entrevistados foram protegidas por compromisso ético; não atribuir falas a pessoas identificáveis.
+
+### 7.2 Evidência testemunhal sobre ausência de descarte
+
+Nas entrevistas reproduzidas nos apêndices (páginas impressas 163–169), funcionários entrevistados afirmam que não houve doação, desbaste ou descarte dos livros que integraram o espaço, mas sim separação física em uma sala. Um entrevistado relata que os livros estavam em sala identificada por placa e que eram deslocados para lá por ordens de superiores. Outro descreve a reintegração como etapa necessária antes do processamento técnico e da disponibilização aos leitores.
+
+Esses depoimentos são relevantes, mas são relatos anonimizados de entrevistas acadêmicas, não inventários assinados ou termos oficiais de movimentação. Apresentá-los como evidência testemunhal corroborativa, sem convertê-los em documento administrativo.
+
+### 7.3 Confirmação institucional posterior — Relatórios de Gestão 2024 e 2025
+
+**Relatório de Gestão FCP — exercício 2024:**  
+https://www.gov.br/palmares/pt-br/midias/arquivos/rel-gestao-2024/1relatorio-de-gestao-exercicio-2024.pdf
+
+Na página impressa 42, a própria Fundação informa que:
+- a biblioteca tinha mesas de estudo e computadores para uso do público;
+- o empréstimo de livros ainda não havia começado;
+- os horários de visitação permaneciam reduzidos enquanto avançavam a classificação e a organização do acervo;
+- a digitalização estava em curso, e o sistema permitiria disponibilização dos títulos catalogados e digitalizados e futura abertura para empréstimos.
+
+**Relatório de Gestão FCP — exercício 2025:**  
+https://www.gov.br/palmares/pt-br/midias/arquivos/rel-gestao-2025/relatorio_palmares_cge_v_final_final_01.pdf
+
+Na página impressa 39, a FCP afirma que:
+- houve parcerias com bibliotecas da Câmara, do Senado, do IPHAN, da Casa Suely Carneiro e da Casa Carolina de Jesus, com empréstimos interbibliotecários;
+- obras do acervo foram digitalizadas e disponibilizadas na plataforma SOPHIA;
+- a biblioteca destinou livros a escolas, bibliotecas, coletivos culturais e eventos, por solicitações formalizadas no SEI;
+- houve distribuição de 35.674 exemplares em 2025.
+
+O relatório de 2025 não identifica se os títulos do antigo “Acervo da Vergonha” estão todos catalogados, digitalizados ou disponíveis para consulta pública individual. Tampouco prova que os 35.674 exemplares distribuídos incluem algum daqueles cerca de 300 títulos. Não inferir isso.
+
+### 7.4 Processo de pesquisa acadêmica autorizado pela própria FCP
+
+A dissertação reproduz o aceite institucional assinado eletronicamente pelo então presidente João Jorge Santos Rodrigues em 10/11/2023, no processo SEI **01420.102576/2023-27**, autorizando a pesquisa e entrevistas com funcionários da Fundação sobre a biblioteca e o “Acervo da vergonha”. Isso confirma que a pesquisa ocorreu com autorização institucional, mas não transforma entrevistas em declaração oficial da FCP sobre o destino de cada exemplar.
+
+### 7.5 Lista nominal dos cerca de 300 títulos
+
+Foi localizada referência jornalística à matéria “Saiba quais foram os 300 livros banidos do acervo da Fundação Palmares”, publicada em 16/06/2021, com relação de títulos. A página original de O Globo não foi acessível nesta rodada; há reprodução/registro no Observatório de Educação do Instituto Unibanco e referências na dissertação.  
+- Registro no Observatório de Educação: https://observatoriodeeducacao.institutounibanco.org.br/pesquisa?order=publishDate+desc&page=7&q=Luiz+Carlos
+- Referência à matéria original no O Globo: https://oglobo.globo.com/cultura/saiba-quais-foram-os-300-livros-banidos-do-acervo-da-fundacao-palmares-25063786
+
+A lista precisa ser preservada como relação jornalística secundária até que se obtenha a planilha/documento original que lhe deu origem. Não foi possível nesta rodada confirmar correspondência título a título entre essa lista e o inventário oficial de 2024.
+
+### 7.6 Processo judicial: consulta oficial e limite de acesso
+
+O TRF2 informa que a consulta pública de processos é feita pelo Balcão Jus / consulta processual unificada:
+https://balcaojus.trf2.jus.br/balcaojus/#/consultar
+
+A página institucional de orientação informa que a consulta de andamento pode ser feita pelo número do processo, nome da parte ou CPF; para acesso integral às peças, pode ser necessária a chave do processo, que pode ser solicitada à Vara Federal responsável:
+https://trf2.jus.br/jfrj/artigo/especialidade-execucao-fiscal/como-consultar-andamento-de-seu-processo
+
+Ação Popular: **5006660-67.2021.4.02.5117/RJ**. A pesquisa web desta rodada não retornou a sentença ou certidão final. Portanto, não afirmar que a ação transitou em julgado ou que a ordem judicial foi revogada. O processo permanece como diligência jurídica/documental a consultar no sistema oficial.
+
+### 7.7 Estado atualizado da lacuna
+
+**Parcialmente resolvida, com evidência convergente de reintegração física ao acervo geral até 29/02/2024.**
+
+Pode ser afirmado, com atribuição explícita à dissertação acadêmica, que o espaço foi desfeito após a mudança de gestão e que, em visita presencial de 29/02/2024, o pesquisador registrou que os livros que o compunham estavam reintegrados ao acervo geral da Biblioteca Oliveira Silveira. Entrevistas com funcionários reproduzidas na mesma dissertação corroboram que houve separação física, mas não descarte ou doação.
+
+A documentação institucional de 2024 confirma que o acesso público à biblioteca ainda tinha restrições operacionais: horário reduzido e empréstimos não iniciados. O relatório de 2025 demonstra avanço de catalogação/digitalização e disponibilização de títulos no SOPHIA, além de empréstimos interbibliotecários, mas não individualiza os antigos títulos segregados.
+
+**Ainda não resolvido:** prova administrativa título a título da reintegração; localização e situação atual de cada exemplar; disponibilidade individual no catálogo SOPHIA ou consulta presencial; andamento final da ação judicial; identificação da origem documental da lista jornalística dos 300 títulos.
+
+### 7.8 Diligência final focalizada — pedido de informação revisado
+
+A próxima solicitação à FCP deve deixar de perguntar genericamente “o que aconteceu com os livros” e pedir somente os registros que podem fechar a cadeia documental:
+
+1. Termo, relatório, despacho, inventário ou registro de movimentação que formalizou a dissolução do espaço denominado “Acervo da vergonha” e a reintegração dos livros ao acervo geral, com data, unidade responsável e autoridade que autorizou.
+2. Relação nominal dos títulos e quantitativos efetivamente separados em 2021, com identificadores bibliográficos, e relação/registro que demonstre sua reintegração.
+3. Número de registro patrimonial ou bibliográfico atual, localização e situação de acesso de cada título da relação, admitida resposta por planilha.
+4. Relatórios de processamento técnico, catalogação e digitalização desses títulos, inclusive identificadores/links públicos no SOPHIA, se existentes.
+5. Caso algum exemplar tenha sido doado, transferido, descartado, perdido ou permaneça em depósito separado, cópia do ato que autorizou a providência e dos registros de execução, com datas e quantitativos.
+6. Informação sobre a possibilidade atual de consulta presencial e as regras de acesso aos exemplares, sem exigir empréstimo domiciliar.
+7. Cópia das peças públicas ou certidão do processo SEI 01420.102576/2023-27 relacionadas à autorização e acompanhamento da pesquisa acadêmica, se necessárias à localização dos registros; não solicitar entrevistas protegidas por anonimato.
+8. Identificação do processo administrativo que formalizou a mudança da Biblioteca Oliveira Silveira para a sede atual e os registros de transporte/guarda do acervo no período da mudança, apenas na parte que permita rastrear a coleção.
+
+**Formulação editorial provisória:** “Depois de permanecer separado em uma sala criada em 2021, o conjunto conhecido como ‘Acervo da Vergonha’ foi desfeito após a mudança de gestão. Pesquisa de mestrado aprovada pela UnB registra que, em visita presencial à Biblioteca Oliveira Silveira em 29 de fevereiro de 2024, os livros já haviam sido reintegrados ao acervo geral. A documentação pública ainda não permite confirmar, título a título, a situação atual de consulta e a correspondência integral entre a lista jornalística dos cerca de 300 livros e o inventário institucional.”
+
