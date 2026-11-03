@@ -8,7 +8,7 @@
 | Entrega | Critério de conclusão | Estado |
 |---|---|---|
 | Revisão dos registros parcialmente verificados | Cada pendência encerrada por documento/fonte ou mantida explicitamente com justificativa | EL-005 e EL-015 a EL-021 verificados no núcleo factual; 10 registros parcialmente verificados permanecem (EL-022 a EL-024, EL-028, EL-030 a EL-032, EL-035 a EL-037) |
-| Identificação de signatários | Nome, papel, documento e fonte primária; ou indicação explícita de que não foi identificado | Sete registros em estágio de decisão/execução (EL-025 a EL-029, EL-032 e EL-033) ainda sem signatário formal identificado. EL-030 é pedido parlamentar de autoria nominal; EL-035 tem pedido assinado por cargos, mas nomes não divulgados e autoridade individual da SME não identificada. EL-031 não tem ordem de retirada cuja assinatura seja aplicável; não preencher por inferência |
+| Identificação de signatários | Nome, papel, documento e fonte primária; ou indicação explícita de que não foi identificado | Nove registros em estágio de decisão/execução (EL-025 a EL-029, EL-032, EL-033, EL-036 e EL-037) ainda sem signatário formal identificado. EL-035 permanece em categoria distinta: o pedido é atribuído a cargos da unidade, mas os nomes não foram divulgados e a autoridade individual da SME que autorizou a providência não foi identificada. EL-030 é pedido parlamentar de autoria nominal; EL-035 tem pedido assinado por cargos, mas nomes não divulgados e autoridade individual da SME não identificada. EL-031 não tem ordem de retirada cuja assinatura seja aplicável; não preencher por inferência |
 | Revisão de fontes e links | URL testada, tipo de fonte, afirmação sustentada e independência avaliadas | Protocolo publicado; 94/94 entradas de fonte classificadas; o artigo do Gênio Criador foi classificado como blog institucional/editorial (B1), sem tratá-lo como confirmação independente |
 | Revisão de atribuições políticas | Governo, partido, agente e papel separados; relação causal documentada | Regra editorial definida; revisão caso a caso pendente |
 | Direitos e créditos de capas | Origem, titular, licença/permissão, crédito e uso registrado | Inventário de sete capas criado; origem e autorização individual ainda precisam ser verificadas antes de ampliar ou manter a reprodução |
@@ -24,7 +24,7 @@
 | Análises automatizadas | Números e tabelas derivados de CASOS, ATOS, AGENTES e PAPEIS | Implementação nesta branch |
 | Poder e censura | Consulta de agentes e papéis derivados da base | Implementado nesta branch, com perfis individuais gerados por agente |
 | Domínio próprio | Domínio escolhido, DNS, HTTPS e canonical conferidos | Depende de decisão e acesso da responsável |
-| Acessibilidade e mobile | Testes manuais e automatizados documentados; sem falhas críticas | Auditoria estática no CI: 166 páginas HTML e 36 imagens, zero erros bloqueantes/alertas; testes manuais de teclado, leitor de tela, contraste e dispositivos reais pendentes |
+| Acessibilidade e mobile | Testes manuais e automatizados documentados; sem falhas críticas | Auditoria estática no CI: 167 páginas HTML e 36 imagens, zero erros bloqueantes/alertas; testes manuais de teclado, leitor de tela, contraste e dispositivos reais pendentes |
 | Identidade editorial | Paleta, tipografia, hierarquia e componentes coerentes; inspeção visual e contraste aprovados | Direção de arte implementada em `assets/estilo.css` e documentada em `docs/direcao-de-arte-identidade-editorial.md`; inspeção visual manual e teste WCAG pendentes |
 
 ## P2 — Estratégico
