@@ -8,7 +8,7 @@
 
 Os sete arquivos locais foram abertos e comparados com referências editoriais, bibliográficas e acadêmicas disponíveis. A comparação permitiu identificar com segurança cinco edições/variantes e apontar duas correspondências com alto grau de confiança, com ressalvas descritas abaixo.
 
-**Limite importante:** identificar a edição representada não revela de onde o JPG foi baixado, nem comprova licença ou autorização para reprodução. Para os sete arquivos, a origem histórica do arquivo local e a autorização/licença continuam não localizadas.
+**Limite importante:** identificar a edição representada não revela de onde o JPG foi baixado, nem comprova licença ou autorização para reprodução. A consulta ao histórico GitHub encontrou, para os sete arquivos, o mesmo primeiro commit disponível no repositório: `ce8b0b990c27fd88cda437cb4450d7d7be120487`, de 28/10/2026, com a mensagem “Atualiza o site: apuração revisada, 34 casos, página Mundo, metodologia e redesenho”. O histórico não registra a URL, o canal ou a data em que as imagens foram obtidas antes de serem incluídas no repositório. Portanto, essa é apenas a primeira data de rastreabilidade no GitHub, não a origem original dos arquivos. A autorização/licença também continua não localizada.
 
 ## Inventário individual
 
@@ -111,7 +111,7 @@ Os sete arquivos locais foram abertos e comparados com referências editoriais, 
 
 ## Pendências que permanecem
 
-1. **Origem dos JPGs:** não foi possível recuperar a URL, o canal ou a data de obtenção de nenhum dos sete arquivos. O caminho atual no GitHub não comprova a origem.
+1. **Origem dos JPGs:** o histórico GitHub só permite rastrear a inclusão dos sete arquivos no commit `ce8b0b990c27fd88cda437cb4450d7d7be120487`, em 28/10/2026. Não informa a origem anterior, URL, canal ou data de obtenção.
 2. **Licença/autorização:** não foi localizada autorização individual ou licença para nenhum dos sete arquivos.
 3. **Direitos da capa histórica de Macunaíma:** a identificação de Santa Rosa como autor do projeto/ilustração não resolve, por si só, o status jurídico dos direitos da arte.
 4. **Memórias póstumas:** a editora não informa crédito nominal da capa na ficha consultada; não inventar esse crédito.
@@ -131,4 +131,4 @@ Os sete arquivos locais foram abertos e comparados com referências editoriais, 
 - BRASIL. Lei nº 9.610/1998, especialmente arts. 45 e 46: https://www.planalto.gov.br/ccivil_03/leis/l9610.htm
 - ABTU/CNU. *Manual Prático de Direitos Autorais*. 2012, p. 22–23. Orientação setorial sobre capas em contexto jornalístico; não equivale a decisão judicial ou garantia universal.
 
-**Status:** comparação visual das sete capas realizada. Edições identificadas para seis arquivos e variante histórica identificada para *Macunaíma*, com as ressalvas acima. Origem dos JPGs, autorização/licença e avaliação editorial individual ainda pendentes. Nenhuma imagem foi removida ou substituída.
+**Status:** comparação visual das sete capas realizada. Edições identificadas para seis arquivos e variante histórica identificada para *Macunaíma*, com as ressalvas acima. A primeira ocorrência no histórico GitHub foi localizada em 28/10/2026, mas a origem anterior dos JPGs, autorização/licença e avaliação editorial individual ainda permanecem pendentes. Nenhuma imagem foi removida ou substituída.
