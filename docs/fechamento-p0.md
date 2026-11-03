@@ -70,3 +70,17 @@ As minutas em `docs/pedidos-lai-prontos.md` foram ampliadas para nove frentes: S
 Os dez registros permanecem parcialmente verificados. Não promover nenhum a “Verificado” sem documentação suficiente. Em especial: EL-022 não são “19 títulos”; EL-031 não é banimento de livro; EL-036/037 não são casos de destruição; EL-030 não comprova recolhimento; EL-028 e EL-032 não comprovam retorno físico.
 
 P0 está fechado como **preparação e revisão editorial**. O encerramento factual depende do protocolo e resposta dos pedidos, cotejo dos documentos, sincronização de JSON/CSV, regeneração das páginas e auditoria final. Nenhuma alteração de status deve ser feita por inferência.
+
+
+## Atualização EL-025/EL-026 — Fundação Cultural Palmares (03/11/2026)
+
+A investigação documental da Fundação Palmares foi ampliada após busca em fontes públicas, sem depender de novo pedido LAI.
+
+- Localizada a reprodução pública da relação de títulos divulgada em 2021: Por Dentro do RN, 17/06/2021. A página informa 261 entradas após retirar edições repetidas da lista anunciada como 300 títulos. A fonte é reprodução jornalística, não o anexo primário autenticado.
+- Iniciado cruzamento amostral entre a relação e o inventário oficial da FCP publicado em 08/08/2024. Foram encontradas correspondências de título/autor/ano para *Almas Mortas*, *Bandidos*, *O Sexo na Alemanha Nazista*, *O Mundo do Socialismo* e *A Pré-Revolução Brasileira*, além de correspondências para o *Dicionário do Folclore Brasileiro* em múltiplas edições e *O Capital* em múltiplos registros.
+- O PDF oficial FCP/Câmara (Nota Informativa SEI 0166090/2021 + relatório técnico da Câmara) identifica a Sala 11 como “sala da vergonha (livros)” e registra imagens de livros classificados como inadequados e caixas contendo livros para doação.
+- Correção de precisão: a Nota Informativa da FCP fala da Sala 1, com livros em caixas posteriormente postos em estantes; o relatório técnico da Câmara identifica a Sala 11 como “sala da vergonha”. Não há base para presumir que sejam a mesma sala ou o mesmo conjunto de livros.
+- Evitar afirmar que os livros estavam “trancados”: o relatório descreve portas com fechaduras simples, mas não demonstra bloqueio permanente de acesso.
+- A dissertação da UnB registra a reintegração geral ao acervo em visita presencial de 29/02/2024. O relatório de gestão 2025 confirma digitalização/disponibilização de títulos no SOPHIA e 35.674 exemplares distribuídos, mas não individualiza os títulos segregados em 2021.
+
+**Status atualizado:** a existência do espaço físico e a reintegração geral do conjunto estão sustentadas por evidência pública documental e acadêmica. A relação nominal deixou de ser uma lacuna absoluta, mas o cruzamento das 261 entradas com o inventário é apenas amostral. Permanecem pendentes a comparação integral, a rastreabilidade física título a título, a disponibilidade atual e o desfecho judicial. Não promover EL-025/EL-026 a “Verificado” até concluir esses pontos e atualizar as fichas públicas.
