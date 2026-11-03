@@ -2827,7 +2827,7 @@
    "mecanismo": "Veto a atividade",
    "estagio": "Decisão ou ordem",
    "situacao": "Revertido",
-   "desfecho": "Suspensão cancelada por decisão liminar",
+   "desfecho": "Suspensão temporária revertida; Secretaria afirma que não houve recolhimento dos exemplares",
    "eixo_tematico": "Cultura afro-brasileira",
    "justificativa_declarada": "Pais consideraram a obra “agressiva”, citando passagens sobre pacto de sangue e conflitos entre personagens.",
    "pressao_ou_pedido": "Pais, familiares e autoridades locais contestaram a abordagem pedagógica; o comunicado oficial não identifica nominalmente os reclamantes.",
@@ -2837,8 +2837,8 @@
    "resposta_ou_reversao": "Em 27 de junho de 2024, o juiz Espagner Wallysen Vaz Leite deferiu medida liminar e determinou o cancelamento imediato da suspensão temporária dos trabalhos pedagógicos.",
    "ato_ou_documento": "Comunicado oficial da Secretaria Municipal de Educação, publicado em 20 de junho de 2024, reconhecendo a orientação para suspender temporariamente os trabalhos pedagógicos; decisão liminar da 1ª Vara Cível no processo nº 5006658-14.2024.8.13.0183 determinou o cancelamento imediato da suspensão temporária.",
    "verificado": "Sim",
-   "pendencia": "Identificar o signatário formal do ato administrativo e confirmar o trânsito em julgado da ação popular.",
-   "nota": "Em comunicado oficial de 20 de junho, a Secretaria Municipal de Educação afirmou que orientou a suspensão temporária dos trabalhos pedagógicos com o livro após manifestações de pais, familiares e autoridades locais — não declarou recolhimento de todos os exemplares. Em decisão liminar assinada em 27 de junho de 2024, o juiz Espagner Wallysen Vaz Leite, da 1ª Vara Cível, determinou o cancelamento imediato da suspensão temporária, sob multa diária de R$ 5 mil. A cópia consultada não permite identificar o autor da ação, cujo nome aparece ocultado.",
+   "pendencia": "Obter a íntegra da decisão judicial e o andamento final da ação; confirmar documentalmente o cumprimento das orientações de retomada nas unidades escolares. O ofício da Secretaria informa que não houve recolhimento e que a retomada foi orientada em 21/06/2024.",
+   "nota": "Em 20 de junho de 2024, a Secretaria reconheceu ter orientado a suspensão temporária dos trabalhos pedagógicos após manifestações de pais, familiares e autoridades locais. O Ofício nº 216/2024/SEMED/PMCL, de 28 de junho, esclarece que não houve recolhimento: os exemplares permaneceram com alunos e familiares. O documento também informa que, em reunião de 21 de junho, a Secretaria orientou a retomada das atividades e organizou ações de diálogo com a comunidade escolar. Em 27 de junho, o juiz Espagner Wallysen Vaz Leite deferiu liminar para cancelar a suspensão, sob multa diária de R$ 5 mil. Portanto, a reversão administrativa já havia sido iniciada antes da liminar; não se deve atribuí-la exclusivamente ao Judiciário. A cópia consultada da decisão não permite identificar o autor da ação, cujo nome aparece ocultado.",
    "agentes": [
     {
      "nome": "Secretaria Municipal de Educação de Conselheiro Lafaiete",
@@ -2883,6 +2883,13 @@
      "titulo": "Processo nº 5006658-14.2024.8.13.0183 · decisão liminar em ação popular",
      "data": "2024-06-27",
      "url": "https://www.migalhas.com.br/arquivos/2024/6/C9AB64BF939FD5_%C2%B7ProcessoJudicialEletronico-1%C2%BA.pdf"
+    },
+    {
+     "veiculo": "Secretaria Municipal de Educação de Conselheiro Lafaiete",
+     "tipo": "P1",
+     "titulo": "Ofício nº 216/2024/SEMED/PMCL · informação à Comissão de Educação sobre O menino marrom",
+     "data": "2024-06-28",
+     "url": "https://sapl.conselheirolafaiete.mg.leg.br/media/sapl/public/materialegislativa/2024/17050/oficio_informacao_-_livro_o_menino_marrom.pdf"
     }
    ]
   },
@@ -3444,10 +3451,10 @@
    "assinatura": "Clayton Silva, vereador (PSC), assinou digitalmente o Requerimento nº 451/2019 em 12 de agosto de 2019; o documento pede informações sobre a distribuição e leitura da obra, não sua retirada.",
    "execucao": "Escolas da rede municipal, no âmbito do Clube de Leitura; a Secretaria informou que o livro já integrava acervo enviado pelo PNLD.",
    "resposta_ou_reversao": "Em 24 de setembro de 2019, a Secretaria respondeu que a obra não afrontava princípios morais e descreveu seu valor literário e pedagógico.",
-   "ato_ou_documento": "Requerimento nº 451/2019, de autoria do vereador Clayton Silva (PSC), protocolado em 12 de agosto de 2019, e resposta da Secretaria Municipal de Educação por meio do Ofício GSE nº 363/2019, de 24 de setembro de 2019. Os documentos registram questionamento parlamentar e defesa institucional da obra, não ordem ou pedido formal de retirada.",
+   "ato_ou_documento": "Requerimento nº 451/2019, de autoria do vereador Clayton Silva (PSC), protocolado em 8 de agosto de 2019 e lido na Câmara em 12 de agosto de 2019, e resposta da Secretaria Municipal de Educação por meio do Ofício GSE nº 363/2019, de 24 de setembro de 2019. Os documentos registram questionamento parlamentar e defesa institucional da obra, não ordem ou pedido formal de retirada.",
    "verificado": "Sim",
    "pendencia": "",
-   "nota": "O Requerimento nº 451/2019, de autoria de Clayton Silva (PSC), pediu informações sobre distribuição, atividades e critérios de escolha de A bolsa amarela. Na justificativa, o vereador afirmou que o livro abordava “ideologia de gênero” e questionou se afrontava princípios morais. A Secretaria Municipal de Educação respondeu em 24 de setembro que a obra integrava o Clube de Leitura, descreveu seu valor literário e declarou que ela não afrontava princípios morais. O documento não registra pedido de retirada nem retirada da obra. Este caso documenta pressão discursiva e questionamento parlamentar, não censura ou banimento.",
+   "nota": "O Requerimento nº 451/2019, de autoria de Clayton Silva (PSC), pediu informações sobre distribuição, atividades e critérios de escolha de A bolsa amarela. Na justificativa, o vereador afirmou que o livro abordava “ideologia de gênero” e questionou se afrontava princípios morais. O Ofício GSE nº 363/2019, datado de 24 de setembro, informa que a obra integrava o Clube de Leitura e afirma que ela não afrontava princípios morais. O sistema oficial da Câmara registra a resposta como documento recebido em 15 de outubro de 2019. O documento não registra pedido de retirada nem retirada da obra. Este caso documenta pressão discursiva e questionamento parlamentar, não censura ou banimento.",
    "agentes": [
     {
      "nome": "Clayton Silva",
@@ -3490,7 +3497,7 @@
      "veiculo": "Câmara Municipal de Limeira",
      "tipo": "P1",
      "titulo": "Requerimento nº 451/2019 · Clayton Silva",
-     "data": "2019-08-12",
+     "data": "2019-08-08",
      "url": "https://consulta.limeira.sp.leg.br/arquivo?Id=215235"
     },
     {
@@ -3499,6 +3506,13 @@
      "titulo": "Ofício GSE nº 363/2019 · resposta sobre A bolsa amarela",
      "data": "2019-09-24",
      "url": "https://consulta.limeira.sp.leg.br/arquivo?Id=226368"
+    },
+    {
+     "veiculo": "Câmara Municipal de Limeira",
+     "tipo": "P1",
+     "titulo": "Tramitação oficial do Requerimento nº 451/2019 e registro da resposta",
+     "data": "2019-10-15",
+     "url": "https://consulta.limeira.sp.leg.br/Documentos/Documento/204159"
     }
    ]
   },
