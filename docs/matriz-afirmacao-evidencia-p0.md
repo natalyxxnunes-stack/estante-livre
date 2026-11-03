@@ -18,11 +18,11 @@
 | Campo | Apuração |
 |---|---|
 | Afirmação examinada | A relação associada ao Memorando-Circular nº 4/2020/SEDUC-DGE continha títulos de Rubem Fonseca sujeitos a recolhimento. |
-| Fonte e localização | Reprodução de documento em PDF, p. 1/2, linhas numeradas 08–11, 14–15, 17, 21–22, 31–32, 34, 36–38 e 40–43: https://questoesrelevantes.wordpress.com/wp-content/uploads/2020/02/rondonia-livros-proibidos.pdf |
-| Evidência | E1, com ressalva de procedência: reprodução do documento/lista, não cópia obtida diretamente do processo SEI. |
-| O que sustenta | A lista reproduzida tem 43 posições numeradas. Há 19 posições atribuídas a Rubem Fonseca (incluindo a grafia “Ruben Fonseca” na posição 15), mas somente 18 títulos distintos, porque “O Seminarista” aparece duas vezes, nas posições 31 e 34. |
-| Limitação | A lista não comprova quantos exemplares foram encontrados ou efetivamente recolhidos em cada escola. O anexo original SEI 10053329 não foi obtido diretamente do processo. |
-| Próxima prova necessária | Adendo SEI 10053329 original; inventário por unidade escolar; registros de recolhimento, suspensão e devolução. |
+| Fonte e localização | Reprodução documental em PDF, p. 1 (relação de 43 itens), linhas 7–51; p. 2 (Memorando-Circular nº 4/2020/SEDUC-DGE), linhas 52–82: https://questoesrelevantes.wordpress.com/wp-content/uploads/2020/02/rondonia-livros-proibidos.pdf |
+| Evidência | E1 — reprodução identificável do documento e da relação, com ressalva de procedência: o PDF não foi obtido diretamente do processo SEI nem hospedado em domínio oficial. |
+| O que sustenta | A relação reproduzida tem 43 posições numeradas. Há 19 posições atribuídas a Rubem Fonseca (incluindo a grafia “Ruben Fonseca” na posição 15), mas somente 18 títulos distintos, porque “O Seminarista” aparece duas vezes, nas posições 31 e 34. O memorando reproduzido faz referência expressa ao Adendo ID 10053329 e determina que as CREs recolham os livros nele relacionados. |
+| Limitação | A proximidade das páginas no PDF não comprova, por si só, que a página da relação seja a íntegra autenticada do Adendo ID 10053329. A reprodução não comprova quantos exemplares foram encontrados ou efetivamente recolhidos em cada escola. |
+| Próxima prova necessária | Obter o Adendo SEI 10053329 diretamente do processo 0029.051300/2020-91 e confirmar a correspondência integral; inventário por unidade escolar; registros de recolhimento, suspensão e devolução. |
 | Tratamento editorial | Não publicar “19 livros diferentes”. Se mantido o conjunto, explicar: 19 entradas atribuídas ao autor, 18 títulos distintos na reprodução consultada. Não criar fichas individuais antes de cotejar o anexo original. |
 
 ### EL-023 — Rubem Alves (Rondônia, 2020)
