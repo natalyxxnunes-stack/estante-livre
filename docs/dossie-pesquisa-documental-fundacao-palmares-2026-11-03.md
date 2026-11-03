@@ -197,3 +197,72 @@ A próxima solicitação à FCP deve deixar de perguntar genericamente “o que 
 
 **Formulação editorial provisória:** “Depois de permanecer separado em uma sala criada em 2021, o conjunto conhecido como ‘Acervo da Vergonha’ foi desfeito após a mudança de gestão. Pesquisa de mestrado aprovada pela UnB registra que, em visita presencial à Biblioteca Oliveira Silveira em 29 de fevereiro de 2024, os livros já haviam sido reintegrados ao acervo geral. A documentação pública ainda não permite confirmar, título a título, a situação atual de consulta e a correspondência integral entre a lista jornalística dos cerca de 300 livros e o inventário institucional.”
 
+
+
+## 8. Nova rodada de busca em repositórios públicos e documentos institucionais — 03/11/2026
+
+Esta rodada priorizou documentos já publicados pela Câmara dos Deputados, pela própria FCP, pelo repositório institucional da UnB e por páginas oficiais de transparência. Não foi necessário protocolar pedido LAI para localizar as evidências abaixo.
+
+### 8.1 Consolidado oficial FCP/Câmara: Nota Informativa SEI 0166090/2021 e relatórios de diligência
+
+- PDF oficial hospedado pela FCP: https://www.gov.br/palmares/pt-br/midias/arquivos/download/resposta.pdf
+- A página oficial de publicações da FCP lista o arquivo como “CNIRC – Relatório da Comissão de Cultura e Resposta da Fundação Cultural Palmares”.
+- O PDF declara ser um consolidado das informações fornecidas pela FCP em resposta aos relatórios das visitas da Comissão de Cultura à sede da Fundação (novembro de 2021).
+- A primeira parte contém a Nota Informativa nº 0166090/2021, emitida pelo CNIRC em 22/11/2021. Nos itens 3.3 e 4.3, a própria Fundação afirma que títulos como “Sexo na Alemanha Nazista” e “Sexo Grupal” permaneceriam no acervo por força da liminar; também afirma que livros antes vistos em caixas na Sala 1 foram retirados das caixas e expostos em estantes, em sala com ar-condicionado.
+- O arquivo também reproduz o relatório técnico da diligência da Câmara. A descrição das salas identifica a Sala 11 como “sala da vergonha”, no primeiro andar, e registra em visita de 5/08/2021 a existência de uma sala com livros assim identificados. O relatório descreve condições físicas e de acondicionamento; não fornece uma lista de todos os títulos individualmente guardados nessa sala.
+- A fonte é especialmente valiosa por reunir versões documentais em confronto: a resposta da própria FCP e o relatório técnico produzido pela equipe da Câmara. Não tratar a resposta institucional como constatação independente: atribuir suas afirmações à FCP; atribuir observações físicas à equipe técnica da Câmara.
+- Referências verificáveis no PDF: páginas impressas 1–8 da Nota Informativa (PDF pp. 2–9); descrição de salas e Sala 11 no relatório técnico (PDF aproximadamente pp. 16–25 e seção fotográfica posterior).
+
+### 8.2 Inventário oficial de 2024: confirmação nominal de títulos que foram publicamente citados
+
+O inventário oficial de 9.696 títulos, publicado em 08/08/2024 e compilado em 2021, contém registros para:
+- “O Sexo na Alemanha Nazista”, de Hans Peter Bleual (registro 6708);
+- “O Manifesto Comunista”, de Karl Marx et al. (registro 6356);
+- “O Capital”, de Karl Marx, com múltiplas edições e exemplares (registros 6069–6080).
+
+Isso confirma que esses títulos constavam do inventário institucional do antigo acervo. Não comprova, isoladamente, que os exemplares físicos correspondentes estivessem disponíveis ao público em agosto de 2024 ou que todos fossem os mesmos exemplares separados em 2021. A correspondência individual requer a lista nominal original dos cerca de 300 títulos e identificadores de exemplar.
+
+### 8.3 Política de acervo publicada em 2023: regras formais para movimentação e descarte
+
+- PDF oficial: https://www.gov.br/palmares/pt-br/centrais-de-conteudo/publicacoes/PolticadeFormaoeDesenvolvimentodeAcervoFundaoCulturalPalmares06072023.pdf
+- O documento prevê avaliação sistemática, comissão responsável e critérios para remanejamento/descarte.
+- O material remanejado deve ficar armazenado por um ano; depois, deve ser analisado para descarte ou reincorporação.
+- O descarte exige lista compilada pela Biblioteca, análise pela Comissão Permanente de Formação, Desenvolvimento e Gestão do Acervo com participação do bibliotecário, decisão fundamentada e baixa definitiva.
+- O texto prevê que material descartado pode ser doado, permutado ou eliminado.
+- A política reproduz a restrição judicial de movimentação do acervo, exceto consulta local.
+- Valor probatório: documento normativo que permite testar se atos posteriores seguiram procedimento formal. Não prova que a política tenha sido aplicada retroativamente ao episódio de 2021 nem que tenha havido descarte/reintegração efetivos.
+
+### 8.4 Pesquisa acadêmica: visita presencial e reintegração confirmada
+
+A dissertação de Lucas dos Santos de Paulo (UnB, 2024), disponível em https://repositorio.unb.br/bitstream/10482/50687/1/LucasDosSantosDePaulo_DISSERT.pdf, foi examinada diretamente:
+- página impressa 77: afirma que o “Acervo da vergonha” foi desfeito entre o fim de 2022 e o início de 2023;
+- página impressa 86: registra visita presencial do pesquisador à Biblioteca Oliveira Silveira em 29/02/2024 e afirma que os livros que fizeram parte do espaço haviam sido reintegrados ao acervo geral;
+- páginas impressas 163–169: entrevistas anonimizadas com funcionários corroboram que os livros foram separados fisicamente e que não houve descarte/doação, segundo os relatos; manter como evidência testemunhal, não como ato administrativo;
+- página impressa 167: um entrevistado afirma que os livros já estavam incorporados ao acervo e que a proposta era processá-los tecnicamente e disponibilizá-los;
+- páginas impressas 194–195: outro entrevistado menciona cerca de 300 livros, mas a fala é testemunhal e não substitui uma relação oficial nominal.
+
+### 8.5 Atualização 2025 e infraestrutura do catálogo
+
+- Relatório de Gestão 2025: https://www.gov.br/palmares/pt-br/midias/arquivos/rel-gestao-2025/relatorio_palmares_cge_v_final_final_01.pdf
+- A FCP declara digitalização de obras e disponibilização de títulos na plataforma SOPHIA, parcerias de empréstimo interbibliotecário e destinações formalizadas via SEI.
+- A página oficial “Contratos 2022” informa que o Contrato 03/2022 com a Primasoft, processo 01420.101198/2021-01, teve por objeto a contratação do sistema de gerenciamento de biblioteca SOPHIA, com vigência indicada até 21/01/2026: https://www.gov.br/palmares/pt-br/acesso-a-informacao/contratos-2022
+- A contratação e a declaração de uso do sistema comprovam infraestrutura contratada/atividade relatada, mas não comprovam que o catálogo esteja publicamente acessível hoje nem que os antigos títulos separados estejam individualmente catalogados e consultáveis.
+
+### 8.6 Estado probatório revisto
+
+**Comprovação suficiente para afirmar:**
+1. houve um espaço físico identificado como “sala da vergonha”/“Acervo da vergonha” em 2021, documentado em relatório técnico da Câmara e admitido na resposta oficial da FCP;
+2. a própria FCP declarou em novembro de 2021 que determinados livros permaneceriam no acervo por força da liminar e que livros antes encaixotados haviam sido colocados em estantes;
+3. a dissertação da UnB registra que o espaço foi desfeito após a mudança de gestão e que, em visita presencial em 29/02/2024, os livros que o compunham estavam reintegrados ao acervo geral;
+4. o inventário oficial publicado em 2024 contém alguns títulos nominalmente citados no episódio;
+5. a FCP publicou política formal em 2023/2024 com procedimentos de avaliação, remanejamento, descarte e baixa.
+
+**Ainda não comprovado:**
+- a lista completa e oficial dos cerca de 300 títulos;
+- a correspondência exemplar a exemplar entre os títulos da lista jornalística e o inventário de 2024;
+- a formalização administrativa da dissolução e reintegração;
+- a localização, catalogação e disponibilidade atual de cada exemplar;
+- se algum dos exemplares foi distribuído entre os 35.674 livros informados no relatório de 2025;
+- o desfecho judicial definitivo da Ação Popular.
+
+**Conclusão editorial:** a lacuna sobre a existência do espaço e a reintegração geral dos livros está substancialmente fechada por evidência documental pública e observação acadêmica presencial. A lacuna remanescente é de rastreabilidade individual e disponibilidade atual, não mais de comprovação de que o espaço existiu ou de que foi desfeito.
