@@ -115,7 +115,7 @@ A revisão distingue assinatura de documento, autoridade que aparece no fecho, a
 
 | Registro | Situação documental | Próximo passo |
 |---|---|---|
-| EL-022 a EL-024 (Rondônia, 2020) | O Memorando-Circular nº 4/2020/SEDUC-DGE está disponível em cópia e identifica Suamy Vivecananda no fecho e Irany de Oliveira Lima Morais como signatária eletrônica. O texto manda recolher títulos listados no Adendo SEI 10053329; o anexo não foi localizado. | Obter o Adendo 10053329 e conferir a correspondência entre a lista nominal e os três agrupamentos cadastrados. Não confundir o signatário eletrônico com o nome que consta no fecho. |
+| EL-022 a EL-024 (Rondônia, 2020) | O Memorando-Circular nº 4/2020/SEDUC-DGE está disponível em reprodução documental e identifica Suamy Vivecananda no fecho e Irany de Oliveira Lima Morais como signatária eletrônica. Uma reprodução em PDF reúne a relação de 43 itens e o memorando; nela, Rubem Fonseca aparece em 19 posições, correspondentes a 18 títulos distintos. A relação ainda precisa ser autenticada por cotejo com o Adendo SEI 10053329 obtido diretamente do processo. | Obter o Adendo 10053329 diretamente do processo SEI 0029.051300/2020-91 e cotejar a relação nominal com a reprodução documental e os três agrupamentos cadastrados. Não confundir o signatário eletrônico com o nome que consta no fecho. |
 | EL-025 | Anúncio público de descarte; documento formal e assinatura não identificados. | Obter relatório, anexos e eventual ato de destinação. |
 | EL-026 | Anúncio público de segregação; ato de execução física não localizado. | Obter inventário e registros de acesso. |
 | EL-027 | Decisão institucional da Secretaria; signatário formal não identificado. | Obter ato administrativo de suspensão. |
