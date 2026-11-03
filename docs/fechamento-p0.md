@@ -5,7 +5,11 @@
 
 ## Resultado
 
-**Atualização de 3/11/2026**
+**Atualização de 3/11/2026 — rodada complementar**
+- EL-028: incorporada reportagem do UOL de 29/07/2026 com a decisão de restituição em cinco dias após a intimação, proibição de restrições político-ideológicas e informação de que a Prefeitura não havia confirmado o cumprimento. A devolução física segue sem prova.
+- EL-032: incluída cobertura de 16/04/2026 sobre a análise municipal e reforçada a distinção entre anúncio de retomada pedagógica e redistribuição física comprovada.
+- EL-035: corrigida a data da referência da Folha de Londrina para 12/03/2026 e explicitado que os nomes das signatárias e a unidade escolar não foram divulgados.
+- EL-022 a EL-024: as fichas e a página de pendências agora registram a reprodução documental da relação de 43 posições e do Memorando-Circular de Rondônia, sem tratar a cópia como autenticação do Adendo SEI 10053329.
 - Corrigida a ficha de Rubem Fonseca: 19 entradas na reprodução, 18 títulos distintos; a chave do cadastro, a ficha e a página gerada foram sincronizadas.
 - Conferência do catálogo: 94 fontes/URLs, todas com tipo de fonte registrado; Gênio Criador está classificado como B1.
 - A auditoria automatizada identifica nove registros sem signatário formal identificado: EL-025 a EL-029, EL-032, EL-033, EL-036 e EL-037. Os dois registros de Canoinhas foram acrescentados à contagem.
@@ -23,11 +27,11 @@ P0 está fechado quanto à revisão editorial interna, matriz de evidências e p
 | EL-022 | Rondônia: 19 entradas atribuídas a Rubem Fonseca na reprodução; 18 títulos distintos, pois *O Seminarista* aparece duas vezes. | Adendo SEI 10053329 original, inventário e execução por escola. |
 | EL-023 | A reprodução traz ordem genérica sobre livros de Rubem Alves, sem títulos individualizados. | Adendo original e inventário título a título. |
 | EL-024 | Memorando encaminha recolhimento às CREs. Suamy consta no fecho; Irany de Oliveira Lima Morais é signatária eletrônica. | Processo SEI integral, histórico, suspensão e sindicância. |
-| EL-028 | Reportagem relata retirada em 2024 e decisão judicial de restituição em 2026. | Intimação, cumprimento por unidade e eventual recurso. |
+| EL-028 | UOL (29/07/2026) detalha a decisão de 20/07: restituição em cinco dias após intimação, vedação de restrição político-ideológica e ausência de confirmação pública de cumprimento. | Intimação, cumprimento por unidade e eventual recurso. |
 | EL-030 | Pedido parlamentar de Jéssica Ramos Moreno; recolhimento não comprovado. | Requerimento original, resposta da SME e eventual ordem/registro de coleta. |
 | EL-031 | Controvérsia sobre link de resenha em atividade; não há prova de banimento ou retirada de exemplares. | Nota oficial integral e registro da avaliação pedagógica. |
-| EL-032 | Pedido atribuído à vereadora; Prefeitura confirmou retirada e anunciou retomada pedagógica. Anúncio não prova redistribuição física. | Requerimento, resposta, parecer, aquisição/distribuição e prova de retorno. |
-| EL-035 | Pedido atribuído a cargos da unidade; SME iniciou levantamento e recolhimento para análise. | Processo SEI, pedido, despacho, quantitativos, parecer e decisão final. |
+| EL-032 | Pedido atribuído à vereadora; Prefeitura confirmou retirada e anunciou retomada pedagógica após análise técnica. A cobertura de abril e julho não prova redistribuição física. | Requerimento, resposta integral, parecer, aquisição/distribuição e prova de retorno. |
+| EL-035 | Reportagens de 12/03/2026 identificam os cargos signatários (gerente e diretora pedagógica) e o início do levantamento/recolhimento para análise; não divulgam os nomes nem a unidade. | Processo SEI, pedido, despacho, quantitativos, parecer e decisão final. |
 | EL-036 | TCE-SC concluiu que os livros não foram jogados no lixo; estavam com a Fundação Cultural para análise de destinação. | Inventário/movimentação posterior, destino atual e resultado da notícia de fato do MPSC. |
 | EL-037 | Mesmo episódio de Canoinhas; Requerimento nº 149/2024 não pediu nominalmente a retirada desses títulos. | Mesmas diligências de EL-036. |
 
