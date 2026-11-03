@@ -24,7 +24,7 @@ Solicito:
 4. Comunicações às coordenadorias e escolas sobre solicitação, suspensão, recolhimento pontual e devolução de exemplares.
 5. Identificação documental dos signatários eletrônicos e das autoridades que determinaram, suspenderam ou executaram providências.
 
-Solicito que o órgão indique expressamente se o Adendo 10053329 não estiver localizado ou não existir no processo.
+Solicito que o órgão indique expressamente se o Adendo 10053329 não estiver localizado ou não existir no processo.\n\n**Canal de consulta complementar:** o Governo de Rondônia mantém [Consulta Pública do SEI](https://sei.ro.gov.br/consulta_publica/). A página informa que a consulta de andamento exige o número do processo e código de verificação; para obter cópias/vistas, orienta contato com a unidade geradora por telefone, e-mail ou ofício. O pedido de acesso ao conteúdo e anexos deve seguir também pelo [e-SIC estadual](https://esic.cge.ro.gov.br/).
 
 ## 2. São José dos Campos — EL-028
 
