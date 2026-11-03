@@ -230,3 +230,27 @@ Solicito versões públicas dos documentos, com ocultação apenas de dados lega
 A finalidade é confirmar documentalmente, título a título, a reintegração e a situação atual dos exemplares, sem presumir que a informação acadêmica ou o relatório geral de gestão substituam os registros administrativos individuais.
 
 **Nota editorial:** a evidência acadêmica já localizada aponta reintegração física ao acervo geral em 29/02/2024. Este pedido busca fechar a rastreabilidade administrativa e confirmar a situação atual; não deve ser apresentado como se ainda não houvesse qualquer evidência sobre o destino do conjunto.
+
+
+## Aditamento — FCP EL-025/026: pedido de rastreabilidade atualizado (03/11/2026)
+
+A pesquisa pública localizou evidência acadêmica de reintegração dos livros do chamado “Acervo da Vergonha” ao acervo geral até 29/02/2024. O Relatório de Gestão 2025 informa digitalização e disponibilização de títulos no SOPHIA e distribuição de 35.674 exemplares. Não há prova de que os exemplares distribuídos em 2025 incluíssem os cerca de 300 livros segregados em 2021. Use este pedido focalizado em complemento às minutas anteriores.
+
+**Destinatário:** Fundação Cultural Palmares — Biblioteca Oliveira Silveira / Centro de Informação e Acervo da Memória e da Cultura Afro-Brasileira.
+
+Solicito, com fundamento na Lei nº 12.527/2011, acesso aos seguintes registros existentes:
+
+1. Endereço, horário, regras e canal de agendamento atualmente vigentes para consulta presencial da Biblioteca Oliveira Silveira; confirmação de que qualquer cidadão pode consultar o acervo.
+2. URL atual do catálogo público SOPHIA e instruções de pesquisa. Se não estiver disponível ao público, informar a razão e a data da indisponibilidade.
+3. Relação nominal dos cerca de 300 livros que compuseram o “Acervo da Vergonha”, com número de registro bibliográfico, quantidade de exemplares, localização atual e status de consulta; ou declaração expressa de inexistência dessa relação.
+4. Registros administrativos da dissolução do espaço e reintegração ao acervo geral, com datas, unidades responsáveis, autoridade decisora e quantitativos conferidos.
+5. Registros de catalogação e digitalização dos títulos, com identificadores e links no SOPHIA.
+6. Informação se algum exemplar dessa relação foi doado, transferido, descartado ou movimentado após a dissolução. Em caso positivo, fornecer lista, termo, processo SEI e comprovantes de saída.
+7. Planilha que fundamenta o total de 35.674 exemplares distribuídos em 2025, com títulos, quantidades, datas, destinos institucionais e processos SEI, resguardados dados pessoais desnecessários.
+8. Esclarecimento se algum título da antiga relação integrou as distribuições de 2025; se sim, indicar título, quantidade, data, destino e processo SEI.
+9. Cópia ou identificação das decisões judiciais posteriores à liminar na Ação Popular nº 5006660-67.2021.4.02.5117 que fundamentaram a retomada das movimentações e doações.
+10. Confirmação se o endereço biblioteca.palmares.gov.br indicado na FAQ de 2022 permanece ativo ou indicação do endereço substituto.
+
+O pedido limita-se a documentos, listas, planilhas e registros existentes. Se as informações já estiverem publicadas, solicito a URL direta e o arquivo correspondente. Se houver dados pessoais protegidos, solicito versão pública com ocultação apenas dos trechos protegidos e indicação do fundamento legal.
+
+**Nota editorial:** a informação acadêmica de reintegração em 2024 já existe e deve ser reconhecida no texto do projeto. O pedido busca comprovar a rastreabilidade administrativa e a disponibilidade atual dos exemplares, não sustentar que o destino do conjunto seja inteiramente desconhecido.
