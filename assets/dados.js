@@ -675,6 +675,9 @@ const FONTES = {
   "tipo": "P3","veic":"Prefeitura de Conselheiro Lafaiete · Secretaria Municipal de Educação","data":"2024-06-20","tit":"Comunicado oficial sobre O Menino Marrom","url":"https://conselheirolafaiete.mg.gov.br/v2/comunicado-secretaria-municipal-de-educacao/"},
  "decisao-lafaiete": {
   "tipo": "P2","veic":"Poder Judiciário de Minas Gerais · cópia da decisão","data":"2024-06-27","tit":"Processo nº 5006658-14.2024.8.13.0183 · decisão liminar em ação popular","url":"https://www.migalhas.com.br/arquivos/2024/6/C9AB64BF939FD5_%C2%B7ProcessoJudicialEletronico-1%C2%BA.pdf"},
+ "oficio-lafaiete-2024": {
+  "tipo":"P1","veic":"Secretaria Municipal de Educação de Conselheiro Lafaiete","data":"2024-06-28","tit":"Ofício nº 216/2024/SEMED/PMCL · informação à Comissão de Educação sobre O menino marrom","url":"https://sapl.conselheirolafaiete.mg.leg.br/media/sapl/public/materialegislativa/2024/17050/oficio_informacao_-_livro_o_menino_marrom.pdf"
+ },
  "migalhas-sjc": {
   "tipo": "S2","veic":"Migalhas","data":"2026-07-29","tit":"Juíza vê censura e manda devolver às escolas livro que inclui Marielle Franco","url":"https://www.migalhas.com.br/quentes/461228/juiza-ve-censura-e-manda-devolver-as-escolas-livro-que-inclui-marielle-franco"},
  "folha-unirv": {
