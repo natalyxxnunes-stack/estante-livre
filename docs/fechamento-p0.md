@@ -1,9 +1,18 @@
 # Fechamento operacional P0 — Estante Livre
 
-**Data:** 2 de novembro de 2026  
+**Data:** 3 de novembro de 2026  
 **Branch:** `feat/estante-livre-auditoria-profissional`
 
 ## Resultado
+
+**Atualização de 3/11/2026**
+- Corrigida a ficha de Rubem Fonseca: 19 entradas na reprodução, 18 títulos distintos; a chave do cadastro, a ficha e a página gerada foram sincronizadas.
+- Conferência do catálogo: 94 fontes/URLs, todas com tipo de fonte registrado; Gênio Criador está classificado como B1.
+- A auditoria automatizada identifica nove registros sem signatário formal identificado: EL-025 a EL-029, EL-032, EL-033, EL-036 e EL-037. Os dois registros de Canoinhas foram acrescentados à contagem.
+- GitHub Actions, execução 167: sucesso; gerador, validação do catálogo, trilha de investigação e auditoria estática passaram. Foram verificadas 167 páginas HTML e 36 imagens, sem erros bloqueantes.
+- A prévia da Vercel foi concluída. O PR #5 continua aberto e não foi mesclado nem publicado em produção.
+- Permanecem fora do controle editorial imediato: respostas dos órgãos aos pedidos ainda não protocolados, autorização/fundamento de uso das sete capas e inspeção visual manual em navegador/dispositivos reais.
+
 
 P0 está fechado quanto à revisão editorial interna, matriz de evidências e preparação dos pedidos. Não está fechado quanto à confirmação documental externa: os órgãos ainda precisam fornecer documentos. Nenhum pedido foi protocolado nesta etapa, nenhum registro foi promovido a “Verificado” e não houve publicação em produção.
 
