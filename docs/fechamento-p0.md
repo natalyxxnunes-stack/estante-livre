@@ -8,7 +8,7 @@ A rodada de pesquisa pública ampliada e a revisão dos dados P0 foram concluíd
 - **5 com núcleo factual verificado:** EL-022, EL-023, EL-024, EL-036 e EL-037.
 - **5 parcialmente verificados:** EL-028, EL-030, EL-031, EL-032 e EL-035.
 
-EL-025, que integra o grupo de nove alertas de signatário e não a lista original dos dez, também permanece parcialmente verificado. Assim, no conjunto total de 37 registros, **6 estão parcialmente verificados**: EL-025, EL-028, EL-030, EL-031, EL-032 e EL-035.
+EL-025, que integra o grupo de nove alertas de signatário e não a lista original dos dez, também permanece parcialmente verificado. Assim, no conjunto total de 37 registros, **5 estão parcialmente verificados**: EL-025, EL-028, EL-030, EL-032 e EL-035.
 
 **Os nove alertas de signatário foram individualmente tratados.** Em vários casos não existe ato escrito público ou a assinatura é de um documento correlato, não da ordem original. O cadastro distingue esses papéis e não atribui assinatura por inferência.
 
@@ -23,10 +23,10 @@ A pesquisa documental foi fechada até o limite do material público recuperáve
 | EL-022 | **Verificado** | Memorando de Rondônia, Diário do MPF nº 161/2021 e artigo acadêmico que reproduz a lista. A ordem foi suspensa no mesmo dia; a lista contém 19 entradas de Rubem Fonseca, correspondentes a 18 títulos distintos. | Adendo SEI 10053329 original e resultado da sindicância. |
 | EL-023 | **Verificado** | As mesmas fontes confirmam a instrução geral sobre os livros de Rubem Alves e a reversão da solicitação. | Adendo original e resultado da sindicância. |
 | EL-024 | **Verificado** | A relação de 43 entradas foi reproduzida academicamente; o MPF documenta suspensão e devolução de exemplares eventualmente recolhidos. | Adendo original e resultado da sindicância. |
-| EL-028 | Parcial | Retirada relatada e decisão judicial de 20/07/2026 atribuída à juíza Renata Heloísa da Silva Salles, determinando restituição e vedando restrição político-ideológica. | Ordem municipal original, íntegra judicial e cumprimento; processo sob segredo de Justiça. |
-| EL-030 | Parcial | PL 79/2024 e Lei Municipal 13.930/2025 localizados em fontes oficiais; cobertura do pedido específico. | Requerimento de 26/11/2024, resposta da SME e prova de retirada efetiva do exemplar. |
-| EL-031 | Parcial | A apuração distingue retirada temporária de link de resenha de retirada de exemplares ou veto ao livro. | Nota institucional integral e registro interno da avaliação do link. |
-| EL-032 | Parcial | A Prefeitura informou, em 14/07/2026, que o livro permaneceria no plano de ensino das turmas adequadas após análise técnica. | Parecer integral e confirmação da redistribuição física às escolas. |
+| EL-028 | Parcial | Retirada relatada e sentença de 20/07/2026 atribuída à juíza Renata Heloísa da Silva Salles; Migalhas e RP10 reproduzem que a Justiça determinou restituição em cinco dias, garantiu consulta/empréstimo/uso pedagógico e proibiu restrição político-ideológica. | Ordem municipal original e cumprimento; autos sob segredo de Justiça. |
+| EL-030 | Parcial | PL 79/2024 e Lei Municipal 13.930/2025 localizados em fontes oficiais; Revista Oeste e Brasil Paralelo confirmam pedido após vistoria de 26/11/2024. | Requerimento original, destinatário formal (as reportagens divergem entre SME e Câmara), resposta e prova de retirada efetiva. |
+| EL-031 | **Verificado** | piauí teve acesso às conversas, reproduziu a nota oficial do colégio e ouviu o porta-voz: o link de resenha foi retirado temporariamente para avaliação; não houve retirada de exemplares, adoção obrigatória ou veto à obra. | A nota original como arquivo e o registro interno não foram localizados; lacuna complementar, sem dúvida material sobre o núcleo factual. |
+| EL-032 | Parcial | Zelinda atribuiu a Hélcio a retirada por WhatsApp; a resposta do prefeito descreveu encaminhamento de parte dos livros do Programa Minha Biblioteca para análise técnica geral; em 14/07/2026, a Prefeitura anunciou parecer favorável ao uso em turmas adequadas. | Ordem/WhatsApp original, requerimento e resposta assinados, parecer integral e redistribuição física. |
 | EL-035 | Parcial | Folha de Londrina, errata, CBN e relatório do OGPL sobre transparência do SEI. A iniciativa foi atribuída à Gerência de Ensino Fundamental da SME, não à direção da escola. | Número SEI, pedido, despacho, quantitativo, signatários e decisão final. |
 | EL-036 | **Verificado** | Decisão e Relatório DGE-328/2024 do TCE-SC: os livros não foram fisicamente descartados e estavam em poder da Fundação Cultural para análise de destinação. | Recibo, recebedor nominal, inventário posterior, acesso atual e resultado do MPSC. |
 | EL-037 | **Verificado** | Mesma conclusão do TCE-SC para o segundo título. | Recibo, recebedor nominal, inventário posterior, acesso atual e resultado do MPSC. |
@@ -88,6 +88,28 @@ O TCE-SC concluiu que os livros não foram efetivamente jogados no lixo e estava
 
 O Requerimento 149/2024 pediu revisão e reorganização da Mundoteca e separação por faixa etária; não pediu expressamente a retirada dos dois títulos. Reportagem de Canoinhas Online atribuiu a Professor Osmar o pedido de retirada imediata e a Willian Godoy a defesa da incineração; essa é uma atribuição jornalística e não substitui ato administrativo assinado. O destino posterior dos livros, o recibo de transferência e o resultado da Notícia de Fato do MPSC não foram localizados.
 
+### São José dos Campos — *Meninas sonhadoras, mulheres cientistas*
+
+Fontes:
+- [Migalhas, 29/07/2026 — decisão judicial e ação civil pública](https://www.migalhas.com.br/quentes/461228/juiza-ve-censura-e-manda-devolver-as-escolas-livro-que-inclui-marielle-franco).
+- [RP10, 29/07/2026 — sentença e medidas determinadas](https://www.rp10.com.br/2026/07/justica-ve-censura-e-manda-devolver-livro-sobre-marielle-franco-as-escolas-de-sao-jose-dos-campos/).
+
+A sentença foi proferida em ação civil pública do MP-SP e da Defensoria Pública. As reportagens reproduzem a ordem de devolução em cinco dias após intimação, garantia de consulta, empréstimo e uso pedagógico no Ensino Fundamental II, proibição de novas restrições político-ideológicas e multa diária de R$ 500, limitada inicialmente a R$ 50 mil. Ambas informam que os autos tramitam sob segredo de Justiça. O conteúdo da sentença está publicamente reportado; a íntegra dos autos e a prova de cumprimento não foram recuperadas.
+
+### Londrina — *A mamãe vai ter um bebê* (2024)
+
+Fontes:
+- [Revista Oeste, 04/12/2024 — pedido de recolhimento](https://www.revistaoeste.com/politica/vereadora-jessicao-exige-recolhimento-de-livro-erotico-encontrado-em-creche-no-parana/).
+- [Brasil Paralelo, 21/02/2025 — contexto legislativo e pedido](https://www.brasilparalelo.com.br/noticias/londrina-proibe-livros-com-teor-erotico-em-escolas-municipais).
+
+As reportagens confirmam que Jéssica Ramos Moreno pediu o recolhimento após encontrar o livro em uma creche. Há divergência quanto ao destinatário formal: a Revista Oeste descreve protocolo na Câmara; Brasil Paralelo descreve requerimento à Secretaria Municipal de Educação. Sem a cópia original, o cadastro não escolhe uma versão. O PL 79/2024 e a Lei 13.930/2025 são contexto normativo, não prova de execução do pedido específico.
+
+### Distrito Federal — *A bolsa amarela*
+
+Fonte principal: [revista piauí, 28/07/2026 — “Fábulas na fogueira”](https://piaui.uol.com.br/web/fabulas-fogueira-livros-infantojuvenis-bolsa-amarela/).
+
+A piauí teve acesso às conversas entre pais, ouviu o capitão Sidemar da Silva Neves e reproduziu a nota oficial do Colégio Militar Dom Pedro II. O link para uma resenha foi retirado temporariamente para avaliação pedagógica; a nota afirmou que a atividade seguia o planejamento didático, sem prejuízo pedagógico nem direcionamento ideológico. A escola não havia adotado a obra como leitura obrigatória e não retirou exemplares do acervo. O link não voltou a ser utilizado depois de encerrada a atividade. O caso está verificado como controvérsia sobre material de apoio, não como banimento do livro.
+
 ### Taubaté — *Pipoca e Picolé*
 
 Fontes:
@@ -95,7 +117,7 @@ Fontes:
 - [OVALE, 16/04/2026 — Prefeitura informa análise técnica](https://sampi.net.br/ovale/noticias/2974212/vale-do-paraiba/2026/04/obra-sobre-menina-com-duas-maes-passa-por-analise-diz-prefeitura).
 - [OVALE, 14/07/2026 — escolas voltarão a usar o livro](https://sampi.net.br/ovale/noticias/2991910/vale-do-paraiba/2026/07/taubate-escolas-voltarao-a-usar-livro-sobre-menina-com-duas-maes).
 
-A Prefeitura informou em 14/07/2026 que, após análise técnica da Coordenação de Área e da Equipe de Práticas Pedagógicas da Educação Infantil, o título permaneceria no plano de ensino das turmas adequadas. A ordem inicial foi atribuída por Zelinda Pastora a mensagem de WhatsApp do secretário Hélcio Carvalho dos Santos. O requerimento aprovado em 10/03/2026 por Isaac Jarbas Mascarenhas do Carmo e Talita de Lima Barbosa é de fiscalização parlamentar, não pedido de retirada. Não foi localizada a ordem original assinada, a íntegra do parecer ou prova da redistribuição física.
+Zelinda Pastora afirmou que pediu diretamente ao secretário Hélcio Carvalho dos Santos a retirada e viu uma mensagem enviada às escolas. Em resposta ao requerimento de Isaac do Carmo e Talita, o prefeito Sérgio Victor descreveu outro enquadramento: no fim de 2025, unidades foram orientadas a encaminhar parte dos livros do Programa Minha Biblioteca à SME para análise técnica, porque a maior parte dos kits já havia sido distribuída. A Prefeitura também publicou nota dizendo que o parecer ainda estava em elaboração. Em 14/07/2026, informou parecer favorável ao uso nas turmas adequadas. As duas narrativas devem permanecer lado a lado; a ordem original, a resposta assinada, o parecer integral e a redistribuição física não foram recuperados.
 
 ### Londrina — 2026
 
