@@ -101,3 +101,72 @@ As sete capas receberam dados editoriais e créditos disponíveis, exibidos junt
 ## 13. Pedidos ainda necessários
 
 As minutas de LAI foram atualizadas para Seduc-RO, FCP, SME Londrina, Câmara/Prefeitura de Taubaté, Funap, Prefeitura de São José dos Campos e Prefeitura/Fundação Cultural de Canoinhas/MPSC. Nenhuma solicitação foi protocolada nesta rodada.
+
+
+---
+
+## 10. Adendo de pesquisa e reclassificação — 04/11/2026
+
+### 10.1 Fundação Cultural Palmares: prova da reversão da segregação
+
+Foi localizada a dissertação de Lucas dos Santos de Paulo, **O Acervo da vergonha: atos e intencionalidades na Fundação Cultural Palmares** (Universidade de Brasília, 2024):
+
+- [PDF integral no Repositório Institucional da UnB](https://repositorio.unb.br/bitstream/10482/50687/1/LucasDosSantosDePaulo_DISSERT.pdf).
+- Na página impressa 86 (página 86 do PDF, linhas 2607–2615), o pesquisador registra visita presencial à Biblioteca Oliveira Silveira em 29/02/2024 e afirma que os livros que integraram o “Acervo da vergonha” já haviam sido reintegrados ao acervo geral.
+- Na mesma página, registra que parte da coleção estava armazenada em caixas por causa da mudança de prédio; isso não equivale a nova segregação temática.
+- A dissertação informa que a política de desenvolvimento de acervo foi publicada como anexo da Resolução FCP nº 24/2024 e entrou em vigor em 01/03/2024.
+
+**Efeito editorial:** EL-026 passa a ter situação **Revertido** e núcleo factual **Verificado** quanto à reintegração. A estimativa de “cerca de 300” não é sustentada pelo relatório técnico e foi retirada do título do registro. Quantidade exata, lista nominal e circulação atual continuam como pendências específicas.
+
+### 10.2 Inventário oficial posterior da FCP
+
+- [Inventário Bibliográfico oficial, atualizado em 08/08/2024](https://www.gov.br/palmares/pt-br/centrais-de-conteudo/publicacoes/lista-de-livros-atualizada-8-8-2024-1.pdf).
+
+O inventário relaciona 9.696 títulos do antigo acervo e inclui obras de Karl Marx, Max Weber, Eric Hobsbawm e Celso Furtado. Ele permite comprovar a presença desses títulos no inventário posterior, mas não individualiza os itens da Sala 11 nem substitui a lista de 5.165 títulos atribuída ao Relatório Público 01/CNIRC. O link oficial do Relatório Público 01 continua cadastrado, mas o PDF original não abriu nesta consulta.
+
+**Correção de unidade:** a proposta de 2021 refere-se a 5.165 títulos, não a 5.165 exemplares físicos. O número e a lista nominal devem continuar atribuídos ao relatório original, sem inferir a quantidade de cópias.
+
+### 10.3 Canoinhas: identificação nominal dos signatários do Requerimento 149/2024
+
+Fontes:
+- [Requerimento 149/2024 — PDF assinado](https://sapl.canoinhas.sc.leg.br/media/sapl/public/materialegislativa/2024/15355/req_149.pdf).
+- [Registro legislativo no SAPL](https://sapl.canoinhas.sc.leg.br/materia/15355).
+- [Resultado oficial do TRE-SC para Canoinhas, eleições 2024](https://apps.tre-sc.jus.br/site/fileadmin/arquivos/eleicoes/eleicoes2024/resultados_turno_1/votacao_secao/html/80730.html).
+
+O documento parlamentar foi subscrito por Tatiane Cristina Carvalho (Tati Carvalho), Wilmar Sudoski, Maurício Zimmermann, Willian Godoy Ferreira de Souza, Antônio Adilson Steidel, Osmar Oleskovicz (Professor Osmar), André Ramon Flenik e Neri Francisco da Silva (Chico Mineiro). A lista identifica os signatários do requerimento, não os autores de uma ordem de retirada. A decisão GCS/GSS-861/2024 do TCE-SC é assinada por Gerson dos Santos Sicca.
+
+O próprio TCE informa que a resposta da prefeita e as fotos das fls. 14–32 permaneceram sob sigilo parcial; somente o Relatório DGE-328/2024 e a decisão foram tornados públicos. Assim, a falta dessas peças não decorre apenas de falha de busca: há uma restrição formal registrada pelo Tribunal.
+
+### 10.4 Taubaté: retorno ao plano de ensino
+
+A cobertura de OVALE/Sampi foi reconsultada:
+- [10/04/2026 — Prefeitura confirma à Câmara a retirada](https://sampi.net.br/ovale/noticias/2972973/sessao-extra/2026/04/livro-sobre-menina-com-duas-maes-e-retirado-de-escolas-em-taubate).
+- [16/04/2026 — Prefeitura informa análise técnica](https://sampi.net.br/ovale/noticias/2974212/vale-do-paraiba/2026/04/obra-sobre-menina-com-duas-maes-passa-por-analise-diz-prefeitura).
+- [14/07/2026 — Prefeitura anuncia retorno ao plano de ensino das turmas adequadas](https://sampi.net.br/ovale/noticias/2991910/vale-do-paraiba/2026/07/taubate-escolas-voltarao-a-usar-livro-sobre-menina-com-duas-maes).
+
+O anúncio de retorno é uma declaração municipal reproduzida pela imprensa. Ele comprova a posição pública da Prefeitura, não a entrega física de exemplares a cada unidade. A ordem inicial é atribuída por Zelinda Pastora a uma mensagem de WhatsApp do secretário Hélcio Carvalho dos Santos; o documento escrito original não foi localizado.
+
+### 10.5 Rondônia: acesso ao SEI-RO
+
+- [Consulta pública oficial do SEI-RO](https://sei.ro.gov.br/consulta_publica/).
+
+O portal oficial oferece consulta pública, mas a interface depende de JavaScript e código de verificação. A própria página orienta que solicitações de cópias e vistas sejam dirigidas à unidade geradora. O processo 0029.051300/2020-91 e o Adendo 10053329 estão identificados em documentos públicos; a cópia integral do adendo e o resultado da sindicância não foram recuperados nesta rodada.
+
+### 10.6 Londrina: publicidade como regra e restrição efetiva no SEI
+
+- [Relatório do Observatório de Gestão Pública de Londrina sobre o SEI](https://observatoriolondrina.org.br/uploads/relatorios/Relat%C3%B3rio%20SEI%20-%20Pedidos%20de%20Provid%C3%AAncias.pdf).
+
+O relatório informa que, após 18/02/2025, 15 processos do tipo Pedido de Providências estavam públicos e 19.588 estavam restritos. Cita a Portaria SMGP-GAB nº 28/2020 como regra de publicidade. O dado não identifica o processo específico do livro; demonstra, porém, que não é seguro presumir que todo processo esteja efetivamente aberto para consulta, mesmo quando a publicidade é a regra normativa.
+
+### 10.7 Capas: retirada preventiva
+
+A revisão de direitos foi encerrada por medida preventiva: as sete imagens locais foram removidas da branch porque não havia registro da origem dos JPGs nem autorização/licença individual. O catálogo mantém dados bibliográficos, links editoriais e placeholders tipográficos. A ficha editorial linkada não é tratada como licença para reproduzir a capa.
+
+### 10.8 Resultado consolidado
+
+- Os dez registros originalmente sinalizados foram revistos: cinco têm núcleo factual verificado e cinco permanecem parcialmente verificados.
+- Os nove alertas de signatário foram classificados sem atribuição indevida de assinatura.
+- Os casos administrativos foram pesquisados em fontes de órgãos públicos, tribunais, sistemas legislativos, imprensa local e repositórios acadêmicos.
+- As pendências restantes estão vinculadas a documentos não recuperados, peças sob sigilo parcial/segredo de Justiça ou falta de identificação pública do processo.
+- Nenhum pedido de acesso foi protocolado em nome da usuária.
+- As sete capas locais não são mais exibidas enquanto não houver procedência e autorização documentadas.
