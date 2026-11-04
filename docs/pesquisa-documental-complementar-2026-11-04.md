@@ -174,3 +174,49 @@ Nesta rodada, as buscas por número SIG do MPSC, código SEI 10053329/processo 0
 | Fundação Palmares | Nenhum novo arquivo | Relatório CNIRC integral, lista nominal dos 5.165 itens e documentação de destino |
 
 **Conclusão editorial:** houve avanço na identificação dos canais oficiais e das chaves de consulta, não na recuperação dos documentos ausentes. Manter os registros parciais e não declarar P0 fechado.
+
+
+## 9. Rotas alternativas — periódicos acadêmicos e repositórios universitários
+
+Esta rodada saiu dos portais administrativos e buscou reproduções acadêmicas, repositórios institucionais e referências bibliográficas que pudessem preservar anexos ou cópias que os portais originais deixaram de servir.
+
+### 9.1 Rondônia — reprodução visual e análise acadêmica do memorando
+
+Foi localizada uma segunda fonte acadêmica, publicada em periódico da Universidade Estadual do Centro-Oeste (UNICENTRO), cujo PDF contém uma reprodução visual do Memorando-Circular nº 4/2020/SEDUC-DGE. A imagem permite conferir o cabeçalho, destinatários, assunto, orientação de recolhimento, referência ao Adendo ID 10053329, assinatura atribuída ao secretário e bloco de assinatura eletrônica com data e código 10040389. O artigo também contextualiza o memorando como documento dirigido às Coordenadorias Regionais de Educação e relaciona a lista de livros ao processo de seleção do PNLD.
+
+Fontes:
+- [Artigo em Interfaces/UNICENTRO — PDF com reprodução visual do memorando](https://revistas.unicentro.br/index.php/revista_interfaces/article/download/7833/5778).
+- [Reprodução textual do memorando e lista em PDF](https://questoesrelevantes.wordpress.com/wp-content/uploads/2020/02/rondonia-livros-proibidos.pdf).
+- [Reportagem contemporânea sobre a tentativa de validação do código no SEI/RO](https://www.rondoniadinamica.com/noticias/2020/02/secretario-diz-que-e-fake-informacao-sobre-recolhimento-de-livros-na-rede-estadual-de-educacao-em-rondonia%2C66874.shtml).
+
+A convergência entre cópia textual e reprodução visual fortalece a rastreabilidade do memorando. Ainda assim, ambas são reproduções secundárias; não validam o documento no SEI nem recuperam o Adendo 10053329. A reportagem que relata “Código Verificador Inválido” deve ser tratada como registro de uma tentativa de validação naquele momento, não como prova conclusiva de falsidade.
+
+### 9.2 Fundação Cultural Palmares — estrutura do relatório CNIRC identificada por fonte universitária
+
+Uma publicação acadêmica hospedada pelo repositório da Editora NAEA/UFPA descreve o relatório “Retrato do Acervo” como documento de 76 páginas, dividido em oito partes: síntese do conteúdo; metodologia e leis; origem da biblioteca; “acervo imaginário”; “acervo real”; defasagem e obsolescência; “escola marxista”; e material comprobatório. A publicação também preserva a URL alternativa do PDF oficial histórico.
+
+Fonte:
+- [Publicação acadêmica no repositório NAEA/UFPA (PDF)](https://naea.website/editora-naea/Livros/isbn/978-85-7143-252-9.pdf).
+
+Essa fonte permite documentar a estrutura editorial e a existência de uma seção intitulada “Material Comprobatório”, mas não substitui a leitura do relatório original e não permite reconstruir a lista nominal completa. Não extrair conclusões sobre itens específicos sem o relatório integral.
+
+### 9.3 Londrina e Taubaté — resultado negativo mantido
+
+As buscas por combinações exatas de nomes, título do livro, datas e domínios legislativos não localizaram novos inteiros teores oficiais. Em Londrina, foi localizado o PDF oficial do PL 79/2024, de autoria de Jéssica Ramos Moreno, mas esse projeto de lei é um ato legislativo distinto do requerimento administrativo de recolhimento relatado em novembro de 2024. Não o usar como substituto nem como prova de execução do requerimento.
+
+Fonte:
+- [PL 79/2024 — PDF oficial da Câmara Municipal de Londrina](https://www1.cml.pr.gov.br/projetos/2024/PL000792024.pdf).
+
+Em Taubaté, a busca por “Pipoca e Picolé”, pelos autores do requerimento e pela data da 46ª Sessão Ordinária não trouxe o número nem o inteiro teor do requerimento. A ordem do dia publicada não deve ser confundida com o expediente completo da sessão.
+
+### 9.4 Balanço da rota alternativa
+
+| Frente | Material adicional recuperado | O que continua faltando |
+|---|---|---|
+| Rondônia | Reprodução visual em periódico universitário, além da cópia textual já conhecida | Original verificável no SEI, Adendo 10053329, processo integral e resultado da apuração estadual |
+| Fundação Palmares | Descrição acadêmica da estrutura e extensão do relatório (76 páginas/8 partes) | PDF integral validado, lista nominal dos 5.165 itens e documentação de destino |
+| Londrina | PDF oficial do PL 79/2024, distinguido do requerimento | Requerimento de 26/11/2024 e resposta administrativa |
+| Taubaté | Nenhum inteiro teor novo | Requerimento, resposta integral, parecer e comprovantes de redistribuição |
+| MPSC/Canoinhas | Nenhum inteiro teor novo | Despacho/decisão da Notícia de Fato 01.2024.00012159-3 |
+
+**Conclusão:** as rotas acadêmicas e universitárias produziram material corroborativo útil para Rondônia e para a descrição bibliográfica do relatório CNIRC. Não recuperaram os documentos primários faltantes e não justificam alterar os status de verificação. P0 permanece aberto.
