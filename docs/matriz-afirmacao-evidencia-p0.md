@@ -109,7 +109,7 @@ A pesquisa desta etapa usou fontes públicas. Não houve protocolo de pedidos de
 | EL-032 — Taubaté | Portal Câmara Sem Papel e páginas oficiais das sessões de 03/03 e 10/03/2026 | Existência de repositório legislativo público e datas das sessões consultadas | Número, texto e tramitação específica do requerimento sobre “Pipoca e Picolé”; a transcrição pública da sessão não reproduz o tema |
 
 
-**Correção de precisão:** os 5.165 representam o quantitativo agregado (54% de 9.565 títulos) classificado como temática alheia. A análise contemporânea publicada no Jornal da USP descreve uma lista final de 300 títulos indicados para exclusão. A lacuna documental é a íntegra do Relatório 01/CNIRC e a lista de 300, não uma lista de 5.165.
+**Correção de precisão:** os 5.165 representam o quantitativo agregado (54% de 9.565 títulos) classificado como temática alheia. A análise contemporânea publicada no Jornal da USP descreve uma lista final de 300 títulos indicados para exclusão. A lacuna documental é a íntegra do Relatório 01/CNIRC e a validação da transcrição pública da lista de 300 entradas, não uma lista de 5.165.
 
 
 **Atualização EL-025:** a lista final de 300 entradas foi recuperada em transcrição pública secundária (261 após remoção de edições repetidas). O original do Relatório 01/CNIRC ainda não foi recuperado; a transcrição não foi validada contra o original. 5.165 é o quantitativo agregado classificado como temática alheia, não a lista final; 5.300 é a quantidade de exemplares alegada na petição da OAB/ADPF 918.
