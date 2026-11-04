@@ -639,10 +639,10 @@ const FONTES = {
  },
  "memo-ro-2020": {
   "tipo":"P1",
-  "veic":"Secretaria de Estado da Educação de Rondônia · Memorando-Circular nº 4/2020/SEDUC-DGE (cópia do documento)",
+  "veic": "SEDUC-RO / espelho público do documento SEI",
   "data":"2020-02-06",
-  "tit":"Memorando-Circular nº 4/2020/SEDUC-DGE · recolhimento de livros e referência ao Adendo SEI 10053329",
-  "url":"https://static.poder360.com.br/2020/02/momerando-seduc-RO.pdf"
+  "tit": "Cópia espelhada do Memorando-Circular nº 4/2020/SEDUC-DGE e da relação de 43 títulos; documento SEI 10040389, verificador 10040389, CRC F6F331F8.",
+  "url": "https://questoesrelevantes.wordpress.com/wp-content/uploads/2020/02/rondonia-livros-proibidos.pdf"
  },
  "mpf-ro-arquivamento": {
   "tipo": "P2","veic":"Ministério Público Federal · Diário Eletrônico, DMPF-e nº 161/2021","data":"2021-08-30","tit":"Inquérito Civil nº 1.31.000.000213/2020-61 · homologação do arquivamento","url":"https://transparencia.mpf.mp.br/conteudo/diarios-e-boletins/diario-eletronico-dmpf-e/2021/DMPF-EXTRAJUDICIAL-2021-08-30.pdf"},
