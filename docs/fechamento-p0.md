@@ -1,86 +1,108 @@
-# Fechamento operacional P0 — Estante Livre
+# Fechamento P0 — 4 de novembro de 2026
 
-**Data:** 3 de novembro de 2026  
-**Branch:** `feat/estante-livre-auditoria-profissional`
+## Resultado executivo
 
-## Resultado
+A revisão documental P0 foi concluída até o limite das fontes públicas localizadas. A pesquisa ampliada encontrou documentos oficiais e acadêmicos que permitem encerrar cinco dos dez registros anteriormente classificados como parcialmente verificados. Os outros cinco permanecem parciais porque o documento primário específico não foi localizado, está sob segredo de Justiça ou não foi publicado.
 
-**Atualização de 3/11/2026 — rodada complementar**
-- EL-028: incorporada reportagem do UOL de 29/07/2026 com a decisão de restituição em cinco dias após a intimação, proibição de restrições político-ideológicas e informação de que a Prefeitura não havia confirmado o cumprimento. A devolução física segue sem prova.
-- EL-032: incluída cobertura de 16/04/2026 sobre a análise municipal e reforçada a distinção entre anúncio de retomada pedagógica e redistribuição física comprovada.
-- EL-035: corrigida a data da referência da Folha de Londrina para 12/03/2026 e explicitado que os nomes das signatárias e a unidade escolar não foram divulgados.
-- EL-022 a EL-024: as fichas e a página de pendências agora registram a reprodução documental da relação de 43 posições e do Memorando-Circular de Rondônia, sem tratar a cópia como autenticação do Adendo SEI 10053329.
-- Corrigida a ficha de Rubem Fonseca: 19 entradas na reprodução, 18 títulos distintos; a chave do cadastro, a ficha e a página gerada foram sincronizadas.
-- Conferência do catálogo: 94 fontes/URLs, todas com tipo de fonte registrado; Gênio Criador está classificado como B1.
-- A auditoria automatizada identifica nove registros sem signatário formal identificado: EL-025 a EL-029, EL-032, EL-033, EL-036 e EL-037. Os dois registros de Canoinhas foram acrescentados à contagem.
-- GitHub Actions, execução 186 (commit 1765d364): sucesso; gerador, validação do catálogo, trilha de investigação e auditoria estática passaram. Foram verificadas 167 páginas HTML e 36 imagens, sem erros bloqueantes.
-- A prévia da Vercel foi concluída. O PR #5 continua aberto e não foi mesclado nem publicado em produção.
-- Permanecem fora do controle editorial imediato: respostas dos órgãos aos pedidos ainda não protocolados, autorização/fundamento de uso das sete capas e inspeção visual manual em navegador/dispositivos reais.
+**Resultado dos dez registros da lista P0:**
+- **5 verificados:** EL-022, EL-023, EL-024, EL-036 e EL-037.
+- **5 parcialmente verificados:** EL-028, EL-030, EL-031, EL-032 e EL-035.
 
+A revisão dos nove alertas de signatário também foi concluída. Não se atribuiu a ninguém a assinatura de uma ordem que não foi localizada. Foram identificados signatários de documentos correlatos, com a distinção expressa entre decisão, pedido, resposta, assinatura e execução.
 
-P0 está fechado quanto à revisão editorial interna, matriz de evidências e preparação dos pedidos. Não está fechado quanto à confirmação documental externa: os órgãos ainda precisam fornecer documentos. Nenhum pedido foi protocolado nesta etapa, nenhum registro foi promovido a “Verificado” e não houve publicação em produção.
+As sete capas locais receberam metadados de edição, crédito, fonte editorial e nota de referência visíveis na interface. **Isso não equivale a autorização formal de reprodução:** a origem histórica dos arquivos JPG e licenças individuais não foram recuperadas.
 
-## 1. Revisão dos dez registros
+A branch `feat/estante-livre-auditoria-profissional` recebeu as alterações de dados, a trilha de signatários e a exibição de créditos. A publicação em produção ainda depende da validação final, do merge do PR #5 e da conferência pós-deploy.
 
-| Registro | Conclusão segura | Prova ainda necessária |
-|---|---|---|
-| EL-022 | Rondônia: 19 entradas atribuídas a Rubem Fonseca na reprodução; 18 títulos distintos, pois *O Seminarista* aparece duas vezes. | Adendo SEI 10053329 original, inventário e execução por escola. |
-| EL-023 | A reprodução traz ordem genérica sobre livros de Rubem Alves, sem títulos individualizados. | Adendo original e inventário título a título. |
-| EL-024 | Memorando encaminha recolhimento às CREs. Suamy consta no fecho; Irany de Oliveira Lima Morais é signatária eletrônica. | Processo SEI integral, histórico, suspensão e sindicância. |
-| EL-028 | UOL (29/07/2026) detalha a decisão de 20/07: restituição em cinco dias após intimação, vedação de restrição político-ideológica e ausência de confirmação pública de cumprimento. | Intimação, cumprimento por unidade e eventual recurso. |
-| EL-030 | Pedido parlamentar de Jéssica Ramos Moreno; recolhimento não comprovado. | Requerimento original, resposta da SME e eventual ordem/registro de coleta. |
-| EL-031 | Controvérsia sobre link de resenha em atividade; não há prova de banimento ou retirada de exemplares. | Nota oficial integral e registro da avaliação pedagógica. |
-| EL-032 | Pedido atribuído à vereadora; Prefeitura confirmou retirada e anunciou retomada pedagógica após análise técnica. A cobertura de abril e julho não prova redistribuição física. | Requerimento, resposta integral, parecer, aquisição/distribuição e prova de retorno. |
-| EL-035 | Reportagens de 12/03/2026 identificam os cargos signatários (gerente e diretora pedagógica) e o início do levantamento/recolhimento para análise; não divulgam os nomes nem a unidade. | Processo SEI, pedido, despacho, quantitativos, parecer e decisão final. |
-| EL-036 | TCE-SC concluiu que os livros não foram jogados no lixo; estavam com a Fundação Cultural para análise de destinação. | Inventário/movimentação posterior, destino atual e resultado da notícia de fato do MPSC. |
-| EL-037 | Mesmo episódio de Canoinhas; Requerimento nº 149/2024 não pediu nominalmente a retirada desses títulos. | Mesmas diligências de EL-036. |
+## 1. Dez registros parcialmente verificados: resultado
 
-## 2. Atribuição de responsabilidades
+| Registro | Resultado em 04/11 | Evidência encontrada | O que permanece |
+|---|---|---|---|
+| EL-022 | **Verificado** | Memorando de Rondônia, Diário do MPF nº 161/2021 e artigo acadêmico que reproduz a lista | Adendo SEI 10053329 original e resultado da sindicância |
+| EL-023 | **Verificado** | Mesmas fontes; a instrução geral sobre todos os livros de Rubem Alves aparece na reprodução da relação | Adendo original e resultado da sindicância |
+| EL-024 | **Verificado** | Mesmas fontes; relação de 43 entradas reproduzida academicamente | Adendo original e resultado da sindicância |
+| EL-028 | Parcial | Cobertura do recolhimento, decisões judiciais noticiadas e decisão de 20/07/2026 atribuída à juíza Renata Heloísa da Silva Salles | Ordem municipal original; íntegra e cumprimento da decisão, em processo sob segredo |
+| EL-030 | Parcial | PL 79/2024 e Lei Municipal 13.930/2025 em fonte oficial; cobertura do pedido específico | Requerimento de 26/11/2024, resposta da SME e prova de retirada efetiva |
+| EL-031 | Parcial | Duas reportagens permitem distinguir retirada temporária de um link de resenha de retirada de exemplares | Nota institucional e registro interno da avaliação do link |
+| EL-032 | Parcial | Reportagens, anúncio de retorno pedagógico e cadastro oficial da Câmara com nomes completos dos vereadores | Número e íntegra do requerimento, resposta integral e ordem original por WhatsApp |
+| EL-035 | Parcial | Folha de Londrina, errata, CBN e relatório do OGPL sobre restrições de acesso no SEI | Número SEI, pedido integral, despacho, signatários e decisão final |
+| EL-036 | **Verificado** | SAPL da Câmara e decisão/relatório do TCE-SC: não houve descarte físico; livros ficaram sob custódia da Fundação Cultural para análise | Recibo, nome de quem recebeu, inventário posterior e resultado do MPSC |
+| EL-037 | **Verificado** | Mesmas fontes, para o segundo título | Recibo, nome de quem recebeu, inventário posterior e resultado do MPSC |
 
-Manter separados: pressão pública, pedido formal, denúncia/fiscalização, autoridade decisora, signatário, unidade executora e resposta/reversão.
+**Critério de “verificado”:** o núcleo factual descrito no registro está apoiado por documento primário ou por conjunto documental convergente. Isso não significa que todos os detalhes, a destinação atual ou cada assinatura estejam resolvidos.
 
-- **Rondônia:** Suamy Vivecananda aparece no fecho; Irany de Oliveira Lima Morais consta como signatária eletrônica. Não confundir as funções.
-- **EL-030:** a vereadora é autora do pedido relatado; não há prova de execução pela SME.
-- **EL-031:** o porta-voz do colégio não é autor de decisão de censura; o episódio envolve link de atividade.
-- **EL-032:** Zelinda Pastora é identificada como autora do pedido por declaração pública; Isaac do Carmo e Talita atuaram na fiscalização posterior.
-- **EL-035:** pedido atribuído à gerência e diretoria pedagógica, sem nomes divulgados; autoridade individual que autorizou a providência não identificada.
-- **EL-036/037:** requerimento parlamentar pediu revisão/reorganização do acervo e separação por faixa etária; não nomeou os dois títulos. A prefeita aparece no vídeo e a Prefeitura confirmou retirada, mas não há ordem escrita nem signatário formal identificado.
+## 2. Revisão dos nove alertas de signatário
 
-## 3. Lacunas documentais prioritárias
+Os nove registros são EL-025, EL-026, EL-027, EL-028, EL-029, EL-032, EL-033, EL-036 e EL-037.
 
-1. Rondônia: Adendo 10053329, processo SEI 0029.051300/2020-91, sindicância, inventário e devolução.
-2. Canoinhas: nota municipal, inventário, movimentação na Fundação Cultural e resultado da notícia de fato do MPSC.
-3. Mato Grosso do Sul: ordem formal, parecer técnico, comunicação de devolução e confirmação por escola.
-4. Paraná: ofícios originais da Secretaria e do NRE Curitiba, registros de coleta e orientação de retorno.
-5. São José dos Campos, Londrina e Taubaté: documentos judiciais/administrativos, pareceres e prova de cumprimento.
-6. Distrito Federal: nota oficial e registro da avaliação do link.
+| Registro | Documento/decisão original | Signatários ou responsáveis identificados em documentos correlatos | Limite da atribuição |
+|---|---|---|---|
+| EL-025 | Assinatura formal do Relatório Público 01/CNIRC não confirmada | Marco Aurélio Franco assinou a Nota Informativa 0166090/2021; João Jorge Santos Rodrigues e Flávia de Jesus Costa assinaram a Resolução FCP 24/2024; a pesquisa acadêmica identifica o juiz Erik Navarro Wolkart na liminar | Nenhum desses nomes deve ser apresentado como signatário do relatório original ou da ordem administrativa de 2021 |
+| EL-026 | Não foi localizado ato individual que determinasse a segregação | Juçara Quinteros de Farias e Gilcy Rodrigues Azevedo assinaram o relatório técnico da Câmara; Marco Aurélio Franco assinou a resposta da FCP | O relatório técnico documenta a Sala 11; não é uma ordem administrativa da FCP |
+| EL-027 | Não foi localizado ato separado de recolhimento | Prof. Alberto Souza Tibúrcio assinou o Ofício 216/2024/SEMED/PMCL | A assinatura é da resposta oficial, que informa que não houve recolhimento |
+| EL-028 | Ordem municipal original atribuída a mensagem de WhatsApp; signatário não identificado em documento público | A decisão judicial de 20/07/2026 é atribuída à juíza Renata Heloísa da Silva Salles | A juíza assina a decisão judicial de 2026, não a ordem municipal original |
+| EL-029 | Não há despacho individual localizado | A nota pública é institucional e atribui a decisão à Coordenação do Vestibular da UniRV | Não inventar um signatário pessoa física |
+| EL-032 | Ordem inicial atribuída a mensagem de WhatsApp do secretário Hélcio Carvalho dos Santos | Isaac Jarbas Mascarenhas do Carmo e Talita de Lima Barbosa assinaram requerimento de fiscalização parlamentar | Os vereadores não assinaram a ordem de retirada; a resposta integral do prefeito não foi recuperada |
+| EL-033 | Ato formal assinado não localizado | Henrique Pereira de Souza Neto é identificado pela reportagem como decisor; Reginaldo Caetano da Silva como remetente de mensagem posterior | Reginaldo não deve ser apresentado como autor do veto |
+| EL-036 | Ordem de retirada assinada não localizada | Oito vereadores assinaram o Requerimento 149/2024; Gerson dos Santos Sicca assinou a decisão do TCE-SC | O requerimento e a decisão do TCE são documentos distintos da ordem original |
+| EL-037 | Mesma lacuna do EL-036 | Mesmos signatários documentais do caso Canoinhas | Não há recibo de transferência ou identificação nominal do recebedor |
 
-## 4. Matriz de evidências
+**Conclusão da auditoria de assinaturas:** nenhum nome foi promovido a signatário da ordem original sem documento que sustente essa atribuição. A interface de poder passa a distinguir signatários de documentos correlatos e responsáveis atribuídos por fontes secundárias.
 
-`docs/matriz-afirmacao-evidencia-p0.md` é a matriz de controle dos dez registros. Toda afirmação relevante deve apontar fonte/localizador, tipo de evidência, alcance, limitação e diligência seguinte. Reportagem, declaração atribuída e ausência de documento não equivalem a documento primário.
+## 3. Casos documentais aprofundados
 
-## 5. Pedidos de acesso à informação
+### Rondônia
 
-As minutas em `docs/pedidos-lai-prontos.md` foram ampliadas para nove frentes: Seduc-RO, São José dos Campos, Londrina (2024 e 2026), CBMDF/Colégio Militar Dom Pedro II, Taubaté, Canoinhas/MPSC, SED-MS e SEED-PR/NRE Curitiba.
+O Diário Eletrônico do MPF nº 161/2021, de 30/08/2021, registra que a solicitação operacional foi verbal, suspensa no mesmo dia, e que exemplares eventualmente recolhidos foram devolvidos às escolas. O MPF também registra sindicância aberta pela Seduc e recomendação do MP-RO acatada. O artigo acadêmico de 2024 na Revista Interfaces reproduz a relação de 43 entradas: 19 entradas atribuídas a Rubem Fonseca, correspondentes a 18 títulos distintos porque “O Seminarista” aparece duas vezes; a instrução geral sobre todos os livros de Rubem Alves; e os demais títulos.
 
-**Situação:** minutas prontas; nenhum pedido foi protocolado. Não há número de protocolo a registrar. Após o envio pela responsável editorial, preencher órgão, canal, data, número, prazo, resposta, anexos e decisão editorial.
+A verificação factual dos agrupamentos foi encerrada. A recuperação do Adendo SEI 10053329 original e do resultado da sindicância permanece como diligência de preservação documental.
 
-## 6. Base pública e encerramento factual
+### Fundação Cultural Palmares
 
-Os dez registros permanecem parcialmente verificados. Não promover nenhum a “Verificado” sem documentação suficiente. Em especial: EL-022 não são “19 títulos”; EL-031 não é banimento de livro; EL-036/037 não são casos de destruição; EL-030 não comprova recolhimento; EL-028 e EL-032 não comprovam retorno físico.
+Foi localizado o PDF oficial de 92 páginas **“Respostas da FCP aos relatórios da Comissão de Cultura da Câmara dos Deputados, seguidas dos próprios relatórios em questão”**. O arquivo reúne:
+- Nota Informativa 0166090/2021 da FCP, assinada eletronicamente por Marco Aurélio Franco em 06/11/2021;
+- relatório técnico da Câmara, assinado por Juçara Quinteros de Farias e Gilcy Rodrigues Azevedo;
+- registro da Sala 11 como “sala da vergonha (livros)” e imagens de caixas com livros destinados à doação.
 
-P0 está fechado como **preparação e revisão editorial**. O encerramento factual depende do protocolo e resposta dos pedidos, cotejo dos documentos, sincronização de JSON/CSV, regeneração das páginas e auditoria final. Nenhuma alteração de status deve ser feita por inferência.
+A resposta da FCP contesta o relatório e trata, em sua argumentação, da Sala 1. O relatório técnico da Câmara é o documento que registra a Sala 11. Os dois textos são mantidos como documentos distintos, sem tratar a resposta institucional como se fosse confirmação da Câmara.
 
+O número de 5.165 títulos é atribuído ao Relatório Público 01/CNIRC; o arquivo original e a lista nominal não foram recuperados. Por isso, EL-025 permanece parcialmente verificado quanto ao quantitativo. A Resolução FCP nº 24/2024, assinada por João Jorge Santos Rodrigues e Flávia de Jesus Costa, aprova a política de desenvolvimento de coleções e reproduz trecho da decisão judicial que impedia movimentação do acervo, salvo consulta local.
 
-## Atualização EL-025/EL-026 — Fundação Cultural Palmares (03/11/2026)
+### Canoinhas
 
-A investigação documental da Fundação Palmares foi ampliada após busca em fontes públicas, sem depender de novo pedido LAI.
+A decisão singular GCS/GSS-861/2024 do TCE-SC, no levantamento @LEV 24/80041829, afirma que os livros não foram efetivamente jogados no lixo e estavam em poder da Fundação Cultural para análise de destinação. A conclusão se baseia na resposta da prefeita juntada às fls. 14–32, segundo a qual os títulos haviam sido entregues à gestora da Fundação Cultural. O documento não identifica nominalmente quem recebeu os livros e não inclui recibo de transferência assinado. O TCE arquivou o levantamento por baixa materialidade financeira e pela existência de notícia de fato no MPSC; isso não equivale a uma conclusão do MPSC nem comprova o destino posterior.
 
-- Localizada a reprodução pública da relação de títulos divulgada em 2021: Por Dentro do RN, 17/06/2021. A página informa 261 entradas após retirar edições repetidas da lista anunciada como 300 títulos. A fonte é reprodução jornalística, não o anexo primário autenticado.
-- Iniciado cruzamento amostral entre a relação e o inventário oficial da FCP publicado em 08/08/2024. Foram encontradas correspondências de título/autor/ano para *Almas Mortas*, *Bandidos*, *O Sexo na Alemanha Nazista*, *O Mundo do Socialismo* e *A Pré-Revolução Brasileira*, além de correspondências para o *Dicionário do Folclore Brasileiro* em múltiplas edições e *O Capital* em múltiplos registros.
-- O PDF oficial FCP/Câmara (Nota Informativa SEI 0166090/2021 + relatório técnico da Câmara) identifica a Sala 11 como “sala da vergonha (livros)” e registra imagens de livros classificados como inadequados e caixas contendo livros para doação.
-- Correção de precisão: a Nota Informativa da FCP fala da Sala 1, com livros em caixas posteriormente postos em estantes; o relatório técnico da Câmara identifica a Sala 11 como “sala da vergonha”. Não há base para presumir que sejam a mesma sala ou o mesmo conjunto de livros.
-- Evitar afirmar que os livros estavam “trancados”: o relatório descreve portas com fechaduras simples, mas não demonstra bloqueio permanente de acesso.
-- A dissertação da UnB registra a reintegração geral ao acervo em visita presencial de 29/02/2024. O relatório de gestão 2025 confirma digitalização/disponibilização de títulos no SOPHIA e 35.674 exemplares distribuídos, mas não individualiza os títulos segregados em 2021.
+### Londrina, 2026
 
-**Status atualizado:** a existência do espaço físico e a reintegração geral do conjunto estão sustentadas por evidência pública documental e acadêmica. A relação nominal deixou de ser uma lacuna absoluta, mas o cruzamento das 261 entradas com o inventário é apenas amostral. Permanecem pendentes a comparação integral, a rastreabilidade física título a título, a disponibilidade atual e o desfecho judicial. Não promover EL-025/EL-026 a “Verificado” até concluir esses pontos e atualizar as fichas públicas.
+A errata da Folha de Londrina, publicada em 12/03/2026, corrige a atribuição: a iniciativa partiu da equipe da Gerência de Ensino Fundamental da SME, não da direção da escola municipal. O relatório do OGPL informa que, após 18/02/2025, apenas 15 processos do tipo Pedido de Providências estavam públicos, enquanto 19.588 tinham restrição de acesso. A Portaria SMGP-GAB nº 28/2020 é citada como regra de publicidade. O número SEI do caso específico não foi localizado; portanto, não é correto afirmar que o documento esteja necessariamente disponível em consulta pública.
+
+## 4. Capas: resultado e limite
+
+As sete capas locais agora exibem na interface edição de referência, crédito disponível, link para ficha editorial e nota sobre a identificação da edição. A origem histórica dos JPGs e a autorização individual de reprodução não foram documentadas no repositório. A política adotada não presume domínio público nem licença geral; o uso permanece limitado a contexto informativo e sujeito a revisão.
+
+O inventário detalhado está em [inventario-de-imagens.md](inventario-de-imagens.md), e a política está em [politica-de-direitos-e-imagens.md](politica-de-direitos-e-imagens.md).
+
+## 5. Pedidos de acesso ainda necessários
+
+Foram preparados pedidos específicos para:
+1. Seduc-RO: Adendo SEI 10053329, processo 0029.051300/2020-91 e resultado da sindicância.
+2. Fundação Cultural Palmares: Relatório Público 01/CNIRC, lista dos 5.165 títulos e inventário/movimentação posterior.
+3. SME Londrina: número SEI e íntegra dos pedidos de 2024 e 2026, despachos, quantitativos e fundamento de eventual restrição.
+4. Câmara/Prefeitura de Taubaté: número e íntegra do requerimento, resposta do prefeito e parecer técnico.
+5. Funap: mensagem original, ata e registros de distribuição/retorno.
+6. Prefeitura de São José dos Campos: ordem municipal e informações públicas de cumprimento da decisão judicial, sem pedir acesso a peças sigilosas.
+7. Prefeitura/Fundação Cultural de Canoinhas e MPSC: recibo, nome do recebedor, inventário, movimentações e resultado da Notícia de Fato.
+
+**Nenhum pedido foi protocolado em nome da usuária.** Os textos estão prontos para revisão e envio.
+
+## 6. Integração técnica e publicação
+
+- PR #5 continua sendo a branch de consolidação das alterações P0.
+- A página `poder.html` e a rede de papéis recebem as distinções de autoria e assinatura.
+- A política de capas e os créditos visíveis foram incorporados ao código da branch.
+- PR #4 mantém melhorias adicionais de catálogo e 16 referências de capas que não são necessárias para encerrar a revisão das sete capas locais; sua página política é funcionalmente coberta pela trilha de poder do PR #5. Não fazer merge automático dos dois PRs sem revisão de conflito.
+- **A produção só deve ser declarada concluída após CI, merge do PR #5 e verificação do site publicado.**
+
+## Critério de encerramento
+
+A apuração P0 está documentada e as lacunas remanescentes têm causa, evidência consultada e pedido de acesso correspondente. O gate de publicação permanece aberto até a validação técnica e a conferência pós-deploy.

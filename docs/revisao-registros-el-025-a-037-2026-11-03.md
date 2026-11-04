@@ -45,3 +45,14 @@ A revisão não autoriza promover automaticamente os registros a “Verificado�
 - Canoinhas: movimentação posterior dos livros na Fundação Cultural e resultado da notícia de fato do MPSC.
 
 **Status:** revisão editorial interna realizada nesta rodada; dependências documentais externas permanecem abertas. Nenhum pedido de acesso à informação foi protocolado nesta atualização e nenhuma alteração foi publicada em produção.
+
+
+---
+
+## Errata e atualização documental — 04/11/2026
+
+1. **Fundação Palmares:** foi localizado o PDF oficial de 92 páginas que reúne a Nota Informativa 0166090/2021 e os relatórios técnicos da Câmara. Marco Aurélio Franco assina a nota da FCP; Juçara Quinteros de Farias e Gilcy Rodrigues Azevedo assinam o relatório técnico da Câmara. A Sala 11 aparece no relatório da Câmara como “sala da vergonha (livros)” e as fotografias mostram caixas com livros para doação. A resposta da FCP trata da Sala 1; não deve ser confundida com o relatório sobre a Sala 11. A Resolução FCP nº 24/2024, assinada por João Jorge Santos Rodrigues e Flávia de Jesus Costa, reproduz trecho da decisão judicial sobre movimentação do acervo. Como a lista nominal e o Relatório Público 01 original não foram recuperados, EL-025 passa a “Parcialmente verificado” quanto ao número de 5.165 títulos.
+2. **Canoinhas:** correção de atribuição. A decisão do TCE-SC afirma que a prefeita informou que os livros foram entregues à gestora da Fundação Cultural. O TCE não identifica nominalmente a pessoa que recebeu os exemplares nem apresenta recibo assinado. A atribuição de assinatura a Viviane Guedes dos Santos foi removida por falta de documento que a sustente. A decisão GCS/GSS-861/2024 é assinada por Gerson dos Santos Sicca.
+3. **Rondônia:** a reprodução acadêmica da lista permite verificar os agrupamentos de EL-022 a EL-024: 19 entradas atribuídas a Rubem Fonseca correspondem a 18 títulos distintos; “O Seminarista” aparece duas vezes. O MPF registra solicitação verbal suspensa no mesmo dia e devolução de exemplares eventualmente recolhidos. O Adendo SEI 10053329 original e o resultado da sindicância permanecem não localizados.
+4. **Taubaté:** o cadastro oficial da Câmara confirma os nomes completos de Isaac Jarbas Mascarenhas do Carmo, Talita de Lima Barbosa e Zelinda Drago Rocha (nome parlamentar: Zelinda Pastora). Isaac e Talita assinam requerimento de fiscalização, não a ordem de retirada atribuída a Hélcio Carvalho dos Santos.
+5. **Londrina 2026:** a errata da Folha atribui o pedido à equipe da Gerência de Ensino Fundamental da SME, não à direção da escola. O número SEI e os nomes individuais não foram publicados.

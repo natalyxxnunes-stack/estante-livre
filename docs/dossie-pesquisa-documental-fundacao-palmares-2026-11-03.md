@@ -380,3 +380,16 @@ A lista pública de 2021 contém 261 entradas após exclusão jornalística de e
 - Lista pública de 261 entradas, Por Dentro do RN, 17/06/2021: https://pordentrodorn.com.br/2021/06/17/veja-lista-de-livros-banidos-pela-fundacao-palmares/
 - Inventário oficial FCP, versão atualizada em 04/09/2023: https://www.gov.br/palmares/pt-br/centrais-de-conteudo/publicacoes/ListadeLivrosAtualizada04.09.23.pdf
 - Página oficial de downloads da FCP, que lista outros arquivos públicos do CNIRC, inclusive lista de livros atualizada em 16/01/2023 e documentos de ambientes/acondicionamento: https://www.gov.br/palmares/pt-br/midias/arquivos/download
+
+
+---
+
+## Atualização de 04/11/2026 — documentos primários recuperados
+
+Foi localizado o PDF oficial da FCP de 92 páginas: [Respostas da FCP aos relatórios da Comissão de Cultura da Câmara dos Deputados](https://www.gov.br/palmares/pt-br/midias/arquivos/download/resposta.pdf). O arquivo reúne a Nota Informativa 0166090/2021, assinada por Marco Aurélio Franco em 06/11/2021, e o relatório técnico da Câmara, assinado por Juçara Quinteros de Farias e Gilcy Rodrigues Azevedo.
+
+O relatório técnico da Câmara identifica a Sala 11 como “sala da vergonha (livros)” e, na seção fotográfica, descreve caixas contendo livros para doação. A resposta da FCP contesta o relatório e trata, em sua argumentação, da Sala 1. A distinção entre os dois documentos e as duas salas deve permanecer explícita.
+
+A Resolução FCP nº 24, de 22/02/2024, publicada em 26/02/2024, aprova a Política de Formação e Desenvolvimento de Coleções e reproduz trecho da decisão judicial da Ação Popular nº 5006660-67.2021.4.02.5117/RJ, que impede movimentação do acervo, exceto consulta local. A resolução é assinada por João Jorge Santos Rodrigues e Flávia de Jesus Costa.
+
+O número de 5.165 títulos é atribuído ao Relatório Público 01/CNIRC, mas a íntegra do relatório e a lista nominal não foram recuperadas. A Nota Informativa da FCP confirma intenção de doar títulos considerados fora da missão institucional, mas não confirma por si só o quantitativo. EL-025 permanece parcialmente verificado quanto ao número.

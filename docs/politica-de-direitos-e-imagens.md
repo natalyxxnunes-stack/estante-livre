@@ -1,102 +1,45 @@
-# Política de direitos, capas e documentos visuais
+# Política de uso informativo de capas e imagens
 
-**Estante Livre · versão 1.1 · 3 de novembro de 2026**
+**Atualização:** 4 de novembro de 2026.  
+**Escopo:** sete imagens locais de capas de livros exibidas no catálogo Estante Livre.
 
-## 1. Princípio editorial
+## 1. Finalidade
 
-O Estante Livre é um projeto jornalístico e documental. Imagens de capas, documentos e outros elementos visuais podem ser necessários para identificar as obras investigadas, contextualizar decisões e permitir que o público confira a documentação.
+As imagens aparecem ao lado de registros de obras que integram episódios documentados de retirada, restrição, segregação ou controvérsia institucional. A função é identificar visualmente a obra e facilitar a investigação do registro. Não são usadas como material promocional de editoras nem como substituto do livro.
 
-A disponibilidade de uma imagem na internet não a coloca automaticamente em domínio público nem equivale a uma licença. Ao mesmo tempo, a ausência de uma autorização individual arquivada não significa, por si só, que toda reprodução editorial seja ilícita: é necessário avaliar a finalidade, a forma, a extensão e o contexto de cada uso.
+## 2. Critérios editoriais
 
-A decisão editorial deve ser documentada. Não se deve declarar que existe autorização quando ela não foi obtida.
+1. Usar apenas a imagem necessária à identificação da obra.
+2. Exibir a capa em tamanho de referência, junto ao título, ao registro documental e à explicação do episódio.
+3. Identificar a edição representada sempre que houver dados suficientes.
+4. Exibir crédito de capa quando a ficha editorial ou fonte confiável o informar.
+5. Linkar a ficha editorial ou a referência acadêmica consultada.
+6. Distinguir crédito de ilustração, autoria do livro, design gráfico e fotografia de capa; não atribuir uma função a alguém sem fonte.
+7. Informar quando o crédito específico não aparece na ficha pública.
+8. Não afirmar que a imagem local veio da página editorial atualmente linkada quando essa procedência não foi registrada.
+9. Não presumir domínio público por idade da obra, da edição ou do autor.
+10. Fornecer texto alternativo com o título da obra e manter o crédito legível.
 
-## 2. Capas de livros: critérios de uso editorial
+## 3. Base de referência e limites
 
-### 2.1. Fundamento jurídico a considerar
+O Manual de Comunicação do Senado Federal contém orientação editorial sobre uso informativo de capas e imagens. Essa orientação é uma referência de comunicação pública, **não uma licença geral concedida aos projetos externos nem uma decisão jurídica aplicável automaticamente ao Estante Livre**.
 
-A Lei nº 9.610/1998 protege obras intelectuais, inclusive elementos gráficos e artísticos que podem integrar uma capa. A análise de reprodução deve considerar, entre outros dispositivos:
+A Lei nº 9.610/1998 deve ser considerada na avaliação de cada uso. As limitações e exceções legais não devem ser invocadas de forma automática: finalidade, extensão, contexto, necessidade e eventuais direitos de terceiros precisam ser avaliados caso a caso.
 
-- **Art. 46, III:** permite a citação, em livros, jornais, revistas ou qualquer outro meio de comunicação, de passagens de qualquer obra para fins de estudo, crítica ou polêmica, na medida justificada para o fim e com indicação do autor e da origem.
-- **Art. 46, VIII:** prevê hipótese específica de reprodução de pequenos trechos de obras preexistentes e de obras de artes plásticas, nas condições estabelecidas pelo dispositivo, desde que a reprodução não seja o objetivo principal da obra nova e não prejudique a exploração normal nem cause prejuízo injustificado aos interesses legítimos dos autores.
-- **Art. 45:** trata das hipóteses em que obras pertencem ao domínio público. A simples presença de uma capa em catálogo, livraria, editora ou mecanismo de busca não a torna domínio público.
+O Estante Livre não declara possuir licença ou autorização formal individual para as sete capas. A origem histórica dos arquivos JPG não está registrada no repositório. Por isso, a política é de uso informativo restrito, transparência de crédito e revisão contínua, não de certificação jurídica de licitude.
 
-A aplicação desses dispositivos depende das características concretas da publicação. O enquadramento jornalístico não constitui autorização automática nem imunidade geral. A finalidade informativa, crítica ou documental, a necessidade de identificar a obra, a dimensão da reprodução, o destaque dado à imagem e a existência de exploração comercial são fatores que devem ser considerados em conjunto.
+## 4. Referências consultadas
 
-Como referência setorial complementar, o *Manual Prático de Direitos Autorais* da ABTU/CNU, elaborado com colaboração do escritório Cesnik, Quintino e Salinas (2012, p. 22–23), discute o uso de capas em contexto jornalístico e aponta que, em princípio, a reprodução para finalidade jornalística pode constituir uso adequado, a depender das características e da finalidade. Trata-se de orientação técnica, não de decisão judicial nem de garantia universal.
+- [Senado Federal — Manual de Comunicação: uso de imagens](https://www12.senado.leg.br/manualdecomunicacao/estilos/uso-de-imagens)
+- [Lei nº 9.610/1998 — direitos autorais](https://www.planalto.gov.br/ccivil_03/leis/l9610.htm)
+- [Inventário das sete capas e respectivas fichas](inventario-de-imagens.md)
 
-### 2.2. Padrão editorial do Estante Livre
+## 5. Procedimento diante de contestação
 
-Quando a capa for usada para identificar uma obra objeto de apuração:
+1. Registrar a solicitação e identificar a imagem e o direito invocado.
+2. Conferir a titularidade e a edição representada.
+3. Avaliar se o crédito ou a fonte precisam ser corrigidos.
+4. Se a procedência ou a base de uso não puder ser sustentada, substituir a imagem por ficha bibliográfica textual enquanto a questão é analisada.
+5. Registrar a decisão editorial e a data da alteração.
 
-1. **Finalidade:** a imagem deve cumprir função informativa, documental, crítica ou de identificação da obra investigada.
-2. **Proporcionalidade:** usar miniatura ou dimensão estritamente necessária à identificação; não disponibilizar arquivo em alta resolução sem necessidade editorial.
-3. **Contexto:** apresentar a capa junto à ficha da obra e ao conteúdo jornalístico pertinente, não como imagem isolada ou peça promocional.
-4. **Crédito:** informar, quando identificáveis, título, autoria da obra, editora, edição/ISBN e crédito da arte de capa. O crédito não substitui licença nem autorização.
-5. **Origem:** registrar a URL ou o meio pelo qual o arquivo foi obtido e a data de obtenção.
-6. **Rastreabilidade:** manter a ficha do ativo no inventário de imagens, indicando separadamente autorização/licença e fundamento editorial considerado.
-7. **Não substituição de mercado:** não oferecer a capa como produto, arquivo para download ou substituto da aquisição da obra; quando possível, incluir ligação para a editora ou catálogo oficial.
-8. **Revisão individual:** reavaliar usos que ganhem destaque desproporcional, sejam reaproveitados em publicidade, merchandising ou materiais promocionais, ou deixem de estar ligados à investigação jornalística.
-
-A manutenção de uma miniatura no contexto de uma ficha documental pode ter fundamento editorial a ser analisado à luz do art. 46, III, e, conforme o caso, de outros dispositivos aplicáveis. Isso não deve ser descrito no inventário como “autorização”. Usar a classificação **“fundamento editorial em avaliação”** até que a análise específica esteja concluída.
-
-### 2.3. Decisão sobre as sete capas já existentes
-
-As sete capas listadas em `docs/inventario-de-imagens.md` não têm, no estado atual do repositório, registro individual de autorização, licença ou URL de origem. Essa lacuna deve ser corrigida.
-
-**Não remover nem substituir automaticamente as sete capas apenas pela ausência de uma autorização arquivada.** Primeiro, avaliar cada uso conforme os critérios desta política, registrar a origem e o crédito disponível e documentar o fundamento editorial considerado. Se a avaliação indicar risco relevante ou se o uso não for necessário à identificação jornalística, substituir por metadados textuais e link para fonte editorial oficial.
-
-## 3. Documentos administrativos e judiciais
-
-- Priorizar documento original publicado por órgão público ou tribunal.
-- Preservar URL de origem, órgão emissor, número, data e página/trecho relevante.
-- Não alterar o conteúdo do documento. Se houver tarja por proteção de dados, preservar uma cópia íntegra para controle interno quando legalmente possível e explicar a intervenção na versão pública.
-- Para visualização, usar trecho ou miniatura apenas na extensão necessária à análise e manter link para a íntegra sempre que disponível.
-- Proteger dados pessoais não pertinentes, especialmente de estudantes, crianças, familiares e fontes humanas.
-- Diferenciar documento original, cópia obtida por LAI, reprodução jornalística e transcrição produzida pela equipe.
-
-## 4. Fotografias, retratos e outras imagens
-
-- Registrar autoria, titular, licença, autorização, origem e contexto.
-- Evitar imagens de estudantes e menores de idade, salvo necessidade jornalística excepcional e análise específica de proteção.
-- Não associar retrato a acusação ou responsabilidade sem identificação inequívoca e base documental.
-- Preferir imagens institucionais oficiais quando forem adequadas e seu uso estiver juridicamente fundamentado.
-- Não tratar crédito, atribuição ou link de origem como substitutos automáticos de autorização.
-
-## 5. Inventário obrigatório de ativos
-
-Manter um registro por arquivo com os seguintes campos:
-
-| Campo | Descrição |
-|---|---|
-| Arquivo | Caminho no repositório |
-| Conteúdo | Capa, documento, fotografia, mapa ou ilustração |
-| Obra/ato relacionado | ID do caso ou obra |
-| Autor/titular | Identificação conhecida ou “não identificado” |
-| Origem | URL ou meio de obtenção |
-| Data de obtenção | Data |
-| Licença/autorização | Situação comprovada, com evidência, ou “não localizada” |
-| Fundamento editorial | Finalidade, contexto, proporcionalidade e dispositivo considerado |
-| Crédito | Texto exibido junto à imagem |
-| Restrições | Limites conhecidos de reprodução, resolução ou território |
-| Revisão | Data, responsável e decisão editorial |
-
-Não misturar as categorias **“autorização obtida”**, **“licença identificada”** e **“fundamento editorial considerado”**. São situações distintas e devem permanecer distintas no inventário.
-
-## 6. Revisão e governança
-
-- A equipe editorial deve revisar o inventário antes de incluir novas imagens e sempre que o uso de um ativo mudar.
-- Casos de dúvida relevante, contestação de titular ou uso promocional/comercial devem ser encaminhados para orientação jurídica.
-- Se um titular apresentar objeção, registrar o contato, avaliar o fundamento e a necessidade jornalística, e documentar a decisão de manter, ajustar ou retirar o material.
-- A correção ou retirada de uma imagem não deve apagar a documentação interna sobre sua origem e a decisão editorial, respeitados os limites legais de guarda.
-
-## 7. Referências
-
-- BRASIL. **Lei nº 9.610, de 19 de fevereiro de 1998**. Direitos autorais, especialmente arts. 45 e 46. [Texto atualizado no Portal da Legislação/Planalto](https://www.planalto.gov.br/ccivil_03/leis/l9610.htm).
-- ABTU/CNU. **Manual Prático de Direitos Autorais**. 2012, p. 22–23 (orientação sobre reprodução de capas em contexto jornalístico). Referência técnica complementar; não substitui análise jurídica do caso concreto.
-- Ministério da Cultura. **Perguntas frequentes sobre direitos autorais**. Orientações gerais sobre proteção, autorização e limitações legais.
-
-## 8. Estado atual do acervo visual
-
-O inventário arquivo a arquivo está em `docs/inventario-de-imagens.md`. A auditoria identificou sete capas. A origem e a autorização individual de reprodução ainda não estão registradas para esses arquivos. Isso é uma pendência de documentação e análise, não uma conclusão automática de que as capas devam ser removidas.
-
-**Regra operacional:** não ampliar o acervo de capas sem registrar origem, crédito e avaliação do fundamento de uso; não remover em lote as capas existentes sem análise individual.
+**A ausência de autorização localizada não deve ser ocultada; tampouco deve ser transformada em afirmação de que a imagem está automaticamente liberada.**

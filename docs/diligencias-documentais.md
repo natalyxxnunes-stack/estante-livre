@@ -118,3 +118,41 @@ Prefiro receber os documentos em formato digital pesquisável, preservando a int
 - [OVALE — parecer favorável à retomada do uso de *Pipoca e Picolé*, 14/07/2026](https://sampi.net.br/ovale/noticias/2991910/vale-do-paraiba/2026/07/taubate-escolas-voltarao-a-usar-livro-sobre-menina-com-duas-maes)
 - [piauí — apuração sobre *A bolsa amarela* no Colégio Militar Dom Pedro II, 28/07/2026](https://piaui.uol.com.br/web/fabulas-fogueira-livros-infantojuvenis-bolsa-amarela/)
 - [Folha — apuração sobre a Funap e a lista do Remição em Rede, 14/02/2020](https://www1.folha.uol.com.br/cotidiano/2020/02/governo-doria-cria-comissao-para-analisar-escolha-de-livros-para-presidiarios-de-sp.shtml)
+
+
+---
+
+## Atualização de 04/11/2026 — pesquisa ampliada e resultado
+
+### Rondônia
+- Consulta ao Diário Eletrônico do MPF nº 161/2021: [PDF oficial](https://transparencia.mpf.mp.br/conteudo/diarios-e-boletins/diario-eletronico-dmpf-e/2021/DMPF-EXTRAJUDICIAL-2021-08-30.pdf).
+- Consulta à cópia do Memorando-Circular nº 4/2020: [PDF](https://static.poder360.com.br/2020/02/momerando-seduc-RO.pdf).
+- Consulta à reprodução acadêmica da relação de 43 entradas: [Revista Interfaces/UNICENTRO](https://revistas.unicentro.br/index.php/revista_interfaces/article/viewFile/7833/5778).
+- Resultado: núcleo factual da ordem verbal, reversão e agrupamentos verificado; Adendo SEI 10053329 original e resultado da sindicância ainda não localizados.
+
+### Fundação Cultural Palmares
+- Localizado o PDF oficial de 92 páginas que reúne a Nota Informativa 0166090/2021 e os relatórios técnicos da Câmara: [PDF da FCP](https://www.gov.br/palmares/pt-br/midias/arquivos/download/resposta.pdf).
+- A nota da FCP é assinada por Marco Aurélio Franco; o relatório técnico da Câmara é assinado por Juçara Quinteros de Farias e Gilcy Rodrigues Azevedo.
+- O relatório técnico registra a Sala 11 como “sala da vergonha (livros)” e caixas com livros para doação. A resposta da FCP trata da Sala 1; os documentos não devem ser confundidos.
+- A Resolução FCP nº 24/2024 aprova a política de desenvolvimento de coleções e reproduz trecho da decisão judicial sobre movimentação do acervo: [DOU de 26/02/2024](https://pesquisa.in.gov.br/imprensa/servlet/INPDFViewer?captchafield=firstAccess&data=26%2F02%2F2024&jornal=515&pagina=14).
+- O número de 5.165 títulos continua dependente da íntegra do Relatório Público 01/CNIRC e de sua lista nominal.
+
+### Canoinhas
+- Requerimento nº 149/2024: [SAPL da Câmara](https://sapl.canoinhas.sc.leg.br/materia/15355).
+- Decisão GCS/GSS-861/2024 e relatório DGE-328/2024: [Diário do TCE-SC de 08/07/2024](https://consulta.tce.sc.gov.br/Diario/dotc-e2024-07-08.pdf).
+- Correção de atribuição: o TCE registra que a prefeita afirmou que os livros foram entregues à gestora da Fundação Cultural, mas não identifica nominalmente a recebedora nem anexa recibo assinado. Não foi localizada resposta separada assinada por Viviane Guedes dos Santos; essa atribuição foi retirada da base.
+- O resultado do MPSC e a movimentação posterior dos livros continuam pendentes.
+
+### Londrina e acesso ao SEI
+- A errata da Folha de Londrina corrige a autoria do pedido de 2026 para a equipe da Gerência de Ensino Fundamental da SME.
+- O relatório do OGPL informa 15 processos Pedido de Providências públicos e 19.588 restritos após 18/02/2025. Solicitar número SEI e justificativa legal de eventual restrição; não presumir que o documento está disponível em consulta pública.
+
+### Taubaté
+- Cadastro oficial da 19ª Legislatura: [Câmara Municipal de Taubaté](https://www.camarataubate.sp.gov.br/portal/servicos/1022/legislaturas-anteriores/).
+- Nomes completos confirmados: Isaac Jarbas Mascarenhas do Carmo, Talita de Lima Barbosa e Zelinda Drago Rocha (nome parlamentar: Zelinda Pastora).
+- A ordem inicial permanece atribuída a mensagem de WhatsApp do secretário Hélcio Carvalho dos Santos; requerimento e resposta integrais ainda não recuperados.
+
+### Capas
+- Inventário, créditos e limites atualizados em [inventario-de-imagens.md](inventario-de-imagens.md).
+- Política de uso informativo e procedimento de contestação em [politica-de-direitos-e-imagens.md](politica-de-direitos-e-imagens.md).
+- A origem dos JPGs locais e autorizações individuais continuam não comprovadas; os links editoriais identificam a edição e/ou o crédito, não a origem do arquivo.
