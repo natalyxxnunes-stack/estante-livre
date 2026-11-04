@@ -119,14 +119,16 @@ function ordenar(arr, modo){
 const clsSituacao = d => ({"Em vigor":"ret","Revertido":"rev","Em aberto":"aberto","Sem efeito":"parcial"})[d] || "";
 const clsEstagio = e => ({"Execução comprovada":"e4","Decisão ou ordem":"e3","Pedido formal":"e2","Pressão pública":"e1"})[e] || "";
 
-function capaHTML(c, cls){
-  const k = cls||"capa";
-  if(c.capa) return `<div><img class="${k}" alt="Capa de ${esc(obraDe(c))}${c.editora?", "+esc(c.editora):""}" src="${RAIZ}assets/capas/${esc(c.capa)}.jpg" width="213" height="320" loading="lazy" decoding="async">
-    ${c.editora?`<div class="capa-cred">Capa · ${esc(c.editora)}</div>`:""}</div>`;
-  /* sem imagem: capa tipográfica na cor do mecanismo */
-  const L = (typeof LIVROS!=="undefined" && LIVROS[obraDe(c)]) || {};
-  const t = c.conjunto ? (L.legenda || "Conjunto de obras") : obraDe(c).split(":")[0];
-  return `<div><div class="${k}-tipo m-${slug(c.modalidade)}" aria-hidden="true"><b>${esc(t)}</b><span>${esc((c.autoria||"").split(",")[0])}</span></div></div>`;
+function capaHTML(c,cls){
+  const L=(typeof LIVROS!=="undefined"&&LIVROS[obraDe(c)])||{};
+  const img=c.capa?`assets/capas/${esc(c.capa)}.jpg`:L.capaUrl?esc(L.capaUrl):"";
+  const edition=L.capaEdicao||c.editora||"";
+  const credit=L.capaCredito||"";
+  const source=L.capaFonte||"";
+  const note=L.capaNota||"";
+  const meta=`<div class="capa-meta">${edition?`<div class="capa-cred">Edição de referência · ${esc(edition)}</div>`:""}${credit?`<div class="capa-cred">Crédito · ${esc(credit)}</div>`:""}${source?`<div class="capa-cred"><a href="${esc(source)}" target="_blank" rel="noopener">Ficha editorial / referência</a></div>`:""}${note?`<div class="capa-nota">${esc(note)}</div>`:""}</div>`;
+  if(img)return `<div class="capa ${cls||""}"><img src="${img}" alt="Capa de ${esc(obraDe(c))}" loading="lazy">${meta}</div>`;
+  return `<div class="capa capa-vazia ${cls||""}"><div class="capa-tipografia">${esc(obraDe(c)||"Obra")}</div><div class="capa-cred">Capa não localizada</div>${meta}</div>`;
 }
 
 const ROTULOS_FONTE = {B1:"Blog institucional/editorial",P1:"Documento primário",P2:"Documento judicial ou de controle",P3:"Registro institucional",S1:"Reportagem com apuração própria",S2:"Reportagem de cobertura",A1:"Pesquisa acadêmica",O1:"Manifestação de organização",R1:"Reprodução ou republicação"};

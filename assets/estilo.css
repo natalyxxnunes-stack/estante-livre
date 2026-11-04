@@ -112,7 +112,7 @@ select:focus{outline:none;border-color:var(--verm)}
 .caso{border-bottom:1px solid var(--linha);padding:22px 0;display:grid;grid-template-columns:104px 1fr;gap:22px;align-items:start}
 .caso:last-child{border-bottom:0}
 .capa{width:104px;display:block;box-shadow:0 2px 10px rgba(16,20,60,.18)}
-.capa-cred{font-size:9px;color:var(--cinza);letter-spacing:.04em;margin-top:6px;line-height:1.35}
+.capa-cred{font-size:10px;color:var(--cinza);margin-top:5px;line-height:1.35}.capa-cred a{color:inherit;text-decoration:underline;text-underline-offset:2px}.capa-nota{font-size:10px;color:var(--cinza);line-height:1.35;margin-top:5px}.capa-meta{margin-top:5px}
 .capa-vazia{width:104px;height:150px;background:var(--papel);border:1.5px dashed var(--linha-forte);display:flex;align-items:center;justify-content:center;text-align:center;padding:10px}
 .capa-vazia span{font-size:10px;color:var(--cinza);line-height:1.4}
 .caso-body{min-width:0}
