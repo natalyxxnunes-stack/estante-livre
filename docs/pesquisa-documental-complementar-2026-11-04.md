@@ -64,3 +64,17 @@ A busca ampliou a base documental, sobretudo para a Fundação Cultural Palmares
 | Taubaté | Resposta do prefeito e etapas de análise/retorno ao uso descritas em reportagens de abril e julho | EL-032 segue parcial |
 
 **Regra editorial mantida:** não converter ausência de documento em prova de inexistência; não tratar notícia como ato administrativo; não tratar petição inicial como decisão; não fundir documentos de conjuntos físicos diferentes; e não declarar cumprimento sem evidência de execução.
+
+
+## 6. Canoinhas — identificação do procedimento do MPSC
+
+A busca em diários oficiais do próprio Ministério Público de Santa Catarina localizou o identificador **Notícia de Fato nº 01.2024.00012159-3**, da 1ª Promotoria de Justiça de Canoinhas. O número aparece na pauta de julgamento da 2ª Turma Revisora do Conselho Superior do MPSC, publicada em 01/08/2024, e novamente na relação de procedimentos submetidos à revisão publicada em 09/08/2024.
+
+Fontes oficiais:
+- [Diário Oficial do MPSC — publicação de 01/08/2024](https://documentos.mpsc.mp.br/portal/Conteudo/publicacoes/do_mpsc_2024-08-01.pdf), pauta da 2ª Turma Revisora, página 33 do diário.
+- [Diário Oficial do MPSC — publicação de 09/08/2024](https://documentos.mpsc.mp.br/portal/Conteudo/publicacoes/do_mpsc_2024-08-09.pdf), relação de procedimentos apreciados pelo Conselho Superior.
+- [Consulta oficial de Processos e Procedimentos do MPSC](https://www.mpsc.mp.br/procedimentos-e-processos). O próprio portal explica que disponibiliza documentos produzidos pelo Ministério Público, como manifestações e despachos, e distingue esses documentos da íntegra dos processos judiciais.
+
+**Cuidado com a identificação:** a decisão do TCE-SC registra que havia notícia de fato na 1ª Promotoria de Canoinhas para apurar os mesmos fatos. O número acima corresponde à notícia de fato da 1ª Promotoria listada pelo MPSC na pauta de revisão. A pauta e a lista de julgamento, isoladamente, não revelam o teor da decisão revisora nem autorizam afirmar se houve arquivamento ou prosseguimento. A íntegra do procedimento e a decisão de revisão ainda precisam ser consultadas pelo número SIG no portal oficial.
+
+**Próxima chave de busca já identificada:** 01.2024.00012159-3. Isso substitui a busca genérica por “notícia de fato sobre livros/Mundoteca” e torna a recuperação do despacho/decisão uma diligência direcionada.
