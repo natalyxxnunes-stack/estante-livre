@@ -395,7 +395,7 @@ O PDF começa pela Nota Informativa SEI/FCP nº 0166090/2021 e incorpora o relat
 
 Referência no PDF oficial: linhas 1086–1104 e 2377–2385; fotografias e legendas nas páginas finais, especialmente linhas 2835–2859. A Nota Informativa da FCP e o relatório de diligência da Câmara são peças distintas reunidas no mesmo PDF; não atribuir a assinatura do relatório parlamentar à FCP.
 
-**Limite:** esse achado documenta oficialmente a Sala 11 e a diligência parlamentar. Não é o Relatório Público 01/CNIRC “Retrato do Acervo” e não contém, por si só, a lista final de 300 títulos indicada para exclusão; os 5.165 são o total agregado da categoria de temática alheia. O link histórico do Relatório 01 continua citado em publicações acadêmicas e na Política de Acervo da FCP, mas o servidor legado não entregou o arquivo nesta rodada. O PDF oficial de 92 páginas não deve ser apresentado como substituto.
+**Limite:** esse achado documenta oficialmente a Sala 11 e a diligência parlamentar. Não é o Relatório Público 01/CNIRC “Retrato do Acervo” e não contém a lista final de 300 títulos. Essa lista foi recuperada separadamente em transcrição pública secundária (261 entradas após deduplicação); os 5.165 são o total agregado da categoria de temática alheia. O link histórico do Relatório 01 continua citado em publicações acadêmicas e na Política de Acervo da FCP, mas o servidor legado não entregou o arquivo nesta rodada. O PDF oficial de 92 páginas não deve ser apresentado como substituto.
 
 ### 14.2 MPSC — resultado deliberativo localizado para a Notícia de Fato de Canoinhas
 
@@ -532,7 +532,7 @@ O Ipea, em publicação de 2022, descreve o relatório “Retrato do Acervo” e
 
 O O Povo reproduziu o número 9.565 para o acervo e a divisão 4.400/5.165 atribuída ao relatório. [Reportagem de 18/06/2021](https://www.opovo.com.br/vidaearte/2021/06/18/ia/fundacao-palmares-retira-obras-do-acervo-e-cita--dominacao-marxista--e-sexualizacao-infantil.html).
 
-A divergência entre 5.165 e 5.300 permanece aberta: pode envolver arredondamento, categorias ou unidade de contagem, mas nenhuma dessas explicações deve ser afirmada sem o relatório original. O inventário de 9.696 títulos publicado pela FCP em 2024 é uma base primária diferente e não resolve, sozinho, a lista de exclusão.
+Os quantitativos de 5.165 e 5.300 não devem ser tratados como diretamente comparáveis: 5.165 corresponde a títulos classificados no relatório como de temática alheia; 5.300 é a quantidade de exemplares alegada na petição da OAB/ADPF 918. A conciliação exige o Relatório 01 original e documentação da movimentação. O inventário de 9.696 títulos publicado pela FCP em 2024 é uma base primária diferente.
 
 ### 17.5 Resultado desta rodada
 
