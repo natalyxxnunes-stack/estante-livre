@@ -416,3 +416,35 @@ Fonte direta do trecho deliberativo: [Diário nº 3698, página 7, linhas 408–
 - **Canoinhas/MPSC:** retirar a formulação anterior de que o resultado da Notícia de Fato era inteiramente desconhecido. A súmula oficial resolve o resultado do recurso: desprovimento unânime. Permanecem pendentes a íntegra da decisão originária e a prova de destino/localização dos livros.
 - **Palmares/Sala 11:** reforçar o registro com o PDF oficial de 92 páginas e as fotografias da diligência. Não confundir essa documentação com o Relatório 01/CNIRC nem elevar EL-025 com base nela.
 - **Palmares/5.165 itens:** permanece pendente a cópia integral do Relatório 01/CNIRC e a lista nominal que permita auditar o quantitativo e a unidade de contagem.
+
+
+## 15. Outras rotas públicas rechecadas — Taubaté, Londrina e São José dos Campos
+
+### 15.1 Taubaté — expediente da 46ª sessão e trilha legislativa
+
+A página oficial da Câmara confirma que a 46ª Sessão Ordinária ocorreu em 10/03/2026 e que o expediente da sessão começaria pela leitura de documentos e proposições, seguindo-se discussão de requerimentos e moções. A página de “Ordem do Dia” lista os projetos sujeitos a votação, não o expediente completo de requerimentos. Portanto, a ausência do requerimento sobre *Pipoca e Picolé* nessa página não prova que ele não tenha sido apresentado.
+
+Fontes oficiais:
+- [46ª Sessão Ordinária — 10/03/2026, página da Câmara](https://www.camarataubate.sp.gov.br/portal/noticias/0/3/9875/46-sessao-ordinaria--1032026---ordem-do-dia).
+- [Agenda oficial da semana, que informa leitura de documentos e discussão de requerimentos na sessão](https://www.camarataubate.sp.gov.br/portal/noticias/0/3/9872/conheca-a-agenda-da-semana-e-participe-das-atividades-da-camara).
+- [Página oficial “Palavra dos vereadores” — 46ª sessão](https://www.camarataubate.sp.gov.br/portal/noticias/0/3/9879/palavra-dos-vereadores---46-sessao-ordinaria).
+
+A busca pública por autor/ano no Câmara Sem Papel continua sendo a rota para individualizar o requerimento. A consulta de 2026 para Isaac do Carmo apresenta 349 proposições e é paginada/dinâmica. Nesta rodada não foi possível extrair o identificador do requerimento nem abrir seus anexos. A reportagem contemporânea continua sendo a fonte que transcreve trechos da resposta do Executivo, não o documento primário.
+
+### 15.2 Londrina — documentação legislativa indexada e limite
+
+A busca pelo domínio oficial da Câmara recuperou duas indicações assinadas por Jéssica Ramos Moreno em 08/11/2024, com protocolo e validação digital:
+- [Indicação 5787/2024 — protocolo 6274/2024](https://www.cml.pr.gov.br/assinatura/assinado/2024/11/241108091817179103.pdf?vh=b314d20).
+- [Indicação 5793/2024 — protocolo 6280/2024](https://www.cml.pr.gov.br/assinatura/assinado/2024/11/241108154753135103.pdf?vh=7390c2d).
+
+Essas peças confirmam a estrutura de publicação e autenticação de documentos da Câmara, mas não são o requerimento sobre *A Mamãe Vai Ter um Bebê*. A busca pública indexada pelo nome da vereadora, título, creche, recolhimento e janela de 26–27/11/2024 não trouxe o requerimento específico nem a resposta da SME. O PL 79/2024 continua sendo peça normativa distinta, não prova de execução do pedido de recolhimento.
+
+### 15.3 São José dos Campos — recurso municipal de 2024 e decisão judicial de 2026
+
+A pesquisa localizou uma etapa intermediária relevante que precisa aparecer na cronologia: em **09/10/2024**, foi noticiado que a Justiça acolheu recurso da Prefeitura e suspendeu a liminar que determinava o retorno do livro às escolas. A matéria informa que o Município alegou ausência de prejuízo pedagógico e negou motivação político-ideológica. A decisão de julho de 2026, por sua vez, determinou novamente a restituição e disponibilidade da obra.
+
+Fontes:
+- [Sampi/SPRiomais, 09/10/2024 — suspensão da liminar após recurso da Prefeitura](https://spriomais.com.br/2024/10/09/justica-atende-prefeitura-de-sjc-e-suspende-liminar-que-determinava-retorno-de-livro-as-escolas/).
+- [Folha, 30/07/2026 — decisão posterior que determinou o retorno](https://www1.folha.uol.com.br/ciencia/2026/07/justica-determina-volta-de-livro-que-retrata-marielle-a-escolas-em-sao-jose-dos-campos.shtml).
+
+**Limite:** a decisão de 09/10/2024 e a decisão de 20/07/2026 não foram recuperadas em inteiro teor nesta rodada; os autos são reportados como sob segredo de Justiça. O histórico deve mostrar a suspensão intermediária da liminar, sem confundir isso com decisão final de mérito.
