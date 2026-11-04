@@ -61,7 +61,7 @@ O MPF registra que a solicitação operacional foi verbal, suspensa no mesmo dia
 
 O Adendo SEI 10053329 original e o resultado final da sindicância não foram recuperados. A consulta pública do SEI-RO existe, mas depende de JavaScript e código de verificação; a própria página orienta que pedidos de cópia/vista sejam dirigidos à unidade geradora. O processo e o identificador do adendo estão conhecidos, mas isso não equivale à recuperação do arquivo.
 
-### Fundação Cultural Palmares — 5.165 itens e Sala 11
+### Fundação Cultural Palmares — Relatório 01, lista de 300 títulos e Sala 11
 
 Fontes:
 - [Resposta oficial da FCP à Câmara, com os relatórios técnicos anexos (PDF de 92 páginas)](https://www.gov.br/palmares/pt-br/midias/arquivos/download/resposta.pdf).
@@ -71,7 +71,7 @@ Fontes:
 
 O PDF oficial de 92 páginas contém a Nota Informativa 0166090/2021 da FCP, assinada por Marco Aurélio Franco em 06/11/2021, e o relatório técnico da Câmara, assinado por Juçara Quinteros de Farias e Gilcy Rodrigues Azevedo. É o relatório da Câmara que registra a Sala 11 como “sala da vergonha (livros)” e caixas com livros para doação; a resposta da FCP deve ser lida como documento distinto, não como substituto daquele relatório.
 
-O quantitativo de 5.165 itens é atribuído ao Relatório Público 01/CNIRC. Fontes contemporâneas divergem na unidade de contagem dos 5.165 itens, usando “títulos”, “livros” e “exemplares”. Como o PDF original do Relatório Público 01/CNIRC não abriu nesta consulta, o catálogo adota a expressão neutra “itens” e não afirma se a unidade corresponde a títulos bibliográficos ou cópias físicas. O link oficial do relatório original permanece cadastrado, mas o arquivo não abriu na consulta desta auditoria; a lista nominal não foi recuperada. O inventário oficial de 08/08/2024 relaciona 9.696 títulos e inclui obras de Karl Marx, Max Weber, Eric Hobsbawm e Celso Furtado. Isso confirma a presença desses títulos no inventário posterior, mas não substitui a lista dos 5.165 nem prova o destino de todos os itens.
+O relatório de 2021 informa 9.565 títulos no acervo, dos quais 5.165 (54%) foram classificados como de temática alheia à negra e 4.400 (46%) como de temática negra. Esse número de 5.165 é um quantitativo agregado, não o tamanho da lista final de exclusão. A análise contemporânea da professora Marisa Midori Deaecto, publicada no Jornal da USP em 18/06/2021, descreve o Relatório 01 como um documento de 73 páginas que termina com uma lista de 300 títulos indicados para exclusão. O arquivo original não abriu nesta consulta, e a lista dos 300 títulos não foi recuperada. O inventário oficial de 08/08/2024 relaciona 9.696 títulos; é uma base posterior e distinta, que não substitui o relatório de triagem nem permite inferir a lista de 300.
 
 **Atualização decisiva do EL-026:** a dissertação da UnB documenta visita presencial à Biblioteca Oliveira Silveira em 29/02/2024 e registra que os livros que integraram o “Acervo da vergonha” já haviam sido reintegrados ao acervo geral. Por isso, o desfecho foi corrigido para **revertido**. A estimativa de “cerca de 300” não tem confirmação no relatório técnico e foi retirada do título do registro; quantidade exata e lista nominal permanecem pendentes.
 
@@ -137,7 +137,7 @@ A busca foi ampliada para além das páginas de imprensa já cadastradas, priori
 - **Canoinhas:** a decisão oficial do TCE-SC, no @LEV 24/80041829, confirma que a resposta da prefeita e as fotos estavam nas fls. 14–32, sob sigilo parcial; registra que havia um exemplar de cada título e que a gestora da Fundação Cultural recebeu os livros para analisar sua destinação; conclui que não foram efetivamente jogados no lixo e arquiva o levantamento, levantando o sigilo apenas do relatório técnico e da decisão. A busca adicional localizou a checagem do UOL Comprova, que registra a nota da Mundoteca sobre faixa etária e empréstimos, mas não informa a localização atual dos exemplares. Também foi localizado o [PL municipal nº 059/2023, com justificativa assinada pela prefeita](https://sapl.canoinhas.sc.leg.br/media/sapl/public/documentoacessorio/2023/26055/pl_059_2023_.pdf), que comprova a autorização para o Município receber o acervo da Mundoteca, incluindo obras literárias; não é recibo de entrega dos dois exemplares específicos. [TCE-SC, Diário Oficial de 08/07/2024](https://consulta.tce.sc.gov.br/Diario/dotc-e2024-07-08.pdf) · [UOL Comprova, 25/04/2024](https://noticias.uol.com.br/comprova/ultimas-noticias/2024/04/25/projeto-mundoteca-nao-e-do-governo-federal-como-disse-prefeita-de-sc.htm).
 - **Fundação Cultural Palmares:** o repositório institucional da UnB confirma a existência, autoria, data e acesso público à dissertação de Lucas dos Santos de Paulo, de 2024. A dissertação é evidência acadêmica de contexto e da visita presencial, não substitui o Relatório Público 01/CNIRC nem inventaria os 5.165 itens. [Repositório UnB](https://repositorio.unb.br/handle/10482/50687?mode=full).
 
-A busca pública adicional não localizou o Adendo SEI original e o resultado da sindicância de Rondônia; a ordem administrativa e o cumprimento em São José dos Campos; o requerimento e a resposta específica de Londrina em 2024; o parecer integral e os comprovantes de redistribuição de Taubaté; o recibo, inventário posterior e resultado da Notícia de Fato de Canoinhas; nem a lista nominal integral dos 5.165 itens da FCP. Esses documentos não podem ser fabricados nem inferidos de reportagens, decisões correlatas ou inventários posteriores.
+A busca pública adicional não localizou o Adendo SEI original e o resultado da sindicância de Rondônia; a ordem administrativa e o cumprimento em São José dos Campos; o requerimento e a resposta específica de Londrina em 2024; o parecer integral e os comprovantes de redistribuição de Taubaté; o recibo, inventário posterior e resultado da Notícia de Fato de Canoinhas; nem a lista final de 300 títulos indicados para exclusão no Relatório 01 da FCP. Esses documentos não podem ser fabricados nem inferidos de reportagens, decisões correlatas ou inventários posteriores.
 
 ## 4. Capas — decisão de regularização
 
@@ -187,7 +187,7 @@ A etapa de **pesquisa, revisão de classificação, rastreabilidade documental e
 - Registro das lacunas e dos documentos-alvo nos arquivos de pesquisa e na matriz.
 
 ### Pendências externas que não podem ser encerradas apenas por pesquisa pública
-1. **EL-025 / FCP:** PDF integral original do Relatório Público 01/CNIRC e lista nominal dos 5.165 itens.
+1. **EL-025 / FCP:** PDF integral original do Relatório Público 01/CNIRC e sua lista final de 300 títulos indicados para exclusão. Os 5.165 são contagem agregada de títulos classificados como temática alheia.
 2. **EL-028 / São José dos Campos:** cópia da ordem municipal original e prova administrativa de cumprimento; autos judiciais sob segredo de Justiça.
 3. **EL-030 / Londrina 2024:** requerimento protocolado em 26/11/2024, ofício de encaminhamento, resposta da SME e prova de execução.
 4. **EL-032 / Taubaté:** mensagem/ordem original, requerimento e resposta integrais, parecer técnico e comprovantes de redistribuição física.
@@ -212,14 +212,14 @@ A pesquisa posterior à versão inicial deste fechamento localizou duas peças p
 
 2. **FCP/Sala 11:** foi localizada a cópia oficial de 92 páginas da resposta da Fundação Cultural Palmares aos relatórios da Comissão de Cultura da Câmara dos Deputados. O PDF incorpora o relatório técnico parlamentar, identifica a Sala 11 como “sala da vergonha (livros)”, registra caixas com livros para doação e traz assinaturas digitais de Juçara Quinteros de Farias e Gilcy Rodrigues Azevedo no relatório parlamentar. Trata-se de peça distinta do Relatório Público 01/CNIRC. Fonte: [PDF oficial da FCP](https://www.gov.br/palmares/pt-br/midias/arquivos/download/resposta.pdf).
 
-**Efeito sobre a classificação:** nenhuma dessas descobertas elimina as cinco classificações parciais do conjunto P0. A descoberta do resultado do recurso do MPSC melhora a documentação de contexto dos registros EL-036/EL-037, mas não comprova o destino físico dos exemplares. A resposta oficial da FCP melhora a prova sobre a Sala 11, mas não recupera o Relatório 01/CNIRC nem a lista nominal dos 5.165 itens. A pesquisa complementar registra os detalhes e corrige a interpretação anterior da pauta do MPSC.
+**Efeito sobre a classificação:** nenhuma dessas descobertas elimina as cinco classificações parciais do conjunto P0. A descoberta do resultado do recurso do MPSC melhora a documentação de contexto dos registros EL-036/EL-037, mas não comprova o destino físico dos exemplares. A resposta oficial da FCP melhora a prova sobre a Sala 11, mas não recupera o Relatório 01/CNIRC nem a lista final de 300 títulos indicados para exclusão. A pesquisa complementar registra os detalhes e corrige a interpretação anterior da pauta do MPSC.
 
 
 ## Atualização posterior — inventário FCP e desfecho MPF/Rondônia (04/11/2026)
 
 A pesquisa pública localizou duas fontes primárias adicionais:
 
-- **FCP:** inventário bibliográfico oficial, atualizado em 08/08/2024, com 9.696 títulos numerados, campos de título, autor, editora, ano, quantidade e observações. [PDF oficial](https://www.gov.br/palmares/pt-br/centrais-de-conteudo/publicacoes/lista-de-livros-atualizada-8-8-2024-1.pdf). Ele documenta o antigo acervo, mas não substitui o Relatório 01/CNIRC nem comprova o subconjunto de 5.165 itens.
+- **FCP:** inventário bibliográfico oficial, atualizado em 08/08/2024, com 9.696 títulos numerados, campos de título, autor, editora, ano, quantidade e observações. [PDF oficial](https://www.gov.br/palmares/pt-br/centrais-de-conteudo/publicacoes/lista-de-livros-atualizada-8-8-2024-1.pdf). Ele documenta o antigo acervo, mas não substitui o Relatório 01/CNIRC nem comprova a lista final de 300 títulos indicada para exclusão; 5.165 é o total agregado da categoria de temática alheia.
 - **Rondônia/MPF:** Diário oficial de 30/08/2021 homologa por unanimidade o arquivamento do Inquérito Civil 1.31.000.000213/2020-61 e registra suspensão da solicitação no mesmo dia, devolução dos exemplares que chegaram a ser recolhidos, encerramento da análise técnica e instauração de sindicância pela Seduc. [Diário oficial do MPF nº 161/2021](https://transparencia.mpf.mp.br/conteudo/diarios-e-boletins/diario-eletronico-dmpf-e/2021/DMPF-EXTRAJUDICIAL-2021-08-30.pdf).
 
 **Efeito:** o desfecho do inquérito federal de Rondônia deixa de ser lacuna. Permanecem pendentes o Adendo SEI 10053329 e o resultado da sindicância estadual. Palmares ganha uma fonte primária complementar ampla, mas o registro EL-025 continua parcial quanto ao Relatório 01/CNIRC e à lista/critério dos 5.165 itens.
@@ -251,7 +251,7 @@ Fica encerrada a etapa P0 de auditoria, classificação, rastreabilidade documen
 7. Retirada das sete capas sem cadeia de procedência/licença comprovada.
 
 ### Pendências que permanecem abertas
-- **EL-025 / FCP:** íntegra do Relatório 01/CNIRC, lista e critério dos 5.165 itens.
+- **EL-025 / FCP:** íntegra do Relatório 01/CNIRC, lista final de 300 títulos e critério do quantitativo agregado de 5.165.
 - **EL-028 / São José dos Campos:** ordem municipal original, resposta administrativa e prova pública de cumprimento.
 - **EL-030 / Londrina 2024:** requerimento, número, destinatário formal, resposta da SME e prova de execução.
 - **EL-032 / Taubaté:** ordem/mensagem original, requerimento e resposta integrais, parecer e comprovantes de redistribuição física.
@@ -303,3 +303,10 @@ A cópia do ofício parlamentar e a mensagem que transmitiu a ordem municipal n�
 ### Complemento — Taubaté (EL-032)
 
 Foi recuperado o portal oficial Câmara Sem Papel, que disponibiliza pesquisa pública da produção legislativa. Também foram consultados os registros oficiais das sessões de 03/03/2026 e 10/03/2026. Os resumos públicos não reproduzem o conteúdo do requerimento sobre o livro nem a declaração atribuída à vereadora. O Vale permanece como fonte do teor do requerimento e de sua aprovação em 10/03; o número e o inteiro teor continuam sem recuperação.
+
+
+### Correção de precisão — Palmares
+
+O número 5.165 não é uma lista nominal de livros: corresponde a 54% dos 9.565 títulos contabilizados no relatório de 2021 como de temática alheia à negra. A análise publicada no Jornal da USP em 18/06/2021 descreve uma lista final de 300 títulos indicados para exclusão. Assim, a pendência correta é recuperar o Relatório 01/CNIRC e sua lista de 300 títulos, não procurar uma lista de 5.165 itens. A diferença entre 5.165 e 5.300 (Ipea, 2022) permanece como divergência de quantitativo/unidade a esclarecer.
+
+Fonte: https://jornal.usp.br/artigos/o-governo-bolsonaro-e-o-mal-estar-dos-livros-sobre-o-expurgo-do-acervo-bibliografico-da-fundacao-palmares-primeiro-ato/
