@@ -97,3 +97,8 @@ A pesquisa desta etapa usou fontes públicas. Não houve protocolo de pedidos de
 | Registro | Documento/fonte recuperada | O que comprova | O que não comprova |
 |---|---|---|---|
 | EL-036 / EL-037 — Canoinhas | Diário Oficial MPSC nº 3698, 09/08/2024, item 3 | Conselho Superior conheceu e negou provimento por unanimidade ao recurso na Notícia de Fato nº 01.2024.00012159-3, mantendo o arquivamento recorrido | Fundamentação integral da decisão revisora e localização/destinação atual dos livros |
+
+
+| Registro | Documento/fonte recuperada | O que comprova | O que não comprova |
+|---|---|---|---|
+| EL-028 — São José dos Campos | Nota oficial da Prefeitura reproduzida pela Spriomais (13/06/2024) e reportagem O Vale/Sampi (09/09/2024) | Recolhimento em todas as escolas para reavaliação técnica; ofício do vereador ao prefeito e secretário; ação civil pública e transmissão da ordem operacional por WhatsApp, conforme investigação | Cópia assinada do ofício, mensagem original de WhatsApp, ato administrativo municipal formal e prova de cumprimento da restituição determinada em 2026 |
