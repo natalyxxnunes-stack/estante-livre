@@ -65,7 +65,6 @@ A busca ampliou a base documental, sobretudo para a Fundação Cultural Palmares
 
 **Regra editorial mantida:** não converter ausência de documento em prova de inexistência; não tratar notícia como ato administrativo; não tratar petição inicial como decisão; não fundir documentos de conjuntos físicos diferentes; e não declarar cumprimento sem evidência de execução.
 
-
 ## 6. Canoinhas — identificação do procedimento do MPSC
 
 A busca em diários oficiais do próprio Ministério Público de Santa Catarina localizou o identificador **Notícia de Fato nº 01.2024.00012159-3**, da 1ª Promotoria de Justiça de Canoinhas. O número aparece na pauta de julgamento da 2ª Turma Revisora do Conselho Superior do MPSC, publicada em 01/08/2024, e novamente na relação de procedimentos submetidos à revisão publicada em 09/08/2024.
@@ -78,3 +77,56 @@ Fontes oficiais:
 **Cuidado com a identificação:** a decisão do TCE-SC registra que havia notícia de fato na 1ª Promotoria de Canoinhas para apurar os mesmos fatos. O número acima corresponde à notícia de fato da 1ª Promotoria listada pelo MPSC na pauta de revisão. A pauta e a lista de julgamento, isoladamente, não revelam o teor da decisão revisora nem autorizam afirmar se houve arquivamento ou prosseguimento. A íntegra do procedimento e a decisão de revisão ainda precisam ser consultadas pelo número SIG no portal oficial.
 
 **Próxima chave de busca já identificada:** 01.2024.00012159-3. Isso substitui a busca genérica por “notícia de fato sobre livros/Mundoteca” e torna a recuperação do despacho/decisão uma diligência direcionada.
+
+## 7. Nova rodada de recuperação — 04/11/2026 (consulta adicional)
+
+Esta rodada foi direcionada aos identificadores exatos que emergiram na pesquisa anterior. O objetivo foi localizar cópias integrais, resultados de tramitação ou documentos oficiais adicionais — não apenas repetir buscas temáticas.
+
+### 7.1 MPSC / Canoinhas — número localizado, decisão ainda não recuperada
+
+Foram feitas buscas pelo número **01.2024.00012159-3**, pelo vínculo com Canoinhas e pela 2ª Turma Revisora. O resultado público recuperável continua sendo a pauta/listagem do Conselho Superior. A página oficial de consulta do MPSC informa que disponibiliza documentos produzidos pelo próprio Ministério Público (manifestações, despachos e peças), mas a consulta automatizada desta rodada não retornou a íntegra do procedimento nem o despacho/decisão de revisão.
+
+**Não marcar como resolvido:** temos o número identificador e a trilha de revisão, não o teor do ato final. Próximo passo documental é consultar o sistema do MPSC pelo número SIG e registrar o despacho/decisão efetivamente disponibilizado, inclusive eventual certidão de sigilo ou indisponibilidade.
+
+### 7.2 Rondônia / SEI — confirmação de metadados, sem acesso ao anexo original
+
+A nova busca pelo código **10053329**, pelo processo **0029.051300/2020-91** e pelo documento **10040389** não localizou uma cópia pública oficial do Adendo no SEI/RO. Foi localizada reprodução acadêmica do memorando, que transcreve a referência ao Adendo 10053329 e mostra o código 10040389, a assinatura eletrônica registrada em 06/02/2020 e o CRC impresso no documento.
+
+Também foi encontrada reportagem contemporânea que registra tentativa de conferência do documento no verificador externo do SEI/RO e a mensagem “Código Verificador Inválido” para o código então divulgado. Essa reportagem é evidência da dificuldade de validação pública naquele momento, não prova de falsidade do documento nem substituto do processo SEI.
+
+O desfecho do inquérito civil do MPF já localizado em publicação oficial permanece sendo evidência separada: o MPF registrou suspensão do recolhimento, devolução dos livros recolhidos, abertura de apuração administrativa pela Seduc, acolhimento de recomendação do MP-RO e arquivamento do inquérito do MPF. Isso não equivale ao resultado da sindicância estadual nem revela o conteúdo integral do Adendo.
+
+**Não marcar como resolvido:** falta o Adendo 10053329, a árvore/processo SEI integral e o resultado documental da apuração administrativa estadual.
+
+### 7.3 Fundação Cultural Palmares / CNIRC — confirmação bibliográfica adicional, sem PDF integral
+
+A busca adicional localizou documento oficial posterior da própria Fundação Cultural Palmares, a **Política de Acervo — versão final de 21/12/2021**, que referencia expressamente o Relatório Técnico nº 01, “Retrato do Acervo: três décadas de dominação marxista na Fundação Cultural Palmares”, atribuído à FCP/CNIRC e publicado em 2021. Trabalhos acadêmicos independentes também preservam a URL histórica do PDF original.
+
+Isso confirma a referência bibliográfica institucional ao relatório, mas não recupera seu arquivo integral. O PDF oficial antigo e a URL alternativa continuam sem entrega verificável nesta rodada. Não foi localizada cópia integral independente autenticável, tampouco a lista nominal completa dos 5.165 itens.
+
+**Não marcar como resolvido:** a referência e a existência editorial do relatório estão corroboradas; o conteúdo integral, a lista nominal e os documentos de movimentação/destino dos itens continuam pendentes.
+
+Fontes adicionais:
+- [Política de Acervo da Fundação Cultural Palmares, versão final de 21/12/2021 (PDF oficial)](https://www.gov.br/palmares/pt-br/midias/arquivos/download/politicas-de-acervo-versao-final-21-12-2021.pdf).
+- [Artigo acadêmico da Revista de Estudos Culturais/USP que reproduz a capa e contextualiza o relatório](https://revistas.usp.br/revistaec/article/download/195152/188792/592537).
+- [Artigo acadêmico da UFPR que registra a URL histórica alternativa](https://revistas.ufpr.br/letras/article/download/85371/49124).
+
+### 7.4 Londrina e Taubaté — buscas por ato legislativo original
+
+As buscas adicionais pelos nomes dos parlamentares, título do livro e datas indicadas não retornaram o inteiro teor oficial do requerimento de Londrina de 26/11/2024, nem o requerimento de Taubaté aprovado em 10/03/2026. Também não retornaram a íntegra da resposta administrativa de Taubaté ou os comprovantes de redistribuição dos exemplares.
+
+O Diário Oficial de Taubaté consultado para 10/03/2026 contém atos administrativos municipais diversos, mas não deve ser usado como substituto do requerimento parlamentar nem da resposta específica da Secretaria de Educação. A ausência desses documentos nos resultados indexados não prova que não existam nos sistemas oficiais.
+
+**Não marcar como resolvido:** EL-030 (Londrina) e EL-032 (Taubaté) permanecem parciais. A próxima diligência é consultar diretamente o sistema legislativo/expediente da Câmara, usando a data da sessão e os autores como chaves, e solicitar a íntegra via LAI apenas se o portal não permitir acesso público.
+
+### 7.5 Balanço objetivo desta rodada
+
+| Documento procurado | Resultado desta rodada | Status |
+|---|---|---|
+| Despacho/decisão MPSC 01.2024.00012159-3 | Número e pauta de revisão confirmados; inteiro teor não recuperado | Pendente |
+| Adendo SEI 10053329 / processo 0029.051300/2020-91 | Referência cruzada e metadados do memorando confirmados; original não recuperado | Pendente |
+| Relatório CNIRC integral e lista de 5.165 itens | Referência bibliográfica oficial e acadêmica reforçada; arquivo integral/lista não recuperados | Pendente |
+| Requerimento de Londrina de 26/11/2024 | Não localizado em inteiro teor oficial | Pendente |
+| Requerimento e resposta integral de Taubaté | Não localizados em inteiro teor oficial; notícia posterior não prova redistribuição | Pendente |
+
+**Resultado:** esta rodada melhorou as chaves de recuperação e a rastreabilidade, mas não trouxe os documentos primários ausentes. Não elevar o grau de verificação dos registros por conta de referências bibliográficas, matérias jornalísticas ou metadados reproduzidos. A conclusão correta é “busca adicional realizada; documento primário não recuperado”, e não “documento inexistente”.
