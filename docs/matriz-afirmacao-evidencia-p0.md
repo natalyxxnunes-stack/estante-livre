@@ -92,3 +92,8 @@ A pesquisa desta etapa usou fontes públicas. Não houve protocolo de pedidos de
 | EL-032 — Taubaté | O Vale, matérias de abril e julho de 2026 | Retirada, requerimento de fiscalização e anúncio municipal de retorno pedagógico após análise | Parecer técnico integral e comprovação de redistribuição física |
 
 **Regra de interpretação:** documentos de resposta, inventários gerais, pautas de julgamento e reportagens não substituem os atos administrativos específicos nem os comprovantes de execução física. As classificações dos registros permanecem inalteradas quando a nova fonte não fecha a lacuna.
+
+
+| Registro | Documento/fonte recuperada | O que comprova | O que não comprova |
+|---|---|---|---|
+| EL-036 / EL-037 — Canoinhas | Diário Oficial MPSC nº 3698, 09/08/2024, item 3 | Conselho Superior conheceu e negou provimento por unanimidade ao recurso na Notícia de Fato nº 01.2024.00012159-3, mantendo o arquivamento recorrido | Fundamentação integral da decisão revisora e localização/destinação atual dos livros |
