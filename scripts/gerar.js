@@ -26,14 +26,14 @@ function contexto(raiz){
     console
   };
   vm.createContext(ctx);
-  vm.runInContext(ler("assets/dados.js") + "\n;this.__D={ATOS,AGENTES,PAPEIS,TIPOS_PAPEL,CASOS,LIVROS,FONTES,MODALIDADES,ESTAGIOS,SITUACOES,EIXOS,CORRECOES,RESPONSABILIDADES,DOCUMENTOS_ATOS,ATUALIZADO,CONTATO,OBSTACULOS,LACUNAS};", ctx);
+  vm.runInContext(ler("assets/dados.js") + "\n;this.__D={ATOS,AGENTES,PAPEIS,TIPOS_PAPEL,CASOS,LIVROS,FONTES,MODALIDADES,ESTAGIOS,SITUACOES,EIXOS,CORRECOES,RESPONSABILIDADES,DOCUMENTOS_ATOS,ATUALIZADO,CONTATO,OBSTACULOS,LACUNAS,CONTEXTO_PARTIDARIO};", ctx);
   vm.runInContext(ler("assets/comum.js") + "\n;this.__F={esc,obraDe,slug,ordenar,casoHTML,livroHTML,dataLegivel,urlCaso,urlLivro,urlAto,agentesDoAto,linksFonte};", ctx);
   return Object.assign(ctx.__F, {__D: ctx.__D});
 }
 const R = contexto("");      // páginas na raiz
 const S = contexto("../");   // páginas em casos/ e livros/
 const D = R.__D;
-const { CASOS, LIVROS, FONTES, MODALIDADES, ESTAGIOS, SITUACOES, EIXOS, ATUALIZADO, ATOS, AGENTES, PAPEIS, TIPOS_PAPEL, OBSTACULOS, LACUNAS } = D;
+const { CASOS, LIVROS, FONTES, MODALIDADES, ESTAGIOS, SITUACOES, EIXOS, ATUALIZADO, ATOS, AGENTES, PAPEIS, TIPOS_PAPEL, OBSTACULOS, LACUNAS, CONTEXTO_PARTIDARIO } = D;
 const esc = R.esc, obraDe = R.obraDe, slug = R.slug;
 
 /* ---------- 1. validação ---------- */
@@ -45,6 +45,12 @@ for(const [id,f] of Object.entries(FONTES)){
   if(f.tipo && !TIPOS_FONTE.includes(f.tipo)) erros.push(`FONTES ${id}: tipo de fonte inválido: ${f.tipo}`);
   if(!f.url) erros.push(`FONTES ${id}: URL vazia`);
   else { try { const u=new URL(f.url); if(!["https:","http:"].includes(u.protocol)) erros.push(`FONTES ${id}: protocolo inválido`); } catch { erros.push(`FONTES ${id}: URL inválida: ${f.url}`); } }
+}
+
+if(!Array.isArray(CONTEXTO_PARTIDARIO) || CONTEXTO_PARTIDARIO.length!==19) erros.push("CONTEXTO_PARTIDARIO: esperado exatamente 19 registros auditados");
+for(const [i,x] of (CONTEXTO_PARTIDARIO||[]).entries()){
+  if(!x.pessoa || !x.partido || !x.cobertura || !x.status || !Array.isArray(x.fontes) || !x.fontes.length) erros.push(`CONTEXTO_PARTIDARIO[${i}]: campos obrigatórios ausentes`);
+  for(const url of x.fontes||[]){try{const u=new URL(url);if(!["https:","http:"].includes(u.protocol)) erros.push(`CONTEXTO_PARTIDARIO[${i}]: URL inválida`);}catch{erros.push(`CONTEXTO_PARTIDARIO[${i}]: URL inválida: ${url}`);}}
 }
 const fontesSemTipo=Object.entries(FONTES).filter(([,f])=>!f.tipo).length;
 if(fontesSemTipo) avisos.push(`${fontesSemTipo} fontes ainda não classificadas por tipo; concluir revisão editorial`);
@@ -274,7 +280,7 @@ for(const f of PAGINAS){
   h = h.replace(/<header class="topo">[\s\S]*?<\/header>/, cabecalho("", f));
   h = h.replace(/<footer class="(?:foot|rodape)">[\s\S]*?<\/footer>/, rodape(""));
   h = h.split("https://estante-livre-br.vercel.app").join(SITE);
-  if(f==="poder.html") h = blocoGerado(h, "poder", gerarPoder());
+  if(f==="poder.html") { h = blocoGerado(h, "poder", gerarPoder()); h = blocoGerado(h, "contexto-partidario", gerarContextoPartidario()); }
   if(f==="dossies.html") h = blocoGerado(h, "dossies", gerarDossies());
   if(f==="relatorio-2026.html") h = blocoGerado(h, "relatorio", gerarRelatorio());
   if(f==="index.html") h = comJsonLd(h, {"@context":"https://schema.org","@graph":[
