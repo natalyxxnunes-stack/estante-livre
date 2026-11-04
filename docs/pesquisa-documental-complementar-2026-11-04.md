@@ -541,3 +541,34 @@ Nenhum dos quatro documentos primários ainda ausentes foi substituído por font
 - Londrina: PL 79/2024 oficial, contextual, mas distinto do requerimento;
 - São José: corroboração contemporânea da existência e finalidade do ofício;
 - Palmares: referência institucional independente do Ipea para a escala de 5,3 mil itens e confirmação de que a discrepância numérica não deve ser apagada.
+
+
+## 18. Fechamento consolidado da busca pública — 04/11/2026
+
+Esta seção consolida o resultado da pesquisa pública realizada até esta data e corrige o encaminhamento metodológico das versões anteriores.
+
+### Escopo efetivamente concluído
+- Revisão documental e de classificação dos 37 registros da base.
+- Revisão dos dez registros prioritários, mantendo seis com núcleo factual verificado e quatro parciais conforme a matriz vigente.
+- Tratamento dos nove alertas de signatário sem atribuição por inferência.
+- Pesquisa em fontes oficiais, diários de Justiça e de órgãos de controle, repositórios institucionais e acadêmicos, documentos legislativos públicos, entidades profissionais e imprensa contemporânea.
+- Registro individualizado das lacunas, sem converter ausência de resultado de busca em prova de inexistência.
+- Remoção preventiva das sete capas sem procedência e autorização documentadas.
+
+### Resultado por pendência documental
+| Frente | O que está comprovado | O que continua sem prova pública primária suficiente |
+|---|---|---|
+| FCP / EL-025 | Política de Acervo cita o Relatório Técnico 01; inventário oficial contém 9.696 títulos; documentos oficiais da diligência parlamentar tratam da Sala 11 | PDF integral do Relatório 01/CNIRC, lista nominal e critério dos 5.165 itens; explicação documental para a diferença entre 5.165 e 5.300 |
+| São José dos Campos / EL-028 | Retirada corroborada por fontes contemporâneas; ofício do vereador reportado; decisão judicial de retorno reportada em 2026 | Ofício/ordem municipal original, resposta administrativa e prova pública de cumprimento; autos judiciais reportados sob segredo |
+| Londrina / EL-030 | Pedido atribuído à vereadora e datado de novembro de 2024 por reportagens contemporâneas | Requerimento protocolado, número, destinatário formal, resposta da SME e prova de execução |
+| Taubaté / EL-032 | Requerimento, autores, data, resposta parcial do prefeito e anúncio de parecer favorável ao uso em turmas adequadas corroborados por reportagens | Requerimento e resposta assinados, ordem/mensagem original, parecer integral e comprovantes de redistribuição física |
+| Londrina / EL-035 | Correção de atribuição da iniciativa e contexto de restrição de acesso documentados por fontes públicas | Número SEI do caso, pedido, despacho, signatários e decisão final |
+| Rondônia / EL-022 a EL-024 | Memorando/lista reproduzidos; desfecho do inquérito do MPF publicado em diário oficial | Adendo SEI 10053329 original e resultado documental da sindicância estadual |
+| Canoinhas / EL-036 e EL-037 | PL municipal de autorização; decisão do TCE-SC; resultado do recurso na Notícia de Fato 01.2024.00012159-3 publicado pelo MPSC | Íntegra da decisão originária/revisional, recibo dos livros e inventário/localização posterior |
+
+### Regra de transparência e encerramento
+A pesquisa desta etapa foi realizada em fontes públicas. Nenhum pedido de LAI, Fala.BR, requerimento ou solicitação institucional foi protocolado em nome da usuária. As minutas eventualmente existentes não são protocolos nem respostas e não integram a prova.
+
+A decisão editorial é **encerrar a etapa P0 de auditoria e pesquisa pública**, preservando as lacunas como pendências documentais abertas. Não se declara que todos os documentos originais foram encontrados, que todos os exemplares tiveram destino conhecido ou que todos os registros estão integralmente verificados. A busca pública adicional só deverá ser reaberta diante de nova fonte, novo identificador, publicação ou documento verificável — não por repetição indefinida das mesmas consultas.
+
+**Status final desta etapa:** P0 de auditoria, classificação, rastreabilidade e mitigação de direitos encerrado. Recuperação documental integral não concluída nos casos listados acima. Nenhuma alteração de status parcial foi feita por inferência.
