@@ -1323,7 +1323,6 @@ const AGENTES = {
 const CONTEXTO_PARTIDARIO = [
   {
     "p": "Eduardo Leite",
-    "e": "RS-2024",
     "party": "PSDB em 2024; PSD desde 09/05/2025",
     "cover": "PSDB no episódio de 2024; mudança posterior documentada pelo próprio PSD.",
     "status": "Confirmado para 2024",
@@ -1334,7 +1333,6 @@ const CONTEXTO_PARTIDARIO = [
   },
   {
     "p": "Eduardo Riedel",
-    "e": "MS-2024",
     "party": "PSDB em 2024; PP em agosto de 2025",
     "cover": "Fontes divergem sobre a data da ficha ao PP: 15/08 e 19/08/2025. Não publicar dia exato.",
     "status": "Confirmado em 2024; data da mudança divergente",
@@ -1346,7 +1344,6 @@ const CONTEXTO_PARTIDARIO = [
   },
   {
     "p": "Ratinho Júnior",
-    "e": "PR-2024",
     "party": "PSD desde 10/03/2016",
     "cover": "Ficha de filiação divulgada pelo próprio PSD; TSE o identifica como PSD na eleição de 2022.",
     "status": "Confirmado até 2022; não extrapolar",
@@ -1357,7 +1354,6 @@ const CONTEXTO_PARTIDARIO = [
   },
   {
     "p": "Ronaldo Caiado",
-    "e": "GO-2024",
     "party": "DEM no mandato 2019–2022; União Brasil em 2023–2026; PSD desde jan/2026",
     "cover": "Biografia oficial da Câmara discrimina os mandatos; TSE registra a fusão DEM/PSL.",
     "status": "União Brasil em 2024",
@@ -1369,7 +1365,6 @@ const CONTEXTO_PARTIDARIO = [
   },
   {
     "p": "Jorginho Mello",
-    "e": "SC-2023",
     "party": "PL desde 2019",
     "cover": "Câmara registra mandato de senador pelo PL desde 2019; ALESC registra trajetória. Dia exato da filiação não localizado.",
     "status": "PL sustentado; dia exato não confirmado",
@@ -1381,7 +1376,6 @@ const CONTEXTO_PARTIDARIO = [
   },
   {
     "p": "Marcos Rocha",
-    "e": "RO-2020",
     "party": "PSL na eleição de 2018 e início do mandato em 2019",
     "cover": "PGE-RO confirma eleição pelo PSL e posse; não equivale a certidão individual para cada dia de 2020.",
     "status": "Contexto forte; filiação diária não comprovada",
@@ -1391,7 +1385,6 @@ const CONTEXTO_PARTIDARIO = [
   },
   {
     "p": "Anderson Farias",
-    "e": "SJC-2024",
     "party": "PSD desde 18/01/2022",
     "cover": "Diretório estadual do PSD informa assinatura da ficha nessa data.",
     "status": "Filiação datada por fonte partidária",
@@ -1401,7 +1394,6 @@ const CONTEXTO_PARTIDARIO = [
   },
   {
     "p": "Marcelo Belinati",
-    "e": "LON-2024",
     "party": "PP nas eleições de 2017 e 2021; mandato 2021–2024",
     "cover": "Perfil oficial de Londrina registra eleição/mandato; não inferir autoria.",
     "status": "Contexto institucional",
@@ -1411,7 +1403,6 @@ const CONTEXTO_PARTIDARIO = [
   },
   {
     "p": "Sérgio Victor",
-    "e": "SJC-2025",
     "party": "Novo na eleição de 2024",
     "cover": "Registro eleitoral confirma candidatura; posse como prefeito em janeiro de 2025.",
     "status": "Candidatura confirmada",
@@ -1421,7 +1412,6 @@ const CONTEXTO_PARTIDARIO = [
   },
   {
     "p": "Sérgio Motta",
-    "e": "SC-2024",
     "party": "Partido registrado pela ALESC na 20ª Legislatura (2023–2027)",
     "cover": "Memória Política da ALESC cobre a legislatura que inclui 2024.",
     "status": "Registro legislativo contemporâneo",
@@ -1431,7 +1421,6 @@ const CONTEXTO_PARTIDARIO = [
   },
   {
     "p": "Jéssica Ramos Moreno",
-    "e": "LON-2024",
     "party": "PP na candidatura municipal de 2024",
     "cover": "Registro eleitoral comprova legenda na candidatura, não certidão de filiação em outra data.",
     "status": "Candidatura confirmada; data do requerimento não fechada",
@@ -1441,7 +1430,6 @@ const CONTEXTO_PARTIDARIO = [
   },
   {
     "p": "Amauri Ribeiro",
-    "e": "GO-2024",
     "party": "União Brasil na 20ª Legislatura até 02/04/2026; PL desde 03/04/2026",
     "cover": "Perfil biográfico oficial da Alego registra histórico por legislatura. Notícia de gabinete posterior não prova pressão anterior.",
     "status": "União Brasil em 2024; autoria não demonstrada",
@@ -1452,7 +1440,6 @@ const CONTEXTO_PARTIDARIO = [
   },
   {
     "p": "Rinaldo Modesto",
-    "e": "MS-2024",
     "party": "Podemos na 12ª Legislatura (2023–2027)",
     "cover": "Lista oficial da ALEMS, com fonte declarada TRE-MS, cobre março de 2024.",
     "status": "Confirmado para o episódio",
@@ -1463,7 +1450,6 @@ const CONTEXTO_PARTIDARIO = [
   },
   {
     "p": "Thomaz Henrique",
-    "e": "SJC-2024",
     "party": "PL desde 04/03/2024",
     "cover": "Reportagem contemporânea atribui a data ao próprio vereador; antecede o episódio de 04/06/2024.",
     "status": "Declaração pública contemporânea",
@@ -1474,7 +1460,6 @@ const CONTEXTO_PARTIDARIO = [
   },
   {
     "p": "Gustavo Gayer",
-    "e": "DF-2023",
     "party": "PL na Câmara na legislatura 2023–2027",
     "cover": "Perfil institucional da Câmara cobre o período parlamentar.",
     "status": "Registro institucional contemporâneo",
@@ -1484,7 +1469,6 @@ const CONTEXTO_PARTIDARIO = [
   },
   {
     "p": "Zelinda Pastora",
-    "e": "TAU-2025",
     "party": "PRD documentado em 06/03/2025",
     "cover": "Documento da Câmara assinado nessa data; pedido informal ao secretário ocorreu em 2025 sem dia identificado.",
     "status": "Partido no dia do pedido não determinado",
@@ -1495,7 +1479,6 @@ const CONTEXTO_PARTIDARIO = [
   },
   {
     "p": "Leonel Camasão",
-    "e": "SC-2023",
     "party": "PSOL na candidatura de 2024",
     "cover": "Resultado oficial do TRE-SC comprova legenda na eleição; não estender a outros períodos.",
     "status": "Candidatura confirmada",
@@ -1505,7 +1488,6 @@ const CONTEXTO_PARTIDARIO = [
   },
   {
     "p": "Lia Nogueira",
-    "e": "MS-2024",
     "party": "PSDB desde 2022; PSDB na 12ª Legislatura (2023–2027)",
     "cover": "Perfil oficial da ALEMS confirma filiação e partido na legislatura.",
     "status": "Confirmado para 2024",
@@ -1516,7 +1498,6 @@ const CONTEXTO_PARTIDARIO = [
   },
   {
     "p": "Clayton Silva",
-    "e": "LIM-2019",
     "party": "PSC em novembro de 2019; PTC desde abril de 2020",
     "cover": "Câmara de Limeira confirma PSC em 29/11/2019; fonte local noticia mudança em abril de 2020. Requerimento de 2019 pedia informações, não retirada.",
     "status": "Temporalmente sustentado; papel corrigido",
