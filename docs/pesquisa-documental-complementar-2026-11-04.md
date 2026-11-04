@@ -685,3 +685,10 @@ A distinção numérica fica assim:
 - 300 entradas: lista final de títulos apontados como comprobatórios de desvio da missão institucional.
 - 261 entradas: resultado da transcrição secundária após remoção de edições repetidas.
 - 5.300 exemplares: número alegado na petição da OAB/ADPF 918; não deve ser confundido com o quantitativo de 5.165 títulos nem tratado como prova independente de execução.
+
+
+### Cruzamento da transcrição com o inventário oficial da FCP
+
+O inventário bibliográfico oficial da FCP, compilado entre julho e outubro de 2021 e publicado em 08/08/2024, foi pesquisado por títulos presentes na transcrição dos 300. Foram localizados, entre outros, **Bandidos** (E. J. Hobsbawm), **Dicionário do Folclore Brasileiro** (Luís da Câmara Cascudo), **O Capital** (Karl Marx), **Menino brinca de boneca?** (Marcos Ribeiro), **O Segundo Sexo** (Simone de Beauvoir), **A nova mulher e a moral sexual** (Alexandra Kollontai), **A crise do neoliberalismo e a luta pelo socialismo** (Aldo Rebelo), **O mundo do socialismo** (Caio Prado Júnior), **A história me absolverá** (Fidel Castro), **O PT em Movimento** (Florestan Fernandes), **O Socialismo Vive** e **O sexo e a vida** (H. G. Wells).
+
+O cruzamento comprova que esses títulos constam do inventário bibliográfico oficial do antigo acervo, não que todos os 261 itens da transcrição tenham sido preservados fisicamente, que continuem disponíveis hoje ou que a lista de 300 tenha sido executada integralmente. O inventário informa que foi compilado após a publicação do Relatório 01, mas sua natureza é de inventário bibliográfico do antigo acervo; não é recibo de guarda nem relatório de movimentação. A amostra reforça a consistência de parte da transcrição, sem substituir o original.
