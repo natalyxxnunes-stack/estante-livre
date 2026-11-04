@@ -106,8 +106,8 @@ Os dois PRs permanecem abertos e sem merge. A branch do PR #5 também está quat
 - 37 registros.
 - 32 obras e conjuntos.
 - 19 atos.
-- 212 referências associadas aos registros.
-- 94 entradas de fonte/URL classificadas, incluindo o artigo do Gênio Criador como B1 (blog institucional/editorial).
-- 10 registros parcialmente verificados.
+- 235 associações de fontes nos registros.
+- 109 entradas únicas na tabela FONTES, todas com tipo válido (P1, P2, P3, S1, S2, A1, O1, R1 ou B1); 235 associações de fontes nos registros. O artigo do Gênio Criador permanece B1 (blog institucional/editorial).
+- 5 registros parcialmente verificados no fechamento de 04/11/2026: EL-025, EL-028, EL-030, EL-032 e EL-035.
 
 **Conclusão operacional:** a revisão técnica e documental foi aprofundada, mas não é correto declarar as seis prioridades integralmente encerradas. As etapas que dependem de navegador real, direitos de terceiros e respostas oficiais permanecem bloqueios explícitos. O PR #5 não deve ser mesclado nem publicado enquanto os bloqueios de direitos e inspeção visual não forem resolvidos.
