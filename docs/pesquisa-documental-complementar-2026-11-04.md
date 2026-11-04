@@ -130,3 +130,47 @@ O Diário Oficial de Taubaté consultado para 10/03/2026 contém atos administra
 | Requerimento e resposta integral de Taubaté | Não localizados em inteiro teor oficial; notícia posterior não prova redistribuição | Pendente |
 
 **Resultado:** esta rodada melhorou as chaves de recuperação e a rastreabilidade, mas não trouxe os documentos primários ausentes. Não elevar o grau de verificação dos registros por conta de referências bibliográficas, matérias jornalísticas ou metadados reproduzidos. A conclusão correta é “busca adicional realizada; documento primário não recuperado”, e não “documento inexistente”.
+
+
+## 8. Recuperação orientada pelos sistemas legislativos — nova rodada
+
+### 8.1 Taubaté — sessão correta identificada
+
+A Câmara Municipal de Taubaté identifica oficialmente **10/03/2026 como a 46ª Sessão Ordinária**. A página institucional publica a ordem do dia e o resumo da sessão. A notícia de OVALE sobre o requerimento informa que ele foi aprovado nessa data; portanto, a sessão é uma chave de pesquisa confirmada, ainda que o requerimento não apareça na ordem do dia publicada.
+
+A Câmara também informa em seus boletins legislativos que os requerimentos devem ser consultados no sistema **Câmara Sem Papel**. O boletim oficial nº 1716, de 18/06/2025, contém expressamente a orientação “Consulte os requerimentos no Câmara Sem Papel”. Isso confirma o canal institucional de consulta, mas não significa que o requerimento específico tenha sido recuperado.
+
+Fontes:
+- [46ª Sessão Ordinária — 10/03/2026, página oficial da Câmara](https://www.camarataubate.sp.gov.br/portal/noticias/0/3/9875/46-sessao-ordinaria--1032026---ordem-do-dia).
+- [Boletim Legislativo nº 1716 — 18/06/2025 (PDF oficial)](https://www.camarataubate.sp.gov.br/DownloadServlet?id=0xxfrspbgd8nwe49u3bgksuy8psg5oh8), linhas 131-133 do PDF.
+- [Notícia contemporânea sobre o requerimento e a resposta do Executivo](https://sampi.net.br/ovale/noticias/2972973/sessao-extra/2026/04/livro-sobre-menina-com-duas-maes-e-retirado-de-escolas-em-taubate).
+
+**Resultado:** chave de sessão identificada; número/inteiro teor do requerimento, resposta oficial integral e comprovantes de redistribuição continuam não recuperados. A ordem do dia da sessão não contém o requerimento, possivelmente porque foi apresentado no expediente, e não como item de votação da ordem do dia. Não inferir número.
+
+### 8.2 Londrina — portal oficial de busca do Jornal Oficial identificado
+
+Foi localizado o formulário oficial de **Busca Jornal Oficial** do Município de Londrina. A página permite pesquisar edições e texto do diário, e orienta que uma edição específica seja buscada pelo identificador “jornal” seguido do número. A interface pública consultada não expôs os campos de formulário como parâmetros acessíveis nesta execução; por isso não foi possível submeter a consulta de texto pela ferramenta de pesquisa.
+
+Fontes:
+- [Busca oficial do Jornal Oficial de Londrina](https://www2.londrina.pr.gov.br/jornaloficial/index.php?option=com_searchadvanced).
+- [Jornal Oficial de Londrina — edição 5290, 04/09/2024 (exemplo de arquivo oficial indexado)](https://portal.londrina.pr.gov.br/images/stories/jornalOficial/Jornal-5290-Assinado.pdf).
+
+A notícia contemporânea que relata o requerimento de Jéssica Ramos Moreno confirma o contexto, mas não fornece protocolo nem cópia do documento. O PL 79/2024 e a lei dele decorrente não substituem o requerimento de providências de 26/11/2024.
+
+**Resultado:** identificado o portal oficial de busca de publicações municipais; requerimento e eventual resposta da Secretaria continuam pendentes. Não afirmar que o Jornal Oficial contém o requerimento, pois requerimentos parlamentares podem estar apenas no sistema legislativo da Câmara.
+
+### 8.3 MPSC, Rondônia e Fundação Palmares
+
+Nesta rodada, as buscas por número SIG do MPSC, código SEI 10053329/processo 0029.051300/2020-91 e título do relatório CNIRC não retornaram novo arquivo primário verificável. Permanecem válidas as classificações e ressalvas das seções 7.1 a 7.3.
+
+### 8.4 Atualização do balanço
+
+| Frente | Novo avanço verificável | Documento primário ainda ausente |
+|---|---|---|
+| Taubaté | Identificada oficialmente a 46ª Sessão Ordinária de 10/03/2026 e o canal Câmara Sem Papel | Requerimento específico, resposta integral, parecer e comprovantes de redistribuição |
+| Londrina | Identificado formulário oficial de busca do Jornal Oficial | Requerimento de 26/11/2024 e resposta administrativa |
+| Canoinhas/MPSC | Nenhum novo arquivo | Despacho/decisão da Notícia de Fato 01.2024.00012159-3 |
+| Rondônia/SEI | Nenhum novo arquivo | Adendo 10053329, processo integral e resultado da apuração estadual |
+| Fundação Palmares | Nenhum novo arquivo | Relatório CNIRC integral, lista nominal dos 5.165 itens e documentação de destino |
+
+**Conclusão editorial:** houve avanço na identificação dos canais oficiais e das chaves de consulta, não na recuperação dos documentos ausentes. Manter os registros parciais e não declarar P0 fechado.
