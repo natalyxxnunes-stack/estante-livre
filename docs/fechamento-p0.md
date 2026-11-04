@@ -86,7 +86,7 @@ Fontes:
 
 O TCE-SC concluiu que os livros não foram efetivamente jogados no lixo e estavam em poder da Fundação Cultural para análise de destinação. A resposta da prefeita está nas fls. 14–32, mas o Tribunal levantou o sigilo apenas em relação ao Relatório DGE-328/2024 e à decisão; a resposta e as fotos não integram o documento público do Diário. O TCE arquivou o levantamento por baixa materialidade financeira e pela existência de notícia de fato no MPSC — isso não equivale a conclusão do Ministério Público.
 
-O Requerimento 149/2024 pediu revisão e reorganização da Mundoteca e separação por faixa etária; não pediu expressamente a retirada dos dois títulos. Reportagem de Canoinhas Online atribuiu a Professor Osmar o pedido de retirada imediata e a Willian Godoy a defesa da incineração; essa é uma atribuição jornalística e não substitui ato administrativo assinado. O destino posterior dos livros, o recibo de transferência e o resultado da Notícia de Fato do MPSC não foram localizados.
+O Requerimento 149/2024 pediu revisão e reorganização da Mundoteca e separação por faixa etária; não pediu expressamente a retirada dos dois títulos. Reportagem de Canoinhas Online identificou Osmar Oleskovicz (apresentado no SAPL como Professor Osmar) como autor do pedido de retirada imediata e Willian Godoy como defensor da incineração; essa é uma atribuição jornalística e não substitui ato administrativo assinado. O destino posterior dos livros, o recibo de transferência e o resultado da Notícia de Fato do MPSC não foram localizados.
 
 ### São José dos Campos — *Meninas sonhadoras, mulheres cientistas*
 
