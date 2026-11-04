@@ -492,3 +492,52 @@ Trecho direto: linhas 1857–1874 da extração do Diário.
 
 - **EL-025 — Palmares/Relatório 01/CNIRC:** permanece parcial quanto ao relatório de triagem e ao conjunto de 5.165 itens. Agora há um inventário bibliográfico oficial completo, numerado até 9.696 títulos, que deve ser vinculado como fonte primária complementar. Não elevar a verificação do relatório de triagem.
 - **EL-022/023/024 — Rondônia:** o desfecho do inquérito civil do MPF está documentalmente comprovado por publicação oficial de 30/08/2021. A sindicância estadual e o Adendo SEI 10053329 continuam pendentes; o registro deve separar o que o MPF apurou do que a Seduc investigou internamente.
+
+
+## 17. Rodada adicional de busca — Taubaté, Londrina, São José dos Campos e Palmares (04/11/2026)
+
+### 17.1 Taubaté — confirmação adicional do conteúdo do requerimento, mas não do original
+
+A busca ampliada localizou duas reportagens de OVALE/Sampi:
+- [10/04/2026 — Prefeitura confirma retirada de livro sobre menina com duas mães](https://sampi.net.br/ovale/noticias/2972973/sessao-extra/2026/04/livro-sobre-menina-com-duas-maes-e-retirado-de-escolas-em-taubate).
+- [14/07/2026 — escolas voltarão a usar o livro](https://sampi.net.br/ovale/noticias/2991910/vale-do-paraiba/2026/07/taubate-escolas-voltarao-a-usar-livro-sobre-menina-com-duas-maes).
+
+A matéria de abril identifica o requerimento como apresentado por Isaac do Carmo e Talita, aprovado em 10/03/2026, para obter informações sobre a retirada da obra e o gasto de aquisição. Reproduz trechos da resposta do prefeito: compra em 2024, 3.280 kits para alunos e 116 para professores, total de R$ 1,216 milhão; parte dos livros do Programa Minha Biblioteca foi encaminhada à Secretaria para análise técnica no fim de 2025. A matéria de julho informa parecer técnico favorável ao uso em turmas adequadas, com planejamento pedagógico, faixa etária e mediação docente.
+
+A página oficial da Câmara para a 46ª Sessão Ordinária de 10/03/2026 [publica a ordem do dia](https://www.camarataubate.sp.gov.br/portal/noticias/0/3/9875/46-sessao-ordinaria--1032026---ordem-do-dia), mas a página não lista o expediente/requerimentos. A listagem oficial de notícias da Câmara confirma que a sessão ocorreu, mas não oferece o inteiro teor do requerimento nessa página.
+
+**Status:** melhor confirmação pública da existência, autoria, data, objeto e teor parcial da resposta; ainda não é cópia do requerimento, do ofício-resposta ou do parecer. Não elevar para primário.
+
+### 17.2 Londrina — projeto de lei de autoria da vereadora, documento distinto
+
+Foi localizado o PDF oficial do [Projeto de Lei nº 79/2024](https://www1.cml.pr.gov.br/projetos/2024/PL000792024.pdf), de autoria de Jéssica Ramos Moreno, que propunha proibir livros com conteúdo erótico nas escolas municipais. O documento informa processo 148224 e documento 208880, assinado em 09/04/2024.
+
+Esse PL é anterior e juridicamente distinto do requerimento de 26/11/2024 sobre o livro *A Mamãe Vai Ter um Bebê*. Serve como contexto legislativo e pista para pesquisa de autoria, mas **não comprova** o requerimento posterior nem uma ordem de recolhimento ou resposta da SME. Não associar o PL como prova de execução do caso.
+
+A busca em documentos assinados indexados do mês localizou, por exemplo, atos administrativos da Câmara e indicações da vereadora de 08/11/2024, mas não o requerimento específico. O requerimento e a resposta da SME seguem pendentes.
+
+### 17.3 São José dos Campos — ofício do vereador corroborado por fonte contemporânea
+
+A reportagem contemporânea do Sindicato dos Metalúrgicos de São José dos Campos, de 13/06/2024, afirma expressamente que o vereador Thomaz Henrique enviou ofício à Prefeitura pedindo a retirada do livro e punição do responsável pela liberação. [Reportagem](https://www.sindmetalsjc.org.br/noticias/n/6779/prefeitura-de-sao-jose-censura-livro-que-homenageia-mulheres-cientistas).
+
+A Folha de S.Paulo, em 21/06/2024, confirma que o recolhimento ocorreu após a queixa do vereador e que a Prefeitura não explicou à reportagem a razão da retirada das salas de leitura. [Reportagem](https://www1.folha.uol.com.br/ciencia/2024/06/sao-jose-dos-campos-recolhe-livros-sobre-cientistas-mulheres-apos-queixa-de-vereador.shtml).
+
+A ação civil pública foi ajuizada em 06/09/2024 pelo MPSP e Defensoria, conforme reportagem contemporânea da Band. [Reportagem](https://www.band.com.br/nacional/sp/mpsp-e-defensoria-acionam-prefeitura-de-sao-jose-dos-campos-para-retorno-de-livro-em-escolas).
+
+**Status:** a existência do ofício e sua finalidade têm corroboração jornalística contemporânea; o documento original, protocolo, destinatários e resposta administrativa não foram recuperados. Autos judiciais seguem tratados com cautela, sem presumir acesso a peças eventualmente sigilosas.
+
+### 17.4 Palmares — distinção entre números permanece sem solução documental
+
+O Ipea, em publicação de 2022, descreve o relatório “Retrato do Acervo” e menciona 5,3 mil livros, folhetos e catálogos como objetos da proposta de exclusão. [Boletim de Políticas Sociais nº 29](https://repositorio.ipea.gov.br/bitstream/11058/11371/1/BPS_29_cultura.pdf).
+
+O O Povo reproduziu o número 9.565 para o acervo e a divisão 4.400/5.165 atribuída ao relatório. [Reportagem de 18/06/2021](https://www.opovo.com.br/vidaearte/2021/06/18/ia/fundacao-palmares-retira-obras-do-acervo-e-cita--dominacao-marxista--e-sexualizacao-infantil.html).
+
+A divergência entre 5.165 e 5.300 permanece aberta: pode envolver arredondamento, categorias ou unidade de contagem, mas nenhuma dessas explicações deve ser afirmada sem o relatório original. O inventário de 9.696 títulos publicado pela FCP em 2024 é uma base primária diferente e não resolve, sozinho, a lista de exclusão.
+
+### 17.5 Resultado desta rodada
+
+Nenhum dos quatro documentos primários ainda ausentes foi substituído por fonte secundária. A rodada acrescenta:
+- Taubaté: autoria, data, objeto do requerimento e mais detalhes da resposta/parecer;
+- Londrina: PL 79/2024 oficial, contextual, mas distinto do requerimento;
+- São José: corroboração contemporânea da existência e finalidade do ofício;
+- Palmares: referência institucional independente do Ipea para a escala de 5,3 mil itens e confirmação de que a discrepância numérica não deve ser apagada.
