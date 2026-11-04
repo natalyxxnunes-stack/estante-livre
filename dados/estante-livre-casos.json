@@ -2669,7 +2669,7 @@
    "ato_ou_documento": "Relatório Público 01/CNIRC, “Retrato do Acervo: três décadas de dominação marxista na Fundação Cultural Palmares”, divulgado em 11/06/2021. A proposta divulgada era retirar/doar 5.165 itens classificados como de temática alheia à negra; fontes contemporâneas divergem entre “títulos”, “livros” e “exemplares”. O link oficial do relatório permanece cadastrado, mas o arquivo não abriu nesta consulta; a lista nominal completa não foi recuperada. A resposta oficial da FCP à Câmara, Nota Informativa 0166090/2021, assinada por Marco Aurélio Franco, confirma a intenção de doação e informa que a movimentação ficou impedida por decisão judicial. A Resolução FCP nº 24/2024, publicada no DOU em 26/02/2024, reproduz a ordem da Ação Popular nº 5006660-67.2021.4.02.5117/RJ que impede movimentação do acervo, exceto consulta local.",
    "verificado": "Parcialmente",
    "pendencia": "Recuperar a íntegra do Relatório Público 01/CNIRC e a lista nominal dos 5.165 itens; reconciliar a lista com o inventário oficial de 9.696 títulos publicado em 08/08/2024 e verificar movimentações posteriores. Fontes contemporâneas divergem na unidade de contagem, usando “títulos”, “livros” e “exemplares”; a ficha usa “itens” até que o relatório original possa ser conferido.",
-   "nota": "O Relatório Público 01/CNIRC, divulgado em 11/06/2021, é a fonte da classificação de 5.165 itens como de “temática alheia à negra”. Fontes contemporâneas divergem na unidade de contagem, usando “títulos”, “livros” e “exemplares”; o PDF original não abriu nesta consulta, portanto a ficha usa “itens” sem presumir a unidade. A lista nominal completa não foi recuperada. A resposta oficial da Fundação Cultural Palmares à Câmara, Nota Informativa 0166090/2021, assinada por Marco Aurélio Franco, confirma a intenção de doar títulos considerados fora da missão institucional, mas não confirma por si só o número de 5.165. A Resolução FCP nº 24/2024, assinada pelo presidente João Jorge Santos Rodrigues e pela diretora Flávia de Jesus Costa, aprova a Política de Formação e Desenvolvimento de Coleções e reproduz trecho da decisão judicial da Ação Popular nº 5006660-67.2021.4.02.5117/RJ que impedia movimentação do acervo, exceto consulta local. Não há comprovação de destruição ou doação dos 5.165 itens. A assinatura formal do Relatório Público 01 original não foi verificada. O inventário oficial da FCP, atualizado em 08/08/2024, relaciona 9.696 títulos e inclui obras de Karl Marx, Max Weber, Eric Hobsbawm e Celso Furtado. Esse inventário posterior comprova a presença desses títulos, mas não substitui a lista dos 5.165 nem demonstra o destino de todos os itens.",
+   "nota": "O Relatório Público 01/CNIRC, divulgado em 11/06/2021, é a fonte da classificação de 5.165 itens como de “temática alheia à negra”. Fontes contemporâneas divergem na unidade de contagem, usando “títulos”, “livros” e “exemplares”; o PDF original não abriu nesta consulta, portanto a ficha usa “itens” sem presumir a unidade. A lista nominal completa não foi recuperada. A resposta oficial da Fundação Cultural Palmares à Câmara, Nota Informativa 0166090/2021, assinada por Marco Aurélio Franco, confirma a intenção de doar títulos considerados fora da missão institucional, mas não confirma por si só o número de 5.165. A Resolução FCP nº 24/2024, assinada pelo presidente João Jorge Santos Rodrigues e pela diretora Flávia de Jesus Costa, aprova a Política de Formação e Desenvolvimento de Coleções e reproduz trecho da decisão judicial da Ação Popular nº 5006660-67.2021.4.02.5117/RJ que impedia movimentação do acervo, exceto consulta local. Não há comprovação de destruição ou doação dos 5.165 itens. A assinatura formal do Relatório Público 01 original não foi verificada. O inventário oficial da FCP, atualizado em 08/08/2024, relaciona 9.696 títulos e inclui obras de Karl Marx, Max Weber, Eric Hobsbawm e Celso Furtado. A página oficial de downloads do CNIRC lista esse inventário, a Política de Acervo e a resposta à Comissão de Cultura, mas não relaciona o Relatório Público 01/CNIRC. A petição da OAB na ADPF 918, de 02/12/2021, reproduz trechos do Relatório 01 e o identifica como anexo 26, mas o PDF da petição não inclui o anexo. A diligência parlamentar da Câmara dos Deputados produziu relatório técnico distinto, sobre conservação e áreas de guarda; ele não é o Relatório 01. O inventário posterior comprova a presença dos títulos nele listados, mas não substitui a lista dos 5.165 nem demonstra o destino de todos os itens.",
    "agentes": [
     {
      "nome": "Sérgio Camargo",
@@ -2791,6 +2791,34 @@
      "titulo": "Análise acadêmica sobre a política de acervo da Fundação Palmares e a ação judicial.",
      "data": "2021",
      "url": "https://revista.ibict.br/liinc/article/view/5789"
+    },
+    {
+     "veiculo": "Fundação Cultural Palmares · CNIRC",
+     "tipo": "P1",
+     "titulo": "Página oficial de downloads do CNIRC: inventário, política de acervo e resposta à Comissão de Cultura; não lista o Relatório Público 01",
+     "data": "2024-08-14",
+     "url": "https://www.gov.br/palmares/pt-br/centrais-de-conteudo/publicacoes/download-1"
+    },
+    {
+     "veiculo": "Fundação Cultural Palmares · CNIRC",
+     "tipo": "P1",
+     "titulo": "Política de Formação e Desenvolvimento de Acervo: critérios de avaliação, remanejamento e descarte",
+     "data": "2023-07-06",
+     "url": "https://www.gov.br/palmares/pt-br/centrais-de-conteudo/publicacoes/PolticadeFormaoeDesenvolvimentodeAcervoFundaoCulturalPalmares06072023.pdf"
+    },
+    {
+     "veiculo": "Câmara dos Deputados · Centro de Documentação e Informação",
+     "tipo": "P1",
+     "titulo": "Relatório técnico sobre estado de conservação dos acervos e áreas de guarda da Fundação Cultural Palmares",
+     "data": "2021",
+     "url": "https://www2.camara.leg.br/atividade-legislativa/comissoes/comissoes-permanentes/ccult/outros-documentos/relatorios-sobre-a-diligencia-na-fundacao-palmares-2021/relatorio-final-fundacao-cultural-palmares/view"
+    },
+    {
+     "veiculo": "Conselho Federal da OAB · ADPF 918",
+     "tipo": "P1",
+     "titulo": "Petição inicial da ADPF 918 reproduz trechos do Relatório Público 01/CNIRC e identifica o documento como anexo 26",
+     "data": "2021-12-02",
+     "url": "https://s.oab.org.br/arquivos/2021/12/ba767c45-39d7-4c44-95c0-7f07d8d425ba.pdf"
     }
    ]
   },
@@ -3701,7 +3729,7 @@
    "situacao": "Em aberto",
    "desfecho": "A SME iniciou levantamento na rede e recolhimento de exemplares para análise pedagógica; não há confirmação pública do alcance por unidade nem da decisão final sobre retorno ou exclusão.",
    "eixo_tematico": "Sexualidade e gênero",
-   "justificativa_declarada": "A gerência e a diretoria pedagógica de uma unidade municipal classificaram trechos como “sensíveis” e disseram que poderiam gerar questionamentos junto às famílias.",
+   "justificativa_declarada": "O pedido de providências descreveu trechos do livro como “conteúdo sensível” e potencialmente geradores de questionamentos junto às famílias. A Folha corrigiu a versão inicial para esclarecer que a iniciativa partiu da equipe da Gerência de Ensino Fundamental da SME, não da direção da escola.",
    "pressao_ou_pedido": "",
    "decisao": "Secretaria Municipal de Educação de Londrina, que informou ter iniciado levantamento em toda a rede e recolhimento de exemplares para análise. A autoridade individual que autorizou a providência não foi identificada.",
    "assinatura": "A reportagem não publicou os nomes dos signatários. A errata atribui a iniciativa à equipe da Gerência de Ensino Fundamental da SME, não à direção da escola; o número SEI e o documento integral ainda não foram localizados.",
@@ -3709,8 +3737,8 @@
    "resposta_ou_reversao": "A SME apresentou nota sobre adequação etária e qualidade dos materiais. A editora Melhoramentos afirmou que não havia sido previamente notificada. A decisão final sobre retorno ou exclusão não foi localizada.",
    "ato_ou_documento": "Pedido de providências consultado pela Folha de Londrina em 11/03/2026. Errata publicada em 12/03/2026 esclarece que a iniciativa partiu da equipe da Gerência de Ensino Fundamental da SME, não da direção da escola municipal. A CBN Londrina confirma a nota da SME sobre levantamento da rede e recolhimento para análise. O número do processo SEI, a íntegra do pedido, os nomes dos signatários e a decisão final não foram localizados. Relatório do OGPL aponta que, após 18/02/2025, apenas 15 processos do tipo Pedido de Providências foram públicos e 19.588 foram restritos, embora a Portaria SMGP-GAB nº 28/2020 preveja publicidade como regra.",
    "verificado": "Parcialmente",
-   "pendencia": "Identificar o número SEI e recuperar o pedido de providências, o despacho da SME, o quantitativo recolhido, a avaliação técnica e a decisão final. Solicitar formalmente o número do processo e, se houver restrição, a justificativa legal e o acesso à parte pública/redigida. A errata da Folha atribui a iniciativa à Gerência de Ensino Fundamental, não à direção da escola; nomes individuais não foram publicados.",
-   "nota": "A Folha de Londrina, em 11/03/2026, informou ter consultado um pedido de providências relacionado ao livro. A errata publicada em 12/03/2026 esclareceu que a iniciativa partiu da equipe da Gerência de Ensino Fundamental da SME, e não da direção da escola municipal; por isso, não se deve atribuir o pedido a uma gerente escolar e a uma diretora pedagógica. A CBN Londrina, em 12/03/2026, confirmou que a Secretaria informou ter iniciado levantamento na rede para localizar exemplares e encaminhá-los à análise pedagógica. O número do processo SEI, a íntegra do pedido, os nomes dos signatários e a decisão final não foram localizados. Relatório do Observatório de Gestão Pública de Londrina sobre a transparência no SEI informa que, após 18/02/2025, apenas 15 processos do tipo Pedido de Providências foram classificados como públicos, enquanto 19.588 foram iniciados com restrição; a regra normativa citada no relatório, Portaria SMGP-GAB nº 28/2020, prevê publicidade como padrão. Assim, não é possível presumir que o processo específico esteja publicamente acessível, embora o tipo processual deva ser público em regra.",
+   "pendencia": "Localizar o número SEI, a íntegra do pedido de providências, o despacho da SME, o quantitativo recolhido, a avaliação técnica e a decisão final em repositórios públicos. A Folha informa que teve acesso ao pedido, mas o documento integral e os nomes dos signatários não foram localizados em fonte pública.",
+   "nota": "A Folha de Londrina, em 11/03/2026, informou ter consultado um pedido de providências relacionado ao livro. A errata publicada em 12/03/2026 esclareceu que a iniciativa partiu da equipe da Gerência de Ensino Fundamental da SME, e não da direção da escola municipal. O texto da matéria informa que o pedido de providências foi assinado pela “gerente da unidade” e pela “diretora pedagógica”, mas não publica seus nomes nem permite inferir, sem o documento integral, os vínculos funcionais exatos desses signatários. A CBN Londrina, em 12/03/2026, confirmou que a Secretaria informou ter iniciado levantamento na rede para localizar exemplares e encaminhá-los à análise pedagógica. O número do processo SEI, a íntegra do pedido, os nomes dos signatários e a decisão final não foram localizados. Relatório do Observatório de Gestão Pública de Londrina sobre a transparência no SEI informa que, após 18/02/2025, apenas 15 processos do tipo Pedido de Providências foram classificados como públicos, enquanto 19.588 foram iniciados com restrição; a regra normativa citada no relatório, Portaria SMGP-GAB nº 28/2020, prevê publicidade como padrão. Assim, não é possível presumir que o processo específico esteja publicamente acessível, embora o tipo processual deva ser público em regra.",
    "agentes": [
     {
      "nome": "Gerência de Ensino Fundamental da Secretaria Municipal de Educação de Londrina",
@@ -3769,6 +3797,13 @@
      "titulo": "Relatório sobre transparência no SEI: 15 processos Pedido de Providências públicos e 19.588 restritos após 18/02/2025; Portaria 28/2020 prevê publicidade como regra.",
      "data": "2026",
      "url": "https://observatoriolondrina.org.br/uploads/relatorios/Relat%C3%B3rio%20SEI%20-%20Pedidos%20de%20Provid%C3%AAncias.pdf"
+    },
+    {
+     "veiculo": "Folha de Londrina",
+     "tipo": "S2",
+     "titulo": "Errata da matéria sobre o pedido de recolhimento de O bebê vem com a cegonha?!?: iniciativa da Gerência de Ensino Fundamental da SME",
+     "data": "2026-03-12",
+     "url": "https://www.folhadelondrina.com.br/politica/educacao-vai-recolher-livro-infantil-com-conteudo-sensivel-3292131e.html"
     }
    ]
   },
