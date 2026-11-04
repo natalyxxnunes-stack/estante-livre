@@ -298,3 +298,8 @@ Fonte: https://documentos.mpsc.mp.br/portal/Conteudo/publicacoes/do_mpsc_2024-08
 A nova pesquisa recuperou a nota pública da Prefeitura, reproduzida pela Spriomais em 13/06/2024, confirmando o recolhimento dos exemplares de todas as escolas para reavaliação técnica. A mesma matéria registra que o vereador protocolou ofício ao prefeito e ao secretário de Educação em 11/06/2024. O Vale/Sampi, em 09/09/2024, documenta o ajuizamento da ação civil pública e relata que a ordem operacional aos diretores foi transmitida por WhatsApp.
 
 A cópia do ofício parlamentar e a mensagem que transmitiu a ordem municipal não foram localizadas. A sentença de 2026 e a ordem de restituição são divulgadas por veículos de imprensa, mas não foi localizada comprovação pública de cumprimento. O registro permanece parcialmente verificado por essas lacunas.
+
+
+### Complemento — Taubaté (EL-032)
+
+Foi recuperado o portal oficial Câmara Sem Papel, que disponibiliza pesquisa pública da produção legislativa. Também foram consultados os registros oficiais das sessões de 03/03/2026 e 10/03/2026. Os resumos públicos não reproduzem o conteúdo do requerimento sobre o livro nem a declaração atribuída à vereadora. O Vale permanece como fonte do teor do requerimento e de sua aprovação em 10/03; o número e o inteiro teor continuam sem recuperação.
