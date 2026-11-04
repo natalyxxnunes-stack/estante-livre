@@ -214,7 +214,7 @@ Em Taubaté, a busca por “Pipoca e Picolé”, pelos autores do requerimento e
 | Frente | Material adicional recuperado | O que continua faltando |
 |---|---|---|
 | Rondônia | Reprodução visual em periódico universitário, além da cópia textual já conhecida | Original verificável no SEI, Adendo 10053329, processo integral e resultado da apuração estadual |
-| Fundação Palmares | Descrição acadêmica da estrutura e extensão do relatório (76 páginas/8 partes) | PDF integral validado, lista final de 300 títulos e documentação de destino |
+| Fundação Palmares | Descrição acadêmica da extensão e conteúdo do relatório (73 páginas e lista final de 300 títulos) | PDF integral validado, lista final de 300 títulos e documentação de destino |
 | Londrina | PDF oficial do PL 79/2024, distinguido do requerimento | Requerimento de 26/11/2024 e resposta administrativa |
 | Taubaté | Nenhum inteiro teor novo | Requerimento, resposta integral, parecer e comprovantes de redistribuição |
 | MPSC/Canoinhas | Nenhum inteiro teor novo | Despacho/decisão da Notícia de Fato 01.2024.00012159-3 |
@@ -415,7 +415,7 @@ Fonte direta do trecho deliberativo: [Diário nº 3698, página 7, linhas 408–
 
 - **Canoinhas/MPSC:** retirar a formulação anterior de que o resultado da Notícia de Fato era inteiramente desconhecido. A súmula oficial resolve o resultado do recurso: desprovimento unânime. Permanecem pendentes a íntegra da decisão originária e a prova de destino/localização dos livros.
 - **Palmares/Sala 11:** reforçar o registro com o PDF oficial de 92 páginas e as fotografias da diligência. Não confundir essa documentação com o Relatório 01/CNIRC nem elevar EL-025 com base nela.
-- **Palmares/5.165 itens:** permanece pendente a cópia integral do Relatório 01/CNIRC e a lista final de 300 títulos indicada para exclusão e o próprio relatório que permita auditar metodologia, classificação e unidade de contagem.
+- **Palmares/Relatório 01:** permanece pendente a cópia integral do Relatório 01/CNIRC e a lista final de 300 títulos indicados para exclusão; o documento é necessário para auditar metodologia e critérios.
 
 
 ## 15. Outras rotas públicas rechecadas — Taubaté, Londrina e São José dos Campos
@@ -467,7 +467,7 @@ O próprio documento informa que:
 
 A lista tem 295 páginas e data de 08/08/2024 no rodapé. A introdução e a estrutura de campos aparecem nas linhas 0–8 da extração; a última sequência de registros, incluindo o item 9696, aparece nas linhas 13821–13879.
 
-**Importância probatória:** esta é uma fonte primária pública para o inventário do antigo acervo da FCP. Permite consulta título a título e quantitativo por registro. Não se deve confundir “9.696 títulos” com quantidade total de exemplares: a coluna QUANT. registra cópias por título e varia entre registros. Tampouco se deve confundir este inventário de 2021 com o relatório de triagem/seleção “Retrato do Acervo” ou com o número de 5.165 itens referido em outras fontes. O inventário não contém referência a “5.165” na busca textual; não comprova, por si, a composição nem a destinação daquele subconjunto. O achado reduz a lacuna de transparência do acervo, mas não substitui o relatório de triagem.
+**Importância probatória:** esta é uma fonte primária pública para o inventário do antigo acervo da FCP. Permite consulta título a título e quantitativo por registro. Não se deve confundir “9.696 títulos” com quantidade total de exemplares: a coluna QUANT. registra cópias por título e varia entre registros. Tampouco se deve confundir este inventário de 2021 com o relatório de triagem/seleção “Retrato do Acervo” ou com o quantitativo agregado de 5.165 títulos (54% dos 9.565 contabilizados em 2021) referido em outras fontes. O inventário não contém referência a “5.165” na busca textual; não comprova, por si, a composição nem a destinação daquele subconjunto. O achado reduz a lacuna de transparência do acervo, mas não substitui o relatório de triagem.
 
 ### 16.2 Rondônia — ata oficial do MPF confirma arquivamento e registra fatos apurados
 
@@ -490,7 +490,7 @@ Trecho direto: linhas 1857–1874 da extração do Diário.
 
 ### 16.3 Ajuste de status e de narrativa
 
-- **EL-025 — Palmares/Relatório 01/CNIRC:** permanece parcial quanto ao relatório de triagem e ao conjunto de 5.165 itens. Agora há um inventário bibliográfico oficial completo, numerado até 9.696 títulos, que deve ser vinculado como fonte primária complementar. Não elevar a verificação do relatório de triagem.
+- **EL-025 — Palmares/Relatório 01/CNIRC:** permanece parcial quanto ao relatório de triagem e à lista final de 300 títulos indicados para exclusão. Agora há um inventário bibliográfico oficial completo, numerado até 9.696 títulos, que deve ser vinculado como fonte primária complementar. Não elevar a verificação do relatório de triagem.
 - **EL-022/023/024 — Rondônia:** o desfecho do inquérito civil do MPF está documentalmente comprovado por publicação oficial de 30/08/2021. A sindicância estadual e o Adendo SEI 10053329 continuam pendentes; o registro deve separar o que o MPF apurou do que a Seduc investigou internamente.
 
 
@@ -558,7 +558,7 @@ Esta seção consolida o resultado da pesquisa pública realizada até esta data
 ### Resultado por pendência documental
 | Frente | O que está comprovado | O que continua sem prova pública primária suficiente |
 |---|---|---|
-| FCP / EL-025 | Política de Acervo cita o Relatório Técnico 01; inventário oficial contém 9.696 títulos; documentos oficiais da diligência parlamentar tratam da Sala 11 | PDF integral do Relatório 01/CNIRC, lista nominal e critério dos 5.165 itens; explicação documental para a diferença entre 5.165 e 5.300 |
+| FCP / EL-025 | Política de Acervo cita o Relatório Técnico 01; inventário oficial contém 9.696 títulos; documentos oficiais da diligência parlamentar tratam da Sala 11 | PDF integral do Relatório 01/CNIRC e lista final de 300 títulos; metodologia que explique a diferença entre os quantitativos agregados de 5.165 e 5.300 |
 | São José dos Campos / EL-028 | Retirada corroborada por fontes contemporâneas; ofício do vereador reportado; decisão judicial de retorno reportada em 2026 | Ofício/ordem municipal original, resposta administrativa e prova pública de cumprimento; autos judiciais reportados sob segredo |
 | Londrina / EL-030 | Pedido atribuído à vereadora e datado de novembro de 2024 por reportagens contemporâneas | Requerimento protocolado, número, destinatário formal, resposta da SME e prova de execução |
 | Taubaté / EL-032 | Requerimento, autores, data, resposta parcial do prefeito e anúncio de parecer favorável ao uso em turmas adequadas corroborados por reportagens | Requerimento e resposta assinados, ordem/mensagem original, parecer integral e comprovantes de redistribuição física |
@@ -601,7 +601,7 @@ Fontes primárias:
 
 Foi reaberta a página oficial de downloads do CNIRC, atualizada em 14/08/2024. Ela lista o Inventário dos Livros da Fundação Cultural Palmares, a Política de Acervo e a resposta à Comissão de Cultura, mas não lista o Relatório Público 01/CNIRC (“Retrato do Acervo”). Isso é um indício verificável de que o relatório original não está disponível no índice público atual — não prova que nunca tenha sido publicado.
 
-O inventário oficial foi aberto diretamente e contém 295 páginas, com 9.696 registros de títulos e campos de título, autor, editora, ano e quantidade. O próprio documento informa que o levantamento foi realizado entre julho e outubro de 2021 e revisado pelo bibliotecário Henrique Bezerra de Araújo. Ele permite examinar a composição do acervo em 2021, mas não substitui a lista final de 300 títulos indicados para exclusão pelo relatório CNIRC; os 5.165 correspondem à contagem agregada de títulos classificados como temática alheia, nem permite presumir quais itens teriam sido selecionados para descarte.
+O inventário oficial foi aberto diretamente e contém 295 páginas, com 9.696 registros de títulos e campos de título, autor, editora, ano e quantidade. O próprio documento informa que o levantamento foi realizado entre julho e outubro de 2021 e revisado pelo bibliotecário Henrique Bezerra de Araújo. Ele permite examinar a composição do acervo em 2021, mas não substitui o Relatório 01/CNIRC nem sua lista final de 300 títulos indicados para exclusão. Os 5.165 correspondem à contagem agregada de títulos classificados como de temática alheia; o inventário não permite presumir quais itens foram selecionados para descarte.
 
 A Política de Formação e Desenvolvimento de Acervo, publicada em 2023, descreve critérios institucionais de avaliação, remanejamento e descarte. É documento normativo útil para comparar a política formal com as justificativas do Relatório 01, mas não é o relatório de triagem de 2021.
 
@@ -625,7 +625,7 @@ Fontes:
 ### Resultado desta rodada
 
 - Canoinhas: recuperados dois documentos oficiais acessórios que não estavam incorporados à matriz — ofício de encaminhamento e resposta da Fundação Cultural.
-- Palmares: confirmada a disponibilidade do inventário integral de 9.696 títulos e mapeado o conteúdo efetivo do índice oficial do CNIRC; o Relatório 01 e a lista final de 300 títulos indicada para exclusão continua faltante; os 5.165 são uma contagem agregada.
+- Palmares: confirmada a disponibilidade do inventário integral de 9.696 títulos e mapeado o conteúdo efetivo do índice oficial do CNIRC; o Relatório 01 e sua lista final de 300 títulos indicados para exclusão continuam faltantes; os 5.165 são uma contagem agregada.
 - Londrina e Taubaté: reforçadas as evidências secundárias independentes; sem recuperação dos atos administrativos originais e dos comprovantes de execução.
 - Nenhum pedido de acesso à informação, contato com órgão ou solicitação a terceiros foi feito.
 
