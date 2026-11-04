@@ -194,6 +194,22 @@ function gerarPoder(){
   <div class="poder-lista">${cards}</div>\n  <p class="note">Continue a investigação em <a href="dossies.html">Dossiês temáticos</a> e consulte o <a href="relatorio-2026.html">Relatório-base 2026</a> para conhecer a distribuição e os limites da base.</p>`;
 }
 
+
+function gerarContextoPartidario(){
+  const linhas=CONTEXTO_PARTIDARIO.map(x=>{
+    const links=x.fontes.map((url,i)=>'<a href="'+esc(url)+'" target="_blank" rel="noopener">Fonte '+(i+1)+'</a>').join(' · ');
+    const busca=[x.pessoa,x.partido,x.cobertura,x.status].filter(Boolean).join(' ');
+    return '<article class="poder-card" data-poder-card data-search="'+esc(busca)+'">'+
+      '<div class="poder-card-cab"><h3>'+esc(x.pessoa)+'</h3><span>Contexto partidário</span></div>'+
+      '<p><b>Registro:</b> '+esc(x.partido)+'</p>'+
+      '<p><b>Cobertura da evidência:</b> '+esc(x.cobertura)+'</p>'+
+      '<p><b>Status:</b> '+esc(x.status)+'</p>'+
+      '<p class="poder-fontes"><b>Fontes:</b> '+links+'</p></article>';
+  }).join('');
+  return '<div class="poder-lista">'+linhas+'</div>'+
+    '<p class="note">Esta seção documenta contexto partidário, não autoria. A legenda só vale para o período descrito na evidência. Candidatura, mandato, partido do governo e filiação individual são categorias distintas; não se presume continuidade além da cobertura da fonte. Fontes numeradas na ordem de apresentação.</p>';
+}
+
 function gerarDossies(){
   const idsListas=["EL-015","EL-016","EL-017","EL-018","EL-019","EL-020","EL-021","EL-022","EL-023","EL-024","EL-025","EL-026","EL-033"];
   const idsInfancia=["EL-027","EL-028","EL-030","EL-031","EL-032"];
