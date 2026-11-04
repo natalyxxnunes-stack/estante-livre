@@ -575,13 +575,13 @@ const ATOS = {
    quem:"Prefeitura de Canoinhas, sob a prefeita Juliana Maciel Hoppe",
    documento:"A decisão singular GCS/GSS-861/2024 do TCE-SC, no levantamento @LEV 24/80041829, registra que a prefeita Juliana Maciel Hoppe afirmou, em resposta juntada às fls. 14–32, que havia um exemplar de cada título e que os livros foram entregues à gestora da Fundação Cultural para análise de destinação. O TCE concluiu que os livros não foram efetivamente jogados no lixo e estavam em poder da Fundação Cultural. O Tribunal também qualificou a conduta pública da prefeita como irresponsável e apontou uso da imagem e da popularidade do cargo e de bens públicos para fins populistas, eleitoreiros e de autopromoção. O levantamento foi arquivado por baixa materialidade financeira e pela existência de notícia de fato no MPSC; isso não equivale a conclusão do Ministério Público. O TCE determinou levantamento parcial do sigilo apenas quanto ao Relatório DGE-328/2024 e à decisão; a resposta da prefeita e as fotos das fls. 14–32 não integram o documento público do Diário. O Requerimento 149/2024, assinado por oito vereadores, pediu revisão e reorganização da Mundoteca e separação de materiais por faixa etária, não a retirada expressa destes dois títulos. A decisão pública é assinada pelo conselheiro Gerson dos Santos Sicca.",
    papeis:{
-     pedido:"O Requerimento nº 149/2024 foi subscrito por Tatiane Cristina Carvalho (Tati Carvalho), Wilmar Sudoski, Maurício Zimmermann, Willian Godoy Ferreira de Souza, Antônio Adilson Steidel, Osmar Oleskovicz (Professor Osmar), André Ramon Flenik e Neri Francisco da Silva (Chico Mineiro). Pediu revisão e reorganização da disposição dos livros, com separação por faixa etária. O documento não pediu expressamente a retirada dos dois títulos.",
+     pedido:"O Requerimento nº 149/2024 foi subscrito por Tati Carvalho, Wilmar Sudoski, Maurício Zimmermann, Willian Godoy, Adilson Steidel, Professor Osmar, André Flenik e Chico Mineiro. Pediu revisão e reorganização da disposição dos livros, com separação por faixa etária. O documento não pediu expressamente a retirada dos dois títulos.",
      pressao:"Canoinhas Online relata que Tati Carvalho exibiu vídeo e classificou o conteúdo como pornografia; Osmar Oleskovicz pediu a retirada imediata e Willian Godoy defendeu a incineração. Essas falas são atribuídas a uma reportagem local; a gravação oficial da sessão e as atas correspondentes ainda não foram localizadas.",
      destinatario:"O requerimento foi dirigido à prefeita Juliana Maciel Hoppe e ao coordenador de Biblioteca Ryan Pablo Klengues.",
      decisor:"A prefeita Juliana Maciel publicou vídeo em que declara que os livros seriam retirados da biblioteca e os chama de “porcaria”. A Prefeitura confirmou posteriormente a retirada em nota reproduzida pela imprensa local. Não foi localizada ordem escrita nem identificado signatário formal de ato administrativo.",
      executor:"A prefeita aparece no vídeo colocando exemplares numa lixeira. A nota da Prefeitura reproduzida pela imprensa diz que os livros foram retirados da Mundoteca e seriam encaminhados aos responsáveis pelo projeto. Não há comprovação de destruição física nem de entrega efetiva aos responsáveis.",
      resposta:"A FGM/Mundoteca afirmou que os livros eram controlados por faixa etária e não haviam sido emprestados a crianças. O MPSC abriu notícia de fato para apurar o descarte; o resultado não foi localizado. A Secom esclareceu que a Mundoteca era projeto privado incentivado e que a unidade já estava sob gestão municipal."
-   ,assinantes:"Não foi localizado ato de retirada assinado. O Requerimento 149/2024 foi subscrito por Tatiane Cristina Carvalho (Tati Carvalho), Wilmar Sudoski, Maurício Zimmermann, Willian Godoy Ferreira de Souza, Antônio Adilson Steidel, Osmar Oleskovicz (Professor Osmar), André Ramon Flenik e Neri Francisco da Silva (Chico Mineiro). A decisão GCS/GSS-861/2024 foi assinada pelo conselheiro Gerson dos Santos Sicca. A resposta da prefeita está nas fls. 14–32, sob sigilo parcial, e não há recibo público de transferência."}},
+   ,assinantes:"Não foi localizado ato de retirada assinado. O Requerimento 149/2024 foi subscrito por Tati Carvalho, Wilmar Sudoski, Maurício Zimmermann, Willian Godoy, Adilson Steidel, Professor Osmar, André Flenik e Chico Mineiro. A decisão GCS/GSS-861/2024 foi assinada pelo conselheiro Gerson dos Santos Sicca. A resposta da prefeita está nas fls. 14–32, sob sigilo parcial, e não há recibo público de transferência."}},
 
 };
 
@@ -1271,12 +1271,12 @@ const AGENTES = {
  "gerencia-diretoria-pedagogica-unidade-londrina":{nome:"Gerência de Ensino Fundamental da Secretaria Municipal de Educação de Londrina", tipo:"Instituição"},
  "juliana-maciel-hoppe":{nome:"Juliana Maciel Hoppe", tipo:"Pessoa"},
  "ryan-pablo-klengues":{nome:"Ryan Pablo Klengues", tipo:"Pessoa"},
- "tati-carvalho":{nome:"Tatiane Carvalho (Tati Carvalho)", tipo:"Pessoa"},
+ "tati-carvalho":{nome:"Tati Carvalho", tipo:"Pessoa"},
  "wilmar-sudoski":{nome:"Wilmar Sudoski", tipo:"Pessoa"},
  "mauricio-zimmermann":{nome:"Mauricio Zimmermann", tipo:"Pessoa"},
  "willian-godoy":{nome:"Willian Godoy", tipo:"Pessoa"},
  "adilson-steidel":{nome:"Adilson Steidel", tipo:"Pessoa"},
- "professor-osmar":{nome:"Osmar Oleskovicz (Professor Osmar)", tipo:"Pessoa"},
+ "professor-osmar":{nome:"Professor Osmar", tipo:"Pessoa"},
  "andre-flenik":{nome:"André Flenik", tipo:"Pessoa"},
  "chico-mineiro":{nome:"Chico Mineiro", tipo:"Pessoa"},
  "fgm-producoes":{nome:"FGM Produções · projeto Mundoteca", tipo:"Instituição"},
