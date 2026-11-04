@@ -376,3 +376,43 @@ A busca pelo PDF deve ser direcionada à súmula/ata da 2ª Turma Revisora da se
 Fonte: [Diário Oficial do MPSC de 09/08/2024, pauta da sessão de 15/08/2024](https://documentos.mpsc.mp.br/portal/Conteudo/publicacoes/do_mpsc_2024-08-09.pdf).
 
 **Correção editorial:** qualquer menção anterior a essa publicação como “relação de procedimentos apreciados” deve ser entendida apenas como inclusão em pauta; não há, nesse PDF, resultado deliberativo do procedimento de Canoinhas.
+
+
+## 14. Nova conferência em fontes primárias — FCP e MPSC (04/11/2026)
+
+### 14.1 Fundação Cultural Palmares — relatório da diligência parlamentar e Sala 11
+
+Foi localizada e aberta a cópia oficial, hospedada no domínio gov.br da Fundação Cultural Palmares, do PDF **“Respostas da FCP aos relatórios da Comissão de Cultura da Câmara dos Deputados, seguidas dos próprios relatórios em questão”**, consolidado em novembro de 2021, com 92 páginas:
+
+- [PDF oficial da FCP — resposta e relatórios da Comissão de Cultura](https://www.gov.br/palmares/pt-br/midias/arquivos/download/resposta.pdf).
+
+O PDF começa pela Nota Informativa SEI/FCP nº 0166090/2021 e incorpora o relatório técnico da diligência parlamentar. A extração do próprio PDF:
+- identifica a Nota Informativa nº 0166090/2021, datada de 22/11/2021;
+- o relatório técnico da Câmara identifica a **Sala 11** como “sala da vergonha (livros)” e registra que ela guardava acervo bibliográfico;
+- informa que as salas e os acervos foram redistribuídos após a transferência de endereço;
+- identifica **Juçara Quinteros de Farias** e **Gilcy Rodrigues Azevedo** como signatárias do relatório técnico da Câmara, com selo digital de segurança;
+- inclui fotografias da Sala 11, com caixas descritas como contendo livros para doação.
+
+Referência no PDF oficial: linhas 1086–1104 e 2377–2385; fotografias e legendas nas páginas finais, especialmente linhas 2835–2859. A Nota Informativa da FCP e o relatório de diligência da Câmara são peças distintas reunidas no mesmo PDF; não atribuir a assinatura do relatório parlamentar à FCP.
+
+**Limite:** esse achado documenta oficialmente a Sala 11 e a diligência parlamentar. Não é o Relatório Público 01/CNIRC “Retrato do Acervo” e não contém, por si só, a lista nominal dos 5.165 itens. O link histórico do Relatório 01 continua citado em publicações acadêmicas e na Política de Acervo da FCP, mas o servidor legado não entregou o arquivo nesta rodada. O PDF oficial de 92 páginas não deve ser apresentado como substituto.
+
+### 14.2 MPSC — resultado deliberativo localizado para a Notícia de Fato de Canoinhas
+
+Foi recuperado o inteiro teor do **Diário Oficial Eletrônico do MPSC nº 3698, publicado em 09/08/2024**:
+
+- [Diário Oficial do MPSC de 09/08/2024 — PDF](https://documentos.mpsc.mp.br/portal/Conteudo/publicacoes/do_mpsc_2024-08-09.pdf).
+
+O documento contém, a partir da página 6, a **Súmula da Primeira Turma Revisora — sessão de 07/08/2024**. Na seção 3 (“Por unanimidade, conhecer e negar provimento ao recurso interposto”), sob relatoria de Ary Capella Neto, consta expressamente a **Notícia de Fato nº 01.2024.00012159-3 da 1ª Promotoria de Canoinhas**. Portanto, nessa sessão, o Conselho Superior conheceu do recurso e negou-lhe provimento por unanimidade.
+
+A mesma edição contém, em páginas anteriores, a pauta da Segunda Turma Revisora para 15/08/2024. Essa pauta é peça separada e **não é a referência correta para o resultado do procedimento de Canoinhas**. A referência correta é a súmula da Primeira Turma Revisora, sessão de 07/08/2024, publicada em 09/08/2024. A edição de 12/08/2024 (Diário nº 3699) publica a pauta da Segunda Turma Revisora de 15/08 e não deve ser confundida com a súmula da Primeira Turma.
+
+**Conclusão probatória:** o resultado revisional público foi localizado: recurso conhecido e desprovido por unanimidade. Isso não substitui a íntegra da promoção de arquivamento ou da decisão originária, nem comprova a localização atual dos livros, o recibo de transferência ou a conclusão de eventual providência material pela Fundação Cultural. O registro EL-036/EL-037 pode incorporar esse resultado como evidência primária do desfecho ministerial, mantendo separada a lacuna sobre destino físico dos exemplares.
+
+Fonte direta do trecho deliberativo: [Diário nº 3698, página 7, linhas 408–422 da extração](https://documentos.mpsc.mp.br/portal/Conteudo/publicacoes/do_mpsc_2024-08-09.pdf).
+
+### 14.3 Ajuste de interpretação e status
+
+- **Canoinhas/MPSC:** retirar a formulação anterior de que o resultado da Notícia de Fato era inteiramente desconhecido. A súmula oficial resolve o resultado do recurso: desprovimento unânime. Permanecem pendentes a íntegra da decisão originária e a prova de destino/localização dos livros.
+- **Palmares/Sala 11:** reforçar o registro com o PDF oficial de 92 páginas e as fotografias da diligência. Não confundir essa documentação com o Relatório 01/CNIRC nem elevar EL-025 com base nela.
+- **Palmares/5.165 itens:** permanece pendente a cópia integral do Relatório 01/CNIRC e a lista nominal que permita auditar o quantitativo e a unidade de contagem.
