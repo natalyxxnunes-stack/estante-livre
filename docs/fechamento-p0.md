@@ -164,7 +164,7 @@ Nenhum pedido de LAI, Fala.BR, requerimento ou solicitação institucional foi e
 - As páginas estáticas e os artefatos públicos foram gerados/atualizados na branch, incluindo `dados/estante-livre-casos.csv` e `dados/estante-livre-casos.json`.
 - **Validação automatizada ainda não concluída:** a execução GitHub Actions nº 294 terminou com `action_required` e nenhum job foi iniciado; a integração conectada não oferece ação para aprovar a execução pendente. A execução nº 292 permaneceu em fila.
 - **Prévia Vercel bloqueada por limite de builds da conta:** o check retorna `failure` com indicação `build-rate-limit`. Isso não é falha de código, mas impede confirmar a prévia visual desta rodada.
-- PR #5 e PR #4 permanecem abertos; nenhum foi mesclado. Não houve deploy em produção. Não declarar publicação concluída enquanto a validação e a prévia não forem liberadas.
+- PR #5 e PR #4 permanecem abertos; nenhum foi mesclado. O PR #4 mantém uma camada própria de filiações partidárias com recorte temporal que ainda não foi portada para o PR #5; por outro lado, sua implementação de capas inclui imagens externas e sete JPGs locais sem cadeia de direitos comprovada, razão para não mesclá-lo no estado atual. A página `poder.html` do PR #5 cobre agentes e papéis documentados, mas não substitui a tabela temporal de filiações. Não houve deploy em produção. Não declarar publicação concluída enquanto a validação e a prévia não forem liberadas.
 
 ## Critério de encerramento P0
 
