@@ -135,3 +135,49 @@ O diretório estadual do PSD publicou em 04/02/2022 que Anderson Farias assinou 
 - **Anderson Farias:** ficha de filiação ao PSD assinada em 18/01/2022, segundo publicação do próprio diretório estadual do partido.
 
 A evidência partidária agora está mais bem fechada para esses três casos. A regra permanece: publicar a data da fonte e o intervalo que ela sustenta, sem afirmar continuidade além do que está demonstrado.
+
+
+## Terceiro adendo — ampliação das fontes e cronologia partidária (04/11/2026)
+
+Esta rodada aprofundou cinco agentes do Executivo e voltou ao episódio de Taubaté. A conclusão abaixo deve prevalecer sobre formulações mais cautelosas ou incompletas das tabelas anteriores.
+
+### Eduardo Leite — PSDB no episódio de 2024; PSD desde 09/05/2025
+
+O próprio PSD publicou que Leite assinou sua ficha de filiação em 09/05/2025: https://psd.org.br/noticias/governador-eduardo-leite-assina-sua-filiacao-ao-psd/ . A notícia informa que ele deixou o PSDB após 24 anos de filiação. Para episódio em 2024, o registro correto é **PSDB**; a mudança para PSD é posterior e tem data primária do próprio partido. Não usar o PSD para reclassificar eventos de 2024.
+
+### Eduardo Riedel — PSDB no período 2022–2025; PP em agosto de 2025
+
+O diretório do PSDB publicou perfil de Riedel como governador do partido: https://www.psdb.org.br/ms/conheca-nossos-representantes/governador/ . A página institucional partidária confirma o vínculo público durante o mandato iniciado em 2023. Em 2025, o Correio do Estado informou que a certidão de filiação disponibilizada no TSE registrava assinatura da ficha ao PP em 15/08/2025: https://correiodoestado.com.br/politica/eduardo-riedel-ja-se-filiou-ao-pp-e-deve-ter-cargo-na-executiva/453017/ . O registro de filiação ao PP ocorreu em agosto de 2025; para fatos de 2024, a classificação sustentada é **PSDB**. A fonte sobre a data exata da mudança cita certidão do TSE, mas o documento individual não foi anexado à base.
+
+### Ratinho Júnior — PSD desde 10/03/2016
+
+O próprio PSD publicou em 11/03/2016 que Ratinho Junior assinou sua ficha de filiação na quinta-feira, 10/03/2016: https://psd.org.br/noticias/17401/ . Isso é evidência partidária primária e datada de ingresso no PSD, muito anterior ao episódio de 2022–2025 em que aparece como governador. O TSE também o identificou como Ratinho Junior (PSD) ao noticiar sua reeleição em 02/10/2022: https://www.tse.jus.br/comunicacao/noticias/2022/Outubro/ratinho-junior-psd-se-reelege-governador-do-parana . Classificação: **PSD**, com marco de filiação em 10/03/2016 e confirmação eleitoral oficial em 2022. Não estender automaticamente para período posterior a eventual mudança não coberta pelas fontes.
+
+### Ronaldo Caiado — DEM no mandato 2019–2022; União Brasil no mandato 2023–2026; PSD desde janeiro de 2026
+
+A biografia oficial da Câmara dos Deputados discrimina os mandatos externos: governador de Goiás pelo DEM de 2019 a 2023 e pelo União Brasil de 2023 a 2026: https://www.camara.leg.br/deputados/74813/biografia . A página oficial do TSE explica que União Brasil resultou da fusão de DEM e PSL, deferida em 08/02/2022: https://www.tse.jus.br/partidos/partidos-registrados-no-tse/registrados-no-tse . Em janeiro de 2026, Caiado deixou o União Brasil e se filiou ao PSD; fonte contemporânea: https://www1.folha.uol.com.br/poder/2026/01/caiado-deixa-uniao-brasil-e-se-filia-ao-psd-de-kassab.shtml . Portanto, a etiqueta deve ser **DEM** para fatos anteriores à eficácia da fusão e **União Brasil** para o período posterior até janeiro de 2026; não usar PSD em episódios de 2024/2025. A biografia parlamentar é fonte institucional para os mandatos, e a fusão partidária é ato formal registrado no TSE.
+
+### Jorginho Mello — PL em 2020 e no governo 2023–2027
+
+A página da Memória Política da Alesc registra a trajetória partidária e afirma que Jorginho Mello ingressou no PL; registra também o mandato de governador de 01/02/2023 a 31/01/2027 pelo PL: https://memoriapolitica.alesc.sc.gov.br/biografia/514-Jorginho_Mello . A página registra ainda que em 30/10/2020 ele foi escolhido vice-líder do Governo no Congresso, após a informação de ingresso no PL. O TSE o identifica como candidato eleito pelo PL em 30/10/2022: https://www.tse.jus.br/comunicacao/noticias/2022/Outubro/jorginho-mello-pl-e-eleito-governador-de-santa-catarina . Uma fonte eleitoral contemporânea de 2022 confirma a legenda, mas a data exata de ingresso no PL não está explicitada na biografia oficial. Para episódios de 2023 em diante, **PL confirmado**; para 2020, manter como evidência institucional contextual forte, sem atribuir dia de filiação.
+
+### Zelinda Pastora — data do discurso não é data do pedido original
+
+A reportagem de OVALE/Sampi informa que Zelinda fez a declaração na tribuna em **03/03/2026** e que o requerimento de Isaac do Carmo e Talita foi aprovado em 10/03/2026. Na mesma fala, ela disse ter recebido reclamação de uma mãe “ainda no ano passado” e ter pedido ao secretário a retirada do livro: https://sampi.net.br/ovale/noticias/2972973/sessao-extra/2026/04/livro-sobre-menina-com-duas-maes-e-retirado-de-escolas-em-taubate . A matéria posterior de julho repete o relato, sem indicar data exata da conversa com o secretário: https://sampi.net.br/ovale/noticias/2991910/vale-do-paraiba/2026/07/taubate-escolas-voltarao-a-usar-livro-sobre-menina-com-duas-maes . Assim, o que se pode datar é: **declaração pública em 03/03/2026; pedido informal ao secretário em algum momento de 2025, sem data identificada**. O documento oficial da Câmara de 06/03/2025 a identifica como PRD (adendo anterior). A fonte é contemporânea ao ano do pedido, mas não prova se a conversa ocorreu antes ou depois de 06/03/2025. Status: **PRD comprovado em 06/03/2025; filiação no dia da conversa informal de 2025 ainda não fechada**. Não atribuir ao episódio uma data inventada.
+
+### Resumo dos cinco agentes do Executivo
+
+| Pessoa | Cronologia sustentada | Aplicação editorial |
+|---|---|---|
+| Eduardo Leite | PSDB até 08/05/2025; PSD a partir de 09/05/2025 | PSDB em 2024; PSD somente após filiação formal |
+| Eduardo Riedel | PSDB no mandato iniciado em 2023; ficha PP assinada em 15/08/2025 | PSDB em 2024; PP após agosto de 2025 |
+| Ratinho Júnior | PSD desde 10/03/2016; TSE confirma PSD em 2022 | PSD nos episódios cobertos por essa cronologia |
+| Ronaldo Caiado | DEM no mandato 2019–2022; União Brasil no mandato 2023–2026; PSD desde janeiro de 2026 | DEM antes da fusão; União Brasil em 2024/2025 |
+| Jorginho Mello | PL antes de 30/10/2020; TSE confirma PL em 2022 e mandato estadual 2023–2027 | PL em 2023 em diante; para 2020, evidência forte sem data exata de ingresso |
+
+### Limites e próximos passos documentais
+
+1. Não foi localizada a data precisa da conversa informal de Zelinda Pastora com o secretário; a Câmara documenta a declaração pública em 03/03/2026, não a conversa de 2025.
+2. A certidão individual de Riedel citada pelo Correio do Estado não foi baixada/anexada; a data de assinatura é reproduzida com atribuição explícita à certidão TSE.
+3. A data exata de ingresso de Jorginho Mello no PL ainda precisa de registro datado; a fonte oficial da Alesc documenta a trajetória e o exercício de liderança em 2020, e o TSE confirma a candidatura PL em 2022.
+4. As filiações partidárias e cargos de governo são dados de contexto; não comprovam autoria, ordem, motivação ou execução dos atos de retirada/recolhimento de livros.
