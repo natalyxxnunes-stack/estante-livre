@@ -59,7 +59,7 @@ O MPF registra que a solicitação operacional foi verbal, suspensa no mesmo dia
 
 O Adendo SEI 10053329 original e o resultado final da sindicância não foram recuperados. A consulta pública do SEI-RO existe, mas depende de JavaScript e código de verificação; a própria página orienta que pedidos de cópia/vista sejam dirigidos à unidade geradora. O processo e o identificador do adendo estão conhecidos, mas isso não equivale à recuperação do arquivo.
 
-### Fundação Cultural Palmares — 5.165 títulos e Sala 11
+### Fundação Cultural Palmares — 5.165 itens e Sala 11
 
 Fontes:
 - [Resposta oficial da FCP à Câmara, com os relatórios técnicos anexos (PDF de 92 páginas)](https://www.gov.br/palmares/pt-br/midias/arquivos/download/resposta.pdf).
@@ -69,7 +69,7 @@ Fontes:
 
 O PDF oficial de 92 páginas contém a Nota Informativa 0166090/2021 da FCP, assinada por Marco Aurélio Franco em 06/11/2021, e o relatório técnico da Câmara, assinado por Juçara Quinteros de Farias e Gilcy Rodrigues Azevedo. É o relatório da Câmara que registra a Sala 11 como “sala da vergonha (livros)” e caixas com livros para doação; a resposta da FCP deve ser lida como documento distinto, não como substituto daquele relatório.
 
-O quantitativo de 5.165 títulos é atribuído ao Relatório Público 01/CNIRC. O link oficial do relatório original permanece cadastrado, mas o arquivo não abriu na consulta desta auditoria; a lista nominal não foi recuperada. O inventário oficial de 08/08/2024 relaciona 9.696 títulos e inclui obras de Karl Marx, Max Weber, Eric Hobsbawm e Celso Furtado. Isso confirma a presença desses títulos no inventário posterior, mas não substitui a lista dos 5.165 nem prova o destino de todos os itens.
+O quantitativo de 5.165 itens é atribuído ao Relatório Público 01/CNIRC. Fontes contemporâneas divergem na unidade de contagem dos 5.165 itens, usando “títulos”, “livros” e “exemplares”. Como o PDF original do Relatório Público 01/CNIRC não abriu nesta consulta, o catálogo adota a expressão neutra “itens” e não afirma se a unidade corresponde a títulos bibliográficos ou cópias físicas. O link oficial do relatório original permanece cadastrado, mas o arquivo não abriu na consulta desta auditoria; a lista nominal não foi recuperada. O inventário oficial de 08/08/2024 relaciona 9.696 títulos e inclui obras de Karl Marx, Max Weber, Eric Hobsbawm e Celso Furtado. Isso confirma a presença desses títulos no inventário posterior, mas não substitui a lista dos 5.165 nem prova o destino de todos os itens.
 
 **Atualização decisiva do EL-026:** a dissertação da UnB documenta visita presencial à Biblioteca Oliveira Silveira em 29/02/2024 e registra que os livros que integraram o “Acervo da vergonha” já haviam sido reintegrados ao acervo geral. Por isso, o desfecho foi corrigido para **revertido**. A estimativa de “cerca de 300” não tem confirmação no relatório técnico e foi retirada do título do registro; quantidade exata e lista nominal permanecem pendentes.
 
