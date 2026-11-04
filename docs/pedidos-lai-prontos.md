@@ -7,7 +7,7 @@
 **Assunto:** Processo SEI 0029.051300/2020-91, Adendo 10053329 e sindicância relacionada ao recolhimento de livros.
 
 Solicito:
-1. cópia integral do processo SEI 0029.051300/2020-91, incluindo o Memorando-Circular nº 4/2020/SEDUC-DGE e o Adendo SEI 10053329;
+1. cópia integral do processo SEI 0029.051300/2020-91, incluindo o Memorando-Circular nº 4/2020/SEDUC-DGE e o Adendo SEI 10053329. O memorando aparece como documento SEI nº 10040389, verificador 10040389, CRC F6F331F8; solicito também o link oficial de validação no [SEI-RO](https://sei.ro.gov.br/consulta_publica/);
 2. caso o processo tenha partes restritas, índice dos documentos, indicação individual da base legal da restrição e fornecimento das partes públicas ou tarjadas;
 3. número do procedimento de sindicância instaurado em decorrência do episódio, portaria de instauração, relatório final e decisão;
 4. cópia da recomendação do MP-RO mencionada no procedimento e da resposta da Seduc;
@@ -18,8 +18,8 @@ Solicito:
 **Assunto:** Relatório Público 01/CNIRC, lista de títulos e movimentação do acervo em 2021–2024.
 
 Solicito:
-1. cópia integral do Relatório Público 01/CNIRC divulgado em 11/06/2021 e de seus anexos, incluindo a relação nominal dos 5.165 títulos;
-2. inventário do acervo a que o relatório se referia, com identificadores bibliográficos e situação atual;
+1. cópia integral do Relatório Público 01/CNIRC divulgado em 11/06/2021 e de seus anexos, incluindo a relação nominal dos 5.165 itens e esclarecimento da unidade de contagem usada no relatório (itens, títulos ou exemplares);
+2. inventário histórico do acervo a que o relatório se referia, com identificadores bibliográficos e situação atual dos itens; o inventário geral de 9.696 títulos atualizado em 08/08/2024 já foi localizado publicamente e não precisa ser reenviado, salvo se houver versão mais recente;
 3. registros de movimentação, doação, baixa, transferência ou reclassificação dos títulos entre junho de 2021 e a data da resposta;
 4. documentos que indiquem o cumprimento da decisão judicial citada na Resolução FCP nº 24/2024;
 5. informação sobre o acesso público atual ao acervo e eventuais restrições de consulta.
@@ -76,14 +76,14 @@ Não solicito acesso a peças protegidas pelo segredo de Justiça. Caso o proces
 **Assunto:** Custódia e destinação de *Aparelho Sexual e Cia* e *As Melhores do Analista de Bagé*.
 
 Solicito à Prefeitura/Fundação Cultural:
-1. cópia da resposta juntada às fls. 14–32 do levantamento @LEV 24/80041829;
+1. cópia pública ou versão tarjada da resposta da prefeita e das fotos juntadas às fls. 14–32 do levantamento @LEV 24/80041829; a decisão do TCE-SC informa que o sigilo foi levantado apenas quanto ao Relatório DGE-328/2024 e à decisão, portanto solicito a indicação individual da base legal para a restrição das demais peças;
 2. recibo, termo de entrega ou registro de transferência dos dois livros à Fundação Cultural;
-3. identificação do cargo e da pessoa que recebeu os exemplares;
+3. identificação do cargo e da pessoa que recebeu os exemplares, pois a decisão do TCE registra a entrega à gestora da Fundação Cultural, mas não informa o nome nem apresenta recibo assinado;
 4. inventário atualizado e registros de movimentação desde abril de 2024;
 5. decisão administrativa sobre a destinação e situação atual de consulta ou acesso.
 
 Solicito ao MPSC, nos limites de publicidade:
-6. número e situação da Notícia de Fato mencionada na decisão GCS/GSS-861/2024;
+6. número, situação e resultado da Notícia de Fato mencionada na decisão GCS/GSS-861/2024;
 7. informação sobre arquivamento, conversão em procedimento ou providências públicas adotadas.
 
 ## Nota de protocolo
