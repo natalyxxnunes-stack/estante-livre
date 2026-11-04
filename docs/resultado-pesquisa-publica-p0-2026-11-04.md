@@ -131,9 +131,9 @@ O inventário relaciona 9.696 títulos do antigo acervo e inclui obras de Karl M
 Fontes:
 - [Requerimento 149/2024 — PDF assinado](https://sapl.canoinhas.sc.leg.br/media/sapl/public/materialegislativa/2024/15355/req_149.pdf).
 - [Registro legislativo no SAPL](https://sapl.canoinhas.sc.leg.br/materia/15355).
-- [Resultado oficial do TRE-SC para Canoinhas, eleições 2024](https://apps.tre-sc.jus.br/site/fileadmin/arquivos/eleicoes/eleicoes2024/resultados_turno_1/votacao_secao/html/80730.html).
 
-O documento parlamentar foi subscrito por Tatiane Cristina Carvalho (Tati Carvalho), Wilmar Sudoski, Maurício Zimmermann, Willian Godoy Ferreira de Souza, Antônio Adilson Steidel, Osmar Oleskovicz (Professor Osmar), André Ramon Flenik e Neri Francisco da Silva (Chico Mineiro). A lista identifica os signatários do requerimento, não os autores de uma ordem de retirada. A decisão GCS/GSS-861/2024 do TCE-SC é assinada por Gerson dos Santos Sicca.
+
+O documento parlamentar foi subscrito por Tati Carvalho, Wilmar Sudoski, Maurício Zimmermann, Willian Godoy, Adilson Steidel, Professor Osmar, André Flenik e Chico Mineiro (nomes transcritos como aparecem no SAPL). A lista identifica os signatários do requerimento, não os autores de uma ordem de retirada. A decisão GCS/GSS-861/2024 do TCE-SC é assinada por Gerson dos Santos Sicca.
 
 O próprio TCE informa que a resposta da prefeita e as fotos das fls. 14–32 permaneceram sob sigilo parcial; somente o Relatório DGE-328/2024 e a decisão foram tornados públicos. Assim, a falta dessas peças não decorre apenas de falha de busca: há uma restrição formal registrada pelo Tribunal.
 
