@@ -146,3 +146,6 @@ O Diário do MPF nº 161/2021 foi recuperado na Biblioteca Digital oficial. O it
 
 As reportagens Folha, UOL/Agência Estado e Sampi/OVALE convergem quanto à sentença de 20/07/2026: prazo de cinco dias após a intimação para redisponibilizar a obra, consulta, empréstimo e uso pedagógico no Ensino Fundamental II, vedação de restrição político-ideológica e multa diária de R$ 500, limitada inicialmente a R$ 50 mil. Isso comprova a ordem judicial reportada, não o cumprimento material da devolução em cada escola.
 
+
+
+**Atualização de contagem após esta rodada:** 148 fontes únicas e 269 associações entre registros e fontes (duas fontes novas incorporadas: inventário oficial da FCP de 16/01/2023 e cópia do Diário do MPF no repositório da Biblioteca Digital).
