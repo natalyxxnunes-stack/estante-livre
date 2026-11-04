@@ -716,3 +716,49 @@ Foi localizado o Jornal Oficial do Município de Londrina nº 3630, de 09/10/201
 O documento comprova aquisição/registro de compra em 2018, mas não identifica a escola que recebeu o exemplar, não prova que ele estava em circulação em 2026 e não substitui o pedido de providências, o levantamento da SME ou o parecer técnico do recolhimento de 2026.
 
 Fonte: https://www.luhu.org.br/uploads/editor/jornal_3630_assinado_LEI12765_3N2xMmTDBLqGYuc.pdf (Jornal Oficial nº 3630, 09/10/2018, página 16).
+
+
+## 7. Nova rodada — documentos oficiais da Palmares e diário integral do MPF (04/11/2026)
+
+### Fundação Cultural Palmares — política de acervo recuperada em PDF oficial
+
+A página oficial de downloads da Fundação Cultural Palmares foi aberta e seus anexos foram percorridos. O arquivo “Políticas de Acervo — Política de Formação, Desenvolvimento e Gestão do Acervo / Manual do Processamento Técnico”, datado de 21/12/2021, foi recuperado diretamente do domínio gov.br. O documento é composto por política e manual técnico da futura biblioteca.
+
+Na seção 4.5.2 (“Descarte”), a política prevê avaliação criteriosa e enumera critérios. Entre eles, a alínea “g” inclui obras sobre “sexualização de crianças, ideologia de gênero, pornografia, erotismo, manuais de guerrilha, manuais de greve, de revolução, bandiolatria, bizarrices, marxismo e comunismo”; a alínea “h” inclui obras de “militância política explícita ou de divulgação marxista”. A apresentação do próprio documento afirma que o procedimento de descarte estava impedido por força de liminar.
+
+**O que isso comprova:** a existência de critérios institucionais escritos de descarte com categorias político-ideológicas expressas e a referência institucional à liminar impeditiva. **O que não comprova:** que os critérios tenham sido aplicados a cada obra, que os 5.165 títulos tenham sido descartados ou doados, nem o destino individual dos exemplares.
+
+A mesma página oficial lista a “Lista de Livros — Atualizada 16.01.23”, recuperada como PDF de 341 páginas, além do inventário de 2024, da política e de outros documentos CNIRC. A lista de janeiro de 2023 é um inventário bibliográfico oficial; não é a lista de 300 títulos indicada para exclusão no Relatório 01. Não confundir os dois documentos. A página oficial de downloads não lista o Relatório Público 01/CNIRC.
+
+Fontes:
+- Página oficial de downloads da FCP: https://www.gov.br/palmares/pt-br/midias/arquivos/download
+- Política de Acervo (PDF oficial, 21/12/2021): https://www.gov.br/palmares/pt-br/midias/arquivos/download/politicas-de-acervo-versao-final-21-12-2021.pdf
+- Lista de livros atualizada em 16/01/2023 (PDF oficial): https://www.gov.br/palmares/pt-br/midias/arquivos/download/lista-de-livros-atualizada16-01-23.pdf/@@download/file
+
+### Fundação Palmares — busca renovada pelo Relatório Público 01
+
+A busca foi refeita por título, autoria, nome do arquivo, variações do endereço oficial e referências em artigos acadêmicos. As referências acadêmicas identificam dois endereços oficiais históricos do arquivo:
+- https://www.palmares.gov.br/wp-content/uploads/2021/06/cnirc-01-gab-10-06-21.pdf
+- https://www.palmares.gov.br/wp-content/uploads/2021/06/cnirc01_liminar_v2_08_07.pdf
+
+Ambos continuam inacessíveis nesta consulta. O domínio oficial atual mantém uma página de downloads com anexos CNIRC, mas nela não aparece o Relatório 01. A pesquisa recuperou artigo acadêmico da Revista de Estudos Culturais (EACH/USP), que reproduz a capa e descreve o relatório como publicação de 74 páginas com lista final de 300 títulos; isso confirma metadados e a existência da lista, mas não substitui a íntegra do relatório. A transcrição pública secundária de 261 entradas permanece sem validação contra o original.
+
+### Rondônia — diário integral do MPF em repositório oficial
+
+Foi recuperado o Diário do Ministério Público Federal nº 161/2021 diretamente na Biblioteca Digital do MPF, em vez de depender apenas do endereço antigo do portal de transparência. Na publicação de 30/08/2021, o item 48 trata do Inquérito Civil nº 1.31.000.000213/2020-61 e registra: suspensão da solicitação verbal de recolhimento no mesmo dia; devolução às escolas dos exemplares que chegaram a ser recolhidos; encerramento imediato da análise técnica pela SEDUC; instauração de sindicância administrativa estadual; procedimento e recomendação do MP-RO, acatada pela Secretaria; e homologação unânime do arquivamento do inquérito civil do MPF.
+
+A fonte é um registro oficial do resultado do inquérito civil do MPF, mas não contém o relatório integral da sindicância estadual, a íntegra da recomendação do MP-RO ou o Adendo SEI 10053329. A distinção entre o processo técnico SEI 0029.051300/2020-91 e a sindicância administrativa separada permanece essencial.
+
+Fonte: https://biblioteca.mpf.mp.br/repositorio/bitstreams/4b023a0c-7f30-421e-8de2-fb31235ef7e1/download
+
+### São José dos Campos — sentença de julho de 2026
+
+A cobertura de 28 a 30/07/2026 foi comparada em Folha de S.Paulo, UOL/Agência Estado e Sampi/OVALE. As reportagens convergem que a sentença, proferida em 20/07/2026 pela Vara da Infância e Juventude, deu prazo de cinco dias após a intimação para redisponibilizar “Meninas Sonhadoras, Mulheres Cientistas” às salas de leitura e bibliotecas, para consulta, empréstimo e uso pedagógico no Ensino Fundamental II; também proibiu novas restrições por motivação político-ideológica e fixou multa diária de R$ 500, inicialmente limitada a R$ 50 mil. A sentença atribuiu a retirada a ordem comunicada por WhatsApp e entendeu que a justificativa técnico-pedagógica foi construída posteriormente.
+
+**Limite:** as reportagens não comprovam o cumprimento da ordem nem substituem a sentença integral. A ação civil pública foi proposta pelo MPSP e pela Defensoria Pública; o processo segue com acesso restrito. O cadastro deve registrar a decisão judicial como reversão determinada, não como prova de que os livros já estavam fisicamente de volta em todas as escolas.
+
+Fontes:
+- Folha de S.Paulo, 30/07/2026: https://www1.folha.uol.com.br/ciencia/2026/07/justica-determina-volta-de-livro-que-retrata-marielle-a-escolas-em-sao-jose-dos-campos.shtml
+- UOL, 29/07/2026: https://noticias.uol.com.br/cotidiano/ultimas-noticias/2026/07/29/juiza-manda-prefeitura-devolver-as-escolas-livro-com-marielle-em-sao-jose.ghtm
+- Sampi/OVALE, 28/07/2026: https://sampi.net.br/ovale/noticias/2994720/vale-do-paraiba/2026/07/sjc-justica-determina-volta-de-obra-que-cita-marielle-as-escolas
+
