@@ -18,4 +18,4 @@ Registro não equivale a banimento consumado: cada caso traz o estágio (pressã
 - [Dossiês temáticos](https://estante-livre-br.vercel.app/dossies.html): recortes de casos por tema
 - [Relatório-base 2026](https://estante-livre-br.vercel.app/relatorio-2026.html): fotografia da base e limites de interpretação
 
-Atualizado em 2026-11-01. Citação: Estante Livre, observatório de censura de livros, de Nataly Nunes Pinto.
+Atualizado em 2026-11-04. Citação: Estante Livre, observatório de censura de livros, de Nataly Nunes Pinto.
