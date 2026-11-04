@@ -72,3 +72,41 @@ A regra adotada é: partido só pode ser apresentado como filiação na data do 
 ## Decisão
 
 **Camada recuperada e auditada; integração no site ainda bloqueada por evidência temporal insuficiente em parte dos registros.** O PR #4 não deve ser mesclado integralmente. A próxima implementação deve ser uma camada de contexto partidário temporal que exiba explicitamente a data coberta pela fonte e o grau de confirmação, sem converter candidatura ou partido de governo em filiação comprovada na data do episódio.
+
+
+## Adendo de pesquisa em fontes oficiais — 04/11/2026
+
+A rodada adicional localizou fontes públicas institucionais que substituem ou fortalecem registros anteriormente apoiados em imprensa ou páginas instáveis. Isso reduz algumas lacunas, sem transformar toda a camada em prova de filiação individual na data exata.
+
+### Correções e reforços incorporados
+
+| Agente | Fonte pública adicional | Conclusão permitida |
+|---|---|---|
+| **Amauri Ribeiro** | Perfil biográfico oficial da Alego: https://portal.al.go.leg.br/deputados/perfil-biografico/137 | A tabela da própria Assembleia registra UB na 20ª Legislatura (2023–2027), até 02/04/2026, e PL a partir de 03/04/2026. Isso confirma União Brasil no período de abril de 2024. A notícia de gabinete de 01/04/2024 continua sendo posterior ao episódio de março; não prova que ele tenha iniciado a pressão antes da decisão. |
+| **Professor Rinaldo Modesto** | Página oficial da 12ª Legislatura da ALEMS: https://al.ms.gov.br/Paginas/783/12-legislatura | A lista oficial, com fonte declarada TRE-MS, registra Podemos para toda a legislatura de 01/02/2023 a 31/01/2027. Isso cobre março de 2024 e resolve a lacuna temporal anterior. Notícias da ALEMS de 06/02/2024 e 15/05/2024 também o identificam como Podemos: https://al.ms.gov.br/Noticias/140152/b-ordem-do-dia-b-dia-do-atleta-e-aprovado-e-vai-a-sancao e https://al.ms.gov.br/Noticias/139767/deputado-ressalta-importancia-da-criacao-do-sistema-estadual-de-esporte |
+| **Marcos Rocha** | Procuradoria-Geral do Estado de Rondônia, publicação de 04/01/2021: https://pge.ro.gov.br/2021/01/04/estado-de-rondonia-completa-39-anos-concretizando-sonhos-acalentados-desde-1960/ | Fonte do próprio governo estadual, publicada logo após 2020, afirma expressamente que Marcos Rocha foi eleito pelo PSL em 2018 e assumiu em 01/01/2019. Em conjunto com a identificação contemporânea do partido em fontes eleitorais, sustenta o contexto PSL durante 2020. A formulação deve ser “eleito pelo PSL e governador no período”, não autoria partidária de ato administrativo. |
+| **Thomaz Henrique** | Câmara Municipal de São José dos Campos, notícia oficial de 07/02/2024: https://www.camarasjc.sp.gov.br/noticias/8444/camara-entrega-titulo-de-cidada-joseense-a-ex-jogadora-de-volei-patricia-borges | A Câmara identifica Thomaz Henrique, em fevereiro de 2024, como coautor de decreto junto a vereadores “todos do PL”. O Diário Oficial de 07/06/2024 já localizado o registra no PL três dias após o episódio de 04/06. As duas fontes institucionais, uma anterior e outra posterior, dão forte sustentação ao PL no período, embora não sejam certidão individual de filiação emitida no dia 04/06. |
+| **Lia Nogueira** | Perfil parlamentar oficial atual da ALEMS: https://al.ms.gov.br/Deputados/Visualizar/1045 | A página oficial confirma que se filiou ao PSDB em 2022. Substitui a página antiga de homologação/hmlalems.easynet.com.br. A página oficial da 12ª Legislatura também a lista no PSDB para 2023–2027. |
+| **Clayton Silva** | Câmara Municipal de Limeira, publicação de 29/11/2019: https://www.limeira.sp.leg.br/noticias/view/2019-11-29_camara-cassa-mandato-do-vereador-clayton-silva-por-falta-de-decoro | A Câmara o identifica expressamente como vereador do PSC em novembro de 2019. A notícia local de 06/04/2020 registra a saída do PSC para o PTC durante a janela partidária. Fica resolvida a filiação no episódio de 2019, desde que a data do episódio seja anterior à troca. |
+| **Zelinda Pastora** | Ficha eleitoral de 2024: https://www1.folha.uol.com.br/poder/eleicoes/candidatos/2024/sp/vereador/zelinda-pastora-250002194882.shtml; perfil da Câmara de Taubaté na legislatura 2025–2028: https://www.radartaubate.com.br/camara/vereadores/zelinda-pastora | As fontes confirmam PRD na eleição de 2024 e na composição da legislatura 2025–2028. A segunda página é reprodução/compilação de dados oficiais da Câmara, não substitui documento primário datado do pedido de 2025. Classificação continua como evidência contextual forte, não prova isolada da filiação na data exata. |
+
+### Regra de evidência aplicada
+
+A pesquisa confirma que é possível fechar diversas lacunas sem requerimentos: perfis oficiais por legislatura, listas partidárias cuja fonte declarada é o TRE, notícias institucionais datadas, diários oficiais e biografias parlamentares com histórico de mudanças partidárias. Para cada registro, a data de cobertura da fonte deve ser exibida. Não se deve confundir:
+
+- partido pelo qual a pessoa foi eleita;
+- partido listado pela casa legislativa durante determinada legislatura;
+- filiação individual anotada no FILIA em data específica;
+- partido do chefe do Executivo;
+- autoria, iniciativa ou responsabilidade administrativa pelo ato.
+
+O TSE informa que as relações públicas de filiados são divulgadas por períodos e que a certidão histórica individual é emitida pelo sistema de filiação; a regulamentação limita a divulgação pública de histórico de filiações canceladas. Fontes: https://www.tse.jus.br/servicos-eleitorais/servicos/carta-de-servicos-ao-eleitor ; https://www.tse.jus.br/legislacao/compilada/res/2019/resolucao-no-23-596-de-20-de-agosto-de-2019 ; https://www.tse.jus.br/comunicacao/noticias/2021/Abril/tse-conclui-verificacao-de-duplicidades-em-registros-de-filiacao-partidaria . Portanto, quando não há fonte pública datada suficiente, a saída correta é exibir o contexto e a data da evidência, ou declarar “não confirmado”, e não preencher a lacuna por inferência.
+
+### Situação revista
+
+- **Resolvidas por fonte institucional temporalmente adequada:** Rinaldo Modesto (legislatura 2023–2027); Amauri Ribeiro (registro oficial por legislatura e data de mudança em 2026); Lia Nogueira (filiação em 2022 e lista 2023–2027); Clayton Silva (PSC em novembro de 2019 e troca em abril de 2020); Marcos Rocha (PSL na eleição e início do mandato, com confirmação oficial publicada em janeiro de 2021).
+- **Fortalecida por triangulação oficial anterior e posterior:** Thomaz Henrique (PL em fevereiro e junho de 2024).
+- **Contextual, sem prova exata no dia do episódio:** Zelinda Pastora (PRD na eleição de 2024 e legislatura 2025–2028; falta registro oficial datado da filiação em 2025).
+- **Demais nomes:** permanecem classificados conforme a matriz original, sem ampliar a força da evidência além do que as fontes permitem.
+
+A camada continua não integrada ao site nesta rodada. A documentação já pode, porém, corrigir os status de evidência e as referências das pessoas acima sem importar capas ou código visual do PR #4.
