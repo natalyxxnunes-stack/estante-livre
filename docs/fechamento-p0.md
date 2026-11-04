@@ -213,3 +213,13 @@ A pesquisa posterior à versão inicial deste fechamento localizou duas peças p
 2. **FCP/Sala 11:** foi localizada a cópia oficial de 92 páginas da resposta da Fundação Cultural Palmares aos relatórios da Comissão de Cultura da Câmara dos Deputados. O PDF incorpora o relatório técnico parlamentar, identifica a Sala 11 como “sala da vergonha (livros)”, registra caixas com livros para doação e traz assinaturas digitais de Juçara Quinteros de Farias e Gilcy Rodrigues Azevedo no relatório parlamentar. Trata-se de peça distinta do Relatório Público 01/CNIRC. Fonte: [PDF oficial da FCP](https://www.gov.br/palmares/pt-br/midias/arquivos/download/resposta.pdf).
 
 **Efeito sobre a classificação:** nenhuma dessas descobertas elimina as cinco classificações parciais do conjunto P0. A descoberta do resultado do recurso do MPSC melhora a documentação de contexto dos registros EL-036/EL-037, mas não comprova o destino físico dos exemplares. A resposta oficial da FCP melhora a prova sobre a Sala 11, mas não recupera o Relatório 01/CNIRC nem a lista nominal dos 5.165 itens. A pesquisa complementar registra os detalhes e corrige a interpretação anterior da pauta do MPSC.
+
+
+## Atualização posterior — inventário FCP e desfecho MPF/Rondônia (04/11/2026)
+
+A pesquisa pública localizou duas fontes primárias adicionais:
+
+- **FCP:** inventário bibliográfico oficial, atualizado em 08/08/2024, com 9.696 títulos numerados, campos de título, autor, editora, ano, quantidade e observações. [PDF oficial](https://www.gov.br/palmares/pt-br/centrais-de-conteudo/publicacoes/lista-de-livros-atualizada-8-8-2024-1.pdf). Ele documenta o antigo acervo, mas não substitui o Relatório 01/CNIRC nem comprova o subconjunto de 5.165 itens.
+- **Rondônia/MPF:** Diário oficial de 30/08/2021 homologa por unanimidade o arquivamento do Inquérito Civil 1.31.000.000213/2020-61 e registra suspensão da solicitação no mesmo dia, devolução dos exemplares que chegaram a ser recolhidos, encerramento da análise técnica e instauração de sindicância pela Seduc. [Diário oficial do MPF nº 161/2021](https://transparencia.mpf.mp.br/conteudo/diarios-e-boletins/diario-eletronico-dmpf-e/2021/DMPF-EXTRAJUDICIAL-2021-08-30.pdf).
+
+**Efeito:** o desfecho do inquérito federal de Rondônia deixa de ser lacuna. Permanecem pendentes o Adendo SEI 10053329 e o resultado da sindicância estadual. Palmares ganha uma fonte primária complementar ampla, mas o registro EL-025 continua parcial quanto ao Relatório 01/CNIRC e à lista/critério dos 5.165 itens.
