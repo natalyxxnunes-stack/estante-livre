@@ -223,3 +223,14 @@ A pesquisa pública localizou duas fontes primárias adicionais:
 - **Rondônia/MPF:** Diário oficial de 30/08/2021 homologa por unanimidade o arquivamento do Inquérito Civil 1.31.000.000213/2020-61 e registra suspensão da solicitação no mesmo dia, devolução dos exemplares que chegaram a ser recolhidos, encerramento da análise técnica e instauração de sindicância pela Seduc. [Diário oficial do MPF nº 161/2021](https://transparencia.mpf.mp.br/conteudo/diarios-e-boletins/diario-eletronico-dmpf-e/2021/DMPF-EXTRAJUDICIAL-2021-08-30.pdf).
 
 **Efeito:** o desfecho do inquérito federal de Rondônia deixa de ser lacuna. Permanecem pendentes o Adendo SEI 10053329 e o resultado da sindicância estadual. Palmares ganha uma fonte primária complementar ampla, mas o registro EL-025 continua parcial quanto ao Relatório 01/CNIRC e à lista/critério dos 5.165 itens.
+
+
+## Atualização P0 — rodada documental de 04/11/2026
+
+Novas fontes secundárias reforçam, sem substituir documentos primários:
+- Taubaté: autoria, aprovação, objeto do requerimento e resposta parcial são descritos por OVALE/Sampi; cópias do requerimento e resposta oficial continuam ausentes.
+- Londrina: PL 79/2024 foi localizado em PDF oficial, mas é distinto do requerimento específico de novembro de 2024; não altera o status do registro.
+- São José dos Campos: há corroboração contemporânea da existência de ofício do vereador e de seu pedido de retirada; o ofício original e a resposta administrativa continuam ausentes.
+- Palmares: Ipea (2022) descreve 5,3 mil livros, folhetos e catálogos no contexto do “Retrato do Acervo”; fonte jornalística reproduz 5.165/9.565. A divergência permanece aberta.
+
+Nenhum registro acima foi promovido a verificação integral nesta rodada. As fontes secundárias foram classificadas como corroboração/contexto, não como documentos primários.
