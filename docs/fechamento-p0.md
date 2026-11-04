@@ -2,107 +2,132 @@
 
 ## Resultado executivo
 
-A revisão documental P0 foi concluída até o limite das fontes públicas localizadas. A pesquisa ampliada encontrou documentos oficiais e acadêmicos que permitem encerrar cinco dos dez registros anteriormente classificados como parcialmente verificados. Os outros cinco permanecem parciais porque o documento primário específico não foi localizado, está sob segredo de Justiça ou não foi publicado.
+A rodada de pesquisa pública ampliada e a revisão dos dados P0 foram concluídas. O trabalho não transforma ausência de documento em confirmação: cada pendência foi classificada conforme a evidência realmente disponível.
 
-**Resultado dos dez registros da lista P0:**
-- **5 verificados:** EL-022, EL-023, EL-024, EL-036 e EL-037.
+**Dos dez registros originalmente destacados para revisão:**
+- **5 com núcleo factual verificado:** EL-022, EL-023, EL-024, EL-036 e EL-037.
 - **5 parcialmente verificados:** EL-028, EL-030, EL-031, EL-032 e EL-035.
 
-A revisão dos nove alertas de signatário também foi concluída. Não se atribuiu a ninguém a assinatura de uma ordem que não foi localizada. Foram identificados signatários de documentos correlatos, com a distinção expressa entre decisão, pedido, resposta, assinatura e execução.
+**Os nove alertas de signatário foram individualmente tratados.** Em vários casos não existe ato escrito público ou a assinatura é de um documento correlato, não da ordem original. O cadastro distingue esses papéis e não atribui assinatura por inferência.
 
-As sete capas locais receberam metadados de edição, crédito, fonte editorial e nota de referência visíveis na interface. **Isso não equivale a autorização formal de reprodução:** a origem histórica dos arquivos JPG e licenças individuais não foram recuperadas.
+**As sete imagens locais de capas foram retiradas da branch.** Como a procedência dos JPGs e as autorizações individuais não estavam documentadas, a interface passa a exibir fichas tipográficas, sem reproduzir as imagens. Metadados bibliográficos e links de referência permanecem.
 
-A branch `feat/estante-livre-auditoria-profissional` recebeu as alterações de dados, a trilha de signatários e a exibição de créditos. A publicação em produção ainda depende da validação final, do merge do PR #5 e da conferência pós-deploy.
+A pesquisa documental foi fechada até o limite do material público recuperável. Os itens que seguem em aberto não foram encerrados artificialmente: estão associados a segredo de Justiça, sigilo parcial, falta de publicação do documento específico ou ausência de processo identificável em consulta pública.
 
-## 1. Dez registros parcialmente verificados: resultado
+## 1. Dez registros da lista P0
 
-| Registro | Resultado em 04/11 | Evidência encontrada | O que permanece |
+| Registro | Classificação em 04/11 | Evidência e conclusão | Pendência remanescente |
 |---|---|---|---|
-| EL-022 | **Verificado** | Memorando de Rondônia, Diário do MPF nº 161/2021 e artigo acadêmico que reproduz a lista | Adendo SEI 10053329 original e resultado da sindicância |
-| EL-023 | **Verificado** | Mesmas fontes; a instrução geral sobre todos os livros de Rubem Alves aparece na reprodução da relação | Adendo original e resultado da sindicância |
-| EL-024 | **Verificado** | Mesmas fontes; relação de 43 entradas reproduzida academicamente | Adendo original e resultado da sindicância |
-| EL-028 | Parcial | Cobertura do recolhimento, decisões judiciais noticiadas e decisão de 20/07/2026 atribuída à juíza Renata Heloísa da Silva Salles | Ordem municipal original; íntegra e cumprimento da decisão, em processo sob segredo |
-| EL-030 | Parcial | PL 79/2024 e Lei Municipal 13.930/2025 em fonte oficial; cobertura do pedido específico | Requerimento de 26/11/2024, resposta da SME e prova de retirada efetiva |
-| EL-031 | Parcial | Duas reportagens permitem distinguir retirada temporária de um link de resenha de retirada de exemplares | Nota institucional e registro interno da avaliação do link |
-| EL-032 | Parcial | Reportagens, anúncio de retorno pedagógico e cadastro oficial da Câmara com nomes completos dos vereadores | Número e íntegra do requerimento, resposta integral e ordem original por WhatsApp |
-| EL-035 | Parcial | Folha de Londrina, errata, CBN e relatório do OGPL sobre restrições de acesso no SEI | Número SEI, pedido integral, despacho, signatários e decisão final |
-| EL-036 | **Verificado** | SAPL da Câmara e decisão/relatório do TCE-SC: não houve descarte físico; livros ficaram sob custódia da Fundação Cultural para análise | Recibo, nome de quem recebeu, inventário posterior e resultado do MPSC |
-| EL-037 | **Verificado** | Mesmas fontes, para o segundo título | Recibo, nome de quem recebeu, inventário posterior e resultado do MPSC |
+| EL-022 | **Verificado** | Memorando de Rondônia, Diário do MPF nº 161/2021 e artigo acadêmico que reproduz a lista. A ordem foi suspensa no mesmo dia; a lista contém 19 entradas de Rubem Fonseca, correspondentes a 18 títulos distintos. | Adendo SEI 10053329 original e resultado da sindicância. |
+| EL-023 | **Verificado** | As mesmas fontes confirmam a instrução geral sobre os livros de Rubem Alves e a reversão da solicitação. | Adendo original e resultado da sindicância. |
+| EL-024 | **Verificado** | A relação de 43 entradas foi reproduzida academicamente; o MPF documenta suspensão e devolução de exemplares eventualmente recolhidos. | Adendo original e resultado da sindicância. |
+| EL-028 | Parcial | Retirada relatada e decisão judicial de 20/07/2026 atribuída à juíza Renata Heloísa da Silva Salles, determinando restituição e vedando restrição político-ideológica. | Ordem municipal original, íntegra judicial e cumprimento; processo sob segredo de Justiça. |
+| EL-030 | Parcial | PL 79/2024 e Lei Municipal 13.930/2025 localizados em fontes oficiais; cobertura do pedido específico. | Requerimento de 26/11/2024, resposta da SME e prova de retirada efetiva do exemplar. |
+| EL-031 | Parcial | A apuração distingue retirada temporária de link de resenha de retirada de exemplares ou veto ao livro. | Nota institucional integral e registro interno da avaliação do link. |
+| EL-032 | Parcial | A Prefeitura informou, em 14/07/2026, que o livro permaneceria no plano de ensino das turmas adequadas após análise técnica. | Parecer integral e confirmação da redistribuição física às escolas. |
+| EL-035 | Parcial | Folha de Londrina, errata, CBN e relatório do OGPL sobre transparência do SEI. A iniciativa foi atribuída à Gerência de Ensino Fundamental da SME, não à direção da escola. | Número SEI, pedido, despacho, quantitativo, signatários e decisão final. |
+| EL-036 | **Verificado** | Decisão e Relatório DGE-328/2024 do TCE-SC: os livros não foram fisicamente descartados e estavam em poder da Fundação Cultural para análise de destinação. | Recibo, recebedor nominal, inventário posterior, acesso atual e resultado do MPSC. |
+| EL-037 | **Verificado** | Mesma conclusão do TCE-SC para o segundo título. | Recibo, recebedor nominal, inventário posterior, acesso atual e resultado do MPSC. |
 
-**Critério de “verificado”:** o núcleo factual descrito no registro está apoiado por documento primário ou por conjunto documental convergente. Isso não significa que todos os detalhes, a destinação atual ou cada assinatura estejam resolvidos.
+“Verificado” refere-se ao núcleo factual do registro, não à solução de todos os detalhes, à localização atual dos exemplares ou à identificação de cada signatário.
 
-## 2. Revisão dos nove alertas de signatário
+## 2. Nove alertas de signatário
 
-Os nove registros são EL-025, EL-026, EL-027, EL-028, EL-029, EL-032, EL-033, EL-036 e EL-037.
+| Registro | O que foi identificado | O que não pode ser atribuído |
+|---|---|---|
+| EL-025 — Palmares, Relatório Público 01/CNIRC | Marco Aurélio Franco assinou a Nota Informativa 0166090/2021; João Jorge Santos Rodrigues e Flávia de Jesus Costa assinaram a Resolução FCP 24/2024. A pesquisa acadêmica identifica Erik Navarro Wolkart como juiz da liminar. | Nenhum desses nomes foi confirmado como signatário do Relatório Público 01 original ou da ordem administrativa de 2021. |
+| EL-026 — Sala 11 / Acervo da Vergonha | Juçara Quinteros de Farias e Gilcy Rodrigues Azevedo assinaram o relatório técnico da Câmara; Marco Aurélio Franco assinou a resposta institucional da FCP. | O relatório da Câmara não é uma ordem administrativa individual da FCP. Não foi localizado ato individual assinado que determinasse a segregação física. |
+| EL-027 — Conselheiro Lafaiete | Prof. Alberto Souza Tibúrcio assinou o Ofício 216/2024/SEMED/PMCL, resposta oficial que informa que não houve recolhimento. | Não foi localizado ato separado de recolhimento assinado. |
+| EL-028 — São José dos Campos | A decisão judicial de 20/07/2026 é atribuída à juíza Renata Heloísa da Silva Salles. | A juíza não é signatária da ordem municipal anterior, atribuída a mensagens de WhatsApp. |
+| EL-029 — UniRV | Nota pública institucional atribui a decisão à Coordenação do Vestibular. | Não há pessoa física identificada como signatária; não inventar nome. |
+| EL-032 — Taubaté | Zelinda Pastora atribuiu a ordem a mensagem de WhatsApp enviada pelo secretário Hélcio Carvalho dos Santos. Isaac Jarbas Mascarenhas do Carmo e Talita de Lima Barbosa assinaram requerimento posterior de fiscalização parlamentar. | Não foi localizado ato escrito assinado por Hélcio. Os vereadores não assinaram a ordem de retirada. |
+| EL-033 — Funap | Henrique Pereira de Souza Neto é identificado por reportagem como decisor; Reginaldo Caetano da Silva como remetente de mensagem posterior. | Não foi localizado ato formal assinado; Reginaldo não deve ser apresentado como autor do veto. |
+| EL-036/37 — Canoinhas | O Requerimento 149/2024 foi subscrito por Tatiane Cristina Carvalho (Tati Carvalho), Wilmar Sudoski, Maurício Zimmermann, Willian Godoy Ferreira de Souza, Antônio Adilson Steidel, Osmar Oleskovicz (Professor Osmar), André Ramon Flenik e Neri Francisco da Silva (Chico Mineiro). A decisão do TCE-SC foi assinada por Gerson dos Santos Sicca. | O requerimento parlamentar e a decisão do TCE são distintos da ordem original de retirada, cuja assinatura não foi localizada. |
 
-| Registro | Documento/decisão original | Signatários ou responsáveis identificados em documentos correlatos | Limite da atribuição |
-|---|---|---|---|
-| EL-025 | Assinatura formal do Relatório Público 01/CNIRC não confirmada | Marco Aurélio Franco assinou a Nota Informativa 0166090/2021; João Jorge Santos Rodrigues e Flávia de Jesus Costa assinaram a Resolução FCP 24/2024; a pesquisa acadêmica identifica o juiz Erik Navarro Wolkart na liminar | Nenhum desses nomes deve ser apresentado como signatário do relatório original ou da ordem administrativa de 2021 |
-| EL-026 | Não foi localizado ato individual que determinasse a segregação | Juçara Quinteros de Farias e Gilcy Rodrigues Azevedo assinaram o relatório técnico da Câmara; Marco Aurélio Franco assinou a resposta da FCP | O relatório técnico documenta a Sala 11; não é uma ordem administrativa da FCP |
-| EL-027 | Não foi localizado ato separado de recolhimento | Prof. Alberto Souza Tibúrcio assinou o Ofício 216/2024/SEMED/PMCL | A assinatura é da resposta oficial, que informa que não houve recolhimento |
-| EL-028 | Ordem municipal original atribuída a mensagem de WhatsApp; signatário não identificado em documento público | A decisão judicial de 20/07/2026 é atribuída à juíza Renata Heloísa da Silva Salles | A juíza assina a decisão judicial de 2026, não a ordem municipal original |
-| EL-029 | Não há despacho individual localizado | A nota pública é institucional e atribui a decisão à Coordenação do Vestibular da UniRV | Não inventar um signatário pessoa física |
-| EL-032 | Ordem inicial atribuída a mensagem de WhatsApp do secretário Hélcio Carvalho dos Santos | Isaac Jarbas Mascarenhas do Carmo e Talita de Lima Barbosa assinaram requerimento de fiscalização parlamentar | Os vereadores não assinaram a ordem de retirada; a resposta integral do prefeito não foi recuperada |
-| EL-033 | Ato formal assinado não localizado | Henrique Pereira de Souza Neto é identificado pela reportagem como decisor; Reginaldo Caetano da Silva como remetente de mensagem posterior | Reginaldo não deve ser apresentado como autor do veto |
-| EL-036 | Ordem de retirada assinada não localizada | Oito vereadores assinaram o Requerimento 149/2024; Gerson dos Santos Sicca assinou a decisão do TCE-SC | O requerimento e a decisão do TCE são documentos distintos da ordem original |
-| EL-037 | Mesma lacuna do EL-036 | Mesmos signatários documentais do caso Canoinhas | Não há recibo de transferência ou identificação nominal do recebedor |
+**Conclusão:** os nove alertas foram resolvidos como classificação documental. Onde não há assinatura pública, a lacuna permanece explicitada; não se atribuiu a alguém um ato que não assinou.
 
-**Conclusão da auditoria de assinaturas:** nenhum nome foi promovido a signatário da ordem original sem documento que sustente essa atribuição. A interface de poder passa a distinguir signatários de documentos correlatos e responsáveis atribuídos por fontes secundárias.
+## 3. Núcleos documentais aprofundados
 
-## 3. Casos documentais aprofundados
+### Rondônia — Memorando-Circular nº 4/2020
 
-### Rondônia
+Fontes:
+- [Memorando-Circular nº 4/2020/SEDUC-DGE](https://static.poder360.com.br/2020/02/momerando-seduc-RO.pdf), com referência ao processo SEI 0029.051300/2020-91 e ao Adendo SEI 10053329.
+- [Diário Eletrônico do MPF nº 161/2021, 30/08/2021](https://transparencia.mpf.mp.br/conteudo/diarios-e-boletins/diario-eletronico-dmpf-e/2021/DMPF-EXTRAJUDICIAL-2021-08-30.pdf), Inquérito Civil 1.31.000.000213/2020-61.
+- [Artigo acadêmico da Revista Interfaces/UNICENTRO](https://revistas.unicentro.br/index.php/revista_interfaces/article/viewFile/7833/5778), que reproduz a relação de 43 entradas.
 
-O Diário Eletrônico do MPF nº 161/2021, de 30/08/2021, registra que a solicitação operacional foi verbal, suspensa no mesmo dia, e que exemplares eventualmente recolhidos foram devolvidos às escolas. O MPF também registra sindicância aberta pela Seduc e recomendação do MP-RO acatada. O artigo acadêmico de 2024 na Revista Interfaces reproduz a relação de 43 entradas: 19 entradas atribuídas a Rubem Fonseca, correspondentes a 18 títulos distintos porque “O Seminarista” aparece duas vezes; a instrução geral sobre todos os livros de Rubem Alves; e os demais títulos.
+O MPF registra que a solicitação operacional foi verbal, suspensa no mesmo dia, e que exemplares eventualmente recolhidos foram devolvidos às escolas. Também registra sindicância aberta pela Seduc, recomendação do MP-RO acatada e arquivamento homologado. O artigo acadêmico permite conferir a relação reproduzida: 19 entradas de Rubem Fonseca equivalem a 18 títulos distintos porque “O Seminarista” aparece duas vezes; há ainda a instrução geral sobre os livros de Rubem Alves.
 
-A verificação factual dos agrupamentos foi encerrada. A recuperação do Adendo SEI 10053329 original e do resultado da sindicância permanece como diligência de preservação documental.
+O Adendo SEI 10053329 original e o resultado final da sindicância não foram recuperados. A consulta pública do SEI-RO existe, mas depende de JavaScript e código de verificação; a própria página orienta que pedidos de cópia/vista sejam dirigidos à unidade geradora. O processo e o identificador do adendo estão conhecidos, mas isso não equivale à recuperação do arquivo.
 
-### Fundação Cultural Palmares
+### Fundação Cultural Palmares — 5.165 títulos e Sala 11
 
-Foi localizado o PDF oficial de 92 páginas **“Respostas da FCP aos relatórios da Comissão de Cultura da Câmara dos Deputados, seguidas dos próprios relatórios em questão”**. O arquivo reúne:
-- Nota Informativa 0166090/2021 da FCP, assinada eletronicamente por Marco Aurélio Franco em 06/11/2021;
-- relatório técnico da Câmara, assinado por Juçara Quinteros de Farias e Gilcy Rodrigues Azevedo;
-- registro da Sala 11 como “sala da vergonha (livros)” e imagens de caixas com livros destinados à doação.
+Fontes:
+- [Resposta oficial da FCP à Câmara, com os relatórios técnicos anexos (PDF de 92 páginas)](https://www.gov.br/palmares/pt-br/midias/arquivos/download/resposta.pdf).
+- [Resolução FCP nº 24/2024, publicada no DOU em 26/02/2024](https://pesquisa.in.gov.br/imprensa/servlet/INPDFViewer?captchafield=firstAccess&data=26%2F02%2F2024&jornal=515&pagina=14).
+- [Inventário Bibliográfico oficial da FCP, atualizado em 08/08/2024](https://www.gov.br/palmares/pt-br/centrais-de-conteudo/publicacoes/lista-de-livros-atualizada-8-8-2024-1.pdf).
+- [Lucas dos Santos de Paulo, “O Acervo da vergonha: atos e intencionalidades na Fundação Cultural Palmares”, dissertação, UnB, 2024](https://repositorio.unb.br/bitstream/10482/50687/1/LucasDosSantosDePaulo_DISSERT.pdf).
 
-A resposta da FCP contesta o relatório e trata, em sua argumentação, da Sala 1. O relatório técnico da Câmara é o documento que registra a Sala 11. Os dois textos são mantidos como documentos distintos, sem tratar a resposta institucional como se fosse confirmação da Câmara.
+O PDF oficial de 92 páginas contém a Nota Informativa 0166090/2021 da FCP, assinada por Marco Aurélio Franco em 06/11/2021, e o relatório técnico da Câmara, assinado por Juçara Quinteros de Farias e Gilcy Rodrigues Azevedo. É o relatório da Câmara que registra a Sala 11 como “sala da vergonha (livros)” e caixas com livros para doação; a resposta da FCP deve ser lida como documento distinto, não como substituto daquele relatório.
 
-O número de 5.165 títulos é atribuído ao Relatório Público 01/CNIRC; o arquivo original e a lista nominal não foram recuperados. Por isso, EL-025 permanece parcialmente verificado quanto ao quantitativo. A Resolução FCP nº 24/2024, assinada por João Jorge Santos Rodrigues e Flávia de Jesus Costa, aprova a política de desenvolvimento de coleções e reproduz trecho da decisão judicial que impedia movimentação do acervo, salvo consulta local.
+O quantitativo de 5.165 títulos é atribuído ao Relatório Público 01/CNIRC. O link oficial do relatório original permanece cadastrado, mas o arquivo não abriu na consulta desta auditoria; a lista nominal não foi recuperada. O inventário oficial de 08/08/2024 relaciona 9.696 títulos e inclui obras de Karl Marx, Max Weber, Eric Hobsbawm e Celso Furtado. Isso confirma a presença desses títulos no inventário posterior, mas não substitui a lista dos 5.165 nem prova o destino de todos os itens.
 
-### Canoinhas
+**Atualização decisiva do EL-026:** a dissertação da UnB documenta visita presencial à Biblioteca Oliveira Silveira em 29/02/2024 e registra que os livros que integraram o “Acervo da vergonha” já haviam sido reintegrados ao acervo geral. Por isso, o desfecho foi corrigido para **revertido**. A estimativa de “cerca de 300” não tem confirmação no relatório técnico e foi retirada do título do registro; quantidade exata e lista nominal permanecem pendentes.
 
-A decisão singular GCS/GSS-861/2024 do TCE-SC, no levantamento @LEV 24/80041829, afirma que os livros não foram efetivamente jogados no lixo e estavam em poder da Fundação Cultural para análise de destinação. A conclusão se baseia na resposta da prefeita juntada às fls. 14–32, segundo a qual os títulos haviam sido entregues à gestora da Fundação Cultural. O documento não identifica nominalmente quem recebeu os livros e não inclui recibo de transferência assinado. O TCE arquivou o levantamento por baixa materialidade financeira e pela existência de notícia de fato no MPSC; isso não equivale a uma conclusão do MPSC nem comprova o destino posterior.
+### Canoinhas — Mundoteca
 
-### Londrina, 2026
+Fontes:
+- [Requerimento nº 149/2024 no SAPL da Câmara](https://sapl.canoinhas.sc.leg.br/materia/15355).
+- [Requerimento nº 149/2024 — PDF assinado](https://sapl.canoinhas.sc.leg.br/media/sapl/public/materialegislativa/2024/15355/req_149.pdf).
+- [Diário Oficial Eletrônico do TCE-SC, 08/07/2024](https://consulta.tce.sc.gov.br/Diario/dotc-e2024-07-08.pdf), decisão GCS/GSS-861/2024 e relatório DGE-328/2024, levantamento @LEV 24/80041829.
+- [Resultado oficial do TRE-SC para Canoinhas — eleições 2024](https://apps.tre-sc.jus.br/site/fileadmin/arquivos/eleicoes/eleicoes2024/resultados_turno_1/votacao_secao/html/80730.html), usado apenas para conferir nomes parlamentares.
 
-A errata da Folha de Londrina, publicada em 12/03/2026, corrige a atribuição: a iniciativa partiu da equipe da Gerência de Ensino Fundamental da SME, não da direção da escola municipal. O relatório do OGPL informa que, após 18/02/2025, apenas 15 processos do tipo Pedido de Providências estavam públicos, enquanto 19.588 tinham restrição de acesso. A Portaria SMGP-GAB nº 28/2020 é citada como regra de publicidade. O número SEI do caso específico não foi localizado; portanto, não é correto afirmar que o documento esteja necessariamente disponível em consulta pública.
+O TCE-SC concluiu que os livros não foram efetivamente jogados no lixo e estavam em poder da Fundação Cultural para análise de destinação. A resposta da prefeita está nas fls. 14–32, mas o Tribunal levantou o sigilo apenas em relação ao Relatório DGE-328/2024 e à decisão; a resposta e as fotos não integram o documento público do Diário. O TCE arquivou o levantamento por baixa materialidade financeira e pela existência de notícia de fato no MPSC — isso não equivale a conclusão do Ministério Público.
 
-## 4. Capas: resultado e limite
+O Requerimento 149/2024 pediu revisão e reorganização da Mundoteca e separação por faixa etária; não pediu expressamente a retirada dos dois títulos. O destino posterior dos livros, o recibo de transferência e o resultado da Notícia de Fato do MPSC não foram localizados.
 
-As sete capas locais agora exibem na interface edição de referência, crédito disponível, link para ficha editorial e nota sobre a identificação da edição. A origem histórica dos JPGs e a autorização individual de reprodução não foram documentadas no repositório. A política adotada não presume domínio público nem licença geral; o uso permanece limitado a contexto informativo e sujeito a revisão.
+### Taubaté — *Pipoca e Picolé*
 
-O inventário detalhado está em [inventario-de-imagens.md](inventario-de-imagens.md), e a política está em [politica-de-direitos-e-imagens.md](politica-de-direitos-e-imagens.md).
+Fontes:
+- [OVALE, 10/04/2026 — retirada confirmada à Câmara](https://sampi.net.br/ovale/noticias/2972973/sessao-extra/2026/04/livro-sobre-menina-com-duas-maes-e-retirado-de-escolas-em-taubate).
+- [OVALE, 16/04/2026 — Prefeitura informa análise técnica](https://sampi.net.br/ovale/noticias/2974212/vale-do-paraiba/2026/04/obra-sobre-menina-com-duas-maes-passa-por-analise-diz-prefeitura).
+- [OVALE, 14/07/2026 — escolas voltarão a usar o livro](https://sampi.net.br/ovale/noticias/2991910/vale-do-paraiba/2026/07/taubate-escolas-voltarao-a-usar-livro-sobre-menina-com-duas-maes).
 
-## 5. Pedidos de acesso ainda necessários
+A Prefeitura informou em 14/07/2026 que, após análise técnica da Coordenação de Área e da Equipe de Práticas Pedagógicas da Educação Infantil, o título permaneceria no plano de ensino das turmas adequadas. A ordem inicial foi atribuída por Zelinda Pastora a mensagem de WhatsApp do secretário Hélcio Carvalho dos Santos. O requerimento aprovado em 10/03/2026 por Isaac Jarbas Mascarenhas do Carmo e Talita de Lima Barbosa é de fiscalização parlamentar, não pedido de retirada. Não foi localizada a ordem original assinada, a íntegra do parecer ou prova da redistribuição física.
 
-Foram preparados pedidos específicos para:
-1. Seduc-RO: Adendo SEI 10053329, processo 0029.051300/2020-91 e resultado da sindicância.
-2. Fundação Cultural Palmares: Relatório Público 01/CNIRC, lista dos 5.165 títulos e inventário/movimentação posterior.
-3. SME Londrina: número SEI e íntegra dos pedidos de 2024 e 2026, despachos, quantitativos e fundamento de eventual restrição.
-4. Câmara/Prefeitura de Taubaté: número e íntegra do requerimento, resposta do prefeito e parecer técnico.
-5. Funap: mensagem original, ata e registros de distribuição/retorno.
-6. Prefeitura de São José dos Campos: ordem municipal e informações públicas de cumprimento da decisão judicial, sem pedir acesso a peças sigilosas.
-7. Prefeitura/Fundação Cultural de Canoinhas e MPSC: recibo, nome do recebedor, inventário, movimentações e resultado da Notícia de Fato.
+### Londrina — 2026
 
-**Nenhum pedido foi protocolado em nome da usuária.** Os textos estão prontos para revisão e envio.
+Fontes:
+- [Relatório do Observatório de Gestão Pública de Londrina sobre transparência no SEI](https://observatoriolondrina.org.br/uploads/relatorios/Relat%C3%B3rio%20SEI%20-%20Pedidos%20de%20Provid%C3%AAncias.pdf).
+- [Folha de Londrina e errata de 12/03/2026](https://www.folhadelondrina.com.br/).
+- [CBN Londrina, 12/03/2026](https://cbnlondrina.com.br/).
 
-## 6. Integração técnica e publicação
+A errata corrigiu a atribuição da iniciativa para a equipe da Gerência de Ensino Fundamental da SME, não a direção da escola. O relatório do OGPL informa que, após 18/02/2025, apenas 15 processos do tipo Pedido de Providências estavam públicos, enquanto 19.588 tinham restrição de acesso; a Portaria SMGP-GAB nº 28/2020 é citada como regra de publicidade. O número SEI do caso específico não foi localizado, portanto não é possível afirmar que a íntegra esteja disponível para consulta pública.
 
-- PR #5 continua sendo a branch de consolidação das alterações P0.
-- A página `poder.html` e a rede de papéis recebem as distinções de autoria e assinatura.
-- A política de capas e os créditos visíveis foram incorporados ao código da branch.
-- PR #4 mantém melhorias adicionais de catálogo e 16 referências de capas que não são necessárias para encerrar a revisão das sete capas locais; sua página política é funcionalmente coberta pela trilha de poder do PR #5. Não fazer merge automático dos dois PRs sem revisão de conflito.
-- **A produção só deve ser declarada concluída após CI, merge do PR #5 e verificação do site publicado.**
+## 4. Capas — decisão de regularização
 
-## Critério de encerramento
+As sete imagens locais foram removidas da branch por ausência de procedência verificável e autorização individual documentada:
+- *O avesso da pele*
+- *Laranja mecânica*
+- *Macunaíma*
+- *Memórias póstumas de Brás Cubas*
+- *O menino marrom*
+- *Meninas sonhadoras, mulheres cientistas*
+- *Eu receberia as piores notícias de seus lindos lábios*
 
-A apuração P0 está documentada e as lacunas remanescentes têm causa, evidência consultada e pedido de acesso correspondente. O gate de publicação permanece aberto até a validação técnica e a conferência pós-deploy.
+A interface mantém título, dados editoriais e links de referência, mas usa placeholder tipográfico. Nenhuma imagem de capa é apresentada como autorizada. A retomada de imagens depende de arquivo com origem verificável e licença/autorização compatível. Ver [inventário de imagens](inventario-de-imagens.md) e [política de direitos e imagens](politica-de-direitos-e-imagens.md).
+
+## 5. O que não foi protocolado
+
+Nenhum pedido de LAI, Fala.BR, requerimento ou solicitação institucional foi enviado em nome da usuária. Os documentos de pedido anteriormente preparados permanecem rascunhos; não são prova de protocolo nem de resposta. Esta auditoria se limitou a localizar e confrontar fontes públicas.
+
+## 6. Estado técnico desta entrega
+
+- Alterações de dados e evidências estão na branch `feat/estante-livre-auditoria-profissional`.
+- A branch recebeu atualizações de `assets/dados.js` e `assets/comum.js`, incluindo a reclassificação de EL-026 e o bloqueio de capas sem autorização documentada.
+- As sete imagens locais estão programadas para remoção nesta mesma branch.
+- PR #5 permanece a via de integração; não se afirma que houve merge na `main` ou publicação em produção.
+- A conclusão técnica depende da execução dos testes após as alterações finais e da conferência da prévia gerada.
+
+## Critério de encerramento P0
+
+O P0 documental está **tratado e classificado**: cada registro foi revisto, os nove alertas de signatário foram diferenciados, os quatro núcleos administrativos foram pesquisados em múltiplas fontes e as sete imagens sem cadeia de direitos foram retiradas. Os documentos que não puderam ser recuperados permanecem explicitamente pendentes, com razão e efeito editorial registrados. Não há base para declarar que todos os documentos originais foram encontrados.
