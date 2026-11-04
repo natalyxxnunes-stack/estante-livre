@@ -78,3 +78,17 @@ A matriz foi revista à luz das fontes públicas adicionais descritas em `docs/p
 **Critério de status:** nenhuma matéria jornalística, referência bibliográfica, pauta de julgamento ou ausência de resultado de busca foi convertida em documento administrativo original. Os status parciais permanecem parciais. O P0 de auditoria e classificação está encerrado; isso não equivale à verificação integral de todos os registros.
 
 A pesquisa desta etapa usou fontes públicas. Não houve protocolo de pedidos de acesso à informação ou solicitações institucionais em nome da usuária.
+
+
+## Evidências novas recuperadas em 04/11/2026
+
+| Registro | Documento/fonte recuperada | O que comprova | O que não comprova |
+|---|---|---|---|
+| EL-036 / EL-037 — Canoinhas | Ofício 205/2024/AL e Ofício 013/2024, disponíveis no SAPL da Câmara | Encaminhamento do Requerimento 149/2024; resposta institucional de 14/05/2024; Mundoteca sob responsabilidade da SME; 569 obras, duas salas por público, classificação por cores, um empréstimo registrado | Identificação dos dois exemplares, recebimento pela Fundação Cultural, localização atual ou destinação final |
+| EL-036 / EL-037 — Canoinhas | Decisão TCE-SC GCS/GSS-861/2024 e Relatório DGE-328/2024 | A prefeita informou ao TCE que havia um exemplar de cada livro e que os exemplares foram entregues à gestora da Fundação Cultural; o Tribunal concluiu que não foram descartados no lixo | Recibo público, nome da recebedora, fotos da resposta sob sigilo, inventário posterior ou reintegração ao acervo |
+| EL-025 — Palmares | Inventário oficial FCP/CNIRC, 295 páginas, 9.696 títulos | Composição bibliográfica inventariada em 2021 e publicada em 08/08/2024 | Lista dos 5.165 itens classificados como fora do escopo ou prova de quais foram separados/doados |
+| EL-025 — Palmares | Índice oficial de downloads do CNIRC e petição OAB/ADPF 918 | O índice público lista inventário, política e resposta parlamentar, mas não o Relatório 01; a petição reproduz trechos do relatório e o identifica como anexo 26 | A íntegra do Relatório Público 01/CNIRC e o anexo documental |
+| EL-035 — Londrina | CBN Londrina e matéria de Douglas Kuspiosz reproduzida pelo Bonde | Existência do pedido formal e início de levantamento/recolhimento pela SME para análise | Número SEI, pedido integral, quantitativo, parecer técnico e decisão final |
+| EL-032 — Taubaté | O Vale, matérias de abril e julho de 2026 | Retirada, requerimento de fiscalização e anúncio municipal de retorno pedagógico após análise | Parecer técnico integral e comprovação de redistribuição física |
+
+**Regra de interpretação:** documentos de resposta, inventários gerais, pautas de julgamento e reportagens não substituem os atos administrativos específicos nem os comprovantes de execução física. As classificações dos registros permanecem inalteradas quando a nova fonte não fecha a lacuna.
