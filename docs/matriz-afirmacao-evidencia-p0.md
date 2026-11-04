@@ -113,3 +113,8 @@ A pesquisa desta etapa usou fontes públicas. Não houve protocolo de pedidos de
 
 
 **Atualização EL-025:** a lista final de 300 entradas foi recuperada em transcrição pública secundária (261 após remoção de edições repetidas). O original do Relatório 01/CNIRC ainda não foi recuperado; a transcrição não foi validada contra o original. 5.165 é o quantitativo agregado classificado como temática alheia, não a lista final; 5.300 é a quantidade de exemplares alegada na petição da OAB/ADPF 918.
+
+
+| Registro | Documento/fonte recuperada | O que comprova | O que não comprova |
+|---|---|---|---|
+| EL-025 — Palmares | Cruzamento da transcrição pública de 261 entradas com o inventário oficial FCP de 9.696 títulos | Presença no inventário de títulos como Bandidos, Dicionário do Folclore Brasileiro, O Capital, Menino brinca de boneca?, O Segundo Sexo e outros | Preservação física atual de todos os títulos, execução ou não da exclusão dos 300, ou destino final dos exemplares |
