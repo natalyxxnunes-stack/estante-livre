@@ -1,6 +1,8 @@
-# Auditoria editorial P0 — Estante Livre
+# Auditoria editorial P0 — Estante Livre (snapshot histórico de 03/11/2026)
 
-**Data da atualização:** 3 de novembro de 2026  
+> **Este documento é um retrato histórico anterior à rodada final de 04/11.** Para a classificação vigente, consulte [Fechamento P0 — 4 de novembro de 2026](fechamento-p0.md) e [Matriz de afirmações e evidências](matriz-afirmacao-evidencia-p0.md).
+
+**Data do snapshot:** 3 de novembro de 2026  
 **Base examinada:** branch de auditoria, atualizada em 2 de novembro de 2026  
 **Escopo:** registros parcialmente verificados, signatários, localidade, documentação e atribuições.
 
