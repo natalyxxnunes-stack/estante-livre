@@ -234,3 +234,38 @@ Novas fontes secundárias reforçam, sem substituir documentos primários:
 - Palmares: Ipea (2022) descreve 5,3 mil livros, folhetos e catálogos no contexto do “Retrato do Acervo”; fonte jornalística reproduz 5.165/9.565. A divergência permanece aberta.
 
 Nenhum registro acima foi promovido a verificação integral nesta rodada. As fontes secundárias foram classificadas como corroboração/contexto, não como documentos primários.
+
+
+## 17. Fechamento consolidado da etapa P0 — 04/11/2026
+
+### Decisão
+Fica encerrada a etapa P0 de auditoria, classificação, rastreabilidade documental e mitigação de direitos autorais/imagem. O encerramento é **operacional e metodológico**, não uma declaração de que todas as lacunas factuais foram sanadas.
+
+### Entregas concluídas
+1. Revisão dos 37 registros da base.
+2. Revisão dos dez registros prioritários: seis com núcleo factual verificado e quatro parciais.
+3. Tratamento dos nove alertas de signatário, sem atribuição por cargo ou inferência.
+4. Pesquisa complementar em fontes públicas oficiais, judiciais, de controle, acadêmicas, profissionais, legislativas e jornalísticas.
+5. Inclusão das fontes primárias adicionais do inventário FCP, do Diário do MPF/Rondônia e do Diário do MPSC/Canoinhas.
+6. Registro das diferenças e limites probatórios, especialmente FCP (9.696 títulos versus subconjunto referido de 5.165/5.300), Rondônia (recolhimento suspenso e devolução dos exemplares efetivamente recolhidos) e Canoinhas (resultado revisional conhecido, destino físico dos livros não comprovado).
+7. Retirada das sete capas sem cadeia de procedência/licença comprovada.
+
+### Pendências que permanecem abertas
+- **EL-025 / FCP:** íntegra do Relatório 01/CNIRC, lista e critério dos 5.165 itens.
+- **EL-028 / São José dos Campos:** ordem municipal original, resposta administrativa e prova pública de cumprimento.
+- **EL-030 / Londrina 2024:** requerimento, número, destinatário formal, resposta da SME e prova de execução.
+- **EL-032 / Taubaté:** ordem/mensagem original, requerimento e resposta integrais, parecer e comprovantes de redistribuição física.
+- **EL-035 / Londrina 2026:** número SEI, pedido, despacho, signatários e decisão final.
+- **Rondônia:** Adendo SEI 10053329 e resultado documental da sindicância estadual.
+- **Canoinhas/MPSC:** íntegra da decisão da Notícia de Fato 01.2024.00012159-3, recibo e inventário/localização posterior dos livros.
+
+### Método e transparência
+A pesquisa desta etapa foi feita em fontes públicas. **Nenhum pedido de LAI, Fala.BR, requerimento ou solicitação institucional foi protocolado em nome da usuária.** Minutas eventualmente existentes não são protocolos, respostas nem evidências.
+
+Não se deve interpretar ausência em mecanismos de busca como inexistência do documento, nem substituir documento original por notícia, petição, pauta ou referência acadêmica. A reabertura da pesquisa dependerá de nova fonte, novo identificador ou documento verificável, evitando repetir indefinidamente consultas sem nova pista.
+
+### Status
+**P0 de auditoria e pesquisa pública: encerrado.**  
+**Verificação integral de todos os registros: não concluída.**  
+**Cinco registros parciais: permanecem parciais.**  
+**PR e publicação:** este fechamento documental não autoriza merge nem deploy; as validações técnicas e a prévia continuam sendo condições independentes.
