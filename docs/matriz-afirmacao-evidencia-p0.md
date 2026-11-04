@@ -33,3 +33,12 @@
 
 
 **Atualização de recuperação — MPSC/Canoinhas:** o Diário Oficial do MPSC de 01/08/2024 identifica a Notícia de Fato nº 01.2024.00012159-3, da 1ª Promotoria de Canoinhas, na pauta da 2ª Turma Revisora. O Diário de 09/08/2024 volta a listar o procedimento. A página oficial [Consulta de Processos e Procedimentos](https://www.mpsc.mp.br/procedimentos-e-processos) permite buscar documentos produzidos pelo MPSC; a pauta, por si só, não informa o teor da decisão. Não classificar o caso como arquivado ou encerrado sem recuperar o despacho.
+
+
+## Encerramento operacional P0 — 04/11/2026
+
+A auditoria da etapa P0 está concluída quanto à revisão dos 37 registros, classificação dos dez prioritários, tratamento dos nove alertas de signatário, ampliação das fontes, documentação das lacunas e retirada preventiva das sete capas sem procedência/licença comprovada.
+
+**Não significa verificação integral de todos os registros.** Cinco registros continuam parcialmente verificados: EL-025, EL-028, EL-030, EL-032 e EL-035. Permanecem pendências complementares em Rondônia e Canoinhas/MPSC. Os documentos-alvo, identificadores, canais e limites estão detalhados em `docs/fechamento-p0.md` e `docs/pesquisa-documental-complementar-2026-11-04.md`.
+
+Nenhum status parcial foi elevado por ausência de resposta ou repetição de buscas. P0 de auditoria está encerrado; recuperação primária fica condicionada aos órgãos custodiantes e à documentação de execução.
