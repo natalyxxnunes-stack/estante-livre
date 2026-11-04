@@ -1157,18 +1157,6 @@ const FONTES = {
   "tipo":"P1","veic":"Conselho Federal da OAB · ADPF 918","data":"2021-12-02","tit":"Petição inicial da ADPF 918 reproduz trechos do Relatório Público 01/CNIRC e identifica o documento como anexo 26","url":"https://s.oab.org.br/arquivos/2021/12/ba767c45-39d7-4c44-95c0-7f07d8d425ba.pdf"
  },
 
- "palmares-download-cnirc": {
-  "tipo":"P1","veic":"Fundação Cultural Palmares · CNIRC","data":"2024-08-14","tit":"Página oficial de downloads do CNIRC: inventário, política de acervo e resposta à Comissão de Cultura; não lista o Relatório Público 01","url":"https://www.gov.br/palmares/pt-br/centrais-de-conteudo/publicacoes/download-1"
- },
- "palmares-politica-acervo-2023": {
-  "tipo":"P1","veic":"Fundação Cultural Palmares · CNIRC","data":"2023-07-06","tit":"Política de Formação e Desenvolvimento de Acervo: critérios de avaliação, remanejamento e descarte","url":"https://www.gov.br/palmares/pt-br/centrais-de-conteudo/publicacoes/PolticadeFormaoeDesenvolvimentodeAcervoFundaoCulturalPalmares06072023.pdf"
- },
- "palmares-camara-diligencia-2021": {
-  "tipo":"P1","veic":"Câmara dos Deputados · Centro de Documentação e Informação","data":"2021","tit":"Relatório técnico sobre estado de conservação dos acervos e áreas de guarda da Fundação Cultural Palmares","url":"https://www2.camara.leg.br/atividade-legislativa/comissoes/comissoes-permanentes/ccult/outros-documentos/relatorios-sobre-a-diligencia-na-fundacao-palmares-2021/relatorio-final-fundacao-cultural-palmares/view"
- },
- "palmares-oab-adpf-918": {
-  "tipo":"P1","veic":"Conselho Federal da OAB · ADPF 918","data":"2021-12-02","tit":"Petição inicial da ADPF 918 reproduz trechos do Relatório Público 01/CNIRC e identifica o documento como anexo 26","url":"https://s.oab.org.br/arquivos/2021/12/ba767c45-39d7-4c44-95c0-7f07d8d425ba.pdf"
- },
  "fl-londrina-errata-2026": {
   "tipo":"S2","veic":"Folha de Londrina","data":"2026-03-12","tit":"Errata da matéria sobre o pedido de recolhimento de O bebê vem com a cegonha?!?: iniciativa da Gerência de Ensino Fundamental da SME","url":"https://www.folhadelondrina.com.br/politica/educacao-vai-recolher-livro-infantil-com-conteudo-sensivel-3292131e.html"
  },
