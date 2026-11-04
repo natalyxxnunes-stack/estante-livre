@@ -628,3 +628,12 @@ Fontes:
 - Palmares: confirmada a disponibilidade do inventário integral de 9.696 títulos e mapeado o conteúdo efetivo do índice oficial do CNIRC; o Relatório 01 e a lista nominal de 5.165 itens continuam faltantes.
 - Londrina e Taubaté: reforçadas as evidências secundárias independentes; sem recuperação dos atos administrativos originais e dos comprovantes de execução.
 - Nenhum pedido de acesso à informação, contato com órgão ou solicitação a terceiros foi feito.
+
+
+### Atualização — resultado do recurso no MPSC de Canoinhas (09/08/2024)
+
+A pesquisa localizou o Diário Oficial Eletrônico do MPSC nº 3698, publicado em 09/08/2024. Na seção de julgamentos do Conselho Superior, item 3, consta que, por unanimidade, foram conhecidas as razões e negado provimento ao recurso interposto. Na relação sob relatoria do conselheiro Ary Capella Neto aparece expressamente a Notícia de Fato nº 01.2024.00012159-3, da 1ª Promotoria de Canoinhas.
+
+Isso fecha a lacuna sobre o resultado do recurso: o Conselho Superior manteve o arquivamento recorrido. O Diário Oficial não reproduz a fundamentação individualizada da decisão, portanto a razão jurídica e a análise probatória completas continuam não recuperadas. A decisão não deve ser resumida como declaração de inexistência de irregularidade sem leitura da fundamentação.
+
+Fonte primária: https://documentos.mpsc.mp.br/portal/Conteudo/publicacoes/do_mpsc_2024-08-09.pdf (páginas 7–8 do Diário, item 3).
