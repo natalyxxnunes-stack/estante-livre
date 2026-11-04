@@ -315,3 +315,10 @@ Fonte: https://jornal.usp.br/artigos/o-governo-bolsonaro-e-o-mal-estar-dos-livro
 ### Recuperação da lista de exclusão — Palmares
 
 A lista final de 300 títulos do Relatório 01 foi recuperada em transcrição pública do Por Dentro do RN (17/06/2021), com 261 entradas após remoção de edições repetidas. A existência da lista de 300 é corroborada pelo Jornal da USP e pela Revista de Estudos Culturais (EACH/USP). O original do Relatório 01 continua inacessível nesta rodada; portanto, a transcrição é fonte secundária e precisa ser conferida contra o documento original. Os 5.165 são o quantitativo agregado de títulos classificados como temática alheia, não a lista final. A petição da OAB/ADPF 918 fala em 5.300 exemplares, alegação distinta que não comprova execução.
+
+
+### Cruzamento de títulos — Palmares
+
+A transcrição pública da lista de 300 foi cruzada pontualmente com o inventário oficial da FCP. Foram encontrados no inventário, entre outros, Bandidos, Dicionário do Folclore Brasileiro, O Capital, Menino brinca de boneca?, O Segundo Sexo, A nova mulher e a moral sexual, A crise do neoliberalismo e a luta pelo socialismo, O mundo do socialismo, A história me absolverá, O PT em Movimento, O Socialismo Vive e O sexo e a vida.
+
+O achado confirma que esses títulos aparecem no inventário bibliográfico oficial do antigo acervo, compilado entre julho e outubro de 2021. Não comprova que todos os 261 itens da transcrição permaneceram fisicamente disponíveis, nem o destino dos 300 títulos indicados para exclusão.
