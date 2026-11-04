@@ -127,6 +127,18 @@ Fontes:
 
 A errata corrigiu a atribuição da iniciativa para a equipe da Gerência de Ensino Fundamental da SME, não a direção da escola. O relatório do OGPL informa que, após 18/02/2025, apenas 15 processos do tipo Pedido de Providências estavam públicos, enquanto 19.588 tinham restrição de acesso; a Portaria SMGP-GAB nº 28/2020 é citada como regra de publicidade. O número SEI do caso específico não foi localizado, portanto não é possível afirmar que a íntegra esteja disponível para consulta pública.
 
+## 3.1 Pesquisa complementar realizada nesta retomada — 04/11/2026
+
+A busca foi ampliada para além das páginas de imprensa já cadastradas, priorizando repositórios institucionais, documentos de controle externo e páginas oficiais:
+
+- **Rondônia:** a Revista Interfaces/UNICENTRO reproduz a relação de 43 entradas do Adendo e confirma a observação geral sobre os livros de Rubem Alves. A Exame reproduz o texto do memorando e a nota de recuo da Seduc, incluindo que o processo eletrônico foi encerrado sem ordem de tramitação externa. Isso sustenta a existência da instrução e sua reversão, mas não substitui o Adendo SEI 10053329 nem o resultado da sindicância. [Interfaces/UNICENTRO](https://revistas.unicentro.br/index.php/revista_interfaces/article/viewFile/7833/5778) · [Exame](https://exame.com/brasil/rondonia-manda-recolher-classicos-da-literatura-brasileira-e-depois-recua/).
+- **São José dos Campos:** a Folha detalha o prazo judicial de cinco dias após intimação, a disponibilização para consulta, empréstimo e uso pedagógico no Ensino Fundamental II, a vedação a novas restrições político-ideológicas e a multa. A matéria atribui ao MP a informação de que a ordem de 2024 foi comunicada por WhatsApp. A íntegra dos autos segue sob segredo de Justiça; não há prova pública do cumprimento administrativo. [Folha, 30/07/2026](https://www1.folha.uol.com.br/ciencia/2026/07/justica-determina-volta-de-livro-que-retrata-marielle-a-escolas-em-sao-jose-dos-campos.shtml).
+- **Taubaté:** a reportagem de 14/07/2026 confirma que a Prefeitura anunciou retorno ao uso pedagógico após análise da Coordenação de Área e da Equipe de Práticas Pedagógicas da Educação Infantil, limitado às turmas consideradas adequadas. Não comprova entrega física dos exemplares às unidades. [OVALE, 14/07/2026](https://sampi.net.br/ovale/noticias/2991910/vale-do-paraiba/2026/07/taubate-escolas-voltarao-a-usar-livro-sobre-menina-com-duas-maes).
+- **Canoinhas:** a decisão oficial do TCE-SC, no @LEV 24/80041829, confirma que a resposta da prefeita e as fotos estavam nas fls. 14–32, sob sigilo parcial; registra que havia um exemplar de cada título e que a gestora da Fundação Cultural recebeu os livros para analisar sua destinação; conclui que não foram efetivamente jogados no lixo e arquiva o levantamento, levantando o sigilo apenas do relatório técnico e da decisão. A busca adicional localizou a checagem do UOL Comprova, que registra a nota da Mundoteca sobre faixa etária e empréstimos, mas não informa a localização atual dos exemplares. [TCE-SC, Diário Oficial de 08/07/2024](https://consulta.tce.sc.gov.br/Diario/dotc-e2024-07-08.pdf) · [UOL Comprova, 25/04/2024](https://noticias.uol.com.br/comprova/ultimas-noticias/2024/04/25/projeto-mundoteca-nao-e-do-governo-federal-como-disse-prefeita-de-sc.htm).
+- **Fundação Cultural Palmares:** o repositório institucional da UnB confirma a existência, autoria, data e acesso público à dissertação de Lucas dos Santos de Paulo, de 2024. A dissertação é evidência acadêmica de contexto e da visita presencial, não substitui o Relatório Público 01/CNIRC nem inventaria os 5.165 itens. [Repositório UnB](https://repositorio.unb.br/handle/10482/50687?mode=full).
+
+A busca pública adicional não localizou o Adendo SEI original e o resultado da sindicância de Rondônia; a ordem administrativa e o cumprimento em São José dos Campos; o requerimento e a resposta específica de Londrina em 2024; o parecer integral e os comprovantes de redistribuição de Taubaté; o recibo, inventário posterior e resultado da Notícia de Fato de Canoinhas; nem a lista nominal integral dos 5.165 itens da FCP. Esses documentos não podem ser fabricados nem inferidos de reportagens, decisões correlatas ou inventários posteriores.
+
 ## 4. Capas — decisão de regularização
 
 As sete imagens locais foram removidas da branch por ausência de procedência verificável e autorização individual documentada:
@@ -146,12 +158,13 @@ Nenhum pedido de LAI, Fala.BR, requerimento ou solicitação institucional foi e
 
 ## 6. Estado técnico desta entrega
 
-- Alterações de dados, fontes e interface estão na branch `feat/estante-livre-auditoria-profissional`.
-- Atualizados `assets/dados.js` e `assets/comum.js`, incluindo EL-026, EL-031, a cadeia de fontes e o bloqueio de capas sem autorização documentada.
-- As sete imagens JPG foram efetivamente removidas da branch; as páginas de obras mantêm placeholders tipográficos.
-- Páginas estáticas e artefatos públicos sincronizados nesta rodada: `index.html`, `casos.html`, `livros.html`, `atos.html`, `poder.html`, `pendencias.html`, `relatorio-2026.html`, páginas dos casos/atos afetados e `dados/estante-livre-casos.csv`.
-- A sintaxe de `assets/dados.js` e `assets/comum.js` foi verificada com sucesso. Não foi retornada execução de GitHub Actions para o último head SHA; portanto, não afirmo que a suíte completa ou o build de produção tenham passado.
-- PR #5 permanece aberto para integração; não houve merge na `main` nem publicação em produção.
+- As alterações de dados, fontes, interface e documentação estão na branch `feat/estante-livre-auditoria-profissional`. O PR #5 está aberto.
+- A tabela `FONTES` contém 109 entradas únicas, todas com tipo válido; os registros fazem 235 associações de fontes. Os tipos legados `M1` foram eliminados e o gerador aceita a taxonomia vigente.
+- As sete imagens JPG foram confirmadas ausentes no conteúdo atual da branch (os sete caminhos retornam 404 na API de conteúdo do GitHub); as páginas de obras exibem placeholders tipográficos e a função de capa exige `capaAutorizada === true`.
+- As páginas estáticas e os artefatos públicos foram gerados/atualizados na branch, incluindo `dados/estante-livre-casos.csv` e `dados/estante-livre-casos.json`.
+- **Validação automatizada ainda não concluída:** a execução GitHub Actions nº 294 terminou com `action_required` e nenhum job foi iniciado; a integração conectada não oferece ação para aprovar a execução pendente. A execução nº 292 permaneceu em fila.
+- **Prévia Vercel bloqueada por limite de builds da conta:** o check retorna `failure` com indicação `build-rate-limit`. Isso não é falha de código, mas impede confirmar a prévia visual desta rodada.
+- PR #5 e PR #4 permanecem abertos; nenhum foi mesclado. Não houve deploy em produção. Não declarar publicação concluída enquanto a validação e a prévia não forem liberadas.
 
 ## Critério de encerramento P0
 
