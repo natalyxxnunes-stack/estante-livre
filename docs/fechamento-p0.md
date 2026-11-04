@@ -8,6 +8,8 @@ A rodada de pesquisa pública ampliada e a revisão dos dados P0 foram concluíd
 - **5 com núcleo factual verificado:** EL-022, EL-023, EL-024, EL-036 e EL-037.
 - **5 parcialmente verificados:** EL-028, EL-030, EL-031, EL-032 e EL-035.
 
+EL-025, que integra o grupo de nove alertas de signatário e não a lista original dos dez, também permanece parcialmente verificado. Assim, no conjunto total de 37 registros, **6 estão parcialmente verificados**: EL-025, EL-028, EL-030, EL-031, EL-032 e EL-035.
+
 **Os nove alertas de signatário foram individualmente tratados.** Em vários casos não existe ato escrito público ou a assinatura é de um documento correlato, não da ordem original. O cadastro distingue esses papéis e não atribui assinatura por inferência.
 
 **As sete imagens locais de capas foram retiradas da branch.** Como a procedência dos JPGs e as autorizações individuais não estavam documentadas, a interface passa a exibir fichas tipográficas, sem reproduzir as imagens. Metadados bibliográficos e links de referência permanecem.
