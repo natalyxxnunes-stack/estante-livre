@@ -118,3 +118,8 @@ A pesquisa desta etapa usou fontes públicas. Não houve protocolo de pedidos de
 | Registro | Documento/fonte recuperada | O que comprova | O que não comprova |
 |---|---|---|---|
 | EL-025 — Palmares | Cruzamento da transcrição pública de 261 entradas com o inventário oficial FCP de 9.696 títulos | Presença no inventário de títulos como Bandidos, Dicionário do Folclore Brasileiro, O Capital, Menino brinca de boneca?, O Segundo Sexo e outros | Preservação física atual de todos os títulos, execução ou não da exclusão dos 300, ou destino final dos exemplares |
+
+
+| Registro | Documento/fonte recuperada | O que comprova | O que não comprova |
+|---|---|---|---|
+| EL-015 / EL-022–024 — Rondônia | Nota oficial SEDUC (06/02/2020), Diário do MPF nº 161/2021 e tese UnB (2024) | Nota de recuo/encerramento do processo técnico; registro do MPF sobre sindicância separada e recomendação do MP-RO acatada; reprodução acadêmica do memorando | Adendo SEI 10053329 original, íntegra da recomendação do MP-RO e resultado da sindicância administrativa |
