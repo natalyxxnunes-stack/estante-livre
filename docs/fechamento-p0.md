@@ -82,7 +82,6 @@ Fontes:
 - [Requerimento nº 149/2024 — PDF assinado](https://sapl.canoinhas.sc.leg.br/media/sapl/public/materialegislativa/2024/15355/req_149.pdf).
 - [Canoinhas Online, 18/04/2024 — atribuições públicas no episódio](https://canoinhasonline.com.br/2024/04/canoinhas-em-destaque-nacional-video-de-prefeita-jogando-livros-no-lixo-repercute-no-pais.html).
 - [Diário Oficial Eletrônico do TCE-SC, 08/07/2024](https://consulta.tce.sc.gov.br/Diario/dotc-e2024-07-08.pdf), decisão GCS/GSS-861/2024 e relatório DGE-328/2024, levantamento @LEV 24/80041829.
-- [Resultado oficial do TRE-SC para Canoinhas — eleições 2024](https://apps.tre-sc.jus.br/site/fileadmin/arquivos/eleicoes/eleicoes2024/resultados_turno_1/votacao_secao/html/80730.html), usado apenas para conferir nomes parlamentares.
 
 O TCE-SC concluiu que os livros não foram efetivamente jogados no lixo e estavam em poder da Fundação Cultural para análise de destinação. A resposta da prefeita está nas fls. 14–32, mas o Tribunal levantou o sigilo apenas em relação ao Relatório DGE-328/2024 e à decisão; a resposta e as fotos não integram o documento público do Diário. O TCE arquivou o levantamento por baixa materialidade financeira e pela existência de notícia de fato no MPSC — isso não equivale a conclusão do Ministério Público.
 
