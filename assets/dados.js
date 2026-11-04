@@ -1113,7 +1113,7 @@ const FONTES = {
  },
 
  "rp10-sjc-2026": {
-  "tipo":"M1",
+  "tipo":"S2",
   "veic":"RP10",
   "data":"2026-07-29",
   "tit":"Justiça vê censura e manda devolver livro sobre Marielle Franco às escolas de São José dos Campos",
@@ -1121,7 +1121,7 @@ const FONTES = {
  },
 
  "revista-oeste-londrina-2024": {
-  "tipo":"M1",
+  "tipo":"S2",
   "veic":"Revista Oeste",
   "data":"2024-12-04",
   "tit":"Vereadora Jessicão exige recolhimento de livro erótico encontrado em creche no Paraná",
