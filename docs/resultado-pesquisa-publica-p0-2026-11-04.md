@@ -37,7 +37,7 @@ O arquivo contém a Nota Informativa 0166090/2021 da FCP, assinada eletronicamen
 A resposta da FCP é uma contestação institucional ao relatório da Câmara e trata de forma específica da Sala 1. O relatório técnico da Câmara é o documento que registra a Sala 11. Não se deve apresentar a resposta da FCP como se confirmasse ou anulasse o registro da Câmara; os dois documentos devem ser lidos em paralelo.
 
 **Quantitativo de 5.165**
-O número de 5.165 títulos é atribuído ao Relatório Público 01/CNIRC, divulgado em 11/06/2021. A lista nominal completa e a íntegra do relatório original não foram recuperadas nesta rodada. A Nota Informativa 0166090/2021 confirma a intenção institucional de doar títulos considerados fora da missão da Fundação, mas não confirma, por si só, o quantitativo de 5.165. Por esse motivo, EL-025 foi rebaixado para parcialmente verificado quanto ao número.
+O número de 5.165 itens é atribuído ao Relatório Público 01/CNIRC, divulgado em 11/06/2021. A lista nominal completa e a íntegra do relatório original não foram recuperadas nesta rodada. A Nota Informativa 0166090/2021 confirma a intenção institucional de doar títulos considerados fora da missão da Fundação, mas não confirma, por si só, o quantitativo de 5.165. Por esse motivo, EL-025 foi rebaixado para parcialmente verificado quanto ao número.
 
 **Decisão judicial e resolução de 2024**
 - [Resolução FCP nº 24, de 22/02/2024, publicada no DOU em 26/02/2024](https://pesquisa.in.gov.br/imprensa/servlet/INPDFViewer?captchafield=firstAccess&data=26%2F02%2F2024&jornal=515&pagina=14).
@@ -46,7 +46,7 @@ O número de 5.165 títulos é atribuído ao Relatório Público 01/CNIRC, divul
 A Resolução aprova a Política de Formação e Desenvolvimento de Coleções da Biblioteca da FCP e reproduz trecho da decisão da Ação Popular 5006660-67.2021.4.02.5117/RJ, que impedia movimentação do acervo, exceto consulta local. A resolução é assinada pelo presidente João Jorge Santos Rodrigues e pela diretora Flávia de Jesus Costa. A literatura acadêmica identifica o juiz federal Erik Navarro Wolkart como magistrado da liminar.
 
 **Limites**
-A assinatura formal do Relatório Público 01 original não foi confirmada. A lista de 5.165 títulos e o inventário atualizado não foram recuperados. A Sala 11 está documentada, mas o estado atual do espaço e a lista de livros que estavam nela continuam pendentes.
+A assinatura formal do Relatório Público 01 original não foi confirmada. A lista de 5.165 itens e o inventário atualizado não foram recuperados. A Sala 11 está documentada, mas o estado atual do espaço e a lista de livros que estavam nela continuam pendentes.
 
 ## 3. Canoinhas — Mundoteca
 
@@ -122,9 +122,9 @@ Foi localizada a dissertação de Lucas dos Santos de Paulo, **O Acervo da vergo
 
 - [Inventário Bibliográfico oficial, atualizado em 08/08/2024](https://www.gov.br/palmares/pt-br/centrais-de-conteudo/publicacoes/lista-de-livros-atualizada-8-8-2024-1.pdf).
 
-O inventário relaciona 9.696 títulos do antigo acervo e inclui obras de Karl Marx, Max Weber, Eric Hobsbawm e Celso Furtado. Ele permite comprovar a presença desses títulos no inventário posterior, mas não individualiza os itens da Sala 11 nem substitui a lista de 5.165 títulos atribuída ao Relatório Público 01/CNIRC. O link oficial do Relatório Público 01 continua cadastrado, mas o PDF original não abriu nesta consulta.
+O inventário relaciona 9.696 títulos do antigo acervo e inclui obras de Karl Marx, Max Weber, Eric Hobsbawm e Celso Furtado. Ele permite comprovar a presença desses títulos no inventário posterior, mas não individualiza os itens da Sala 11 nem substitui a lista de 5.165 itens atribuída ao Relatório Público 01/CNIRC. O link oficial do Relatório Público 01 continua cadastrado, mas o PDF original não abriu nesta consulta.
 
-**Correção de unidade:** a proposta de 2021 refere-se a 5.165 títulos, não a 5.165 exemplares físicos. O número e a lista nominal devem continuar atribuídos ao relatório original, sem inferir a quantidade de cópias.
+**Correção de unidade:** Fontes contemporâneas divergem na unidade de contagem dos 5.165 itens, usando “títulos”, “livros” e “exemplares”. Como o PDF original do Relatório Público 01/CNIRC não abriu nesta consulta, o catálogo adota a expressão neutra “itens” e não afirma se a unidade corresponde a títulos bibliográficos ou cópias físicas. O número e a lista nominal devem continuar atribuídos ao relatório original, sem inferir a quantidade de cópias.
 
 ### 10.3 Canoinhas: identificação nominal dos signatários do Requerimento 149/2024
 
