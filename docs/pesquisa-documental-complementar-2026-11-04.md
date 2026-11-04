@@ -448,3 +448,47 @@ Fontes:
 - [Folha, 30/07/2026 — decisão posterior que determinou o retorno](https://www1.folha.uol.com.br/ciencia/2026/07/justica-determina-volta-de-livro-que-retrata-marielle-a-escolas-em-sao-jose-dos-campos.shtml).
 
 **Limite:** a decisão de 09/10/2024 e a decisão de 20/07/2026 não foram recuperadas em inteiro teor nesta rodada; os autos são reportados como sob segredo de Justiça. O histórico deve mostrar a suspensão intermediária da liminar, sem confundir isso com decisão final de mérito.
+
+
+## 16. Novos documentos públicos primários — inventário FCP e arquivamento MPF/Rondônia (04/11/2026)
+
+### 16.1 Palmares — inventário bibliográfico oficial de 9.696 títulos localizado
+
+Foi localizado no domínio oficial da Fundação Cultural Palmares o documento **“Inventário Bibliográfico — Fundação Cultural Palmares / Centro Nacional da Informação e Referência da Cultura Negra”**, publicado como PDF atualizado em 08/08/2024:
+
+- [Inventário bibliográfico oficial da FCP — PDF](https://www.gov.br/palmares/pt-br/centrais-de-conteudo/publicacoes/lista-de-livros-atualizada-8-8-2024-1.pdf).
+
+O próprio documento informa que:
+- o inventário é composto por **9.696 títulos**;
+- foi realizado entre julho e outubro de 2021;
+- ocorreu sob supervisão do coordenador-geral do CNIRC, Marco Frenette, com revisão final do bibliotecário Henrique Bezerra de Araújo;
+- contém título, autor, editora, ano, quantidade e observações;
+- a tabela enumera efetivamente os registros de 1 a 9.696 (última linha numerada 9696, “Zumbizinho”).
+
+A lista tem 295 páginas e data de 08/08/2024 no rodapé. A introdução e a estrutura de campos aparecem nas linhas 0–8 da extração; a última sequência de registros, incluindo o item 9696, aparece nas linhas 13821–13879.
+
+**Importância probatória:** esta é uma fonte primária pública para o inventário do antigo acervo da FCP. Permite consulta título a título e quantitativo por registro. Não se deve confundir “9.696 títulos” com quantidade total de exemplares: a coluna QUANT. registra cópias por título e varia entre registros. Tampouco se deve confundir este inventário de 2021 com o relatório de triagem/seleção “Retrato do Acervo” ou com o número de 5.165 itens referido em outras fontes. O inventário não contém referência a “5.165” na busca textual; não comprova, por si, a composição nem a destinação daquele subconjunto. O achado reduz a lacuna de transparência do acervo, mas não substitui o relatório de triagem.
+
+### 16.2 Rondônia — ata oficial do MPF confirma arquivamento e registra fatos apurados
+
+Foi localizado o Diário do Ministério Público Federal Eletrônico, Caderno Extrajudicial nº 161/2021, publicado em **30/08/2021**, com a deliberação da 3ª Câmara de Coordenação e Revisão sobre o Inquérito Civil nº **1.31.000.000213/2020-61**:
+
+- [Diário oficial do MPF nº 161/2021 — PDF](https://transparencia.mpf.mp.br/conteudo/diarios-e-boletins/diario-eletronico-dmpf-e/2021/DMPF-EXTRAJUDICIAL-2021-08-30.pdf).
+
+No item 48, sob relatoria de Francisco de Assis Marinho Filho, voto vencedor nº 413, a ementa oficial registra:
+- houve informação da Coordenadoria Regional de Educação de que a solicitação verbal de recolhimento partiu da Seduc para análise e classificação por faixa etária;
+- a solicitação foi suspensa no mesmo dia e os livros que chegaram a ser recolhidos foram devolvidos às escolas;
+- a Seduc informou que, após denúncia sobre suposto conteúdo inadequado, constatou que os títulos eram clássicos da literatura brasileira e encerrou imediatamente a análise técnica;
+- o MPF registrou a conclusão de que o ato de recolhimento não foi concretizado;
+- a Seduc instaurou sindicância administrativa para apurar o contexto e buscar responsabilização por atos irregulares;
+- o MP-RO instaurou procedimento e expediu recomendação, que foi acatada pela Seduc;
+- a promoção de arquivamento foi homologada por unanimidade.
+
+Trecho direto: linhas 1857–1874 da extração do Diário.
+
+**Conclusão probatória:** a deliberação oficial do MPF resolve a lacuna sobre o resultado do inquérito federal e fornece narrativa institucional detalhada dos fatos apurados. Não é o relatório final da sindicância estadual, nem a íntegra do procedimento do MP-RO, nem o Adendo SEI 10053329. Também exige cuidado terminológico: a ementa distingue solicitação verbal, suspensão no mesmo dia e devolução dos livros que chegaram a ser recolhidos; a conclusão do MPF é que o ato de recolhimento das obras não se concretizou como operação geral. O registro não deve afirmar que nenhum exemplar foi movimentado, pois a própria ementa informa que alguns recolhidos foram devolvidos.
+
+### 16.3 Ajuste de status e de narrativa
+
+- **EL-025 — Palmares/Relatório 01/CNIRC:** permanece parcial quanto ao relatório de triagem e ao conjunto de 5.165 itens. Agora há um inventário bibliográfico oficial completo, numerado até 9.696 títulos, que deve ser vinculado como fonte primária complementar. Não elevar a verificação do relatório de triagem.
+- **EL-022/023/024 — Rondônia:** o desfecho do inquérito civil do MPF está documentalmente comprovado por publicação oficial de 30/08/2021. A sindicância estadual e o Adendo SEI 10053329 continuam pendentes; o registro deve separar o que o MPF apurou do que a Seduc investigou internamente.
