@@ -18,7 +18,7 @@ Também foram localizados:
 - [Artigo acadêmico no periódico Liinc em Revista/IBICT](https://revista.ibict.br/liinc/article/view/5789), que referencia o relatório do CNIRC.
 - [Cópia alternativa do PDF do CNIRC](https://www.palmares.gov.br/wp-content/uploads/2021/06/cnirc01_liminar_v2_08_07.pdf), identificada por referências bibliográficas em trabalhos acadêmicos; o servidor oficial não entregou o arquivo nesta consulta. A existência do endereço não equivale à recuperação ou validação do conteúdo integral.
 
-**Conclusão para o cadastro:** incorporar o relatório do CRB-1 como evidência independente sobre a condição do acervo em 30/06/2021, mantendo explícita a ressalva de que as 207 caixas não podem ser equiparadas à Sala 11 sem prova. A lista nominal dos 5.165 itens e o inventário de destino continuam pendentes.
+**Conclusão para o cadastro:** incorporar o relatório do CRB-1 como evidência independente sobre a condição do acervo em 30/06/2021, mantendo explícita a ressalva de que as 207 caixas não podem ser equiparadas à Sala 11 sem prova. A íntegra do Relatório 01/CNIRC e sua lista final de 300 títulos indicados para exclusão continuam pendentes. Os 5.165 são a contagem agregada de títulos classificados como de temática alheia à negra, não o tamanho dessa lista.
 
 ## 2. Rondônia — cópia independente da lista e trilha do MPF
 
@@ -102,7 +102,7 @@ O desfecho do inquérito civil do MPF já localizado em publicação oficial per
 
 A busca adicional localizou documento oficial posterior da própria Fundação Cultural Palmares, a **Política de Acervo — versão final de 21/12/2021**, que referencia expressamente o Relatório Técnico nº 01, “Retrato do Acervo: três décadas de dominação marxista na Fundação Cultural Palmares”, atribuído à FCP/CNIRC e publicado em 2021. Trabalhos acadêmicos independentes também preservam a URL histórica do PDF original.
 
-Isso confirma a referência bibliográfica institucional ao relatório, mas não recupera seu arquivo integral. O PDF oficial antigo e a URL alternativa continuam sem entrega verificável nesta rodada. Não foi localizada cópia integral independente autenticável, tampouco a lista nominal completa dos 5.165 itens.
+Isso confirma a referência bibliográfica institucional ao relatório, mas não recupera seu arquivo integral. O PDF oficial antigo e a URL alternativa continuam sem entrega verificável nesta rodada. Não foi localizada cópia integral independente autenticável, tampouco a lista final de 300 títulos indicados para exclusão.
 
 **Não marcar como resolvido:** a referência e a existência editorial do relatório estão corroboradas; o conteúdo integral, a lista nominal e os documentos de movimentação/destino dos itens continuam pendentes.
 
@@ -125,7 +125,7 @@ O Diário Oficial de Taubaté consultado para 10/03/2026 contém atos administra
 |---|---|---|
 | Despacho/decisão MPSC 01.2024.00012159-3 | Número e pauta de revisão confirmados; inteiro teor não recuperado | Pendente |
 | Adendo SEI 10053329 / processo 0029.051300/2020-91 | Referência cruzada e metadados do memorando confirmados; original não recuperado | Pendente |
-| Relatório CNIRC integral e lista de 5.165 itens | Referência bibliográfica oficial e acadêmica reforçada; arquivo integral/lista não recuperados | Pendente |
+| Relatório CNIRC integral e lista final de 300 títulos indicados para exclusão (os 5.165 são contagem agregada) | Referência bibliográfica oficial e acadêmica reforçada; arquivo integral/lista não recuperados | Pendente |
 | Requerimento de Londrina de 26/11/2024 | Não localizado em inteiro teor oficial | Pendente |
 | Requerimento e resposta integral de Taubaté | Não localizados em inteiro teor oficial; notícia posterior não prova redistribuição | Pendente |
 
@@ -171,7 +171,7 @@ Nesta rodada, as buscas por número SIG do MPSC, código SEI 10053329/processo 0
 | Londrina | Identificado formulário oficial de busca do Jornal Oficial | Requerimento de 26/11/2024 e resposta administrativa |
 | Canoinhas/MPSC | Nenhum novo arquivo | Despacho/decisão da Notícia de Fato 01.2024.00012159-3 |
 | Rondônia/SEI | Nenhum novo arquivo | Adendo 10053329, processo integral e resultado da apuração estadual |
-| Fundação Palmares | Nenhum novo arquivo | Relatório CNIRC integral, lista nominal dos 5.165 itens e documentação de destino |
+| Fundação Palmares | Nenhum novo arquivo | Relatório CNIRC integral, lista final de 300 títulos e documentação de destino |
 
 **Conclusão editorial:** houve avanço na identificação dos canais oficiais e das chaves de consulta, não na recuperação dos documentos ausentes. Manter os registros parciais e não declarar P0 fechado.
 
@@ -214,7 +214,7 @@ Em Taubaté, a busca por “Pipoca e Picolé”, pelos autores do requerimento e
 | Frente | Material adicional recuperado | O que continua faltando |
 |---|---|---|
 | Rondônia | Reprodução visual em periódico universitário, além da cópia textual já conhecida | Original verificável no SEI, Adendo 10053329, processo integral e resultado da apuração estadual |
-| Fundação Palmares | Descrição acadêmica da estrutura e extensão do relatório (76 páginas/8 partes) | PDF integral validado, lista nominal dos 5.165 itens e documentação de destino |
+| Fundação Palmares | Descrição acadêmica da estrutura e extensão do relatório (76 páginas/8 partes) | PDF integral validado, lista final de 300 títulos e documentação de destino |
 | Londrina | PDF oficial do PL 79/2024, distinguido do requerimento | Requerimento de 26/11/2024 e resposta administrativa |
 | Taubaté | Nenhum inteiro teor novo | Requerimento, resposta integral, parecer e comprovantes de redistribuição |
 | MPSC/Canoinhas | Nenhum inteiro teor novo | Despacho/decisão da Notícia de Fato 01.2024.00012159-3 |
@@ -395,7 +395,7 @@ O PDF começa pela Nota Informativa SEI/FCP nº 0166090/2021 e incorpora o relat
 
 Referência no PDF oficial: linhas 1086–1104 e 2377–2385; fotografias e legendas nas páginas finais, especialmente linhas 2835–2859. A Nota Informativa da FCP e o relatório de diligência da Câmara são peças distintas reunidas no mesmo PDF; não atribuir a assinatura do relatório parlamentar à FCP.
 
-**Limite:** esse achado documenta oficialmente a Sala 11 e a diligência parlamentar. Não é o Relatório Público 01/CNIRC “Retrato do Acervo” e não contém, por si só, a lista nominal dos 5.165 itens. O link histórico do Relatório 01 continua citado em publicações acadêmicas e na Política de Acervo da FCP, mas o servidor legado não entregou o arquivo nesta rodada. O PDF oficial de 92 páginas não deve ser apresentado como substituto.
+**Limite:** esse achado documenta oficialmente a Sala 11 e a diligência parlamentar. Não é o Relatório Público 01/CNIRC “Retrato do Acervo” e não contém, por si só, a lista final de 300 títulos indicada para exclusão; os 5.165 são o total agregado da categoria de temática alheia. O link histórico do Relatório 01 continua citado em publicações acadêmicas e na Política de Acervo da FCP, mas o servidor legado não entregou o arquivo nesta rodada. O PDF oficial de 92 páginas não deve ser apresentado como substituto.
 
 ### 14.2 MPSC — resultado deliberativo localizado para a Notícia de Fato de Canoinhas
 
@@ -415,7 +415,7 @@ Fonte direta do trecho deliberativo: [Diário nº 3698, página 7, linhas 408–
 
 - **Canoinhas/MPSC:** retirar a formulação anterior de que o resultado da Notícia de Fato era inteiramente desconhecido. A súmula oficial resolve o resultado do recurso: desprovimento unânime. Permanecem pendentes a íntegra da decisão originária e a prova de destino/localização dos livros.
 - **Palmares/Sala 11:** reforçar o registro com o PDF oficial de 92 páginas e as fotografias da diligência. Não confundir essa documentação com o Relatório 01/CNIRC nem elevar EL-025 com base nela.
-- **Palmares/5.165 itens:** permanece pendente a cópia integral do Relatório 01/CNIRC e a lista nominal que permita auditar o quantitativo e a unidade de contagem.
+- **Palmares/5.165 itens:** permanece pendente a cópia integral do Relatório 01/CNIRC e a lista final de 300 títulos indicada para exclusão e o próprio relatório que permita auditar metodologia, classificação e unidade de contagem.
 
 
 ## 15. Outras rotas públicas rechecadas — Taubaté, Londrina e São José dos Campos
@@ -601,13 +601,13 @@ Fontes primárias:
 
 Foi reaberta a página oficial de downloads do CNIRC, atualizada em 14/08/2024. Ela lista o Inventário dos Livros da Fundação Cultural Palmares, a Política de Acervo e a resposta à Comissão de Cultura, mas não lista o Relatório Público 01/CNIRC (“Retrato do Acervo”). Isso é um indício verificável de que o relatório original não está disponível no índice público atual — não prova que nunca tenha sido publicado.
 
-O inventário oficial foi aberto diretamente e contém 295 páginas, com 9.696 registros de títulos e campos de título, autor, editora, ano e quantidade. O próprio documento informa que o levantamento foi realizado entre julho e outubro de 2021 e revisado pelo bibliotecário Henrique Bezerra de Araújo. Ele permite examinar a composição do acervo em 2021, mas não substitui a lista dos 5.165 títulos/itens classificados pelo relatório CNIRC como fora do escopo, nem permite presumir quais itens teriam sido selecionados para descarte.
+O inventário oficial foi aberto diretamente e contém 295 páginas, com 9.696 registros de títulos e campos de título, autor, editora, ano e quantidade. O próprio documento informa que o levantamento foi realizado entre julho e outubro de 2021 e revisado pelo bibliotecário Henrique Bezerra de Araújo. Ele permite examinar a composição do acervo em 2021, mas não substitui a lista final de 300 títulos indicados para exclusão pelo relatório CNIRC; os 5.165 correspondem à contagem agregada de títulos classificados como temática alheia, nem permite presumir quais itens teriam sido selecionados para descarte.
 
 A Política de Formação e Desenvolvimento de Acervo, publicada em 2023, descreve critérios institucionais de avaliação, remanejamento e descarte. É documento normativo útil para comparar a política formal com as justificativas do Relatório 01, mas não é o relatório de triagem de 2021.
 
 A página oficial da Câmara dos Deputados contém relatórios da diligência parlamentar de 2021. O PDF de 60 páginas recuperado nesta rodada é o diagnóstico técnico do estado de conservação e das áreas de guarda, elaborado por conservadoras-restauradoras da Câmara; não deve ser confundido com o Relatório Público 01/CNIRC. A petição da OAB na ADPF 918, de 02/12/2021, reproduz trechos do Relatório 01, descreve sua metodologia e o identifica como documento anexo 26, mas o arquivo da petição não inclui a íntegra desse anexo.
 
-Conclusão: a íntegra do Relatório 01/CNIRC e a lista nominal dos 5.165 itens continuam não recuperadas. O inventário oficial de 9.696 títulos está recuperado e deve ser tratado como base distinta.
+Conclusão: a íntegra do Relatório 01/CNIRC e sua lista final de 300 títulos indicados para exclusão continuam não recuperadas. Os 5.165 correspondem à contagem agregada (54% dos 9.565 títulos contabilizados em 2021), não ao número de títulos da lista final. O inventário oficial de 9.696 títulos está recuperado e deve ser tratado como base distinta.
 
 Fontes:
 - Página oficial de downloads do CNIRC: https://www.gov.br/palmares/pt-br/centrais-de-conteudo/publicacoes/download-1
@@ -625,7 +625,7 @@ Fontes:
 ### Resultado desta rodada
 
 - Canoinhas: recuperados dois documentos oficiais acessórios que não estavam incorporados à matriz — ofício de encaminhamento e resposta da Fundação Cultural.
-- Palmares: confirmada a disponibilidade do inventário integral de 9.696 títulos e mapeado o conteúdo efetivo do índice oficial do CNIRC; o Relatório 01 e a lista nominal de 5.165 itens continuam faltantes.
+- Palmares: confirmada a disponibilidade do inventário integral de 9.696 títulos e mapeado o conteúdo efetivo do índice oficial do CNIRC; o Relatório 01 e a lista final de 300 títulos indicada para exclusão continua faltante; os 5.165 são uma contagem agregada.
 - Londrina e Taubaté: reforçadas as evidências secundárias independentes; sem recuperação dos atos administrativos originais e dos comprovantes de execução.
 - Nenhum pedido de acesso à informação, contato com órgão ou solicitação a terceiros foi feito.
 
@@ -663,3 +663,10 @@ Fontes:
 - Câmara Sem Papel: https://camarasempapel.camarataubate.sp.gov.br/
 - Palavra dos vereadores — 45ª sessão: https://www.camarataubate.sp.gov.br/portal/noticias/0/3/9869/palavra-dos-vereadores---45-sessao-ordinaria/
 - Ordem do dia — 46ª sessão: https://www.camarataubate.sp.gov.br/portal/noticias/0/3/9875/46-sessao-ordinaria--1032026---ordem-do-dia/
+
+
+### Correção de precisão — Palmares: 5.165 não é a lista de exclusão
+
+A análise de Marisa Midori Deaecto publicada no Jornal da USP em 18/06/2021 descreve o Relatório Público 01/CNIRC como um documento de 73 páginas que encerra com uma lista de 300 títulos indicados para exclusão. O número 5.165 corresponde a 54% dos 9.565 títulos contabilizados no relatório e designa o conjunto agregado classificado como de temática alheia à negra. Portanto, a pendência correta não é “lista nominal dos 5.165”, mas a recuperação do Relatório 01 e da sua lista final de 300 títulos. A diferença entre 5.165 (reportagens contemporâneas) e 5.300 (Ipea, 2022) continua sem conciliação documental e deve permanecer explicitada, sem hipótese apresentada como fato.
+
+Fonte: https://jornal.usp.br/artigos/o-governo-bolsonaro-e-o-mal-estar-dos-livros-sobre-o-expurgo-do-acervo-bibliografico-da-fundacao-palmares-primeiro-ato/
