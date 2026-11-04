@@ -284,3 +284,15 @@ Arquivos alterados nesta implementação:
 - `poder.html` — marcador e apresentação da seção pública.
 
 **Validação pendente:** a execução do workflow para os commits de implementação ainda não foi confirmada pela consulta de execuções associadas ao commit. A página estática gerada e a prévia visual precisam ser conferidas depois que o workflow terminar. Não mesclar nem publicar em produção antes dessa validação.
+
+
+### Verificação estrutural pós-implementação — 04/11/2026
+
+A conferência dos arquivos na branch confirmou:
+- 19 itens em `CONTEXTO_PARTIDARIO`;
+- 19 nomes distintos, sem duplicidade;
+- todos os itens têm partido/condição, cobertura temporal, status e ao menos uma URL HTTP(S);
+- `scripts/gerar.js` exporta o array para o contexto do gerador, valida os 19 itens e renderiza os cartões;
+- `poder.html` contém o marcador de geração da seção e a seção está posicionada antes da lista de agentes/papéis.
+
+**Limite da validação:** a consulta de execuções associadas aos commits mais recentes ainda não retornou uma execução do GitHub Actions. Portanto, esta é uma conferência estrutural dos arquivos e dados, não uma execução bem-sucedida do gerador, teste de navegador ou aprovação visual. O workflow deve regenerar a página estática; depois é necessário conferir o HTML gerado e a prévia Vercel. PR #5 permanece aberto e não mesclado.
