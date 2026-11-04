@@ -762,3 +762,19 @@ Fontes:
 - UOL, 29/07/2026: https://noticias.uol.com.br/cotidiano/ultimas-noticias/2026/07/29/juiza-manda-prefeitura-devolver-as-escolas-livro-com-marielle-em-sao-jose.ghtm
 - Sampi/OVALE, 28/07/2026: https://sampi.net.br/ovale/noticias/2994720/vale-do-paraiba/2026/07/sjc-justica-determina-volta-de-obra-que-cita-marielle-as-escolas
 
+
+
+### Ressalva de vigência — política de acervo da Palmares (correção de precisão)
+
+A versão institucional intitulada “Políticas de Acervo”, datada de 21/12/2021 e publicada no portal oficial, contém critérios de descarte que incluem “marxismo e comunismo”, “militância política explícita” e “divulgação marxista”. O próprio documento registra que o procedimento de descarte estava impedido por liminar. Essa é uma evidência primária do conteúdo de um documento institucional de 2021.
+
+Entretanto, não é correto apresentar automaticamente esse PDF como a política vigente. A Resolução FCP nº 24, de 22/02/2024, publicada no DOU de 26/02/2024, aprovou e estabeleceu uma política posterior de formação e desenvolvimento de coleções. O texto dessa política publicado no DOU não repete os critérios ideológicos do PDF de 2021. O cadastro passa, portanto, a distinguir:
+1. **Documento institucional de 2021:** contém os critérios controversos expressos e registra impedimento judicial ao descarte.
+2. **Política aprovada pela Resolução FCP nº 24/2024:** política posterior, cujo texto publicado no DOU não contém aquelas expressões.
+3. **Execução material:** não há prova de descarte/doação dos 5.165 itens.
+
+O artigo de Henrique Bezerra de Araújo, publicado na Divulga-CI em novembro de 2023, é especialmente útil para contextualizar a transição. O autor, bibliotecário ligado à FCP, afirma que a ação popular impedia a movimentação também de livros promocionais e relata que a política e a comissão de gestão estavam sendo estruturadas depois da ação. É uma manifestação identificada do profissional responsável pela área, não uma decisão judicial nem prova da destinação de exemplares.
+
+Fontes:
+- DOU, Resolução FCP nº 24/2024: https://pesquisa.in.gov.br/imprensa/servlet/INPDFViewer?captchafield=firstAccess&data=26%2F02%2F2024&jornal=515&pagina=14
+- Artigo de Henrique Bezerra de Araújo, Divulga-CI, nov. 2023: https://www.divulgaci.labci.online/v-1-n-9-nov-2023/a-politica-de-acervo-da-biblioteca-da-fundacao-palmares-desdobramentos-para-a-preservacao-da-cultura-afro-brasileira-por-henrique-araujo/
