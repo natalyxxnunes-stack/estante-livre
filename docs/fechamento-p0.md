@@ -251,7 +251,7 @@ Fica encerrada a etapa P0 de auditoria, classificação, rastreabilidade documen
 7. Retirada das sete capas sem cadeia de procedência/licença comprovada.
 
 ### Pendências que permanecem abertas
-- **EL-025 / FCP:** íntegra do Relatório 01/CNIRC, lista final de 300 títulos e critério do quantitativo agregado de 5.165.
+- **EL-025 / FCP:** íntegra do Relatório 01/CNIRC e validação da transcrição pública da lista final de 300 entradas (261 após deduplicação); esclarecer documentalmente a relação entre 5.165 títulos classificados e 5.300 exemplares alegados.
 - **EL-028 / São José dos Campos:** ordem municipal original, resposta administrativa e prova pública de cumprimento.
 - **EL-030 / Londrina 2024:** requerimento, número, destinatário formal, resposta da SME e prova de execução.
 - **EL-032 / Taubaté:** ordem/mensagem original, requerimento e resposta integrais, parecer e comprovantes de redistribuição física.
@@ -277,7 +277,7 @@ A nova rodada recuperou documentos primários adicionais para Canoinhas e refino
 
 - **Canoinhas (EL-036/EL-037):** localizados no SAPL da Câmara o Ofício nº 205/2024/AL e a resposta da Fundação Cultural no Ofício nº 013/2024. A resposta descreve a Mundoteca (569 obras, duas salas separadas por público, classificação por cores, abertura em 19/11/2022, responsável local e um empréstimo registrado), mas esclarece que a Mundoteca era responsabilidade da Secretaria Municipal de Educação. Não identifica os dois livros nem comprova o recebimento/destino dos exemplares. O TCE-SC, por sua vez, registra a informação da prefeita de que os dois livros foram entregues à gestora da Fundação Cultural para análise. A cadeia de custódia continua aberta; as duas fontes não devem ser artificialmente harmonizadas.
 - **MPSC/Canoinhas:** o Diário Oficial de 01/08/2024 comprova que a Notícia de Fato nº 01.2024.00012159-3 entrou em pauta da 1ª Turma Revisora para 07/08/2024. A pauta não substitui a íntegra da decisão revisora.
-- **Palmares (EL-025):** recuperado e conferido o inventário oficial de 9.696 títulos, de 295 páginas, publicado pela FCP em 08/08/2024. A página oficial de downloads do CNIRC lista o inventário, a Política de Acervo e a resposta à Comissão de Cultura, mas não o Relatório Público 01/CNIRC. A petição da OAB na ADPF 918 reproduz trechos do relatório e o identifica como anexo 26, sem conter o anexo. A íntegra do Relatório 01 e a lista nominal dos 5.165 itens permanecem pendentes.
+- **Palmares (EL-025):** recuperado e conferido o inventário oficial de 9.696 títulos, de 295 páginas, publicado pela FCP em 08/08/2024. A página oficial de downloads do CNIRC lista o inventário, a Política de Acervo e a resposta à Comissão de Cultura, mas não o Relatório Público 01/CNIRC. A petição da OAB na ADPF 918 reproduz trechos do relatório e o identifica como anexo 26, sem conter o anexo. A íntegra do Relatório 01 permanece pendente; a lista final de 300 entradas foi recuperada em transcrição pública secundária, com 261 após deduplicação, ainda sem validação contra o original.
 - **Londrina (EL-035):** a CBN e a matéria de Douglas Kuspiosz reproduzida pelo Bonde confirmam levantamento e recolhimento em rede para análise, além da existência de pedido formal. Número SEI, documento integral, quantitativo, parecer e decisão final não localizados.
 - **Taubaté (EL-032):** mantida a distinção entre anúncio de retorno ao uso pedagógico, após análise técnica, e prova de que os exemplares foram efetivamente redistribuídos.
 
