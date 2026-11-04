@@ -123,3 +123,8 @@ A pesquisa desta etapa usou fontes públicas. Não houve protocolo de pedidos de
 | Registro | Documento/fonte recuperada | O que comprova | O que não comprova |
 |---|---|---|---|
 | EL-015 / EL-022–024 — Rondônia | Nota oficial SEDUC (06/02/2020), Diário do MPF nº 161/2021 e tese UnB (2024) | Nota de recuo/encerramento do processo técnico; registro do MPF sobre sindicância separada e recomendação do MP-RO acatada; reprodução acadêmica do memorando | Adendo SEI 10053329 original, íntegra da recomendação do MP-RO e resultado da sindicância administrativa |
+
+
+| Registro | Documento/fonte recuperada | O que comprova | O que não comprova |
+|---|---|---|---|
+| EL-035 — Londrina | Jornal Oficial nº 3630, 09/10/2018, cópia digital assinada pelo Município | Registro de aquisição de “O Bebê Vem com a Cegonha”, Editora Melhoramentos, preço unitário R$ 35,33 | Escola destinatária, circulação em 2026, quantitativo recolhido, parecer ou decisão final |
