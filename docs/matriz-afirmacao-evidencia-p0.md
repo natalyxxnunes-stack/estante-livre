@@ -63,3 +63,18 @@ Nenhum status parcial foi elevado por ausência de resposta ou repetição de bu
 - **EL-030 — Londrina:** localizado [PL 79/2024 oficial](https://www1.cml.pr.gov.br/projetos/2024/PL000792024.pdf), de autoria de Jéssica Ramos Moreno, sobre proibição de livros com conteúdo erótico. É documento distinto, anterior ao requerimento de 26/11/2024 sobre *A Mamãe Vai Ter um Bebê*; não serve como prova do requerimento nem de recolhimento. Status inalterado.
 - **EL-028 — São José dos Campos:** reportagem contemporânea do Sindicato dos Metalúrgicos [afirma que o vereador enviou ofício à Prefeitura](https://www.sindmetalsjc.org.br/noticias/n/6779/prefeitura-de-sao-jose-censura-livro-que-homenageia-mulheres-cientistas); a Folha confirma a cronologia e a retirada [em 21/06/2024](https://www1.folha.uol.com.br/ciencia/2024/06/sao-jose-dos-campos-recolhe-livros-sobre-cientistas-mulheres-apos-queixa-de-vereador.shtml). A ACP do MPSP/Defensoria em 06/09/2024 é reportada pela [Band](https://www.band.com.br/nacional/sp/mpsp-e-defensoria-acionam-prefeitura-de-sao-jose-dos-campos-para-retorno-de-livro-em-escolas). Ofício original e resposta administrativa seguem pendentes.
 - **EL-025 — Palmares:** o Ipea descreve em publicação de 2022 o relatório “Retrato do Acervo” como envolvendo 5,3 mil livros, folhetos e catálogos ([BPS nº 29](https://repositorio.ipea.gov.br/bitstream/11058/11371/1/BPS_29_cultura.pdf)); fonte jornalística reproduz 5.165 e 9.565 ([O Povo](https://www.opovo.com.br/vidaearte/2021/06/18/ia/fundacao-palmares-retira-obras-do-acervo-e-cita--dominacao-marxista--e-sexualizacao-infantil.html)). A diferença de 5.165/5.300 permanece não resolvida. O inventário FCP de 9.696 títulos não substitui o relatório original.
+
+
+## Fechamento consolidado da matriz — 04/11/2026
+
+A matriz foi revista à luz das fontes públicas adicionais descritas em `docs/pesquisa-documental-complementar-2026-11-04.md`.
+
+- **37 registros:** revisão e classificação consolidadas.
+- **10 prioritários:** seis com núcleo factual verificado e quatro parciais.
+- **Cinco registros parcialmente verificados:** EL-025, EL-028, EL-030, EL-032 e EL-035.
+- **Rondônia:** desfecho do inquérito civil do MPF comprovado por diário oficial; Adendo SEI 10053329 e resultado da sindicância estadual seguem pendentes.
+- **Canoinhas:** resultado do recurso da Notícia de Fato 01.2024.00012159-3 comprovado por diário oficial do MPSC; íntegra da decisão e prova de destino dos livros seguem pendentes.
+
+**Critério de status:** nenhuma matéria jornalística, referência bibliográfica, pauta de julgamento ou ausência de resultado de busca foi convertida em documento administrativo original. Os status parciais permanecem parciais. O P0 de auditoria e classificação está encerrado; isso não equivale à verificação integral de todos os registros.
+
+A pesquisa desta etapa usou fontes públicas. Não houve protocolo de pedidos de acesso à informação ou solicitações institucionais em nome da usuária.
