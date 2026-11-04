@@ -1,4 +1,6 @@
-# Dossiê de pesquisa documental — Fundação Cultural Palmares (EL-025 e EL-026)
+# Dossiê de pesquisa documental — Fundação Cultural Palmares
+
+> Atualização de precisão em 04/11/2026: Fontes contemporâneas divergem na unidade de contagem dos 5.165 itens, usando “títulos”, “livros” e “exemplares”. Como o PDF original do Relatório Público 01/CNIRC não abriu nesta consulta, o catálogo adota a expressão neutra “itens” e não afirma se a unidade corresponde a títulos bibliográficos ou cópias físicas. (EL-025 e EL-026)
 
 **Data da rodada:** 3 de novembro de 2026  
 **Escopo:** revisão documental dos episódios de 2021 envolvendo (a) o relatório *Retrato do Acervo* e a classificação de 5.165 itens; (b) a proposta de separar/doar cerca de 300 livros.  
@@ -392,4 +394,4 @@ O relatório técnico da Câmara identifica a Sala 11 como “sala da vergonha (
 
 A Resolução FCP nº 24, de 22/02/2024, publicada em 26/02/2024, aprova a Política de Formação e Desenvolvimento de Coleções e reproduz trecho da decisão judicial da Ação Popular nº 5006660-67.2021.4.02.5117/RJ, que impede movimentação do acervo, exceto consulta local. A resolução é assinada por João Jorge Santos Rodrigues e Flávia de Jesus Costa.
 
-O número de 5.165 títulos é atribuído ao Relatório Público 01/CNIRC, mas a íntegra do relatório e a lista nominal não foram recuperadas. A Nota Informativa da FCP confirma intenção de doar títulos considerados fora da missão institucional, mas não confirma por si só o quantitativo. EL-025 permanece parcialmente verificado quanto ao número.
+O número de 5.165 itens é atribuído ao Relatório Público 01/CNIRC, mas a íntegra do relatório e a lista nominal não foram recuperadas. A Nota Informativa da FCP confirma intenção de doar títulos considerados fora da missão institucional, mas não confirma por si só o quantitativo. EL-025 permanece parcialmente verificado quanto ao número.
