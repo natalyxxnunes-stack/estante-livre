@@ -3079,8 +3079,8 @@
    "resposta_ou_reversao": "Em 20 de julho de 2026, a Vara da Infância e Juventude determinou a restituição dos exemplares no prazo de cinco dias após a intimação e proibiu novas restrições político-ideológicas. A prefeitura não havia confirmado publicamente o cumprimento quando as reportagens foram publicadas.",
    "ato_ou_documento": "Ordem de recolhimento transmitida aos diretores por mensagens de WhatsApp, segundo a apuração judicial divulgada em julho de 2026; não foi localizada ordem municipal escrita ou assinada. A sentença de 20/07/2026, atribuída à juíza Renata Heloísa da Silva Salles, determinou restituição em cinco dias após a intimação e proibiu novas restrições político-ideológicas. A sentença de 20/07/2026 determinou a restituição dos exemplares em cinco dias após a intimação, garantiu consulta, empréstimo e uso pedagógico no Ensino Fundamental II, proibiu novas restrições político-ideológicas e fixou multa diária de R$ 500, limitada inicialmente a R$ 50 mil. Migalhas e RP10 informam que a ação civil pública foi proposta pelo MP-SP e pela Defensoria Pública e que o processo tramita sob segredo de Justiça; a íntegra dos autos e a comprovação de cumprimento não foram recuperadas.",
    "verificado": "Parcialmente",
-   "pendencia": "A ordem municipal original e a identidade de quem a transmitiu continuam sem documento público assinado. O conteúdo da sentença de 20/07/2026 é reproduzido por Migalhas e RP10; o processo tramita sob segredo de Justiça, por isso a íntegra dos autos não está disponível. A comprovação de cumprimento da ordem de restituição não foi recuperada.",
-   "nota": "O livro foi recolhido das salas de leitura da rede municipal em junho de 2024, após a pressão pública do vereador. Segundo a apuração divulgada com base no processo, a ordem de retirada foi transmitida aos diretores por mensagens de WhatsApp, sem justificativa técnico-pedagógica contemporânea; não foi localizada ordem municipal escrita ou assinada. Em 2024, uma liminar determinou a redistribuição da obra; em outubro de 2024, o relator Sulaiman Miguel Neto, do TJSP, suspendeu a liminar a pedido da prefeitura. Em 20 de julho de 2026, a juíza Renata Heloísa da Silva Salles, da Vara da Infância e Juventude, determinou a restituição dos exemplares no prazo de cinco dias após a intimação e proibiu novas restrições político-ideológicas. A íntegra da decisão e o cumprimento não foram confirmados publicamente porque o processo tramita sob segredo de Justiça. A assinatura da juíza refere-se à decisão judicial de 2026, não à ordem municipal original.",
+   "pendencia": "O ofício do vereador ao prefeito e ao secretário de Educação é descrito por fonte local, mas sua cópia assinada não foi localizada. A Prefeitura confirmou em nota que recolheu os exemplares de todas as unidades para reavaliação técnica; a ordem operacional aos diretores foi transmitida por WhatsApp, sem documento administrativo escrito localizado. A sentença de 20/07/2026 é reproduzida por veículos de imprensa; o processo tramita sob segredo de Justiça, e a comprovação de cumprimento da ordem de restituição não foi recuperada.",
+   "nota": "O livro foi recolhido das salas de leitura da rede municipal em junho de 2024, após a pressão pública do vereador. Em 11/06/2024, o vereador protocolou ofício ao prefeito Anderson Farias e ao secretário de Educação e Cidadania Jhonis Rodrigues, pedindo o recolhimento da obra e questionando quem a havia distribuído; a cópia do ofício não foi localizada. Em 12/06/2024, a Prefeitura recolheu os exemplares de todas as unidades e informou, em nota pública, que a medida era para reavaliação pela equipe técnica da Secretaria. Segundo a apuração divulgada com base na ação civil pública, a ordem operacional aos diretores foi transmitida por mensagens de WhatsApp, sem justificativa técnico-pedagógica contemporânea; não foi localizada ordem municipal escrita ou assinada. Em 2024, uma liminar determinou a redistribuição da obra; em outubro de 2024, o relator Sulaiman Miguel Neto, do TJSP, suspendeu a liminar a pedido da prefeitura. Em 20 de julho de 2026, a juíza Renata Heloísa da Silva Salles, da Vara da Infância e Juventude, determinou a restituição dos exemplares no prazo de cinco dias após a intimação e proibiu novas restrições político-ideológicas. A íntegra da decisão e o cumprimento não foram confirmados publicamente porque o processo tramita sob segredo de Justiça. A assinatura da juíza refere-se à decisão judicial de 2026, não à ordem municipal original.",
    "agentes": [
     {
      "nome": "Thomaz Henrique",
@@ -3160,6 +3160,20 @@
      "titulo": "Justiça vê censura e manda devolver livro sobre Marielle Franco às escolas de São José dos Campos",
      "data": "2026-07-29",
      "url": "https://www.rp10.com.br/2026/07/justica-ve-censura-e-manda-devolver-livro-sobre-marielle-franco-as-escolas-de-sao-jose-dos-campos/"
+    },
+    {
+     "veiculo": "Spriomais",
+     "tipo": "S2",
+     "titulo": "Prefeitura confirma recolhimento de todas as unidades e publica justificativa de reavaliação técnica; relata ofício do vereador ao prefeito e ao secretário",
+     "data": "2024-06-13",
+     "url": "https://spriomais.com.br/2024/06/13/meninas-sonhadoras-mulheres-cientistas-prefeitura-recolhe-livro-de-escolas-para-avaliar-conteudo-em-sjc/"
+    },
+    {
+     "veiculo": "O Vale / Sampi",
+     "tipo": "S2",
+     "titulo": "MP-SP e Defensoria ajuízam ação civil pública; reportagem descreve recolhimento por WhatsApp e ausência de justificativa técnica",
+     "data": "2024-09-09",
+     "url": "https://sampi.net.br/ovale/noticias/amp/2855382/vale-do-paraiba/2024/09/mp-e-defensoria-apontam-censura-em-recolhimento-de-livro-em-sjc"
     }
    ]
   },
