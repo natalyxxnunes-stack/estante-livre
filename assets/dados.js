@@ -1318,6 +1318,215 @@ const AGENTES = {
  "flavia-de-jesus-costa":{nome:"Flávia de Jesus Costa", tipo:"Pessoa"},
 };
 
+/* Contexto partidário temporal. Não equivale a atribuição de autoria ou responsabilidade.
+   Cada linha explicita a cobertura temporal e as fontes que sustentam a afirmação. */
+const CONTEXTO_PARTIDARIO = [
+  {
+    "p": "Eduardo Leite",
+    "e": "RS-2024",
+    "party": "PSDB em 2024; PSD desde 09/05/2025",
+    "cover": "PSDB no episódio de 2024; mudança posterior documentada pelo próprio PSD.",
+    "status": "Confirmado para 2024",
+    "urls": [
+      "https://psd.org.br/noticias/governador-eduardo-leite-assina-sua-filiacao-ao-psd/",
+      "https://noticias.uol.com.br/politica/ultimas-noticias/2025/05/09/eduardo-leite-se-filia-ao-psd-de-kassab.ghtm"
+    ]
+  },
+  {
+    "p": "Eduardo Riedel",
+    "e": "MS-2024",
+    "party": "PSDB em 2024; PP em agosto de 2025",
+    "cover": "Fontes divergem sobre a data da ficha ao PP: 15/08 e 19/08/2025. Não publicar dia exato.",
+    "status": "Confirmado em 2024; data da mudança divergente",
+    "urls": [
+      "https://www.psdb.org.br/ms/conheca-nossos-representantes/governador/",
+      "https://correiodoestado.com.br/politica/eduardo-riedel-ja-se-filiou-ao-pp-e-deve-ter-cargo-na-executiva/453017/",
+      "https://noticias.uol.com.br/ultimas-noticias/agencia-estado/2025/08/19/ultimo-governador-do-psdb-eduardo-riedel-do-ms-assina-filiacao-ao-pp.amp.htm"
+    ]
+  },
+  {
+    "p": "Ratinho Júnior",
+    "e": "PR-2024",
+    "party": "PSD desde 10/03/2016",
+    "cover": "Ficha de filiação divulgada pelo próprio PSD; TSE o identifica como PSD na eleição de 2022.",
+    "status": "Confirmado até 2022; não extrapolar",
+    "urls": [
+      "https://psd.org.br/noticias/17401/",
+      "https://www.tse.jus.br/comunicacao/noticias/2022/Outubro/ratinho-junior-psd-se-reelege-governador-do-parana"
+    ]
+  },
+  {
+    "p": "Ronaldo Caiado",
+    "e": "GO-2024",
+    "party": "DEM no mandato 2019–2022; União Brasil em 2023–2026; PSD desde jan/2026",
+    "cover": "Biografia oficial da Câmara discrimina os mandatos; TSE registra a fusão DEM/PSL.",
+    "status": "União Brasil em 2024",
+    "urls": [
+      "https://www.camara.leg.br/deputados/74813/biografia",
+      "https://www.tse.jus.br/partidos/partidos-registrados-no-tse/registrados-no-tse",
+      "https://www1.folha.uol.com.br/poder/2026/01/caiado-deixa-uniao-brasil-e-se-filia-ao-psd-de-kassab.shtml"
+    ]
+  },
+  {
+    "p": "Jorginho Mello",
+    "e": "SC-2023",
+    "party": "PL desde 2019",
+    "cover": "Câmara registra mandato de senador pelo PL desde 2019; ALESC registra trajetória. Dia exato da filiação não localizado.",
+    "status": "PL sustentado; dia exato não confirmado",
+    "urls": [
+      "https://www.camara.leg.br/deputados/160509/biografia",
+      "https://memoriapolitica.alesc.sc.gov.br/biografia/514-Jorginho_Mello",
+      "https://noticias.uol.com.br/eleicoes/2022/10/30/santa-catarina-jorginho-mello-e-eleito-governador-em-2-turno.htm"
+    ]
+  },
+  {
+    "p": "Marcos Rocha",
+    "e": "RO-2020",
+    "party": "PSL na eleição de 2018 e início do mandato em 2019",
+    "cover": "PGE-RO confirma eleição pelo PSL e posse; não equivale a certidão individual para cada dia de 2020.",
+    "status": "Contexto forte; filiação diária não comprovada",
+    "urls": [
+      "https://pge.ro.gov.br/2021/01/04/estado-de-rondonia-completa-39-anos-concretizando-sonhos-acalentados-desde-1960/"
+    ]
+  },
+  {
+    "p": "Anderson Farias",
+    "e": "SJC-2024",
+    "party": "PSD desde 18/01/2022",
+    "cover": "Diretório estadual do PSD informa assinatura da ficha nessa data.",
+    "status": "Filiação datada por fonte partidária",
+    "urls": [
+      "https://psd-sp.org.br/noticias/prefeito-de-sao-jose-dos-campos-se-filia-ao-psd/"
+    ]
+  },
+  {
+    "p": "Marcelo Belinati",
+    "e": "LON-2024",
+    "party": "PP nas eleições de 2017 e 2021; mandato 2021–2024",
+    "cover": "Perfil oficial de Londrina registra eleição/mandato; não inferir autoria.",
+    "status": "Contexto institucional",
+    "urls": [
+      "https://repositorio.londrina.pr.gov.br/index.php/menu-planejamento/gpi/perfil-de-londrina-2025/68692-1-1-1-4/file"
+    ]
+  },
+  {
+    "p": "Sérgio Victor",
+    "e": "SJC-2025",
+    "party": "Novo na eleição de 2024",
+    "cover": "Registro eleitoral confirma candidatura; posse como prefeito em janeiro de 2025.",
+    "status": "Candidatura confirmada",
+    "urls": [
+      "https://www1.folha.uol.com.br/poder/eleicoes/candidatos/2024/sp/prefeito/sergio-victor-250001928721.shtml"
+    ]
+  },
+  {
+    "p": "Sérgio Motta",
+    "e": "SC-2024",
+    "party": "Partido registrado pela ALESC na 20ª Legislatura (2023–2027)",
+    "cover": "Memória Política da ALESC cobre a legislatura que inclui 2024.",
+    "status": "Registro legislativo contemporâneo",
+    "urls": [
+      "https://memoriapolitica.alesc.sc.gov.br/biografia/1008-Sergio_Motta"
+    ]
+  },
+  {
+    "p": "Jéssica Ramos Moreno",
+    "e": "LON-2024",
+    "party": "PP na candidatura municipal de 2024",
+    "cover": "Registro eleitoral comprova legenda na candidatura, não certidão de filiação em outra data.",
+    "status": "Candidatura confirmada; data do requerimento não fechada",
+    "urls": [
+      "https://www1.folha.uol.com.br/poder/eleicoes/candidatos/2024/pr/vereador/jessicao-160002026792.shtml"
+    ]
+  },
+  {
+    "p": "Amauri Ribeiro",
+    "e": "GO-2024",
+    "party": "União Brasil na 20ª Legislatura até 02/04/2026; PL desde 03/04/2026",
+    "cover": "Perfil biográfico oficial da Alego registra histórico por legislatura. Notícia de gabinete posterior não prova pressão anterior.",
+    "status": "União Brasil em 2024; autoria não demonstrada",
+    "urls": [
+      "https://portal.al.go.leg.br/deputados/perfil-biografico/137",
+      "https://portal.al.go.leg.br/noticias-dos-gabinetes/143079/amauri-ribeiro-lidera-movimento-para-retirada-de-livro-com-conteudo-pornografico-que-estava-sendo-usado-em-escolas-de-goias"
+    ]
+  },
+  {
+    "p": "Rinaldo Modesto",
+    "e": "MS-2024",
+    "party": "Podemos na 12ª Legislatura (2023–2027)",
+    "cover": "Lista oficial da ALEMS, com fonte declarada TRE-MS, cobre março de 2024.",
+    "status": "Confirmado para o episódio",
+    "urls": [
+      "https://al.ms.gov.br/Paginas/783/12-legislatura",
+      "https://al.ms.gov.br/Noticias/140152/b-ordem-do-dia-b-dia-do-atleta-e-aprovado-e-vai-a-sancao"
+    ]
+  },
+  {
+    "p": "Thomaz Henrique",
+    "e": "SJC-2024",
+    "party": "PL desde 04/03/2024",
+    "cover": "Reportagem contemporânea atribui a data ao próprio vereador; antecede o episódio de 04/06/2024.",
+    "status": "Declaração pública contemporânea",
+    "urls": [
+      "https://portalaquivale.com.br/thomaz-henrique-filia-se-ao-pl",
+      "https://www.meon.com.br/noticias/vale-do-paraiba-regiao/sjc-apos-deixar-o-novo-vereador-thomaz-henrique-entra-no-pl"
+    ]
+  },
+  {
+    "p": "Gustavo Gayer",
+    "e": "DF-2023",
+    "party": "PL na Câmara na legislatura 2023–2027",
+    "cover": "Perfil institucional da Câmara cobre o período parlamentar.",
+    "status": "Registro institucional contemporâneo",
+    "urls": [
+      "https://www.camara.leg.br/deputados/220568?ano=2023"
+    ]
+  },
+  {
+    "p": "Zelinda Pastora",
+    "e": "TAU-2025",
+    "party": "PRD documentado em 06/03/2025",
+    "cover": "Documento da Câmara assinado nessa data; pedido informal ao secretário ocorreu em 2025 sem dia identificado.",
+    "status": "Partido no dia do pedido não determinado",
+    "urls": [
+      "https://www.camarataubate.sp.gov.br/DownloadServlet?id=boylt7l7ectu0yrvyxisrv8e6rkna9rj",
+      "https://sampi.net.br/ovale/noticias/2972973/sessao-extra/2026/04/livro-sobre-menina-com-duas-maes-e-retirado-de-escolas-em-taubate"
+    ]
+  },
+  {
+    "p": "Leonel Camasão",
+    "e": "SC-2023",
+    "party": "PSOL na candidatura de 2024",
+    "cover": "Resultado oficial do TRE-SC comprova legenda na eleição; não estender a outros períodos.",
+    "status": "Candidatura confirmada",
+    "urls": [
+      "https://apps.tre-sc.jus.br/site/fileadmin/arquivos/eleicoes/eleicoes2024/resultados_turno_1/votacao_secao/pdfs/VotSecao_81051_50500.pdf"
+    ]
+  },
+  {
+    "p": "Lia Nogueira",
+    "e": "MS-2024",
+    "party": "PSDB desde 2022; PSDB na 12ª Legislatura (2023–2027)",
+    "cover": "Perfil oficial da ALEMS confirma filiação e partido na legislatura.",
+    "status": "Confirmado para 2024",
+    "urls": [
+      "https://al.ms.gov.br/Deputados/Visualizar/1045",
+      "https://al.ms.gov.br/Paginas/783/12-legislatura"
+    ]
+  },
+  {
+    "p": "Clayton Silva",
+    "e": "LIM-2019",
+    "party": "PSC em novembro de 2019; PTC desde abril de 2020",
+    "cover": "Câmara de Limeira confirma PSC em 29/11/2019; fonte local noticia mudança em abril de 2020. Requerimento de 2019 pedia informações, não retirada.",
+    "status": "Temporalmente sustentado; papel corrigido",
+    "urls": [
+      "https://www.limeira.sp.leg.br/noticias/view/2019-11-29_camara-cassa-mandato-do-vereador-clayton-silva-por-falta-de-decoro",
+      "https://elimeira.com.br/noticias/limeira/seis-vereadores-de-limeira-mudaram-de-partido/"
+    ]
+  }
+];
+
 /* Papel de cada agente em cada ato. cargo = cargo na data do ato.
    atribuido: true quando a fonte atribui o papel sem documento assinado que o comprove. */
 const TIPOS_PAPEL = ["Pressão","Pedido","Destinatário do pedido","Decisão","Assinatura","Execução","Denúncia ou fiscalização","Resposta ou reversão"];
