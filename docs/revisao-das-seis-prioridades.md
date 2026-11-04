@@ -1,5 +1,7 @@
 # Revisão das seis prioridades pendentes — Estante Livre
 
+> **Nota de atualização — 04/11/2026:** este documento registra a rodada de 02/11 e foi atualizado apenas em seus indicadores. Para o status factual e operacional vigente, prevalece o [Fechamento P0 de 04/11/2026](fechamento-p0.md).
+
 **Data:** 2 de novembro de 2026  
 **Branch examinada:** `feat/estante-livre-auditoria-profissional`  
 **PR principal:** [#5](https://github.com/natalyxxnunes-stack/estante-livre/pull/5)
