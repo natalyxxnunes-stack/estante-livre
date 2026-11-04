@@ -15,7 +15,7 @@
 | EL-032 — retirada em Taubaté | OVALE/Sampi, 10/04, 16/04 e 14/07/2026 | Zelinda atribui a Hélcio uma mensagem de recolhimento; a resposta do prefeito descreve encaminhamento geral de parte dos livros do programa para análise; em julho, parecer favorável ao uso nas turmas adequadas | Mensagem/ordem original, requerimento e resposta assinados, parecer integral e redistribuição física |
 | EL-033 — Funap | Folha de S.Paulo, fevereiro de 2020 | Henrique Pereira de Souza Neto é identificado como decisor atribuído; Reginaldo Caetano da Silva como remetente de mensagem posterior | Mensagem original, ata e distribuição dos exemplares |
 | EL-035 — pedido de providências em Londrina (2026) | Folha de Londrina e errata; CBN; relatório OGPL | A iniciativa foi atribuída à Gerência de Ensino Fundamental, não à direção da escola; o sistema tem alta proporção de processos restritos | Número SEI, pedido, despacho, signatários e decisão final |
-| EL-036/37 — livros da Mundoteca em Canoinhas | Requerimento 149/2024; decisão TCE-SC GCS/GSS-861/2024; relatório DGE-328/2024 | TCE concluiu que os livros não foram jogados no lixo e estavam em poder da Fundação Cultural para análise | Resposta da prefeita e fotos sob sigilo parcial; recebedor nominal, recibo, inventário posterior e resultado do MPSC |
+| EL-036/37 — livros da Mundoteca em Canoinhas | PL municipal 059/2023 e justificativa assinada pela prefeita; Requerimento 149/2024; decisão TCE-SC GCS/GSS-861/2024; relatório DGE-328/2024 | O PL comprova a autorização para o Município receber o acervo da Mundoteca; TCE concluiu que os dois títulos não foram jogados no lixo e estavam em poder da Fundação Cultural para análise | O PL não é recibo de entrega dos exemplares específicos; faltam recebedor nominal, recibo, inventário/localização atual e resultado do MPSC |
 
 ## Regras de inferência aplicadas
 
@@ -25,3 +25,6 @@
 4. Uma decisão judicial posterior não transforma o magistrado em autor da medida administrativa anterior.
 5. Ausência de signatário em fonte pública deve permanecer como lacuna, não ser preenchida por cargo ou proximidade temporal.
 6. Um processo não deve ser presumido público quando o portal ou o órgão registra restrição; deve-se identificar a base legal e a parte efetivamente acessível.
+
+
+**Fonte primária adicional (Canoinhas):** [PL nº 059/2023 e justificativa da prefeita no SAPL](https://sapl.canoinhas.sc.leg.br/media/sapl/public/documentoacessorio/2023/26055/pl_059_2023_.pdf).
