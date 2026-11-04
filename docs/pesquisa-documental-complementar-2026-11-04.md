@@ -572,3 +572,59 @@ A pesquisa desta etapa foi realizada em fontes públicas. Nenhum pedido de LAI, 
 A decisão editorial é **encerrar a etapa P0 de auditoria e pesquisa pública**, preservando as lacunas como pendências documentais abertas. Não se declara que todos os documentos originais foram encontrados, que todos os exemplares tiveram destino conhecido ou que todos os registros estão integralmente verificados. A busca pública adicional só deverá ser reaberta diante de nova fonte, novo identificador, publicação ou documento verificável — não por repetição indefinida das mesmas consultas.
 
 **Status final desta etapa:** P0 de auditoria, classificação, rastreabilidade e mitigação de direitos encerrado. Recuperação documental integral não concluída nos casos listados acima. Nenhuma alteração de status parcial foi feita por inferência.
+
+
+## Adendo de pesquisa pública — 04/11/2026 (rodada complementar)
+
+### Canoinhas — documentos primários recuperados
+
+A consulta ao SAPL da Câmara Municipal de Canoinhas recuperou a cadeia documental do Requerimento nº 149/2024, sem necessidade de contato institucional:
+
+- Registro e texto original do Requerimento nº 149/2024, apresentado em 16/04/2024. O requerimento foi assinado por Tati Carvalho, Wilmar Sudoski, Maurício Zimmermann, Willian Godoy, Adilson Steidel, Professor Osmar, André Flenik e Chico Mineiro. O texto pede revisão e reorganização da disposição dos livros, separação por público/faixa etária, identificação do responsável e dados de entrega/empréstimo. Não pede expressamente a retirada dos dois títulos específicos.
+- Ofício nº 205/2024/AL, de 17/04/2024, que encaminha o requerimento à prefeita Juliana Maciel Hoppe e ao coordenador de biblioteca Ryan Pablo Klengues.
+- Ofício nº 013/2024 da Fundação Cultural Helmy Wendt Mayer, de 14/05/2024, resposta ao requerimento. A Fundação esclarece que a Mundoteca era de responsabilidade da Secretaria Municipal de Educação e que Ryan Pablo Klengues era responsável pela Biblioteca Municipal, não pela Mundoteca. Informa que a unidade de Marcílio Dias tinha 569 obras, duas salas (infantil e juvenil/adulto), classificação por cores e estava aberta desde 19/11/2022. Identifica Renilda Mazurek como funcionária atuante no espaço e registra apenas um empréstimo no caderno: retirada em 15/03 e devolução em 14/04/2024.
+- A resposta da Fundação não identifica os dois títulos do episódio, não apresenta inventário nominal do acervo e não esclarece recebimento, guarda ou destinação dos exemplares.
+
+A resposta deve ser cruzada com a decisão singular GCS/GSS-861/2024 do TCE-SC no @LEV 24/80041829: a decisão registra que a prefeita informou ao Tribunal que havia um exemplar de cada título e que os dois livros tinham sido entregues à gestora da Fundação Cultural para análise de destinação. O TCE concluiu que não foram efetivamente jogados no lixo e que estavam em poder da Fundação Cultural. A documentação pública do TCE, contudo, não inclui a resposta da prefeita nem as fotos das fls. 14–32, cujo sigilo parcial foi mantido. Assim, a cadeia de custódia melhorou, mas não está fechada: a resposta da Fundação sobre a competência administrativa da Mundoteca e a informação ao TCE sobre entrega dos exemplares à gestora precisam ser preservadas lado a lado, sem apagar a aparente tensão entre elas.
+
+O Diário Oficial do MPSC de 01/08/2024 confirma que a Notícia de Fato nº 01.2024.00012159-3, da 1ª Promotoria de Canoinhas, foi incluída em pauta da 1ª Turma Revisora do Conselho Superior para 07/08/2024. A pauta não comprova, por si, o teor da decisão revisora; a íntegra da deliberação permanece uma lacuna nesta rodada.
+
+Fontes primárias:
+- SAPL — registro do Requerimento nº 149/2024: https://sapl.canoinhas.sc.leg.br/materia/15355
+- Documentos acessórios do requerimento: https://sapl.canoinhas.sc.leg.br/materia/15355/documentoacessorio
+- Ofício nº 205/2024: https://sapl.canoinhas.sc.leg.br/media/sapl/public/documentoacessorio/2024/28163/of_205.pdf
+- Ofício nº 013/2024: https://sapl.canoinhas.sc.leg.br/media/sapl/public/documentoacessorio/2024/28411/r_149.pdf
+- Diário Oficial MPSC nº 3692: https://documentos.mpsc.mp.br/portal/Conteudo/publicacoes/do_mpsc_2024-08-01.pdf
+- Decisão TCE-SC e Relatório DGE-328/2024: https://consulta.tce.sc.gov.br/Diario/dotc-e2024-07-08.pdf
+
+### Palmares — inventário integral e limites do repositório oficial
+
+Foi reaberta a página oficial de downloads do CNIRC, atualizada em 14/08/2024. Ela lista o Inventário dos Livros da Fundação Cultural Palmares, a Política de Acervo e a resposta à Comissão de Cultura, mas não lista o Relatório Público 01/CNIRC (“Retrato do Acervo”). Isso é um indício verificável de que o relatório original não está disponível no índice público atual — não prova que nunca tenha sido publicado.
+
+O inventário oficial foi aberto diretamente e contém 295 páginas, com 9.696 registros de títulos e campos de título, autor, editora, ano e quantidade. O próprio documento informa que o levantamento foi realizado entre julho e outubro de 2021 e revisado pelo bibliotecário Henrique Bezerra de Araújo. Ele permite examinar a composição do acervo em 2021, mas não substitui a lista dos 5.165 títulos/itens classificados pelo relatório CNIRC como fora do escopo, nem permite presumir quais itens teriam sido selecionados para descarte.
+
+A Política de Formação e Desenvolvimento de Acervo, publicada em 2023, descreve critérios institucionais de avaliação, remanejamento e descarte. É documento normativo útil para comparar a política formal com as justificativas do Relatório 01, mas não é o relatório de triagem de 2021.
+
+A página oficial da Câmara dos Deputados contém relatórios da diligência parlamentar de 2021. O PDF de 60 páginas recuperado nesta rodada é o diagnóstico técnico do estado de conservação e das áreas de guarda, elaborado por conservadoras-restauradoras da Câmara; não deve ser confundido com o Relatório Público 01/CNIRC. A petição da OAB na ADPF 918, de 02/12/2021, reproduz trechos do Relatório 01, descreve sua metodologia e o identifica como documento anexo 26, mas o arquivo da petição não inclui a íntegra desse anexo.
+
+Conclusão: a íntegra do Relatório 01/CNIRC e a lista nominal dos 5.165 itens continuam não recuperadas. O inventário oficial de 9.696 títulos está recuperado e deve ser tratado como base distinta.
+
+Fontes:
+- Página oficial de downloads do CNIRC: https://www.gov.br/palmares/pt-br/centrais-de-conteudo/publicacoes/download-1
+- Inventário bibliográfico oficial de 9.696 títulos: https://www.gov.br/palmares/pt-br/centrais-de-conteudo/publicacoes/lista-de-livros-atualizada-8-8-2024-1.pdf
+- Política de Acervo: https://www.gov.br/palmares/pt-br/centrais-de-conteudo/publicacoes/PolticadeFormaoeDesenvolvimentodeAcervoFundaoCulturalPalmares06072023.pdf
+- Diagnóstico técnico da Câmara dos Deputados: https://www2.camara.leg.br/atividade-legislativa/comissoes/comissoes-permanentes/ccult/outros-documentos/relatorios-sobre-a-diligencia-na-fundacao-palmares-2021/relatorio-final-fundacao-cultural-palmares/view
+- Petição OAB na ADPF 918, que reproduz trechos e relaciona o relatório como anexo 26: https://s.oab.org.br/arquivos/2021/12/ba767c45-39d7-4c44-95c0-7f07d8d425ba.pdf
+
+### Londrina e Taubaté — atualização do estado das lacunas
+
+**Londrina / EL-035 — “O bebê vem com a cegonha?!?”:** a CBN Londrina, em 12/03/2026, informa que a SME iniciou levantamento em toda a rede para localizar e retirar exemplares para análise pedagógica. A matéria de Douglas Kuspiosz publicada pela Folha e reproduzida pelo Bonde informa que o pedido de providências foi formal e que o jornal teve acesso ao documento; descreve os fundamentos e trechos do livro. Isso reforça a existência do pedido e da ação da SME, mas o número SEI, a íntegra do pedido, o quantitativo recolhido, o parecer técnico e a decisão final continuam sem fonte pública localizada. Não atribuir signatários individuais sem o documento original.
+
+**Taubaté / EL-032 — “Pipoca e Picolé”:** a busca reiterou a existência de requerimento aprovado em 10/03/2026 e a resposta pública do prefeito reproduzida por O Vale; em 14/07/2026, a Prefeitura informou que a obra voltaria ao uso pedagógico em turmas consideradas adequadas após análise da Coordenação de Área e da Equipe de Práticas Pedagógicas da Educação Infantil. Não foi localizado o inteiro teor público do requerimento, o parecer técnico nem prova de redistribuição efetiva dos exemplares. A distinção entre anúncio de retorno e execução física deve permanecer.
+
+### Resultado desta rodada
+
+- Canoinhas: recuperados dois documentos oficiais acessórios que não estavam incorporados à matriz — ofício de encaminhamento e resposta da Fundação Cultural.
+- Palmares: confirmada a disponibilidade do inventário integral de 9.696 títulos e mapeado o conteúdo efetivo do índice oficial do CNIRC; o Relatório 01 e a lista nominal de 5.165 itens continuam faltantes.
+- Londrina e Taubaté: reforçadas as evidências secundárias independentes; sem recuperação dos atos administrativos originais e dos comprovantes de execução.
+- Nenhum pedido de acesso à informação, contato com órgão ou solicitação a terceiros foi feito.
