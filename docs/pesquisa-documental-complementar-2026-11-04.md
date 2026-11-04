@@ -321,3 +321,47 @@ A solicitação da resposta executiva também pode ser dirigida à Prefeitura/Se
 Novas consultas indexadas combinando o título *Pipoca e Picolé*, Isaac do Carmo, Talita, a data de 10/03/2026 e o domínio Câmara Sem Papel não localizaram o requerimento específico. A consulta pública por autor/ano permanece a melhor rota identificada, mas a ferramenta de pesquisa não conseguiu percorrer a listagem dinâmica completa e abrir os anexos.
 
 **Balanço:** Londrina tem agora canal normativo de acesso à informação documentado e amostra dos padrões dos documentos oficiais; Taubaté tem o banco legislativo por autor/ano identificado, mas o requerimento não foi individualizado. Nenhum status de verificação foi elevado.
+
+
+## 12. Taubaté — extração mais completa da resposta do Executivo e nova tentativa de individualizar o requerimento
+
+### 12.1 Conteúdo adicional verificável da resposta, preservado em reportagem contemporânea
+
+A reabertura da reportagem de OVALE de 10/04/2026 permitiu registrar com mais precisão os trechos atribuídos à resposta do prefeito Sérgio Victor e à nota posterior da Prefeitura. A matéria informa que o requerimento de Isaac do Carmo e Talita foi aprovado em 10/03/2026, após a fala de Zelinda Pastora em 03/03/2026, e que solicitou informações sobre a retirada do livro e os gastos com sua aquisição.
+
+A reportagem reproduz os seguintes pontos da resposta:
+- o Município teria adquirido a obra em 2024, como parte de kit destinado à segunda etapa da educação infantil;
+- foram adquiridos 3.280 kits para alunos e 116 para professores, totalizando R$ 1,216 milhão;
+- ao final de 2025, parte dos livros do Programa Minha Biblioteca teria sido direcionada à Secretaria de Educação para análise técnica, no contexto do planejamento do ano letivo de 2026;
+- os exemplares encaminhados à Secretaria seriam subsídio para análise da equipe competente, e o parecer técnico sobre a continuidade do programa ainda estaria em elaboração;
+- a nota posterior da Prefeitura afirma que a Secretaria solicitou às unidades escolares que os exemplares fossem encaminhados à Equipe de Práticas Pedagógicas para análise, e que os materiais permaneciam em avaliação.
+
+Fonte:
+- [OVALE, 10/04/2026 — reportagem com trechos da resposta e nota posterior da Prefeitura](https://sampi.net.br/ovale/noticias/2972973/sessao-extra/2026/04/livro-sobre-menina-com-duas-maes-e-retirado-de-escolas-em-taubate).
+
+**Classificação probatória:** isso é transcrição jornalística de trechos atribuídos a uma resposta oficial e de uma nota municipal, não cópia do ofício assinado, do requerimento ou do parecer técnico. Pode sustentar o que foi publicamente declarado pelo Executivo, com atribuição explícita à reportagem; não sustenta a autenticidade formal ou a íntegra dos documentos subjacentes.
+
+### 12.2 Individualização do requerimento: resultado negativo
+
+Foram pesquisadas novamente as expressões distintivas reproduzidas na matéria — “decisões administrativas que determinam o recolhimento de livros”, “representação de diferentes arranjos familiares” — em conjunto com o domínio da Câmara e o repositório de boletins legislativos. A busca indexada não retornou o PDF ou número do requerimento.
+
+A página institucional da 46ª Sessão Ordinária confirma a data de 10/03/2026, mas publica a ordem do dia, que contém itens de projetos em votação; não é o registro integral do expediente e não deve ser tratada como lista exaustiva de requerimentos apresentados/aprovados.
+
+### 12.3 Efeito sobre EL-032
+
+A evidência jornalística contemporânea permite detalhar melhor:
+- objeto do requerimento;
+- autores e data de aprovação;
+- conteúdo declarado da resposta;
+- números de aquisição e valor global;
+- estágio de análise técnica descrito pelo Executivo.
+
+Continuam ausentes:
+- número e cópia integral assinada do requerimento;
+- ofício de encaminhamento;
+- resposta integral do Executivo e seus anexos;
+- parecer técnico final;
+- relação de unidades escolares/exemplares encaminhados;
+- comprovantes de retorno/redistribuição dos livros.
+
+**Status:** EL-032 permanece parcial. O conteúdo atribuído à resposta não deve ser rotulado como documento primário recuperado.
