@@ -707,3 +707,12 @@ Fontes:
 - SEDUC/RO: https://rondonia.ro.gov.br/livros-citados-em-lista-sao-classicos-da-literatura-e-nao-ha-ordem-de-recolhimento-afirma-seduc/
 - Diário do MPF nº 161/2021: https://transparencia.mpf.mp.br/conteudo/diarios-e-boletins/diario-eletronico-dmpf-e/2021/DMPF-EXTRAJUDICIAL-2021-08-30.pdf
 - Tese UnB (2024): https://www.repositorio.unb.br/bitstream/10482/48294/1/ThayllanyFerreiraAndrade_TESE.pdf
+
+
+### Londrina — aquisição de “O bebê vem com a cegonha?!” em 2018
+
+Foi localizado o Jornal Oficial do Município de Londrina nº 3630, de 09/10/2018, em cópia digital assinada pelo Município. A relação de livros adquiridos inclui “O Bebê Vem com a Cegonha”, da Editora Melhoramentos, com preço unitário registrado de R$ 35,33. A matéria da Folha de 11/03/2026 também informa aquisição municipal em 2009 e nova compra em 2018; o exemplar de 2018 agora tem suporte documental direto no Jornal Oficial.
+
+O documento comprova aquisição/registro de compra em 2018, mas não identifica a escola que recebeu o exemplar, não prova que ele estava em circulação em 2026 e não substitui o pedido de providências, o levantamento da SME ou o parecer técnico do recolhimento de 2026.
+
+Fonte: https://www.luhu.org.br/uploads/editor/jornal_3630_assinado_LEI12765_3N2xMmTDBLqGYuc.pdf (Jornal Oficial nº 3630, 09/10/2018, página 16).
