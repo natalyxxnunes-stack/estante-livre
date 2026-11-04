@@ -164,9 +164,32 @@ A revisão de direitos foi encerrada por medida preventiva: as sete imagens loca
 
 ### 10.8 Resultado consolidado
 
-- Os dez registros originalmente sinalizados foram revistos: cinco têm núcleo factual verificado e cinco permanecem parcialmente verificados. EL-025, fora dessa lista inicial e incluído na revisão de signatários, também permanece parcial; portanto, são seis registros parcialmente verificados no conjunto total de 37.
+- Os dez registros originalmente sinalizados foram revistos: seis têm núcleo factual verificado (EL-022, EL-023, EL-024, EL-031, EL-036 e EL-037) e quatro permanecem parcialmente verificados (EL-028, EL-030, EL-032 e EL-035). EL-025, fora dessa lista inicial e incluído na revisão de signatários, também permanece parcial; portanto, são cinco registros parcialmente verificados no conjunto total de 37.
 - Os nove alertas de signatário foram classificados sem atribuição indevida de assinatura.
 - Os casos administrativos foram pesquisados em fontes de órgãos públicos, tribunais, sistemas legislativos, imprensa local e repositórios acadêmicos.
 - As pendências restantes estão vinculadas a documentos não recuperados, peças sob sigilo parcial/segredo de Justiça ou falta de identificação pública do processo.
 - Nenhum pedido de acesso foi protocolado em nome da usuária.
 - As sete capas locais não são mais exibidas enquanto não houver procedência e autorização documentadas.
+
+
+### 10.9 São José dos Campos — decisão judicial confirmada em duas fontes
+
+- [Migalhas, 29/07/2026](https://www.migalhas.com.br/quentes/461228/juiza-ve-censura-e-manda-devolver-as-escolas-livro-que-inclui-marielle-franco).
+- [RP10, 29/07/2026](https://www.rp10.com.br/2026/07/justica-ve-censura-e-manda-devolver-livro-sobre-marielle-franco-as-escolas-de-sao-jose-dos-campos/).
+
+As duas reportagens informam que a sentença foi proferida em ação civil pública do MP-SP e da Defensoria Pública. A juíza determinou restituição dos exemplares em cinco dias após intimação, garantia de consulta, empréstimo e uso pedagógico no Ensino Fundamental II, vedação de novas restrições político-ideológicas e multa diária de R$ 500, limitada inicialmente a R$ 50 mil. Ambas registram segredo de Justiça. O conteúdo da sentença é publicamente reproduzido; a íntegra dos autos e a comprovação de cumprimento permanecem indisponíveis.
+
+### 10.10 Distrito Federal — *A bolsa amarela*: classificação encerrada
+
+A [piauí, em 28/07/2026](https://piaui.uol.com.br/web/fabulas-fogueira-livros-infantojuvenis-bolsa-amarela/), informa que o colégio retirou temporariamente o link de uma resenha para avaliação pedagógica, ouviu o capitão Sidemar da Silva Neves e publicou nota oficial afirmando que a atividade estava alinhada ao planejamento, sem prejuízo pedagógico ou direcionamento ideológico. A obra não foi leitura obrigatória nem houve retirada de exemplares. O link não voltou a ser utilizado após o fim da atividade. EL-031 passa a **Verificado**, com a ressalva de que o arquivo original da nota não foi recuperado.
+
+### 10.11 Londrina 2024 — pedido de recolhimento: destinatário divergente nas reportagens
+
+- [Revista Oeste, 04/12/2024](https://www.revistaoeste.com/politica/vereadora-jessicao-exige-recolhimento-de-livro-erotico-encontrado-em-creche-no-parana/).
+- [Brasil Paralelo, 21/02/2025](https://www.brasilparalelo.com.br/noticias/londrina-proibe-livros-com-teor-erotico-em-escolas-municipais).
+
+As reportagens confirmam que Jéssica Ramos Moreno pediu recolhimento após encontrar o livro em creche. A Revista Oeste descreve protocolo na Câmara; Brasil Paralelo descreve requerimento dirigido à SME. Sem a cópia, o destinatário formal permanece indeterminado. A Lei 13.930/2025 é contexto normativo, não prova de execução do pedido específico.
+
+### 10.12 Taubaté — distinção entre relato da vereadora e resposta formal do prefeito
+
+A [reportagem de 10/04/2026](https://sampi.net.br/ovale/noticias/2972973/sessao-extra/2026/04/livro-sobre-menina-com-duas-maes-e-retirado-de-escolas-em-taubate) reproduz a resposta do prefeito: no fim de 2025, parte dos livros do Programa Minha Biblioteca foi encaminhada à SME para análise técnica geral, porque a maior parte dos kits já havia sido distribuída. A nota da Prefeitura dizia que o parecer ainda estava em elaboração. Em paralelo, Zelinda Pastora afirmou que pediu a retirada diretamente ao secretário e viu a mensagem de recolhimento. Em 14/07/2026, a Prefeitura informou parecer favorável ao uso do livro em turmas adequadas. A ordem original, o parecer integral e a redistribuição física continuam sem prova documental pública.
