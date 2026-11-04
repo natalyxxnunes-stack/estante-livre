@@ -121,14 +121,14 @@ const clsEstagio = e => ({"Execução comprovada":"e4","Decisão ou ordem":"e3",
 
 function capaHTML(c,cls){
   const L=(typeof LIVROS!=="undefined"&&LIVROS[obraDe(c)])||{};
-  const img=c.capa?`assets/capas/${esc(c.capa)}.jpg`:L.capaUrl?esc(L.capaUrl):"";
+  const img=L.capaAutorizada===true?(c.capa?`assets/capas/${esc(c.capa)}.jpg`:L.capaUrl?esc(L.capaUrl):""):"";
   const edition=L.capaEdicao||c.editora||"";
   const credit=L.capaCredito||"";
   const source=L.capaFonte||"";
   const note=L.capaNota||"";
   const meta=`<div class="capa-meta">${edition?`<div class="capa-cred">Edição de referência · ${esc(edition)}</div>`:""}${credit?`<div class="capa-cred">Crédito · ${esc(credit)}</div>`:""}${source?`<div class="capa-cred"><a href="${esc(source)}" target="_blank" rel="noopener">Ficha editorial / referência</a></div>`:""}${note?`<div class="capa-nota">${esc(note)}</div>`:""}</div>`;
   if(img)return `<div class="capa ${cls||""}"><img src="${img}" alt="Capa de ${esc(obraDe(c))}" loading="lazy">${meta}</div>`;
-  return `<div class="capa capa-vazia ${cls||""}"><div class="capa-tipografia">${esc(obraDe(c)||"Obra")}</div><div class="capa-cred">Capa não localizada</div>${meta}</div>`;
+  return `<div class="capa capa-vazia ${cls||""}"><div class="capa-tipografia">${esc(obraDe(c)||"Obra")}</div><div class="capa-cred">${L.capaBloqueada?"Imagem não exibida: origem e autorização de reprodução não comprovadas":"Capa não localizada"}</div>${meta}</div>`;
 }
 
 const ROTULOS_FONTE = {B1:"Blog institucional/editorial",P1:"Documento primário",P2:"Documento judicial ou de controle",P3:"Registro institucional",S1:"Reportagem com apuração própria",S2:"Reportagem de cobertura",A1:"Pesquisa acadêmica",O1:"Manifestação de organização",R1:"Reprodução ou republicação"};
