@@ -169,3 +169,36 @@ Nenhum pedido de LAI, Fala.BR, requerimento ou solicitação institucional foi e
 ## Critério de encerramento P0
 
 O P0 documental está **tratado e classificado**: cada registro foi revisto, os nove alertas de signatário foram diferenciados, os cinco núcleos administrativos e institucionais foram pesquisados em múltiplas fontes e as sete imagens sem cadeia de direitos foram retiradas. Os documentos que não puderam ser recuperados permanecem explicitamente pendentes, com razão e efeito editorial registrados. Não há base para declarar que todos os documentos originais foram encontrados.
+
+
+## 16. Encerramento operacional da etapa P0 — 04/11/2026
+
+### Decisão de fechamento
+
+A etapa de **pesquisa, revisão de classificação, rastreabilidade documental e mitigação de direitos** do P0 está concluída. Isso não significa que todos os fatos de todos os registros tenham documentação primária integral. Os documentos não recuperados foram convertidos em pendências externas individualizadas, com órgãos custodiantes prováveis, identificadores conhecidos e canais formais de acesso. Não serão tratados como resolvidos por inferência.
+
+### Entregas P0 concluídas
+- Revisão dos 37 registros e consolidação das classificações.
+- Revisão dos dez registros prioritários: seis com núcleo factual verificado e quatro parciais.
+- Tratamento dos nove alertas de signatário, sem atribuir autoria ou assinatura por cargo, proximidade ou inferência.
+- Ampliação documental por fontes oficiais, tribunais de contas, diários oficiais, repositórios universitários, entidades profissionais e imprensa contemporânea.
+- Identificação dos canais de consulta e de acesso à informação para Taubaté, Londrina, MPSC, SEI-RO e FCP.
+- Remoção preventiva das sete capas JPG sem cadeia de procedência/licença demonstrada.
+- Registro das lacunas e dos documentos-alvo nos arquivos de pesquisa e na matriz.
+
+### Pendências externas que não podem ser encerradas apenas por pesquisa pública
+1. **EL-025 / FCP:** PDF integral original do Relatório Público 01/CNIRC e lista nominal dos 5.165 itens.
+2. **EL-028 / São José dos Campos:** cópia da ordem municipal original e prova administrativa de cumprimento; autos judiciais sob segredo de Justiça.
+3. **EL-030 / Londrina 2024:** requerimento protocolado em 26/11/2024, ofício de encaminhamento, resposta da SME e prova de execução.
+4. **EL-032 / Taubaté:** mensagem/ordem original, requerimento e resposta integrais, parecer técnico e comprovantes de redistribuição física.
+5. **EL-035 / Londrina 2026:** número SEI, pedido, despacho, signatários e decisão final; o relatório do OGPL documenta restrição de acesso em grande parte dos processos.
+6. **Rondônia:** Adendo SEI 10053329 e resultado documental da sindicância estadual.
+7. **Canoinhas/MPSC:** despacho/decisão integral da Notícia de Fato 01.2024.00012159-3, recibo de transferência dos livros e inventário/localização posterior.
+
+A lista é deliberadamente mais ampla que os cinco registros parciais: alguns documentos complementares faltam também em registros cujo núcleo factual já foi verificado.
+
+### Critério de conclusão e mudança de fase
+
+A partir deste fechamento, a busca aberta e repetitiva em mecanismos de pesquisa deixa de ser critério de avanço. Cada pendência só muda de status mediante: (a) obtenção de documento primário ou cópia autenticável; (b) confirmação formal de sigilo/inexistência/ausência de custódia; ou (c) prova verificável de execução. Os pedidos formais de acesso não foram protocolados em nome da usuária.
+
+**Status:** P0 de auditoria e pesquisa encerrado; P0 de recuperação primária permanece condicionado a respostas dos órgãos e à obtenção dos documentos listados. O produto não deve anunciar que todas as lacunas documentais foram sanadas.
