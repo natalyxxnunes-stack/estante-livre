@@ -181,3 +181,32 @@ A reportagem de OVALE/Sampi informa que Zelinda fez a declaração na tribuna em
 2. A certidão individual de Riedel citada pelo Correio do Estado não foi baixada/anexada; a data de assinatura é reproduzida com atribuição explícita à certidão TSE.
 3. A data exata de ingresso de Jorginho Mello no PL ainda precisa de registro datado; a fonte oficial da Alesc documenta a trajetória e o exercício de liderança em 2020, e o TSE confirma a candidatura PL em 2022.
 4. As filiações partidárias e cargos de governo são dados de contexto; não comprovam autoria, ordem, motivação ou execução dos atos de retirada/recolhimento de livros.
+
+
+## Quarto adendo — novas fontes institucionais e reavaliação de lacunas (04/11/2026)
+
+### Jorginho Mello — PL no período do Senado e governo; filiação em 2019
+
+A biografia oficial da Câmara dos Deputados registra as filiações partidárias de Jorginho Mello ao PR entre 2012 e 2019 e o mandato externo de senador pelo PL de 2019 a 2027: https://www.camara.leg.br/deputados/160509/biografia . A Memória Política da ALESC registra a sequência de partidos em sua trajetória, incluindo PR e PL: https://memoriapolitica.alesc.sc.gov.br/biografia/514-Jorginho_Mello . Uma reportagem contemporânea de 30/10/2022 informa expressamente que ele se filiou ao PL em 2019: https://noticias.uol.com.br/eleicoes/2022/10/30/santa-catarina-jorginho-mello-e-eleito-governador-em-2-turno.htm .
+
+A evidência institucional permite afirmar **mandato de senador pelo PL desde 2019**, e a reportagem situa a filiação no mesmo ano. Para episódios de 2020, o PL está sustentado por mandato institucional contemporâneo, embora a data exata de assinatura da ficha não tenha sido recuperada. Não apresentar dia/mês de filiação sem documento que o comprove.
+
+### Zelinda Pastora / Taubaté — cronologia do pedido informal mais delimitada
+
+A reportagem de OVALE/Sampi informa que Zelinda disse ter procurado o secretário Hélcio Carvalho dos Santos “ainda no ano passado”, em referência a 2025, após reclamação de uma mãe. A mesma reportagem informa que a Prefeitura situou a solicitação de recolhimento de parte dos livros do programa “Minha Biblioteca” no **final de 2025**, no contexto do planejamento do ano letivo de 2026: https://sampi.net.br/ovale/noticias/2972973/sessao-extra/2026/04/livro-sobre-menina-com-duas-maes-e-retirado-de-escolas-em-taubate . A matéria de julho repete o relato da vereadora e informa que a obra foi reincluída após análise pedagógica: https://sampi.net.br/ovale/noticias/2991910/vale-do-paraiba/2026/07/taubate-escolas-voltarao-a-usar-livro-sobre-menina-com-duas-maes .
+
+O secretário Hélcio Carvalho assumiu a pasta em janeiro de 2025, conforme anúncio publicado em 17/12/2024: https://guiataubate.com.br/noticias/2024/12/sergio-victor-novo-anuncia-helcio-carvalho-como-secretario-de-educacao-em-taubate . A página institucional da Prefeitura confirma Hélcio como secretário: https://www.taubate.sp.gov.br/secretarias-municipais/educacao/secretaria-de-educacao .
+
+A cronologia pode, portanto, ser delimitada a **algum momento de 2025**, possivelmente no contexto do recolhimento de parte dos livros ao final do ano, mas não é possível provar que a conversa individual de Zelinda foi exatamente no fim de 2025. A declaração pública ocorreu em 03/03/2026. O documento da Câmara de 06/03/2025 a identifica como PRD. Sem data mais precisa da conversa, não é metodologicamente correto afirmar que o PRD está comprovado no dia do pedido informal; permanece “PRD documentado em 06/03/2025; filiação no dia da conversa não determinada”.
+
+### O que o TSE efetivamente torna público — correção metodológica
+
+A documentação oficial do TSE esclarece que a Certidão de Filiação informa partido, data e domicílio conforme os dados constantes da última relação enviada pelo partido e processada pela Justiça Eleitoral: https://www.tse.jus.br/servicos-eleitorais/servicos/carta-de-servicos-ao-eleitor . O TSE também informa que o e-Título permite emitir certidões simples e históricas, desde que a pessoa tenha foto exibida no aplicativo: https://www.tse.jus.br/servicos-eleitorais/e-titulo-perguntas-frequentes/27-o-e-titulo-permite-emitir-certidao-de-filiacao-partidaria . A Resolução TSE 23.596/2019, com alterações posteriores, determina que as relações públicas divulgam filiações regulares e veda a divulgação de outras informações do FILIA, inclusive histórico de filiações canceladas: https://www.tse.jus.br/legislacao/compilada/res/2019/resolucao-no-23-596-de-20-de-agosto-de-2019 .
+
+Assim, a ausência de um histórico integral aberto não significa que o dado nunca tenha sido registrado. Significa que a base pública tem escopo limitado. Para o projeto, usar fontes institucionais e eleitorais datadas, registrar o período coberto e não afirmar que a certidão histórica individual de terceiros está integralmente disponível ao público.
+
+### Revisão do estado das duas lacunas
+
+- **Jorginho Mello:** a filiação ao PL em 2019 está confirmada por convergência entre biografia oficial da Câmara (mandato de senador pelo PL desde 2019), trajetória da ALESC e reportagem contemporânea/biográfica de 2022. Para eventos em 2020, PL é sustentado; dia exato da filiação não estabelecido.
+- **Zelinda Pastora:** a fala pública foi em 03/03/2026; a conversa com o secretário ocorreu em 2025, segundo o relato, e o recolhimento administrativo é situado pela Prefeitura no final de 2025. A data da conversa não foi encontrada; PRD está documentado em 06/03/2025, mas não é possível determinar se a conversa ocorreu antes ou depois desse marco.
+- **Riedel:** a data de 15/08/2025 é citada pela imprensa com referência explícita à certidão do TSE; a certidão individual não foi obtida como documento público anexável nesta pesquisa. Manter essa distinção no registro.
