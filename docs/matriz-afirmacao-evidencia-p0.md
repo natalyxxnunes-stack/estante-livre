@@ -102,3 +102,8 @@ A pesquisa desta etapa usou fontes públicas. Não houve protocolo de pedidos de
 | Registro | Documento/fonte recuperada | O que comprova | O que não comprova |
 |---|---|---|---|
 | EL-028 — São José dos Campos | Nota oficial da Prefeitura reproduzida pela Spriomais (13/06/2024) e reportagem O Vale/Sampi (09/09/2024) | Recolhimento em todas as escolas para reavaliação técnica; ofício do vereador ao prefeito e secretário; ação civil pública e transmissão da ordem operacional por WhatsApp, conforme investigação | Cópia assinada do ofício, mensagem original de WhatsApp, ato administrativo municipal formal e prova de cumprimento da restituição determinada em 2026 |
+
+
+| Registro | Documento/fonte recuperada | O que comprova | O que não comprova |
+|---|---|---|---|
+| EL-032 — Taubaté | Portal Câmara Sem Papel e páginas oficiais das sessões de 03/03 e 10/03/2026 | Existência de repositório legislativo público e datas das sessões consultadas | Número, texto e tramitação específica do requerimento sobre “Pipoca e Picolé”; a transcrição pública da sessão não reproduz o tema |
