@@ -147,12 +147,13 @@ Nenhum pedido de LAI, Fala.BR, requerimento ou solicitação institucional foi e
 
 ## 6. Estado técnico desta entrega
 
-- Alterações de dados e evidências estão na branch `feat/estante-livre-auditoria-profissional`.
-- A branch recebeu atualizações de `assets/dados.js` e `assets/comum.js`, incluindo a reclassificação de EL-026 e o bloqueio de capas sem autorização documentada.
-- As sete imagens locais estão programadas para remoção nesta mesma branch.
-- PR #5 permanece a via de integração; não se afirma que houve merge na `main` ou publicação em produção.
-- A conclusão técnica depende da execução dos testes após as alterações finais e da conferência da prévia gerada.
+- Alterações de dados, fontes e interface estão na branch `feat/estante-livre-auditoria-profissional`.
+- Atualizados `assets/dados.js` e `assets/comum.js`, incluindo EL-026, EL-031, a cadeia de fontes e o bloqueio de capas sem autorização documentada.
+- As sete imagens JPG foram efetivamente removidas da branch; as páginas de obras mantêm placeholders tipográficos.
+- Páginas estáticas e artefatos públicos sincronizados nesta rodada: `index.html`, `casos.html`, `livros.html`, `atos.html`, `poder.html`, `pendencias.html`, `relatorio-2026.html`, páginas dos casos/atos afetados e `dados/estante-livre-casos.csv`.
+- A sintaxe de `assets/dados.js` e `assets/comum.js` foi verificada com sucesso. Não foi retornada execução de GitHub Actions para o último head SHA; portanto, não afirmo que a suíte completa ou o build de produção tenham passado.
+- PR #5 permanece aberto para integração; não houve merge na `main` nem publicação em produção.
 
 ## Critério de encerramento P0
 
-O P0 documental está **tratado e classificado**: cada registro foi revisto, os nove alertas de signatário foram diferenciados, os quatro núcleos administrativos foram pesquisados em múltiplas fontes e as sete imagens sem cadeia de direitos foram retiradas. Os documentos que não puderam ser recuperados permanecem explicitamente pendentes, com razão e efeito editorial registrados. Não há base para declarar que todos os documentos originais foram encontrados.
+O P0 documental está **tratado e classificado**: cada registro foi revisto, os nove alertas de signatário foram diferenciados, os cinco núcleos administrativos e institucionais foram pesquisados em múltiplas fontes e as sete imagens sem cadeia de direitos foram retiradas. Os documentos que não puderam ser recuperados permanecem explicitamente pendentes, com razão e efeito editorial registrados. Não há base para declarar que todos os documentos originais foram encontrados.
