@@ -210,3 +210,61 @@ Assim, a ausência de um histórico integral aberto não significa que o dado nu
 - **Jorginho Mello:** a filiação ao PL em 2019 está confirmada por convergência entre biografia oficial da Câmara (mandato de senador pelo PL desde 2019), trajetória da ALESC e reportagem contemporânea/biográfica de 2022. Para eventos em 2020, PL é sustentado; dia exato da filiação não estabelecido.
 - **Zelinda Pastora:** a fala pública foi em 03/03/2026; a conversa com o secretário ocorreu em 2025, segundo o relato, e o recolhimento administrativo é situado pela Prefeitura no final de 2025. A data da conversa não foi encontrada; PRD está documentado em 06/03/2025, mas não é possível determinar se a conversa ocorreu antes ou depois desse marco.
 - **Riedel:** a data de 15/08/2025 é citada pela imprensa com referência explícita à certidão do TSE; a certidão individual não foi obtida como documento público anexável nesta pesquisa. Manter essa distinção no registro.
+
+
+## Revisão editorial integral da matriz — 04/11/2026
+
+Esta revisão confronta os 19 registros originais com os adendos posteriores. Ela corrige inconsistências internas e define o que pode ou não ser exibido como partido no momento do episódio. A classificação abaixo prevalece sobre tabelas anteriores quando houver divergência.
+
+### Correções obrigatórias
+
+1. **Eduardo Riedel — conflito de data:** o documento contém duas datas para a filiação ao PP: 15/08/2025 (Correio do Estado, atribuindo a informação à certidão do TSE) e 19/08/2025 (UOL/Agência Estado). Não escolher uma silenciosamente. Até obter a certidão ou esclarecer se uma data é assinatura e outra publicação, registrar: “PP em agosto de 2025; data exata divergente entre fontes (15 e 19/08)”. Para fatos de 2024, PSDB está sustentado pelo perfil institucional partidário do governador. Não publicar o dia exato.
+2. **Jorginho Mello — precisão da fonte:** a biografia oficial da Câmara informa filiação ao PR entre 2012 e 2019 e mandato externo de senador pelo PL entre 2019 e 2027; ela não fornece dia/mês da troca. Portanto, “PL em 2019” é sustentado no nível do ano, não em data exata. Para fatos de 2020, PL é uma classificação contextual robusta. Não usar o campo atual “Partido: PR” do cabeçalho da página, que é um dado cadastral desatualizado, como prova da legenda em 2020.
+3. **Zelinda Pastora — não extrapolar continuidade:** documento assinado em 06/03/2025 comprova PRD naquela data. O relato sobre o pedido ao secretário só o situa em 2025. Sem dia exato, o partido no dia do pedido continua indeterminado; não afirmar PRD durante todo o ano de 2025.
+4. **Thomaz Henrique — níveis de fonte:** a reportagem contemporânea de 04/03/2024 atribui ao próprio vereador a filiação ao PL naquela data e é a melhor evidência para o episódio de 04/06/2024. A notícia institucional da Câmara de fevereiro usa uma referência coletiva a vereadores “todos do PL”; não deve ser tratada isoladamente como certidão individual.
+5. **TSE — descrição da disponibilidade:** a Resolução 23.596/2019, art. 27 e seguintes, prevê certidão acessível ao titular; o art. 26 e art. 25-B, §2º delimitam o que é divulgado nas relações públicas e vedam divulgar histórico de filiações canceladas. Não dizer que a certidão histórica individual de terceiro é livremente consultável. Também não dizer que nenhuma informação histórica pode ser pública: atos legislativos, mandatos e relações partidárias contemporâneas podem documentar intervalos específicos.
+
+### Matriz final dos 19 agentes
+
+| Agente | Evidência mais forte disponível | Resultado para o episódio | Status editorial |
+|---|---|---|---|
+| Eduardo Leite | PSD informa ficha assinada em 09/05/2025; perfil partidário o identifica no PSDB durante 2024 | PSDB em 2024; PSD a partir de 09/05/2025 | **Confirmado por período**, sem extrapolar a mudança posterior |
+| Eduardo Riedel | Perfil PSDB no mandato iniciado em 2023; fontes de 2025 divergem entre 15 e 19/08 para PP | PSDB em 2024; PP em agosto/2025 | **Confirmado para 2024; data da troca pendente de conciliação** |
+| Ratinho Júnior | PSD registra ficha assinada em 10/03/2016; TSE o identifica como PSD em 2022 | PSD nos episódios cobertos pelas evidências até 2022; extensão a fatos posteriores exige fonte contemporânea | **Confirmado até 2022; não extrapolar automaticamente** |
+| Ronaldo Caiado | Biografia oficial da Câmara distingue DEM (mandato 2019–2022) e União Brasil (2023–2026); notícia contemporânea informa filiação ao PSD em jan/2026 | União Brasil em 2024/2025 | **Confirmado por período de mandato; PSD apenas após mudança de 2026** |
+| Jorginho Mello | Câmara: PR 2012–2019 e mandato de senador pelo PL 2019–2027; ALESC/TSE confirmam PL posteriormente | PL em 2020 com evidência institucional contextual; sem dia exato de ingresso | **Ano/período sustentado; não inventar dia** |
+| Marcos Rocha | PGE-RO (04/01/2021) informa eleição pelo PSL em 2018 e posse em 2019; falta prova individual direta para todo 2020 | PSL como contexto político/eleitoral do mandato; não tratar como certidão de filiação em cada dia de 2020 | **Contextual forte; filiação individual na data exata não demonstrada** |
+| Anderson Farias | PSD-SP informa ficha assinada em 18/01/2022 | PSD em episódios posteriores à filiação, dentro do período coberto e sem evidência de saída | **Filiação datada por fonte partidária primária** |
+| Marcelo Belinati | Perfil oficial de Londrina registra PP nas eleições e mandato 2021–2024 | PP como partido pelo qual foi eleito e no mandato; não inferir autoria | **Contexto institucional; identificar como eleito pelo PP, salvo prova de filiação diária** |
+| Sérgio Victor | DivulgaCand/resultado eleitoral 2024 registra Novo na candidatura; posse em janeiro de 2025 | Novo na eleição de 2024; só agente executivo a partir da posse | **Candidatura confirmada; delimitar início do cargo** |
+| Sérgio Motta | Memória Política da ALESC registra partido e 20ª Legislatura (2023–2027) | Partido registrado pela ALESC durante legislatura que cobre 2024 | **Confirmado por registro legislativo contemporâneo** |
+| Jéssica Ramos Moreno | Registro eleitoral de candidatura 2024 indica PP | PP na candidatura; não usar candidatura como certidão individual no dia de eventual requerimento | **Candidatura confirmada; filiação no dia do requerimento não demonstrada** |
+| Amauri Ribeiro | Perfil oficial da Alego registra UB na 20ª Legislatura até 02/04/2026 e PL a partir de 03/04/2026 | União Brasil em 2024; notícia de 01/04/2024 é posterior ao episódio narrado e não prova autoria anterior | **Partido no período confirmado; autoria/antecedência não demonstradas** |
+| Rinaldo Modesto | ALEMS, lista oficial com fonte TRE-MS, o registra no Podemos na 12ª Legislatura (2023–2027) | Podemos em março de 2024 | **Confirmado por fonte legislativa oficial que cobre a data** |
+| Thomaz Henrique | Imprensa local contemporânea atribui ao vereador filiação ao PL em 04/03/2024; Câmara o lista no PL em junho | PL antes do episódio de 04/06/2024 | **Confirmado por declaração pública contemporânea + registro posterior** |
+| Gustavo Gayer | Perfil oficial da Câmara o registra no PL na legislatura 2023–2027 | PL no período parlamentar coberto desde 2023 | **Confirmado por registro institucional contemporâneo** |
+| Zelinda Pastora | Documento oficial assinado a identifica como PRD em 06/03/2025; pedido informal situado genericamente em 2025 | Partido no dia do pedido não determinado | **Data de evidência confirmada; correspondência ao dia do episódio pendente** |
+| Leonel Camasão | Resultado oficial TRE-SC identifica PSOL na eleição de 2024 | PSOL na candidatura de 2024; não estender para período posterior sem fonte | **Candidatura confirmada** |
+| Lia Nogueira | Perfil oficial ALEMS confirma filiação ao PSDB em 2022 e lista PSDB na 12ª Legislatura (2023–2027) | PSDB em 2024 | **Confirmado por fonte institucional** |
+| Clayton Silva | Câmara de Limeira o identifica como PSC em 29/11/2019; notícia registra troca para PTC em abril/2020 | PSC no episódio de 2019; não classificar como autor de pedido de retirada: requerimento tratava de questionamento/informações | **Partido temporalmente sustentado; papel no episódio deve ser descrito corretamente** |
+
+### Padrão de publicação obrigatório
+
+Cada ficha deve separar quatro campos, sem fundi-los numa única etiqueta “partido à época”:
+
+- **Partido/condição eleitoral:** legenda pela qual foi candidato ou eleito, com eleição e ano.
+- **Registro partidário contemporâneo:** sigla indicada em fonte institucional, legislativa, partidária ou eleitoral, com data/intervalo explícito.
+- **Relação com o episódio:** autoria, iniciativa, assinatura, fala pública, decisão administrativa ou mera posição institucional — cada qual exige evidência própria.
+- **Grau de certeza:** confirmado para a data; confirmado para intervalo; contexto eleitoral/mandato; ou não confirmado para a data do fato.
+
+Não usar “partido à época” como campo isolado se a fonte cobre apenas eleição anterior, legislatura posterior ou mandato externo. Sempre exibir a data da evidência e a cobertura temporal. Não inferir autoria de atos administrativos a partir do partido do agente ou do governo.
+
+### Bloqueios remanescentes para publicação
+
+- Conciliar a divergência de 15/08 e 19/08/2025 de Eduardo Riedel antes de exibir dia exato.
+- Não há data exata para a conversa informal de Zelinda em 2025; portanto, não há sigla comprovada para aquele dia específico.
+- Marcos Rocha: PSL é contexto fortemente sustentado, mas a fonte PGE citada prova candidatura/eleição e início do mandato, não uma certidão individual cobrindo cada dia de 2020.
+- Ratinho Júnior: a ficha de 2016 e confirmação TSE em 2022 não devem ser extrapoladas para eventos posteriores sem outra fonte contemporânea.
+- Jéssica Ramos Moreno e Leonel Camasão: fontes eleitorais comprovam legenda na candidatura, não necessariamente filiação em data distinta do episódio.
+
+**Decisão da revisão:** a auditoria dos 19 registros está editorialmente padronizada, mas a integração visual não deve apresentar uma coluna única de “partido à época”. Recomenda-se implementar a camada apenas com os campos de evidência, período coberto e grau de certeza acima. Os casos com cobertura insuficiente devem aparecer como “não confirmado para a data do episódio”, preservando o contexto em nota.
