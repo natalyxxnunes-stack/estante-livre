@@ -692,3 +692,18 @@ A distinção numérica fica assim:
 O inventário bibliográfico oficial da FCP, compilado entre julho e outubro de 2021 e publicado em 08/08/2024, foi pesquisado por títulos presentes na transcrição dos 300. Foram localizados, entre outros, **Bandidos** (E. J. Hobsbawm), **Dicionário do Folclore Brasileiro** (Luís da Câmara Cascudo), **O Capital** (Karl Marx), **Menino brinca de boneca?** (Marcos Ribeiro), **O Segundo Sexo** (Simone de Beauvoir), **A nova mulher e a moral sexual** (Alexandra Kollontai), **A crise do neoliberalismo e a luta pelo socialismo** (Aldo Rebelo), **O mundo do socialismo** (Caio Prado Júnior), **A história me absolverá** (Fidel Castro), **O PT em Movimento** (Florestan Fernandes), **O Socialismo Vive** e **O sexo e a vida** (H. G. Wells).
 
 O cruzamento comprova que esses títulos constam do inventário bibliográfico oficial do antigo acervo, não que todos os 261 itens da transcrição tenham sido preservados fisicamente, que continuem disponíveis hoje ou que a lista de 300 tenha sido executada integralmente. O inventário informa que foi compilado após a publicação do Relatório 01, mas sua natureza é de inventário bibliográfico do antigo acervo; não é recibo de guarda nem relatório de movimentação. A amostra reforça a consistência de parte da transcrição, sem substituir o original.
+
+
+### Rondônia — separação entre processo técnico e sindicância administrativa
+
+Nova conferência de fontes oficiais e acadêmicas refinou a lacuna de Rondônia:
+
+- A nota oficial da SEDUC, publicada em 06/02/2020, afirma que a equipe técnica reconheceu os livros como clássicos da literatura brasileira e que o processo eletrônico de análise foi encerrado imediatamente, sem ordem de tramitação para escolas ou órgãos externos. A mesma nota promete “tomar as medidas necessárias” para investigar o vazamento de informações internas.
+- O Diário do MPF de 30/08/2021 registra uma apuração distinta: sindicância administrativa instaurada pela SEDUC para apurar o contexto e buscar responsabilização administrativa, além de procedimento do MP-RO e recomendação acatada pela Secretaria. O inquérito civil do MPF foi arquivado e o arquivamento homologado.
+- A tese de doutorado da UnB “Literatura como salvação” (2024) reproduz a imagem do Memorando-Circular nº 4/2020/SEDUC-DGE e descreve a suspensão da ordem no mesmo dia; é fonte acadêmica secundária, não substitui o Adendo SEI.
+- A pesquisa não localizou a íntegra do Adendo SEI 10053329, a recomendação do MP-RO nem o resultado da sindicância administrativa. É importante não confundir o processo técnico SEI 0029.051300/2020-91, que a nota oficial diz ter sido encerrado, com a sindicância administrativa separada registrada pelo MPF.
+
+Fontes:
+- SEDUC/RO: https://rondonia.ro.gov.br/livros-citados-em-lista-sao-classicos-da-literatura-e-nao-ha-ordem-de-recolhimento-afirma-seduc/
+- Diário do MPF nº 161/2021: https://transparencia.mpf.mp.br/conteudo/diarios-e-boletins/diario-eletronico-dmpf-e/2021/DMPF-EXTRAJUDICIAL-2021-08-30.pdf
+- Tese UnB (2024): https://www.repositorio.unb.br/bitstream/10482/48294/1/ThayllanyFerreiraAndrade_TESE.pdf
