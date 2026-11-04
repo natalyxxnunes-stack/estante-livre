@@ -637,3 +637,17 @@ A pesquisa localizou o Diário Oficial Eletrônico do MPSC nº 3698, publicado e
 Isso fecha a lacuna sobre o resultado do recurso: o Conselho Superior manteve o arquivamento recorrido. O Diário Oficial não reproduz a fundamentação individualizada da decisão, portanto a razão jurídica e a análise probatória completas continuam não recuperadas. A decisão não deve ser resumida como declaração de inexistência de irregularidade sem leitura da fundamentação.
 
 Fonte primária: https://documentos.mpsc.mp.br/portal/Conteudo/publicacoes/do_mpsc_2024-08-09.pdf (páginas 7–8 do Diário, item 3).
+
+
+### São José dos Campos — confirmação pública da retirada e do pedido do vereador
+
+A rodada recuperou duas reportagens locais complementares:
+
+- A Spriomais, em 13/06/2024, informa que a Prefeitura recolheu o livro de todas as escolas e reproduz a nota oficial municipal: os exemplares foram recolhidos para reavaliação pela equipe técnica da Secretaria de Educação e Cidadania. A mesma matéria informa que, em 11/06/2024, o vereador Thomaz Henrique protocolou ofício ao prefeito Anderson Farias e ao secretário Jhonis Rodrigues pedindo o recolhimento e questionando os responsáveis pela distribuição.
+- O Vale/Sampi, em 09/09/2024, informa que MP-SP e Defensoria Pública ajuizaram ação civil pública e descreve, com base na investigação, a transmissão da ordem operacional aos diretores por WhatsApp.
+
+Isso melhora a documentação da cadeia entre pressão parlamentar, pedido formal do vereador, nota pública da Prefeitura e execução do recolhimento. Não equivale, contudo, à recuperação dos documentos originais: a cópia assinada do ofício do vereador e a mensagem de WhatsApp que transmitiu a ordem municipal não foram localizadas. A sentença de julho de 2026 é divulgada por vários veículos, mas o processo tramita sob segredo de Justiça; a prova pública de cumprimento da restituição às escolas continua ausente.
+
+Fontes:
+- https://spriomais.com.br/2024/06/13/meninas-sonhadoras-mulheres-cientistas-prefeitura-recolhe-livro-de-escolas-para-avaliar-conteudo-em-sjc/
+- https://sampi.net.br/ovale/noticias/amp/2855382/vale-do-paraiba/2024/09/mp-e-defensoria-apontam-censura-em-recolhimento-de-livro-em-sjc
