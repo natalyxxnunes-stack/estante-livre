@@ -322,3 +322,8 @@ A lista final de 300 títulos do Relatório 01 foi recuperada em transcrição p
 A transcrição pública da lista de 300 foi cruzada pontualmente com o inventário oficial da FCP. Foram encontrados no inventário, entre outros, Bandidos, Dicionário do Folclore Brasileiro, O Capital, Menino brinca de boneca?, O Segundo Sexo, A nova mulher e a moral sexual, A crise do neoliberalismo e a luta pelo socialismo, O mundo do socialismo, A história me absolverá, O PT em Movimento, O Socialismo Vive e O sexo e a vida.
 
 O achado confirma que esses títulos aparecem no inventário bibliográfico oficial do antigo acervo, compilado entre julho e outubro de 2021. Não comprova que todos os 261 itens da transcrição permaneceram fisicamente disponíveis, nem o destino dos 300 títulos indicados para exclusão.
+
+
+### Complemento — Rondônia (EL-015 e EL-022 a EL-024)
+
+A nota oficial da SEDUC de 06/02/2020 afirma que o processo técnico foi encerrado imediatamente e promete apurar o vazamento. O Diário do MPF de 30/08/2021 registra uma sindicância administrativa separada, instaurada pela SEDUC, e uma recomendação do MP-RO acatada. A tese da UnB de 2024 reproduz a imagem do memorando. Não foram localizados o Adendo SEI 10053329, a íntegra da recomendação do MP-RO ou o resultado da sindicância. O processo técnico encerrado e a sindicância administrativa não devem ser confundidos.
