@@ -164,7 +164,7 @@ A revisão de direitos foi encerrada por medida preventiva: as sete imagens loca
 
 ### 10.8 Resultado consolidado
 
-- Os dez registros originalmente sinalizados foram revistos: cinco têm núcleo factual verificado e cinco permanecem parcialmente verificados.
+- Os dez registros originalmente sinalizados foram revistos: cinco têm núcleo factual verificado e cinco permanecem parcialmente verificados. EL-025, fora dessa lista inicial e incluído na revisão de signatários, também permanece parcial; portanto, são seis registros parcialmente verificados no conjunto total de 37.
 - Os nove alertas de signatário foram classificados sem atribuição indevida de assinatura.
 - Os casos administrativos foram pesquisados em fontes de órgãos públicos, tribunais, sistemas legislativos, imprensa local e repositórios acadêmicos.
 - As pendências restantes estão vinculadas a documentos não recuperados, peças sob sigilo parcial/segredo de Justiça ou falta de identificação pública do processo.
