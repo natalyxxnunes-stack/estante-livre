@@ -1201,7 +1201,7 @@ const FONTES = {
  },
 
  "jornal-londrina-3630-2018": {
-  "tipo":"P1","veic":"Jornal Oficial do Município de Londrina · nº 3630 (cópia digital assinada pelo Município)","data":"2018-10-09","tit":"Relação de livros adquiridos pelo Município inclui O Bebê Vem com a Cegonha, Editora Melhoramentos, preço unitário R$ 35,33","url":"https://www.luhu.org.br/uploads/editor/jornal_3630_assinado_LEI12765_3N2xMmTDBLqGYuc.pdf"
+  "tipo":"P1","veic":"Jornal Oficial do Município de Londrina · nº 3630 (cópia digital assinada pelo Município)","data":"2018-10-09","tit":"Relação de livros adquiridos pelo Município inclui O Bebê Vem com a Cegonha, Editora Melhoramentos, quantidade 1, preço unitário e total R$ 35,33","url":"https://www.luhu.org.br/uploads/editor/jornal_3630_assinado_LEI12765_3N2xMmTDBLqGYuc.pdf"
  },
 };
 
