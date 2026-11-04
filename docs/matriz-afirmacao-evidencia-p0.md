@@ -48,7 +48,7 @@ Nenhum status parcial foi elevado por ausência de resposta ou repetição de bu
 
 - **EL-036/EL-037 — Canoinhas:** acrescentar como fonte primária o Diário Oficial do MPSC nº 3698, de 09/08/2024. A Súmula da Primeira Turma Revisora da sessão de 07/08/2024 registra, sob relatoria de Ary Capella Neto, que a Notícia de Fato SIG 01.2024.00012159-3 da 1ª Promotoria de Canoinhas teve recurso conhecido e desprovido por unanimidade. Isso documenta o resultado revisional, não a íntegra da decisão originária nem a destinação material dos livros. [Fonte oficial](https://documentos.mpsc.mp.br/portal/Conteudo/publicacoes/do_mpsc_2024-08-09.pdf).
 - **EL-026 — Sala 11 / Acervo da Vergonha:** reforçar a fonte com o PDF oficial da FCP de 92 páginas, que reúne a resposta institucional e o relatório técnico da diligência parlamentar. O relatório da Câmara registra a Sala 11 como “sala da vergonha (livros)”, caixas de livros para doação, fotografias e assinaturas de Juçara Quinteros de Farias e Gilcy Rodrigues Azevedo. [PDF oficial](https://www.gov.br/palmares/pt-br/midias/arquivos/download/resposta.pdf). Não atribuir essas assinaturas à ordem da FCP.
-- **EL-025 — Relatório 01/CNIRC:** permanece parcial. O PDF oficial da diligência parlamentar não substitui o Relatório 01/CNIRC nem sua lista final de 300 títulos indicada para exclusão.
+- **EL-025 — Relatório 01/CNIRC:** permanece parcial. O PDF oficial da diligência parlamentar não substitui o Relatório 01 original; a lista final de 300 entradas foi recuperada em transcrição secundária, ainda sem validação contra o documento de origem.
 
 
 ## Fontes primárias adicionais — atualização de 04/11/2026
