@@ -163,11 +163,11 @@ const LIVROS = {
    autoria:"Vários, entre eles Caio Fernando Abreu, Carlos Heitor Cony e Ferreira Gullar",
    conjunto:true,
    nota:"Os títulos da lista de 43 obras que ainda não têm registro próprio no catálogo. O adendo do memorando precisa ser obtido para desmembrá-los."},
- "Proposta de retirada/doação de 5.165 itens classificados como de “temática alheia à negra”":{
-   legenda:"5.165 itens",
+ "Relatório 01/CNIRC: classificação agregada de 5.165 títulos como temática alheia e lista final de 300 entradas indicadas para exclusão":{
+   legenda:"5.165 títulos; lista final de 300 entradas",
    autoria:"Vários, entre eles Karl Marx, Max Weber, Eric Hobsbawm, Celso Furtado, Caio Prado Jr. e Machado de Assis",
    conjunto:true,
-   nota:"O relatório atribuiu a 5.165 itens do acervo (cerca de 54% do total) a classificação de temática alheia à negra. Fontes contemporâneas divergem na unidade de contagem, usando “títulos”, “livros” e “exemplares”; o PDF original não abriu nesta consulta, portanto o catálogo usa “itens” até conferir a unidade no documento primário. O Conselho Federal de Biblioteconomia apontou que o relatório que embasou o expurgo não constitui política de desenvolvimento de coleções e foi feito sem bibliotecários."},
+   nota:"O Relatório 01/CNIRC contabilizou 9.565 títulos em 2021 e classificou 5.165 (54%) como de temática alheia à negra; esse é um quantitativo agregado, não a lista de exclusão. O relatório termina com uma lista de 300 títulos indicados para exclusão. O Por Dentro do RN transcreveu a lista completa, com 261 entradas após remover edições repetidas; essa transcrição secundária ainda precisa ser conferida contra o PDF original. A petição da OAB na ADPF 918 alega a exclusão de 5.300 exemplares, unidade e afirmação distintas. O inventário oficial de 9.696 títulos publicado em 2024 inclui, entre outros, O Capital, Bandidos, Dicionário do Folclore Brasileiro, Menino brinca de boneca? e O Segundo Sexo. O Conselho Federal de Biblioteconomia apontou que o relatório que embasou o expurgo não constitui política de desenvolvimento de coleções e foi feito sem bibliotecários."},
  "Segregação de livros no chamado “Acervo da Vergonha”":{
    legenda:"Sala 11",
    autoria:"Vários, entre eles Antonio Gramsci, Marilena Chauí, Simone de Beauvoir, Karl Marx e Celso Furtado",
