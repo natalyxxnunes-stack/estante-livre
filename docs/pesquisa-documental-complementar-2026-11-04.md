@@ -269,3 +269,55 @@ Fontes sobre a transição:
 - Taubaté: percorrer as listas anuais de Isaac e Talita, cruzar proposições protocoladas em torno de 10/03/2026 e abrir o requerimento correspondente, verificando anexos, resposta do Executivo e histórico de tramitação.
 - Londrina: pesquisar no sistema legislativo implantado em novembro de 2024 por autora (Jéssica Ramos Moreno), intervalo de 26 a 27/11/2024 e termos “creche”, “recolhimento”, “livro” e “A Mamãe Vai Ter um Bebê”; se não houver resultado público, pedir ao Departamento de Redação Oficial cópia do requerimento, ofício encaminhado, resposta recebida e histórico de tramitação.
 - Manter EL-030 e EL-032 parciais até que os documentos sejam efetivamente abertos e validados.
+
+
+## 11. Londrina — verificação do canal formal de acesso e trilha documental da Câmara
+
+### 11.1 Documento normativo da própria Câmara sobre acesso à informação
+
+Foi recuperado o texto integral do **Ato da Mesa nº 4, de 17/04/2024**, publicado no Jornal Oficial nº 5176, de 22/04/2024, que regulamenta a LAI no âmbito da Câmara Municipal de Londrina.
+
+O ato estabelece, entre outros pontos:
+- publicidade como regra e sigilo como exceção;
+- atendimento dos pedidos pela Ouvidoria Legislativa;
+- atribuição da Ouvidoria de orientar o público sobre acesso à informação, informar a tramitação de documentos e processos internos e encaminhar pedidos ao protocolo oficial;
+- direito de qualquer pessoa apresentar pedido, sem precisar justificar os motivos;
+- possibilidade de pedido remoto por formulário eletrônico, peticionamento, telefone ou correspondência;
+- prazo de até 20 dias quando o acesso imediato não for possível, com indicação de consulta, recusa fundamentada ou informação de que o órgão não possui o documento;
+- disponibilização digital quando a informação estiver armazenada digitalmente.
+
+Fonte primária normativa:
+- [Jornal Oficial de Londrina nº 5176 — Ato da Mesa nº 4/2024, especialmente páginas 44–47](https://portal.londrina.pr.gov.br/images/stories/jornalOficial/Jornal-5176-Assinado-pdf.pdf).
+
+Esta é uma base normativa concreta para uma solicitação precisa, caso a pesquisa no sistema não recupere o requerimento. Não foi enviado pedido em nome da usuária; o documento apenas registra o canal e as regras institucionais.
+
+### 11.2 Amostra oficial de documentos assinados e identificadores
+
+A busca indexada no domínio oficial da Câmara recuperou uma indicação assinada por Jéssica Ramos Moreno em 08/11/2024:
+- [Indicação nº 5787/2024 — PDF oficial](https://www.cml.pr.gov.br/assinatura/assinado/2024/11/241108091817179103.pdf?vh=b314d20).
+- O PDF registra assinatura digital da vereadora em 11/11/2024, código de verificação 241108091817179103 e protocolo 6274/2024.
+
+Também foi recuperada outra indicação da mesma vereadora, datada de 08/11/2024:
+- [Indicação nº 5793/2024 — PDF oficial](https://www.cml.pr.gov.br/assinatura/assinado/2024/11/241108154753135103.pdf?vh=7390c2d).
+- O documento registra protocolo 6280/2024.
+
+Esses arquivos confirmam que o domínio da Câmara publica documentos assinados com URL datada, código de verificação e número de protocolo. Porém, a amostra é anterior ao episódio da creche e não contém o requerimento sobre *A Mamãe Vai Ter um Bebê*. As buscas indexadas por nome da vereadora, termos “livro”, “creche”, “recolhimento” e intervalo de novembro/dezembro de 2024 não retornaram o documento específico.
+
+### 11.3 Limite e encaminhamento
+
+A busca encontrou a regra institucional de acesso e confirmou como são apresentados documentos assinados, mas não recuperou o requerimento de 26/11/2024 nem a resposta da Secretaria Municipal de Educação.
+
+O pedido de acesso, se necessário, deve ser estritamente delimitado para evitar resposta de que seria genérico ou exigiria produção de informação:
+1. cópia integral do requerimento protocolado por Jéssica Ramos Moreno em 26/11/2024 sobre o livro *A Mamãe Vai Ter um Bebê* e o pedido de recolhimento de exemplares em unidade de educação infantil;
+2. número do requerimento e do protocolo, data de entrada, expediente/sessão em que foi lido e histórico de tramitação;
+3. cópia do ofício de encaminhamento à Secretaria Municipal de Educação;
+4. cópia da resposta do Executivo, se recebida, com data e número de protocolo;
+5. caso não localizado, certidão ou resposta formal informando se o documento está sob custódia da Câmara ou se foi encaminhado a outro órgão.
+
+A solicitação da resposta executiva também pode ser dirigida à Prefeitura/Secretaria Municipal de Educação, pois a Câmara pode custodiar apenas o requerimento e o ofício de encaminhamento.
+
+### 11.4 Taubaté — busca por termos não indexada
+
+Novas consultas indexadas combinando o título *Pipoca e Picolé*, Isaac do Carmo, Talita, a data de 10/03/2026 e o domínio Câmara Sem Papel não localizaram o requerimento específico. A consulta pública por autor/ano permanece a melhor rota identificada, mas a ferramenta de pesquisa não conseguiu percorrer a listagem dinâmica completa e abrir os anexos.
+
+**Balanço:** Londrina tem agora canal normativo de acesso à informação documentado e amostra dos padrões dos documentos oficiais; Taubaté tem o banco legislativo por autor/ano identificado, mas o requerimento não foi individualizado. Nenhum status de verificação foi elevado.
