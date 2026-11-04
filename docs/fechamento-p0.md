@@ -148,7 +148,7 @@ As reportagens Folha, UOL/Agência Estado e Sampi/OVALE convergem quanto à sent
 
 
 
-**Atualização de contagem após esta rodada:** 148 fontes únicas e 269 associações entre registros e fontes (duas fontes novas incorporadas: inventário oficial da FCP de 16/01/2023 e cópia do Diário do MPF no repositório da Biblioteca Digital).
+**Atualização de contagem após esta rodada:** 149 fontes únicas e 270 associações entre registros e fontes (duas fontes novas incorporadas: inventário oficial da FCP de 16/01/2023 e cópia do Diário do MPF no repositório da Biblioteca Digital).
 
 
 ### Palmares — distinção entre documento institucional de 2021 e política aprovada em 2024
