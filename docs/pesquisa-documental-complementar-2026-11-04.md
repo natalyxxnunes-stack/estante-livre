@@ -220,3 +220,52 @@ Em Taubaté, a busca por “Pipoca e Picolé”, pelos autores do requerimento e
 | MPSC/Canoinhas | Nenhum inteiro teor novo | Despacho/decisão da Notícia de Fato 01.2024.00012159-3 |
 
 **Conclusão:** as rotas acadêmicas e universitárias produziram material corroborativo útil para Rondônia e para a descrição bibliográfica do relatório CNIRC. Não recuperaram os documentos primários faltantes e não justificam alterar os status de verificação. P0 permanece aberto.
+
+
+## 10. Sistemas legislativos: consulta direta por autor e atribuições de arquivo
+
+### 10.1 Taubaté — banco legislativo público efetivamente localizado
+
+A consulta anterior ao portal Câmara Sem Papel foi aprofundada. A FAQ oficial da Câmara aponta o portal de Processo Legislativo Eletrônico como banco de dados da produção legislativa e informa que a pesquisa permite filtrar por palavra-chave, ano, autor e tipo de proposição. A página pública de consulta por autor lista Isaac do Carmo e Talita separadamente e oferece acesso à produção anual de cada parlamentar.
+
+Foram abertas as consultas anuais de 2026:
+- Isaac do Carmo: https://camarasempapel.camarataubate.sp.gov.br/consulta-producao.aspx?ano=2026&autor=713
+- Talita: https://camarasempapel.camarataubate.sp.gov.br/consulta-producao.aspx?ano=2026&autor=644
+
+A consulta de Isaac informa 349 proposições no ano e exibe registros individuais com número, ementa, processo, protocolo, data, situação e atividade atual. A listagem é extensa e paginada. A consulta da Talita também está disponível por autor/ano, mas o mecanismo de captura desta rodada não conseguiu carregar o resultado paginado. As consultas confirmam a existência de uma trilha pública estruturada e são uma rota muito mais precisa que a busca geral na web.
+
+**Limite desta rodada:** não foi identificado com segurança o número do requerimento de 10/03/2026 relacionado a *Pipoca e Picolé*. A página de sessão/ordem do dia não substitui a consulta de produção por autor, e o resultado da pesquisa ainda precisa ser percorrido/filtrado no próprio sistema para identificar a proposição e abrir seus documentos vinculados. Não inferir o número a partir da data da sessão.
+
+Fontes:
+- [FAQ oficial da Câmara de Taubaté — instruções sobre consulta legislativa e e-SIC](https://www.camarataubate.sp.gov.br/portal/faq).
+- [Consulta pública de produção legislativa — Isaac do Carmo, 2026](https://camarasempapel.camarataubate.sp.gov.br/consulta-producao.aspx?ano=2026&autor=713).
+- [Consulta pública de produção legislativa — Talita, 2026](https://camarasempapel.camarataubate.sp.gov.br/consulta-producao.aspx?ano=2026&autor=644).
+- [Consulta pública por autor](https://camarasempapel.camarataubate.sp.gov.br/consulta-autor.aspx).
+
+A FAQ oficial também identifica o e-SIC da Câmara como canal para solicitar documentos públicos e acompanhar protocolo. Se a pesquisa no banco não expuser a resposta integral ou os anexos, esse é o canal institucional correto para pedir a cópia, sem confundir pedido de acesso com prova de que o documento não está disponível.
+
+### 10.2 Londrina — dever institucional de registrar e disponibilizar respostas
+
+Foi localizada publicação oficial municipal que descreve as atribuições do Departamento de Redação Oficial da Câmara de Londrina. O texto atribui ao setor:
+- protocolar ou recusar indicações, requerimentos e pedidos de informação;
+- registrar no sistema informatizado os despachos dados a esses expedientes;
+- redigir os ofícios correspondentes e controlar prazos de resposta do Executivo;
+- disponibilizar no sistema informatizado da Câmara as respostas aos requerimentos, indicações e pedidos de informação;
+- fornecer relatórios dos requerimentos e pedidos de informação aos respectivos autores.
+
+Fonte:
+- [Jornal Oficial de Londrina nº 5133, 05/03/2024 — trecho sobre atribuições do Departamento de Redação Oficial](https://portal.londrina.pr.gov.br/images/stories/jornalOficial/Jornal-5133-Assinado-pdf.pdf).
+
+Isso esclarece que o requerimento e eventual resposta devem ter trilha no sistema informatizado da própria Câmara, e não necessariamente no Jornal Oficial do Município. A Câmara lançou um novo portal e sistema legislativo em 06/11/2024, poucos dias antes do requerimento noticiado; essa transição de sistema pode explicar por que buscas no portal antigo/Diário Oficial não retornaram o documento, mas não prova perda ou indisponibilidade.
+
+Fontes sobre a transição:
+- [Folha de Londrina, 06/11/2024 — lançamento do novo portal](https://www.folhadelondrina.com.br/politica/camara-de-londrina-lanca-novo-portal-na-web-3266613e.html).
+- [Jornal União, 07/11/2024 — lançamento do novo sistema legislativo](https://jornaluniao.com.br/noticias/londrina/camara-de-londrina-lanca-portal-web-mais-moderno-e-com-canal-direto-da-populacao-com-o-legislativo/).
+
+**Resultado:** ainda não recuperado o requerimento específico de 26/11/2024 nem a resposta administrativa. A nova pista é direcionar a busca ao sistema legislativo novo da CML e ao Departamento de Redação Oficial, usando a data, a autora e o assunto. Não usar o PL 79/2024 como substituto.
+
+### 10.3 Próxima diligência objetiva
+
+- Taubaté: percorrer as listas anuais de Isaac e Talita, cruzar proposições protocoladas em torno de 10/03/2026 e abrir o requerimento correspondente, verificando anexos, resposta do Executivo e histórico de tramitação.
+- Londrina: pesquisar no sistema legislativo implantado em novembro de 2024 por autora (Jéssica Ramos Moreno), intervalo de 26 a 27/11/2024 e termos “creche”, “recolhimento”, “livro” e “A Mamãe Vai Ter um Bebê”; se não houver resultado público, pedir ao Departamento de Redação Oficial cópia do requerimento, ofício encaminhado, resposta recebida e histórico de tramitação.
+- Manter EL-030 e EL-032 parciais até que os documentos sejam efetivamente abertos e validados.
