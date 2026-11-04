@@ -18,7 +18,7 @@ Também foram localizados:
 - [Artigo acadêmico no periódico Liinc em Revista/IBICT](https://revista.ibict.br/liinc/article/view/5789), que referencia o relatório do CNIRC.
 - [Cópia alternativa do PDF do CNIRC](https://www.palmares.gov.br/wp-content/uploads/2021/06/cnirc01_liminar_v2_08_07.pdf), identificada por referências bibliográficas em trabalhos acadêmicos; o servidor oficial não entregou o arquivo nesta consulta. A existência do endereço não equivale à recuperação ou validação do conteúdo integral.
 
-**Conclusão para o cadastro:** incorporar o relatório do CRB-1 como evidência independente sobre a condição do acervo em 30/06/2021, mantendo explícita a ressalva de que as 207 caixas não podem ser equiparadas à Sala 11 sem prova. A íntegra do Relatório 01/CNIRC e sua lista final de 300 títulos indicados para exclusão continuam pendentes. Os 5.165 são a contagem agregada de títulos classificados como de temática alheia à negra, não o tamanho dessa lista.
+**Conclusão para o cadastro:** incorporar o relatório do CRB-1 como evidência independente sobre a condição do acervo em 30/06/2021, mantendo explícita a ressalva de que as 207 caixas não podem ser equiparadas à Sala 11 sem prova. A íntegra do Relatório 01/CNIRC continua pendente. A lista final de 300 entradas foi recuperada em transcrição pública secundária do Por Dentro do RN, que remove edições repetidas e apresenta 261 entradas; a Revista de Estudos Culturais confirma a existência da lista de 300. A transcrição ainda precisa ser confrontada com o original. Os 5.165 são a contagem agregada de títulos classificados como de temática alheia à negra, não o tamanho dessa lista.
 
 ## 2. Rondônia — cópia independente da lista e trilha do MPF
 
@@ -125,7 +125,7 @@ O Diário Oficial de Taubaté consultado para 10/03/2026 contém atos administra
 |---|---|---|
 | Despacho/decisão MPSC 01.2024.00012159-3 | Número e pauta de revisão confirmados; inteiro teor não recuperado | Pendente |
 | Adendo SEI 10053329 / processo 0029.051300/2020-91 | Referência cruzada e metadados do memorando confirmados; original não recuperado | Pendente |
-| Relatório CNIRC integral e lista final de 300 títulos indicados para exclusão (os 5.165 são contagem agregada) | Referência bibliográfica oficial e acadêmica reforçada; arquivo integral/lista não recuperados | Pendente |
+| Relatório CNIRC integral e lista final de 300 títulos indicados para exclusão (os 5.165 são contagem agregada) | Referência bibliográfica oficial e acadêmica reforçada; transcrição secundária da lista recuperada; arquivo integral do Relatório 01 não recuperado | Pendente |
 | Requerimento de Londrina de 26/11/2024 | Não localizado em inteiro teor oficial | Pendente |
 | Requerimento e resposta integral de Taubaté | Não localizados em inteiro teor oficial; notícia posterior não prova redistribuição | Pendente |
 
@@ -415,7 +415,7 @@ Fonte direta do trecho deliberativo: [Diário nº 3698, página 7, linhas 408–
 
 - **Canoinhas/MPSC:** retirar a formulação anterior de que o resultado da Notícia de Fato era inteiramente desconhecido. A súmula oficial resolve o resultado do recurso: desprovimento unânime. Permanecem pendentes a íntegra da decisão originária e a prova de destino/localização dos livros.
 - **Palmares/Sala 11:** reforçar o registro com o PDF oficial de 92 páginas e as fotografias da diligência. Não confundir essa documentação com o Relatório 01/CNIRC nem elevar EL-025 com base nela.
-- **Palmares/Relatório 01:** permanece pendente a cópia integral do Relatório 01/CNIRC e a lista final de 300 títulos indicados para exclusão; o documento é necessário para auditar metodologia e critérios.
+- **Palmares/Relatório 01:** permanece pendente a cópia integral do Relatório 01/CNIRC. A lista final de 300 entradas foi recuperada em transcrição pública secundária (261 após remoção de edições repetidas), ainda sem confronto com o original.
 
 
 ## 15. Outras rotas públicas rechecadas — Taubaté, Londrina e São José dos Campos
@@ -490,7 +490,7 @@ Trecho direto: linhas 1857–1874 da extração do Diário.
 
 ### 16.3 Ajuste de status e de narrativa
 
-- **EL-025 — Palmares/Relatório 01/CNIRC:** permanece parcial quanto ao relatório de triagem e à lista final de 300 títulos indicados para exclusão. Agora há um inventário bibliográfico oficial completo, numerado até 9.696 títulos, que deve ser vinculado como fonte primária complementar. Não elevar a verificação do relatório de triagem.
+- **EL-025 — Palmares/Relatório 01/CNIRC:** permanece parcial quanto ao relatório de triagem e à validação da transcrição pública da lista final de 300 entradas. Agora há um inventário bibliográfico oficial completo, numerado até 9.696 títulos, que deve ser vinculado como fonte primária complementar. Não elevar a verificação do relatório de triagem.
 - **EL-022/023/024 — Rondônia:** o desfecho do inquérito civil do MPF está documentalmente comprovado por publicação oficial de 30/08/2021. A sindicância estadual e o Adendo SEI 10053329 continuam pendentes; o registro deve separar o que o MPF apurou do que a Seduc investigou internamente.
 
 
@@ -558,7 +558,7 @@ Esta seção consolida o resultado da pesquisa pública realizada até esta data
 ### Resultado por pendência documental
 | Frente | O que está comprovado | O que continua sem prova pública primária suficiente |
 |---|---|---|
-| FCP / EL-025 | Política de Acervo cita o Relatório Técnico 01; inventário oficial contém 9.696 títulos; documentos oficiais da diligência parlamentar tratam da Sala 11 | PDF integral do Relatório 01/CNIRC e lista final de 300 títulos; metodologia que explique a diferença entre os quantitativos agregados de 5.165 e 5.300 |
+| FCP / EL-025 | Política de Acervo cita o Relatório Técnico 01; inventário oficial contém 9.696 títulos; documentos oficiais da diligência parlamentar tratam da Sala 11 | PDF integral do Relatório 01/CNIRC; validação da transcrição pública de 261 entradas frente às 300 originais; metodologia que explique a diferença entre os quantitativos agregados de 5.165 e 5.300 |
 | São José dos Campos / EL-028 | Retirada corroborada por fontes contemporâneas; ofício do vereador reportado; decisão judicial de retorno reportada em 2026 | Ofício/ordem municipal original, resposta administrativa e prova pública de cumprimento; autos judiciais reportados sob segredo |
 | Londrina / EL-030 | Pedido atribuído à vereadora e datado de novembro de 2024 por reportagens contemporâneas | Requerimento protocolado, número, destinatário formal, resposta da SME e prova de execução |
 | Taubaté / EL-032 | Requerimento, autores, data, resposta parcial do prefeito e anúncio de parecer favorável ao uso em turmas adequadas corroborados por reportagens | Requerimento e resposta assinados, ordem/mensagem original, parecer integral e comprovantes de redistribuição física |
@@ -601,13 +601,13 @@ Fontes primárias:
 
 Foi reaberta a página oficial de downloads do CNIRC, atualizada em 14/08/2024. Ela lista o Inventário dos Livros da Fundação Cultural Palmares, a Política de Acervo e a resposta à Comissão de Cultura, mas não lista o Relatório Público 01/CNIRC (“Retrato do Acervo”). Isso é um indício verificável de que o relatório original não está disponível no índice público atual — não prova que nunca tenha sido publicado.
 
-O inventário oficial foi aberto diretamente e contém 295 páginas, com 9.696 registros de títulos e campos de título, autor, editora, ano e quantidade. O próprio documento informa que o levantamento foi realizado entre julho e outubro de 2021 e revisado pelo bibliotecário Henrique Bezerra de Araújo. Ele permite examinar a composição do acervo em 2021, mas não substitui o Relatório 01/CNIRC nem sua lista final de 300 títulos indicados para exclusão. Os 5.165 correspondem à contagem agregada de títulos classificados como de temática alheia; o inventário não permite presumir quais itens foram selecionados para descarte.
+O inventário oficial foi aberto diretamente e contém 295 páginas, com 9.696 registros de títulos e campos de título, autor, editora, ano e quantidade. O próprio documento informa que o levantamento foi realizado entre julho e outubro de 2021 e revisado pelo bibliotecário Henrique Bezerra de Araújo. Ele permite examinar a composição do acervo em 2021, mas não substitui o Relatório 01/CNIRC. A lista final de 300 entradas está disponível em transcrição pública secundária, com 261 entradas após remoção de edições repetidas; o inventário não permite validar a transcrição nem presumir quais itens foram efetivamente movimentados. Os 5.165 correspondem à contagem agregada de títulos classificados como de temática alheia.
 
 A Política de Formação e Desenvolvimento de Acervo, publicada em 2023, descreve critérios institucionais de avaliação, remanejamento e descarte. É documento normativo útil para comparar a política formal com as justificativas do Relatório 01, mas não é o relatório de triagem de 2021.
 
 A página oficial da Câmara dos Deputados contém relatórios da diligência parlamentar de 2021. O PDF de 60 páginas recuperado nesta rodada é o diagnóstico técnico do estado de conservação e das áreas de guarda, elaborado por conservadoras-restauradoras da Câmara; não deve ser confundido com o Relatório Público 01/CNIRC. A petição da OAB na ADPF 918, de 02/12/2021, reproduz trechos do Relatório 01, descreve sua metodologia e o identifica como documento anexo 26, mas o arquivo da petição não inclui a íntegra desse anexo.
 
-Conclusão: a íntegra do Relatório 01/CNIRC e sua lista final de 300 títulos indicados para exclusão continuam não recuperadas. Os 5.165 correspondem à contagem agregada (54% dos 9.565 títulos contabilizados em 2021), não ao número de títulos da lista final. O inventário oficial de 9.696 títulos está recuperado e deve ser tratado como base distinta.
+Conclusão: a íntegra do Relatório 01/CNIRC continua não recuperada. A lista final de 300 entradas foi recuperada em transcrição pública secundária, com 261 entradas após remoção de edições repetidas; a transcrição precisa ser confrontada com o original. Os 5.165 correspondem à contagem agregada (54% dos 9.565 títulos contabilizados em 2021), não ao número de títulos da lista final. O inventário oficial de 9.696 títulos está recuperado e deve ser tratado como base distinta.
 
 Fontes:
 - Página oficial de downloads do CNIRC: https://www.gov.br/palmares/pt-br/centrais-de-conteudo/publicacoes/download-1
@@ -670,3 +670,18 @@ Fontes:
 A análise de Marisa Midori Deaecto publicada no Jornal da USP em 18/06/2021 descreve o Relatório Público 01/CNIRC como um documento de 73 páginas que encerra com uma lista de 300 títulos indicados para exclusão. O número 5.165 corresponde a 54% dos 9.565 títulos contabilizados no relatório e designa o conjunto agregado classificado como de temática alheia à negra. Portanto, a pendência correta não é “lista nominal dos 5.165”, mas a recuperação do Relatório 01 e da sua lista final de 300 títulos. A diferença entre 5.165 (reportagens contemporâneas) e 5.300 (Ipea, 2022) continua sem conciliação documental e deve permanecer explicitada, sem hipótese apresentada como fato.
 
 Fonte: https://jornal.usp.br/artigos/o-governo-bolsonaro-e-o-mal-estar-dos-livros-sobre-o-expurgo-do-acervo-bibliografico-da-fundacao-palmares-primeiro-ato/
+
+
+### Recuperação da lista de exclusão — Palmares (17/06/2021)
+
+Foi localizada uma transcrição pública da lista final do Relatório 01/CNIRC em Por Dentro do RN, publicada em 17/06/2021. O texto declara reproduzir a lista completa de 300 títulos “comprobatórios do desvio da missão institucional” e informa que, removidas as edições repetidas, restam 261 entradas. A lista pode ser consultada integralmente na página original: https://pordentrodorn.com.br/2021/06/17/veja-lista-de-livros-banidos-pela-fundacao-palmares/
+
+A existência e o tamanho da lista são corroborados pela análise de Marisa Midori Deaecto no Jornal da USP (18/06/2021), que descreve o relatório de 73 páginas e a lista final de 300 títulos, e por artigo da Revista de Estudos Culturais (EACH/USP, 2022), que também identifica a lista de 300 títulos. A transcrição do Por Dentro do RN é secundária; não substitui o PDF original e não foi possível conferir eventuais erros de transcrição, grafia ou ordem contra o documento de origem.
+
+A distinção numérica fica assim:
+- 9.565 títulos: total declarado no relatório de 2021.
+- 4.400 (46%): títulos classificados no relatório como de temática negra.
+- 5.165 (54%): títulos classificados como de temática alheia à negra; quantitativo agregado, não lista de exclusão.
+- 300 entradas: lista final de títulos apontados como comprobatórios de desvio da missão institucional.
+- 261 entradas: resultado da transcrição secundária após remoção de edições repetidas.
+- 5.300 exemplares: número alegado na petição da OAB/ADPF 918; não deve ser confundido com o quantitativo de 5.165 títulos nem tratado como prova independente de execução.
