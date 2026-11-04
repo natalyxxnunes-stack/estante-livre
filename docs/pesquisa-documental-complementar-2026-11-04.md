@@ -365,3 +365,14 @@ Continuam ausentes:
 - comprovantes de retorno/redistribuição dos livros.
 
 **Status:** EL-032 permanece parcial. O conteúdo atribuído à resposta não deve ser rotulado como documento primário recuperado.
+
+
+## 13. Verificação da publicação do MPSC de 09/08/2024 — correção de interpretação
+
+A leitura do PDF integral do Diário Oficial de 09/08/2024 confirma que a Notícia de Fato 01.2024.00012159-3 aparece na **pauta de julgamento da sessão da 2ª Turma Revisora marcada para 15/08/2024**. A publicação de 09/08 não é a ata nem a súmula do resultado dessa sessão. Portanto, ela comprova a inclusão do procedimento em pauta, mas não comprova arquivamento, homologação ou decisão de mérito.
+
+A busca pelo PDF deve ser direcionada à súmula/ata da 2ª Turma Revisora da sessão de 15/08/2024 e, em paralelo, ao sistema de consulta de procedimentos do MPSC pelo número SIG. Até localizar um desses documentos, o resultado do procedimento permanece desconhecido.
+
+Fonte: [Diário Oficial do MPSC de 09/08/2024, pauta da sessão de 15/08/2024](https://documentos.mpsc.mp.br/portal/Conteudo/publicacoes/do_mpsc_2024-08-09.pdf).
+
+**Correção editorial:** qualquer menção anterior a essa publicação como “relação de procedimentos apreciados” deve ser entendida apenas como inclusão em pauta; não há, nesse PDF, resultado deliberativo do procedimento de Canoinhas.
