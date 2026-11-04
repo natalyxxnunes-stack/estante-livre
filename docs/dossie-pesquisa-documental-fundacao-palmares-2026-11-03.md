@@ -324,3 +324,59 @@ O cruzamento amostral demonstra correspondências em pelo menos oito grupos de t
 3. **Rastreabilidade física:** permanece pendente — o inventário de 2024 não identifica os exemplares separados nem registra sua movimentação posterior.
 4. **Acesso atual:** permanece pendente — relatório 2025 comprova digitalização e disponibilização de títulos no SOPHIA, mas não fornece identificadores de catálogo para cada título da lista.
 5. **Processo judicial:** permanece pendente — a pesquisa pública ainda não recuperou sentença/andamento final da Ação Popular 5006660-67.2021.4.02.5117/RJ.
+
+
+## 9. Cruzamento nominal — primeira rodada verificável com o inventário oficial de 2023
+
+**Data:** 04/11/2026. Nesta etapa foi possível usar uma versão pública integralmente indexada do inventário da FCP: *Lista de Livros — Atualizada 23.05.23*, arquivo PDF publicado no portal oficial em 04/09/2023. O documento declara 9.665 títulos, compilados entre julho e outubro de 2021, com campos de título, autor, editora, ano e quantidade. URL: https://www.gov.br/palmares/pt-br/centrais-de-conteudo/publicacoes/ListadeLivrosAtualizada04.09.23.pdf
+
+**Atenção à versão:** este inventário declara 9.665 títulos; o inventário de 2024 mencionado anteriormente declara 9.696. Não são intercambiáveis. O cruzamento abaixo usa a versão de 2023 porque seu conteúdo tabular está publicamente indexado e permite conferir os registros e quantidades. A divergência entre as duas versões deve ser tratada em etapa própria.
+
+### 9.1 Correspondências positivas confirmadas
+
+| Nº na lista pública de 2021 | Título/autor conforme lista de 2021 | Registro no inventário oficial de 2023 | Metadados oficiais / quantidade | Avaliação |
+|---:|---|---:|---|---|
+| 5 | *Discurso sobre o colonialismo* — Aimé Césaire (1978) | 3071 | Sá da Costa; 1978; 1 | Correspondência forte; grafia do autor varia |
+| 12 | *A nova mulher e a moral sexual* — Alexandra Kolontai (1932) | 598 e 599 | Pax; 1953; 1. Expressão Popular; 2000; 1 | Mesmo título/autor, duas edições; anos divergem do registro de 2021 |
+| 19 | *Educação e Luta de Classes* — Aníbal Ponce (1963) | 3233 | Fulgor; 1963; 1 | Correspondência forte; inventário usa “Lutas” no plural |
+| 23 | *Concepção Dialética da História* — Antonio Gramsci (1966) | Não confirmada nesta rodada | — | Busca textual exata não retornou correspondência; não classificar como ausente sem variações/catalogação |
+| 40 | *O mundo do socialismo* — Caio Prado Jr. (1961) | 6371 | Brasiliense; 1962; 1 | Correspondência provável; ano divergente |
+| 41 | *A Pré-Revolução Brasileira* — Celso Furtado (1962) | 655 | Fundo de Cultura; 1962; 1 | Correspondência forte |
+| 60 | *Bandidos* — E. J. Hobsbawm (1975) | 1643 | Forense-Universitária; 1975; 1 | Correspondência forte |
+| 92 | *A Lógica Dialética* — Ath. Joja (1965) | 520 | Fulgor; 1965; 1 | Correspondência forte; nome do autor abreviado de forma diferente |
+| 95 | *O Sexo na Alemanha Nazista* — Hans Peter Blewel (1972) | 6686 | Distribuidora Record; ano não informado; 1 | Correspondência forte por título/autor; divergência de grafia do sobrenome e ausência de ano |
+| 103 | *Eros e Civilização* — Herbert Marcuse | 3443 | Círculo do Livro; ano não informado; 1 | Correspondência forte |
+| 142 | *O Capital: livros 1, 2 e 3 — várias edições* — Karl Marx | 6047–6058 (12 registros contíguos) | Múltiplas editoras/anos; somatório das quantidades dos registros exibidos: 14 | Correspondência forte por título/autor; há múltiplas edições e registros |
+| 165 | *Dicionário do Folclore Brasileiro* — Câmara Cascudo | 2983–2986 | Quatro registros, quantidades 2+2+2+2 = 8 | Correspondência forte; variantes de grafia do autor/título |
+| 192 | *Historia Económica General* — Max Weber (1942) | Não confirmada nesta rodada | — | Busca textual exata não retornou correspondência; não classificar como ausente sem variantes |
+| 193 | *O pensamento de Che Guevara* — Michael Löwy (2001) | 6489 | Expressão Popular; 1999; 1 | Correspondência provável; ano divergente |
+| 204 | *Almas Mortas* — Nicolai Gogol (1937) | 1134 | Brasil Editora; 1937; 2 | Correspondência forte; nome do autor em variante transliterada |
+
+**Nota de integridade:** a tabela registra resultados confirmados e casos sem retorno em busca textual. A ausência de resultado de busca não significa ausência física no acervo: pode decorrer de grafia, tradução, abreviação, erro de OCR, título alternativo ou diferença de catalogação.
+
+### 9.2 Correções em relação ao cruzamento preliminar anterior
+
+1. A referência oficial de 2023 localiza *O Mundo do Socialismo* no registro 6371, com ano 1962 e quantidade 1; a lista pública de 2021 informa 1961. A referência anterior ao registro 6393 estava incorreta e deve ser desconsiderada.
+2. *O Capital* corresponde aos registros 6047–6058 na versão de 2023, com soma de 14 exemplares. A sequência 6069–6080 citada anteriormente não deve ser reutilizada sem conferência da versão 2024.
+3. *O Sexo na Alemanha Nazista* aparece como registro 6686 na versão de 2023, com autor “Hans Peter Bleual”, editora Distribuidora Record, ano não informado e quantidade 1.
+4. *Dicionário do Folclore Brasileiro* corresponde aos registros 2983–2986 na versão de 2023, soma 8 exemplares.
+
+### 9.3 Limites desta rodada
+
+A lista pública de 2021 contém 261 entradas após exclusão jornalística de edições repetidas. Nesta rodada foram submetidas a buscas nominais 15 entradas exemplificativas, com 13 correspondências positivas identificadas e duas sem confirmação textual. Isso **não constitui cruzamento integral das 261 entradas**. A plataforma de pesquisa permitiu localizar linhas específicas no inventário PDF, mas não disponibilizou o arquivo binário para extração automatizada local nesta execução. Não preencher artificialmente os demais 246 registros como “não encontrados”.
+
+### 9.4 Próximo procedimento reprodutível
+
+- Obter cópia local do PDF oficial 2023 e do inventário 2024, preservando URL, data de acesso e hash SHA-256.
+- Extrair as tabelas com OCR/text extraction, mantendo número do registro, título, autor, editora, ano, quantidade e página.
+- Extrair as 261 entradas da página jornalística com a numeração original e preservar título/autor/ano sem correção silenciosa.
+- Normalizar apenas em colunas auxiliares (minúsculas, remoção de diacríticos, pontuação e espaços), mantendo sempre os campos originais.
+- Fazer correspondência em três níveis: exata; provável por título+autor; manual por edição/variante. Não aceitar apenas coincidência de título genérico.
+- Publicar uma linha por entrada da lista de 2021, com status “correspondência forte”, “provável”, “ambígua”, “não localizada na busca” ou “não verificável”.
+- Somar quantidades apenas depois de revisar duplicatas e edições. A quantidade no inventário não comprova que sejam os exemplares fisicamente separados em 2021.
+
+### 9.5 Fontes específicas da rodada
+
+- Lista pública de 261 entradas, Por Dentro do RN, 17/06/2021: https://pordentrodorn.com.br/2021/06/17/veja-lista-de-livros-banidos-pela-fundacao-palmares/
+- Inventário oficial FCP, versão atualizada em 04/09/2023: https://www.gov.br/palmares/pt-br/centrais-de-conteudo/publicacoes/ListadeLivrosAtualizada04.09.23.pdf
+- Página oficial de downloads da FCP, que lista outros arquivos públicos do CNIRC, inclusive lista de livros atualizada em 16/01/2023 e documentos de ambientes/acondicionamento: https://www.gov.br/palmares/pt-br/midias/arquivos/download
