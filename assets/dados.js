@@ -1128,6 +1128,34 @@ const FONTES = {
   "url":"https://www.revistaoeste.com/politica/vereadora-jessicao-exige-recolhimento-de-livro-erotico-encontrado-em-creche-no-parana/"
  },
 
+
+ "canoinhas-sapl-acessorios": {
+  "tipo":"P1","veic":"SAPL · Câmara Municipal de Canoinhas","data":"2024-04-17/2024-05-14","tit":"Documentos acessórios do Requerimento nº 149/2024: Ofício 205/2024 e Ofício 013/2024","url":"https://sapl.canoinhas.sc.leg.br/materia/15355/documentoacessorio"
+ },
+ "canoinhas-oficio-205": {
+  "tipo":"P1","veic":"Câmara Municipal de Canoinhas","data":"2024-04-17","tit":"Ofício nº 205/2024/AL: encaminha o Requerimento nº 149/2024 à prefeita e ao coordenador de biblioteca","url":"https://sapl.canoinhas.sc.leg.br/media/sapl/public/documentoacessorio/2024/28163/of_205.pdf"
+ },
+ "canoinhas-fundacao-resposta-013": {
+  "tipo":"P1","veic":"Fundação Cultural de Canoinhas Helmy Wendt Mayer","data":"2024-05-14","tit":"Ofício nº 013/2024: resposta ao Requerimento nº 149/2024, com descrição da Mundoteca e registro de empréstimo","url":"https://sapl.canoinhas.sc.leg.br/media/sapl/public/documentoacessorio/2024/28411/r_149.pdf"
+ },
+ "canoinhas-mpsc-pauta-2024": {
+  "tipo":"P1","veic":"Ministério Público de Santa Catarina · Diário Oficial Eletrônico nº 3692","data":"2024-08-01","tit":"Pauta da 1ª Turma Revisora do Conselho Superior: Notícia de Fato nº 01.2024.00012159-3, 1ª Promotoria de Canoinhas","url":"https://documentos.mpsc.mp.br/portal/Conteudo/publicacoes/do_mpsc_2024-08-01.pdf"
+ },
+ "palmares-inventario-oficial-2024": {
+  "tipo":"P1","veic":"Fundação Cultural Palmares · CNIRC","data":"2024-08-08","tit":"Inventário bibliográfico oficial do antigo acervo: 9.696 títulos, com autor, editora, ano e quantidade","url":"https://www.gov.br/palmares/pt-br/centrais-de-conteudo/publicacoes/lista-de-livros-atualizada-8-8-2024-1.pdf"
+ },
+ "palmares-download-cnirc": {
+  "tipo":"P1","veic":"Fundação Cultural Palmares · CNIRC","data":"2024-08-14","tit":"Página oficial de downloads do CNIRC: inventário, política de acervo e resposta à Comissão de Cultura; não lista o Relatório Público 01","url":"https://www.gov.br/palmares/pt-br/centrais-de-conteudo/publicacoes/download-1"
+ },
+ "palmares-politica-acervo-2023": {
+  "tipo":"P1","veic":"Fundação Cultural Palmares · CNIRC","data":"2023-07-06","tit":"Política de Formação e Desenvolvimento de Acervo: critérios de avaliação, remanejamento e descarte","url":"https://www.gov.br/palmares/pt-br/centrais-de-conteudo/publicacoes/PolticadeFormaoeDesenvolvimentodeAcervoFundaoCulturalPalmares06072023.pdf"
+ },
+ "palmares-camara-diligencia-2021": {
+  "tipo":"P1","veic":"Câmara dos Deputados · Centro de Documentação e Informação","data":"2021","tit":"Relatório técnico sobre estado de conservação dos acervos e áreas de guarda da Fundação Cultural Palmares","url":"https://www2.camara.leg.br/atividade-legislativa/comissoes/comissoes-permanentes/ccult/outros-documentos/relatorios-sobre-a-diligencia-na-fundacao-palmares-2021/relatorio-final-fundacao-cultural-palmares/view"
+ },
+ "palmares-oab-adpf-918": {
+  "tipo":"P1","veic":"Conselho Federal da OAB · ADPF 918","data":"2021-12-02","tit":"Petição inicial da ADPF 918 reproduz trechos do Relatório Público 01/CNIRC e identifica o documento como anexo 26","url":"https://s.oab.org.br/arquivos/2021/12/ba767c45-39d7-4c44-95c0-7f07d8d425ba.pdf"
+ },
 };
 
 /* taxonomias completas; inclui as categorias em zero, de propósito */
@@ -1317,33 +1345,6 @@ const AGENTES = {
  "joao-jorge-santos-rodrigues":{nome:"João Jorge Santos Rodrigues", tipo:"Pessoa"},
  "flavia-de-jesus-costa":{nome:"Flávia de Jesus Costa", tipo:"Pessoa"},
 
- "canoinhas-sapl-acessorios": {
-  "tipo":"P1","veic":"SAPL · Câmara Municipal de Canoinhas","data":"2024-04-17/2024-05-14","tit":"Documentos acessórios do Requerimento nº 149/2024: Ofício 205/2024 e Ofício 013/2024","url":"https://sapl.canoinhas.sc.leg.br/materia/15355/documentoacessorio"
- },
- "canoinhas-oficio-205": {
-  "tipo":"P1","veic":"Câmara Municipal de Canoinhas","data":"2024-04-17","tit":"Ofício nº 205/2024/AL: encaminha o Requerimento nº 149/2024 à prefeita e ao coordenador de biblioteca","url":"https://sapl.canoinhas.sc.leg.br/media/sapl/public/documentoacessorio/2024/28163/of_205.pdf"
- },
- "canoinhas-fundacao-resposta-013": {
-  "tipo":"P1","veic":"Fundação Cultural de Canoinhas Helmy Wendt Mayer","data":"2024-05-14","tit":"Ofício nº 013/2024: resposta ao Requerimento nº 149/2024, com descrição da Mundoteca e registro de empréstimo","url":"https://sapl.canoinhas.sc.leg.br/media/sapl/public/documentoacessorio/2024/28411/r_149.pdf"
- },
- "canoinhas-mpsc-pauta-2024": {
-  "tipo":"P1","veic":"Ministério Público de Santa Catarina · Diário Oficial Eletrônico nº 3692","data":"2024-08-01","tit":"Pauta da 1ª Turma Revisora do Conselho Superior: Notícia de Fato nº 01.2024.00012159-3, 1ª Promotoria de Canoinhas","url":"https://documentos.mpsc.mp.br/portal/Conteudo/publicacoes/do_mpsc_2024-08-01.pdf"
- },
- "palmares-inventario-oficial-2024": {
-  "tipo":"P1","veic":"Fundação Cultural Palmares · CNIRC","data":"2024-08-08","tit":"Inventário bibliográfico oficial do antigo acervo: 9.696 títulos, com autor, editora, ano e quantidade","url":"https://www.gov.br/palmares/pt-br/centrais-de-conteudo/publicacoes/lista-de-livros-atualizada-8-8-2024-1.pdf"
- },
- "palmares-download-cnirc": {
-  "tipo":"P1","veic":"Fundação Cultural Palmares · CNIRC","data":"2024-08-14","tit":"Página oficial de downloads do CNIRC: inventário, política de acervo e resposta à Comissão de Cultura; não lista o Relatório Público 01","url":"https://www.gov.br/palmares/pt-br/centrais-de-conteudo/publicacoes/download-1"
- },
- "palmares-politica-acervo-2023": {
-  "tipo":"P1","veic":"Fundação Cultural Palmares · CNIRC","data":"2023-07-06","tit":"Política de Formação e Desenvolvimento de Acervo: critérios de avaliação, remanejamento e descarte","url":"https://www.gov.br/palmares/pt-br/centrais-de-conteudo/publicacoes/PolticadeFormaoeDesenvolvimentodeAcervoFundaoCulturalPalmares06072023.pdf"
- },
- "palmares-camara-diligencia-2021": {
-  "tipo":"P1","veic":"Câmara dos Deputados · Centro de Documentação e Informação","data":"2021","tit":"Relatório técnico sobre estado de conservação dos acervos e áreas de guarda da Fundação Cultural Palmares","url":"https://www2.camara.leg.br/atividade-legislativa/comissoes/comissoes-permanentes/ccult/outros-documentos/relatorios-sobre-a-diligencia-na-fundacao-palmares-2021/relatorio-final-fundacao-cultural-palmares/view"
- },
- "palmares-oab-adpf-918": {
-  "tipo":"P1","veic":"Conselho Federal da OAB · ADPF 918","data":"2021-12-02","tit":"Petição inicial da ADPF 918 reproduz trechos do Relatório Público 01/CNIRC e identifica o documento como anexo 26","url":"https://s.oab.org.br/arquivos/2021/12/ba767c45-39d7-4c44-95c0-7f07d8d425ba.pdf"
- },
 };
 
 /* Contexto partidário temporal. Não equivale a atribuição de autoria ou responsabilidade.
