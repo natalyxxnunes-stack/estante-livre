@@ -284,3 +284,10 @@ A nova rodada recuperou documentos primários adicionais para Canoinhas e refino
 A atualização não encerra a recuperação integral desses documentos. Nenhuma solicitação foi protocolada ou encaminhada a qualquer órgão ou pessoa. As lacunas remanescentes continuam descritas como lacunas, sem inferência.
 
 **Status:** pesquisa pública complementar realizada; fechamento documental integral ainda não atingido.
+
+
+### Complemento — resultado do recurso no MPSC (Canoinhas)
+
+Foi recuperado o Diário Oficial do MPSC nº 3698, de 09/08/2024. O Conselho Superior, por unanimidade, conheceu e negou provimento ao recurso relativo à Notícia de Fato nº 01.2024.00012159-3, da 1ª Promotoria de Canoinhas, mantendo o arquivamento recorrido. A publicação comprova o resultado, mas não apresenta a fundamentação integral. A pendência deixa de ser “localizar o resultado” e passa a ser “recuperar a fundamentação integral e fechar a cadeia de custódia dos exemplares”.
+
+Fonte: https://documentos.mpsc.mp.br/portal/Conteudo/publicacoes/do_mpsc_2024-08-09.pdf
