@@ -1,4 +1,6 @@
-# Auditoria editorial P0 — Estante Livre (snapshot histórico de 03/11/2026)
+# Auditoria editorial P0
+
+> **Nota de atualização — 04/11/2026:** este documento preserva a fotografia de trabalho anterior. Seus números e status intermediários foram superados pelo [Fechamento P0 de 04/11/2026](fechamento-p0.md) e pelo [resultado da pesquisa pública](resultado-pesquisa-publica-p0-2026-11-04.md). Para o estado atual, considerar seis registros com núcleo factual verificado e cinco parcialmente verificados no conjunto total; não usar os dez parciais descritos nas seções históricas como status vigente. — Estante Livre (snapshot histórico de 03/11/2026)
 
 > **Este documento é um retrato histórico anterior à rodada final de 04/11.** Para a classificação vigente, consulte [Fechamento P0 — 4 de novembro de 2026](fechamento-p0.md) e [Matriz de afirmações e evidências](matriz-afirmacao-evidencia-p0.md).
 
