@@ -149,3 +149,8 @@ As reportagens Folha, UOL/Agência Estado e Sampi/OVALE convergem quanto à sent
 
 
 **Atualização de contagem após esta rodada:** 148 fontes únicas e 269 associações entre registros e fontes (duas fontes novas incorporadas: inventário oficial da FCP de 16/01/2023 e cópia do Diário do MPF no repositório da Biblioteca Digital).
+
+
+### Palmares — distinção entre documento institucional de 2021 e política aprovada em 2024
+
+Correção de precisão: o documento institucional “Políticas de Acervo”, datado de 21/12/2021, contém os critérios de descarte que mencionam marxismo, comunismo e militância política explícita. O próprio texto registra que o descarte estava impedido por liminar. Não se deve apresentar essas cláusulas como conteúdo da política vigente sem ressalva. A Resolução FCP nº 24/2024, publicada no DOU em 26/02/2024, aprovou política posterior; o texto publicado no Diário não repete aqueles critérios. Artigo de Henrique Bezerra de Araújo (Divulga-CI, nov. 2023), bibliotecário ligado à FCP, relata que a política e a comissão de gestão estavam sendo estruturadas após a ação popular e que a decisão judicial impedia a movimentação também do acervo promocional. A existência do critério no documento de 2021 é comprovada; sua aplicação concreta e o descarte dos 5.165 itens não estão comprovados.
