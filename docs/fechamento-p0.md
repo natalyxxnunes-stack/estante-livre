@@ -327,3 +327,8 @@ O achado confirma que esses títulos aparecem no inventário bibliográfico ofic
 ### Complemento — Rondônia (EL-015 e EL-022 a EL-024)
 
 A nota oficial da SEDUC de 06/02/2020 afirma que o processo técnico foi encerrado imediatamente e promete apurar o vazamento. O Diário do MPF de 30/08/2021 registra uma sindicância administrativa separada, instaurada pela SEDUC, e uma recomendação do MP-RO acatada. A tese da UnB de 2024 reproduz a imagem do memorando. Não foram localizados o Adendo SEI 10053329, a íntegra da recomendação do MP-RO ou o resultado da sindicância. O processo técnico encerrado e a sindicância administrativa não devem ser confundidos.
+
+
+### Complemento — Londrina / EL-035
+
+Foi recuperada cópia digital assinada do Jornal Oficial de Londrina nº 3630, de 09/10/2018, cuja relação de livros adquiridos inclui “O Bebê Vem com a Cegonha”, da Editora Melhoramentos, a R$ 35,33 por unidade. Isso comprova registro de aquisição municipal em 2018. Não comprova a escola destinatária, a permanência do exemplar em circulação em 2026, nem a execução do recolhimento ou o resultado da análise técnica.
