@@ -268,3 +268,19 @@ Não usar “partido à época” como campo isolado se a fonte cobre apenas ele
 - Jéssica Ramos Moreno e Leonel Camasão: fontes eleitorais comprovam legenda na candidatura, não necessariamente filiação em data distinta do episódio.
 
 **Decisão da revisão:** a auditoria dos 19 registros está editorialmente padronizada, mas a integração visual não deve apresentar uma coluna única de “partido à época”. Recomenda-se implementar a camada apenas com os campos de evidência, período coberto e grau de certeza acima. Os casos com cobertura insuficiente devem aparecer como “não confirmado para a data do episódio”, preservando o contexto em nota.
+
+
+## Implementação da camada pública de contexto partidário — 04/11/2026
+
+A revisão editorial foi convertida em dados estruturados em `assets/dados.js`, no array `CONTEXTO_PARTIDARIO`, com 19 registros. Cada item contém pessoa, formulação partidária, cobertura temporal, status editorial e URLs de evidência. Os registros são deliberadamente separados de `AGENTES`/`PAPEIS`: não estabelecem autoria, decisão ou responsabilidade pelo ato.
+
+A página `poder.html` recebeu a seção **Contexto partidário e limites temporais**, anterior à lista de agentes e papéis. A renderização é feita por `scripts/gerar.js`, com fontes clicáveis, status e cobertura temporal visíveis. Os cartões usam o mesmo atributo de busca da seção de agentes, de modo que a pesquisa por nome, sigla ou episódio também localiza os registros partidários.
+
+O gerador valida que existam exatamente 19 registros, que os campos obrigatórios estejam preenchidos e que cada URL tenha protocolo HTTP(S). A implementação não preenche lacunas com inferência: Riedel mantém divergência de datas; Zelinda não tem filiação determinada no dia da conversa informal; Marcos Rocha e Ratinho Júnior têm limites explícitos de cobertura; candidaturas não são tratadas como certidões de filiação.
+
+Arquivos alterados nesta implementação:
+- `assets/dados.js` — dados estruturados dos 19 registros (`CONTEXTO_PARTIDARIO`).
+- `scripts/gerar.js` — validação e renderização da seção.
+- `poder.html` — marcador e apresentação da seção pública.
+
+**Validação pendente:** a execução do workflow para os commits de implementação ainda não foi confirmada pela consulta de execuções associadas ao commit. A página estática gerada e a prévia visual precisam ser conferidas depois que o workflow terminar. Não mesclar nem publicar em produção antes dessa validação.
