@@ -1107,7 +1107,7 @@ const FONTES = {
  "canoinhas-online-2024": {
   "tipo":"M1",
   "veic":"Canoinhas Online",
-  "data":"2024-04-18",
+  "data":"2024-04-19",
   "tit":"Canoinhas em destaque nacional: vídeo de prefeita jogando livros no lixo repercute no país",
   "url":"https://canoinhasonline.com.br/2024/04/canoinhas-em-destaque-nacional-video-de-prefeita-jogando-livros-no-lixo-repercute-no-pais.html"
  },
