@@ -1,5 +1,7 @@
 # Revisão editorial dos registros EL-025 a EL-037
 
+> **Nota de atualização — 04/11/2026:** esta revisão é uma fotografia de 03/11. O status atualizado de EL-026 e EL-031, a classificação final dos nove alertas de signatário e o balanço dos dez registros P0 constam no [Fechamento P0](fechamento-p0.md).
+
 **Data da rodada:** 3 de novembro de 2026  
 **Branch:** `feat/estante-livre-auditoria-profissional`
 
