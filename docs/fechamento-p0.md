@@ -202,3 +202,14 @@ A lista é deliberadamente mais ampla que os cinco registros parciais: alguns do
 A partir deste fechamento, a busca aberta e repetitiva em mecanismos de pesquisa deixa de ser critério de avanço. Cada pendência só muda de status mediante: (a) obtenção de documento primário ou cópia autenticável; (b) confirmação formal de sigilo/inexistência/ausência de custódia; ou (c) prova verificável de execução. Os pedidos formais de acesso não foram protocolados em nome da usuária.
 
 **Status:** P0 de auditoria e pesquisa encerrado; P0 de recuperação primária permanece condicionado a respostas dos órgãos e à obtenção dos documentos listados. O produto não deve anunciar que todas as lacunas documentais foram sanadas.
+
+
+## Atualização de pesquisa em fontes primárias — 04/11/2026
+
+A pesquisa posterior à versão inicial deste fechamento localizou duas peças públicas relevantes:
+
+1. **MPSC/Canoinhas:** o Diário Oficial Eletrônico nº 3698, de 09/08/2024, publica a Súmula da Primeira Turma Revisora da sessão de 07/08/2024. Na seção de recursos conhecidos e desprovidos por unanimidade, consta a Notícia de Fato nº 01.2024.00012159-3 da 1ª Promotoria de Canoinhas, sob relatoria de Ary Capella Neto. O resultado do recurso, portanto, não é mais desconhecido. Permanecem ausentes a íntegra da decisão originária/promoção de arquivamento e os documentos sobre recibo, inventário e localização posterior dos livros. Fonte: [Diário Oficial do MPSC nº 3698, 09/08/2024](https://documentos.mpsc.mp.br/portal/Conteudo/publicacoes/do_mpsc_2024-08-09.pdf).
+
+2. **FCP/Sala 11:** foi localizada a cópia oficial de 92 páginas da resposta da Fundação Cultural Palmares aos relatórios da Comissão de Cultura da Câmara dos Deputados. O PDF incorpora o relatório técnico parlamentar, identifica a Sala 11 como “sala da vergonha (livros)”, registra caixas com livros para doação e traz assinaturas digitais de Juçara Quinteros de Farias e Gilcy Rodrigues Azevedo no relatório parlamentar. Trata-se de peça distinta do Relatório Público 01/CNIRC. Fonte: [PDF oficial da FCP](https://www.gov.br/palmares/pt-br/midias/arquivos/download/resposta.pdf).
+
+**Efeito sobre a classificação:** nenhuma dessas descobertas elimina as cinco classificações parciais do conjunto P0. A descoberta do resultado do recurso do MPSC melhora a documentação de contexto dos registros EL-036/EL-037, mas não comprova o destino físico dos exemplares. A resposta oficial da FCP melhora a prova sobre a Sala 11, mas não recupera o Relatório 01/CNIRC nem a lista nominal dos 5.165 itens. A pesquisa complementar registra os detalhes e corrige a interpretação anterior da pauta do MPSC.
