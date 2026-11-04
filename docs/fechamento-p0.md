@@ -5,8 +5,8 @@
 A rodada de pesquisa pública ampliada e a revisão dos dados P0 foram concluídas. O trabalho não transforma ausência de documento em confirmação: cada pendência foi classificada conforme a evidência realmente disponível.
 
 **Dos dez registros originalmente destacados para revisão:**
-- **5 com núcleo factual verificado:** EL-022, EL-023, EL-024, EL-036 e EL-037.
-- **5 parcialmente verificados:** EL-028, EL-030, EL-031, EL-032 e EL-035.
+- **6 com núcleo factual verificado:** EL-022, EL-023, EL-024, EL-031, EL-036 e EL-037.
+- **4 parcialmente verificados:** EL-028, EL-030, EL-032 e EL-035.
 
 EL-025, que integra o grupo de nove alertas de signatário e não a lista original dos dez, também permanece parcialmente verificado. Assim, no conjunto total de 37 registros, **5 estão parcialmente verificados**: EL-025, EL-028, EL-030, EL-032 e EL-035.
 
