@@ -269,3 +269,18 @@ Não se deve interpretar ausência em mecanismos de busca como inexistência do 
 **Verificação integral de todos os registros: não concluída.**  
 **Cinco registros parciais: permanecem parciais.**  
 **PR e publicação:** este fechamento documental não autoriza merge nem deploy; as validações técnicas e a prévia continuam sendo condições independentes.
+
+
+## Complemento de pesquisa pública — 04/11/2026
+
+A nova rodada recuperou documentos primários adicionais para Canoinhas e refinou a delimitação da lacuna da Fundação Palmares.
+
+- **Canoinhas (EL-036/EL-037):** localizados no SAPL da Câmara o Ofício nº 205/2024/AL e a resposta da Fundação Cultural no Ofício nº 013/2024. A resposta descreve a Mundoteca (569 obras, duas salas separadas por público, classificação por cores, abertura em 19/11/2022, responsável local e um empréstimo registrado), mas esclarece que a Mundoteca era responsabilidade da Secretaria Municipal de Educação. Não identifica os dois livros nem comprova o recebimento/destino dos exemplares. O TCE-SC, por sua vez, registra a informação da prefeita de que os dois livros foram entregues à gestora da Fundação Cultural para análise. A cadeia de custódia continua aberta; as duas fontes não devem ser artificialmente harmonizadas.
+- **MPSC/Canoinhas:** o Diário Oficial de 01/08/2024 comprova que a Notícia de Fato nº 01.2024.00012159-3 entrou em pauta da 1ª Turma Revisora para 07/08/2024. A pauta não substitui a íntegra da decisão revisora.
+- **Palmares (EL-025):** recuperado e conferido o inventário oficial de 9.696 títulos, de 295 páginas, publicado pela FCP em 08/08/2024. A página oficial de downloads do CNIRC lista o inventário, a Política de Acervo e a resposta à Comissão de Cultura, mas não o Relatório Público 01/CNIRC. A petição da OAB na ADPF 918 reproduz trechos do relatório e o identifica como anexo 26, sem conter o anexo. A íntegra do Relatório 01 e a lista nominal dos 5.165 itens permanecem pendentes.
+- **Londrina (EL-035):** a CBN e a matéria de Douglas Kuspiosz reproduzida pelo Bonde confirmam levantamento e recolhimento em rede para análise, além da existência de pedido formal. Número SEI, documento integral, quantitativo, parecer e decisão final não localizados.
+- **Taubaté (EL-032):** mantida a distinção entre anúncio de retorno ao uso pedagógico, após análise técnica, e prova de que os exemplares foram efetivamente redistribuídos.
+
+A atualização não encerra a recuperação integral desses documentos. Nenhuma solicitação foi protocolada ou encaminhada a qualquer órgão ou pessoa. As lacunas remanescentes continuam descritas como lacunas, sem inferência.
+
+**Status:** pesquisa pública complementar realizada; fechamento documental integral ainda não atingido.
