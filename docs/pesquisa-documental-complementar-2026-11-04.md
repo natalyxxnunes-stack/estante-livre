@@ -651,3 +651,15 @@ Isso melhora a documentação da cadeia entre pressão parlamentar, pedido forma
 Fontes:
 - https://spriomais.com.br/2024/06/13/meninas-sonhadoras-mulheres-cientistas-prefeitura-recolhe-livro-de-escolas-para-avaliar-conteudo-em-sjc/
 - https://sampi.net.br/ovale/noticias/amp/2855382/vale-do-paraiba/2024/09/mp-e-defensoria-apontam-censura-em-recolhimento-de-livro-em-sjc
+
+
+### Taubaté — conferência do sistema legislativo público
+
+Foi localizada e consultada a plataforma oficial Câmara Sem Papel, que disponibiliza consulta pública da produção legislativa por texto, autor, data, tipo e número de processo. Também foram recuperadas as páginas oficiais da 45ª sessão ordinária (realizada em 03/03/2026) e da 46ª sessão ordinária (10/03/2026), além do registro oficial “Palavra dos vereadores” da 45ª sessão.
+
+Essas páginas confirmam o calendário das sessões e o funcionamento do repositório público. Os resumos publicados das falas, contudo, não reproduzem a declaração sobre “Pipoca e Picolé” nem o teor do requerimento de Isaac do Carmo e Talita. A consulta por autor no sistema mostra 349 proposições de Isaac em 2026, mas a pesquisa indexada não recuperou o registro específico. Portanto, o número, a íntegra e a tramitação detalhada do requerimento continuam pendentes; a reportagem de O Vale segue sendo a fonte disponível para a aprovação em 10/03 e o conteúdo da cobrança.
+
+Fontes:
+- Câmara Sem Papel: https://camarasempapel.camarataubate.sp.gov.br/
+- Palavra dos vereadores — 45ª sessão: https://www.camarataubate.sp.gov.br/portal/noticias/0/3/9869/palavra-dos-vereadores---45-sessao-ordinaria/
+- Ordem do dia — 46ª sessão: https://www.camarataubate.sp.gov.br/portal/noticias/0/3/9875/46-sessao-ordinaria--1032026---ordem-do-dia/
