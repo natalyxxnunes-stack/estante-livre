@@ -291,3 +291,10 @@ A atualização não encerra a recuperação integral desses documentos. Nenhuma
 Foi recuperado o Diário Oficial do MPSC nº 3698, de 09/08/2024. O Conselho Superior, por unanimidade, conheceu e negou provimento ao recurso relativo à Notícia de Fato nº 01.2024.00012159-3, da 1ª Promotoria de Canoinhas, mantendo o arquivamento recorrido. A publicação comprova o resultado, mas não apresenta a fundamentação integral. A pendência deixa de ser “localizar o resultado” e passa a ser “recuperar a fundamentação integral e fechar a cadeia de custódia dos exemplares”.
 
 Fonte: https://documentos.mpsc.mp.br/portal/Conteudo/publicacoes/do_mpsc_2024-08-09.pdf
+
+
+### Complemento — São José dos Campos (EL-028)
+
+A nova pesquisa recuperou a nota pública da Prefeitura, reproduzida pela Spriomais em 13/06/2024, confirmando o recolhimento dos exemplares de todas as escolas para reavaliação técnica. A mesma matéria registra que o vereador protocolou ofício ao prefeito e ao secretário de Educação em 11/06/2024. O Vale/Sampi, em 09/09/2024, documenta o ajuizamento da ação civil pública e relata que a ordem operacional aos diretores foi transmitida por WhatsApp.
+
+A cópia do ofício parlamentar e a mensagem que transmitiu a ordem municipal não foram localizadas. A sentença de 2026 e a ordem de restituição são divulgadas por veículos de imprensa, mas não foi localizada comprovação pública de cumprimento. O registro permanece parcialmente verificado por essas lacunas.
