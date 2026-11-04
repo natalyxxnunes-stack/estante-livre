@@ -1,28 +1,42 @@
-# Inventário de capas e procedência — atualização de 04/11/2026
+# Inventário de capas e imagens — 4 de novembro de 2026
 
-## Critério
+## Resultado
 
-As capas são usadas como imagens de referência para identificar obras mencionadas em registros documentais. Os links abaixo identificam a edição editorial e/ou o crédito disponível; **não comprovam a origem histórica do arquivo JPG armazenado no repositório nem constituem autorização de reprodução**.
+**Nenhuma das sete imagens locais de capas permanece em exibição na branch de auditoria.** Os arquivos JPG foram removidos porque o repositório não registrava sua origem histórica nem uma licença/autorização individual de reprodução.
 
-| Obra | Edição/identificador de referência | Crédito disponível | Fonte editorial/acadêmica | Limite conhecido |
-|---|---|---|---|---|
-| *O avesso da pele* | Companhia das Letras · ISBN 978-85-359-3339-0 | Alceu Chiesorin Nunes | [Ficha da editora](https://www.companhiadasletras.com.br/livro/9788535933390) | Ano e origem do JPG local não confirmados |
-| *Eu receberia as piores notícias de seus lindos lábios* | Nova edição Companhia das Letras, lançada em 21/10/2025 · ISBN 978-85-359-3807-4 | Alceu Chiesorin Nunes | [Ficha da editora](https://www.companhiadasletras.com.br/9788535938074-eu-receberia-as-piores-noticias-dos-seus-lindos-labios--nova-edicao--3160/p) | Não confundir com a edição original de 2005 |
-| *Laranja Mecânica* | Aleph · edição lançada em 20/06/2019 · ISBN 9788576574460 | Giovanna Cianelli | [Ficha da editora](https://aleph.com.br/products/laranja-mecanica) | A imagem local deve ser entendida como referência à edição indicada |
-| *Macunaíma* | Edição histórica da Livraria José Olympio | Santa Rosa, por atribuição acadêmica associada à edição de referência | [Pesquisa acadêmica no repositório da UnB](https://repositorio.unb.br/bitstream/10482/12012/1/2012_IaraCarneiroTabosaPena.pdf) | Ano/ISBN do JPG local e vínculo entre a atribuição e a imagem não confirmados; não presumir domínio público |
-| *Memórias póstumas de Brás Cubas* | Penguin-Companhia · ISBN 978-85-8285-001-5 | Crédito nominal não exibido na ficha pública consultada | [Ficha da editora](https://www.companhiadasletras.com.br/livro/9788582850015/memorias-postumas-de-bras-cubas) | Edição exata do JPG local e crédito da capa não confirmados |
-| *O menino marrom* | Melhoramentos · ISBN 978-85-06-00519-4 entre os identificadores listados pelo Instituto Ziraldo | Ziraldo é autor e ilustrador da obra | [Instituto Ziraldo](https://institutoziraldo.art.br/editorial/o-menino-marrom/) | O Instituto lista múltiplos ISBNs e informa edição atual de 1986; não foi possível vincular o JPG a uma tiragem específica |
-| *Meninas sonhadoras, mulheres cientistas* | Editora Mostarda · volume Linguagens e Ciências Humanas · ISBN 9786588183762 | Leonardo Malavazzi é creditado pelas ilustrações; crédito específico da capa não separado pela editora | [Ficha da editora](https://www.editoramostarda.com.br/produto/meninas-sonhadoras-ciencias-humanas/) | Não confundir com outro volume ou com o box; não atribuir ao ilustrador a capa sem confirmação |
+A interface preserva a ficha bibliográfica, os dados da edição e os links de referência editorial. Onde antes havia imagem, aparece um placeholder tipográfico informando que a imagem não é exibida enquanto origem e autorização não forem comprovadas.
 
-## Resultado da verificação
+| Obra | Arquivo local retirado | Situação atual |
+|---|---|---|
+| *O avesso da pele* | `assets/capas/avesso-da-pele.jpg` | Não exibida; procedência/licença não documentadas |
+| *Laranja mecânica* | `assets/capas/laranja-mecanica.jpg` | Não exibida; procedência/licença não documentadas |
+| *Macunaíma* | `assets/capas/macunaima.jpg` | Não exibida; procedência/licença não documentadas |
+| *Memórias póstumas de Brás Cubas* | `assets/capas/memorias-postumas.jpg` | Não exibida; procedência/licença não documentadas |
+| *O menino marrom* | `assets/capas/menino-marrom.jpg` | Não exibida; procedência/licença não documentadas |
+| *Meninas sonhadoras, mulheres cientistas* | `assets/capas/meninas-sonhadoras.jpg` | Não exibida; procedência/licença não documentadas |
+| *Eu receberia as piores notícias de seus lindos lábios* | `assets/capas/piores-noticias.jpg` | Não exibida; procedência/licença não documentadas |
 
-- Os sete registros possuem agora edição de referência, crédito disponível, link editorial/acadêmico e nota de limitação na base de dados.
-- A interface apresenta essas informações junto à imagem e usa a expressão “Edição de referência”.
-- O link editorial não é rotulado como origem do arquivo JPG.
-- Não foi localizada autorização individual escrita dos titulares para os sete arquivos.
-- Não foi comprovado que os arquivos locais foram baixados diretamente das páginas editoriais atualmente linkadas.
-- Nenhuma capa foi classificada como domínio público por antiguidade da obra ou da edição.
+## O que foi preservado
 
-## Próxima providência documental
+- Título, autoria, editora, edição e ISBN quando identificados.
+- Fichas editoriais públicas e links de referência.
+- Créditos bibliográficos disponíveis, sem atribuí-los ao arquivo JPG retirado.
+- Texto alternativo e apresentação tipográfica da obra.
 
-Se a editora, o ilustrador, o fotógrafo ou outro titular apresentar objeção ou comprovar titularidade, a imagem correspondente deve ser revista prontamente, com possibilidade de substituição por ficha bibliográfica sem reprodução da capa. A política de uso está em [politica-de-direitos-e-imagens.md](politica-de-direitos-e-imagens.md).
+## Critério para voltar a exibir uma capa
+
+A imagem só poderá ser reinserida quando houver:
+1. arquivo obtido de fonte rastreável;
+2. identificação da edição representada;
+3. autorização/licença ou fundamento jurídico individual documentado;
+4. crédito correto, distinguindo autor, ilustrador, designer e fotógrafo;
+5. registro da origem do arquivo no repositório.
+
+A existência de uma capa em site de editora, livraria, catálogo ou resultado de busca não constitui, por si só, autorização para copiar o arquivo. A ficha editorial pode ser linkada sem que a imagem seja reproduzida.
+
+## Referências de política
+
+- [Lei nº 9.610/1998 — direitos autorais](https://www.planalto.gov.br/ccivil_03/leis/l9610.htm)
+- [Senado Federal — Manual de Comunicação: uso de imagens](https://www12.senado.leg.br/manualdecomunicacao/estilos/uso-de-imagens)
+
+**Decisão editorial:** manter as sete fichas sem imagem até que a cadeia de direitos possa ser comprovada.
