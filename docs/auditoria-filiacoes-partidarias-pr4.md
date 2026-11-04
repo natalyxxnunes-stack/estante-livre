@@ -88,7 +88,7 @@ A rodada adicional localizou fontes públicas institucionais que substituem ou f
 | **Thomaz Henrique** | Câmara Municipal de São José dos Campos, notícia oficial de 07/02/2024: https://www.camarasjc.sp.gov.br/noticias/8444/camara-entrega-titulo-de-cidada-joseense-a-ex-jogadora-de-volei-patricia-borges | A Câmara identifica Thomaz Henrique, em fevereiro de 2024, como coautor de decreto junto a vereadores “todos do PL”. O Diário Oficial de 07/06/2024 já localizado o registra no PL três dias após o episódio de 04/06. As duas fontes institucionais, uma anterior e outra posterior, dão forte sustentação ao PL no período, embora não sejam certidão individual de filiação emitida no dia 04/06. |
 | **Lia Nogueira** | Perfil parlamentar oficial atual da ALEMS: https://al.ms.gov.br/Deputados/Visualizar/1045 | A página oficial confirma que se filiou ao PSDB em 2022. Substitui a página antiga de homologação/hmlalems.easynet.com.br. A página oficial da 12ª Legislatura também a lista no PSDB para 2023–2027. |
 | **Clayton Silva** | Câmara Municipal de Limeira, publicação de 29/11/2019: https://www.limeira.sp.leg.br/noticias/view/2019-11-29_camara-cassa-mandato-do-vereador-clayton-silva-por-falta-de-decoro | A Câmara o identifica expressamente como vereador do PSC em novembro de 2019. A notícia local de 06/04/2020 registra a saída do PSC para o PTC durante a janela partidária. Fica resolvida a filiação no episódio de 2019, desde que a data do episódio seja anterior à troca. |
-| **Zelinda Pastora** | Ficha eleitoral de 2024: https://www1.folha.uol.com.br/poder/eleicoes/candidatos/2024/sp/vereador/zelinda-pastora-250002194882.shtml; perfil da Câmara de Taubaté na legislatura 2025–2028: https://www.radartaubate.com.br/camara/vereadores/zelinda-pastora | As fontes confirmam PRD na eleição de 2024 e na composição da legislatura 2025–2028. A segunda página é reprodução/compilação de dados oficiais da Câmara, não substitui documento primário datado do pedido de 2025. Classificação continua como evidência contextual forte, não prova isolada da filiação na data exata. |
+| **Zelinda Pastora** | Documento oficial assinado pela vereadora em 06/03/2025, publicado no sistema de documentos da Câmara: https://www.camarataubate.sp.gov.br/DownloadServlet?id=boylt7l7ectu0yrvyxisrv8e6rkna9rj ; boletins oficiais de 2025 também a identificam como PRD: https://www.camarataubate.sp.gov.br/DownloadServlet?id=4mnalbgumegbwvh3itij42tjkbxcwvd3 | **Resolvido para o período documentado de março de 2025 em diante.** O documento institucional datado e assinado identifica “Vereadora Zelinda Pastora (PRD)” em 06/03/2025. Como o episódio é descrito como ocorrido em 2025, isso comprova sua identificação partidária em data contemporânea, mas não permite retroagir automaticamente para uma eventual abordagem anterior a 06/03. Se o ato narrado ocorreu antes dessa data, registrar o limite. |
 
 ### Regra de evidência aplicada
 
@@ -110,3 +110,28 @@ O TSE informa que as relações públicas de filiados são divulgadas por perío
 - **Demais nomes:** permanecem classificados conforme a matriz original, sem ampliar a força da evidência além do que as fontes permitem.
 
 A camada continua não integrada ao site nesta rodada. A documentação já pode, porém, corrigir os status de evidência e as referências das pessoas acima sem importar capas ou código visual do PR #4.
+
+
+## Segundo adendo — novas fontes primárias e refinamento temporal (04/11/2026)
+
+### Zelinda Pastora: fonte primária contemporânea localizada
+
+Foi localizado documento primário no repositório oficial da Câmara Municipal de Taubaté: solicitação de uso do plenário para audiência pública, datada de **06/03/2025**, assinada digitalmente e identificada no próprio documento como **“Vereadora Zelinda Pastora (PRD)”**. Link direto: https://www.camarataubate.sp.gov.br/DownloadServlet?id=boylt7l7ectu0yrvyxisrv8e6rkna9rj . Boletim oficial da Câmara também lista Zelinda Pastora como PRD: https://www.camarataubate.sp.gov.br/DownloadServlet?id=4mnalbgumegbwvh3itij42tjkbxcwvd3 .
+
+Isso substitui a necessidade de depender apenas de ficha eleitoral secundária ou agregador de mandatos: há documento público primário, datado e assinado, emitido pela própria vereadora. A conclusão segura é **PRD em 06/03/2025**. A reportagem posterior informa que a reclamação e o pedido ao secretário ocorreram “no ano passado”, mas não fixa o dia da abordagem. Portanto, se o episódio ocorreu antes de 06/03/2025, a fonte não prova retroativamente a filiação naquele dia; se ocorreu nessa data ou depois, a identificação partidária contemporânea está documentada. O registro deixa de ser “apenas contextual” e passa a “comprovado em 06/03/2025; extensão ao dia do episódio depende da data exata do pedido”.
+
+### Thomaz Henrique: a mudança para PL foi anterior ao episódio
+
+Uma reportagem local contemporânea de 07/03/2024 informa que Thomaz Henrique deixou o Novo no fim de 2023 e se filiou ao PL em **04/03/2024**, com declaração atribuída ao próprio vereador: https://portalaquivale.com.br/thomaz-henrique-filia-se-ao-pl . Outra reportagem local publicada em 05/03/2024 registra a filiação e reproduz declaração pública do vereador: https://www.meon.com.br/noticias/vale-do-paraiba-regiao/sjc-apos-deixar-o-novo-vereador-thomaz-henrique-entra-no-pl . O episódio investigado está datado de 04/06/2024; logo, as fontes situam a filiação três meses antes. O registro pode ser classificado como **PL confirmado antes do episódio por declaração pública contemporânea**, embora a fonte da data exata seja imprensa local, não certidão do FILIA.
+
+### Anderson Farias: data explícita de filiação ao PSD
+
+O diretório estadual do PSD publicou em 04/02/2022 que Anderson Farias assinou a ficha de filiação ao partido junto com o então prefeito Felício Ramuth, em evento realizado em 18/01/2022: https://psd-sp.org.br/noticias/prefeito-de-sao-jose-dos-campos-se-filia-ao-psd/ . A fonte partidária primária identifica expressamente a data do ato de filiação. Para episódios posteriores a 18/01/2022 e anteriores a eventual desfiliação, é evidência direta e datada, superior à ficha eleitoral de 2024 isolada. O texto não deve ser estendido para datas anteriores à filiação.
+
+### Estado consolidado após a rodada
+
+- **Zelinda Pastora:** documento primário da Câmara confirma PRD em 06/03/2025; a data exata da abordagem sobre o livro precisa ser comparada com esse marco antes de rotular “partido no dia do pedido”.
+- **Thomaz Henrique:** filiação ao PL em 04/03/2024 documentada por declaração pública contemporânea; antecede o episódio de 04/06/2024.
+- **Anderson Farias:** ficha de filiação ao PSD assinada em 18/01/2022, segundo publicação do próprio diretório estadual do partido.
+
+A evidência partidária agora está mais bem fechada para esses três casos. A regra permanece: publicar a data da fonte e o intervalo que ela sustenta, sem afirmar continuidade além do que está demonstrado.
