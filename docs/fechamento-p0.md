@@ -1,334 +1,148 @@
-# Fechamento P0 — 4 de novembro de 2026
+# Matriz de afirmações e evidências — P0 (04/11/2026)
 
-## Resultado executivo
-
-A rodada de pesquisa pública ampliada e a revisão dos dados P0 foram concluídas. O trabalho não transforma ausência de documento em confirmação: cada pendência foi classificada conforme a evidência realmente disponível.
-
-**Dos dez registros originalmente destacados para revisão:**
-- **6 com núcleo factual verificado:** EL-022, EL-023, EL-024, EL-031, EL-036 e EL-037.
-- **4 parcialmente verificados:** EL-028, EL-030, EL-032 e EL-035.
-
-EL-025, que integra o grupo de nove alertas de signatário e não a lista original dos dez, também permanece parcialmente verificado. Assim, no conjunto total de 37 registros, **5 estão parcialmente verificados**: EL-025, EL-028, EL-030, EL-032 e EL-035.
-
-**Os nove alertas de signatário foram individualmente tratados.** Em vários casos não existe ato escrito público ou a assinatura é de um documento correlato, não da ordem original. O cadastro distingue esses papéis e não atribui assinatura por inferência.
-
-**As sete imagens locais de capas foram retiradas da branch.** Como a procedência dos JPGs e as autorizações individuais não estavam documentadas, a interface passa a exibir fichas tipográficas, sem reproduzir as imagens. Metadados bibliográficos e links de referência permanecem.
-
-A pesquisa documental foi fechada até o limite do material público recuperável. Os itens que seguem em aberto não foram encerrados artificialmente: estão associados a segredo de Justiça, sigilo parcial, falta de publicação do documento específico ou ausência de processo identificável em consulta pública.
-
-## 1. Dez registros da lista P0
-
-| Registro | Classificação em 04/11 | Evidência e conclusão | Pendência remanescente |
+| Registro/afirmação | Evidência principal | Conclusão que a fonte permite | Limite / pendência |
 |---|---|---|---|
-| EL-022 | **Verificado** | Memorando de Rondônia, Diário do MPF nº 161/2021 e artigo acadêmico que reproduz a lista. A ordem foi suspensa no mesmo dia; a lista contém 19 entradas de Rubem Fonseca, correspondentes a 18 títulos distintos. | Adendo SEI 10053329 original e resultado da sindicância. |
-| EL-023 | **Verificado** | As mesmas fontes confirmam a instrução geral sobre os livros de Rubem Alves e a reversão da solicitação. | Adendo original e resultado da sindicância. |
-| EL-024 | **Verificado** | A relação de 43 entradas foi reproduzida academicamente; o MPF documenta suspensão e devolução de exemplares eventualmente recolhidos. | Adendo original e resultado da sindicância. |
-| EL-028 | Parcial | Retirada relatada e sentença de 20/07/2026 atribuída à juíza Renata Heloísa da Silva Salles; Migalhas e RP10 reproduzem que a Justiça determinou restituição em cinco dias, garantiu consulta/empréstimo/uso pedagógico e proibiu restrição político-ideológica. | Ordem municipal original e cumprimento; autos sob segredo de Justiça. |
-| EL-030 | Parcial | PL 79/2024 e Lei Municipal 13.930/2025 localizados em fontes oficiais; Revista Oeste e Brasil Paralelo confirmam pedido após vistoria de 26/11/2024. | Requerimento original, destinatário formal (as reportagens divergem entre SME e Câmara), resposta e prova de retirada efetiva. |
-| EL-031 | **Verificado** | piauí teve acesso às conversas, reproduziu a nota oficial do colégio e ouviu o porta-voz: o link de resenha foi retirado temporariamente para avaliação; não houve retirada de exemplares, adoção obrigatória ou veto à obra. | A nota original como arquivo e o registro interno não foram localizados; lacuna complementar, sem dúvida material sobre o núcleo factual. |
-| EL-032 | Parcial | Zelinda atribuiu a Hélcio a retirada por WhatsApp; a resposta do prefeito descreveu encaminhamento de parte dos livros do Programa Minha Biblioteca para análise técnica geral; em 14/07/2026, a Prefeitura anunciou parecer favorável ao uso em turmas adequadas. | Ordem/WhatsApp original, requerimento e resposta assinados, parecer integral e redistribuição física. |
-| EL-035 | Parcial | Folha de Londrina, errata, CBN e relatório do OGPL sobre transparência do SEI. A iniciativa foi atribuída à Gerência de Ensino Fundamental da SME, não à direção da escola. | Número SEI, pedido, despacho, quantitativo, signatários e decisão final. |
-| EL-036 | **Verificado** | Decisão e Relatório DGE-328/2024 do TCE-SC: os livros não foram fisicamente descartados e estavam em poder da Fundação Cultural para análise de destinação. | Recibo, recebedor nominal, inventário posterior, acesso atual e resultado do MPSC. |
-| EL-037 | **Verificado** | Mesma conclusão do TCE-SC para o segundo título. | Recibo, recebedor nominal, inventário posterior, acesso atual e resultado do MPSC. |
+| EL-022 — conjunto de títulos de Rubem Fonseca em Rondônia | Memorando-Circular 4/2020; Diário do MPF 161/2021; artigo da Revista Interfaces de 2024 | A solicitação foi suspensa no mesmo dia; lista reproduzida contém 19 entradas e 18 títulos distintos | Adendo SEI 10053329 original e resultado da sindicância não recuperados |
+| EL-023 — instrução sobre Rubem Alves | Memorando; MPF; reprodução acadêmica da lista | A instrução geral sobre todos os livros de Rubem Alves consta na relação reproduzida | Adendo original e sindicância |
+| EL-024 — demais títulos de Rondônia | Memorando; MPF; reprodução acadêmica | A lista de 43 entradas foi reproduzida academicamente; a solicitação foi revertida | Adendo original e sindicância |
+| EL-025 — classificação agregada de 5.165 títulos como temática alheia e lista final de 300 títulos indicados para exclusão no Relatório 01 da FCP | Nota Informativa 0166090/2021; Resolução FCP 24/2024; inventário oficial de 08/08/2024; Relatório Público 01 citado em repositórios acadêmicos; petição da Coalizão Negra por Direitos; parecer ABER; relatório CRB-1 | A intenção de doar títulos fora da missão e a controvérsia sobre o critério de seleção estão corroboradas por fontes institucionais, judiciais e profissionais; a decisão judicial impediu a movimentação do acervo nos termos descritos na Resolução | O original do Relatório CNIRC continua indisponível diretamente; transcrição secundária da lista final de 300 entradas recuperada (261 após deduplicação), ainda sem validação contra o Relatório 01 original; 5.165 é o total agregado da categoria de temática alheia, não a lista nominal de obras nem prova de descarte |
+| EL-026 — Sala 11 / Acervo da Vergonha | PDF oficial FCP/Câmara de 92 páginas; dissertação UnB 2024, p. 86; inventário oficial FCP 2024; relatório de diligência CRB-1 de 30/06/2021; parecer técnico ABER de 12/06/2021 | Relatório da Câmara registra Sala 11; CRB-1 documenta separadamente 207 caixas em sala sem climatização e ausência de bibliotecário responsável; dissertação registra reintegração ao acervo geral em 29/02/2024 | Não há prova de que a Sala 11 e as 207 caixas sejam o mesmo conjunto; quantidade/lista nominal e acesso atuais continuam sem comprovação |
+| EL-027 — suspensão de atividades em Conselheiro Lafaiete | Ofício 216/2024/SEMED/PMCL; decisão judicial noticiada | A Secretaria informa que não houve recolhimento e que orientou retomada; o ofício é assinado por Alberto Souza Tibúrcio | Íntegra judicial e prova de cumprimento por unidade |
+| EL-028 — retirada em São José dos Campos | Reportagens de 2024; Migalhas e RP10, 29/07/2026 | A sentença de ação civil pública do MP-SP e da Defensoria determinou restituição em cinco dias, garantiu consulta/empréstimo/uso pedagógico e proibiu restrição político-ideológica | Ordem municipal original e cumprimento; autos sob segredo de Justiça |
+| EL-029 — retirada de lista de vestibular UniRV | Nota institucional da UniRV | A Coordenação do Vestibular retirou a obra da lista | Não há signatário pessoa física identificado |
+| EL-030 — pedido sobre *A mamãe vai ter um bebê* em Londrina (2024) | Reportagens contemporâneas de 27/11 e 04/12/2024; Revista Oeste; Brasil Paralelo; PL 79/2024 e Lei 13.930/2025 | Fontes contemporâneas situam a fiscalização em 26/11/2024 e corroboram que Jéssica Ramos Moreno protocolou pedido de recolhimento à SME | Requerimento original, número, teor exato, destinatário formal, resposta e execução não comprovados; não confundir com PL 79/2024 |
+| EL-031 — *A bolsa amarela* no DF | piauí, 28/07/2026; Metrópoles, 15 e 25/05/2026 | O colégio retirou temporariamente um link para avaliação; a nota oficial reproduzida pela piauí confirma atividade alinhada, sem prejuízo ou direcionamento; não houve retirada de exemplares nem veto | Arquivo original da nota e registro interno não recuperados; lacuna complementar |
+| EL-032 — retirada em Taubaté | OVALE/Sampi, 10/04, 16/04 e 14/07/2026; página oficial da Secretaria de Educação | Reportagens corroboram mensagem de recolhimento atribuída a Hélcio, resposta do prefeito à Câmara a requerimento de Isaac do Carmo e Talita, e análise pedagógica favorável ao uso em turmas adequadas; página oficial confirma Hélcio como secretário | Mensagem/ordem original, requerimento e resposta integrais/assinados, parecer integral e redistribuição física |
+| EL-033 — Funap | Folha de S.Paulo, fevereiro de 2020 | Henrique Pereira de Souza Neto é identificado como decisor atribuído; Reginaldo Caetano da Silva como remetente de mensagem posterior | Mensagem original, ata e distribuição dos exemplares |
+| EL-035 — pedido de providências em Londrina (2026) | Folha de Londrina e errata; CBN; relatório OGPL | A iniciativa foi atribuída à Gerência de Ensino Fundamental, não à direção da escola; o sistema tem alta proporção de processos restritos | Número SEI, pedido, despacho, signatários e decisão final |
+| EL-036/37 — livros da Mundoteca em Canoinhas | PL municipal 059/2023 e justificativa assinada pela prefeita; Requerimento 149/2024; decisão TCE-SC GCS/GSS-861/2024; relatório DGE-328/2024 | O PL comprova a autorização para o Município receber o acervo da Mundoteca; TCE concluiu que os dois títulos não foram jogados no lixo e estavam em poder da Fundação Cultural para análise; MPSC identifica a Notícia de Fato 01.2024.00012159-3, da 1ª Promotoria de Canoinhas, em pauta de revisão do Conselho Superior | O PL não é recibo de entrega dos exemplares específicos; falta obter no portal oficial a decisão/despacho integral do procedimento SIG, além de recebedor nominal, recibo e inventário/localização atual |
 
-“Verificado” refere-se ao núcleo factual do registro, não à solução de todos os detalhes, à localização atual dos exemplares ou à identificação de cada signatário.
+## Regras de inferência aplicadas
 
-## 2. Nove alertas de signatário
+1. Uma notícia sobre uma ordem não substitui a cópia da ordem.
+2. Uma resposta institucional comprova o que o órgão declarou; não comprova automaticamente execução.
+3. A assinatura de uma resposta não é assinatura da ordem original.
+4. Uma decisão judicial posterior não transforma o magistrado em autor da medida administrativa anterior.
+5. Ausência de signatário em fonte pública deve permanecer como lacuna, não ser preenchida por cargo ou proximidade temporal.
+6. Um processo não deve ser presumido público quando o portal ou o órgão registra restrição; deve-se identificar a base legal e a parte efetivamente acessível.
 
-| Registro | O que foi identificado | O que não pode ser atribuído |
-|---|---|---|
-| EL-025 — Palmares, Relatório Público 01/CNIRC | Marco Aurélio Franco assinou a Nota Informativa 0166090/2021; João Jorge Santos Rodrigues e Flávia de Jesus Costa assinaram a Resolução FCP 24/2024. A pesquisa acadêmica identifica Erik Navarro Wolkart como juiz da liminar. | Nenhum desses nomes foi confirmado como signatário do Relatório Público 01 original ou da ordem administrativa de 2021. |
-| EL-026 — Sala 11 / Acervo da Vergonha | Juçara Quinteros de Farias e Gilcy Rodrigues Azevedo assinaram o relatório técnico da Câmara; Marco Aurélio Franco assinou a resposta institucional da FCP. | O relatório da Câmara não é uma ordem administrativa individual da FCP. Não foi localizado ato individual assinado que determinasse a segregação física. |
-| EL-027 — Conselheiro Lafaiete | Prof. Alberto Souza Tibúrcio assinou o Ofício 216/2024/SEMED/PMCL, resposta oficial que informa que não houve recolhimento. | Não foi localizado ato separado de recolhimento assinado. |
-| EL-028 — São José dos Campos | A decisão judicial de 20/07/2026 é atribuída à juíza Renata Heloísa da Silva Salles. | A juíza não é signatária da ordem municipal anterior, atribuída a mensagens de WhatsApp. |
-| EL-029 — UniRV | Nota pública institucional atribui a decisão à Coordenação do Vestibular. | Não há pessoa física identificada como signatária; não inventar nome. |
-| EL-032 — Taubaté | Zelinda Pastora atribuiu a ordem a mensagem de WhatsApp enviada pelo secretário Hélcio Carvalho dos Santos. Isaac Jarbas Mascarenhas do Carmo e Talita de Lima Barbosa assinaram requerimento posterior de fiscalização parlamentar. | Não foi localizado ato escrito assinado por Hélcio. Os vereadores não assinaram a ordem de retirada. |
-| EL-033 — Funap | Henrique Pereira de Souza Neto é identificado por reportagem como decisor; Reginaldo Caetano da Silva como remetente de mensagem posterior. | Não foi localizado ato formal assinado; Reginaldo não deve ser apresentado como autor do veto. |
-| EL-036/37 — Canoinhas | O Requerimento 149/2024 foi subscrito por Tati Carvalho, Wilmar Sudoski, Maurício Zimmermann, Willian Godoy, Adilson Steidel, Professor Osmar, André Flenik e Chico Mineiro (nomes transcritos como aparecem no SAPL). A decisão do TCE-SC foi assinada por Gerson dos Santos Sicca. | O requerimento parlamentar e a decisão do TCE são distintos da ordem original de retirada, cuja assinatura não foi localizada. |
 
-**Conclusão:** os nove alertas foram resolvidos como classificação documental. Onde não há assinatura pública, a lacuna permanece explicitada; não se atribuiu a alguém um ato que não assinou.
+**Fonte primária adicional (Canoinhas):** [PL nº 059/2023 e justificativa da prefeita no SAPL](https://sapl.canoinhas.sc.leg.br/media/sapl/public/documentoacessorio/2023/26055/pl_059_2023_.pdf).
 
-## 3. Núcleos documentais aprofundados
+**Fontes novas incorporadas na segunda busca:** [Relatório CRB-1 sobre diligência na FCP](https://crb1.org.br/site/2021/07/relatorio-sobre-a-diligencia-na-fundacao-cultural-palmares/); [parecer técnico ABER](https://aber.org.br/wp-content/uploads/2021/06/Parecertecnico-FundCultPalmares.pdf); [ação civil pública da Coalizão Negra por Direitos](https://coalizaonegrapordireitos.org.br/wp-content/uploads/2021/06/Coalizao-Negra-por-Direitos_ACP-Fundacao-Palmares_ManutencaoAcervo.pdf); [lista de 43 entradas de Rondônia reproduzida em PDF](https://questoesrelevantes.wordpress.com/wp-content/uploads/2020/02/rondonia-livros-proibidos.pdf); [notícia contemporânea sobre o requerimento de Londrina](https://revistaoeste.com/politica/vereadora-jessicao-exige-recolhimento-de-livro-erotico-encontrado-em-creche-no-parana/); [resposta e reanálise pedagógica em Taubaté](https://sampi.net.br/ovale/noticias/2991910/vale-do-paraiba/2026/07/taubate-escolas-voltarao-a-usar-livro-sobre-menina-com-duas-maes).
 
-### Rondônia — Memorando-Circular nº 4/2020
 
-Fontes:
-- [Memorando-Circular nº 4/2020/SEDUC-DGE](https://static.poder360.com.br/2020/02/momerando-seduc-RO.pdf), com referência ao processo SEI 0029.051300/2020-91 e ao Adendo SEI 10053329.
-- [Diário Eletrônico do MPF nº 161/2021, 30/08/2021](https://transparencia.mpf.mp.br/conteudo/diarios-e-boletins/diario-eletronico-dmpf-e/2021/DMPF-EXTRAJUDICIAL-2021-08-30.pdf), Inquérito Civil 1.31.000.000213/2020-61.
-- [Artigo acadêmico da Revista Interfaces/UNICENTRO](https://revistas.unicentro.br/index.php/revista_interfaces/article/viewFile/7833/5778), que reproduz a relação de 43 entradas.
+**Atualização de recuperação — MPSC/Canoinhas:** o Diário Oficial do MPSC de 01/08/2024 identifica a Notícia de Fato nº 01.2024.00012159-3, da 1ª Promotoria de Canoinhas, na pauta da 2ª Turma Revisora. O Diário de 09/08/2024 volta a listar o procedimento. A página oficial [Consulta de Processos e Procedimentos](https://www.mpsc.mp.br/procedimentos-e-processos) permite buscar documentos produzidos pelo MPSC; a pauta, por si só, não informa o teor da decisão. Não classificar o caso como arquivado ou encerrado sem recuperar o despacho.
 
-O MPF registra que a solicitação operacional foi verbal, suspensa no mesmo dia, e que exemplares eventualmente recolhidos foram devolvidos às escolas. Também registra sindicância aberta pela Seduc, recomendação do MP-RO acatada e arquivamento homologado. O artigo acadêmico permite conferir a relação reproduzida: 19 entradas de Rubem Fonseca equivalem a 18 títulos distintos porque “O Seminarista” aparece duas vezes; há ainda a instrução geral sobre os livros de Rubem Alves.
 
-O Adendo SEI 10053329 original e o resultado final da sindicância não foram recuperados. A consulta pública do SEI-RO existe, mas depende de JavaScript e código de verificação; a própria página orienta que pedidos de cópia/vista sejam dirigidos à unidade geradora. O processo e o identificador do adendo estão conhecidos, mas isso não equivale à recuperação do arquivo.
+## Encerramento operacional P0 — 04/11/2026
 
-### Fundação Cultural Palmares — Relatório 01, lista de 300 títulos e Sala 11
+A auditoria da etapa P0 está concluída quanto à revisão dos 37 registros, classificação dos dez prioritários, tratamento dos nove alertas de signatário, ampliação das fontes, documentação das lacunas e retirada preventiva das sete capas sem procedência/licença comprovada.
 
-Fontes:
-- [Resposta oficial da FCP à Câmara, com os relatórios técnicos anexos (PDF de 92 páginas)](https://www.gov.br/palmares/pt-br/midias/arquivos/download/resposta.pdf).
-- [Resolução FCP nº 24/2024, publicada no DOU em 26/02/2024](https://pesquisa.in.gov.br/imprensa/servlet/INPDFViewer?captchafield=firstAccess&data=26%2F02%2F2024&jornal=515&pagina=14).
-- [Inventário Bibliográfico oficial da FCP, atualizado em 08/08/2024](https://www.gov.br/palmares/pt-br/centrais-de-conteudo/publicacoes/lista-de-livros-atualizada-8-8-2024-1.pdf).
-- [Lucas dos Santos de Paulo, “O Acervo da vergonha: atos e intencionalidades na Fundação Cultural Palmares”, dissertação, UnB, 2024](https://repositorio.unb.br/bitstream/10482/50687/1/LucasDosSantosDePaulo_DISSERT.pdf).
+**Não significa verificação integral de todos os registros.** Cinco registros continuam parcialmente verificados: EL-025, EL-028, EL-030, EL-032 e EL-035. Permanecem pendências complementares em Rondônia e Canoinhas/MPSC. Os documentos-alvo, identificadores, canais e limites estão detalhados em `docs/fechamento-p0.md` e `docs/pesquisa-documental-complementar-2026-11-04.md`.
 
-O PDF oficial de 92 páginas contém a Nota Informativa 0166090/2021 da FCP, assinada por Marco Aurélio Franco em 06/11/2021, e o relatório técnico da Câmara, assinado por Juçara Quinteros de Farias e Gilcy Rodrigues Azevedo. É o relatório da Câmara que registra a Sala 11 como “sala da vergonha (livros)” e caixas com livros para doação; a resposta da FCP deve ser lida como documento distinto, não como substituto daquele relatório.
+Nenhum status parcial foi elevado por ausência de resposta ou repetição de buscas. P0 de auditoria está encerrado; recuperação primária fica condicionada aos órgãos custodiantes e à documentação de execução.
 
-O relatório de 2021 informa 9.565 títulos no acervo, dos quais 5.165 (54%) foram classificados como de temática alheia à negra e 4.400 (46%) como de temática negra. Esse número de 5.165 é um quantitativo agregado, não o tamanho da lista final de exclusão. A análise contemporânea da professora Marisa Midori Deaecto, publicada no Jornal da USP em 18/06/2021, descreve o Relatório 01 como um documento de 73 páginas que termina com uma lista de 300 títulos indicados para exclusão. O arquivo original não abriu nesta consulta. A lista dos 300 títulos foi recuperada em transcrição pública secundária do Por Dentro do RN, que remove edições repetidas e apresenta 261 entradas; a Revista de Estudos Culturais confirma a lista final de 300. A transcrição ainda precisa ser confrontada com o original. O inventário oficial de 08/08/2024 relaciona 9.696 títulos; é uma base posterior e distinta, que não substitui o relatório de triagem nem permite inferir a lista de 300.
 
-**Atualização decisiva do EL-026:** a dissertação da UnB documenta visita presencial à Biblioteca Oliveira Silveira em 29/02/2024 e registra que os livros que integraram o “Acervo da vergonha” já haviam sido reintegrados ao acervo geral. Por isso, o desfecho foi corrigido para **revertido**. A estimativa de “cerca de 300” não tem confirmação no relatório técnico e foi retirada do título do registro; quantidade exata e lista nominal permanecem pendentes.
+## Atualização documental — Canoinhas/MPSC e Palmares (04/11/2026)
 
-### Canoinhas — Mundoteca
+- **EL-036/EL-037 — Canoinhas:** acrescentar como fonte primária o Diário Oficial do MPSC nº 3698, de 09/08/2024. A Súmula da Primeira Turma Revisora da sessão de 07/08/2024 registra, sob relatoria de Ary Capella Neto, que a Notícia de Fato SIG 01.2024.00012159-3 da 1ª Promotoria de Canoinhas teve recurso conhecido e desprovido por unanimidade. Isso documenta o resultado revisional, não a íntegra da decisão originária nem a destinação material dos livros. [Fonte oficial](https://documentos.mpsc.mp.br/portal/Conteudo/publicacoes/do_mpsc_2024-08-09.pdf).
+- **EL-026 — Sala 11 / Acervo da Vergonha:** reforçar a fonte com o PDF oficial da FCP de 92 páginas, que reúne a resposta institucional e o relatório técnico da diligência parlamentar. O relatório da Câmara registra a Sala 11 como “sala da vergonha (livros)”, caixas de livros para doação, fotografias e assinaturas de Juçara Quinteros de Farias e Gilcy Rodrigues Azevedo. [PDF oficial](https://www.gov.br/palmares/pt-br/midias/arquivos/download/resposta.pdf). Não atribuir essas assinaturas à ordem da FCP.
+- **EL-025 — Relatório 01/CNIRC:** permanece parcial. O PDF oficial da diligência parlamentar não substitui o Relatório 01 original; a lista final de 300 entradas foi recuperada em transcrição secundária, ainda sem validação contra o documento de origem.
 
-Fontes:
-- [Requerimento nº 149/2024 no SAPL da Câmara](https://sapl.canoinhas.sc.leg.br/materia/15355).
-- [Requerimento nº 149/2024 — PDF assinado](https://sapl.canoinhas.sc.leg.br/media/sapl/public/materialegislativa/2024/15355/req_149.pdf).
-- [Canoinhas Online, 19/04/2024 — atribuições públicas no episódio](https://canoinhasonline.com.br/2024/04/canoinhas-em-destaque-nacional-video-de-prefeita-jogando-livros-no-lixo-repercute-no-pais.html).
-- [Diário Oficial Eletrônico do TCE-SC, 08/07/2024](https://consulta.tce.sc.gov.br/Diario/dotc-e2024-07-08.pdf), decisão GCS/GSS-861/2024 e relatório DGE-328/2024, levantamento @LEV 24/80041829.
 
-O TCE-SC concluiu que os livros não foram efetivamente jogados no lixo e estavam em poder da Fundação Cultural para análise de destinação. A resposta da prefeita está nas fls. 14–32, mas o Tribunal levantou o sigilo apenas em relação ao Relatório DGE-328/2024 e à decisão; a resposta e as fotos não integram o documento público do Diário. O TCE arquivou o levantamento por baixa materialidade financeira e pela existência de notícia de fato no MPSC — isso não equivale a conclusão do Ministério Público.
+## Fontes primárias adicionais — atualização de 04/11/2026
 
-O Requerimento 149/2024 pediu revisão e reorganização da Mundoteca e separação por faixa etária; não pediu expressamente a retirada dos dois títulos. Reportagem de Canoinhas Online identificou Osmar Oleskovicz (apresentado no SAPL como Professor Osmar) como autor do pedido de retirada imediata e Willian Godoy como defensor da incineração; essa é uma atribuição jornalística e não substitui ato administrativo assinado. O destino posterior dos livros, o recibo de transferência e o resultado da Notícia de Fato do MPSC não foram localizados.
+- **EL-025 — Palmares:** [Inventário Bibliográfico oficial da FCP, PDF de 08/08/2024](https://www.gov.br/palmares/pt-br/centrais-de-conteudo/publicacoes/lista-de-livros-atualizada-8-8-2024-1.pdf). A introdução informa 9.696 títulos inventariados entre julho e outubro de 2021; a listagem é numerada até 9696 e traz autor, editora, ano e quantidade. É fonte primária para o inventário do antigo acervo, mas não prova o conteúdo do Relatório 01/CNIRC nem do quantitativo agregado de 5.165 títulos classificado como temática alheia. Status parcial mantido.
+- **EL-022/023/024 — Rondônia:** [Diário oficial do MPF nº 161/2021, 30/08/2021](https://transparencia.mpf.mp.br/conteudo/diarios-e-boletins/diario-eletronico-dmpf-e/2021/DMPF-EXTRAJUDICIAL-2021-08-30.pdf), item 48, registra a homologação unânime do arquivamento do Inquérito Civil 1.31.000.000213/2020-61, suspensão da solicitação no mesmo dia, devolução dos livros que chegaram a ser recolhidos, encerramento da análise técnica e instauração de sindicância administrativa pela Seduc. O resultado do inquérito federal está comprovado; sindicância e Adendo SEI 10053329 permanecem sem cópia primária. 
 
-### São José dos Campos — *Meninas sonhadoras, mulheres cientistas*
 
-Fontes:
-- [Migalhas, 29/07/2026 — decisão judicial e ação civil pública](https://www.migalhas.com.br/quentes/461228/juiza-ve-censura-e-manda-devolver-as-escolas-livro-que-inclui-marielle-franco).
-- [RP10, 29/07/2026 — sentença e medidas determinadas](https://www.rp10.com.br/2026/07/justica-ve-censura-e-manda-devolver-livro-sobre-marielle-franco-as-escolas-de-sao-jose-dos-campos/).
+## Atualização de evidência — rodada adicional de 04/11/2026
 
-A sentença foi proferida em ação civil pública do MP-SP e da Defensoria Pública. As reportagens reproduzem a ordem de devolução em cinco dias após intimação, garantia de consulta, empréstimo e uso pedagógico no Ensino Fundamental II, proibição de novas restrições político-ideológicas e multa diária de R$ 500, limitada inicialmente a R$ 50 mil. Ambas informam que os autos tramitam sob segredo de Justiça. O conteúdo da sentença está publicamente reportado; a íntegra dos autos e a prova de cumprimento não foram recuperadas.
+- **EL-032 — Taubaté:** duas reportagens de OVALE/Sampi identificam requerimento de Isaac do Carmo e Talita, aprovado em 10/03/2026, sobre retirada do livro e custo de aquisição; reproduzem resposta parcial do prefeito e, em julho, parecer técnico favorável ao uso adequado. Fontes: [10/04/2026](https://sampi.net.br/ovale/noticias/2972973/sessao-extra/2026/04/livro-sobre-menina-com-duas-maes-e-retirado-de-escolas-em-taubate), [14/07/2026](https://sampi.net.br/ovale/noticias/2991910/vale-do-paraiba/2026/07/taubate-escolas-voltarao-a-usar-livro-sobre-menina-com-duas-maes). A página oficial da 46ª sessão [publica a ordem do dia](https://www.camarataubate.sp.gov.br/portal/noticias/0/3/9875/46-sessao-ordinaria--1032026---ordem-do-dia), não o requerimento. Status permanece parcial até localizar originais.
+- **EL-030 — Londrina:** localizado [PL 79/2024 oficial](https://www1.cml.pr.gov.br/projetos/2024/PL000792024.pdf), de autoria de Jéssica Ramos Moreno, sobre proibição de livros com conteúdo erótico. É documento distinto, anterior ao requerimento de 26/11/2024 sobre *A Mamãe Vai Ter um Bebê*; não serve como prova do requerimento nem de recolhimento. Status inalterado.
+- **EL-028 — São José dos Campos:** reportagem contemporânea do Sindicato dos Metalúrgicos [afirma que o vereador enviou ofício à Prefeitura](https://www.sindmetalsjc.org.br/noticias/n/6779/prefeitura-de-sao-jose-censura-livro-que-homenageia-mulheres-cientistas); a Folha confirma a cronologia e a retirada [em 21/06/2024](https://www1.folha.uol.com.br/ciencia/2024/06/sao-jose-dos-campos-recolhe-livros-sobre-cientistas-mulheres-apos-queixa-de-vereador.shtml). A ACP do MPSP/Defensoria em 06/09/2024 é reportada pela [Band](https://www.band.com.br/nacional/sp/mpsp-e-defensoria-acionam-prefeitura-de-sao-jose-dos-campos-para-retorno-de-livro-em-escolas). Ofício original e resposta administrativa seguem pendentes.
+- **EL-025 — Palmares:** o Ipea descreve em publicação de 2022 o relatório “Retrato do Acervo” como envolvendo 5,3 mil livros, folhetos e catálogos ([BPS nº 29](https://repositorio.ipea.gov.br/bitstream/11058/11371/1/BPS_29_cultura.pdf)); fonte jornalística reproduz 5.165 e 9.565 ([O Povo](https://www.opovo.com.br/vidaearte/2021/06/18/ia/fundacao-palmares-retira-obras-do-acervo-e-cita--dominacao-marxista--e-sexualizacao-infantil.html)). A diferença entre os quantitativos agregados de 5.165 e 5.300 permanece não resolvida. O inventário FCP de 9.696 títulos não substitui o relatório original.
 
-### Londrina — *A mamãe vai ter um bebê* (2024)
 
-Fontes:
-- [Revista Oeste, 04/12/2024 — pedido de recolhimento](https://www.revistaoeste.com/politica/vereadora-jessicao-exige-recolhimento-de-livro-erotico-encontrado-em-creche-no-parana/).
-- [Brasil Paralelo, 21/02/2025 — contexto legislativo e pedido](https://www.brasilparalelo.com.br/noticias/londrina-proibe-livros-com-teor-erotico-em-escolas-municipais).
+## Fechamento consolidado da matriz — 04/11/2026
 
-As reportagens confirmam que Jéssica Ramos Moreno pediu o recolhimento após encontrar o livro em uma creche. Há divergência quanto ao destinatário formal: a Revista Oeste descreve protocolo na Câmara; Brasil Paralelo descreve requerimento à Secretaria Municipal de Educação. Sem a cópia original, o cadastro não escolhe uma versão. O PL 79/2024 e a Lei 13.930/2025 são contexto normativo, não prova de execução do pedido específico.
+A matriz foi revista à luz das fontes públicas adicionais descritas em `docs/pesquisa-documental-complementar-2026-11-04.md`.
 
-### Distrito Federal — *A bolsa amarela*
+- **37 registros:** revisão e classificação consolidadas.
+- **10 prioritários:** seis com núcleo factual verificado e quatro parciais.
+- **Cinco registros parcialmente verificados:** EL-025, EL-028, EL-030, EL-032 e EL-035.
+- **Rondônia:** desfecho do inquérito civil do MPF comprovado por diário oficial; Adendo SEI 10053329 e resultado da sindicância estadual seguem pendentes.
+- **Canoinhas:** resultado do recurso da Notícia de Fato 01.2024.00012159-3 comprovado por diário oficial do MPSC; íntegra da decisão e prova de destino dos livros seguem pendentes.
 
-Fonte principal: [revista piauí, 28/07/2026 — “Fábulas na fogueira”](https://piaui.uol.com.br/web/fabulas-fogueira-livros-infantojuvenis-bolsa-amarela/).
+**Critério de status:** nenhuma matéria jornalística, referência bibliográfica, pauta de julgamento ou ausência de resultado de busca foi convertida em documento administrativo original. Os status parciais permanecem parciais. O P0 de auditoria e classificação está encerrado; isso não equivale à verificação integral de todos os registros.
 
-A piauí teve acesso às conversas entre pais, ouviu o capitão Sidemar da Silva Neves e reproduziu a nota oficial do Colégio Militar Dom Pedro II. O link para uma resenha foi retirado temporariamente para avaliação pedagógica; a nota afirmou que a atividade seguia o planejamento didático, sem prejuízo pedagógico nem direcionamento ideológico. A escola não havia adotado a obra como leitura obrigatória e não retirou exemplares do acervo. O link não voltou a ser utilizado depois de encerrada a atividade. O caso está verificado como controvérsia sobre material de apoio, não como banimento do livro.
+A pesquisa desta etapa usou fontes públicas. Não houve protocolo de pedidos de acesso à informação ou solicitações institucionais em nome da usuária.
 
-### Taubaté — *Pipoca e Picolé*
 
-Fontes:
-- [OVALE, 10/04/2026 — retirada confirmada à Câmara](https://sampi.net.br/ovale/noticias/2972973/sessao-extra/2026/04/livro-sobre-menina-com-duas-maes-e-retirado-de-escolas-em-taubate).
-- [OVALE, 16/04/2026 — Prefeitura informa análise técnica](https://sampi.net.br/ovale/noticias/2974212/vale-do-paraiba/2026/04/obra-sobre-menina-com-duas-maes-passa-por-analise-diz-prefeitura).
-- [OVALE, 14/07/2026 — escolas voltarão a usar o livro](https://sampi.net.br/ovale/noticias/2991910/vale-do-paraiba/2026/07/taubate-escolas-voltarao-a-usar-livro-sobre-menina-com-duas-maes).
+## Evidências novas recuperadas em 04/11/2026
 
-Zelinda Pastora afirmou que pediu diretamente ao secretário Hélcio Carvalho dos Santos a retirada e viu uma mensagem enviada às escolas. Em resposta ao requerimento de Isaac do Carmo e Talita, o prefeito Sérgio Victor descreveu outro enquadramento: no fim de 2025, unidades foram orientadas a encaminhar parte dos livros do Programa Minha Biblioteca à SME para análise técnica, porque a maior parte dos kits já havia sido distribuída. A Prefeitura também publicou nota dizendo que o parecer ainda estava em elaboração. Em 14/07/2026, informou parecer favorável ao uso nas turmas adequadas. As duas narrativas devem permanecer lado a lado; a ordem original, a resposta assinada, o parecer integral e a redistribuição física não foram recuperados.
+| Registro | Documento/fonte recuperada | O que comprova | O que não comprova |
+|---|---|---|---|
+| EL-036 / EL-037 — Canoinhas | Ofício 205/2024/AL e Ofício 013/2024, disponíveis no SAPL da Câmara | Encaminhamento do Requerimento 149/2024; resposta institucional de 14/05/2024; Mundoteca sob responsabilidade da SME; 569 obras, duas salas por público, classificação por cores, um empréstimo registrado | Identificação dos dois exemplares, recebimento pela Fundação Cultural, localização atual ou destinação final |
+| EL-036 / EL-037 — Canoinhas | Decisão TCE-SC GCS/GSS-861/2024 e Relatório DGE-328/2024 | A prefeita informou ao TCE que havia um exemplar de cada livro e que os exemplares foram entregues à gestora da Fundação Cultural; o Tribunal concluiu que não foram descartados no lixo | Recibo público, nome da recebedora, fotos da resposta sob sigilo, inventário posterior ou reintegração ao acervo |
+| EL-025 — Palmares | Inventário oficial FCP/CNIRC, 295 páginas, 9.696 títulos | Composição bibliográfica inventariada em 2021 e publicada em 08/08/2024 | Transcrição secundária de 261 entradas da lista original de 300 títulos, ainda sem confronto com o relatório original; 5.165 é a contagem agregada de títulos classificados como temática alheia; não comprova quais foram separados/doados |
+| EL-025 — Palmares | Índice oficial de downloads do CNIRC e petição OAB/ADPF 918 | O índice público lista inventário, política e resposta parlamentar, mas não o Relatório 01; a petição reproduz trechos do relatório e o identifica como anexo 26 | A íntegra do Relatório Público 01/CNIRC e o anexo documental |
+| EL-035 — Londrina | CBN Londrina e matéria de Douglas Kuspiosz reproduzida pelo Bonde | Existência do pedido formal e início de levantamento/recolhimento pela SME para análise | Número SEI, pedido integral, quantitativo, parecer técnico e decisão final |
+| EL-032 — Taubaté | O Vale, matérias de abril e julho de 2026 | Retirada, requerimento de fiscalização e anúncio municipal de retorno pedagógico após análise | Parecer técnico integral e comprovação de redistribuição física |
 
-### Londrina — 2026
+**Regra de interpretação:** documentos de resposta, inventários gerais, pautas de julgamento e reportagens não substituem os atos administrativos específicos nem os comprovantes de execução física. As classificações dos registros permanecem inalteradas quando a nova fonte não fecha a lacuna.
 
-Fontes:
-- [Relatório do Observatório de Gestão Pública de Londrina sobre transparência no SEI](https://observatoriolondrina.org.br/uploads/relatorios/Relat%C3%B3rio%20SEI%20-%20Pedidos%20de%20Provid%C3%AAncias.pdf).
-- [Folha de Londrina e errata de 12/03/2026](https://www.folhadelondrina.com.br/).
-- [CBN Londrina, 12/03/2026](https://cbnlondrina.com.br/).
 
-A errata corrigiu a atribuição da iniciativa para a equipe da Gerência de Ensino Fundamental da SME, não a direção da escola. O relatório do OGPL informa que, após 18/02/2025, apenas 15 processos do tipo Pedido de Providências estavam públicos, enquanto 19.588 tinham restrição de acesso; a Portaria SMGP-GAB nº 28/2020 é citada como regra de publicidade. O número SEI do caso específico não foi localizado, portanto não é possível afirmar que a íntegra esteja disponível para consulta pública.
+| Registro | Documento/fonte recuperada | O que comprova | O que não comprova |
+|---|---|---|---|
+| EL-036 / EL-037 — Canoinhas | Diário Oficial MPSC nº 3698, 09/08/2024, item 3 | Conselho Superior conheceu e negou provimento por unanimidade ao recurso na Notícia de Fato nº 01.2024.00012159-3, mantendo o arquivamento recorrido | Fundamentação integral da decisão revisora e localização/destinação atual dos livros |
 
-## 3.1 Pesquisa complementar realizada nesta retomada — 04/11/2026
 
-A busca foi ampliada para além das páginas de imprensa já cadastradas, priorizando repositórios institucionais, documentos de controle externo e páginas oficiais:
+| Registro | Documento/fonte recuperada | O que comprova | O que não comprova |
+|---|---|---|---|
+| EL-028 — São José dos Campos | Nota oficial da Prefeitura reproduzida pela Spriomais (13/06/2024) e reportagem O Vale/Sampi (09/09/2024) | Recolhimento em todas as escolas para reavaliação técnica; ofício do vereador ao prefeito e secretário; ação civil pública e transmissão da ordem operacional por WhatsApp, conforme investigação | Cópia assinada do ofício, mensagem original de WhatsApp, ato administrativo municipal formal e prova de cumprimento da restituição determinada em 2026 |
 
-- **Rondônia:** a Revista Interfaces/UNICENTRO reproduz a relação de 43 entradas do Adendo e confirma a observação geral sobre os livros de Rubem Alves. A Exame reproduz o texto do memorando e a nota de recuo da Seduc, incluindo que o processo eletrônico foi encerrado sem ordem de tramitação externa. Isso sustenta a existência da instrução e sua reversão, mas não substitui o Adendo SEI 10053329 nem o resultado da sindicância. [Interfaces/UNICENTRO](https://revistas.unicentro.br/index.php/revista_interfaces/article/viewFile/7833/5778) · [Exame](https://exame.com/brasil/rondonia-manda-recolher-classicos-da-literatura-brasileira-e-depois-recua/).
-- **São José dos Campos:** a Folha detalha o prazo judicial de cinco dias após intimação, a disponibilização para consulta, empréstimo e uso pedagógico no Ensino Fundamental II, a vedação a novas restrições político-ideológicas e a multa. A matéria atribui ao MP a informação de que a ordem de 2024 foi comunicada por WhatsApp. A íntegra dos autos segue sob segredo de Justiça; não há prova pública do cumprimento administrativo. [Folha, 30/07/2026](https://www1.folha.uol.com.br/ciencia/2026/07/justica-determina-volta-de-livro-que-retrata-marielle-a-escolas-em-sao-jose-dos-campos.shtml).
-- **Taubaté:** a reportagem de 14/07/2026 confirma que a Prefeitura anunciou retorno ao uso pedagógico após análise da Coordenação de Área e da Equipe de Práticas Pedagógicas da Educação Infantil, limitado às turmas consideradas adequadas. Não comprova entrega física dos exemplares às unidades. [OVALE, 14/07/2026](https://sampi.net.br/ovale/noticias/2991910/vale-do-paraiba/2026/07/taubate-escolas-voltarao-a-usar-livro-sobre-menina-com-duas-maes).
-- **Canoinhas:** a decisão oficial do TCE-SC, no @LEV 24/80041829, confirma que a resposta da prefeita e as fotos estavam nas fls. 14–32, sob sigilo parcial; registra que havia um exemplar de cada título e que a gestora da Fundação Cultural recebeu os livros para analisar sua destinação; conclui que não foram efetivamente jogados no lixo e arquiva o levantamento, levantando o sigilo apenas do relatório técnico e da decisão. A busca adicional localizou a checagem do UOL Comprova, que registra a nota da Mundoteca sobre faixa etária e empréstimos, mas não informa a localização atual dos exemplares. Também foi localizado o [PL municipal nº 059/2023, com justificativa assinada pela prefeita](https://sapl.canoinhas.sc.leg.br/media/sapl/public/documentoacessorio/2023/26055/pl_059_2023_.pdf), que comprova a autorização para o Município receber o acervo da Mundoteca, incluindo obras literárias; não é recibo de entrega dos dois exemplares específicos. [TCE-SC, Diário Oficial de 08/07/2024](https://consulta.tce.sc.gov.br/Diario/dotc-e2024-07-08.pdf) · [UOL Comprova, 25/04/2024](https://noticias.uol.com.br/comprova/ultimas-noticias/2024/04/25/projeto-mundoteca-nao-e-do-governo-federal-como-disse-prefeita-de-sc.htm).
-- **Fundação Cultural Palmares:** o repositório institucional da UnB confirma a existência, autoria, data e acesso público à dissertação de Lucas dos Santos de Paulo, de 2024. A dissertação é evidência acadêmica de contexto e da visita presencial, não substitui o Relatório Público 01/CNIRC nem contém sua lista final de 300 títulos; 5.165 é o quantitativo agregado da categoria de temática alheia. [Repositório UnB](https://repositorio.unb.br/handle/10482/50687?mode=full).
 
-A busca pública adicional não localizou o Adendo SEI original e o resultado da sindicância de Rondônia; a ordem administrativa e o cumprimento em São José dos Campos; o requerimento e a resposta específica de Londrina em 2024; o parecer integral e os comprovantes de redistribuição de Taubaté; o recibo, inventário posterior e resultado da Notícia de Fato de Canoinhas; nem o Relatório 01 original para validar a transcrição pública da lista de 300 entradas no Relatório 01 da FCP. Esses documentos não podem ser fabricados nem inferidos de reportagens, decisões correlatas ou inventários posteriores.
+| Registro | Documento/fonte recuperada | O que comprova | O que não comprova |
+|---|---|---|---|
+| EL-032 — Taubaté | Portal Câmara Sem Papel e páginas oficiais das sessões de 03/03 e 10/03/2026 | Existência de repositório legislativo público e datas das sessões consultadas | Número, texto e tramitação específica do requerimento sobre “Pipoca e Picolé”; a transcrição pública da sessão não reproduz o tema |
 
-## 4. Capas — decisão de regularização
 
-As sete imagens locais foram removidas da branch por ausência de procedência verificável e autorização individual documentada:
-- *O avesso da pele*
-- *Laranja mecânica*
-- *Macunaíma*
-- *Memórias póstumas de Brás Cubas*
-- *O menino marrom*
-- *Meninas sonhadoras, mulheres cientistas*
-- *Eu receberia as piores notícias de seus lindos lábios*
+**Correção de precisão:** os 5.165 representam o quantitativo agregado (54% de 9.565 títulos) classificado como temática alheia. A análise contemporânea publicada no Jornal da USP descreve uma lista final de 300 títulos indicados para exclusão. A lacuna documental é a íntegra do Relatório 01/CNIRC e a validação da transcrição pública da lista de 300 entradas, não uma lista de 5.165.
 
-A interface mantém título, dados editoriais e links de referência, mas usa placeholder tipográfico. Nenhuma imagem de capa é apresentada como autorizada. A retomada de imagens depende de arquivo com origem verificável e licença/autorização compatível. Ver [inventário de imagens](inventario-de-imagens.md) e [política de direitos e imagens](politica-de-direitos-e-imagens.md).
 
-## 5. O que não foi protocolado
+**Atualização EL-025:** a lista final de 300 entradas foi recuperada em transcrição pública secundária (261 após remoção de edições repetidas). O original do Relatório 01/CNIRC ainda não foi recuperado; a transcrição não foi validada contra o original. 5.165 é o quantitativo agregado classificado como temática alheia, não a lista final; 5.300 é a quantidade de exemplares alegada na petição da OAB/ADPF 918.
 
-Nenhum pedido de LAI, Fala.BR, requerimento ou solicitação institucional foi enviado em nome da usuária. Os documentos de pedido anteriormente preparados permanecem rascunhos; não são prova de protocolo nem de resposta. Esta auditoria se limitou a localizar e confrontar fontes públicas.
 
-## 6. Estado técnico desta entrega
+| Registro | Documento/fonte recuperada | O que comprova | O que não comprova |
+|---|---|---|---|
+| EL-025 — Palmares | Cruzamento da transcrição pública de 261 entradas com o inventário oficial FCP de 9.696 títulos | Presença no inventário de títulos como Bandidos, Dicionário do Folclore Brasileiro, O Capital, Menino brinca de boneca?, O Segundo Sexo e outros | Preservação física atual de todos os títulos, execução ou não da exclusão dos 300, ou destino final dos exemplares |
 
-- As alterações de dados, fontes, interface e documentação estão na branch `feat/estante-livre-auditoria-profissional`. O PR #5 está aberto.
-- A tabela `FONTES` contém 146 entradas únicas, todas com tipo válido; os registros fazem 267 associações de fontes. Os tipos legados `M1` foram eliminados e o gerador aceita a taxonomia vigente.
-- As sete imagens JPG foram confirmadas ausentes no conteúdo atual da branch (os sete caminhos retornam 404 na API de conteúdo do GitHub); as páginas de obras exibem placeholders tipográficos e a função de capa exige `capaAutorizada === true`.
-- As páginas estáticas e os artefatos públicos foram gerados/atualizados na branch, incluindo `dados/estante-livre-casos.csv` e `dados/estante-livre-casos.json`.
-- **Validação automatizada — atualização 04/11/2026:** a execução GitHub Actions nº 396 concluiu com sucesso as etapas de sintaxe JavaScript, validação do catálogo, geração das páginas estáticas, checagens estáticas de acessibilidade e scripts inline. A execução nº 393, disparada por commit automático anterior, retornou `action_required` e não disponibilizou jobs. As execuções antigas nº 294, 301, 302, 382, 392 e 394 ficam registradas como histórico.
-- **Prévia Vercel:** o check do head atual retornou `failure` por `build-rate-limit`. A última prévia bem-sucedida permanece disponível em https://estante-livre-git-feat-estante-livre-auditor-3629fc-natalynunes.vercel.app e corresponde aos arquivos do site; o commit posterior alterou apenas documentação. Ainda falta inspeção visual/manual de responsividade, navegação e acessibilidade.
-- PR #5 e PR #4 permanecem abertos; nenhum foi mesclado. O PR #4 mantém uma camada própria de filiações partidárias com recorte temporal que ainda não foi portada para o PR #5; por outro lado, sua implementação de capas inclui imagens externas e sete JPGs locais sem cadeia de direitos comprovada, razão para não mesclá-lo no estado atual. A página `poder.html` do PR #5 cobre agentes e papéis documentados, mas não substitui a tabela temporal de filiações. Não houve deploy em produção. Não declarar publicação concluída enquanto a validação e a prévia não forem liberadas.
 
-## Critério de encerramento P0
+| Registro | Documento/fonte recuperada | O que comprova | O que não comprova |
+|---|---|---|---|
+| EL-015 / EL-022–024 — Rondônia | Nota oficial SEDUC (06/02/2020), Diário do MPF nº 161/2021 e tese UnB (2024) | Nota de recuo/encerramento do processo técnico; registro do MPF sobre sindicância separada e recomendação do MP-RO acatada; reprodução acadêmica do memorando | Adendo SEI 10053329 original, íntegra da recomendação do MP-RO e resultado da sindicância administrativa |
 
-O P0 documental está **tratado e classificado**: cada registro foi revisto, os nove alertas de signatário foram diferenciados, os cinco núcleos administrativos e institucionais foram pesquisados em múltiplas fontes e as sete imagens sem cadeia de direitos foram retiradas. Os documentos que não puderam ser recuperados permanecem explicitamente pendentes, com razão e efeito editorial registrados. Não há base para declarar que todos os documentos originais foram encontrados.
 
+| Registro | Documento/fonte recuperada | O que comprova | O que não comprova |
+|---|---|---|---|
+| EL-035 — Londrina | Jornal Oficial nº 3630, 09/10/2018, cópia digital assinada pelo Município | Registro de aquisição de “O Bebê Vem com a Cegonha”, Editora Melhoramentos, preço unitário R$ 35,33 | Escola destinatária, circulação em 2026, quantitativo recolhido, parecer ou decisão final |
 
-## 16. Encerramento operacional da etapa P0 — 04/11/2026
 
-### Decisão de fechamento
+## 3. Nova rodada documental — 04/11/2026, atualização posterior
 
-A etapa de **pesquisa, revisão de classificação, rastreabilidade documental e mitigação de direitos** do P0 está concluída. Isso não significa que todos os fatos de todos os registros tenham documentação primária integral. Os documentos não recuperados foram convertidos em pendências externas individualizadas, com órgãos custodiantes prováveis, identificadores conhecidos e canais formais de acesso. Não serão tratados como resolvidos por inferência.
+### Palmares — critério de descarte documentado em fonte primária
 
-### Entregas P0 concluídas
-- Revisão dos 37 registros e consolidação das classificações.
-- Revisão dos dez registros prioritários: seis com núcleo factual verificado e quatro parciais.
-- Tratamento dos nove alertas de signatário, sem atribuir autoria ou assinatura por cargo, proximidade ou inferência.
-- Ampliação documental por fontes oficiais, tribunais de contas, diários oficiais, repositórios universitários, entidades profissionais e imprensa contemporânea.
-- Identificação dos canais de consulta e de acesso à informação para Taubaté, Londrina, MPSC, SEI-RO e FCP.
-- Remoção preventiva das sete capas JPG sem cadeia de procedência/licença demonstrada.
-- Registro das lacunas e dos documentos-alvo nos arquivos de pesquisa e na matriz.
+A Política de Formação, Desenvolvimento e Gestão do Acervo da Fundação Cultural Palmares, publicada oficialmente em 21/12/2021, foi recuperada em PDF no domínio gov.br. A seção 4.5.2 lista critérios de descarte; entre eles aparecem literalmente “marxismo e comunismo”, “militância política explícita” e “divulgação marxista”. A apresentação do documento registra que o procedimento de descarte estava impedido por liminar.
 
-### Pendências externas que não podem ser encerradas apenas por pesquisa pública
-1. **EL-025 / FCP:** PDF integral original do Relatório Público 01/CNIRC e confronto da transcrição pública de 261 entradas (lista original de 300, com edições repetidas) com o original. Os 5.165 são contagem agregada de títulos classificados como temática alheia.
-2. **EL-028 / São José dos Campos:** cópia da ordem municipal original e prova administrativa de cumprimento; autos judiciais sob segredo de Justiça.
-3. **EL-030 / Londrina 2024:** requerimento protocolado em 26/11/2024, ofício de encaminhamento, resposta da SME e prova de execução.
-4. **EL-032 / Taubaté:** mensagem/ordem original, requerimento e resposta integrais, parecer técnico e comprovantes de redistribuição física.
-5. **EL-035 / Londrina 2026:** número SEI, pedido, despacho, signatários e decisão final; o relatório do OGPL documenta restrição de acesso em grande parte dos processos.
-6. **Rondônia:** Adendo SEI 10053329 e resultado documental da sindicância estadual.
-7. **Canoinhas/MPSC:** despacho/decisão integral da Notícia de Fato 01.2024.00012159-3, recibo de transferência dos livros e inventário/localização posterior.
+Isso fortalece a comprovação do critério institucional escrito, mas não demonstra que os 5.165 títulos tenham sido descartados, doados ou removidos fisicamente. O documento “Lista de Livros — Atualizada 16.01.23”, também recuperado no portal oficial, é inventário bibliográfico e não deve ser confundido com a lista final de 300 títulos do Relatório 01/CNIRC. A página oficial de downloads lista a política e inventários, mas não lista o Relatório 01. Os dois endereços históricos do relatório continuam inacessíveis.
 
-A lista é deliberadamente mais ampla que os cinco registros parciais: alguns documentos complementares faltam também em registros cujo núcleo factual já foi verificado.
+### Rondônia — registro integral do MPF recuperado
 
-### Critério de conclusão e mudança de fase
+O Diário do MPF nº 161/2021 foi recuperado na Biblioteca Digital oficial. O item 48 registra suspensão da solicitação verbal no mesmo dia, devolução de exemplares eventualmente recolhidos, encerramento imediato da análise técnica, sindicância administrativa separada na SEDUC, recomendação do MP-RO acatada e homologação unânime do arquivamento do inquérito civil do MPF. O resultado da sindicância estadual e a recomendação integral do MP-RO seguem ausentes.
 
-A partir deste fechamento, a busca aberta e repetitiva em mecanismos de pesquisa deixa de ser critério de avanço. Cada pendência só muda de status mediante: (a) obtenção de documento primário ou cópia autenticável; (b) confirmação formal de sigilo/inexistência/ausência de custódia; ou (c) prova verificável de execução. Os pedidos formais de acesso não foram protocolados em nome da usuária.
+### São José dos Campos — conteúdo mais preciso da sentença
 
-**Status:** P0 de auditoria e pesquisa encerrado; P0 de recuperação primária permanece condicionado a respostas dos órgãos e à obtenção dos documentos listados. O produto não deve anunciar que todas as lacunas documentais foram sanadas.
+As reportagens Folha, UOL/Agência Estado e Sampi/OVALE convergem quanto à sentença de 20/07/2026: prazo de cinco dias após a intimação para redisponibilizar a obra, consulta, empréstimo e uso pedagógico no Ensino Fundamental II, vedação de restrição político-ideológica e multa diária de R$ 500, limitada inicialmente a R$ 50 mil. Isso comprova a ordem judicial reportada, não o cumprimento material da devolução em cada escola.
 
-
-## Atualização de pesquisa em fontes primárias — 04/11/2026
-
-A pesquisa posterior à versão inicial deste fechamento localizou duas peças públicas relevantes:
-
-1. **MPSC/Canoinhas:** o Diário Oficial Eletrônico nº 3698, de 09/08/2024, publica a Súmula da Primeira Turma Revisora da sessão de 07/08/2024. Na seção de recursos conhecidos e desprovidos por unanimidade, consta a Notícia de Fato nº 01.2024.00012159-3 da 1ª Promotoria de Canoinhas, sob relatoria de Ary Capella Neto. O resultado do recurso, portanto, não é mais desconhecido. Permanecem ausentes a íntegra da decisão originária/promoção de arquivamento e os documentos sobre recibo, inventário e localização posterior dos livros. Fonte: [Diário Oficial do MPSC nº 3698, 09/08/2024](https://documentos.mpsc.mp.br/portal/Conteudo/publicacoes/do_mpsc_2024-08-09.pdf).
-
-2. **FCP/Sala 11:** foi localizada a cópia oficial de 92 páginas da resposta da Fundação Cultural Palmares aos relatórios da Comissão de Cultura da Câmara dos Deputados. O PDF incorpora o relatório técnico parlamentar, identifica a Sala 11 como “sala da vergonha (livros)”, registra caixas com livros para doação e traz assinaturas digitais de Juçara Quinteros de Farias e Gilcy Rodrigues Azevedo no relatório parlamentar. Trata-se de peça distinta do Relatório Público 01/CNIRC. Fonte: [PDF oficial da FCP](https://www.gov.br/palmares/pt-br/midias/arquivos/download/resposta.pdf).
-
-**Efeito sobre a classificação:** nenhuma dessas descobertas elimina as cinco classificações parciais do conjunto P0. A descoberta do resultado do recurso do MPSC melhora a documentação de contexto dos registros EL-036/EL-037, mas não comprova o destino físico dos exemplares. A resposta oficial da FCP melhora a prova sobre a Sala 11, mas não recupera o Relatório 01/CNIRC nem o Relatório 01 original para validar a transcrição pública da lista de 300 entradas. A pesquisa complementar registra os detalhes e corrige a interpretação anterior da pauta do MPSC.
-
-
-## Atualização posterior — inventário FCP e desfecho MPF/Rondônia (04/11/2026)
-
-A pesquisa pública localizou duas fontes primárias adicionais:
-
-- **FCP:** inventário bibliográfico oficial, atualizado em 08/08/2024, com 9.696 títulos numerados, campos de título, autor, editora, ano, quantidade e observações. [PDF oficial](https://www.gov.br/palmares/pt-br/centrais-de-conteudo/publicacoes/lista-de-livros-atualizada-8-8-2024-1.pdf). Ele documenta o antigo acervo, mas não substitui o Relatório 01/CNIRC nem comprova a lista final de 300 títulos indicada para exclusão; 5.165 é o total agregado da categoria de temática alheia.
-- **Rondônia/MPF:** Diário oficial de 30/08/2021 homologa por unanimidade o arquivamento do Inquérito Civil 1.31.000.000213/2020-61 e registra suspensão da solicitação no mesmo dia, devolução dos exemplares que chegaram a ser recolhidos, encerramento da análise técnica e instauração de sindicância pela Seduc. [Diário oficial do MPF nº 161/2021](https://transparencia.mpf.mp.br/conteudo/diarios-e-boletins/diario-eletronico-dmpf-e/2021/DMPF-EXTRAJUDICIAL-2021-08-30.pdf).
-
-**Efeito:** o desfecho do inquérito federal de Rondônia deixa de ser lacuna. Permanecem pendentes o Adendo SEI 10053329 e o resultado da sindicância estadual. Palmares ganha uma fonte primária complementar ampla e uma transcrição pública secundária da lista final de 300 entradas (261 após deduplicação), mas o registro EL-025 continua parcial quanto à recuperação do Relatório 01 original e à validação da transcrição.
-
-
-## Atualização P0 — rodada documental de 04/11/2026
-
-Novas fontes secundárias reforçam, sem substituir documentos primários:
-- Taubaté: autoria, aprovação, objeto do requerimento e resposta parcial são descritos por OVALE/Sampi; cópias do requerimento e resposta oficial continuam ausentes.
-- Londrina: PL 79/2024 foi localizado em PDF oficial, mas é distinto do requerimento específico de novembro de 2024; não altera o status do registro.
-- São José dos Campos: há corroboração contemporânea da existência de ofício do vereador e de seu pedido de retirada; o ofício original e a resposta administrativa continuam ausentes.
-- Palmares: Ipea (2022) descreve 5,3 mil livros, folhetos e catálogos no contexto do “Retrato do Acervo”; fonte jornalística reproduz 5.165/9.565. A divergência permanece aberta.
-
-Nenhum registro acima foi promovido a verificação integral nesta rodada. As fontes secundárias foram classificadas como corroboração/contexto, não como documentos primários.
-
-
-## 17. Fechamento consolidado da etapa P0 — 04/11/2026
-
-### Decisão
-Fica encerrada a etapa P0 de auditoria, classificação, rastreabilidade documental e mitigação de direitos autorais/imagem. O encerramento é **operacional e metodológico**, não uma declaração de que todas as lacunas factuais foram sanadas.
-
-### Entregas concluídas
-1. Revisão dos 37 registros da base.
-2. Revisão dos dez registros prioritários: seis com núcleo factual verificado e quatro parciais.
-3. Tratamento dos nove alertas de signatário, sem atribuição por cargo ou inferência.
-4. Pesquisa complementar em fontes públicas oficiais, judiciais, de controle, acadêmicas, profissionais, legislativas e jornalísticas.
-5. Inclusão das fontes primárias adicionais do inventário FCP, do Diário do MPF/Rondônia e do Diário do MPSC/Canoinhas.
-6. Registro das diferenças e limites probatórios, especialmente FCP (9.696 títulos versus quantitativos agregados de 5.165 e 5.300, cuja unidade/critério não foram conciliados), Rondônia (recolhimento suspenso e devolução dos exemplares efetivamente recolhidos) e Canoinhas (resultado revisional conhecido, destino físico dos livros não comprovado).
-7. Retirada das sete capas sem cadeia de procedência/licença comprovada.
-
-### Pendências que permanecem abertas
-- **EL-025 / FCP:** íntegra do Relatório 01/CNIRC e validação da transcrição pública da lista final de 300 entradas (261 após deduplicação); esclarecer documentalmente a relação entre 5.165 títulos classificados e 5.300 exemplares alegados.
-- **EL-028 / São José dos Campos:** ordem municipal original, resposta administrativa e prova pública de cumprimento.
-- **EL-030 / Londrina 2024:** requerimento, número, destinatário formal, resposta da SME e prova de execução.
-- **EL-032 / Taubaté:** ordem/mensagem original, requerimento e resposta integrais, parecer e comprovantes de redistribuição física.
-- **EL-035 / Londrina 2026:** número SEI, pedido, despacho, signatários e decisão final.
-- **Rondônia:** Adendo SEI 10053329 e resultado documental da sindicância estadual.
-- **Canoinhas/MPSC:** íntegra da decisão da Notícia de Fato 01.2024.00012159-3, recibo e inventário/localização posterior dos livros.
-
-### Método e transparência
-A pesquisa desta etapa foi feita em fontes públicas. **Nenhum pedido de LAI, Fala.BR, requerimento ou solicitação institucional foi protocolado em nome da usuária.** Minutas eventualmente existentes não são protocolos, respostas nem evidências.
-
-Não se deve interpretar ausência em mecanismos de busca como inexistência do documento, nem substituir documento original por notícia, petição, pauta ou referência acadêmica. A reabertura da pesquisa dependerá de nova fonte, novo identificador ou documento verificável, evitando repetir indefinidamente consultas sem nova pista.
-
-### Status
-**P0 de auditoria e pesquisa pública: encerrado.**  
-**Verificação integral de todos os registros: não concluída.**  
-**Cinco registros parciais: permanecem parciais.**  
-**PR e publicação:** este fechamento documental não autoriza merge nem deploy; as validações técnicas e a prévia continuam sendo condições independentes.
-
-
-## Complemento de pesquisa pública — 04/11/2026
-
-A nova rodada recuperou documentos primários adicionais para Canoinhas e refinou a delimitação da lacuna da Fundação Palmares.
-
-- **Canoinhas (EL-036/EL-037):** localizados no SAPL da Câmara o Ofício nº 205/2024/AL e a resposta da Fundação Cultural no Ofício nº 013/2024. A resposta descreve a Mundoteca (569 obras, duas salas separadas por público, classificação por cores, abertura em 19/11/2022, responsável local e um empréstimo registrado), mas esclarece que a Mundoteca era responsabilidade da Secretaria Municipal de Educação. Não identifica os dois livros nem comprova o recebimento/destino dos exemplares. O TCE-SC, por sua vez, registra a informação da prefeita de que os dois livros foram entregues à gestora da Fundação Cultural para análise. A cadeia de custódia continua aberta; as duas fontes não devem ser artificialmente harmonizadas.
-- **MPSC/Canoinhas:** o Diário Oficial de 01/08/2024 comprova que a Notícia de Fato nº 01.2024.00012159-3 entrou em pauta da 1ª Turma Revisora para 07/08/2024. A pauta não substitui a íntegra da decisão revisora.
-- **Palmares (EL-025):** recuperado e conferido o inventário oficial de 9.696 títulos, de 295 páginas, publicado pela FCP em 08/08/2024. A página oficial de downloads do CNIRC lista o inventário, a Política de Acervo e a resposta à Comissão de Cultura, mas não o Relatório Público 01/CNIRC. A petição da OAB na ADPF 918 reproduz trechos do relatório e o identifica como anexo 26, sem conter o anexo. A íntegra do Relatório 01 permanece pendente; a lista final de 300 entradas foi recuperada em transcrição pública secundária, com 261 após deduplicação, ainda sem validação contra o original.
-- **Londrina (EL-035):** a CBN e a matéria de Douglas Kuspiosz reproduzida pelo Bonde confirmam levantamento e recolhimento em rede para análise, além da existência de pedido formal. Número SEI, documento integral, quantitativo, parecer e decisão final não localizados.
-- **Taubaté (EL-032):** mantida a distinção entre anúncio de retorno ao uso pedagógico, após análise técnica, e prova de que os exemplares foram efetivamente redistribuídos.
-
-A atualização não encerra a recuperação integral desses documentos. Nenhuma solicitação foi protocolada ou encaminhada a qualquer órgão ou pessoa. As lacunas remanescentes continuam descritas como lacunas, sem inferência.
-
-**Status:** pesquisa pública complementar realizada; fechamento documental integral ainda não atingido.
-
-
-### Complemento — resultado do recurso no MPSC (Canoinhas)
-
-Foi recuperado o Diário Oficial do MPSC nº 3698, de 09/08/2024. O Conselho Superior, por unanimidade, conheceu e negou provimento ao recurso relativo à Notícia de Fato nº 01.2024.00012159-3, da 1ª Promotoria de Canoinhas, mantendo o arquivamento recorrido. A publicação comprova o resultado, mas não apresenta a fundamentação integral. A pendência deixa de ser “localizar o resultado” e passa a ser “recuperar a fundamentação integral e fechar a cadeia de custódia dos exemplares”.
-
-Fonte: https://documentos.mpsc.mp.br/portal/Conteudo/publicacoes/do_mpsc_2024-08-09.pdf
-
-
-### Complemento — São José dos Campos (EL-028)
-
-A nova pesquisa recuperou a nota pública da Prefeitura, reproduzida pela Spriomais em 13/06/2024, confirmando o recolhimento dos exemplares de todas as escolas para reavaliação técnica. A mesma matéria registra que o vereador protocolou ofício ao prefeito e ao secretário de Educação em 11/06/2024. O Vale/Sampi, em 09/09/2024, documenta o ajuizamento da ação civil pública e relata que a ordem operacional aos diretores foi transmitida por WhatsApp.
-
-A cópia do ofício parlamentar e a mensagem que transmitiu a ordem municipal não foram localizadas. A sentença de 2026 e a ordem de restituição são divulgadas por veículos de imprensa, mas não foi localizada comprovação pública de cumprimento. O registro permanece parcialmente verificado por essas lacunas.
-
-
-### Complemento — Taubaté (EL-032)
-
-Foi recuperado o portal oficial Câmara Sem Papel, que disponibiliza pesquisa pública da produção legislativa. Também foram consultados os registros oficiais das sessões de 03/03/2026 e 10/03/2026. Os resumos públicos não reproduzem o conteúdo do requerimento sobre o livro nem a declaração atribuída à vereadora. O Vale permanece como fonte do teor do requerimento e de sua aprovação em 10/03; o número e o inteiro teor continuam sem recuperação.
-
-
-### Correção de precisão — Palmares
-
-O número 5.165 não é uma lista nominal de livros: corresponde a 54% dos 9.565 títulos contabilizados no relatório de 2021 como de temática alheia à negra. A análise publicada no Jornal da USP em 18/06/2021 descreve uma lista final de 300 títulos indicados para exclusão. Assim, a pendência correta é recuperar o Relatório 01/CNIRC e sua lista de 300 títulos, não procurar uma lista de 5.165 itens. A diferença entre 5.165 e 5.300 (Ipea, 2022) permanece como divergência de quantitativo/unidade a esclarecer.
-
-Fonte: https://jornal.usp.br/artigos/o-governo-bolsonaro-e-o-mal-estar-dos-livros-sobre-o-expurgo-do-acervo-bibliografico-da-fundacao-palmares-primeiro-ato/
-
-
-### Recuperação da lista de exclusão — Palmares
-
-A lista final de 300 títulos do Relatório 01 foi recuperada em transcrição pública do Por Dentro do RN (17/06/2021), com 261 entradas após remoção de edições repetidas. A existência da lista de 300 é corroborada pelo Jornal da USP e pela Revista de Estudos Culturais (EACH/USP). O original do Relatório 01 continua inacessível nesta rodada; portanto, a transcrição é fonte secundária e precisa ser conferida contra o documento original. Os 5.165 são o quantitativo agregado de títulos classificados como temática alheia, não a lista final. A petição da OAB/ADPF 918 fala em 5.300 exemplares, alegação distinta que não comprova execução.
-
-
-### Cruzamento de títulos — Palmares
-
-A transcrição pública da lista de 300 foi cruzada pontualmente com o inventário oficial da FCP. Foram encontrados no inventário, entre outros, Bandidos, Dicionário do Folclore Brasileiro, O Capital, Menino brinca de boneca?, O Segundo Sexo, A nova mulher e a moral sexual, A crise do neoliberalismo e a luta pelo socialismo, O mundo do socialismo, A história me absolverá, O PT em Movimento, O Socialismo Vive e O sexo e a vida.
-
-O achado confirma que esses títulos aparecem no inventário bibliográfico oficial do antigo acervo, compilado entre julho e outubro de 2021. Não comprova que todos os 261 itens da transcrição permaneceram fisicamente disponíveis, nem o destino dos 300 títulos indicados para exclusão.
-
-
-### Complemento — Rondônia (EL-015 e EL-022 a EL-024)
-
-A nota oficial da SEDUC de 06/02/2020 afirma que o processo técnico foi encerrado imediatamente e promete apurar o vazamento. O Diário do MPF de 30/08/2021 registra uma sindicância administrativa separada, instaurada pela SEDUC, e uma recomendação do MP-RO acatada. A tese da UnB de 2024 reproduz a imagem do memorando. Não foram localizados o Adendo SEI 10053329, a íntegra da recomendação do MP-RO ou o resultado da sindicância. O processo técnico encerrado e a sindicância administrativa não devem ser confundidos.
-
-
-### Complemento — Londrina / EL-035
-
-Foi recuperada cópia digital assinada do Jornal Oficial de Londrina nº 3630, de 09/10/2018, cuja relação de livros adquiridos inclui “O Bebê Vem com a Cegonha”, da Editora Melhoramentos, a R$ 35,33 por unidade. Isso comprova registro de aquisição municipal em 2018. Não comprova a escola destinatária, a permanência do exemplar em circulação em 2026, nem a execução do recolhimento ou o resultado da análise técnica.
