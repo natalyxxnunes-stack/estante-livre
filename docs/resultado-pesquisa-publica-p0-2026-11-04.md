@@ -242,3 +242,12 @@ A decisão do TCE-SC registra expressamente que a doação dos dois exemplares a
 ## 15. Resultado desta segunda busca
 
 Foram acrescentadas fontes independentes de fiscalização profissional (CRB-1), parecer técnico de bibliotecária (ABER), petição judicial pública (Coalizão Negra por Direitos), artigo acadêmico em repositório universitário (FESPSP), reprodução documental adicional da lista de Rondônia e reportagens contemporâneas adicionais de Londrina e Taubaté. Essas fontes fortalecem as afirmações que já tinham lastro; não eliminam as lacunas de documentos administrativos originais e de execução que continuam listadas nos itens anteriores.
+
+
+## 14. Encerramento operacional e passagem de bastão — 04/11/2026
+
+A pesquisa pública e a revisão editorial do P0 foram concluídas até o limite verificável nesta etapa. A documentação não sustenta declarar todos os fatos integralmente verificados: cinco registros permanecem parciais (EL-025, EL-028, EL-030, EL-032 e EL-035), e há documentos complementares pendentes em Rondônia e Canoinhas/MPSC.
+
+A fase P0 encerra a busca aberta e organiza a passagem para recuperação formal, mediante pedidos aos órgãos custodiantes ou acesso autorizado. Não foram protocolados pedidos em nome da usuária. O fechamento operacional não deve ser interpretado como declaração de que todos os documentos primários foram obtidos.
+
+**Próxima condição para alterar status:** anexar cópia primária/autenticável, resposta formal do órgão, certidão de sigilo/inexistência/ausência de custódia ou prova de execução. Até lá, manter as classificações existentes.
