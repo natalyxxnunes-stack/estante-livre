@@ -312,3 +312,18 @@ O Jornal da USP descreve o relatório CNIRC como tendo 73 páginas e lista final
 ### Atualização transversal
 
 Nova busca não localizou documentos primários adicionais para EL-028, EL-030, EL-032 ou EL-035. Permanecem as lacunas já registradas: SJC — intimação e cumprimento; Londrina 2024 — original/protocolo/resposta; Taubaté — parecer integral e redistribuição; Londrina 2026 — resultado técnico posterior.
+
+
+## Decisão de encerramento por subpendência — 05/11/2026
+
+Para impedir que o P0 fique eternamente aberto, separar: (a) fato/episódio confirmado; (b) resultado administrativo ou judicial; (c) execução material. Encerrar cada etapa quando a evidência disponível a sustentar, mantendo explícita a lacuna posterior.
+
+| ID | Decisão nesta rodada | Status operacional |
+|---|---|---|
+| EL-025 | Transferência do acervo em 2011 e cancelamento da contratação de tratamento em 2012 comprovados por relatórios oficiais. | Subetapas históricas fechadas; compra de 2003, situação judicial atual e destino físico permanecem abertas. |
+| EL-028 | Sentença de mérito de 20/07/2026 e ordem de redisponibilização confirmadas. | Mérito fechado; intimação e cumprimento material não comprovados. |
+| EL-030 | Pedido de recolhimento relatado em 2024, sem protocolo ou resposta oficial localizados. | Não fechar como ato formal comprovado; classificar pedido como relato secundário. |
+| EL-032 | Prefeitura informou parecer técnico favorável ao uso nas turmas adequadas e permanência no plano de ensino. | Resultado administrativo fechado; execução física generalizada não comprovada. |
+| EL-035 | Pedido escolar assinado e início de levantamento/recolhimento para análise confirmados por reportagens com acesso ao pedido e resposta da SME. | Episódio e início da análise fechados; decisão final e destino dos exemplares não localizados. |
+
+**Não usar “P0 concluído” para o conjunto.** A partir desta rodada, os subresultados comprovados ficam encerrados e somente as lacunas específicas permanecem abertas. “Não localizado em fontes públicas pesquisadas” não equivale a inexistência.
