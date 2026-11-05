@@ -271,3 +271,18 @@ Folha confirma prazo de cinco dias contado da intimação e obrigação de devol
 
 ### Status
 Nenhum dos cinco P0 foi fechado nesta rodada. EL-032 tem desfecho administrativo favorável, mas sem prova material. EL-035 tem confirmação mais forte do pedido assinado. EL-025 ganhou documento oficial adicional, mas não o relatório CNIRC 01 nem autos integrais.
+
+
+## EL-025 — arquivo oficial de nome enganoso e confirmação da Nota Informativa (05/11/2026)
+
+A página oficial da FCP https://www.gov.br/palmares/pt-br/midias/arquivos/retrato_do_acervo.pdf/view (atualizada em 07/06/2023) oferece PDF de três páginas em https://www.gov.br/palmares/pt-br/midias/arquivos/retrato_do_acervo.pdf/@@download/file. Apesar do nome, o conteúdo NÃO é o Relatório CNIRC de 2021: é texto de Deivison Moacir Cezar de Campos, datado de 28/05/2023, sobre decisão judicial relacionada ao uso descontextualizado de trechos de sua dissertação. O autor afirma que o relatório tinha 74 páginas, que citou sua dissertação de forma descontextualizada e que decisões judiciais anteriores protegeram a Biblioteca Oliveira Silveira e o acervo de Clóvis Moura. O arquivo não identifica número do processo nem anexa a decisão. Não o apresentar como relatório CNIRC ou como cópia da decisão.
+
+O PDF oficial de novembro de 2021 “Respostas da FCP aos relatórios da Comissão de Cultura...” contém a Nota Informativa SEI nº 0166090/2021, assinada por Marco Aurélio Franco em 06/11/2021, no processo administrativo 01420.101641/2021-35. A FCP afirma que títulos que considerava desviantes permaneceriam no acervo por força de liminar. É fonte primária da posição institucional, não prova independente de todas as alegações da nota. Link: https://www.gov.br/palmares/pt-br/midias/arquivos/download/resposta.pdf.
+
+O Jornal da USP descreve o relatório CNIRC como tendo 73 páginas e lista final de 300 títulos; outras fontes o descrevem como 74 páginas. Divergência não resolvida, possivelmente ligada à contagem da capa, sem confirmação. Link: https://jornal.usp.br/artigos/o-governo-bolsonaro-e-o-mal-estar-dos-livros-sobre-o-expurgo-do-acervo-bibliografico-da-fundacao-palmares-primeiro-ato/.
+
+## Atualizações de precisão nos casos municipais
+
+- EL-030: matéria contemporânea de 27/11/2024 relata que a vereadora protocolou requerimento à SME pedindo recolhimento de “A Mamãe Vai Ter um Bebê”; a própria matéria diz que a SME ainda não havia se manifestado. Sem número, cópia ou protocolo comprovado. https://novalima.news/livro-erotico-e-encontrado-em-creche-de-londrina-vereadora-pede-providencias/.
+- EL-035: Bonde/Folha informa que teve acesso ao pedido assinado pela gerente de Ensino Fundamental e diretora pedagógica; comprova melhor existência/teor do documento, mas não substitui cópia integral, protocolo ou conclusão. https://www.bonde.com.br/bondenews/politica/educacao-vai-recolher-livro-infantil-sobre-reproducao-humana-por-conteudo-sensivel/amp.
+- EL-032: Prefeitura informou decisão de voltar a utilizar “Pipoca e Picolé” no plano de ensino das turmas adequadas após análise da Coordenação de Área e Equipe de Práticas Pedagógicas. Não há comprovação de redistribuição física, quantidade ou data. https://sampi.net.br/ovale/noticias/2991910/vale-do-paraiba/2026/07/taubate-escolas-voltarao-a-usar-livro-sobre-menina-com-duas-maes.
