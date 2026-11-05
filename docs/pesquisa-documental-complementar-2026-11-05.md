@@ -299,3 +299,10 @@ A formulação de 2024 não deve ser tratada como se fosse a liminar de junho/20
 ### Status
 
 EL-025 permanece parcialmente verificado. Houve avanço documental substancial: política oficial integral de 2021, trechos da sentença definitiva de janeiro/2022 reproduzidos por imprensa e declaração institucional do CNIRC em 2023. Continuam ausentes: relatório CNIRC integral original; sentença integral e decisões subsequentes; comprovação de intimação/trânsito/cumprimento; inventário atualizado e destino físico dos livros; ato de constituição e atas da comissão permanente.
+
+
+### EL-025 — trilha oficial de consulta dos autos e limite de acesso
+
+A página oficial do TRF2 confirma que a consulta pública de processos da Justiça Federal da 2ª Região é feita pelo e-Proc/Balcão Jus. A FAQ do próprio e-Proc informa que qualquer pessoa pode visualizar a íntegra do processo mediante número e chave do processo; a chave é fornecida no ajuizamento ao usuário que distribui a ação. A página de consulta pública sem chave permite consultar dados do andamento, mas não necessariamente visualizar os documentos juntados. Isso explica por que a numeração do processo, isoladamente, não garante acesso aos PDFs das decisões. Fontes oficiais: https://www.trf2.jus.br/trf2/consultas-e-servicos/consultas-processuais ; https://portaleproc.trf2.jus.br/ (consulta pública/Balcão Jus); https://portaleproc.trf2.jus.br/perguntas-frequentes/.
+
+A consulta pública é uma trilha ainda disponível para obter metadados/andamentos sem solicitar documentos, mas a íntegra documental pode exigir a chave processual. Não afirmar que o processo esteja sigiloso: a exigência de chave para acesso integral não equivale a segredo de justiça.
