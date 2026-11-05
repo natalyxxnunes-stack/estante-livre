@@ -294,3 +294,17 @@ O Jornal da USP descreve o relatório CNIRC como tendo 73 páginas e lista final
 ### Atualização transversal
 
 Nova busca não localizou documentos primários adicionais para EL-028, EL-030, EL-032 ou EL-035. Permanecem as lacunas já registradas: SJC — intimação e cumprimento; Londrina 2024 — original/protocolo/resposta; Taubaté — parecer integral e redistribuição; Londrina 2026 — resultado técnico posterior.
+
+
+## Matriz — decisão de encerramento por subpendência (05/11/2026)
+
+| ID | Afirmação | Evidência disponível | Conclusão permitida | Não afirmar |
+|---|---|---|---|---|
+| EL-025 | Acervo Clóvis Moura transferido para Brasília em 2011 | Relatório de Gestão FCP 2011 | Confirmado | Que 16.050 peças eram todas do acervo Clóvis Moura |
+| EL-025 | Tratamento técnico planejado para 2012 não foi contratado naquele exercício | Relatório de Gestão FCP 2012 registra cancelamento por problemas licitatórios | Confirmado para 2012 | Que nunca houve tratamento posterior |
+| EL-028 | Justiça determinou redisponibilização em julho de 2026 | Sentença reproduzida por Folha e OVALE | Ordem judicial confirmada | Que a Prefeitura cumpriu |
+| EL-030 | Vereadora pediu providências para recolher o livro | Relato jornalístico de 27/11/2024 | Pedido relatado | Que houve requerimento formal protocolado ou resposta da SME |
+| EL-032 | Prefeitura aprovou uso de “Pipoca e Picolé” em turmas adequadas | Declaração municipal publicada por OVALE em 14/07/2026 | Resultado administrativo favorável confirmado | Que todos os exemplares foram redistribuídos |
+| EL-035 | Escola pediu recolhimento e SME iniciou levantamento/recolhimento para análise | Pedido assinado visto por Bonde/Folha; resposta da SME à CBN | Pedido e início da análise confirmados | Que houve exclusão definitiva ou decisão final |
+
+**Critério:** fechar a afirmação comprovada, não a lacuna que vem depois dela. Fontes completas e ressalvas constam no documento de pesquisa complementar.
