@@ -156,3 +156,28 @@ A pesquisa desta etapa usou fontes públicas. Não houve protocolo de pedidos de
 - **EL-030 — Londrina 2024:** Nova Lima News e Dia de Ajudar reproduzem a notícia do requerimento sobre *A Mamãe Vai Ter um Bebê*, mas não resolvem a divergência sobre o protocolo formal; uma das republicações declara a Revista Oeste como fonte. Não contam como confirmações independentes. [Nova Lima News](https://novalima.news/livro-erotico-e-encontrado-em-creche-de-londrina-vereadora-pede-providencias/); [Dia de Ajudar](https://diadeajudar.com.br/vereadora-jessicao-pede-retirada-de-livro-erotico-em-creche-no-parana-polemica-na-educacao-infantil/). Status parcial mantido.
 - **EL-032 — Taubaté:** OVALE confirma aprovação do requerimento de Isaac do Carmo e Talita em 10/03/2026, reproduz a resposta do prefeito e registra a manifestação municipal de julho favorável ao uso de *Pipoca e Picolé* nas turmas adequadas. Não prova redistribuição física. [10/04/2026](https://sampi.net.br/ovale/noticias/2972973/sessao-extra/2026/04/livro-sobre-menina-com-duas-maes-e-retirado-de-escolas-em-taubate); [14/07/2026](https://sampi.net.br/ovale/noticias/2991910/vale-do-paraiba/2026/07/taubate-escolas-voltarao-a-usar-livro-sobre-menina-com-duas-maes). Status parcial mantido.
 - **EL-035 — Londrina 2026:** CBN confirma levantamento e recolhimento para análise pedagógica; Globoplay registra matéria do Meio Dia Paraná sobre o caso. São confirmações jornalísticas, não substitutos do processo SEI ou do pedido original. [CBN](https://cbnlondrina.com.br/materias/londrina-recolhe-livro-infantil-de-escolas-apos-polemica-com-conteudo-sensivel); [Globoplay](https://globoplay.globo.com/v/14423252/). Status parcial mantido.
+
+
+## EL-025 — nova recuperação documental (05/11/2026, rodada adicional)
+
+### Cópia integral da Ação Civil Pública da Coalizão Negra por Direitos
+
+Foi recuperada uma cópia integral, legível e indexada de 36 páginas da **Ação Civil Pública com pedido de tutela de urgência**, hospedada diretamente no domínio da Coalizão Negra por Direitos:
+https://coalizaonegrapordireitos.org.br/wp-content/uploads/2021/06/Coalizao-Negra-por-Direitos_ACP-Fundacao-Palmares_ManutencaoAcervo.pdf
+
+O documento identifica a Coalizão (articulada por 200 organizações, coletivos e entidades) e o Instituto Referência Negra Peregum como representante formal no polo ativo, e apresenta o pedido de proteção do patrimônio bibliográfico e cultural afro-brasileiro (p. 1–2). Nas páginas 12–14, transcreve trechos do prefácio do Relatório “Retrato do Acervo” e identifica a publicação como Doc. 3, com data de 11/06/2021. Nas páginas 19–22, desenvolve os fundamentos jurídicos e a argumentação sobre a manutenção do acervo. A peça é uma petição inicial, não é sentença nem prova de que a tutela foi deferida. Fonte: PDF da ACP, páginas 1–2 e 12–14, 19–22.
+
+### Confirmação acadêmica independente dos identificadores dos arquivos originais
+
+O artigo de Maria Aparecida Moura, publicado na Liinc em Revista/IBICT, cita expressamente o processo da Ação Popular nº 5006660-67.2021.4.02.5117/RJ e o endereço da cópia da decisão judicial na Ponte Jornalismo; o endereço original do Relatório CNIRC cnirc-01-gab-10-06-21.pdf; e a cópia da ACP da Coalizão Negra por Direitos. A página acadêmica confirma os links e a referência bibliográfica, mas não torna acessíveis os dois PDFs que falharam na abertura automatizada. Link: https://revista.ibict.br/liinc/article/view/5789. A edição é v. 17, n. 2 (2021), embora a página do portal mostre uma data posterior de publicação/registro em 2025; usar a edição do periódico para a data bibliográfica, não a data do portal.
+
+O artigo de França, Cestari e Modesto na Revista Letras/UFPR (n. 105, 2022) também reproduz a capa do relatório e confirma sua identificação como “Relatório Público 01 – CNIRC”, com título e subtítulo. Link: https://revistas.ufpr.br/letras/article/download/85371/49124.
+
+### Resultado e cautelas
+
+- ACP da Coalizão: agora há cópia integral da petição, mas não confundir com a Ação Popular nº 5006660-67.2021.4.02.5117/RJ, ajuizada em outro juízo/foro. São processos distintos.
+- Ação Popular: a existência do processo e a referência bibliográfica da decisão estão corroboradas por artigo acadêmico e pela política oficial da FCP; o PDF hospedado pela Ponte segue retornando erro 520 na ferramenta de consulta.
+- Relatório CNIRC: sua existência, título, autoria institucional e URL original estão confirmados por diversas referências independentes e pela política oficial da FCP; o PDF original no domínio histórico da Fundação segue inacessível. A ACP recuperada transcreve partes do prefácio, mas não contém o relatório integral como anexo.
+- Não há base para afirmar que a ACP da Coalizão e a Ação Popular sejam o mesmo processo, que a ACP tenha produzido a liminar referida no processo da ação popular, ou que a petição inicial prove o destino final dos livros.
+
+Status EL-025: parcialmente verificado; evidência processual e bibliográfica ampliada, documentos decisórios e relatório integral ainda não recuperados em cópia legível.
