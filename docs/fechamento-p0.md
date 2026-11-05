@@ -238,3 +238,15 @@ Cronologia atualizada: liminar provisória de junho/2021 (R$ 500 por item doado)
 ### Acesso público aos autos — TRF2/e-Proc
 
 A página oficial do TRF2 direciona a consulta pública para o e-Proc/Balcão Jus. A FAQ do próprio e-Proc informa que qualquer pessoa pode visualizar a íntegra do processo com número e chave processual; a chave é disponibilizada ao autor no ajuizamento. A consulta pública sem chave permite verificar dados/andamento, mas não necessariamente abrir os documentos juntados. Portanto, a ausência de PDF em busca aberta não prova sigilo: o acesso integral pode depender da chave. Fontes: [TRF2 — consultas processuais](https://www.trf2.jus.br/trf2/consultas-e-servicos/consultas-processuais); [e-Proc TRF2](https://portaleproc.trf2.jus.br/); [FAQ e-Proc](https://portaleproc.trf2.jus.br/perguntas-frequentes/).
+
+
+## Atualização documental — rodada ampliada de 05/11/2026
+
+Novas fontes consultadas e registradas em docs/pesquisa-documental-complementar-2026-11-05.md:
+- EL-025: PDF oficial FCP de 22/11/2021 (Nota Informativa SEI/FCP 0166090/2021 e relatório de diligência da Comissão de Cultura); registro secundário Escavador aponta sentença procedente em 30/12/2021 e trânsito em julgado em 17/03/2022, ainda sujeito a confirmação no e-Proc; fontes acadêmicas UFPR/NAEA continuam citando duas versões históricas do relatório CNIRC, mas PDFs não foram recuperados.
+- EL-028: cronologia ampliada da ACP MPSP/Defensoria, liminar de 2024 suspensa após recurso e sentença de 20/07/2026 que ordena redistribuição; falta prova de intimação e cumprimento material.
+- EL-032: Prefeitura de Taubaté informou parecer favorável ao uso de Pipoca e Picolé em turmas adequadas, com mediação docente; falta parecer integral e prova de retorno físico.
+- EL-035: CBN confirma levantamento e retirada em toda a rede para análise, documento assinado e resultado final não localizados.
+- EL-030: requerimento individual, resposta administrativa e recolhimento continuam sem comprovação primária.
+
+Status conservador: os cinco P0 continuam parcialmente verificados. Não elevar status sem documentos primários ou prova material de execução. Não confundir o PDF de respostas da FCP/relatório da Câmara com o Relatório Público 01 do CNIRC.
