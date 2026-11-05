@@ -663,7 +663,7 @@ const FONTES = {
  "unesp-palmares": {
   "tipo": "S2","veic":"Jornal da Unesp","data":"2021-06-15","tit":"Em cruzada obscurantista, Fundação Palmares pensa em se desfazer de 54% dos livros de seu acervo","url":"https://jornal.unesp.br/2021/06/15/em-cruzada-obscurantista-fundacao-palmares-pensa-em-se-desfazer-de-54-dos-livros-de-seu-acerco/"},
  "palmares-inventario": {
-  "tipo": "P1","veic":"Fundação Cultural Palmares","data":"2024-08-08","tit":"Inventário Bibliográfico da Fundação Cultural Palmares","url":"https://www.gov.br/palmares/pt-br/centrais-de-conteudo/publicacoes/lista-de-livros-atualizada-8-8-2024-1.pdf"},
+  "tipo": "P1","veic":"Fundação Cultural Palmares","data":"2024-08-08","tit":"Inventário bibliográfico da FCP; publicado em 08/08/2024, levantamento realizado entre julho e outubro de 2021","url":"https://www.gov.br/palmares/pt-br/centrais-de-conteudo/publicacoes/lista-de-livros-atualizada-8-8-2024-1.pdf"},
  "palmares-inventario-2023": {
   "tipo":"P1","veic":"Fundação Cultural Palmares · CNIRC","data":"2023-01-16","tit":"Lista de livros atualizada em 16/01/2023 · inventário bibliográfico oficial","url":"https://www.gov.br/palmares/pt-br/midias/arquivos/download/lista-de-livros-atualizada16-01-23.pdf/@@download/file"
  },
@@ -1215,7 +1215,7 @@ const FONTES = {
  },
 
  "palmares-lista-300-transcrita": {
-  "tipo":"S2","veic":"Por Dentro do RN","data":"2021-06-17","tit":"Transcrição pública da lista final de 300 títulos do Relatório CNIRC; edições repetidas foram removidas, resultando em 261 entradas","url":"https://pordentrodorn.com.br/2021/06/17/veja-lista-de-livros-banidos-pela-fundacao-palmares/"
+  "tipo":"S2","veic":"Por Dentro do RN","data":"2021-06-17","tit":"Transcrição pública da lista final de 300 títulos do Relatório CNIRC; a publicação declara 261 entradas após remoção de edições repetidas, mas há pares aparentemente duplicados","url":"https://pordentrodorn.com.br/2021/06/17/veja-lista-de-livros-banidos-pela-fundacao-palmares/"
  },
  "revistaec-palmares-300": {
   "tipo":"S2","veic":"Revista de Estudos Culturais · EACH/USP","data":"2022","tit":"Artigo acadêmico identifica o Relatório Retrato do Acervo como 74 páginas e confirma a lista final de 300 títulos comprobatórios","url":"https://revistas.usp.br/revistaec/article/download/195152/188792/592537"
