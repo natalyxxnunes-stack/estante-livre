@@ -410,3 +410,37 @@ Fonte de referência institucional: https://www.gov.br/palmares/pt-br/acesso-a-i
 ### Estado atualizado da hipótese de transporte
 
 A janela contratual da mudança estendeu-se até 19/12/2024. A janela se sobrepõe integralmente à fase final da reestruturação da biblioteca e à vigência do contrato de desinfestação (até 26/12/2024). Ainda não há documento público localizado que conecte nominalmente a Coleção Clóvis Moura à mudança ou à desinfestação. A hipótese de que as caixas tenham sido transportadas no âmbito do Contrato 12/2023 permanece plausível, mas não comprovada.
+
+
+## 21. EL-025 — identificação da nota de empenho da mudança e limite da trilha financeira
+
+### Nota de Empenho identificada no aditivo
+
+O Primeiro Termo Aditivo ao Contrato 12/2023 identifica expressamente a **Nota de Empenho nº 2023NE000369**, emitida para a despesa do contrato, e informa Natureza de Despesa 339039, PTRES 225948, PI C20004PA026 e Fonte 100. Este é um avanço sobre a busca anterior: agora há um identificador contábil específico para pesquisar a execução da mudança. A nota de empenho, contudo, comprova reserva/empenhamento orçamentário, não liquidação nem pagamento, e não informa por si só o volume transportado.
+
+Fonte primária: Primeiro Termo Aditivo, processo 01420.100889/2023-41, cláusula 3.1: https://www.gov.br/palmares/pt-br/midias/arquivos-contratos/2023/atlantic-primeiro-termo-aditivo-n-12-2023.pdf
+
+### Inconsistência de identificador de Plano Interno entre contrato e aditivo
+
+O Contrato 12/2023 registra o Plano Interno **T20004PA026** (cláusula 4.1), enquanto o Primeiro Termo Aditivo registra **C20004PA026** (cláusula 3.1). O PTRES, a natureza de despesa, a fonte e o número do processo permanecem consistentes nos documentos. A diferença de uma letra no PI deve ser tratada como divergência documental a esclarecer na trilha orçamentária, não como evidência de irregularidade ou de empenho inválido.
+
+Fontes: contrato integral, cláusula 4.1: https://www.gov.br/palmares/pt-br/midias/arquivos-contratos/2023/1-atlantic-contrato.pdf; aditivo, cláusula 3.1: https://www.gov.br/palmares/pt-br/midias/arquivos-contratos/2023/atlantic-primeiro-termo-aditivo-n-12-2023.pdf
+
+### Consulta pública de execução financeira
+
+A página oficial “Receitas e Despesas” da FCP explica que a execução orçamentária e financeira é disponibilizada no Portal da Transparência com dados do SIAFI, atualizados mensalmente para o ano corrente e consolidados para exercícios anteriores. O link oficial de consulta de despesas foi localizado, mas o destino do Portal da Transparência retornou erro 500 nesta tentativa de acesso automatizado. Portanto, não foi possível recuperar a ficha de empenho, os documentos de liquidação ou as ordens bancárias correspondentes.
+
+Fonte institucional: https://www.gov.br/palmares/pt-br/acesso-a-informacao/receitas-e-despesas
+
+### Resultado da busca por CNPJ e razão social
+
+Foram pesquisados em fontes públicas indexadas os CNPJs 09.144.019/0001-86 (Atlantic Mudanças e Serviços Ltda.) e 23.803.398/0001-08 (Grupo Oficina de Restauro Ltda.), além dos números dos processos 01420.100889/2023-41 e 01420.100133/2022-11 e das expressões “empenho”, “liquidação” e “pagamento”. Não foram recuperados documentos verificáveis de liquidação, ordem bancária ou pagamento vinculados especificamente aos dois contratos da FCP. Resultados referentes a homônimos, outros órgãos ou notas de empenho com numeração igual foram descartados por não corresponderem à UG 344041/FCP e aos processos em questão.
+
+**Status correto:** a NE 2023NE000369 está identificada para a mudança; a execução financeira e o valor efetivamente pago continuam sem confirmação documental nesta rodada. Para o Contrato 10/2023, a NE correspondente e os documentos de execução também não foram localizados.
+
+### Próximos documentos e filtros de consulta
+
+- SIAFI/Portal da Transparência: órgão/UG 344041, processo 01420.100889/2023-41, NE 2023NE000369, CNPJ 09.144.019/0001-86, exercícios 2023 e 2024.
+- SIAFI/Portal da Transparência: UG 344041, processo 01420.100133/2022-11, CNPJ 23.803.398/0001-08, exercícios 2023 e 2024.
+- Processo SEI da mudança: medição, ordem de serviço, romaneio, relatório do fiscal, atesto, nota fiscal, liquidação e ordem bancária.
+- Processo SEI da desinfestação: NE, plano de tratamento, ordem de serviço, registro de câmaras/lotes, relatório técnico, recebimento provisório e definitivo, nota fiscal, liquidação e ordem bancária.
