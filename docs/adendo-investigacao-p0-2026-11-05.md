@@ -19,3 +19,20 @@ O Acórdão 1372/2010-TCU-2ª Câmara (TC-014.545/2006-0, contas FCP 2005) deter
 Fonte DOU 01/04/2010, linhas 17403–17444: https://www.gov.br/mme/pt-br/arquivos/do-01-04-2010-s1.pdf
 
 O inteiro teor do PAD, do Relatório CGU nº 03/2007 e do relatório final da comissão não foi recuperado nesta rodada. O resultado está documentado no Relatório de Gestão da FCP, que reproduz a resposta administrativa.
+
+## 2. EL-025 — confronto das versões oficiais do inventário
+
+A versão disponibilizada em 14/10/2021 declara 9.272 títulos e informa levantamento realizado entre julho e outubro de 2021: https://www.gov.br/palmares/pt-br/assuntos/noticias/outubro-2022/listagemcompleta14102021.pdf
+
+A versão disponibilizada em 08/08/2024 declara 9.696 títulos e atribui o levantamento ao mesmo período, julho a outubro de 2021: https://www.gov.br/palmares/pt-br/centrais-de-conteudo/publicacoes/lista-de-livros-atualizada-8-8-2024-1.pdf
+
+A diferença é de 424 registros. Não foi localizada nota metodológica, histórico de versões ou errata explicando a diferença.
+
+Confronto dos títulos mencionados na controvérsia de 2021:
+- *Amor em grupo*: consta nas duas versões, quantidade 1; registro 1135 em 2021 e 1183 em 2024.
+- *O Manifesto Comunista*: não localizado pelo título exato na versão de 2021; consta na versão 2024 como registro 6356, Karl Marx et al., Editora Mirante, quantidade 1.
+- *O Sexo na Alemanha Nazista*: não localizado pelo título exato na versão de 2021; consta na versão 2024 como registro 6708, Hans Peter Bleual, Distribuidora Record, quantidade 1.
+
+**Decisão editorial:** não afirmar que os três títulos constavam da versão publicada em 2021. Formulação autorizada: “A versão do inventário disponibilizada em 2024, que declara ter como base levantamento realizado em 2021, registra os três títulos. Na versão publicada em 14/10/2021, *Amor em grupo* já consta; *O Manifesto Comunista* e *O Sexo na Alemanha Nazista* não foram localizados pelo título exato. As duas versões apresentam totais diferentes — 9.272 e 9.696 — sem explicação pública localizada para a diferença de 424 registros.”
+
+A diferença pode decorrer de revisão, inclusão posterior, correção, reclassificação ou critério de contagem. Sem histórico de versões, não se determina a causa. A divergência não demonstra descarte nem inclusão deliberada por motivação política.
