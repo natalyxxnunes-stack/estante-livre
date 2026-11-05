@@ -242,3 +242,30 @@ Fontes primárias:
 ### Conclusão editorial atualizada
 
 Não há contradição necessária entre os documentos: **higienização** é uma etapa de conservação e limpeza; **tratamento técnico** é um conjunto mais amplo de operações de classificação, indexação, catalogação e registro no sistema. A FCP declarou ter higienizado a Coleção Clóvis Moura em 2010, mas reconheceu em 2012 que não conseguiu contratar o tratamento técnico específico previsto. Portanto, não afirmar que o acervo estava integralmente catalogado no Sophia em 2011 ou 2012. A transferência para Brasília está documentada; a catalogação individual dos exemplares, a rastreabilidade dos três títulos controvertidos e a localização atual continuam sem comprovação.
+
+
+## 15. EL-025 — inspeção técnica 2019 e situação observada em 2021: 70 caixas e catalogação incompleta
+
+Foi recuperado no documento oficial consolidado “Respostas da FCP aos relatórios da Comissão de Cultura da Câmara dos Deputados” (Brasília, novembro de 2021) o conteúdo do diagnóstico da Fundação Biblioteca Nacional realizado de 30/10 a 01/11/2019, além de observações da inspeção realizada em 2021. É uma fonte documental muito relevante para a localização e conservação do Acervo Clóvis Moura.
+
+### Diagnóstico da Fundação Biblioteca Nacional (2019)
+
+Segundo a reprodução do relatório da FBN no documento consolidado, o Acervo Clóvis Moura, considerado raro pela instituição, estava acondicionado em **70 caixas de papelão**, em sala distante da área em que havia infestação por brocas. Ainda assim, foi encontrada uma broca morta presa à fita adesiva de uma caixa nas proximidades. Como as caixas estavam abertas e eram de papelão, o relatório recomendou vistoria preventiva, eventual tratamento e melhor acondicionamento, com as caixas bem lacradas. O texto registra que a infestação severa se concentrava nos objetos de palha do acervo museológico e que a biblioteca estava em sala anexa, sem evidência de agentes biológicos nela naquele momento.
+
+### Inspeção técnica de 2021 — situação de guarda e catalogação
+
+O mesmo documento consolidado reproduz uma ficha de inspeção que registra que os acervos bibliográficos e arquivísticos estavam armazenados em caixas. O relatório aponta poeira acumulada, ausência de limpeza periódica do acervo, empilhamento de caixas e riscos por pressão física. Na seção “Identificação e Controle”, a ficha assinala que nem todo o acervo estava catalogado e registra a informação recebida de que **o acervo bibliográfico aguardava contratação de bibliotecário para continuar sendo catalogado**. Também recomenda retirar os livros das caixas de papelão assim que possível, garantir ventilação e distribuí-los adequadamente para evitar pressão física.
+
+O documento ainda registra que as caixas do acervo documental foram inspecionadas por amostragem e que caixas inferiores não foram verificadas devido ao empilhamento. Não se deve confundir essa observação geral com prova de que as 70 caixas do Acervo Clóvis Moura foram todas inspecionadas em 2021: a referência às 70 caixas aparece especificamente no diagnóstico da FBN de 2019.
+
+### Fonte e cautelas de atribuição
+
+Fonte: documento oficial da FCP, “Respostas da FCP aos relatórios da Comissão de Cultura da Câmara dos Deputados, seguidas dos próprios relatórios em questão”, Brasília, novembro de 2021, Nota Informativa SEI/FCP nº 0166090/2021 e anexos técnicos, páginas impressas 19–27 do relatório técnico reproduzido (linhas extraídas 1204–1304, 1325–1332, 1341–1351, 1472–1512): https://www.gov.br/palmares/pt-br/midias/arquivos/download/resposta.pdf
+
+A publicação é um consolidado produzido pela FCP para responder à Comissão de Cultura e contém argumentação institucional fortemente valorativa. As observações técnicas atribuídas à Fundação Biblioteca Nacional e à ficha de inspeção devem ser atribuídas aos respectivos relatórios reproduzidos, e não apresentadas como conclusões independentes desta investigação. A posição defensiva da FCP na Nota Informativa não substitui os achados técnicos anexados.
+
+### Impacto sobre a conclusão editorial
+
+Este achado altera materialmente o estado da investigação: a localização histórica em Brasília já estava documentada desde 2011; agora há evidência documental de que, no diagnóstico de 2019, o Acervo Clóvis Moura permanecia acondicionado em 70 caixas de papelão, e de que, na inspeção de 2021, a catalogação do acervo bibliográfico ainda aguardava contratação de bibliotecário. Isso reforça que a transferência física não equivaleu à catalogação integral nem à disponibilização pública do acervo.
+
+**Ainda não comprovado:** destino das 70 caixas após 2019; se as caixas foram recondicionadas; se a contratação de bibliotecário ocorreu depois de 2021; se o tratamento técnico cancelado em 2012 foi retomado; inclusão dos três títulos controvertidos no catálogo; inventário por exemplar; localização física atual. Não afirmar extravio ou dano dos livros: a fonte registra risco potencial e problemas gerais de acondicionamento, não perda comprovada dos títulos.
