@@ -66,3 +66,56 @@ Para o caso da Mundoteca, permanecem válidos os documentos já identificados no
 | Canoinhas — EL-036/037 | Procedimento MPSC sobre compra de mobiliário identificado como caso distinto | Excluído como falso positivo; pendência dos livros permanece |
 
 **Regra de fechamento:** esta rodada não autoriza elevar os registros parciais. O ganho foi melhorar a precisão do relato do MPF em Rondônia, distinguir os dois episódios de Londrina e impedir a incorporação indevida de um procedimento administrativo sem relação com os livros da Mundoteca.
+
+
+## Rodada adicional de validação dos cinco P0 parciais — 05/11/2026
+
+### EL-025 — Palmares: correção da data do inventário e teste da lista de 261
+
+**Correção de precisão:** o Inventário Bibliográfico oficial tem publicação/arquivo datado de 08/08/2024, mas a própria introdução informa que o levantamento dos 9.696 títulos ocorreu entre julho e outubro de 2021. Portanto, não é um inventário físico realizado em 2024. O Relatório 01/CNIRC usa 9.565 títulos como denominador para o total agregado de 5.165 (54%); a diferença de 131 registros para o inventário geral de 9.696 não foi explicada nas fontes públicas localizadas.
+
+A transcrição do Por Dentro do RN enumera 261 entradas e declara que removeu edições repetidas da lista de 300. A conferência textual identificou pelo menos dois pares aparentemente duplicados: itens 51/53 (“Comportamento Sexual do Brasileiro”) e 143/146 (“A Origem do Capital: a Acumulação Primitiva”, com variação textual). Em amostragem de 30 títulos, 21 tiveram correspondência no inventário oficial. Isso é validação por amostragem, não confronto integral das 261 entradas. O original do Relatório 01 continua não recuperado; não há prova pública de descarte, doação ou destino atual dos títulos.
+
+Fontes: [Inventário oficial FCP](https://www.gov.br/palmares/pt-br/centrais-de-conteudo/publicacoes/lista-de-livros-atualizada-8-8-2024-1.pdf); [transcrição de 261 entradas](https://pordentrodorn.com.br/2021/06/17/veja-lista-de-livros-banidos-pela-fundacao-palmares/).
+
+**Status:** parcialmente verificado. A lista e a controvérsia estão corroboradas; original, deduplicação completa, diferença numérica e destino físico permanecem sem prova.
+
+### EL-028 — São José dos Campos: sentença mais bem delimitada
+
+G1 e Vale360 detalham a sentença de 20/07/2026: restituição do livro às salas de leitura e bibliotecas em que integrava o acervo; prazo de cinco dias contado da intimação formal; consulta, empréstimo e uso pedagógico no Ensino Fundamental II; vedação a restrição político-ideológica; multa diária de R$ 500, limitada inicialmente a R$ 50 mil. O prazo não começa automaticamente na data da sentença. Não localizei comprovante da intimação nem da redistribuição física; a íntegra dos autos permanece sob segredo de Justiça.
+
+Fontes: [G1, 28/07/2026](https://g1.globo.com/sp/vale-do-paraiba-regiao/noticia/2026/07/28/justica-ve-censura-em-recolhimento-de-livro-com-citacao-a-marielle-franco-e-determina-devolucao-as-escolas-de-sao-jose-dos-campos.ghtml); [Vale360, 31/07/2026](https://www.vale360news.com.br/webstories/justica-determina-volta-de-livro-as-escolas-de-sao-jose-dos-campos-multa-pode-chegar-a-r-50-mil/).
+
+**Status:** parcialmente verificado. Conteúdo da sentença corroborado; intimação e cumprimento não comprovados.
+
+### EL-030 — Londrina 2024: requerimento continua sem original
+
+A Revista Oeste informa que Jéssica Ramos Moreno publicou em 26/11/2024 sobre o livro encontrado na creche e que protocolou requerimento na Câmara solicitando à SME o recolhimento. A matéria incorpora uma publicação da vereadora no Instagram. Brasil Paralelo descreve o pedido como dirigido à SME; a Revista Oeste afirma que foi protocolado na Câmara. Sem o requerimento original, não é possível fixar o destinatário formal. O PL 79/2024 e a Lei nº 13.930/2025 são trilha legislativa separada e não provam a execução do pedido específico.
+
+Fonte: [Revista Oeste, 04/12/2024](https://revistaoeste.com/politica/vereadora-jessicao-exige-recolhimento-de-livro-erotico-encontrado-em-creche-no-parana/).
+
+**Status:** parcialmente verificado. Pedido reportado; protocolo original, resposta e execução não comprovados.
+
+### EL-032 — Taubaté: evolução da resposta municipal
+
+A sequência de OVALE permite reconstruir a evolução declarada pela Prefeitura: em 10/04/2026, o prefeito informou que parte dos livros do programa Minha Biblioteca foi encaminhada à SME para análise e que a maior parte dos kits já havia sido distribuída; a resposta reportada também registra 3.280 kits para alunos e 116 para professores, totalizando R$ 1,216 milhão. Em 16/04, a Prefeitura afirmou que a análise seguia em curso e previa conclusão até o fim do segundo bimestre. Em 14/07, informou parecer favorável ao uso em turmas adequadas, com planejamento, faixa etária e mediação docente.
+
+A transcrição oficial da 45ª sessão (03/03) não reproduz a fala de Zelinda sobre o livro; a ordem do dia da 46ª sessão (10/03) não contém o requerimento. Isso não prova que os fatos não ocorreram, mas deixa o texto e o número do requerimento sem comprovação oficial localizada. A orientação pedagógica final foi anunciada; a redistribuição física a cada escola não foi comprovada.
+
+Fontes: [OVALE, 10/04/2026](https://sampi.net.br/ovale/noticias/2972973/sessao-extra/2026/04/livro-sobre-menina-com-duas-maes-e-retirado-de-escolas-em-taubate); [OVALE, 16/04/2026](https://sampi.net.br/ovale/noticias/amp/2974212/vale-do-paraiba/2026/04/obra-sobre-menina-com-duas-maes-passa-por-analise-diz-prefeitura); [OVALE, 14/07/2026](https://sampi.net.br/ovale/noticias/2991910/vale-do-paraiba/2026/07/taubate-escolas-voltarao-a-usar-livro-sobre-menina-com-duas-maes); [Câmara, resumo da 45ª sessão](https://www.camarataubate.sp.gov.br/portal/noticias/0/3/9869/palavra-dos-vereadores---45-sessao-ordinaria/); [Câmara, ordem do dia da 46ª sessão](https://www.camarataubate.sp.gov.br/portal/noticias/0/3/9875/46-sessao-ordinaria--1032026---ordem-do-dia/).
+
+**Status:** parcialmente verificado. Retirada, resposta reportada, análise e orientação pedagógica final corroboradas; originais e redistribuição física pendentes.
+
+### EL-035 — Londrina 2026: pedido formal e limite de acesso
+
+O Bonde reproduz o núcleo da apuração da Folha: pedido de providências consultado pela reportagem, com solicitação de recolhimento e preocupação com “conteúdo sensível”; a errata da Folha atribui a iniciativa à equipe da Gerência de Ensino Fundamental da SME, não à direção da escola. A CBN confirma que a SME iniciou levantamento para localizar exemplares e encaminhá-los à análise pedagógica. O Jornal Oficial nº 3630 (09/10/2018) confirma aquisição anterior do título da Melhoramentos, mas não prova o alcance da ação em 2026.
+
+O relatório do OGPL registra 15 processos do tipo Pedido de Providências classificados como públicos e 19.588 restritos após 18/02/2025. Esse contexto explica a dificuldade de pesquisa, mas não permite concluir que o processo específico esteja restrito. O Bonde reproduz a apuração da Folha e não é uma segunda confirmação independente. Não foram localizados número SEI, pedido integral, despacho, signatários, quantitativo, parecer ou decisão final.
+
+Fontes: [Bonde, 12/03/2026](https://www.bonde.com.br/bondenews/politica/educacao-vai-recolher-livro-infantil-sobre-reproducao-humana-por-conteudo-sensivel/amp); [CBN Londrina, 12/03/2026](https://cbnlondrina.com.br/materias/londrina-recolhe-livro-infantil-de-escolas-apos-polemica-com-conteudo-sensivel); [Folha de Londrina e errata](https://www.folhadelondrina.com.br/politica/educacao-vai-recolher-livro-infantil-com-conteudo-sensivel-3292131e.html); [relatório OGPL sobre o SEI](https://observatoriolondrina.org.br/uploads/relatorios/Relat%C3%B3rio%20SEI%20-%20Pedidos%20de%20Provid%C3%AAncias.pdf); [Jornal Oficial nº 3630](https://www.luhu.org.br/uploads/editor/jornal_3630_assinado_LEI12765_3N2xMmTDBLqGYuc.pdf).
+
+**Status:** parcialmente verificado. A iniciativa institucional e o início do levantamento estão corroborados; alcance e desfecho não comprovados.
+
+### Conclusão operacional da rodada
+
+A pesquisa pública dos cinco P0 foi ampliada e os novos achados foram incorporados à base. Nenhum dos cinco pode ser elevado a “integralmente verificado” sem ultrapassar a evidência disponível. O encerramento correto desta rodada é de **busca pública e classificação**, não de comprovação integral: os cinco registros permanecem parciais, com limites explícitos. Não houve pedido de LAI, contato institucional ou solicitação a terceiros.
