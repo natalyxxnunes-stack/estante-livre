@@ -311,3 +311,36 @@ Fonte: Perguntas Frequentes da FCP: https://www.gov.br/palmares/pt-br/acesso-a-i
 A cronologia agora comprova: transferência do acervo do Rio para Brasília em 2011; diagnóstico técnico de 2019 com o acervo Clóvis Moura em 70 caixas; inspeção de 2021 que ainda apontava catalogação bibliográfica incompleta; contratação formal de desinfestação ampla em dezembro de 2023; mudança geral de sede em dezembro de 2023; reestruturação e classificação/catalogação em andamento em 2024; e digitalização com disponibilização no Sophia relatada pela FCP em 2025.
 
 **Ainda não comprovado:** execução e recebimento do Contrato 10/2023; tratamento individual das 70 caixas; inventário que identifique o acervo Clóvis Moura no transporte de 2023; catalogação e digitalização dos três títulos controvertidos; localização física atual da coleção; e conciliação da diferença histórica do PAD. Os relatórios recentes demonstram atividade institucional, mas não permitem fechar a rastreabilidade dessa coleção específica.
+
+
+## 18. EL-025 — requisitos de comprovação da execução do Contrato 10/2023 e limites da transparência publicada
+
+### O edital estabelece evidências concretas que deveriam anteceder o pagamento
+
+A leitura do Termo de Referência anexado ao Edital 04/2023 (processo 01420.100133/2022-11) permitiu especificar exatamente quais documentos comprovariam a execução, em vez de manter a lacuna em termos genéricos:
+
+- A contratada deveria entregar documentação comprobatória do cumprimento da obrigação em até cinco dias corridos do adimplemento de cada parcela (item 16.2).
+- A FCP deveria realizar inspeção minuciosa dos serviços executados, acompanhada por profissionais técnicos competentes (16.3.1).
+- Se fossem detectados agentes biológicos ativos no recebimento provisório, a desinfestação deveria ser refeita e perdurar por mais 30 dias (16.3.1.2).
+- A fiscalização deveria produzir relatório circunstanciado; o gestor deveria emitir termo circunstanciado de recebimento definitivo, que concretiza o ateste da execução (16.3.2 e 16.4).
+- A nota fiscal deveria ser precedida do recebimento definitivo; o pagamento previsto era em até 10 dias do recebimento da fatura (16.1, 17.1 e 17.3).
+
+Fonte primária: Edital 04/2023 e Termo de Referência, processo 01420.100133/2022-11, páginas impressas 31–33 do PDF oficial: https://www.gov.br/palmares/pt-br/midias/arquivos-licitacao/edital4-2023.pdf
+
+**Resultado da busca documental:** nas fontes públicas indexadas e nos relatórios de gestão/auditoria consultados nesta rodada, não foi localizado o relatório circunstanciado de execução, o termo de recebimento definitivo, a medição final, as notas fiscais ou o comprovante de pagamento do Contrato 10/2023. Isso não permite concluir que tais documentos não existam no processo SEI; permite afirmar apenas que ainda não foram encontrados nas publicações consultadas.
+
+### Portal de consulta do acervo: serviço oficialmente indicado, mas inacessível na verificação
+
+A página de Perguntas Frequentes da própria FCP informa que o acervo bibliográfico está disponível para consulta local na Biblioteca Oliveira Silveira, na sede em Brasília, sem empréstimo domiciliar, e orienta a pesquisa de títulos pelo endereço `http://biblioteca.palmares.gov.br`, por título, autor, assunto ou palavra-chave. O link redireciona para `https://biblioteca.palmares.gov.br/`, que não pôde ser aberto pelo navegador nesta verificação. Assim, a existência do canal de catálogo é confirmada pela própria Fundação, mas não foi possível validar diretamente os registros dos três títulos nem a identificação de exemplar da Coleção Clóvis Moura.
+
+Fonte: Perguntas Frequentes FCP, item 9: https://www.gov.br/palmares/pt-br/acesso-a-informacao/perguntas-frequentes
+
+### Auditoria interna 2025 — escopo negativo relevante
+
+A página de auditorias da FCP disponibiliza o Relatório de Auditoria Interna nº 01/2025 e o RAINT 2025. O Relatório 01/2025 trata de contratação direta de capacitação de servidores (processo 01420.102268/2024-82), não da desinfestação, do transporte ou do acervo bibliográfico. No RAINT 2025, buscas textuais por “Clóvis”, “Biblioteca”, “desinfestação” e pelo processo 01420.100133/2022-11 não localizaram menções. Não se deve citar esses documentos como auditoria ou certificação da execução do Contrato 10/2023.
+
+Fontes: https://www.gov.br/palmares/pt-br/acesso-a-informacao/auditorias ; Relatório de Auditoria Interna 01/2025: https://www.gov.br/palmares/pt-br/acesso-a-informacao/Relatorio_de_Auditoria_2025__ACAO_1_2025.pdf ; RAINT 2025: https://www.gov.br/palmares/pt-br/midias/arquivos/raint-2025.pdf
+
+### Atualização de status
+
+A evidência de contratação do serviço de desinfestação permanece confirmada, mas o status de execução deve continuar como **não comprovado por documentação de execução localizada**. O contrato é geral para os acervos da FCP (197 m³) e não individualiza a Coleção Clóvis Moura; mesmo a comprovação de execução integral do contrato, se vier a ser localizada, não demonstrará por si só que aquelas 70 caixas ou os três exemplares específicos foram tratados. Para fechar essa relação são necessários documentos de identificação de lote/caixa, plano de tratamento, registros de entrada e saída, relatório técnico e inventário de exemplares.
