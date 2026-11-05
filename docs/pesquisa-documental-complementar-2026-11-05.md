@@ -453,3 +453,36 @@ A matéria do Bonde/Folha de Londrina de 12/03/2026 informa expressamente que a 
 A reportagem de 14/07/2026 informa que a Prefeitura decidiu, após análise da Coordenação de Área e da Equipe de Práticas Pedagógicas da Educação Infantil, voltar a utilizar “Pipoca e Picolé” no plano de ensino das turmas adequadas. Não há, nessa fonte, quantidade de exemplares devolvidos, escolas contempladas, data de redistribuição ou documento integral do parecer. Portanto, o desfecho administrativo favorável está documentado por declaração da Prefeitura à imprensa, mas a execução material permanece não comprovada.
 
 Fonte: https://sampi.net.br/ovale/noticias/2991910/vale-do-paraiba/2026/07/taubate-escolas-voltarao-a-usar-livro-sobre-menina-com-duas-maes.
+
+
+## Rodada adicional — conferência de fontes e correção de alcance probatório (05/11/2026)
+
+### EL-025 — nota informativa oficial da FCP e aquisição do acervo Clóvis Moura
+
+Foi reaberto o PDF oficial “Respostas da FCP aos relatórios da Comissão de Cultura da Câmara dos Deputados, seguidas dos próprios relatórios em questão”, hospedado no domínio gov.br: https://www.gov.br/palmares/pt-br/midias/arquivos/download/resposta.pdf. A Nota Informativa nº 0166090/2021, datada de 06/11/2021 e assinada por Marco Aurélio Franco, registra que os títulos que a Fundação pretendia doar permaneceriam no acervo por força de liminar (p. 1; linhas extraídas 46–53). Trata-se de posição oficial da FCP, não de decisão judicial nem de verificação independente das alegações da nota.
+
+Na seção 4.6 (p. 5), a FCP afirma que houve contrato entre o IBDS, entidade que representava a Fundação, e Clóvis Moura para compra de 4.795 exemplares. Na seção 4.7 (p. 6), afirma que em 2003 foi pago R$ 80.000,00 em parcela única e que as suspeitas geraram investigações; a própria nota inclui imagem de uma pasta denominada processo de averiguação da compra. Isso é pista documental concreta para a trilha de aquisição, mas não prova irregularidade ou superfaturamento. O PDF mostra detalhes de contrato e cheque em imagens, mas não oferece cópia textual integral nem identificação clara do processo de averiguação. Referência: https://www.gov.br/palmares/pt-br/midias/arquivos/download/resposta.pdf.
+
+O mesmo PDF incorpora, depois da resposta institucional, o relatório técnico da Comissão de Cultura/Câmara dos Deputados sobre condições de conservação e segurança do acervo. A autoria deve ser atribuída à equipe técnica da Câmara, não à FCP. O documento registra, entre outros pontos, limitações de segurança contra incêndio e armazenamento (linhas extraídas 690–762). É relatório de diligência/conservação, não o Relatório Público 01 do CNIRC.
+
+### EL-028 — sentença de São José dos Campos: conteúdo integralmente mais detalhado por reprodução jornalística
+
+A reportagem da Agência Estado/UOL de 28/07/2026 reproduz conteúdo muito mais extenso da sentença de 19 páginas, inclusive a fundamentação sobre censura material, ausência de procedimento formal prévio e o dispositivo que determina restituição e redisponibilização do livro às salas de leitura e bibliotecas em que integrava o acervo, para consulta, empréstimo e uso pedagógico no EF II. A sentença negou indenização por dano moral coletivo. A matéria também registra que a Prefeitura não se manifestou e que o vereador informou que recorreria. Fonte: https://noticias.uol.com.br/ultimas-noticias/agencia-estado/2026/07/28/juiza-ve-censura-e-manda-devolver-livro-com-marielle-as-escolas-de-sao-jose-dos-campos.htm.
+
+A Folha confirma que o prazo de cinco dias começa na intimação e não na data da sentença; não foi encontrada confirmação de quando ocorreu a intimação ou de cumprimento material. Fonte: https://www1.folha.uol.com.br/ciencia/2026/07/justica-determina-volta-de-livro-que-retrata-marielle-a-escolas-em-sao-jose-dos-campos.shtml.
+
+### EL-035 — Londrina 2026: nota oficial da SME noticiada e situação ainda sob análise
+
+A CBN registra que a SME informou, em nota oficial, que estava fazendo levantamento em toda a rede para localizar e retirar exemplares para análise; a matéria informa que o título permanecia sob análise técnica. A notícia também indica aquisição com recursos do PDDE/Mais Educação e registros de presença na rede desde 2009 e novas aquisições em 2018. Não foi encontrada publicação posterior com resultado da análise. Fonte: https://cbnlondrina.com.br/materias/londrina-recolhe-livro-infantil-de-escolas-apos-polemica-com-conteudo-sensivel.
+
+### EL-030 — Londrina 2024: alcance documental
+
+A reportagem contemporânea da Nova Lima News afirma que a vereadora protocolou requerimento solicitando à SME o recolhimento de “A Mamãe Vai Ter um Bebê” e que a Secretaria ainda não havia se manifestado oficialmente. A Revista Oeste posteriormente relata protocolo na Câmara. Como não foi localizado o requerimento original nem número de protocolo, manter a descrição como “pedido/requerimento relatado por fontes jornalísticas”; não afirmar protocolo legislativo formal comprovado. Fontes: https://novalima.news/livro-erotico-e-encontrado-em-creche-de-londrina-vereadora-pede-providencias/ e https://revistaoeste.com/politica/vereadora-jessicao-exige-recolhimento-de-livro-erotico-encontrado-em-creche-no-parana/.
+
+### EL-032 — Taubaté: desfecho administrativo divulgado, execução não comprovada
+
+OVALE/Sampi informa que a Prefeitura declarou parecer favorável à utilização de “Pipoca e Picolé” no plano de ensino das turmas adequadas, com planejamento pedagógico, respeito à faixa etária e mediação docente. A fonte atribui a avaliação à Coordenação de Área e à Equipe de Práticas Pedagógicas da Educação Infantil. Não informa número de parecer, data do documento, quantidade de exemplares devolvidos ou escolas contempladas. Portanto, a posição administrativa favorável está comprovada como declaração municipal à imprensa; a execução física permanece pendente. Fonte: https://sampi.net.br/ovale/noticias/2991910/vale-do-paraiba/2026/07/taubate-escolas-voltarao-a-usar-livro-sobre-menina-com-duas-maes.
+
+### Resultado desta rodada
+
+Não houve localização de novos originais administrativos ou certidões de cumprimento. Houve, porém, refinamento de proveniência e alcance probatório: (a) a Nota Informativa da FCP é posição institucional e inclui pista do contrato de 4.795 exemplares e do processo de averiguação; (b) o relatório técnico da Câmara está incorporado ao mesmo PDF, mas é peça distinta; (c) a sentença de SJC tem reprodução jornalística extensa, porém intimação/cumprimento seguem sem confirmação; (d) em Taubaté há decisão administrativa favorável divulgada, sem prova de execução; (e) em Londrina 2024 não se deve afirmar protocolo na Câmara sem o original; (f) Londrina 2026 seguia sob análise na última notícia encontrada.
