@@ -269,3 +269,45 @@ A publicação é um consolidado produzido pela FCP para responder à Comissão 
 Este achado altera materialmente o estado da investigação: a localização histórica em Brasília já estava documentada desde 2011; agora há evidência documental de que, no diagnóstico de 2019, o Acervo Clóvis Moura permanecia acondicionado em 70 caixas de papelão, e de que, na inspeção de 2021, a catalogação do acervo bibliográfico ainda aguardava contratação de bibliotecário. Isso reforça que a transferência física não equivaleu à catalogação integral nem à disponibilização pública do acervo.
 
 **Ainda não comprovado:** destino das 70 caixas após 2019; se as caixas foram recondicionadas; se a contratação de bibliotecário ocorreu depois de 2021; se o tratamento técnico cancelado em 2012 foi retomado; inclusão dos três títulos controvertidos no catálogo; inventário por exemplar; localização física atual. Não afirmar extravio ou dano dos livros: a fonte registra risco potencial e problemas gerais de acondicionamento, não perda comprovada dos títulos.
+
+
+## 16. EL-025 — contratação efetiva de desinfestação em 2023 e mudança de sede
+
+A busca localizou o contrato assinado que faltava para distinguir planejamento de contratação efetiva. A FCP celebrou o **Contrato nº 10/2023** com Grupo Oficina de Restauro Ltda., no processo 01420.100133/2022-11, para desinfestação por atmosfera anóxia dos acervos da Fundação. O objeto abrangia arquivo intermediário, arquivo permanente, livros, obras e quadros, com quantitativo de 197 m³ e valor contratual de **R$ 246.928,28**. Vigência de 26/12/2023 a 26/12/2024. A assinatura está documentada no instrumento e o extrato foi publicado no DOU em 28/12/2023.
+
+Fontes oficiais:
+- Contrato 10/2023, SEI 0288785: https://www.gov.br/palmares/pt-br/midias/arquivos-contratos/2023/1-gorestauro-contrato.pdf
+- Extrato no DOU de 28/12/2023: https://pesquisa.in.gov.br/imprensa/servlet/INPDFViewer?captchafield=firstAccess&data=28%2F12%2F2023&jornal=530&pagina=23
+- Página oficial de contratos 2023, que lista o contrato e sua vigência: https://www.gov.br/palmares/pt-br/acesso-a-informacao/contratos-2023
+
+**Limite da prova:** contrato assinado e publicado comprova contratação, não a execução integral, o recebimento definitivo, o pagamento total ou quais coleções/caixas foram efetivamente tratadas. O objeto é geral e não identifica nominalmente o Acervo Clóvis Moura nem os seus três títulos. Ainda é necessário localizar ordens de serviço, plano de trabalho aprovado, relatórios de execução, medições, notas fiscais, atesto e termo de recebimento.
+
+Também foi localizado o Contrato nº 12/2023, processo 01420.100889/2023-41, com Atlantic Mudanças e Serviços Ltda., para mudança porta a porta de bens, equipamentos e materiais da FCP do endereço SCRN 702/703, Asa Norte, para Setor de Autarquias Sul, Quadra 2, Lote 1A, Asa Sul, Brasília. Valor estimado R$ 114.976,76, vigência de seis meses a partir da assinatura em dezembro de 2023. O contrato não individualiza o acervo Clóvis Moura, portanto não se pode afirmar, sem inventário ou ordem de transporte, que as 70 caixas foram transportadas nesse contrato.
+
+Fonte: Contrato 12/2023, SEI 0289058: https://www.gov.br/palmares/pt-br/midias/arquivos-contratos/2023/1-atlantic-contrato.pdf
+
+## 17. EL-025 — evolução institucional 2024–2025: catalogação, digitalização e acesso
+
+### Relatório de Gestão 2024
+
+A FCP informa que a Biblioteca Oliveira Silveira estava em reestruturação, em processo de classificação e catalogação do acervo, em parceria iniciada com a Universidade Federal de Rondônia para desenvolver classificação própria de obras relacionadas à cultura negra. O relatório diz que havia mesas de estudo e computadores para o público, mas que os empréstimos ainda não tinham começado e os horários de visitação permaneciam reduzidos por causa das etapas de classificação e organização. Também descreve processo de digitalização de obras cujos direitos autorais pertencem à Fundação, com previsão de hospedagem no sistema de gestão da biblioteca. O relatório não identifica nominalmente a Coleção Clóvis Moura como já catalogada ou digitalizada.
+
+Fonte primária: Relatório de Gestão FCP 2024, seção 3.1.3, páginas impressas 42–43: https://www.gov.br/palmares/pt-br/midias/arquivos/rel-gestao-2024/1relatorio-de-gestao-exercicio-2024.pdf
+
+### Relatório de Gestão 2025
+
+A FCP relata parcerias com bibliotecas da Câmara dos Deputados, Senado, IPHAN, Casa Suely Carneiro e Casa Carolina de Jesus, com empréstimos interbibliotecários. Informa processo de digitalização de obras do acervo e disponibilização posterior dos títulos na plataforma Sophia. Também relata distribuição de aproximadamente 35.674 exemplares em 2025. Essas informações demonstram avanço de atividades da Biblioteca Oliveira Silveira em geral, mas não identificam quais títulos foram digitalizados ou se os exemplares da Coleção Clóvis Moura foram incluídos. Não usar o total de 35.674 doações como quantitativo da coleção histórica.
+
+Fonte primária: Relatório de Gestão FCP 2025, seção Biblioteca Oliveira Silveira, páginas impressas 39–40: https://www.gov.br/palmares/pt-br/midias/arquivos/rel-gestao-2025/relatorio_palmares_cge_v_final_final_01.pdf
+
+### Acesso público declarado pela FCP
+
+A página oficial de Perguntas Frequentes da Fundação informa que o acervo bibliográfico está disponível para consulta local na Biblioteca Oliveira Silveira, na sede em Brasília, e que os títulos podem ser pesquisados pelo portal da biblioteca por título, autor, assunto ou palavra-chave. A página também informa que não há empréstimo domiciliar. A existência do catálogo público é uma trilha de verificação, mas as buscas públicas indexadas por título exato dos três livros (*Amor em Grupo*, *O Manifesto Comunista* e *O Sexo na Alemanha Nazista*) não retornaram resultados nesta rodada; o portal Sophia não foi acessível pela ferramenta de navegação para validação direta dos registros.
+
+Fonte: Perguntas Frequentes da FCP: https://www.gov.br/palmares/pt-br/acesso-a-informacao/perguntas-frequentes
+
+### Conclusão editorial atualizada
+
+A cronologia agora comprova: transferência do acervo do Rio para Brasília em 2011; diagnóstico técnico de 2019 com o acervo Clóvis Moura em 70 caixas; inspeção de 2021 que ainda apontava catalogação bibliográfica incompleta; contratação formal de desinfestação ampla em dezembro de 2023; mudança geral de sede em dezembro de 2023; reestruturação e classificação/catalogação em andamento em 2024; e digitalização com disponibilização no Sophia relatada pela FCP em 2025.
+
+**Ainda não comprovado:** execução e recebimento do Contrato 10/2023; tratamento individual das 70 caixas; inventário que identifique o acervo Clóvis Moura no transporte de 2023; catalogação e digitalização dos três títulos controvertidos; localização física atual da coleção; e conciliação da diferença histórica do PAD. Os relatórios recentes demonstram atividade institucional, mas não permitem fechar a rastreabilidade dessa coleção específica.
