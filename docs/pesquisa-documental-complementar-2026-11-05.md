@@ -306,3 +306,62 @@ EL-025 permanece parcialmente verificado. Houve avanço documental substancial: 
 A página oficial do TRF2 confirma que a consulta pública de processos da Justiça Federal da 2ª Região é feita pelo e-Proc/Balcão Jus. A FAQ do próprio e-Proc informa que qualquer pessoa pode visualizar a íntegra do processo mediante número e chave do processo; a chave é fornecida no ajuizamento ao usuário que distribui a ação. A página de consulta pública sem chave permite consultar dados do andamento, mas não necessariamente visualizar os documentos juntados. Isso explica por que a numeração do processo, isoladamente, não garante acesso aos PDFs das decisões. Fontes oficiais: https://www.trf2.jus.br/trf2/consultas-e-servicos/consultas-processuais ; https://portaleproc.trf2.jus.br/ (consulta pública/Balcão Jus); https://portaleproc.trf2.jus.br/perguntas-frequentes/.
 
 A consulta pública é uma trilha ainda disponível para obter metadados/andamentos sem solicitar documentos, mas a íntegra documental pode exigir a chave processual. Não afirmar que o processo esteja sigiloso: a exigência de chave para acesso integral não equivale a segredo de justiça.
+
+
+## Rodada ampliada — novas fontes e reconciliação dos P0 (05/11/2026)
+
+### EL-025 — Fundação Cultural Palmares: novos documentos e metadados judiciais
+
+**Documento oficial FCP de novembro/2021 recuperado:** “Respostas da FCP aos relatórios da Comissão de Cultura da Câmara dos Deputados, seguidas dos próprios relatórios em questão”, PDF oficial: https://www.gov.br/palmares/pt-br/midias/arquivos/download/resposta.pdf. O PDF contém a Nota Informativa SEI/FCP nº 0166090/2021, datada de 22/11/2021, assinada eletronicamente por Marco Aurélio Franco, coordenador-geral do CNIRC, e, na Parte 2, o relatório da diligência da Comissão de Cultura da Câmara dos Deputados. A nota da própria FCP afirma que títulos considerados inadequados permaneceriam no acervo “por força de Liminar” (linhas 51–53) e volta a registrar a suspensão da doação por ordem judicial (linhas 2735–2747). É confirmação oficial contemporânea adicional de que a FCP reconhecia o impedimento judicial.
+
+O PDF NÃO é o Relatório Público 01 do CNIRC (“Retrato do Acervo”). É uma resposta da FCP ao relatório de diligência da Câmara, com o relatório da Câmara anexado. Não confundir os dois documentos. A nota oficial também traz alegações da gestão e anexos técnicos de conservação que devem ser tratados como declarações institucionais, não como auditoria independente.
+
+**Novo metadado judicial secundário:** página do Escavador para processo do TRF2, com numeração parcialmente mascarada 500XXXX-67.2021.4.02.5117, partes incluindo Paulo Henrique Antonio Lima, Fundação Cultural Palmares e Sérgio Nascimento de Camargo, e assunto de ato lesivo ao patrimônio histórico. O registro mostra: evento 47 “Julgado procedente o pedido” em 30/12/2021; intimações da sentença em janeiro/2022; embargos de declaração não acolhidos; trânsito em julgado em 17/03/2022; alteração da classe para cumprimento de sentença em 24/03/2022; e movimentação/decisão interlocutória em 26/04/2022. URL: https://www.escavador.com/processos-judiciais/500xxxx-6720214025117-45cfd25829.
+
+**Cautela de identificação:** os nomes das partes, a data de ajuizamento (14/06/2021), o juízo e a numeração parcialmente coincidente indicam fortemente que se trata da Ação Popular nº 5006660-67.2021.4.02.5117, mas o Escavador mascara dígitos e não fornece o PDF da sentença. Tratar como pista de alta relevância, não como prova judicial primária. O registro de trânsito em julgado em 17/03/2022 é incompatível com a formulação anterior de que o trânsito ainda era desconhecido, mas precisa ser confirmado no e-Proc ou em certidão oficial antes de afirmar categoricamente. A sentença noticiada em 07/01/2022 foi proferida em dezembro de 2021; não há contradição necessária entre as datas.
+
+**Nova fonte alternativa para o Relatório CNIRC:** artigo acadêmico da UFPR, Análise dos Discursos da Extrema Direita sobre Palmares, Revista Letras n. 105 (2022), reproduz excertos e cita o arquivo alternativo cnirc01_liminar_v2_08_07.pdf; o NAEA/UFPA também cita a mesma URL e informa a paginação como 76 páginas, enquanto outras fontes apontam 74. Links: https://revistas.ufpr.br/letras/article/download/85371/49124 ; https://naea.website/editora-naea/Livros/isbn/978-85-7143-252-9.pdf. A existência de duas URLs históricas (relatório datado 10/06 e versão/arquivo de 08/07) e da divergência 74/76 páginas reforça que não se deve presumir que sejam arquivos idênticos. Os PDFs originais continuam indisponíveis/timeout na consulta atual.
+
+**Status EL-025:** parcialmente verificado. Avanço: documento oficial FCP de 22/11/2021 e metadados judiciais de sentença/trânsito em fonte secundária. Ainda falta confirmar os eventos 47, 60 e certidão de trânsito diretamente no e-Proc, recuperar o Relatório CNIRC integral e identificar a decisão interlocutória de abril/2022 que pode explicar a ordem reproduzida em 2024.
+
+### EL-028 — São José dos Campos / Meninas Sonhadoras, Mulheres Cientistas
+
+Nova trilha de cobertura e cronologia ampliada:
+- A ação civil pública conjunta do MPSP e da Defensoria foi ajuizada em 06/09/2024; a petição pediu retorno imediato e indenização coletiva de R$ 150 mil. Band Vale, 10/09/2024: https://www.band.com.br/band-vale/noticias/mpsp-e-defensoria-acionam-prefeitura-de-sao-jose-dos-campos-para-retorno-de-livro-em-escolas-202409101553.
+- Em 20/09/2024 houve liminar de retorno; a Prefeitura recorreu e conseguiu suspender a ordem, conforme reportagem de 09/10/2024: https://spriomais.com.br/2024/10/09/justica-atende-prefeitura-de-sjc-e-suspende-liminar-que-determinava-retorno-de-livro-as-escolas/.
+- Em 20/07/2026, sentença da Vara da Infância e Juventude determinou a devolução às salas de leitura e bibliotecas, consulta, empréstimo e uso pedagógico no EF II; prazo de cinco dias a partir da intimação; multa diária de R$ 500, limitada inicialmente a R$ 50 mil. A decisão considerou censura o recolhimento e proibiu restrições político-ideológicas sem procedimento formal e justificativa técnico-pedagógica. Fontes: Folha 30/07/2026 https://www1.folha.uol.com.br/ciencia/2026/07/justica-determina-volta-de-livro-que-retrata-marielle-a-escolas-em-sao-jose-dos-campos.shtml ; OVALE 28/07/2026 https://sampi.net.br/ovale/noticias/amp/2994720/vale-do-paraiba/2026/07/sjc-justica-determina-volta-de-obra-que-cita-marielle-as-escolas ; Migalhas 29/07/2026 https://www.migalhas.com.br/quentes/461228/juiza-ve-censura-e-manda-devolver-as-escolas-livro-que-inclui-mariell.
+- O Vale 360 publicou cronologia mais detalhada, incluindo aquisição em 2022, recomendação do MP em julho/2024, liminar de setembro/2024, suspensão após recurso e sentença de julho/2026: https://www.vale360news.com.br/webstories/justica-determina-volta-de-livro-as-escolas-de-sao-jose-dos-campos-multa-pode-chegar-a-r-50-mil/.
+
+O conjunto confirma o histórico e o comando judicial, mas não comprova intimação formal da Prefeitura em 2026 nem redistribuição física dos exemplares. EL-028 permanece parcialmente verificado até confirmação de cumprimento.
+
+### EL-032 — Taubaté / Pipoca e Picolé
+
+A reportagem de 14/07/2026 informa que a Prefeitura declarou resultado favorável da avaliação técnica: Coordenação de Área e Equipe de Práticas Pedagógicas da Educação Infantil concluíram pela utilização na rede, com planejamento, adequação etária e mediação docente; o título permaneceria no plano de ensino das turmas adequadas, sob acompanhamento da coordenação. Fonte: https://sampi.net.br/ovale/noticias/2991910/vale-do-paraiba/2026/07/taubate-escolas-voltarao-a-usar-livro-sobre-menina-com-duas-maes.
+
+A mesma matéria registra que a vereadora Zelinda Pastora admitiu ter solicitado ao secretário o recolhimento no fim de 2025 e que a obra voltou a aparecer em algumas escolas no início de 2026; na sequência, ela voltou a pedir retirada. Também informa que o requerimento de Isaac do Carmo e Talita foi apresentado após a fala da vereadora e que a compra municipal de 2024 incluiu 3.280 kits para alunos e 116 para professores, por R$ 1,216 milhão. A matéria de abril/2026 registra a resposta do prefeito: parte dos livros do programa Minha Biblioteca foi encaminhada à SME ao fim de 2025 para análise, pois grande parte dos kits já havia sido distribuída: https://sampi.net.br/ovale/noticias/amp/2974212/vale-do-paraiba/2026/04/obra-sobre-menina-com-duas-maes-passa-por-analise-diz-prefeitura.
+
+Isso fecha a sequência factual jornalisticamente corroborada (compra → pedido/recolhimento parcial → análise → parecer favorável e previsão de uso em turmas adequadas), mas não substitui o requerimento, a resposta assinada, o parecer integral, o contrato/nota de empenho e a prova de redistribuição/uso. EL-032 permanece parcialmente verificado; não afirmar que todos os exemplares retornaram.
+
+### EL-035 — Londrina 2026 / O Bebê Vem com a Cegonha?!?
+
+A CBN Londrina publicou relato mais detalhado em 12/03/2026: a SME iniciou levantamento e retirada da obra em toda a rede para avaliação pedagógica; a medida partiu de documento encaminhado pela gerência e diretoria pedagógica de uma escola municipal; a SME confirmou que fazia levantamento em todas as escolas e que o material permaneceria sob análise técnica até decisão sobre continuidade ou exclusão. Também registra aquisição com recursos federais do PDDE, no âmbito do Mais Educação, com presença na rede desde pelo menos 2009 e novas aquisições em 2018. A editora Melhoramentos declarou que o livro foi publicado originalmente em 2003, não integra seu catálogo atual e que não havia sido previamente notificada. Fonte: https://cbnlondrina.com.br/materias/londrina-recolhe-livro-infantil-de-escolas-apos-polemica-com-conteudo-sensivel.
+
+A Folha de Londrina/Bonde informa que o pedido de providências foi assinado pela gerente da Gerência de Ensino Fundamental e pela diretora pedagógica, com justificativa de que trechos poderiam gerar questionamentos familiares: https://www.bonde.com.br/bondenews/politica/educacao-vai-recolher-livro-infantil-sobre-reproducao-humana-por-conteudo-sensivel/amp. A reportagem CBN registra a resposta oficial da SME sobre levantamento/retirada, mas não publica o ato administrativo nem o resultado final.
+
+EL-035 permanece parcialmente verificado. Faltam o documento assinado, número de protocolo/SEI, decisão final da análise e prova de destino dos exemplares.
+
+### EL-030 — Londrina 2024 / A Mamãe Vai Ter um Bebê
+
+Nova busca em portais oficiais da Câmara e Prefeitura não localizou requerimento original, número de protocolo, resposta da SME ou ordem administrativa de recolhimento. As fontes encontradas continuam remontando à declaração pública da vereadora e à matéria da Revista Oeste de 04/12/2024, que relata que ela teria protocolado requerimento na Câmara solicitando que a SME recolhesse o livro. Republicações (Nova Lima News, Dia de Ajudar) não são confirmações independentes. O PL 79/2024 e a Lei Municipal 13.930/2025 são contexto normativo distinto e não comprovam a execução do pedido específico.
+
+EL-030 permanece parcialmente verificado e é o caso com maior lacuna documental primária entre os casos municipais: falta comprovar protocolo e tramitação do pedido, resposta administrativa e eventual recolhimento.
+
+### Quadro de status após esta rodada
+
+- EL-025 Palmares: parcialmente verificado — fonte institucional 2021 e metadados secundários de sentença/trânsito; autos e relatório original ainda faltam.
+- EL-028 São José dos Campos: parcialmente verificado — cronologia judicial e sentença corroboradas; intimação e redistribuição física faltam.
+- EL-030 Londrina 2024: parcialmente verificado — pedido relatado pela vereadora; protocolo, resposta e execução não comprovados.
+- EL-032 Taubaté: parcialmente verificado — Prefeitura informou parecer favorável e uso em turmas adequadas; documentos integrais e comprovação física faltam.
+- EL-035 Londrina 2026: parcialmente verificado — retirada/avaliação institucional confirmada por CBN e Folha; ato assinado e resultado final faltam.
+
+**Decisão metodológica:** não fechar nenhum dos cinco P0 como “comprovado integralmente” nesta rodada. As fontes jornalísticas e o registro secundário do Escavador melhoram a triangulação, mas os documentos que provam os atos administrativos, o cumprimento judicial e a destinação material continuam pendentes. Não inventar a inexistência de documentos; registrar apenas que não foram localizados nas fontes abertas consultadas.
