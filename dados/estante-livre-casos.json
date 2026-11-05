@@ -2809,7 +2809,7 @@
     {
      "veiculo": "Fundação Cultural Palmares",
      "tipo": "P1",
-     "titulo": "Inventário Bibliográfico da Fundação Cultural Palmares",
+     "titulo": "Inventário bibliográfico da FCP; publicado em 08/08/2024, levantamento realizado entre julho e outubro de 2021",
      "data": "2024-08-08",
      "url": "https://www.gov.br/palmares/pt-br/centrais-de-conteudo/publicacoes/lista-de-livros-atualizada-8-8-2024-1.pdf"
     },
@@ -2907,7 +2907,7 @@
     {
      "veiculo": "Por Dentro do RN",
      "tipo": "S2",
-     "titulo": "Transcrição pública da lista final de 300 títulos do Relatório CNIRC; edições repetidas foram removidas, resultando em 261 entradas",
+     "titulo": "Transcrição pública da lista final de 300 títulos do Relatório CNIRC; a publicação declara 261 entradas após remoção de edições repetidas, mas há pares aparentemente duplicados",
      "data": "2021-06-17",
      "url": "https://pordentrodorn.com.br/2021/06/17/veja-lista-de-livros-banidos-pela-fundacao-palmares/"
     },
@@ -3044,7 +3044,7 @@
     {
      "veiculo": "Fundação Cultural Palmares",
      "tipo": "P1",
-     "titulo": "Inventário Bibliográfico da Fundação Cultural Palmares",
+     "titulo": "Inventário bibliográfico da FCP; publicado em 08/08/2024, levantamento realizado entre julho e outubro de 2021",
      "data": "2024-08-08",
      "url": "https://www.gov.br/palmares/pt-br/centrais-de-conteudo/publicacoes/lista-de-livros-atualizada-8-8-2024-1.pdf"
     }
