@@ -77,3 +77,39 @@ A informação sobre o encerramento do PAD vem de outra fonte: o Relatório de G
 O Acórdão 1372/2010-TCU-2ª Câmara, por sua vez, incluiu entre os pontos a serem verificados nas contas subsequentes as providências adotadas para cumprir as conclusões do relatório final do PAD (DOU de 01/04/2010, linhas 17435–17440). Isso comprova acompanhamento posterior pelo TCU, mas não permite, isoladamente, inferir descumprimento: o próprio acórdão condiciona a verificação à hipótese de o assunto ainda não ter sido examinado nas contas de 2006 a 2008.
 
 **Formulação final autorizada:** “A FCP informou ao TCU, em 2009, que o PAD havia sido encerrado sem elementos suficientes para imputar responsabilidade disciplinar, conclusão acompanhada pela equipe de Inspeção Correcional da CGU. Em 2010, o TCU ainda incluiu a verificação das providências relativas às conclusões do PAD entre os pontos de acompanhamento das contas, caso isso ainda não tivesse sido examinado. As fontes localizadas não demonstram, por si, a regularização material da diferença de livros.”
+
+
+## 7. Reconstrução ampliada das versões do inventário e correção da leitura sobre os títulos
+
+A comparação não deve mais se limitar às versões de 14/10/2021 e 08/08/2024. Foi localizada uma versão oficial intermediária da FCP, com data interna de 04/09/2023, intitulada *Lista de Livros - Atualizada 23.05.23* (nome do arquivo: ListadeLivrosAtualizada04.09.23.pdf). Ela declara 9.665 títulos.
+
+Sequência documental confirmada em arquivos oficiais da FCP:
+- 14/10/2021: 9.272 títulos — https://www.gov.br/palmares/pt-br/assuntos/noticias/outubro-2022/listagemcompleta14102021.pdf
+- 04/09/2023: 9.665 títulos — https://www.gov.br/palmares/pt-br/centrais-de-conteudo/publicacoes/ListadeLivrosAtualizada04.09.23.pdf
+- 08/08/2024: 9.696 títulos — https://www.gov.br/palmares/pt-br/centrais-de-conteudo/publicacoes/lista-de-livros-atualizada-8-8-2024-1.pdf
+
+Variações aritméticas: +393 entre as versões de 2021 e 2023; +31 entre 2023 e 2024; +424 no total entre 2021 e 2024. A versão 2023 já registra *O Manifesto Comunista* (registro 6334) e *O Sexo na Alemanha Nazista* (registro 6686), ambos com quantidade 1. A versão 2024 os registra como 6356 e 6708, respectivamente. *Amor em grupo* aparece em 2023 como registro 1178, quantidade 1, e em 2024 como 1183, quantidade 1.
+
+### Correção importante sobre a presença dos títulos em 2021
+
+Embora os títulos *O Manifesto Comunista* e *O Sexo na Alemanha Nazista* não sejam localizados pelo título exato na lista bibliográfica publicada em 14/10/2021, a Nota Informativa FCP nº 0166090/2021, datada de 22/11/2021, afirma expressamente que “Manifesto Comunista”, “Amor em Grupo” e “Sexo na Alemanha Nazista” constavam do acervo da Palmares e tinham assinatura de Clóvis Moura. A nota afirma que o contrato com o IBDS para compra de parte do acervo de Clóvis Moura abrangia 4.795 exemplares e que os três títulos eram exemplos de livros assinados por ele.
+
+Fonte primária institucional: https://www.gov.br/palmares/pt-br/midias/arquivos/download/resposta.pdf — especialmente linhas 155–172 do PDF (Nota Informativa nº 0166090/2021, 22/11/2021).
+
+Isso exige uma distinção editorial: ausência de um título na lista de 14/10/2021 não equivale a prova de que o livro não integrava o acervo naquela data. A própria FCP, em nota posterior de novembro de 2021, declarou que os três títulos estavam no acervo e associados à assinatura de Clóvis Moura. A lista de 2023 confirma que os três aparecem no inventário bibliográfico dessa versão. A discrepância entre a lista de outubro de 2021 e a declaração institucional de novembro de 2021 é uma inconsistência documental a registrar, não uma prova de que os exemplares foram inseridos depois.
+
+### Versão de 01/06/2022 encontrada em cópia não oficial
+
+Foi localizada no Scribd uma cópia intitulada *Lista de Livros Atualizada 01-6*, com data interna 01/06/2022, que declara 9.409 títulos e lista *O Manifesto Comunista* (registro 6170), *O Sexo na Alemanha Nazista* (registro 6599) e *Amor em grupo*. Contudo, não foi recuperado o endereço original desse arquivo no domínio gov.br nem outra cópia oficial verificável. Portanto, a versão de 2022 deve ser tratada como pista/cópia secundária, não como publicação oficial confirmada, até validação da origem.
+
+Cópia localizada: https://pt.scribd.com/document/733840004/Lista-de-Livros-Atualizada-01-6
+
+### Limites da série histórica
+
+As três versões oficiais comprovam que os totais publicados evoluíram de 9.272 para 9.665 e depois 9.696. Não foi localizada explicação metodológica para os acréscimos, nem registro de quais títulos foram incluídos, excluídos, corrigidos ou reclassificados entre versões. Não se deve descrever os acréscimos como 424 novos livros físicos: os números são apresentados como títulos/registros do inventário e podem refletir revisão ou alteração de catalogação.
+
+## 8. Ajuste da conclusão sobre a compra Clóvis Moura
+
+A Nota Informativa nº 0166090/2021 é uma declaração institucional da FCP, em resposta à Comissão de Cultura da Câmara, que afirma: contrato IBDS–Clóvis Moura para aquisição de 4.795 exemplares; pagamento de R$ 80.000 em parcela única em 2003; e associação dos três títulos citados a exemplares com assinatura de Clóvis Moura. A mesma nota fala em “suspeitas de superfaturamento” e em processo de averiguação. Esses termos são alegações/posição da própria FCP, não conclusão de auditoria ou decisão judicial. Não afirmar superfaturamento como fato.
+
+O relatório integral do processo de averiguação, o contrato completo e o documento contábil integral ainda não foram recuperados. A existência de uma referência visual a contrato e cheque dentro da nota não substitui os originais integrais nem permite auditar preço, quantidades, estado de conservação ou correspondência item a item.
