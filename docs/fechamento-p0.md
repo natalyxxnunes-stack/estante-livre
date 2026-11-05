@@ -250,3 +250,24 @@ Novas fontes consultadas e registradas em docs/pesquisa-documental-complementar-
 - EL-030: requerimento individual, resposta administrativa e recolhimento continuam sem comprovação primária.
 
 Status conservador: os cinco P0 continuam parcialmente verificados. Não elevar status sem documentos primários ou prova material de execução. Não confundir o PDF de respostas da FCP/relatório da Câmara com o Relatório Público 01 do CNIRC.
+
+
+## Complemento de evidências — rodada adicional de 05/11/2026
+
+### EL-025 — documento oficial novo e distinção documental
+Foi recuperado o PDF oficial da FCP de novembro/2021 “Respostas da FCP aos relatórios da Comissão de Cultura da Câmara dos Deputados, seguidas dos próprios relatórios em questão”: https://www.gov.br/palmares/pt-br/midias/arquivos/download/resposta.pdf. Ele contém a Nota Informativa SEI/FCP nº 0166090/2021, processo 01420.101641/2021-35, assinada pelo coordenador-geral do CNIRC em 06/11/2021, e, em seguida, o relatório técnico da Comissão de Cultura da Câmara sobre conservação do acervo. A Nota declara que os títulos que a FCP pretendia doar permaneceriam no acervo “por força de Liminar”; menciona processo de averiguação de compra do acervo Clóvis Moura. O relatório técnico da Câmara não é o Relatório Público 01 do CNIRC. O CNIRC 01 (“Retrato do acervo: três décadas de dominação marxista na Fundação Cultural Palmares 1988–2019”, 2021) continua não recuperado em cópia integral. Referências acadêmicas confirmam título, autoria atribuída a Marco Frenette e URL histórica, mas não entregam o PDF: https://www.scielo.br/j/sssoc/a/3bqs75cXr8758rHGrtGRLRD/ ; https://periodicos.ufsc.br/index.php/eb/article/view/90814 ; https://dspace.sti.ufcg.edu.br/bitstream/riufcg/31059/1/IGOR%20ROBSON%20MOURA%20FURTADO%20SANTOS%20-%20MONOGRAFIA%20LIC.%20HIST%C3%93RIA%20CH%202023.pdf.
+
+### EL-030 — Londrina 2024
+Fontes contemporâneas relatam pedido da vereadora à Secretaria Municipal de Educação para recolher “A Mamãe Vai Ter um Bebê”, sem comprovação de protocolo legislativo na Câmara, retirada efetiva ou resposta oficial: https://novalima.news/livro-erotico-e-encontrado-em-creche-de-londrina-vereadora-pede-providencias/ ; https://revistaoeste.com/politica/vereadora-jessicao-exige-recolhimento-de-livro-erotico-encontrado-em-creche-no-parana/. Não usar PL 79/2024/Lei 13.930/2025 como prova de execução do pedido específico.
+
+### EL-032 — Taubaté
+Em 14/07/2026, a Prefeitura declarou que, após análise técnica da Coordenação de Área e da Equipe de Práticas Pedagógicas da Educação Infantil, “Pipoca e Picolé” voltaria a ser utilizado no plano de ensino das turmas adequadas: https://sampi.net.br/ovale/noticias/2991910/vale-do-paraiba/2026/07/taubate-escolas-voltarao-a-usar-livro-sobre-menina-com-duas-maes. Posição administrativa favorável confirmada; retorno físico dos exemplares e parecer integral não comprovados.
+
+### EL-035 — Londrina 2026
+Bonde/Folha de Londrina relata ter tido acesso ao pedido de providências assinado pela gerente de Ensino Fundamental e pela diretora pedagógica, e confirma levantamento/recolhimento do livro “O Bebê Vem com a Cegonha?!?”: https://www.bonde.com.br/bondenews/politica/educacao-vai-recolher-livro-infantil-sobre-reproducao-humana-por-conteudo-sensivel/amp. Pedido e assinaturas confirmados por fonte que viu o documento; cópia, protocolo e resultado da análise ainda faltam.
+
+### EL-028 — São José dos Campos
+Folha confirma prazo de cinco dias contado da intimação e obrigação de devolver o livro às salas de leitura/bibliotecas, com consulta, empréstimo e uso pedagógico no EF II: https://www1.folha.uol.com.br/ciencia/2026/07/justica-determina-volta-de-livro-que-retrata-marielle-a-escolas-em-sao-jose-dos-campos.shtml. Intimação e prova material de cumprimento ainda faltam.
+
+### Status
+Nenhum dos cinco P0 foi fechado nesta rodada. EL-032 tem desfecho administrativo favorável, mas sem prova material. EL-035 tem confirmação mais forte do pedido assinado. EL-025 ganhou documento oficial adicional, mas não o relatório CNIRC 01 nem autos integrais.
