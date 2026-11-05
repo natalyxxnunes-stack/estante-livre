@@ -188,3 +188,22 @@ No mesmo relatório, a FCP informou pelo Memorando nº 69/2008, de 13/03/2008, q
 O Acórdão 827/2007-TCU-2ª Câmara, processo TC-010.262/2005-9, é citado no relatório de gestão como contexto de prestação de contas e determinou, entre outros pontos, a adoção de indicadores nos relatórios de gestão e o respeito aos prazos de análise das prestações de contas de convênios. Não é a decisão que especificou a diferença de R$ 5.587,85. Fonte: Ata nº 13/2007, 2ª Câmara: https://www.tcu.gov.br/atas/2007/2a-camara/TCU_ATA_2_N_2007_13.pdf
 
 **Decisão editorial:** a origem da pendência patrimonial fica identificada como recomendação da auditoria de gestão de 2006 (Relatório/Certificado 190026), seguida de declaração da FCP em março de 2008 de que B2–B4 não haviam sido concluídos em 2007. Ainda não foi comprovada a regularização posterior, a implantação do fluxograma ou o encerramento material do processo 01420.000408/2003-54.
+
+
+## 12. EL-025 — controles patrimoniais e organização do acervo (2008–2010)
+
+O Relatório de Gestão 2008 da FCP registra o recebimento, em 28/05/2008, do Relatório de Inspeção Correcional CGU nº 03/2007. Entre as recomendações reproduzidas está a melhoria do controle e da guarda de objetos do patrimônio institucional, diante de problemas anteriores de desaparecimento e subtração de bens e equipamentos. A FCP declarou que estava adotando as providências recomendadas nos itens b, c, d e e. O documento não apresenta verificação independente de implantação nem individualiza nessa passagem o acervo da Biblioteca Clóvis Moura.
+
+Fonte: Relatório de Gestão FCP 2008, páginas impressas 47–49, linhas 1605–1620 e 1641–1646: https://www.gov.br/palmares/pt-br/midias/arquivos-menu-acesso-a-informacao/arquivos/relatorio-de-gestao-2008.pdf
+
+No Relatório de Gestão 2009, a FCP declara que acumulava documentos e produtos de projetos em um acervo bibliográfico desorganizado e de grandes proporções. Informa contratação de serviços especializados de biblioteconomia para organização e tratamento técnico do acervo; instalação de estantes deslizantes; e aquisição de sistema gerenciador de bibliotecas para informatizar os acervos e permitir recuperação remota da informação. O documento apresenta essas medidas como voltadas à preservação, segurança física, organização e acesso público.
+
+Fonte: Relatório de Gestão FCP 2009, linhas 2097–2114: https://www.gov.br/palmares/pt-br/midias/arquivos-menu-acesso-a-informacao/arquivos/relatorio-de-gestao-2009.pdf
+
+Esses registros são contexto institucional relevante para a série posterior de inventários, mas não comprovam que os títulos associados a Clóvis Moura tenham sido localizados, conciliados ou movimentados em consequência dessas ações. Também não demonstram que a diferença específica de livros do PAD tenha sido materialmente regularizada.
+
+O Relatório de Gestão 2010 contém tabela própria de deliberações do TCU que permaneciam pendentes de atendimento. A tabela 54, a partir da página impressa 166, lista determinações do Acórdão 1372/2010 dirigidas diretamente à FCP (itens 9.4.1, 9.4.2 e 9.4.4). Ela não constitui resposta substantiva às determinações do item 9.5.2 dirigidas à CGU, entre elas a verificação condicional das providências sobre os processos 01420.000408/2003-54 e 1420.000196/2004-96. A ausência desses números nessa tabela não prova cumprimento ou encerramento dos processos.
+
+Fonte: Relatório de Gestão FCP 2010, tabela 54, linhas 8010–8045: https://www.gov.br/palmares/pt-br/midias/arquivos-menu-acesso-a-informacao/arquivos/relatorio-de-gestao-2010.pdf
+
+**Decisão editorial:** a documentação permite afirmar que, em 2008, a FCP recebeu recomendação correcional para melhorar controles e guarda de bens; que declarou estar adotando providências; e que, em 2009, registrou ações estruturais de organização e processamento técnico do acervo bibliográfico. Não permite afirmar que essas medidas resolveram a diferença específica de livros do PAD Clóvis Moura. O desfecho material permanece não comprovado nas fontes localizadas.
