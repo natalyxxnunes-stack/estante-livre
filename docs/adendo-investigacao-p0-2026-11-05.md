@@ -380,3 +380,33 @@ O contrato de mudança foi assinado em 19/12/2023; o contrato de desinfestação
 1. **Comprovado:** objeto, contratadas, processos administrativos, valores/quantitativos estimados e critérios contratuais de recebimento.
 2. **Não comprovado:** volume efetivamente transportado; caixas do Acervo Clóvis Moura incluídas na mudança; execução da desinfestação; local e data do tratamento; recebimento definitivo; notas fiscais e pagamentos; correspondência entre caixas tratadas e inventário histórico.
 3. **Não inferir:** que a mudança transportou 2.400 m³; que os 197 m³ de desinfestação incluíram a Coleção Clóvis Moura; que a contratação prova o serviço realizado; ou que a ausência de romaneio localizado significa inexistência de romaneio.
+
+
+## 20. EL-025 — prorrogação formal da mudança e divergência no valor publicado
+
+### Primeiro termo aditivo do Contrato 12/2023
+
+Foi localizado o Primeiro Termo Aditivo ao Contrato 012/2023, processo 01420.100889/2023-41, assinado eletronicamente em 05/06/2024 pela contratada e pela FCP. O aditivo prorrogou tanto a vigência quanto o prazo de execução por mais seis meses, de 19/06/2024 a **19/12/2024**, mantendo inalterado o valor estimado total. O documento também exigiu renovação/complementação da garantia de execução em decorrência da prorrogação.
+
+Fonte primária: https://www.gov.br/palmares/pt-br/midias/arquivos-contratos/2023/atlantic-primeiro-termo-aditivo-n-12-2023.pdf
+
+**Efeito na cronologia:** não se deve encerrar a janela contratual da mudança em 19/06/2024. A execução poderia ocorrer até 19/12/2024. O aditivo não comprova que a mudança ocorreu durante os seis meses adicionais, nem explica a razão concreta da prorrogação. A motivação e a execução efetiva precisam ser conferidas no processo administrativo.
+
+### Divergência de centavos entre contrato e extrato no DOU
+
+O contrato integral publicado pela FCP indica valor total estimado de **R$ 114.976,76** (cláusula 3.1 e tabela de preço). Já o extrato do Contrato 12/2023 reproduzido no DOU de 20/12/2023 indica **R$ 114.976,56**. A diferença é de R$ 0,20. O Primeiro Termo Aditivo declara que o valor estimado permanece inalterado e remete ao valor descrito no contrato. Para fins de referência contratual, adotar o instrumento integral (R$ 114.976,76), registrando a divergência de R$ 0,20 no extrato oficial, sem inferir impacto material.
+
+Fontes:
+- Contrato integral: https://www.gov.br/palmares/pt-br/midias/arquivos-contratos/2023/1-atlantic-contrato.pdf
+- Extrato DOU: https://s3-sa-east-1.amazonaws.com/diariospdf/_2023/12/20/diario_oficial_uniao/530/5763192deebae9dd1cb6d3484ff31ea9/diarioOficial.pdf
+- Aditivo: https://www.gov.br/palmares/pt-br/midias/arquivos-contratos/2023/atlantic-primeiro-termo-aditivo-n-12-2023.pdf
+
+### Publicidade institucional e trilha financeira
+
+A página oficial de contratos da FCP, atualizada em 03/03/2026, continua listando os contratos 10/2023 e 12/2023 com seus respectivos processos e links para instrumentos/publicações. A página encaminha ao Portal da Transparência para receitas e despesas, mas a consulta dinâmica não foi recuperada nesta rodada. Buscas abertas por número de processo, razão social e valores não localizaram, de modo verificável, notas fiscais, liquidações, ordens bancárias, medições ou termos de recebimento dos dois contratos. Isso deve ser registrado como **documentação de execução financeira não localizada nas fontes públicas pesquisadas**, não como ausência de pagamento ou de execução.
+
+Fonte de referência institucional: https://www.gov.br/palmares/pt-br/acesso-a-informacao/contratos-2023
+
+### Estado atualizado da hipótese de transporte
+
+A janela contratual da mudança estendeu-se até 19/12/2024. A janela se sobrepõe integralmente à fase final da reestruturação da biblioteca e à vigência do contrato de desinfestação (até 26/12/2024). Ainda não há documento público localizado que conecte nominalmente a Coleção Clóvis Moura à mudança ou à desinfestação. A hipótese de que as caixas tenham sido transportadas no âmbito do Contrato 12/2023 permanece plausível, mas não comprovada.
