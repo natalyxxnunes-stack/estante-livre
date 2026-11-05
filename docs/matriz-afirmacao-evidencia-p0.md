@@ -70,7 +70,7 @@ Nenhum status parcial foi elevado por ausência de resposta ou repetição de bu
 A matriz foi revista à luz das fontes públicas adicionais descritas em `docs/pesquisa-documental-complementar-2026-11-04.md`.
 
 - **37 registros:** revisão e classificação consolidadas.
-- **10 prioritários:** seis com núcleo factual verificado e quatro parciais.
+- **10 prioritários:** cinco com núcleo factual verificado e cinco parciais.
 - **Cinco registros parcialmente verificados:** EL-025, EL-028, EL-030, EL-032 e EL-035.
 - **Rondônia:** desfecho do inquérito civil do MPF comprovado por diário oficial; Adendo SEI 10053329 e resultado da sindicância estadual seguem pendentes.
 - **Canoinhas:** resultado do recurso da Notícia de Fato 01.2024.00012159-3 comprovado por diário oficial do MPSC; íntegra da decisão e prova de destino dos livros seguem pendentes.
