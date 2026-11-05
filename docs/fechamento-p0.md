@@ -233,3 +233,8 @@ Em novembro de 2023, Henrique Bezerra de Araújo, bibliotecário/coordenador de 
 Cronologia atualizada: liminar provisória de junho/2021 (R$ 500 por item doado); política oficial de 21/12/2021 reconhece descarte impedido por liminar; sentença definitiva noticiada em 07/01/2022 declara nula a exclusão e impede exclusão/dano ao acervo; declaração do CNIRC em 2023 confirma efeitos operacionais da ação; extrato de 2024 reproduz ordem mais ampla de não movimentação exceto consulta local, sob multa diária de R$ 1.000. Não fundir os dispositivos nem presumir identidade literal. A sentença e atos posteriores integrais continuam necessários para conciliar a sequência.
 
 **Status:** EL-025 permanece parcialmente verificado. A política oficial e trechos da sentença são avanços importantes, mas faltam Relatório 01 integral, sentença e decisões subsequentes integrais, prova de intimação/trânsito/cumprimento, inventário atualizado, destino físico dos livros e ato/atas da comissão.
+
+
+### Acesso público aos autos — TRF2/e-Proc
+
+A página oficial do TRF2 direciona a consulta pública para o e-Proc/Balcão Jus. A FAQ do próprio e-Proc informa que qualquer pessoa pode visualizar a íntegra do processo com número e chave processual; a chave é disponibilizada ao autor no ajuizamento. A consulta pública sem chave permite verificar dados/andamento, mas não necessariamente abrir os documentos juntados. Portanto, a ausência de PDF em busca aberta não prova sigilo: o acesso integral pode depender da chave. Fontes: [TRF2 — consultas processuais](https://www.trf2.jus.br/trf2/consultas-e-servicos/consultas-processuais); [e-Proc TRF2](https://portaleproc.trf2.jus.br/); [FAQ e-Proc](https://portaleproc.trf2.jus.br/perguntas-frequentes/).
