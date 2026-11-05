@@ -136,3 +136,14 @@ A pesquisa desta etapa usou fontes públicas. Não houve protocolo de pedidos de
 
 
 **Ressalva de vigência — EL-025:** o PDF institucional de 21/12/2021 contém critérios de descarte ideológico e registra impedimento judicial. A Resolução FCP nº 24/2024 aprovou política posterior, cujo texto publicado no DOU não repete tais critérios. Os critérios devem ser atribuídos ao documento de 2021, não apresentados como cláusulas da política aprovada em 2024. Henrique Bezerra de Araújo, bibliotecário ligado à FCP, relata em artigo de 2023 que a política e a comissão estavam sendo estruturadas após a ação popular e que a decisão impedia a movimentação também de livros promocionais.
+
+
+## Atualização da matriz — rodada de 05/11/2026
+
+- **EL-025:** corrigir a leitura temporal do inventário: publicado em 08/08/2024, levantamento realizado entre julho e outubro de 2021. 9.696 títulos no inventário versus 9.565 no Relatório 01; diferença de 131 não explicada. A transcrição de 261 entradas apresenta ao menos dois pares aparentemente duplicados (51/53 e 143/146); 21/30 títulos de amostra tiveram correspondência no inventário. Não é validação integral.
+- **EL-028:** G1 e Vale360 detalham a sentença de 20/07/2026; prazo de cinco dias após intimação, multa de R$ 500/dia limitada inicialmente a R$ 50 mil, consulta/empréstimo/uso pedagógico no EF II. Intimação e cumprimento físico não comprovados.
+- **EL-030:** Revista Oeste incorpora publicação da vereadora e reporta requerimento, mas a divergência entre destinatário Câmara/SME persiste sem original. PL 79/2024/Lei 13.930/2025 são trilha distinta.
+- **EL-032:** OVALE de 10/04, 16/04 e 14/07 registra resposta, andamento e parecer pedagógico favorável ao uso em turmas adequadas. A Câmara não reproduz a fala no resumo público da 45ª sessão nem o requerimento na ordem do dia da 46ª; ausência do trecho não prova que não ocorreu. Redistribuição física não comprovada.
+- **EL-035:** Bonde reproduz a apuração da Folha; CBN confirma levantamento pela SME. OGPL registra 15 processos públicos e 19.588 restritos no tipo Pedido de Providências, mas não permite inferir a restrição do processo específico. Número SEI e decisão final não recuperados.
+
+**Status:** cinco registros permanecem parcialmente verificados. A rodada de busca pública está documentada, mas a matriz não eleva nenhum deles a integralmente verificado sem ato original ou prova de execução.
