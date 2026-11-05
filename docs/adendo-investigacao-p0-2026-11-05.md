@@ -113,3 +113,22 @@ As três versões oficiais comprovam que os totais publicados evoluíram de 9.27
 A Nota Informativa nº 0166090/2021 é uma declaração institucional da FCP, em resposta à Comissão de Cultura da Câmara, que afirma: contrato IBDS–Clóvis Moura para aquisição de 4.795 exemplares; pagamento de R$ 80.000 em parcela única em 2003; e associação dos três títulos citados a exemplares com assinatura de Clóvis Moura. A mesma nota fala em “suspeitas de superfaturamento” e em processo de averiguação. Esses termos são alegações/posição da própria FCP, não conclusão de auditoria ou decisão judicial. Não afirmar superfaturamento como fato.
 
 O relatório integral do processo de averiguação, o contrato completo e o documento contábil integral ainda não foram recuperados. A existência de uma referência visual a contrato e cheque dentro da nota não substitui os originais integrais nem permite auditar preço, quantidades, estado de conservação ou correspondência item a item.
+
+
+## 9. TCU 2010 — leitura precisa das determinações e separação de processos
+
+O inteiro teor do Acórdão 1372/2010-TCU-2ª Câmara foi conferido no Diário Oficial da União de 01/04/2010, páginas 159–160. O item 9.5.2 determinou à CGU que verificasse e se pronunciasse nas contas seguintes, **caso ainda não tivesse feito isso nos exames das contas de 2006 a 2008**, sobre uma lista de assuntos. Entre eles, no item 9.5.2.3, as providências para cumprimento das conclusões do PAD nº 1420.000196/2004-96, instituído pela Portaria 15/2006. Portanto, a determinação não prova que o PAD permanecia aberto em 2010: ela é expressamente condicional e admite que o tema já tivesse sido examinado nas contas de 2006–2008. O Relatório de Gestão FCP 2008 registra resposta de fevereiro de 2009 de que o PAD havia sido encerrado.
+
+Fonte oficial: DOU de 01/04/2010, Acórdão 1372/2010, itens 9.5.2 e 9.5.2.3–9.5.2.5: https://www.gov.br/mme/pt-br/arquivos/do-01-04-2010-s1.pdf (linhas 17433–17444 do texto extraído).
+
+**Correção de escopo:** o item 9.5.2.5 trata de outro processo, nº 01420.000408/2003-54, e o associa ao subitem 3.3.8.1 do Relatório de Auditoria de Gestão/SFC nº 175493. Não confundir esse processo com o PAD da diferença de livros nº 1420.000196/2004-96, que é tratado separadamente no item 9.5.2.3. O acórdão também separa, no item 9.5.2.4, os processos 1420.000348/2003 e 1420.000577/2004-75.
+
+### Relatório de Auditoria de Gestão nº 175493
+
+A página oficial de auditorias da FCP confirma que a instituição publica resultados de inspeções e auditorias e disponibiliza relatórios de exercícios anteriores. O repositório da CGU contém registro de ordem de serviço 175493 para MINC/FCP — Fundação Cultural Palmares, mas a busca realizada não recuperou o PDF integral do Relatório de Auditoria de Gestão nº 175493. A referência no DOU permite identificar seus subitens e as questões tratadas, mas não substitui a leitura do relatório.
+
+Fontes:
+- Página oficial de auditorias FCP: https://www.gov.br/palmares/pt-br/acesso-a-informacao/auditorias
+- Boletim Interno CGU de 17/03/2006, que registra a OS 175493 para MINC/FCP: https://repositorio.cgu.gov.br/bitstream/1/64165/5/boletim-interno-11-de-17-03-2006.pdf
+
+**Resultado desta rodada:** o relatório integral 175493 e o conteúdo completo do subitem 3.3.8.1 não foram recuperados. O processo 01420.000408/2003-54 permanece como trilha documental separada, sem ser incorporado à narrativa da diferença de livros. O status do PAD da Biblioteca Clóvis Moura continua: encerramento informado pela FCP em 2009; regularização física dos exemplares não comprovada.
