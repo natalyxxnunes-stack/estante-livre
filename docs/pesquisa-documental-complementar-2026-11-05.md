@@ -521,3 +521,50 @@ EL-025 permanece parcialmente verificado. Lacunas remanescentes: contrato integr
 ### Atualização transversal dos outros P0 (05/11/2026)
 
 Nova busca não localizou documentos primários adicionais para EL-028, EL-030, EL-032 ou EL-035. Mantêm-se as conclusões anteriores: SJC tem sentença reproduzida por fontes jornalísticas, mas intimação e cumprimento não comprovados; Londrina 2024 tem pedido relatado, mas original/protocolo/resposta não localizados; Taubaté tem parecer favorável divulgado pela Prefeitura, mas parecer integral e redistribuição física não comprovados; Londrina 2026 tem pedido assinado confirmado por reportagem e recolhimento/levantamento anunciados, mas resultado técnico posterior não localizado.
+
+
+## Rodada de decisão e encerramento de subpendências — 05/11/2026
+
+Esta rodada muda o critério operacional: não manter indefinidamente como “aberto” o que já tem resultado documental suficiente. Separar conclusão do episódio, cumprimento/execução e lacunas residuais. Não converter ausência de prova em prova de cumprimento.
+
+### EL-028 — São José dos Campos: mérito decidido; cumprimento ainda não demonstrado
+
+A sentença de 20/07/2026 determina a restituição e redisponibilização do livro nas salas de leitura e bibliotecas das escolas em que integrava o acervo, com consulta, empréstimo e uso pedagógico no EF II; prazo de cinco dias a partir da intimação e multa diária. A sentença e seu conteúdo estão amplamente reproduzidos por Folha e OVALE. A reportagem de 28/07/2026 registra que a Prefeitura não havia respondido se o livro retornara. Fontes: https://www1.folha.uol.com.br/ciencia/2026/07/justica-determina-volta-de-livro-que-retrata-marielle-a-escolas-em-sao-jose-dos-campos.shtml e https://sampi.net.br/ovale/noticias/amp/2994720/vale-do-paraiba/2026/07/sjc-justica-determina-volta-de-obra-que-cita-marielle-as-escolas.
+
+**Decisão de status:** encerrar a subpendência “resultado judicial/decisão de mérito” como CONFIRMADA. Manter apenas “intimação e cumprimento material da sentença” como NÃO COMPROVADOS em fontes públicas localizadas. Não chamar o caso inteiro de resolvido.
+
+### EL-032 — Taubaté: decisão administrativa favorável confirmada
+
+Em 14/07/2026, OVALE publicou a resposta atribuída à Prefeitura: após análise da Coordenação de Área e da Equipe de Práticas Pedagógicas da Educação Infantil, a utilização de “Pipoca e Picolé” foi considerada favorável, condicionada a planejamento, respeito à faixa etária e mediação docente; o título permaneceria no plano de ensino das turmas adequadas. A mesma matéria registra que a vereadora havia narrado novo recolhimento após exemplares voltarem a circular em algumas unidades no início de 2026. Fonte: https://sampi.net.br/ovale/noticias/2991910/vale-do-paraiba/2026/07/taubate-escolas-voltarao-a-usar-livro-sobre-menina-com-duas-maes.
+
+**Decisão de status:** encerrar a subpendência “resultado da avaliação administrativa” como CONFIRMADA (posição oficial municipal divulgada). Não afirmar retorno físico generalizado ou execução em todas as unidades: distribuição, datas e quantitativos não foram comprovados. Parecer integral permanece indisponível nas fontes localizadas.
+
+### EL-035 — Londrina 2026: recolhimento e análise confirmados; desfecho não localizado
+
+A CBN informa que a SME iniciou levantamento e retirada da obra em toda a rede para análise pedagógica. Bonde/Folha afirma ter visto pedido de providências assinado pela gerente de Ensino Fundamental e pela diretora pedagógica, com justificativa de “conteúdo sensível”. Fontes: https://cbnlondrina.com.br/materias/londrina-recolhe-livro-infantil-de-escolas-apos-polemica-com-conteudo-sensivel e https://www.bonde.com.br/bondenews/politica/educacao-vai-recolher-livro-infantil-sobre-reproducao-humana-por-conteudo-sensivel/amp.
+
+**Decisão de status:** encerrar as subpendências “existência de pedido escolar” e “início de recolhimento/levantamento” como CONFIRMADAS por fontes jornalísticas que tiveram acesso ao documento e divulgaram resposta da SME. Manter “conclusão da análise, decisão final e destino dos exemplares” como NÃO LOCALIZADOS. Não afirmar exclusão definitiva.
+
+### EL-030 — Londrina 2024: evidência insuficiente para confirmar protocolo
+
+A matéria de 27/11/2024 relata que a vereadora Jessicão pediu providências à SME, mas não fornece cópia, número de protocolo nem resposta administrativa. O resultado de busca não encontrou registro oficial identificável no portal legislativo ou municipal. Fonte: https://novalima.news/livro-erotico-e-encontrado-em-creche-de-londrina-vereadora-pede-providencias/.
+
+**Decisão de status:** registrar como “pedido relatado por fonte secundária; protocolo e resposta não confirmados”. Não marcar como requerimento legislativo protocolado sem documento.
+
+### EL-025 — Palmares: novos limites de encerramento
+
+Relatórios oficiais de 2011 e 2012 comprovam transferência do acervo para Brasília em 2011 e cancelamento, naquele exercício, da contratação planejada para tratamento técnico por problemas licitatórios. A política disponibilizada em 2023 reproduz a restrição judicial à movimentação do acervo e informa comissão ainda em formação. A página oficial da consulta pública registra oito contribuições. Esses documentos encerram as subpendências “trajetória física inicial” e “resultado do planejamento de tratamento técnico de 2012”, mas não comprovam destino atual, execução posterior, comissão instituída ou fim da restrição.
+
+**Decisão de status:** fechar subpendências históricas de 2011–2012 como CONFIRMADAS; manter em aberto apenas contrato/averiguação da compra de 2003, situação processual atual e destino/inventário físico atual do acervo.
+
+### Quadro de decisão após a rodada
+
+| ID | Subresultado que pode ser encerrado | Lacuna que permanece |
+|---|---|---|
+| EL-025 | Transferência em 2011; contratação de tratamento cancelada em 2012 | Contrato/averiguação, situação judicial atual, inventário/destino atual |
+| EL-028 | Sentença de mérito e ordem de retorno confirmadas | Intimação e cumprimento material |
+| EL-030 | Existência de pedido relatado | Protocolo, resposta SME e execução |
+| EL-032 | Avaliação administrativa favorável confirmada | Parecer integral e comprovação de execução física |
+| EL-035 | Pedido escolar e início do recolhimento/análise confirmados | Resultado final e destino dos exemplares |
+
+A classificação “não localizado” descreve o resultado das buscas documentadas, não prova que o documento inexista. Não solicitar documentos a terceiros; prosseguir por registros públicos e publicações abertas.
