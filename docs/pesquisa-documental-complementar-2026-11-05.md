@@ -416,3 +416,40 @@ A notícia do MPSP reproduzida pelo Jusbrasil reforça que a ordem inclui proibi
 - EL-030: pedido à SME relatado, sem prova de recolhimento ou resposta oficial; não confundir com protocolo legislativo.
 - EL-032: posição administrativa favorável ao uso confirmada; implementação física pendente.
 - EL-035: pedido assinado confirmado por reportagem que teve acesso ao documento; protocolo e desfecho pendentes.
+
+
+## Nova rodada — recuperação de arquivo oficial com nome enganoso e trilha adicional do acervo (05/11/2026)
+
+### EL-025 — achado importante: arquivo oficial “retrato_do_acervo.pdf” NÃO é o relatório CNIRC
+
+A página oficial da FCP https://www.gov.br/palmares/pt-br/midias/arquivos/retrato_do_acervo.pdf/view foi atualizada em 07/06/2023 e oferece um PDF de 3 páginas: https://www.gov.br/palmares/pt-br/midias/arquivos/retrato_do_acervo.pdf/@@download/file. Apesar do nome do arquivo, o conteúdo não é o relatório CNIRC de 2021. É um texto de Deivison Moacir Cezar de Campos, datado de 28/05/2023, que se apresenta como resultado de uma decisão judicial em ação por uso descontextualizado de trechos de sua dissertação no Relatório Retrato do Acervo.
+
+O autor afirma que o relatório tinha 74 páginas; que usou trechos da dissertação sobre o Grupo Palmares para atacar o 20 de Novembro e a memória de Oliveira Silveira; e que a ação judicial resultou em decisão que reconheceu uso inadequado/descontextualizado. O texto menciona que decisões anteriores protegeram o acervo da Biblioteca Oliveira Silveira e especialmente a biblioteca de Clóvis Moura, doada oficialmente pela família. O PDF não identifica número do processo, vara, data/dispositivo da decisão nem anexa a decisão. Portanto, é uma declaração pública do autor hospedada pela FCP, não o teor judicial integral nem o relatório CNIRC.
+
+Este achado corrige a pista anterior: o simples fato de a FCP hospedar um arquivo chamado “retrato_do_acervo.pdf” não significa que tenha republicado o relatório original. A URL atual contém outro documento. Referência da página de metadados: atualização em 07/06/2023; arquivo de 3 páginas, 371 KB.
+
+### EL-025 — Nota Informativa SEI 0166090/2021, conferência do original
+
+O PDF oficial “Respostas da FCP aos relatórios da Comissão de Cultura da Câmara dos Deputados, seguidas dos próprios relatórios em questão”, de novembro de 2021, foi aberto na íntegra (https://www.gov.br/palmares/pt-br/midias/arquivos/download/resposta.pdf). A Nota Informativa nº 0166090/2021, assinada eletronicamente por Marco Aurélio Franco em 06/11/2021, integra o processo administrativo 01420.101641/2021-35. Nos parágrafos 3.2–3.3, a FCP afirma que os títulos que considerava desviantes permaneceriam no acervo por força de liminar. O PDF é um consolidado de resposta institucional e relatórios da Comissão de Cultura da Câmara, não o relatório CNIRC original.
+
+A publicação institucional permite conferir que a FCP respondeu oficialmente às críticas e sustentou sua própria interpretação dos fatos. A nota é fonte primária da posição da Fundação, mas as afirmações nela contidas sobre a Comissão e sobre o acervo devem ser atribuídas à FCP, não tratadas como fatos independentes sem corroboração.
+
+### EL-025 — origem do arquivo original e dimensão confirmada por fonte externa
+
+O artigo acadêmico de Deivison Campos no Jornal da USP informa que o relatório tinha 73 páginas e incluía lista final de 300 títulos indicados para exclusão. A pesquisadora Juliana Serzedello Crespim Lopes e outras referências o descrevem como documento de 74 páginas. A diferença de 73/74 pode decorrer de capa/contagem, mas não foi resolvida pela cópia do arquivo, que não está mais acessível no endereço histórico. Não normalizar a divergência sem examinar o original.
+
+Fontes: https://jornal.usp.br/artigos/o-governo-bolsonaro-e-o-mal-estar-dos-livros-sobre-o-expurgo-do-acervo-bibliografico-da-fundacao-palmares-primeiro-ato/ ; https://periodicos.ufsc.br/index.php/eb/article/view/90814 ; https://portal.fespsp.org.br/store/file_source/FESPSP/Documentos/Manuais/JulianaSerzedelloCrespimLopes.pdf.
+
+### EL-030 — precisão sobre a origem do pedido de recolhimento
+
+A matéria de 27/11/2024 da Nova Lima News informa que a vereadora protocolou requerimento dirigido à Secretaria Municipal de Educação pedindo recolhimento de “A Mamãe Vai Ter um Bebê”. A mesma matéria diz que a SME ainda não havia se manifestado oficialmente. Isso sustenta que houve requerimento à SME segundo relato contemporâneo, mas não fornece número, cópia ou comprovante de protocolo. A fonte menciona fala da vereadora ao Pleno.News; não é confirmação independente do protocolo. Fonte: https://novalima.news/livro-erotico-e-encontrado-em-creche-de-londrina-vereadora-pede-providencias/.
+
+### EL-035 — delimitação da prova disponível
+
+A matéria do Bonde/Folha de Londrina de 12/03/2026 informa expressamente que a redação teve acesso ao pedido de providências assinado pela gerente da Gerência de Ensino Fundamental e pela diretora pedagógica. Reproduz trechos e afirma que outras escolas também tinham exemplares. Isso eleva a evidência sobre existência e teor do pedido, mas não substitui cópia integral, protocolo, despacho de recolhimento ou conclusão técnica. Fonte: https://www.bonde.com.br/bondenews/politica/educacao-vai-recolher-livro-infantil-sobre-reproducao-humana-por-conteudo-sensivel/amp.
+
+### EL-032 — distinção entre decisão de uso e retorno físico
+
+A reportagem de 14/07/2026 informa que a Prefeitura decidiu, após análise da Coordenação de Área e da Equipe de Práticas Pedagógicas da Educação Infantil, voltar a utilizar “Pipoca e Picolé” no plano de ensino das turmas adequadas. Não há, nessa fonte, quantidade de exemplares devolvidos, escolas contempladas, data de redistribuição ou documento integral do parecer. Portanto, o desfecho administrativo favorável está documentado por declaração da Prefeitura à imprensa, mas a execução material permanece não comprovada.
+
+Fonte: https://sampi.net.br/ovale/noticias/2991910/vale-do-paraiba/2026/07/taubate-escolas-voltarao-a-usar-livro-sobre-menina-com-duas-maes.
