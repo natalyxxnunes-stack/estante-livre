@@ -177,3 +177,28 @@ A página do Globoplay registra matéria de três minutos do Meio Dia Paraná so
 ### Resultado consolidado da rodada
 
 A pesquisa em fontes alternativas trouxe evidência nova e relevante para EL-025, EL-028 e EL-032; para EL-030 e EL-035 ampliou a triangulação jornalística, mas não recuperou os atos originais. Nenhum dos cinco registros deve ser elevado a integralmente verificado. Não houve contato com órgãos ou pessoas, nem protocolo de pedido de acesso à informação.
+
+
+## EL-025 — nova recuperação documental (05/11/2026, rodada adicional)
+
+### Cópia integral da Ação Civil Pública da Coalizão Negra por Direitos
+
+Foi recuperada uma cópia integral, legível e indexada de 36 páginas da **Ação Civil Pública com pedido de tutela de urgência**, hospedada diretamente no domínio da Coalizão Negra por Direitos:
+https://coalizaonegrapordireitos.org.br/wp-content/uploads/2021/06/Coalizao-Negra-por-Direitos_ACP-Fundacao-Palmares_ManutencaoAcervo.pdf
+
+O documento identifica a Coalizão (articulada por 200 organizações, coletivos e entidades) e o Instituto Referência Negra Peregum como representante formal no polo ativo, e apresenta o pedido de proteção do patrimônio bibliográfico e cultural afro-brasileiro (p. 1–2). Nas páginas 12–14, transcreve trechos do prefácio do Relatório “Retrato do Acervo” e identifica a publicação como Doc. 3, com data de 11/06/2021. Nas páginas 19–22, desenvolve os fundamentos jurídicos e a argumentação sobre a manutenção do acervo. A peça é uma petição inicial, não é sentença nem prova de que a tutela foi deferida. Fonte: PDF da ACP, páginas 1–2 e 12–14, 19–22.
+
+### Confirmação acadêmica independente dos identificadores dos arquivos originais
+
+O artigo de Maria Aparecida Moura, publicado na Liinc em Revista/IBICT, cita expressamente o processo da Ação Popular nº 5006660-67.2021.4.02.5117/RJ e o endereço da cópia da decisão judicial na Ponte Jornalismo; o endereço original do Relatório CNIRC cnirc-01-gab-10-06-21.pdf; e a cópia da ACP da Coalizão Negra por Direitos. A página acadêmica confirma os links e a referência bibliográfica, mas não torna acessíveis os dois PDFs que falharam na abertura automatizada. Link: https://revista.ibict.br/liinc/article/view/5789. A edição é v. 17, n. 2 (2021), embora a página do portal mostre uma data posterior de publicação/registro em 2025; usar a edição do periódico para a data bibliográfica, não a data do portal.
+
+O artigo de França, Cestari e Modesto na Revista Letras/UFPR (n. 105, 2022) também reproduz a capa do relatório e confirma sua identificação como “Relatório Público 01 – CNIRC”, com título e subtítulo. Link: https://revistas.ufpr.br/letras/article/download/85371/49124.
+
+### Resultado e cautelas
+
+- ACP da Coalizão: agora há cópia integral da petição, mas não confundir com a Ação Popular nº 5006660-67.2021.4.02.5117/RJ, ajuizada em outro juízo/foro. São processos distintos.
+- Ação Popular: a existência do processo e a referência bibliográfica da decisão estão corroboradas por artigo acadêmico e pela política oficial da FCP; o PDF hospedado pela Ponte segue retornando erro 520 na ferramenta de consulta.
+- Relatório CNIRC: sua existência, título, autoria institucional e URL original estão confirmados por diversas referências independentes e pela política oficial da FCP; o PDF original no domínio histórico da Fundação segue inacessível. A ACP recuperada transcreve partes do prefácio, mas não contém o relatório integral como anexo.
+- Não há base para afirmar que a ACP da Coalizão e a Ação Popular sejam o mesmo processo, que a ACP tenha produzido a liminar referida no processo da ação popular, ou que a petição inicial prove o destino final dos livros.
+
+Status EL-025: parcialmente verificado; evidência processual e bibliográfica ampliada, documentos decisórios e relatório integral ainda não recuperados em cópia legível.
