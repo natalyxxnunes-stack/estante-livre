@@ -119,3 +119,61 @@ Fontes: [Bonde, 12/03/2026](https://www.bonde.com.br/bondenews/politica/educacao
 ### Conclusão operacional da rodada
 
 A pesquisa pública dos cinco P0 foi ampliada e os novos achados foram incorporados à base. Nenhum dos cinco pode ser elevado a “integralmente verificado” sem ultrapassar a evidência disponível. O encerramento correto desta rodada é de **busca pública e classificação**, não de comprovação integral: os cinco registros permanecem parciais, com limites explícitos. Não houve pedido de LAI, contato institucional ou solicitação a terceiros.
+
+
+## Rodada de pesquisa em repositórios alternativos — 05/11/2026
+
+### EL-025 — Fundação Cultural Palmares: fontes profissionais e cópias históricas adicionais
+
+A busca fora do portal da FCP recuperou três fontes de valor documental:
+
+1. **Conselho Regional de Biblioteconomia da 1ª Região (CRB-1), relatório de diligência de 30/06/2021, publicado em 30/07/2021:** https://crb1.org.br/site/2021/07/relatorio-sobre-a-diligencia-na-fundacao-cultural-palmares/. O relatório informa que o CRB-1 e o CFB participaram de diligência da Comissão de Cultura da Câmara dos Deputados. Registra que, até 30/06/2021, a Fundação não tinha bibliotecário responsável pelo acervo; que o material estava em 207 caixas de papelão numa sala sem climatização adequada; que o catálogo Sophia estava inacessível; e que, segundo Marco Frenette, livros considerados incompatíveis haviam sido separados, mas não seriam destruídos ou descartados. O CRB-1 também relata ter lavrado auto de infração por exercício irregular da Biblioteconomia. **Cuidado:** as 207 caixas descritas pelo CRB-1 não podem ser automaticamente identificadas com a “Sala 11” do relatório da Câmara ou com os 300 títulos da lista de exclusão. São conjuntos/documentos distintos até prova de identidade.
+2. **Parecer técnico da Associação Brasileira de Editores Científicos (ABER):** https://aber.org.br/wp-content/uploads/2021/06/Parecertecnico-FundCultPalmares.pdf. O parecer transcreve trechos do Relatório Público 01/CNIRC, incluindo critérios e categorias de “material comprobatório”, e critica a falta de fundamentação biblioteconômica. É fonte profissional secundária que preserva excertos do original, não substitui o PDF integral.
+3. **Política de Formação, Desenvolvimento e Gestão do Acervo da FCP, hospedada no próprio gov.br:** https://www.gov.br/palmares/pt-br/midias/arquivos/download/politicas-de-acervo-versao-final-21-12-2021.pdf. O documento institucional menciona expressamente o relatório técnico nº 01, com o título “Retrato do Acervo: três décadas de dominação marxista na Fundação Cultural Palmares”, e descreve o inventário e as conclusões atribuídas à gestão. Isso confirma a existência e o título do relatório por fonte oficial, mas não disponibiliza a lista nominal completa de 300 títulos.
+4. **Cópia da ação popular hospedada pela Ponte Jornalismo:** https://ponte.org/wp-content/uploads/2021/06/Acao-Popular-Fundacao-Palmares.pdf. O arquivo contém a petição inicial da Ação Popular e seus argumentos; não é a decisão judicial. A reportagem da Ponte de 24/06/2021 disponibiliza link para a decisão liminar de 23/06/2021, mas o servidor retornou erro 520 na tentativa de leitura automatizada: https://ponte.org/gestao-da-palmares-esta-em-sintonia-com-a-necropolitica-do-governo-diz-advogado-autor-de-acao-contra-exclusao-de-livros/. A reportagem informa que o juiz Erik Navarro Wolkart proibiu excluir ou danificar itens do acervo e fixou multa de R$ 500 por item doado em descumprimento. O trecho da decisão também é reproduzido na política oficial da FCP e na página Participa + Brasil.
+5. **Repositório acadêmico alternativo:** artigo de Maria Aparecida Moura disponível no repositório da UFMG: https://repositorio.ufmg.br/items/5c091712-31e0-4491-bdbc-6cc8d7849c48. Sistematiza a controvérsia do relatório e sua circulação, mas não substitui o documento de origem.
+
+O PDF original do Relatório Público 01/CNIRC continua referenciado em fontes acadêmicas por URL histórica da FCP (https://www.palmares.gov.br/wp-content/uploads/2021/06/cnirc01_liminar_v2_08_07.pdf), mas a tentativa de abertura direta retornou indisponibilidade. O original da decisão judicial também não pôde ser baixado pela cópia da Ponte nesta rodada. **Não declarar que os documentos não existem:** há referências bibliográficas e links históricos; o que não foi possível foi recuperar uma cópia integral legível nesta rodada.
+
+**Resultado:** a existência, o título, a controvérsia, as condições físicas relatadas e a decisão judicial ficam mais bem corroborados por fontes independentes/profissionais. Permanecem pendentes o Relatório 01 integral, a lista nominal primária de 300, a decisão em cópia legível e o destino individual dos exemplares. EL-025 segue parcialmente verificado.
+
+### EL-028 — São José dos Campos: reconstrução processual corrigida
+
+Nova matéria de OVALE, de 28/07/2026, recuperada em página integral: https://sampi.net.br/ovale/noticias/amp/2994720/vale-do-paraiba/2026/07/sjc-justica-determina-volta-de-obra-que-cita-marielle-as-escolas.
+
+A matéria informa que:
+- a obra havia sido adquirida em 2022 após parecer técnico-pedagógico favorável;
+- houve liminar inicial em favor da volta do livro;
+- a Prefeitura recorreu ao TJ-SP, que suspendeu a liminar e a desobrigou temporariamente de retornar a obra;
+- MP e Defensoria apresentaram réplica, houve prova oral, audiência de instrução, oitiva de testemunhas e da autora e alegações finais;
+- em 20/07/2026, a sentença determinou restituição e disponibilidade para consulta, empréstimo e uso pedagógico no Ensino Fundamental II, com multa diária de R$ 500, limitada inicialmente a R$ 50 mil.
+
+A Folha de S.Paulo, em 30/07/2026, confirma que o prazo de cinco dias conta da intimação formal, não simplesmente da data da sentença: https://www1.folha.uol.com.br/ciencia/2026/07/justica-determina-volta-de-livro-que-retrata-marielle-a-escolas-em-sao-jose-dos-campos.shtml. UOL e Veja SP também noticiaram a decisão. Não foi localizada comprovação pública da intimação ou da redistribuição física em cada escola. Os autos permanecem sem acesso integral público nas fontes pesquisadas.
+
+**Correção editorial:** não resumir a cronologia como se a liminar de retorno tivesse permanecido eficaz até a sentença final. O recurso municipal suspendeu seus efeitos, e a sentença de julho de 2026 veio após instrução probatória. EL-028 permanece parcialmente verificado.
+
+### EL-032 — Taubaté: confirmação da tramitação e do desfecho pedagógico anunciado
+
+A página integral de OVALE/Sampi de 10/04/2026 esclarece que o requerimento dos vereadores Isaac do Carmo e Talita foi aprovado em 10/03/2026, após a fala de Zelinda Pastora em 03/03/2026. A reportagem transcreve a fala da vereadora atribuindo ao secretário Hélcio Carvalho dos Santos a mensagem de recolhimento e reproduz a resposta do prefeito à Câmara. A resposta afirma que parte dos livros do programa Minha Biblioteca foi enviada à SME no fim de 2025 para análise, que grande parte dos kits já havia sido distribuída e que o parecer ainda estava em elaboração. Link: https://sampi.net.br/ovale/noticias/2972973/sessao-extra/2026/04/livro-sobre-menina-com-duas-maes-e-retirado-de-escolas-em-taubate.
+
+Em 14/07/2026, a Prefeitura informou ao OVALE que a Coordenação de Área e a Equipe de Práticas Pedagógicas da Educação Infantil haviam emitido parecer favorável à utilização de *Pipoca e Picolé*, desde que com planejamento, respeito à faixa etária e mediação docente qualificada; o título permaneceria no plano de ensino das turmas adequadas: https://sampi.net.br/ovale/noticias/2991910/vale-do-paraiba/2026/07/taubate-escolas-voltarao-a-usar-livro-sobre-menina-com-duas-maes.
+
+**Correção da lacuna:** agora está documentada por fonte jornalística a aprovação do requerimento em 10/03 e o teor essencial da resposta do prefeito. Ainda faltam a cópia assinada do requerimento, a resposta integral, o parecer técnico e a prova de retorno físico dos exemplares às unidades. Não afirmar que todos os exemplares foram redistribuídos. EL-032 permanece parcialmente verificado.
+
+### EL-030 — Londrina 2024: fontes alternativas adicionais e limite da prova
+
+Além da Revista Oeste, a busca recuperou republicações em Nova Lima News (27/11/2024) e Dia de Ajudar (04/12/2024), ambas relatando que a vereadora Jessicão protocolou requerimento para recolhimento de *A Mamãe Vai Ter um Bebê*. A segunda declara como fonte a Revista Oeste; portanto, não constitui confirmação independente. A primeira apresenta a mesma narrativa e atribui o relato ao Pleno.News. Links:
+- https://novalima.news/livro-erotico-e-encontrado-em-creche-de-londrina-vereadora-pede-providencias/
+- https://diadeajudar.com.br/vereadora-jessicao-pede-retirada-de-livro-erotico-em-creche-no-parana-polemica-na-educacao-infantil/
+
+A multiplicação de republicações não resolve a lacuna do documento original. A divergência sobre o canal formal (requerimento protocolado na Câmara versus pedido dirigido diretamente à SME) continua aberta até localizar o protocolo e o texto do requerimento. Não confundir esse episódio com o PL 79/2024, nem com o recolhimento de *O Bebê Vem com a Cegonha?!?* em 2026. EL-030 permanece parcialmente verificado.
+
+### EL-035 — Londrina 2026: cópia jornalística da apuração e confirmação independente
+
+O Bonde reproduz a apuração da Folha de Londrina, inclusive a descrição do pedido de providências e o trecho que recomenda o recolhimento. A CBN Londrina publicou reportagem própria no mesmo dia, confirmando que a SME iniciou levantamento na rede para identificar exemplares e encaminhá-los à análise pedagógica: https://cbnlondrina.com.br/materias/londrina-recolhe-livro-infantil-de-escolas-apos-polemica-com-conteudo-sensivel.
+
+A página do Globoplay registra matéria de três minutos do Meio Dia Paraná sobre o recolhimento e o levantamento em toda a rede: https://globoplay.globo.com/v/14423252/. É mais uma referência audiovisual jornalística, mas não o ato administrativo original. Continuam sem localização o número SEI, pedido integral, despacho, quantitativo recolhido, parecer e decisão final. EL-035 permanece parcialmente verificado.
+
+### Resultado consolidado da rodada
+
+A pesquisa em fontes alternativas trouxe evidência nova e relevante para EL-025, EL-028 e EL-032; para EL-030 e EL-035 ampliou a triangulação jornalística, mas não recuperou os atos originais. Nenhum dos cinco registros deve ser elevado a integralmente verificado. Não houve contato com órgãos ou pessoas, nem protocolo de pedido de acesso à informação.
