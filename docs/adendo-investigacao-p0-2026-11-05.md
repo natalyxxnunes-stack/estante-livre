@@ -207,3 +207,20 @@ O Relatório de Gestão 2010 contém tabela própria de deliberações do TCU qu
 Fonte: Relatório de Gestão FCP 2010, tabela 54, linhas 8010–8045: https://www.gov.br/palmares/pt-br/midias/arquivos-menu-acesso-a-informacao/arquivos/relatorio-de-gestao-2010.pdf
 
 **Decisão editorial:** a documentação permite afirmar que, em 2008, a FCP recebeu recomendação correcional para melhorar controles e guarda de bens; que declarou estar adotando providências; e que, em 2009, registrou ações estruturais de organização e processamento técnico do acervo bibliográfico. Não permite afirmar que essas medidas resolveram a diferença específica de livros do PAD Clóvis Moura. O desfecho material permanece não comprovado nas fontes localizadas.
+
+
+## 13. EL-025 — localização histórica do Acervo Clóvis Moura: transferência para Brasília em 2011
+
+Foi localizado um registro primário decisivo no Relatório de Gestão 2011 da FCP. Na descrição das atividades do Centro Nacional de Informação e Referência da Cultura Negra, a Fundação declara expressamente: **“Houve a transferência do Acervo Clovis Moura da Representação Regional do Rio de Janeiro para a Sede da FCP em Brasília.”** A declaração aparece na página impressa 64, logo após o trecho sobre tratamento do acervo bibliográfico.
+
+O mesmo relatório informa que, em 2011, foram organizadas **16.050 peças** para inclusão de dados no software de gerenciamento da biblioteca (Sophia), com disponibilização de catálogo de busca on-line. Também registra a reinauguração da biblioteca da Fundação, então denominada Biblioteca Oliveira Silveira, em 2011. É importante não atribuir automaticamente as 16.050 peças ao Acervo Clóvis Moura: o relatório apresenta esse número como tratamento do acervo bibliográfico da FCP em geral e, em frase separada, informa a transferência do Acervo Clóvis Moura.
+
+Fonte primária: Relatório de Gestão FCP 2011, páginas impressas 62–64, especialmente linhas extraídas 2564–2597: https://www.gov.br/palmares/pt-br/midias/arquivos-menu-acesso-a-informacao/arquivos/relatorio-de-gestao-2011.pdf
+
+### O que está e o que não está comprovado
+
+- **Comprovado por declaração institucional publicada em 2012:** em 2011, o Acervo Clóvis Moura foi transferido da Representação Regional do Rio de Janeiro para a sede da FCP em Brasília.
+- **Comprovado em termos gerais:** a FCP declarou que organizou 16.050 peças do acervo bibliográfico para inserção no Sophia e disponibilização de catálogo on-line.
+- **Não comprovado:** se todos os exemplares do Acervo Clóvis Moura foram incluídos no lote de 16.050 peças; se os três títulos da controvérsia foram individualmente catalogados no Sophia; qual é a localização física atual desses exemplares; e se a transferência foi acompanhada de inventário de saída/entrada e conciliação quantitativa.
+
+**Decisão editorial:** atualizar a lacuna “localização física do acervo” para “localização histórica identificada: transferido do escritório regional do Rio de Janeiro para a sede da FCP em Brasília em 2011, conforme Relatório de Gestão 2011; localização atual e rastreabilidade por exemplar ainda não comprovadas”. Esse achado não prova que a diferença de livros tenha sido regularizada nem que os títulos citados tenham sido extraviados.
