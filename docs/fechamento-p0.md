@@ -154,3 +154,12 @@ As reportagens Folha, UOL/Agência Estado e Sampi/OVALE convergem quanto à sent
 ### Palmares — distinção entre documento institucional de 2021 e política aprovada em 2024
 
 Correção de precisão: o documento institucional “Políticas de Acervo”, datado de 21/12/2021, contém os critérios de descarte que mencionam marxismo, comunismo e militância política explícita. O próprio texto registra que o descarte estava impedido por liminar. Não se deve apresentar essas cláusulas como conteúdo da política vigente sem ressalva. A Resolução FCP nº 24/2024, publicada no DOU em 26/02/2024, aprovou política posterior; o texto publicado no Diário não repete aqueles critérios. Artigo de Henrique Bezerra de Araújo (Divulga-CI, nov. 2023), bibliotecário ligado à FCP, relata que a política e a comissão de gestão estavam sendo estruturadas após a ação popular e que a decisão judicial impedia a movimentação também do acervo promocional. A existência do critério no documento de 2021 é comprovada; sua aplicação concreta e o descarte dos 5.165 itens não estão comprovados.
+
+
+## Atualização de pesquisa pública — 05/11/2026
+
+A rodada adicional dos cinco registros parcialmente verificados foi incorporada à base e ao documento [Pesquisa documental complementar — 05/11/2026](pesquisa-documental-complementar-2026-11-05.md). Correção essencial: o inventário FCP publicado em 08/08/2024 declara que os 9.696 títulos foram inventariados entre julho e outubro de 2021; não é prova de inventário físico novo em 2024. A transcrição de 261 entradas tem ao menos dois pares aparentemente duplicados e apenas 21/30 títulos de uma amostragem tiveram correspondência no inventário oficial.
+
+EL-028: sentença de 20/07/2026 melhor delimitada, mas intimação e cumprimento físico não comprovados. EL-030: pedido de 2024 continua sem original, destinatário formal, resposta ou execução. EL-032: resposta municipal e parecer pedagógico favorável ao uso em turmas adequadas foram melhor documentados, mas falta requerimento integral e redistribuição física. EL-035: pedido formal da equipe da SME e levantamento foram corroborados por Folha/errata e CBN, mas faltam número SEI, despacho, parecer e decisão final.
+
+**Resultado:** os cinco P0 permanecem parcialmente verificados. A busca pública adicional foi documentada; não é metodologicamente correto declarar comprovação integral. Nenhum pedido de LAI ou contato institucional foi realizado.
