@@ -344,3 +344,39 @@ Fontes: https://www.gov.br/palmares/pt-br/acesso-a-informacao/auditorias ; Relat
 ### Atualização de status
 
 A evidência de contratação do serviço de desinfestação permanece confirmada, mas o status de execução deve continuar como **não comprovado por documentação de execução localizada**. O contrato é geral para os acervos da FCP (197 m³) e não individualiza a Coleção Clóvis Moura; mesmo a comprovação de execução integral do contrato, se vier a ser localizada, não demonstrará por si só que aquelas 70 caixas ou os três exemplares específicos foram tratados. Para fechar essa relação são necessários documentos de identificação de lote/caixa, plano de tratamento, registros de entrada e saída, relatório técnico e inventário de exemplares.
+
+
+## 19. EL-025 — aprofundamento dos contratos de desinfestação e mudança: escopo, medição e sequência temporal
+
+### Contrato 10/2023: edital e instrumento assinado
+
+A leitura do edital integral (Pregão 07/2023, processo 01420.100133/2022-11) e do Contrato 10/2023 confirma que o objeto foi contratado em item único, por empreitada global, abrangendo desinfestação por atmosfera anóxia de arquivo intermediário, arquivo permanente, livros, obras e quadros da FCP. O quantitativo contratado foi 197 m³ e o valor global R$ 246.928,28. O instrumento assinado em 21/12/2023 pela contratada e em 26/12/2023 pelo representante da FCP não contém discriminação nominal da Coleção Clóvis Moura, nem relação de caixas, títulos ou unidades bibliográficas.
+
+O Termo de Referência exige documentação comprobatória da execução, inspeção minuciosa, avaliação técnica, relatório circunstanciado da fiscalização e termo circunstanciado de recebimento definitivo. Se fossem detectados agentes biológicos ativos no recebimento provisório, a desinfestação deveria ser refeita por mais 30 dias. A emissão da nota fiscal deveria ser precedida do recebimento definitivo; o pagamento dependeria do valor dimensionado pela fiscalização e poderia sofrer glosa proporcional por execução incompleta ou de qualidade inferior.
+
+Fontes primárias:
+- Edital 04/2023 e Termo de Referência, processo 01420.100133/2022-11: https://www.gov.br/palmares/pt-br/midias/arquivos-licitacao/edital4-2023.pdf
+- Contrato 10/2023, SEI 0288785: https://www.gov.br/palmares/pt-br/midias/arquivos-contratos/2023/1-gorestauro-contrato.pdf
+- Página oficial de contratos 2023, atualizada em 03/03/2026: https://www.gov.br/palmares/pt-br/acesso-a-informacao/contratos-2023
+
+**Conclusão probatória:** contratação e critérios de aceite estão documentados; execução e pagamento não estão demonstrados pelos documentos recuperados nesta rodada. O objeto amplo não permite atribuir tratamento às 70 caixas do Acervo Clóvis Moura.
+
+### Contrato 12/2023: estimativa de mudança e pagamentos por quantidade efetiva
+
+A leitura integral do Contrato 12/2023 (processo 01420.100889/2023-41) revelou informação não destacada no resumo institucional: o instrumento estimou **2.400 m³** para a mudança, com custo unitário de R$ 29,63/m³, custo estimado de R$ 71.112,00 e valor total estimado de R$ 114.976,76, incluindo seguro. A cláusula 3.3 é expressa: o valor é meramente estimativo e os pagamentos dependeriam dos quantitativos de serviços efetivamente prestados.
+
+O contrato define origem na sede da FCP na SCRN 702/703, Asa Norte, e destino no Setor de Autarquias Sul, Quadra 2, Lote 1A, Asa Sul, ambos em Brasília. Foi assinado pela contratada em 18 e 19/12/2023 e pela FCP em 19/12/2023. A vigência era de seis meses.
+
+Fonte primária: Contrato 12/2023, SEI 0289058: https://www.gov.br/palmares/pt-br/midias/arquivos-contratos/2023/1-atlantic-contrato.pdf
+
+**Cautela:** 2.400 m³ é estimativa contratual, não quantidade comprovadamente transportada. O contrato não individualiza livros, caixas, biblioteca ou Coleção Clóvis Moura. Não prova que o acervo foi levado no transporte, nem quantas caixas foram transportadas. Para fechar a trilha são necessários ordem de serviço, romaneios, inventário de origem/destino, comprovantes de medição, nota fiscal e atesto.
+
+### Sequência temporal que merece verificação
+
+O contrato de mudança foi assinado em 19/12/2023; o contrato de desinfestação foi assinado pela empresa em 21/12/2023 e pela FCP em 26/12/2023. Os dois contratos têm vigências sobrepostas e a mudança tinha como destino a nova sede da FCP. A sequência documental, por si só, não revela se os livros foram desinfestados antes ou depois do transporte, se o serviço foi realizado na sede antiga ou nova, nem se houve movimentação temporária para tratamento. A resposta depende das ordens de serviço, cronogramas, locais de execução, registros de entrada/saída e relatórios de fiscalização dos dois processos.
+
+### Situação da trilha após esta rodada
+
+1. **Comprovado:** objeto, contratadas, processos administrativos, valores/quantitativos estimados e critérios contratuais de recebimento.
+2. **Não comprovado:** volume efetivamente transportado; caixas do Acervo Clóvis Moura incluídas na mudança; execução da desinfestação; local e data do tratamento; recebimento definitivo; notas fiscais e pagamentos; correspondência entre caixas tratadas e inventário histórico.
+3. **Não inferir:** que a mudança transportou 2.400 m³; que os 197 m³ de desinfestação incluíram a Coleção Clóvis Moura; que a contratação prova o serviço realizado; ou que a ausência de romaneio localizado significa inexistência de romaneio.
