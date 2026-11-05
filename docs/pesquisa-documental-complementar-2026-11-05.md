@@ -74,7 +74,7 @@ Para o caso da Mundoteca, permanecem válidos os documentos já identificados no
 
 **Correção de precisão:** o Inventário Bibliográfico oficial tem publicação/arquivo datado de 08/08/2024, mas a própria introdução informa que o levantamento dos 9.696 títulos ocorreu entre julho e outubro de 2021. Portanto, não é um inventário físico realizado em 2024. O Relatório 01/CNIRC usa 9.565 títulos como denominador para o total agregado de 5.165 (54%); a diferença de 131 registros para o inventário geral de 9.696 não foi explicada nas fontes públicas localizadas.
 
-A transcrição do Por Dentro do RN enumera 261 entradas e declara que removeu edições repetidas da lista de 300. A conferência textual identificou pelo menos dois pares aparentemente duplicados: itens 51/53 (“Comportamento Sexual do Brasileiro”) e 143/146 (“A Origem do Capital: a Acumulação Primitiva”, com variação textual). Em amostragem de 30 títulos, 21 tiveram correspondência no inventário oficial. Isso é validação por amostragem, não confronto integral das 261 entradas. O original do Relatório 01 continua não recuperado; não há prova pública de descarte, doação ou destino atual dos títulos.
+A transcrição do Por Dentro do RN enumera 261 entradas e declara que removeu edições repetidas da lista de 300. A conferência textual identificou pelo menos dois pares aparentemente duplicados: itens 51/53 (“Comportamento Sexual do Brasileiro”) e 143/146 (“A Origem do Capital: a Acumulação Primitiva”, com variação textual). A conferência pontual localizou correspondências para diversos títulos, como O Capital, O Segundo Sexo, A Pré-Revolução Brasileira, Bandidos e Dicionário do Folclore Brasileiro. Não foi feita validação exaustiva das 261 entradas. O original do Relatório 01 continua não recuperado; não há prova pública de descarte, doação ou destino atual dos títulos.
 
 Fontes: [Inventário oficial FCP](https://www.gov.br/palmares/pt-br/centrais-de-conteudo/publicacoes/lista-de-livros-atualizada-8-8-2024-1.pdf); [transcrição de 261 entradas](https://pordentrodorn.com.br/2021/06/17/veja-lista-de-livros-banidos-pela-fundacao-palmares/).
 
@@ -82,9 +82,9 @@ Fontes: [Inventário oficial FCP](https://www.gov.br/palmares/pt-br/centrais-de-
 
 ### EL-028 — São José dos Campos: sentença mais bem delimitada
 
-G1 e Vale360 detalham a sentença de 20/07/2026: restituição do livro às salas de leitura e bibliotecas em que integrava o acervo; prazo de cinco dias contado da intimação formal; consulta, empréstimo e uso pedagógico no Ensino Fundamental II; vedação a restrição político-ideológica; multa diária de R$ 500, limitada inicialmente a R$ 50 mil. O prazo não começa automaticamente na data da sentença. Não localizei comprovante da intimação nem da redistribuição física; a íntegra dos autos permanece sob segredo de Justiça.
+Vale360 detalha a sentença de 20/07/2026, em convergência com coberturas já cadastradas de UOL, Folha e RP10: restituição do livro às salas de leitura e bibliotecas em que integrava o acervo; prazo de cinco dias contado da intimação formal; consulta, empréstimo e uso pedagógico no Ensino Fundamental II; vedação a restrição político-ideológica; multa diária de R$ 500, limitada inicialmente a R$ 50 mil. O prazo não começa automaticamente na data da sentença. Não localizei comprovante da intimação nem da redistribuição física; a íntegra dos autos permanece sob segredo de Justiça.
 
-Fontes: [G1, 28/07/2026](https://g1.globo.com/sp/vale-do-paraiba-regiao/noticia/2026/07/28/justica-ve-censura-em-recolhimento-de-livro-com-citacao-a-marielle-franco-e-determina-devolucao-as-escolas-de-sao-jose-dos-campos.ghtml); [Vale360, 31/07/2026](https://www.vale360news.com.br/webstories/justica-determina-volta-de-livro-as-escolas-de-sao-jose-dos-campos-multa-pode-chegar-a-r-50-mil/).
+Fonte nova: [Vale360, 31/07/2026](https://www.vale360news.com.br/webstories/justica-determina-volta-de-livro-as-escolas-de-sao-jose-dos-campos-multa-pode-chegar-a-r-50-mil/).
 
 **Status:** parcialmente verificado. Conteúdo da sentença corroborado; intimação e cumprimento não comprovados.
 
