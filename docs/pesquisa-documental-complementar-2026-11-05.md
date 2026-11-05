@@ -365,3 +365,54 @@ EL-030 permanece parcialmente verificado e é o caso com maior lacuna documental
 - EL-035 Londrina 2026: parcialmente verificado — retirada/avaliação institucional confirmada por CBN e Folha; ato assinado e resultado final faltam.
 
 **Decisão metodológica:** não fechar nenhum dos cinco P0 como “comprovado integralmente” nesta rodada. As fontes jornalísticas e o registro secundário do Escavador melhoram a triangulação, mas os documentos que provam os atos administrativos, o cumprimento judicial e a destinação material continuam pendentes. Não inventar a inexistência de documentos; registrar apenas que não foram localizados nas fontes abertas consultadas.
+
+
+## Rodada adicional — novo PDF oficial da FCP e distinção entre relatórios (05/11/2026)
+
+### EL-025 — recuperado PDF oficial de 2021 com resposta da FCP e relatório da Câmara
+
+Foi localizado e aberto o PDF oficial da Fundação Cultural Palmares “Respostas da FCP aos relatórios da Comissão de Cultura da Câmara dos Deputados, seguidas dos próprios relatórios em questão”, datado de novembro de 2021: https://www.gov.br/palmares/pt-br/midias/arquivos/download/resposta.pdf. O documento tem 2.888 linhas de texto extraído e reúne, na Parte 1, a Nota Informativa SEI/FCP nº 0166090/2021 (processo administrativo 01420.101641/2021-35), assinada eletronicamente por Marco Aurélio Franco, Coordenador-Geral do CNIRC, em 06/11/2021; na Parte 2, o relatório técnico da Comissão de Cultura/Câmara dos Deputados sobre estado de conservação dos acervos e áreas de guarda da FCP.
+
+A Nota Informativa afirma que os títulos que a Fundação pretendia doar permaneceriam no acervo “por força de Liminar” (linhas extraídas 50–53). Na parte em que rebate a Comissão, afirma que havia livros em caixas na visita de 30/06/2021, mas que a FCP dizia tê-los posteriormente colocado em estantes (linhas 96–106). O texto também faz referência a um processo de averiguação de compra do acervo Clóvis Moura (linhas 146–176), trilha documental potencialmente útil para identificar contratos e aquisição, mas não equivale ao Relatório CNIRC 01.
+
+**Distinção crítica:** a Parte 2 desse PDF não é o Relatório Público 01 do CNIRC (“Retrato do Acervo: três décadas de dominação marxista…”). É o relatório técnico da Comissão de Cultura da Câmara, intitulado “Relatório do Estado de Conservação dos Acervos e Diagnóstico das Áreas de Guarda da Fundação Cultural Palmares”, produzido por equipe de conservadores-restauradores da Câmara. O próprio documento explica que a avaliação foi parcial por dificuldade de acesso decorrente de superlotação e empilhamento de caixas (linhas 247–285). Não usar esse relatório da Câmara como se fosse o relatório de 74 páginas do CNIRC.
+
+O relatório da Câmara contém observações técnicas independentes sobre conservação e segurança, incluindo falta de sistemas de detecção/supressão automática de incêndio e insuficiência de hidrantes/extintores (linhas 690–695). Essas observações devem ser atribuídas à equipe técnica da Câmara e não à FCP. PDF oficial: https://www.gov.br/palmares/pt-br/midias/arquivos/download/resposta.pdf.
+
+### EL-025 — Relatório Público 01: novas cópias/vestígios de circulação
+
+Buscas adicionais em repositórios e artigos acadêmicos localizaram referências bibliográficas independentes que confirmam o título completo e o endereço histórico do arquivo: “Retrato do acervo: três décadas de dominação marxista na Fundação Cultural Palmares 1988–2019”, Relatório Público 01 – CNIRC, 2021, atribuído a Marco Frenette. Repositórios/estudos consultados: SciELO/Serviço Social & Sociedade (referência bibliográfica), Encontros Bibli/UFSC (artigo de 2023) e monografia da UFCG (2023). Essas referências confirmam a circulação e identificação bibliográfica, mas não forneceram cópia integral alternativa do PDF. Fontes: https://www.scielo.br/j/sssoc/a/3bqs75cXr8758rHGrtGRLRD/ ; https://periodicos.ufsc.br/index.php/eb/article/view/90814 ; https://dspace.sti.ufcg.edu.br/bitstream/riufcg/31059/1/IGOR%20ROBSON%20MOURA%20FURTADO%20SANTOS%20-%20MONOGRAFIA%20LIC.%20HIST%C3%93RIA%20CH%202023.pdf.
+
+O endereço histórico do PDF continua referenciado em trabalhos acadêmicos publicados em 2022–2023: https://www.palmares.gov.br/wp-content/uploads/2021/06/cnirc-01-gab-10-06-21.pdf. Não foi recuperada nesta rodada uma cópia integral espelhada. A cópia oficial resposta.pdf não preenche essa lacuna.
+
+### EL-030 — Londrina 2024: confirmação do pedido à SME, não do requerimento legislativo
+
+Uma fonte contemporânea adicional (Nova Lima News, 27/11/2024) relata que, após a fiscalização da vereadora Jessicão na creche, ela protocolou requerimento pedindo à Secretaria Municipal de Educação o recolhimento do livro “A Mamãe Vai Ter um Bebê”; registra também que a Secretaria ainda não havia se manifestado oficialmente. A Revista Oeste de 04/12/2024 igualmente relata o requerimento à SME. Fontes: https://novalima.news/livro-erotico-e-encontrado-em-creche-de-londrina-vereadora-pede-providencias/ ; https://revistaoeste.com/politica/vereadora-jessicao-exige-recolhimento-de-livro-erotico-encontrado-em-creche-no-parana/.
+
+Isso corrige a formulação anterior: o pedido específico relatado pela imprensa era dirigido à Secretaria Municipal de Educação, e não há confirmação de que tenha sido um requerimento formal protocolado na Câmara. A existência de uma postagem ou requerimento à SME não prova retirada efetiva da rede. O PL 79/2024 e a lei posterior são contexto normativo separado, não comprovação de execução do pedido específico.
+
+### EL-032 — Taubaté: desfecho administrativo favorável, mas sem prova de retorno material
+
+A matéria de 14/07/2026 informa que a Prefeitura comunicou que, após análise técnica da Coordenação de Área e da Equipe de Práticas Pedagógicas da Educação Infantil, “Pipoca e Picolé” voltaria a ser utilizado nas unidades, no plano de ensino das turmas adequadas. Fonte: https://sampi.net.br/ovale/noticias/2991910/vale-do-paraiba/2026/07/taubate-escolas-voltarao-a-usar-livro-sobre-menina-com-duas-maes.
+
+O caso pode ser considerado resolvido quanto à posição administrativa declarada (parecer favorável ao uso com adequação de turma), mas não quanto à execução física: não há ainda cópia do parecer, comprovação de devolução dos exemplares às unidades ou distribuição do material remanescente. A redação do P0 deve separar decisão/posição administrativa de prova de implementação.
+
+### EL-035 — Londrina 2026: confirmação independente do documento assinado
+
+A matéria do Bonde/Folha de Londrina, de 12/03/2026, é mais específica que a nota da CBN: informa que a Folha teve acesso ao pedido de providências assinado pela gerente da Gerência de Ensino Fundamental e pela diretora pedagógica; reproduz trechos do pedido e diz que a Secretaria iniciou levantamento/recolhimento. Fonte: https://www.bonde.com.br/bondenews/politica/educacao-vai-recolher-livro-infantil-sobre-reproducao-humana-por-conteudo-sensivel/amp.
+
+Isso aumenta a confiança de que o documento administrativo assinado existiu, mas a cópia do pedido, número de protocolo e conclusão técnica continuam não publicados nas fontes localizadas. A fonte também identifica que o título estava na rede desde 2009 e teve nova aquisição em 2018, segundo histórico do Jornal Oficial do Município. Não presumir que o caso esteja resolvido apenas porque o recolhimento foi anunciado.
+
+### EL-028 — São José dos Campos: sentença e obrigação mais bem delimitadas
+
+A Folha de 30/07/2026 confirma prazo de cinco dias a contar da intimação para restituição da obra às salas de leitura e bibliotecas, com consulta, empréstimo e uso pedagógico no Ensino Fundamental II. Informa que o recolhimento foi comunicado por WhatsApp aos diretores, sem motivação técnica/pedagógica contemporânea, segundo o MP. Fonte: https://www1.folha.uol.com.br/ciencia/2026/07/justica-determina-volta-de-livro-que-retrata-marielle-a-escolas-em-sao-jose-dos-campos.shtml.
+
+A notícia do MPSP reproduzida pelo Jusbrasil reforça que a ordem inclui proibição de novo recolhimento, ocultação, remanejamento restritivo ou limitação por razão político-ideológica, salvo procedimento administrativo formal e motivado. Fonte: https://www.jusbrasil.com.br/noticias/em-acao-do-mpsp-judiciario-determina-volta-de-livro-retirado-de-escolas-de-sao-jose-dos-campos/6794841901. Continuam faltando intimação e prova de cumprimento material.
+
+### Síntese de status nesta rodada
+
+- EL-025: avanço relevante; documento oficial novo recuperado, mas ele contém a resposta da FCP e o relatório técnico da Câmara, não o relatório CNIRC 01. Relatório CNIRC integral e autos judiciais integrais seguem pendentes.
+- EL-028: obrigação judicial e prazo melhor documentados; prova de cumprimento pendente.
+- EL-030: pedido à SME relatado, sem prova de recolhimento ou resposta oficial; não confundir com protocolo legislativo.
+- EL-032: posição administrativa favorável ao uso confirmada; implementação física pendente.
+- EL-035: pedido assinado confirmado por reportagem que teve acesso ao documento; protocolo e desfecho pendentes.
