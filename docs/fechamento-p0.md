@@ -158,7 +158,7 @@ Correção de precisão: o documento institucional “Políticas de Acervo”, d
 
 ## Atualização de pesquisa pública — 05/11/2026
 
-A rodada adicional dos cinco registros parcialmente verificados foi incorporada à base e ao documento [Pesquisa documental complementar — 05/11/2026](pesquisa-documental-complementar-2026-11-05.md). Correção essencial: o inventário FCP publicado em 08/08/2024 declara que os 9.696 títulos foram inventariados entre julho e outubro de 2021; não é prova de inventário físico novo em 2024. A transcrição de 261 entradas tem ao menos dois pares aparentemente duplicados e apenas 21/30 títulos de uma amostragem tiveram correspondência no inventário oficial.
+A rodada adicional dos cinco registros parcialmente verificados foi incorporada à base e ao documento [Pesquisa documental complementar — 05/11/2026](pesquisa-documental-complementar-2026-11-05.md). Correção essencial: o inventário FCP publicado em 08/08/2024 declara que os 9.696 títulos foram inventariados entre julho e outubro de 2021; não é prova de inventário físico novo em 2024. A transcrição de 261 entradas tem ao menos dois pares aparentemente duplicados; a conferência pontual encontrou correspondências para diversos títulos, mas não houve validação exaustiva.
 
 EL-028: sentença de 20/07/2026 melhor delimitada, mas intimação e cumprimento físico não comprovados. EL-030: pedido de 2024 continua sem original, destinatário formal, resposta ou execução. EL-032: resposta municipal e parecer pedagógico favorável ao uso em turmas adequadas foram melhor documentados, mas falta requerimento integral e redistribuição física. EL-035: pedido formal da equipe da SME e levantamento foram corroborados por Folha/errata e CBN, mas faltam número SEI, despacho, parecer e decisão final.
 
