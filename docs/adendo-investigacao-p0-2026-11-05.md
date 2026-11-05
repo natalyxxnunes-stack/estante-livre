@@ -132,3 +132,42 @@ Fontes:
 - Boletim Interno CGU de 17/03/2006, que registra a OS 175493 para MINC/FCP: https://repositorio.cgu.gov.br/bitstream/1/64165/5/boletim-interno-11-de-17-03-2006.pdf
 
 **Resultado desta rodada:** o relatório integral 175493 e o conteúdo completo do subitem 3.3.8.1 não foram recuperados. O processo 01420.000408/2003-54 permanece como trilha documental separada, sem ser incorporado à narrativa da diferença de livros. O status do PAD da Biblioteca Clóvis Moura continua: encerramento informado pela FCP em 2009; regularização física dos exemplares não comprovada.
+
+
+## 10. EL-025 — Processo 01420.000408/2003-54: recuperação de histórico oficial
+
+Foi recuperado um registro oficial anterior ao Acórdão 1372/2010: o **Relatório de Gestão 2007 da própria FCP**, no Anexo D, reproduz recomendações do Relatório e Certificado de Auditoria nº 190026 (auditoria de gestão do exercício de 2006) relativas ao processo 01420.000408/2003-54.
+
+A CGU recomendava, para esse processo:
+- desenvolver fluxograma detalhado para registro e tombamento de bens adquiridos por convênios;
+- sanear diferença de **R$ 5.587,85**, após levantamento e registros no sistema;
+- corrigir divergências entre datas de aquisição registradas e as informadas no Relatório Final do Grupo de Trabalho;
+- encaminhar à CGU a relação das medidas saneadoras adotadas.
+
+A FCP informou, por meio do Memorando nº 69/2008-CGI/FCP/MinC, de 13/03/2008, que **não conseguiu concluir a regularização dos itens B2, B3 e B4 em 2007**. A justificativa institucional foi quadro reduzido de servidores e greve. A Fundação afirmou que precisava aguardar o resultado do PAD nº 01420.000196/2004-96 para implementar as medidas e que uma nova comissão deveria ser constituída a partir de abril de 2008 para apurar os fatos daquele processo disciplinar.
+
+Fonte primária institucional: Relatório de Gestão FCP 2007, Anexo D, páginas impressas 50–51 do PDF (linhas extraídas 1787–1828): https://www.gov.br/palmares/pt-br/midias/arquivos-menu-acesso-a-informacao/arquivos/relatorio-de-gestao-2007.pdf
+
+### Acompanhamento posterior pelo TCU — Acórdão 1693/2010
+
+Foi localizado outro ato oficial, distinto do Acórdão 1372/2010: **Acórdão 1693/2010-TCU-1ª Câmara**, publicado no DOU de 09/04/2010. No item 1.6.2.3, o TCU determinou à CGU que incluísse no relatório de auditoria de gestão das próximas contas da FCP o andamento dos processos administrativos disciplinares 01420.000408/2003-54 e 1420.000196/2004-96.
+
+Fonte oficial: DOU de 09/04/2010, página 153, item 1.6.2.3: https://www.gov.br/mme/pt-br/arquivos/do-09-04-2010-s1.pdf (linhas extraídas 18768–18783).
+
+Essa determinação confirma que, em abril de 2010, o TCU ainda exigia informação sobre o andamento do processo 01420.000408/2003-54. Não comprova, por si só, que o PAD continuava aberto naquela data, nem informa o resultado final ou se a diferença foi efetivamente saneada. O acórdão 1372/2010, de 30/03/2010, também incluiu o saneamento das questões pendentes desse processo entre os pontos a verificar pela CGU nas contas subsequentes.
+
+### O que esta recuperação permite afirmar
+
+1. A diferença de R$ 5.587,85 e a necessidade de aperfeiçoar o controle patrimonial de bens adquiridos por convênios já eram objeto de recomendação de auditoria em 2006.
+2. Em seu Relatório de Gestão 2007, a FCP declarou que não havia concluído as providências de saneamento em 2007.
+3. A FCP vinculou a implementação das medidas ao resultado do PAD nº 01420.000196/2004-96 e informou que uma nova comissão seria constituída a partir de abril de 2008.
+4. Em abril de 2010, o TCU ainda determinou que a CGU informasse o andamento do processo 01420.000408/2003-54.
+5. **Não foi localizado, nesta rodada, documento que comprove a posterior conciliação da diferença de R$ 5.587,85, a aprovação do fluxograma, a conclusão do PAD 01420.000408/2003-54 ou o cumprimento integral das recomendações.**
+
+### Separação obrigatória das trilhas
+
+- **1420.000196/2004-96:** PAD referido pela FCP como encerrado em 2009, sem elementos suficientes para imputar responsabilidade disciplinar, relacionado à diferença de livros da Biblioteca Clóvis Moura.
+- **01420.000408/2003-54:** processo distinto, ligado a diferença de R$ 5.587,85, registro/tombamento de bens adquiridos por convênios e fluxograma patrimonial. O andamento foi objeto de determinação própria do TCU em 2010.
+- **1420.000348/2003-70 e 1420.000577/2004-75:** expedientes distintos, relacionados a apurações sobre outras ocorrências patrimoniais. Não incorporar ao caso dos livros sem documento que estabeleça a conexão.
+
+**Decisão editorial:** atualizar a trilha 01420.000408/2003-54 de “referência isolada no TCU” para “pendência patrimonial documentada desde auditoria de 2006; FCP declarou não ter saneado em 2007; TCU voltou a exigir informação em 2010; desfecho material não localizado”. Isso não altera o status do PAD dos livros e não autoriza associar a diferença de R$ 5.587,85 ao acervo da Biblioteca Clóvis Moura.
