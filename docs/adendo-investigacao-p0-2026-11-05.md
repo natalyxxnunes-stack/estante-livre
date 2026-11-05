@@ -171,3 +171,20 @@ Essa determinação confirma que, em abril de 2010, o TCU ainda exigia informaç
 - **1420.000348/2003-70 e 1420.000577/2004-75:** expedientes distintos, relacionados a apurações sobre outras ocorrências patrimoniais. Não incorporar ao caso dos livros sem documento que estabeleça a conexão.
 
 **Decisão editorial:** atualizar a trilha 01420.000408/2003-54 de “referência isolada no TCU” para “pendência patrimonial documentada desde auditoria de 2006; FCP declarou não ter saneado em 2007; TCU voltou a exigir informação em 2010; desfecho material não localizado”. Isso não altera o status do PAD dos livros e não autoriza associar a diferença de R$ 5.587,85 ao acervo da Biblioteca Clóvis Moura.
+
+
+## 11. Identificação da auditoria de origem — Relatório 190026
+
+O Relatório de Gestão 2007 da FCP identifica expressamente que as recomendações sobre o processo 01420.000408/2003-54 foram reproduzidas do Relatório e Certificado de Auditoria nº 190026, encaminhado pelo Ofício nº 21.531/07/DRCUT/DR/SFC/CGU-PR e referente à auditoria de gestão do exercício de 2006. As recomendações eram: (B1) elaborar fluxograma de registro e tombamento de bens adquiridos por convênios; (B2) sanear diferença de R$ 5.587,85 após levantamento e registros no sistema; (B3) corrigir divergências nas datas de aquisição; e (B4) encaminhar à CGU a relação das medidas saneadoras.
+
+No mesmo relatório, a FCP informou pelo Memorando nº 69/2008, de 13/03/2008, que não conseguiu concluir B2, B3 e B4 em 2007. Declarou que precisava aguardar o resultado do PAD 01420.000196/2004-96 e que constituiria nova comissão a partir de abril de 2008 para apurar os fatos desse PAD. Fonte: Relatório de Gestão FCP 2007, Anexo D, páginas impressas 50–51, linhas extraídas 1787–1828: https://www.gov.br/palmares/pt-br/midias/arquivos-menu-acesso-a-informacao/arquivos/relatorio-de-gestao-2007.pdf
+
+### Distinção dos relatórios
+
+- **190026:** auditoria de gestão do exercício de 2006; origem das recomendações B1–B4 sobre o processo 01420.000408/2003-54.
+- **175493:** auditoria de gestão das contas de 2005; citada no Acórdão 1372/2010 para outros achados, inclusive o subitem 3.3.8.1 associado ao processo 01420.000408/2003-54.
+- **Relatório de Gestão 2007:** documento da FCP que reproduz trechos do relatório 190026 e a resposta administrativa de março de 2008; não é o relatório integral da CGU.
+
+O Acórdão 827/2007-TCU-2ª Câmara, processo TC-010.262/2005-9, é citado no relatório de gestão como contexto de prestação de contas e determinou, entre outros pontos, a adoção de indicadores nos relatórios de gestão e o respeito aos prazos de análise das prestações de contas de convênios. Não é a decisão que especificou a diferença de R$ 5.587,85. Fonte: Ata nº 13/2007, 2ª Câmara: https://www.tcu.gov.br/atas/2007/2a-camara/TCU_ATA_2_N_2007_13.pdf
+
+**Decisão editorial:** a origem da pendência patrimonial fica identificada como recomendação da auditoria de gestão de 2006 (Relatório/Certificado 190026), seguida de declaração da FCP em março de 2008 de que B2–B4 não haviam sido concluídos em 2007. Ainda não foi comprovada a regularização posterior, a implantação do fluxograma ou o encerramento material do processo 01420.000408/2003-54.
