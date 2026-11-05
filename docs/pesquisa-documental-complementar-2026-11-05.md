@@ -255,3 +255,47 @@ A CBN Londrina, em 12/03/2026, confirma que o levantamento e a retirada para an�
 ### Conclusão desta rodada
 
 O maior avanço documental foi a recuperação da tese integral da UFABC/IFSP, que reproduz a capa do Relatório 01 e documenta o anúncio do “Acervo da Vergonha”, e a identificação de que há pelo menos duas formulações temporais da tutela judicial (liminar de 2021 e extrato mais amplo reproduzido em 2024). Isso corrige a tendência anterior de citar a multa de R$ 1.000/dia como se fosse a única formulação desde o início. Não se recuperou o Relatório 01 integral, a decisão judicial integral, a sentença definitiva integral nem os atos originais de Taubaté e Londrina. Status dos P0 permanece inalterado.
+
+
+## Nova rodada — política institucional de 2021, sentença de janeiro/2022 e declaração do CNIRC em 2023 (05/11/2026)
+
+### EL-025 — fonte primária oficial adicional: política de acervo de 21/12/2021
+
+Foi aberta e examinada a íntegra do PDF oficial da FCP “Políticas de Acervo — Política de Formação, Desenvolvimento e Gestão do Acervo / Manual do Processamento Técnico do Acervo da Futura Biblioteca”, hospedado atualmente no gov.br: https://www.gov.br/palmares/pt-br/midias/arquivos/download/politicas-de-acervo-versao-final-21-12-2021.pdf.
+
+Achados diretamente no documento:
+- Na apresentação (p. impressa 3; linhas extraídas 140–155), a própria FCP registra que a política orientaria inclusive o descarte, mas acrescenta expressamente “Procedimento impedido por força de liminar”. É evidência institucional contemporânea, produzida em 21/12/2021, de que a Fundação reconhecia a restrição judicial à execução do descarte.
+- Na seção 4.5.2 (p. impressa 17; linhas 589–619), o documento enumera critérios de descarte, incluindo, entre outros, “sexualização de crianças, ideologia de gênero, pornografia, erotismo, manuais de guerrilha, manuais de greve, de revolução, bandiolatria, bizarrices, marxismo e comunismo”, além de “obras de militância política explícita ou de divulgação marxista”. Estabelece que o material poderia ser doado, permutado ou eliminado após avaliação por comissão e bibliotecário.
+- A política prevê comissão permanente, com bibliotecário, coordenação do CNIRC, servidores de departamentos e museólogo (p. 11), e inventário anual/avaliação periódica (p. 15–16). O documento é uma política institucional efetiva como texto publicado pela Fundação, mas não prova que a comissão tenha sido formalmente constituída nem que tenha executado as rotinas.
+- Na parte de implantação (p. 30–31), o texto descreve o setor técnico como ainda a ser implantado e lista equipe inicial com bibliotecário responsável, bolsistas e estagiários em contratação. Isso recomenda cautela ao tratar as rotinas descritas como atividades efetivamente executadas.
+
+Esses trechos permitem demonstrar documentalmente a existência de critérios de descarte explicitamente ideológicos no texto da política de 2021, bem como o reconhecimento institucional de que a execução do descarte estava impedida por liminar. Não provam que os itens listados tenham sido efetivamente eliminados, doados ou retirados do acervo.
+
+### EL-025 — sentença definitiva de 07/01/2022: conteúdo mais preciso recuperado por imprensa
+
+A íntegra da reportagem da GZH de 07/01/2022 foi aberta. Ela informa que a Justiça Federal proferiu sentença definitiva declarando nula a exclusão de parte do acervo anunciada por Sérgio Camargo. A matéria reproduz trecho da sentença segundo o qual o réu deveria ser imediatamente impedido de “excluir ou danificar” obras ou itens do acervo (livros, folhetos, artigos, obras de arte etc.), sob pena de responsabilização civil, administrativa e criminal por danos ao patrimônio histórico-cultural. Também reproduz a fundamentação atribuída ao juiz: o objetivo de destruir algo com valor patrimonial estaria associado a ideal político, religioso ou cultural. O texto registra manifestação do MPF pela procedência do pedido e que as partes ainda seriam intimadas. Fonte: https://gauchazh.clicrbs.com.br/cultura-e-lazer/noticia/2022/01/justica-proibe-fundacao-palmares-de-doar-acervo-em-sentenca-que-contraria-sergio-camargo-cky53pseb00bq0188zuobv4ap.html.
+
+A Folha de 08/01/2022 confirma que a sentença foi proferida na sexta-feira, 07/01, e a distingue da liminar provisória de junho de 2021, cuja multa era R$ 500 por item doado. Fonte: https://www1.folha.uol.com.br/ilustrada/2022/01/justica-proibe-palmares-de-doar-livros-e-camargo-cria-acervo-da-vergonha.shtml.
+
+A sentença integral ainda não foi localizada. As matérias permitem descrever o teor noticiado e os trechos reproduzidos, mas não permitem confirmar número de evento/ID, dispositivo completo, trânsito em julgado, intimações, recursos ou cumprimento.
+
+### EL-025 — declaração do próprio CNIRC em 2023
+
+O artigo de Henrique Bezerra de Araújo, então bibliotecário/coordenador de Estudos e Pesquisas da FCP, publicado na Divulga-CI em novembro de 2023, declara que a Ação Popular nº 5006660-67.2021.4.02.5117 impedia a Fundação de realizar qualquer movimentação dos itens do acervo. O autor afirma que pedidos de doação de livros dos projetos de fomento e conscientização não podiam ser atendidos por causa da ação; informa que houve audiência pública para discutir os efeitos da restrição e que a Comissão Permanente de Formação, Desenvolvimento e Gestão do Acervo ainda estava “em formação”. Fonte: https://www.divulgaci.labci.online/v-1-n-9-nov-2023/a-politica-de-acervo-da-biblioteca-da-fundacao-palmares-desdobramentos-para-a-preservacao-da-cultura-afro-brasileira-por-henrique-araujo/.
+
+É uma declaração pública de integrante da própria Fundação, relevante para demonstrar que a restrição ainda produzia efeitos operacionais em 2023 e que a comissão ainda não estava constituída/concluída naquele momento. Não comprova a situação processual após novembro de 2023 nem o estado atual da comissão.
+
+### Reconciliação jurídica atualizada
+
+A sequência documental agora fica mais precisa:
+1. Junho de 2021: liminar provisória noticiada com multa de R$ 500 por item doado.
+2. 21/12/2021: política oficial da FCP registra expressamente que o descarte está impedido por força de liminar.
+3. 07/01/2022: sentença definitiva noticiada declara nula a exclusão anunciada e reproduz ordem de impedir exclusão ou dano ao acervo, sob responsabilidade civil, administrativa e criminal.
+4. 2023: bibliotecário/coordenador da FCP declara que a ação ainda impede qualquer movimentação do acervo e inviabiliza doações promocionais; comissão permanente ainda em formação.
+5. 2024: política republicada no DOU e na consulta pública transcreve ordem mais ampla de não movimentar itens, exceto consulta local, sob multa diária de R$ 1.000, citando AGU (2022).
+
+A formulação de 2024 não deve ser tratada como se fosse a liminar de junho/2021. A sentença de janeiro/2022 parece fornecer uma etapa intermediária decisiva, mas somente a cópia integral dos autos pode confirmar a correspondência entre a sentença, eventual tutela subsequente e o extrato transcrito em 2024.
+
+### Status
+
+EL-025 permanece parcialmente verificado. Houve avanço documental substancial: política oficial integral de 2021, trechos da sentença definitiva de janeiro/2022 reproduzidos por imprensa e declaração institucional do CNIRC em 2023. Continuam ausentes: relatório CNIRC integral original; sentença integral e decisões subsequentes; comprovação de intimação/trânsito/cumprimento; inventário atualizado e destino físico dos livros; ato de constituição e atas da comissão permanente.
