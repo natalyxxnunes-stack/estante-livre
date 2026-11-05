@@ -224,3 +224,21 @@ Fonte primária: Relatório de Gestão FCP 2011, páginas impressas 62–64, esp
 - **Não comprovado:** se todos os exemplares do Acervo Clóvis Moura foram incluídos no lote de 16.050 peças; se os três títulos da controvérsia foram individualmente catalogados no Sophia; qual é a localização física atual desses exemplares; e se a transferência foi acompanhada de inventário de saída/entrada e conciliação quantitativa.
 
 **Decisão editorial:** atualizar a lacuna “localização física do acervo” para “localização histórica identificada: transferido do escritório regional do Rio de Janeiro para a sede da FCP em Brasília em 2011, conforme Relatório de Gestão 2011; localização atual e rastreabilidade por exemplar ainda não comprovadas”. Esse achado não prova que a diferença de livros tenha sido regularizada nem que os títulos citados tenham sido extraviados.
+
+
+## 14. EL-025 — distinção entre higienização concluída (2010) e tratamento técnico cancelado (2012)
+
+A leitura cruzada dos Relatórios de Gestão 2010 e 2012 permite refinar a cronologia do Acervo Clóvis Moura:
+
+1. **2009 — plano de transferência e higienização:** o Relatório de Gestão 2009 informa que o acervo pessoal de Clóvis Moura estava alocado na Representação Regional do Rio de Janeiro; relata visita técnica e parecer da Biblioteca Nacional, com previsão de transferência e higienização em 2010. Fonte: https://www.gov.br/palmares/pt-br/midias/arquivos-menu-acesso-a-informacao/arquivos/relatorio-de-gestao-2009.pdf (linhas indexadas na busca do documento).
+2. **2010 — higienização registrada como realizada:** o Relatório de Gestão 2010 informa que 71% do acervo bibliográfico havia sido tratado e que os serviços de tratamento, higienização, catalogação e indexação do acervo bibliográfico foram contratados. Na tabela de execução da estratégia 4, a ação “Implementar e modernizar o acervo bibliográfico e arquivístico da FCP” aparece como realizada, com R$ 249.893,25 empenhados; entre as atividades descritas está especificamente a “Higienização do acervo bibliográfico da Coleção Clóvis Moura”. O relatório não diz que a catalogação específica do acervo Clóvis Moura foi concluída; o que se pode afirmar especificamente sobre essa coleção é a higienização declarada.
+3. **2011 — transferência física:** conforme seção 13 deste adendo, a FCP declarou que transferiu o Acervo Clóvis Moura da Representação Regional do Rio de Janeiro para a sede em Brasília.
+4. **2012 — tratamento técnico específico não contratado:** o Relatório de Gestão 2012 lista a ação “Tratamento do Acervo Clóvis Moura” como cancelada, com valor previsto de R$ 150.000,00 e valor executado de R$ 0,00. A justificativa expressa foi que problemas no procedimento licitatório impediram contratar o tratamento técnico, que incluiria classificação, indexação, resumo, digitalização de capas, restauração, encadernação, catalogação e inserção no Sophia. O relatório repete que problemas licitatórios impediram a contratação.
+
+Fontes primárias:
+- Relatório de Gestão FCP 2010, linhas extraídas 1150–1191: https://www.gov.br/palmares/pt-br/midias/arquivos-menu-acesso-a-informacao/arquivos/relatorio-de-gestao-2010.pdf
+- Relatório de Gestão FCP 2012, páginas impressas 61–62, linhas extraídas 2607–2622 e 2947–2952: https://www.gov.br/palmares/pt-br/midias/arquivos-menu-acesso-a-informacao/arquivos/relatorio-de-gestao-2012.pdf/@@download/file
+
+### Conclusão editorial atualizada
+
+Não há contradição necessária entre os documentos: **higienização** é uma etapa de conservação e limpeza; **tratamento técnico** é um conjunto mais amplo de operações de classificação, indexação, catalogação e registro no sistema. A FCP declarou ter higienizado a Coleção Clóvis Moura em 2010, mas reconheceu em 2012 que não conseguiu contratar o tratamento técnico específico previsto. Portanto, não afirmar que o acervo estava integralmente catalogado no Sophia em 2011 ou 2012. A transferência para Brasília está documentada; a catalogação individual dos exemplares, a rastreabilidade dos três títulos controvertidos e a localização atual continuam sem comprovação.
