@@ -66,3 +66,14 @@ Não foi localizada publicação posterior, parecer final, ato da SME ou registr
 1. Inventários: localizar versão intermediária, metadados de publicação e justificativa oficial da diferença de 424 títulos.
 2. PAD: localizar peças de fls. 446–450 do processo TCU TC-013.997/2007-2 e o Relatório de Inspeção Correcional CGU nº 03/2007.
 3. Londrina: encerrar a busca do desfecho como não localizado em fontes públicas nesta data; reabrir somente com novo identificador ou publicação oficial posterior.
+
+
+## 6. Precisão adicional sobre as peças 446–450 do TCU
+
+A leitura do Acórdão 4.509/2008 confirma que as peças de fls. 446/450 mencionadas no item 1.5.2 não são descritas pelo Tribunal como o relatório final do PAD. A determinação foi para que a 6ª Secex enviasse cópia dessas peças ao procurador da República no Estado da Bahia, em complemento às informações prestadas no TC-000.164/2008-9. Portanto, não presumir que as cinco folhas sejam os autos disciplinares ou que contenham a conclusão da comissão.
+
+A informação sobre o encerramento do PAD vem de outra fonte: o Relatório de Gestão 2008 da FCP transcreve a resposta da CGI no Memorando nº 054/2009-CGI/FCP/MinC, de 06/02/2009. O texto afirma expressamente que o PAD foi encerrado e reproduz a conclusão de ausência de elementos suficientes para imputar responsabilidade, bem como a concordância da equipe da CGU no Relatório de Inspeção Correcional nº 03/2007. Referência precisa: Relatório de Gestão 2008, linhas 1641–1646.
+
+O Acórdão 1372/2010-TCU-2ª Câmara, por sua vez, incluiu entre os pontos a serem verificados nas contas subsequentes as providências adotadas para cumprir as conclusões do relatório final do PAD (DOU de 01/04/2010, linhas 17435–17440). Isso comprova acompanhamento posterior pelo TCU, mas não permite, isoladamente, inferir descumprimento: o próprio acórdão condiciona a verificação à hipótese de o assunto ainda não ter sido examinado nas contas de 2006 a 2008.
+
+**Formulação final autorizada:** “A FCP informou ao TCU, em 2009, que o PAD havia sido encerrado sem elementos suficientes para imputar responsabilidade disciplinar, conclusão acompanhada pela equipe de Inspeção Correcional da CGU. Em 2010, o TCU ainda incluiu a verificação das providências relativas às conclusões do PAD entre os pontos de acompanhamento das contas, caso isso ainda não tivesse sido examinado. As fontes localizadas não demonstram, por si, a regularização material da diferença de livros.”
