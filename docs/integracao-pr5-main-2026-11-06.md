@@ -104,3 +104,30 @@ https://github.com/natalyxxnunes-stack/estante-livre/pull/6
 
 
 **Atualização do estado da PR #6:** após a última atualização documental, a consulta mais recente ao GitHub passou a retornar `mergeable: false` para a PR #6. Portanto, ela permanece draft e não deve ser integrada até o GitHub recalcular/explicar o conflito e a validação pendente ser resolvida.
+
+
+## Atualização operacional — 06/11/2026, rodada de integração dos casos adicionais
+
+Nova consulta ao GitHub:
+
+- A comparação de `main` com `integration/estante-livre-mainline-2026-11-06` retornou `ahead_by: 6` e `behind_by: 0`.
+- A PR #6 continua aberta e em draft, mas o GitHub agora retorna `mergeable: true`. A sinalização anterior de `mergeable: false` foi superada; isso significa apenas que o GitHub não detecta conflito de merge no momento.
+- O status combinado do HEAD consultado continua registrando Vercel como `failure`, com destino que indica `build-rate-limit`. Não há status verde de CI ou deploy que permita declarar a etapa validada.
+
+### Inventário de dependências de EL-035 a EL-037
+
+A leitura comparativa de `assets/dados.js` confirma que os três casos não podem ser acrescentados isoladamente à base atual:
+
+- EL-035 referencia o ato `LON-2026`, o livro `O bebê vem com a cegonha?!?` e seis fontes específicas.
+- EL-036 e EL-037 referenciam o ato `CAN-2024`, dois livros distintos e um conjunto compartilhado de fontes sobre Canoinhas, TCE-SC e MPSC.
+- Os atos `LON-2026` e `CAN-2024` não existem na base atual de mainline.
+- Os três títulos não existem na lista atual de livros de mainline.
+- As fontes específicas desses casos não estão cadastradas na base atual. A lista de dependências identificadas inclui registros de Folha de Londrina, CBN Londrina, Observatório de Gestão Pública de Londrina, Câmara de Canoinhas/SAPL, imprensa local, TCE-SC e MPSC.
+
+### Decisão desta rodada
+
+Não foram copiados os três objetos de caso. Fazer isso agora criaria referências a atos, livros e fontes ausentes, deixando a base inconsistente e podendo quebrar a geração de páginas e os vínculos de documentação. Também não foi copiado o bloco inteiro de atos/livros/fontes da branch de auditoria, pois ele contém alterações compartilhadas e divergências em relação à versão atual de main.
+
+A integração dos três casos exige um lote transacional de entidades relacionadas: casos + atos + livros + fontes + agentes/papéis efetivamente referenciados + validações do gerador. Cada chave deve ser comparada individualmente com main antes de inserção. Depois, é necessário executar o gerador e validar as páginas geradas em ambiente Node.js.
+
+**Estado honesto:** a integração dos 19 registros de contexto partidário está presente na branch de trabalho; EL-035 a EL-037 ainda não foram integrados. A PR #6 é mergeable no momento da consulta, mas permanece draft e sem validação de CI/deploy confirmada. Não fazer merge nem anunciar publicação com base apenas no indicador `mergeable`.
