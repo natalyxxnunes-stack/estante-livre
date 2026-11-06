@@ -106,7 +106,7 @@ O registro EL-017 foi corrigido para “Os Sertões da Luta”, conforme o títu
 
 ## 10. Palmares — atualização documental
 
-O Relatório de Gestão 2021 da própria Fundação Cultural Palmares, seção 3.1.2, páginas impressas 70–71, informa 9.565 registros no acervo, compostos por 8.035 títulos diferentes e 1.530 folders e catálogos: https://www.gov.br/palmares/pt-br/midias/arquivos-menu-acesso-a-informacao/resultados-gerados2021_ok.pdf
+O Relatório de Gestão 2021 da própria Fundação Cultural Palmares, seção 3.1.2, páginas impressas 70–71, informa um total agregado de 9.565 registros no acervo, composto por 8.035 títulos diferentes e 1.530 folders e catálogos; portanto, 9.565 não é a quantidade de títulos distintos: https://www.gov.br/palmares/pt-br/midias/arquivos-menu-acesso-a-informacao/resultados-gerados2021_ok.pdf
 
 Assim, para o número-base de 2021, a fonte institucional confirma 9.565. O número 9.546 publicado pelo Jornal da Unesp é uma divergência de reportagem, sem explicação localizada.
 
