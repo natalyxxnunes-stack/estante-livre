@@ -899,7 +899,7 @@ const EIXOS = ["Cultura afro-brasileira","Sexualidade e gênero","Sobrenatural e
 const OBSTACULOS = ["Fonte única","Documento interno não publicado","Sigilo judicial","Cumprimento não confirmado","Lista de títulos incompleta","Responsável não identificado","Divergência entre fontes"];
 const LACUNAS = {
  "MS-2024":{obstaculos:["Cumprimento não confirmado"], caminho:"Pedido via Lei de Acesso à Informação à Secretaria de Estado de Educação de Mato Grosso do Sul sobre a devolução dos exemplares às escolas."},
- "SC-2023":{obstaculos:["Responsável não identificado"], caminho:"Pedido via Lei de Acesso à Informação à Secretaria de Estado da Educação de Santa Catarina do ofício e da unidade regional que o expediu."},
+ "SC-2023":{obstaculos:["Documento interno não publicado","Cumprimento não confirmado"], caminho:"Pedido via Lei de Acesso à Informação à Secretaria de Estado da Educação de Santa Catarina da íntegra e do número do ofício circular, da lista de escolas destinatárias e dos registros de execução e eventual devolução das nove obras."},
  "SC-2024":{obstaculos:["Fonte única","Documento interno não publicado"], caminho:"Pedido via Lei de Acesso à Informação à Secretaria de Estado da Educação de Santa Catarina do comunicado de revisão de acervo e da lista de unidades que receberam os exemplares."},
  "RO-2020":{obstaculos:["Documento interno não publicado"], caminho:"A cópia pública do Adendo já foi localizada e reconciliada. A busca em fontes abertas não encontrou a íntegra do processo SEI 0029.051300/2020-91, o resultado da sindicância ou a recomendação integral do MP-RO. Se esses documentos não estiverem publicamente disponíveis, manter a lacuna explicitada, sem presumir o conteúdo ou o desfecho."},
  "PALM-2021-06":{obstaculos:["Documento interno não publicado","Divergência entre fontes"], caminho:"Manter a divergência das versões do inventário explicitada; buscar em fontes públicas a relação individual dos 5.165 itens e documentos sobre sua destinação. Sem lista ou prova de destino, preservar a lacuna sem presumir descarte."},
@@ -1049,7 +1049,7 @@ const PAPEIS = [
  {ato:"MS-2024", agente:"sed-ms", papel:"Execução"},
  {ato:"MS-2024", agente:"sed-ms", papel:"Resposta ou reversão", nota:"Anunciou a devolução em 23 de abril de 2024."},
  {ato:"SC-2024", agente:"sed-sc", papel:"Decisão", nota:"A pessoa responsável não está identificada nas fontes."},
- {ato:"SC-2023", agente:"sed-sc", papel:"Decisão", nota:"Estrutura regional da Secretaria; a coordenadoria específica não está identificada."},
+ {ato:"SC-2023", agente:"sed-sc", papel:"Decisão", nota:"A CRE de Florianópolis foi identificada por cruzamento dos atos de designação dos dois signatários publicados no Diário Oficial; a íntegra do ofício circular e os registros de execução ainda não foram localizados."},
  {ato:"SC-2023", agente:"waldemar-ronssem-junior", papel:"Assinatura", cargo:"supervisor regional de Educação"},
  {ato:"SC-2023", agente:"anelise-dos-santos-de-medeiros", papel:"Assinatura", cargo:"integradora regional"},
  {ato:"SC-2023", agente:"leonel-camasao", papel:"Denúncia ou fiscalização", cargo:"suplente de vereador (PSOL)", nota:"Levou o caso ao Ministério Público."},
