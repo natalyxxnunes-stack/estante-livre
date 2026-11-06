@@ -190,3 +190,8 @@ A sentença de mérito de 20/07/2026, proferida pela Vara da Infância e Juventu
 **Pendências:** comprovar a redisponibilização por unidade escolar; obter cópia integral da sentença e certidão de intimação; verificar eventual recurso e trânsito em julgado. A íntegra da sentença não foi localizada em fonte pública, e o processo tramita sob segredo de Justiça.
 
 Fontes: https://sampi.net.br/ovale/noticias/2994720/vale-do-paraiba/2026/07/sjc-justica-determina-volta-de-obra-que-cita-marielle-as-escolas ; https://noticias.uol.com.br/cotidiano/ultimas-noticias/2026/07/29/juiza-manda-prefeitura-devolver-as-escolas-livro-com-marielle-em-sao-jose.ghtm ; https://www1.folha.uol.com.br/ciencia/2026/07/justica-determina-volta-de-livro-que-retrata-marielle-a-escolas-em-sao-jose-dos-campos.shtml
+
+
+## EL-029 — UniRV / Eu receberia as piores notícias de seus lindos lábios — 06/11/2026
+
+Foi localizada uma publicação institucional anterior à controvérsia: em 12/04/2023, a própria UniRV divulgou a lista de obras do vestibular de Medicina e incluiu expressamente o romance de Marçal Aquino. A nota oficial de 26/04, publicada em 27/04, afirma que a Coordenação do Vestibular decidiu excluí-lo após tomar conhecimento do conteúdo e da polêmica, embora a indicação original tivesse sido feita por banca de professores. A nova fonte confirma a inclusão original e fortalece a cronologia; não resolve a lacuna de identificação nominal dos integrantes da Coordenação ou do agente que formalizou a exclusão. Fonte: https://unirv.edu.br/ver_noticias.php?codabr=18320.
