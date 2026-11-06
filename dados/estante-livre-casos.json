@@ -2670,7 +2670,7 @@
    "mecanismo": "Veto a atividade",
    "estagio": "Decisão ou ordem",
    "situacao": "Revertido",
-   "desfecho": "Suspensão cancelada por decisão liminar",
+   "desfecho": "Ato administrativo anulado por sentença; tutela confirmada definitivamente em 02/12/2024",
    "eixo_tematico": "Cultura afro-brasileira",
    "justificativa_declarada": "Pais consideraram a obra “agressiva”, citando passagens sobre pacto de sangue e conflitos entre personagens.",
    "pressao_ou_pedido": "Pais, familiares e autoridades locais contestaram a abordagem pedagógica; o comunicado oficial não identifica nominalmente os reclamantes.",
@@ -2680,8 +2680,8 @@
    "resposta_ou_reversao": "Em 27 de junho de 2024, o juiz Espagner Wallysen Vaz Leite deferiu medida liminar e determinou o cancelamento imediato da suspensão temporária dos trabalhos pedagógicos.",
    "ato_ou_documento": "Comunicado oficial da Secretaria Municipal de Educação, publicado em 20 de junho de 2024, reconhecendo a orientação para suspender temporariamente os trabalhos pedagógicos; decisão liminar da 1ª Vara Cível no processo nº 5006658-14.2024.8.13.0183 determinou o cancelamento imediato da suspensão temporária.",
    "verificado": "Sim",
-   "pendencia": "Identificar o signatário formal do ato administrativo e confirmar o trânsito em julgado da ação popular.",
-   "nota": "Em comunicado oficial de 20 de junho, a Secretaria Municipal de Educação afirmou que orientou a suspensão temporária dos trabalhos pedagógicos com o livro após manifestações de pais, familiares e autoridades locais — não declarou recolhimento de todos os exemplares. Em decisão liminar assinada em 27 de junho de 2024, o juiz Espagner Wallysen Vaz Leite, da 1ª Vara Cível, determinou o cancelamento imediato da suspensão temporária, sob multa diária de R$ 5 mil. A cópia consultada não permite identificar o autor da ação, cujo nome aparece ocultado.",
+   "pendencia": "Confirmar o trânsito em julgado e identificar, se possível, o agente público que formalizou o ato administrativo original. A sentença de 02/12/2024 anulou o ato, mas a cópia pública consultada não traz certidão de trânsito em julgado.",
+   "nota": "Em comunicado de 20/06/2024, a Secretaria Municipal de Educação informou a suspensão temporária dos trabalhos pedagógicos com o livro após manifestações de pais, familiares e autoridades locais; a medida não foi um recolhimento geral dos exemplares. A sentença de 02/12/2024 registra que o Município informou ter retomado as atividades normais com a obra após reunião pedagógica de 21/06 e envio de e-mail às escolas em 28/06/2024. A decisão judicial de 27/06/2024 havia determinado o cancelamento imediato da suspensão, sob multa diária de R$ 5 mil. No mérito, o juiz Espagner Wallysen Vaz Leite, da 1ª Vara Cível de Conselheiro Lafaiete, julgou procedente a ação popular, anulou o ato administrativo da Secretaria e confirmou a tutela antecipada, tornando-a definitiva. A sentença afirma que a suspensão não foi anulada administrativamente; por isso, afastou a alegação municipal de perda do objeto. A íntegra da sentença foi localizada em reprodução pública, mas ainda não foi obtida certidão de trânsito em julgado. A decisão identifica a Secretaria como autora do ato, mas não individualiza seu signatário.",
    "agentes": [
     {
      "nome": "Secretaria Municipal de Educação de Conselheiro Lafaiete",
@@ -2722,6 +2722,12 @@
      "titulo": "Processo nº 5006658-14.2024.8.13.0183 · decisão liminar em ação popular",
      "data": "2024-06-27",
      "url": "https://www.migalhas.com.br/arquivos/2024/6/C9AB64BF939FD5_%C2%B7ProcessoJudicialEletronico-1%C2%BA.pdf"
+    },
+    {
+     "veiculo": "TJMG · sentença reproduzida no Jusbrasil",
+     "titulo": "Processo nº 5006658-14.2024.8.13.0183 · sentença que anula o ato de suspensão de O Menino Marrom",
+     "data": "2024-12-02",
+     "url": "https://www.jusbrasil.com.br/jurisprudencia/tj-mg/2904317608/inteiro-teor-2904317613"
     }
    ]
   },
