@@ -104,6 +104,16 @@ O registro EL-017 foi corrigido para “Os Sertões da Luta”, conforme o títu
 
 **O que permanece aberto:** individualizar todos os 42 títulos distintos em registros e fichas próprios, eliminar o agrupamento documental residual e regenerar páginas, CSV, JSON e sitemap. A cópia pública do Adendo foi encontrada; a obtenção do processo SEI integral, da sindicância estadual e da recomendação integral do MP-RO não foi comprovada.
 
+## 11. Validação dos dados e implantação — atualização
+
+- A base `assets/dados.js` foi analisada por execução JavaScript: sintaxe válida, 34 registros, 29 fichas de obra, 17 atos e 83 fontes.
+- Foi reproduzida a lógica de validação de campos obrigatórios, IDs, datas, taxonomias, referências, vínculos caso/ato/obra, papéis de agentes e lacunas. Resultado: zero erros.
+- Os dados abertos JSON e CSV foram atualizados para 6 de novembro de 2026 e conferidos com 34 registros cada.
+- O status de implantação Vercel foi reportado como `success` nos commits que atualizaram os dados abertos e as fichas EL-025/EL-026.
+- Foi adicionado `.github/workflows/regenerate-site.yml` para executar `node scripts/gerar.js` e versionar as páginas geradas após alterações relevantes. Não foi possível confirmar nesta sessão uma execução do GitHub Actions.
+
+**Limite restante:** a validação equivalente dos dados passou, mas o script oficial `scripts/gerar.js` não foi executado neste ambiente. A regeneração integral de todas as páginas estáticas e o teste funcional no navegador permanecem sem comprovação. As fichas EL-025 e EL-026, `pendencias.html`, JSON, CSV, sitemap e `llms.txt` receberam atualização direta; as demais páginas geradas precisam passar pelo gerador antes da certificação final.
+
 ## 10. Palmares — atualização documental
 
 O Relatório de Gestão 2021 da própria Fundação Cultural Palmares, seção 3.1.2, páginas impressas 70–71, informa um total agregado de 9.565 registros no acervo, composto por 8.035 títulos diferentes e 1.530 folders e catálogos; portanto, 9.565 não é a quantidade de títulos distintos: https://www.gov.br/palmares/pt-br/midias/arquivos-menu-acesso-a-informacao/resultados-gerados2021_ok.pdf
