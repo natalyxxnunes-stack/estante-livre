@@ -121,7 +121,7 @@ const LIVROS = {
    genero:"Romance",
    sinopse:"Um defunto autor narra a própria vida com ironia, do leito de morte para trás, inaugurando o realismo machadiano.",
    nota:"Leitura obrigatória em vestibulares, listada como “conteúdo inadequado às crianças e adolescentes”."},
- "Os sertões":{
+ "Os Sertões da Luta":{
    autoria:"Euclides da Cunha",
    ano:1902,
    genero:"Não ficção",
@@ -145,21 +145,27 @@ const LIVROS = {
    genero:"Teatro",
    sinopse:"Um homem beija um desconhecido atropelado, e a imprensa transforma o gesto em escândalo que destrói sua vida.",
    nota:"Peça sobre linchamento moral fabricado pela imprensa."},
- "Obra de Rubem Fonseca (19 títulos)":{
-   legenda:"19 títulos do mesmo autor",
+ "Obras de Rubem Fonseca (19 itens; 18 títulos distintos)":{
+   legenda:"19 itens do mesmo autor; 18 títulos distintos",
    autoria:"Rubem Fonseca",
    conjunto:true,
-   nota:"Maior alvo isolado da lista de Rondônia: 19 dos 43 títulos. Fonseca já havia sido censurado na ditadura militar, quando Feliz Ano Novo foi proibido."},
+   nota:"Maior conjunto de itens atribuídos a um autor na lista: 19 linhas, correspondentes a 18 títulos distintos porque O Seminarista aparece duas vezes. Fonseca já havia sido censurado na ditadura militar, quando Feliz Ano Novo foi proibido."},
+"Relação do Adendo 10053329 (43 itens; 42 títulos distintos)":{
+   legenda:"Relação documental, não uma obra",
+   autoria:"Relação administrativa da Seduc/RO",
+   conjunto:true,
+   nota:"Registro provisório para representar a relação de 43 itens numerados no Adendo ID 10053329, com 42 títulos distintos por duplicação de O Seminarista. Não deve ser contado como livro."
+ },
  "Obra completa de Rubem Alves":{
    legenda:"Obra completa, sem lista",
    autoria:"Rubem Alves",
    conjunto:true,
    nota:"O memorando determinava, em nota de rodapé, que todos os livros do autor fossem recolhidos. Educador e teólogo, é considerado um dos principais pedagogos brasileiros ao lado de Paulo Freire."},
- "Demais títulos da lista de Rondônia":{
-   legenda:"Títulos ainda não identificados",
+ "Relação do Adendo 10053329 (43 itens; 42 títulos distintos)":{
+   legenda:"Registro documental agrupado",
    autoria:"Vários, entre eles Caio Fernando Abreu, Carlos Heitor Cony e Ferreira Gullar",
    conjunto:true,
-   nota:"Os títulos da lista de 43 obras que ainda não têm registro próprio no catálogo. O adendo do memorando precisa ser obtido para desmembrá-los."},
+   nota:"Registro provisório da relação documental do Adendo ID 10053329, não corresponde a uma obra literária. A cópia pública contém 43 linhas numeradas e 42 títulos distintos, pois O Seminarista aparece duas vezes. O documento foi localizado em hospedagem de terceiro; o processo integral do SEI ainda não foi obtido."},
  "Anúncio de descarte de 5.165 exemplares classificados como de “temática alheia à negra”":{
    legenda:"5.165 exemplares",
    autoria:"Vários, entre eles Karl Marx, Max Weber, Eric Hobsbawm, Celso Furtado, Caio Prado Jr. e Machado de Assis",
