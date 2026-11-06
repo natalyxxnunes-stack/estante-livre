@@ -892,3 +892,4 @@ details.mais[open] summary{margin-bottom:12px}
 .tag.s-incerta{background:var(--papel);color:var(--tinta);border:1px dashed var(--linha-forte)}
 .tag.s-caiu{background:var(--azul);color:#fff}
 @media(max-width:600px){.difusao li{grid-template-columns:1fr;gap:2px}}
+.analysis-table td.cal-perto{font-weight:700;color:var(--verm-escuro)}

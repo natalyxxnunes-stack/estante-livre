@@ -282,6 +282,7 @@ const LIVROS = {
    eleva o nível para "Documentado". Ver NIVEIS e a página Metodologia. */
 const ATOS = {
  "RS-2024":{
+   reversao:{via:"Recuo da administração", data:"2024-03-01", fonte:"bdf-rs", nota:"A Secretaria estadual desautorizou a ordem da coordenadoria no mesmo dia."},
    nome:"Ofício da 6ª Coordenadoria Regional de Educação (RS)",
    data:"2024-03-01",
    fim:"2024-03-05",
@@ -300,6 +301,7 @@ const ATOS = {
      resposta:"A Secretaria de Educação do Rio Grande do Sul desautorizou a ordem no mesmo dia."
    }},
  "PR-2024":{
+   reversao:{via:"Recuo da administração", data:"2024-04-12", fonte:"pn-volta", nota:"A Secretaria anunciou a devolução com orientações pedagógicas. A editora havia ido à Justiça, mas a volta foi decisão do governo."},
    nome:"Ofícios da Secretaria da Educação do Paraná e do Núcleo Regional de Curitiba",
    data:"2024-03-04",
    fim:"2024-04-09",
@@ -317,6 +319,7 @@ const ATOS = {
      resposta:"A obra voltou às escolas em abril de 2024, acompanhada de orientações pedagógicas."
    }},
  "GO-2024":{
+   reversao:{via:"Recuo da administração", data:"2024-04-05", fonte:"dn-volta-go-pr", nota:"A Secretaria informou que o livro voltou ao acervo depois de análise interna."},
    nome:"Recolhimento na rede estadual de Goiás",
    data:"2024-03-07",
    fim:"2024-04-09",
@@ -333,6 +336,7 @@ const ATOS = {
      resposta:"O livro voltou às escolas em abril de 2024."
    }},
  "MS-2024":{
+   reversao:{via:"Recuo da administração", data:"2024-04-23", fonte:"cgn-volta", nota:"O governo anunciou a devolução; a redistribuição às escolas não foi confirmada."},
    nome:"Recolhimento na rede estadual de Mato Grosso do Sul",
    data:"2024-03-07",
    fim:"2024-04-23",
@@ -383,6 +387,7 @@ const ATOS = {
      fiscalizacao:"Leonel Camasão (PSOL), suplente de vereador, levou o caso ao Ministério Público. O cadastro o identifica como autor da denúncia posterior, não como autor do pedido de retirada."
    }},
  "RO-2020":{
+   reversao:{via:"Recuo da administração", data:"2020-02-06", fonte:"mpf-ro-arquivamento", nota:"Ordem suspensa no mesmo dia, segundo o MPF. O MP-RO atuou depois e teve a recomendação acatada."},
    docPrimario:["mpf-ro-arquivamento"],
    nome:"Memorando-Circular nº 4/2020/SEDUC-DGE (RO)",
    data:"2020-02-06",
@@ -435,6 +440,7 @@ const ATOS = {
      resposta:"A Procuradoria-Geral Federal informou ao juízo que Camargo desistira da doação em julho de 2021. Em agosto, ele anunciou a segregação dos livros. Não foi localizado documento que comprove quando o acesso público foi restabelecido."
    }},
  "MG-2024":{
+   reversao:{via:"Decisão judicial", data:"2024-06-27", fonte:"decisao-lafaiete", nota:"Ação popular. Decisão de 27/06/2024 mandou cancelar a suspensão; a sentença de 02/12/2024 anulou o ato."},
    docPrimario:["comunicado-lafaiete","sentenca-lafaiete"],
    nome:"Suspensão de atividades com O menino marrom (Conselheiro Lafaiete)",
    data:"2024-06-19",
@@ -454,6 +460,7 @@ const ATOS = {
      resposta:"O Município informou no processo que retomou as atividades em 28/06/2024. Em sentença de 02/12/2024, o juiz Espagner Wallysen Vaz Leite anulou o ato administrativo e confirmou a tutela antecipada na sentença de mérito."
    }},
  "SJC-2024":{
+   reversao:{via:"Decisão judicial", data:"2026-07-20", fonte:"op-sjc", nota:"Ação do Ministério Público e da Defensoria. A liminar de 2024 foi suspensa pelo TJSP; a sentença de mérito veio dois anos depois."},
    nome:"Recolhimento de Meninas sonhadoras, mulheres cientistas (São José dos Campos)",
    data:"2024-06-04",
    fim:"2026-07-20",
@@ -524,6 +531,7 @@ const ATOS = {
      resposta:"A escola negou prejuízo pedagógico ou direcionamento ideológico. A apuração da piauí informa que não houve adoção da obra nem retirada de exemplares do acervo."
    }},
  "TAU-2025":{
+   reversao:{via:"Recuo da administração", data:"2026-07-14", fonte:"ovale-tau-jul14", nota:"Análise técnica da própria Secretaria liberou o uso com mediação docente."},
    nome:"Recolhimento de Pipoca e Picolé (Taubaté)",
    data:"2025-11-01",
    uf:"SP",
@@ -541,6 +549,7 @@ const ATOS = {
      resposta:"Em 14 de julho de 2026, a prefeitura informou que, após análise técnica da Coordenação de Área e da Equipe de Práticas Pedagógicas da Educação Infantil, o livro voltaria ao plano de ensino das turmas consideradas adequadas. A efetiva devolução dos exemplares às unidades escolares não foi confirmada."
    }},
  "FUNAP-2020":{
+   reversao:{via:"Recuo da administração", data:"2020-02-13", fonte:"folha-funap-14fev", nota:"A Funap incluiu a lista original no programa dois dias depois da repercussão."},
    nome:"Veto à lista do projeto Remição em Rede (Funap)",
    data:"2020-02-11",
    fim:"2020-02-13",
@@ -580,6 +589,7 @@ const ATOS = {
 };
 
 const FONTES = {
+ "dn-volta-go-pr": {"veic":"Diário do Nordeste","data":"2024-04-05","tit":"Goiás e Paraná voltam a incluir livro O Avesso da Pele em escolas dos estados","url":"https://diariodonordeste.verdesmares.com.br/ultima-hora/pais/goias-e-parana-voltam-a-incluir-livro-o-avesso-da-pele-em-escolas-dos-estados-1.3497771"},
  "sinop-lei-3499": {"veic":"Só Notícias","data":"2025-07-07","tit":"Prefeito de Sinop sanciona lei que proíbe livros com conteúdo erótico em escolas municipais","url":"https://www.sonoticias.com.br/politica/prefeito-de-sinop-sanciona-lei-que-proibe-livros-com-conteudo-erotico-em-escolas-municipais/"},
  "cuiaba-pl-ranalli": {"veic":"Câmara Municipal de Cuiabá","data":"2025-04-03","tit":"Projeto de lei que proíbe livros com conteúdo erótico nas escolas do município (íntegra)","url":"https://legislativo.camaracuiaba.mt.gov.br/Arquivo/Documents/PL/454653-20250403110929032941784PLN(8425).pdf"},
  "pnc-cuiaba-set": {"veic":"Ponto na Curva","data":"2025-09-26","tit":"Projeto que proíbe livros com conteúdo erótico avança na Câmara de Cuiabá","url":"https://www.pontonacurva.com.br/legislativo/projeto-que-proibe-livros-com-conteudo-erotico-avanca-na-camara-de-cuiaba/29039"},
@@ -956,6 +966,10 @@ const ESTAGIOS = ["Pressão pública","Pedido formal","Decisão ou ordem","Execu
 /* Situação atual da medida. O detalhe fica no campo desfecho. */
 /* Níveis de verificação, do mais forte ao mais fraco. "Em apuração" fica só na triagem e nunca é publicado. */
 const NIVEIS = ["Documentado","Confirmado","Parcial"];
+/* Quem reverteu a medida (ATOS[x].reversao.via). A reversão da decisão não prova a devolução física dos exemplares. */
+const VIAS_REVERSAO = ["Recuo da administração","Decisão judicial"];
+/* Eleições usadas na análise de calendário (1º turno). */
+const ELEICOES = {geral:["2018-10-07","2022-10-02","2026-10-04","2030-10-06"], municipal:["2016-10-02","2020-11-15","2024-10-06","2028-10-01"]};
 /* Como a obra chegou ao leitor, segundo as fontes do caso. "Escolha de professores" cobre lista de leitura,
    banca de vestibular, clube ou atividade definidos por educadores. Sem fonte, fica "Acervo, origem não informada". */
 const CHEGADAS = ["Programa federal (PNLD)","Compra da própria rede","Escolha de professores","Doação ou origem externa","Acervo, origem não informada"];

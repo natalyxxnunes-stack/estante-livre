@@ -91,7 +91,32 @@
   <p class="note">A origem da maior parte do acervo atingido (as listas de Rondônia e Santa Catarina, o acervo da Palmares) ainda não está documentada. Quando o catálogo souber como esses livros entraram nas bibliotecas, esta conta muda. A forma de chegada aparece em cada ficha de livro e na coluna <code>como_chegou</code> dos dados abertos.</p>
  </section>
  <section>
-  <div class="sechead"><span class="kicker">06</span><h2>O que ainda não podemos concluir</h2></div>
+  <div class="sechead"><span class="kicker">06</span><h2>E adianta reagir?</h2></div>
+  <p class="analysis-lead" id="rev-lead"></p>
+  <div class="analysis-metrics">
+   <div><strong id="rev-taxa">—</strong><span>das medidas efetivadas foram revertidas</span></div>
+   <div><strong id="rev-recuo">—</strong><span>revertidas pelo próprio governo</span></div>
+   <div><strong id="rev-just">—</strong><span>revertidas pela Justiça</span></div>
+  </div>
+  <div class="table-wrap"><table class="tab analysis-table">
+   <thead><tr><th>Ato</th><th>Via</th><th>Tempo até reverter</th><th>O que se sabe</th></tr></thead>
+   <tbody id="rev-rows"></tbody>
+  </table></div>
+  <p>Nos recuos, a medida já estava exposta publicamente, por vídeo, nota de editora, repúdio de entidades ou cobertura nacional, antes ou no mesmo dia em que o governo voltou atrás. A Justiça entrou em dois casos. Em Conselheiro Lafaiete, uma ação popular derrubou a suspensão em oito dias. Em São José dos Campos, a sentença de mérito veio dois anos depois da retirada, porque a liminar de 2024 foi suspensa em segunda instância.</p>
+  <p class="note">Reversão aqui quer dizer que a decisão caiu. Em Mato Grosso do Sul, São José dos Campos, Taubaté e na Funap, a volta física dos exemplares às escolas ou às unidades ainda não foi confirmada. A situação de cada caso está na ficha e em <a href="pendencias.html">O que falta apurar</a>.</p>
+ </section>
+ <section>
+  <div class="sechead"><span class="kicker">07</span><h2>O livro como palanque?</h2></div>
+  <p class="analysis-lead" id="cal-lead"></p>
+  <div class="table-wrap"><table class="tab analysis-table">
+   <thead><tr><th>Ato</th><th>Data</th><th>Esfera</th><th>Até a eleição da esfera</th><th>Até a próxima eleição</th></tr></thead>
+   <tbody id="cal-rows"></tbody>
+  </table></div>
+  <p id="cal-texto"></p>
+  <p class="note">Método: para cada ato, contamos os meses até o 1º turno da próxima eleição da esfera que tomou a decisão (municipal para prefeituras e universidades municipais; geral para estados, Distrito Federal e União) e até a próxima eleição de qualquer tipo. Como há eleição a cada dois anos, metade das datas do calendário fica a até 12 meses de alguma eleição, e um quarto fica a até 12 meses da eleição da própria esfera. Com 17 atos, a análise indica um padrão a acompanhar e fica longe de provar causa.</p>
+ </section>
+ <section>
+  <div class="sechead"><span class="kicker">08</span><h2>O que ainda não podemos concluir</h2></div>
   <div class="analysis-unknown">
    <div><h3>Não é um retrato de todo o país</h3><p>O catálogo reúne episódios localizados por pesquisa documental e cobertura pública. Não permite estimar a proporção nacional de atos atribuíveis a cada campo político.</p></div>
    <div><h3>Partido do governo não prova autoria</h3><p>O fato de uma medida ocorrer durante determinado governo não prova que o governador ou prefeito a tenha ordenado. É preciso localizar o ato, o signatário e a cadeia de execução.</p></div>
@@ -100,7 +125,7 @@
   </div>
  </section>
  <section>
-  <div class="sechead"><span class="kicker">07</span><h2>Como esta análise será atualizada</h2></div>
+  <div class="sechead"><span class="kicker">09</span><h2>Como esta análise será atualizada</h2></div>
   <p>As conclusões serão revistas quando entrarem novos documentos, respostas de LAI ou correções nas fichas. Se a base mudar, os números e as interpretações também mudam. A data de atualização e a regra de contagem ficam explícitas; nenhuma hipótese será promovida a fato sem fonte.</p>
   <p class="analysis-links"><a href="casos.html">Consultar os casos</a><a href="metodologia.html">Ler a metodologia</a><a href="index.html">Voltar ao painel</a></p>
  </section>
@@ -154,6 +179,39 @@ el("politicos-rows").innerHTML=idsPoliticos.map(p=>{
  const lista = CHEGADAS.map(k=>[k,cont[k]||0]);
  const mx = Math.max(...lista.map(x=>x[1]),1);
  el("chart-chegada").innerHTML = lista.map(([k,n])=>'<div class="analysis-bar-row"><span>'+esc(k)+'</span><span class="analysis-track"><i style="width:'+(n/mx*100)+'%"></i></span><b>'+n+'</b><small></small></div>').join("");
+}
+{
+ /* reversão: atos em que a medida saiu do papel (decisão ou execução) */
+ const atosArr = Object.entries(ATOS).map(([k,a])=>({k,a,cs:CASOS.filter(c=>c.ato===k)}));
+ const efetivos = atosArr.filter(x=>x.cs.some(c=>["Decisão ou ordem","Execução comprovada"].includes(c.estagio)));
+ const rev = efetivos.filter(x=>x.a.reversao);
+ const recuo = rev.filter(x=>x.a.reversao.via==="Recuo da administração").length, just = rev.length-recuo;
+ const dias = x => Math.round((new Date(x.a.reversao.data)-new Date(x.a.data))/864e5);
+ const tempo = d => d<=1 ? "no mesmo dia" : d<45 ? `${d} dias` : d<730 ? `${Math.round(d/30.44)} meses` : `${(d/365.25).toFixed(1).replace(".",",")} anos`;
+ const recuos = rev.filter(x=>x.a.reversao.via==="Recuo da administração").map(dias).sort((a,b)=>a-b);
+ const med = recuos.length ? recuos[Math.floor((recuos.length-1)/2)] : 0;
+ el("rev-taxa").textContent = `${rev.length} de ${efetivos.length}`;
+ el("rev-recuo").textContent = recuo;
+ el("rev-just").textContent = just;
+ const abertos = efetivos.filter(x=>!x.a.reversao && x.cs.some(c=>c.situacao==="Em aberto")).length;
+ const vigor = efetivos.filter(x=>x.cs.every(c=>c.situacao==="Em vigor")).length;
+ el("rev-lead").textContent = `Adianta. Das ${efetivos.length} medidas que chegaram a ser decididas ou executadas, ${rev.length} foram revertidas, ${abertos} seguem sem desfecho conhecido e ${vigor} continua em vigor. Na maioria das vezes, quem voltou atrás foi o próprio governo, e rápido: metade dos recuos aconteceu em até ${tempo(med)}.`;
+ el("rev-rows").innerHTML = rev.sort((a,b)=>dias(a)-dias(b)).map(x=>'<tr><td><a href="atos/'+x.k.toLowerCase()+'.html">'+esc(x.a.nome)+'</a></td><td>'+esc(x.a.reversao.via)+'</td><td>'+tempo(dias(x))+'</td><td>'+esc(x.a.reversao.nota)+' <a href="'+FONTES[x.a.reversao.fonte].url+'" target="_blank" rel="noopener">Fonte</a></td></tr>').join("");
+
+ /* calendário eleitoral */
+ const ger = ELEICOES.geral, mun = ELEICOES.municipal, todas = [...ger,...mun].sort();
+ const meses = (a,b) => (new Date(b)-new Date(a))/864e5/30.44;
+ const linhas = atosArr.map(x=>{
+   const esf = x.a.rede==="Municipal" ? "municipal" : "geral";
+   const pe = (esf==="municipal"?mun:ger).find(d=>d>=x.a.data), pq = todas.find(d=>d>=x.a.data);
+   return {x, esf, me:meses(x.a.data,pe), mq:meses(x.a.data,pq), pe, pq};
+ }).sort((a,b)=>a.x.a.data.localeCompare(b.x.a.data));
+ const n = linhas.length, ne = linhas.filter(l=>l.me<=12).length, nq = linhas.filter(l=>l.mq<=12).length;
+ const onda = linhas.filter(l=>l.x.a.data>="2024-03-01" && l.x.a.data<="2024-03-31").length;
+ el("cal-lead").textContent = `A hipótese aparece fraca quando se olha quem decidiu e mais forte quando se olha o calendário inteiro. ${ne} dos ${n} atos aconteceram a até 12 meses da eleição da esfera que decidiu, perto dos ${Math.round(n/4)} esperados ao acaso. Já ${nq} dos ${n} aconteceram a até 12 meses de alguma eleição, acima dos ${Math.round(n/2)} esperados.`;
+ const fmt = m => m.toFixed(0)+" meses";
+ el("cal-rows").innerHTML = linhas.map(l=>'<tr><td><a href="atos/'+l.x.k.toLowerCase()+'.html">'+esc(l.x.a.nome)+'</a></td><td>'+dataCurta(l.x.a.data)+'</td><td>'+(l.esf==="municipal"?"Municipal":"Estadual ou federal")+'</td><td'+(l.me<=12?' class="cal-perto"':'')+'>'+fmt(l.me)+'</td><td'+(l.mq<=12?' class="cal-perto"':'')+'>'+fmt(l.mq)+'</td></tr>').join("");
+ el("cal-texto").textContent = `O excesso vem quase todo de um episódio: os ${onda} atos estaduais de março de 2024 contra O avesso da pele, sete meses antes das eleições municipais. Governadores não disputavam aquela eleição; vereadores, sim, e deputados costumam apoiar candidaturas municipais. O catálogo ainda não cruzou os nomes de quem pressionou com as candidaturas registradas. Contando a onda de março como um episódio só, ${nq-onda+1} dos ${n-onda+1} episódios ficam a até 12 meses de alguma eleição. Esse cruzamento com os dados do TSE é o próximo passo para testar a hipótese.`;
 }
 montarRodape();
 </script>
