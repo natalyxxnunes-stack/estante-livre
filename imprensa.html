@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Para jornalistas · Estante Livre</title>
+<meta name="description" content="Números atualizados, achados prontos para citar, pautas abertas, dados para baixar e como citar o Estante Livre.">
+<link rel="icon" href="favicon.ico" sizes="32x32">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="theme-color" content="#D62410">
+<link rel="canonical" href="https://estante-livre-br.vercel.app/imprensa.html">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Estante Livre">
+<meta property="og:title" content="Para jornalistas · Estante Livre">
+<meta property="og:description" content="Números, achados e pautas abertas sobre censura de livros no Brasil.">
+<meta property="og:url" content="https://estante-livre-br.vercel.app/imprensa.html">
+<meta property="og:image" content="https://estante-livre-br.vercel.app/og-estante-livre.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="assets/estilo.css">
+</head>
+<body>
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+<header class="topo">
+  <div class="topo-in">
+    <a class="logo" href="index.html" aria-label="Estante Livre, página inicial">Estante <span class="redact">Livre<span class="bar" aria-hidden="true"></span></span></a>
+    <div class="tagline">Observatório de censura de livros · quem mandou tirar da estante, com qual ato, e o que aconteceu depois</div>
+    <nav class="nav" aria-label="Seções">
+      <a href="index.html">Painel</a>
+      <a href="casos.html">Casos</a>
+      <a href="livros.html">Livros</a>
+      <a href="atos.html">Atos</a>
+      <a href="normas.html">Normas</a>
+      <a href="analises.html">Análises</a>
+      <a href="historia.html">História</a>
+      <a href="mundo.html">Mundo</a>
+      <a href="metodologia.html">Metodologia</a>
+      <a href="sobre.html">Sobre</a>
+    </nav>
+  </div>
+</header>
+<main id="conteudo" tabindex="-1">
+
+<div class="wrap">
+  <div class="hero-pg">
+    <p class="kicker">PARA JORNALISTAS</p>
+    <h1>Pauta, números e fontes</h1>
+    <p class="lede">Tudo o que você precisa para citar o Estante Livre ou partir dele para uma reportagem: os números de hoje, os achados com link para a apuração, as pautas que seguem abertas e os dados para baixar.</p>
+    <p class="note" id="im-atual"></p>
+  </div>
+</div>
+
+<div class="bignums">
+  <div class="bignums-in">
+    <div class="bignum"><div class="n" id="im-regs">–</div><div class="l">REGISTROS</div></div>
+    <div class="bignum"><div class="n" id="im-atos">–</div><div class="l">ATOS</div></div>
+    <div class="bignum"><div class="n" id="im-ufs">–</div><div class="l">UNIDADES DA FEDERAÇÃO</div></div>
+    <div class="bignum"><div class="n" id="im-normas">–</div><div class="l">NORMAS RESTRITIVAS</div></div>
+    <div class="bignum"><div class="n" id="im-cump">–</div><div class="l">DECISÕES SEM CUMPRIMENTO CONFIRMADO</div></div>
+  </div>
+</div>
+
+<div class="wrap">
+  <section>
+    <div class="sechead"><span class="kicker">01</span><h2>Achados para citar</h2></div>
+    <p class="note">Cada frase sai dos dados atuais e leva à apuração completa. Os números se atualizam sozinhos quando a base muda.</p>
+    <div class="achados" id="achados"></div>
+  </section>
+
+  <section>
+    <div class="sechead"><span class="kicker">02</span><h2>Pautas abertas</h2><span class="count" id="count-pautas"></span></div>
+    <p class="note">Casos com documento ou desfecho ainda por confirmar. Cada um traz o obstáculo e o caminho para fechar a lacuna. Se você apurar algum, conte para o observatório pela página <a href="sobre.html">Sobre</a>: a ficha cita a sua reportagem.</p>
+    <div class="table-wrap"><table class="tab">
+      <thead><tr><th>CASO</th><th>O QUE FALTA</th><th>CAMINHO</th></tr></thead>
+      <tbody id="pautas"></tbody>
+    </table></div>
+  </section>
+
+  <section>
+    <div class="sechead"><span class="kicker">03</span><h2>Dados e citação</h2></div>
+    <div class="gloss">
+      <div class="gterm"><h3>Como citar</h3><div class="gdef">Na reportagem: “segundo o Estante Livre, observatório de censura de livros”, com link para a página do caso. Cada caso tem endereço permanente. Em trabalho acadêmico, use o DOI <a id="im-doi" target="_blank" rel="noopener"></a>.</div></div>
+      <div class="gterm"><h3>Dados abertos</h3><div class="gdef">Base de casos em <a href="dados/estante-livre-casos.csv">CSV</a> e <a href="dados/estante-livre-casos.json">JSON</a>, base de normas em <a href="dados/estante-livre-normas.csv">CSV</a>. Licença CC BY 4.0. As colunas estão no <a href="metodologia.html">dicionário de dados</a>.</div></div>
+      <div class="gterm"><h3>Método</h3><div class="gdef">Como um caso entra no catálogo, os níveis de verificação e os vieses conhecidos estão na <a href="metodologia.html">Metodologia</a>. Ausência de registro num estado indica falta de informação.</div></div>
+      <div class="gterm"><h3>Imagem para matéria</h3><div class="gdef">A arte de compartilhamento do observatório pode ser usada com crédito. <a href="og-estante-livre.jpg" download>Baixar imagem (1200 × 630)</a></div></div>
+      <div class="gterm"><h3>Pesquisas de referência</h3><div class="gdef">Os levantamentos acadêmicos sobre censura de livros no Brasil que o observatório usa estão listados na <a href="metodologia.html">Metodologia</a>, com link para cada artigo. As autoras e os autores são boas fontes para entrevista.</div></div>
+      <div class="gterm"><h3>Guia para escolas</h3><div class="gdef">Para matérias de serviço: o que professores e bibliotecários podem fazer quando mandam tirar um livro. <a href="guia.html">Ler o guia</a> · <a href="guia-estante-livre.pdf" download>PDF</a></div></div>
+    </div>
+  </section>
+
+  <section style="border-bottom:0">
+    <div class="sechead"><span class="kicker">04</span><h2>Contato</h2></div>
+    <p class="note">Entrevistas, correções e envio de casos pelo contato da página <a href="sobre.html">Sobre</a>. O Estante Livre é um projeto independente de Nataly Nunes Pinto, jornalista.</p>
+  </section>
+</div>
+
+</main>
+<footer class="foot">
+  <div class="foot-in">
+    <span>Estante Livre · um projeto de Nataly Nunes Pinto</span>
+    <span class="foot-links"><a href="glossario.html">Glossário</a><a href="cobertura.html">Cobertura</a><a href="pendencias.html">O que falta apurar</a><a href="guia.html">Guia para escolas</a><a href="imprensa.html">Para jornalistas</a><a href="relate.html">Relate um caso</a><a href="dados/estante-livre-casos.csv">Dados abertos</a><a href="sobre.html">Contato</a></span>
+    <span id="foot-meta"></span>
+  </div>
+</footer>
+
+<script src="assets/dados.js"></script>
+<script src="assets/comum.js"></script>
+<script>
+const $ = id => document.getElementById(id);
+const atos = Object.entries(ATOS);
+const ufs = new Set(CASOS.map(c=>c.uf)).size;
+const cumps = atos.filter(([k,a])=>a.cumprimento);
+$("im-regs").textContent = CASOS.length;
+$("im-atos").textContent = atos.length;
+$("im-ufs").textContent = ufs;
+$("im-normas").textContent = NORMAS.length;
+$("im-cump").textContent = cumps.length;
+$("im-atual").textContent = `Base atualizada em ${dataCurta(ATUALIZADO)}.`;
+$("im-doi").href = "https://doi.org/"+DOI; $("im-doi").textContent = DOI;
+
+/* achados calculados da base */
+const efetivos = atos.filter(([k])=>CASOS.some(c=>c.ato===k && ["Decisão ou ordem","Execução comprovada"].includes(c.estagio)));
+const rev = efetivos.filter(([k,a])=>a.reversao), recuo = rev.filter(([k,a])=>a.reversao.via==="Recuo da administração").length;
+const obras = {}; CASOS.forEach(c=>{ obras[obraDe(c)] = (LIVROS[obraDe(c)]||{}).chegada; });
+const conhec = Object.values(obras).filter(v=>v && v!=="Acervo, origem não informada");
+const escolha = conhec.filter(v=>["Programa federal (PNLD)","Compra da própria rede","Escolha de professores"].includes(v)).length;
+const citam = NORMAS.filter(n=>n.citaLivro).length;
+const sjc = ATOS["SJC-2024"] && ATOS["SJC-2024"].cumprimento;
+const ver = CASOS.filter(verificado).length;
+const achados = [
+  {t:`${rev.length} de ${efetivos.length} medidas de retirada de livros que chegaram a ser decididas ou executadas no Brasil desde 2019 foram revertidas; ${recuo} delas pelo próprio governo, sem decisão judicial.`, href:"analises.html", lab:"Análises · E adianta reagir?"},
+  {t:`Uma semana depois de O avesso da pele ser recolhido no Paraná, a Assembleia do Amazonas recebeu um projeto de lei contra “conteúdo erótico” nas escolas que cita o livro. O mesmo texto reaparece quase igual em outros projetos, e ${citam} deles usam a obra como justificativa.`, href:"normas.html", lab:"Normas"},
+  {t:`Das ${conhec.length} obras atingidas cuja origem é conhecida, ${escolha} tinham chegado às escolas por escolha de educadores ou do próprio poder público: PNLD, compra da rede ou indicação de professores.`, href:"analises.html", lab:"Análises · Como esses livros chegaram à escola"},
+  {t:`Nos registros em que um parlamentar aparece identificado como autor da pressão ou do pedido, todos são de partidos geralmente posicionados à direita ou à centro-direita.`, href:"analises.html", lab:"Análises · Quem pressiona"},
+  sjc ? {t:`A sentença que mandou devolver Meninas sonhadoras, mulheres cientistas às escolas de São José dos Campos completa ${textoDias(diasDesde(sjc.desde))} sem cumprimento confirmado.`, href:"casos/el-028.html", lab:"Caso EL-028"} : null,
+  {t:`O Estante Livre reúne ${CASOS.length} registros de retirada, restrição ou pressão contra livros, ligados a ${atos.length} atos em ${ufs} unidades da federação desde 2019; ${ver} estão verificados com duas ou mais fontes.`, href:"index.html", lab:"Painel"}
+].filter(Boolean);
+$("achados").innerHTML = achados.map((a,i)=>`<figure class="achado"><blockquote id="ac-${i}">${esc(a.t)}</blockquote><figcaption><a href="${a.href}">${esc(a.lab)}</a><button class="g-copiar-ac" type="button" data-i="${i}">Copiar</button></figcaption></figure>`).join("");
+document.querySelectorAll(".g-copiar-ac").forEach(b=>b.addEventListener("click",()=>{
+  const t = document.getElementById("ac-"+b.dataset.i).textContent + " (Estante Livre, " + new URL(achados[b.dataset.i].href, location.href).href + ")";
+  const ok = ()=>{ b.textContent="Copiado"; setTimeout(()=>b.textContent="Copiar",1600); };
+  if(navigator.clipboard) navigator.clipboard.writeText(t).then(ok, ()=>prompt("Copie:", t)); else prompt("Copie:", t);
+}));
+
+/* pautas abertas: lacunas por ato */
+const pautas = Object.entries(LACUNAS).map(([k,l])=>({k,l,a:ATOS[k]})).sort((x,y)=>y.a.data.localeCompare(x.a.data));
+$("count-pautas").innerHTML = `<b>${pautas.length}</b> atos`;
+$("pautas").innerHTML = pautas.map(p=>`<tr><td><a href="atos/${p.k.toLowerCase()}.html">${esc(p.a.nome)}</a></td><td>${esc(p.l.obstaculos.join(" · "))}</td><td>${esc(p.l.caminho)}</td></tr>`).join("");
+montarRodape();
+</script>
+</body>
+</html>
