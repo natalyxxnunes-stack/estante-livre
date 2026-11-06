@@ -480,3 +480,41 @@ Foram feitas buscas indexadas por `2023NE000369`, UG 344041, processo 01420.1008
 1. **Mudança:** NE 2023NE000369 identificada; ainda faltam ficha completa do empenho, liquidações, pagamentos, medição e romaneio.
 2. **Desinfestação:** dotação orçamentária própria identificada no contrato, mas número da NE ainda não identificado; faltam execução, relatórios técnicos, recebimento e pagamentos.
 3. **Correção metodológica:** não cruzar a NE da mudança com o contrato de desinfestação; são instrumentos e classificações orçamentárias distintas.
+
+
+## 23. EL-025 — conferência cruzada do edital e contrato de desinfestação: divergência na unidade gestora e prova exigida de execução
+
+### Divergência documental na dotação do Contrato 10/2023
+
+A conferência cruzada do Edital 04/2023 e do Contrato 10/2023 revelou uma inconsistência que precisa ser preservada no dossiê, sem escolher silenciosamente um dos números:
+
+- **Edital 04/2023, item 2.1:** Gestão/Unidade 34028/344041; Fonte 100; PT 225954; ND 33.90.39; PI C20ZM4PA001.
+- **Contrato 10/2023, cabeçalho:** identifica Unidade Gestora 344041.
+- **Contrato 10/2023, cláusula 4.1:** registra Gestão/Unidade 344010/340031; Fonte 0100; PT 225954; ND 339039; PI C20ZM4PA001.
+
+Portanto, a cláusula 4.1 do contrato diverge tanto da identificação da UG no cabeçalho quanto da dotação do edital, no campo Gestão/Unidade. Os demais elementos orçamentários coincidem substancialmente. Isso é uma divergência formal verificável nos documentos públicos; por si só, não permite concluir irregularidade, empenho inválido ou prejuízo. Para localizar a NE e os pagamentos, o cruzamento deve considerar a UG 344041 indicada no cabeçalho e no edital, sem descartar a divergência da cláusula 4.1. A correção oficial/apostilamento ou o registro contábil que explique o dado não foi localizado.
+
+Fontes primárias:
+- Edital 04/2023, item 2.1: https://www.gov.br/palmares/pt-br/midias/arquivos-licitacao/edital4-2023.pdf
+- Contrato 10/2023, cabeçalho e cláusula 4.1: https://www.gov.br/palmares/pt-br/midias/arquivos-contratos/2023/1-gorestauro-contrato.pdf
+
+### O termo de referência torna verificável a prova esperada da execução
+
+O Termo de Referência do Edital 04/2023 estabelece requisitos objetivos que permitem testar a execução, não apenas a existência do contrato:
+
+1. O objeto licitado é a desinfestação por atmosfera anóxia de 197 m³ de arquivo intermediário, arquivo permanente, livros, obras e quadros da FCP.
+2. O plano de trabalho deveria prever desinfestação ininterrupta por pelo menos 30 dias.
+3. Todas as etapas deveriam ser fotografadas; as imagens deveriam integrar relatório circunstanciado entregue pela contratada ao final do processo.
+4. Se a inspeção no recebimento provisório detectasse agentes biológicos ativos, a desinfestação deveria ser refeita por mais 30 dias.
+5. A documentação comprobatória deveria ser entregue em até cinco dias corridos do adimplemento da parcela. A fiscalização deveria produzir relatório circunstanciado; o gestor deveria emitir termo circunstanciado de recebimento definitivo, baseado nos relatórios e documentos, e somente então autorizar nota fiscal com valor dimensionado pela fiscalização.
+
+Esses requisitos definem um conjunto documental esperado: plano de trabalho aprovado, registros fotográficos, relatório final da contratada, relatórios da fiscalização, termo de recebimento provisório/definitivo, instrumento de medição, nota fiscal e registros de liquidação/pagamento. A ausência desses documentos nas buscas públicas desta rodada não prova que não foram produzidos; significa que ainda não foram localizados.
+
+Fonte primária: Edital 04/2023, itens 8.2.4, 8.2.14, 16.1 a 16.4 e Termo de Referência: https://www.gov.br/palmares/pt-br/midias/arquivos-licitacao/edital4-2023.pdf
+
+### Resultado desta rodada
+
+- A FCP publicou uma página oficial de Contratos 2023 que vincula o Contrato 10/2023 ao processo 01420.100133/2022-11 e disponibiliza contrato e publicação do extrato; isso confirma a trilha documental oficial, mas não a execução material.
+- Foi identificada divergência na Gestão/Unidade entre edital e cláusula 4.1 do contrato, com a UG 344041 também expressa no cabeçalho contratual.
+- Foram identificados requisitos técnicos e administrativos específicos para comprovar a execução dos 197 m³. Até esta rodada, não foram localizados plano de trabalho aprovado, registros fotográficos, relatório final, termo de recebimento definitivo, nota fiscal, liquidação ou ordem bancária.
+- Não concluir que a desinfestação ocorreu ou deixou de ocorrer, nem que o Acervo Clóvis Moura foi incluído no conjunto tratado: o objeto contratual é amplo e não individualiza a coleção.
