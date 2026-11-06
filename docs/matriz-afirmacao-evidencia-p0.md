@@ -308,3 +308,13 @@ Nova busca não localizou documentos primários adicionais para EL-028, EL-030, 
 | EL-035 | Escola pediu recolhimento e SME iniciou levantamento/recolhimento para análise | Pedido assinado visto por Bonde/Folha; resposta da SME à CBN | Pedido e início da análise confirmados | Que houve exclusão definitiva ou decisão final |
 
 **Critério:** fechar a afirmação comprovada, não a lacuna que vem depois dela. Fontes completas e ressalvas constam no documento de pesquisa complementar.
+
+
+## Atualização de fonte — EL-025 / Palmares (05/11/2026)
+
+| Afirmação | Fonte adicional | O que sustenta | O que não sustenta |
+|---|---|---|---|
+| O Relatório Público 01/CNIRC circulou em 2021 e tinha conteúdo identificável | França, Cestari e Modesto, *Revista Letras* (UFPR), n. 105, 2022, pp. 86–108 | Identifica o relatório como material principal, cita a variante `cnirc01_liminar_v2_08_07.pdf` e reproduz excertos atribuídos às páginas 11 e 26 | Não fornece a íntegra do PDF nem valida a lista primária de 300 entradas |
+| A variante histórica de 08/07/2021 foi citada academicamente como relatório de 76 páginas | Júnior e Santos, capítulo em *Perspectivas Socioantropológicas sobre a Amazônia*, NAEA/UFPA, 2024 | Confirma título, autoria institucional, descrição de oito partes e a variante de URL | Não prova que a versão de 08/07 seja idêntica à versão datada de 10/06 nem resolve a diferença de paginação |
+
+**Conclusão:** manter EL-025 parcialmente verificado. A bibliografia e a rastreabilidade melhoraram; a prova primária continua ausente.
