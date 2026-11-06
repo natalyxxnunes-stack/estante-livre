@@ -26,18 +26,23 @@ function contexto(raiz){
     console
   };
   vm.createContext(ctx);
-  vm.runInContext(ler("assets/dados.js") + "\n;this.__D={ATOS,AGENTES,PAPEIS,TIPOS_PAPEL,CASOS,LIVROS,FONTES,MODALIDADES,ESTAGIOS,SITUACOES,EIXOS,CORRECOES,RESPONSABILIDADES,DOCUMENTOS_ATOS,ATUALIZADO,CONTATO,OBSTACULOS,LACUNAS};", ctx);
+  vm.runInContext(ler("assets/dados.js") + "\n;this.__D={ATOS,AGENTES,PAPEIS,TIPOS_PAPEL,CASOS,LIVROS,FONTES,MODALIDADES,ESTAGIOS,SITUACOES,EIXOS,CORRECOES,RESPONSABILIDADES,DOCUMENTOS_ATOS,ATUALIZADO,CONTATO,OBSTACULOS,LACUNAS,CONTEXTO_PARTIDARIO};", ctx);
   vm.runInContext(ler("assets/comum.js") + "\n;this.__F={esc,obraDe,slug,ordenar,casoHTML,livroHTML,dataLegivel,urlCaso,urlLivro,urlAto,agentesDoAto};", ctx);
   return Object.assign(ctx.__F, {__D: ctx.__D});
 }
 const R = contexto("");      // páginas na raiz
 const S = contexto("../");   // páginas em casos/ e livros/
 const D = R.__D;
-const { CASOS, LIVROS, FONTES, MODALIDADES, ESTAGIOS, SITUACOES, EIXOS, ATUALIZADO, ATOS, AGENTES, PAPEIS, TIPOS_PAPEL, OBSTACULOS, LACUNAS } = D;
+const { CASOS, LIVROS, FONTES, MODALIDADES, ESTAGIOS, SITUACOES, EIXOS, ATUALIZADO, ATOS, AGENTES, PAPEIS, TIPOS_PAPEL, OBSTACULOS, LACUNAS, CONTEXTO_PARTIDARIO } = D;
 const esc = R.esc, obraDe = R.obraDe, slug = R.slug;
 
 /* ---------- 1. validação ---------- */
 const erros = [];
+if(!Array.isArray(CONTEXTO_PARTIDARIO) || CONTEXTO_PARTIDARIO.length!==19) erros.push("CONTEXTO_PARTIDARIO: esperado exatamente 19 registros documentais");
+for(const [i,x] of (CONTEXTO_PARTIDARIO||[]).entries()){
+  if(!x.pessoa || !x.partido || !x.cobertura || !x.status || !Array.isArray(x.fontes) || !x.fontes.length) erros.push(`CONTEXTO_PARTIDARIO[${i}]: campos obrigatórios ausentes`);
+  for(const url of x.fontes||[]){try{const u=new URL(url); if(!["https:","http:"].includes(u.protocol)) erros.push(`CONTEXTO_PARTIDARIO[${i}]: protocolo inválido`);}catch{erros.push(`CONTEXTO_PARTIDARIO[${i}]: URL inválida: ${url}`);}}
+}
 const ids = new Set();
 const OBRIG = ["id","data","ato","titulo","uf","tipo","rede","quem","alegacao","eixo","modalidade","estagio","situacao","desfecho","verificado","fontes"];
 for(const c of CASOS){
