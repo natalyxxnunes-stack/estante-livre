@@ -1,5 +1,7 @@
 # Estante Livre
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24022607.svg)](https://doi.org/10.5281/zenodo.24022607)
+
 Observatório de censura e retirada de livros em bibliotecas brasileiras. Um projeto de Nataly Nunes Pinto.
 
 Site estático em HTML, CSS e JavaScript puro. Na Vercel: Framework Preset "Other", Build Command e Output Directory em branco. As páginas geradas ficam no repositório, então o site funciona sem etapa de build.

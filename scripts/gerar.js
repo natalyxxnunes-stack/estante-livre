@@ -454,7 +454,7 @@ const linhas = R.ordenar(CASOS,"id").map(c=>{
 gravar("dados/estante-livre-casos.json", JSON.stringify({
   nome:"Estante Livre: catálogo de censura de livros em bibliotecas e escolas brasileiras",
   autoria:"Nataly Nunes Pinto", atualizado:ATUALIZADO, licenca:"CC BY 4.0",
-  como_citar:"Estante Livre, observatório de censura de livros, de Nataly Nunes Pinto",
+  como_citar:"Estante Livre, observatório de censura de livros, de Nataly Nunes Pinto", doi:"10.5281/zenodo.24022607",
   metodologia:SITE+"/metodologia.html", registros:linhas}, null, 1));
 const colunas = Object.keys(linhas[0]);
 const csv = v => `"${(Array.isArray(v) ? v.map(x=>x.url || `${x.nome} (${x.papel.toLowerCase()})`).join("; ") : v??"").toString().replace(/"/g,'""')}"`;

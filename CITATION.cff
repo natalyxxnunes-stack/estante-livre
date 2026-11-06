@@ -5,6 +5,7 @@ title: "Estante Livre: catálogo de censura de livros em bibliotecas e escolas b
 authors:
   - family-names: "Pinto"
     given-names: "Nataly Nunes"
+doi: "10.5281/zenodo.24022607"
 license: CC-BY-4.0
 url: "https://estante-livre-br.vercel.app"
 repository-code: "https://github.com/natalyxxnunes-stack/estante-livre"

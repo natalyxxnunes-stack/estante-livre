@@ -984,6 +984,8 @@ const LACUNAS = {
 };
 
 const ATUALIZADO = "2026-11-06";
+/* DOI da base no Zenodo (arquivada a cada versão publicada no GitHub). */
+const DOI = "10.5281/zenodo.24022607";
 
 /* contato institucional exibido na página Sobre. Vazio, a linha não aparece. */
 const CONTATO = { email: "", instagram: "natalyxnunes" };
