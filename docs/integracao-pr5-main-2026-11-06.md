@@ -56,3 +56,25 @@ Ela é a linha de trabalho para a integração. A branch principal e a branch de
 ## Estado desta etapa
 
 A branch de integração foi criada a partir de main. Nenhum conteúdo do PR #5 foi mesclado ou copiado nesta etapa; isso é intencional, para não sobrescrever as atualizações recentes de main. O próximo passo técnico é reconciliar a base de dados e portar seletivamente as fontes de implementação.
+
+
+## Auditoria técnica complementar — comparação de árvores e geradores
+
+A comparação recursiva das árvores de `main` e da branch do PR confirmou que a divergência não se limita ao catálogo:
+
+- A árvore de `main` contém 134 entradas; a branch do PR contém 247.
+- A branch do PR acrescenta páginas de agentes, páginas de casos EL-035 a EL-037, páginas de atos e livros, páginas temáticas (`poder.html`, `dossies.html`, `relatorio-2026.html`), documentos editoriais/de pesquisa, `scripts/acessibilidade.js` e um workflow de validação.
+- Também há arquivos removidos na branch do PR que existem em `main`, incluindo o workflow `.github/workflows/regenerate-site.yml`, capas e páginas de livros/relatórios. Não se deve interpretar a ausência como exclusão editorial aprovada.
+- Há alterações em páginas existentes, folhas de estilo, scripts, páginas de casos/atos/livros e dados exportados. Portanto, copiar a árvore inteira de uma branch para a outra não é uma integração seletiva.
+
+### Incompatibilidade entre os geradores
+
+O gerador de `main` carrega e exporta um conjunto de dados/funções diferente do gerador da branch do PR. O gerador do PR passou a depender explicitamente de `CONTEXTO_PARTIDARIO` e da função `linksFonte`, ausentes na lista de dependências carregadas pelo gerador de `main`. O gerador de `main`, por sua vez, mantém seu próprio conjunto de saídas e validações. Isso exige portar em conjunto os contratos de dados, `assets/comum.js`, `scripts/gerar.js` e os testes; não basta copiar páginas HTML.
+
+### CI observado
+
+Os dez workflows mais recentes listados para `main` em 06/11/2026 estavam concluídos com resultado `success`. Isso confirma que a rotina de regeneração de `main` está operacional naquele estado. O workflow do PR #5 também passou em seu HEAD observado, mas executa uma rotina diferente. Dois pipelines verdes, isoladamente, não demonstram compatibilidade entre as duas linhas.
+
+### Decisão técnica desta rodada
+
+A integração automática continua bloqueada. A sequência segura é fazer uma reconciliação explícita do contrato de dados e dos arquivos-fonte; depois, portar os componentes em lotes coerentes e regenerar tudo a partir da base consolidada. Nenhum arquivo gerado, dado de main ou dado do PR foi sobrescrito nesta rodada.
