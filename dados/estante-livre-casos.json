@@ -256,7 +256,7 @@
     },
     {
      "veiculo": "Assembleia Legislativa de Goiás · notícia de gabinete",
-     "tipo": "Não classificada",
+     "tipo": "P3",
      "titulo": "Amauri Ribeiro reivindica liderança do movimento pela retirada de livro em escolas de Goiás",
      "data": "2024-04-01",
      "url": "https://portal.al.go.leg.br/noticias-dos-gabinetes/143079/amauri-ribeiro-lidera-movimento-para-retirada-de-livro-com-conteudo-pornografico-que-estava-sendo-usado-em-escolas-de-goias"
@@ -358,21 +358,21 @@
     },
     {
      "veiculo": "Folha de S.Paulo",
-     "tipo": "Não classificada",
+     "tipo": "S1",
      "titulo": "Livro O avesso da pele é recolhido em Mato Grosso do Sul",
      "data": "2024-03-08",
      "url": "https://www1.folha.uol.com.br/ilustrada/2024/03/livro-o-avesso-da-pele-e-removido-de-escolas-no-mato-grosso-do-sul-apos-pr-e-go.shtml"
     },
     {
      "veiculo": "Campo Grande News",
-     "tipo": "Não classificada",
+     "tipo": "S2",
      "titulo": "Governo anuncia devolução de O avesso da pele às escolas estaduais",
      "data": "2024-04-23",
      "url": "https://www.campograndenews.com.br/educacao-e-tecnologia/governo-devolve-livro-polemico-as-escolas-estaduais"
     },
     {
      "veiculo": "Folha de S.Paulo · dados de candidatura",
-     "tipo": "Não classificada",
+     "tipo": "S1",
      "titulo": "Professor Rinaldo Modesto · eleito deputado estadual pelo Podemos em 2022",
      "data": "2022",
      "url": "https://www1.folha.uol.com.br/poder/eleicoes/candidatos/2022/ms/deputado-estadual/professor-rinaldo-modesto-120001615778.shtml"
