@@ -136,3 +136,12 @@ A base apresenta metodologia, fontes, marcação de verificação parcial e pág
 
 ---
 Este documento registra achados e limites de verificação. Não substitui a atualização dos registros, das páginas geradas, do CSV/JSON e do sitemap.
+
+
+## Atualização documental — Taubaté (EL-032), 06/11/2026
+
+A cobertura de OVALE de 14/07/2026 reproduz a posição da Prefeitura de que a análise da Coordenação de Área e da Equipe de Práticas Pedagógicas da Educação Infantil foi favorável à utilização de *Pipoca e Picolé*, condicionada a planejamento pedagógico adequado, respeito à faixa etária e mediação docente qualificada. O título permaneceria no plano de ensino das turmas consideradas adequadas, com acompanhamento da Coordenação de Área. Isso permite atualizar o desfecho de EL-032: a análise técnica foi favorável e a retomada foi anunciada. Não permite afirmar que os exemplares tenham sido fisicamente redistribuídos nem que o livro tenha voltado efetivamente às salas de aula.
+
+A reportagem de 10/04/2026 reproduz a resposta municipal segundo a qual os exemplares disponíveis foram encaminhados à Secretaria para análise, enquanto grande parte dos livros do programa já havia sido distribuída aos alunos. A mesma cobertura informa a compra de 3.280 kits para alunos e 116 para professores, por R$ 1,216 milhão. Esses números são de kits, não de exemplares de *Pipoca e Picolé*, e não devem ser convertidos em tiragem do título.
+
+**Pendência residual:** obter o parecer técnico integral e documentos administrativos de devolução/redistribuição por unidade escolar; confirmar quais turmas receberam o livro e o uso efetivo em sala. O requerimento parlamentar e a resposta municipal são parcialmente conhecidos pela reprodução jornalística, mas seus documentos integrais ainda não foram localizados nas fontes abertas consultadas. Fontes registradas: ovale-tau-abr10, ovale-tau-jul14.
