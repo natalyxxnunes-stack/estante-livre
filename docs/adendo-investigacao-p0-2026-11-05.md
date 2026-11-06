@@ -444,3 +444,39 @@ Foram pesquisados em fontes públicas indexadas os CNPJs 09.144.019/0001-86 (Atl
 - SIAFI/Portal da Transparência: UG 344041, processo 01420.100133/2022-11, CNPJ 23.803.398/0001-08, exercícios 2023 e 2024.
 - Processo SEI da mudança: medição, ordem de serviço, romaneio, relatório do fiscal, atesto, nota fiscal, liquidação e ordem bancária.
 - Processo SEI da desinfestação: NE, plano de tratamento, ordem de serviço, registro de câmaras/lotes, relatório técnico, recebimento provisório e definitivo, nota fiscal, liquidação e ordem bancária.
+
+
+## 22. EL-025 — separação das dotações dos contratos 10/2023 e 12/2023; rota oficial para documentos de despesa
+
+### Correção e distinção essencial entre os dois contratos
+
+A leitura direta dos instrumentos completos confirma que os contratos de mudança e desinfestação não devem ser pesquisados como se compartilhassem a mesma dotação:
+
+**Contrato 12/2023 — mudança (Atlantic):** o Primeiro Termo Aditivo identifica a Nota de Empenho nº 2023NE000369, UG 344041, Natureza de Despesa 339039, PTRES 225948, PI C20004PA026 e Fonte 100. É o identificador contábil específico localizado para a mudança.
+
+**Contrato 10/2023 — desinfestação (Grupo Oficina de Restauro):** o contrato integral informa, na cláusula 4.1, Gestão/Unidade 344010/340031, Fonte 0100, Programa de Trabalho 225954, Elemento de Despesa 339039 e PI C20ZM4PA001. O contrato não informa o número da Nota de Empenho nessa cláusula. Portanto, a NE 2023NE000369 não deve ser atribuída ao contrato de desinfestação. A pesquisa da NE deste segundo contrato deve partir da dotação própria acima, do processo 01420.100133/2022-11 e do CNPJ 23.803.398/0001-08.
+
+Fontes primárias:
+- Contrato 12/2023 e aditivo: https://www.gov.br/palmares/pt-br/midias/arquivos-contratos/2023/1-atlantic-contrato.pdf ; https://www.gov.br/palmares/pt-br/midias/arquivos-contratos/2023/atlantic-primeiro-termo-aditivo-n-12-2023.pdf
+- Contrato 10/2023, especialmente cláusula 4.1: https://www.gov.br/palmares/pt-br/midias/arquivos-contratos/2023/1-gorestauro-contrato.pdf
+
+### Portal da Transparência: endpoint e arquivos públicos de dados abertos
+
+Foi recuperada a documentação oficial da API REST do Portal da Transparência. Ela oferece consultas de documentos de despesa por código (UG + Gestão + número do documento), documentos relacionados a empenho/liquidação/pagamento e documentos por favorecido. A documentação informa que o uso da API exige cadastro de e-mail para obtenção de token. A página oficial de dados abertos também disponibiliza arquivos CSV separados para empenhos, itens de empenho, liquidações, pagamentos e relações de empenhos impactados por liquidações/pagamentos.
+
+Fontes oficiais:
+- API de Dados do Portal da Transparência: https://portaldatransparencia.gov.br/api-de-dados
+- Swagger da API: https://api.portaldatransparencia.gov.br/swagger-ui/index.html
+- Download de dados de despesas: https://portaldatransparencia.gov.br/download-de-dados/despesas
+
+A página de download descreve arquivos específicos de empenho, liquidação e pagamento, além de tabelas de vínculo entre fases. Isso demonstra que há uma via pública estruturada para examinar a execução financeira, mas não significa que os dados desses contratos tenham sido recuperados nesta rodada. O Swagger/documentação foi acessado, mas a consulta transacional não foi executada porque a API exige token cadastrado; a interface de consulta também não retornou os dados por falha técnica. Não registrar ausência de liquidação ou pagamento.
+
+### Buscas por identificadores exatos nesta rodada
+
+Foram feitas buscas indexadas por `2023NE000369`, UG 344041, processo 01420.100889/2023-41, CNPJ 09.144.019/0001-86, processo 01420.100133/2022-11 e CNPJ 23.803.398/0001-08. Não apareceram registros públicos indexados que permitam confirmar liquidações, pagamentos ou valores efetivamente pagos. Resultados com empresas homônimas ou mesmo CNPJ em entes subnacionais foram descartados por não corresponderem à FCP.
+
+### Resultado desta rodada
+
+1. **Mudança:** NE 2023NE000369 identificada; ainda faltam ficha completa do empenho, liquidações, pagamentos, medição e romaneio.
+2. **Desinfestação:** dotação orçamentária própria identificada no contrato, mas número da NE ainda não identificado; faltam execução, relatórios técnicos, recebimento e pagamentos.
+3. **Correção metodológica:** não cruzar a NE da mudança com o contrato de desinfestação; são instrumentos e classificações orçamentárias distintas.
