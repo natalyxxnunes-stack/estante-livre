@@ -26,8 +26,8 @@ function contexto(raiz){
     console
   };
   vm.createContext(ctx);
-  vm.runInContext(ler("assets/dados.js") + "\n;this.__D={ATOS,AGENTES,PAPEIS,TIPOS_PAPEL,CASOS,LIVROS,FONTES,MODALIDADES,ESTAGIOS,SITUACOES,EIXOS,CORRECOES,RESPONSABILIDADES,DOCUMENTOS_ATOS,ATUALIZADO,CONTATO,OBSTACULOS,LACUNAS};", ctx);
-  vm.runInContext(ler("assets/comum.js") + "\n;this.__F={esc,obraDe,slug,ordenar,casoHTML,livroHTML,casoCardHTML,livroCardHTML,dataLegivel,urlCaso,urlLivro,urlAto,agentesDoAto};", ctx);
+  vm.runInContext(ler("assets/dados.js") + "\n;this.__D={ATOS,AGENTES,PAPEIS,TIPOS_PAPEL,CASOS,LIVROS,FONTES,MODALIDADES,ESTAGIOS,SITUACOES,EIXOS,CORRECOES,RESPONSABILIDADES,DOCUMENTOS_ATOS,ATUALIZADO,CONTATO,OBSTACULOS,LACUNAS,NIVEIS};", ctx);
+  vm.runInContext(ler("assets/comum.js") + "\n;this.__F={esc,obraDe,slug,ordenar,casoHTML,livroHTML,casoCardHTML,livroCardHTML,dataLegivel,urlCaso,urlLivro,urlAto,agentesDoAto,nivelVerif};", ctx);
   return Object.assign(ctx.__F, {__D: ctx.__D});
 }
 const R = contexto("");      // páginas na raiz
@@ -62,6 +62,7 @@ for(const c of CASOS){
 for(const [k,a] of Object.entries(ATOS)){
   for(const f of ["nome","data","uf","tipo","rede","quem"]) if(!a[f]) erros.push(`ATOS ${k}: campo ${f} vazio`);
   if(!CASOS.some(c=>c.ato===k)) erros.push(`ATOS ${k}: ato sem registro`);
+  for(const f of a.docPrimario||[]){ if(!FONTES[f]) erros.push(`ATOS ${k}: docPrimario aponta para fonte inexistente: ${f}`); if(!CASOS.some(c=>c.ato===k && (c.fontes||[]).includes(f))) erros.push(`ATOS ${k}: docPrimario ${f} não está nas fontes de nenhum registro do ato`); }
 }
 for(const p of PAPEIS){
   if(!ATOS[p.ato]) erros.push(`PAPEIS: ato inexistente ${p.ato}`);
@@ -430,7 +431,8 @@ const linhas = R.ordenar(CASOS,"id").map(c=>{
     instancia_registrada:c.quem, mecanismo:c.modalidade, estagio:c.estagio, situacao:c.situacao, desfecho:c.desfecho,
     eixo_tematico:c.eixo, justificativa_declarada:c.alegacao,
     pressao_ou_pedido:r.pressao||c.pressao||"", decisao:r.decisor||"", assinatura:r.assinantes||"", execucao:r.executor||"",
-    resposta_ou_reversao:r.resposta||"", ato_ou_documento:DOC[c.id]||"", verificado:c.verificado,
+    resposta_ou_reversao:r.resposta||"", ato_ou_documento:DOC[c.id]||"", verificado:c.verificado, nivel_verificacao:R.nivelVerif(c),
+    documento_primario:(ATOS[c.ato].docPrimario||[]).filter(k=>(c.fontes||[]).includes(k)).map(k=>FONTES[k].url).join("; "),
     pendencia:r.pendencia||c.pendencia||"", nota:c.nota||"",
     agentes:PAPEIS.filter(p=>p.ato===c.ato).map(p=>({nome:AGENTES[p.agente].nome, tipo:AGENTES[p.agente].tipo, papel:p.papel, cargo:p.cargo||"", atribuido:!!p.atribuido})),
     fontes:(c.fontes||[]).map(k=>FONTES[k]).filter(Boolean).map(f=>({veiculo:f.veic, titulo:f.tit, data:f.data||"", url:f.url}))};

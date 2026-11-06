@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Metodologia · Estante Livre</title>
-<meta name="description" content="O que é um registro, o recorte, a regra de verificação, os vieses conhecidos, as correções e o que ainda falta apurar.">
+<meta name="description" content="Definição de censura, recorte, classificação, níveis de verificação, direito de resposta, dicionário de dados, correções e o que ainda falta apurar.">
 <link rel="icon" href="favicon.ico" sizes="32x32">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -14,7 +14,7 @@
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Estante Livre">
 <meta property="og:title" content="Metodologia · Estante Livre">
-<meta property="og:description" content="O que é um registro, o recorte, a regra de verificação, os vieses conhecidos, as correções e o que ainda falta apurar.">
+<meta property="og:description" content="Definição de censura, recorte, classificação, níveis de verificação, direito de resposta, dicionário de dados, correções e o que ainda falta apurar.">
 <meta property="og:url" content="https://estante-livre-br.vercel.app/metodologia.html">
 <meta property="og:image" content="https://estante-livre-br.vercel.app/og-estante-livre.jpg">
 <meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
@@ -47,56 +47,95 @@
 <div class="wrap">
   <div class="hero-pg">
     <h1>Metodologia</h1>
-    <p class="lede">Como um caso entra no catálogo, o que fica de fora, o que o observatório enxerga mal e tudo o que já foi corrigido.</p>
+    <p class="lede">O que o Estante Livre chama de censura, como um caso entra no catálogo, como é classificado e verificado, o que o observatório enxerga mal e tudo o que já foi corrigido.</p>
   </div>
 </div>
 
 <div class="wrap">
   <section>
+    <div class="sechead"><span class="kicker">00</span><h2>Definição</h2></div>
+    <p class="note"><strong>Para o Estante Livre, censura de livro é todo ato ou pedido formal que retira, restringe, impede ou condiciona o acesso a um livro em instituição pública, de ensino ou programa público de leitura, motivado pelo conteúdo, pelo tema ou pela autoria da obra.</strong></p>
+    <p class="note">Um registro entra na contagem quando reúne três elementos:</p>
+    <div class="gloss">
+      <div class="gterm"><h3>1. Um livro identificável</h3><div class="gdef">Um título, uma lista de títulos ou um acervo delimitado.</div></div>
+      <div class="gterm"><h3>2. Um ato ou pedido rastreável</h3><div class="gdef">Ofício, decisão, ata, requerimento, nota oficial, fala pública de autoridade ou relato confirmado.</div></div>
+      <div class="gterm"><h3>3. Motivo ligado à obra</h3><div class="gdef">A justificativa, declarada ou documentada, trata do conteúdo, do tema ou da autoria do livro.</div></div>
+    </div>
+  </section>
+
+  <section>
     <div class="sechead"><span class="kicker">01</span><h2>O que é um registro</h2></div>
     <div class="gloss">
       <div class="gterm"><h3>Um por título, por ato</h3><div class="gdef">Se um ofício atinge nove livros, são nove registros. Conjuntos sem lista título a título contam como um registro até serem desmembrados. Por isso o número de obras é um piso.</div></div>
-      <div class="gterm"><h3>Registro não significa banimento consumado</h3><div class="gdef">O catálogo inclui retiradas confirmadas, suspensões, restrições, pedidos formais e pressões públicas. Quando não há prova de que a obra foi retirada, a ficha diz isso expressamente. Os totais do painel são registros documentados, não uma contagem de banimentos consumados.</div></div>
-      <div class="gterm"><h3>Ato</h3><div class="gdef">A decisão ou o episódio que gerou os registros: um memorando, um ofício, uma circular, um requerimento. O painel conta registros na maior parte dos gráficos e conta atos no gráfico de instâncias, para que uma lista longa não pese mais que uma ordem isolada.</div></div>
-      <div class="gterm"><h3>Três eixos de classificação</h3><div class="gdef">Cada registro tem um mecanismo (o que a medida pretendia: retirar, ocultar, excluir de lista, vetar atividade, vetar aquisição, descartar), um estágio (pressão pública, pedido formal, decisão ou ordem, execução comprovada) e uma situação (em vigor, revertido, sem efeito, em aberto). Os três são independentes e usam listas fechadas, definidas no <a href="glossario.html">Glossário</a>. O texto livre do desfecho fica na ficha.</div></div>
+      <div class="gterm"><h3>Três contagens, cada uma com seu rótulo</h3><div class="gdef">O painel mostra <b id="m-regs"></b> registros, <b id="m-atos"></b> atos e <b id="m-obras"></b> obras e conjuntos. Registros medem o alcance de cada medida; atos medem quantas decisões houve, para que uma lista longa pese o mesmo que uma ordem isolada; obras mostram quais livros foram alvo.</div></div>
+      <div class="gterm"><h3>Registro não significa banimento consumado</h3><div class="gdef">O catálogo inclui retiradas confirmadas, suspensões, restrições, pedidos formais e pressões públicas. Quando falta prova de que a obra saiu da estante, a ficha diz isso expressamente.</div></div>
+      <div class="gterm"><h3>Ato</h3><div class="gdef">A decisão ou o episódio que gerou os registros: um memorando, um ofício, uma circular, um requerimento. O mesmo livro retirado em três estados gera três atos, porque são três decisões de três governos. Uma reversão é desfecho do ato original e fica na mesma ficha.</div></div>
       <div class="gterm"><h3>Datas</h3><div class="gdef">Quando só o mês é conhecido, o registro usa o dia 1º. A data é a do ato; a da reportagem fica na fonte.</div></div>
-      <div class="gterm"><h3>Governo na época</h3><div class="gdef">Chefe do Executivo responsável pela rede na data do ato e o partido dele naquele momento. Quando a ordem partiu de órgão que o próprio governo desautorizou, isso aparece na nota.</div></div>
+      <div class="gterm"><h3>Governo na época</h3><div class="gdef">Chefe do Executivo responsável pela rede na data do ato e o partido dele naquele momento. O critério vale para todos os registros, qualquer que seja o partido de quem pediu ou de quem governava.</div></div>
     </div>
   </section>
 
   <section>
     <div class="sechead"><span class="kicker">02</span><h2>Recorte</h2></div>
-    <p class="note">Desde 2019, em bibliotecas escolares, públicas, universitárias e especializadas, em listas oficiais de leitura e em atividades pedagógicas com livros. O catálogo registra também pedidos e pressões relacionados a livros, mesmo quando não há prova de retirada, sempre com o estágio indicado. Feiras, livrarias, apostilas e programas fora de acervo aparecem no painel como contexto e não entram na contagem. O que fica de fora está no <a href="glossario.html">Glossário</a>.</p>
+    <p class="note">Desde 2019, em todo o Brasil.</p>
+    <div class="gloss">
+      <div class="gterm"><h3>Entra na contagem</h3><div class="gdef">Bibliotecas escolares, públicas, universitárias e especializadas; escolas públicas, cívico-militares e militares, em listas de leitura e atividades; listas oficiais de leitura e de vestibular; compras e doações públicas de livros; programas públicos de leitura, inclusive no sistema prisional. Pedidos e pressões que não prosperaram também entram, com o estágio e a situação indicados.</div></div>
+      <div class="gterm"><h3>Aparece como contexto</h3><div class="gdef">Episódios em feiras, livrarias, sites de órgãos públicos e apostilas; falas de autoridade sem ato ou pedido decorrente; casos anteriores a 2019. Ficam no painel e na linha do tempo, fora dos totais.</div></div>
+      <div class="gterm"><h3>Fica de fora</h3><div class="gdef">Descarte técnico por desgaste, duplicidade ou atualização, com critério documentado anterior ao caso; escolha pedagógica regular sem motivação de conteúdo registrada; decisão judicial por direito autoral, plágio ou violação de privacidade.</div></div>
+    </div>
   </section>
 
   <section>
-    <div class="sechead"><span class="kicker">03</span><h2>Responsabilização: quem fez o quê</h2></div>
+    <div class="sechead"><span class="kicker">03</span><h2>Como classificamos</h2></div>
+    <p class="note">Cada registro tem três eixos independentes, todos com listas fechadas definidas no <a href="glossario.html">Glossário</a>: o <b>mecanismo</b> (o que a medida pretendia fazer com o livro), o <b>estágio</b> (até onde a medida chegou) e a <b>situação</b> (como está hoje). Separar os três permite contar um pedido negado e uma retirada executada sem misturar as duas coisas. A tabela mostra como cada modalidade de censura aparece nessa classificação.</p>
+    <div class="tab-wrap"><table class="tab quebra"><thead><tr><th>MODALIDADE</th><th>COMO APARECE NO CATÁLOGO</th><th>EXEMPLO</th></tr></thead><tbody>
+      <tr><td>Contestação</td><td>Estágio “Pressão pública” ou “Pedido formal”; situação “Sem efeito” quando o pedido foi negado</td><td><a href="casos/el-034.html">EL-034</a> · A bolsa amarela, Limeira (SP)</td></tr>
+      <tr><td>Retirada em uma unidade</td><td>Mecanismo “Retirada”, com o ato da escola ou da secretaria</td><td><a href="casos/el-030.html">EL-030</a> · Londrina (PR)</td></tr>
+      <tr><td>Recolhimento em rede</td><td>Mecanismo “Retirada”; o ato é da secretaria ou coordenadoria e alcança várias unidades</td><td><a href="atos/sc-2023.html">Ofício de SC, 2023</a></td></tr>
+      <tr><td>Restrição de acesso</td><td>Mecanismo “Ocultação ou restrição de acesso”</td><td><a href="casos/el-005.html">EL-005</a> · Santa Catarina, 2024</td></tr>
+      <tr><td>Exclusão de lista</td><td>Mecanismo “Exclusão de lista de leitura”</td><td><a href="casos/el-029.html">EL-029</a> · UniRV (GO)</td></tr>
+      <tr><td>Veto a atividade</td><td>Mecanismo “Veto a atividade”</td><td><a href="casos/el-027.html">EL-027</a> · Conselheiro Lafaiete (MG)</td></tr>
+      <tr><td>Veto de compra ou interrupção de programa</td><td>Mecanismo “Veto a aquisição ou doação”</td><td><a href="casos/el-033.html">EL-033</a> · Remição em Rede (SP)</td></tr>
+      <tr><td>Expurgo ou destruição</td><td>Mecanismo “Descarte ou destruição”, com o volume do acervo na ficha</td><td><a href="casos/el-025.html">EL-025</a> · Fundação Palmares</td></tr>
+      <tr><td>Autocensura documentada</td><td>Mecanismo “Autocensura”, só com prova (e-mail, ata ou relato confirmado)</td><td>Sem registro até agora</td></tr>
+      <tr><td>Retaliação a profissional</td><td>Registrada na ficha do caso de origem, só com consentimento da pessoa atingida</td><td>Sem registro até agora</td></tr>
+    </tbody></table></div>
+    <p class="note">Regras de desempate: ordem dirigida a uma rede inteira conta como recolhimento em rede, mesmo que só uma escola tenha cumprido. Na dúvida entre dois mecanismos, vale o mais brando que o documento sustenta, e a nota da ficha explica a outra leitura.</p>
+  </section>
+
+  <section>
+    <div class="sechead"><span class="kicker">04</span><h2>Responsabilização: quem fez o quê</h2></div>
     <p class="note">O objetivo do Estante Livre é identificar e documentar os responsáveis por atos de restrição, tentativas e pressões sobre a circulação de livros. Cada ficha separa: quem iniciou a reclamação ou pressão; quem pediu formalmente a retirada; quem tomou a decisão administrativa; quem assinou o ofício, circular ou memorando; quem executou a ordem; e quem reviu ou revogou a medida. Esses papéis não são intercambiáveis.</p>
-    <p class="note">A pessoa só é nomeada quando há fonte que sustente sua participação e seu papel. Uma crítica pública não prova, por si só, que alguém tenha expedido a ordem. Quando o documento identifica apenas uma instituição, a ficha nomeia a instituição e informa que o agente individual não foi identificado. A lacuna vira pendência de apuração, não uma suposição.</p>
-    <p class="note">A justificativa aparece como foi apresentada por quem pediu ou determinou a restrição, entre aspas quando houver formulação literal. O observatório a atribui a seu autor e não a endossa. Quando a instituição nega a ocorrência ou oferece outra explicação, a resposta também é registrada.</p>
+    <p class="note">A pessoa só é nomeada quando há fonte que sustente sua participação e seu papel, e quando ela agiu em função pública. Uma crítica pública, sozinha, prova apenas a crítica. Quando o documento identifica apenas uma instituição, a ficha nomeia a instituição e informa que o agente individual segue sem identificação. A lacuna vira pendência de apuração.</p>
+    <p class="note">A justificativa aparece como foi apresentada por quem pediu ou determinou a restrição, entre aspas quando houver formulação literal. O observatório a atribui a seu autor. Quando a instituição nega a ocorrência ou oferece outra explicação, a resposta também é registrada.</p>
+  </section>
+
+  <section id="niveis">
+    <div class="sechead"><span class="kicker">05</span><h2>Níveis de verificação</h2></div>
+    <p class="note">Todo registro mostra seu nível na ficha. Os três níveis públicos entram nos totais do painel.</p>
+    <div class="tab-wrap"><table class="tab niveis quebra"><thead><tr><th>NÍVEL</th><th>O QUE EXIGE</th><th>HOJE</th></tr></thead><tbody>
+      <tr><td>Documentado</td><td>Registro verificado e com documento oficial primário cadastrado entre as fontes: ofício, decisão, ata, diário oficial ou resposta formal do órgão</td><td id="nv-doc"></td></tr>
+      <tr><td>Confirmado</td><td>Registro verificado, com duas ou mais fontes independentes, ou uma fonte e a confirmação pública do órgão ou da pessoa envolvida</td><td id="nv-conf"></td></tr>
+      <tr><td>Parcial</td><td>Documentação pública confiável, com algo ainda por confirmar: uma segunda fonte, o documento original ou o desfecho. A ficha lista o que falta</td><td id="nv-parc"></td></tr>
+      <tr><td>Em apuração</td><td>Relato recebido pelo formulário, ainda sem confirmação. Fica fora do site até chegar ao nível Parcial</td><td>Fora do catálogo</td></tr>
+    </tbody></table></div>
+    <p class="note">O código confere se o registro está marcado como verificado, se tem pelo menos duas referências e se o documento primário do ato está entre elas. A independência entre as fontes é conferida pela editora: três reportagens que reproduzem a mesma nota contam como uma fonte. Toda mudança de nível entra no registro de correções.</p>
   </section>
 
   <section>
-    <div class="sechead"><span class="kicker">04</span><h2>Verificação e fontes</h2></div>
-    <p class="note">O status “verificado” é uma avaliação editorial. O código confere se o registro está marcado como verificado e tem pelo menos duas referências cadastradas; a independência entre as fontes é conferida caso a caso pela editora.</p>
-    <p class="note">A justificativa reproduz o que foi declarado por quem pediu ou determinou a restrição; a interpretação do observatório fica separada. A resposta oficial, a contestação e o desfecho também devem aparecer quando documentados.</p>
-    <p class="note"><b id="n-parciais"></b></p>
+    <div class="sechead"><span class="kicker">06</span><h2>Vieses e limites</h2></div>
+    <p class="note">O catálogo enxerga bem o que vira ofício e notícia: listas de secretarias, decisões judiciais, casos com repercussão nacional. Enxerga mal a autocensura, a compra que não foi feita, o livro que foi para a estante alta e a punição a quem trabalha na biblioteca, porque essas modalidades raramente deixam documento. Também enxerga melhor o que acontece em capitais e em estados com imprensa local ativa. Ausência de registro num estado quer dizer ausência de registro, e só isso.</p>
   </section>
 
   <section>
-    <div class="sechead"><span class="kicker">05</span><h2>Vieses conhecidos</h2></div>
-    <p class="note">O catálogo enxerga bem o que vira ofício e notícia: listas de secretarias, decisões judiciais, casos com repercussão nacional. Enxerga mal a autocensura, a compra que não foi feita e o livro que foi para a estante alta. Também enxerga melhor o que acontece em capitais e em estados com imprensa local ativa. Ausência de registro num estado quer dizer ausência de registro, não ausência de censura.</p>
-  </section>
-
-  <section>
-    <div class="sechead"><span class="kicker">06</span><h2>O que ainda falta apurar</h2><span class="count" id="count-pend"></span></div>
+    <div class="sechead"><span class="kicker">07</span><h2>O que ainda falta apurar</h2><span class="count" id="count-pend"></span></div>
     <p id="pend-resumo"></p>
     <p><a class="btn ghost" href="pendencias.html">Ver o que falta apurar, ato por ato</a></p>
   </section>
 
   <section>
-    <div class="sechead"><span class="kicker">07</span><h2>Correções</h2><span class="count" id="count-corr"></span></div>
-    <p class="note">Toda mudança de fato num registro publicado entra aqui, com data.</p>
+    <div class="sechead"><span class="kicker">08</span><h2>Correções</h2><span class="count" id="count-corr"></span></div>
+    <p class="note">Erro de fato é corrigido na própria ficha e registrado aqui, com data e link para o caso. Registro que se prove falso sai do catálogo, e seu código EL fica reservado com a nota de retirada; nenhum número é reaproveitado.</p>
     <div class="tab-wrap"><table class="tab"><thead><tr><th>DATA</th><th>REGISTRO</th><th>O QUE MUDOU</th></tr></thead><tbody id="corr"></tbody></table></div>
     <details class="mais" id="corr-mais-box"><summary id="corr-mais-tit">Ver correções anteriores</summary>
       <div class="tab-wrap"><table class="tab"><thead><tr><th>DATA</th><th>REGISTRO</th><th>O QUE MUDOU</th></tr></thead><tbody id="corr-mais"></tbody></table></div>
@@ -104,7 +143,40 @@
   </section>
 
   <section>
-    <div class="sechead"><span class="kicker">08</span><h2>Pesquisas de referência</h2></div>
+    <div class="sechead"><span class="kicker">09</span><h2>Direito de resposta e proteção de fontes</h2></div>
+    <div class="gloss">
+      <div class="gterm"><h3>Direito de resposta</h3><div class="gdef">Pessoa ou órgão citado pode enviar sua versão pelo contato da página <a href="sobre.html">Sobre</a>. A resposta é publicada na ficha do caso, em paráfrase fiel ou citação curta, em até 10 dias do recebimento. Antes de nomear agente público em caso novo, o observatório procura o órgão e registra na ficha a data do contato e o resultado.</div></div>
+      <div class="gterm"><h3>Quem relata fica protegido</h3><div class="gdef">Os relatos são lidos só pela editora. O contato de quem relata é apagado quando a verificação termina. Nenhum registro publica dado que permita identificar a fonte, inclusive cargo e unidade quando a equipe for pequena.</div></div>
+      <div class="gterm"><h3>Retaliação</h3><div class="gdef">Casos de punição a bibliotecários, professores ou mediadores só entram com consentimento expresso da pessoa atingida.</div></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="sechead"><span class="kicker">10</span><h2>Dicionário de dados</h2></div>
+    <p class="note">As colunas da base aberta, na ordem em que aparecem no <a href="dados/estante-livre-casos.csv">CSV</a>. Campos de lista fechada usam exatamente os valores do Glossário.</p>
+    <div class="tab-wrap"><table class="tab quebra"><thead><tr><th>COLUNA</th><th>O QUE GUARDA</th></tr></thead><tbody>
+      <tr><td>id · url</td><td>Código do registro (EL-001…) e endereço permanente da ficha</td></tr>
+      <tr><td>data</td><td>Data do ato, AAAA-MM-DD; dia 01 quando só o mês é conhecido</td></tr>
+      <tr><td>ato · ato_nome</td><td>Código e nome do ato que gerou o registro</td></tr>
+      <tr><td>obra · titulo_registro · conjunto</td><td>Obra atingida; título do registro quando ele descreve um episódio; se é conjunto documental sem lista título a título</td></tr>
+      <tr><td>autoria · editora · ano_publicacao</td><td>Dados da edição</td></tr>
+      <tr><td>cidade · uf · tipo_biblioteca · rede</td><td>Onde o livro estava e a rede responsável</td></tr>
+      <tr><td>governo_na_epoca</td><td>Chefe do Executivo da rede na data do ato, com partido</td></tr>
+      <tr><td>instancia_registrada</td><td>Órgão que emitiu ou executou a medida</td></tr>
+      <tr><td>mecanismo · estagio · situacao</td><td>Os três eixos de classificação, em lista fechada</td></tr>
+      <tr><td>desfecho</td><td>O que aconteceu depois, em texto livre</td></tr>
+      <tr><td>eixo_tematico · justificativa_declarada</td><td>Tema do motivo alegado (lista fechada) e a justificativa como foi apresentada</td></tr>
+      <tr><td>pressao_ou_pedido · decisao · assinatura · execucao · resposta_ou_reversao</td><td>Quem fez o quê, em texto, conforme as fontes</td></tr>
+      <tr><td>ato_ou_documento</td><td>Descrição do documento do ato e do que ainda falta localizar</td></tr>
+      <tr><td>verificado · nivel_verificacao · documento_primario</td><td>Selo editorial (Sim ou Parcialmente), nível (Documentado, Confirmado ou Parcial) e link do documento oficial primário, quando houver</td></tr>
+      <tr><td>pendencia · nota</td><td>O que falta apurar e o relato do caso</td></tr>
+      <tr><td>agentes</td><td>Pessoas e instituições com papel documentado, com cargo na data</td></tr>
+      <tr><td>fontes</td><td>Links das reportagens, documentos e pesquisas citados</td></tr>
+    </tbody></table></div>
+  </section>
+
+  <section>
+    <div class="sechead"><span class="kicker">11</span><h2>Pesquisas de referência</h2></div>
     <div class="gloss">
       <div class="gterm"><h3>Páginas proibidas</h3><div class="gdef">Viana, Muriel-Torrado e Prado, revista Em Questão (UFRGS), 2024. Questionário com 52 relatos válidos de quem presenciou censura de livros no Brasil.</div><div class="gex"><a href="https://seer.ufrgs.br/index.php/EmQuestao/article/view/138667" target="_blank" rel="noopener">Ler o artigo</a></div></div>
       <div class="gterm"><h3>Tentativas de censura nos dois primeiros anos do governo Bolsonaro</h3><div class="gdef">Reimão, Nery e Maués, revista Literatura e Autoritarismo (UFSM). Levantamento de casos de 2019 e 2020.</div><div class="gex"><a href="https://periodicos.ufsm.br/LA/article/view/66347" target="_blank" rel="noopener">Ler o artigo</a></div></div>
@@ -115,8 +187,10 @@
   </section>
 
   <section style="border-bottom:0">
-    <div class="sechead"><span class="kicker">09</span><h2>Como citar e usar os dados</h2></div>
-    <p class="note">Os dados podem ser reproduzidos com crédito: “Estante Livre, observatório de censura de livros, de Nataly Nunes Pinto”, com o link da página e a data de acesso. A base completa pode ser baixada em <a href="dados/estante-livre-casos.csv">CSV</a> e <a href="dados/estante-livre-casos.json">JSON</a>; recortes filtrados saem em CSV nas páginas <a href="casos.html">Casos</a> e <a href="livros.html">Livros</a>. Cada caso tem página própria, com endereço permanente e sugestão de citação. Capas de livros aparecem para identificar a obra em contexto crítico; para pedir a retirada de uma imagem, use o contato da página <a href="sobre.html">Sobre</a>.</p>
+    <div class="sechead"><span class="kicker">12</span><h2>Licença, citação e quem mantém</h2></div>
+    <p class="note">A base e os textos do site estão sob licença <a href="https://creativecommons.org/licenses/by/4.0/deed.pt_BR" target="_blank" rel="noopener">Creative Commons Atribuição 4.0 (CC BY 4.0)</a>: podem ser copiados, adaptados e republicados, inclusive para fins comerciais, com crédito. Cite como “Estante Livre, observatório de censura de livros, de Nataly Nunes Pinto”, com o link da página e a data de acesso. A base completa pode ser baixada em <a href="dados/estante-livre-casos.csv">CSV</a> e <a href="dados/estante-livre-casos.json">JSON</a>; recortes filtrados saem em CSV nas páginas <a href="casos.html">Casos</a> e <a href="livros.html">Livros</a>. Capas de livros ficam fora da licença: aparecem para identificar a obra em contexto crítico, e a retirada de uma imagem pode ser pedida pelo contato da página <a href="sobre.html">Sobre</a>.</p>
+    <p class="note">O Estante Livre é um projeto independente e sem financiamento, mantido por Nataly Nunes Pinto, jornalista que também presta serviços editoriais a terceiros. Quando um caso envolver editora ou autor com quem ela trabalhou, isso aparece na ficha.</p>
+    <p class="note">Versão da metodologia: 6 de novembro de 2026.</p>
   </section>
 </div>
 
@@ -144,8 +218,14 @@ document.getElementById("corr").innerHTML = corrOrd.slice(0,6).map(linhaCorr).jo
 document.getElementById("corr-mais").innerHTML = corrOrd.slice(6).map(linhaCorr).join("");
 document.getElementById("corr-mais-tit").textContent = `Ver as ${corrOrd.length-6} correções anteriores`;
 if(corrOrd.length<=6) document.getElementById("corr-mais-box").hidden = true;
-const parc = CASOS.filter(c=>!verificado(c)).length;
-document.getElementById("n-parciais").textContent = `Hoje, ${CASOS.length - parc} de ${CASOS.length} registros estão marcados como verificados e têm pelo menos duas referências cadastradas; ${parc} estão como parcialmente verificados. A independência das referências exige conferência editorial.`;
+const nv = n => CASOS.filter(c=>nivelVerif(c)===n).length;
+const reg = n => `${n} ${n===1?"registro":"registros"}`;
+document.getElementById("nv-doc").textContent = reg(nv("Documentado"));
+document.getElementById("nv-conf").textContent = reg(nv("Confirmado"));
+document.getElementById("nv-parc").textContent = reg(nv("Parcial"));
+document.getElementById("m-regs").textContent = CASOS.length;
+document.getElementById("m-atos").textContent = new Set(CASOS.map(c=>c.ato)).size;
+document.getElementById("m-obras").textContent = new Set(CASOS.map(obraDe)).size;
 montarRodape();
 </script>
 </body>

@@ -7,6 +7,15 @@ const esc = s => String(s ?? "").replace(/[&<>"']/g,
   c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 /* O selo editorial é manual. O código só confere se há ao menos duas referências cadastradas; não prova sozinho que sejam independentes. */
 const verificado = c => c.verificado === "Sim" && (c.fontes||[]).length >= 2;
+/* Nível de verificação: Documentado (verificado + documento oficial primário do ato),
+   Confirmado (verificado com duas ou mais fontes) ou Parcial. */
+const docsPrimarios = c => ((typeof ATOS!=="undefined" && ATOS[c.ato]) ? ATOS[c.ato].docPrimario || [] : []);
+const nivelVerif = c => !verificado(c) ? "Parcial" : (docsPrimarios(c).some(f=>(c.fontes||[]).includes(f)) ? "Documentado" : "Confirmado");
+const NIVEL_TEXTO = {
+  Documentado: "Documentado: verificado, com documento oficial primário",
+  Confirmado: "Confirmado: verificado com duas ou mais fontes",
+  Parcial: "Parcialmente verificado"
+};
 const conta = (arr,campo,val) => arr.filter(c=>c[campo]===val).length;
 /* obra a que o registro se refere; registros de episódio (EL-030, EL-031, EL-034) apontam para o livro */
 const obraDe = c => c.obra || c.titulo;
@@ -202,7 +211,7 @@ function casoHTML(c, q, nivel){
         '<div class="caso-desf"><span class="k">DESFECHO</span> '+m(c.desfecho)+'</div>'+
         linksFonte(c.fontes)+
         (pend?'<div class="caso-pend"><span class="k">O QUE AINDA APURAMOS</span><div>'+esc(pend)+' <a href="'+RAIZ+'pendencias.html#'+String(c.ato).toLowerCase()+'">Todas as lacunas do catálogo</a></div></div>':"")+
-        '<div class="pront-rod"><span>'+(c.verificado==="Sim"?"Verificado com duas ou mais fontes":"Parcialmente verificado")+'</span>'+
+        '<div class="pront-rod"><span><a href="'+RAIZ+'metodologia.html#niveis">'+NIVEL_TEXTO[nivelVerif(c)]+'</a></span>'+
           '<button class="copiar" type="button" data-copiar="'+c.id+'">copiar link</button></div>'+
       '</div>'+
     '</div></article>';
@@ -325,7 +334,7 @@ function casoCardHTML(c, q){
         <span class="tag t-des ${clsSituacao(c.situacao)}">${esc(c.situacao)}</span>
       </span>
       ${c.desfecho?`<span class="cc-desf">${m(c.desfecho)}</span>`:""}
-      ${verificado(c)?"":`<span class="cc-parcial">Parcialmente verificado</span>`}
+      ${nivelVerif(c)==="Parcial"?`<span class="cc-parcial">Parcialmente verificado</span>`:nivelVerif(c)==="Documentado"?`<span class="cc-doc">Documentado</span>`:""}
     </span>
   </a>${trechoBusca(c,q)}
 </article>`;

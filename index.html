@@ -70,6 +70,7 @@
 <div class="bignums">
   <div class="bignums-in">
     <div class="bignum"><div class="n" id="n-casos">–</div><div class="l">REGISTROS</div></div>
+    <div class="bignum"><div class="n" id="n-atos">–</div><div class="l">ATOS</div></div>
     <div class="bignum"><div class="n" id="n-titulos">–</div><div class="l">OBRAS E CONJUNTOS MENCIONADOS</div></div>
     <div class="bignum"><div class="n" id="n-estados">–</div><div class="l">UNIDADES DA FEDERAÇÃO</div></div>
     <div class="bignum"><div class="n" id="n-verif">–</div><div class="l">VERIFICADOS</div></div>
@@ -159,6 +160,7 @@ const T = CASOS;
 
 document.getElementById("n-casos").textContent = T.length;
 document.getElementById("n-estados").textContent = unicos(T,"uf");
+document.getElementById("n-atos").textContent = new Set(T.map(c=>c.ato)).size;
 document.getElementById("n-titulos").textContent = new Set(T.map(obraDe)).size;
 document.getElementById("n-verif").textContent = T.filter(verificado).length;
 {const np=CASOS.filter(c=>c.verificado!=="Sim").length; const el=document.getElementById("transp");

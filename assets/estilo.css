@@ -39,7 +39,7 @@ h2{font-family:var(--f);font-weight:500;font-size:26px;color:var(--vinho)}
 
 /* ---------- números ---------- */
 .bignums{background:var(--neon);padding:30px 48px}
-.bignums-in{max-width:1000px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.bignums-in{max-width:1000px;margin:0 auto;display:grid;grid-template-columns:repeat(5,1fr);gap:22px}
 .bignum .n{font-family:var(--f);font-size:58px;line-height:.9;color:var(--azul)}
 .bignum .l{font-size:11px;letter-spacing:.14em;color:#DDE1FF;font-weight:600;margin-top:7px}
 
@@ -854,4 +854,16 @@ details.mais[open] summary{margin-bottom:12px}
   .cbody{padding:12px 14px;gap:5px}
   .ctit{font-size:16px}
   .cfoot{padding-top:8px}
+}
+
+/* nível de verificação (ver Metodologia, #niveis) */
+.cc-doc{align-self:flex-start;margin-top:8px;font-size:11px;font-weight:600;color:var(--azul);border-bottom:1.5px solid var(--azul)}
+.pront-rod a{color:inherit;text-decoration:underline dotted;text-underline-offset:3px}
+
+.tab.quebra td:first-child{white-space:normal;min-width:9em}
+@media(max-width:600px){
+  .tab.quebra thead{display:none}
+  .tab.quebra tr,.tab.quebra td{display:block}
+  .tab.quebra tr{padding:10px 0;border-bottom:1px solid var(--linha)}
+  .tab.quebra td{border:0;padding:2px 0}
 }

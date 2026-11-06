@@ -248,6 +248,9 @@ const LIVROS = {
 
 /* ---------- ATOS ----------
    papeis: o texto de cada papel, como aparece na ficha. Só se nomeia quem tem fonte. */
+/* docPrimario: fontes cadastradas que são documento oficial primário do ato ou do desfecho
+   (ofício, decisão, ata, diário oficial, resposta formal do órgão). Com registro verificado,
+   eleva o nível para "Documentado". Ver NIVEIS e a página Metodologia. */
 const ATOS = {
  "RS-2024":{
    nome:"Ofício da 6ª Coordenadoria Regional de Educação (RS)",
@@ -319,6 +322,7 @@ const ATOS = {
      resposta:"A Secretaria anunciou a devolução em 23 de abril de 2024, com orientações pedagógicas."
    }},
  "SC-2024":{
+   docPrimario:["alesc-ind154-doc"],
    nome:"Orientação de recolhimento e análise pedagógica de O avesso da pele nas bibliotecas estaduais de Santa Catarina",
    data:"2024-03-07",
    uf:"SC",
@@ -350,6 +354,7 @@ const ATOS = {
      fiscalizacao:"Leonel Camasão (PSOL), suplente de vereador, levou o caso ao Ministério Público. O cadastro o identifica como autor da denúncia posterior, não como autor do pedido de retirada."
    }},
  "RO-2020":{
+   docPrimario:["mpf-ro-arquivamento"],
    nome:"Memorando-Circular nº 4/2020/SEDUC-DGE (RO)",
    data:"2020-02-06",
    fim:"2020-02-06",
@@ -366,6 +371,7 @@ const ATOS = {
      resposta:"O MPF registrou que a solicitação verbal foi suspensa no mesmo dia, que exemplares recolhidos foram devolvidos às escolas e que o recolhimento não se concretizou. A Seduc abriu sindicância; o MP-RO instaurou procedimento e emitiu recomendação, acatada pela Secretaria. O inquérito civil do MPF foi arquivado e o arquivamento homologado em 2021."
    }},
  "PALM-2021-06":{
+   docPrimario:["relatorio-gestao-palm-2021"],
    nome:"Relatório “Retrato do Acervo” e anúncio de descarte (Fundação Palmares)",
    data:"2021-06-11",
    uf:"DF",
@@ -400,6 +406,7 @@ const ATOS = {
      resposta:"A Procuradoria-Geral Federal informou ao juízo que Camargo desistira da doação em julho de 2021. Em agosto, ele anunciou a segregação dos livros. Não foi localizado documento que comprove quando o acesso público foi restabelecido."
    }},
  "MG-2024":{
+   docPrimario:["comunicado-lafaiete","sentenca-lafaiete"],
    nome:"Suspensão de atividades com O menino marrom (Conselheiro Lafaiete)",
    data:"2024-06-19",
    fim:"2024-06-27",
@@ -436,6 +443,7 @@ const ATOS = {
      resposta:"Em 20 de julho de 2026, sentença de mérito determinou a restituição dos exemplares no prazo de cinco dias após a intimação e proibiu novas restrições político-ideológicas. Reportagens de 28 a 30/07 informaram que a Prefeitura ainda não havia confirmado o cumprimento."
    }},
  "UNIRV-2023":{
+   docPrimario:["unirv-nota"],
    nome:"Exclusão da lista do vestibular da UniRV",
    data:"2023-04-26",
    uf:"GO",
@@ -522,6 +530,7 @@ const ATOS = {
      resposta:"Em 13 de fevereiro de 2020, a Funap determinou a inclusão da lista inicial e anunciou uma equipe multidisciplinar para tratar da seleção. Não foi comprovado se os 240 exemplares chegaram depois às unidades prisionais."
    }},
  "LIM-2019":{
+   docPrimario:["camara-limeira-req","camara-limeira-resp"],
    nome:"Requerimento nº 451/2019 sobre A bolsa amarela (Limeira)",
    data:"2019-08-12",
    fim:"2019-10-15",
@@ -907,6 +916,8 @@ const MODALIDADES = ["Retirada","Ocultação ou restrição de acesso","Exclusã
 /* Até onde o episódio chegou, do mais leve ao mais grave. */
 const ESTAGIOS = ["Pressão pública","Pedido formal","Decisão ou ordem","Execução comprovada"];
 /* Situação atual da medida. O detalhe fica no campo desfecho. */
+/* Níveis de verificação, do mais forte ao mais fraco. "Em apuração" fica só na triagem e nunca é publicado. */
+const NIVEIS = ["Documentado","Confirmado","Parcial"];
 const SITUACOES = ["Em vigor","Revertido","Sem efeito","Em aberto"];
 const EIXOS = ["Cultura afro-brasileira","Sexualidade e gênero","Sobrenatural e mágico",
   "Política e ideologia","Religião","Linguagem e palavrão","Violência","Outro"];
