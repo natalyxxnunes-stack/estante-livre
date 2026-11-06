@@ -784,3 +784,95 @@ h1.livro-tit{font-size:32px;line-height:1.12}
 .lac-ids{font-size:12px;color:var(--cinza)}
 .caso-pend a{white-space:nowrap}
 @media (max-width:520px){.lac{padding:14px}.lac-nums b{font-size:28px}}
+
+
+/* ================= acabamento responsivo final — 06/11/2026 ================= */
+/* Preserva a direção de arte existente e corrige pontos de usabilidade em telas pequenas. */
+img, picture, video, canvas, svg { max-width:100%; }
+button, input, select, textarea { font:inherit; }
+a { text-underline-offset:.18em; }
+button, a, input, select, textarea { -webkit-tap-highlight-color:transparent; }
+
+/* Navegação: todos os destinos continuam visíveis sem ocupar linhas imprevisíveis. */
+@media (max-width:640px) {
+  .topo { padding-top:24px; }
+  .topo-in { width:100%; }
+  .logo { font-size:34px; }
+  .tagline { max-width:48ch; margin:9px auto 0; font-size:12px; line-height:1.45; }
+  .nav {
+    display:grid;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    gap:4px;
+    width:100%;
+    margin-top:20px;
+    padding-bottom:10px;
+  }
+  .nav a {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height:42px;
+    padding:8px 5px;
+    text-align:center;
+    font-size:11px;
+    line-height:1.25;
+    letter-spacing:.02em;
+    overflow-wrap:anywhere;
+  }
+  .wrap { padding-left:18px; padding-right:18px; }
+  .hero-pg { padding-top:32px; padding-bottom:26px; }
+  .abre { padding-top:32px; }
+  .bignums { padding-top:24px; padding-bottom:24px; }
+  .bignums-in { gap:20px 14px; }
+  .bignum .n { font-size:clamp(36px,11vw,48px); }
+  .bignum .l { font-size:10px; line-height:1.4; }
+  .bar-row { grid-template-columns:minmax(82px, .9fr) minmax(0, 2fr) 26px; gap:8px; }
+  .bar-lab { font-size:11px; line-height:1.3; }
+  .bar-val { font-size:16px; }
+  .prat-lista { scroll-padding-left:18px; }
+  .prat-col { padding:16px; }
+  .pront-corpo {
+    grid-template-columns:62px minmax(0,1fr);
+    gap:12px;
+    padding:12px;
+  }
+  .pront-corpo>div:first-child { display:block; min-width:0; }
+  .pront-corpo .capa-tipo { width:62px; height:93px; padding:7px 6px; }
+  .pront-corpo .capa-tipo b { font-size:10px; }
+  .pront-corpo .capa-tipo span { font-size:7px; letter-spacing:.08em; }
+  .pront-grade { grid-template-columns:repeat(2,minmax(0,1fr)); }
+  .pront-campo { padding:7px 8px; }
+  .pront-campo .v { font-size:12px; }
+  .resp-linha { grid-template-columns:1fr; gap:3px; }
+  .responsa { padding:13px; }
+  .foot { padding-top:20px; padding-bottom:20px; }
+  .foot-in { gap:12px; }
+  .foot-links { gap:9px 13px; }
+  .tab-wrap, .table-wrap { max-width:100%; overflow-x:auto; overscroll-behavior-x:contain; }
+  .tab { min-width:620px; }
+}
+
+/* Em aparelhos muito estreitos, prioriza legibilidade sem eliminar conteúdo. */
+@media (max-width:380px) {
+  .topo,.controls,.bignums,.alert,.foot { padding-left:16px; padding-right:16px; }
+  .wrap { padding-left:16px; padding-right:16px; }
+  .nav a { font-size:10px; padding-left:3px; padding-right:3px; }
+  .pront-cab { gap:10px; }
+  .pront-corpo { grid-template-columns:54px minmax(0,1fr); gap:9px; padding:10px; }
+  .pront-corpo .capa-tipo { width:54px; height:82px; }
+  .pront-grade { grid-template-columns:1fr; }
+}
+
+/* Estados de interação e leitura: foco visível, alvos táteis e âncoras previsíveis. */
+:where(a,button,input,select,textarea,[tabindex]):focus-visible {
+  outline:3px solid var(--azul);
+  outline-offset:3px;
+}
+.topo :where(a,button):focus-visible,
+.foot :where(a,button):focus-visible,
+.bignums :where(a,button):focus-visible {
+  outline-color:var(--neon);
+}
+@media (hover:none) {
+  .btn, .nav a, .copiar, .ufchip, .chip { min-height:42px; }
+}
