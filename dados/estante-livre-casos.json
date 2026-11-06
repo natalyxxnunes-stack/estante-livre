@@ -2863,7 +2863,7 @@
    "ato_ou_documento": "Nota oficial da UniRV, datada de 26 de abril e publicada em 27 de abril de 2023, atribui à Coordenação do Vestibular a decisão de excluir imediatamente a obra após a polêmica. A nota não identifica o responsável individual nem apresenta ato nominal de formalização.",
    "verificado": "Parcialmente",
    "pendencia": "Identificar nominalmente quem compunha a Coordenação do Vestibular e quem formalizou a decisão; a nota pública identifica o órgão decisor, mas não traz ata ou despacho nominal.",
-   "nota": "A nota oficial da UniRV, datada de 26 de abril de 2023 e publicada no site em 27 de abril, afirma que a Coordenação do Vestibular decidiu pela exclusão imediata da obra depois de tomar conhecimento do conteúdo e da polêmica. A universidade também registra que a indicação original havia sido feita por uma banca de professores. A nota não identifica nominalmente quem, dentro da Coordenação, tomou a decisão.",
+   "nota": "Em 12/04/2023, a própria UniRV publicou a lista de obras para o vestibular de Medicina e incluiu expressamente o romance de Marçal Aquino. Em nota oficial datada de 26/04 e publicada em 27/04, a universidade afirmou que a Coordenação do Vestibular decidiu pela exclusão imediata da obra após tomar conhecimento do conteúdo e da polêmica; a indicação original havia sido feita por uma banca de professores. A instituição não identifica nominalmente quem, dentro da Coordenação, tomou a decisão nem apresenta ata ou despacho individual.",
    "agentes": [
     {
      "nome": "Gustavo Gayer",
@@ -2881,6 +2881,12 @@
     }
    ],
    "fontes": [
+    {
+     "veiculo": "Universidade de Rio Verde (UniRV)",
+     "titulo": "Dê o primeiro passo para seu futuro profissional: se inscreva no vestibular de Medicina",
+     "data": "2023-04-12",
+     "url": "https://unirv.edu.br/ver_noticias.php?codabr=18320"
+    },
     {
      "veiculo": "Folha de Pernambuco",
      "titulo": "ABL repudia censura a livro de Marçal Aquino em vestibular",
