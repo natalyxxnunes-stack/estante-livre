@@ -633,3 +633,30 @@ Adicionar ao EL-025 as fontes primárias:
 - política oficial de formação e desenvolvimento do acervo publicada em 2023.
 
 Manter **EL-025 parcialmente verificado**. O avanço fecha a prova de que três títulos citados em fontes relacionadas constam do inventário oficial geral e melhora a documentação da posição institucional e do rito de descarte. Permanecem pendentes: Relatório 01 integral, validação completa da lista de 300/261 entradas, decisão e autos judiciais integrais, processo de averiguação do contrato Clóvis Moura, atos/atas da comissão e destino físico atual dos títulos.
+
+
+### EL-025 — cruzamento nominal adicional e correção de correspondências (05/11/2026)
+
+A consulta direta ao inventário oficial localizou mais correspondências de título, autor e/ou ano com entradas da transcrição secundária de 261 itens:
+- “A Nova Mulher e a Moral Sexual” — Alexandra Kolontai; inventário registra duas edições, 1953 e 2000 (itens 600 e 601), enquanto a transcrição cita 1932;
+- “A crise do Neoliberalismo e a luta pelo Socialismo” — Aldo Rebelo, 1994 (item 294);
+- “A questão camponesa em França e na Alemanha” — Friedrich Engels, 1974 (item 686);
+- “A história me absolverá” — Fidel Castro, 2001 (item 461);
+- “O mundo do socialismo” — Caio Prado Júnior, inventário 1962 (item 6393), enquanto a transcrição indica 1961;
+- “O PT em movimento” — Florestan Fernandes, 1991 (item 6601);
+- “Menino brinca de boneca?” — Marcos Ribeiro, 1990 (item 5437);
+- “O Segundo Sexo” — Simone de Beauvoir (item 6697; ano não informado);
+- “Dicionário do Folclore Brasileiro” — Luís da Câmara Cascudo, com várias edições/quantidades (itens 2996–3001);
+- “Bandidos” — E. J. Hobsbawm, 1975 (item 1651);
+- “O sexo e a vida” — H. G. Wells, 1942 (item 6707);
+- “O Sexo na Educação” — Harry Elmer Barnes et al., 1941 (item 6709).
+
+Esses cruzamentos confirmam a presença de registros bibliográficos correspondentes ou fortemente compatíveis no inventário compilado em 2021; não provam que sejam os mesmos exemplares físicos, nem a permanência após a triagem. Nos casos em que autor/ano/edição divergem, registrar como correspondência provável ou candidato, nunca como identidade material.
+
+**Correção de precisão:** duas associações apontadas na leitura anterior não devem ser tratadas como correspondências confirmadas:
+- A transcrição secundária traz “O amor em grupo”, atribuído a Gilbert D. Barr, 1971; o inventário traz “Amor em grupo”, Gilbert D. Bartell, 1972 (item 1183). A semelhança de título não resolve a divergência de autor e ano.
+- A transcrição traz “Le Manifet Communiste” (1934); o inventário lista “O Manifesto Comunista”, Karl Marx et al., sem ano (item 6356). A equivalência de edição/registro não está estabelecida.
+
+O título “O Sexo na Alemanha Nazista” aparece nos dois conjuntos, mas há divergência na grafia do sobrenome do autor (transcrição: Hans Peter Blewel; inventário: Hans Peter Bleual) e o ano não consta no inventário; classificar como correspondência provável, não como identidade comprovada.
+
+Fontes de conferência: [transcrição secundária das 261 entradas](https://pordentrodorn.com.br/2021/06/17/veja-lista-de-livros-banidos-pela-fundacao-palmares/) e [inventário oficial FCP/CNIRC](https://www.gov.br/palmares/pt-br/centrais-de-conteudo/publicacoes/lista-de-livros-atualizada-8-8-2024-1.pdf).
