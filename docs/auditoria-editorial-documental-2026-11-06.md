@@ -71,8 +71,9 @@ O registro atual também cita informação posterior, de 14 jul. 2026, sobre ret
 - `scripts/gerar.js` existe e valida campos obrigatórios, listas fechadas, IDs, referências, capas, vínculos entre obras/atos/agentes e lacunas antes de gerar as páginas estáticas e os dados abertos.
 - O documento `docs/auditoria-acessibilidade-mobile.md` foi removido da branch main em commit de 1 nov. 2026 ("Move documentação de acessibilidade para a branch de revisão"). O arquivo `scripts/acessibilidade.js` não foi encontrado na branch main examinada.
 - Não foram comprovados nesta sessão testes manuais de teclado, leitor de tela, contraste, zoom 200%/400%, dispositivos reais ou navegação cross-browser.
-- A tentativa de clonar o repositório para executar `node scripts/gerar.js` falhou por indisponibilidade de resolução de `github.com` no ambiente. Portanto, o gerador não foi executado nesta auditoria.
-- A página pública de produção não pôde ser aberta pelo navegador de inspeção disponível nesta sessão. Não declarar o site live aprovado nem os links/funcionalidades testados ponta a ponta.
+- A tentativa de clonar o repositório para executar `node scripts/gerar.js` falhou por indisponibilidade de resolução de `github.com` no ambiente. Portanto, o gerador não foi executado manualmente nesta auditoria.
+- Após as alterações documentais e de dados, o GitHub reportou o status de implantação Vercel como `success` para o commit `a27482bb1247ce63f0c0d928acb924740061dad6`.
+- A ferramenta de inspeção web não conseguiu abrir as páginas públicas do domínio Vercel nesta sessão. O status de implantação é positivo, mas não substitui teste funcional de navegação, formulários, filtros, mobile e acessibilidade.
 
 **Conclusão técnica:** a presença de boas práticas estáticas não equivale a certificação WCAG 2.2 AA. A acessibilidade manual e a validação real da produção permanecem não testadas.
 
