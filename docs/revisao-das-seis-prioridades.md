@@ -1,6 +1,6 @@
 # Revisão das seis prioridades pendentes — Estante Livre
 
-> **Nota de atualização — 04/11/2026:** este documento registra a rodada de 02/11 e foi atualizado apenas em seus indicadores. Para o status factual e operacional vigente, prevalece o [Fechamento P0 de 04/11/2026](fechamento-p0.md).
+> **Atualização operacional — 05/11/2026:** o PR #5 está no commit `603bbb91d8ae97afd7d67a36060d99bfb3a6c913`. O check Vercel desse commit está em sucesso; o GitHub Actions #492 está em execução, e o último workflow concluído com sucesso antes dele foi o #427. A branch permanece divergente: 621 commits à frente e quatro atrás de `main`; não houve merge nem publicação em produção. A comparação com o PR #4 ainda mostra 65 commits exclusivos nele, por isso não há integração automática. A camada `CONTEXTO_PARTIDARIO` de 19 registros já está em `poder.html`; a nota antiga de que ela não havia sido portada está superada. A apuração de SC/2024 foi parcialmente portada para EL-005, Análises e documentação própria. O Relatório Público 01/CNIRC da Palmares continua não localizado; a afirmação anterior de que estaria dentro do PDF `resposta.pdf` foi retificada no [relatório editorial de 05/11/2026](relatorio-editorial-fechamento-p0-2026-11-05.md). Para o estado factual vigente, prevalece o [Fechamento P0](fechamento-p0.md).
 
 **Data:** 2 de novembro de 2026  
 **Branch examinada:** `feat/estante-livre-auditoria-profissional`  
@@ -53,16 +53,16 @@ Para cada arquivo: obter autorização/licença ou registrar fundamento jurídic
 
 ## 4. Revisão dos dez registros parcialmente verificados
 
-A base exportada foi confrontada com a lista de pendências. Os dez IDs permanecem corretos e visíveis como parciais:
+A base exportada foi confrontada com a lista de pendências. Onze IDs permanecem marcados como parcialmente verificados, incluindo o P0 EL-025:
 
 | Registro | Lacuna central que impede o fechamento |
 |---|---|
 | EL-022 | Relação nominal dos 19 títulos de Rubem Fonseca no Adendo SEI 10053329 |
 | EL-023 | Relação nominal das obras de Rubem Alves no mesmo adendo |
-| EL-024 | Relação integral dos demais títulos do Adendo SEI 10053329 |
+| EL-025 | Íntegra do Relatório Público 01/CNIRC, lista final de 300 títulos e destino da lista; a transcrição secundária de 261 entradas ainda não foi cotejada integralmente com o original |\n| EL-024 | Relação integral dos demais títulos do Adendo SEI 10053329 |
 | EL-028 | Data de intimação, prova de devolução às escolas e eventual recurso após decisão de 20/07/2026 |
 | EL-030 | Requerimento integral de Jéssica Ramos Moreno, resposta da Secretaria e confirmação de eventual recolhimento |
-| EL-031 | Nota oficial integral e registro da avaliação pedagógica do link; manter como pressão sobre atividade, não banimento do livro |
+| EL-031 | Nota institucional original não recuperada; link de resenha foi temporariamente retirado para avaliação, sem retirada do livro, veto ou adoção obrigatória |
 | EL-032 | Requerimento, resposta municipal, parecer técnico e prova de redistribuição física de *Pipoca e Picolé* |
 | EL-035 | Processo SEI, pedido de providências, despacho da SME, quantitativo, avaliação técnica e destino final de *O bebê vem com a cegonha?!?* |
 | EL-036 | Inventário/movimentação dos exemplares, nota integral, resultado da notícia de fato do MPSC e situação atual do acervo |
