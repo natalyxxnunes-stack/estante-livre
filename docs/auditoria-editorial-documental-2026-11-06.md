@@ -88,9 +88,28 @@ Em `index.html`, foram corrigidos dois trechos da página inicial:
 
 Commit da correção: https://github.com/natalyxxnunes-stack/estante-livre/commit/7b92979742d2f23f700ea37196adaf05fe67da07
 
+## 9. Reconciliação documental de Rondônia — atualização
+
+A pendência de localizar o Adendo ID 10053329 foi parcialmente resolvida: foi encontrada uma cópia pública em PDF, hospedada por terceiro, que reproduz a relação de 43 linhas numeradas e o Memorando-Circular nº 4/2020/SEDUC-DGE. O documento indica o processo SEI nº 0029.051300/2020-91 e os identificadores SEI 10040389/CRC F6F331F8. A cópia não equivale à obtenção do processo integral no portal oficial do SEI:
+https://questoesrelevantes.wordpress.com/wp-content/uploads/2020/02/rondonia-livros-proibidos.pdf
+
+A leitura do PDF resolve a divergência de contagem:
+- 43 linhas numeradas;
+- 42 títulos distintos;
+- “O Seminarista” aparece duas vezes, nas linhas 31 e 34;
+- 19 linhas são atribuídas a Rubem Fonseca, correspondentes a 18 títulos distintos;
+- a observação “Todos os livros do Rubem Alves devem ser recolhidos” aparece fora da tabela e não integra as 43 linhas.
+
+A linha 1 aparece truncada na extração textual do PDF como “O Melhor De”; a Folha identifica a obra como “O Melhor de Caio Fernando Abreu — Contos e Crônicas”. A transcrição da Folha contém 42 entradas visíveis porque não reproduz a segunda ocorrência de “O Seminarista”; a cópia do PDF mostra a duplicidade:
+https://www1.folha.uol.com.br/amp/educacao/2020/02/governo-de-ro-manda-recolher-macunaima-e-mais-42-livros-e-depois-recua.shtml
+
+O registro EL-017 foi corrigido para “Os Sertões da Luta”, conforme o título da relação. Os agrupamentos de Rubem Fonseca e do Adendo foram renomeados para explicitar a diferença entre itens e obras distintas. A fonte do PDF foi vinculada aos registros de Rondônia.
+
+**O que permanece aberto:** individualizar todos os 42 títulos distintos em registros e fichas próprios, eliminar o agrupamento documental residual e regenerar páginas, CSV, JSON e sitemap. A cópia pública do Adendo foi encontrada; a obtenção do processo SEI integral, da sindicância estadual e da recomendação integral do MP-RO não foi comprovada.
+
 ## 9. Critério de publicação
 
-A base apresenta metodologia, fontes, marcação de verificação parcial e página pública de lacunas. Isso permite publicar material incompleto quando a incompletude está claramente sinalizada. Entretanto, a reconciliação e o desmembramento da lista de Rondônia são necessários para que a contagem de registros corresponda à regra metodológica declarada. Até essa correção e a execução do gerador/checagem de produção, não é correto certificar a versão como finalizada e integralmente validada.
+A base apresenta metodologia, fontes, marcação de verificação parcial e página pública de lacunas. Isso permite publicar material incompleto quando a incompletude está claramente sinalizada. Entretanto, a individualização dos 42 títulos distintos de Rondônia e a regeneração das páginas/dados abertos ainda são necessárias para que a contagem de registros corresponda à regra metodológica declarada. Até essa correção e a execução do gerador/checagem de produção, não é correto certificar a versão como finalizada e integralmente validada.
 
 ---
 Este documento registra achados e limites de verificação. Não substitui a atualização dos registros, das páginas geradas, do CSV/JSON e do sitemap.
