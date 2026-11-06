@@ -107,6 +107,20 @@ O registro EL-017 foi corrigido para “Os Sertões da Luta”, conforme o títu
 
 **O que permanece aberto:** individualizar todos os 42 títulos distintos em registros e fichas próprios, eliminar o agrupamento documental residual e regenerar páginas, CSV, JSON e sitemap. A cópia pública do Adendo foi encontrada; a obtenção do processo SEI integral, da sindicância estadual e da recomendação integral do MP-RO não foi comprovada.
 
+## 10. Palmares — atualização documental
+
+O Relatório de Gestão 2021 da própria Fundação Cultural Palmares, seção 3.1.2, páginas impressas 70–71, informa 9.565 registros no acervo, compostos por 8.035 títulos diferentes e 1.530 folders e catálogos: https://www.gov.br/palmares/pt-br/midias/arquivos-menu-acesso-a-informacao/resultados-gerados2021_ok.pdf
+
+Assim, para o número-base de 2021, a fonte institucional confirma 9.565. O número 9.546 publicado pelo Jornal da Unesp é uma divergência de reportagem, sem explicação localizada.
+
+A Fundação publicou versões posteriores do Inventário Bibliográfico com 9.665 títulos (04/09/2023) e 9.696 títulos (08/08/2024). Ambas informam que a compilação foi realizada entre julho e outubro de 2021. Não foi localizada nota metodológica que explique a diferença entre essas versões e o Relatório de Gestão. Os números não devem ser tratados como intercambiáveis.
+
+O número 5.165 (54%) aparece no relatório “Retrato do Acervo” como classificação feita pela gestão da época. Não foi localizada lista pública individualizada que permita identificar todos esses itens, nem prova de que tenham sido efetivamente descartados ou doados.
+
+A ação judicial sobre cerca de 300 livros permanece como registro próprio (EL-026), sem afirmar que esse conjunto seja mutuamente exclusivo dos 5.165. A página oficial da FCP sobre a Política de Gestão do Acervo registra a Ação Popular nº 5006660-67.2021.4.02.5117 e reproduz decisão que impedia a movimentação do acervo, exceto consulta local. Em janeiro de 2022, reportagem sobre decisão da 2ª Vara Federal de São Gonçalo informa que o ato de doação de parte do acervo foi anulado e que a Fundação não recorreria.
+
+Fontes: https://www.gov.br/participamaisbrasil/politica-de-formacao-desenvolvimento-e-gestao-do-acervo-bibliografico-da-biblioteca-da-fundacao-cultural-palmares-fcp ; https://www.gov.br/palmares/pt-br/centrais-de-conteudo/publicacoes/ListadeLivrosAtualizada04.09.23.pdf ; https://www.gov.br/palmares/pt-br/centrais-de-conteudo/publicacoes/lista-de-livros-atualizada-8-8-2024-1.pdf ; https://www.gov.br/palmares/pt-br/midias/arquivos-menu-acesso-a-informacao/resultados-gerados2021_ok.pdf ; https://www.gazetadopovo.com.br/vida-e-cidadania/breves/justica-proibe-fundacao-palmares-doar-livros-socialismo-comunismo-acervo/
+
 ## 9. Critério de publicação
 
 A base apresenta metodologia, fontes, marcação de verificação parcial e página pública de lacunas. Isso permite publicar material incompleto quando a incompletude está claramente sinalizada. Entretanto, a individualização dos 42 títulos distintos de Rondônia e a regeneração das páginas/dados abertos ainda são necessárias para que a contagem de registros corresponda à regra metodológica declarada. Até essa correção e a execução do gerador/checagem de produção, não é correto certificar a versão como finalizada e integralmente validada.
