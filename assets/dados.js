@@ -570,7 +570,7 @@ const FONTES = {
  "folha-sjc-ordem": {"veic":"Folha de S.Paulo","data":"2026-07-30","tit":"Justiça determina volta de livro que retrata Marielle a escolas em São José dos Campos","url":"https://www1.folha.uol.com.br/ciencia/2026/07/justica-determina-volta-de-livro-que-retrata-marielle-a-escolas-em-sao-jose-dos-campos.shtml"},
  "uol-sjc-ordem": {"veic":"UOL","data":"2026-07-29","tit":"Juíza vê censura e manda prefeitura devolver às escolas livro com Marielle","url":"https://noticias.uol.com.br/cotidiano/ultimas-noticias/2026/07/29/juiza-manda-prefeitura-devolver-as-escolas-livro-com-marielle-em-sao-jose.ghtm"},
  "ovale-sjc-sentenca": {"veic":"OVALE","data":"2026-07-28","tit":"SJC: Justiça determina volta de obra que cita Marielle às escolas","url":"https://sampi.net.br/ovale/noticias/2994720/vale-do-paraiba/2026/07/sjc-justica-determina-volta-de-obra-que-cita-marielle-as-escolas"},
- "relatorio-palmares-original": {"veic":"Fundação Cultural Palmares · CNIRC","data":"2021-06-11","tit":"Relatório Público 01 – Retrato do Acervo: três décadas de dominação marxista na Fundação Cultural Palmares","url":"https://www.palmares.gov.br/wp-content/uploads/2021/06/cnirc-01-gab-10-06-21.pdf"},
+ "relatorio-palmares-original": {"veic":"Fundação Cultural Palmares · CNIRC (cópia do endereço oficial preservada pelo Internet Archive)","data":"2021-06-11","tit":"Relatório Público 01 – Retrato do Acervo: três décadas de dominação marxista na Fundação Cultural Palmares","url":"https://web.archive.org/web/20230506020536/https://www.palmares.gov.br/wp-content/uploads/2021/06/cnirc-01-gab-10-06-21.pdf"},
  "relatorio-gestao-palm-2021": {"veic":"Fundação Cultural Palmares · Relatório de Gestão 2021","data":"2022-03-31","tit":"Relatório de Gestão 2021 · Organização do Acervo da Fundação Cultural Palmares","url":"https://www.gov.br/palmares/pt-br/midias/arquivos-menu-acesso-a-informacao/resultados-gerados2021_ok.pdf"},
  "palmares-inventario-2023": {"veic":"Fundação Cultural Palmares · CNIRC","data":"2023-09-04","tit":"Inventário Bibliográfico · versão atualizada em 04/09/2023","url":"https://www.gov.br/palmares/pt-br/centrais-de-conteudo/publicacoes/ListadeLivrosAtualizada04.09.23.pdf"},
  "participa-palm": {"veic":"Fundação Cultural Palmares · Participa + Brasil","data":"2023-11-08","tit":"Política de Formação, Desenvolvimento e Gestão do Acervo Bibliográfico · processo 01420.100952/2021-87","url":"https://www.gov.br/participamaisbrasil/politica-de-formacao-desenvolvimento-e-gestao-do-acervo-bibliografico-da-biblioteca-da-fundacao-cultural-palmares-fcp"},
@@ -640,7 +640,7 @@ const FONTES = {
   "veic": "Congresso em Foco",
   "data": "2023-11-09",
   "tit": "Governo de SC determina retirada de livros em escolas; veja lista",
-  "url": "https://congressoemfoco.com.br/area/pais/governo-de-sc-determina-retirada-de-livros-em-escolas-veja-lista"
+  "url": "https://www.congressoemfoco.com.br/noticia/9020/governo-de-sc-determina-retirada-de-livros-em-escolas-veja-lista"
  },
  "dp-ro": {
   "veic": "Diario de Pernambuco",
@@ -709,12 +709,6 @@ const FONTES = {
  "ric-londrina-2024": {"veic":"RIC.com.br","data":"2024-11-26","tit":"Livro que detalha ato sexual é encontrado em CMEI e gera polêmica em Londrina","url":"https://ric.com.br/politica/livro-detalha-ato-sexual-encontrado-cmei-londrina/"},
  "taroba-londrina-2024": {"veic":"Tarobá","data":"2024-11-26","tit":"Livro infantil com suposto conteúdo erótico é encontrado em CMEI no Jardim Leonor","url":"https://taroba.com.br/noticias/cidade/livro-infantil-com-suposto-conteudo-erotico-e-encontrado-em-cmei-no-jardim-leonor/amp"},
  "pl79-londrina": {"veic":"Câmara Municipal de Londrina","data":"2024-04-09","tit":"Projeto de Lei nº 79/2024 · Processo 148224, documento 208880","url":"https://www1.cml.pr.gov.br/projetos/2024/PL000792024.pdf"},
- "fl-londrina": {
-  "veic": "Folha de Londrina",
-  "data": "2024-11",
-  "tit": "Educação vai recolher livro infantil com ‘conteúdo sensível’",
-  "url": "https://www.folhadelondrina.com.br/politica/educacao-vai-recolher-livro-infantil-com-conteudo-sensivel-3292131e.html"
- },
  "bp-londrina": {
   "veic": "Brasil Paralelo",
   "data": "2025-02-21",
@@ -944,6 +938,14 @@ const CONTEXTO = [
 
 /* Registro público de correções. Toda mudança de fato num caso entra aqui. */
 const CORRECOES = [
+ {data:"2026-11-06", id:"Painel", texto:"Corrigidas quatro afirmações da página inicial: dois atos (Rondônia, 2020, e Santa Catarina, 2023), e não três, respondem por mais da metade dos registros; descarte ou destruição tem um registro, e não zero; a lista de Rondônia já está reconciliada; e Os Sertões da Luta voltou à prateleira de destaques, de onde havia saído quando o título foi corrigido."},
+ {data:"2026-11-06", id:"EL-030", texto:"Londrina: confirmada, por nota da Secretaria reproduzida pela RIC e pela Tarobá, a retirada do exemplar encontrado em um CMEI; não há prova de recolhimento em outras unidades. Removida da lista de fontes uma reportagem da Folha de Londrina que tratava de outro livro e de outro episódio, de março de 2026. Registrado que o PL 79/2024 foi protocolado em abril de 2024, antes do caso."},
+ {data:"2026-11-06", id:"EL-028", texto:"São José dos Campos: registrada a sentença de mérito de 20/07/2026, que determinou a restituição da obra às salas de leitura; o cumprimento da ordem não foi confirmado."},
+ {data:"2026-11-06", id:"EL-027", texto:"Conselheiro Lafaiete: registrada a sentença de mérito de 02/12/2024, que anulou o ato da Secretaria e confirmou a tutela antecipada. A cópia pública consultada não traz certidão de trânsito em julgado; a ficha deixou de chamar a decisão de definitiva."},
+ {data:"2026-11-06", id:"EL-025", texto:"Fundação Palmares: o total de 9.565 itens foi confirmado pelo Relatório de Gestão 2021 da própria fundação (8.035 títulos e 1.530 folders e catálogos); o número 9.546 é divergência de reportagem. O link do relatório Retrato do Acervo, cujo domínio original saiu do ar, passou a apontar para a cópia do mesmo endereço preservada pelo Internet Archive."},
+ {data:"2026-11-06", id:"EL-017, EL-022 e EL-024", texto:"Rondônia: reconciliada a lista do Adendo 10053329 a partir de cópia pública do documento. São 43 linhas e 42 títulos distintos, porque O Seminarista aparece duas vezes. O título de EL-017 foi corrigido para Os Sertões da Luta, como consta na relação."},
+ {data:"2026-11-06", id:"EL-006 a EL-014", texto:"Santa Catarina, 2023: a coordenadoria que expediu o ofício foi identificada como a Coordenadoria Regional de Educação de Florianópolis, por atos de designação dos dois signatários publicados no Diário Oficial do Estado."},
+ {data:"2026-11-06", id:"EL-005", texto:"Santa Catarina, 2024: localizado documento oficial (Informação nº 304/2024/SED/DIEN, enviada à Alesc) em que a Secretaria afirma ter orientado as escolas a recolher a obra para análise. Substitui a nota de 30/10 sobre fonte única; o que falta agora é comprovar a execução e o destino dos exemplares."},
  {data:"2026-10-30", id:"EL-028", texto:"São José dos Campos: acrescentada a fase de 2024, com liminar que determinava a redistribuição da obra suspensa pelo TJSP em outubro de 2024, e o anúncio de recurso do vereador contra a sentença de julho de 2026."},
  {data:"2026-10-30", id:"EL-033", texto:"Funap: acrescentado artigo de 2022 segundo o qual os livros ainda aguardavam liberação quando o texto foi escrito, e registrada a divergência entre 240 e 228 exemplares."},
  {data:"2026-10-30", id:"EL-005", texto:"Santa Catarina: registrado que a única fonte é nota do governo estadual à Gazeta do Povo; nova busca não encontrou segunda fonte. O caso segue parcialmente verificado."},

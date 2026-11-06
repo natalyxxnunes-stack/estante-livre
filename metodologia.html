@@ -136,7 +136,7 @@ document.getElementById("pend").innerHTML = pend.map(c=>
   `<tr><td><a href="${urlCaso(c.id)}">${c.id}</a></td><td>${esc(obraDe(c))}</td><td>${esc(c.pendencia)}</td></tr>`).join("");
 document.getElementById("count-corr").innerHTML = `<b>${CORRECOES.length}</b> correções`;
 document.getElementById("corr").innerHTML = [...CORRECOES].sort((a,b)=>b.data.localeCompare(a.data)).map(x=>
-  `<tr><td>${dataCurta(x.data)}</td><td>${/^EL-/.test(x.id)?`<a href="${urlCaso(x.id)}">${x.id}</a>`:esc(x.id)}</td><td>${esc(x.texto)}</td></tr>`).join("");
+  `<tr><td>${dataCurta(x.data)}</td><td>${esc(x.id).replace(/EL-\d{3}/g, id=>`<a href="${urlCaso(id)}">${id}</a>`)}</td><td>${esc(x.texto)}</td></tr>`).join("");
 const parc = CASOS.filter(c=>!verificado(c)).length;
 document.getElementById("n-parciais").textContent = `Hoje, ${CASOS.length - parc} de ${CASOS.length} registros estão marcados como verificados e têm pelo menos duas referências cadastradas; ${parc} estão como parcialmente verificados. A independência das referências exige conferência editorial.`;
 montarRodape();

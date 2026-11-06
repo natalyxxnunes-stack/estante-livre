@@ -85,7 +85,7 @@ Em `index.html`, foram corrigidos dois trechos da página inicial:
 
 Commit da correção: https://github.com/natalyxxnunes-stack/estante-livre/commit/7b92979742d2f23f700ea37196adaf05fe67da07
 
-## 9. Reconciliação documental de Rondônia — atualização
+## 10. Reconciliação documental de Rondônia — atualização
 
 A pendência de localizar o Adendo ID 10053329 foi parcialmente resolvida: foi encontrada uma cópia pública em PDF, hospedada por terceiro, que reproduz a relação de 43 linhas numeradas e o Memorando-Circular nº 4/2020/SEDUC-DGE. O documento indica o processo SEI nº 0029.051300/2020-91 e os identificadores SEI 10040389/CRC F6F331F8. A cópia não equivale à obtenção do processo integral no portal oficial do SEI:
 https://questoesrelevantes.wordpress.com/wp-content/uploads/2020/02/rondonia-livros-proibidos.pdf
@@ -116,7 +116,7 @@ O registro EL-017 foi corrigido para “Os Sertões da Luta”, conforme o títu
 
 **Limite restante:** o script oficial foi executado com sucesso no GitHub Actions e os arquivos gerados foram versionados. O deploy Vercel está bloqueado por limite de builds por 24 horas, e não foi possível confirmar a versão nova em produção nem realizar teste funcional completo no navegador. A confirmação do job de geração não equivale à confirmação de publicação.
 
-## 10. Palmares — atualização documental
+## 12. Palmares — atualização documental
 
 O Relatório de Gestão 2021 da própria Fundação Cultural Palmares, seção 3.1.2, páginas impressas 70–71, informa um total agregado de 9.565 registros no acervo, composto por 8.035 títulos diferentes e 1.530 folders e catálogos; portanto, 9.565 não é a quantidade de títulos distintos: https://www.gov.br/palmares/pt-br/midias/arquivos-menu-acesso-a-informacao/resultados-gerados2021_ok.pdf
 
@@ -130,7 +130,7 @@ A ação judicial sobre cerca de 300 livros permanece como registro próprio (EL
 
 Fontes: https://www.gov.br/participamaisbrasil/politica-de-formacao-desenvolvimento-e-gestao-do-acervo-bibliografico-da-biblioteca-da-fundacao-cultural-palmares-fcp ; https://www.gov.br/palmares/pt-br/centrais-de-conteudo/publicacoes/ListadeLivrosAtualizada04.09.23.pdf ; https://www.gov.br/palmares/pt-br/centrais-de-conteudo/publicacoes/lista-de-livros-atualizada-8-8-2024-1.pdf ; https://www.gov.br/palmares/pt-br/midias/arquivos-menu-acesso-a-informacao/resultados-gerados2021_ok.pdf ; https://www.gazetadopovo.com.br/vida-e-cidadania/breves/justica-proibe-fundacao-palmares-doar-livros-socialismo-comunismo-acervo/
 
-## 9. Critério de publicação
+## 13. Critério de publicação
 
 A base apresenta metodologia, fontes, marcação de verificação parcial e página pública de lacunas. Isso permite publicar material incompleto quando a incompletude está claramente sinalizada. A individualização em 42 fichas de caso não é necessária para a contagem documental: os agrupamentos EL-022 e EL-024 estão identificados como conjuntos e transcrevem os títulos distintos; EL-023 registra separadamente a orientação genérica sobre Rubem Alves. A geração está validada pelo GitHub Actions, mas a publicação em produção e a checagem funcional seguem pendentes por bloqueio temporário do Vercel.
 
@@ -219,3 +219,54 @@ Revisão de redação em 06/11/2026: a sentença de mérito de 02/12/2024 anulou
 A ficha EL-027 foi ajustada para substituir a expressão ambígua “confirmada definitivamente” por “confirmou a tutela antecipada; trânsito em julgado não comprovado”. A sentença foi localizada em reprodução pública do documento judicial, e não se deve descrevê-la como certidão de trânsito ou decisão já irrecorrível.
 
 Referência processual: Ação Popular nº 5006658-14.2024.8.13.0183, 1ª Vara Cível de Conselheiro Lafaiete/MG. Cópia pública da sentença e demais peças: https://www.jusbrasil.com.br/ (consulta pelo número do processo); decisão liminar de 27/06/2024 também disponível em reprodução pública: https://www.migalhas.com.br/arquivos/2024/6/C9AB64BF939FD5_%C2%B7ProcessoJudicialEletronico-1%C2%BA.pdf.
+
+
+## 14. Operação de finalização — QA funcional, acessibilidade e coerência editorial (06/11/2026, fim da tarde)
+
+### Ambiente e método
+
+Repositório clonado e gerador executado localmente (`node scripts/gerar.js`: 34 casos, 29 obras, 17 atos, 39 agentes, zero erros). Site servido localmente e percorrido em Chrome headless (Playwright), com axe-core 4 (regras WCAG 2.0, 2.1 e 2.2, níveis A e AA). Produção e fontes externas conferidas no Chrome real da autora.
+
+### Testes executados e resultado
+
+- **94 páginas × 2 larguras (1366 px e 375 px):** zero erro de JavaScript, zero recurso local quebrado, zero rolagem horizontal no celular, exatamente um H1 por página.
+- **Links internos:** 4 quebrados encontrados (registro de correções da Metodologia transformava "EL-025 e EL-026" num único link inexistente). Corrigido: cada número EL vira link próprio. Reteste: zero.
+- **Interação (28 verificações):** busca, sete filtros, estado vazio, "limpar", filtro persistido na URL, download do CSV (35 linhas), "copiar link", busca de Livros, clique no mapa do painel, prateleira (abrir detalhe e alternar tarjas), link de salto, foco visível em 20 elementos seguidos, menu no celular, página 404, página Relate um caso sem botão morto. Todas passam após as correções abaixo.
+- **Acessibilidade automatizada:** de 3 tipos de violação para zero.
+  - Contraste: o subtítulo do carimbo dos prontuários usava `opacity:.8` sobre o vermelho, caindo para 3,66:1 (33 páginas). Sem a transparência, o vermelho da marca sobre o papel dá 4,58:1.
+  - Alvo de toque: links "Outras ocorrências com esta obra" tinham 16 px de altura (12 páginas). Agora têm no mínimo 24 px.
+  - Nome acessível divergente do texto visível (WCAG 2.5.3): botões da prateleira e linhas do gráfico de idade dos livros. Os botões passam a ter o nome formado pelo próprio texto visível; as linhas do gráfico começam o rótulo pelo título exibido.
+- **Limites:** não houve teste com leitor de tela real, zoom de 400% nem navegadores além do Chromium. axe-core sem violações não equivale a certificação WCAG.
+
+### Correções funcionais
+
+- Filtro "tipo de biblioteca" era o único escrito à mão e oferecia "Pública", sem nenhum registro. Passa a ser gerado pelos dados, com contagem, como os demais.
+- A prateleira de destaques procurava "Os sertões"; o título foi corrigido hoje para "Os Sertões da Luta" e o livro saiu da vitrine sem aviso. Religado. O título do bloco ("Seis livros...") passa a ser calculado pela quantidade real.
+
+### Correções editoriais (contradições com a base atual)
+
+- Painel: "Três atos administrativos respondem pela maior parte dos registros" → dois atos (RO-2020 com 10 e SC-2023 com 9; 19 de 34).
+- Painel: "Autocensura e destruição: zero" contradizia o gráfico (1 registro de descarte, EL-025) → "Autocensura: zero. Descarte ou destruição: um registro, sem prova de execução."
+- Painel: Rondônia "ainda precisa ser reconciliada" → reconciliação concluída; 42 títulos em nove registros, mais EL-023 (ordem genérica sobre Rubem Alves).
+- Painel: indicador "COM 2 REFERÊNCIAS" renomeado para "VERIFICADOS", que é o que a regra mede.
+- Análises: Londrina descrita como "sem retirada comprovada", em contradição com a ficha EL-030 corrigida hoje. Texto e tabela atualizados; data da leitura para 6 nov. 2026.
+- Linha do tempo e Glossário: "Os sertões" → "Os Sertões da Luta"; Conselheiro Lafaiete inclui a sentença de mérito.
+- Relate um caso: "identificá-la" → "identificar você".
+- Registro público de correções (Metodologia): acrescentadas 8 entradas datadas de 06/11/2026 cobrindo as mudanças de hoje que alteram o que o leitor lê (EL-005, EL-006 a 014, EL-017/022/024, EL-025, EL-027, EL-028, EL-030 e o painel).
+
+### Fontes externas
+
+92 URLs testadas a partir do navegador: 90 respondem. Duas falharam:
+- `relatorio-palmares-original`: o domínio `palmares.gov.br` saiu do ar. A cópia hospedada hoje no gov.br (`retrato_do_acervo.pdf`) tem 3 páginas e foi gerada em 2023, portanto não equivale ao original. A fonte passou a apontar para o snapshot do endereço oficial no Internet Archive (06/05/2023, status 200). Conteúdo conferido em cópia independente: "Relatório Público 01 – CNIRC", total de 9.565 e 5.165 (54%) de "temática alheia à negra".
+- `cf-sc`: funcionava por redirecionamento; URL trocada pela canônica e conteúdo conferido (nomes dos signatários presentes).
+- `fl-londrina` removida do cadastro: não era usada por nenhum caso e trazia data e episódio errados (ver seção sobre EL-030).
+
+Limite: o teste de rede não distingue página 404 "macia" de conteúdo válido; as fontes primárias foram conferidas em rodadas anteriores desta data.
+
+### Produção
+
+Produção servia o commit `c5a621a` (15:54), confirmado no navegador: a ficha EL-027 ainda mostrava "tornando-a definitiva". Os commits seguintes foram recusados pela Vercel por limite de builds do plano gratuito (`build-rate-limit`), sem erro de código.
+
+### Fora do escopo desta entrega (decisão)
+
+Os PRs #5 e #6 (casos EL-035 a EL-037, contexto partidário, páginas Poder e censura, dossiês, relatório 2026, páginas de agentes) **não** foram integrados. O próprio plano de integração registra que exigem reconciliação transacional de dados e geradores ainda não validada. Integrá-los hoje colocaria em risco a versão íntegra e testada da `main`. Ficam como próxima etapa, depois do lançamento.

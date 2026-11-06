@@ -3,7 +3,7 @@
   const raiz = document.getElementById("prateleira");
   if(!raiz || typeof CASOS==="undefined") return;
   const BASE = raiz.dataset.assets || "assets/";
-  const PADRAO = ["Memórias póstumas de Brás Cubas","Os sertões","O castelo",
+  const PADRAO = ["Memórias póstumas de Brás Cubas","Os Sertões da Luta","O castelo",
     "O menino marrom","O diário do diabo: os segredos de Alfred Rosenberg, o maior intelectual do nazismo","O avesso da pele"];
   const lista = (typeof DESTAQUES!=="undefined" && Array.isArray(DESTAQUES) && DESTAQUES.length) ? DESTAQUES : PADRAO;
   const esc = s => (s??"").toString().replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));
@@ -30,6 +30,11 @@
   }).filter(Boolean).sort((a,b)=>(a.L.ano||9999)-(b.L.ano||9999));
   if(!livros.length){ raiz.hidden = true; return; }
 
+  /* título do bloco acompanha a quantidade real de livros exibidos */
+  const NUM = ["","Um livro","Dois livros","Três livros","Quatro livros","Cinco livros","Seis livros","Sete livros","Oito livros","Nove livros","Dez livros"];
+  const tit = document.getElementById("prat-tit");
+  if(tit) tit.textContent = `${NUM[livros.length]||livros.length+" livros"} que mandaram tirar da prateleira`;
+
   /* linha-resumo calculada */
   const anosPub = livros.map(l=>l.L.ano).filter(Boolean);
   const ufs = new Set(livros.flatMap(l=>l.ocs.map(o=>o.uf)));
@@ -41,19 +46,18 @@
 
   const capa = (l,i) => l.ref.capa
     ? `<img src="${BASE}capas/${esc(l.ref.capa)}.jpg" alt="" width="213" height="320" loading="lazy" decoding="async">`
-    : `<div class="prat-tipo" aria-hidden="true"><b>${esc(curto(l.titulo))}</b><span>${esc(l.ref.autoria)}</span></div>`;
+    : `<div class="prat-tipo"><b>${esc(curto(l.titulo))}</b><span>${esc(l.ref.autoria)}</span></div>`;
 
   const ul = document.getElementById("prat-lista");
   ul.innerHTML = livros.map((l,i)=>{
     const o=l.ref, verbo = carimbo(o);
-    const rotulo = `${l.titulo}, de ${o.autoria}${l.L.ano?`, ${l.L.ano}`:""}. ${verbo[0].toUpperCase()+verbo.slice(1)} em ${NOME_UF[o.uf]||o.uf}, ${ano(o)}. Alegação: ${tira(o.alegacao)}`;
     return `<li class="prat-item" style="--i:${i}">
-      <button class="prat-livro" type="button" data-i="${i}" aria-expanded="false" aria-controls="prat-comp" aria-label="${esc(rotulo)}">
+      <button class="prat-livro" type="button" data-i="${i}" aria-expanded="false" aria-controls="prat-comp">
         <span class="prat-capa c${(i%3)+1}">${capa(l,i)}
           <span class="prat-tarja" aria-hidden="true"></span>
-          <span class="prat-carimbo" aria-hidden="true"><b>${esc(verbo)}</b><span>${esc(o.uf)} ${esc(ano(o))}</span></span></span>
-        <span class="prat-meta" aria-hidden="true"><span class="t">${esc(curto(l.titulo))}</span><span class="a">${esc(o.autoria)}${l.L.ano?` · ${l.L.ano}`:""}</span></span>
-        <span class="prat-aleg" aria-hidden="true">“${esc(tira(o.alegacao).split("·")[0].trim())}”</span>
+          <span class="prat-carimbo"><b>${esc(verbo)}</b> <span>${esc(o.uf)} ${esc(ano(o))}</span></span></span>
+        <span class="prat-meta"><span class="t">${esc(curto(l.titulo))}</span> <span class="a">${esc(o.autoria)}${l.L.ano?` · ${l.L.ano}`:""}</span></span>
+        <span class="prat-aleg"><span class="sr-only">Alegação: </span>“${esc(tira(o.alegacao).split("·")[0].trim())}”</span>
       </button></li>`;
   }).join("");
 

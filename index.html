@@ -72,7 +72,7 @@
     <div class="bignum"><div class="n" id="n-casos">–</div><div class="l">REGISTROS</div></div>
     <div class="bignum"><div class="n" id="n-titulos">–</div><div class="l">OBRAS E CONJUNTOS MENCIONADOS</div></div>
     <div class="bignum"><div class="n" id="n-estados">–</div><div class="l">UNIDADES DA FEDERAÇÃO</div></div>
-    <div class="bignum"><div class="n" id="n-verif">–</div><div class="l">COM 2 REFERÊNCIAS</div></div>
+    <div class="bignum"><div class="n" id="n-verif">–</div><div class="l">VERIFICADOS</div></div>
   </div>
 </div>
 
@@ -98,7 +98,7 @@
 
   <section>
     <div class="sechead"><span class="kicker">03</span><h2>Onde</h2></div>
-    <p class="note"><span id="txt-onde"></span> Santa Catarina e Rondônia concentram os registros porque em ambos houve lista oficial com vários títulos. Em Rondônia, parte da relação permanece agrupada e ainda precisa ser reconciliada título a título; por isso, o total atual de registros não equivale ao número de obras atingidas.</p>
+    <p class="note"><span id="txt-onde"></span> Santa Catarina e Rondônia concentram os registros porque em ambos houve lista oficial com vários títulos. Em Rondônia, os 42 títulos distintos da lista oficial ocupam nove registros (sete obras com ficha própria e dois conjuntos documentais), e um décimo registra a ordem genérica sobre os livros de Rubem Alves; por isso, o total de registros não equivale ao número de obras atingidas.</p>
     <svg class="mapa-br" id="mapa-br" viewBox="0 0 613 639" role="group" aria-labelledby="mapa-tit"><title id="mapa-tit">Casos registrados por unidade da federação</title></svg>
     <div class="mapa-leg" id="mapa-leg"></div>
     <p class="mapcap">Contornos dos estados: svg-maps, licença CC BY 4.0.</p>
@@ -133,8 +133,8 @@
   <div class="alert-in">
     <h3>O que o catálogo ainda deixa de fora.</h3>
     <p><strong>Casos com retaliação: nenhum registrado.</strong> Eles existem. A pesquisa Páginas proibidas registra uma bibliotecária afastada no Rio de Janeiro por liderar leituras sobre gênero e sexualidade. A imprensa cobre o livro; quase ninguém acompanha o que acontece com quem trabalha na biblioteca.</p>
-    <p><strong>Autocensura e destruição: zero.</strong> Deixar de comprar por receio, não expor, não indicar. São modalidades que não deixam ofício e por isso raramente viram notícia. Só aparecem se alguém de dentro contar.</p>
-    <p><strong>Três atos administrativos respondem pela maior parte dos registros.</strong> O catálogo enxerga bem o que vira lista oficial e mal o caso isolado, municipal, sem documento. Ausência de registro num estado quer dizer ausência de registro.</p>
+    <p><strong>Autocensura: zero. Descarte ou destruição: um registro, sem prova de execução.</strong> Deixar de comprar por receio, não expor, não indicar. São práticas que não deixam ofício e por isso raramente viram notícia. Só aparecem se alguém de dentro contar.</p>
+    <p><strong>Dois atos administrativos, Rondônia (2020) e Santa Catarina (2023), respondem por mais da metade dos registros.</strong> O catálogo enxerga bem o que vira lista oficial e mal o caso isolado, municipal, sem documento. Ausência de registro num estado quer dizer ausência de registro.</p>
   </div>
 </div>
 
@@ -249,7 +249,7 @@ document.getElementById("tl-labels").innerHTML = anos.map(a=>`<div class="tlyear
     .map(([t,L])=>({t, a: dataOrdem(t)-L.ano, pub:L.ano})).sort((x,y)=>y.a-x.a);
   const maxI = Math.max(1,...idades.map(o=>o.a));
   document.getElementById("idades").innerHTML = idades.map((o,i)=>
-    `<a class="idade-row ${i===0?"destaque":""}" href="${urlLivro(o.t)}" aria-label="${esc(o.t)}: ${o.a} anos entre a publicação, em ${o.pub}, e o episódio">
+    `<a class="idade-row ${i===0?"destaque":""}" href="${urlLivro(o.t)}" aria-label="${esc(o.t.split(":")[0])} ${o.a} anos entre a publicação de ${esc(o.t)}, em ${o.pub}, e o episódio">
        <span class="t">${esc(o.t.split(":")[0])}</span><span class="trilho"><span class="barra" style="width:${Math.max(o.a/maxI*100,1)}%;display:block"></span></span>
        <span class="v">${o.a}</span></a>`).join("");
 }
