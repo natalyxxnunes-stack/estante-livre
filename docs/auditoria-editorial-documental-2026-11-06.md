@@ -80,6 +80,14 @@ O registro atual também cita informação posterior, de 14 jul. 2026, sobre ret
 
 **Conclusão técnica:** a presença de boas práticas estáticas não equivale a certificação WCAG 2.2 AA. A acessibilidade manual e a validação real da produção permanecem não testadas.
 
+## 9. Correção editorial aplicada nesta sessão
+
+Em `index.html`, foram corrigidos dois trechos da página inicial:
+- "Três atos" foi substituído por "Três episódios", pois a frase reunia episódios/ondas de censura, não três atos administrativos.
+- A afirmação de que o catálogo conta um registro por título foi qualificada: a página agora informa que parte da lista de Rondônia permanece agrupada e que o total de registros não equivale ao número de obras atingidas.
+
+Commit da correção: https://github.com/natalyxxnunes-stack/estante-livre/commit/7b92979742d2f23f700ea37196adaf05fe67da07
+
 ## 9. Critério de publicação
 
 A base apresenta metodologia, fontes, marcação de verificação parcial e página pública de lacunas. Isso permite publicar material incompleto quando a incompletude está claramente sinalizada. Entretanto, a reconciliação e o desmembramento da lista de Rondônia são necessários para que a contagem de registros corresponda à regra metodológica declarada. Até essa correção e a execução do gerador/checagem de produção, não é correto certificar a versão como finalizada e integralmente validada.
