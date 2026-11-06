@@ -568,3 +568,15 @@ Relatórios oficiais de 2011 e 2012 comprovam transferência do acervo para Bras
 | EL-035 | Pedido escolar e início do recolhimento/análise confirmados | Resultado final e destino dos exemplares |
 
 A classificação “não localizado” descreve o resultado das buscas documentadas, não prova que o documento inexista. Não solicitar documentos a terceiros; prosseguir por registros públicos e publicações abertas.
+
+
+## Nova conferência acadêmica do Relatório Público 01/CNIRC — 05/11/2026
+
+A busca por cópias alternativas encontrou duas referências acadêmicas que permitem melhorar a rastreabilidade bibliográfica do relatório, mas **não recuperam sua íntegra**:
+
+1. **França, Glória; Cestari, Mariana; Modesto, Rogério. “Foi Palmares mesmo que você disse?” Revista Letras, UFPR, n. 105, jan./jun. 2022, p. 86–108.** O artigo identifica expressamente o Relatório Público da Fundação como material principal e cita a versão de arquivo `cnirc01_liminar_v2_08_07.pdf`. Reproduz excertos atribuídos às páginas 11 e 26 do relatório, inclusive as diretrizes institucionais e a classificação de temas. Fonte: https://revistas.ufpr.br/letras/article/download/85371/49124.
+2. **Júnior, Elton Luis da Silva; Santos, Patrícia da Silva. “A Fundação Cultural Palmares em tempos de ideologia bolsonarista: a perseguição simbólica ao acervo bibliográfico da instituição”.** Capítulo em *Perspectivas Socioantropológicas sobre a Amazônia*, Editora do NAEA/UFPA, 2024. O capítulo descreve o Relatório 01 como documento de 76 páginas, com oito partes, e cita a mesma versão de arquivo `cnirc01_liminar_v2_08_07.pdf`. Fonte: https://naea.website/editora-naea/Livros/isbn/978-85-7143-252-9.pdf.
+
+**Implicação editorial:** há pelo menos duas URLs históricas citadas em fontes acadêmicas — `cnirc-01-gab-10-06-21.pdf` e `cnirc01_liminar_v2_08_07.pdf`. Não presumir que sejam arquivos idênticos sem cotejo binário ou visual. A divergência de paginação (74/76 páginas) também permanece. O artigo da UFPR é útil para confirmar a circulação e reproduzir trechos específicos, mas não substitui o relatório primário nem valida a lista de 300 entradas/261 itens da transcrição secundária.
+
+**Status EL-025:** permanece parcialmente verificado. A nova rodada acrescenta referências acadêmicas independentes e dois caminhos históricos de arquivo; não comprova a íntegra do relatório, a lista primária dos 300 títulos, o destino físico dos exemplares ou a situação judicial atual.
