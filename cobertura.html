@@ -56,6 +56,14 @@
   <section style="border-bottom:0">
     <div class="sechead"><h2>Referências</h2><span class="count" id="count"></span></div>
     <p class="note">A distribuição também é um dado. Neste catálogo, os casos com cobertura nacional são os que têm desfecho conhecido; os que dependem de uma fonte só ficam marcados como parciais até ganhar a segunda.</p>
+    <div class="cob-filtros" role="group" aria-label="Filtrar por tipo de fonte">
+      <button class="chip" type="button" data-tipo="" aria-pressed="true">Todas</button>
+      <button class="chip" type="button" data-tipo="DOCUMENTO OFICIAL" aria-pressed="false">Documentos oficiais</button>
+      <button class="chip" type="button" data-tipo="REPORTAGEM" aria-pressed="false">Reportagens</button>
+      <button class="chip" type="button" data-tipo="PESQUISA" aria-pressed="false">Pesquisas</button>
+      <button class="chip" type="button" data-tipo="ANÁLISE" aria-pressed="false">Análises</button>
+      <input class="cob-busca" type="search" id="cob-busca" placeholder="Buscar veículo, título ou livro…" aria-label="Buscar nas referências">
+    </div>
     <div class="cobertura" id="cobertura"></div>
   </section>
 </div>
@@ -78,8 +86,25 @@
 const usos = {};
 CASOS.forEach(c=> (c.fontes||[]).forEach(k=> (usos[k] ||= []).push(c)));
 const chaves = Object.keys(usos).sort((a,b)=>(FONTES[b].data||"0").localeCompare(FONTES[a].data||"0"));
-document.getElementById("count").innerHTML = `<b>${chaves.length}</b> referências`;
-document.getElementById("cobertura").innerHTML = chaves.map(k=>cardCoberturaHTML(k,usos[k])).join("");
+let filtroTipo = "", filtroBusca = "";
+function renderCob(){
+  const sel = chaves.filter(k=>{
+    const f = FONTES[k];
+    if(filtroTipo && tipoFonte(f, usos[k])!==filtroTipo) return false;
+    if(filtroBusca && !norm([f.veic, f.tit, ...usos[k].map(obraDe)].join(" ")).includes(norm(filtroBusca))) return false;
+    return true;
+  });
+  document.getElementById("count").innerHTML = sel.length===chaves.length ? `<b>${chaves.length}</b> referências` : `<b>${sel.length}</b> de ${chaves.length} referências`;
+  document.getElementById("cobertura").innerHTML = sel.length ? sel.map(k=>cardCoberturaHTML(k,usos[k])).join("")
+    : `<div class="vazio"><p>Nenhuma referência nesse recorte.</p></div>`;
+}
+document.querySelectorAll(".cob-filtros .chip").forEach(b=>b.addEventListener("click",()=>{
+  filtroTipo = b.dataset.tipo;
+  document.querySelectorAll(".cob-filtros .chip").forEach(x=>x.setAttribute("aria-pressed", String(x===b)));
+  renderCob();
+}));
+document.getElementById("cob-busca").addEventListener("input", e=>{ filtroBusca = e.target.value; renderCob(); });
+renderCob();
 
 montarRodape();
 </script>

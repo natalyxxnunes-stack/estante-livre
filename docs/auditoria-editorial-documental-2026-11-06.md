@@ -270,3 +270,20 @@ Produção servia o commit `c5a621a` (15:54), confirmado no navegador: a ficha E
 ### Fora do escopo desta entrega (decisão)
 
 Os PRs #5 e #6 (casos EL-035 a EL-037, contexto partidário, páginas Poder e censura, dossiês, relatório 2026, páginas de agentes) **não** foram integrados. O próprio plano de integração registra que exigem reconciliação transacional de dados e geradores ainda não validada. Integrá-los hoje colocaria em risco a versão íntegra e testada da `main`. Ficam como próxima etapa, depois do lançamento.
+
+## 15. Revisão de design (06/11/2026, noite)
+
+A rodada anterior testou funcionamento e acessibilidade, mas não fez avaliação de design. Esta seção corrige isso.
+
+**Diagnóstico medido (altura renderizada em telas de 900 px no computador e 740 px no celular):** Casos tinha 69 e 149 telas, com 21.700 palavras, porque a listagem repetia o prontuário completo dos 34 registros; Livros, 29 e 52; Metodologia, 11 e 38; Cobertura, 12 e 40. Só 7 das 29 obras tinham foto de capa, em proporções diferentes (de 1:1 a 1,54:1).
+
+**O que mudou**
+- Listagens de Casos e Livros em cartões compactos (capa, título, local e data, mecanismo, estágio, situação e desfecho em duas linhas). O prontuário completo continua na ficha de cada caso e de cada obra. Quando a busca encontra o termo só no texto interno, o cartão mostra o trecho destacado. Casos: 5,7 e 14 telas; Livros: 5,2 e 9,6.
+- Capas: 12 fotos novas de edições brasileiras, com crédito "Capa de referência · editora, ano", porque nem sempre a edição apontada pelo ato está documentada. Todas as 19 fotos foram padronizadas em 400×600 (2:3). Capas fora do formato entram inteiras sobre fundo desfocado da própria capa, sem corte. Imagens que eram foto de livro em 3D foram recortadas na face frontal. Seguem com capa tipográfica: os sete conjuntos, Os Sertões da Luta (edição da lista não identificada), A mamãe vai ter um bebê (autoria não informada nas fontes), Pipoca e Picolé (edição não localizada) e A vida como ela é (a imagem encontrada era a folha de rosto).
+- Metodologia: a tabela de pendências, que repetia a página O que falta apurar, virou resumo com link; o registro de correções mostra as 6 mais recentes e recolhe as demais. 5,2 e 11,7 telas.
+- Cobertura: filtro por tipo de fonte e busca; bloco gráfico do veículo menor, e faixa lateral no celular. 10,6 e 21,8 telas sem filtro.
+- Classificação do tipo de fonte corrigida: antes, qualquer fonte de caso revertido era rotulada "REVERSÃO", e decisões judiciais e diários oficiais apareciam como "REPORTAGEM". Agora: 20 documentos oficiais, 5 pesquisas, 3 análises e 63 reportagens.
+
+**Testes:** 94 páginas × 2 larguras sem erro de JavaScript, recurso quebrado ou rolagem horizontal; axe-core sem violações; 33 verificações de interação aprovadas, incluindo os filtros novos.
+
+**Logística das capas:** as imagens foram baixadas por um workflow temporário do GitHub Actions num branch próprio, com deploy da Vercel desligado para esse branch. O branch foi apagado depois.

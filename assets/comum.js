@@ -121,8 +121,8 @@ const clsEstagio = e => ({"Execução comprovada":"e4","Decisão ou ordem":"e3",
 
 function capaHTML(c, cls){
   const k = cls||"capa";
-  if(c.capa) return `<div><img class="${k}" alt="Capa de ${esc(obraDe(c))}${c.editora?", "+esc(c.editora):""}" src="${RAIZ}assets/capas/${esc(c.capa)}.jpg" width="213" height="320" loading="lazy" decoding="async">
-    ${c.editora?`<div class="capa-cred">Capa · ${esc(c.editora)}</div>`:""}</div>`;
+  if(c.capa) return `<div><img class="${k}" alt="Capa de ${esc(obraDe(c))}${c.capaCred?" ("+esc(c.capaCred.replace(/^Capa de referência · /,"edição "))+")":c.editora?", "+esc(c.editora):""}" src="${RAIZ}assets/capas/${esc(c.capa)}.jpg" width="213" height="320" loading="lazy" decoding="async">
+    ${c.capaCred?`<div class="capa-cred">${esc(c.capaCred)}</div>`:c.editora?`<div class="capa-cred">Capa · ${esc(c.editora)}</div>`:""}</div>`;
   /* sem imagem: capa tipográfica na cor do mecanismo */
   const L = (typeof LIVROS!=="undefined" && LIVROS[obraDe(c)]) || {};
   const t = c.conjunto ? (L.legenda || "Conjunto de obras") : obraDe(c).split(":")[0];
@@ -280,6 +280,74 @@ const PALETA = [
 ];
 const hashN = s => { let h=0; for(let i=0;i<s.length;i++) h=(h*31+s.charCodeAt(i))>>>0; return h; };
 
+/* ---------- cartões compactos das listagens ----------
+   A listagem serve para escanear e escolher; o prontuário completo fica na ficha. */
+const MES_CURTO = ["jan","fev","mar","abr","mai","jun","jul","ago","set","out","nov","dez"];
+const mesAno = d => (d && d.length>=7) ? MES_CURTO[+d.slice(5,7)-1]+" "+d.slice(0,4) : (d||"").slice(0,4);
+
+/* capa num quadro 2:3 fixo: foto quando há, capa tipográfica quando não há */
+function capaQuadro(c, titulo){
+  const L = (typeof LIVROS!=="undefined" && LIVROS[titulo||obraDe(c)]) || {};
+  const capa = c.capa || L.capa;
+  if(capa) return `<span class="cq"><img src="${RAIZ}assets/capas/${esc(capa)}.jpg" alt="" width="200" height="300" loading="lazy" decoding="async"></span>`;
+  const t = c.conjunto ? (L.legenda || "Conjunto de obras") : (titulo||obraDe(c)).split(":")[0];
+  return `<span class="cq cq-tipo m-${slug(c.modalidade)}" aria-hidden="true"><b>${esc(t)}</b><span>${esc((c.autoria||"").split(",")[0])}</span></span>`;
+}
+
+/* quando a busca só acha o termo no texto interno, mostra o trecho */
+function trechoBusca(c, q){
+  if(!q) return "";
+  const vistos = [c.titulo, c.autoria, c.cidade, c.uf, c.id].join(" ");
+  if(norm(vistos).includes(norm(q))) return "";
+  const r = (typeof RESPONSABILIDADES!=="undefined" && RESPONSABILIDADES[c.id]) || {};
+  for(const t of [c.alegacao, c.desfecho, c.nota, c.pressao, c.governo, ...Object.values(r)]){
+    if(!t) continue;
+    const i = norm(t).indexOf(norm(q)); if(i<0) continue;
+    const a = Math.max(0, i-70), b = Math.min(t.length, i+q.length+90);
+    return `<p class="cc-trecho">${a>0?"… ":""}${marcar(esc(t.slice(a,b)), q)}${b<t.length?" …":""}</p>`;
+  }
+  return "";
+}
+
+function casoCardHTML(c, q){
+  const m = t => marcar(esc(t), q);
+  const onde = [c.cidade, c.uf].filter(Boolean).join(", ");
+  return `<article class="cc" id="${c.id}">
+  <a class="cc-link" href="${urlCaso(c.id)}">
+    ${capaQuadro(c)}
+    <span class="cc-corpo">
+      <span class="cc-meta">${c.id} · ${m(onde)} · ${mesAno(c.data)}</span>
+      <span class="cc-tit">${m(c.titulo)}</span>
+      ${c.autoria?`<span class="cc-aut">${m(c.autoria)}</span>`:""}
+      <span class="tags">
+        <span class="tag t-mod">${esc(c.modalidade)}</span>
+        <span class="tag t-est ${clsEstagio(c.estagio)}">${esc(c.estagio)}</span>
+        <span class="tag t-des ${clsSituacao(c.situacao)}">${esc(c.situacao)}</span>
+      </span>
+      ${c.desfecho?`<span class="cc-desf">${m(c.desfecho)}</span>`:""}
+      ${verificado(c)?"":`<span class="cc-parcial">Parcialmente verificado</span>`}
+    </span>
+  </a>${trechoBusca(c,q)}
+</article>`;
+}
+
+function livroCardHTML(titulo, ocs, q){
+  const ref = ocs[0], L = LIVROS[titulo] || {};
+  const ufs = [...new Set(ocs.map(o=>o.uf))];
+  const rev = ocs.filter(o=>o.situacao==="Revertido").length;
+  const anos = [...new Set(ocs.map(o=>o.data.slice(0,4)))].sort();
+  const sub = ref.conjunto ? (L.legenda||"Conjunto de obras") : [ref.autoria, L.ano].filter(Boolean).join(" · ");
+  return `<article class="lc" id="${slug(titulo)}">
+  <a class="lc-link" href="${urlLivro(titulo)}">
+    ${capaQuadro(ref, titulo)}
+    <span class="lc-tit">${marcar(esc(titulo), q)}</span>
+    <span class="lc-aut">${marcar(esc(sub), q)}</span>
+    <span class="lc-num"><b>${ocs.length}</b> ${ocs.length===1?"ocorrência":"ocorrências"} · ${ufs.join(", ")} · ${anos.length>1?anos[0]+"–"+anos[anos.length-1]:anos[0]}</span>
+    ${rev?`<span class="lc-rev">${rev===ocs.length?"Revertido":rev+" de "+ocs.length+" revertidas"}</span>`:""}
+  </a>
+</article>`;
+}
+
 function sigla(veic){
   const limpo = veic.replace(/\(.*?\)/g,"").trim();
   const stop = ["de","da","do","das","dos","e","a","o"];
@@ -289,10 +357,10 @@ function sigla(veic){
 }
 
 function tipoFonte(f, cs){
-  const v = f.veic.toLowerCase();
-  if(v.includes("pesquisa") || v.includes("eca-usp")) return "PESQUISA";
-  if(v.includes("substack") || v.includes("blog") || v.includes("gênio")) return "ANÁLISE";
-  if(cs.some(c=>c.situacao==="Revertido")) return "REVERSÃO";
+  const v = (f.veic||"").toLowerCase(), u = (f.url||"").toLowerCase();
+  if(/\.gov\.br|\.leg\.br|\.jus\.br|jusbrasil|alesc|doe\.sea|cml\.pr|mpf\.mp|migalhas\.com\.br\/arquivos|unirv\.edu|palmares\.gov\.br/.test(u) || /diário oficial|câmara municipal|prefeitura|secretaria|fundação cultural palmares|ministério público|tribunal|memorando|cópia pública|sentença|decisão/.test(v)) return "DOCUMENTO OFICIAL";
+  if(/revistas\.|periodicos\.|seer\.|dialnet|unicentro|scielo/.test(u) || v.includes("pesquisa") || v.includes("eca-usp")) return "PESQUISA";
+  if(v.includes("substack") || v.includes("blog") || v.includes("gênio") || v.includes("opinião")) return "ANÁLISE";
   return "REPORTAGEM";
 }
 

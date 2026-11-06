@@ -784,3 +784,74 @@ h1.livro-tit{font-size:32px;line-height:1.12}
 .lac-ids{font-size:12px;color:var(--cinza)}
 .caso-pend a{white-space:nowrap}
 @media (max-width:520px){.lac{padding:14px}.lac-nums b{font-size:28px}}
+
+/* ---------- listagens compactas (casos e livros) ---------- */
+.lista-cc{display:grid;grid-template-columns:repeat(auto-fill,minmax(400px,1fr));gap:14px}
+.lista-lc{display:grid;grid-template-columns:repeat(auto-fill,minmax(168px,1fr));gap:30px 20px}
+.lista-cc>.vazio,.lista-lc>.vazio{grid-column:1/-1}
+.cq{display:block;aspect-ratio:2/3;width:100%;overflow:hidden;background:var(--papel);box-shadow:0 2px 10px rgba(16,20,60,.18)}
+.cq img{width:100%;height:100%;object-fit:cover;display:block}
+.cq-tipo{display:flex;flex-direction:column;justify-content:space-between;padding:7px 6px;color:#fff;background:var(--azul)}
+.cq-tipo b{font-family:var(--f);font-weight:400;font-size:11.5px;line-height:1.12;overflow-wrap:anywhere}
+.cq-tipo span{font-size:7px;letter-spacing:.1em;text-transform:uppercase;font-weight:600}
+.cc{background:#fff;border:1.5px solid var(--linha);transition:border-color .15s;scroll-margin-top:120px}
+.cc:hover,.cc:focus-within{border-color:var(--azul)}
+.cc.alvo{box-shadow:-8px 0 0 var(--neon)}
+.cc-link{display:grid;grid-template-columns:76px 1fr;gap:16px;padding:16px;color:inherit;text-decoration:none}
+.cc-link:focus-visible{outline:3px solid var(--azul);outline-offset:2px}
+.cc-corpo{display:flex;flex-direction:column;min-width:0}
+.cc-meta{font-size:11px;letter-spacing:.08em;font-weight:600;color:var(--verm);text-transform:uppercase}
+.cc-tit{font-family:var(--f);font-size:19px;line-height:1.2;color:var(--vinho);margin:4px 0 2px}
+.cc-link:hover .cc-tit{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
+.cc-aut{font-size:13px;color:var(--cinza)}
+.cc-corpo .tags{margin:10px 0 9px}
+.cc-desf{font-size:13px;line-height:1.45;color:var(--tinta);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.cc-parcial{align-self:flex-start;margin-top:8px;font-size:11px;font-weight:600;color:var(--verm);border-bottom:1.5px dotted var(--verm)}
+.cc-trecho{margin:0;padding:0 16px 14px 108px;font-size:12.5px;line-height:1.5;color:var(--cinza)}
+.lc-link{display:flex;flex-direction:column;gap:3px;color:inherit;text-decoration:none}
+.lc-link .cq{margin-bottom:10px;transition:transform .15s}
+.lc-link:hover .cq{transform:translateY(-3px)}
+.lc-link:focus-visible{outline:3px solid var(--azul);outline-offset:4px}
+.lc .cq-tipo{padding:14px 12px}
+.lc .cq-tipo b{font-size:19px}
+.lc .cq-tipo span{font-size:9px}
+.lc-tit{font-family:var(--f);font-size:17px;line-height:1.2;color:var(--vinho)}
+.lc-link:hover .lc-tit{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
+.lc-aut{font-size:12.5px;color:var(--cinza)}
+.lc-num{font-size:12px;color:var(--tinta);margin-top:5px}
+.lc-num b{color:var(--verm)}
+.lc-rev{align-self:flex-start;margin-top:5px;font-size:11px;font-weight:600;padding:2px 7px;background:var(--neon);color:var(--azul)}
+@media(max-width:820px){
+  .lista-cc{grid-template-columns:1fr}
+  .cc-link{grid-template-columns:62px 1fr;gap:13px;padding:14px}
+  .cc-tit{font-size:17px}
+  .cc-trecho{padding:0 14px 12px 89px}
+  .lista-lc{grid-template-columns:repeat(2,1fr);gap:26px 14px}
+  .lc .cq-tipo b{font-size:16px}
+}
+/* cobertura: filtros por tipo */
+.cob-filtros{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:4px 0 22px}
+.cob-filtros .chip[aria-pressed="true"]{background:var(--azul);color:#fff;border-color:var(--azul)}
+.cob-busca{flex:1 1 220px;min-height:36px;padding:7px 12px;border:1.5px solid var(--linha-forte);font:inherit;font-size:13.5px;background:#fff}
+.cob-busca:focus-visible{outline:3px solid var(--azul);outline-offset:1px}
+/* metodologia: correções anteriores recolhidas */
+details.mais{margin-top:14px;border-top:1px solid var(--linha);padding-top:12px}
+details.mais summary{cursor:pointer;font-weight:600;color:var(--azul);font-size:14px;min-height:24px}
+details.mais summary:focus-visible{outline:3px solid var(--azul);outline-offset:3px}
+details.mais[open] summary{margin-bottom:12px}
+.cob-filtros .chip{background:#fff;color:var(--azul);box-shadow:inset 0 0 0 1.5px var(--azul);min-height:32px;padding:6px 12px;cursor:pointer}
+.cob-filtros .chip:hover{background:var(--azul-claro)}
+.cob-filtros .chip[aria-pressed="true"]{background:var(--azul);color:#fff}
+.cob-filtros .chip:focus-visible{outline:3px solid var(--neon);outline-offset:2px}
+/* cobertura: bloco do veículo mais baixo; no celular vira faixa lateral */
+.cvis{height:92px}
+.cvis .sigla{font-size:34px}
+@media(max-width:820px){
+  .ccard{flex-direction:row}
+  .cvis{height:auto;width:58px;flex:0 0 58px}
+  .cvis .sigla{font-size:17px;writing-mode:vertical-rl;transform:rotate(180deg)}
+  .cvis .ondas,.cvis .pontos{display:none}
+  .cbody{padding:12px 14px;gap:5px}
+  .ctit{font-size:16px}
+  .cfoot{padding-top:8px}
+}

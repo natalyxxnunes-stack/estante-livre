@@ -27,7 +27,7 @@ function contexto(raiz){
   };
   vm.createContext(ctx);
   vm.runInContext(ler("assets/dados.js") + "\n;this.__D={ATOS,AGENTES,PAPEIS,TIPOS_PAPEL,CASOS,LIVROS,FONTES,MODALIDADES,ESTAGIOS,SITUACOES,EIXOS,CORRECOES,RESPONSABILIDADES,DOCUMENTOS_ATOS,ATUALIZADO,CONTATO,OBSTACULOS,LACUNAS};", ctx);
-  vm.runInContext(ler("assets/comum.js") + "\n;this.__F={esc,obraDe,slug,ordenar,casoHTML,livroHTML,dataLegivel,urlCaso,urlLivro,urlAto,agentesDoAto};", ctx);
+  vm.runInContext(ler("assets/comum.js") + "\n;this.__F={esc,obraDe,slug,ordenar,casoHTML,livroHTML,casoCardHTML,livroCardHTML,dataLegivel,urlCaso,urlLivro,urlAto,agentesDoAto};", ctx);
   return Object.assign(ctx.__F, {__D: ctx.__D});
 }
 const R = contexto("");      // páginas na raiz
@@ -142,12 +142,12 @@ for(const f of PAGINAS){
     {"@type":"WebSite","name":"Estante Livre","url":SITE+"/","inLanguage":"pt-BR","publisher":ORG}, ORG]});
   if(f==="casos.html"){
     h = comJsonLd(h, DATASET);
-    h = blocoGerado(h, "lista", R.ordenar(CASOS,"data-desc").map(c=>R.casoHTML(c,"")).join(""));
+    h = blocoGerado(h, "lista", R.ordenar(CASOS,"data-desc").map(c=>R.casoCardHTML(c,"")).join(""));
   }
   if(f==="livros.html"){
     const g = {}; CASOS.forEach(c=>(g[obraDe(c)] ||= []).push(c));
     const tits = Object.keys(g).sort((a,b)=> g[b].length-g[a].length || a.localeCompare(b,"pt"));
-    h = blocoGerado(h, "lista", tits.map(t=>R.livroHTML(t,g[t],"")).join(""));
+    h = blocoGerado(h, "lista", tits.map(t=>R.livroCardHTML(t,g[t],"")).join(""));
   }
   gravar(f, h);
 }

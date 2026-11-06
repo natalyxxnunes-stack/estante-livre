@@ -59,6 +59,8 @@ const LIVROS = {
    sinopse:"Um professor negro é morto pela polícia em Porto Alegre. O filho reconstrói a vida do pai a partir dos objetos, dos silêncios e do que a cidade fez com o corpo dele.",
    nota:"Aprovado no PNLD antes das retiradas. O parecer do MEC, obtido pela Fiquem Sabendo via Lei de Acesso à Informação, avaliou que a linguagem tinha coerência interna com a narrativa. Voltou às escolas do PR e de GO em abril de 2024; no MS, a devolução foi anunciada no fim de abril."},
  "It: A coisa":{
+   capa:"it-a-coisa",
+   capaCred:"Capa de referência · Suma, 2014",
    autoria:"Stephen King",
    ano:1986,
    genero:"Terror",
@@ -71,37 +73,51 @@ const LIVROS = {
    sinopse:"Numa Inglaterra distópica, um adolescente violento é submetido a um tratamento de condicionamento que o impede de escolher o mal — e, com isso, de escolher.",
    nota:"Livro sobre os limites do Estado ao suprimir a escolha individual, retirado por decisão de Estado."},
  "Donnie Darko":{
+   capa:"donnie-darko",
+   capaCred:"Capa de referência · DarkSide, 2016",
    autoria:"Richard Kelly",
    genero:"Roteiro",
    sinopse:"O roteiro do filme de 2001 sobre um adolescente que, depois de escapar de um acidente, passa a ter visões de um coelho que anuncia o fim do mundo."},
  "Coração Satânico":{
+   capa:"coracao-satanico",
+   capaCred:"Capa de referência · DarkSide, 2017",
    autoria:"William Hjortsberg",
    ano:1978,
    genero:"Romance policial",
    sinopse:"Um detetive de Nova York é contratado para achar um cantor desaparecido e descobre que o cliente tem planos para a alma de alguém."},
  "Exorcismo":{
+   capa:"exorcismo",
+   capaCred:"Capa de referência · DarkSide, 2016",
    autoria:"Thomas B. Allen",
    ano:1993,
    genero:"Não ficção",
    sinopse:"Reconstrução jornalística do caso de 1949 que inspirou O exorcista, a partir do diário de um dos padres envolvidos."},
  "Ed & Lorraine Warren: demonologistas — arquivos sobrenaturais":{
+   capa:"demonologistas",
+   capaCred:"Capa de referência · DarkSide, 2016",
    autoria:"Gerald Brittle",
    ano:1980,
    genero:"Não ficção",
    sinopse:"Relatos do casal de investigadores paranormais cujos casos viraram a série de filmes Invocação do Mal."},
  "O diário do diabo: os segredos de Alfred Rosenberg, o maior intelectual do nazismo":{
+   capa:"diario-do-diabo",
+   capaCred:"Capa de referência · Record, 2017",
    autoria:"Robert K. Wittman e David Kinney",
    ano:2016,
    genero:"Não ficção, história",
    sinopse:"A partir de diários desaparecidos por décadas, reconstrói a trajetória do ideólogo racial do nazismo, condenado em Nuremberg.",
    nota:"Livro crítico ao nazismo, retirado sob a mesma ordem que atingiu obras de terror."},
  "A química entre nós":{
+   capa:"quimica-entre-nos",
+   capaCred:"Capa de referência · Best Seller, 2012",
    autoria:"Larry Young e Brian Alexander",
    ano:2012,
    genero:"Não ficção",
    sinopse:"Um neurocientista e um jornalista investigam a base biológica do desejo, do amor e do vínculo humano.",
    nota:"Obra de divulgação científica sobre a neurobiologia do vínculo, assinada por um neurocientista e um jornalista, guardada na mesma ordem que livros de terror."},
  "Os 13 porquês":{
+   capa:"os-13-porques",
+   capaCred:"Capa de referência · Ática, 2009",
    autoria:"Jay Asher",
    ano:2007,
    genero:"Juvenil",
@@ -127,11 +143,15 @@ const LIVROS = {
    genero:"Não ficção",
    sinopse:"O relato de Euclides da Cunha sobre a Guerra de Canudos e a destruição do arraial pelo Exército, um dos livros fundadores do pensamento social brasileiro."},
  "O castelo":{
+   capa:"o-castelo",
+   capaCred:"Capa de referência · Companhia das Letras, 2008",
    autoria:"Franz Kafka",
    ano:1926,
    genero:"Romance",
    sinopse:"Um agrimensor tenta chegar ao castelo que o contratou e esbarra numa burocracia que nunca se explica nem se deixa alcançar."},
  "Contos de terror, de mistério e de morte":{
+   capa:"contos-de-terror",
+   capaCred:"Capa de referência · Nova Fronteira, 2017",
    autoria:"Edgar Allan Poe",
    genero:"Contos",
    sinopse:"Reunião dos contos de Poe que fundaram a literatura de horror psicológico moderna."},
@@ -140,6 +160,8 @@ const LIVROS = {
    genero:"Crônicas",
    sinopse:"Crônicas do cotidiano carioca, publicadas originalmente em jornal, sobre traição, desejo e hipocrisia de classe média."},
  "Beijo no asfalto":{
+   capa:"beijo-no-asfalto",
+   capaCred:"Capa de referência · Nova Fronteira, 2021",
    autoria:"Nelson Rodrigues",
    ano:1961,
    genero:"Teatro",
@@ -203,6 +225,8 @@ const LIVROS = {
    genero:"Infantil",
    nota:"Livro de educação sexual para crianças pequenas. A lei aprovada em seguida pela Câmara de Londrina permite explicação científica sobre reprodução, que é o assunto do livro."},
  "A bolsa amarela":{
+   capa:"bolsa-amarela",
+   capaCred:"Capa de referência · Casa Lygia Bojunga, 2013",
    autoria:"Lygia Bojunga",
    ano:1976,
    genero:"Infantojuvenil",
@@ -1087,7 +1111,7 @@ const PAPEIS = [
    As páginas leem os campos do ato e da obra diretamente em cada registro.
    Esta etapa copia esses campos para o registro. Não edite aqui; edite ATOS e LIVROS. */
 const CAMPOS_DO_ATO = ["data","fim","uf","cidade","tipo","rede","governo","quem","pressao"];
-const CAMPOS_DA_OBRA = ["autoria","editora","pnld","capa","conjunto"];
+const CAMPOS_DA_OBRA = ["autoria","editora","pnld","capa","capaCred","conjunto"];
 CASOS.forEach(c=>{
   const A = ATOS[c.ato] || {}, L = LIVROS[c.obra] || {};
   CAMPOS_DO_ATO.forEach(k=>{ if(c[k]===undefined && A[k]!==undefined) c[k]=A[k]; });

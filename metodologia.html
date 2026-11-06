@@ -90,14 +90,17 @@
 
   <section>
     <div class="sechead"><span class="kicker">06</span><h2>O que ainda falta apurar</h2><span class="count" id="count-pend"></span></div>
-    <p class="note">Pendências abertas em cada registro. O formulário ainda não está habilitado; veja o aviso na página <a href="relate.html">Relate um caso</a> antes de enviar qualquer informação.</p>
-    <div class="tab-wrap"><table class="tab"><thead><tr><th>CASO</th><th>LIVRO</th><th>PENDÊNCIA</th></tr></thead><tbody id="pend"></tbody></table></div>
+    <p id="pend-resumo"></p>
+    <p><a class="btn ghost" href="pendencias.html">Ver o que falta apurar, ato por ato</a></p>
   </section>
 
   <section>
     <div class="sechead"><span class="kicker">07</span><h2>Correções</h2><span class="count" id="count-corr"></span></div>
     <p class="note">Toda mudança de fato num registro publicado entra aqui, com data.</p>
     <div class="tab-wrap"><table class="tab"><thead><tr><th>DATA</th><th>REGISTRO</th><th>O QUE MUDOU</th></tr></thead><tbody id="corr"></tbody></table></div>
+    <details class="mais" id="corr-mais-box"><summary id="corr-mais-tit">Ver correções anteriores</summary>
+      <div class="tab-wrap"><table class="tab"><thead><tr><th>DATA</th><th>REGISTRO</th><th>O QUE MUDOU</th></tr></thead><tbody id="corr-mais"></tbody></table></div>
+    </details>
   </section>
 
   <section>
@@ -131,12 +134,16 @@
 <script src="assets/comum.js"></script>
 <script>
 const pend = CASOS.filter(c=>c.pendencia);
+const atosPend = new Set(pend.map(c=>c.ato)).size;
 document.getElementById("count-pend").innerHTML = `<b>${pend.length}</b> pendências`;
-document.getElementById("pend").innerHTML = pend.map(c=>
-  `<tr><td><a href="${urlCaso(c.id)}">${c.id}</a></td><td>${esc(obraDe(c))}</td><td>${esc(c.pendencia)}</td></tr>`).join("");
+document.getElementById("pend-resumo").textContent = `${pend.length} dos ${CASOS.length} registros, ligados a ${atosPend} atos, têm algum documento ou fato ainda não comprovado. Eles entram nas contagens com essa marcação, e cada lacuna aparece na própria ficha. A página O que falta apurar organiza as lacunas por ato, com o tipo de obstáculo e o caminho para fechá-las. O formulário de relatos ainda não está habilitado; veja o aviso em Relate um caso antes de enviar qualquer informação.`;
 document.getElementById("count-corr").innerHTML = `<b>${CORRECOES.length}</b> correções`;
-document.getElementById("corr").innerHTML = [...CORRECOES].sort((a,b)=>b.data.localeCompare(a.data)).map(x=>
-  `<tr><td>${dataCurta(x.data)}</td><td>${esc(x.id).replace(/EL-\d{3}/g, id=>`<a href="${urlCaso(id)}">${id}</a>`)}</td><td>${esc(x.texto)}</td></tr>`).join("");
+const linhaCorr = x => `<tr><td>${dataCurta(x.data)}</td><td>${esc(x.id).replace(/EL-\d{3}/g, id=>`<a href="${urlCaso(id)}">${id}</a>`)}</td><td>${esc(x.texto)}</td></tr>`;
+const corrOrd = [...CORRECOES].sort((a,b)=>b.data.localeCompare(a.data));
+document.getElementById("corr").innerHTML = corrOrd.slice(0,6).map(linhaCorr).join("");
+document.getElementById("corr-mais").innerHTML = corrOrd.slice(6).map(linhaCorr).join("");
+document.getElementById("corr-mais-tit").textContent = `Ver as ${corrOrd.length-6} correções anteriores`;
+if(corrOrd.length<=6) document.getElementById("corr-mais-box").hidden = true;
 const parc = CASOS.filter(c=>!verificado(c)).length;
 document.getElementById("n-parciais").textContent = `Hoje, ${CASOS.length - parc} de ${CASOS.length} registros estão marcados como verificados e têm pelo menos duas referências cadastradas; ${parc} estão como parcialmente verificados. A independência das referências exige conferência editorial.`;
 montarRodape();
