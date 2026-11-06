@@ -101,3 +101,6 @@ https://github.com/natalyxxnunes-stack/estante-livre/pull/6
 2. Integrar EL-035, EL-036 e EL-037 com seus livros, atos, fontes, agentes e papéis associados, preservando as atualizações recentes dos 34 registros de `main`.
 3. Reconciliar os demais recursos do PR #5 em lotes coerentes e testar a geração em ambiente que execute Node.js.
 4. Resolver ou aguardar a limitação de builds da Vercel e confirmar preview/deploy antes de qualquer anúncio de publicação.
+
+
+**Atualização do estado da PR #6:** após a última atualização documental, a consulta mais recente ao GitHub passou a retornar `mergeable: false` para a PR #6. Portanto, ela permanece draft e não deve ser integrada até o GitHub recalcular/explicar o conflito e a validação pendente ser resolvida.
