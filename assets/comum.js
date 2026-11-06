@@ -229,7 +229,7 @@ function livroHTML(titulo, ocs, q, nivel){
   const m = t => marcar(t, q);
   const H = nivel || "h3";
   const ref = ocs[0], L = LIVROS[titulo] || {};
-  const ficha = [L.ano, L.genero, ref.editora, L.premio, ref.pnld?"No PNLD":null].filter(Boolean).map(esc).join(" · ");
+  const ficha = [L.ano, L.genero, ref.editora, L.premio, ref.pnld?"No PNLD":null, (L.chegada && L.chegada!=="Acervo, origem não informada" && !ref.pnld)?"Chegou por: "+L.chegada.toLowerCase():null].filter(Boolean).map(esc).join(" · ");
   const ufs = [...new Set(ocs.map(o=>o.uf))];
   const motivos = [...new Set(ocs.map(o=>o.eixo))];
   const mods = [...new Set(ocs.map(o=>o.modalidade))];

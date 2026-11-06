@@ -867,3 +867,6 @@ details.mais[open] summary{margin-bottom:12px}
   .tab.quebra tr{padding:10px 0;border-bottom:1px solid var(--linha)}
   .tab.quebra td{border:0;padding:2px 0}
 }
+#chart-chegada .analysis-bar-row{grid-template-columns:minmax(150px,230px) 1fr 24px}
+#chart-chegada .analysis-bar-row small{display:none}
+@media(max-width:680px){#chart-chegada .analysis-bar-row{grid-template-columns:1fr 24px}#chart-chegada .analysis-bar-row>span:first-child{grid-column:1/-1}}

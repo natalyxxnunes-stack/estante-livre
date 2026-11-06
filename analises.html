@@ -82,7 +82,15 @@
   <p>O mesmo cuidado vale para outros episódios do catálogo: tentativa de descarte, segregação anunciada, pedido formal, suspensão de atividade e retirada efetivamente executada são acontecimentos diferentes. A página de análises não os soma como se fossem equivalentes.</p>
  </section>
  <section>
-  <div class="sechead"><span class="kicker">05</span><h2>O que ainda não podemos concluir</h2></div>
+  <div class="sechead"><span class="kicker">05</span><h2>Como esses livros chegaram à escola</h2></div>
+  <p class="analysis-lead" id="cheg-lead"></p>
+  <div id="chart-chegada" class="analysis-bars" aria-label="Obras por forma de chegada"></div>
+  <p>O avesso da pele chegou pelo PNLD, com ata de escolha assinada na própria escola. Pipoca e Picolé foi comprado pela prefeitura de Taubaté um ano antes de ser retirado. O menino marrom estava em trabalho pedagógico da rede de Conselheiro Lafaiete; Eu receberia as piores notícias dos seus lindos lábios foi indicado por uma banca de professores para o vestibular da UniRV; A bolsa amarela estava num clube de leitura municipal em Limeira e numa atividade de 4º ano no DF. Nesses casos, quem mandou tirar desfez uma escolha feita antes por educadores ou pelo próprio poder público.</p>
+  <p>A bolsa amarela completa 50 anos em 2026, ano em que a Câmara Brasileira do Livro escolheu Lygia Bojunga como <a href="https://www.oliberal.com/cultura/escritora-lygia-bojunga-e-personalidade-literaria-da-68-edicao-do-premio-jabuti-1.1184268" target="_blank" rel="noopener">Personalidade Literária do 68º Prêmio Jabuti</a>. No mesmo ano, o livro saiu de uma atividade do Colégio Militar Dom Pedro II, no Distrito Federal.</p>
+  <p class="note">A origem da maior parte do acervo atingido (as listas de Rondônia e Santa Catarina, o acervo da Palmares) ainda não está documentada. Quando o catálogo souber como esses livros entraram nas bibliotecas, esta conta muda. A forma de chegada aparece em cada ficha de livro e na coluna <code>como_chegou</code> dos dados abertos.</p>
+ </section>
+ <section>
+  <div class="sechead"><span class="kicker">06</span><h2>O que ainda não podemos concluir</h2></div>
   <div class="analysis-unknown">
    <div><h3>Não é um retrato de todo o país</h3><p>O catálogo reúne episódios localizados por pesquisa documental e cobertura pública. Não permite estimar a proporção nacional de atos atribuíveis a cada campo político.</p></div>
    <div><h3>Partido do governo não prova autoria</h3><p>O fato de uma medida ocorrer durante determinado governo não prova que o governador ou prefeito a tenha ordenado. É preciso localizar o ato, o signatário e a cadeia de execução.</p></div>
@@ -91,7 +99,7 @@
   </div>
  </section>
  <section>
-  <div class="sechead"><span class="kicker">06</span><h2>Como esta análise será atualizada</h2></div>
+  <div class="sechead"><span class="kicker">07</span><h2>Como esta análise será atualizada</h2></div>
   <p>As conclusões serão revistas quando entrarem novos documentos, respostas de LAI ou correções nas fichas. Se a base mudar, os números e as interpretações também mudam. A data de atualização e a regra de contagem ficam explícitas; nenhuma hipótese será promovida a fato sem fonte.</p>
   <p class="analysis-links"><a href="casos.html">Consultar os casos</a><a href="metodologia.html">Ler a metodologia</a><a href="index.html">Voltar ao painel</a></p>
  </section>
@@ -136,6 +144,16 @@ el("politicos-rows").innerHTML=idsPoliticos.map(p=>{
  const c=CASOS.find(x=>x.id===p.id);
  return '<tr><td><strong>'+p.nome+'</strong></td><td>'+p.partido+'</td><td>'+p.papel+(c?'<div class="analysis-source">'+fontes(c)+'</div>':'')+'</td><td>'+p.decisao+'</td><td><a href="casos.html#'+p.id+'">'+p.id+'</a></td></tr>';
 }).join("");
+{
+ const obras = {}; CASOS.forEach(c=>{ const o=obraDe(c); obras[o]=(LIVROS[o]||{}).chegada||"Acervo, origem não informada"; });
+ const cont = {}; Object.values(obras).forEach(v=>cont[v]=(cont[v]||0)+1);
+ const total = Object.keys(obras).length, semOrigem = cont["Acervo, origem não informada"]||0, conhecida = total-semOrigem;
+ const escolha = (cont["Programa federal (PNLD)"]||0)+(cont["Compra da própria rede"]||0)+(cont["Escolha de professores"]||0);
+ el("cheg-lead").textContent = `Das ${conhecida} obras cuja origem as fontes informam, ${escolha} chegaram ao leitor por decisão de educadores ou do próprio poder público: programa federal, compra da rede ou escolha de professores. As outras ${conhecida-escolha} vieram de doação. A origem de ${semOrigem} obras e conjuntos ainda não está documentada.`;
+ const lista = CHEGADAS.map(k=>[k,cont[k]||0]);
+ const mx = Math.max(...lista.map(x=>x[1]),1);
+ el("chart-chegada").innerHTML = lista.map(([k,n])=>'<div class="analysis-bar-row"><span>'+esc(k)+'</span><span class="analysis-track"><i style="width:'+(n/mx*100)+'%"></i></span><b>'+n+'</b><small></small></div>').join("");
+}
 montarRodape();
 </script>
 </body></html>

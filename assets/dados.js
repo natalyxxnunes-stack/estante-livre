@@ -49,6 +49,7 @@ const CASOS = [
    conjunto: true quando o registro é um lote sem lista título a título. */
 const LIVROS = {
  "O avesso da pele":{
+   chegada:"Programa federal (PNLD)",
    autoria:"Jeferson Tenório",
    editora:"Companhia das Letras",
    pnld:true,
@@ -59,6 +60,7 @@ const LIVROS = {
    sinopse:"Um professor negro é morto pela polícia em Porto Alegre. O filho reconstrói a vida do pai a partir dos objetos, dos silêncios e do que a cidade fez com o corpo dele.",
    nota:"Aprovado no PNLD antes das retiradas. O parecer do MEC, obtido pela Fiquem Sabendo via Lei de Acesso à Informação, avaliou que a linguagem tinha coerência interna com a narrativa. Voltou às escolas do PR e de GO em abril de 2024; no MS, a devolução foi anunciada no fim de abril."},
  "It: A coisa":{
+   chegada:"Acervo, origem não informada",
    capa:"it-a-coisa",
    capaCred:"Capa de referência · Suma, 2014",
    autoria:"Stephen King",
@@ -66,6 +68,7 @@ const LIVROS = {
    genero:"Terror",
    sinopse:"Sete crianças de uma cidade do Maine enfrentam uma entidade que se alimenta do medo, e voltam adultas para terminar o que começaram."},
  "Laranja Mecânica":{
+   chegada:"Acervo, origem não informada",
    autoria:"Anthony Burgess",
    capa:"laranja-mecanica",
    ano:1962,
@@ -73,12 +76,14 @@ const LIVROS = {
    sinopse:"Numa Inglaterra distópica, um adolescente violento é submetido a um tratamento de condicionamento que o impede de escolher o mal — e, com isso, de escolher.",
    nota:"Livro sobre os limites do Estado ao suprimir a escolha individual, retirado por decisão de Estado."},
  "Donnie Darko":{
+   chegada:"Acervo, origem não informada",
    capa:"donnie-darko",
    capaCred:"Capa de referência · DarkSide, 2016",
    autoria:"Richard Kelly",
    genero:"Roteiro",
    sinopse:"O roteiro do filme de 2001 sobre um adolescente que, depois de escapar de um acidente, passa a ter visões de um coelho que anuncia o fim do mundo."},
  "Coração Satânico":{
+   chegada:"Acervo, origem não informada",
    capa:"coracao-satanico",
    capaCred:"Capa de referência · DarkSide, 2017",
    autoria:"William Hjortsberg",
@@ -86,6 +91,7 @@ const LIVROS = {
    genero:"Romance policial",
    sinopse:"Um detetive de Nova York é contratado para achar um cantor desaparecido e descobre que o cliente tem planos para a alma de alguém."},
  "Exorcismo":{
+   chegada:"Acervo, origem não informada",
    capa:"exorcismo",
    capaCred:"Capa de referência · DarkSide, 2016",
    autoria:"Thomas B. Allen",
@@ -93,6 +99,7 @@ const LIVROS = {
    genero:"Não ficção",
    sinopse:"Reconstrução jornalística do caso de 1949 que inspirou O exorcista, a partir do diário de um dos padres envolvidos."},
  "Ed & Lorraine Warren: demonologistas — arquivos sobrenaturais":{
+   chegada:"Acervo, origem não informada",
    capa:"demonologistas",
    capaCred:"Capa de referência · DarkSide, 2016",
    autoria:"Gerald Brittle",
@@ -100,6 +107,7 @@ const LIVROS = {
    genero:"Não ficção",
    sinopse:"Relatos do casal de investigadores paranormais cujos casos viraram a série de filmes Invocação do Mal."},
  "O diário do diabo: os segredos de Alfred Rosenberg, o maior intelectual do nazismo":{
+   chegada:"Acervo, origem não informada",
    capa:"diario-do-diabo",
    capaCred:"Capa de referência · Record, 2017",
    autoria:"Robert K. Wittman e David Kinney",
@@ -108,6 +116,7 @@ const LIVROS = {
    sinopse:"A partir de diários desaparecidos por décadas, reconstrói a trajetória do ideólogo racial do nazismo, condenado em Nuremberg.",
    nota:"Livro crítico ao nazismo, retirado sob a mesma ordem que atingiu obras de terror."},
  "A química entre nós":{
+   chegada:"Acervo, origem não informada",
    capa:"quimica-entre-nos",
    capaCred:"Capa de referência · Best Seller, 2012",
    autoria:"Larry Young e Brian Alexander",
@@ -116,6 +125,7 @@ const LIVROS = {
    sinopse:"Um neurocientista e um jornalista investigam a base biológica do desejo, do amor e do vínculo humano.",
    nota:"Obra de divulgação científica sobre a neurobiologia do vínculo, assinada por um neurocientista e um jornalista, guardada na mesma ordem que livros de terror."},
  "Os 13 porquês":{
+   chegada:"Acervo, origem não informada",
    capa:"os-13-porques",
    capaCred:"Capa de referência · Ática, 2009",
    autoria:"Jay Asher",
@@ -124,6 +134,7 @@ const LIVROS = {
    sinopse:"Uma adolescente deixa treze fitas explicando as razões que a levaram ao suicídio, endereçadas a quem participou de cada uma.",
    nota:"Único título da lista de SC cujo tema central é saúde mental adolescente."},
  "Macunaíma":{
+   chegada:"Acervo, origem não informada",
    autoria:"Mário de Andrade",
    capa:"macunaima",
    ano:1928,
@@ -131,6 +142,7 @@ const LIVROS = {
    sinopse:"O herói sem nenhum caráter atravessa um Brasil de mitos, cidades e línguas sobrepostas, no livro que fundou boa parte do modernismo brasileiro.",
    nota:"Estava na lista de Rondônia. O secretário de Educação declarou à imprensa que “Macunaíma é filme e o escambau”."},
  "Memórias póstumas de Brás Cubas":{
+   chegada:"Acervo, origem não informada",
    autoria:"Machado de Assis",
    capa:"memorias-postumas",
    ano:1881,
@@ -138,11 +150,13 @@ const LIVROS = {
    sinopse:"Um defunto autor narra a própria vida com ironia, do leito de morte para trás, inaugurando o realismo machadiano.",
    nota:"Leitura obrigatória em vestibulares, listada como “conteúdo inadequado às crianças e adolescentes”."},
  "Os Sertões da Luta":{
+   chegada:"Acervo, origem não informada",
    autoria:"Euclides da Cunha",
    ano:1902,
    genero:"Não ficção",
    sinopse:"O relato de Euclides da Cunha sobre a Guerra de Canudos e a destruição do arraial pelo Exército, um dos livros fundadores do pensamento social brasileiro."},
  "O castelo":{
+   chegada:"Acervo, origem não informada",
    capa:"o-castelo",
    capaCred:"Capa de referência · Companhia das Letras, 2008",
    autoria:"Franz Kafka",
@@ -150,16 +164,19 @@ const LIVROS = {
    genero:"Romance",
    sinopse:"Um agrimensor tenta chegar ao castelo que o contratou e esbarra numa burocracia que nunca se explica nem se deixa alcançar."},
  "Contos de terror, de mistério e de morte":{
+   chegada:"Acervo, origem não informada",
    capa:"contos-de-terror",
    capaCred:"Capa de referência · Nova Fronteira, 2017",
    autoria:"Edgar Allan Poe",
    genero:"Contos",
    sinopse:"Reunião dos contos de Poe que fundaram a literatura de horror psicológico moderna."},
  "A vida como ela é":{
+   chegada:"Acervo, origem não informada",
    autoria:"Nelson Rodrigues",
    genero:"Crônicas",
    sinopse:"Crônicas do cotidiano carioca, publicadas originalmente em jornal, sobre traição, desejo e hipocrisia de classe média."},
  "Beijo no asfalto":{
+   chegada:"Acervo, origem não informada",
    capa:"beijo-no-asfalto",
    capaCred:"Capa de referência · Nova Fronteira, 2021",
    autoria:"Nelson Rodrigues",
@@ -168,6 +185,7 @@ const LIVROS = {
    sinopse:"Um homem beija um desconhecido atropelado, e a imprensa transforma o gesto em escândalo que destrói sua vida.",
    nota:"Peça sobre linchamento moral fabricado pela imprensa."},
  "Obras de Rubem Fonseca (19 itens; 18 títulos distintos)":{
+   chegada:"Acervo, origem não informada",
    legenda:"19 itens do mesmo autor; 18 títulos distintos",
    autoria:"Rubem Fonseca",
    conjunto:true,
@@ -179,26 +197,31 @@ const LIVROS = {
    nota:"Registro de conjunto documental, não de uma obra literária. Reúne os 17 títulos distintos da relação que não têm ficha individual nem pertencem ao conjunto de Rubem Fonseca ou aos sete registros individualizados. A relação completa está transcrita na nota do registro EL-024. O Adendo tem 43 linhas numeradas e 42 títulos distintos por duplicação de O Seminarista."
  },
  "Obra completa de Rubem Alves":{
+   chegada:"Acervo, origem não informada",
    legenda:"Obra completa, sem lista",
    autoria:"Rubem Alves",
    conjunto:true,
    nota:"O memorando determinava, em nota de rodapé, que todos os livros do autor fossem recolhidos. Educador e teólogo, é considerado um dos principais pedagogos brasileiros ao lado de Paulo Freire."},
  "Relação do Adendo 10053329 (43 itens; 42 títulos distintos)":{
+   chegada:"Acervo, origem não informada",
    legenda:"Registro documental agrupado",
    autoria:"Vários, entre eles Caio Fernando Abreu, Carlos Heitor Cony e Ferreira Gullar",
    conjunto:true,
    nota:"Registro de conjunto documental, não de uma obra literária. O Adendo ID 10053329 contém 43 linhas numeradas e 42 títulos distintos, pois O Seminarista aparece duas vezes. Este conjunto reúne os 17 títulos distintos que não têm ficha individual nem pertencem ao conjunto de Rubem Fonseca ou aos sete registros individualizados: O Melhor de Caio Fernando Abreu — Contos e Crônicas (Caio Fernando Abreu); Poemas Escolhidos (Ferreira Gullar); A Volta por Cima (Carlos Heitor Cony); Mar de Histórias — todos os volumes (Aurélio Buarque de Holanda Ferreira); O Irmão que tu me Deste (Carlos Heitor Cony); A Menina de Cá (Carlos Nascimento Silva); Guia Millôr da História do Brasil (Ivan Rubino Fernandes); O Ventre (Carlos Heitor Cony); Rosa Vegetal de Sangue (Carlos Heitor Cony); O Mistério da Moto de Cristal (Ana Lee e Carlos Heitor Cony); Estrangeira (Sonia Rodrigues); O Melhor de Nelson Rodrigues (Nelson Rodrigues); 13 dos Melhores Contos de Amor (Rosa Amanda Strausz); Mil e Uma Noites (Carlos Heitor Cony); Vestido de Noiva — graphic novel (autoria não indicada na relação); O Ato e o Fato (Carlos Heitor Cony); O Harém das Bananeiras (Carlos Heitor Cony). A instrução sobre todos os livros de Rubem Alves aparece fora da tabela e é registrada separadamente em EL-023. A transcrição normaliza erros evidentes de grafia do documento (Gular/Gullar, Hitor/Heitor, Ruben/Rubem e Alfalto/Asfalto); a primeira linha aparece truncada no PDF como “O Melhor De” e foi completada com base na relação publicada pela Folha."},
  "Anúncio de descarte de 5.165 exemplares classificados como de “temática alheia à negra”":{
+   chegada:"Acervo, origem não informada",
    legenda:"5.165 exemplares",
    autoria:"Vários, entre eles Karl Marx, Max Weber, Eric Hobsbawm, Celso Furtado, Caio Prado Jr. e Machado de Assis",
    conjunto:true,
    nota:"O relatório classificou 5.165 exemplares do acervo, perto de metade do total, como de temática alheia à negra. O Conselho Federal de Biblioteconomia apontou que o relatório que embasou o expurgo não constitui política de desenvolvimento de coleções e foi feito sem bibliotecários."},
  "Segregação de cerca de 300 livros no chamado “Acervo da Vergonha”":{
+   chegada:"Acervo, origem não informada",
    legenda:"Cerca de 300 livros",
    autoria:"Vários, entre eles Antonio Gramsci, Marilena Chauí, Simone de Beauvoir, Karl Marx e Celso Furtado",
    conjunto:true,
    nota:"Resposta institucional à decisão judicial: impedido de descartar, o órgão isolou as obras em sala própria, o que o catálogo classifica como ocultação ou restrição de acesso."},
  "O menino marrom":{
+   chegada:"Escolha de professores",
    autoria:"Ziraldo",
    editora:"Melhoramentos",
    capa:"menino-marrom",
@@ -207,6 +230,7 @@ const LIVROS = {
    sinopse:"A amizade entre um menino marrom e um menino cor-de-rosa, e as perguntas dos dois sobre cor, diferença e preconceito.",
    nota:"Clássico de Ziraldo sobre racismo para crianças, suspenso por “conteúdo agressivo” e devolvido por decisão judicial."},
  "Meninas sonhadoras, mulheres cientistas":{
+   chegada:"Acervo, origem não informada",
    autoria:"Flávia Martins de Carvalho",
    editora:"Mostarda",
    capa:"meninas-sonhadoras",
@@ -214,6 +238,7 @@ const LIVROS = {
    sinopse:"Trajetórias de mulheres brasileiras na pesquisa e na vida pública, escrito por uma juíza do TJSP.",
    nota:"Recolhido depois que um vereador criticou a presença de Marielle Franco e Débora Diniz entre as retratadas. Dois anos depois, a Justiça chamou a retirada de censura."},
  "Eu receberia as piores notícias de seus lindos lábios":{
+   chegada:"Escolha de professores",
    autoria:"Marçal Aquino",
    editora:"Companhia das Letras",
    capa:"piores-noticias",
@@ -222,9 +247,11 @@ const LIVROS = {
    sinopse:"Num garimpo do Pará, um fotógrafo se envolve com a mulher de um pastor. O desejo e a violência dividem o mesmo território.",
    nota:"Saiu da lista de leituras do vestibular, o que o catálogo registra como exclusão de lista de leitura. A decisão veio dias depois de um deputado chamar o livro de pornográfico em vídeo."},
  "A mamãe vai ter um bebê":{
+   chegada:"Doação ou origem externa",
    genero:"Infantil",
    nota:"Livro de educação sexual para crianças pequenas. A lei aprovada em seguida pela Câmara de Londrina permite explicação científica sobre reprodução, que é o assunto do livro."},
  "A bolsa amarela":{
+   chegada:"Escolha de professores",
    capa:"bolsa-amarela",
    capaCred:"Capa de referência · Casa Lygia Bojunga, 2013",
    autoria:"Lygia Bojunga",
@@ -233,12 +260,14 @@ const LIVROS = {
    sinopse:"Raquel esconde numa bolsa amarela três vontades que não cabem em casa: crescer, ter nascido menino e escrever.",
    nota:"Clássico de Lygia Bojunga, primeira autora fora da Europa e dos EUA a receber o Prêmio Hans Christian Andersen, em 1982."},
  "Pipoca e Picolé":{
+   chegada:"Compra da própria rede",
    autoria:"Adriana Lisboa",
    editora:"Elo",
    genero:"Infantil",
    sinopse:"A menina Pipoca e o cachorro Picolé numa família com um pai e duas mães.",
    nota:"Comprado pela própria prefeitura um ano antes, por R$ 1,2 milhão, e retirado das escolas pela gestão seguinte."},
  "Veto à lista de doze livros do projeto Remição em Rede":{
+   chegada:"Doação ou origem externa",
    legenda:"12 títulos, 240 exemplares",
    autoria:"Vários, entre eles Gabriel García Márquez, Albert Camus, Harper Lee, Isabela Figueiredo e Édouard Louis",
    editora:"Record, Planeta, Todavia e Boitempo",
@@ -918,6 +947,9 @@ const ESTAGIOS = ["Pressão pública","Pedido formal","Decisão ou ordem","Execu
 /* Situação atual da medida. O detalhe fica no campo desfecho. */
 /* Níveis de verificação, do mais forte ao mais fraco. "Em apuração" fica só na triagem e nunca é publicado. */
 const NIVEIS = ["Documentado","Confirmado","Parcial"];
+/* Como a obra chegou ao leitor, segundo as fontes do caso. "Escolha de professores" cobre lista de leitura,
+   banca de vestibular, clube ou atividade definidos por educadores. Sem fonte, fica "Acervo, origem não informada". */
+const CHEGADAS = ["Programa federal (PNLD)","Compra da própria rede","Escolha de professores","Doação ou origem externa","Acervo, origem não informada"];
 const SITUACOES = ["Em vigor","Revertido","Sem efeito","Em aberto"];
 const EIXOS = ["Cultura afro-brasileira","Sexualidade e gênero","Sobrenatural e mágico",
   "Política e ideologia","Religião","Linguagem e palavrão","Violência","Outro"];
@@ -1122,7 +1154,7 @@ const PAPEIS = [
    As páginas leem os campos do ato e da obra diretamente em cada registro.
    Esta etapa copia esses campos para o registro. Não edite aqui; edite ATOS e LIVROS. */
 const CAMPOS_DO_ATO = ["data","fim","uf","cidade","tipo","rede","governo","quem","pressao"];
-const CAMPOS_DA_OBRA = ["autoria","editora","pnld","capa","capaCred","conjunto"];
+const CAMPOS_DA_OBRA = ["autoria","editora","pnld","capa","capaCred","conjunto","chegada"];
 CASOS.forEach(c=>{
   const A = ATOS[c.ato] || {}, L = LIVROS[c.obra] || {};
   CAMPOS_DO_ATO.forEach(k=>{ if(c[k]===undefined && A[k]!==undefined) c[k]=A[k]; });
