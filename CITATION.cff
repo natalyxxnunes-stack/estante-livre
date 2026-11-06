@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "Se usar estes dados, cite o Estante Livre como abaixo."
+type: dataset
+title: "Estante Livre: catálogo de censura de livros em bibliotecas e escolas brasileiras"
+authors:
+  - family-names: "Pinto"
+    given-names: "Nataly Nunes"
+license: CC-BY-4.0
+url: "https://estante-livre-br.vercel.app"
+repository-code: "https://github.com/natalyxxnunes-stack/estante-livre"
+keywords:
+  - censura
+  - livros
+  - bibliotecas
+  - Brasil
+  - dados abertos
+date-released: 2026-11-06
+version: "2026.11"

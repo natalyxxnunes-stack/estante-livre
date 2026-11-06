@@ -1,0 +1,14 @@
+{
+  "title": "Estante Livre: catálogo de censura de livros em bibliotecas e escolas brasileiras",
+  "upload_type": "dataset",
+  "description": "<p>Base de dados aberta do Estante Livre, observatório independente de censura de livros no Brasil. Registra atos e pedidos que retiraram, restringiram, impediram ou condicionaram o acesso a livros em bibliotecas, escolas e programas públicos de leitura desde 2019. Cada registro corresponde a um título atingido por um ato, com mecanismo, estágio, situação, justificativa declarada, agentes com papel documentado, nível de verificação e fontes.</p><p>Arquivos principais: dados/estante-livre-casos.csv e dados/estante-livre-casos.json. Metodologia e dicionário de dados: https://estante-livre-br.vercel.app/metodologia.html</p>",
+  "creators": [
+    { "name": "Pinto, Nataly Nunes" }
+  ],
+  "license": "cc-by-4.0",
+  "language": "por",
+  "keywords": ["censura", "livros", "bibliotecas", "bibliotecas escolares", "Brasil", "liberdade de expressão", "políticas educacionais", "PNLD", "dados abertos"],
+  "related_identifiers": [
+    { "identifier": "https://estante-livre-br.vercel.app", "relation": "isDocumentedBy", "resource_type": "other" }
+  ]
+}
