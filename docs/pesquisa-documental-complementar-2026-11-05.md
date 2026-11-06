@@ -660,3 +660,12 @@ Esses cruzamentos confirmam a presença de registros bibliográficos corresponde
 O título “O Sexo na Alemanha Nazista” aparece nos dois conjuntos, mas há divergência na grafia do sobrenome do autor (transcrição: Hans Peter Blewel; inventário: Hans Peter Bleual) e o ano não consta no inventário; classificar como correspondência provável, não como identidade comprovada.
 
 Fontes de conferência: [transcrição secundária das 261 entradas](https://pordentrodorn.com.br/2021/06/17/veja-lista-de-livros-banidos-pela-fundacao-palmares/) e [inventário oficial FCP/CNIRC](https://www.gov.br/palmares/pt-br/centrais-de-conteudo/publicacoes/lista-de-livros-atualizada-8-8-2024-1.pdf).
+
+
+## Atualização de acompanhamento — Taubaté (EL-032), 06/11/2026
+
+A reportagem de OVALE de 14/07/2026 reproduz declaração da Prefeitura de que a avaliação da Coordenação de Área e da Equipe de Práticas Pedagógicas da Educação Infantil foi favorável ao uso de “Pipoca e Picolé” na rede municipal, com planejamento pedagógico, respeito à faixa etária e mediação docente qualificada; o livro permaneceria no plano de ensino das turmas adequadas, sob acompanhamento da Coordenação de Área.
+
+**Reclassificação editorial:** a decisão administrativa de retomada está confirmada por declaração municipal reproduzida na reportagem. Não classificar como devolução física comprovada. Continuam sem documento público o parecer integral, as escolas contempladas, o quantitativo redistribuído e os registros de execução.
+
+Fonte: https://sampi.net.br/ovale/noticias/2991910/vale-do-paraiba/2026/07/taubate-escolas-voltarao-a-usar-livro-sobre-menina-com-duas-maes
