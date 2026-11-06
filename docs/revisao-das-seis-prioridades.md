@@ -1,6 +1,4 @@
-# Revisão das seis prioridades pendentes — Estante Livre
-
-> **Atualização operacional — 05/11/2026:** o PR #5 está no commit `603bbb91d8ae97afd7d67a36060d99bfb3a6c913`. O check Vercel desse commit está em sucesso; o GitHub Actions #492 está em execução, e o último workflow concluído com sucesso antes dele foi o #427. A branch permanece divergente: 621 commits à frente e quatro atrás de `main`; não houve merge nem publicação em produção. A comparação com o PR #4 ainda mostra 65 commits exclusivos nele, por isso não há integração automática. A camada `CONTEXTO_PARTIDARIO` de 19 registros já está em `poder.html`; a nota antiga de que ela não havia sido portada está superada. A apuração de SC/2024 foi parcialmente portada para EL-005, Análises e documentação própria. O Relatório Público 01/CNIRC da Palmares continua não localizado; a afirmação anterior de que estaria dentro do PDF `resposta.pdf` foi retificada no [relatório editorial de 05/11/2026](relatorio-editorial-fechamento-p0-2026-11-05.md). Para o estado factual vigente, prevalece o [Fechamento P0](fechamento-p0.md).
+> **Atualização operacional — 05/11/2026:** a base atual contém 37 registros, 32 obras, 19 atos e 71 agentes. Seis registros estão marcados como parcialmente verificados: EL-025, EL-028, EL-030, EL-031, EL-032 e EL-035; cinco deles são P0. O GitHub Actions #497 passou no commit de código `713ef6c`; a geração produziu os arquivos estáticos no commit `4854c75`, cujo check Vercel foi aprovado. O commit documental seguinte (`bfb2ed5`) aguardava nova validação no momento desta atualização. A branch permanece divergente de `main` (628 commits à frente e quatro atrás) e do PR #4 (65 commits exclusivos no PR #4; 630 commits exclusivos no PR #5). A camada partidária de 19 contextos está em `poder.html`; a nota antiga de que não havia sido portada está superada. A apuração de SC/2024 foi incorporada a EL-005, Análises e documentação própria. O Relatório Público 01/CNIRC continua não localizado. Não houve merge, deploy de produção nem inspeção visual/manual em navegador real.
 
 **Data:** 2 de novembro de 2026  
 **Branch examinada:** `feat/estante-livre-auditoria-profissional`  
@@ -51,32 +49,32 @@ Nenhuma capa foi declarada liberada. Não foram acrescentadas novas imagens nem 
 **Critério para fechar**
 Para cada arquivo: obter autorização/licença ou registrar fundamento jurídico validado; caso não seja possível, retirar a imagem da versão publicada e manter ficha tipográfica com link para a editora. A decisão deve ser tomada arquivo a arquivo.
 
-## 4. Revisão dos dez registros parcialmente verificados
+## 4. Registros parcialmente verificados
 
-A base exportada foi confrontada com a lista de pendências. Onze IDs permanecem marcados como parcialmente verificados, incluindo o P0 EL-025:
+A base atual marca **seis registros** como parcialmente verificados. Cinco são prioridade P0; EL-031 é uma pendência complementar de menor prioridade.
 
 | Registro | Lacuna central que impede o fechamento |
 |---|---|
-| EL-022 | Relação nominal dos 19 títulos de Rubem Fonseca no Adendo SEI 10053329 |
-| EL-023 | Relação nominal das obras de Rubem Alves no mesmo adendo |
-| EL-024 | Relação integral dos demais títulos do Adendo SEI 10053329 |
-| EL-025 | Íntegra do Relatório Público 01/CNIRC, lista final de 300 títulos e destino da lista; a transcrição secundária de 261 entradas ainda não foi cotejada integralmente com o original |
-| EL-028 | Data de intimação, prova de devolução às escolas e eventual recurso após decisão de 20/07/2026 |
-| EL-030 | Requerimento integral de Jéssica Ramos Moreno, resposta da Secretaria e confirmação de eventual recolhimento |
-| EL-031 | Nota institucional original não recuperada; link de resenha foi temporariamente retirado para avaliação, sem retirada do livro, veto ou adoção obrigatória |
-| EL-032 | Requerimento, resposta municipal, parecer técnico e prova de redistribuição física de *Pipoca e Picolé* |
-| EL-035 | Processo SEI, pedido de providências, despacho da SME, quantitativo, avaliação técnica e destino final de *O bebê vem com a cegonha?!?* |
-| EL-036 | Inventário/movimentação dos exemplares, nota integral, resultado da notícia de fato do MPSC e situação atual do acervo |
-| EL-037 | Mesmas diligências de Canoinhas; manter separado o requerimento parlamentar, as manifestações públicas e a decisão/execução municipal |
+| EL-025 | Íntegra do Relatório Público 01/CNIRC e lista final de 300 títulos em fonte primária; transcrição secundária de 261 entradas ainda sem cotejo integral com o original; destino físico dos livros não comprovado |
+| EL-028 | Data de intimação da sentença de 20/07/2026 e prova de restituição física às escolas; eventual recurso/cumprimento |
+| EL-030 | Requerimento integral de Jéssica Ramos Moreno, destinatário formal, resposta da Secretaria e confirmação de eventual recolhimento |
+| EL-031 | Nota institucional original não recuperada; o que está documentado é a retirada temporária de um link de resenha para avaliação, sem retirada do livro, veto ou adoção obrigatória |
+| EL-032 | Requerimento e resposta integrais, mensagem/ordem original, parecer técnico completo e prova de redistribuição física de *Pipoca e Picolé* |
+| EL-035 | Número do processo SEI, pedido de providências, despacho da SME, quantitativo, avaliação técnica e destino final de *O bebê vem com a cegonha?!?* |
 
-**Correções de escopo mantidas**
-- EL-031 não deve ser apresentado como retirada de livro: o episódio diz respeito a um link para resenha em atividade.
-- EL-030 (2024) e EL-035 (2026) são episódios e obras diferentes.
-- Em Canoinhas, o TCE-SC registrou que os livros não foram jogados no lixo e estavam com a Fundação Cultural para análise de destinação; não afirmar destruição.
-- Em São José dos Campos, o prazo judicial conta da intimação, não automaticamente da data da sentença.
+**P0 documental:** EL-025, EL-028, EL-030, EL-032 e EL-035. A ausência dos documentos originais ou da prova de execução impede elevar esses cinco registros a integralmente comprovados.
 
-**Critério para fechar**
-Só mudar o status após incorporar a peça documental ou uma resposta institucional verificável. Não preencher lacunas por inferência.
+### Pendências documentais complementares em registros cujo núcleo factual está verificado
+
+As lacunas abaixo continuam relevantes para preservação do arquivo e completude das listas, mas não alteram a verificação do núcleo factual atualmente registrado na base.
+
+| Registro | Lacuna complementar |
+|---|---|
+| EL-022 | Recuperar o Adendo SEI 10053329 original e o resultado da sindicância estadual; a lista reproduzida contém 19 entradas e 18 títulos distintos |
+| EL-023 | Recuperar o Adendo SEI original e o resultado da sindicância; a instrução geral relativa às obras de Rubem Alves está documentada na reprodução consultada |
+| EL-024 | Recuperar o Adendo SEI original e o resultado da sindicância para preservar a relação integral dos demais títulos |
+| EL-036 | Obter o despacho integral do procedimento do MPSC, recibo de transferência e localização atual dos exemplares da Mundoteca |
+| EL-037 | Mesmas diligências de EL-036, mantendo a ficha separada por título e ato |
 
 ## 5. Documentos faltantes e pedidos de acesso à informação
 
