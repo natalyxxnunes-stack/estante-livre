@@ -104,17 +104,17 @@ O registro EL-017 foi corrigido para “Os Sertões da Luta”, conforme o títu
 
 **Reconciliação dos títulos concluída:** os 42 títulos distintos estão todos representados: sete em registros individuais (EL-015 a EL-021), 18 títulos distintos de Rubem Fonseca em conjunto documental (EL-022) e 17 títulos restantes em conjunto documental (EL-024). A duplicidade de O Seminarista está identificada. A instrução genérica sobre todos os livros de Rubem Alves permanece separada em EL-023 porque não há inventário individualizado nas fontes abertas consultadas. Os agrupamentos estão marcados como conjuntos; criar uma ficha por título seria melhoria de navegação, não condição para a contagem documental correta.
 
-**O que permanece aberto:** obtenção do processo SEI integral, resultado da sindicância estadual, recomendação integral do MP-RO e identificação dos livros de Rubem Alves abrangidos pela ordem genérica. A regeneração integral das páginas estáticas ainda precisa ser executada e conferida.
+**O que permanece aberto:** obtenção do processo SEI integral, resultado da sindicância estadual, recomendação integral do MP-RO e identificação dos livros de Rubem Alves abrangidos pela ordem genérica. A regeneração integral das páginas estáticas foi executada pelo GitHub Actions em 6/11/2026 (run 42257619328), com validação e commit automático concluídos com sucesso.
 
 ## 11. Validação dos dados e implantação — atualização
 
 - A base `assets/dados.js` foi analisada por execução JavaScript: sintaxe válida, 34 registros, 29 fichas de obra, 17 atos e 83 fontes.
 - Foi reproduzida a lógica de validação de campos obrigatórios, IDs, datas, taxonomias, referências, vínculos caso/ato/obra, papéis de agentes e lacunas. Resultado: zero erros.
 - Os dados abertos JSON e CSV foram atualizados para 6 de novembro de 2026 e conferidos com 34 registros cada.
-- O status de implantação Vercel foi reportado como `success` nos commits que atualizaram os dados abertos e as fichas EL-025/EL-026.
-- Foi adicionado `.github/workflows/regenerate-site.yml` para executar `node scripts/gerar.js` e versionar as páginas geradas após alterações relevantes. Não foi possível confirmar nesta sessão uma execução do GitHub Actions.
+- O GitHub Actions gerou as páginas e os dados abertos no commit `e27f326`. O Vercel, porém, marcou esse commit e o commit subsequente `ac5c199` como `failure`, com a mensagem `Deployment rate limited — retry in 24 hours`; portanto, a versão atualizada não está confirmada em produção.
+- Foi adicionado `.github/workflows/regenerate-site.yml` para executar `node scripts/gerar.js` e versionar as páginas geradas após alterações relevantes. A execução do GitHub Actions foi confirmada: run 42257619328, job `regenerate`, com sucesso nas etapas de checkout, configuração do Node, validação/regeneração e commit dos arquivos gerados.
 
-**Limite restante:** a validação equivalente dos dados passou, mas o script oficial `scripts/gerar.js` não foi executado neste ambiente. A regeneração integral de todas as páginas estáticas e o teste funcional no navegador permanecem sem comprovação. As fichas EL-025 e EL-026, `pendencias.html`, JSON, CSV, sitemap e `llms.txt` receberam atualização direta; as demais páginas geradas precisam passar pelo gerador antes da certificação final.
+**Limite restante:** o script oficial foi executado com sucesso no GitHub Actions e os arquivos gerados foram versionados. O deploy Vercel está bloqueado por limite de builds por 24 horas, e não foi possível confirmar a versão nova em produção nem realizar teste funcional completo no navegador. A confirmação do job de geração não equivale à confirmação de publicação.
 
 ## 10. Palmares — atualização documental
 
@@ -132,7 +132,7 @@ Fontes: https://www.gov.br/participamaisbrasil/politica-de-formacao-desenvolvime
 
 ## 9. Critério de publicação
 
-A base apresenta metodologia, fontes, marcação de verificação parcial e página pública de lacunas. Isso permite publicar material incompleto quando a incompletude está claramente sinalizada. Entretanto, a individualização dos 42 títulos distintos de Rondônia e a regeneração das páginas/dados abertos ainda são necessárias para que a contagem de registros corresponda à regra metodológica declarada. Até essa correção e a execução do gerador/checagem de produção, não é correto certificar a versão como finalizada e integralmente validada.
+A base apresenta metodologia, fontes, marcação de verificação parcial e página pública de lacunas. Isso permite publicar material incompleto quando a incompletude está claramente sinalizada. A individualização em 42 fichas de caso não é necessária para a contagem documental: os agrupamentos EL-022 e EL-024 estão identificados como conjuntos e transcrevem os títulos distintos; EL-023 registra separadamente a orientação genérica sobre Rubem Alves. A geração está validada pelo GitHub Actions, mas a publicação em produção e a checagem funcional seguem pendentes por bloqueio temporário do Vercel.
 
 ---
 Este documento registra achados e limites de verificação. Não substitui a atualização dos registros, das páginas geradas, do CSV/JSON e do sitemap.
