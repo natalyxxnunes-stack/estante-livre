@@ -531,3 +531,29 @@ O próprio anexo/minuta do contrato na sequência do PDF apresenta a dotação d
 Fonte primária: Edital 04/2023, item 24.1 e anexo II, páginas 41–43: https://www.gov.br/palmares/pt-br/midias/arquivos-licitacao/edital4-2023.pdf
 
 Resultado: **código de empenho ainda não confirmado**. Próxima busca deve testar `2023NE000023`, `2023PE0023`, UG 344041, PI C20ZM4PA001, processo 01420.100133/2022-11 e favorecido 23.803.398/0001-08 em conjunto, sem tratar resultados isolados de mesmo número como correspondentes ao contrato.
+
+
+## 25. EL-025 — confronto entre edital e contrato assinado: divergência formal confirmada
+
+A conferência do documento original assinado (SEI 0288785) permite separar com precisão as divergências que antes estavam agrupadas:
+
+1. **Cabeçalho do contrato assinado:** identifica Unidade Gestora 344041.
+2. **Cláusula 4.1 do contrato assinado:** registra literalmente “Gestão/Unidade: 344010/340031”, Fonte 0100, PT 225954, ND 339039 e PI C20ZM4PA001.
+3. **Item 2.1 do Edital 04/2023, página 1:** registra “Gestão/Unidade: 34028/344041”, Fonte 100, PT 225954, ND 33.90.39 e PI C20ZM4PA001.
+4. **Item 24.1 do mesmo edital, página 41:** registra Gestão/Unidade 344041, Fonte 0100, PT 225954, ND 339039, PI C20ZM4PA001 e o identificador literal “Nota de Empenho:2023PE0023”.
+5. **Anexo II/minuta do edital, cláusula 4.1, página 43:** registra Gestão/Unidade 344041, Fonte 100, PT 225954, ND 339039 e PI C20ZM4PA001, sem repetir número de empenho.
+
+O contrato efetivamente assinado foi celebrado com o Grupo Oficina de Restauro Ltda., processo 01420.100133/2022-11, valor R$ 246.928,28, para desinfestação de 197 m³. Assinaturas eletrônicas constam de 21 e 26/12/2023. O PDF do contrato não informa número de nota de empenho em suas cláusulas; a linha `2023PE0023` aparece apenas no item 24.1 do edital.
+
+Fontes primárias:
+- Contrato assinado (SEI 0288785): https://www.gov.br/palmares/pt-br/midias/arquivos-contratos/2023/1-gorestauro-contrato.pdf
+- Edital 04/2023 (SEI 0268190), páginas 1, 41 e 43: https://www.gov.br/palmares/pt-br/midias/arquivos-licitacao/edital4-2023.pdf
+- Página oficial de contratos da FCP, que associa o Contrato 010/2023 ao processo e à empresa: https://www.gov.br/palmares/pt-br/acesso-a-informacao/contratos-2023
+
+### Avaliação documental
+
+Há divergência objetiva entre as unidades/gestões reproduzidas no edital e no contrato assinado. Não é possível, com os documentos localizados, determinar se houve erro de preenchimento, reaproveitamento de minuta, erro de transcrição ou efetiva classificação contábil distinta. A existência do número `2023PE0023` no edital tampouco prova que esse documento foi emitido ou que corresponde ao empenho que financiou o contrato: não foi localizado documento SIAFI independente com esse código, favorecido, valor e vinculação ao processo.
+
+A apuração deve ser feita pela combinação de UG 344041, processo 01420.100133/2022-11, PI C20ZM4PA001, PT 225954, CNPJ 23.803.398/0001-08 e valor contratual, verificando se houve nota de empenho com outro identificador. Resultados de mesmo número em outras unidades gestoras devem ser descartados.
+
+**Conclusão:** a divergência documental está comprovada; a causa, o documento contábil efetivamente emitido e a execução financeira permanecem sem confirmação. Não classificar como irregularidade comprovada sem documentação adicional.
