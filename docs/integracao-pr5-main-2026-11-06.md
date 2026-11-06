@@ -78,3 +78,26 @@ Os dez workflows mais recentes listados para `main` em 06/11/2026 estavam conclu
 ### Decisão técnica desta rodada
 
 A integração automática continua bloqueada. A sequência segura é fazer uma reconciliação explícita do contrato de dados e dos arquivos-fonte; depois, portar os componentes em lotes coerentes e regenerar tudo a partir da base consolidada. Nenhum arquivo gerado, dado de main ou dado do PR foi sobrescrito nesta rodada.
+
+
+## Entrega incremental — contexto partidário (PR #6)
+
+Em 06/11/2026 foi incorporada à branch de integração, sem substituir os dados de `main`, a estrutura `CONTEXTO_PARTIDARIO` com 19 registros. Cada registro preserva a pessoa, a legenda e o período coberto, a descrição do alcance da evidência, o status e as URLs de referência. As ressalvas temporais foram mantidas; candidatura ou partido do governo não são tratados como prova automática de filiação individual em qualquer data.
+
+O gerador de `main` foi atualizado para carregar essa estrutura e validar a presença dos 19 registros, os campos obrigatórios e o protocolo das URLs. A mudança está isolada no PR incremental #6:
+
+https://github.com/natalyxxnunes-stack/estante-livre/pull/6
+
+### Validação observada do PR #6
+
+- O GitHub informa que a PR é mergeable, mas ela foi aberta como draft e permanece sem merge.
+- Não foi encontrado workflow de GitHub Actions executado para o commit desta PR. A versão de `main` contém o workflow de regeneração acionado por push em `main`, mas não contém o workflow de validação do PR que existe na branch antiga.
+- O status externo Vercel retornou falha com destino indicando limite de builds do plano (`build-rate-limit`). Isso não é um erro de compilação identificado no código, mas também não é uma validação bem-sucedida do deploy.
+- A etapa de contexto partidário está integrada à base de dados e à validação do gerador; ainda não tem interface pública própria no site.
+
+### Próximas etapas
+
+1. Criar uma seção visual de contexto partidário, com nota metodológica e links para as fontes, sem misturar filiação com autoria de medidas.
+2. Integrar EL-035, EL-036 e EL-037 com seus livros, atos, fontes, agentes e papéis associados, preservando as atualizações recentes dos 34 registros de `main`.
+3. Reconciliar os demais recursos do PR #5 em lotes coerentes e testar a geração em ambiente que execute Node.js.
+4. Resolver ou aguardar a limitação de builds da Vercel e confirmar preview/deploy antes de qualquer anúncio de publicação.
