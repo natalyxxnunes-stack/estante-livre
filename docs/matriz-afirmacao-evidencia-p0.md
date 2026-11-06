@@ -331,3 +331,12 @@ A política de acervo publicada em 2023 estabelece inventário anual, avaliaçã
 Links primários: [inventário oficial](https://www.gov.br/palmares/pt-br/centrais-de-conteudo/publicacoes/lista-de-livros-atualizada-8-8-2024-1.pdf); [resposta FCP/Câmara](https://www.gov.br/palmares/pt-br/midias/arquivos/download/resposta.pdf); [política de acervo 2023](https://www.gov.br/palmares/pt-br/centrais-de-conteudo/publicacoes/PolticadeFormaoeDesenvolvimentodeAcervoFundaoCulturalPalmares06072023.pdf).
 
 **Status permanece parcialmente verificado.**
+
+
+### EL-025 — cruzamento com o inventário e ressalvas bibliográficas (05/11/2026)
+
+A comparação nominal localizou correspondências fortes de título/autor/ano entre a transcrição secundária e o inventário oficial, entre elas: Bandidos (E. J. Hobsbawm, 1975; item 1651), A história me absolverá (Fidel Castro, 2001; item 461), O PT em movimento (Florestan Fernandes, 1991; item 6601), Menino brinca de boneca? (Marcos Ribeiro, 1990; item 5437), O sexo e a vida (H. G. Wells, 1942; item 6707) e O Sexo na Educação (Harry Elmer Barnes et al., 1941; item 6709). Há também correspondências prováveis com divergências de edição/ano, como A Nova Mulher e a Moral Sexual, O mundo do socialismo e O Segundo Sexo.
+
+**Não tratar como correspondência confirmada** “O amor em grupo”: a transcrição informa Gilbert D. Barr, 1971; o inventário registra Gilbert D. Bartell, 1972. Tampouco tratar “Le Manifet Communiste” e “O Manifesto Comunista” como o mesmo registro sem cotejo bibliográfico. “O Sexo na Alemanha Nazista” tem divergência na grafia do autor (Blewel/Bleual) e ano ausente no inventário. Nenhum desses cruzamentos prova permanência física dos exemplares após a triagem.
+
+Fontes: [transcrição secundária](https://pordentrodorn.com.br/2021/06/17/veja-lista-de-livros-banidos-pela-fundacao-palmares/) · [inventário oficial](https://www.gov.br/palmares/pt-br/centrais-de-conteudo/publicacoes/lista-de-livros-atualizada-8-8-2024-1.pdf).
