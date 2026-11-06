@@ -113,7 +113,7 @@ function rodape(raiz){
   return `<footer class="foot">
   <div class="foot-in">
     <span>Estante Livre · um projeto de Nataly Nunes Pinto</span>
-    <span class="foot-links"><a href="${raiz}glossario.html">Glossário</a><a href="${raiz}cobertura.html">Cobertura</a><a href="${raiz}pendencias.html">O que falta apurar</a><a href="${raiz}relate.html">Relate um caso</a><a href="${raiz}dados/estante-livre-casos.csv">Dados abertos</a><a href="${raiz}sobre.html">Contato</a></span>
+    <span class="foot-links"><a href="${raiz}glossario.html">Glossário</a><a href="${raiz}cobertura.html">Cobertura</a><a href="${raiz}pendencias.html">O que falta apurar</a><a href="${raiz}guia.html">Guia para escolas</a><a href="${raiz}relate.html">Relate um caso</a><a href="${raiz}dados/estante-livre-casos.csv">Dados abertos</a><a href="${raiz}sobre.html">Contato</a></span>
     <span id="foot-meta"></span>
   </div>
 </footer>`;
@@ -142,7 +142,7 @@ const DATASET = {"@context":"https://schema.org","@type":"Dataset",
     {"@type":"DataDownload","encodingFormat":"text/csv","contentUrl":SITE+"/dados/estante-livre-casos.csv"},
     {"@type":"DataDownload","encodingFormat":"application/json","contentUrl":SITE+"/dados/estante-livre-casos.json"}]};
 
-const PAGINAS = ["index.html","casos.html","livros.html","normas.html","analises.html","historia.html","mundo.html","glossario.html","metodologia.html","sobre.html","cobertura.html","relate.html"];
+const PAGINAS = ["index.html","casos.html","livros.html","normas.html","guia.html","analises.html","historia.html","mundo.html","glossario.html","metodologia.html","sobre.html","cobertura.html","relate.html"];
 for(const f of PAGINAS){
   let h = ler(f);
   h = h.replace(/<header class="topo">[\s\S]*?<\/header>/, cabecalho("", f));

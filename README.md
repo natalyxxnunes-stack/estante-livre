@@ -19,6 +19,16 @@ Ele valida os dados e para com uma lista de erros se algo estiver fora do padrã
 
 Quando o domínio próprio estiver no ar, troque a constante `SITE` no topo de `scripts/gerar.js` e rode de novo.
 
+## Guia para escolas
+
+`guia.html` é a página do guia prático e a fonte do PDF. Depois de editar o guia, gere o PDF de novo:
+
+```
+python3 scripts/gerar-guia-pdf.py
+```
+
+Precisa de `pip install playwright pypdf` e de um Chromium (`playwright install chromium`). O estilo de tela e de impressão fica em `assets/guia.css`.
+
 ## Onde se edita
 
 Quase tudo fica em `assets/dados.js`, organizado em quatro entidades ligadas por chave:

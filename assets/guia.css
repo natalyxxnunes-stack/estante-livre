@@ -1,0 +1,79 @@
+/* Estante Livre · guia prático. Tela e impressão (o PDF sai desta mesma página). */
+.g-capa{display:none}
+.so-print{display:none}
+.g-hero h1{font-size:44px;line-height:1.05;max-width:16ch}
+.g-acoes{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+.g-sumario{background:var(--papel);border-left:4px solid var(--azul);padding:18px 22px;margin:8px 0 22px}
+.g-sum-tit{font-size:11px;letter-spacing:.16em;font-weight:600;color:var(--azul);margin-bottom:8px;text-transform:uppercase}
+.g-sumario ol{margin:0;padding-left:22px;columns:2;column-gap:32px;font-size:15px;line-height:1.9}
+.g-sumario a{color:var(--tinta)}
+.g-aviso{font-size:13.5px;line-height:1.55;background:var(--neon);padding:14px 18px;max-width:none;margin-bottom:10px}
+.g-sec{padding-top:8px}
+.g-passos{counter-reset:p;list-style:none;padding:0;margin:12px 0 20px;max-width:72ch}
+.g-passos li{counter-increment:p;position:relative;padding:10px 0 10px 50px;border-bottom:1px solid var(--linha);font-size:15px;line-height:1.55}
+.g-passos li::before{content:counter(p);position:absolute;left:0;top:8px;width:34px;height:34px;background:var(--verm);color:#fff;font-family:var(--f);font-size:19px;display:flex;align-items:center;justify-content:center}
+.g-passos b{color:var(--vinho)}
+.g-leis{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px;margin:12px 0 20px}
+.g-lei{background:var(--papel);border-top:4px solid var(--verm);padding:14px 16px}
+.g-lei.azul{border-top-color:var(--azul)}
+.g-lei.neon{background:#fbffd6;border-top-color:var(--tinta)}
+.g-lei h3{font-family:var(--f);font-weight:500;font-size:17px;color:var(--vinho);line-height:1.25;margin-bottom:6px}
+.g-lei.azul h3{color:var(--azul)}
+.g-lei p{font-size:13.5px;line-height:1.55;margin:0}
+.g-sub{font-family:var(--f);font-weight:500;font-size:20px;color:var(--tinta);margin:22px 0 2px}
+.g-espaco{margin-top:34px}
+.g-modelo{position:relative;margin:12px 0 18px}
+.g-modelo pre{white-space:pre-wrap;word-wrap:break-word;font-family:var(--ui);font-size:13.5px;line-height:1.6;background:#fff;border:1.5px solid var(--linha-forte);border-left:6px solid var(--azul);padding:18px 20px;margin:0;color:var(--tinta)}
+.g-copiar{position:absolute;top:10px;right:10px;font-family:inherit;font-size:12px;font-weight:600;background:var(--azul);color:#fff;border:0;padding:7px 12px;cursor:pointer}
+.g-copiar:hover{background:var(--verm)}
+.g-creditos{border-top:3px solid var(--verm);margin:20px 0 40px;padding-top:14px;font-size:13px;color:var(--cinza)}
+@media(max-width:700px){.g-hero h1{font-size:32px}.g-sumario ol{columns:1}.g-modelo pre{padding-top:48px}}
+
+/* ---------- impressão / PDF ---------- */
+@page{size:A4;margin:18mm 17mm 20mm}
+@page:first{margin:0}
+@media print{
+  html,body{background:#fff}
+  .topo,.foot,.pular,.no-print,.g-hero,.g-copiar{display:none!important}
+  .wrap{max-width:none;padding:0}
+  .g-capa{display:flex;flex-direction:column;height:297mm;width:210mm;background:var(--verm);color:#fff;padding:26mm 22mm 20mm;box-sizing:border-box;break-after:page;page-break-after:always}
+  .g-capa-logo{font-family:var(--f);font-size:30pt;line-height:1}
+  .g-capa-logo .redact{position:relative;display:inline-block}
+  .g-capa-logo .bar{position:absolute;left:-5%;top:52%;width:110%;height:.13em;background:var(--neon);transform:translateY(-50%)}
+  .g-capa-prat{margin-top:22mm;height:62mm;display:flex;align-items:flex-end;gap:2.6mm;border-bottom:2.2mm solid #fff;padding:0 2mm}
+  .g-capa-prat i{display:block;width:9mm;background:#fff;position:relative}
+  .g-capa-prat i.n{background:var(--neon)}
+  .g-capa-prat i.a{background:var(--azul)}
+  .g-capa-prat i.v{background:var(--vinho)}
+  .g-capa-prat i.t{width:13mm;background:#fff}
+  .g-capa-prat i.t b{position:absolute;left:-3mm;right:-3mm;top:38%;height:7mm;background:var(--tinta)}
+  .g-capa-kicker{margin-top:auto;font-size:10pt;letter-spacing:.2em;font-weight:600;color:var(--neon)}
+  .g-capa-tit{font-family:var(--f);font-size:46pt;line-height:1.02;margin:6mm 0 8mm;max-width:13ch}
+  .g-capa-tit::after{content:"";display:block;width:34mm;height:4mm;background:var(--neon);margin-top:9mm}
+  .g-capa-sub{font-size:13pt;line-height:1.45;max-width:32ch;color:#fff}
+  .g-capa-rod{margin-top:22mm;display:flex;justify-content:space-between;font-size:9pt;letter-spacing:.06em;border-top:1px solid rgba(255,255,255,.5);padding-top:4mm}
+  .g-sumario{break-inside:avoid;margin-top:0}
+  .g-sumario ol{columns:2;font-size:11pt}
+  .g-aviso{font-size:9.5pt}
+  section,.g-sec{border-bottom:0;padding:0;margin:0}
+  .sechead{break-after:avoid;page-break-after:avoid;margin-top:9mm}
+  .sechead h2{font-size:20pt}
+  #g2,#modelos,#g7,#g8{break-before:page;page-break-before:always}
+  #g2 .sechead,#modelos .sechead:first-child,#g7 .sechead,#g8 .sechead{margin-top:0}
+  #g6 .sechead{margin-top:12mm}
+  .note{font-size:10pt;max-width:none}
+  .g-passos{max-width:none}
+  .g-passos li{font-size:10pt;break-inside:avoid;padding:7px 0 7px 40px}
+  .g-passos li::before{width:27px;height:27px;font-size:14pt;top:6px}
+  .g-leis{grid-template-columns:1fr 1fr;gap:8px}
+  .g-lei{break-inside:avoid;padding:10px 12px}
+  .g-lei h3{font-size:11.5pt}
+  .g-lei p{font-size:9pt}
+  .g-lei a{display:none}
+  .g-creditos a{color:inherit;text-decoration:none}
+  .so-print{display:inline!important}
+  .g-sub{font-size:13pt;break-after:avoid}
+  .g-modelo pre{font-size:9pt;line-height:1.5;padding:12px 14px}
+  .g-espaco{break-before:page;page-break-before:always;margin-top:0}
+  .g-creditos{font-size:8.5pt;break-inside:avoid}
+}
