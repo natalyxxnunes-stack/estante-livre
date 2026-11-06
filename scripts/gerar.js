@@ -26,20 +26,34 @@ function contexto(raiz){
     console
   };
   vm.createContext(ctx);
-  vm.runInContext(ler("assets/dados.js") + "\n;this.__D={ATOS,AGENTES,PAPEIS,TIPOS_PAPEL,CASOS,LIVROS,FONTES,MODALIDADES,ESTAGIOS,SITUACOES,EIXOS,CORRECOES,RESPONSABILIDADES,DOCUMENTOS_ATOS,ATUALIZADO,CONTATO,OBSTACULOS,LACUNAS};", ctx);
-  vm.runInContext(ler("assets/comum.js") + "\n;this.__F={esc,obraDe,slug,ordenar,casoHTML,livroHTML,dataLegivel,urlCaso,urlLivro,urlAto,agentesDoAto};", ctx);
+  vm.runInContext(ler("assets/dados.js") + "\n;this.__D={ATOS,AGENTES,PAPEIS,TIPOS_PAPEL,CASOS,LIVROS,FONTES,MODALIDADES,ESTAGIOS,SITUACOES,EIXOS,CORRECOES,RESPONSABILIDADES,DOCUMENTOS_ATOS,ATUALIZADO,CONTATO,OBSTACULOS,LACUNAS,CONTEXTO_PARTIDARIO};", ctx);
+  vm.runInContext(ler("assets/comum.js") + "\n;this.__F={esc,obraDe,slug,ordenar,casoHTML,livroHTML,dataLegivel,urlCaso,urlLivro,urlAto,agentesDoAto,linksFonte};", ctx);
   return Object.assign(ctx.__F, {__D: ctx.__D});
 }
 const R = contexto("");      // páginas na raiz
 const S = contexto("../");   // páginas em casos/ e livros/
 const D = R.__D;
-const { CASOS, LIVROS, FONTES, MODALIDADES, ESTAGIOS, SITUACOES, EIXOS, ATUALIZADO, ATOS, AGENTES, PAPEIS, TIPOS_PAPEL, OBSTACULOS, LACUNAS } = D;
+const { CASOS, LIVROS, FONTES, MODALIDADES, ESTAGIOS, SITUACOES, EIXOS, ATUALIZADO, ATOS, AGENTES, PAPEIS, TIPOS_PAPEL, OBSTACULOS, LACUNAS, CONTEXTO_PARTIDARIO } = D;
 const esc = R.esc, obraDe = R.obraDe, slug = R.slug;
 
 /* ---------- 1. validação ---------- */
-const erros = [];
+const erros = [], avisos = [];
+const TIPOS_FONTE = ["P1","P2","P3","S1","S2","A1","O1","R1","B1"];
 const ids = new Set();
 const OBRIG = ["id","data","ato","titulo","uf","tipo","rede","quem","alegacao","eixo","modalidade","estagio","situacao","desfecho","verificado","fontes"];
+for(const [id,f] of Object.entries(FONTES)){
+  if(f.tipo && !TIPOS_FONTE.includes(f.tipo)) erros.push(`FONTES ${id}: tipo de fonte inválido: ${f.tipo}`);
+  if(!f.url) erros.push(`FONTES ${id}: URL vazia`);
+  else { try { const u=new URL(f.url); if(!["https:","http:"].includes(u.protocol)) erros.push(`FONTES ${id}: protocolo inválido`); } catch { erros.push(`FONTES ${id}: URL inválida: ${f.url}`); } }
+}
+
+if(!Array.isArray(CONTEXTO_PARTIDARIO) || CONTEXTO_PARTIDARIO.length!==19) erros.push("CONTEXTO_PARTIDARIO: esperado exatamente 19 registros auditados");
+for(const [i,x] of (CONTEXTO_PARTIDARIO||[]).entries()){
+  if(!x.pessoa || !x.partido || !x.cobertura || !x.status || !Array.isArray(x.fontes) || !x.fontes.length) erros.push(`CONTEXTO_PARTIDARIO[${i}]: campos obrigatórios ausentes`);
+  for(const url of x.fontes||[]){try{const u=new URL(url);if(!["https:","http:"].includes(u.protocol)) erros.push(`CONTEXTO_PARTIDARIO[${i}]: URL inválida`);}catch{erros.push(`CONTEXTO_PARTIDARIO[${i}]: URL inválida: ${url}`);}}
+}
+const fontesSemTipo=Object.entries(FONTES).filter(([,f])=>!f.tipo).length;
+if(fontesSemTipo) avisos.push(`${fontesSemTipo} fontes ainda não classificadas por tipo; concluir revisão editorial`);
 for(const c of CASOS){
   for(const k of OBRIG) if(c[k]===undefined || c[k]==="") erros.push(`${c.id||"?"}: campo ${k} vazio`);
   if(ids.has(c.id)) erros.push(`${c.id}: id repetido`); ids.add(c.id);
@@ -49,7 +63,25 @@ for(const c of CASOS){
   if(!SITUACOES.includes(c.situacao)) erros.push(`${c.id}: situação fora da lista: ${c.situacao}`);
   if(!EIXOS.includes(c.eixo)) erros.push(`${c.id}: eixo fora da lista: ${c.eixo}`);
   if(!["Sim","Parcialmente"].includes(c.verificado)) erros.push(`${c.id}: verificado deve ser "Sim" ou "Parcialmente"`);
-  for(const f of c.fontes||[]) if(!FONTES[f]) erros.push(`${c.id}: fonte inexistente: ${f}`);
+  for(const f of c.fontes||[]) {
+    const fonte = FONTES[f];
+    if(!fonte) erros.push(`${c.id}: fonte inexistente: ${f}`);
+    else {
+      try { const u = new URL(fonte.url); if(!["https:","http:"].includes(u.protocol)) erros.push(`${c.id}: protocolo inválido na fonte ${f}`); }
+      catch { erros.push(`${c.id}: URL inválida na fonte ${f}: ${fonte.url}`); }
+    }
+  }
+  if(c.verificado==="Sim" && (c.fontes||[]).length<2) erros.push(`${c.id}: registro verificado precisa de ao menos duas referências`);
+  if(!c.cidade && !ATOS[c.ato]?.abrangencia) avisos.push(`${c.id}: cidade não informada; não preencher por inferência`);
+  if(c.estagio==="Decisão ou ordem" || c.estagio==="Execução comprovada") {
+    const temAssinatura = PAPEIS.some(p=>p.ato===c.ato && p.papel==="Assinatura" && p.escopo!=="requerimento");
+    const assinaturaDescrita = !!(ATOS[c.ato]?.papeis?.assinantes);
+    if(!temAssinatura && !assinaturaDescrita) avisos.push(`${c.id}: signatário formal não identificado no cadastro`);
+  }
+  if(c.verificado==="Sim") {
+    const hosts = new Set((c.fontes||[]).map(k=>{ try { return new URL(FONTES[k].url).hostname.toLowerCase().replace(/^www\./,""); } catch { return ""; } }).filter(Boolean));
+    if(hosts.size<2) avisos.push(`${c.id}: fontes em menos de dois domínios; conferir independência editorial`);
+  }
   if(c.capa && !fs.existsSync(path.join(RAIZ_REPO,"assets/capas",c.capa+".jpg"))) erros.push(`${c.id}: capa inexistente: ${c.capa}.jpg`);
 }
 for(const t of Object.keys(LIVROS)) if(!CASOS.some(c=>obraDe(c)===t)) erros.push(`LIVROS: ficha sem caso correspondente: “${t}”`);
@@ -79,9 +111,9 @@ for(const [k,L] of Object.entries(LACUNAS)){
   if(!L.caminho) erros.push(`LACUNAS ${k}: sem caminho`);
 }
 if(erros.length){ console.error("Erros nos dados:\n- " + erros.join("\n- ")); process.exit(1); }
-
+if(avisos.length) console.warn("Alertas editoriais (não bloqueiam a geração):\n- " + [...new Set(avisos)].join("\n- "));
 /* ---------- 2. cabeçalho, menu e rodapé ---------- */
-const NAV = [["index.html","Painel"],["casos.html","Casos"],["livros.html","Livros"],["atos.html","Atos"],["analises.html","Análises"],
+const NAV = [["index.html","Painel"],["casos.html","Casos"],["livros.html","Livros"],["atos.html","Atos"],["analises.html","Análises"],["poder.html","Poder e censura"],["dossies.html","Dossiês"],
   ["historia.html","História"],["mundo.html","Mundo"],["metodologia.html","Metodologia"],["sobre.html","Sobre"]];
 const TAGLINE = "Observatório de censura de livros · quem mandou tirar da estante, com qual ato, e o que aconteceu depois";
 
@@ -103,7 +135,7 @@ function rodape(raiz){
   return `<footer class="foot">
   <div class="foot-in">
     <span>Estante Livre · um projeto de Nataly Nunes Pinto</span>
-    <span class="foot-links"><a href="${raiz}glossario.html">Glossário</a><a href="${raiz}cobertura.html">Cobertura</a><a href="${raiz}pendencias.html">O que falta apurar</a><a href="${raiz}relate.html">Relate um caso</a><a href="${raiz}dados/estante-livre-casos.csv">Dados abertos</a><a href="${raiz}sobre.html">Contato</a></span>
+    <span class="foot-links"><a href="${raiz}glossario.html">Glossário</a><a href="${raiz}cobertura.html">Cobertura</a><a href="${raiz}pendencias.html">O que falta apurar</a><a href="${raiz}relate.html">Relate um caso</a><a href="${raiz}dados/estante-livre-casos.csv">Dados abertos</a><a href="${raiz}poder.html">Poder e censura</a><a href="${raiz}dossies.html">Dossiês</a><a href="${raiz}relatorio-2026.html">Relatório 2026</a><a href="${raiz}sobre.html">Contato</a></span>
     <span id="foot-meta"></span>
   </div>
 </footer>`;
@@ -120,6 +152,132 @@ function comJsonLd(html, obj){
   return html.replace("</head>", bloco + "\n</head>");
 }
 
+function gerarPoder(){
+  const agentes = Object.entries(AGENTES).map(([id,agente])=>({
+    id, agente, papeis:PAPEIS.filter(p=>p.agente===id)
+  })).filter(x=>x.papeis.length).sort((a,b)=>a.agente.nome.localeCompare(b.agente.nome,"pt-BR"));
+  const pessoas = agentes.filter(x=>x.agente.tipo==="Pessoa").length;
+  const instituicoes = agentes.filter(x=>x.agente.tipo!=="Pessoa").length;
+  const atos = new Set(PAPEIS.map(p=>p.ato)).size;
+  const cards = agentes.map(({id,agente,papeis})=>{
+    const relacoes = papeis.map(p=>{
+      const A=ATOS[p.ato]||{};
+      const registros=CASOS.filter(c=>c.ato===p.ato);
+      const fontes=[...new Set(registros.flatMap(c=>c.fontes||[]))].map(k=>FONTES[k]).filter(Boolean).slice(0,3);
+      const ids=registros.map(c=>`<a href="casos/${c.id.toLowerCase()}.html">${esc(c.id)}</a>`).join(" · ");
+      const atribuicao=p.atribuido?'<p class="poder-atribuido">Atribuição feita pela fonte; não há documento assinado identificado que confirme diretamente este papel.</p>':"";
+      const governo=A.governo?'<p class="poder-contexto"><b>Governo em exercício (contexto, não prova de autoria):</b> '+esc(A.governo)+'</p>':"";
+      const links=fontes.length?'<p class="poder-fontes"><b>Fontes cadastradas:</b> '+fontes.map(f=>'<a href="'+esc(f.url)+'" target="_blank" rel="noopener">'+esc(f.veic)+' ('+esc(f.tipo||"Não classificada")+')</a>').join(" · ")+'</p>':"";
+      return `<div class="poder-relacao">
+        <div class="poder-relacao-topo"><span class="poder-papel">${esc(p.papel)}</span><span class="poder-ato">${esc(p.ato)} · ${esc(A.uf||"UF não informada")} · ${A.data?A.data.slice(0,4):"data não informada"}</span></div>
+        <h4><a href="atos/${p.ato.toLowerCase()}.html">${esc(A.nome||p.ato)}</a></h4>
+        ${p.cargo?'<p class="poder-cargo">'+esc(p.cargo)+'</p>':""}
+        ${p.nota?'<p>'+esc(p.nota)+'</p>':""}
+        ${atribuicao}${governo}
+        <p class="poder-registros"><b>Registros:</b> ${ids||"sem ficha vinculada"}</p>
+        ${links}
+      </div>`;
+    }).join("");
+    const busca=[agente.nome,agente.tipo,...papeis.flatMap(p=>[p.papel,p.cargo,p.nota,ATOS[p.ato]?.governo,ATOS[p.ato]?.nome,ATOS[p.ato]?.uf])].filter(Boolean).join(" ");
+    return `<article class="poder-card" data-poder-card data-search="${esc(busca)}">
+      <div class="poder-card-cab"><h3><a href="agentes/${id}.html">${esc(agente.nome)}</a></h3><span>${esc(agente.tipo)}</span></div>
+      ${relacoes}
+      <p class="poder-perfil"><a href="agentes/${id}.html">Abrir perfil documental →</a></p>
+    </article>`;
+  }).join("");
+  return `<div class="poder-metricas">
+    <div><b>${pessoas}</b><span>pessoas identificadas</span></div>
+    <div><b>${instituicoes}</b><span>instituições identificadas</span></div>
+    <div><b>${atos}</b><span>atos com papéis cadastrados</span></div>
+  </div>
+  <p class="note">A lista é gerada diretamente de AGENTES e PAPEIS. Uma pessoa pode aparecer em mais de um papel e um ato pode ter vários registros por título. A filiação partidária aparece somente quando consta do cargo cadastrado; o governo em exercício é apresentado separadamente.</p>
+  <div class="poder-lista">${cards}</div>\n  <p class="note">Continue a investigação em <a href="dossies.html">Dossiês temáticos</a> e consulte o <a href="relatorio-2026.html">Relatório-base 2026</a> para conhecer a distribuição e os limites da base.</p>`;
+}
+
+
+function gerarContextoPartidario(){
+  const linhas=CONTEXTO_PARTIDARIO.map(x=>{
+    const links=x.fontes.map((url,i)=>'<a href="'+esc(url)+'" target="_blank" rel="noopener">Fonte '+(i+1)+'</a>').join(' · ');
+    const busca=[x.pessoa,x.partido,x.cobertura,x.status].filter(Boolean).join(' ');
+    return '<article class="poder-card" data-poder-card data-search="'+esc(busca)+'">'+
+      '<div class="poder-card-cab"><h3>'+esc(x.pessoa)+'</h3><span>Contexto partidário</span></div>'+
+      '<p><b>Registro:</b> '+esc(x.partido)+'</p>'+
+      '<p><b>Cobertura da evidência:</b> '+esc(x.cobertura)+'</p>'+
+      '<p><b>Status:</b> '+esc(x.status)+'</p>'+
+      '<p class="poder-fontes"><b>Fontes:</b> '+links+'</p></article>';
+  }).join('');
+  return '<div class="poder-lista">'+linhas+'</div>'+
+    '<p class="note">Esta seção documenta contexto partidário, não autoria. A legenda só vale para o período descrito na evidência. Candidatura, mandato, partido do governo e filiação individual são categorias distintas; não se presume continuidade além da cobertura da fonte. Fontes numeradas na ordem de apresentação.</p>';
+}
+
+function gerarDossies(){
+  const idsListas=["EL-015","EL-016","EL-017","EL-018","EL-019","EL-020","EL-021","EL-022","EL-023","EL-024","EL-025","EL-026","EL-033"];
+  const idsInfancia=["EL-027","EL-028","EL-030","EL-031","EL-032"];
+  const grupos=[
+    {id:"avesso-da-pele",titulo:"O avesso da pele: recolhimento e circulação",descricao:"Um mesmo título aparece em atos distintos e em diferentes redes. O recorte reúne as fichas da obra e permite comparar quem pediu, quem decidiu, o alcance da orientação e o que se sabe sobre o retorno às bibliotecas.",registros:CASOS.filter(c=>obraDe(c)==="O avesso da pele")},
+    {id:"listas-e-acervos",titulo:"Listas, lotes e acervos",descricao:"Episódios em que a restrição alcança listas de leitura, conjuntos de títulos ou partes de um acervo. Os totais de exemplares, títulos e registros não são intercambiáveis.",registros:CASOS.filter(c=>idsListas.includes(c.id))},
+    {id:"pressao-parlamentar",titulo:"Pressão parlamentar e cadeia de decisão",descricao:"Casos em que agentes políticos aparecem em papéis de pressão ou pedido. A ficha separa esses papéis da decisão administrativa, da assinatura e da execução.",registros:CASOS.filter(c=>PAPEIS.some(p=>p.ato===c.ato && ["Pressão","Pedido"].includes(p.papel) && AGENTES[p.agente]?.tipo==="Pessoa" && /deputado|vereador/i.test(p.cargo||"")))},
+    {id:"infancia-e-escola",titulo:"Infância, escola e disputa sobre leitura",descricao:"Obras infantis e juvenis em episódios que envolveram bibliotecas escolares, listas de leitura, atividades pedagógicas ou pedidos de providência.",registros:CASOS.filter(c=>idsInfancia.includes(c.id))},
+    {id:"bibliotecas-prisionais",titulo:"Bibliotecas prisionais e remição de pena",descricao:"Registros ligados à seleção de obras em projetos de leitura e remição de pena no sistema prisional.",registros:CASOS.filter(c=>c.id==="EL-033" || /prisional/i.test(ATOS[c.ato]?.tipo||"") || /prisional/i.test(ATOS[c.ato]?.rede||""))}
+  ].filter(g=>g.registros.length);
+  return grupos.map((g,i)=>{
+    const atos=[...new Set(g.registros.map(c=>c.ato))];
+    const obras=[...new Set(g.registros.map(c=>obraDe(c)))];
+    const ufs=[...new Set(g.registros.map(c=>c.uf).filter(Boolean))].sort();
+    const linhas=g.registros.map(c=>{const local=[c.cidade||ATOS[c.ato]?.abrangencia,c.uf].filter(Boolean).join(", ");const data=R.dataLegivel(c).replace(/^./,x=>x.toLowerCase());return `<li><a href="casos/${c.id.toLowerCase()}.html"><b>${esc(c.id)} · ${esc(obraDe(c))}</b></a><span>${esc(local)} · ${esc(data)} · ${esc(c.estagio)}</span><span class="dossie-status">${esc(c.verificado==="Sim"?"Núcleo verificado":"Verificação parcial")} · ${esc(c.situacao)}</span></li>`;}).join("");
+    return `<article class="dossie-card" id="${g.id}">
+      <div class="dossie-num">DOSSIÊ ${String(i+1).padStart(2,"0")}</div>
+      <h3>${esc(g.titulo)}</h3>
+      <p>${esc(g.descricao)}</p>
+      <div class="dossie-metricas"><span><b>${g.registros.length}</b> registros</span><span><b>${obras.length}</b> obras/conjuntos</span><span><b>${atos.length}</b> atos</span><span><b>${ufs.length}</b> UFs</span></div>
+      <ul class="dossie-casos">${linhas}</ul>
+    </article>`;
+  }).join("");
+}
+
+function gerarRelatorio(){
+  const n=CASOS.length, obras=[...new Set(CASOS.map(obraDe))], atos=new Set(CASOS.map(c=>c.ato));
+  const ufs=[...new Set(CASOS.map(c=>c.uf).filter(Boolean))].sort();
+  const verificados=CASOS.filter(c=>c.verificado==="Sim").length;
+  const parciais=CASOS.filter(c=>c.verificado==="Parcialmente").length;
+  const fontes=Object.values(FONTES), urls=[...new Set(fontes.map(f=>f.url).filter(Boolean))];
+  const classificadas=fontes.filter(f=>f.tipo).length;
+  const semCidade=CASOS.filter(c=>!c.cidade && !ATOS[c.ato]?.abrangencia);
+  const semAssinatura=CASOS.filter(c=>(c.estagio==="Decisão ou ordem"||c.estagio==="Execução comprovada") && !PAPEIS.some(p=>p.ato===c.ato&&p.papel==="Assinatura") && !ATOS[c.ato]?.papeis?.assinantes);
+  const contar=(campo)=>Object.entries(CASOS.reduce((o,c)=>{const k=c[campo]||"Não informado";o[k]=(o[k]||0)+1;return o;},{})).sort((a,b)=>b[1]-a[1]);
+  const tabela=(linhas)=>'<table class="relatorio-tabela"><thead><tr><th>Categoria</th><th>Registros</th></tr></thead><tbody>'+linhas.map(([k,v])=>'<tr><td>'+esc(k)+'</td><td>'+v+'</td></tr>').join("")+'</tbody></table>';
+  const pendencias=CASOS.filter(c=>c.verificado==="Parcialmente").map(c=>'<li><a href="casos/'+c.id.toLowerCase()+'.html"><b>'+esc(c.id)+' · '+esc(obraDe(c))+'</b></a><span>'+esc(c.pendencia||"Pendência não detalhada.")+'</span></li>').join("");
+  const sourceRows=Object.entries(fontes.reduce((o,f)=>{const k=f.tipo||"Não classificada";o[k]=(o[k]||0)+1;return o;},{})).sort((a,b)=>b[1]-a[1]);
+  return `<div class="relatorio-data">
+    <div class="relatorio-meta">Data de corte: <b>${esc(ATUALIZADO)}</b> · Base estática versionada no repositório</div>
+    <div class="relatorio-metricas">
+      <div><b>${n}</b><span>registros</span></div><div><b>${obras.length}</b><span>obras e conjuntos</span></div><div><b>${atos.size}</b><span>atos</span></div><div><b>${ufs.length}</b><span>UFs com registros</span></div>
+      <div><b>${verificados}</b><span>núcleo verificado</span></div><div><b>${parciais}</b><span>verificação parcial</span></div>
+    </div>
+    <section><div class="sechead"><span class="kicker">02</span><h2>Como os registros se distribuem</h2></div><div class="relatorio-duas-colunas"><div><h3>Por estágio</h3>${tabela(contar("estagio"))}</div><div><h3>Por situação</h3>${tabela(contar("situacao"))}</div><div><h3>Por mecanismo</h3>${tabela(contar("modalidade"))}</div><div><h3>Por unidade da Federação</h3>${tabela(Object.entries(CASOS.reduce((o,c)=>{o[c.uf]=(o[c.uf]||0)+1;return o;},{})).sort((a,b)=>b[1]-a[1]))}</div></div></section>
+    <section><div class="sechead"><span class="kicker">03</span><h2>Qualidade e cobertura documental</h2></div>
+      <p>O cadastro contém <b>${fontes.length} entradas de fonte</b>, distribuídas em <b>${urls.length} URLs distintas</b>. ${classificadas} entradas estão classificadas por natureza documental; ${fontes.length-classificadas} permanecem sem classificação.</p>
+      ${tabela(sourceRows)}
+      <p>Há <b>${semCidade.length} registros sem município identificado</b> (exceto atos com abrangência territorial explicitada) e <b>${semAssinatura.length} registros com signatário formal não identificado</b>. A ausência de nome não é preenchida por inferência a partir do governo em exercício.</p>
+    </section>
+    <section><div class="sechead"><span class="kicker">04</span><h2>Bibliotecas públicas: cobertura inicial, ainda limitada</h2></div>
+      <p>Na data de corte, ${CASOS.filter(c=>c.tipo==="Pública").length} registros de títulos estão classificados como ocorridos em biblioteca pública, correspondentes a um único episódio: a retirada de dois livros da Mundoteca, em Canoinhas (SC), em 2024. A base contém ${CASOS.filter(c=>c.tipo==="Escolar").length} registros escolares, ${CASOS.filter(c=>c.tipo==="Especializada").length} especializados e ${CASOS.filter(c=>c.tipo==="Universitária").length} universitários. Um episódio em uma cidade não representa cobertura nacional; a ausência de outros registros não prova que não existam casos.</p>
+      <p>Pesquisas acadêmicas registram episódios anteriores ao recorte temporal atual: uma pesquisa sobre censura em bibliotecas menciona casos em biblioteca pública do Amazonas entre 2012 e 2018 (<a href="https://www.scielo.br/j/emquestao/a/S4FMzsSS6Ytx5x3x7Djd3QJ/?lang=pt" target="_blank" rel="noopener">Páginas proibidas</a>) e a retirada do catálogo Queermuseu de bibliotecas públicas gaúchas em 2017 (<a href="https://new.scielo.br/j/emquestao/a/ggMgXJkZcHjqwkfwV5NDH8n/?ilang=en&lang=pt" target="_blank" rel="noopener">Bibliotecários, censura e os novos mediadores</a>). Por antecederem 2019, esses episódios não entram na contagem do observatório. A expansão exige levantamento sistemático por município, órgão gestor e tipo de biblioteca, mantendo separadas bibliotecas públicas, escolares e especializadas.</p>
+      <p><a href="casos/el-036.html">Ver Aparelho Sexual e Cia.</a> · <a href="casos/el-037.html">Ver As Melhores do Analista de Bagé</a></p>
+    </section>
+    <section><div class="sechead"><span class="kicker">05</span><h2>Registros que ainda exigem apuração</h2></div>
+      <p>Os ${parciais} registros abaixo têm evidência do episódio, mas ainda possuem lacunas relevantes. “Parcialmente verificado” não significa que o caso seja falso; indica que parte do núcleo documental ou da atribuição ainda não foi confirmada.</p>
+      <ul class="relatorio-pendencias">${pendencias}</ul>
+    </section>
+    <section><div class="sechead"><span class="kicker">06</span><h2>O que estes números não permitem afirmar</h2></div>
+      <ul><li>Não representam todos os casos de censura de livros no Brasil.</li><li>Não medem prevalência por estado: ausência de registro pode significar ausência de cobertura ou de documento acessível.</li><li>Registros por título não equivalem a atos únicos, e lotes sem lista completa não equivalem a títulos individualizados.</li><li>Partido do governo, pressão pública, pedido, decisão, assinatura e execução são variáveis distintas; não se atribui autoria a uma pessoa ou partido sem evidência específica.</li><li>Os dados não são diretamente comparáveis a levantamentos estrangeiros que usam unidades e critérios diferentes.</li></ul>
+    </section>
+    <section><div class="sechead"><span class="kicker">07</span><h2>Dados e método</h2></div>
+      <p>Consulte a base em <a href="dados/estante-livre-casos.json">JSON</a> e <a href="dados/estante-livre-casos.csv">CSV</a>. Leia a <a href="metodologia.html">metodologia</a>, a <a href="docs/classificacao-e-verificacao-de-fontes.md">classificação das fontes</a> e a página <a href="pendencias.html">O que falta apurar</a>.</p>
+    </section>
+  </div>`;
+}
+
 const ORG = {"@type":"Organization","name":"Estante Livre","url":SITE+"/","founder":{"@type":"Person","name":"Nataly Nunes Pinto"}};
 const DATASET = {"@context":"https://schema.org","@type":"Dataset",
   "name":"Estante Livre: catálogo de censura de livros em bibliotecas e escolas brasileiras",
@@ -132,12 +290,15 @@ const DATASET = {"@context":"https://schema.org","@type":"Dataset",
     {"@type":"DataDownload","encodingFormat":"text/csv","contentUrl":SITE+"/dados/estante-livre-casos.csv"},
     {"@type":"DataDownload","encodingFormat":"application/json","contentUrl":SITE+"/dados/estante-livre-casos.json"}]};
 
-const PAGINAS = ["index.html","casos.html","livros.html","analises.html","historia.html","mundo.html","glossario.html","metodologia.html","sobre.html","cobertura.html","relate.html"];
+const PAGINAS = ["index.html","casos.html","livros.html","analises.html","poder.html","dossies.html","relatorio-2026.html","historia.html","mundo.html","glossario.html","metodologia.html","sobre.html","cobertura.html","relate.html"];
 for(const f of PAGINAS){
   let h = ler(f);
   h = h.replace(/<header class="topo">[\s\S]*?<\/header>/, cabecalho("", f));
   h = h.replace(/<footer class="(?:foot|rodape)">[\s\S]*?<\/footer>/, rodape(""));
   h = h.split("https://estante-livre-br.vercel.app").join(SITE);
+  if(f==="poder.html") { h = blocoGerado(h, "poder", gerarPoder()); h = blocoGerado(h, "contexto-partidario", gerarContextoPartidario()); }
+  if(f==="dossies.html") h = blocoGerado(h, "dossies", gerarDossies());
+  if(f==="relatorio-2026.html") h = blocoGerado(h, "relatorio", gerarRelatorio());
   if(f==="index.html") h = comJsonLd(h, {"@context":"https://schema.org","@graph":[
     {"@type":"WebSite","name":"Estante Livre","url":SITE+"/","inLanguage":"pt-BR","publisher":ORG}, ORG]});
   if(f==="casos.html"){
@@ -202,7 +363,7 @@ ${rodape(raiz)}
 }
 
 const mesAno = c => R.dataLegivel(c).replace(/^./, x=>x.toLowerCase());
-const ondeTxt = c => [c.cidade, c.uf].filter(Boolean).join(", ");
+const ondeTxt = c => [c.cidade || ATOS[c.ato]?.abrangencia, c.uf].filter(Boolean).join(", ");
 function verboTitulo(c){
   if(c.estagio==="Pressão pública") return "quem contestou";
   if(c.estagio==="Pedido formal") return "quem pediu a retirada";
@@ -214,6 +375,7 @@ const curto = t => t.length>70 ? t.slice(0,67).replace(/\s+\S*$/,"")+"…" : t;
 
 fs.rmSync(path.join(RAIZ_REPO,"casos"), {recursive:true, force:true});
 fs.rmSync(path.join(RAIZ_REPO,"livros"), {recursive:true, force:true});
+fs.rmSync(path.join(RAIZ_REPO,"agentes"), {recursive:true, force:true});
 
 const urlsCasos = [];
 for(const c of CASOS){
@@ -284,6 +446,54 @@ for(const obra of obras){
   gravar(`livros/${slug(obra)}.html`, pagina({titulo, descricao, url, raiz:"../", atual:"livros.html", ld, corpo}));
 }
 
+/* ---------- perfis individuais de agentes ---------- */
+const urlsAgentes = [];
+for(const [id,agente] of Object.entries(AGENTES)){
+  const papeis=PAPEIS.filter(p=>p.agente===id);
+  if(!papeis.length) continue;
+  const url=`${SITE}/agentes/${id}.html`; urlsAgentes.push(url);
+  const titulo=`${agente.nome}: papéis documentados · Estante Livre`;
+  const resumo=`${agente.nome} — ${papeis.map(p=>p.papel.toLowerCase()).join(", ")} em atos registrados no Estante Livre.`;
+  const ld={"@context":"https://schema.org","@type":agente.tipo==="Pessoa"?"Person":"Organization",
+    "name":agente.nome,"url":url,"description":resumo,"dateModified":ATUALIZADO,
+    "publisher":ORG,"isPartOf":{"@type":"Dataset","name":DATASET.name,"url":DATASET.url}};
+  const relacoes=papeis.map(p=>{
+    const A=ATOS[p.ato]||{};
+    const regs=CASOS.filter(c=>c.ato===p.ato);
+    const fonteIds=[...new Set(regs.flatMap(c=>c.fontes||[]))];
+    const fontes=fonteIds.map(k=>FONTES[k]).filter(Boolean);
+    const ids=regs.map(c=>`<a href="../casos/${c.id.toLowerCase()}.html">${esc(c.id)} · ${esc(obraDe(c))}</a>`).join("<br>");
+    const atribuida=p.atribuido?'<p class="poder-atribuido">Atribuição feita pela fonte; não há documento assinado identificado que confirme diretamente este papel.</p>':"";
+    const governo=A.governo?'<p class="poder-contexto"><b>Governo em exercício (contexto, não prova de autoria):</b> '+esc(A.governo)+'</p>':"";
+    const fontesHtml=fontes.length?'<div class="fontes"><div class="fontes-lab">FONTES DO ATO</div>'+fontes.map(f=>'<a class="flink" href="'+esc(f.url)+'" target="_blank" rel="noopener"><span class="v">'+esc(f.veic)+'</span><span class="tipo-fonte">'+esc(f.tipo||"Tipo não classificado")+'</span><span class="t">'+esc(f.tit)+'</span></a>').join("")+'</div>':"";
+    return `<article class="poder-card">
+      <div class="poder-relacao-topo"><span class="poder-papel">${esc(p.papel)}</span><span class="poder-ato">${esc(p.ato)} · ${esc(A.uf||"UF não informada")} · ${A.data?A.data.slice(0,4):"data não informada"}</span></div>
+      <h2><a href="../atos/${p.ato.toLowerCase()}.html">${esc(A.nome||p.ato)}</a></h2>
+      ${p.cargo?'<p class="poder-cargo">'+esc(p.cargo)+'</p>':""}
+      ${p.nota?'<p>'+esc(p.nota)+'</p>':""}
+      ${atribuida}${governo}
+      <div class="poder-registros"><b>Registros vinculados:</b><p>${ids||"Sem ficha de caso vinculada."}</p></div>
+      ${fontesHtml}
+    </article>`;
+  }).join("");
+  const corpo=`<div class="wrap">
+  <div class="hero-pg">
+    <p class="migalha"><a href="../index.html">Painel</a> › <a href="../poder.html">Poder e censura</a> › ${esc(agente.nome)}</p>
+    <h1>${esc(agente.nome)}</h1>
+    <p class="lede">${esc(agente.tipo)} · ${papeis.length} ${papeis.length===1?"papel documentado":"papéis documentados"} em atos do catálogo.</p>
+  </div>
+  <div class="analysis-alert"><strong>Limite da atribuição.</strong> Esta página descreve papéis registrados em fontes e documentos. Governo em exercício, cargo e partido são contexto; não provam, isoladamente, autoria de uma decisão. Pressão, pedido, decisão, assinatura, execução e reversão são categorias distintas.</div>
+  <section>
+    <div class="sechead"><span class="kicker">01</span><h2>Atuação documentada</h2></div>
+    <div class="poder-lista">${relacoes}</div>
+  </section>
+  <section style="border-bottom:0">
+    <p class="note">Consulte também <a href="../poder.html">Poder e censura</a>, <a href="../metodologia.html">Metodologia</a> e <a href="../pendencias.html">O que falta apurar</a>. Os dados abertos estão disponíveis em <a href="../dados/estante-livre-casos.json">JSON</a> e <a href="../dados/estante-livre-casos.csv">CSV</a>.</p>
+  </section>
+</div>`;
+  gravar(`agentes/${id}.html`,pagina({titulo,descricao:resumo.slice(0,290),url,raiz:"../",atual:"poder.html",ld,corpo}));
+}
+
 /* páginas de ato e índice de atos e agentes */
 fs.rmSync(path.join(RAIZ_REPO,"atos"), {recursive:true, force:true});
 const urlsAtos = [];
@@ -291,7 +501,7 @@ const tabPapeis = (ato, raiz) => {
   const ps = PAPEIS.filter(p=>p.ato===ato);
   if(!ps.length) return "";
   return `<div class="tab-wrap"><table class="tab"><thead><tr><th>PAPEL</th><th>QUEM</th><th>CARGO NA DATA</th><th>OBSERVAÇÃO</th></tr></thead><tbody>${
-    ps.map(p=>`<tr><td>${esc(p.papel)}${p.atribuido?" (atribuída pela fonte)":""}</td><td><a href="${raiz}atos.html#ag-${p.agente}">${esc(AGENTES[p.agente].nome)}</a></td><td>${esc(p.cargo||"")}</td><td>${esc(p.nota||"")}</td></tr>`).join("")
+    ps.map(p=>`<tr><td>${esc(p.papel)}${p.atribuido?" (atribuída pela fonte)":""}</td><td><a href="${raiz}agentes/${p.agente}.html">${esc(AGENTES[p.agente].nome)}</a></td><td>${esc(p.cargo||"")}</td><td>${esc(p.nota||"")}</td></tr>`).join("")
   }</tbody></table></div>`;
 };
 for(const [k,A] of Object.entries(ATOS)){
@@ -307,11 +517,13 @@ for(const [k,A] of Object.entries(ATOS)){
     "mentions":PAPEIS.filter(p=>p.ato===k).map(p=>({"@type":AGENTES[p.agente].tipo==="Pessoa"?"Person":"Organization","name":AGENTES[p.agente].nome}))};
   const r = A.papeis||{};
   const linha = (rot,v)=> v?`<div class="resp-linha"><span class="k">${rot}</span><div>${esc(v)}</div></div>`:"";
+  const agentesAto = [...new Set(PAPEIS.filter(p=>p.ato===k).map(p=>p.agente))];
+  const rotaAto = `<section class="rota-ato"><div class="sechead"><span class="kicker">TRILHA</span><h2>Do ato aos registros e responsáveis</h2></div><div class="rota-ato-grade">${regs.map(c=>`<article><span class="rota-num">${esc(c.id)}</span><h3><a href="../casos/${c.id.toLowerCase()}.html">${esc(obraDe(c))}</a></h3><p>${esc(c.uf)} · ${esc(R.dataLegivel(c))} · ${esc(c.estagio)}</p><a class="rota-link" href="../livros/${slug(obraDe(c))}.html">Ficha da obra ↗</a><a class="rota-link" href="../casos/${c.id.toLowerCase()}.html">Abrir registro e justificativa ↗</a></article>`).join("")}</div><div class="rota-ato-agentes"><b>AGENTES E INSTITUIÇÕES NESTE ATO</b><div>${agentesAto.map(id=>`<a href="../agentes/${id}.html">${esc(AGENTES[id].nome)}</a>`).join(" · ")||"Nenhum agente individualizado no cadastro."}</div></div></section>`;
   const corpo = `<div class="wrap">
   <div class="hero-pg">
     <p class="migalha"><a href="../index.html">Painel</a> › <a href="../atos.html">Atos</a> › ${esc(k)}</p>
     <h1>${esc(A.nome)}</h1>
-    <p class="lede">${esc([A.cidade,A.uf].filter(Boolean).join(", "))} · ${R.dataLegivel(A)} · biblioteca ${esc(A.tipo.toLowerCase())}, rede ${esc(A.rede.toLowerCase())}${A.governo?` · ${esc(A.governo)}`:""}</p>
+    <p class="lede">${esc([A.cidade||A.abrangencia,A.uf].filter(Boolean).join(", "))} · ${R.dataLegivel(A)} · biblioteca ${esc(A.tipo.toLowerCase())}, rede ${esc(A.rede.toLowerCase())}${A.governo?` · ${esc(A.governo)}`:""}</p>
   </div>
 </div>
 <div class="wrap">
@@ -319,6 +531,7 @@ for(const [k,A] of Object.entries(ATOS)){
     <div class="sechead"><span class="kicker">01</span><h2>O documento</h2></div>
     <p class="note">${esc(A.documento||"Documento ainda não identificado no cadastro.")}</p>
   </section>
+  ${rotaAto}
   <section>
     <div class="sechead"><span class="kicker">02</span><h2>Quem fez o quê</h2></div>
     ${tabPapeis(k,"../")}
@@ -329,8 +542,9 @@ for(const [k,A] of Object.entries(ATOS)){
     <div class="irmaos">${regs.map(c=>`<a href="../casos/${c.id.toLowerCase()}.html">${esc(c.id)} · ${esc(c.titulo)}</a> <span class="mini-tags">${esc(c.modalidade.toLowerCase())} · ${esc(c.estagio.toLowerCase())} · ${esc(c.situacao.toLowerCase())}</span>`).join("<br>")}</div>
   </section>
   <section style="border-bottom:0">
-    <div class="sechead"><span class="kicker">04</span><h2>Fontes</h2></div>
-    <div class="fontes">${fontesIds.map(f=>FONTES[f]).filter(Boolean).map(f=>`<a class="flink" href="${esc(f.url)}" target="_blank" rel="noopener"><span class="v">${esc(f.veic)}</span><span class="t">${esc(f.tit)}</span></a>`).join("")}</div>
+    <div class="sechead"><span class="kicker">04</span><h2>Fontes e documentos</h2></div>
+    <p class="fonte-contexto">Referências vinculadas aos registros deste ato. A associação indica pertinência editorial ao episódio; não significa que cada fonte sustente todas as afirmações. Consulte o conteúdo original e a classificação documental antes de atribuir uma conclusão.</p>
+    ${R.linksFonte(fontesIds)}
     <div class="como-citar"><span class="k">COMO CITAR</span>Estante Livre, observatório de censura de livros, de Nataly Nunes Pinto. Ato ${esc(k)}: ${esc(A.nome)}. Disponível em: ${url}. Acesso em: [data].</div>
   </section>
 </div>`;
@@ -356,7 +570,7 @@ for(const [k,A] of Object.entries(ATOS)){
   <section style="border-bottom:0">
     <div class="sechead"><span class="kicker">02</span><h2>Pessoas e instituições</h2></div>
     <p class="note">Pessoas aparecem só pelo papel que exerceram num ato documentado, com o cargo que ocupavam na data. Papel “atribuído” quer dizer que a fonte atribui a decisão a alguém sem documento assinado que a comprove. Denunciar ou reverter uma medida também é papel, e está identificado como tal.</p>
-    <div class="agentes-idx">${pessoas.map(([id,ag])=>`<div class="agente" id="ag-${id}"><h3>${esc(ag.nome)} <span>${esc(ag.tipo)}</span></h3>${
+    <div class="agentes-idx">${pessoas.map(([id,ag])=>`<div class="agente" id="ag-${id}"><h3><a href="agentes/${id}.html">${esc(ag.nome)}</a> <span>${esc(ag.tipo)}</span></h3>${
       PAPEIS.filter(p=>p.agente===id).map(p=>`<div class="ag-papel"><b>${esc(p.papel)}${p.atribuido?" (atribuída)":""}</b>${p.cargo?` · ${esc(p.cargo)}`:""} · <a href="atos/${p.ato.toLowerCase()}.html">${esc(ATOS[p.ato].nome)}</a>${p.nota?`<div class="ag-nota">${esc(p.nota)}</div>`:""}</div>`).join("")
     }</div>`).join("")}</div>
   </section>
@@ -381,7 +595,7 @@ for(const [k,A] of Object.entries(ATOS)){
     const porTexto = t => pend.filter(c=>c.pendencia===t).map(c=>`<a href="casos/${c.id.toLowerCase()}.html">${esc(c.id)}</a>`).join(", ");
     return `<article class="lac" id="${k.toLowerCase()}">
       <div class="lac-cab"><h3><a href="atos/${k.toLowerCase()}.html">${esc(A.nome)}</a></h3>
-        <span class="lac-meta">${esc([A.cidade,A.uf].filter(Boolean).join(", "))} · ${A.data.slice(0,4)} · ${regs.length} ${regs.length>1?"registros":"registro"}${nParc?` · <b>${nParc} parcialmente ${nParc>1?"verificados":"verificado"}</b>`:" · verificado"}</span></div>
+        <span class="lac-meta">${esc([A.cidade||A.abrangencia,A.uf].filter(Boolean).join(", "))} · ${A.data.slice(0,4)} · ${regs.length} ${regs.length>1?"registros":"registro"}${nParc?` · <b>${nParc} parcialmente ${nParc>1?"verificados":"verificado"}</b>`:" · verificado"}</span></div>
       <div class="lac-tags">${L.obstaculos.map(o=>`<span class="lac-tag">${esc(o)}</span>`).join("")}</div>
       <div class="lac-bloco"><span class="k">O QUE FALTA</span>${textos.map(t=>`<p>${esc(t)}${textos.length>1||pend.length<regs.length?` <span class="lac-ids">(${porTexto(t)})</span>`:""}</p>`).join("")}</div>
       <div class="lac-bloco"><span class="k">CAMINHO PARA FECHAR</span><p>${esc(L.caminho)}</p></div>
@@ -426,14 +640,14 @@ const linhas = R.ordenar(CASOS,"id").map(c=>{
   const r = RESP[c.id]||{};
   return {id:c.id, url:`${SITE}/casos/${c.id.toLowerCase()}.html`, data:c.data, ato:c.ato, ato_nome:ATOS[c.ato].nome, obra:obraDe(c), titulo_registro:c.titulo,
     conjunto:!!c.conjunto, autoria:c.autoria||"", editora:c.editora||"", ano_publicacao:(LIVROS[obraDe(c)]||{}).ano||"",
-    cidade:c.cidade||"", uf:c.uf, tipo_biblioteca:c.tipo, rede:c.rede, governo_na_epoca:c.governo||"",
+    cidade:c.cidade||"", abrangencia:ATOS[c.ato].abrangencia||"", uf:c.uf, tipo_biblioteca:c.tipo, rede:c.rede, governo_na_epoca:c.governo||"",
     instancia_registrada:c.quem, mecanismo:c.modalidade, estagio:c.estagio, situacao:c.situacao, desfecho:c.desfecho,
     eixo_tematico:c.eixo, justificativa_declarada:c.alegacao,
     pressao_ou_pedido:r.pressao||c.pressao||"", decisao:r.decisor||"", assinatura:r.assinantes||"", execucao:r.executor||"",
     resposta_ou_reversao:r.resposta||"", ato_ou_documento:DOC[c.id]||"", verificado:c.verificado,
     pendencia:r.pendencia||c.pendencia||"", nota:c.nota||"",
     agentes:PAPEIS.filter(p=>p.ato===c.ato).map(p=>({nome:AGENTES[p.agente].nome, tipo:AGENTES[p.agente].tipo, papel:p.papel, cargo:p.cargo||"", atribuido:!!p.atribuido})),
-    fontes:(c.fontes||[]).map(k=>FONTES[k]).filter(Boolean).map(f=>({veiculo:f.veic, titulo:f.tit, data:f.data||"", url:f.url}))};
+    fontes:(c.fontes||[]).map(k=>FONTES[k]).filter(Boolean).map(f=>({veiculo:f.veic, tipo:f.tipo||"Não classificada", titulo:f.tit, data:f.data||"", url:f.url}))};
 });
 gravar("dados/estante-livre-casos.json", JSON.stringify({
   nome:"Estante Livre: catálogo de censura de livros em bibliotecas e escolas brasileiras",
@@ -448,7 +662,7 @@ gravar("dados/estante-livre-casos.csv", "\uFEFF" + [colunas.join(","), ...linhas
 const topo = [...PAGINAS, "atos.html", "pendencias.html"].map(f => f==="index.html" ? SITE+"/" : `${SITE}/${f}`);
 gravar("sitemap.xml", `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${[...topo, ...urlsCasos, ...urlsLivros, ...urlsAtos].map(u=>`  <url><loc>${u}</loc><lastmod>${ATUALIZADO}</lastmod></url>`).join("\n")}
+${[...topo, ...urlsCasos, ...urlsLivros, ...urlsAtos, ...urlsAgentes].map(u=>`  <url><loc>${u}</loc><lastmod>${ATUALIZADO}</lastmod></url>`).join("\n")}
 </urlset>
 `);
 gravar("robots.txt", `User-agent: *\nAllow: /\n\nSitemap: ${SITE}/sitemap.xml\n`);
@@ -468,6 +682,7 @@ Registro não equivale a banimento consumado: cada caso traz o estágio (pressã
 - [Metodologia](${SITE}/metodologia.html): critérios, vieses conhecidos e correções
 - [Glossário](${SITE}/glossario.html): definições de mecanismo, estágio e situação
 - [Análises](${SITE}/analises.html): leitura dos dados
+- [Poder e censura](${SITE}/poder.html): pessoas, instituições e papéis documentados\n- [Dossiês temáticos](${SITE}/dossies.html): recortes de casos por tema\n- [Relatório-base 2026](${SITE}/relatorio-2026.html): fotografia da base e limites de interpretação
 
 Atualizado em ${ATUALIZADO}. Citação: Estante Livre, observatório de censura de livros, de Nataly Nunes Pinto.
 `);
@@ -475,4 +690,4 @@ gravar("404.html", pagina({titulo:"Página não encontrada · Estante Livre", de
   corpo:`<div class="wrap"><div class="hero-pg"><h1>Esta página não está na estante</h1>
   <p class="lede">O endereço pode ter mudado. Os casos estão em <a href="/casos.html">Casos</a> e as obras em <a href="/livros.html">Livros</a>; a busca da página de casos encontra livro, cidade, órgão ou justificativa.</p></div></div>`}));
 
-console.log(`ok · ${CASOS.length} casos · ${obras.length} obras · ${Object.keys(ATOS).length} atos · ${Object.keys(AGENTES).length} agentes · ${PAGINAS.length} páginas padronizadas · sitemap com ${topo.length+urlsCasos.length+urlsLivros.length+urlsAtos.length} URLs`);
+console.log(`ok · ${CASOS.length} casos · ${obras.length} obras · ${Object.keys(ATOS).length} atos · ${Object.keys(AGENTES).length} agentes · ${PAGINAS.length} páginas padronizadas · sitemap com ${topo.length+urlsCasos.length+urlsLivros.length+urlsAtos.length+urlsAgentes.length} URLs`);

@@ -1,0 +1,71 @@
+name: Validate and generate Estante Livre
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, ready_for_review]
+
+permissions:
+  contents: write
+
+jobs:
+  validate:
+    name: Validate data and regenerate static site
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout pull request branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+      - name: Sync latest branch head
+        run: |
+          TARGET_BRANCH="${{ github.event.pull_request.head.ref }}"
+          echo "TARGET_BRANCH=$TARGET_BRANCH" >> "$GITHUB_ENV"
+          git fetch origin "$TARGET_BRANCH:refs/remotes/origin/$TARGET_BRANCH"
+          git reset --hard "origin/$TARGET_BRANCH"
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Check JavaScript syntax
+        run: |
+          node --check scripts/gerar.js
+          node --check scripts/acessibilidade.js
+          node --check assets/dados.js
+          node --check assets/comum.js
+          node --check assets/mundo.js
+      - name: Validate catalogue and generate static pages
+        run: node scripts/gerar.js
+      - name: Static accessibility checks
+        run: node scripts/acessibilidade.js
+      - name: Check inline page scripts
+        run: |
+          node <<'NODE'
+          const fs = require("fs");
+          for (const file of ["analises.html", "poder.html"]) {
+            const html = fs.readFileSync(file, "utf8");
+            const scripts = [...html.matchAll(/<script(?:\s[^>]*)?>([\s\S]*?)<\/script>/g)]
+              .map(match => match[1]).filter(script => script.trim());
+            if (!scripts.length) throw new Error("No inline script found in " + file);
+            fs.writeFileSync("/tmp/" + file + ".js", scripts.join("\n"));
+          }
+          NODE
+          node --check /tmp/analises.html.js
+          node --check /tmp/poder.html.js
+      - name: Commit regenerated static pages
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Generated files are already up to date."
+          else
+            git commit -m "Build generated static pages"
+            git fetch origin "$TARGET_BRANCH:refs/remotes/origin/$TARGET_BRANCH"
+            git rebase "origin/$TARGET_BRANCH"
+            node scripts/gerar.js
+            git add -A
+            if ! git diff --cached --quiet; then
+              git commit --amend --no-edit
+            fi
+            git push origin "HEAD:$TARGET_BRANCH"
+          fi

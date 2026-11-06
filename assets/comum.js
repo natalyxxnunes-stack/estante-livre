@@ -119,22 +119,27 @@ function ordenar(arr, modo){
 const clsSituacao = d => ({"Em vigor":"ret","Revertido":"rev","Em aberto":"aberto","Sem efeito":"parcial"})[d] || "";
 const clsEstagio = e => ({"Execução comprovada":"e4","Decisão ou ordem":"e3","Pedido formal":"e2","Pressão pública":"e1"})[e] || "";
 
-function capaHTML(c, cls){
-  const k = cls||"capa";
-  if(c.capa) return `<div><img class="${k}" alt="Capa de ${esc(obraDe(c))}${c.editora?", "+esc(c.editora):""}" src="${RAIZ}assets/capas/${esc(c.capa)}.jpg" width="213" height="320" loading="lazy" decoding="async">
-    ${c.editora?`<div class="capa-cred">Capa · ${esc(c.editora)}</div>`:""}</div>`;
-  /* sem imagem: capa tipográfica na cor do mecanismo */
-  const L = (typeof LIVROS!=="undefined" && LIVROS[obraDe(c)]) || {};
-  const t = c.conjunto ? (L.legenda || "Conjunto de obras") : obraDe(c).split(":")[0];
-  return `<div><div class="${k}-tipo m-${slug(c.modalidade)}" aria-hidden="true"><b>${esc(t)}</b><span>${esc((c.autoria||"").split(",")[0])}</span></div></div>`;
+function capaHTML(c,cls){
+  const L=(typeof LIVROS!=="undefined"&&LIVROS[obraDe(c)])||{};
+  const img=L.capaAutorizada===true?(c.capa?`assets/capas/${esc(c.capa)}.jpg`:L.capaUrl?esc(L.capaUrl):""):"";
+  const edition=L.capaEdicao||c.editora||"";
+  const credit=L.capaCredito||"";
+  const source=L.capaFonte||"";
+  const note=L.capaNota||"";
+  const meta=`<div class="capa-meta">${edition?`<div class="capa-cred">Edição de referência · ${esc(edition)}</div>`:""}${credit?`<div class="capa-cred">Crédito · ${esc(credit)}</div>`:""}${source?`<div class="capa-cred"><a href="${esc(source)}" target="_blank" rel="noopener">Ficha editorial / referência</a></div>`:""}${note?`<div class="capa-nota">${esc(note)}</div>`:""}</div>`;
+  if(img)return `<div class="capa ${cls||""}"><img src="${img}" alt="Capa de ${esc(obraDe(c))}" loading="lazy">${meta}</div>`;
+  return `<div class="capa capa-vazia ${cls||""}"><div class="capa-tipografia">${esc(obraDe(c)||"Obra")}</div><div class="capa-cred">${L.capaBloqueada?"Imagem não exibida: origem e autorização de reprodução não comprovadas":"Capa não localizada"}</div>${meta}</div>`;
 }
 
+const ROTULOS_FONTE = {B1:"Blog institucional/editorial",P1:"Documento primário",P2:"Documento judicial ou de controle",P3:"Registro institucional",S1:"Reportagem com apuração própria",S2:"Reportagem de cobertura",A1:"Pesquisa acadêmica",O1:"Manifestação de organização",R1:"Reprodução ou republicação"};
 function linksFonte(ids){
   if(!ids || !ids.length) return "";
-  return `<div class="fontes"><div class="fontes-lab">FONTES</div>` +
+  return `<div class="fontes"><div class="fontes-lab">FONTES E DOCUMENTOS</div>` +
     ids.map(k=>{ const f=FONTES[k]; if(!f) return "";
+      const tipo = f.tipo ? (ROTULOS_FONTE[f.tipo] || f.tipo) : "Tipo não classificado";
       return `<a class="flink" href="${esc(f.url)}" target="_blank" rel="noopener">
         <span class="v">${esc(f.veic)}${f.data?` · ${dataCurta(f.data)}`:""}</span>
+        <span class="tipo-fonte">${esc(tipo)}</span>
         <span class="t">${esc(f.tit)}</span></a>`;
     }).join("") + `</div>`;
 }
@@ -161,6 +166,7 @@ function casoHTML(c, q, nivel){
   const campo = (k, v) => v ? '<div class="pront-campo"><div class="k">'+k+'</div><div class="v">'+v+'</div></div>' : "";
   const ags = agentesDoAto(c.ato);
   const pend = c.pendencia;
+  const trilha = H==="h1" ? '<nav class="rota-investigacao" aria-label="Trilha de investigação"><span class="rota-titulo">TRILHA DE INVESTIGAÇÃO</span>'+(!c.conjunto?'<a href="'+urlLivro(obraDe(c))+'"><b>01 · Livro</b><span>Ficha da obra</span></a>':"")+'<a href="'+urlAto(c.ato)+'"><b>02 · Ato administrativo</b><span>Documento, decisão e contexto</span></a>'+(ags.length?'<div class="rota-agentes"><b>03 · Agentes e instituições</b><span>'+ags.map(a=>'<a href="'+RAIZ+'agentes/'+a.id+'.html">'+esc(a.ag?.nome||a.id)+'</a>').join(" · ")+'</span></div>':"")+'</nav>' : "";
   return '<article class="caso pront" id="'+c.id+'" aria-labelledby="t-'+c.id+'">'+
     '<div class="pront-cab">'+
       '<a class="pront-num" href="'+urlCaso(c.id)+'" title="Página deste registro"><span>REGISTRO</span><b>'+c.id+'</b></a>'+
@@ -171,6 +177,7 @@ function casoHTML(c, q, nivel){
       '<div class="pront-carimbo '+clsEstagio(c.estagio)+'" aria-hidden="true">'+(CARIMBO[c.estagio]||"")+'<span>'+esc(c.uf)+' · '+c.data.slice(0,4)+'</span></div>'+
     '</div>'+
     '<div class="pront-corpo">'+
+      trilha+
       capaHTML(c)+
       '<div class="caso-body">'+
         '<div class="pront-grade">'+
@@ -195,12 +202,13 @@ function casoHTML(c, q, nivel){
           linhaResp("RESPOSTA / REVERSÃO",r.resposta)+
           linhaResp("OBSERVAÇÃO SOBRE RESPONSABILIDADE INDIVIDUAL",r.responsavel)+
           (ags.length ? '<div class="agentes-lin"><span class="k">AGENTES IDENTIFICADOS</span>'+ags.map(a=>
-            '<a class="ag" href="'+RAIZ+'atos.html#ag-'+a.id+'"><b>'+esc(a.ag.nome)+'</b>'+(a.cargo?' · '+esc(a.cargo):'')+' <i>'+esc(a.papeis.join(", "))+'</i></a>').join("")+'</div>' : "")+
+            '<a class="ag" href="'+RAIZ+'agentes/'+a.id+'.html"><b>'+esc(a.ag.nome)+'</b>'+(a.cargo?' · '+esc(a.cargo):'')+' <i>'+esc(a.papeis.join(", "))+'</i></a>').join("")+'</div>' : "")+
         '</div>'+
         '<div class="caso-aleg"><span class="k">JUSTIFICATIVA DECLARADA</span><div>'+m(c.alegacao)+'</div></div>'+
         (c.nota?'<div class="caso-nota">'+m(c.nota)+'</div>':"")+
         '<div class="caso-desf"><span class="k">DESFECHO</span> '+m(c.desfecho)+'</div>'+
         linksFonte(c.fontes)+
+        (H==="h1"?'<p class="fonte-contexto">As referências estão vinculadas a este registro. Cada fonte sustenta afirmações específicas; não presuma que todas comprovem todos os detalhes. Consulte o conteúdo original e seu contexto.</p>':"")+
         (pend?'<div class="caso-pend"><span class="k">O QUE AINDA APURAMOS</span><div>'+esc(pend)+' <a href="'+RAIZ+'pendencias.html#'+String(c.ato).toLowerCase()+'">Todas as lacunas do catálogo</a></div></div>':"")+
         '<div class="pront-rod"><span>'+(c.verificado==="Sim"?"Verificado com duas ou mais fontes":"Parcialmente verificado")+'</span>'+
           '<button class="copiar" type="button" data-copiar="'+c.id+'">copiar link</button></div>'+
@@ -225,7 +233,10 @@ function livroHTML(titulo, ocs, q, nivel){
   const motivos = [...new Set(ocs.map(o=>o.eixo))];
   const mods = [...new Set(ocs.map(o=>o.modalidade))];
   const rev = ocs.filter(o=>o.situacao==="Revertido").length;
-  const linhas = [...ocs].sort((a,b)=>a.data.localeCompare(b.data)).map(o=>`
+  const linhas = [...ocs].sort((a,b)=>a.data.localeCompare(b.data)).map(o=>{
+    const agentes = agentesDoAto(o.ato);
+    const trilha = H==="h1" ? `<div class="trilha-livro"><a href="${urlCaso(o.id)}">Abrir registro ${esc(o.id)} ↗</a><a href="${urlAto(o.ato)}">Consultar ato administrativo ↗</a>${agentes.length?`<div class="trilha-livro-ag"><b>Agentes:</b> ${agentes.map(a=>`<a href="${RAIZ}agentes/${a.id}.html">${esc(a.ag?.nome||a.id)}</a>`).join(" · ")}</div>`:""}<details class="provas-ocorrencia"><summary>Consultar fontes vinculadas a este registro</summary>${linksFonte(o.fontes)}<p class="fonte-contexto">As referências estão associadas ao registro. Cada uma deve ser consultada no contexto da afirmação que documenta.</p></details></div>` : "";
+    return `
     <div class="ocorr">
       <a class="ocorr-id" href="${urlCaso(o.id)}">${o.id}</a>
       <div class="ocorr-onde">${esc([o.cidade,o.uf].filter(Boolean).join(", ")||o.uf)}<br>
@@ -245,7 +256,8 @@ function livroHTML(titulo, ocs, q, nivel){
         <span class="tag t-mod">${esc(o.modalidade)}</span>
         <span class="tag t-est ${clsEstagio(o.estagio)}">${esc(o.estagio)}</span>
         <span class="tag t-des ${clsSituacao(o.situacao)}">${esc(o.situacao)}</span></div>
-    </div>`).join("");
+      ${trilha}
+    </div>`;}).join("");
 
   return `<div class="livro" id="${slug(titulo)}">
     <div class="livro-head">

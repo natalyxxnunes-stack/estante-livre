@@ -13,11 +13,17 @@ node scripts/gerar.js
 Ele valida os dados e para com uma lista de erros se algo estiver fora do padrão (mecanismo fora da lista, fonte inexistente, ficha de livro sem caso). Se tudo estiver certo, ele:
 
 - padroniza cabeçalho, menu e rodapé de todas as páginas;
+- gera a página `poder.html` a partir de `AGENTES`, `PAPEIS`, `ATOS` e `CASOS`;
+- gera dossiês temáticos e o relatório-base de 2026 diretamente da base, com recortes, contagens e limites de interpretação;
+- emite alertas editoriais não bloqueantes para localidades ausentes, signatários não identificados e fontes concentradas em um único domínio;
 - escreve o HTML das fichas dentro de `casos.html` e `livros.html`, para buscadores e ferramentas de IA lerem sem JavaScript;
-- gera uma página por caso (`casos/el-001.html`) e por obra (`livros/<nome>.html`), com dados estruturados e sugestão de citação;
+- gera uma página por caso (`casos/el-001.html`), obra (`livros/<nome>.html`) e agente (`agentes/<id>.html`), com dados estruturados, papéis documentados, fontes e sugestão de citação;
+- conecta a ficha do livro ao registro, ao ato administrativo, aos perfis de agentes e às fontes vinculadas; as páginas de ato também reúnem esses caminhos;
 - gera `dados/estante-livre-casos.csv` e `.json`, `sitemap.xml`, `robots.txt`, `llms.txt` e `404.html`.
 
 Quando o domínio próprio estiver no ar, troque a constante `SITE` no topo de `scripts/gerar.js` e rode de novo.
+
+A navegação investigativa e seus limites editoriais estão descritos em `docs/trilha-de-investigacao.md`.
 
 ## Onde se edita
 
@@ -25,11 +31,11 @@ Quase tudo fica em `assets/dados.js`, organizado em quatro entidades ligadas por
 
 - `CASOS` (registros): um título atingido por um ato. Aponta para a obra (`obra`) e para o ato (`ato`) e guarda o que é próprio do registro: mecanismo, estágio, situação, alegação, desfecho, fontes, pendência, nota.
 - `LIVROS` (obras): autoria, editora, capa, PNLD, ano, gênero, prêmio, sinopse, nota. `conjunto:true` e `legenda` para lotes sem lista título a título.
-- `ATOS`: o documento ou episódio, com nome, data, UF, cidade, tipo de biblioteca, rede, governo, instância, documento e o texto de cada papel (`papeis`).
+- `ATOS`: o documento ou episódio, com nome, data, UF, cidade ou abrangência, tipo de biblioteca, rede, governo, instância, documento e o texto de cada papel (`papeis`).
 - `AGENTES` e `PAPEIS`: pessoas e instituições com papel documentado em cada ato (pressão, pedido, decisão, assinatura, execução, denúncia, resposta), com o cargo na data. `atribuido:true` quando a fonte atribui o papel sem documento assinado.
 
 No fim do arquivo, uma etapa de montagem copia os campos do ato e da obra para cada registro; as páginas leem os registros já montados. Para um caso novo: crie a obra e o ato se forem novos, copie um bloco de `CASOS`, aponte para eles e rode o gerador.
-- `FONTES`: reportagens e pesquisas citadas pelos casos.
+- `FONTES`: documentos, reportagens, pesquisas e demais referências citadas pelos casos. O campo opcional `tipo` usa os códigos P1, P2, P3, S1, S2, A1, O1, R1 e B1. A classificação por tipo e os critérios de independência estão em `docs/classificacao-e-verificacao-de-fontes.md`.
 - `CONTEXTO`: episódios fora de biblioteca que aparecem no painel sem entrar na contagem.
 - `CORRECOES`: registro público de correções, exibido na página Metodologia.
 - `LACUNAS`: para cada ato com pendência, os obstáculos (da lista fechada `OBSTACULOS`) e o caminho para fechar. Alimenta a página O que falta apurar. O gerador recusa ato com pendência e sem lacuna, e lacuna de ato sem pendência.
@@ -51,10 +57,23 @@ Três campos usam listas fechadas, definidas em `dados.js` e explicadas no Gloss
 
 O texto livre do que aconteceu depois fica em `desfecho`.
 
-Um caso só conta como verificado com `verificado:"Sim"` e duas fontes. A regra é aplicada pelo código.
+Um caso só conta como verificado com `verificado:"Sim"` e pelo menos duas referências. O gerador bloqueia menos de duas referências e alerta quando as fontes estão em menos de dois domínios. A independência editorial continua sendo avaliada caso a caso; domínio diferente não é prova suficiente.
 
 ## Páginas
 
-index (painel), casos, livros, analises, historia (linha do tempo, escrita à mão), mundo, glossario, metodologia, sobre, cobertura, relate. Geradas pelo script: atos.html e as páginas em `casos/`, `livros/` e `atos/`.
+index (painel), casos, livros, analises, poder, perfis de agentes, dossies, relatorio-2026, historia (linha do tempo, escrita à mão), mundo, glossario, metodologia, sobre, cobertura, relate. Geradas pelo script: `atos.html`, `dossies.html`, `relatorio-2026.html` e as páginas em `casos/`, `livros/`, `atos/` e `agentes/`.
+
+## Documentação editorial
+
+- `docs/direcao-de-arte-identidade-editorial.md`: conceito visual, paleta, tipografia, composição e critérios de acessibilidade.\n- `docs/auditoria-editorial-p0.md`: pendências críticas mapeadas.
+- `docs/classificacao-e-verificacao-de-fontes.md`: taxonomia e protocolo de verificação.
+- `docs/politica-de-direitos-e-imagens.md`: créditos, direitos e preservação visual.
+- `docs/inventario-de-imagens.md`: inventário das sete capas e situação dos direitos.
+- `docs/plano-de-implementacao-2026.md`: sequência P0–P3 e critérios de conclusão.\n- `docs/revisao-das-seis-prioridades.md`: estado das seis prioridades críticas e limites de validação.\n- `docs/pedidos-lai-prontos.md`: minutas para diligências dos dez registros parcialmente verificados.
 
 Contornos do mapa: svg-maps, licença CC BY 4.0.
+
+
+## Revisão editorial complementar
+
+A revisão dos registros EL-025 a EL-037, com limites probatórios e diligências documentais, está em `docs/revisao-registros-el-025-a-037-2026-11-03.md`. A base de dados também referencia o Ofício nº 216/2024/SEMED/PMCL em EL-027.
