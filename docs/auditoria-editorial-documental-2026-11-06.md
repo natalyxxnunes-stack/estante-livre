@@ -102,7 +102,9 @@ https://www1.folha.uol.com.br/amp/educacao/2020/02/governo-de-ro-manda-recolher-
 
 O registro EL-017 foi corrigido para “Os Sertões da Luta”, conforme o título da relação. Os agrupamentos de Rubem Fonseca e do Adendo foram renomeados para explicitar a diferença entre itens e obras distintas. A fonte do PDF foi vinculada aos registros de Rondônia.
 
-**O que permanece aberto:** individualizar todos os 42 títulos distintos em registros e fichas próprios, eliminar o agrupamento documental residual e regenerar páginas, CSV, JSON e sitemap. A cópia pública do Adendo foi encontrada; a obtenção do processo SEI integral, da sindicância estadual e da recomendação integral do MP-RO não foi comprovada.
+**Reconciliação dos títulos concluída:** os 42 títulos distintos estão todos representados: sete em registros individuais (EL-015 a EL-021), 18 títulos distintos de Rubem Fonseca em conjunto documental (EL-022) e 17 títulos restantes em conjunto documental (EL-024). A duplicidade de O Seminarista está identificada. A instrução genérica sobre todos os livros de Rubem Alves permanece separada em EL-023 porque não há inventário individualizado nas fontes abertas consultadas. Os agrupamentos estão marcados como conjuntos; criar uma ficha por título seria melhoria de navegação, não condição para a contagem documental correta.
+
+**O que permanece aberto:** obtenção do processo SEI integral, resultado da sindicância estadual, recomendação integral do MP-RO e identificação dos livros de Rubem Alves abrangidos pela ordem genérica. A regeneração integral das páginas estáticas ainda precisa ser executada e conferida.
 
 ## 11. Validação dos dados e implantação — atualização
 
