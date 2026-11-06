@@ -518,3 +518,16 @@ Fonte primária: Edital 04/2023, itens 8.2.4, 8.2.14, 16.1 a 16.4 e Termo de Ref
 - Foi identificada divergência na Gestão/Unidade entre edital e cláusula 4.1 do contrato, com a UG 344041 também expressa no cabeçalho contratual.
 - Foram identificados requisitos técnicos e administrativos específicos para comprovar a execução dos 197 m³. Até esta rodada, não foram localizados plano de trabalho aprovado, registros fotográficos, relatório final, termo de recebimento definitivo, nota fiscal, liquidação ou ordem bancária.
 - Não concluir que a desinfestação ocorreu ou deixou de ocorrer, nem que o Acervo Clóvis Moura foi incluído no conjunto tratado: o objeto contratual é amplo e não individualiza a coleção.
+
+
+## 24. EL-025 — referência `2023PE0023` no anexo do edital: pista documental, não confirmação de NE
+
+A busca pela dotação do Contrato 10/2023 encontrou no item 24.1 do documento publicado como Edital 04/2023 (processo 01420.100133/2022-11, SEI 0268190) a linha literal **“Nota de Empenho:2023PE0023”**, após Gestão/Unidade 344041, Fonte 0100, PT 225954, ND 339039 e PI C20ZM4PA001. O trecho aparece na página 41 do PDF, imediatamente antes das assinaturas de Guilherme Bruno dos Santos e Vanessa Félix de Oliveira.
+
+Essa referência é uma pista nova para rastrear a execução financeira, mas não deve ser chamada de NE confirmada sem validação: o identificador literal usa o prefixo `PE`, não o padrão usual `NE` dos documentos de empenho; pode ser erro material, código de pré-empenho ou outra referência. A pesquisa exata por `2023PE0023` não recuperou documento SIAFI independente que confirme emissão, UG, favorecido, valor, liquidação ou pagamento. Também não se deve confundir esse código com o empenho da mudança `2023NE000369`.
+
+O próprio anexo/minuta do contrato na sequência do PDF apresenta a dotação de forma diferente: Gestão/Unidade 344041, Fonte 100, PT 225954, ND 339039 e PI C20ZM4PA001, sem repetir o código `2023PE0023`. O contrato efetivamente assinado, por sua vez, identifica UG 344041 no cabeçalho, mas contém a divergência de Gestão/Unidade já descrita na seção 23, cláusula 4.1 (344010/340031). A cadeia documental contém, portanto, pelo menos três representações da dotação; a identificação precisa do documento contábil depende de confirmação no SIAFI/Portal da Transparência ou em registro oficial de empenho.
+
+Fonte primária: Edital 04/2023, item 24.1 e anexo II, páginas 41–43: https://www.gov.br/palmares/pt-br/midias/arquivos-licitacao/edital4-2023.pdf
+
+Resultado: **código de empenho ainda não confirmado**. Próxima busca deve testar `2023NE000023`, `2023PE0023`, UG 344041, PI C20ZM4PA001, processo 01420.100133/2022-11 e favorecido 23.803.398/0001-08 em conjunto, sem tratar resultados isolados de mesmo número como correspondentes ao contrato.
