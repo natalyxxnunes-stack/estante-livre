@@ -22,6 +22,9 @@ A página **Política e poder** apresenta o contexto político dos episódios se
 5. Contagens devem usar atos distintos quando a pergunta for sobre decisões; vários livros podem pertencer a um único ato.
 6. Não publicar ranking nacional de partidos a partir de um catálogo parcial e não probabilístico.
 7. Cada afirmação política deve apontar para a ficha do ato e suas fontes; correções e novas evidências devem atualizar os dados de origem.
+8. A evidência partidária deve ser qualificada: partido na eleição, registro “Partido-TSE” em lista legislativa, filiação contemporânea e certidão individual datada não são a mesma coisa. Não transformar uma lista de composição parlamentar em prova de filiação individual em qualquer dia do mandato.
+9. Notícia de gabinete ou publicação de assessoria que reivindica autoria é fonte da declaração do próprio gabinete, não confirmação independente nem prova de que a pressão antecedeu a decisão.
+10. Ofício que encaminha resposta “de ordem do governador” comprova o encaminhamento da resposta, não a autoria pessoal do governador sobre a decisão administrativa que está sendo respondida.
 
 ## Perguntas de apuração prioritárias
 
