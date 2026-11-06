@@ -340,3 +340,12 @@ A comparação nominal localizou correspondências fortes de título/autor/ano e
 **Não tratar como correspondência confirmada** “O amor em grupo”: a transcrição informa Gilbert D. Barr, 1971; o inventário registra Gilbert D. Bartell, 1972. Tampouco tratar “Le Manifet Communiste” e “O Manifesto Comunista” como o mesmo registro sem cotejo bibliográfico. “O Sexo na Alemanha Nazista” tem divergência na grafia do autor (Blewel/Bleual) e ano ausente no inventário. Nenhum desses cruzamentos prova permanência física dos exemplares após a triagem.
 
 Fontes: [transcrição secundária](https://pordentrodorn.com.br/2021/06/17/veja-lista-de-livros-banidos-pela-fundacao-palmares/) · [inventário oficial](https://www.gov.br/palmares/pt-br/centrais-de-conteudo/publicacoes/lista-de-livros-atualizada-8-8-2024-1.pdf).
+
+
+## EL-032 — Taubaté: decisão administrativa de retomada localizada (06/11/2026)
+
+A reportagem de OVALE de 14/07/2026 reproduz a manifestação da Prefeitura de que a análise técnica feita pela Coordenação de Área e pela Equipe de Práticas Pedagógicas da Educação Infantil foi favorável à utilização de “Pipoca e Picolé” na rede municipal, condicionada a planejamento pedagógico adequado, respeito à faixa etária e mediação docente qualificada. O título permaneceria no plano de ensino das turmas adequadas, com acompanhamento da Coordenação de Área.
+
+A evidência permite atualizar o resultado para **decisão administrativa favorável à retomada**, não para cumprimento físico comprovado. A reportagem não apresenta parecer técnico integral, número de processo, relação das escolas, quantitativo redistribuído ou registro de entrega dos exemplares. A declaração municipal, reproduzida pela imprensa, não comprova que cada escola recebeu os livros ou que o plano foi efetivamente executado.
+
+Fonte: [OVALE, 14/07/2026 — Taubaté: escolas voltarão a usar livro sobre menina com duas mães](https://sampi.net.br/ovale/noticias/2991910/vale-do-paraiba/2026/07/taubate-escolas-voltarao-a-usar-livro-sobre-menina-com-duas-maes).
