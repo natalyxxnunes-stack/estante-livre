@@ -938,24 +938,28 @@ const FONTES = {
   "url": "https://portalelegis.alesc.sc.gov.br/documentos/zedDY"
  },
  "alego-amauri-2024": {
+  "tipo": "P3",
   "veic": "Assembleia Legislativa de Goiás · notícia de gabinete",
   "data": "2024-04-01",
   "tit": "Amauri Ribeiro reivindica liderança do movimento pela retirada de livro em escolas de Goiás",
   "url": "https://portal.al.go.leg.br/noticias-dos-gabinetes/143079/amauri-ribeiro-lidera-movimento-para-retirada-de-livro-com-conteudo-pornografico-que-estava-sendo-usado-em-escolas-de-goias"
  },
  "folha-ms-ordem-2024": {
+  "tipo": "S1",
   "veic": "Folha de S.Paulo",
   "data": "2024-03-08",
   "tit": "Livro O avesso da pele é recolhido em Mato Grosso do Sul",
   "url": "https://www1.folha.uol.com.br/ilustrada/2024/03/livro-o-avesso-da-pele-e-removido-de-escolas-no-mato-grosso-do-sul-apos-pr-e-go.shtml"
  },
  "cgn-ms-devolucao-2024": {
+  "tipo": "S2",
   "veic": "Campo Grande News",
   "data": "2024-04-23",
   "tit": "Governo anuncia devolução de O avesso da pele às escolas estaduais",
   "url": "https://www.campograndenews.com.br/educacao-e-tecnologia/governo-devolve-livro-polemico-as-escolas-estaduais"
  },
  "rinaldo-eleicao-2022": {
+  "tipo": "S1",
   "veic": "Folha de S.Paulo · dados de candidatura",
   "data": "2022",
   "tit": "Professor Rinaldo Modesto · eleito deputado estadual pelo Podemos em 2022",
