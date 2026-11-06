@@ -904,7 +904,7 @@ const LACUNAS = {
  "FUNAP-2020":{obstaculos:["Documento interno não publicado","Cumprimento não confirmado","Divergência entre fontes"], caminho:"Pedido via Lei de Acesso à Informação à Funap, do governo de São Paulo, da mensagem de 3 de dezembro de 2019, da ata de 13 de fevereiro de 2020 e do registro de envio dos exemplares às unidades."},
 };
 
-const ATUALIZADO = "2026-10-30";
+const ATUALIZADO = "2026-11-06";
 
 /* contato institucional exibido na página Sobre. Vazio, a linha não aparece. */
 const CONTATO = { email: "", instagram: "natalyxnunes" };
