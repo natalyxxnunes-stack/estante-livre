@@ -386,12 +386,12 @@ const ATOS = {
    governo:"Prefeitura de Conselheiro Lafaiete · gestão Mário Marcus Leão Dutra",
    quem:"Secretaria Municipal de Educação",
    pressao:"Pais, familiares e autoridades locais contestaram a abordagem pedagógica da obra; o comunicado oficial não identifica nominalmente os reclamantes.",
-   documento:"Comunicado oficial da Secretaria Municipal de Educação, publicado em 20 de junho de 2024, reconhecendo a orientação para suspender temporariamente os trabalhos pedagógicos; decisão liminar da 1ª Vara Cível no processo nº 5006658-14.2024.8.13.0183 determinou o cancelamento imediato da suspensão temporária.",
+   documento:"Comunicado oficial da Secretaria Municipal de Educação, publicado em 20 de junho de 2024, reconhecendo a orientação para suspender temporariamente os trabalhos pedagógicos; sentença de mérito de 02/12/2024, no processo nº 5006658-14.2024.8.13.0183, anulou o ato administrativo e confirmou a tutela antecipada.",
    papeis:{
      pressao:"Pais, familiares e autoridades locais contestaram a abordagem pedagógica; o comunicado oficial não identifica nominalmente os reclamantes.",
      decisor:"Secretaria Municipal de Educação, que em comunicado de 20 de junho reconheceu ter orientado a suspensão temporária dos trabalhos pedagógicos.",
      executor:"Unidades escolares da rede municipal, quanto às atividades pedagógicas; não há comprovação de recolhimento geral de exemplares.",
-     resposta:"Em 27 de junho de 2024, o juiz Espagner Wallysen Vaz Leite deferiu medida liminar e determinou o cancelamento imediato da suspensão temporária dos trabalhos pedagógicos."
+     resposta:"O Município informou no processo que retomou as atividades em 28/06/2024. Em sentença de 02/12/2024, o juiz Espagner Wallysen Vaz Leite anulou o ato administrativo e confirmou definitivamente a tutela antecipada."
    }},
  "SJC-2024":{
    nome:"Recolhimento de Meninas sonhadoras (São José dos Campos)",
