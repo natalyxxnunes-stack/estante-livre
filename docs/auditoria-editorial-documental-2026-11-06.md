@@ -154,3 +154,8 @@ A Folha de 14/02/2020 informa que, em 13/02, a Funap determinou a inclusão da l
 A divergência quantitativa permanece sem explicação: a Folha registra 240 exemplares doados de 12 títulos; Benaglia e Heller, em artigo acadêmico de 2022, referem-se a 228 livros cuja circulação teria sido impedida. A diferença de 12 não deve ser interpretada como entrega, retenção parcial ou erro de fonte sem documentação que a esclareça. A lista dos 12 títulos está publicada na reportagem da Folha. As três obras que teriam motivado questionamentos internos não foram identificadas nas fontes abertas consultadas.
 
 **Pendência residual:** mensagem original de Reginaldo Caetano da Silva; ata da reunião de 13/02/2020; nota integral da Funap; identificação das três obras; comprovante de eventual nova doação/envio; explicação documental da diferença 240/228. Fontes: folha-funap-11fev, folha-funap-14fev, benaglia-heller-2022, bdf-funap.
+
+
+## Atualização documental — Mato Grosso do Sul (EL-004), 06/11/2026
+
+A reportagem do Campo Grande News de 23/04/2024 informa que, após análise técnica, a SED anunciou que *O avesso da pele* estava em processo de devolução às bibliotecas das unidades escolares, com orientações pedagógicas de uso. A própria reportagem ressalva que a Secretaria não informou se a devolução se limitaria às 75 escolas que já haviam recebido o livro ou se alcançaria as demais 274 unidades, nem detalhou as orientações aos professores. Portanto, o desfecho de reversão está confirmado; o alcance material da redistribuição permanece sem comprovação pública. Fonte: cgn-volta.
