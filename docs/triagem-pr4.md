@@ -51,6 +51,6 @@ A lista do PR também inclui commits de validação do gerador, navegação e do
 
 ## Próxima decisão sobre o PR #4
 
-A triagem funcional dos 12 arquivos está concluída. **Não há motivo para mesclar o PR #4 integralmente.** Manter o PR aberto até que o histórico/commits exclusivos sejam revisados e a documentação final seja conferida. Se a revisão do histórico não revelar conteúdo funcional ou documental exclusivo que justifique integração, encerrar o PR como supersedido, registrando o motivo e preservando os documentos históricos úteis.
+A triagem funcional dos 12 arquivos e a revisão dos 65 commits exclusivos estão concluídas. **PR #4 foi encerrado em 05/11/2026 como supersedido, sem merge.** A branch e seu histórico permanecem preservados no GitHub; a pesquisa útil foi revalidada e incorporada seletivamente ao PR #5. Não há motivo para integrar o PR #4 em bloco. O encerramento não significa que o site esteja pronto para lançamento: inspeção visual/manual de acessibilidade e deploy de produção continuam pendentes.
 
 Nenhuma imagem do PR #4 deve voltar ao build sem autorização/licença documentada. Nenhuma página deve ser publicada apenas porque compila: inspeção visual, teclado e leitor de tela continuam pendentes.
