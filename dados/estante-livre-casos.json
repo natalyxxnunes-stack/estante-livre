@@ -2906,9 +2906,9 @@
    "url": "https://estante-livre-br.vercel.app/casos/el-030.html",
    "data": "2024-11-26",
    "ato": "LON-2024",
-   "ato_nome": "Requerimento de recolhimento de A mamãe vai ter um bebê (Londrina)",
+   "ato_nome": "Requerimento de recolhimento de A mamãe vai ter um bebê e retirada de exemplar em CMEI (Londrina)",
    "obra": "A mamãe vai ter um bebê",
-   "titulo_registro": "Pedido de recolhimento de A mamãe vai ter um bebê e aprovação da Lei nº 13.930/2025",
+   "titulo_registro": "Requerimento de recolhimento de A mamãe vai ter um bebê e retirada de exemplar de CMEI (Londrina)",
    "conjunto": false,
    "autoria": "",
    "editora": "",
@@ -2918,22 +2918,22 @@
    "tipo_biblioteca": "Escolar",
    "rede": "Municipal",
    "governo_na_epoca": "Marcelo Belinati (PP) · prefeitura de Londrina",
-   "instancia_registrada": "Vereadora Jéssica Ramos Moreno (PP) · Secretaria Municipal de Educação como destinatária do pedido",
+   "instancia_registrada": "Vereadora Jéssica Ramos Moreno (PP) · Secretaria Municipal de Educação",
    "mecanismo": "Retirada",
-   "estagio": "Pedido formal",
+   "estagio": "Execução comprovada",
    "situacao": "Em aberto",
-   "desfecho": "Pedido apresentado; resposta e execução não comprovadas. PL 79/2024 sancionado como Lei nº 13.930/2025.",
+   "desfecho": "Secretaria retirou imediatamente o exemplar encontrado em um CMEI e revisou o acervo daquela unidade; não há prova de recolhimento de outros exemplares na rede. PL 79/2024 sancionado como Lei nº 13.930/2025.",
    "eixo_tematico": "Sexualidade e gênero",
    "justificativa_declarada": "A vereadora classificou como inadequada para crianças uma ilustração de casal sob um edredom em contexto de reprodução humana.",
    "pressao_ou_pedido": "Jéssica Ramos Moreno (PP), vereadora, pediu formalmente à Secretaria Municipal de Educação o recolhimento do livro após encontrá-lo em uma creche.",
-   "decisao": "A Secretaria Municipal de Educação recebeu o pedido; não foi localizada resposta oficial nem decisão administrativa que confirme a retirada.",
+   "decisao": "Secretaria Municipal de Educação: informou que o exemplar encontrado foi retirado imediatamente do acervo e que faria revisão completa do material da unidade.",
    "assinatura": "",
-   "execucao": "Não identificado. A presença de um exemplar na creche foi relatada pela vereadora; a execução do recolhimento não está comprovada.",
+   "execucao": "CMEI onde o exemplar foi encontrado; a retirada imediata do exemplar é confirmada pela nota da Secretaria reproduzida por RIC e Tarobá. Não há comprovação de recolhimento em outras unidades.",
    "resposta_ou_reversao": "",
-   "ato_ou_documento": "Requerimento parlamentar de Jéssica Ramos Moreno (PP), apresentado após vistoria em creche em 26 de novembro de 2024, solicitando à Secretaria Municipal de Educação o recolhimento da obra; cópia e resposta administrativa ainda não localizadas. Separadamente, o PL 79/2024 foi sancionado como Lei Municipal nº 13.930, de 21 de março de 2025.",
-   "verificado": "Parcialmente",
-   "pendencia": "Obter cópia integral do requerimento protocolado pela vereadora e resposta da Secretaria; confirmar se houve recolhimento efetivo e eventual devolução do exemplar.",
-   "nota": "Em 26 de novembro de 2024, a vereadora Jéssica Ramos Moreno (PP) divulgou que encontrou o livro em uma creche e pediu à Secretaria Municipal de Educação que o recolhesse. A reportagem contemporânea informou que a Secretaria ainda não havia respondido oficialmente ao requerimento; portanto, a retirada não está comprovada. Separadamente, o PL 79/2024, de autoria da vereadora, foi sancionado em 21 de março de 2025 como Lei Municipal nº 13.930, que proíbe uso e distribuição de livros com conteúdo erótico nas escolas municipais, com exceção para informação científico-biológica sobre reprodução adequada à idade. A lei não comprova, por si, a retirada deste exemplar.",
+   "ato_ou_documento": "Nota da Secretaria Municipal de Educação reproduzida pela imprensa em 26/11/2024: o exemplar foi imediatamente retirado do acervo da unidade e seria feita revisão completa do material. A pasta negou que a obra tivesse sido adquirida ou distribuída pelo Município e considerou provável que tivesse chegado por doação ou sido levada por aluno. O requerimento parlamentar específico e sua resposta formal não foram localizados. O PL 79/2024 havia sido protocolado em 09/04/2024, antes do episódio, e foi sancionado como Lei Municipal nº 13.930 em 21/03/2025.",
+   "verificado": "Sim",
+   "pendencia": "Obter cópia integral do requerimento parlamentar e da nota oficial da Secretaria; confirmar se a revisão do acervo identificou outros exemplares e se houve retirada em outras unidades. Não há comprovação de devolução do exemplar retirado.",
+   "nota": "Em 26/11/2024, durante vistoria em um CMEI após denúncia de uma família, a vereadora Jéssica Ramos Moreno (PP) encontrou o livro e pediu providências. A Secretaria Municipal de Educação afirmou à imprensa que a obra não havia sido adquirida nem distribuída pelo Município; acreditava que o exemplar chegara por doação direta ou fora levado por aluno e esquecido na unidade. A pasta declarou que o livro foi imediatamente retirado do acervo e que faria revisão completa do material disponível naquele CMEI. Portanto, a retirada de um exemplar em uma unidade está confirmada por nota oficial reproduzida contemporaneamente, mas não se comprova o recolhimento geral pedido pela vereadora nem a existência de outros exemplares na rede. A cobertura de 27/11 ainda informou que a Secretaria não havia respondido oficialmente ao requerimento parlamentar específico; isso não contradiz a nota sobre a retirada do exemplar encontrado. O PL 79/2024, de autoria da vereadora, já havia sido protocolado em 09/04/2024 (processo 148224, documento 208880), meses antes do episódio; foi aprovado e sancionado em 21/03/2025 como Lei Municipal nº 13.930. A lei posterior não prova recolhimento de exemplares.",
    "agentes": [
     {
      "nome": "Jéssica Ramos Moreno",
@@ -2952,28 +2952,34 @@
    ],
    "fontes": [
     {
-     "veiculo": "Folha de Londrina",
-     "titulo": "Educação vai recolher livro infantil com ‘conteúdo sensível’",
-     "data": "2024-11",
-     "url": "https://www.folhadelondrina.com.br/politica/educacao-vai-recolher-livro-infantil-com-conteudo-sensivel-3292131e.html"
+     "veiculo": "RIC.com.br",
+     "titulo": "Livro que detalha ato sexual é encontrado em CMEI e gera polêmica em Londrina",
+     "data": "2024-11-26",
+     "url": "https://ric.com.br/politica/livro-detalha-ato-sexual-encontrado-cmei-londrina/"
     },
     {
-     "veiculo": "Brasil Paralelo",
-     "titulo": "Londrina proíbe livros com teor erótico em escolas municipais",
-     "data": "2025-02-21",
-     "url": "https://www.brasilparalelo.com.br/noticias/londrina-proibe-livros-com-teor-erotico-em-escolas-municipais"
-    },
-    {
-     "veiculo": "Prefeitura de Londrina · Jornal Oficial do Município",
-     "titulo": "Lei Municipal nº 13.930/2025 · PL 79/2024",
-     "data": "2025-03-21",
-     "url": "https://portal.londrina.pr.gov.br/images/stories/jornalOficial/Jornal-5446-Assinado.pdf"
+     "veiculo": "Tarobá",
+     "titulo": "Livro infantil com suposto conteúdo erótico é encontrado em CMEI no Jardim Leonor",
+     "data": "2024-11-26",
+     "url": "https://taroba.com.br/noticias/cidade/livro-infantil-com-suposto-conteudo-erotico-e-encontrado-em-cmei-no-jardim-leonor/amp"
     },
     {
      "veiculo": "Nova Lima News · reprodução de informação do Pleno.News",
      "titulo": "Livro erótico é encontrado em creche de Londrina; vereadora pede providências",
      "data": "2024-11-27",
      "url": "https://novalima.news/livro-erotico-e-encontrado-em-creche-de-londrina-vereadora-pede-providencias/"
+    },
+    {
+     "veiculo": "Câmara Municipal de Londrina",
+     "titulo": "Projeto de Lei nº 79/2024 · Processo 148224, documento 208880",
+     "data": "2024-04-09",
+     "url": "https://www1.cml.pr.gov.br/projetos/2024/PL000792024.pdf"
+    },
+    {
+     "veiculo": "Prefeitura de Londrina · Jornal Oficial do Município",
+     "titulo": "Lei Municipal nº 13.930/2025 · PL 79/2024",
+     "data": "2025-03-21",
+     "url": "https://portal.londrina.pr.gov.br/images/stories/jornalOficial/Jornal-5446-Assinado.pdf"
     }
    ]
   },
