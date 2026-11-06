@@ -74,7 +74,7 @@
   <div class="sechead"><span class="kicker">03</span><h2>Pressão política não é a mesma coisa que decisão</h2></div>
   <p>O padrão mais importante talvez não seja apenas ideológico, mas institucional: em diversos episódios, um parlamentar ou grupo faz a denúncia pública, enquanto a decisão de restringir o acesso é tomada ou formalizada por outro agente. Confundir esses papéis apaga a cadeia de responsabilidade — e pode atribuir a alguém um ato que não assinou nem executou.</p>
   <div class="analysis-grid">
-   <article><span class="analysis-id">EL-004 · MATO GROSSO DO SUL</span><h3>O pedido e a ordem</h3><p>Rinaldo Modesto (Podemos) pediu a retirada de <i>O avesso da pele</i> na Assembleia. Segundo a apuração cadastrada, a determinação de recolhimento foi atribuída ao governador Eduardo Riedel, após análise da Secretaria de Educação. O signatário formal do ato ainda não está identificado.</p><a href="casos/el-004.html">Ver ficha e fontes →</a></article>
+   <article><span class="analysis-id">EL-004 · MATO GROSSO DO SUL</span><h3>O pedido e a ordem</h3><p>Rinaldo Modesto, eleito em 2022 pelo Podemos, pediu a retirada de <i>O avesso da pele</i> na Assembleia. A página oficial da ALEMS para a 12ª Legislatura também o lista no registro Partido-TSE como integrante do Podemos, mas não é uma certidão individual de filiação na data exata do pedido. Segundo a apuração cadastrada, a determinação de recolhimento foi atribuída ao governador Eduardo Riedel, após análise da Secretaria de Educação. O signatário formal do ato ainda não está identificado.</p><a href="casos/el-004.html">Ver ficha e fontes →</a></article>
    <article><span class="analysis-id">EL-028 · SÃO JOSÉ DOS CAMPOS</span><h3>A pressão e a execução</h3><p>O vereador Thomaz Henrique (PL) atacou <i>Meninas Sonhadoras, Mulheres Cientistas</i>. A Secretaria Municipal de Educação e Cidadania aparece como instância decisória; diretores receberam a ordem por mensagens. A autoridade individual que formalizou a retirada ainda não foi identificada.</p><a href="casos/el-028.html">Ver ficha e fontes →</a></article>
    <article><span class="analysis-id">EL-029 · RIO VERDE</span><h3>A repercussão e a decisão institucional</h3><p>Gustavo Gayer (PL) publicou vídeo chamando a obra de pornográfica. A UniRV declarou que a Coordenação do Vestibular decidiu pela exclusão imediata. A nota oficial não identifica quem, individualmente, formalizou a decisão.</p><a href="casos/el-029.html">Ver ficha e fontes →</a></article>
   </div>
@@ -124,7 +124,7 @@ for(const p of PAPEIS){
  const chave=p.agente+"|"+p.ato;
  if(vistosPoliticos.has(chave)) continue;
  vistosPoliticos.add(chave);
- const partido=(p.cargo.match(/\(([^)]+)\)/)||[])[1]||"Não informado";
+ const partido=p.partido||(p.cargo.match(/\(([^)]+)\)/)||[])[1]||"Não informado";
  const registros=CASOS.filter(c=>c.ato===p.ato);
  const decisores=PAPEIS.filter(q=>q.ato===p.ato && q.papel==="Decisão").map(q=>{
    const nome=AGENTES[q.agente]?.nome||q.agente;
