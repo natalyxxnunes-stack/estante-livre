@@ -31,11 +31,7 @@ A pesquisa encontrou:
 Foi localizado o Relatório de Gestão 2021 da Fundação Cultural Palmares, publicado no portal oficial. Na seção 3.1.2, páginas impressas 70–71, o documento informa que os 9.565 itens do acervo eram compostos por 8.035 títulos diferentes e 1.530 folders e catálogos:
 https://www.gov.br/palmares/pt-br/midias/arquivos-menu-acesso-a-informacao/resultados-gerados2021_ok.pdf
 
-Isso esclarece a composição interna do total 9.565. Não resolve, por si só, a divergência entre 9.565 e 9.546 mencionada por reportagens distintas sobre o relatório "Retrato do Acervo". A pendência EL-025 deve ser refinada para separar:
-1. composição do total de 9.565 (esclarecida pelo Relatório de Gestão);
-2. diferença entre os números publicados 9.565 e 9.546 (ainda não reconciliada);
-3. obtenção/checagem da lista dos 5.165 exemplares;
-4. comprovação do destino final do conjunto.
+Isso confirma o número-base de 9.565 na fonte institucional e permite tratar 9.546, publicado pelo Jornal da Unesp, como divergência de reportagem sem explicação localizada. A pendência EL-025 foi refinada para separar a versão-base de 2021 das versões posteriores do Inventário Bibliográfico (9.665 em 2023 e 9.696 em 2024), além da identificação dos 5.165 itens classificados e da comprovação de seu destino final.
 
 O documento oficial que sustenta a composição do total não deve ser confundido com o relatório temático "Retrato do Acervo":
 https://www.gov.br/palmares/pt-br/midias/arquivos-menu-acesso-a-informacao/rel-gestao-2021-versao-final.pdf/view
