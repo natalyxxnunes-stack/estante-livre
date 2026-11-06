@@ -23,6 +23,18 @@ Na comparação consultada, o PR #4 tinha **65 commits exclusivos** e o PR #5 ti
 | `docs/diretrizes-design-web.md` | Hierarquia editorial, responsividade, acessibilidade e critérios para capas | Preservar em versão atualizada, alinhada à decisão de retirar as imagens não autorizadas e às validações manuais pendentes. |
 | `docs/criterios-responsabilidade-politica.md` | Critérios para separar contexto, pressão, pedido, decisão e autoria | Conteúdo aproveitado e ampliado no documento atual, incluindo limites temporais de filiação, reivindicação de gabinete e encaminhamento “de ordem do governador”. Não substituir a versão atual pela antiga. |
 
+## Revisão do histórico de 65 commits exclusivos
+
+A lista completa de commits do PR #4 foi consultada pelo endpoint de commits do próprio pull request (65 entradas). O histórico confirma três blocos principais:
+
+1. **Capas e apresentação visual:** commits para adicionar 16 imagens externas, manter sete arquivos locais, renderizar créditos, hidratar capas em páginas estáticas, corrigir URLs, ajustar a prateleira e preservar imagens no mobile. Não integrar enquanto não houver autorização/licença individual e correspondência bibliográfica documentadas. O inventário foi preservado em `docs/credito-das-capas.md`.
+2. **Apuração política e filiações:** commits de criação da página política, matriz de 19 pessoas, recortes temporais, correções sobre Rinaldo Modesto, Thomaz Henrique, Zelinda Pastora, Eduardo Riedel, Amauri Ribeiro e outros, além da separação entre pressão, pedido, decisão e reivindicação posterior. O resultado útil foi refeito/absorvido na camada `CONTEXTO_PARTIDARIO` de 19 registros, em `poder.html`, na auditoria temporal e nas fichas atuais. As versões antigas de `FILIACOES` e da página `politica.html` não devem ser copiadas.
+3. **Cadeias documentais de PR, GO e MS:** os commits acrescentaram fontes e cronologias para EL-002, EL-003 e EL-004. As informações centrais estão presentes nas fichas e fontes da base atual; EL-004 recebeu fontes adicionais e ressalva de que “em processo de devolução” não comprova retorno a cada escola. A cronologia de SC foi reescrita em documento próprio.
+
+A lista do PR também inclui commits de validação do gerador, navegação e documentação. O workflow antigo do PR #4 não substitui o pipeline atual, que passou na execução #502.
+
+**Resultado do histórico:** não foi identificado, no conjunto de 65 commits, um registro EL exclusivo que justifique importar a versão antiga de `assets/dados.js`. O material de apuração política foi incorporado seletivamente; os componentes de capas e a página política antiga foram rejeitados por incompatibilidade ou falta de direitos comprovados.
+
 ## Resultado da triagem
 
 ### Conteúdo preservado/absorvido
