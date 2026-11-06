@@ -145,3 +145,12 @@ A cobertura de OVALE de 14/07/2026 reproduz a posição da Prefeitura de que a a
 A reportagem de 10/04/2026 reproduz a resposta municipal segundo a qual os exemplares disponíveis foram encaminhados à Secretaria para análise, enquanto grande parte dos livros do programa já havia sido distribuída aos alunos. A mesma cobertura informa a compra de 3.280 kits para alunos e 116 para professores, por R$ 1,216 milhão. Esses números são de kits, não de exemplares de *Pipoca e Picolé*, e não devem ser convertidos em tiragem do título.
 
 **Pendência residual:** obter o parecer técnico integral e documentos administrativos de devolução/redistribuição por unidade escolar; confirmar quais turmas receberam o livro e o uso efetivo em sala. O requerimento parlamentar e a resposta municipal são parcialmente conhecidos pela reprodução jornalística, mas seus documentos integrais ainda não foram localizados nas fontes abertas consultadas. Fontes registradas: ovale-tau-abr10, ovale-tau-jul14.
+
+
+## Atualização documental — Funap / Remição em Rede (EL-033), 06/11/2026
+
+A Folha de 14/02/2020 informa que, em 13/02, a Funap determinou a inclusão da lista inicialmente indicada pelo projeto e anunciou equipe multidisciplinar com Funap, SAP e Mulheres do Brasil. O mesmo texto esclarece que, em dezembro de 2019, as organizadoras haviam solicitado a devolução dos livros doados e que a Funap respondeu comunicando a restituição. Assim, a reversão da decisão sobre a lista não comprova que os exemplares físicos tenham sido enviados às unidades prisionais. Não foi localizado comprovante de nova doação ou remessa posterior.
+
+A divergência quantitativa permanece sem explicação: a Folha registra 240 exemplares doados de 12 títulos; Benaglia e Heller, em artigo acadêmico de 2022, referem-se a 228 livros cuja circulação teria sido impedida. A diferença de 12 não deve ser interpretada como entrega, retenção parcial ou erro de fonte sem documentação que a esclareça. A lista dos 12 títulos está publicada na reportagem da Folha. As três obras que teriam motivado questionamentos internos não foram identificadas nas fontes abertas consultadas.
+
+**Pendência residual:** mensagem original de Reginaldo Caetano da Silva; ata da reunião de 13/02/2020; nota integral da Funap; identificação das três obras; comprovante de eventual nova doação/envio; explicação documental da diferença 240/228. Fontes: folha-funap-11fev, folha-funap-14fev, benaglia-heller-2022, bdf-funap.
