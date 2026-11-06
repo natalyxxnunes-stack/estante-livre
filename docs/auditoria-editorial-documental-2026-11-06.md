@@ -20,11 +20,11 @@ A base mantém os registros EL-015 a EL-024. Para a lista de Rondônia, há sete
 
 A pesquisa encontrou:
 - Reportagem contemporânea do Diario de Pernambuco, 6 fev. 2020, que confirma 43 títulos, reproduz a observação sobre todos os livros de Rubem Alves e informa que os documentos foram confirmados como oficiais: https://www.diariodepernambuco.com.br/noticia/brasil/2020/02/governo-de-ro-manda-recolher-macunaima-e-mais-42-livros-e-depois-rec.html
-- A Folha publicou a relação completa dos 43 itens: https://www1.folha.uol.com.br/amp/educacao/2020/02/governo-de-ro-manda-recolher-macunaima-e-mais-42-livros-e-depois-recua.shtml
-- Artigo acadêmico de 2024 reproduz a tabela documental com os 43 itens e a observação sobre Rubem Alves: https://revistas.unicentro.br/index.php/revista_interfaces/article/viewFile/7833/5778
+- A Folha afirma que a lista tinha 43 títulos e publica a relação em sua página: https://www1.folha.uol.com.br/amp/educacao/2020/02/governo-de-ro-manda-recolher-macunaima-e-mais-42-livros-e-depois-recua.shtml. A relação visível na página contém 42 entradas enumeráveis.
+- Artigo acadêmico de 2024 reproduz a tabela documental: https://revistas.unicentro.br/index.php/revista_interfaces/article/viewFile/7833/5778. A tabela reproduzida e a cópia PDF hospedada por terceiros mostram 43 linhas, mas repetem “O Seminarista”.
 - Cópia pública do memorando e da relação, com identificadores de autenticação SEI impressos no documento, está disponível em hospedagem de terceiro: https://kbook.com.br/wp-content/uploads/2020/02/livros-inadequados.pdf
 
-**Conclusão:** a lista de títulos não está mais inteiramente ausente da documentação pública. A pendência de desmembrar os agrupamentos deve ser reavaliada. Antes de alterar a base, é necessário reconciliar as 43 linhas, o título duplicado "O Seminarista", grafias/títulos divergentes e o conjunto não enumerado de Rubem Alves. Não transformar automaticamente 43 linhas em 43 obras únicas sem essa conferência. A distinção entre lista de itens e obras únicas precisa ficar explícita. O processo SEI integral e a sindicância administrativa estadual continuam sem comprovação nesta apuração.
+**Conclusão:** a lista de títulos não está mais inteiramente ausente da documentação pública, mas a contagem não está reconciliada: a Folha anuncia 43 títulos e a lista visível contém 42 entradas; a reprodução acadêmica/PDF apresenta 43 linhas, com “O Seminarista” repetido. Antes de desmembrar os agrupamentos, é necessário identificar a 43ª entrada ou confirmar se a diferença decorre de duplicidade, além de normalizar grafias/títulos e separar o conjunto não enumerado de Rubem Alves. Não transformar automaticamente 43 linhas em 43 obras únicas. A distinção entre itens físicos, entradas da lista e obras distintas precisa ficar explícita. O processo SEI integral e a sindicância administrativa estadual continuam sem comprovação nesta apuração.
 
 ## 3. Palmares — esclarecimento parcial da contagem
 
