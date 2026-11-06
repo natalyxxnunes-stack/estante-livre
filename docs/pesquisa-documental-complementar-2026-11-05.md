@@ -580,3 +580,56 @@ A busca por cópias alternativas encontrou duas referências acadêmicas que per
 **Implicação editorial:** há pelo menos duas URLs históricas citadas em fontes acadêmicas — `cnirc-01-gab-10-06-21.pdf` e `cnirc01_liminar_v2_08_07.pdf`. Não presumir que sejam arquivos idênticos sem cotejo binário ou visual. A divergência de paginação (74/76 páginas) também permanece. O artigo da UFPR é útil para confirmar a circulação e reproduzir trechos específicos, mas não substitui o relatório primário nem valida a lista de 300 entradas/261 itens da transcrição secundária.
 
 **Status EL-025:** permanece parcialmente verificado. A nova rodada acrescenta referências acadêmicas independentes e dois caminhos históricos de arquivo; não comprova a íntegra do relatório, a lista primária dos 300 títulos, o destino físico dos exemplares ou a situação judicial atual.
+
+
+## EL-025 — novos documentos primários localizados no portal oficial da FCP (05/11/2026, rodada noturna)
+
+### Inventário bibliográfico oficial — conferência direta
+
+A página oficial de downloads do CNIRC lista o PDF “Inventário dos Livros da Fundação Cultural Palmares”. Link direto:
+https://www.gov.br/palmares/pt-br/centrais-de-conteudo/publicacoes/lista-de-livros-atualizada-8-8-2024-1.pdf
+
+O PDF tem 295 páginas no arquivo, mas sua paginação interna chega a 205 páginas de inventário. A introdução informa que o inventário do antigo acervo é composto por **9.696 títulos** e foi realizado entre julho e outubro de 2021; o arquivo foi publicado/atualizado em 08/08/2024. Não tratar 2024 como data de inventário físico. A listagem inclui título, autor, editora, ano e quantidade.
+
+A busca textual direta encontrou, entre outros:
+- “O Sexo na Alemanha Nazista”, item 6708, com quantidade 1;
+- “Amor em grupo”, item 1183, de Gilbert D. Bartell, Artenova, 1972, quantidade 1;
+- “O Manifesto Comunista”, item 6356, de Karl Marx et al., Editora Mirante, quantidade 1.
+
+Essas correspondências demonstram que os títulos aparecem no inventário bibliográfico oficial compilado em 2021. Não demonstram que os exemplares permaneceram fisicamente no acervo após a triagem de 2021, nem que correspondem à edição específica mencionada no Relatório 01. O inventário declara 9.696 títulos; sua numeração interna chega a 9.696. A referência a “8.808 registros” em leitura preliminar não deve ser usada como total — foi erro de leitura da paginação parcial/extração.
+
+### Resposta institucional à Comissão de Cultura — PDF oficial de 92 páginas
+
+Página oficial do CNIRC:
+https://www.gov.br/palmares/pt-br/centrais-de-conteudo/publicacoes/download-1
+
+PDF:
+https://www.gov.br/palmares/pt-br/midias/arquivos/download/resposta.pdf
+
+O arquivo intitula-se “Respostas da FCP aos relatórios da Comissão de Cultura da Câmara dos Deputados, seguidas dos próprios relatórios em questão”, Brasília, novembro de 2021. Contém:
+1. Nota Informativa FCP nº 0166090/2021, processo SEI nº 01420.101641/2021-35, assinada eletronicamente por Marco Aurélio Franco em 06/11/2021;
+2. relatório técnico da Comissão de Cultura/Câmara sobre conservação dos acervos e áreas de guarda.
+
+A Nota da FCP afirma que títulos que a gestão pretendia doar permaneceriam no acervo por força de liminar e menciona a compra de 4.795 exemplares do acervo Clóvis Moura por R$ 80 mil em 2003, bem como processo de averiguação. Essas são declarações da própria Fundação, não comprovação independente de irregularidade. O relatório da Câmara é peça distinta, voltada à conservação e às áreas de guarda; não é o Relatório Público 01/CNIRC.
+
+### Política de acervo publicada em 2023 — critérios e rito
+
+PDF oficial:
+https://www.gov.br/palmares/pt-br/centrais-de-conteudo/publicacoes/PolticadeFormaoeDesenvolvimentodeAcervoFundaoCulturalPalmares06072023.pdf
+
+A política de 2023 prevê inventário anual e observação das coleções a cada dois anos; avaliação por comissão; desbastamento/remanejamento; e, para descarte, lista compilada pela Biblioteca e submetida à Comissão Permanente de Formação, Desenvolvimento e Gestão do Acervo, com participação de bibliotecário. Após a análise da comissão, ocorre a baixa definitiva. O texto também prevê armazenamento de material remanejado por um ano antes de decisão sobre descarte ou reincorporação.
+
+**Limite temporal:** trata-se da política publicada em 2023. Não presumir que esse rito tenha sido aplicado retroativamente à triagem de 2021, nem que sua existência comprove a execução de qualquer descarte.
+
+### Correção de consistência obrigatória
+
+Há uma frase incorreta em um adendo anterior deste arquivo que afirma que o Relatório CNIRC 01 teria sido “recuperado integralmente no PDF do MPF”. **Isso é falso e fica expressamente corrigido.** O PDF oficial da FCP de 92 páginas contém a Nota Informativa da Fundação e o relatório técnico da Comissão de Cultura da Câmara; não contém o Relatório Público 01/CNIRC. O Relatório 01 integral continua não recuperado. Não usar a resposta FCP/Câmara, o inventário geral ou a política de acervo como substitutos do original.
+
+### Efeito no cadastro
+
+Adicionar ao EL-025 as fontes primárias:
+- inventário bibliográfico oficial FCP/CNIRC, compilado em 2021 e publicado em 08/08/2024;
+- resposta institucional FCP à Comissão de Cultura, Nota Informativa 0166090/2021, em PDF oficial de 92 páginas;
+- política oficial de formação e desenvolvimento do acervo publicada em 2023.
+
+Manter **EL-025 parcialmente verificado**. O avanço fecha a prova de que três títulos citados em fontes relacionadas constam do inventário oficial geral e melhora a documentação da posição institucional e do rito de descarte. Permanecem pendentes: Relatório 01 integral, validação completa da lista de 300/261 entradas, decisão e autos judiciais integrais, processo de averiguação do contrato Clóvis Moura, atos/atas da comissão e destino físico atual dos títulos.
