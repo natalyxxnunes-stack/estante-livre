@@ -94,9 +94,15 @@ for(const [k,L] of Object.entries(LACUNAS)){
 if(erros.length){ console.error("Erros nos dados:\n- " + erros.join("\n- ")); process.exit(1); }
 
 /* ---------- 2. cabeçalho, menu e rodapé ---------- */
-const NAV = [["index.html","Painel"],["casos.html","Casos"],["livros.html","Livros"],["atos.html","Atos"],["normas.html","Normas"],["analises.html","Análises"],
-  ["historia.html","História"],["mundo.html","Mundo"],["metodologia.html","Metodologia"],["sobre.html","Sobre"]];
+const NAV = [["casos.html","Casos"],["livros.html","Livros"],["atos.html","Atos"],["normas.html","Normas"],["painel.html","Dados"],
+  ["analises.html","Análises"],["historia.html","História"],["mundo.html","Mundo"],["metodologia.html","Metodologia"],["sobre.html","Sobre"]];
 const TAGLINE = "Observatório de censura de livros · quem mandou tirar da estante, com qual ato, e o que aconteceu depois";
+/* colunas do rodapé: [título, [[href, nome], ...]] */
+const RODAPE = [
+  ["Acervo", [["casos.html","Casos"],["livros.html","Livros"],["atos.html","Atos"],["normas.html","Normas"],["painel.html","Painel de dados"]]],
+  ["Leitura", [["analises.html","Análises"],["historia.html","História"],["mundo.html","Mundo"],["glossario.html","Glossário"],["cobertura.html","Cobertura"]]],
+  ["Projeto", [["metodologia.html","Metodologia"],["pendencias.html","O que falta apurar"],["sobre.html","Sobre e contato"],["imprensa.html","Para jornalistas"],["guia.html","Guia para escolas"],["relate.html","Relate um caso"]]]
+];
 
 function cabecalho(raiz, atual){
   const links = NAV.map(([href,nome]) => href===atual
@@ -105,20 +111,26 @@ function cabecalho(raiz, atual){
   return `<header class="topo">
   <div class="topo-in">
     <a class="logo" href="${raiz}index.html" aria-label="Estante Livre, página inicial">Estante <span class="redact">Livre<span class="bar" aria-hidden="true"></span></span></a>
-    <div class="tagline">${TAGLINE}</div>
-    <nav class="nav" aria-label="Seções">
+    <button class="menu-bt" type="button" aria-expanded="false" aria-controls="nav-principal">Menu</button>
+    <nav class="nav" id="nav-principal" aria-label="Seções">
       ${links}
     </nav>
   </div>
 </header>`;
 }
 function rodape(raiz){
+  const cols = RODAPE.map(([t,ls]) => `<nav class="foot-col" aria-label="${t}"><p class="foot-tit">${t}</p>${ls.map(([h,n])=>`<a href="${raiz}${h}">${n}</a>`).join("")}</nav>`).join("\n    ");
   return `<footer class="foot">
   <div class="foot-in">
-    <span>Estante Livre · um projeto de Nataly Nunes Pinto</span>
-    <span class="foot-links"><a href="${raiz}glossario.html">Glossário</a><a href="${raiz}cobertura.html">Cobertura</a><a href="${raiz}pendencias.html">O que falta apurar</a><a href="${raiz}guia.html">Guia para escolas</a><a href="${raiz}imprensa.html">Para jornalistas</a><a href="${raiz}relate.html">Relate um caso</a><a href="${raiz}dados/estante-livre-casos.csv">Dados abertos</a><a href="${raiz}sobre.html">Contato</a></span>
-    <span id="foot-meta"></span>
+    <div class="foot-marca">
+      <a class="logo logo-s" href="${raiz}index.html" aria-label="Estante Livre, página inicial">Estante <span class="redact">Livre<span class="bar" aria-hidden="true"></span></span></a>
+      <p>${TAGLINE}.</p>
+      <p>Projeto independente de Nataly Nunes Pinto. Dados e textos sob licença CC BY 4.0.</p>
+      <p class="foot-dados"><a href="${raiz}dados/estante-livre-casos.csv">Casos em CSV</a> · <a href="${raiz}dados/estante-livre-casos.json">JSON</a> · <a href="${raiz}dados/estante-livre-normas.csv">Normas em CSV</a></p>
+    </div>
+    ${cols}
   </div>
+  <div class="foot-base"><span id="foot-meta"></span></div>
 </footer>`;
 }
 const blocoGerado = (html, nome, conteudo) => {
@@ -145,12 +157,13 @@ const DATASET = {"@context":"https://schema.org","@type":"Dataset",
     {"@type":"DataDownload","encodingFormat":"text/csv","contentUrl":SITE+"/dados/estante-livre-casos.csv"},
     {"@type":"DataDownload","encodingFormat":"application/json","contentUrl":SITE+"/dados/estante-livre-casos.json"}]};
 
-const PAGINAS = ["index.html","casos.html","livros.html","normas.html","guia.html","imprensa.html","analises.html","historia.html","mundo.html","glossario.html","metodologia.html","sobre.html","cobertura.html","relate.html"];
+const PAGINAS = ["index.html","painel.html","casos.html","livros.html","normas.html","guia.html","imprensa.html","analises.html","historia.html","mundo.html","glossario.html","metodologia.html","sobre.html","cobertura.html","relate.html"];
 for(const f of PAGINAS){
   let h = ler(f);
   h = h.replace(/<header class="topo">[\s\S]*?<\/header>/, cabecalho("", f));
   h = h.replace(/<footer class="(?:foot|rodape)">[\s\S]*?<\/footer>/, rodape(""));
   h = h.split("https://estante-livre-br.vercel.app").join(SITE);
+  if(!h.includes('rel="preload" href="assets/fontes/Fraunces.woff2"')) h = h.replace('<link rel="stylesheet" href="assets/estilo.css">', '<link rel="preload" href="assets/fontes/Fraunces.woff2" as="font" type="font/woff2" crossorigin>\n<link rel="stylesheet" href="assets/estilo.css">');
   if(f==="index.html") h = comJsonLd(h, {"@context":"https://schema.org","@graph":[
     {"@type":"WebSite","name":"Estante Livre","url":SITE+"/","inLanguage":"pt-BR","publisher":ORG}, ORG]});
   if(f==="casos.html"){
@@ -192,6 +205,7 @@ ${url?`<link rel="canonical" href="${url}">`:`<meta name="robots" content="noind
 ${url?`<meta property="og:url" content="${url}">`:""}
 <meta property="og:image" content="${SITE}/og-estante-livre.jpg">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="${raiz}assets/fontes/Fraunces.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="${raiz}assets/estilo.css">
 ${ld?jsonld(ld):""}
 </head>
@@ -251,7 +265,7 @@ for(const c of CASOS){
     "citation":fontesLd};
   const corpo = `<div class="wrap">
   <div class="hero-pg">
-    <p class="migalha"><a href="../index.html">Painel</a> › <a href="../casos.html">Casos</a> › ${c.id}</p>
+    <nav class="migalha" aria-label="Você está em"><a href="../index.html">Início</a> › <a href="../casos.html">Casos</a> › <span aria-current="page">${c.id}</span></nav>
     <p class="resumo-fato">${esc(resumo)}</p>
   </div>
 </div>
@@ -285,7 +299,7 @@ for(const obra of obras){
     "subjectOf":ocs.map(o=>({"@type":"Article","url":`${SITE}/casos/${o.id.toLowerCase()}.html`,"name":`${o.id} · ${o.uf}, ${o.data.slice(0,4)}`}))};
   const corpo = `<div class="wrap">
   <div class="hero-pg">
-    <p class="migalha"><a href="../index.html">Painel</a> › <a href="../livros.html">Livros</a> › ${esc(curto(obra))}</p>
+    <nav class="migalha" aria-label="Você está em"><a href="../index.html">Início</a> › <a href="../livros.html">Livros</a> › <span aria-current="page">${esc(curto(obra))}</span></nav>
   </div>
 </div>
 <div class="wrap">
@@ -322,7 +336,7 @@ for(const [k,A] of Object.entries(ATOS)){
   const linha = (rot,v)=> v?`<div class="resp-linha"><span class="k">${rot}</span><div>${esc(v)}</div></div>`:"";
   const corpo = `<div class="wrap">
   <div class="hero-pg">
-    <p class="migalha"><a href="../index.html">Painel</a> › <a href="../atos.html">Atos</a> › ${esc(k)}</p>
+    <nav class="migalha" aria-label="Você está em"><a href="../index.html">Início</a> › <a href="../atos.html">Atos</a> › <span aria-current="page">${esc(k)}</span></nav>
     <h1>${esc(A.nome)}</h1>
     <p class="lede">${esc([A.cidade,A.uf].filter(Boolean).join(", "))} · ${R.dataLegivel(A)} · biblioteca ${esc(A.tipo.toLowerCase())}, rede ${esc(A.rede.toLowerCase())}${A.governo?` · ${esc(A.governo)}`:""}</p>
   </div>

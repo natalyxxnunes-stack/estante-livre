@@ -18,6 +18,7 @@
 <meta property="og:url" content="https://estante-livre-br.vercel.app/casos/el-034.html">
 <meta property="og:image" content="https://estante-livre-br.vercel.app/og-estante-livre.jpg">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="../assets/fontes/Fraunces.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="../assets/estilo.css">
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"A bolsa amarela: quem contestou (SP, 2019)","description":"A bolsa amarela, de Lygia Bojunga. Limeira, SP, agosto de 2019. Veto a atividade; pressão pública; situação: sem efeito. Quem pediu, quem decidiu, quem assinou, justificativa declarada e fontes.","url":"https://estante-livre-br.vercel.app/casos/el-034.html","inLanguage":"pt-BR","dateModified":"2026-11-06","author":{"@type":"Person","name":"Nataly Nunes Pinto"},"publisher":{"@type":"Organization","name":"Estante Livre","url":"https://estante-livre-br.vercel.app/","founder":{"@type":"Person","name":"Nataly Nunes Pinto"}},"isPartOf":{"@type":"Dataset","name":"Estante Livre: catálogo de censura de livros em bibliotecas e escolas brasileiras","url":"https://estante-livre-br.vercel.app/casos.html"},"about":{"@type":"Book","name":"A bolsa amarela","author":{"@type":"Person","name":"Lygia Bojunga"}},"contentLocation":{"@type":"Place","name":"Limeira, SP, Brasil"},"temporalCoverage":"2019-08","citation":[{"@type":"CreativeWork","name":"Tentativas de censura a livros nos primeiros dois anos do governo Bolsonaro · Reimão, Nery e Maués","url":"https://periodicos.ufsm.br/LA/article/view/66347","publisher":"Literatura e Autoritarismo (pesquisa, UFSM)"},{"@type":"CreativeWork","name":"A bolsa amarela, a censura e o direito à leitura","url":"https://www.uninter.com/noticias/?p=77595","publisher":"Uninter Notícias (artigo de opinião)"},{"@type":"CreativeWork","name":"Requerimento nº 451/2019 · Clayton Silva","url":"https://consulta.limeira.sp.leg.br/arquivo?Id=215235","publisher":"Câmara Municipal de Limeira"},{"@type":"CreativeWork","name":"Ofício GSE nº 363/2019 · resposta sobre A bolsa amarela","url":"https://consulta.limeira.sp.leg.br/arquivo?Id=226368","publisher":"Prefeitura de Limeira · Secretaria Municipal de Educação"}]}</script>
 </head>
@@ -26,13 +27,13 @@
 <header class="topo">
   <div class="topo-in">
     <a class="logo" href="../index.html" aria-label="Estante Livre, página inicial">Estante <span class="redact">Livre<span class="bar" aria-hidden="true"></span></span></a>
-    <div class="tagline">Observatório de censura de livros · quem mandou tirar da estante, com qual ato, e o que aconteceu depois</div>
-    <nav class="nav" aria-label="Seções">
-      <a href="../index.html">Painel</a>
+    <button class="menu-bt" type="button" aria-expanded="false" aria-controls="nav-principal">Menu</button>
+    <nav class="nav" id="nav-principal" aria-label="Seções">
       <a href="../casos.html" class="on" aria-current="page">Casos</a>
       <a href="../livros.html">Livros</a>
       <a href="../atos.html">Atos</a>
       <a href="../normas.html">Normas</a>
+      <a href="../painel.html">Dados</a>
       <a href="../analises.html">Análises</a>
       <a href="../historia.html">História</a>
       <a href="../mundo.html">Mundo</a>
@@ -45,7 +46,7 @@
 <main id="conteudo" tabindex="-1">
 <div class="wrap">
   <div class="hero-pg">
-    <p class="migalha"><a href="../index.html">Painel</a> › <a href="../casos.html">Casos</a> › EL-034</p>
+    <nav class="migalha" aria-label="Você está em"><a href="../index.html">Início</a> › <a href="../casos.html">Casos</a> › <span aria-current="page">EL-034</span></nav>
     <p class="resumo-fato">A bolsa amarela, de Lygia Bojunga. Limeira, SP, agosto de 2019. Veto a atividade; pressão pública; situação: sem efeito.</p>
   </div>
 </div>
@@ -71,10 +72,17 @@
 
 <footer class="foot">
   <div class="foot-in">
-    <span>Estante Livre · um projeto de Nataly Nunes Pinto</span>
-    <span class="foot-links"><a href="../glossario.html">Glossário</a><a href="../cobertura.html">Cobertura</a><a href="../pendencias.html">O que falta apurar</a><a href="../guia.html">Guia para escolas</a><a href="../imprensa.html">Para jornalistas</a><a href="../relate.html">Relate um caso</a><a href="../dados/estante-livre-casos.csv">Dados abertos</a><a href="../sobre.html">Contato</a></span>
-    <span id="foot-meta"></span>
+    <div class="foot-marca">
+      <a class="logo logo-s" href="../index.html" aria-label="Estante Livre, página inicial">Estante <span class="redact">Livre<span class="bar" aria-hidden="true"></span></span></a>
+      <p>Observatório de censura de livros · quem mandou tirar da estante, com qual ato, e o que aconteceu depois.</p>
+      <p>Projeto independente de Nataly Nunes Pinto. Dados e textos sob licença CC BY 4.0.</p>
+      <p class="foot-dados"><a href="../dados/estante-livre-casos.csv">Casos em CSV</a> · <a href="../dados/estante-livre-casos.json">JSON</a> · <a href="../dados/estante-livre-normas.csv">Normas em CSV</a></p>
+    </div>
+    <nav class="foot-col" aria-label="Acervo"><p class="foot-tit">Acervo</p><a href="../casos.html">Casos</a><a href="../livros.html">Livros</a><a href="../atos.html">Atos</a><a href="../normas.html">Normas</a><a href="../painel.html">Painel de dados</a></nav>
+    <nav class="foot-col" aria-label="Leitura"><p class="foot-tit">Leitura</p><a href="../analises.html">Análises</a><a href="../historia.html">História</a><a href="../mundo.html">Mundo</a><a href="../glossario.html">Glossário</a><a href="../cobertura.html">Cobertura</a></nav>
+    <nav class="foot-col" aria-label="Projeto"><p class="foot-tit">Projeto</p><a href="../metodologia.html">Metodologia</a><a href="../pendencias.html">O que falta apurar</a><a href="../sobre.html">Sobre e contato</a><a href="../imprensa.html">Para jornalistas</a><a href="../guia.html">Guia para escolas</a><a href="../relate.html">Relate um caso</a></nav>
   </div>
+  <div class="foot-base"><span id="foot-meta"></span></div>
 </footer>
 
 <script>const RAIZ_SITE = "../";</script>
