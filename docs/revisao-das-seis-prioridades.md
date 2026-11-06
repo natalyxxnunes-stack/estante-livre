@@ -59,7 +59,8 @@ A base exportada foi confrontada com a lista de pendências. Onze IDs permanecem
 |---|---|
 | EL-022 | Relação nominal dos 19 títulos de Rubem Fonseca no Adendo SEI 10053329 |
 | EL-023 | Relação nominal das obras de Rubem Alves no mesmo adendo |
-| EL-025 | Íntegra do Relatório Público 01/CNIRC, lista final de 300 títulos e destino da lista; a transcrição secundária de 261 entradas ainda não foi cotejada integralmente com o original |\n| EL-024 | Relação integral dos demais títulos do Adendo SEI 10053329 |
+| EL-024 | Relação integral dos demais títulos do Adendo SEI 10053329 |
+| EL-025 | Íntegra do Relatório Público 01/CNIRC, lista final de 300 títulos e destino da lista; a transcrição secundária de 261 entradas ainda não foi cotejada integralmente com o original |
 | EL-028 | Data de intimação, prova de devolução às escolas e eventual recurso após decisão de 20/07/2026 |
 | EL-030 | Requerimento integral de Jéssica Ramos Moreno, resposta da Secretaria e confirmação de eventual recolhimento |
 | EL-031 | Nota institucional original não recuperada; link de resenha foi temporariamente retirado para avaliação, sem retirada do livro, veto ou adoção obrigatória |
