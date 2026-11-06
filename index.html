@@ -80,6 +80,11 @@
 
 <div class="wrap">
   <p class="note transp" id="transp" style="margin:18px 0 0"></p>
+  <section id="cumprimento">
+    <div class="sechead"><span class="kicker">AGORA</span><h2>À espera de cumprimento</h2></div>
+    <p class="note">Decisões e anúncios sobre livros recolhidos cujo desfecho ninguém confirmou: a devolução prometida, a sentença sem cumprimento, a análise sem resultado. O contador corre desde a data da decisão.</p>
+    <div class="cump-lista" id="cump-lista"></div>
+  </section>
   <section>
     <div class="sechead"><span class="kicker">01</span><h2>O que tentaram fazer com os livros, e até onde chegou</h2></div>
     <p class="note"><span id="txt-mod"></span> Autocensura segue em zero porque depende de relato de quem trabalha na biblioteca. Clique numa barra para ver os casos.</p>
@@ -161,6 +166,7 @@ const T = CASOS;
 
 document.getElementById("n-casos").textContent = T.length;
 document.getElementById("n-estados").textContent = unicos(T,"uf");
+document.getElementById("cump-lista").innerHTML = Object.entries(ATOS).filter(([k,a])=>a.cumprimento).sort((x,y)=>y[1].cumprimento.desde.localeCompare(x[1].cumprimento.desde)).map(([k,a])=>`<a class="cump" href="atos/${k.toLowerCase()}.html"><div class="n">${textoDias(diasDesde(a.cumprimento.desde))}</div><div class="l">SEM CONFIRMAÇÃO</div><div class="u">${esc(a.nome)}</div><p>${esc(a.cumprimento.decisao)} em ${dataCurta(a.cumprimento.desde)}. ${esc(a.cumprimento.falta)}.</p></a>`).join("");
 document.getElementById("n-atos").textContent = new Set(T.map(c=>c.ato)).size;
 document.getElementById("n-titulos").textContent = new Set(T.map(obraDe)).size;
 document.getElementById("n-verif").textContent = T.filter(verificado).length;

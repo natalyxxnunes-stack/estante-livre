@@ -11,6 +11,11 @@ const verificado = c => c.verificado === "Sim" && (c.fontes||[]).length >= 2;
    Confirmado (verificado com duas ou mais fontes) ou Parcial. */
 const docsPrimarios = c => ((typeof ATOS!=="undefined" && ATOS[c.ato]) ? ATOS[c.ato].docPrimario || [] : []);
 const nivelVerif = c => !verificado(c) ? "Parcial" : (docsPrimarios(c).some(f=>(c.fontes||[]).includes(f)) ? "Documentado" : "Confirmado");
+const cumpDe = c => (typeof ATOS!=="undefined" && ATOS[c.ato] && ATOS[c.ato].cumprimento) || null;
+/* dias corridos desde uma data, preenchidos no navegador para não envelhecer nas páginas geradas */
+const diasDesde = d => Math.max(0, Math.floor((Date.now() - new Date(d+"T12:00:00"))/864e5));
+const textoDias = n => n===1 ? "1 dia" : n.toLocaleString("pt-BR")+" dias";
+document.addEventListener("DOMContentLoaded", ()=>{ document.querySelectorAll("[data-desde]").forEach(e=>e.textContent=textoDias(diasDesde(e.dataset.desde))); });
 const NIVEL_TEXTO = {
   Documentado: "Documentado: verificado, com documento oficial primário",
   Confirmado: "Confirmado: verificado com duas ou mais fontes",
@@ -209,6 +214,7 @@ function casoHTML(c, q, nivel){
         '<div class="caso-aleg"><span class="k">JUSTIFICATIVA DECLARADA</span><div>'+m(c.alegacao)+'</div></div>'+
         (c.nota?'<div class="caso-nota">'+m(c.nota)+'</div>':"")+
         '<div class="caso-desf"><span class="k">DESFECHO</span> '+m(c.desfecho)+'</div>'+
+        (cumpDe(c)?'<div class="caso-cump"><span class="k">CUMPRIMENTO</span> '+esc(cumpDe(c).decisao)+' em '+dataCurta(cumpDe(c).desde)+'. '+esc(cumpDe(c).falta)+'. <b><span data-desde="'+cumpDe(c).desde+'"></span> sem confirmação.</b></div>':"")+
         linksFonte(c.fontes)+
         (pend?'<div class="caso-pend"><span class="k">O QUE AINDA APURAMOS</span><div>'+esc(pend)+' <a href="'+RAIZ+'pendencias.html#'+String(c.ato).toLowerCase()+'">Todas as lacunas do catálogo</a></div></div>':"")+
         '<div class="pront-rod"><span><a href="'+RAIZ+'metodologia.html#niveis">'+NIVEL_TEXTO[nivelVerif(c)]+'</a></span>'+

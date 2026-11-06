@@ -72,6 +72,7 @@ for(const [k,a] of Object.entries(ATOS)){
   for(const f of ["nome","data","uf","tipo","rede","quem"]) if(!a[f]) erros.push(`ATOS ${k}: campo ${f} vazio`);
   if(!CASOS.some(c=>c.ato===k)) erros.push(`ATOS ${k}: ato sem registro`);
   if(a.reversao){ if(!VIAS_REVERSAO.includes(a.reversao.via)) erros.push(`ATOS ${k}: via de reversão fora da lista`); if(!FONTES[a.reversao.fonte]) erros.push(`ATOS ${k}: fonte da reversão inexistente`); if(!/^\d{4}-\d{2}-\d{2}$/.test(a.reversao.data||"")) erros.push(`ATOS ${k}: data da reversão fora do formato`); }
+  if(a.cumprimento){ if(!FONTES[a.cumprimento.fonte]) erros.push(`ATOS ${k}: fonte do cumprimento inexistente`); if(!/^\d{4}-\d{2}-\d{2}$/.test(a.cumprimento.desde||"")) erros.push(`ATOS ${k}: data do cumprimento fora do formato`); }
   if(a.reversao && !CASOS.some(c=>c.ato===k && c.situacao==="Revertido")) erros.push(`ATOS ${k}: reversão cadastrada, mas nenhum registro está como Revertido`);
   for(const f of a.docPrimario||[]){ if(!FONTES[f]) erros.push(`ATOS ${k}: docPrimario aponta para fonte inexistente: ${f}`); if(!CASOS.some(c=>c.ato===k && (c.fontes||[]).includes(f))) erros.push(`ATOS ${k}: docPrimario ${f} não está nas fontes de nenhum registro do ato`); }
 }

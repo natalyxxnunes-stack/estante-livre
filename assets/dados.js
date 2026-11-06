@@ -336,6 +336,7 @@ const ATOS = {
      resposta:"O livro voltou às escolas em abril de 2024."
    }},
  "MS-2024":{
+   cumprimento:{desde:"2024-04-23", decisao:"Governo anunciou a devolução de O avesso da pele às escolas estaduais", falta:"Só 75 das 349 escolas tinham recebido o livro antes do recolhimento, e a redistribuição não foi confirmada", fonte:"cgn-volta"},
    reversao:{via:"Recuo da administração", data:"2024-04-23", fonte:"cgn-volta", nota:"O governo anunciou a devolução; a redistribuição às escolas não foi confirmada."},
    nome:"Recolhimento na rede estadual de Mato Grosso do Sul",
    data:"2024-03-07",
@@ -355,6 +356,7 @@ const ATOS = {
      resposta:"A Secretaria anunciou a devolução em 23 de abril de 2024, com orientações pedagógicas."
    }},
  "SC-2024":{
+   cumprimento:{desde:"2024-04-23", decisao:"Secretaria orientou recolher o livro para análise pedagógica", falta:"O resultado da análise e a devolução às bibliotecas não foram divulgados", fonte:"alesc-ind154-doc"},
    docPrimario:["alesc-ind154-doc"],
    nome:"Orientação de recolhimento e análise pedagógica de O avesso da pele nas bibliotecas estaduais de Santa Catarina",
    data:"2024-03-07",
@@ -460,6 +462,7 @@ const ATOS = {
      resposta:"O Município informou no processo que retomou as atividades em 28/06/2024. Em sentença de 02/12/2024, o juiz Espagner Wallysen Vaz Leite anulou o ato administrativo e confirmou a tutela antecipada na sentença de mérito."
    }},
  "SJC-2024":{
+   cumprimento:{desde:"2026-07-20", decisao:"Sentença mandou restituir o livro às salas de leitura em cinco dias após a intimação", falta:"A Prefeitura não confirmou a devolução e anunciou recurso", fonte:"op-sjc"},
    reversao:{via:"Decisão judicial", data:"2026-07-20", fonte:"op-sjc", nota:"Ação do Ministério Público e da Defensoria. A liminar de 2024 foi suspensa pelo TJSP; a sentença de mérito veio dois anos depois."},
    nome:"Recolhimento de Meninas sonhadoras, mulheres cientistas (São José dos Campos)",
    data:"2024-06-04",
@@ -531,6 +534,7 @@ const ATOS = {
      resposta:"A escola negou prejuízo pedagógico ou direcionamento ideológico. A apuração da piauí informa que não houve adoção da obra nem retirada de exemplares do acervo."
    }},
  "TAU-2025":{
+   cumprimento:{desde:"2026-07-14", decisao:"Prefeitura anunciou a retomada do uso de Pipoca e Picolé após análise técnica", falta:"Não há confirmação de quais escolas receberam os exemplares de volta", fonte:"ovale-tau-jul14"},
    reversao:{via:"Recuo da administração", data:"2026-07-14", fonte:"ovale-tau-jul14", nota:"Análise técnica da própria Secretaria liberou o uso com mediação docente."},
    nome:"Recolhimento de Pipoca e Picolé (Taubaté)",
    data:"2025-11-01",
@@ -549,6 +553,7 @@ const ATOS = {
      resposta:"Em 14 de julho de 2026, a prefeitura informou que, após análise técnica da Coordenação de Área e da Equipe de Práticas Pedagógicas da Educação Infantil, o livro voltaria ao plano de ensino das turmas consideradas adequadas. A efetiva devolução dos exemplares às unidades escolares não foi confirmada."
    }},
  "FUNAP-2020":{
+   cumprimento:{desde:"2020-02-13", decisao:"Funap incluiu a lista original de livros no programa Remição em Rede", falta:"Os exemplares doados tinham sido devolvidos às editoras, e o novo envio não foi comprovado", fonte:"folha-funap-14fev"},
    reversao:{via:"Recuo da administração", data:"2020-02-13", fonte:"folha-funap-14fev", nota:"A Funap incluiu a lista original no programa dois dias depois da repercussão."},
    nome:"Veto à lista do projeto Remição em Rede (Funap)",
    data:"2020-02-11",

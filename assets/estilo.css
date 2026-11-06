@@ -893,3 +893,12 @@ details.mais[open] summary{margin-bottom:12px}
 .tag.s-caiu{background:var(--azul);color:#fff}
 @media(max-width:600px){.difusao li{grid-template-columns:1fr;gap:2px}}
 .analysis-table td.cal-perto{font-weight:700;color:var(--verm-escuro)}
+.caso-cump{font-size:13px;line-height:1.55;margin:0 0 12px;padding:9px 12px;background:#fbffd6;border-left:4px solid var(--tinta)}
+.caso-cump b{color:var(--verm-escuro)}
+.cump-lista{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px;margin-top:12px}
+.cump{background:var(--tinta);color:#fff;padding:16px 18px;text-decoration:none;display:block}
+.cump:hover{background:var(--azul)}
+.cump .n{font-family:var(--f);font-size:40px;line-height:1;color:var(--neon)}
+.cump .l{font-size:11px;letter-spacing:.12em;font-weight:600;margin:4px 0 10px;color:#fff}
+.cump p{font-size:13px;line-height:1.5;margin:0;color:#E8E9F5}
+.cump .u{font-family:var(--f);font-size:17px;color:#fff;margin-bottom:6px}
