@@ -1115,3 +1115,54 @@ hr{border:0;border-top:1px solid var(--linha);margin:24px 0}
  html{scroll-behavior:auto}
  *,*::before,*::after{transition:none!important;animation:none!important}
 }
+
+
+/* Painel inicial: leitura em módulos, sem eliminar séries ou notas do catálogo. */
+@supports selector(.wrap:has(#bars-mod)){
+  .wrap:has(#bars-mod){
+    display:grid;
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    column-gap:42px;
+    align-items:start;
+  }
+  .wrap:has(#bars-mod)>.transp,
+  .wrap:has(#bars-mod)>section:first-of-type{
+    grid-column:1/-1;
+  }
+  .wrap:has(#bars-mod)>section{
+    min-width:0;
+    padding:25px 0;
+  }
+  .wrap:has(#bars-mod)>section:first-of-type{
+    display:grid;
+    grid-template-columns:repeat(3,minmax(0,1fr));
+    column-gap:24px;
+    align-items:start;
+  }
+  .wrap:has(#bars-mod)>section:first-of-type>.sechead,
+  .wrap:has(#bars-mod)>section:first-of-type>.note{
+    grid-column:1/-1;
+  }
+  .wrap:has(#bars-mod)>section:first-of-type>.sub-tit{
+    align-self:end;
+    margin-top:14px;
+  }
+  .wrap:has(#bars-mod)>section:first-of-type>.bars{
+    min-width:0;
+  }
+  .wrap:has(#bars-mod)>section:nth-of-type(2),
+  .wrap:has(#bars-mod)>section:nth-of-type(3),
+  .wrap:has(#bars-mod)>section:nth-of-type(4),
+  .wrap:has(#bars-mod)>section:nth-of-type(5),
+  .wrap:has(#bars-mod)>section:nth-of-type(6),
+  .wrap:has(#bars-mod)>section:nth-of-type(7){
+    border-bottom:1px solid var(--linha);
+  }
+}
+@media(max-width:760px){
+  @supports selector(.wrap:has(#bars-mod)){
+    .wrap:has(#bars-mod){display:block}
+    .wrap:has(#bars-mod)>section:first-of-type{display:block}
+    .wrap:has(#bars-mod)>section:first-of-type>.sub-tit{margin-top:18px}
+  }
+}
