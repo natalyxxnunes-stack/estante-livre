@@ -253,6 +253,13 @@
      "titulo": "Livro ‘O avesso da pele’ volta a circular nas escolas do Paraná e de Goiás",
      "data": "2024-04-12",
      "url": "https://www.publishnews.com.br/materias/2024/04/12/apanhadao-da-semana-livro-o-avesso-da-pele-volta-a-circular-nas-escola-do-parana-e-de-goias"
+    },
+    {
+     "veiculo": "Assembleia Legislativa de Goiás · notícia de gabinete",
+     "tipo": "Não classificada",
+     "titulo": "Amauri Ribeiro reivindica liderança do movimento pela retirada de livro em escolas de Goiás",
+     "data": "2024-04-01",
+     "url": "https://portal.al.go.leg.br/noticias-dos-gabinetes/143079/amauri-ribeiro-lidera-movimento-para-retirada-de-livro-com-conteudo-pornografico-que-estava-sendo-usado-em-escolas-de-goias"
     }
    ]
   },
@@ -289,13 +296,13 @@
    "ato_ou_documento": "Ordem de recolhimento da rede estadual de Mato Grosso do Sul; documento formal e signatário ainda precisam ser identificados.",
    "verificado": "Sim",
    "pendencia": "Confirmar se o livro chegou de volta às 75 escolas",
-   "nota": "Na Assembleia, a crítica uniu deputados de partidos opostos: Rinaldo Modesto (Podemos) pediu a retirada, Lia Nogueira (PSDB) chamou o livro de “nojento” e Pedro Kemp (PT) disse ter “muitas reservas” sobre o uso no ensino médio. O governador Eduardo Riedel mandou recolher os exemplares das 75 escolas da rede que tinham recebido o livro. Em 23 de abril de 2024 a Secretaria de Educação anunciou a devolução às bibliotecas, “com as orientações pedagógicas quanto à indicação de uso”, sem detalhar quais.",
+   "nota": "Na Assembleia, a crítica uniu deputados de partidos opostos: Rinaldo Modesto, eleito em 2022 pelo Podemos, pediu a retirada; a página oficial da ALEMS para a 12ª Legislatura (2023–2027) também o registra no Podemos, com fonte declarada TRE-MS, mas não fornece histórico individual de filiação por data. Lia Nogueira (PSDB) chamou o livro de “nojento” e Pedro Kemp (PT) disse ter “muitas reservas” sobre o uso no ensino médio. A nota da Secretaria de Educação reproduzida pela Folha em 08/03/2024 atribuiu o recolhimento a determinação do governador Eduardo Riedel e informou que os exemplares haviam sido enviados a 75 escolas. Em 23/04/2024, a Secretaria anunciou a devolução às bibliotecas, “com as orientações pedagógicas quanto à indicação de uso”, sem detalhar as unidades. A notícia de devolução não comprova que todos os exemplares tenham chegado às 75 escolas.",
    "agentes": [
     {
      "nome": "Rinaldo Modesto",
      "tipo": "Pessoa",
      "papel": "Pedido",
-     "cargo": "deputado estadual (Podemos)",
+     "cargo": "deputado estadual",
      "atribuido": false
     },
     {
@@ -348,6 +355,27 @@
      "titulo": "Mato Grosso do Sul é o 3º estado que determina retirada de O Avesso da Pele das escolas",
      "data": "2024-03-07",
      "url": "https://www.cartacapital.com.br/cartaexpressa/mato-grosso-do-sul-e-o-3o-estado-que-determina-retirada-de-o-avesso-da-pele-das-escolas/"
+    },
+    {
+     "veiculo": "Folha de S.Paulo",
+     "tipo": "Não classificada",
+     "titulo": "Livro O avesso da pele é recolhido em Mato Grosso do Sul",
+     "data": "2024-03-08",
+     "url": "https://www1.folha.uol.com.br/ilustrada/2024/03/livro-o-avesso-da-pele-e-removido-de-escolas-no-mato-grosso-do-sul-apos-pr-e-go.shtml"
+    },
+    {
+     "veiculo": "Campo Grande News",
+     "tipo": "Não classificada",
+     "titulo": "Governo anuncia devolução de O avesso da pele às escolas estaduais",
+     "data": "2024-04-23",
+     "url": "https://www.campograndenews.com.br/educacao-e-tecnologia/governo-devolve-livro-polemico-as-escolas-estaduais"
+    },
+    {
+     "veiculo": "Folha de S.Paulo · dados de candidatura",
+     "tipo": "Não classificada",
+     "titulo": "Professor Rinaldo Modesto · eleito deputado estadual pelo Podemos em 2022",
+     "data": "2022",
+     "url": "https://www1.folha.uol.com.br/poder/eleicoes/candidatos/2022/ms/deputado-estadual/professor-rinaldo-modesto-120001615778.shtml"
     }
    ]
   },
@@ -370,7 +398,7 @@
    "rede": "Estadual",
    "governo_na_epoca": "Jorginho Mello (PL) · governo de SC",
    "instancia_registrada": "Secretaria de Estado da Educação de Santa Catarina",
-   "mecanismo": "Ocultação ou restrição de acesso",
+   "mecanismo": "Retirada",
    "estagio": "Decisão ou ordem",
    "situacao": "Em aberto",
    "desfecho": "A orientação administrativa está documentada. A execução em cada escola, eventual revogação e retorno dos exemplares às bibliotecas não foram confirmados.",
@@ -383,8 +411,8 @@
    "resposta_ou_reversao": "A Secretaria justificou a orientação como análise pedagógica e adequação às faixas etárias. A resposta foi encaminhada à ALESC em 04/06/2024; não foi localizada comprovação pública de revogação ou retorno dos exemplares às bibliotecas.",
    "ato_ou_documento": "Informação nº 304/2024/SED/DIEN, de 23/04/2024, e Ofício/Gabs nº 1017/2024, de 28/05/2024, em resposta à IND/0154/2024, de autoria do deputado estadual Sérgio Motta. A Informação registra que a Secretaria orientou escolas a recolher a obra das bibliotecas e fazer análise pedagógica do livro e de todo o acervo. O Ofício/Gabs encaminhou a manifestação técnica à Casa Civil; o Ofício nº 1064/SCC-DIAL-GEAPI, de 03/06/2024, remeteu a resposta à ALESC. A documentação não individualiza as escolas nem comprova o cumprimento em cada unidade.",
    "verificado": "Sim",
-   "pendencia": "Confirmar quais escolas receberam a orientação, se a medida foi executada e se houve revogação ou retorno do livro às bibliotecas. A documentação comprova a orientação da Secretaria, mas não individualiza as unidades escolares nem o cumprimento em cada uma.",
-   "nota": "A Informação nº 304/2024/SED/DIEN, de 23/04/2024, registra que a Secretaria de Estado da Educação orientou escolas a recolher O avesso da pele das bibliotecas e fazer análise pedagógica da obra e de todo o acervo. A resposta integra o processo da IND/0154/2024, apresentada pelo deputado estadual Sérgio Motta em 06/03/2024. A Informação foi assinada digitalmente por Márcia Loch e Jocelete Isaltina da Silveira dos Santos. O secretário Aristides Cimadon assinou o Ofício/Gabs nº 1017/2024, que encaminhou a manifestação técnica. Não atribuir a ordem ao governador: os documentos consultados identificam a orientação da Secretaria.",
+   "pendencia": "Obter a ordem operacional original enviada às escolas, registros de execução por unidade e informação oficial sobre eventual revogação ou devolução. A documentação comprova a orientação da Seduc, mas não individualiza as escolas que a executaram. A indicação parlamentar antecede a resposta administrativa, porém a relação causal entre o pedido e a orientação de recolhimento não está demonstrada.",
+   "nota": "Em 06/03/2024, o deputado estadual Sérgio Motta apresentou a Indicação IND/0154/2024, sugerindo ao governador e, por meio dele, ao secretário de Educação, a retirada de O avesso da pele das escolas estaduais. Em 11/03/2024, a Presidência da Alesc encaminhou a indicação ao governador Jorginho Mello pelo Ofício GP/DL/0233/2024, assinado por Mauro de Nadal. Em 23/04/2024, a Informação nº 304/2024/SED/DIEN, no processo SCC 4288/2024, declarou que a Seduc orientou as escolas a recolherem exemplares das bibliotecas para análise pedagógica do livro e do acervo; a informação registra exemplares em algumas bibliotecas, não em toda a rede. O documento foi assinado digitalmente por Márcia Loch (27/04) e Jocelete Isaltina da Silveira dos Santos (29/04). Em 28/05/2024, o secretário Aristides Cimadon encaminhou a informação técnica à Casa Civil pelo Ofício/Gabs nº 1017/2024. Em 03/06/2024, a Casa Civil enviou a resposta à Alesc “de ordem do senhor Governador”; essa expressão qualifica o encaminhamento da resposta e não prova que Jorginho Mello tenha ordenado pessoalmente o recolhimento. A documentação confirma a indicação, o encaminhamento e a orientação da Seduc; não prova que a indicação tenha causado a medida, quem expediu a ordem operacional original, a execução escola por escola ou o retorno dos exemplares às bibliotecas.",
    "agentes": [
     {
      "nome": "Sérgio Motta",
@@ -443,6 +471,13 @@
      "titulo": "IND/0154/2024 · Sérgio Motta sugere retirada de O avesso da pele das escolas estaduais",
      "data": "2024-03-06",
      "url": "https://portalelegis.alesc.sc.gov.br/proposicoes/KXWdD/documentos"
+    },
+    {
+     "veiculo": "Assembleia Legislativa de Santa Catarina · Ofício GP/DL/0233/2024",
+     "tipo": "P1",
+     "titulo": "Ofício da Presidência da Alesc encaminha a Indicação 0154/2024 ao governador Jorginho Mello",
+     "data": "2024-03-11",
+     "url": "https://portalelegis.alesc.sc.gov.br/documentos/zedDY"
     },
     {
      "veiculo": "Assembleia Legislativa de Santa Catarina · documentos da Secretaria de Estado da Educação",
@@ -3470,10 +3505,10 @@
    "rede": "Distrital",
    "governo_na_epoca": "Colégio Militar Dom Pedro II · instituição administrada pelo Corpo de Bombeiros Militar do Distrito Federal",
    "instancia_registrada": "Colégio Militar Dom Pedro II",
-   "mecanismo": "Retirada",
+   "mecanismo": "Ocultação ou restrição de acesso",
    "estagio": "Execução comprovada",
    "situacao": "Sem efeito",
-   "desfecho": "Sem retirada de exemplares ou veto à obra comprovado",
+   "desfecho": "Houve retirada temporária de um link de resenha para avaliação; não houve retirada de exemplares, veto à obra ou adoção obrigatória. O link não voltou a ser usado após o exercício.",
    "eixo_tematico": "Sexualidade e gênero",
    "justificativa_declarada": "Pais consideraram inadequada para crianças de cerca de 9 anos uma passagem em que a protagonista deseja ter nascido menino.",
    "pressao_ou_pedido": "Pais de alunos do 4º ano contestaram em grupos de mensagens o uso de uma resenha da obra em atividade de interpretação.",
@@ -3482,7 +3517,7 @@
    "execucao": "Colégio Militar Dom Pedro II; o link da resenha não voltou a ser utilizado depois do encerramento do exercício.",
    "resposta_ou_reversao": "A escola negou prejuízo pedagógico ou direcionamento ideológico. A apuração da piauí informa que não houve adoção da obra nem retirada de exemplares do acervo.",
    "ato_ou_documento": "Atividade de Língua Portuguesa que utilizou link para resenha de A bolsa amarela; não foi localizado ato formal de retirada da obra, e a apuração da piauí afirma que não houve recolhimento de exemplares nem adoção da obra.",
-   "verificado": "Sim",
+   "verificado": "Parcialmente",
    "pendencia": "A nota institucional não foi recuperada como arquivo separado, mas seu conteúdo foi reproduzido pela piauí e confrontado com as declarações do porta-voz do colégio. A ausência do arquivo original não deixa dúvida material sobre o núcleo do caso: houve retirada temporária de um link de resenha para avaliação; não houve retirada de exemplares, adoção obrigatória ou veto à obra.",
    "nota": "A apuração da revista piauí esclareceu que o colégio não havia adotado A bolsa amarela como leitura obrigatória nem retirado exemplares do acervo: o episódio envolveu um link para uma resenha utilizado em exercício de Língua Portuguesa. O colégio retirou temporariamente o link para avaliação pedagógica. Depois da avaliação, o capitão Sidemar da Silva Neves, chefe da seção de relações públicas e ouvidoria, disse à revista que não havia problema na resenha; a nota institucional citada pela reportagem afirmou que a atividade permanecia alinhada ao planejamento didático. Concluído o exercício, o link não voltou a ser utilizado. O registro documenta pressão sobre material de apoio e avaliação temporária de um link, não banimento, recolhimento ou veto ao livro.",
    "agentes": [
@@ -3557,7 +3592,7 @@
      "nome": "Zelinda Drago Rocha (nome parlamentar: Zelinda Pastora)",
      "tipo": "Pessoa",
      "papel": "Pedido",
-     "cargo": "vereadora (PRD)",
+     "cargo": "vereadora",
      "atribuido": false
     },
     {
