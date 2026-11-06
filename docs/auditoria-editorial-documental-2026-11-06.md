@@ -286,4 +286,4 @@ A rodada anterior testou funcionamento e acessibilidade, mas não fez avaliaçã
 
 **Testes:** 94 páginas × 2 larguras sem erro de JavaScript, recurso quebrado ou rolagem horizontal; axe-core sem violações; 33 verificações de interação aprovadas, incluindo os filtros novos.
 
-**Logística das capas:** as imagens foram baixadas por um workflow temporário do GitHub Actions num branch próprio, com deploy da Vercel desligado para esse branch. O branch foi apagado depois.
+**Logística das capas:** as imagens foram baixadas por um workflow temporário do GitHub Actions num branch próprio, com deploy da Vercel desligado para esse branch. O branch `capas-download` continua no repositório porque a sessão não tinha permissão para apagá-lo; pode ser excluído pela página de branches do GitHub sem efeito no site.
