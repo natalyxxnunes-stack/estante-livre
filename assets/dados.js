@@ -580,6 +580,15 @@ const ATOS = {
 };
 
 const FONTES = {
+ "sinop-lei-3499": {"veic":"Só Notícias","data":"2025-07-07","tit":"Prefeito de Sinop sanciona lei que proíbe livros com conteúdo erótico em escolas municipais","url":"https://www.sonoticias.com.br/politica/prefeito-de-sinop-sanciona-lei-que-proibe-livros-com-conteudo-erotico-em-escolas-municipais/"},
+ "cuiaba-pl-ranalli": {"veic":"Câmara Municipal de Cuiabá","data":"2025-04-03","tit":"Projeto de lei que proíbe livros com conteúdo erótico nas escolas do município (íntegra)","url":"https://legislativo.camaracuiaba.mt.gov.br/Arquivo/Documents/PL/454653-20250403110929032941784PLN(8425).pdf"},
+ "pnc-cuiaba-set": {"veic":"Ponto na Curva","data":"2025-09-26","tit":"Projeto que proíbe livros com conteúdo erótico avança na Câmara de Cuiabá","url":"https://www.pontonacurva.com.br/legislativo/projeto-que-proibe-livros-com-conteudo-erotico-avanca-na-camara-de-cuiaba/29039"},
+ "pnc-cuiaba-out": {"veic":"Ponto na Curva","data":"2025-10-03","tit":"Vereadores aprovam lei que proíbe livros com conteúdo erótico em Cuiabá","url":"https://www.pontonacurva.com.br/legislativo/vereadores-aprovam-lei-que-proibe-livros-com-conteudo-erotico-em-cuiaba/29160"},
+ "aleam-pl154": {"veic":"Assembleia Legislativa do Amazonas","data":"2024-03-11","tit":"Projeto de Lei nº 154/2024 (íntegra)","url":"https://sapl.al.am.leg.br/media/sapl/public/materialegislativa/2024/169572/pl-009935.pdf"},
+ "almt-pl1768": {"veic":"Assembleia Legislativa de Mato Grosso","data":"2024-10-30","tit":"Projeto de Lei nº 1768/2024 (íntegra)","url":"https://www.al.mt.gov.br/storage/webdisco/cp/20241030130016157100.pdf"},
+ "serra-pl-2025": {"veic":"Câmara Municipal da Serra","data":"2025-01-27","tit":"Projeto de lei que veda conteúdos eróticos em escolas (íntegra)","url":"https://serra.camarasempapel.com.br/Arquivo/Documents/PL/96208-202501271549010076095I1T6C(9217).pdf"},
+ "alesc-emenda-pl18": {"veic":"Assembleia Legislativa de Santa Catarina","data":"2025-03-06","tit":"Emenda modificativa ao Projeto de Lei nº 0018/2025 (íntegra)","url":"https://portalelegis.alesc.sc.gov.br/documentos/zJgE1"},
+ "camara-pl10583": {"veic":"Agência Câmara de Notícias","data":"2025-08-21","tit":"Comissão aprova medidas contra erotização precoce nas escolas","url":"https://www.camara.leg.br/noticias/1191625-comissao-aprova-medidas-contra-erotizacao-precoce-nas-escolas/"},
  "bdf-bienal": {
   "veic": "Brasil de Fato",
   "data": "2019-09-08",
@@ -1053,6 +1062,39 @@ const CORRECOES = [
  {data:"2026-10-28", id:"EL-002", texto:"Paraná: corrigida a descrição dos expedientes. Anderfábio Oliveira dos Santos assinou o ofício da Secretaria; Laura Patrícia Lopes assinou ofício de teor semelhante do Núcleo Regional de Educação de Curitiba. Não eram coassinantes do mesmo documento."},
 ];
 
+
+
+/* ---------- NORMAS ----------
+   Trilha de normas: leis, projetos e emendas que restringem livros ou material de leitura em escolas e bibliotecas.
+   Levantamento inicial, não exaustivo. "situacao" vale na data de "situacaoEm", segundo a fonte mais recente.
+   "citaLivro": título citado na justificativa. "precedente": norma citada como modelo. "ato": caso do catálogo ligado. */
+const SITUACOES_NORMA = ["Em vigor","Aprovada, sanção a confirmar","Em tramitação","Situação não confirmada","Derrubada na Justiça","Arquivada"];
+const NORMAS = [
+ {id:"N-01", esfera:"Municipal", uf:"PR", cidade:"Londrina", tipo:"Lei", numero:"Lei nº 13.930/2025 (PL 79/2024)", data:"2025-03-21", autoria:"Jéssica Ramos Moreno", partido:"PP",
+  resumo:"Proíbe livros com conteúdo erótico nas escolas municipais.", situacao:"Em vigor", situacaoEm:"2025-03-21", ato:"LON-2024",
+  nota:"Protocolada em abril de 2024 e sancionada em março de 2025. Em novembro de 2024, durante a tramitação, a mesma vereadora encontrou A mamãe vai ter um bebê em um CMEI e pediu o recolhimento (EL-030). A lei é citada como precedente no projeto de Cuiabá.", fontes:["pl79-londrina","lei-londrina-13930"]},
+ {id:"N-02", esfera:"Municipal", uf:"MT", cidade:"Sinop", tipo:"Lei", numero:"Lei nº 3.499/2025", data:"2025-07-07", autoria:"Hedvaldo Costa", partido:"",
+  resumo:"Proíbe o uso e a distribuição de livros e materiais com conteúdo erótico nas escolas municipais; mantém o conteúdo científico sobre reprodução humana adequado à idade. Não prevê fiscalização nem penalidade.", situacao:"Em vigor", situacaoEm:"2025-07-07",
+  nota:"Sancionada pelo prefeito Roberto Dorner na semana anterior a 7 de julho de 2025. A data exata da sanção não está na fonte; a data registrada é a da notícia.", fontes:["sinop-lei-3499"]},
+ {id:"N-03", esfera:"Municipal", uf:"MT", cidade:"Cuiabá", tipo:"Projeto de lei", numero:"Projeto de lei de 2025 (número não identificado)", data:"2025-04-03", autoria:"Rafael Ranalli", partido:"PL",
+  resumo:"Proíbe o uso e a distribuição, em qualquer formato, de livros com conteúdo erótico nas escolas municipais, com definição ampla que inclui cenas implícitas e palavrões.", situacao:"Aprovada, sanção a confirmar", situacaoEm:"2025-10-03", precedente:"N-01",
+  nota:"Aprovado em segunda votação com 22 votos. A justificativa cita a Lei nº 13.930/2025, de Londrina, como precedente. A sanção foi noticiada em outubro de 2025, mas o número da lei ainda não foi confirmado em fonte aberta.", fontes:["cuiaba-pl-ranalli","pnc-cuiaba-set","pnc-cuiaba-out"]},
+ {id:"N-04", esfera:"Estadual", uf:"AM", cidade:"", tipo:"Projeto de lei", numero:"PL nº 154/2024", data:"2024-03-11", autoria:"Débora Menezes", partido:"PL",
+  resumo:"Veda conteúdo erótico, pornográfico e obsceno em escolas públicas e privadas, inclusive em material didático e paradidático, com multa de 1 a 10 salários mínimos.", situacao:"Situação não confirmada", situacaoEm:"2024-03-11", citaLivro:"O avesso da pele",
+  nota:"Apresentado na semana em que O avesso da pele foi recolhido no Paraná e em Goiás. A justificativa cita o livro como motivação. O texto é quase idêntico ao do PL 1768/2024 (MT) e ao do projeto da Serra (ES).", fontes:["aleam-pl154"]},
+ {id:"N-05", esfera:"Estadual", uf:"MT", cidade:"", tipo:"Projeto de lei", numero:"PL nº 1768/2024", data:"2024-10-30", autoria:"Thiago Silva", partido:"",
+  resumo:"Proíbe conteúdo erótico, pornográfico e obsceno em escolas públicas e privadas, incluindo material didático, paradidático e cartilhas; fiscalização pela Secretaria de Educação com a Segurança Pública.", situacao:"Situação não confirmada", situacaoEm:"2024-10-30", citaLivro:"O avesso da pele",
+  nota:"A justificativa cita O avesso da pele como exemplo. Texto quase idêntico ao do PL 154/2024 (AM).", fontes:["almt-pl1768"]},
+ {id:"N-06", esfera:"Municipal", uf:"ES", cidade:"Serra", tipo:"Projeto de lei", numero:"Projeto de lei de 2025 (número em branco no protocolo)", data:"2025-01-27", autoria:"Pastor Dinho Souza", partido:"PL",
+  resumo:"Veda conteúdo erótico, pornográfico e obsceno em escolas municipais e privadas, inclusive em material didático e paradidático; trata a violação por servidor como falta grave e prevê multa de 1 a 10 salários mínimos para instituições privadas.", situacao:"Situação não confirmada", situacaoEm:"2025-01-27",
+  nota:"Mesma estrutura e mesmas expressões dos projetos do Amazonas e de Mato Grosso, com a punição a servidores acrescentada.", fontes:["serra-pl-2025"]},
+ {id:"N-07", esfera:"Estadual", uf:"SC", cidade:"", tipo:"Emenda", numero:"Emenda modificativa ao PL nº 0018/2025", data:"2025-03-06", autoria:"Ana Campagnolo", partido:"",
+  resumo:"Proíbe, sem exceção, o incentivo à leitura de obras obscenas, pornográficas ou que façam apologia a drogas e violência, e exige que as obras recomendadas pelo programa sejam submetidas à aprovação prévia de pais ou responsáveis.", situacao:"Situação não confirmada", situacaoEm:"2025-03-06",
+  nota:"Emenda a projeto de programa de leitura. A aprovação prévia das famílias desloca a escolha do livro do educador para a família. O nome do programa não aparece no documento da emenda.", fontes:["alesc-emenda-pl18"]},
+ {id:"N-08", esfera:"Federal", uf:"BR", cidade:"", tipo:"Projeto de lei", numero:"PL nº 10583/2018", data:"2025-08-21", autoria:"Mariana Carvalho, autora; Nikolas Ferreira, relator do substitutivo", partido:"PL",
+  resumo:"Veda materiais escolares, livros, imagens e recursos audiovisuais com conteúdo erótico, pornográfico ou obsceno inadequado à idade e altera a LDB para exigir consentimento dos responsáveis em conteúdos sobre sexualidade e identidade de gênero.", situacao:"Em tramitação", situacaoEm:"2025-08-21",
+  nota:"Substitutivo aprovado na Comissão de Educação da Câmara em agosto de 2025, depois da Comissão de Previdência, Assistência Social, Infância, Adolescência e Família. Segue para a Comissão de Constituição e Justiça e para o Plenário. A data registrada é a da aprovação na comissão.", fontes:["camara-pl10583"]}
+];
 
 /* ---------- AGENTES ----------
    Pessoas e instituições com papel documentado nas fontes já cadastradas.

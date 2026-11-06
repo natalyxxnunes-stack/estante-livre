@@ -870,3 +870,25 @@ details.mais[open] summary{margin-bottom:12px}
 #chart-chegada .analysis-bar-row{grid-template-columns:minmax(150px,230px) 1fr 24px}
 #chart-chegada .analysis-bar-row small{display:none}
 @media(max-width:680px){#chart-chegada .analysis-bar-row{grid-template-columns:1fr 24px}#chart-chegada .analysis-bar-row>span:first-child{grid-column:1/-1}}
+
+/* normas */
+.difusao{list-style:none;margin:18px 0 6px;padding:0 0 0 18px;border-left:3px solid var(--azul)}
+.difusao li{position:relative;display:grid;grid-template-columns:96px 1fr;gap:12px;padding:8px 0;font-size:14px;line-height:1.45}
+.difusao li::before{content:"";position:absolute;left:-26px;top:13px;width:13px;height:13px;border-radius:50%;background:var(--branco);border:3px solid var(--azul)}
+.difusao li.dif-caso::before{background:var(--verm);border-color:var(--verm)}
+.difusao .dif-data{font-size:12px;letter-spacing:.06em;color:var(--cinza);padding-top:1px}
+.difusao b{font-weight:600;color:var(--verm-escuro)}
+.normas{display:grid;gap:14px;margin-top:14px}
+.norma{border:1px solid var(--linha);border-left:4px solid var(--azul);padding:16px 18px;background:var(--branco)}
+.norma h3{font-family:var(--f);font-size:21px;margin:6px 0 4px;line-height:1.2}
+.norma p{margin:8px 0}
+.norma-top{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.norma-em{font-size:11px;color:var(--cinza)}
+.norma-meta{font-size:13px;color:var(--cinza)}
+.norma-liga{display:flex;flex-direction:column;gap:3px;font-size:13px;margin-top:8px}
+.norma-fontes{font-size:12px;margin-top:10px;padding-top:8px;border-top:1px dashed var(--linha)}
+.tag.s-vigor{background:var(--verm);color:#fff}
+.tag.s-trami{background:var(--neon);color:var(--tinta)}
+.tag.s-incerta{background:var(--papel);color:var(--tinta);border:1px dashed var(--linha-forte)}
+.tag.s-caiu{background:var(--azul);color:#fff}
+@media(max-width:600px){.difusao li{grid-template-columns:1fr;gap:2px}}

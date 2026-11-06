@@ -26,14 +26,14 @@ function contexto(raiz){
     console
   };
   vm.createContext(ctx);
-  vm.runInContext(ler("assets/dados.js") + "\n;this.__D={ATOS,AGENTES,PAPEIS,TIPOS_PAPEL,CASOS,LIVROS,FONTES,MODALIDADES,ESTAGIOS,SITUACOES,EIXOS,CORRECOES,RESPONSABILIDADES,DOCUMENTOS_ATOS,ATUALIZADO,CONTATO,OBSTACULOS,LACUNAS,NIVEIS,CHEGADAS};", ctx);
+  vm.runInContext(ler("assets/dados.js") + "\n;this.__D={ATOS,AGENTES,PAPEIS,TIPOS_PAPEL,CASOS,LIVROS,FONTES,MODALIDADES,ESTAGIOS,SITUACOES,EIXOS,CORRECOES,RESPONSABILIDADES,DOCUMENTOS_ATOS,ATUALIZADO,CONTATO,OBSTACULOS,LACUNAS,NIVEIS,CHEGADAS,NORMAS,SITUACOES_NORMA};", ctx);
   vm.runInContext(ler("assets/comum.js") + "\n;this.__F={esc,obraDe,slug,ordenar,casoHTML,livroHTML,casoCardHTML,livroCardHTML,dataLegivel,urlCaso,urlLivro,urlAto,agentesDoAto,nivelVerif};", ctx);
   return Object.assign(ctx.__F, {__D: ctx.__D});
 }
 const R = contexto("");      // páginas na raiz
 const S = contexto("../");   // páginas em casos/ e livros/
 const D = R.__D;
-const { CASOS, LIVROS, FONTES, MODALIDADES, ESTAGIOS, SITUACOES, EIXOS, ATUALIZADO, ATOS, AGENTES, PAPEIS, TIPOS_PAPEL, OBSTACULOS, LACUNAS, CHEGADAS } = D;
+const { CASOS, LIVROS, FONTES, MODALIDADES, ESTAGIOS, SITUACOES, EIXOS, ATUALIZADO, ATOS, AGENTES, PAPEIS, TIPOS_PAPEL, OBSTACULOS, LACUNAS, CHEGADAS, NORMAS, SITUACOES_NORMA } = D;
 const esc = R.esc, obraDe = R.obraDe, slug = R.slug;
 
 /* ---------- 1. validação ---------- */
@@ -53,6 +53,14 @@ for(const c of CASOS){
   if(c.capa && !fs.existsSync(path.join(RAIZ_REPO,"assets/capas",c.capa+".jpg"))) erros.push(`${c.id}: capa inexistente: ${c.capa}.jpg`);
 }
 for(const t of Object.keys(LIVROS)) if(!CASOS.some(c=>obraDe(c)===t)) erros.push(`LIVROS: ficha sem caso correspondente: “${t}”`);
+for(const n of NORMAS){
+  for(const k of ["id","esfera","uf","tipo","numero","data","autoria","resumo","situacao","situacaoEm","fontes"]) if(!n[k] || (Array.isArray(n[k]) && !n[k].length)) erros.push(`NORMAS ${n.id||"?"}: campo ${k} vazio`);
+  if(!SITUACOES_NORMA.includes(n.situacao)) erros.push(`NORMAS ${n.id}: situação fora da lista: ${n.situacao}`);
+  if(!/^\d{4}-\d{2}-\d{2}$/.test(n.data||"")) erros.push(`NORMAS ${n.id}: data fora do formato`);
+  for(const f of n.fontes||[]) if(!FONTES[f]) erros.push(`NORMAS ${n.id}: fonte inexistente: ${f}`);
+  if(n.ato && !ATOS[n.ato]) erros.push(`NORMAS ${n.id}: ato inexistente: ${n.ato}`);
+  if(n.precedente && !NORMAS.some(x=>x.id===n.precedente)) erros.push(`NORMAS ${n.id}: precedente inexistente: ${n.precedente}`);
+}
 for(const [t,l] of Object.entries(LIVROS)) if(!CHEGADAS.includes(l.chegada)) erros.push(`LIVROS “${t}”: chegada fora da lista: ${l.chegada}`);
 const obras = [...new Set(CASOS.map(obraDe))];
 const slugs = {};
@@ -83,7 +91,7 @@ for(const [k,L] of Object.entries(LACUNAS)){
 if(erros.length){ console.error("Erros nos dados:\n- " + erros.join("\n- ")); process.exit(1); }
 
 /* ---------- 2. cabeçalho, menu e rodapé ---------- */
-const NAV = [["index.html","Painel"],["casos.html","Casos"],["livros.html","Livros"],["atos.html","Atos"],["analises.html","Análises"],
+const NAV = [["index.html","Painel"],["casos.html","Casos"],["livros.html","Livros"],["atos.html","Atos"],["normas.html","Normas"],["analises.html","Análises"],
   ["historia.html","História"],["mundo.html","Mundo"],["metodologia.html","Metodologia"],["sobre.html","Sobre"]];
 const TAGLINE = "Observatório de censura de livros · quem mandou tirar da estante, com qual ato, e o que aconteceu depois";
 
@@ -134,7 +142,7 @@ const DATASET = {"@context":"https://schema.org","@type":"Dataset",
     {"@type":"DataDownload","encodingFormat":"text/csv","contentUrl":SITE+"/dados/estante-livre-casos.csv"},
     {"@type":"DataDownload","encodingFormat":"application/json","contentUrl":SITE+"/dados/estante-livre-casos.json"}]};
 
-const PAGINAS = ["index.html","casos.html","livros.html","analises.html","historia.html","mundo.html","glossario.html","metodologia.html","sobre.html","cobertura.html","relate.html"];
+const PAGINAS = ["index.html","casos.html","livros.html","normas.html","analises.html","historia.html","mundo.html","glossario.html","metodologia.html","sobre.html","cobertura.html","relate.html"];
 for(const f of PAGINAS){
   let h = ler(f);
   h = h.replace(/<header class="topo">[\s\S]*?<\/header>/, cabecalho("", f));
@@ -438,6 +446,11 @@ const linhas = R.ordenar(CASOS,"id").map(c=>{
     agentes:PAPEIS.filter(p=>p.ato===c.ato).map(p=>({nome:AGENTES[p.agente].nome, tipo:AGENTES[p.agente].tipo, papel:p.papel, cargo:p.cargo||"", atribuido:!!p.atribuido})),
     fontes:(c.fontes||[]).map(k=>FONTES[k]).filter(Boolean).map(f=>({veiculo:f.veic, titulo:f.tit, data:f.data||"", url:f.url}))};
 });
+{
+  const cols = ["id","esfera","uf","cidade","tipo","numero","data","autoria","partido","resumo","situacao","situacaoEm","citaLivro","precedente","ato","nota","fontes"];
+  const cel = v => `"${(v??"").toString().replace(/"/g,'""')}"`;
+  gravar("dados/estante-livre-normas.csv", "\uFEFF" + [cols.join(","), ...NORMAS.map(n=>cols.map(k=>cel(k==="fontes" ? n.fontes.map(f=>FONTES[f].url).join("; ") : n[k])).join(","))].join("\n") + "\n");
+}
 gravar("dados/estante-livre-casos.json", JSON.stringify({
   nome:"Estante Livre: catálogo de censura de livros em bibliotecas e escolas brasileiras",
   autoria:"Nataly Nunes Pinto", atualizado:ATUALIZADO, licenca:"CC BY 4.0",

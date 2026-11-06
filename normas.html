@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Normas · Estante Livre</title>
+<meta name="description" content="Leis, projetos e emendas que restringem livros e material de leitura em escolas brasileiras, com autoria, situação e o caso que motivou cada uma.">
+<link rel="icon" href="favicon.ico" sizes="32x32">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="theme-color" content="#D62410">
+<link rel="canonical" href="https://estante-livre-br.vercel.app/normas.html">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Estante Livre">
+<meta property="og:title" content="Normas · Estante Livre">
+<meta property="og:description" content="Quando o caso vira regra: leis e projetos que restringem livros em escolas.">
+<meta property="og:url" content="https://estante-livre-br.vercel.app/normas.html">
+<meta property="og:image" content="https://estante-livre-br.vercel.app/og-estante-livre.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="stylesheet" href="assets/estilo.css">
+</head>
+<body>
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+<header class="topo">
+  <div class="topo-in">
+    <a class="logo" href="index.html" aria-label="Estante Livre, página inicial">Estante <span class="redact">Livre<span class="bar" aria-hidden="true"></span></span></a>
+    <div class="tagline">Observatório de censura de livros · quem mandou tirar da estante, com qual ato, e o que aconteceu depois</div>
+    <nav class="nav" aria-label="Seções">
+      <a href="index.html">Painel</a>
+      <a href="casos.html">Casos</a>
+      <a href="livros.html">Livros</a>
+      <a href="atos.html">Atos</a>
+      <a href="normas.html" class="on" aria-current="page">Normas</a>
+      <a href="analises.html">Análises</a>
+      <a href="historia.html">História</a>
+      <a href="mundo.html">Mundo</a>
+      <a href="metodologia.html">Metodologia</a>
+      <a href="sobre.html">Sobre</a>
+    </nav>
+  </div>
+</header>
+<main id="conteudo" tabindex="-1">
+
+<div class="wrap">
+  <div class="hero-pg">
+    <h1>Normas</h1>
+    <p class="lede">Quando o caso vira regra. Leis, projetos e emendas que restringem livros e material de leitura em escolas, com quem propôs, em que pé estão e qual caso as motivou.</p>
+  </div>
+</div>
+
+<div class="bignums">
+  <div class="bignums-in">
+    <div class="bignum"><div class="n" id="nn-total">–</div><div class="l">NORMAS LEVANTADAS</div></div>
+    <div class="bignum"><div class="n" id="nn-vigor">–</div><div class="l">EM VIGOR</div></div>
+    <div class="bignum"><div class="n" id="nn-trami">–</div><div class="l">APROVADAS OU EM TRAMITAÇÃO</div></div>
+    <div class="bignum"><div class="n" id="nn-livro">–</div><div class="l">CITAM UM LIVRO DO CATÁLOGO</div></div>
+    <div class="bignum"><div class="n" id="nn-uf">–</div><div class="l">UFS, MAIS O CONGRESSO</div></div>
+  </div>
+</div>
+
+<div class="wrap">
+  <section>
+    <div class="sechead"><span class="kicker">01</span><h2>Como uma norma copia a outra</h2></div>
+    <p class="analysis-lead">O avesso da pele foi recolhido no Paraná e em Goiás na primeira semana de março de 2024. No dia 11, a Assembleia do Amazonas recebeu um projeto que cita o livro na justificativa. O mesmo texto reapareceu em Mato Grosso e na Serra (ES), e a lei de Londrina virou modelo declarado para Cuiabá.</p>
+    <ol class="difusao" id="difusao"></ol>
+    <p class="note">Os projetos do Amazonas, de Mato Grosso e da Serra repetem a mesma estrutura e as mesmas expressões, como a inclusão de material “didático, paradidático ou cartilha” e, em dois deles, a multa de 1 a 10 salários mínimos. A semelhança aparece na íntegra de cada texto, linkada nas fichas abaixo.</p>
+  </section>
+
+  <section>
+    <div class="sechead"><span class="kicker">02</span><h2>As normas</h2><span class="count" id="count-normas"></span></div>
+    <p class="note" id="partidos"></p>
+    <div class="normas" id="lista-normas"></div>
+    <p><a class="btn ghost" href="dados/estante-livre-normas.csv">Baixar as normas em CSV</a></p>
+  </section>
+
+  <section style="border-bottom:0">
+    <div class="sechead"><span class="kicker">03</span><h2>Como ler esta página</h2></div>
+    <div class="gloss">
+      <div class="gterm"><h3>Levantamento inicial</h3><div class="gdef">A lista reúne normas localizadas em fontes abertas a partir dos casos do catálogo. Câmaras municipais publicam pouco e de forma irregular, então há certamente mais normas do que as listadas aqui.</div></div>
+      <div class="gterm"><h3>Situação com data</h3><div class="gdef">A situação de cada norma vale para a data indicada, segundo a fonte mais recente localizada. “Situação não confirmada” quer dizer que a fonte mostra a apresentação do projeto e nada depois dela.</div></div>
+      <div class="gterm"><h3>Fora da contagem de casos</h3><div class="gdef">Uma norma restringe uma categoria de conteúdo e raramente nomeia um livro. Por isso ela fica nesta trilha própria e entra no catálogo de casos só quando for aplicada a uma obra identificável.</div></div>
+      <div class="gterm"><h3>Mande uma norma</h3><div class="gdef">Conhece lei ou projeto que falta aqui? Use o contato da página <a href="sobre.html">Sobre</a>, com o número e o link da casa legislativa.</div></div>
+    </div>
+  </section>
+</div>
+
+</main>
+<footer class="foot">
+  <div class="foot-in">
+    <span>Estante Livre · um projeto de Nataly Nunes Pinto</span>
+    <span class="foot-links"><a href="glossario.html">Glossário</a><a href="cobertura.html">Cobertura</a><a href="pendencias.html">O que falta apurar</a><a href="relate.html">Relate um caso</a><a href="dados/estante-livre-casos.csv">Dados abertos</a><a href="sobre.html">Contato</a></span>
+    <span id="foot-meta"></span>
+  </div>
+</footer>
+
+<script src="assets/dados.js"></script>
+<script src="assets/comum.js"></script>
+<script>
+const N = [...NORMAS].sort((a,b)=>a.data.localeCompare(b.data));
+const $ = id => document.getElementById(id);
+const local = n => n.esfera==="Federal" ? "Congresso Nacional" : (n.cidade ? `${n.cidade} (${n.uf})` : `Assembleia de ${n.uf}`);
+$("nn-total").textContent = N.length;
+$("nn-vigor").textContent = N.filter(n=>n.situacao==="Em vigor").length;
+$("nn-trami").textContent = N.filter(n=>["Aprovada, sanção a confirmar","Em tramitação"].includes(n.situacao)).length;
+$("nn-livro").textContent = N.filter(n=>n.citaLivro || n.ato).length;
+$("nn-uf").textContent = new Set(N.filter(n=>n.esfera!=="Federal").map(n=>n.uf)).size;
+$("count-normas").innerHTML = `<b>${N.length}</b> normas`;
+
+/* linha do tempo da difusão: o caso que dispara e as normas em ordem */
+const marcos = [{data:"2024-03-04", txt:"Começa o recolhimento de O avesso da pele no Paraná; Goiás segue no dia 7", href:"casos/el-002.html", caso:true}]
+  .concat(N.map(n=>({data:n.data, n})));
+marcos.sort((a,b)=>a.data.localeCompare(b.data));
+$("difusao").innerHTML = marcos.map(m=>{
+  if(m.caso) return `<li class="dif-caso"><span class="dif-data">${dataCurta(m.data)}</span><span class="dif-txt"><a href="${m.href}">${esc(m.txt)}</a></span></li>`;
+  const n=m.n, liga=[n.citaLivro?`cita ${n.citaLivro}`:"", n.precedente?`cita ${N.find(x=>x.id===n.precedente).numero.replace(/ \(.*/,"")} como modelo`:""].filter(Boolean).join(" · ");
+  return `<li><span class="dif-data">${dataCurta(n.data)}</span><span class="dif-txt"><a href="#${n.id.toLowerCase()}">${esc(local(n))}</a> · ${esc(n.tipo.toLowerCase())}${liga?` <b>${esc(liga)}</b>`:""}</span></li>`;
+}).join("");
+
+const comPartido = N.map(n=>n.partido).filter(Boolean);
+const cont = {}; comPartido.forEach(p=>cont[p]=(cont[p]||0)+1);
+$("partidos").textContent = `Em ${comPartido.length} das ${N.length} normas o partido de quem propôs ou relatou está na fonte: ${Object.entries(cont).sort((a,b)=>b[1]-a[1]).map(([p,k])=>`${k} do ${p}`).join(" e ")}. Nas demais, a fonte não informa o partido, e o observatório registra só o nome.`;
+
+const clsSit = s => s==="Em vigor" ? "s-vigor" : (s==="Derrubada na Justiça"||s==="Arquivada") ? "s-caiu" : s==="Situação não confirmada" ? "s-incerta" : "s-trami";
+$("lista-normas").innerHTML = [...N].reverse().map(n=>`
+<article class="norma" id="${n.id.toLowerCase()}">
+  <div class="norma-top"><span class="caso-id">${n.id}</span><span class="tag ${clsSit(n.situacao)}">${esc(n.situacao)}</span><span class="norma-em">em ${dataCurta(n.situacaoEm)}</span></div>
+  <h3>${esc(n.numero)}</h3>
+  <div class="norma-meta">${esc(local(n))} · ${esc(n.esfera.toLowerCase())} · ${esc(n.autoria)}${n.partido?` (${esc(n.partido)})`:""}</div>
+  <p>${esc(n.resumo)}</p>
+  ${n.nota?`<p class="note">${esc(n.nota)}</p>`:""}
+  <div class="norma-liga">${n.citaLivro?`<span>Livro citado na justificativa: <b>${esc(n.citaLivro)}</b></span>`:""}${n.ato?`<span>Caso ligado: <a href="atos/${n.ato.toLowerCase()}.html">${esc(ATOS[n.ato].nome)}</a></span>`:""}${n.precedente?`<span>Modelo citado: <a href="#${n.precedente.toLowerCase()}">${esc(N.find(x=>x.id===n.precedente).numero)}</a></span>`:""}</div>
+  <div class="norma-fontes">${n.fontes.map(f=>FONTES[f]).map(f=>`<a href="${f.url}" target="_blank" rel="noopener">${esc(f.veic)}</a>`).join(" · ")}</div>
+</article>`).join("");
+montarRodape();
+</script>
+</body>
+</html>
