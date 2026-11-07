@@ -33,10 +33,10 @@ const MUNDO = [
   mecanismo:"Retirada de livros sobre o massacre da Praça da Paz Celestial dos catálogos de Hong Kong; queima pública de livros religiosos em uma biblioteca de Gansu.",
   justificativa:"As fontes descrevem os títulos como politicamente sensíveis ou “ilegais” segundo as autoridades. O motivo específico de cada retirada não está discriminado nos registros consultados.",
   fontes:[["Radio Free Asia · 16 mai. 2023","https://www.rfa.org/english/news/china/hong-kong-libraries-05162023134256.html"],["Quartz · dez. 2019","https://qz.com/1764003/a-library-in-gansu-china-burned-religious-books"],["PEN America e PEN International · 2023","https://pen.org/press-release/pen-america-and-pen-international-denounce-book-removals-from-hong-kongs-public-libraries/"]]},
- {pais:"Nicarágua", monitor:"", monitorNota:"A PEN America acompanha a perseguição a Sergio Ramírez (mandado de prisão e cassação da nacionalidade em 2023), mas não registra a retenção do livro na alfândega.", periodo:"2021", governo:"Daniel Ortega (Frente Sandinista).",
+ {pais:"Nicarágua", monitor:"PEN International, que mantém com outros centros PEN o observatório Eye on Nicaragua e registra a confiscação e a proibição do romance em 2021", periodo:"2021", governo:"Daniel Ortega (Frente Sandinista).",
   numero:"1", unidade:"romance retido na alfândega: Tongolele no sabía bailar, de Sergio Ramírez",
   agentes:"Alfândega nicaraguense, que reteve o livro e exigiu da editora um resumo. A fonte não identifica o servidor responsável pela ordem.",
-  mecanismo:"Retenção de um romance na alfândega; o autor, ex-vice-presidente, já havia sido acusado de incitar o ódio e vivia no exílio.",
+  mecanismo:"Retenção de um romance na alfândega, que a PEN International descreve como confiscação e proibição; o autor, ex-vice-presidente, já havia sido acusado de incitar o ódio e vivia no exílio. Em abril de 2026, a alfândega barrou também um romance de Gioconda Belli sobre os mesmos protestos.",
   justificativa:"A justificativa administrativa específica para a retenção não aparece na fonte consultada. A exigência de um resumo é registrada como procedimento relatado, não como explicação oficial comprovada.",
-  fontes:[["Voz de América · set. 2021","https://www.vozdeamerica.com/a/nicaragua-retiene-novela-reciente-sergio-ramirez-/6224395.html"]]}
+  fontes:[["Voz de América · set. 2021","https://www.vozdeamerica.com/a/nicaragua-retiene-novela-reciente-sergio-ramirez-/6224395.html"],["PEN International via Centroamérica360 · mai. 2026","https://www.centroamerica360.com/politica/pen-international-denuncia-censura-y-persecucion-cultural-en-nicaragua/"],["PEN International · Eye on Nicaragua","https://www.pen-international.org/news/eye-on-nicaragua"]]}
 ];
