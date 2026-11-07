@@ -1,7 +1,5 @@
 # Estante Livre
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24022607.svg)](https://doi.org/10.5281/zenodo.24022607)
-
 Observatório jornalístico e documental sobre censura, retirada e outras restrições de acesso a livros em bibliotecas e escolas brasileiras. Projeto de Nataly Nunes Pinto.
 
 O site é estático, feito em HTML, CSS e JavaScript. Não depende de banco de dados, PHP ou processo Node permanente no servidor. A arquitetura foi mantida para permitir hospedagem compartilhada, inclusive no plano M da HostGator.
