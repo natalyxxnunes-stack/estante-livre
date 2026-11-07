@@ -7,7 +7,7 @@ Documento interno. Tudo aqui usa fonte pública e cabe em cerca de duas horas po
 | Frequência | Fonte | O que fazer |
 | --- | --- | --- |
 | Contínua | Alertas do Google e do Google Notícias | Um alerta por palavra-chave da lista abaixo |
-| Contínua | Formulário de relatos | Triagem no Notion ("Estante Livre · triagem de relatos"), sem dados de contato |
+| Sob demanda | Relatos recebidos pelos canais efetivamente ativos | Triagem interna; o formulário público permanece desativado até haver canal e política operacional |
 | Semanal | Etiqueta "censura" no PublishNews e imprensa regional | Leitura rápida, anotar pistas na triagem |
 | Mensal | Querido Diário (diários oficiais municipais) | Buscar as palavras-chave nos municípios já citados no catálogo e nas capitais |
 | Mensal | Diários oficiais estaduais | Buscar nas UFs com casos registrados |
@@ -25,7 +25,7 @@ recolhimento de livros · retirada de livros · livro recolhido · livro proibid
 2. Com uma fonte confiável e o livro, o ato e o motivo identificados (os três elementos da definição), vira registro com `verificado:"Parcialmente"`, pendência e lacuna cadastradas.
 3. Com segunda fonte independente ou confirmação pública do órgão, passa a `verificado:"Sim"` (nível Confirmado).
 4. Com documento oficial primário cadastrado em `FONTES` e listado em `docPrimario` do ato, o nível sobe para Documentado sozinho.
-5. Antes de publicar o nome de agente público em caso novo, procurar o órgão por e-mail e registrar data e resultado na ficha.
+5. O contato prévio com órgão ou agente público não é condição para publicar uma apuração sustentada por fontes públicas. Quando houver canal institucional ativo e isso for editorialmente pertinente, solicitar manifestação e registrar data, canal e resultado na ficha. A ausência de resposta não significa concordância nem impede a publicação.
 6. Toda mudança de nível ou de fato entra em `CORRECOES`.
 7. Rodar `node scripts/gerar.js`.
 
