@@ -605,6 +605,10 @@ const ATOS = {
 };
 
 const FONTES = {
+ "rno-clayton-2020-res": {"veic": "Rápido no Ar", "data": "", "tit": "PTC, de Clayton Silva, se declara neutro para segundo turno em Limeira", "url": "https://rapidonoar.com.br/ptc-de-clayton-silva-se-declara-neutro-para-segundo-turno-em-limeira/"},
+ "tse-riedel-2026": {"veic": "TSE", "data": "2026-10-04", "tit": "Eduardo Riedel (PP) é eleito governador de Mato Grosso do Sul", "url": "https://www.tse.jus.br/comunicacao/noticias/2026/Outubro/eduardo-riedel-pp-e-eleito-governador-de-mato-grosso-do-sul"},
+ "zeotavio-londrina-2026": {"veic": "Blog do Zé Otávio", "data": "2026-10-16", "tit": "Conheça os 101 candidatos a deputado estadual que receberam votos em Londrina", "url": "https://blogdozeotavio.com/conheca-os-101-candidatos-a-deputado-estadual-que-receberam-votos-em-londrina/"},
+ "hub-mulheres-sp-2026": {"veic": "Hub Político", "data": "2026-10-05", "tit": "Mulheres candidatas a deputado federal por São Paulo em 2026: eleitas e votos", "url": "https://hubpolitico.com.br/eleicoes/2026/candidatos/sp/deputado-federal/mulheres"},
  "otempo-sinop-2024": {"veic": "O Tempo", "data": "2024-10-07", "tit": "Eleições 2024: veja a lista dos vereadores eleitos em Sinop (MT)", "url": "https://www.otempo.com.br/eleicoes/2024/vereador/2024/10/7/eleicoes-2024-veja-a-lista-dos-vereadores-eleitos-em-sinop-mt"},
  "cf-thiago-silva-2022": {"veic": "Congresso em Foco", "data": "2022-10-03", "tit": "Thiago Silva (MDB) foi eleito deputado estadual em MT", "url": "https://www.congressoemfoco.com.br/noticia/131169/thiago-silva-mdb-foi-eleito-deputado-estadual-em-mt"},
  "gp-campagnolo-pl": {"veic": "Gazeta do Povo", "data": "2026-11-03", "tit": "PL prepara Ana Campagnolo para a presidência da Alesc", "url": "https://www.gazetadopovo.com.br/santa-catarina/pl-prepara-ana-campagnolo-presidencia-alesc/"},
@@ -1106,6 +1110,7 @@ const CONTEXTO = [
 
 /* Registro público de correções. Toda mudança de fato num caso entra aqui. */
 const CORRECOES = [
+ {"data": "2026-11-06", "id": "Candidaturas", "texto": "Fechadas as lacunas eleitorais: Clayton Silva disputou a prefeitura de Limeira em 2020 (1.475 votos); Eduardo Riedel foi reeleito governador em 2026; Mara Boca Aberta, Giovani Mattos e Pastora Zelinda disputaram 2026 e não se elegeram."},
  {"data": "2026-11-06", "id": "Normas e candidaturas", "texto": "Registrados o partido dos autores de três normas (Novo em Sinop, MDB em Mato Grosso e PL na emenda de Santa Catarina) e a eleição seguinte de quem pressionou ou decidiu nos casos, com votos e fonte."},
  {"data": "2026-11-06", "id": "EL-030", "texto": "Londrina, 2024: localizado o Pedido de Informação nº 582/2024, aprovado em 28/11/2024 e assinado pela Comissão de Defesa dos Direitos do Nascituro (Jessicão, Mara Boca Aberta e Giovani Mattos), que pergunta sobre A mamãe vai ter um bebê, encontrado no CMEI Sandra Regina Maximiano Leme."},
  {"data": "2026-11-06", "id": "EL-004, EL-015 a EL-024, EL-027", "texto": "Garimpo de documentos: Rondônia ganha a entrevista em que o secretário chamou o memorando de \"fake\" no dia em que circulou; MS ganha segunda fonte confirmando que, em 24/04/2024, a devolução ainda estava em processo; Conselheiro Lafaiete ganha a nota de 19/06/2024, que, como o comunicado de 20/06, não traz assinatura individual."},
@@ -1217,7 +1222,10 @@ function partidoDoGoverno(g){ const m=/\(([^)]+)\)/.exec(g||""); return m?m[1]:"
    Eleição seguinte ao caso para quem pressionou ou decidiu. Resultado: Eleito, Não eleito,
    Não disputou, Pré-candidatura ou Resultado não confirmado. Ausência de registro = não verificado. */
 const CANDIDATURAS = [
- {"agente": "clayton-silva", "ano": 2020, "cargo": "prefeito de Limeira", "partido": "PTC", "resultado": "Pré-candidatura", "nota": "Pré-candidatura anunciada pelo PTC em junho de 2020; o registro e a votação não foram confirmados.", "fonte": "rno-clayton-2020"},
+ {"agente": "eduardo-riedel", "ano": 2026, "cargo": "governador de Mato Grosso do Sul", "partido": "PP", "resultado": "Eleito", "nota": "Reeleito no primeiro turno, já filiado ao PP; tinha 805.508 votos (67,4%) com 87,7% das urnas apuradas.", "fonte": "tse-riedel-2026"},
+ {"agente": "mara-boca-aberta", "ano": 2026, "cargo": "deputada estadual (PR)", "partido": "PL", "resultado": "Não eleito", "nota": "3.740 votos em Londrina; o total estadual não foi localizado. Trocou o PMB pelo PL.", "fonte": "zeotavio-londrina-2026"},
+ {"agente": "giovani-mattos", "ano": 2026, "cargo": "deputado estadual (PR)", "partido": "Avante", "resultado": "Não eleito", "nota": "6.898 votos em Londrina; o total estadual não foi localizado. Trocou o PSD pelo Avante.", "fonte": "zeotavio-londrina-2026"},
+ {"agente": "clayton-silva", "ano": 2020, "cargo": "prefeito de Limeira", "partido": "PTC", "resultado": "Não eleito", "votos": 1475, "nota": "Candidato a prefeito no ano seguinte ao requerimento; o PTC ficou neutro no segundo turno.", "fonte": "rno-clayton-2020-res"},
  {"agente": "gustavo-gayer", "ano": 2026, "cargo": "senador por Goiás", "partido": "PL", "resultado": "Eleito", "votos": 1639247, "fonte": "itatiaia-gayer-2026"},
  {"agente": "rinaldo-modesto", "ano": 2026, "cargo": "deputado estadual (MS)", "partido": "Podemos", "resultado": "Eleito", "nota": "Reeleito.", "fonte": "otempo-rinaldo-2026"},
  {"agente": "thomaz-henrique", "ano": 2024, "cargo": "vereador de São José dos Campos", "partido": "PL", "resultado": "Eleito", "votos": 8221, "nota": "Reeleito quatro meses depois da retirada do livro.", "fonte": "hub-thomaz"},
@@ -1232,7 +1240,7 @@ const CANDIDATURAS = [
  {"agente": "wilmar-sudoski", "ano": 2024, "cargo": "", "partido": "", "resultado": "Não disputou", "fonte": "cn-canoinhas-2024"},
  {"agente": "juliana-maciel-hoppe", "ano": 2024, "cargo": "prefeita de Canoinhas", "partido": "PL", "resultado": "Eleito", "votos": 16415, "nota": "Reeleita com 52,7% dos votos válidos, seis meses depois do vídeo.", "fonte": "nsc-juliana-2024"},
  {"agente": "jessica-ramos-moreno", "ano": 2026, "cargo": "deputada estadual (PR)", "partido": "PL", "resultado": "Eleito", "votos": 131673, "nota": "Segunda mais votada do Paraná e mulher mais votada do estado; trocou o PP pelo PL.", "fonte": "hub-jessicao"},
- {"agente": "zelinda-pastora", "ano": 2026, "cargo": "deputada federal (SP)", "partido": "PRD", "resultado": "Resultado não confirmado", "nota": "Candidatura deferida; a votação não foi localizada nas fontes consultadas.", "fonte": "as-zelinda-2026"},
+ {"agente": "zelinda-pastora", "ano": 2026, "cargo": "deputada federal (SP)", "partido": "PRD", "resultado": "Não eleito", "votos": 5273, "nota": "Ficou como suplente; 3.045 dos votos vieram de Taubaté.", "fonte": "hub-mulheres-sp-2026"},
  {"agente": "ranieri-marchioro", "ano": 2026, "cargo": "deputado federal (PR)", "partido": "Republicanos", "resultado": "Não eleito", "votos": 5298, "nota": "Ficou como suplente.", "fonte": "hub-ranieri"},
  {"agente": "bosco-foz", "ano": 2026, "cargo": "deputado federal (PR)", "partido": "PL", "resultado": "Não eleito", "nota": "Candidato registrado; o único eleito entre os candidatos de Foz do Iguaçu foi outro nome.", "fonte": "h2foz-federal-2026"}
 ];

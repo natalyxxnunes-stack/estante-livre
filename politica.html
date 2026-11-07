@@ -74,7 +74,7 @@
   <div class="analysis-metrics">
    <div><strong id="cd-disputou">—</strong><span>pessoas que pressionaram e disputaram a eleição seguinte</span></div>
    <div><strong id="cd-eleitos">—</strong><span>foram eleitas</span></div>
-   <div><strong id="cd-votos">—</strong><span>votos somados por quem se elegeu em 2026</span></div>
+   <div><strong id="cd-votos">—</strong><span>votos somados por quem se elegeu em 2026, entre os que têm votação final registrada</span></div>
   </div>
   <div class="table-wrap"><table class="tab analysis-table pol-table">
    <thead><tr><th>Quem</th><th>O caso</th><th>Eleição seguinte</th><th>Resultado</th></tr></thead>
@@ -246,7 +246,7 @@ const todos = [...reg.values()];
     return '<tr><td><strong>'+esc(r.nome)+'</strong><small>'+esc(cargoSemPartido(r.cargo))+'</small></td><td><a href="'+urlAto(r.ato)+'">'+esc(lugar(a))+'</a><small>'+dataCurta(a.data)+' · '+esc([...r.papeis].includes("Decisão")?"decidiu":"pressionou")+'</small></td><td>'+el1+'</td><td>'+res+'</td></tr>';
   }).join("");
   const naoV = linhas.length - verif.length;
-  el("cd-texto").textContent = `Os resultados mais fortes vêm de quem fez do caso um episódio público. O vereador que atacou o livro em São José dos Campos foi reeleito quatro meses depois e, em 2026, chegou à Assembleia de São Paulo. A vereadora que levou o livro de Londrina à Câmara virou a mulher mais votada do Paraná para deputada estadual. A prefeita de Canoinhas, que gravou o vídeo com os livros no lixo, foi reeleita no mesmo ano. Ao mesmo tempo, dos seis vereadores de Canoinhas que disputaram a eleição de 2024, quatro perderam, e os dois vereadores de Foz do Iguaçu não se elegeram deputados. ${naoV ? `Para ${naoV} ${naoV>1?"pessoas":"pessoa"}, a eleição seguinte ainda não foi verificada.` : ""}`;
+  el("cd-texto").textContent = `Os resultados mais fortes vêm de quem fez do caso um episódio público. O vereador que atacou o livro em São José dos Campos foi reeleito quatro meses depois e, em 2026, chegou à Assembleia de São Paulo. A vereadora que levou o livro de Londrina à Câmara virou a mulher mais votada do Paraná para deputada estadual. A prefeita de Canoinhas, que gravou o vídeo com os livros no lixo, foi reeleita no mesmo ano, e o governador que mandou recolher O avesso da pele em Mato Grosso do Sul foi reeleito no primeiro turno em 2026. Ao mesmo tempo, dos seis vereadores de Canoinhas que disputaram a eleição de 2024, quatro perderam, os dois vereadores de Foz do Iguaçu e os dois colegas de Jessicão em Londrina não se elegeram deputados, e a vereadora de Taubaté ficou como suplente. ${naoV ? `Para ${naoV} ${naoV>1?"pessoas":"pessoa"}, a eleição seguinte ainda não foi verificada.` : ""}`;
 }
 
 /* 02 governo e decisão */
