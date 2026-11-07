@@ -2,71 +2,94 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24022607.svg)](https://doi.org/10.5281/zenodo.24022607)
 
-Observatório de censura e retirada de livros em bibliotecas brasileiras. Um projeto de Nataly Nunes Pinto.
+Observatório jornalístico e documental sobre censura, retirada e outras restrições de acesso a livros em bibliotecas e escolas brasileiras. Projeto de Nataly Nunes Pinto.
 
-Site estático em HTML, CSS e JavaScript puro. Na Vercel: Framework Preset "Other", Build Command e Output Directory em branco. As páginas geradas ficam no repositório, então o site funciona sem etapa de build.
+O site é estático, feito em HTML, CSS e JavaScript. Não depende de banco de dados, PHP ou processo Node permanente no servidor. A arquitetura foi mantida para permitir hospedagem compartilhada, inclusive no plano M da HostGator.
 
-## Depois de editar os dados, rode o gerador
+## Estado da base
 
-```
+Última geração validada nesta branch: **38 registros, 33 obras, 20 atos, 63 agentes, 16 páginas padronizadas e sitemap com 109 URLs**.
+
+Esses números descrevem a base e os arquivos gerados nesta revisão; não significam que todos os registros estejam documentalmente encerrados. A situação de verificação é individual e as pendências continuam públicas.
+
+## Gerar e validar o site
+
+Depois de editar os dados, rode:
+
+```bash
 node scripts/gerar.js
 ```
 
-Ele valida os dados e para com uma lista de erros se algo estiver fora do padrão (mecanismo fora da lista, fonte inexistente, ficha de livro sem caso). Se tudo estiver certo, ele:
+O gerador valida os campos e relações da base e, se não encontrar erros:
+- padroniza cabeçalho, menu e rodapé;
+- gera páginas individuais de casos, obras e atos;
+- atualiza as páginas de catálogo;
+- exporta CSV e JSON;
+- gera sitemap, robots.txt, llms.txt e página 404.
 
-- padroniza cabeçalho, menu e rodapé de todas as páginas;
-- escreve o HTML das fichas dentro de `casos.html` e `livros.html`, para buscadores e ferramentas de IA lerem sem JavaScript;
-- gera uma página por caso (`casos/el-001.html`) e por obra (`livros/<nome>.html`), com dados estruturados e sugestão de citação;
-- gera `dados/estante-livre-casos.csv` e `.json`, `sitemap.xml`, `robots.txt`, `llms.txt` e `404.html`.
+O workflow `.github/workflows/regenerate-site.yml` também executa a geração nas branches de revisão e registra os arquivos estáticos atualizados. A regeneração não publica o site na HostGator.
 
-Quando o domínio próprio estiver no ar, troque a constante `SITE` no topo de `scripts/gerar.js` e rode de novo.
+## Onde se edita
+
+A base principal fica em `assets/dados.js` e é organizada em entidades ligadas por chave:
+
+- `CASOS`: registros de episódios. Cada registro aponta para uma obra (`obra`) e para um ato (`ato`) e guarda mecanismo, estágio, situação, alegação, desfecho, fontes, pendência e nota.
+- `LIVROS`: fichas bibliográficas das obras, com autoria, editora, ano, gênero, PNLD, sinopse e notas.
+- `ATOS`: documentos ou episódios administrativos, com data, local, rede, governo, órgão, documento e papéis. Quando uma reversão é seguida por uma restrição posterior documentada, `restricaoPosterior` registra a fonte e a data em que a informação foi publicada, sem presumir a data do ato posterior.
+- `AGENTES` e `PAPEIS`: pessoas e instituições com papéis documentados, como pressão, pedido, decisão, assinatura, execução, denúncia, resposta e reversão.
+- `FONTES`: reportagens, documentos, registros institucionais e pesquisas citados pelos casos.
+- `CONTEXTO`: episódios fora do escopo do catálogo que aparecem como contexto, sem entrar na contagem de registros.
+- `CORRECOES`: histórico público de correções.
+- `LACUNAS`: obstáculos e caminhos para fechar pendências documentais.
+- `NORMAS`: leis e projetos legislativos acompanhados.
+- `CONTEXTO_PARTIDARIO`, `CANDIDATURAS` e `ESPECTRO`: contexto político e eleitoral com recorte temporal.
+- `ATUALIZADO`: data da última revisão.
+- `CONTATO`: e-mail e Instagram exibidos na página Sobre.
+- `FORMULARIOS`: links dos canais de relato. Enquanto os links estiverem vazios, a página informa que não há formulário seguro ativo.
+
+A página Mundo também lê `assets/mundo.js`.
+
+## Campos e critérios editoriais
+
+Campos centrais de um registro: `id`, `data`, `ato`, `titulo`, `uf`, `tipo`, `rede`, `quem`, `alegacao`, `eixo`, `modalidade`, `estagio`, `situacao`, `desfecho`, `verificado`, `fontes`, `pendencia` e `nota`.
+
+Três campos usam listas fechadas, definidas em `assets/dados.js` e explicadas no Glossário:
+
+- `modalidade` (mecanismo): Retirada · Ocultação ou restrição de acesso · Exclusão de lista de leitura · Veto a atividade · Veto a aquisição ou doação · Descarte ou destruição · Autocensura.
+- `estagio`: Pressão pública · Pedido formal · Decisão ou ordem · Execução comprovada.
+- `situacao`: Em vigor · Revertido · Sem efeito · Em aberto.
+
+O selo editorial de verificação é atribuído manualmente. O código confere se há pelo menos duas referências cadastradas e se elas existem na base, mas **não comprova independência entre fontes nem que cada referência sustente todas as afirmações da ficha**. A classificação de fontes e a matriz afirmação–evidência estão documentadas em `docs/classificacao-e-verificacao-de-fontes.md` e `docs/matriz-afirmacao-evidencia-p0.md`.
+
+## Capas e direitos de imagem
+
+As 19 capas locais sem autorização individual comprovada foram retiradas desta versão. As fichas bibliográficas continuam disponíveis com representação tipográfica. Não reintroduzir capas até registrar edição, titular dos direitos, autorização/licença ou fundamento jurídico documentado. Ver `docs/credito-das-capas.md`.
+
+## Páginas
+
+- Início e painel: `index.html`, `painel.html`
+- Catálogo: `casos.html`, `livros.html`, `atos.html`
+- Investigação e contexto: `analises.html`, `politica.html`, `mundo.html`, `historia.html`, `normas.html`
+- Transparência e consulta: `cobertura.html`, `pendencias.html`, `metodologia.html`, `glossario.html`, `sobre.html`
+- Serviços: `imprensa.html`, `guia.html`, `relate.html`
+- Páginas individuais: `casos/`, `livros/` e `atos/`
 
 ## Guia para escolas
 
 `guia.html` é a página do guia prático e a fonte do PDF. Depois de editar o guia, gere o PDF de novo:
 
-```
+```bash
 python3 scripts/gerar-guia-pdf.py
 ```
 
-Precisa de `pip install playwright pypdf` e de um Chromium (`playwright install chromium`). O estilo de tela e de impressão fica em `assets/guia.css`.
+O script precisa de `pip install playwright pypdf` e de um Chromium (`playwright install chromium`). O estilo de tela e impressão fica em `assets/guia.css`.
 
-## Onde se edita
+## Domínio e publicação
 
-Quase tudo fica em `assets/dados.js`, organizado em quatro entidades ligadas por chave:
+A constante `SITE` no início de `scripts/gerar.js` ainda aponta para um endereço provisório da Vercel. Atualize-a, os metadados canônicos e os arquivos de SEO somente depois de definido o domínio final.
 
-- `CASOS` (registros): um título atingido por um ato. Aponta para a obra (`obra`) e para o ato (`ato`) e guarda o que é próprio do registro: mecanismo, estágio, situação, alegação, desfecho, fontes, pendência, nota.
-- `LIVROS` (obras): autoria, editora, capa, PNLD, ano, gênero, prêmio, sinopse, nota. `conjunto:true` e `legenda` para lotes sem lista título a título.
-- `ATOS`: o documento ou episódio, com nome, data, UF, cidade, tipo de biblioteca, rede, governo, instância, documento e o texto de cada papel (`papeis`).
-- `AGENTES` e `PAPEIS`: pessoas e instituições com papel documentado em cada ato (pressão, pedido, decisão, assinatura, execução, denúncia, resposta), com o cargo na data. `atribuido:true` quando a fonte atribui o papel sem documento assinado.
+A publicação de produção na HostGator é manual, enviando o conteúdo gerado para `public_html`. O workflow de FTP existe no repositório, mas não faz parte do fluxo de publicação definido para este projeto.
 
-No fim do arquivo, uma etapa de montagem copia os campos do ato e da obra para cada registro; as páginas leem os registros já montados. Para um caso novo: crie a obra e o ato se forem novos, copie um bloco de `CASOS`, aponte para eles e rode o gerador.
-- `FONTES`: reportagens e pesquisas citadas pelos casos.
-- `CONTEXTO`: episódios fora de biblioteca que aparecem no painel sem entrar na contagem.
-- `CORRECOES`: registro público de correções, exibido na página Metodologia.
-- `LACUNAS`: para cada ato com pendência, os obstáculos (da lista fechada `OBSTACULOS`) e o caminho para fechar. Alimenta a página O que falta apurar. O gerador recusa ato com pendência e sem lacuna, e lacuna de ato sem pendência.
-- `ATUALIZADO`: data da última revisão, mostrada no rodapé e no sitemap.
-- `CONTATO`: e-mail e Instagram exibidos na página Sobre. E-mail vazio não aparece.
-- `FORMULARIOS`: os links dos três formulários de relato. Botão sem link não aparece. Com pelo menos um link preenchido, a página Relate um caso troca sozinha o aviso de canal fechado pelo protocolo do canal aberto.
+## Licenças
 
-A página Mundo lê `assets/mundo.js`.
-
-## Campos de um registro
-
-`id`, `ato`, `obra`, `titulo` (opcional: só quando o registro descreve um episódio, e não a obra), `alegacao`, `eixo`, `modalidade`, `estagio`, `situacao`, `desfecho`, `verificado`, `fontes`, `pendencia`, `nota`. Datas dos atos em AAAA-MM-DD, com dia 01 quando só o mês é conhecido.
-
-Três campos usam listas fechadas, definidas em `dados.js` e explicadas no Glossário:
-
-- `modalidade` (mecanismo): Retirada · Ocultação ou restrição de acesso · Exclusão de lista de leitura · Veto a atividade · Veto a aquisição ou doação · Descarte ou destruição · Autocensura
-- `estagio`: Pressão pública · Pedido formal · Decisão ou ordem · Execução comprovada
-- `situacao`: Em vigor · Revertido · Sem efeito · Em aberto
-
-O texto livre do que aconteceu depois fica em `desfecho`.
-
-Um caso só conta como verificado com `verificado:"Sim"` e duas fontes. A regra é aplicada pelo código.
-
-## Páginas
-
-index (painel), casos, livros, analises, historia (linha do tempo, escrita à mão), mundo, glossario, metodologia, sobre, cobertura, relate. Geradas pelo script: atos.html e as páginas em `casos/`, `livros/` e `atos/`.
-
-Contornos do mapa: svg-maps, licença CC BY 4.0.
+O código e os dados têm seus próprios termos de uso. Capas e outros materiais de terceiros não estão abrangidos automaticamente pela licença do repositório. A licença dos contornos de mapa está indicada junto ao recurso correspondente.
