@@ -2,7 +2,7 @@ name: Regenerate Estante Livre
 
 on:
   push:
-    branches: [main]
+    branches: ['**']
     paths:
       - 'assets/dados.js'
       - 'assets/comum.js'
@@ -25,7 +25,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          ref: main
+          ref: ${{ github.ref }}
       - name: Set up Node
         uses: actions/setup-node@v4
         with:
