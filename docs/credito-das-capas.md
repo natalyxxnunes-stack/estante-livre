@@ -8,11 +8,37 @@
 
 Não foi localizada documentação individual suficiente para afirmar que as imagens estavam autorizadas para reprodução. Por isso, não devem ser reintroduzidas no site, em redes sociais, apresentações ou outros materiais até que a cadeia de direitos seja esclarecida.
 
+Na `main` examinada em 07/11/2026 havia **19 arquivos locais** em `assets/capas/`, todos associados a fichas da base. Os 19 foram removidos da branch de consolidação. A referência anterior a sete capas locais descrevia um inventário histórico mais restrito; não abrangia todos os arquivos que estavam ativos na `main` atual.
+
 As páginas usam representação tipográfica. Não criar capas fictícias para lotes ou conjuntos de obras.
 
 ## Critério de identificação
 
 Uma capa de referência ajuda a reconhecer uma obra, mas **não comprova que aquela edição específica foi recolhida, ocultada, questionada ou objeto do ato cadastrado**. A edição do exemplar atingido só pode ser afirmada quando houver documentação bibliográfica ou registro do próprio episódio.
+
+## Inventário dos 19 arquivos locais removidos da `main`
+
+| Arquivo removido | Situação |
+|---|---|
+| `avesso-da-pele.jpg` | Removido; autorização individual não comprovada |
+| `beijo-no-asfalto.jpg` | Removido; autorização individual não comprovada |
+| `bolsa-amarela.jpg` | Removido; autorização individual não comprovada |
+| `contos-de-terror.jpg` | Removido; autorização individual não comprovada |
+| `coracao-satanico.jpg` | Removido; autorização individual não comprovada |
+| `demonologistas.jpg` | Removido; autorização individual não comprovada |
+| `diario-do-diabo.jpg` | Removido; autorização individual não comprovada |
+| `donnie-darko.jpg` | Removido; autorização individual não comprovada |
+| `exorcismo.jpg` | Removido; autorização individual não comprovada |
+| `it-a-coisa.jpg` | Removido; autorização individual não comprovada |
+| `laranja-mecanica.jpg` | Removido; autorização individual não comprovada |
+| `macunaima.jpg` | Removido; autorização individual não comprovada |
+| `memorias-postumas.jpg` | Removido; autorização individual não comprovada |
+| `meninas-sonhadoras.jpg` | Removido; autorização individual não comprovada |
+| `menino-marrom.jpg` | Removido; autorização individual não comprovada |
+| `o-castelo.jpg` | Removido; autorização individual não comprovada |
+| `os-13-porques.jpg` | Removido; autorização individual não comprovada |
+| `piores-noticias.jpg` | Removido; autorização individual não comprovada |
+| `quimica-entre-nos.jpg` | Removido; autorização individual não comprovada |
 
 ## Inventário das 16 referências externas avaliadas no PR #4
 
