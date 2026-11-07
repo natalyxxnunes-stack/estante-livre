@@ -173,8 +173,9 @@ $("n-verif").textContent = T.filter(verificado).length;
 { const N = [...NORMAS].sort((a,b)=>a.data.localeCompare(b.data));
   const primeiro = N.find(n=>n.citaLivro);
   const local = n => n.esfera==="Federal" ? "Congresso Nacional" : (n.cidade ? `${n.cidade} (${n.uf})` : `Assembleia de ${n.uf}`);
-  $("dest-h3").textContent = `${N.length} leis e projetos já restringem livros em escolas. Um deles nasceu uma semana depois de ${primeiro.citaLivro} ser recolhido.`;
-  $("dest-p").textContent = `Projetos quase idênticos circulam entre estados e municípios, e uma lei municipal virou modelo declarado para outra. ${N.filter(n=>n.situacao==="Em vigor").length} já estão em vigor.`;
+  const NM = N.filter(n=>n.alvo==="Material");
+  $("dest-h3").textContent = `${NM.length} leis e projetos miram livros e material escolar. Um deles nasceu uma semana depois de ${primeiro.citaLivro} ser recolhido.`;
+  $("dest-p").textContent = `Projetos quase idênticos circulam entre estados e municípios, e uma lei municipal virou modelo declarado para outra. ${NM.filter(n=>n.situacao==="Em vigor").length} já estão em vigor. Outras ${N.length-NM.length} normas, de 2015 e 2016, proibiram o tema gênero no currículo.`;
   $("dest-lista").innerHTML = N.slice(-5).reverse().map(n=>`<li><span>${dataCurta(n.data)}</span><div><a href="normas.html#${n.id.toLowerCase()}">${esc(local(n))}</a> · ${esc(n.tipo.toLowerCase())}</div></li>`).join(""); }
 
 /* contador de cumprimento */

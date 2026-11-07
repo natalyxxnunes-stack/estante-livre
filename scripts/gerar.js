@@ -66,7 +66,8 @@ for(const t of Object.keys(LIVROS)) if(!CASOS.some(c=>obraDe(c)===t)) erros.push
 for(const n of NORMAS){
   for(const k of ["id","esfera","uf","tipo","numero","data","autoria","resumo","situacao","situacaoEm","fontes"]) if(!n[k] || (Array.isArray(n[k]) && !n[k].length)) erros.push(`NORMAS ${n.id||"?"}: campo ${k} vazio`);
   if(!SITUACOES_NORMA.includes(n.situacao)) erros.push(`NORMAS ${n.id}: situação fora da lista: ${n.situacao}`);
-  if(!/^\d{4}-\d{2}-\d{2}$/.test(n.data||"")) erros.push(`NORMAS ${n.id}: data fora do formato`);
+  if(!/^\d{4}(-\d{2}-\d{2})?$/.test(n.data||"")) erros.push(`NORMAS ${n.id}: data fora do formato`);
+  if(!["Conteúdo erótico","Ideologia de gênero"].includes(n.frente) || !["Material","Currículo"].includes(n.alvo)) erros.push(`NORMAS ${n.id}: frente ou alvo fora da lista`);
   for(const f of n.fontes||[]) if(!FONTES[f]) erros.push(`NORMAS ${n.id}: fonte inexistente: ${f}`);
   if(n.ato && !ATOS[n.ato]) erros.push(`NORMAS ${n.id}: ato inexistente: ${n.ato}`);
   if(n.precedente && !NORMAS.some(x=>x.id===n.precedente)) erros.push(`NORMAS ${n.id}: precedente inexistente: ${n.precedente}`);

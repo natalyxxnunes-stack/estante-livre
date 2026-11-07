@@ -58,12 +58,23 @@
     <p class="note">Cada caso informa quem governava, qual instituição ou autoridade aparece nas fontes, que mecanismo foi usado e qual justificativa foi apresentada. Quando a fonte não identifica a pessoa que assinou ou executou a medida, isso é dito.</p>
     <p class="note">Os números medem coisas diferentes (episódios de banimento, exemplares retirados, multas, apreensões, pessoas condenadas) e servem para dimensionar cada caso isoladamente.</p>
   </section>
+  <section id="criterio">
+    <div class="sechead"><span class="kicker">02</span><h2>Como um país entra</h2></div>
+    <p class="note">Um país entra quando cumpre as três condições abaixo. A regra vale desde novembro de 2026; antes disso, os casos eram escolhidos um a um, sem critério escrito.</p>
+    <div class="gloss">
+      <div class="gterm"><h3>1. Mesmo período do catálogo</h3><div class="gdef">Ato de Estado que retira, restringe ou pune a circulação de livros a partir de 2014, o mesmo recorte do catálogo brasileiro. Casos anteriores vão para a página <a href="historia.html">História</a>.</div></div>
+      <div class="gterm"><h3>2. Fonte que acompanha o país</h3><div class="gdef">O caso precisa estar documentado por uma organização que monitora o país de forma contínua (relatórios periódicos de entidades de liberdade de expressão, de direitos humanos ou de bibliotecas) ou por documento oficial. Reportagem isolada serve de apoio, nunca como única base.</div></div>
+      <div class="gterm"><h3>3. Regime classificado</h3><div class="gdef">O país precisa ter classificação no V-Dem para o ano do caso, para que a página mostre que tipo de regime tomou a medida.</div></div>
+    </div>
+    <p class="note"><b>De onde vêm os candidatos.</b> A lista de países a apurar parte da base aberta da <a href="https://www.banned-books.org/countries" target="_blank" rel="noopener">banned-books.org</a> e dos relatórios anuais da PEN International. A banned-books.org serve só como ponto de partida: a cobertura dela depende de quanto cada país documenta, e o próprio projeto avisa que o ranking reflete documentação e não intensidade de censura. O Brasil aparece lá com 26 registros, quase todos históricos.</p>
+    <p class="note"><b>Equilíbrio.</b> A página não escolhe países para equilibrar governos de direita e de esquerda. A orientação de quem governava aparece em cada caso como consequência da regra. Hoje só dois dos seis casos cumprem a segunda condição; os outros quatro ficam na página, marcados, até ganharem fonte de monitoramento ou saírem na próxima revisão.</p>
+  </section>
   <section>
-    <div class="sechead"><span class="kicker">02</span><h2>Casos documentados</h2><span class="count" id="count"></span></div>
+    <div class="sechead"><span class="kicker">03</span><h2>Casos documentados</h2><span class="count" id="count"></span></div>
     <div class="paises" id="paises"></div>
   </section>
   <section>
-    <div class="sechead"><span class="kicker">03</span><h2>E o Brasil?</h2></div>
+    <div class="sechead"><span class="kicker">04</span><h2>E o Brasil?</h2></div>
     <p class="note" id="txt-brasil"></p>
     <p class="note">Os números desta página e os do catálogo brasileiro usam unidades diferentes e não devem ser comparados entre si. A PEN America conta episódios de banimento por distrito escolar; o Estante Livre conta um registro por título atingido por um ato, e separa pressão, pedido, ordem e execução.</p>
   </section>
@@ -89,7 +100,7 @@
 <script src="assets/mundo.js"></script>
 <script src="assets/comum.js"></script>
 <script>
-document.getElementById("count").innerHTML = `<b>${MUNDO.length}</b> estudos de caso`;
+document.getElementById("count").innerHTML = `<b>${MUNDO.length}</b> estudos de caso · ${MUNDO.filter(m=>m.monitor).length} cumprem as três condições`;
 document.getElementById("paises").innerHTML = MUNDO.map(m=>`
   <article class="pais">
     <div class="pais-top"><h3>${esc(m.pais)}</h3><span class="pais-per">${esc(m.periodo)}</span></div>
@@ -99,6 +110,7 @@ document.getElementById("paises").innerHTML = MUNDO.map(m=>`
       <div><span class="k">GOVERNO NA ÉPOCA</span>${esc(m.governo)}</div>
       <div><span class="k">AUTORIDADES / INSTITUIÇÕES IDENTIFICADAS</span>${esc(m.agentes)}</div>
       <div><span class="k">JUSTIFICATIVA DOCUMENTADA</span>${esc(m.justificativa)}</div>
+      <div><span class="k">FONTE DE MONITORAMENTO</span>${m.monitor?esc(m.monitor):"Pendente. O caso se apoia em reportagem; falta relatório de organização que acompanhe o país."}</div>
     </div>
     <div class="pais-fontes">${m.fontes.map(([t,u])=>`<a href="${esc(u)}" target="_blank" rel="noopener">${esc(t)}</a>`).join(" · ")}</div>
   </article>`).join("");

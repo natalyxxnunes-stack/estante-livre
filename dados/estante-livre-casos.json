@@ -4857,8 +4857,8 @@
    "verificado": "Sim",
    "nivel_verificacao": "Confirmado",
    "documento_primario": "",
-   "pendencia": "Localizar o parecer da Secretaria de Educação Básica e o ato do ministro; confirmar quantos exemplares voltaram de fato; esclarecer se a obra chegou às escolas pelo Pnaic ou pelo PNLD, já que as fontes divergem.",
-   "nota": "A obra reúne contos da tradição oral. O que motivou a reação, A triste história de Eredegalda, trata de incesto. O livro foi selecionado em 2014, no governo Dilma Rousseff, e distribuído a alunos do 1º ao 3º ano. Em junho de 2017, depois de questionamentos de professores e pais, o ministro Mendonça Filho pediu pareceres à Secretaria de Educação Básica e à Consultoria Jurídica e decidiu recolher os exemplares. Segundo a Pública, escolas do Espírito Santo já haviam levado o caso às redes locais, que recolheram exemplares antes da distribuição. Em 2018 a obra voltou ao noticiário numa mensagem falsa que atribuía a distribuição a Fernando Haddad, ministro até 2012.",
+   "pendencia": "O parecer da Secretaria de Educação Básica não foi publicado; só há o trecho citado pelo MEC à imprensa. Não há balanço público de quantos exemplares foram de fato devolvidos.",
+   "nota": "A obra reúne contos da tradição oral. O que motivou a reação, A triste história de Eredegalda, trata de incesto. O livro chegou às escolas pelo acervo do Pnaic, o Pacto Nacional pela Alfabetização na Idade Certa, distribuído dentro do PNLD a alunos do 1º ao 3º ano; o lote foi selecionado em 2014, no governo Dilma Rousseff. O MEC justificou o recolhimento dizendo que crianças no ciclo de alfabetização são “leitores em formação e com vivências limitadas”. O Ceale, da UFMG, que havia avaliado a obra, publicou novo parecer atribuindo a polêmica a uma “leitura equivocada”. Vitória e Cariacica, no Espírito Santo, já tinham devolvido os exemplares, e Vila Velha suspendeu o uso antes de chegar às salas. Em junho de 2017, depois de questionamentos de professores e pais, o ministro Mendonça Filho pediu pareceres à Secretaria de Educação Básica e à Consultoria Jurídica e decidiu recolher os exemplares. Segundo a Pública, escolas do Espírito Santo já haviam levado o caso às redes locais, que recolheram exemplares antes da distribuição. Em 2018 a obra voltou ao noticiário numa mensagem falsa que atribuía a distribuição a Fernando Haddad, ministro até 2012.",
    "agentes": [
     {
      "nome": "Mendonça Filho",
@@ -4885,6 +4885,18 @@
      "url": "https://wp.ufpel.edu.br/federalfm/2017/06/08/ministro-da-educacao-mendonca-filho-decide-recolher-das-escolas-o-livro-enquanto-o-sono-nao-vem/"
     },
     {
+     "veiculo": "Correio Braziliense",
+     "titulo": "Livro que trata de incesto será recolhido",
+     "data": "2017-06-08",
+     "url": "https://www.correiobraziliense.com.br/app/noticia/eu-estudante/ensino_educacaobasica/2017/06/08/interna-educacaobasica-2019,601187/mec-recolhe-das-escolas-o-livro-enquanto-o-sono-nao-vem.shtml"
+    },
+    {
+     "veiculo": "PublishNews",
+     "titulo": "Educadores criticam recolhimento de livro polêmico pelo MEC",
+     "data": "2017-06-12",
+     "url": "https://www.publishnews.com.br/materias/2017/06/12/educadores-criticam-recolhimento-de-livro-polemico-pelo-mec/"
+    },
+    {
      "veiculo": "Agência Pública · Truco",
      "titulo": "Mensagem falsa diz que Haddad autorizou livro infantil que trata de incesto",
      "data": "2018-10-09",
@@ -4897,7 +4909,7 @@
    "url": "https://estante-livre-br.vercel.app/casos/el-040.html",
    "data": "2017-01-23",
    "ato": "ARQ-2017",
-   "ato_nome": "Supressão de páginas de livros didáticos (Ariquemes)",
+   "ato_nome": "Recolhimento de livros didáticos e supressão de páginas (Ariquemes)",
    "obra": "Livros didáticos das escolas municipais de Ariquemes (títulos não identificados)",
    "titulo_registro": "Livros didáticos das escolas municipais de Ariquemes (títulos não identificados)",
    "conjunto": true,
@@ -4912,9 +4924,9 @@
    "governo_na_epoca": "Thiago Flores (MDB) · prefeitura de Ariquemes",
    "instancia_registrada": "Prefeito Thiago Flores, a pedido de vereadores",
    "mecanismo": "Retirada",
-   "estagio": "Decisão ou ordem",
-   "situacao": "Em aberto",
-   "desfecho": "Supressão de páginas anunciada em 23/01/2017; reportagem do dia seguinte fala em audiência pública antes da execução; artigo de 2018 registra páginas retiradas e comissões de revisão nas escolas",
+   "estagio": "Execução comprovada",
+   "situacao": "Revertido",
+   "desfecho": "A prefeitura suspendeu a entrega dos livros no início de 2017; a Justiça Federal arquivou a ação dos Ministérios Públicos em maio, e o TRF1 reverteu a decisão em agosto. A supressão de páginas não foi confirmada",
    "eixo_tematico": "Sexualidade e gênero",
    "justificativa_declarada": "Vereadores pediram a suspensão e o recolhimento para evitar o debate sobre “ideologia de gênero”; a prefeitura mirou páginas sobre diversidade sexual, casamento homoafetivo e uso de preservativos.",
    "pressao_ou_pedido": "Oito vereadores protocolaram ofício pedindo a suspensão e o recolhimento; Amalec da Costa (PSDB) defendeu a medida em entrevista.",
@@ -4923,13 +4935,13 @@
    "execucao": "Secretaria Municipal de Educação e comissão de fiscalização anunciada pela prefeitura.",
    "resposta_ou_reversao": "O Sintero, sindicato dos trabalhadores em educação, pediu por ofício que a solicitação não fosse atendida.",
    "ato_ou_documento": "Ofício dos vereadores e ato da prefeitura citados pela imprensa; nenhum dos dois foi localizado em fonte pública. Thiago Flores foi eleito em 2016 pelo PMDB, que passou a se chamar MDB em dezembro de 2017.",
-   "reversao_via": "",
-   "reversao_data": "",
+   "reversao_via": "Decisão judicial",
+   "reversao_data": "2017-08-23",
    "verificado": "Parcialmente",
    "nivel_verificacao": "Parcial",
    "documento_primario": "",
-   "pendencia": "Identificar os títulos e as páginas atingidas; confirmar se a supressão foi executada depois da audiência pública anunciada;",
-   "nota": "Oito dos doze vereadores presentes a uma reunião com o prefeito protocolaram ofício pedindo a suspensão e o recolhimento dos livros didáticos distribuídos pelo MEC em 2016. Em 23 de janeiro de 2017, a prefeitura proibiu a entrega dos livros e anunciou que as páginas sobre diversidade sexual, casamento homoafetivo e preservativos seriam suprimidas, com comissão de fiscalização. O Portal Amazônia, no dia seguinte, registrou que o sindicato dos professores pediu que a solicitação não fosse atendida e que a prefeitura, depois de ouvir a Procuradoria Municipal, propôs audiência pública e enquete. Souza (Em Questão, 2018) registra as páginas retiradas e comissões de revisão em todas as escolas; segundo o mesmo artigo, num primeiro recolhimento, em 2016, os alunos já tinham ficado cerca de seis meses sem livro didático. As fontes divergem sobre a execução, por isso o registro fica como decisão.",
+   "pendencia": "Identificar os títulos e as páginas atingidas; confirmar se a supressão de páginas foi executada; localizar a decisão do TRF1 e o desfecho final da ação civil pública 1513-61.2017.4.01.4100.",
+   "nota": "Oito dos doze vereadores presentes a uma reunião com o prefeito protocolaram ofício pedindo a suspensão e o recolhimento dos livros didáticos distribuídos pelo MEC em 2016. Em 23 de janeiro de 2017, a prefeitura proibiu a entrega dos livros e anunciou que as páginas sobre diversidade sexual, casamento homoafetivo e preservativos seriam suprimidas, com comissão de fiscalização. O Portal Amazônia, no dia seguinte, registrou que o sindicato dos professores pediu que a solicitação não fosse atendida e que a prefeitura, depois de ouvir a Procuradoria Municipal, propôs audiência pública e enquete. Souza (Em Questão, 2018) registra as páginas retiradas e comissões de revisão em todas as escolas; segundo o mesmo artigo, num primeiro recolhimento, em 2016, os alunos já tinham ficado cerca de seis meses sem livro didático. Depois de uma enquete na internet, o prefeito mandou recolher os livros. Em fevereiro, o MPF e o Ministério Público de Rondônia processaram o prefeito e sete vereadores por improbidade (ação 1513-61.2017.4.01.4100). Em 12 de maio de 2017, a juíza Maria da Penha Fontenele, da 1ª Vara Federal de Rondônia, arquivou a ação, entendendo que o prefeito seguia o Plano Municipal de Educação. Os Ministérios Públicos recorreram, e em 23 de agosto o TRF1 concedeu liminar contra a medida, afirmando que impedir a discussão de gênero na escola “significa conferir invisibilidade a tais questões”. A suspensão da entrega está confirmada; a supressão de páginas, não.",
    "agentes": [
     {
      "nome": "Vereadores de Ariquemes signatários do ofício (oito, não identificados)",
@@ -4982,6 +4994,24 @@
      "titulo": "Em nome da moral e dos bons costumes: censura a livros com temática de gênero no Brasil do século XXI",
      "data": "2018-01-01",
      "url": "https://seer.ufrgs.br/index.php/EmQuestao/article/view/71150"
+    },
+    {
+     "veiculo": "A Capa",
+     "titulo": "Prefeito e sete vereadores de Rondônia são processados pelo MP por incitar homofobia",
+     "data": "2017-02-24",
+     "url": "https://acapa.com.br/en/prefeito-e-sete-vereadores-de-rondonia-sao-indiciados-pelo-mp-por-incitar-homofobia/"
+    },
+    {
+     "veiculo": "Rondoniagora",
+     "titulo": "Juíza dá razão a Thiago Flores e manda arquivar ação dos MPs que questionava retirada de livros",
+     "data": "2017-05-12",
+     "url": "https://www.rondoniagora.com/cidades/juiza-da-razao-a-thiago-flores-e-manda-arquivar-acao-dos-mps-que-questionava-retirada-de-livros-com-fotos-de-uniao-gay"
+    },
+    {
+     "veiculo": "Rondoniagora",
+     "titulo": "Tribunal Federal manda prefeito de Ariquemes distribuir livros com imagens de união gay",
+     "data": "2017-08-29",
+     "url": "https://www.rondoniagora.com/cidades/tribunal-federal-manda-prefeito-de-ariquemes-distribuir-livros-com-imagens-de-uniao-gay"
     }
    ]
   },
@@ -5021,7 +5051,7 @@
    "verificado": "Parcialmente",
    "nivel_verificacao": "Parcial",
    "documento_primario": "",
-   "pendencia": "Segunda fonte com apuração própria; resposta formal ao requerimento e tramitação do Projeto de Lei nº 26/2016 na Câmara do Recife, cujo sistema público bloqueia leitura automática.",
+   "pendencia": "Segunda fonte com apuração própria: a busca de novembro de 2026 em jornais pernambucanos, no G1 e em repositórios acadêmicos só encontrou reproduções da Agência Brasil; resposta formal ao requerimento e tramitação do Projeto de Lei nº 26/2016 na Câmara do Recife, cujo sistema público bloqueia leitura automática.",
    "nota": "Livro de ciências do 5º ano, da Leya, distribuído pelo MEC: 623 exemplares do aluno e 23 manuais do professor em dez escolas municipais. Luiz Eustáquio (Rede) apresentou requerimentos pedindo informações sobre os livros e a retirada de material que mencionasse gênero; Carlos Gueiros (PSB) apresentou projeto de lei para proibir a obra. A prefeitura de Geraldo Julio (PSB) defendeu o livro e avisou que não pagaria reposição. Na Assembleia Legislativa, Joel da Harpa (PROS) apresentou o PL 709/2016, com o mesmo objetivo. O Brasil de Fato, em julho de 2016, confirma que Gueiros e Eustáquio pediram a retirada dos livros e registra o PL 26/2016, mas repete os dados da Agência Brasil sobre a posição da prefeitura e do MEC; o Jornal Opção reproduz a mesma reportagem. Por isso o registro segue parcial.",
    "agentes": [
     {
@@ -5132,6 +5162,77 @@
      "titulo": "Em nome da moral e dos bons costumes: censura a livros com temática de gênero no Brasil do século XXI",
      "data": "2018-01-01",
      "url": "https://seer.ufrgs.br/index.php/EmQuestao/article/view/71150"
+    }
+   ]
+  },
+  {
+   "id": "EL-043",
+   "url": "https://estante-livre-br.vercel.app/casos/el-043.html",
+   "data": "2018-10-01",
+   "ato": "SA-2018",
+   "ato_nome": "Suspensão de Meninos sem pátria no Colégio Santo Agostinho (Rio de Janeiro)",
+   "obra": "Meninos sem pátria",
+   "titulo_registro": "Meninos sem pátria",
+   "conjunto": false,
+   "autoria": "Luiz Puntel",
+   "editora": "Ática",
+   "ano_publicacao": "",
+   "como_chegou": "Escolha de professores",
+   "cidade": "Rio de Janeiro",
+   "uf": "RJ",
+   "tipo_biblioteca": "Escolar",
+   "rede": "Privada",
+   "governo_na_epoca": "Colégio Santo Agostinho · escola privada, sem governo responsável",
+   "instancia_registrada": "Direção do Colégio Santo Agostinho, a pedido de pais de alunos",
+   "mecanismo": "Retirada",
+   "estagio": "Execução comprovada",
+   "situacao": "Em aberto",
+   "desfecho": "A escola suspendeu o uso do livro no 6º ano sem nota pública; não há registro de que tenha voltado",
+   "eixo_tematico": "Política e ideologia",
+   "justificativa_declarada": "Pais de alunos do 6º ano disseram à escola que o livro “doutrina crianças com ideologia comunista”.",
+   "pressao_ou_pedido": "Pais de alunos do 6º ano, sem identificação.",
+   "decisao": "Direção do Colégio Santo Agostinho.",
+   "assinatura": "",
+   "execucao": "",
+   "resposta_ou_reversao": "Alunos e ex-alunos protestaram em frente ao colégio.",
+   "ato_ou_documento": "Nenhum documento da escola foi publicado. O dia exato da decisão não está nas fontes; a repercussão começou em 2 de outubro de 2018.",
+   "reversao_via": "",
+   "reversao_data": "",
+   "verificado": "Sim",
+   "nivel_verificacao": "Confirmado",
+   "documento_primario": "",
+   "pendencia": "Confirmar se o livro voltou à lista do colégio nos anos seguintes; localizar a reportagem original do Globo de 2 de outubro de 2018.",
+   "nota": "Romance juvenil de Luiz Puntel, da Série Vaga-Lume (Ática), publicado em 1981, sobre um garoto cuja família vive no exílio durante a ditadura. Estava na 23ª edição em 2018. O caso ganhou repercussão nacional cinco dias antes do primeiro turno da eleição de 2018. A direção não se pronunciou publicamente. Alunos e ex-alunos fecharam a rua em frente ao colégio em protesto, e uma mãe chamou a suspensão de “um absurdo”. O autor disse que o livro trata do retorno dos exilados e não faz apologia ao comunismo. É o primeiro registro de escola privada no catálogo.",
+   "agentes": [
+    {
+     "nome": "Pais de alunos do 6º ano do Colégio Santo Agostinho",
+     "tipo": "Instituição",
+     "papel": "Pressão",
+     "cargo": "",
+     "partido_na_epoca": "",
+     "atribuido": false
+    },
+    {
+     "nome": "Colégio Santo Agostinho (Rio de Janeiro)",
+     "tipo": "Instituição",
+     "papel": "Decisão",
+     "cargo": "",
+     "partido_na_epoca": "",
+     "atribuido": false
+    }
+   ],
+   "fontes": [
+    {
+     "veiculo": "Jornal do Brasil",
+     "titulo": "Alunos do Santo Agostinho fecham rua em ato contra proibição de livro",
+     "data": "2018-10-04",
+     "url": "https://www.jb.com.br/rio/2018/10/943833-alunos-do-santo-agostinho-fecham-rua-em-ato-contra-proibicao-de-livro.html"
+    },
+    {
+     "veiculo": "História da Historiografia · Anderson da Silva Almeida",
+     "titulo": "Meninos sem Pátria: ditadura, literatura e os trabalhos da memória entre ficção e realidade (1981/2018)",
+     "data": "2022-01-01",
+     "url": "https://www.scielo.br/j/hh/a/gQjtTdWWmZ6CMndKXtyT8bM/?lang=pt"
     }
    ]
   }

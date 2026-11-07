@@ -282,7 +282,7 @@ const todos = [...reg.values()];
   const nDir = DIR.reduce((s,k)=>s+(cont[k]||0),0), nEsq = ESQ.reduce((s,k)=>s+(cont[k]||0),0), nSem = cont["Sem classificação"]||0;
   const vigor = ns.filter(n=>n.situacao==="Em vigor").length;
   const nCDn = cont["Centro-direita"]||0;
-  el("lg-lead").textContent = `A pressão virou proposta de lei em ${ns.length} casas legislativas, e ${vigor} dessas normas já estão em vigor. Das ${ns.length}, ${nDir} têm autoria ou relatoria de parlamentares de partidos de direita ou extrema direita${nCDn ? " e "+nCDn+" de centro-direita" : ""}${nSem ? "; em "+nSem+", a fonte não informa o partido" : ""}. ${nEsq ? nEsq+" vêm de partidos de esquerda ou centro-esquerda." : "Nenhuma vem de partido de esquerda ou centro-esquerda."}`;
+  el("lg-lead").textContent = `A pressão virou proposta de lei em ${ns.length} casas legislativas, e ${vigor} dessas normas já estão em vigor. Das ${ns.length}, ${nDir} têm autoria ou relatoria de políticos de partidos de direita ou extrema direita${nCDn ? " e "+nCDn+" de centro-direita" : ""}${nSem ? "; em "+nSem+", a fonte não informa o partido" : ""}. ${nEsq ? nEsq+(nEsq===1?" vem":" vêm")+" de partidos de esquerda ou centro-esquerda." : "Nenhuma vem de partido de esquerda ou centro-esquerda."}`;
   el("lg-rows").innerHTML = ns.map(n=>'<tr><td><a href="normas.html#'+n.id+'">'+esc(n.numero)+'</a><small>'+esc(n.tipo)+' · '+dataCurta(n.data)+'</small></td><td>'+esc(n.cidade||n.esfera)+', '+esc(n.uf)+'</td><td>'+esc(n.autoria)+'</td><td>'+(n.partido?'<strong>'+esc(n.partido)+'</strong><small>'+esc(campoDe(n.partido))+'</small>':'<small>não informado</small>')+(n.partidoNota?'<small class="pol-aviso">'+esc(n.partidoNota)+'</small>':'')+'</td><td>'+esc(n.situacao)+'</td></tr>').join("");
 }
 
