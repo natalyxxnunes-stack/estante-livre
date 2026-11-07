@@ -26,18 +26,22 @@ function contexto(raiz){
     console
   };
   vm.createContext(ctx);
-  vm.runInContext(ler("assets/dados.js") + "\n;this.__D={ATOS,AGENTES,PAPEIS,TIPOS_PAPEL,CASOS,LIVROS,FONTES,MODALIDADES,ESTAGIOS,SITUACOES,EIXOS,CORRECOES,RESPONSABILIDADES,DOCUMENTOS_ATOS,ATUALIZADO,CONTATO,OBSTACULOS,LACUNAS,NIVEIS,CHEGADAS,NORMAS,SITUACOES_NORMA,VIAS_REVERSAO};", ctx);
+  vm.runInContext(ler("assets/dados.js") + "\n;this.__D={ATOS,AGENTES,PAPEIS,TIPOS_PAPEL,CASOS,LIVROS,FONTES,MODALIDADES,ESTAGIOS,SITUACOES,EIXOS,CORRECOES,RESPONSABILIDADES,DOCUMENTOS_ATOS,ATUALIZADO,CONTATO,OBSTACULOS,LACUNAS,NIVEIS,CHEGADAS,NORMAS,SITUACOES_NORMA,VIAS_REVERSAO,CONTEXTO_PARTIDARIO};", ctx);
   vm.runInContext(ler("assets/comum.js") + "\n;this.__F={esc,obraDe,slug,ordenar,casoHTML,livroHTML,casoCardHTML,livroCardHTML,dataLegivel,urlCaso,urlLivro,urlAto,agentesDoAto,nivelVerif};", ctx);
   return Object.assign(ctx.__F, {__D: ctx.__D});
 }
 const R = contexto("");      // páginas na raiz
 const S = contexto("../");   // páginas em casos/ e livros/
 const D = R.__D;
-const { CASOS, LIVROS, FONTES, MODALIDADES, ESTAGIOS, SITUACOES, EIXOS, ATUALIZADO, ATOS, AGENTES, PAPEIS, TIPOS_PAPEL, OBSTACULOS, LACUNAS, CHEGADAS, NORMAS, SITUACOES_NORMA, VIAS_REVERSAO } = D;
+const { CASOS, LIVROS, FONTES, MODALIDADES, ESTAGIOS, SITUACOES, EIXOS, ATUALIZADO, ATOS, AGENTES, PAPEIS, TIPOS_PAPEL, OBSTACULOS, LACUNAS, CHEGADAS, NORMAS, SITUACOES_NORMA, VIAS_REVERSAO, CONTEXTO_PARTIDARIO } = D;
 const esc = R.esc, obraDe = R.obraDe, slug = R.slug;
 
 /* ---------- 1. validação ---------- */
 const erros = [];
+for(const [i,x] of (CONTEXTO_PARTIDARIO||[]).entries()){
+  if(!x.pessoa || !x.partido || !x.cobertura || !x.status || !Array.isArray(x.fontes) || !x.fontes.length) erros.push(`CONTEXTO_PARTIDARIO[${i}]: campos obrigatórios ausentes`);
+  for(const url of x.fontes||[]){ try{ const u=new URL(url); if(!["https:","http:"].includes(u.protocol)) erros.push(`CONTEXTO_PARTIDARIO[${i}]: protocolo inválido`); }catch{ erros.push(`CONTEXTO_PARTIDARIO[${i}]: URL inválida: ${url}`); } }
+}
 const ids = new Set();
 const OBRIG = ["id","data","ato","titulo","uf","tipo","rede","quem","alegacao","eixo","modalidade","estagio","situacao","desfecho","verificado","fontes"];
 for(const c of CASOS){
@@ -412,7 +416,7 @@ for(const [k,A] of Object.entries(ATOS)){
         <span class="lac-meta">${esc([A.cidade,A.uf].filter(Boolean).join(", "))} · ${A.data.slice(0,4)} · ${regs.length} ${regs.length>1?"registros":"registro"}${nParc?` · <b>${nParc} parcialmente ${nParc>1?"verificados":"verificado"}</b>`:" · verificado"}</span></div>
       <div class="lac-tags">${L.obstaculos.map(o=>`<span class="lac-tag">${esc(o)}</span>`).join("")}</div>
       <div class="lac-bloco"><span class="k">O QUE FALTA</span>${textos.map(t=>`<p>${esc(t)}${textos.length>1||pend.length<regs.length?` <span class="lac-ids">(${porTexto(t)})</span>`:""}</p>`).join("")}</div>
-      <div class="lac-bloco"><span class="k">CAMINHO PARA FECHAR</span><p>${esc(L.caminho)}</p></div>
+      <div class="lac-bloco"><span class="k">COMO QUALQUER PESSOA PODE FECHAR</span><p>${esc(L.caminho)}</p></div>
     </article>`;
   };
   const parc = atosPend.filter(k=>CASOS.some(c=>c.ato===k && c.verificado!=="Sim"));
@@ -420,7 +424,7 @@ for(const [k,A] of Object.entries(ATOS)){
   const corpo = `<div class="wrap">
   <div class="hero-pg">
     <h1>O que falta apurar</h1>
-    <p class="lede">O catálogo publica o que está documentado e também o que ainda não conseguiu comprovar. Esta página reúne as lacunas de todos os registros, o tipo de obstáculo de cada uma e o caminho para fechá-la. Quando uma lacuna é fechada, a mudança entra no <a href="metodologia.html">registro público de correções</a>.</p>
+    <p class="lede">O catálogo publica o que está documentado e também o que ainda não conseguiu comprovar. Esta página reúne as lacunas de todos os registros, o tipo de obstáculo de cada uma e o documento que a fecharia. O observatório trabalha só com fontes públicas; quem obtiver um desses documentos pode enviá-lo. Quando uma lacuna é fechada, a mudança entra no <a href="metodologia.html">registro público de correções</a>.</p>
   </div>
   <div class="lac-nums">
     <div><b>${parciais.length}</b><span>de ${CASOS.length} registros parcialmente verificados</span></div>
@@ -468,6 +472,8 @@ const linhas = R.ordenar(CASOS,"id").map(c=>{
   const cols = ["id","esfera","uf","cidade","tipo","numero","data","autoria","partido","resumo","situacao","situacaoEm","citaLivro","precedente","ato","nota","fontes"];
   const cel = v => `"${(v??"").toString().replace(/"/g,'""')}"`;
   gravar("dados/estante-livre-normas.csv", "\uFEFF" + [cols.join(","), ...NORMAS.map(n=>cols.map(k=>cel(k==="fontes" ? n.fontes.map(f=>FONTES[f].url).join("; ") : n[k])).join(","))].join("\n") + "\n");
+  const cp = ["pessoa","partido","cobertura","status","fontes"];
+  gravar("dados/estante-livre-contexto-partidario.csv", "\uFEFF" + [cp.join(","), ...(CONTEXTO_PARTIDARIO||[]).map(x=>cp.map(k=>cel(k==="fontes" ? x.fontes.join("; ") : x[k])).join(","))].join("\n") + "\n");
 }
 gravar("dados/estante-livre-casos.json", JSON.stringify({
   nome:"Estante Livre: catálogo de censura de livros em bibliotecas e escolas brasileiras",

@@ -3645,6 +3645,782 @@
      "url": "https://consulta.limeira.sp.leg.br/arquivo?Id=226368"
     }
    ]
+  },
+  {
+   "id": "EL-035",
+   "url": "https://estante-livre-br.vercel.app/casos/el-035.html",
+   "data": "2026-03-12",
+   "ato": "LON-2026",
+   "ato_nome": "Levantamento e recolhimento para análise de O bebê vem com a cegonha?!? (Londrina)",
+   "obra": "O bebê vem com a cegonha?!?",
+   "titulo_registro": "O bebê vem com a cegonha?!?",
+   "conjunto": false,
+   "autoria": "Patrícia Engel Secco",
+   "editora": "Melhoramentos",
+   "ano_publicacao": 2003,
+   "como_chegou": "Compra da própria rede",
+   "cidade": "Londrina",
+   "uf": "PR",
+   "tipo_biblioteca": "Escolar",
+   "rede": "Municipal",
+   "governo_na_epoca": "Tiago Amaral (PSD) · prefeitura de Londrina",
+   "instancia_registrada": "Secretaria Municipal de Educação de Londrina",
+   "mecanismo": "Retirada",
+   "estagio": "Decisão ou ordem",
+   "situacao": "Em aberto",
+   "desfecho": "A SME iniciou levantamento na rede e recolhimento de exemplares para análise pedagógica; não há confirmação pública do alcance por unidade nem da decisão final sobre retorno ou exclusão.",
+   "eixo_tematico": "Sexualidade e gênero",
+   "justificativa_declarada": "O pedido de providências descreveu trechos do livro como “conteúdo sensível” e potencialmente geradores de questionamentos junto às famílias. A Folha corrigiu a versão inicial para esclarecer que a iniciativa partiu da equipe da Gerência de Ensino Fundamental da SME, não da direção da escola.",
+   "pressao_ou_pedido": "",
+   "decisao": "Secretaria Municipal de Educação de Londrina, que informou ter iniciado levantamento em toda a rede e recolhimento de exemplares para análise. A autoridade individual que autorizou a providência não foi identificada.",
+   "assinatura": "A reportagem não publicou os nomes dos signatários. A errata atribui a iniciativa à equipe da Gerência de Ensino Fundamental da SME, não à direção da escola; o número SEI e o documento integral ainda não foram localizados.",
+   "execucao": "SME e unidades da rede municipal, quanto ao levantamento e à retirada para análise. Não há confirmação do recolhimento integral em cada escola.",
+   "resposta_ou_reversao": "A SME apresentou nota sobre adequação etária e qualidade dos materiais. A editora Melhoramentos afirmou que não havia sido previamente notificada. A decisão final sobre retorno ou exclusão não foi localizada.",
+   "ato_ou_documento": "Pedido de providências consultado pela Folha de Londrina em 11/03/2026. Errata publicada em 12/03/2026 esclarece que a iniciativa partiu da equipe da Gerência de Ensino Fundamental da SME, não da direção da escola municipal. A CBN Londrina confirma a nota da SME sobre levantamento da rede e recolhimento para análise. O número do processo SEI, a íntegra do pedido, os nomes dos signatários e a decisão final não foram localizados. Relatório do OGPL aponta que, após 18/02/2025, apenas 15 processos do tipo Pedido de Providências foram públicos e 19.588 foram restritos, embora a Portaria SMGP-GAB nº 28/2020 preveja publicidade como regra.",
+   "reversao_via": "",
+   "reversao_data": "",
+   "verificado": "Parcialmente",
+   "nivel_verificacao": "Parcial",
+   "documento_primario": "",
+   "pendencia": "Localizar o número SEI, a íntegra do pedido de providências, o despacho da SME, o quantitativo recolhido, a avaliação técnica e a decisão final em repositórios públicos. A Folha informa que teve acesso ao pedido, mas o documento integral e os nomes dos signatários não foram localizados em fonte pública.",
+   "nota": "A Folha de Londrina, em 11/03/2026, informou ter consultado um pedido de providências relacionado ao livro. A errata publicada em 12/03/2026 esclareceu que a iniciativa partiu da equipe da Gerência de Ensino Fundamental da SME, e não da direção da escola municipal. O texto da matéria informa que o pedido de providências foi assinado pela “gerente da unidade” e pela “diretora pedagógica”, mas não publica seus nomes nem permite inferir, sem o documento integral, os vínculos funcionais exatos desses signatários. A CBN Londrina, em 12/03/2026, confirmou que a Secretaria informou ter iniciado levantamento na rede para localizar exemplares e encaminhá-los à análise pedagógica. O número do processo SEI, a íntegra do pedido, os nomes dos signatários e a decisão final não foram localizados. Relatório do Observatório de Gestão Pública de Londrina sobre a transparência no SEI informa que, após 18/02/2025, apenas 15 processos do tipo Pedido de Providências foram classificados como públicos, enquanto 19.588 foram iniciados com restrição; a regra normativa citada no relatório, Portaria SMGP-GAB nº 28/2020, prevê publicidade como padrão. Assim, não é possível presumir que o processo específico esteja publicamente acessível, embora o tipo processual deva ser público em regra. O Bonde reproduz a apuração da Folha e não constitui uma segunda confirmação independente. Os 19.588 processos restritos registrados pelo OGPL são contexto estatístico e não provam que este processo específico esteja restrito.",
+   "agentes": [
+    {
+     "nome": "Gerência de Ensino Fundamental da Secretaria Municipal de Educação de Londrina",
+     "tipo": "Instituição",
+     "papel": "Pedido",
+     "cargo": "",
+     "atribuido": false
+    },
+    {
+     "nome": "Gerência de Ensino Fundamental da Secretaria Municipal de Educação de Londrina",
+     "tipo": "Instituição",
+     "papel": "Assinatura",
+     "cargo": "",
+     "atribuido": false
+    },
+    {
+     "nome": "Secretaria Municipal de Educação de Londrina",
+     "tipo": "Instituição",
+     "papel": "Decisão",
+     "cargo": "",
+     "atribuido": false
+    },
+    {
+     "nome": "Secretaria Municipal de Educação de Londrina",
+     "tipo": "Instituição",
+     "papel": "Execução",
+     "cargo": "",
+     "atribuido": false
+    },
+    {
+     "nome": "Secretaria Municipal de Educação de Londrina",
+     "tipo": "Instituição",
+     "papel": "Resposta ou reversão",
+     "cargo": "",
+     "atribuido": false
+    }
+   ],
+   "fontes": [
+    {
+     "veiculo": "Folha de Londrina",
+     "titulo": "Educação vai recolher livro infantil com ‘conteúdo sensível’",
+     "data": "2024-11",
+     "url": "https://www.folhadelondrina.com.br/politica/educacao-vai-recolher-livro-infantil-com-conteudo-sensivel-3292131e.html"
+    },
+    {
+     "veiculo": "CBN Londrina",
+     "titulo": "Londrina recolhe livro infantil de escolas após polêmica com ‘conteúdo sensível’",
+     "data": "2026-03-12",
+     "url": "https://cbnlondrina.com.br/materias/londrina-recolhe-livro-infantil-de-escolas-apos-polemica-com-conteudo-sensivel"
+    },
+    {
+     "veiculo": "Observatório de Gestão Pública de Londrina",
+     "titulo": "Relatório sobre transparência no SEI: 15 processos Pedido de Providências públicos e 19.588 restritos após 18/02/2025; Portaria 28/2020 prevê publicidade como regra.",
+     "data": "2026",
+     "url": "https://observatoriolondrina.org.br/uploads/relatorios/Relat%C3%B3rio%20SEI%20-%20Pedidos%20de%20Provid%C3%AAncias.pdf"
+    },
+    {
+     "veiculo": "Folha de Londrina",
+     "titulo": "Errata da matéria sobre o pedido de recolhimento de O bebê vem com a cegonha?!?: iniciativa da Gerência de Ensino Fundamental da SME",
+     "data": "2026-03-12",
+     "url": "https://www.folhadelondrina.com.br/politica/educacao-vai-recolher-livro-infantil-com-conteudo-sensivel-3292131e.html"
+    },
+    {
+     "veiculo": "Jornal Oficial do Município de Londrina · nº 3630 (cópia digital assinada pelo Município)",
+     "titulo": "Relação de livros adquiridos pelo Município inclui O Bebê Vem com a Cegonha, Editora Melhoramentos, quantidade 1, preço unitário e total R$ 35,33",
+     "data": "2018-10-09",
+     "url": "https://www.luhu.org.br/uploads/editor/jornal_3630_assinado_LEI12765_3N2xMmTDBLqGYuc.pdf"
+    },
+    {
+     "veiculo": "Bonde News · reprodução da apuração da Folha de Londrina",
+     "titulo": "Educação vai recolher livro infantil sobre reprodução humana por conteúdo sensível",
+     "data": "2026-03-12",
+     "url": "https://www.bonde.com.br/bondenews/politica/educacao-vai-recolher-livro-infantil-sobre-reproducao-humana-por-conteudo-sensivel/amp"
+    }
+   ]
+  },
+  {
+   "id": "EL-036",
+   "url": "https://estante-livre-br.vercel.app/casos/el-036.html",
+   "data": "2024-04-17",
+   "ato": "CAN-2024",
+   "ato_nome": "Retirada de livros da biblioteca Mundoteca (Canoinhas)",
+   "obra": "Aparelho Sexual e Cia.",
+   "titulo_registro": "Aparelho Sexual e Cia.",
+   "conjunto": false,
+   "autoria": "Zep (Philippe Chappuis) e Hélène Bruller",
+   "editora": "Seguinte / Companhia das Letras",
+   "ano_publicacao": 2018,
+   "como_chegou": "Acervo, origem não informada",
+   "cidade": "Canoinhas",
+   "uf": "SC",
+   "tipo_biblioteca": "Pública",
+   "rede": "Municipal",
+   "governo_na_epoca": "Juliana Maciel Hoppe (PL) · prefeitura de Canoinhas",
+   "instancia_registrada": "Prefeitura de Canoinhas, sob a prefeita Juliana Maciel Hoppe",
+   "mecanismo": "Retirada",
+   "estagio": "Execução comprovada",
+   "situacao": "Em aberto",
+   "desfecho": "O TCE-SC concluiu que os exemplares não foram fisicamente descartados e estavam em poder da Fundação Cultural para análise de destinação. A localização e o acesso atuais não foram comprovados.",
+   "eixo_tematico": "Sexualidade e gênero",
+   "justificativa_declarada": "A prefeita Juliana Maciel chamou os livros de “porcaria” e afirmou que não eram adequados a crianças e adolescentes; o Requerimento nº 149/2024 falava genericamente em acesso infantil a materiais “pornográficos”.",
+   "pressao_ou_pedido": "Canoinhas Online relata que Tati Carvalho exibiu vídeo e classificou o conteúdo como pornografia; Osmar Oleskovicz pediu a retirada imediata e Willian Godoy defendeu a incineração. Essas falas são atribuídas a uma reportagem local; a gravação oficial da sessão e as atas correspondentes ainda não foram localizadas.",
+   "decisao": "A prefeita Juliana Maciel publicou vídeo em que declara que os livros seriam retirados da biblioteca e os chama de “porcaria”. A Prefeitura confirmou posteriormente a retirada em nota reproduzida pela imprensa local. Não foi localizada ordem escrita nem identificado signatário formal de ato administrativo.",
+   "assinatura": "Não foi localizado ato de retirada assinado. O Requerimento 149/2024 foi subscrito por Tati Carvalho, Wilmar Sudoski, Maurício Zimmermann, Willian Godoy, Adilson Steidel, Professor Osmar, André Flenik e Chico Mineiro. A decisão GCS/GSS-861/2024 foi assinada pelo conselheiro Gerson dos Santos Sicca. A resposta da prefeita está nas fls. 14–32, sob sigilo parcial, e não há recibo público de transferência.",
+   "execucao": "A prefeita aparece no vídeo colocando exemplares numa lixeira. A nota da Prefeitura reproduzida pela imprensa diz que os livros foram retirados da Mundoteca e seriam encaminhados aos responsáveis pelo projeto. Não há comprovação de destruição física nem de entrega efetiva aos responsáveis.",
+   "resposta_ou_reversao": "A FGM/Mundoteca afirmou que os livros eram controlados por faixa etária e não haviam sido emprestados a crianças. O MPSC abriu notícia de fato para apurar o descarte; o resultado não foi localizado. A Secom esclareceu que a Mundoteca era projeto privado incentivado e que a unidade já estava sob gestão municipal.",
+   "ato_ou_documento": "A decisão singular GCS/GSS-861/2024 do TCE-SC, no levantamento @LEV 24/80041829, registra que a prefeita Juliana Maciel Hoppe afirmou, em resposta juntada às fls. 14–32, que havia um exemplar de cada título e que os livros foram entregues à gestora da Fundação Cultural para análise de destinação. O TCE concluiu que os livros não foram efetivamente jogados no lixo e estavam em poder da Fundação Cultural. O Tribunal também qualificou a conduta pública da prefeita como irresponsável e apontou uso da imagem e da popularidade do cargo e de bens públicos para fins populistas, eleitoreiros e de autopromoção. O levantamento foi arquivado por baixa materialidade financeira e pela existência de notícia de fato no MPSC; isso não equivale a conclusão do Ministério Público. O TCE determinou levantamento parcial do sigilo apenas quanto ao Relatório DGE-328/2024 e à decisão; a resposta da prefeita e as fotos das fls. 14–32 não integram o documento público do Diário. O Requerimento 149/2024, assinado por oito vereadores, pediu revisão e reorganização da Mundoteca e separação de materiais por faixa etária, não a retirada expressa destes dois títulos. A decisão pública é assinada pelo conselheiro Gerson dos Santos Sicca.",
+   "reversao_via": "",
+   "reversao_data": "",
+   "verificado": "Sim",
+   "nivel_verificacao": "Confirmado",
+   "documento_primario": "",
+   "pendencia": "A localização física atual dos dois exemplares e sua eventual reintegração ao acervo permanecem sem comprovação pública. A resposta municipal juntada ao TCE e as fotografias das fls. 14–32 seguem sob sigilo parcial; não foi localizado recibo público de transferência, inventário nominal ou registro posterior de movimentação. O Diário Oficial nº 3698 registra que o Conselho Superior conheceu e negou provimento ao recurso por unanimidade; a fundamentação integral da deliberação não foi recuperada.",
+   "nota": "A decisão singular GCS/GSS-861/2024 do TCE-SC, no levantamento @LEV 24/80041829, registra que a prefeita Juliana Maciel Hoppe afirmou, em resposta juntada às fls. 14–32, que havia um exemplar de cada título e que os livros foram entregues à gestora da Fundação Cultural para análise de destinação. O TCE concluiu que os livros não foram efetivamente jogados no lixo e estavam em poder da Fundação Cultural. O Tribunal também qualificou a conduta pública da prefeita como irresponsável e apontou uso da imagem e da popularidade do cargo e de bens públicos para fins populistas, eleitoreiros e de autopromoção. O levantamento do TCE foi arquivado por baixa materialidade financeira e pela existência de notícia de fato no MPSC; isso não equivale a conclusão do Ministério Público. O Diário Oficial do MPSC nº 3698, publicado em 09/08/2024, registra que o Conselho Superior conheceu e negou provimento ao recurso interposto na Notícia de Fato nº 01.2024.00012159-3, por unanimidade. O extrato comprova o resultado do recurso, mas não reproduz a fundamentação da decisão revisora. O TCE determinou levantamento parcial do sigilo apenas quanto ao Relatório DGE-328/2024 e à decisão; a resposta da prefeita e as fotos das fls. 14–32 não integram o documento público do Diário. O Requerimento 149/2024, assinado por oito vereadores, pediu revisão e reorganização da Mundoteca e separação de materiais por faixa etária, não a retirada expressa destes dois títulos. A nova pesquisa localizou, no SAPL da Câmara, os dois ofícios acessórios do requerimento: o Ofício 205/2024, que o encaminhou à prefeita e ao coordenador de biblioteca, e a resposta da Fundação Cultural no Ofício 013/2024, de 14/05/2024. A resposta esclarece que a Mundoteca era de responsabilidade da Secretaria Municipal de Educação, não da Fundação Cultural; informa 569 obras, duas salas separadas por público, classificação por cores, abertura em 19/11/2022 e apenas um empréstimo registrado entre 15/03 e 14/04/2024. Essa resposta não identifica os dois títulos nem documenta seu recebimento, guarda ou destinação. Ela deve ser lida em conjunto com o TCE, que registra a afirmação da prefeita de que os dois exemplares foram entregues à gestora da Fundação Cultural para análise. O ponto de cadeia de custódia, portanto, continua aberto.",
+   "agentes": [
+    {
+     "nome": "Tatiane Carvalho (Tati Carvalho)",
+     "tipo": "Pessoa",
+     "papel": "Pedido",
+     "cargo": "vereadora",
+     "atribuido": false
+    },
+    {
+     "nome": "Tatiane Carvalho (Tati Carvalho)",
+     "tipo": "Pessoa",
+     "papel": "Assinatura",
+     "cargo": "vereadora",
+     "atribuido": false
+    },
+    {
+     "nome": "Wilmar Sudoski",
+     "tipo": "Pessoa",
+     "papel": "Pedido",
+     "cargo": "vereador",
+     "atribuido": false
+    },
+    {
+     "nome": "Wilmar Sudoski",
+     "tipo": "Pessoa",
+     "papel": "Assinatura",
+     "cargo": "vereador",
+     "atribuido": false
+    },
+    {
+     "nome": "Mauricio Zimmermann",
+     "tipo": "Pessoa",
+     "papel": "Pedido",
+     "cargo": "vereador e presidente da Câmara",
+     "atribuido": false
+    },
+    {
+     "nome": "Mauricio Zimmermann",
+     "tipo": "Pessoa",
+     "papel": "Assinatura",
+     "cargo": "vereador e presidente da Câmara",
+     "atribuido": false
+    },
+    {
+     "nome": "Willian Godoy",
+     "tipo": "Pessoa",
+     "papel": "Pedido",
+     "cargo": "vereador",
+     "atribuido": false
+    },
+    {
+     "nome": "Willian Godoy",
+     "tipo": "Pessoa",
+     "papel": "Assinatura",
+     "cargo": "vereador",
+     "atribuido": false
+    },
+    {
+     "nome": "Adilson Steidel",
+     "tipo": "Pessoa",
+     "papel": "Pedido",
+     "cargo": "vereador",
+     "atribuido": false
+    },
+    {
+     "nome": "Adilson Steidel",
+     "tipo": "Pessoa",
+     "papel": "Assinatura",
+     "cargo": "vereador",
+     "atribuido": false
+    },
+    {
+     "nome": "Osmar Oleskovicz (Professor Osmar)",
+     "tipo": "Pessoa",
+     "papel": "Pedido",
+     "cargo": "vereador",
+     "atribuido": false
+    },
+    {
+     "nome": "Osmar Oleskovicz (Professor Osmar)",
+     "tipo": "Pessoa",
+     "papel": "Assinatura",
+     "cargo": "vereador",
+     "atribuido": false
+    },
+    {
+     "nome": "André Flenik",
+     "tipo": "Pessoa",
+     "papel": "Pedido",
+     "cargo": "vereador",
+     "atribuido": false
+    },
+    {
+     "nome": "André Flenik",
+     "tipo": "Pessoa",
+     "papel": "Assinatura",
+     "cargo": "vereador",
+     "atribuido": false
+    },
+    {
+     "nome": "Chico Mineiro",
+     "tipo": "Pessoa",
+     "papel": "Pedido",
+     "cargo": "vereador",
+     "atribuido": false
+    },
+    {
+     "nome": "Chico Mineiro",
+     "tipo": "Pessoa",
+     "papel": "Assinatura",
+     "cargo": "vereador",
+     "atribuido": false
+    },
+    {
+     "nome": "Juliana Maciel Hoppe",
+     "tipo": "Pessoa",
+     "papel": "Decisão",
+     "cargo": "prefeita de Canoinhas (PL)",
+     "atribuido": true
+    },
+    {
+     "nome": "Juliana Maciel Hoppe",
+     "tipo": "Pessoa",
+     "papel": "Execução",
+     "cargo": "prefeita de Canoinhas (PL)",
+     "atribuido": true
+    },
+    {
+     "nome": "Ryan Pablo Klengues",
+     "tipo": "Pessoa",
+     "papel": "Destinatário do pedido",
+     "cargo": "coordenador de Biblioteca",
+     "atribuido": false
+    },
+    {
+     "nome": "FGM Produções · projeto Mundoteca",
+     "tipo": "Instituição",
+     "papel": "Resposta ou reversão",
+     "cargo": "",
+     "atribuido": false
+    },
+    {
+     "nome": "Ministério Público de Santa Catarina (MPSC)",
+     "tipo": "Instituição",
+     "papel": "Denúncia ou fiscalização",
+     "cargo": "",
+     "atribuido": false
+    },
+    {
+     "nome": "Tatiane Carvalho (Tati Carvalho)",
+     "tipo": "Pessoa",
+     "papel": "Pressão",
+     "cargo": "vereadora",
+     "atribuido": false
+    },
+    {
+     "nome": "Osmar Oleskovicz (Professor Osmar)",
+     "tipo": "Pessoa",
+     "papel": "Pressão",
+     "cargo": "vereador",
+     "atribuido": false
+    },
+    {
+     "nome": "Willian Godoy",
+     "tipo": "Pessoa",
+     "papel": "Pressão",
+     "cargo": "vereador",
+     "atribuido": false
+    },
+    {
+     "nome": "Prefeitura Municipal de Canoinhas",
+     "tipo": "Instituição",
+     "papel": "Execução",
+     "cargo": "",
+     "atribuido": false
+    },
+    {
+     "nome": "Tribunal de Contas do Estado de Santa Catarina (TCE-SC)",
+     "tipo": "Instituição",
+     "papel": "Denúncia ou fiscalização",
+     "cargo": "",
+     "atribuido": false
+    },
+    {
+     "nome": "Gerson dos Santos Sicca",
+     "tipo": "Pessoa",
+     "papel": "Assinatura",
+     "cargo": "conselheiro-relator do TCE-SC",
+     "atribuido": false
+    }
+   ],
+   "fontes": [
+    {
+     "veiculo": "Câmara Municipal de Canoinhas · Requerimento nº 149/2024",
+     "titulo": "Requerimento nº 149/2024 (PDF assinado)",
+     "data": "2024-04-16",
+     "url": "https://sapl.canoinhas.sc.leg.br/media/sapl/public/materialegislativa/2024/15355/req_149.pdf"
+    },
+    {
+     "veiculo": "SAPL · Câmara Municipal de Canoinhas",
+     "titulo": "Registro legislativo do Requerimento nº 149/2024",
+     "data": "2024-04-16",
+     "url": "https://sapl.canoinhas.sc.leg.br/materia/15355"
+    },
+    {
+     "veiculo": "Canoinhas Online",
+     "titulo": "Canoinhas em destaque nacional: vídeo de prefeita jogando livros no lixo repercute no país",
+     "data": "2024-04-19",
+     "url": "https://canoinhasonline.com.br/2024/04/canoinhas-em-destaque-nacional-video-de-prefeita-jogando-livros-no-lixo-repercute-no-pais.html"
+    },
+    {
+     "veiculo": "Instagram · Juliana Maciel",
+     "titulo": "Vídeo da prefeita sobre os livros da Mundoteca",
+     "data": "2024-04-17",
+     "url": "https://www.instagram.com/p/C56x9I6PtJh/?img_index=1"
+    },
+    {
+     "veiculo": "UOL",
+     "titulo": "MP abre investigação contra prefeita que admitiu jogar livros no lixo",
+     "data": "2024-04-20",
+     "url": "https://noticias.uol.com.br/politica/ultimas-noticias/2024/04/20/mpsc-investigacao-prefeita-santa-catarina-jogar-livros-lixo-pt-pl-bolsonaro.htm"
+    },
+    {
+     "veiculo": "UOL",
+     "titulo": "Livros jogados no lixo não foram emprestados a crianças, diz biblioteca",
+     "data": "2024-04-23",
+     "url": "https://noticias.uol.com.br/politica/ultimas-noticias/2024/04/23/livros-jogados-no-lixo-prefeita-sc-biblioteca.htm"
+    },
+    {
+     "veiculo": "UOL Comprova",
+     "titulo": "Projeto Mundoteca não é do governo federal como disse prefeita de SC",
+     "data": "2024-04-25",
+     "url": "https://noticias.uol.com.br/comprova/ultimas-noticias/2024/04/25/projeto-mundoteca-nao-e-do-governo-federal-como-disse-prefeita-sc.htm"
+    },
+    {
+     "veiculo": "Canoinhas Online",
+     "titulo": "Vídeo de prefeita jogando livros no lixo repercute no país",
+     "data": "2024-04-19",
+     "url": "https://canoinhasonline.com.br/2024/04/canoinhas-em-destaque-nacional-video-de-prefeita-jogando-livros-no-lixo-repercute-no-pais.html"
+    },
+    {
+     "veiculo": "Secretaria de Comunicação Social da Presidência da República",
+     "titulo": "Mundoteca não é um projeto do governo federal",
+     "data": "2023-03-01",
+     "url": "https://www.gov.br/secom/pt-br/fatos/brasil-contra-fake/noticias/2023/3/mundoteca-nao-e-um-projeto-do-governo-federal"
+    },
+    {
+     "veiculo": "Tribunal Regional Eleitoral de Santa Catarina",
+     "titulo": "Resultado oficial de votação por seção — Canoinhas, Juliana Maciel Hoppe (PL)",
+     "data": "2024-10-10",
+     "url": "https://apps.tre-sc.jus.br/site/fileadmin/arquivos/eleicoes/eleicoes2024/resultados_turno_1/votacao_secao/pdfs/VotSecao_80730_22.pdf"
+    },
+    {
+     "veiculo": "Coletivo Bereia",
+     "titulo": "Prefeita de Canoinhas (SC) destrói livros e mente ao dizer que foram produzidos pelo governo federal",
+     "data": "2024-04-19",
+     "url": "https://coletivobereia.com.br/prefeita-de-canoinhas-sc-destroi-livros-e-mente-ao-dizer-que-foram-produzidos-pelo-governo-federal/"
+    },
+    {
+     "veiculo": "Tribunal de Contas do Estado de Santa Catarina",
+     "titulo": "Decisão Singular GCS/GSS-861/2024 e Relatório DGE-328/2024 · Processo @LEV 24/80041829",
+     "data": "2024-07-08",
+     "url": "https://consulta.tce.sc.gov.br/Diario/dotc-e2024-07-08.pdf"
+    },
+    {
+     "veiculo": "SAPL · Câmara Municipal de Canoinhas",
+     "titulo": "Documentos acessórios do Requerimento nº 149/2024: Ofício 205/2024 e Ofício 013/2024",
+     "data": "2024-05-14",
+     "url": "https://sapl.canoinhas.sc.leg.br/materia/15355/documentoacessorio"
+    },
+    {
+     "veiculo": "Câmara Municipal de Canoinhas",
+     "titulo": "Ofício nº 205/2024/AL: encaminha o Requerimento nº 149/2024 à prefeita e ao coordenador de biblioteca",
+     "data": "2024-04-17",
+     "url": "https://sapl.canoinhas.sc.leg.br/media/sapl/public/documentoacessorio/2024/28163/of_205.pdf"
+    },
+    {
+     "veiculo": "Fundação Cultural de Canoinhas Helmy Wendt Mayer",
+     "titulo": "Ofício nº 013/2024: resposta ao Requerimento nº 149/2024, com descrição da Mundoteca e registro de empréstimo",
+     "data": "2024-05-14",
+     "url": "https://sapl.canoinhas.sc.leg.br/media/sapl/public/documentoacessorio/2024/28411/r_149.pdf"
+    },
+    {
+     "veiculo": "Ministério Público de Santa Catarina · Diário Oficial Eletrônico nº 3692",
+     "titulo": "Pauta da 1ª Turma Revisora do Conselho Superior: Notícia de Fato nº 01.2024.00012159-3, 1ª Promotoria de Canoinhas",
+     "data": "2024-08-01",
+     "url": "https://documentos.mpsc.mp.br/portal/Conteudo/publicacoes/do_mpsc_2024-08-01.pdf"
+    },
+    {
+     "veiculo": "Ministério Público de Santa Catarina · Diário Oficial Eletrônico nº 3698",
+     "titulo": "Extrato do julgamento do recurso na Notícia de Fato nº 01.2024.00012159-3: conhecido e desprovido por unanimidade",
+     "data": "2024-08-09",
+     "url": "https://documentos.mpsc.mp.br/portal/Conteudo/publicacoes/do_mpsc_2024-08-09.pdf"
+    }
+   ]
+  },
+  {
+   "id": "EL-037",
+   "url": "https://estante-livre-br.vercel.app/casos/el-037.html",
+   "data": "2024-04-17",
+   "ato": "CAN-2024",
+   "ato_nome": "Retirada de livros da biblioteca Mundoteca (Canoinhas)",
+   "obra": "As Melhores do Analista de Bagé",
+   "titulo_registro": "As Melhores do Analista de Bagé",
+   "conjunto": false,
+   "autoria": "Luis Fernando Verissimo",
+   "editora": "Objetiva",
+   "ano_publicacao": 2007,
+   "como_chegou": "Acervo, origem não informada",
+   "cidade": "Canoinhas",
+   "uf": "SC",
+   "tipo_biblioteca": "Pública",
+   "rede": "Municipal",
+   "governo_na_epoca": "Juliana Maciel Hoppe (PL) · prefeitura de Canoinhas",
+   "instancia_registrada": "Prefeitura de Canoinhas, sob a prefeita Juliana Maciel Hoppe",
+   "mecanismo": "Retirada",
+   "estagio": "Execução comprovada",
+   "situacao": "Em aberto",
+   "desfecho": "O TCE-SC concluiu que os exemplares não foram fisicamente descartados e estavam em poder da Fundação Cultural para análise de destinação. A localização e o acesso atuais não foram comprovados.",
+   "eixo_tematico": "Outro",
+   "justificativa_declarada": "A prefeita Juliana Maciel incluiu o título no vídeo em que chamou os livros de “porcaria” e afirmou que não eram adequados a crianças e adolescentes; o requerimento parlamentar falava genericamente em materiais “pornográficos”.",
+   "pressao_ou_pedido": "Canoinhas Online relata que Tati Carvalho exibiu vídeo e classificou o conteúdo como pornografia; Osmar Oleskovicz pediu a retirada imediata e Willian Godoy defendeu a incineração. Essas falas são atribuídas a uma reportagem local; a gravação oficial da sessão e as atas correspondentes ainda não foram localizadas.",
+   "decisao": "A prefeita Juliana Maciel publicou vídeo em que declara que os livros seriam retirados da biblioteca e os chama de “porcaria”. A Prefeitura confirmou posteriormente a retirada em nota reproduzida pela imprensa local. Não foi localizada ordem escrita nem identificado signatário formal de ato administrativo.",
+   "assinatura": "Não foi localizado ato de retirada assinado. O Requerimento 149/2024 foi subscrito por Tati Carvalho, Wilmar Sudoski, Maurício Zimmermann, Willian Godoy, Adilson Steidel, Professor Osmar, André Flenik e Chico Mineiro. A decisão GCS/GSS-861/2024 foi assinada pelo conselheiro Gerson dos Santos Sicca. A resposta da prefeita está nas fls. 14–32, sob sigilo parcial, e não há recibo público de transferência.",
+   "execucao": "A prefeita aparece no vídeo colocando exemplares numa lixeira. A nota da Prefeitura reproduzida pela imprensa diz que os livros foram retirados da Mundoteca e seriam encaminhados aos responsáveis pelo projeto. Não há comprovação de destruição física nem de entrega efetiva aos responsáveis.",
+   "resposta_ou_reversao": "A FGM/Mundoteca afirmou que os livros eram controlados por faixa etária e não haviam sido emprestados a crianças. O MPSC abriu notícia de fato para apurar o descarte; o resultado não foi localizado. A Secom esclareceu que a Mundoteca era projeto privado incentivado e que a unidade já estava sob gestão municipal.",
+   "ato_ou_documento": "A decisão singular GCS/GSS-861/2024 do TCE-SC, no levantamento @LEV 24/80041829, registra que a prefeita Juliana Maciel Hoppe afirmou, em resposta juntada às fls. 14–32, que havia um exemplar de cada título e que os livros foram entregues à gestora da Fundação Cultural para análise de destinação. O TCE concluiu que os livros não foram efetivamente jogados no lixo e estavam em poder da Fundação Cultural. O Tribunal também qualificou a conduta pública da prefeita como irresponsável e apontou uso da imagem e da popularidade do cargo e de bens públicos para fins populistas, eleitoreiros e de autopromoção. O levantamento foi arquivado por baixa materialidade financeira e pela existência de notícia de fato no MPSC; isso não equivale a conclusão do Ministério Público. O TCE determinou levantamento parcial do sigilo apenas quanto ao Relatório DGE-328/2024 e à decisão; a resposta da prefeita e as fotos das fls. 14–32 não integram o documento público do Diário. O Requerimento 149/2024, assinado por oito vereadores, pediu revisão e reorganização da Mundoteca e separação de materiais por faixa etária, não a retirada expressa destes dois títulos. A decisão pública é assinada pelo conselheiro Gerson dos Santos Sicca.",
+   "reversao_via": "",
+   "reversao_data": "",
+   "verificado": "Sim",
+   "nivel_verificacao": "Confirmado",
+   "documento_primario": "",
+   "pendencia": "A localização física atual dos dois exemplares e sua eventual reintegração ao acervo permanecem sem comprovação pública. A resposta municipal juntada ao TCE e as fotografias das fls. 14–32 seguem sob sigilo parcial; não foi localizado recibo público de transferência, inventário nominal ou registro posterior de movimentação. O Diário Oficial nº 3698 registra que o Conselho Superior conheceu e negou provimento ao recurso por unanimidade; a fundamentação integral da deliberação não foi recuperada.",
+   "nota": "A decisão singular GCS/GSS-861/2024 do TCE-SC, no levantamento @LEV 24/80041829, registra que a prefeita Juliana Maciel Hoppe afirmou, em resposta juntada às fls. 14–32, que havia um exemplar de cada título e que os livros foram entregues à gestora da Fundação Cultural para análise de destinação. O TCE concluiu que os livros não foram efetivamente jogados no lixo e estavam em poder da Fundação Cultural. O Tribunal também qualificou a conduta pública da prefeita como irresponsável e apontou uso da imagem e da popularidade do cargo e de bens públicos para fins populistas, eleitoreiros e de autopromoção. O levantamento do TCE foi arquivado por baixa materialidade financeira e pela existência de notícia de fato no MPSC; isso não equivale a conclusão do Ministério Público. O Diário Oficial do MPSC nº 3698, publicado em 09/08/2024, registra que o Conselho Superior conheceu e negou provimento ao recurso interposto na Notícia de Fato nº 01.2024.00012159-3, por unanimidade. O extrato comprova o resultado do recurso, mas não reproduz a fundamentação da decisão revisora. O TCE determinou levantamento parcial do sigilo apenas quanto ao Relatório DGE-328/2024 e à decisão; a resposta da prefeita e as fotos das fls. 14–32 não integram o documento público do Diário. O Requerimento 149/2024, assinado por oito vereadores, pediu revisão e reorganização da Mundoteca e separação de materiais por faixa etária, não a retirada expressa destes dois títulos. A nova pesquisa localizou, no SAPL da Câmara, os dois ofícios acessórios do requerimento: o Ofício 205/2024, que o encaminhou à prefeita e ao coordenador de biblioteca, e a resposta da Fundação Cultural no Ofício 013/2024, de 14/05/2024. A resposta esclarece que a Mundoteca era de responsabilidade da Secretaria Municipal de Educação, não da Fundação Cultural; informa 569 obras, duas salas separadas por público, classificação por cores, abertura em 19/11/2022 e apenas um empréstimo registrado entre 15/03 e 14/04/2024. Essa resposta não identifica os dois títulos nem documenta seu recebimento, guarda ou destinação. Ela deve ser lida em conjunto com o TCE, que registra a afirmação da prefeita de que os dois exemplares foram entregues à gestora da Fundação Cultural para análise. O ponto de cadeia de custódia, portanto, continua aberto.",
+   "agentes": [
+    {
+     "nome": "Tatiane Carvalho (Tati Carvalho)",
+     "tipo": "Pessoa",
+     "papel": "Pedido",
+     "cargo": "vereadora",
+     "atribuido": false
+    },
+    {
+     "nome": "Tatiane Carvalho (Tati Carvalho)",
+     "tipo": "Pessoa",
+     "papel": "Assinatura",
+     "cargo": "vereadora",
+     "atribuido": false
+    },
+    {
+     "nome": "Wilmar Sudoski",
+     "tipo": "Pessoa",
+     "papel": "Pedido",
+     "cargo": "vereador",
+     "atribuido": false
+    },
+    {
+     "nome": "Wilmar Sudoski",
+     "tipo": "Pessoa",
+     "papel": "Assinatura",
+     "cargo": "vereador",
+     "atribuido": false
+    },
+    {
+     "nome": "Mauricio Zimmermann",
+     "tipo": "Pessoa",
+     "papel": "Pedido",
+     "cargo": "vereador e presidente da Câmara",
+     "atribuido": false
+    },
+    {
+     "nome": "Mauricio Zimmermann",
+     "tipo": "Pessoa",
+     "papel": "Assinatura",
+     "cargo": "vereador e presidente da Câmara",
+     "atribuido": false
+    },
+    {
+     "nome": "Willian Godoy",
+     "tipo": "Pessoa",
+     "papel": "Pedido",
+     "cargo": "vereador",
+     "atribuido": false
+    },
+    {
+     "nome": "Willian Godoy",
+     "tipo": "Pessoa",
+     "papel": "Assinatura",
+     "cargo": "vereador",
+     "atribuido": false
+    },
+    {
+     "nome": "Adilson Steidel",
+     "tipo": "Pessoa",
+     "papel": "Pedido",
+     "cargo": "vereador",
+     "atribuido": false
+    },
+    {
+     "nome": "Adilson Steidel",
+     "tipo": "Pessoa",
+     "papel": "Assinatura",
+     "cargo": "vereador",
+     "atribuido": false
+    },
+    {
+     "nome": "Osmar Oleskovicz (Professor Osmar)",
+     "tipo": "Pessoa",
+     "papel": "Pedido",
+     "cargo": "vereador",
+     "atribuido": false
+    },
+    {
+     "nome": "Osmar Oleskovicz (Professor Osmar)",
+     "tipo": "Pessoa",
+     "papel": "Assinatura",
+     "cargo": "vereador",
+     "atribuido": false
+    },
+    {
+     "nome": "André Flenik",
+     "tipo": "Pessoa",
+     "papel": "Pedido",
+     "cargo": "vereador",
+     "atribuido": false
+    },
+    {
+     "nome": "André Flenik",
+     "tipo": "Pessoa",
+     "papel": "Assinatura",
+     "cargo": "vereador",
+     "atribuido": false
+    },
+    {
+     "nome": "Chico Mineiro",
+     "tipo": "Pessoa",
+     "papel": "Pedido",
+     "cargo": "vereador",
+     "atribuido": false
+    },
+    {
+     "nome": "Chico Mineiro",
+     "tipo": "Pessoa",
+     "papel": "Assinatura",
+     "cargo": "vereador",
+     "atribuido": false
+    },
+    {
+     "nome": "Juliana Maciel Hoppe",
+     "tipo": "Pessoa",
+     "papel": "Decisão",
+     "cargo": "prefeita de Canoinhas (PL)",
+     "atribuido": true
+    },
+    {
+     "nome": "Juliana Maciel Hoppe",
+     "tipo": "Pessoa",
+     "papel": "Execução",
+     "cargo": "prefeita de Canoinhas (PL)",
+     "atribuido": true
+    },
+    {
+     "nome": "Ryan Pablo Klengues",
+     "tipo": "Pessoa",
+     "papel": "Destinatário do pedido",
+     "cargo": "coordenador de Biblioteca",
+     "atribuido": false
+    },
+    {
+     "nome": "FGM Produções · projeto Mundoteca",
+     "tipo": "Instituição",
+     "papel": "Resposta ou reversão",
+     "cargo": "",
+     "atribuido": false
+    },
+    {
+     "nome": "Ministério Público de Santa Catarina (MPSC)",
+     "tipo": "Instituição",
+     "papel": "Denúncia ou fiscalização",
+     "cargo": "",
+     "atribuido": false
+    },
+    {
+     "nome": "Tatiane Carvalho (Tati Carvalho)",
+     "tipo": "Pessoa",
+     "papel": "Pressão",
+     "cargo": "vereadora",
+     "atribuido": false
+    },
+    {
+     "nome": "Osmar Oleskovicz (Professor Osmar)",
+     "tipo": "Pessoa",
+     "papel": "Pressão",
+     "cargo": "vereador",
+     "atribuido": false
+    },
+    {
+     "nome": "Willian Godoy",
+     "tipo": "Pessoa",
+     "papel": "Pressão",
+     "cargo": "vereador",
+     "atribuido": false
+    },
+    {
+     "nome": "Prefeitura Municipal de Canoinhas",
+     "tipo": "Instituição",
+     "papel": "Execução",
+     "cargo": "",
+     "atribuido": false
+    },
+    {
+     "nome": "Tribunal de Contas do Estado de Santa Catarina (TCE-SC)",
+     "tipo": "Instituição",
+     "papel": "Denúncia ou fiscalização",
+     "cargo": "",
+     "atribuido": false
+    },
+    {
+     "nome": "Gerson dos Santos Sicca",
+     "tipo": "Pessoa",
+     "papel": "Assinatura",
+     "cargo": "conselheiro-relator do TCE-SC",
+     "atribuido": false
+    }
+   ],
+   "fontes": [
+    {
+     "veiculo": "Câmara Municipal de Canoinhas · Requerimento nº 149/2024",
+     "titulo": "Requerimento nº 149/2024 (PDF assinado)",
+     "data": "2024-04-16",
+     "url": "https://sapl.canoinhas.sc.leg.br/media/sapl/public/materialegislativa/2024/15355/req_149.pdf"
+    },
+    {
+     "veiculo": "SAPL · Câmara Municipal de Canoinhas",
+     "titulo": "Registro legislativo do Requerimento nº 149/2024",
+     "data": "2024-04-16",
+     "url": "https://sapl.canoinhas.sc.leg.br/materia/15355"
+    },
+    {
+     "veiculo": "Instagram · Juliana Maciel",
+     "titulo": "Vídeo da prefeita sobre os livros da Mundoteca",
+     "data": "2024-04-17",
+     "url": "https://www.instagram.com/p/C56x9I6PtJh/?img_index=1"
+    },
+    {
+     "veiculo": "UOL",
+     "titulo": "MP abre investigação contra prefeita que admitiu jogar livros no lixo",
+     "data": "2024-04-20",
+     "url": "https://noticias.uol.com.br/politica/ultimas-noticias/2024/04/20/mpsc-investigacao-prefeita-santa-catarina-jogar-livros-lixo-pt-pl-bolsonaro.htm"
+    },
+    {
+     "veiculo": "UOL",
+     "titulo": "Livros jogados no lixo não foram emprestados a crianças, diz biblioteca",
+     "data": "2024-04-23",
+     "url": "https://noticias.uol.com.br/politica/ultimas-noticias/2024/04/23/livros-jogados-no-lixo-prefeita-sc-biblioteca.htm"
+    },
+    {
+     "veiculo": "UOL Comprova",
+     "titulo": "Projeto Mundoteca não é do governo federal como disse prefeita de SC",
+     "data": "2024-04-25",
+     "url": "https://noticias.uol.com.br/comprova/ultimas-noticias/2024/04/25/projeto-mundoteca-nao-e-do-governo-federal-como-disse-prefeita-sc.htm"
+    },
+    {
+     "veiculo": "Canoinhas Online",
+     "titulo": "Vídeo de prefeita jogando livros no lixo repercute no país",
+     "data": "2024-04-19",
+     "url": "https://canoinhasonline.com.br/2024/04/canoinhas-em-destaque-nacional-video-de-prefeita-jogando-livros-no-lixo-repercute-no-pais.html"
+    },
+    {
+     "veiculo": "Secretaria de Comunicação Social da Presidência da República",
+     "titulo": "Mundoteca não é um projeto do governo federal",
+     "data": "2023-03-01",
+     "url": "https://www.gov.br/secom/pt-br/fatos/brasil-contra-fake/noticias/2023/3/mundoteca-nao-e-um-projeto-do-governo-federal"
+    },
+    {
+     "veiculo": "Tribunal Regional Eleitoral de Santa Catarina",
+     "titulo": "Resultado oficial de votação por seção — Canoinhas, Juliana Maciel Hoppe (PL)",
+     "data": "2024-10-10",
+     "url": "https://apps.tre-sc.jus.br/site/fileadmin/arquivos/eleicoes/eleicoes2024/resultados_turno_1/votacao_secao/pdfs/VotSecao_80730_22.pdf"
+    },
+    {
+     "veiculo": "Coletivo Bereia",
+     "titulo": "Prefeita de Canoinhas (SC) destrói livros e mente ao dizer que foram produzidos pelo governo federal",
+     "data": "2024-04-19",
+     "url": "https://coletivobereia.com.br/prefeita-de-canoinhas-sc-destroi-livros-e-mente-ao-dizer-que-foram-produzidos-pelo-governo-federal/"
+    },
+    {
+     "veiculo": "Tribunal de Contas do Estado de Santa Catarina",
+     "titulo": "Decisão Singular GCS/GSS-861/2024 e Relatório DGE-328/2024 · Processo @LEV 24/80041829",
+     "data": "2024-07-08",
+     "url": "https://consulta.tce.sc.gov.br/Diario/dotc-e2024-07-08.pdf"
+    },
+    {
+     "veiculo": "SAPL · Câmara Municipal de Canoinhas",
+     "titulo": "Documentos acessórios do Requerimento nº 149/2024: Ofício 205/2024 e Ofício 013/2024",
+     "data": "2024-05-14",
+     "url": "https://sapl.canoinhas.sc.leg.br/materia/15355/documentoacessorio"
+    },
+    {
+     "veiculo": "Câmara Municipal de Canoinhas",
+     "titulo": "Ofício nº 205/2024/AL: encaminha o Requerimento nº 149/2024 à prefeita e ao coordenador de biblioteca",
+     "data": "2024-04-17",
+     "url": "https://sapl.canoinhas.sc.leg.br/media/sapl/public/documentoacessorio/2024/28163/of_205.pdf"
+    },
+    {
+     "veiculo": "Fundação Cultural de Canoinhas Helmy Wendt Mayer",
+     "titulo": "Ofício nº 013/2024: resposta ao Requerimento nº 149/2024, com descrição da Mundoteca e registro de empréstimo",
+     "data": "2024-05-14",
+     "url": "https://sapl.canoinhas.sc.leg.br/media/sapl/public/documentoacessorio/2024/28411/r_149.pdf"
+    },
+    {
+     "veiculo": "Ministério Público de Santa Catarina · Diário Oficial Eletrônico nº 3692",
+     "titulo": "Pauta da 1ª Turma Revisora do Conselho Superior: Notícia de Fato nº 01.2024.00012159-3, 1ª Promotoria de Canoinhas",
+     "data": "2024-08-01",
+     "url": "https://documentos.mpsc.mp.br/portal/Conteudo/publicacoes/do_mpsc_2024-08-01.pdf"
+    },
+    {
+     "veiculo": "Ministério Público de Santa Catarina · Diário Oficial Eletrônico nº 3698",
+     "titulo": "Extrato do julgamento do recurso na Notícia de Fato nº 01.2024.00012159-3: conhecido e desprovido por unanimidade",
+     "data": "2024-08-09",
+     "url": "https://documentos.mpsc.mp.br/portal/Conteudo/publicacoes/do_mpsc_2024-08-09.pdf"
+    }
+   ]
   }
  ]
 }

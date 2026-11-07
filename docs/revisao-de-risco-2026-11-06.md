@@ -24,7 +24,7 @@ Esta revisão substitui, por ora, a revisão jurídica que não está disponíve
 
 Varredura em `assets/dados.js` por termos de qualificação jurídica (censor, censurou, ilegal, crime, criminoso, improbidade, perseguição, abuso de autoridade): nenhuma ocorrência atribuída a pessoa.
 
-Situação das 21 pessoas cadastradas:
+Situação das 32 pessoas cadastradas (incluindo as de Canoinhas e Londrina, vindas do PR #5):
 
 - Todas aparecem só pelo papel num ato (pressão, pedido, decisão, assinatura, resposta), com o cargo da época.
 - Onde o papel é limitado, a nota diz o que o cadastro não sustenta (exemplo: a diretora do RS fez a crítica pública e não expediu a ordem).
@@ -33,7 +33,7 @@ Situação das 21 pessoas cadastradas:
 Pontos de atenção que continuam abertos:
 
 1. **Canal de direito de resposta.** A metodologia promete publicar respostas em até 10 dias, mas o e-mail do projeto ainda não existe (`CONTATO.email` está vazio). Até o domínio sair, o canal é o Instagram. Criar o e-mail junto com o domínio fecha esse ponto.
-2. **Contato prévio com órgãos.** A metodologia promete procurar o órgão antes de nomear agente público em caso novo. Isso vale para os próximos casos; os 34 atuais vêm de documentos e cobertura pública.
+2. **Sem contato prévio com órgãos.** Por decisão da editora, o observatório trabalha só com fontes públicas e não procura órgãos antes de publicar. Em compensação, a metodologia agora diz que agente público só é nomeado quando nome e papel constam de documento oficial ou de cobertura publicada, e o direito de resposta segue aberto.
 3. **Servidores de escalão baixo.** Diretora de escola e chefias regionais têm menos exposição pública que governadores e deputados. O cadastro só os nomeia quando o nome está em documento oficial ou em cobertura de imprensa, e esse critério deve continuar.
 
 ## Onde buscar uma leitura profissional gratuita, se quiser
