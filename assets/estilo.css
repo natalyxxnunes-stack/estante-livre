@@ -1044,3 +1044,22 @@ section > p:not([class]),.wrap > p:not([class]){max-width:70ch;line-height:1.7}
   .pais{min-width:0}
 }
 .paises{grid-template-columns:repeat(auto-fill,minmax(min(300px,100%),1fr))}
+/* análises: sequência de março de 2024 */
+.onda-wrap{overflow-x:auto;margin:22px 0 8px;max-width:100%}
+.onda-svg{display:block;max-width:none;font-family:var(--ui)}
+.onda-grade{stroke:var(--linha);stroke-width:1}
+.onda-eixo{font-size:11px;fill:var(--cinza)}
+.onda-uf{font-size:13px;fill:var(--tinta);font-weight:600}
+.onda-faixa{stroke:var(--azul-claro);stroke-width:8;stroke-linecap:round}
+.onda-aberta{stroke:var(--linha-forte);stroke-dasharray:3 5;stroke-width:3}
+.onda-ato{fill:var(--verm)}
+.onda-rev{fill:none;stroke:var(--azul);stroke-width:3}
+.onda-pl{fill:var(--tinta)}
+.onda-legenda{font-size:12px;color:var(--cinza);display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;margin:0 0 14px}
+.onda-k{display:inline-block;width:12px;height:12px;margin-right:4px;vertical-align:-2px}
+.onda-k-ato{background:var(--verm);border-radius:50%}
+.onda-k-rev{border:3px solid var(--azul);border-radius:50%}
+.onda-k-pl{background:var(--tinta);transform:rotate(45deg) scale(.8)}
+.onda-k-aberto{border-top:3px dashed var(--linha-forte);height:0;width:18px}
+.onda-lista{font-size:14px;line-height:1.55;max-width:850px;padding-left:20px}
+.onda-lista li{margin:6px 0}

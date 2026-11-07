@@ -61,6 +61,7 @@ for(const n of NORMAS){
   if(n.ato && !ATOS[n.ato]) erros.push(`NORMAS ${n.id}: ato inexistente: ${n.ato}`);
   if(n.precedente && !NORMAS.some(x=>x.id===n.precedente)) erros.push(`NORMAS ${n.id}: precedente inexistente: ${n.precedente}`);
 }
+for(const [t,l] of Object.entries(LIVROS)) if(l.chegadaFonte && !FONTES[l.chegadaFonte]) erros.push(`LIVROS “${t}”: fonte da chegada inexistente: ${l.chegadaFonte}`);
 for(const [t,l] of Object.entries(LIVROS)) if(!CHEGADAS.includes(l.chegada)) erros.push(`LIVROS “${t}”: chegada fora da lista: ${l.chegada}`);
 const obras = [...new Set(CASOS.map(obraDe))];
 const slugs = {};
