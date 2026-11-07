@@ -69,7 +69,23 @@
  </section>
 
  <section>
-  <div class="sechead"><span class="kicker">02</span><h2>Quem governava e quem decidiu</h2></div>
+  <div class="sechead"><span class="kicker">02</span><h2>O livro como palanque?</h2></div>
+  <p class="analysis-lead" id="cd-lead"></p>
+  <div class="analysis-metrics">
+   <div><strong id="cd-disputou">—</strong><span>pessoas que pressionaram e disputaram a eleição seguinte</span></div>
+   <div><strong id="cd-eleitos">—</strong><span>foram eleitas</span></div>
+   <div><strong id="cd-votos">—</strong><span>votos somados por quem se elegeu em 2026</span></div>
+  </div>
+  <div class="table-wrap"><table class="tab analysis-table pol-table">
+   <thead><tr><th>Quem</th><th>O caso</th><th>Eleição seguinte</th><th>Resultado</th></tr></thead>
+   <tbody id="cd-rows"></tbody>
+  </table></div>
+  <p id="cd-texto"></p>
+  <p class="note">Como fizemos: para cada pessoa que pressionou ou decidiu, buscamos a primeira eleição disputada depois do caso, com fonte. Quando não há registro, a linha aparece como não verificada e fica fora das contas. O cruzamento mostra coincidência no tempo; ele não mede se o caso do livro pesou no voto, nem se foi usado na campanha.</p>
+ </section>
+
+ <section>
+  <div class="sechead"><span class="kicker">03</span><h2>Quem governava e quem decidiu</h2></div>
   <p class="analysis-lead" id="gv-lead"></p>
   <div id="gv-campos" class="analysis-bars" aria-label="Atos por campo ideológico do partido de quem governava"></div>
   <div class="table-wrap"><table class="tab analysis-table pol-table">
@@ -81,7 +97,7 @@
  </section>
 
  <section>
-  <div class="sechead"><span class="kicker">03</span><h2>Quem transforma a pressão em lei</h2></div>
+  <div class="sechead"><span class="kicker">04</span><h2>Quem transforma a pressão em lei</h2></div>
   <p class="analysis-lead" id="lg-lead"></p>
   <div class="table-wrap"><table class="tab analysis-table pol-table">
    <thead><tr><th>Norma</th><th>Onde</th><th>Autoria</th><th>Partido</th><th>Situação</th></tr></thead>
@@ -91,14 +107,14 @@
  </section>
 
  <section>
-  <div class="sechead"><span class="kicker">04</span><h2>Quem reage</h2></div>
+  <div class="sechead"><span class="kicker">05</span><h2>Quem reage</h2></div>
   <p class="analysis-lead" id="rg-lead"></p>
   <div class="analysis-grid" id="rg-cards"></div>
   <p id="rg-texto"></p>
  </section>
 
  <section>
-  <div class="sechead"><span class="kicker">05</span><h2>O que esses dados permitem dizer</h2></div>
+  <div class="sechead"><span class="kicker">06</span><h2>O que esses dados permitem dizer</h2></div>
   <div class="analysis-unknown">
    <div><h3>Um padrão na iniciativa</h3><p>No conjunto documentado, quem leva um livro ao debate público como problema é, quase sempre, vereador ou deputado de partido classificado à direita da escala. É um achado sobre a iniciativa política, que costuma começar em vídeo nas redes ou em requerimento, e merece acompanhamento a cada caso novo.</p></div>
    <div><h3>Um padrão na resposta</h3><p>A decisão costuma ficar com uma secretaria, e a reversão costuma vir rápido, pelo próprio governo ou pela Justiça. A pressão é rápida e pública, e o efeito recai sobre quem está na escola: professores, bibliotecários e estudantes ficam semanas, às vezes anos, sem o livro, mesmo quando a ordem cai.</p></div>
@@ -108,7 +124,7 @@
  </section>
 
  <section>
-  <div class="sechead"><span class="kicker">06</span><h2>Como classificamos os partidos</h2></div>
+  <div class="sechead"><span class="kicker">07</span><h2>Como classificamos os partidos</h2></div>
   <p>A posição de cada partido vem dos surveys com cientistas políticos coordenados por Bruno Bolognesi, Ednaldo Ribeiro e Adriano Codato. A base principal é a <a href="https://www.scielo.br/j/op/a/hv8GBg9hfCCZLwcWktfYhtC/?lang=pt" target="_blank" rel="noopener">rodada de 2022</a>, publicada na revista Opinião Pública em 2025, que usa a média ponderada com a rodada anterior. Siglas que não aparecem na rodada de 2022, como o PP e o extinto PSL, usam a <a href="https://www.scielo.br/j/dados/a/zzyM3gzHD4P45WWdytXjZWg/abstract/?lang=pt" target="_blank" rel="noopener">rodada de 2018</a>, publicada na revista Dados em 2023. A escala vai de 0 (extrema esquerda) a 10 (extrema direita), com os cortes definidos pelos autores. Segundo eles, "extrema" indica a posição na escala e não um caráter antissistema.</p>
   <div class="table-wrap"><table class="tab analysis-table pol-escala">
    <thead><tr><th>Partido</th><th>Escore</th><th>Rodada</th><th>Campo</th><th>Pessoas no catálogo</th></tr></thead>
@@ -118,7 +134,7 @@
  </section>
 
  <section>
-  <div class="sechead"><span class="kicker">07</span><h2>Filiação com data</h2></div>
+  <div class="sechead"><span class="kicker">08</span><h2>Filiação com data</h2></div>
   <p>Políticos trocam de partido, e um rótulo errado muda a leitura de um caso. Para os nomes centrais do catálogo, a base registra a filiação no período do episódio e as mudanças posteriores, com a fonte e o grau de certeza. A tabela completa também sai nos <a href="dados/estante-livre-contexto-partidario.csv">dados abertos</a>.</p>
   <div class="table-wrap"><table class="tab analysis-table pol-table">
    <thead><tr><th>Pessoa</th><th>Filiação</th><th>Observação</th><th>Grau de certeza</th></tr></thead>
@@ -206,6 +222,33 @@ const todos = [...reg.values()];
   el("pr-texto").textContent = `Em ${virou} dos ${atosPr.length} atos com pressão de quem tem mandato, o livro chegou a ser retirado, suspenso ou mandado recolher. ${atosPr.length-virou===1 ? "No outro, a pressão parou no pedido." : `Nos outros ${atosPr.length-virou}, a pressão parou no pedido.`} O caminho mais comum é o vídeo nas redes ou o requerimento na Câmara, muitas vezes seguido de uma decisão da secretaria em poucos dias. Em Canoinhas, os oito vereadores que assinaram o requerimento pediram revisão e separação do acervo por idade; quem gravou o vídeo jogando os livros no lixo foi a prefeita, e o TCE-SC concluiu depois que eles não chegaram a ser descartados.`;
 }
 
+
+/* 02 candidaturas */
+{
+  const prA = todos.filter(r=>r.partido && ehMandato(r.cargo) && (r.papeis.has("Pressão")||r.papeis.has("Pedido")));
+  const decs = todos.filter(r=>r.partido && r.papeis.has("Decisão") && /governador|prefeit/i.test(r.cargo||""));
+  const pessoas = new Map(); [...prA, ...decs].forEach(r=>{ if(!pessoas.has(r.agente)) pessoas.set(r.agente, r); });
+  const proxima = r => CANDIDATURAS.filter(c=>c.agente===r.agente && c.ano >= +ATOS[r.ato].data.slice(0,4) && !(c.ano===+ATOS[r.ato].data.slice(0,4) && ATOS[r.ato].data.slice(5)>"10-06")).sort((a,b)=>a.ano-b.ano);
+  const linhas = [...pessoas.values()].map(r=>({r, cs:proxima(r)})).sort((a,b)=>ATOS[a.r.ato].data.localeCompare(ATOS[b.r.ato].data));
+  const verif = linhas.filter(l=>l.cs.length);
+  const disputou = verif.filter(l=>l.cs.some(c=>["Eleito","Não eleito","Resultado não confirmado"].includes(c.resultado)));
+  const eleitos = verif.filter(l=>l.cs.some(c=>c.resultado==="Eleito"));
+  const el26 = CANDIDATURAS.filter(c=>c.ano===2026 && c.resultado==="Eleito" && pessoas.has(c.agente));
+  const soma = el26.reduce((s,c)=>s+(c.votos||0),0);
+  el("cd-disputou").textContent = disputou.length; el("cd-eleitos").textContent = eleitos.length;
+  el("cd-votos").textContent = soma.toLocaleString("pt-BR");
+  const nomes26 = el26.map(c=>AGENTES[c.agente].nome+" ("+c.partido+"), "+c.cargo);
+  el("cd-lead").textContent = `Das ${verif.length} pessoas com eleição seguinte verificada, ${disputou.length} disputaram com candidatura confirmada e ${eleitos.length} se elegeram. Em 2026, ${el26.length} delas se elegeram: ${nomes26.join("; ")}.`;
+  el("cd-rows").innerHTML = linhas.map(({r,cs})=>{
+    const a = ATOS[r.ato];
+    const el1 = cs.length ? cs.map(c=>esc(c.ano+(c.cargo?" · "+c.cargo:""))+(c.partido?" <small>"+esc(c.partido)+"</small>":"")).join("<br>") : "<small>não verificada</small>";
+    const res = cs.length ? cs.map(c=>"<strong>"+esc(c.resultado)+"</strong>"+(c.votos?" · "+c.votos.toLocaleString("pt-BR")+" votos":"")+(c.nota?"<small>"+esc(c.nota)+"</small>":"")+(FONTES[c.fonte]?'<small><a href="'+esc(FONTES[c.fonte].url)+'" target="_blank" rel="noopener">'+esc(FONTES[c.fonte].veic)+'</a></small>':"")).join("<br>") : "—";
+    return '<tr><td><strong>'+esc(r.nome)+'</strong><small>'+esc(cargoSemPartido(r.cargo))+'</small></td><td><a href="'+urlAto(r.ato)+'">'+esc(lugar(a))+'</a><small>'+dataCurta(a.data)+' · '+esc([...r.papeis].includes("Decisão")?"decidiu":"pressionou")+'</small></td><td>'+el1+'</td><td>'+res+'</td></tr>';
+  }).join("");
+  const naoV = linhas.length - verif.length;
+  el("cd-texto").textContent = `Os resultados mais fortes vêm de quem fez do caso um episódio público. O vereador que atacou o livro em São José dos Campos foi reeleito quatro meses depois e, em 2026, chegou à Assembleia de São Paulo. A vereadora que levou o livro de Londrina à Câmara virou a mulher mais votada do Paraná para deputada estadual. A prefeita de Canoinhas, que gravou o vídeo com os livros no lixo, foi reeleita no mesmo ano. Ao mesmo tempo, dos seis vereadores de Canoinhas que disputaram a eleição de 2024, quatro perderam, e os dois vereadores de Foz do Iguaçu não se elegeram deputados. ${naoV ? `Para ${naoV} ${naoV>1?"pessoas":"pessoa"}, a eleição seguinte ainda não foi verificada.` : ""}`;
+}
+
 /* 02 governo e decisão */
 {
   const nivel = (k,a) => {
@@ -238,7 +281,8 @@ const todos = [...reg.values()];
   const cont = {}; ns.forEach(n=>{ const c = n.partido ? campoDe(n.partido) : "Sem classificação"; cont[c]=(cont[c]||0)+1; });
   const nDir = DIR.reduce((s,k)=>s+(cont[k]||0),0), nEsq = ESQ.reduce((s,k)=>s+(cont[k]||0),0), nSem = cont["Sem classificação"]||0;
   const vigor = ns.filter(n=>n.situacao==="Em vigor").length;
-  el("lg-lead").textContent = `A pressão virou proposta de lei em ${ns.length} casas legislativas, e ${vigor} dessas normas já estão em vigor. Das ${ns.length}, ${nDir} têm autoria ou relatoria de parlamentares de partidos de direita ou extrema direita; em ${nSem}, a fonte não informa o partido. ${nEsq ? nEsq+" vêm de partidos de esquerda ou centro-esquerda." : "Nenhuma vem de partido de esquerda ou centro-esquerda."}`;
+  const nCDn = cont["Centro-direita"]||0;
+  el("lg-lead").textContent = `A pressão virou proposta de lei em ${ns.length} casas legislativas, e ${vigor} dessas normas já estão em vigor. Das ${ns.length}, ${nDir} têm autoria ou relatoria de parlamentares de partidos de direita ou extrema direita${nCDn ? " e "+nCDn+" de centro-direita" : ""}${nSem ? "; em "+nSem+", a fonte não informa o partido" : ""}. ${nEsq ? nEsq+" vêm de partidos de esquerda ou centro-esquerda." : "Nenhuma vem de partido de esquerda ou centro-esquerda."}`;
   el("lg-rows").innerHTML = ns.map(n=>'<tr><td><a href="normas.html#'+n.id+'">'+esc(n.numero)+'</a><small>'+esc(n.tipo)+' · '+dataCurta(n.data)+'</small></td><td>'+esc(n.cidade||n.esfera)+', '+esc(n.uf)+'</td><td>'+esc(n.autoria)+'</td><td>'+(n.partido?'<strong>'+esc(n.partido)+'</strong><small>'+esc(campoDe(n.partido))+'</small>':'<small>não informado</small>')+(n.partidoNota?'<small class="pol-aviso">'+esc(n.partidoNota)+'</small>':'')+'</td><td>'+esc(n.situacao)+'</td></tr>').join("");
 }
 

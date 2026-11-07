@@ -605,6 +605,20 @@ const ATOS = {
 };
 
 const FONTES = {
+ "otempo-sinop-2024": {"veic": "O Tempo", "data": "2024-10-07", "tit": "Eleições 2024: veja a lista dos vereadores eleitos em Sinop (MT)", "url": "https://www.otempo.com.br/eleicoes/2024/vereador/2024/10/7/eleicoes-2024-veja-a-lista-dos-vereadores-eleitos-em-sinop-mt"},
+ "cf-thiago-silva-2022": {"veic": "Congresso em Foco", "data": "2022-10-03", "tit": "Thiago Silva (MDB) foi eleito deputado estadual em MT", "url": "https://www.congressoemfoco.com.br/noticia/131169/thiago-silva-mdb-foi-eleito-deputado-estadual-em-mt"},
+ "gp-campagnolo-pl": {"veic": "Gazeta do Povo", "data": "2026-11-03", "tit": "PL prepara Ana Campagnolo para a presidência da Alesc", "url": "https://www.gazetadopovo.com.br/santa-catarina/pl-prepara-ana-campagnolo-presidencia-alesc/"},
+ "hub-thomaz": {"veic": "Hub Político", "data": "2026-10-05", "tit": "Thomaz Henrique (PL): histórico eleitoral", "url": "https://hubpolitico.com.br/perfil/thomazhenrique"},
+ "hub-jessicao": {"veic": "Hub Político", "data": "2026-10-05", "tit": "Jessicão (Jessica Moreno): histórico eleitoral", "url": "https://hubpolitico.com.br/perfil/jessicao/eleicoes"},
+ "itatiaia-gayer-2026": {"veic": "Itatiaia", "data": "2026-10-04", "tit": "Eleições 2026: Gustavo Gayer é eleito senador em Goiás", "url": "https://www.itatiaia.com.br/politica/eleicoes/eleicoes-2026-gustavo-gayer-e-eleito-senador-em-goias/"},
+ "otempo-rinaldo-2026": {"veic": "O Tempo", "data": "2026-10-05", "tit": "Professor Rinaldo Modesto é eleito deputado estadual no Mato Grosso do Sul", "url": "https://www.otempo.com.br/eleicoes/2026/deputados-estaduais/2026/10/5/tse-confirma-eleicao-de-professor-rinaldo-modesto-para-deputado-estadual-pelo-mato-grosso-do-sul-nas-eleicoes-2026"},
+ "nsc-juliana-2024": {"veic": "NSC Total", "data": "2024-10-06", "tit": "Juliana Maciel (PL) é reeleita prefeita de Canoinhas nas Eleições 2024", "url": "https://www.nsctotal.com.br/?p=7303245"},
+ "jmais-canoinhas-2024": {"veic": "JMais", "data": "2024-10-07", "tit": "Veja quem são os 10 vereadores eleitos para a Câmara de Canoinhas", "url": "https://www.jmais.com.br/veja-quem-sao-os-10-vereadores-eleitos-para-a-camara-de-canoinhas/"},
+ "hub-ranieri": {"veic": "Hub Político", "data": "2026-10-05", "tit": "Dr. Ranieri (Republicanos): candidato a deputado federal", "url": "https://hubpolitico.com.br/perfil/drranierimarchioro"},
+ "rc-foz-candidatos-2026": {"veic": "Rádio Cultura Foz", "data": "2026-08-16", "tit": "Conheça os candidatos de Foz do Iguaçu a deputado federal em 2026", "url": "https://www.radioculturafoz.com.br/2026/08/16/conheca-os-20-candidatos-de-foz-do-iguacu-a-deputado-federal-em-2026/"},
+ "h2foz-federal-2026": {"veic": "H2FOZ", "data": "2026-10-04", "tit": "Deputado federal: veja a votação dos candidatos de Foz do Iguaçu", "url": "https://www.h2foz.com.br/politica/deputado-federal-votacao-candidatos-foz-do-iguacu/"},
+ "as-zelinda-2026": {"veic": "Agência Sertão", "data": "2026-11-06", "tit": "Pastora Zelinda, candidata a deputada federal em São Paulo nas Eleições 2026", "url": "https://agenciasertao.com/eleicoes/candidato/SP/pastora-zelinda-prd-sp--250002534395/"},
+ "rno-clayton-2020": {"veic": "Rápido no Ar", "data": "2020-06-10", "tit": "PTC confirma pré-candidatura de Clayton Silva a prefeito de Limeira", "url": "https://rapidonoar.com.br/ptc-confirma-pre-candidatura-de-clayton-silva-a-prefeito-de-limeira/"},
  "cml-pi582": {"veic": "Câmara Municipal de Londrina", "data": "2024-11-28", "tit": "Legislativo em Pauta nº 1.214: Pedido de Informação nº 582/2024 sobre A mamãe vai ter um bebê", "url": "https://www.cml.pr.gov.br/imprensa/sala/Legislativo-em-Pauta/1/2024/20238"},
  "bolognesi-2025": {"veic": "Opinião Pública (Unicamp)", "data": "2025-01-01", "tit": "Bolognesi, Ribeiro, Codato e Silva. O desaparecimento do centro ideológico no sistema partidário brasileiro: a classificação mais atualizada dos experts", "url": "https://www.scielo.br/j/op/a/hv8GBg9hfCCZLwcWktfYhtC/?lang=pt"},
  "bolognesi-2023": {"veic": "Dados (Iesp-Uerj)", "data": "2023-01-01", "tit": "Bolognesi, Ribeiro e Codato. Uma nova classificação ideológica dos partidos políticos brasileiros", "url": "https://www.scielo.br/j/dados/a/zzyM3gzHD4P45WWdytXjZWg/abstract/?lang=pt"},
@@ -1092,6 +1106,7 @@ const CONTEXTO = [
 
 /* Registro público de correções. Toda mudança de fato num caso entra aqui. */
 const CORRECOES = [
+ {"data": "2026-11-06", "id": "Normas e candidaturas", "texto": "Registrados o partido dos autores de três normas (Novo em Sinop, MDB em Mato Grosso e PL na emenda de Santa Catarina) e a eleição seguinte de quem pressionou ou decidiu nos casos, com votos e fonte."},
  {"data": "2026-11-06", "id": "EL-030", "texto": "Londrina, 2024: localizado o Pedido de Informação nº 582/2024, aprovado em 28/11/2024 e assinado pela Comissão de Defesa dos Direitos do Nascituro (Jessicão, Mara Boca Aberta e Giovani Mattos), que pergunta sobre A mamãe vai ter um bebê, encontrado no CMEI Sandra Regina Maximiano Leme."},
  {"data": "2026-11-06", "id": "EL-004, EL-015 a EL-024, EL-027", "texto": "Garimpo de documentos: Rondônia ganha a entrevista em que o secretário chamou o memorando de \"fake\" no dia em que circulou; MS ganha segunda fonte confirmando que, em 24/04/2024, a devolução ainda estava em processo; Conselheiro Lafaiete ganha a nota de 19/06/2024, que, como o comunicado de 20/06, não traz assinatura individual."},
  {"data": "2026-11-06", "id": "EL-038", "texto": "Incluído o recolhimento de cerca de 7 mil exemplares de English After School, material de inglês da rede municipal de Foz do Iguaçu (PR), em junho de 2025, revertido por liminar em julho e, segundo a própria Secretaria, novamente retido em 2026."},
@@ -1155,24 +1170,24 @@ const NORMAS = [
  {id:"N-01", esfera:"Municipal", uf:"PR", cidade:"Londrina", tipo:"Lei", numero:"Lei nº 13.930/2025 (PL 79/2024)", data:"2025-03-21", autoria:"Jéssica Ramos Moreno", partido:"PP",
   resumo:"Proíbe livros com conteúdo erótico nas escolas municipais.", situacao:"Em vigor", situacaoEm:"2025-03-21", ato:"LON-2024",
   nota:"Protocolada em abril de 2024 e sancionada em março de 2025. Em novembro de 2024, durante a tramitação, a mesma vereadora encontrou A mamãe vai ter um bebê em um CMEI e pediu o recolhimento (EL-030). A lei é citada como precedente no projeto de Cuiabá.", fontes:["pl79-londrina","lei-londrina-13930"]},
- {id:"N-02", esfera:"Municipal", uf:"MT", cidade:"Sinop", tipo:"Lei", numero:"Lei nº 3.499/2025", data:"2025-07-07", autoria:"Hedvaldo Costa", partido:"",
+ {id:"N-02", esfera:"Municipal", uf:"MT", cidade:"Sinop", tipo:"Lei", numero:"Lei nº 3.499/2025", data:"2025-07-07", autoria:"Hedvaldo Costa", partido:"Novo", partidoNota:"Eleito vereador em 2024 como Prof Hedvaldo, número de urna 30123; o prefixo 30 é o do Novo.",
   resumo:"Proíbe o uso e a distribuição de livros e materiais com conteúdo erótico nas escolas municipais; mantém o conteúdo científico sobre reprodução humana adequado à idade. Não prevê fiscalização nem penalidade.", situacao:"Em vigor", situacaoEm:"2025-07-07",
-  nota:"Sancionada pelo prefeito Roberto Dorner na semana anterior a 7 de julho de 2025. A data exata da sanção não está na fonte; a data registrada é a da notícia.", fontes:["sinop-lei-3499"]},
+  nota:"Sancionada pelo prefeito Roberto Dorner na semana anterior a 7 de julho de 2025. A data exata da sanção não está na fonte; a data registrada é a da notícia.", fontes:["sinop-lei-3499","otempo-sinop-2024"]},
  {id:"N-03", esfera:"Municipal", uf:"MT", cidade:"Cuiabá", tipo:"Lei", numero:"Lei nº 7.371/2025", data:"2025-04-03", autoria:"Rafael Ranalli", partido:"PL",
   resumo:"Proíbe o uso e a distribuição, em qualquer formato, de livros com conteúdo erótico nas escolas municipais, com definição ampla que inclui cenas implícitas e palavrões.", situacao:"Em vigor", situacaoEm:"2025-10-21", precedente:"N-01",
   nota:"Aprovado em segunda votação com 22 votos. A justificativa cita a Lei nº 13.930/2025, de Londrina, como precedente. O prefeito Abilio Brunini (PL) sancionou o texto em 21 de outubro de 2025, e a norma foi publicada como Lei nº 7.371. A data registrada no campo principal é a do protocolo do projeto.", fontes:["cuiaba-pl-ranalli","pnc-cuiaba-set","pnc-cuiaba-out","pnc-cuiaba-lei","metropoles-cuiaba-lei"]},
  {id:"N-04", esfera:"Estadual", uf:"AM", cidade:"", tipo:"Projeto de lei", numero:"PL nº 154/2024", data:"2024-03-11", autoria:"Débora Menezes", partido:"PL",
   resumo:"Veda conteúdo erótico, pornográfico e obsceno em escolas públicas e privadas, inclusive em material didático e paradidático, com multa de 1 a 10 salários mínimos.", situacao:"Situação não confirmada", situacaoEm:"2024-03-11", citaLivro:"O avesso da pele",
   nota:"Apresentado na semana em que O avesso da pele foi recolhido no Paraná e em Goiás. A justificativa cita o livro como motivação. O texto é quase idêntico ao do PL 1768/2024 (MT) e ao do projeto da Serra (ES). Busca em fontes abertas feita em 6 de novembro de 2026 não localizou votação, arquivamento nem lei resultante.", fontes:["aleam-pl154"]},
- {id:"N-05", esfera:"Estadual", uf:"MT", cidade:"", tipo:"Projeto de lei", numero:"PL nº 1768/2024", data:"2024-10-30", autoria:"Thiago Silva", partido:"",
+ {id:"N-05", esfera:"Estadual", uf:"MT", cidade:"", tipo:"Projeto de lei", numero:"PL nº 1768/2024", data:"2024-10-30", autoria:"Thiago Silva", partido:"MDB", partidoNota:"Eleito deputado estadual pelo MDB em 2022.",
   resumo:"Proíbe conteúdo erótico, pornográfico e obsceno em escolas públicas e privadas, incluindo material didático, paradidático e cartilhas; fiscalização pela Secretaria de Educação com a Segurança Pública.", situacao:"Situação não confirmada", situacaoEm:"2024-10-30", citaLivro:"O avesso da pele",
-  nota:"A justificativa cita O avesso da pele como exemplo. Texto quase idêntico ao do PL 154/2024 (AM). Busca em fontes abertas feita em 6 de novembro de 2026 não localizou votação, arquivamento nem lei resultante.", fontes:["almt-pl1768"]},
+  nota:"A justificativa cita O avesso da pele como exemplo. Texto quase idêntico ao do PL 154/2024 (AM). Busca em fontes abertas feita em 6 de novembro de 2026 não localizou votação, arquivamento nem lei resultante.", fontes:["almt-pl1768","cf-thiago-silva-2022"]},
  {id:"N-06", esfera:"Municipal", uf:"ES", cidade:"Serra", tipo:"Projeto de lei", numero:"Projeto de lei de 2025 (número em branco no protocolo)", data:"2025-01-27", autoria:"Pastor Dinho Souza", partido:"PL",
   resumo:"Veda conteúdo erótico, pornográfico e obsceno em escolas municipais e privadas, inclusive em material didático e paradidático; trata a violação por servidor como falta grave e prevê multa de 1 a 10 salários mínimos para instituições privadas.", situacao:"Situação não confirmada", situacaoEm:"2025-01-27",
   nota:"Mesma estrutura e mesmas expressões dos projetos do Amazonas e de Mato Grosso, com a punição a servidores acrescentada. Busca em fontes abertas feita em 6 de novembro de 2026 não localizou votação, arquivamento nem lei resultante.", fontes:["serra-pl-2025"]},
- {id:"N-07", esfera:"Estadual", uf:"SC", cidade:"", tipo:"Emenda", numero:"Emenda modificativa ao PL nº 0018/2025", data:"2025-03-06", autoria:"Ana Campagnolo", partido:"",
+ {id:"N-07", esfera:"Estadual", uf:"SC", cidade:"", tipo:"Emenda", numero:"Emenda modificativa ao PL nº 0018/2025", data:"2025-03-06", autoria:"Ana Campagnolo", partido:"PL",
   resumo:"Proíbe, sem exceção, o incentivo à leitura de obras obscenas, pornográficas ou que façam apologia a drogas e violência, e exige que as obras recomendadas pelo programa sejam submetidas à aprovação prévia de pais ou responsáveis.", situacao:"Situação não confirmada", situacaoEm:"2025-03-06",
-  nota:"Emenda a projeto de programa de leitura. A aprovação prévia das famílias desloca a escolha do livro do educador para a família. O nome do programa não aparece no documento da emenda. O PL 18/2025, de Paulinha (Podemos), que cria o Programa de Incentivo à Leitura nas escolas estaduais, foi aprovado em plenário em 25 de fevereiro de 2026 e seguiu para sanção. As notícias da aprovação não dizem se a emenda entrou no texto final; isso só se confirma na redação final ou na lei publicada.", fontes:["alesc-emenda-pl18","upiara-pl18"]},
+  nota:"Emenda a projeto de programa de leitura. A aprovação prévia das famílias desloca a escolha do livro do educador para a família. O nome do programa não aparece no documento da emenda. O PL 18/2025, de Paulinha (Podemos), que cria o Programa de Incentivo à Leitura nas escolas estaduais, foi aprovado em plenário em 25 de fevereiro de 2026 e seguiu para sanção. As notícias da aprovação não dizem se a emenda entrou no texto final; isso só se confirma na redação final ou na lei publicada.", fontes:["alesc-emenda-pl18","upiara-pl18","gp-campagnolo-pl"]},
  {id:"N-08", esfera:"Federal", uf:"BR", cidade:"", tipo:"Projeto de lei", numero:"PL nº 10583/2018", data:"2025-08-21", autoria:"Mariana Carvalho, autora; Nikolas Ferreira, relator do substitutivo", partido:"PL",
   resumo:"Veda materiais escolares, livros, imagens e recursos audiovisuais com conteúdo erótico, pornográfico ou obsceno inadequado à idade e altera a LDB para exigir consentimento dos responsáveis em conteúdos sobre sexualidade e identidade de gênero.", situacao:"Em tramitação", situacaoEm:"2025-08-21",
   partidoNota:"PL é o partido do relator do substitutivo, Nikolas Ferreira. A autora, Mariana Carvalho, apresentou o projeto em 2018 pelo PSDB.", nota:"Substitutivo aprovado na Comissão de Educação da Câmara em agosto de 2025, depois da Comissão de Previdência, Assistência Social, Infância, Adolescência e Família. Segue para a Comissão de Constituição e Justiça e para o Plenário. A data registrada é a da aprovação na comissão.", fontes:["camara-pl10583"]}
@@ -1196,6 +1211,31 @@ const ESPECTRO = {
 const CAMPOS_ESPECTRO = [["Extrema esquerda",1.5],["Esquerda",3],["Centro-esquerda",4.49],["Centro",5.5],["Centro-direita",7],["Direita",8.5],["Extrema direita",10]];
 function campoDe(sigla){ const e=ESPECTRO[sigla]; if(!e||e.escore==null) return "Sem classificação"; return CAMPOS_ESPECTRO.find(([n,lim])=>e.escore<=lim)[0]; }
 function partidoDoGoverno(g){ const m=/\(([^)]+)\)/.exec(g||""); return m?m[1]:""; }
+
+
+/* ---------- CANDIDATURAS ----------
+   Eleição seguinte ao caso para quem pressionou ou decidiu. Resultado: Eleito, Não eleito,
+   Não disputou, Pré-candidatura ou Resultado não confirmado. Ausência de registro = não verificado. */
+const CANDIDATURAS = [
+ {"agente": "clayton-silva", "ano": 2020, "cargo": "prefeito de Limeira", "partido": "PTC", "resultado": "Pré-candidatura", "nota": "Pré-candidatura anunciada pelo PTC em junho de 2020; o registro e a votação não foram confirmados.", "fonte": "rno-clayton-2020"},
+ {"agente": "gustavo-gayer", "ano": 2026, "cargo": "senador por Goiás", "partido": "PL", "resultado": "Eleito", "votos": 1639247, "fonte": "itatiaia-gayer-2026"},
+ {"agente": "rinaldo-modesto", "ano": 2026, "cargo": "deputado estadual (MS)", "partido": "Podemos", "resultado": "Eleito", "nota": "Reeleito.", "fonte": "otempo-rinaldo-2026"},
+ {"agente": "thomaz-henrique", "ano": 2024, "cargo": "vereador de São José dos Campos", "partido": "PL", "resultado": "Eleito", "votos": 8221, "nota": "Reeleito quatro meses depois da retirada do livro.", "fonte": "hub-thomaz"},
+ {"agente": "thomaz-henrique", "ano": 2026, "cargo": "deputado estadual (SP)", "partido": "PL", "resultado": "Eleito", "votos": 178164, "nota": "11º mais votado entre 1.346 candidatos.", "fonte": "hub-thomaz"},
+ {"agente": "tati-carvalho", "ano": 2024, "cargo": "vereadora de Canoinhas", "partido": "MDB", "resultado": "Eleito", "fonte": "jmais-canoinhas-2024"},
+ {"agente": "andre-flenik", "ano": 2024, "cargo": "vereador de Canoinhas", "partido": "PL", "resultado": "Eleito", "fonte": "jmais-canoinhas-2024"},
+ {"agente": "willian-godoy", "ano": 2024, "cargo": "vereador de Canoinhas", "partido": "PSD", "resultado": "Não eleito", "fonte": "cn-canoinhas-2024"},
+ {"agente": "professor-osmar", "ano": 2024, "cargo": "vereador de Canoinhas", "partido": "PSD", "resultado": "Não eleito", "fonte": "cn-canoinhas-2024"},
+ {"agente": "adilson-steidel", "ano": 2024, "cargo": "vereador de Canoinhas", "partido": "PL", "resultado": "Não eleito", "fonte": "cn-canoinhas-2024"},
+ {"agente": "chico-mineiro", "ano": 2024, "cargo": "vereador de Canoinhas", "partido": "PL", "resultado": "Não eleito", "fonte": "cn-canoinhas-2024"},
+ {"agente": "mauricio-zimmermann", "ano": 2024, "cargo": "", "partido": "", "resultado": "Não disputou", "fonte": "cn-canoinhas-2024"},
+ {"agente": "wilmar-sudoski", "ano": 2024, "cargo": "", "partido": "", "resultado": "Não disputou", "fonte": "cn-canoinhas-2024"},
+ {"agente": "juliana-maciel-hoppe", "ano": 2024, "cargo": "prefeita de Canoinhas", "partido": "PL", "resultado": "Eleito", "votos": 16415, "nota": "Reeleita com 52,7% dos votos válidos, seis meses depois do vídeo.", "fonte": "nsc-juliana-2024"},
+ {"agente": "jessica-ramos-moreno", "ano": 2026, "cargo": "deputada estadual (PR)", "partido": "PL", "resultado": "Eleito", "votos": 131673, "nota": "Segunda mais votada do Paraná e mulher mais votada do estado; trocou o PP pelo PL.", "fonte": "hub-jessicao"},
+ {"agente": "zelinda-pastora", "ano": 2026, "cargo": "deputada federal (SP)", "partido": "PRD", "resultado": "Resultado não confirmado", "nota": "Candidatura deferida; a votação não foi localizada nas fontes consultadas.", "fonte": "as-zelinda-2026"},
+ {"agente": "ranieri-marchioro", "ano": 2026, "cargo": "deputado federal (PR)", "partido": "Republicanos", "resultado": "Não eleito", "votos": 5298, "nota": "Ficou como suplente.", "fonte": "hub-ranieri"},
+ {"agente": "bosco-foz", "ano": 2026, "cargo": "deputado federal (PR)", "partido": "PL", "resultado": "Não eleito", "nota": "Candidato registrado; o único eleito entre os candidatos de Foz do Iguaçu foi outro nome.", "fonte": "h2foz-federal-2026"}
+];
 
 /* ---------- CONTEXTO PARTIDÁRIO ----------
    Filiação partidária de quem aparece nos atos, com recorte temporal e fontes.

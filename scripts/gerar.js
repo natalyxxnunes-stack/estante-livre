@@ -26,14 +26,14 @@ function contexto(raiz){
     console
   };
   vm.createContext(ctx);
-  vm.runInContext(ler("assets/dados.js") + "\n;this.__D={ATOS,AGENTES,PAPEIS,TIPOS_PAPEL,CASOS,LIVROS,FONTES,MODALIDADES,ESTAGIOS,SITUACOES,EIXOS,CORRECOES,RESPONSABILIDADES,DOCUMENTOS_ATOS,ATUALIZADO,CONTATO,OBSTACULOS,LACUNAS,NIVEIS,CHEGADAS,NORMAS,SITUACOES_NORMA,VIAS_REVERSAO,CONTEXTO_PARTIDARIO,ESPECTRO};", ctx);
+  vm.runInContext(ler("assets/dados.js") + "\n;this.__D={ATOS,AGENTES,PAPEIS,TIPOS_PAPEL,CASOS,LIVROS,FONTES,MODALIDADES,ESTAGIOS,SITUACOES,EIXOS,CORRECOES,RESPONSABILIDADES,DOCUMENTOS_ATOS,ATUALIZADO,CONTATO,OBSTACULOS,LACUNAS,NIVEIS,CHEGADAS,NORMAS,SITUACOES_NORMA,VIAS_REVERSAO,CONTEXTO_PARTIDARIO,ESPECTRO,CANDIDATURAS};", ctx);
   vm.runInContext(ler("assets/comum.js") + "\n;this.__F={esc,obraDe,slug,ordenar,casoHTML,livroHTML,casoCardHTML,livroCardHTML,dataLegivel,urlCaso,urlLivro,urlAto,agentesDoAto,nivelVerif};", ctx);
   return Object.assign(ctx.__F, {__D: ctx.__D});
 }
 const R = contexto("");      // páginas na raiz
 const S = contexto("../");   // páginas em casos/ e livros/
 const D = R.__D;
-const { CASOS, LIVROS, FONTES, MODALIDADES, ESTAGIOS, SITUACOES, EIXOS, ATUALIZADO, ATOS, AGENTES, PAPEIS, TIPOS_PAPEL, OBSTACULOS, LACUNAS, CHEGADAS, NORMAS, SITUACOES_NORMA, VIAS_REVERSAO, CONTEXTO_PARTIDARIO, ESPECTRO } = D;
+const { CASOS, LIVROS, FONTES, MODALIDADES, ESTAGIOS, SITUACOES, EIXOS, ATUALIZADO, ATOS, AGENTES, PAPEIS, TIPOS_PAPEL, OBSTACULOS, LACUNAS, CHEGADAS, NORMAS, SITUACOES_NORMA, VIAS_REVERSAO, CONTEXTO_PARTIDARIO, ESPECTRO, CANDIDATURAS } = D;
 const esc = R.esc, obraDe = R.obraDe, slug = R.slug;
 
 /* ---------- 1. validação ---------- */
@@ -42,6 +42,7 @@ for(const p of PAPEIS){
   if(p.partido && !ESPECTRO[p.partido]) erros.push(`PAPEIS ${p.ato}/${p.agente}: partido sem posição na escala: ${p.partido}`);
   if(p.partidoFonte && !FONTES[p.partidoFonte]) erros.push(`PAPEIS ${p.ato}/${p.agente}: fonte do partido inexistente`);
 }
+for(const c of CANDIDATURAS||[]){ if(!AGENTES[c.agente]) erros.push(`CANDIDATURAS: agente inexistente ${c.agente}`); if(!FONTES[c.fonte]) erros.push(`CANDIDATURAS ${c.agente}: fonte inexistente`); if(!["Eleito","Não eleito","Não disputou","Pré-candidatura","Resultado não confirmado"].includes(c.resultado)) erros.push(`CANDIDATURAS ${c.agente}: resultado fora da lista`); }
 for(const n of NORMAS) if(n.partido && !ESPECTRO[n.partido]) erros.push(`NORMAS ${n.id}: partido sem posição na escala: ${n.partido}`);
 for(const [i,x] of (CONTEXTO_PARTIDARIO||[]).entries()){
   if(!x.pessoa || !x.partido || !x.cobertura || !x.status || !Array.isArray(x.fontes) || !x.fontes.length) erros.push(`CONTEXTO_PARTIDARIO[${i}]: campos obrigatórios ausentes`);
