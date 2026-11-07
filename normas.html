@@ -79,7 +79,7 @@
   <section style="border-bottom:0">
     <div class="sechead"><span class="kicker">03</span><h2>Como ler esta página</h2></div>
     <div class="gloss">
-      <div class="gterm"><h3>Duas frentes</h3><div class="gdef">As normas vêm em duas ondas. A de 2015 e 2016 proibiu a “ideologia de gênero” em planos municipais de educação; a partir de 2024, os projetos passaram a proibir livros com “conteúdo erótico”. Cada ficha indica a frente e o alvo: “material” quando o texto mira livros ou material didático, “currículo” quando mira o ensino ou o plano de educação sem citar material. Quase todas as leis da primeira onda foram derrubadas pelo STF entre 2020 e 2025, por invadirem a competência da União sobre diretrizes da educação.</div></div>
+      <div class="gterm"><h3>Duas frentes</h3><div class="gdef">As normas vêm em duas ondas. A de 2015 e 2016 proibiu a “ideologia de gênero” em planos municipais de educação; a partir de 2024, os projetos passaram a proibir livros com “conteúdo erótico”. Cada ficha indica a frente e o alvo: “material” quando o texto mira livros ou material didático, “currículo” quando mira o ensino ou o plano de educação sem citar material. A maior parte das leis da primeira onda listadas aqui foi derrubada pelo STF entre 2020 e 2025, por invadir a competência da União sobre diretrizes da educação e por discriminar.</div></div>
       <div class="gterm"><h3>Levantamento inicial</h3><div class="gdef">A lista reúne normas localizadas em fontes abertas a partir dos casos do catálogo. Câmaras municipais publicam pouco e de forma irregular, então há certamente mais normas do que as listadas aqui.</div></div>
       <div class="gterm"><h3>Situação com data</h3><div class="gdef">A situação de cada norma vale para a data indicada, segundo a fonte mais recente localizada. “Situação não confirmada” quer dizer que a fonte mostra a apresentação do projeto e nada depois dela.</div></div>
       <div class="gterm"><h3>Fora da contagem de casos</h3><div class="gdef">Uma norma restringe uma categoria de conteúdo e raramente nomeia um livro. Por isso ela fica nesta trilha própria e entra no catálogo de casos só quando for aplicada a uma obra identificável.</div></div>
@@ -137,7 +137,7 @@ $("lista-normas").innerHTML = [...N].reverse().map(n=>`
   <div class="norma-top"><span class="caso-id">${n.id}</span><span class="tag ${clsSit(n.situacao)}">${esc(n.situacao)}</span><span class="norma-em">em ${dataCurta(n.situacaoEm)}</span></div>
   <h3>${esc(n.numero)}</h3>
   <div class="norma-meta">${esc(local(n))} · ${esc(n.esfera.toLowerCase())} · ${esc(n.autoria)}${n.partido?` (${esc(n.partido)})`:""}</div>
-  <div class="norma-meta">Frente: ${esc(n.frente.toLowerCase())} · alvo: ${esc(n.alvo.toLowerCase())}</div>
+  <div class="norma-meta">Frente: “${esc(n.frente.toLowerCase())}” · alvo: ${esc(n.alvo.toLowerCase())}</div>
   <p>${esc(n.resumo)}</p>
   ${n.nota?`<p class="note">${esc(n.nota)}</p>`:""}
   <div class="norma-liga">${n.citaLivro?`<span>Livro citado na justificativa: <b>${esc(n.citaLivro)}</b></span>`:""}${n.ato?`<span>Caso ligado: <a href="atos/${n.ato.toLowerCase()}.html">${esc(ATOS[n.ato].nome)}</a></span>`:""}${n.precedente?`<span>Modelo citado: <a href="#${n.precedente.toLowerCase()}">${esc(N.find(x=>x.id===n.precedente).numero)}</a></span>`:""}</div>
