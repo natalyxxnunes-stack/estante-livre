@@ -4909,7 +4909,7 @@
    "uf": "RO",
    "tipo_biblioteca": "Escolar",
    "rede": "Municipal",
-   "governo_na_epoca": "Thiago Flores, partido na data não confirmado · prefeitura de Ariquemes",
+   "governo_na_epoca": "Thiago Flores (MDB) · prefeitura de Ariquemes",
    "instancia_registrada": "Prefeito Thiago Flores, a pedido de vereadores",
    "mecanismo": "Retirada",
    "estagio": "Decisão ou ordem",
@@ -4922,13 +4922,13 @@
    "assinatura": "",
    "execucao": "Secretaria Municipal de Educação e comissão de fiscalização anunciada pela prefeitura.",
    "resposta_ou_reversao": "O Sintero, sindicato dos trabalhadores em educação, pediu por ofício que a solicitação não fosse atendida.",
-   "ato_ou_documento": "Ofício dos vereadores e ato da prefeitura citados pela imprensa; nenhum dos dois foi localizado em fonte pública.",
+   "ato_ou_documento": "Ofício dos vereadores e ato da prefeitura citados pela imprensa; nenhum dos dois foi localizado em fonte pública. Thiago Flores foi eleito em 2016 pelo PMDB, que passou a se chamar MDB em dezembro de 2017.",
    "reversao_via": "",
    "reversao_data": "",
    "verificado": "Parcialmente",
    "nivel_verificacao": "Parcial",
    "documento_primario": "",
-   "pendencia": "Identificar os títulos e as páginas atingidas; confirmar se a supressão foi executada depois da audiência pública anunciada; confirmar o partido do prefeito em janeiro de 2017.",
+   "pendencia": "Identificar os títulos e as páginas atingidas; confirmar se a supressão foi executada depois da audiência pública anunciada;",
    "nota": "Oito dos doze vereadores presentes a uma reunião com o prefeito protocolaram ofício pedindo a suspensão e o recolhimento dos livros didáticos distribuídos pelo MEC em 2016. Em 23 de janeiro de 2017, a prefeitura proibiu a entrega dos livros e anunciou que as páginas sobre diversidade sexual, casamento homoafetivo e preservativos seriam suprimidas, com comissão de fiscalização. O Portal Amazônia, no dia seguinte, registrou que o sindicato dos professores pediu que a solicitação não fosse atendida e que a prefeitura, depois de ouvir a Procuradoria Municipal, propôs audiência pública e enquete. Souza (Em Questão, 2018) registra as páginas retiradas e comissões de revisão em todas as escolas; segundo o mesmo artigo, num primeiro recolhimento, em 2016, os alunos já tinham ficado cerca de seis meses sem livro didático. As fontes divergem sobre a execução, por isso o registro fica como decisão.",
    "agentes": [
     {
@@ -4951,8 +4951,8 @@
      "nome": "Thiago Flores",
      "tipo": "Pessoa",
      "papel": "Decisão",
-     "cargo": "prefeito de Ariquemes",
-     "partido_na_epoca": "",
+     "cargo": "prefeito de Ariquemes (MDB)",
+     "partido_na_epoca": "MDB",
      "atribuido": false
     },
     {
@@ -5021,8 +5021,8 @@
    "verificado": "Parcialmente",
    "nivel_verificacao": "Parcial",
    "documento_primario": "",
-   "pendencia": "Segunda fonte independente; resposta formal ao requerimento e tramitação do Projeto de Lei nº 26/2016 na Câmara do Recife.",
-   "nota": "Livro de ciências do 5º ano, da Leya, distribuído pelo MEC: 623 exemplares do aluno e 23 manuais do professor em dez escolas municipais. Luiz Eustáquio (Rede) apresentou requerimentos pedindo informações sobre os livros e a retirada de material que mencionasse gênero; Carlos Gueiros (PSB) apresentou projeto de lei para proibir a obra. A prefeitura de Geraldo Julio (PSB) defendeu o livro e avisou que não pagaria reposição. Na Assembleia Legislativa, Joel da Harpa (PROS) apresentou o PL 709/2016, com o mesmo objetivo. Uma reportagem do Jornal Opção traz o mesmo conteúdo da Agência Brasil e por isso não conta como segunda fonte.",
+   "pendencia": "Segunda fonte com apuração própria; resposta formal ao requerimento e tramitação do Projeto de Lei nº 26/2016 na Câmara do Recife, cujo sistema público bloqueia leitura automática.",
+   "nota": "Livro de ciências do 5º ano, da Leya, distribuído pelo MEC: 623 exemplares do aluno e 23 manuais do professor em dez escolas municipais. Luiz Eustáquio (Rede) apresentou requerimentos pedindo informações sobre os livros e a retirada de material que mencionasse gênero; Carlos Gueiros (PSB) apresentou projeto de lei para proibir a obra. A prefeitura de Geraldo Julio (PSB) defendeu o livro e avisou que não pagaria reposição. Na Assembleia Legislativa, Joel da Harpa (PROS) apresentou o PL 709/2016, com o mesmo objetivo. O Brasil de Fato, em julho de 2016, confirma que Gueiros e Eustáquio pediram a retirada dos livros e registra o PL 26/2016, mas repete os dados da Agência Brasil sobre a posição da prefeitura e do MEC; o Jornal Opção reproduz a mesma reportagem. Por isso o registro segue parcial.",
    "agentes": [
     {
      "nome": "Luiz Eustáquio",
@@ -5055,6 +5055,12 @@
      "titulo": "Polêmica sobre questões de gênero pode deixar alunos do Recife sem livros",
      "data": "2016-03-27",
      "url": "https://agenciabrasil.ebc.com.br/educacao/noticia/2016-03/polemica-sobre-questoes-de-genero-pode-deixar-alunos-do-recife-sem-livros"
+    },
+    {
+     "veiculo": "Brasil de Fato",
+     "titulo": "Projetos visam impedir discussão de gênero e diversidade sexual nas escolas brasileiras",
+     "data": "2016-07-06",
+     "url": "https://www.brasildefato.com.br/2016/07/06/projetos-visam-impedir-discussao-de-genero-e-diversidade-sexual-nas-escolas-brasileir/"
     }
    ]
   },
@@ -5075,7 +5081,7 @@
    "uf": "SP",
    "tipo_biblioteca": "Escolar",
    "rede": "Municipal",
-   "governo_na_epoca": "Prefeitura de Guarulhos · gestão municipal em 2015",
+   "governo_na_epoca": "Sebastião Almeida (PT) · prefeitura de Guarulhos",
    "instancia_registrada": "Vereador Romildo Santos (PSDB), presidente da Comissão de Direitos Humanos",
    "mecanismo": "Retirada",
    "estagio": "Pedido formal",
