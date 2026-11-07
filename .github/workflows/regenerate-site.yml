@@ -2,7 +2,7 @@ name: Regenerate Estante Livre
 
 on:
   push:
-    branches: [main]
+    branches: ['**']
     paths:
       - 'assets/dados.js'
       - 'assets/comum.js'
@@ -13,6 +13,10 @@ on:
       - 'atos/**'
       - '.github/workflows/regenerate-site.yml'
   workflow_dispatch:
+
+concurrency:
+  group: regenerate-${{ github.ref }}
+  cancel-in-progress: true
 
 permissions:
   contents: write
@@ -25,7 +29,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          ref: main
+          ref: ${{ github.ref }}
       - name: Set up Node
         uses: actions/setup-node@v4
         with:

@@ -1,7 +1,7 @@
 {
  "nome": "Estante Livre: catálogo de censura de livros em bibliotecas e escolas brasileiras",
  "autoria": "Nataly Nunes Pinto",
- "atualizado": "2026-11-06",
+ "atualizado": "2026-11-07",
  "licenca": "CC BY 4.0",
  "como_citar": "Estante Livre, observatório de censura de livros, de Nataly Nunes Pinto",
  "doi": "10.5281/zenodo.24022607",
@@ -4709,8 +4709,8 @@
    "instancia_registrada": "Secretaria Municipal de Educação",
    "mecanismo": "Retirada",
    "estagio": "Execução comprovada",
-   "situacao": "Revertido",
-   "desfecho": "Revertido por liminar e devolvido às escolas em 2025. Em 2026, segundo a própria Secretaria, o material deixou de ser enviado às unidades. A ação segue em curso e uma CPI da Câmara investiga o caso.",
+   "situacao": "Em aberto",
+   "desfecho": "A liminar de 23/07/2025 suspendeu o memorando e determinou a devolução; a Secretaria informou que os exemplares voltaram às unidades em 2025. Em 2026, segundo nota da própria Secretaria reproduzida pelo H2FOZ, o material não foi encaminhado às unidades por determinação da secretária municipal da época. A situação atual do acesso permanece em aberto.",
    "eixo_tematico": "Sexualidade e gênero",
    "justificativa_declarada": "Segundo o sindicato, vereadores acusaram professores de doutrinação e disseram que uma ilustração de duas meninas conversando em inglês induziria a sexualidade precoce. A Secretaria não divulgou o motivo oficial; em 2026, a Justiça mandou a prefeitura apontar as páginas e linhas que considera problemáticas.",
    "pressao_ou_pedido": "Vereadores Bosco Foz (PL) e Dr. Ranieri Marchioro (Republicanos), que publicaram vídeos sobre o material.",
@@ -4724,8 +4724,8 @@
    "verificado": "Sim",
    "nivel_verificacao": "Confirmado",
    "documento_primario": "",
-   "pendencia": "Íntegra do Memorando nº 40218/2025, da liminar e o número do processo; documento da decisão de 2026 que deixou de enviar o material às escolas.",
-   "nota": "Cerca de 7 mil exemplares do 4º e do 5º ano foram recolhidos de todas as escolas municipais no início de junho de 2025. O juiz Wendel Fernando Brunieri, da 2ª Vara da Fazenda Pública, entendeu que o ato não trazia motivação e suspendeu o memorando. Em fevereiro de 2026, o mesmo juízo mandou a prefeitura apresentar a íntegra da jurisprudência que citou e indicar os trechos do livro que considera impróprios. A CPI registrou que o recolhimento aconteceu enquanto tramitava uma proposta de R$ 576 mil para contratar material de outra editora sem licitação; a relação entre os dois fatos não está comprovada.",
+   "pendencia": "Íntegra do Memorando nº 40218/2025 e da liminar; número e andamento integral do processo; ato administrativo ou comunicação de 2026 que formalizou a decisão de não encaminhar o material às unidades; confirmação da situação atual e do eventual retorno do acesso.",
+   "nota": "Cerca de 7 mil exemplares do 4º e do 5º ano foram recolhidos de todas as escolas municipais no início de junho de 2025. A liminar de 23/07/2025 suspendeu o memorando e determinou a devolução em dez dias; a Secretaria informou que os exemplares voltaram às unidades naquele ano. Em nota reproduzida pelo H2FOZ em 09/10/2026, a Prefeitura declarou expressamente que, em 2026, por determinação da secretária municipal da época, Silvana Garcia André, o material não foi encaminhado às unidades. A mesma cobertura informa que a CPI da Câmara investigou o recolhimento e que seu relatório apontou indícios relacionados a uma proposta de compra de material de outra editora; a relação entre os fatos não está comprovada. Em fevereiro de 2026, o juízo também determinou que a Prefeitura apresentasse a íntegra da jurisprudência citada e indicasse os trechos do livro considerados impróprios. Este registro reúne a retirada de 2025 e a informação posterior sobre a não distribuição em 2026; como o ato administrativo específico de 2026 ainda não foi localizado, não se cria um segundo registro nem se presume seu conteúdo.",
    "agentes": [
     {
      "nome": "Bosco Foz",

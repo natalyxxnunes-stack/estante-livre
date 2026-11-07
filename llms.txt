@@ -16,4 +16,4 @@ Registro não equivale a banimento consumado: cada caso traz o estágio (pressã
 - [Análises](https://estante-livre-br.vercel.app/analises.html): leitura dos dados
 - [Política e censura](https://estante-livre-br.vercel.app/politica.html): quem pressiona, decide, legisla e reage, com o partido da época e a escala ideológica
 
-Atualizado em 2026-11-06. Citação: Estante Livre, observatório de censura de livros, de Nataly Nunes Pinto.
+Atualizado em 2026-11-07. Citação: Estante Livre, observatório de censura de livros, de Nataly Nunes Pinto.

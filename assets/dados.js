@@ -46,11 +46,12 @@ const CASOS = [
  {"id": "EL-035", "ato": "LON-2026", "obra": "O bebê vem com a cegonha?!?", "alegacao": "O pedido de providências descreveu trechos do livro como “conteúdo sensível” e potencialmente geradores de questionamentos junto às famílias. A Folha corrigiu a versão inicial para esclarecer que a iniciativa partiu da equipe da Gerência de Ensino Fundamental da SME, não da direção da escola.", "eixo": "Sexualidade e gênero", "modalidade": "Retirada", "estagio": "Decisão ou ordem", "situacao": "Em aberto", "desfecho": "A SME iniciou levantamento na rede e recolhimento de exemplares para análise pedagógica; não há confirmação pública do alcance por unidade nem da decisão final sobre retorno ou exclusão.", "verificado": "Parcialmente", "fontes": ["fl-londrina", "cbn-londrina-2026", "ogpl-sei-londrina-2026", "fl-londrina-errata-2026", "jornal-londrina-3630-2018", "bonde-londrina-2026"], "pendencia": "Localizar o número SEI, a íntegra do pedido de providências, o despacho da SME, o quantitativo recolhido, a avaliação técnica e a decisão final em repositórios públicos. A Folha informa que teve acesso ao pedido, mas o documento integral e os nomes dos signatários não foram localizados em fonte pública.", "nota": "A Folha de Londrina, em 11/03/2026, informou ter consultado um pedido de providências relacionado ao livro. A errata publicada em 12/03/2026 esclareceu que a iniciativa partiu da equipe da Gerência de Ensino Fundamental da SME, e não da direção da escola municipal. O texto da matéria informa que o pedido de providências foi assinado pela “gerente da unidade” e pela “diretora pedagógica”, mas não publica seus nomes nem permite inferir, sem o documento integral, os vínculos funcionais exatos desses signatários. A CBN Londrina, em 12/03/2026, confirmou que a Secretaria informou ter iniciado levantamento na rede para localizar exemplares e encaminhá-los à análise pedagógica. O número do processo SEI, a íntegra do pedido, os nomes dos signatários e a decisão final não foram localizados. Relatório do Observatório de Gestão Pública de Londrina sobre a transparência no SEI informa que, após 18/02/2025, apenas 15 processos do tipo Pedido de Providências foram classificados como públicos, enquanto 19.588 foram iniciados com restrição; a regra normativa citada no relatório, Portaria SMGP-GAB nº 28/2020, prevê publicidade como padrão. Assim, não é possível presumir que o processo específico esteja publicamente acessível, embora o tipo processual deva ser público em regra. O Bonde reproduz a apuração da Folha e não constitui uma segunda confirmação independente. Os 19.588 processos restritos registrados pelo OGPL são contexto estatístico e não provam que este processo específico esteja restrito.", "data": "2026-03-12", "uf": "PR", "cidade": "Londrina", "tipo": "Escolar", "rede": "Municipal", "governo": "Tiago Amaral (PSD) · prefeitura de Londrina", "quem": "Secretaria Municipal de Educação de Londrina", "autoria": "Patrícia Engel Secco", "editora": "Melhoramentos", "titulo": "O bebê vem com a cegonha?!?"},
  {"id": "EL-036", "ato": "CAN-2024", "obra": "Aparelho Sexual e Cia.", "alegacao": "A prefeita Juliana Maciel chamou os livros de “porcaria” e afirmou que não eram adequados a crianças e adolescentes; o Requerimento nº 149/2024 falava genericamente em acesso infantil a materiais “pornográficos”.", "eixo": "Sexualidade e gênero", "modalidade": "Retirada", "estagio": "Execução comprovada", "situacao": "Em aberto", "desfecho": "O TCE-SC concluiu que os exemplares não foram fisicamente descartados e estavam em poder da Fundação Cultural para análise de destinação. A localização e o acesso atuais não foram comprovados.", "verificado": "Sim", "fontes": ["canoinhas-req149", "canoinhas-sapl-req149", "canoinhas-online-2024", "canoinhas-instagram-juliana", "canoinhas-uol-investigacao", "canoinhas-uol-resposta", "canoinhas-uol-comprova", "canoinhas-local-nota", "canoinhas-secom-mundoteca", "canoinhas-tse-juliana", "canoinhas-bereia", "tce-canoinhas-lev-2024", "canoinhas-sapl-acessorios", "canoinhas-oficio-205", "canoinhas-fundacao-resposta-013", "canoinhas-mpsc-pauta-2024", "canoinhas-mpsc-diario-3698"], "pendencia": "A localização física atual dos dois exemplares e sua eventual reintegração ao acervo permanecem sem comprovação pública. A resposta municipal juntada ao TCE e as fotografias das fls. 14–32 seguem sob sigilo parcial; não foi localizado recibo público de transferência, inventário nominal ou registro posterior de movimentação. O Diário Oficial nº 3698 registra que o Conselho Superior conheceu e negou provimento ao recurso por unanimidade; a fundamentação integral da deliberação não foi recuperada.", "nota": "A decisão singular GCS/GSS-861/2024 do TCE-SC, no levantamento @LEV 24/80041829, registra que a prefeita Juliana Maciel Hoppe afirmou, em resposta juntada às fls. 14–32, que havia um exemplar de cada título e que os livros foram entregues à gestora da Fundação Cultural para análise de destinação. O TCE concluiu que os livros não foram efetivamente jogados no lixo e estavam em poder da Fundação Cultural. O Tribunal também qualificou a conduta pública da prefeita como irresponsável e apontou uso da imagem e da popularidade do cargo e de bens públicos para fins populistas, eleitoreiros e de autopromoção. O levantamento do TCE foi arquivado por baixa materialidade financeira e pela existência de notícia de fato no MPSC; isso não equivale a conclusão do Ministério Público. O Diário Oficial do MPSC nº 3698, publicado em 09/08/2024, registra que o Conselho Superior conheceu e negou provimento ao recurso interposto na Notícia de Fato nº 01.2024.00012159-3, por unanimidade. O extrato comprova o resultado do recurso, mas não reproduz a fundamentação da decisão revisora. O TCE determinou levantamento parcial do sigilo apenas quanto ao Relatório DGE-328/2024 e à decisão; a resposta da prefeita e as fotos das fls. 14–32 não integram o documento público do Diário. O Requerimento 149/2024, assinado por oito vereadores, pediu revisão e reorganização da Mundoteca e separação de materiais por faixa etária, não a retirada expressa destes dois títulos. A nova pesquisa localizou, no SAPL da Câmara, os dois ofícios acessórios do requerimento: o Ofício 205/2024, que o encaminhou à prefeita e ao coordenador de biblioteca, e a resposta da Fundação Cultural no Ofício 013/2024, de 14/05/2024. A resposta esclarece que a Mundoteca era de responsabilidade da Secretaria Municipal de Educação, não da Fundação Cultural; informa 569 obras, duas salas separadas por público, classificação por cores, abertura em 19/11/2022 e apenas um empréstimo registrado entre 15/03 e 14/04/2024. Essa resposta não identifica os dois títulos nem documenta seu recebimento, guarda ou destinação. Ela deve ser lida em conjunto com o TCE, que registra a afirmação da prefeita de que os dois exemplares foram entregues à gestora da Fundação Cultural para análise. O ponto de cadeia de custódia, portanto, continua aberto.", "data": "2024-04-17", "uf": "SC", "cidade": "Canoinhas", "tipo": "Pública", "rede": "Municipal", "governo": "Juliana Maciel Hoppe (PL) · prefeitura de Canoinhas", "quem": "Prefeitura de Canoinhas, sob a prefeita Juliana Maciel Hoppe", "autoria": "Zep (Philippe Chappuis) e Hélène Bruller", "editora": "Seguinte / Companhia das Letras", "titulo": "Aparelho Sexual e Cia."},
  {"id": "EL-037", "ato": "CAN-2024", "obra": "As Melhores do Analista de Bagé", "alegacao": "A prefeita Juliana Maciel incluiu o título no vídeo em que chamou os livros de “porcaria” e afirmou que não eram adequados a crianças e adolescentes; o requerimento parlamentar falava genericamente em materiais “pornográficos”.", "eixo": "Outro", "modalidade": "Retirada", "estagio": "Execução comprovada", "situacao": "Em aberto", "desfecho": "O TCE-SC concluiu que os exemplares não foram fisicamente descartados e estavam em poder da Fundação Cultural para análise de destinação. A localização e o acesso atuais não foram comprovados.", "verificado": "Sim", "fontes": ["canoinhas-req149", "canoinhas-sapl-req149", "canoinhas-instagram-juliana", "canoinhas-uol-investigacao", "canoinhas-uol-resposta", "canoinhas-uol-comprova", "canoinhas-local-nota", "canoinhas-secom-mundoteca", "canoinhas-tse-juliana", "canoinhas-bereia", "tce-canoinhas-lev-2024", "canoinhas-sapl-acessorios", "canoinhas-oficio-205", "canoinhas-fundacao-resposta-013", "canoinhas-mpsc-pauta-2024", "canoinhas-mpsc-diario-3698"], "pendencia": "A localização física atual dos dois exemplares e sua eventual reintegração ao acervo permanecem sem comprovação pública. A resposta municipal juntada ao TCE e as fotografias das fls. 14–32 seguem sob sigilo parcial; não foi localizado recibo público de transferência, inventário nominal ou registro posterior de movimentação. O Diário Oficial nº 3698 registra que o Conselho Superior conheceu e negou provimento ao recurso por unanimidade; a fundamentação integral da deliberação não foi recuperada.", "nota": "A decisão singular GCS/GSS-861/2024 do TCE-SC, no levantamento @LEV 24/80041829, registra que a prefeita Juliana Maciel Hoppe afirmou, em resposta juntada às fls. 14–32, que havia um exemplar de cada título e que os livros foram entregues à gestora da Fundação Cultural para análise de destinação. O TCE concluiu que os livros não foram efetivamente jogados no lixo e estavam em poder da Fundação Cultural. O Tribunal também qualificou a conduta pública da prefeita como irresponsável e apontou uso da imagem e da popularidade do cargo e de bens públicos para fins populistas, eleitoreiros e de autopromoção. O levantamento do TCE foi arquivado por baixa materialidade financeira e pela existência de notícia de fato no MPSC; isso não equivale a conclusão do Ministério Público. O Diário Oficial do MPSC nº 3698, publicado em 09/08/2024, registra que o Conselho Superior conheceu e negou provimento ao recurso interposto na Notícia de Fato nº 01.2024.00012159-3, por unanimidade. O extrato comprova o resultado do recurso, mas não reproduz a fundamentação da decisão revisora. O TCE determinou levantamento parcial do sigilo apenas quanto ao Relatório DGE-328/2024 e à decisão; a resposta da prefeita e as fotos das fls. 14–32 não integram o documento público do Diário. O Requerimento 149/2024, assinado por oito vereadores, pediu revisão e reorganização da Mundoteca e separação de materiais por faixa etária, não a retirada expressa destes dois títulos. A nova pesquisa localizou, no SAPL da Câmara, os dois ofícios acessórios do requerimento: o Ofício 205/2024, que o encaminhou à prefeita e ao coordenador de biblioteca, e a resposta da Fundação Cultural no Ofício 013/2024, de 14/05/2024. A resposta esclarece que a Mundoteca era de responsabilidade da Secretaria Municipal de Educação, não da Fundação Cultural; informa 569 obras, duas salas separadas por público, classificação por cores, abertura em 19/11/2022 e apenas um empréstimo registrado entre 15/03 e 14/04/2024. Essa resposta não identifica os dois títulos nem documenta seu recebimento, guarda ou destinação. Ela deve ser lida em conjunto com o TCE, que registra a afirmação da prefeita de que os dois exemplares foram entregues à gestora da Fundação Cultural para análise. O ponto de cadeia de custódia, portanto, continua aberto.", "data": "2024-04-17", "uf": "SC", "cidade": "Canoinhas", "tipo": "Pública", "rede": "Municipal", "governo": "Juliana Maciel Hoppe (PL) · prefeitura de Canoinhas", "quem": "Prefeitura de Canoinhas, sob a prefeita Juliana Maciel Hoppe", "autoria": "Luis Fernando Verissimo", "editora": "Objetiva", "titulo": "As Melhores do Analista de Bagé"},
- {"id": "EL-038", "ato": "FOZ-2025", "obra": "English After School", "alegacao": "Segundo o sindicato, vereadores acusaram professores de doutrinação e disseram que uma ilustração de duas meninas conversando em inglês induziria a sexualidade precoce. A Secretaria não divulgou o motivo oficial; em 2026, a Justiça mandou a prefeitura apontar as páginas e linhas que considera problemáticas.", "eixo": "Sexualidade e gênero", "modalidade": "Retirada", "estagio": "Execução comprovada", "situacao": "Revertido", "desfecho": "Revertido por liminar e devolvido às escolas em 2025. Em 2026, segundo a própria Secretaria, o material deixou de ser enviado às unidades. A ação segue em curso e uma CPI da Câmara investiga o caso.", "verificado": "Sim", "fontes": ["clickfoz-sinprefi", "h2foz-liminar", "aguas-liminar", "100f-foz", "h2foz-jurisprudencia", "h2foz-cpi-proposta", "h2foz-cpi-nota"], "pendencia": "Íntegra do Memorando nº 40218/2025, da liminar e o número do processo; documento da decisão de 2026 que deixou de enviar o material às escolas.", "nota": "Cerca de 7 mil exemplares do 4º e do 5º ano foram recolhidos de todas as escolas municipais no início de junho de 2025. O juiz Wendel Fernando Brunieri, da 2ª Vara da Fazenda Pública, entendeu que o ato não trazia motivação e suspendeu o memorando. Em fevereiro de 2026, o mesmo juízo mandou a prefeitura apresentar a íntegra da jurisprudência que citou e indicar os trechos do livro que considera impróprios. A CPI registrou que o recolhimento aconteceu enquanto tramitava uma proposta de R$ 576 mil para contratar material de outra editora sem licitação; a relação entre os dois fatos não está comprovada."}
+ {"id": "EL-038", "ato": "FOZ-2025", "obra": "English After School", "alegacao": "Segundo o sindicato, vereadores acusaram professores de doutrinação e disseram que uma ilustração de duas meninas conversando em inglês induziria a sexualidade precoce. A Secretaria não divulgou o motivo oficial; em 2026, a Justiça mandou a prefeitura apontar as páginas e linhas que considera problemáticas.", "eixo": "Sexualidade e gênero", "modalidade": "Retirada", "estagio": "Execução comprovada", "situacao": "Em aberto", "desfecho": "A liminar de 23/07/2025 suspendeu o memorando e determinou a devolução; a Secretaria informou que os exemplares voltaram às unidades em 2025. Em 2026, segundo nota da própria Secretaria reproduzida pelo H2FOZ, o material não foi encaminhado às unidades por determinação da secretária municipal da época. A situação atual do acesso permanece em aberto.", "verificado": "Sim", "fontes": ["clickfoz-sinprefi", "h2foz-liminar", "aguas-liminar", "100f-foz", "h2foz-jurisprudencia", "h2foz-cpi-proposta", "h2foz-cpi-nota"], "pendencia": "Íntegra do Memorando nº 40218/2025 e da liminar; número e andamento integral do processo; ato administrativo ou comunicação de 2026 que formalizou a decisão de não encaminhar o material às unidades; confirmação da situação atual e do eventual retorno do acesso.", "nota": "Cerca de 7 mil exemplares do 4º e do 5º ano foram recolhidos de todas as escolas municipais no início de junho de 2025. A liminar de 23/07/2025 suspendeu o memorando e determinou a devolução em dez dias; a Secretaria informou que os exemplares voltaram às unidades naquele ano. Em nota reproduzida pelo H2FOZ em 09/10/2026, a Prefeitura declarou expressamente que, em 2026, por determinação da secretária municipal da época, Silvana Garcia André, o material não foi encaminhado às unidades. A mesma cobertura informa que a CPI da Câmara investigou o recolhimento e que seu relatório apontou indícios relacionados a uma proposta de compra de material de outra editora; a relação entre os fatos não está comprovada. Em fevereiro de 2026, o juízo também determinou que a Prefeitura apresentasse a íntegra da jurisprudência citada e indicasse os trechos do livro considerados impróprios. Este registro reúne a retirada de 2025 e a informação posterior sobre a não distribuição em 2026; como o ato administrativo específico de 2026 ainda não foi localizado, não se cria um segundo registro nem se presume seu conteúdo."}
 ];
 
 /* ---------- OBRAS ----------
    conjunto: true quando o registro é um lote sem lista título a título. */
+/* Capas de referência foram omitidas: não há autorização individual documentada. A interface usa representação tipográfica. */
 const LIVROS = {
  "English After School":{"chegada": "Escolha de professores", "autoria": "Professores da rede municipal de Foz do Iguaçu, com pesquisadores da UFPR e da PUC-PR", "genero": "Didático de Língua Inglesa (4º e 5º anos)", "sinopse": "Coleção de inglês para os anos iniciais, elaborada na própria rede municipal, com direitos autorais cedidos ao município.", "nota": "Usada havia quatro anos na rede quando foi recolhida, segundo a cobertura. Cerca de 7 mil exemplares."},
  "O bebê vem com a cegonha?!?":{"autoria": "Patrícia Engel Secco", "editora": "Melhoramentos", "ano": 2003, "genero": "Infantil", "sinopse": "Pedro tenta descobrir de onde vêm os bebês e recebe explicações fantasiosas até que sua mãe explica a fecundação e a reprodução humana.", "nota": "Obra presente na rede municipal de Londrina pelo menos desde 2009, segundo registros de aquisição citados pela imprensa. Em março de 2026, a SME iniciou levantamento e recolhimento para análise pedagógica; a decisão final sobre o acervo não foi localizada.", "chegada": "Compra da própria rede", "chegadaSegundo": "registros de aquisição da rede citados pela imprensa"},
@@ -61,7 +62,6 @@ const LIVROS = {
    autoria:"Jeferson Tenório",
    editora:"Companhia das Letras",
    pnld:true,
-   capa:"avesso-da-pele",
    ano:2020,
    genero:"Romance",
    premio:"Prêmio Jabuti 2021, categoria Romance Literário",
@@ -69,8 +69,6 @@ const LIVROS = {
    nota:"Aprovado no PNLD antes das retiradas. O parecer do MEC, obtido pela Fiquem Sabendo via Lei de Acesso à Informação, avaliou que a linguagem tinha coerência interna com a narrativa. Voltou às escolas do PR e de GO em abril de 2024; no MS, a devolução foi anunciada no fim de abril."},
  "It: A coisa":{
    chegada:"Compra da própria rede", chegadaSegundo:"o governo de SC", chegadaFonte:"cb-sc-origem",
-   capa:"it-a-coisa",
-   capaCred:"Capa de referência · Suma, 2014",
    autoria:"Stephen King",
    ano:1986,
    genero:"Terror",
@@ -78,46 +76,35 @@ const LIVROS = {
  "Laranja Mecânica":{
    chegada:"Compra da própria rede", chegadaSegundo:"o governo de SC", chegadaFonte:"cb-sc-origem",
    autoria:"Anthony Burgess",
-   capa:"laranja-mecanica",
    ano:1962,
    genero:"Romance",
    sinopse:"Numa Inglaterra distópica, um adolescente violento é submetido a um tratamento de condicionamento que o impede de escolher o mal — e, com isso, de escolher.",
    nota:"Livro sobre os limites do Estado ao suprimir a escolha individual, retirado por decisão de Estado."},
  "Donnie Darko":{
    chegada:"Compra da própria rede", chegadaSegundo:"o governo de SC", chegadaFonte:"cb-sc-origem",
-   capa:"donnie-darko",
-   capaCred:"Capa de referência · DarkSide, 2016",
    autoria:"Richard Kelly",
    genero:"Roteiro",
    sinopse:"O roteiro do filme de 2001 sobre um adolescente que, depois de escapar de um acidente, passa a ter visões de um coelho que anuncia o fim do mundo."},
  "Coração Satânico":{
    chegada:"Compra da própria rede", chegadaSegundo:"o governo de SC", chegadaFonte:"cb-sc-origem",
-   capa:"coracao-satanico",
-   capaCred:"Capa de referência · DarkSide, 2017",
    autoria:"William Hjortsberg",
    ano:1978,
    genero:"Romance policial",
    sinopse:"Um detetive de Nova York é contratado para achar um cantor desaparecido e descobre que o cliente tem planos para a alma de alguém."},
  "Exorcismo":{
    chegada:"Compra da própria rede", chegadaSegundo:"o governo de SC", chegadaFonte:"cb-sc-origem",
-   capa:"exorcismo",
-   capaCred:"Capa de referência · DarkSide, 2016",
    autoria:"Thomas B. Allen",
    ano:1993,
    genero:"Não ficção",
    sinopse:"Reconstrução jornalística do caso de 1949 que inspirou O exorcista, a partir do diário de um dos padres envolvidos."},
  "Ed & Lorraine Warren: demonologistas — arquivos sobrenaturais":{
    chegada:"Compra da própria rede", chegadaSegundo:"o governo de SC", chegadaFonte:"cb-sc-origem",
-   capa:"demonologistas",
-   capaCred:"Capa de referência · DarkSide, 2016",
    autoria:"Gerald Brittle",
    ano:1980,
    genero:"Não ficção",
    sinopse:"Relatos do casal de investigadores paranormais cujos casos viraram a série de filmes Invocação do Mal."},
  "O diário do diabo: os segredos de Alfred Rosenberg, o maior intelectual do nazismo":{
    chegada:"Compra da própria rede", chegadaSegundo:"o governo de SC", chegadaFonte:"cb-sc-origem",
-   capa:"diario-do-diabo",
-   capaCred:"Capa de referência · Record, 2017",
    autoria:"Robert K. Wittman e David Kinney",
    ano:2016,
    genero:"Não ficção, história",
@@ -125,8 +112,6 @@ const LIVROS = {
    nota:"Livro crítico ao nazismo, retirado sob a mesma ordem que atingiu obras de terror."},
  "A química entre nós":{
    chegada:"Compra da própria rede", chegadaSegundo:"o governo de SC", chegadaFonte:"cb-sc-origem",
-   capa:"quimica-entre-nos",
-   capaCred:"Capa de referência · Best Seller, 2012",
    autoria:"Larry Young e Brian Alexander",
    ano:2012,
    genero:"Não ficção",
@@ -134,8 +119,6 @@ const LIVROS = {
    nota:"Obra de divulgação científica sobre a neurobiologia do vínculo, assinada por um neurocientista e um jornalista, guardada na mesma ordem que livros de terror."},
  "Os 13 porquês":{
    chegada:"Compra da própria rede", chegadaSegundo:"o governo de SC", chegadaFonte:"cb-sc-origem",
-   capa:"os-13-porques",
-   capaCred:"Capa de referência · Ática, 2009",
    autoria:"Jay Asher",
    ano:2007,
    genero:"Juvenil",
@@ -144,7 +127,6 @@ const LIVROS = {
  "Macunaíma":{
    chegada:"Acervo, origem não informada",
    autoria:"Mário de Andrade",
-   capa:"macunaima",
    ano:1928,
    genero:"Rapsódia",
    sinopse:"O herói sem nenhum caráter atravessa um Brasil de mitos, cidades e línguas sobrepostas, no livro que fundou boa parte do modernismo brasileiro.",
@@ -152,7 +134,6 @@ const LIVROS = {
  "Memórias póstumas de Brás Cubas":{
    chegada:"Acervo, origem não informada",
    autoria:"Machado de Assis",
-   capa:"memorias-postumas",
    ano:1881,
    genero:"Romance",
    sinopse:"Um defunto autor narra a própria vida com ironia, do leito de morte para trás, inaugurando o realismo machadiano.",
@@ -165,16 +146,12 @@ const LIVROS = {
    sinopse:"O relato de Euclides da Cunha sobre a Guerra de Canudos e a destruição do arraial pelo Exército, um dos livros fundadores do pensamento social brasileiro."},
  "O castelo":{
    chegada:"Acervo, origem não informada",
-   capa:"o-castelo",
-   capaCred:"Capa de referência · Companhia das Letras, 2008",
    autoria:"Franz Kafka",
    ano:1926,
    genero:"Romance",
    sinopse:"Um agrimensor tenta chegar ao castelo que o contratou e esbarra numa burocracia que nunca se explica nem se deixa alcançar."},
  "Contos de terror, de mistério e de morte":{
    chegada:"Acervo, origem não informada",
-   capa:"contos-de-terror",
-   capaCred:"Capa de referência · Nova Fronteira, 2017",
    autoria:"Edgar Allan Poe",
    genero:"Contos",
    sinopse:"Reunião dos contos de Poe que fundaram a literatura de horror psicológico moderna."},
@@ -185,8 +162,6 @@ const LIVROS = {
    sinopse:"Crônicas do cotidiano carioca, publicadas originalmente em jornal, sobre traição, desejo e hipocrisia de classe média."},
  "Beijo no asfalto":{
    chegada:"Acervo, origem não informada",
-   capa:"beijo-no-asfalto",
-   capaCred:"Capa de referência · Nova Fronteira, 2021",
    autoria:"Nelson Rodrigues",
    ano:1961,
    genero:"Teatro",
@@ -232,7 +207,6 @@ const LIVROS = {
    chegada:"Escolha de professores",
    autoria:"Ziraldo",
    editora:"Melhoramentos",
-   capa:"menino-marrom",
    ano:1986,
    genero:"Infantil",
    sinopse:"A amizade entre um menino marrom e um menino cor-de-rosa, e as perguntas dos dois sobre cor, diferença e preconceito.",
@@ -241,7 +215,6 @@ const LIVROS = {
    chegada:"Acervo, origem não informada",
    autoria:"Flávia Martins de Carvalho",
    editora:"Mostarda",
-   capa:"meninas-sonhadoras",
    genero:"Infantojuvenil, não ficção",
    sinopse:"Trajetórias de mulheres brasileiras na pesquisa e na vida pública, escrito por uma juíza do TJSP.",
    nota:"Recolhido depois que um vereador criticou a presença de Marielle Franco e Débora Diniz entre as retratadas. Dois anos depois, a Justiça chamou a retirada de censura."},
@@ -249,7 +222,6 @@ const LIVROS = {
    chegada:"Escolha de professores",
    autoria:"Marçal Aquino",
    editora:"Companhia das Letras",
-   capa:"piores-noticias",
    ano:2005,
    genero:"Romance",
    sinopse:"Num garimpo do Pará, um fotógrafo se envolve com a mulher de um pastor. O desejo e a violência dividem o mesmo território.",
@@ -260,8 +232,6 @@ const LIVROS = {
    nota:"Livro de educação sexual para crianças pequenas. A lei aprovada em seguida pela Câmara de Londrina permite explicação científica sobre reprodução, que é o assunto do livro."},
  "A bolsa amarela":{
    chegada:"Escolha de professores",
-   capa:"bolsa-amarela",
-   capaCred:"Capa de referência · Casa Lygia Bojunga, 2013",
    autoria:"Lygia Bojunga",
    ano:1976,
    genero:"Infantojuvenil",
@@ -601,7 +571,7 @@ const ATOS = {
    }},
  "LON-2026":{"nome": "Levantamento e recolhimento para análise de O bebê vem com a cegonha?!? (Londrina)", "data": "2026-03-12", "uf": "PR", "cidade": "Londrina", "tipo": "Escolar", "rede": "Municipal", "governo": "Tiago Amaral (PSD) · prefeitura de Londrina", "quem": "Secretaria Municipal de Educação de Londrina", "documento": "Pedido de providências consultado pela Folha de Londrina em 11/03/2026. Errata publicada em 12/03/2026 esclarece que a iniciativa partiu da equipe da Gerência de Ensino Fundamental da SME, não da direção da escola municipal. A CBN Londrina confirma a nota da SME sobre levantamento da rede e recolhimento para análise. O número do processo SEI, a íntegra do pedido, os nomes dos signatários e a decisão final não foram localizados. Relatório do OGPL aponta que, após 18/02/2025, apenas 15 processos do tipo Pedido de Providências foram públicos e 19.588 foram restritos, embora a Portaria SMGP-GAB nº 28/2020 preveja publicidade como regra.", "papeis": {"pedido": "A Folha de Londrina informou inicialmente que o pedido estava assinado por gerente e diretora pedagógica; errata de 12/03/2026 esclareceu que a iniciativa partiu da equipe da Gerência de Ensino Fundamental da SME, não da direção da escola. Nomes individuais não foram divulgados.", "decisor": "Secretaria Municipal de Educação de Londrina, que informou ter iniciado levantamento em toda a rede e recolhimento de exemplares para análise. A autoridade individual que autorizou a providência não foi identificada.", "assinantes": "A reportagem não publicou os nomes dos signatários. A errata atribui a iniciativa à equipe da Gerência de Ensino Fundamental da SME, não à direção da escola; o número SEI e o documento integral ainda não foram localizados.", "executor": "SME e unidades da rede municipal, quanto ao levantamento e à retirada para análise. Não há confirmação do recolhimento integral em cada escola.", "resposta": "A SME apresentou nota sobre adequação etária e qualidade dos materiais. A editora Melhoramentos afirmou que não havia sido previamente notificada. A decisão final sobre retorno ou exclusão não foi localizada."}},
  "CAN-2024":{"nome": "Retirada de livros da biblioteca Mundoteca (Canoinhas)", "data": "2024-04-17", "uf": "SC", "cidade": "Canoinhas", "tipo": "Pública", "rede": "Municipal", "governo": "Juliana Maciel Hoppe (PL) · prefeitura de Canoinhas", "quem": "Prefeitura de Canoinhas, sob a prefeita Juliana Maciel Hoppe", "documento": "A decisão singular GCS/GSS-861/2024 do TCE-SC, no levantamento @LEV 24/80041829, registra que a prefeita Juliana Maciel Hoppe afirmou, em resposta juntada às fls. 14–32, que havia um exemplar de cada título e que os livros foram entregues à gestora da Fundação Cultural para análise de destinação. O TCE concluiu que os livros não foram efetivamente jogados no lixo e estavam em poder da Fundação Cultural. O Tribunal também qualificou a conduta pública da prefeita como irresponsável e apontou uso da imagem e da popularidade do cargo e de bens públicos para fins populistas, eleitoreiros e de autopromoção. O levantamento foi arquivado por baixa materialidade financeira e pela existência de notícia de fato no MPSC; isso não equivale a conclusão do Ministério Público. O TCE determinou levantamento parcial do sigilo apenas quanto ao Relatório DGE-328/2024 e à decisão; a resposta da prefeita e as fotos das fls. 14–32 não integram o documento público do Diário. O Requerimento 149/2024, assinado por oito vereadores, pediu revisão e reorganização da Mundoteca e separação de materiais por faixa etária, não a retirada expressa destes dois títulos. A decisão pública é assinada pelo conselheiro Gerson dos Santos Sicca.", "papeis": {"pedido": "O Requerimento nº 149/2024 foi subscrito por Tati Carvalho, Wilmar Sudoski, Maurício Zimmermann, Willian Godoy, Adilson Steidel, Professor Osmar, André Flenik e Chico Mineiro, conforme o SAPL. Separadamente, reportagem de Canoinhas Online identificou Osmar Oleskovicz (Professor Osmar) como autor do pedido de retirada imediata e Willian Godoy como defensor da incineração; essa atribuição é jornalística, não uma ordem administrativa assinada. O documento não pediu expressamente a retirada dos dois títulos.", "pressao": "Canoinhas Online relata que Tati Carvalho exibiu vídeo e classificou o conteúdo como pornografia; Osmar Oleskovicz pediu a retirada imediata e Willian Godoy defendeu a incineração. Essas falas são atribuídas a uma reportagem local; a gravação oficial da sessão e as atas correspondentes ainda não foram localizadas.", "destinatario": "O requerimento foi dirigido à prefeita Juliana Maciel Hoppe e ao coordenador de Biblioteca Ryan Pablo Klengues.", "decisor": "A prefeita Juliana Maciel publicou vídeo em que declara que os livros seriam retirados da biblioteca e os chama de “porcaria”. A Prefeitura confirmou posteriormente a retirada em nota reproduzida pela imprensa local. Não foi localizada ordem escrita nem identificado signatário formal de ato administrativo.", "executor": "A prefeita aparece no vídeo colocando exemplares numa lixeira. A nota da Prefeitura reproduzida pela imprensa diz que os livros foram retirados da Mundoteca e seriam encaminhados aos responsáveis pelo projeto. Não há comprovação de destruição física nem de entrega efetiva aos responsáveis.", "resposta": "A FGM/Mundoteca afirmou que os livros eram controlados por faixa etária e não haviam sido emprestados a crianças. O MPSC abriu notícia de fato para apurar o descarte; o resultado não foi localizado. A Secom esclareceu que a Mundoteca era projeto privado incentivado e que a unidade já estava sob gestão municipal.", "assinantes": "Não foi localizado ato de retirada assinado. O Requerimento 149/2024 foi subscrito por Tati Carvalho, Wilmar Sudoski, Maurício Zimmermann, Willian Godoy, Adilson Steidel, Professor Osmar, André Flenik e Chico Mineiro. A decisão GCS/GSS-861/2024 foi assinada pelo conselheiro Gerson dos Santos Sicca. A resposta da prefeita está nas fls. 14–32, sob sigilo parcial, e não há recibo público de transferência."}},
- "FOZ-2025":{"cumprimento": {"desde": "2025-07-23", "decisao": "Liminar mandou devolver os livros às escolas municipais", "falta": "Segundo a própria Secretaria, em 2026 a então secretária determinou que o material não fosse enviado às unidades", "fonte": "h2foz-cpi-nota"}, "reversao": {"via": "Decisão judicial", "data": "2025-07-23", "fonte": "aguas-liminar", "nota": "Liminar da 2ª Vara da Fazenda Pública suspendeu o memorando e deu 10 dias para a devolução, sob multa pessoal à secretária. A Secretaria confirma que os livros voltaram às escolas em 2025."}, "nome": "Recolhimento dos livros de inglês da rede municipal (Foz do Iguaçu)", "data": "2025-06-01", "uf": "PR", "cidade": "Foz do Iguaçu", "tipo": "Escolar", "rede": "Municipal", "governo": "General Silva e Luna (PL) · prefeitura de Foz do Iguaçu", "quem": "Secretaria Municipal de Educação", "pressao": "Os vereadores Bosco Foz (PL) e Dr. Ranieri Marchioro (Republicanos) publicaram vídeos criticando o material pouco antes do recolhimento, segundo o H2FOZ.", "documento": "Memorando interno nº 40218/2025 da Secretaria Municipal de Educação, citado na decisão liminar que o suspendeu; a íntegra não foi localizada. O recolhimento aconteceu no início de junho de 2025; a data registrada é o primeiro dia do mês. Segundo o sindicato, a retirada começou antes do memorando.", "papeis": {"pressao": "Vereadores Bosco Foz (PL) e Dr. Ranieri Marchioro (Republicanos), que publicaram vídeos sobre o material.", "decisor": "Secretaria Municipal de Educação, sob a secretária Silvana Garcia André.", "executor": "Unidades da rede municipal, de onde foram recolhidos cerca de 7 mil exemplares.", "resposta": "O Sinprefi, sindicato dos servidores da educação municipal, obteve liminar em julho de 2025. A Câmara abriu CPI sobre o caso."}}
+ "FOZ-2025":{"restricaoPosterior":{"fonte":"h2foz-cpi-nota","referenciaPublicaEm":"2026-10-09","nota":"Nota municipal reproduzida pelo H2FOZ informa que, em 2026, por determinação da secretária municipal da época, o material não foi encaminhado às unidades; a data exata do ato não foi informada."}, "cumprimento": {"desde": "2025-07-23", "decisao": "Liminar mandou devolver os livros às escolas municipais", "falta": "Segundo a própria Secretaria, em 2026 a então secretária determinou que o material não fosse enviado às unidades", "fonte": "h2foz-cpi-nota"}, "reversao": {"via": "Decisão judicial", "data": "2025-07-23", "fonte": "aguas-liminar", "nota": "Liminar da 2ª Vara da Fazenda Pública suspendeu o memorando e deu 10 dias para a devolução, sob multa pessoal à secretária. A Secretaria confirma que os livros voltaram às escolas em 2025."}, "nome": "Recolhimento dos livros de inglês da rede municipal (Foz do Iguaçu)", "data": "2025-06-01", "uf": "PR", "cidade": "Foz do Iguaçu", "tipo": "Escolar", "rede": "Municipal", "governo": "General Silva e Luna (PL) · prefeitura de Foz do Iguaçu", "quem": "Secretaria Municipal de Educação", "pressao": "Os vereadores Bosco Foz (PL) e Dr. Ranieri Marchioro (Republicanos) publicaram vídeos criticando o material pouco antes do recolhimento, segundo o H2FOZ.", "documento": "Memorando interno nº 40218/2025 da Secretaria Municipal de Educação, citado na decisão liminar que o suspendeu; a íntegra não foi localizada. O recolhimento aconteceu no início de junho de 2025; a data registrada é o primeiro dia do mês. Segundo o sindicato, a retirada começou antes do memorando.", "papeis": {"pressao": "Vereadores Bosco Foz (PL) e Dr. Ranieri Marchioro (Republicanos), que publicaram vídeos sobre o material.", "decisor": "Secretaria Municipal de Educação, sob a secretária Silvana Garcia André.", "executor": "Unidades da rede municipal, de onde foram recolhidos cerca de 7 mil exemplares.", "resposta": "O Sinprefi, sindicato dos servidores da educação municipal, obteve liminar em julho de 2025. A Câmara abriu CPI sobre o caso."}}
 };
 
 const FONTES = {
@@ -1077,7 +1047,7 @@ const LACUNAS = {
  "FOZ-2025":{"obstaculos": ["Documento interno não publicado", "Cumprimento não confirmado"], "caminho": "A íntegra do Memorando nº 40218/2025 e da liminar, e o ato de 2026 que deixou de enviar o material às escolas. O relatório final da CPI da Câmara de Foz do Iguaçu, se publicado, deve trazer esses documentos."}
 };
 
-const ATUALIZADO = "2026-11-06";
+const ATUALIZADO = "2026-11-07";
 /* DOI da base no Zenodo (arquivada a cada versão publicada no GitHub). */
 const DOI = "10.5281/zenodo.24022607";
 
@@ -1117,6 +1087,7 @@ const CORRECOES = [
  {"data": "2026-11-06", "id": "EL-038", "texto": "Incluído o recolhimento de cerca de 7 mil exemplares de English After School, material de inglês da rede municipal de Foz do Iguaçu (PR), em junho de 2025, revertido por liminar em julho e, segundo a própria Secretaria, novamente retido em 2026."},
  {"data": "2026-11-06", "id": "EL-035 a EL-037", "texto": "Incorporados três registros apurados na linha de auditoria (PR #5): o recolhimento para análise de O bebê vem com a cegonha?!? na rede municipal de Londrina, em março de 2026 (EL-035, parcialmente verificado), e a retirada de Aparelho Sexual e Cia. e As melhores do Analista de Bagé da biblioteca Mundoteca, em Canoinhas (SC), em abril de 2024 (EL-036 e EL-037). Os livros de Canoinhas não foram descartados, segundo o TCE-SC; a destinação posterior não foi comprovada."},
  {data:"2026-11-06", id:"Painel", texto:"Corrigidas quatro afirmações da página inicial: dois atos (Rondônia, 2020, e Santa Catarina, 2023), e não três, respondem por mais da metade dos registros; descarte ou destruição tem um registro, e não zero; a lista de Rondônia já está reconciliada; e Os Sertões da Luta voltou à prateleira de destaques, de onde havia saído quando o título foi corrigido."},
+ {data:"2026-11-07", id:"EL-038", texto:"Foz do Iguaçu: corrigida a situação de “Revertido” para “Em aberto”. A liminar e a devolução dos exemplares em 2025 permanecem registradas, mas a nota da Prefeitura reproduzida pelo H2FOZ em 09/10/2026 informa que, por determinação da secretária municipal da época, o material não foi encaminhado às unidades em 2026. O registro passa a explicitar as duas fases e mantém pendente a localização do ato administrativo de 2026 e a confirmação da situação atual do acesso."},
  {data:"2026-11-06", id:"EL-030", texto:"Londrina: confirmada, por nota da Secretaria reproduzida pela RIC e pela Tarobá, a retirada do exemplar encontrado em um CMEI; não há prova de recolhimento em outras unidades. Removida da lista de fontes uma reportagem da Folha de Londrina que tratava de outro livro e de outro episódio, de março de 2026. Registrado que o PL 79/2024 foi protocolado em abril de 2024, antes do caso."},
  {data:"2026-11-06", id:"EL-028", texto:"São José dos Campos: registrada a sentença de mérito de 20/07/2026, que determinou a restituição da obra às salas de leitura; o cumprimento da ordem não foi confirmado."},
  {data:"2026-11-06", id:"EL-027", texto:"Conselheiro Lafaiete: registrada a sentença de mérito de 02/12/2024, que anulou o ato da Secretaria e confirmou a tutela antecipada. A cópia pública consultada não traz certidão de trânsito em julgado; a ficha deixou de chamar a decisão de definitiva."},

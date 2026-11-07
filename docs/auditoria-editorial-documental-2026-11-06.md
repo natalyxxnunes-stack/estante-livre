@@ -1,7 +1,9 @@
-# Estante Livre — auditoria editorial e documental
+# Estante Livre — auditoria editorial e documental (snapshot histórico)
 **Data da apuração:** 6 de novembro de 2026  
 **Base examinada:** branch `main` do repositório `natalyxxnunes-stack/estante-livre`.  
 **Escopo:** inspeção estática dos arquivos e dados acessíveis pelo GitHub; pesquisa documental pública complementar. Não é laudo de acessibilidade nem teste de produção.
+
+> **Atenção:** este documento registra exclusivamente o estado observado em 6 de novembro de 2026. Seus números (34 registros, 15 verificados e 19 parciais) são históricos e foram superados pela base revisada em 7 de novembro de 2026, que contém 38 registros. Não utilizar este arquivo como fotografia atual do catálogo.
 
 ## 1. Estado da base na branch main
 
