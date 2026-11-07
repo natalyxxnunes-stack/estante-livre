@@ -51,6 +51,7 @@ const CASOS = [
 
 /* ---------- OBRAS ----------
    conjunto: true quando o registro é um lote sem lista título a título. */
+/* Capas de referência foram omitidas: não há autorização individual documentada. A interface usa representação tipográfica. */
 const LIVROS = {
  "English After School":{"chegada": "Escolha de professores", "autoria": "Professores da rede municipal de Foz do Iguaçu, com pesquisadores da UFPR e da PUC-PR", "genero": "Didático de Língua Inglesa (4º e 5º anos)", "sinopse": "Coleção de inglês para os anos iniciais, elaborada na própria rede municipal, com direitos autorais cedidos ao município.", "nota": "Usada havia quatro anos na rede quando foi recolhida, segundo a cobertura. Cerca de 7 mil exemplares."},
  "O bebê vem com a cegonha?!?":{"autoria": "Patrícia Engel Secco", "editora": "Melhoramentos", "ano": 2003, "genero": "Infantil", "sinopse": "Pedro tenta descobrir de onde vêm os bebês e recebe explicações fantasiosas até que sua mãe explica a fecundação e a reprodução humana.", "nota": "Obra presente na rede municipal de Londrina pelo menos desde 2009, segundo registros de aquisição citados pela imprensa. Em março de 2026, a SME iniciou levantamento e recolhimento para análise pedagógica; a decisão final sobre o acervo não foi localizada.", "chegada": "Compra da própria rede", "chegadaSegundo": "registros de aquisição da rede citados pela imprensa"},
@@ -61,7 +62,6 @@ const LIVROS = {
    autoria:"Jeferson Tenório",
    editora:"Companhia das Letras",
    pnld:true,
-   capa:"avesso-da-pele",
    ano:2020,
    genero:"Romance",
    premio:"Prêmio Jabuti 2021, categoria Romance Literário",
@@ -69,8 +69,6 @@ const LIVROS = {
    nota:"Aprovado no PNLD antes das retiradas. O parecer do MEC, obtido pela Fiquem Sabendo via Lei de Acesso à Informação, avaliou que a linguagem tinha coerência interna com a narrativa. Voltou às escolas do PR e de GO em abril de 2024; no MS, a devolução foi anunciada no fim de abril."},
  "It: A coisa":{
    chegada:"Compra da própria rede", chegadaSegundo:"o governo de SC", chegadaFonte:"cb-sc-origem",
-   capa:"it-a-coisa",
-   capaCred:"Capa de referência · Suma, 2014",
    autoria:"Stephen King",
    ano:1986,
    genero:"Terror",
@@ -78,46 +76,35 @@ const LIVROS = {
  "Laranja Mecânica":{
    chegada:"Compra da própria rede", chegadaSegundo:"o governo de SC", chegadaFonte:"cb-sc-origem",
    autoria:"Anthony Burgess",
-   capa:"laranja-mecanica",
    ano:1962,
    genero:"Romance",
    sinopse:"Numa Inglaterra distópica, um adolescente violento é submetido a um tratamento de condicionamento que o impede de escolher o mal — e, com isso, de escolher.",
    nota:"Livro sobre os limites do Estado ao suprimir a escolha individual, retirado por decisão de Estado."},
  "Donnie Darko":{
    chegada:"Compra da própria rede", chegadaSegundo:"o governo de SC", chegadaFonte:"cb-sc-origem",
-   capa:"donnie-darko",
-   capaCred:"Capa de referência · DarkSide, 2016",
    autoria:"Richard Kelly",
    genero:"Roteiro",
    sinopse:"O roteiro do filme de 2001 sobre um adolescente que, depois de escapar de um acidente, passa a ter visões de um coelho que anuncia o fim do mundo."},
  "Coração Satânico":{
    chegada:"Compra da própria rede", chegadaSegundo:"o governo de SC", chegadaFonte:"cb-sc-origem",
-   capa:"coracao-satanico",
-   capaCred:"Capa de referência · DarkSide, 2017",
    autoria:"William Hjortsberg",
    ano:1978,
    genero:"Romance policial",
    sinopse:"Um detetive de Nova York é contratado para achar um cantor desaparecido e descobre que o cliente tem planos para a alma de alguém."},
  "Exorcismo":{
    chegada:"Compra da própria rede", chegadaSegundo:"o governo de SC", chegadaFonte:"cb-sc-origem",
-   capa:"exorcismo",
-   capaCred:"Capa de referência · DarkSide, 2016",
    autoria:"Thomas B. Allen",
    ano:1993,
    genero:"Não ficção",
    sinopse:"Reconstrução jornalística do caso de 1949 que inspirou O exorcista, a partir do diário de um dos padres envolvidos."},
  "Ed & Lorraine Warren: demonologistas — arquivos sobrenaturais":{
    chegada:"Compra da própria rede", chegadaSegundo:"o governo de SC", chegadaFonte:"cb-sc-origem",
-   capa:"demonologistas",
-   capaCred:"Capa de referência · DarkSide, 2016",
    autoria:"Gerald Brittle",
    ano:1980,
    genero:"Não ficção",
    sinopse:"Relatos do casal de investigadores paranormais cujos casos viraram a série de filmes Invocação do Mal."},
  "O diário do diabo: os segredos de Alfred Rosenberg, o maior intelectual do nazismo":{
    chegada:"Compra da própria rede", chegadaSegundo:"o governo de SC", chegadaFonte:"cb-sc-origem",
-   capa:"diario-do-diabo",
-   capaCred:"Capa de referência · Record, 2017",
    autoria:"Robert K. Wittman e David Kinney",
    ano:2016,
    genero:"Não ficção, história",
@@ -125,8 +112,6 @@ const LIVROS = {
    nota:"Livro crítico ao nazismo, retirado sob a mesma ordem que atingiu obras de terror."},
  "A química entre nós":{
    chegada:"Compra da própria rede", chegadaSegundo:"o governo de SC", chegadaFonte:"cb-sc-origem",
-   capa:"quimica-entre-nos",
-   capaCred:"Capa de referência · Best Seller, 2012",
    autoria:"Larry Young e Brian Alexander",
    ano:2012,
    genero:"Não ficção",
@@ -134,8 +119,6 @@ const LIVROS = {
    nota:"Obra de divulgação científica sobre a neurobiologia do vínculo, assinada por um neurocientista e um jornalista, guardada na mesma ordem que livros de terror."},
  "Os 13 porquês":{
    chegada:"Compra da própria rede", chegadaSegundo:"o governo de SC", chegadaFonte:"cb-sc-origem",
-   capa:"os-13-porques",
-   capaCred:"Capa de referência · Ática, 2009",
    autoria:"Jay Asher",
    ano:2007,
    genero:"Juvenil",
@@ -144,7 +127,6 @@ const LIVROS = {
  "Macunaíma":{
    chegada:"Acervo, origem não informada",
    autoria:"Mário de Andrade",
-   capa:"macunaima",
    ano:1928,
    genero:"Rapsódia",
    sinopse:"O herói sem nenhum caráter atravessa um Brasil de mitos, cidades e línguas sobrepostas, no livro que fundou boa parte do modernismo brasileiro.",
@@ -152,7 +134,6 @@ const LIVROS = {
  "Memórias póstumas de Brás Cubas":{
    chegada:"Acervo, origem não informada",
    autoria:"Machado de Assis",
-   capa:"memorias-postumas",
    ano:1881,
    genero:"Romance",
    sinopse:"Um defunto autor narra a própria vida com ironia, do leito de morte para trás, inaugurando o realismo machadiano.",
@@ -165,16 +146,12 @@ const LIVROS = {
    sinopse:"O relato de Euclides da Cunha sobre a Guerra de Canudos e a destruição do arraial pelo Exército, um dos livros fundadores do pensamento social brasileiro."},
  "O castelo":{
    chegada:"Acervo, origem não informada",
-   capa:"o-castelo",
-   capaCred:"Capa de referência · Companhia das Letras, 2008",
    autoria:"Franz Kafka",
    ano:1926,
    genero:"Romance",
    sinopse:"Um agrimensor tenta chegar ao castelo que o contratou e esbarra numa burocracia que nunca se explica nem se deixa alcançar."},
  "Contos de terror, de mistério e de morte":{
    chegada:"Acervo, origem não informada",
-   capa:"contos-de-terror",
-   capaCred:"Capa de referência · Nova Fronteira, 2017",
    autoria:"Edgar Allan Poe",
    genero:"Contos",
    sinopse:"Reunião dos contos de Poe que fundaram a literatura de horror psicológico moderna."},
@@ -185,8 +162,6 @@ const LIVROS = {
    sinopse:"Crônicas do cotidiano carioca, publicadas originalmente em jornal, sobre traição, desejo e hipocrisia de classe média."},
  "Beijo no asfalto":{
    chegada:"Acervo, origem não informada",
-   capa:"beijo-no-asfalto",
-   capaCred:"Capa de referência · Nova Fronteira, 2021",
    autoria:"Nelson Rodrigues",
    ano:1961,
    genero:"Teatro",
@@ -232,7 +207,6 @@ const LIVROS = {
    chegada:"Escolha de professores",
    autoria:"Ziraldo",
    editora:"Melhoramentos",
-   capa:"menino-marrom",
    ano:1986,
    genero:"Infantil",
    sinopse:"A amizade entre um menino marrom e um menino cor-de-rosa, e as perguntas dos dois sobre cor, diferença e preconceito.",
@@ -241,7 +215,6 @@ const LIVROS = {
    chegada:"Acervo, origem não informada",
    autoria:"Flávia Martins de Carvalho",
    editora:"Mostarda",
-   capa:"meninas-sonhadoras",
    genero:"Infantojuvenil, não ficção",
    sinopse:"Trajetórias de mulheres brasileiras na pesquisa e na vida pública, escrito por uma juíza do TJSP.",
    nota:"Recolhido depois que um vereador criticou a presença de Marielle Franco e Débora Diniz entre as retratadas. Dois anos depois, a Justiça chamou a retirada de censura."},
@@ -249,7 +222,6 @@ const LIVROS = {
    chegada:"Escolha de professores",
    autoria:"Marçal Aquino",
    editora:"Companhia das Letras",
-   capa:"piores-noticias",
    ano:2005,
    genero:"Romance",
    sinopse:"Num garimpo do Pará, um fotógrafo se envolve com a mulher de um pastor. O desejo e a violência dividem o mesmo território.",
@@ -260,8 +232,6 @@ const LIVROS = {
    nota:"Livro de educação sexual para crianças pequenas. A lei aprovada em seguida pela Câmara de Londrina permite explicação científica sobre reprodução, que é o assunto do livro."},
  "A bolsa amarela":{
    chegada:"Escolha de professores",
-   capa:"bolsa-amarela",
-   capaCred:"Capa de referência · Casa Lygia Bojunga, 2013",
    autoria:"Lygia Bojunga",
    ano:1976,
    genero:"Infantojuvenil",
