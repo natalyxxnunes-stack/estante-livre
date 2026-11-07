@@ -159,9 +159,9 @@ function comJsonLd(html, obj){
 const ORG = {"@type":"Organization","name":"Estante Livre","url":SITE+"/","founder":{"@type":"Person","name":"Nataly Nunes Pinto"}};
 const DATASET = {"@context":"https://schema.org","@type":"Dataset",
   "name":"Estante Livre: catálogo de censura de livros em bibliotecas e escolas brasileiras",
-  "description":"Registros de retiradas, ocultações, vetos, pedidos e pressões sobre livros em bibliotecas e escolas do Brasil desde 2019, com quem pediu, quem decidiu, quem assinou, quem executou, justificativa declarada, desfecho e fontes.",
+  "description":"Registros de retiradas, ocultações, vetos, pedidos e pressões sobre livros em bibliotecas e escolas do Brasil desde 2014, com quem pediu, quem decidiu, quem assinou, quem executou, justificativa declarada, desfecho e fontes.",
   "url":SITE+"/casos.html","inLanguage":"pt-BR","creator":ORG,"dateModified":ATUALIZADO,
-  "spatialCoverage":{"@type":"Place","name":"Brasil"},"temporalCoverage":"2019/..",
+  "spatialCoverage":{"@type":"Place","name":"Brasil"},"temporalCoverage":"2014/..",
   "isAccessibleForFree":true,
   "variableMeasured":["mecanismo","estágio","situação","unidade da federação","tipo de biblioteca","justificativa declarada"],
   "distribution":[
@@ -500,7 +500,7 @@ ${[...topo, ...urlsCasos, ...urlsLivros, ...urlsAtos].map(u=>`  <url><loc>${u}</
 gravar("robots.txt", `User-agent: *\nAllow: /\n\nSitemap: ${SITE}/sitemap.xml\n`);
 gravar("llms.txt", `# Estante Livre
 
-> Observatório de censura de livros em bibliotecas e escolas brasileiras, desde 2019. Cada registro identifica quem pediu, quem decidiu, quem assinou e quem executou a medida, a justificativa declarada, até onde a medida chegou e o que aconteceu depois, com fontes. Projeto de Nataly Nunes Pinto.
+> Observatório de censura de livros em bibliotecas e escolas brasileiras, desde 2014. Cada registro identifica quem pediu, quem decidiu, quem assinou e quem executou a medida, a justificativa declarada, até onde a medida chegou e o que aconteceu depois, com fontes. Projeto de Nataly Nunes Pinto.
 
 Registro não equivale a banimento consumado: cada caso traz o estágio (pressão pública, pedido formal, decisão ou ordem, execução comprovada) e a situação (em vigor, revertido, sem efeito, em aberto).
 

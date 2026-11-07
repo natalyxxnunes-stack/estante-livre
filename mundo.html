@@ -108,7 +108,7 @@ document.getElementById("paises").innerHTML = MUNDO.map(m=>`
   const atos = new Set(CASOS.map(c=>c.ato));
   const exec = CASOS.filter(c=>c.estagio==="Execução comprovada").length;
   document.getElementById("txt-brasil").innerHTML =
-    `O catálogo brasileiro reúne ${CASOS.length} registros, originados de ${atos.size} atos ou episódios desde 2019; em ${exec} deles a retirada ou restrição está comprovada. Cada ficha identifica quem pediu, quem decidiu, quem assinou e quem executou. Veja os <a href="casos.html">casos</a> e a <a href="analises.html">leitura dos dados</a>.`;
+    `O catálogo brasileiro reúne ${CASOS.length} registros, originados de ${atos.size} atos ou episódios desde ${ANO_INICIO}; em ${exec} deles a retirada ou restrição está comprovada. Cada ficha identifica quem pediu, quem decidiu, quem assinou e quem executou. Veja os <a href="casos.html">casos</a> e a <a href="analises.html">leitura dos dados</a>.`;
 }
 montarRodape();
 </script>

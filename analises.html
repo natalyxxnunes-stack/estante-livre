@@ -57,7 +57,7 @@
    <div><strong id="a-atos">—</strong><span>atos ou episódios administrativos identificados</span></div>
    <div><strong id="a-listas">—</strong><span>registros em dois atos com listas extensas</span></div>
   </div>
-  <p>O número de registros não é o número de decisões. Os episódios de Rondônia (2020) e Santa Catarina (2023) respondem juntos por 19 fichas: dez títulos associados ao episódio de Rondônia e nove ao ofício catarinense. Isso representa mais da metade do catálogo atual. Uma comparação política precisa, portanto, contar também os atos — e não tratar cada título de uma mesma lista como uma decisão independente.</p>
+  <p>O número de registros não é o número de decisões. Os episódios de Rondônia (2020) e Santa Catarina (2023) respondem juntos por <span id="a-conc">19 fichas</span>: dez títulos associados ao episódio de Rondônia e nove ao ofício catarinense. É perto da metade do catálogo. Uma comparação política precisa, portanto, contar também os atos — e não tratar cada título de uma mesma lista como uma decisão independente.</p>
   <div id="chart-atos" class="analysis-bars" aria-label="Registros por ato"></div>
  </section>
  <section>
@@ -120,8 +120,15 @@
   <ol class="onda-lista" id="onda-lista"></ol>
   <p class="note">A sequência mostra os atos de governos estaduais. O catálogo registra o encadeamento no tempo; ele ainda não tem documento que prove que uma secretaria agiu por causa da outra. A difusão entre leis e projetos está na <a href="normas.html">trilha de normas</a>.</p>
  </section>
+ <section id="sensibilidade">
+  <div class="sechead"><span class="kicker">09</span><h2>O recorte muda o resultado?</h2></div>
+  <p>Até novembro de 2026, a contagem começava em 2019. Hoje começa em <span id="sens-ini">2014</span>, pelo motivo explicado na <a href="metodologia.html">Metodologia</a>. Um recorte só se sustenta se as conclusões não dependerem dele, então esta tabela refaz as contas com os dois inícios. As diferenças em pontos percentuais aparecem na última coluna.</p>
+  <div class="tab-wrap"><table class="tab"><thead><tr><th>MEDIDA</th><th id="sens-h1">DESDE 2014</th><th id="sens-h2">DESDE 2019</th><th>DIFERENÇA</th></tr></thead><tbody id="sens-rows"></tbody></table></div>
+  <p id="sens-lead"></p>
+  <p class="note" id="sens-nota"></p>
+ </section>
  <section>
-  <div class="sechead"><span class="kicker">09</span><h2>O que ainda não podemos concluir</h2></div>
+  <div class="sechead"><span class="kicker">10</span><h2>O que ainda não podemos concluir</h2></div>
   <div class="analysis-unknown">
    <div><h3>Não é um retrato de todo o país</h3><p>O catálogo reúne episódios localizados por pesquisa documental e cobertura pública. Não permite estimar a proporção nacional de atos atribuíveis a cada campo político.</p></div>
    <div><h3>Partido do governo não prova autoria</h3><p>O fato de uma medida ocorrer durante determinado governo não prova que o governador ou prefeito a tenha ordenado. É preciso localizar o ato, o signatário e a cadeia de execução.</p></div>
@@ -130,7 +137,7 @@
   </div>
  </section>
  <section>
-  <div class="sechead"><span class="kicker">10</span><h2>Como esta análise será atualizada</h2></div>
+  <div class="sechead"><span class="kicker">11</span><h2>Como esta análise será atualizada</h2></div>
   <p>As conclusões serão revistas quando entrarem novos documentos, respostas de LAI ou correções nas fichas. Se a base mudar, os números e as interpretações também mudam. A data de atualização e a regra de contagem ficam explícitas; nenhuma hipótese será promovida a fato sem fonte.</p>
   <p class="analysis-links"><a href="casos.html">Consultar os casos</a><a href="metodologia.html">Ler a metodologia</a><a href="index.html">Voltar ao painel</a></p>
  </section>
@@ -258,5 +265,60 @@ el("chart-atos").innerHTML=labels.map(([ato,n])=>{
  }).join("") + pls.map(n=>`<li><strong>${dataCurta(n.data)} · ${esc(UFN[n.uf]||n.uf)}.</strong> ${esc(n.numero)}, de ${esc(n.autoria)}, apresentado com O avesso da pele na justificativa.</li>`).join("");
 }
 montarRodape();
+
+{
+ /* teste de sensibilidade: as mesmas contas com o recorte atual e com o antigo */
+ const y0 = ANO_INICIO, y1 = RECORTE.anoTeste;
+ const pct = (a,b) => b ? Math.round(a/b*100) : 0;
+ const DIR = ["Direita","Extrema direita"];
+ const medir = y => {
+   const cs = CASOS.filter(c=>+ano(c)>=y);
+   const ks = [...new Set(cs.map(c=>c.ato))];
+   const efet = ks.filter(k=>cs.some(c=>c.ato===k && ["Decisão ou ordem","Execução comprovada"].includes(c.estagio)));
+   const rev = efet.filter(k=>ATOS[k] && ATOS[k].reversao).length;
+   const sex = cs.filter(c=>c.eixo==="Sexualidade e gênero").length;
+   const pr = PAPEIS.filter(p=>ks.includes(p.ato) && p.partido && /vereador|deputad|prefeit|governador|senador/i.test(p.cargo||"") && ["Pressão","Pedido"].includes(p.papel));
+   const pessoas = new Map(); pr.forEach(p=>pessoas.set(p.agente,p.partido));
+   const pDir = [...pessoas.values()].filter(sg=>DIR.includes(campoDe(sg))).length;
+   const gov = efet.map(k=>partidoDoGoverno(ATOS[k].governo)).filter(Boolean);
+   const gDir = gov.filter(sg=>DIR.includes(campoDe(sg))).length;
+   const ufs = new Set(ks.map(k=>ATOS[k].uf));
+   return {cs, ks, linhas:[
+     ["Registros", cs.length, null],
+     ["Atos ou episódios", ks.length, null],
+     ["Unidades da federação", ufs.size, null],
+     ["Atos em que a medida foi decidida ou executada", efet.length+" de "+ks.length, pct(efet.length,ks.length)],
+     ["Medidas decididas ou executadas que foram revertidas", rev+" de "+efet.length, pct(rev,efet.length)],
+     ["Registros sobre sexualidade e gênero", sex+" de "+cs.length, pct(sex,cs.length)],
+     ["Pessoas com mandato que pressionaram ou pediram, em partidos de direita ou extrema direita", pDir+" de "+pessoas.size, pct(pDir,pessoas.size)],
+     ["Medidas efetivas sob governos de partidos de direita ou extrema direita (com partido identificado)", gDir+" de "+gov.length, pct(gDir,gov.length)],
+   ]};
+ };
+ const A = medir(y0), B = medir(y1);
+ el("sens-ini").textContent = y0;
+ el("sens-h1").textContent = "DESDE "+y0; el("sens-h2").textContent = "DESDE "+y1;
+ const fmt = (v,p) => p==null ? String(v) : v+" ("+p+"%)";
+ const mudam = [], ficam = [];
+ el("sens-rows").innerHTML = A.linhas.map((l,i)=>{
+   const m = B.linhas[i];
+   let d = "";
+   if(l[2]!=null){ const dp = l[2]-m[2]; d = (dp>0?"+":"")+dp+" p.p."; (Math.abs(dp)>=10 ? mudam : ficam).push(l[0].toLowerCase()); }
+   else d = "+"+(l[1]-m[1]);
+   return '<tr><td>'+esc(l[0])+'</td><td>'+fmt(l[1],l[2])+'</td><td>'+fmt(m[1],m[2])+'</td><td>'+d+'</td></tr>';
+ }).join("");
+ const novos = A.ks.filter(k=>!B.ks.includes(k)).length;
+ el("sens-lead").textContent = (mudam.length
+   ? `Com o recorte novo, mudam em dez pontos percentuais ou mais: ${mudam.join("; ")}. `
+   : "Nenhuma proporção muda em dez pontos percentuais ou mais. ")
+   + (ficam.length ? `Ficam estáveis: ${ficam.join("; ")}.` : "");
+ el("sens-nota").textContent = `O período de ${y0} a ${y1-1} acrescenta ${novos} ${novos===1?"ato":"atos"} e ${A.cs.length-B.cs.length} registros. É uma amostra pequena e, por construção, mais fraca em cobertura: reportagens antigas saem do ar e a busca por esse tipo de caso ficou mais comum depois de 2019. Diferenças grandes aqui podem vir da cobertura tanto quanto dos casos. O limiar de dez pontos é uma convenção do catálogo para separar oscilação de mudança.`;
+}
+{
+ /* concentração em listas extensas, calculada */
+ const n = (porAto["RO-2020"]||0)+(porAto["SC-2023"]||0);
+ const t = CASOS.length;
+ const e = document.getElementById("a-conc");
+ if(e) e.textContent = `${n} de ${t} fichas (${Math.round(n/t*100)}%)`;
+}
 </script>
 </body></html>

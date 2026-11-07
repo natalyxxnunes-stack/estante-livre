@@ -1,6 +1,6 @@
 # Estante Livre
 
-> Observatório de censura de livros em bibliotecas e escolas brasileiras, desde 2019. Cada registro identifica quem pediu, quem decidiu, quem assinou e quem executou a medida, a justificativa declarada, até onde a medida chegou e o que aconteceu depois, com fontes. Projeto de Nataly Nunes Pinto.
+> Observatório de censura de livros em bibliotecas e escolas brasileiras, desde 2014. Cada registro identifica quem pediu, quem decidiu, quem assinou e quem executou a medida, a justificativa declarada, até onde a medida chegou e o que aconteceu depois, com fontes. Projeto de Nataly Nunes Pinto.
 
 Registro não equivale a banimento consumado: cada caso traz o estágio (pressão pública, pedido formal, decisão ou ordem, execução comprovada) e a situação (em vigor, revertido, sem efeito, em aberto).
 

@@ -4820,6 +4820,314 @@
      "url": "https://www.h2foz.com.br/politica/cpi-dos-livros-ingles-prefeitura-nao-houve-prejuizo-pedagogico/"
     }
    ]
+  },
+  {
+   "id": "EL-039",
+   "url": "https://estante-livre-br.vercel.app/casos/el-039.html",
+   "data": "2017-06-01",
+   "ato": "MEC-2017",
+   "ato_nome": "Recolhimento de Enquanto o sono não vem pelo Ministério da Educação",
+   "obra": "Enquanto o sono não vem",
+   "titulo_registro": "Enquanto o sono não vem",
+   "conjunto": false,
+   "autoria": "José Mauro Brant",
+   "editora": "Rocco",
+   "ano_publicacao": "",
+   "como_chegou": "Programa federal (PNLD)",
+   "cidade": "Brasília",
+   "uf": "DF",
+   "tipo_biblioteca": "Escolar",
+   "rede": "Federal",
+   "governo_na_epoca": "Michel Temer (MDB) · governo federal",
+   "instancia_registrada": "Ministro da Educação, Mendonça Filho",
+   "mecanismo": "Retirada",
+   "estagio": "Decisão ou ordem",
+   "situacao": "Em vigor",
+   "desfecho": "O ministro determinou o recolhimento dos 93 mil exemplares; não há registro público de devolução",
+   "eixo_tematico": "Violência",
+   "justificativa_declarada": "Parecer técnico da Secretaria de Educação Básica considerou a obra “não adequada para crianças de sete a oito anos”, pela abordagem do tema incesto.",
+   "pressao_ou_pedido": "Professores e pais, sem identificação, segundo o MEC.",
+   "decisao": "Mendonça Filho (DEM), ministro da Educação, decidiu recolher os exemplares depois de pareceres da Secretaria de Educação Básica e da Consultoria Jurídica.",
+   "assinatura": "",
+   "execucao": "Ministério da Educação e redes de ensino que receberam os exemplares.",
+   "resposta_ou_reversao": "Não houve reversão registrada.",
+   "ato_ou_documento": "Parecer técnico da Secretaria de Educação Básica citado pela imprensa; o parecer e o ato do ministro não foram localizados em fonte pública. O partido do presidente na data se chamava PMDB.",
+   "reversao_via": "",
+   "reversao_data": "",
+   "verificado": "Sim",
+   "nivel_verificacao": "Confirmado",
+   "documento_primario": "",
+   "pendencia": "Localizar o parecer da Secretaria de Educação Básica e o ato do ministro; confirmar quantos exemplares voltaram de fato; esclarecer se a obra chegou às escolas pelo Pnaic ou pelo PNLD, já que as fontes divergem.",
+   "nota": "A obra reúne contos da tradição oral. O que motivou a reação, A triste história de Eredegalda, trata de incesto. O livro foi selecionado em 2014, no governo Dilma Rousseff, e distribuído a alunos do 1º ao 3º ano. Em junho de 2017, depois de questionamentos de professores e pais, o ministro Mendonça Filho pediu pareceres à Secretaria de Educação Básica e à Consultoria Jurídica e decidiu recolher os exemplares. Segundo a Pública, escolas do Espírito Santo já haviam levado o caso às redes locais, que recolheram exemplares antes da distribuição. Em 2018 a obra voltou ao noticiário numa mensagem falsa que atribuía a distribuição a Fernando Haddad, ministro até 2012.",
+   "agentes": [
+    {
+     "nome": "Mendonça Filho",
+     "tipo": "Pessoa",
+     "papel": "Decisão",
+     "cargo": "ministro da Educação (DEM)",
+     "partido_na_epoca": "DEM",
+     "atribuido": false
+    },
+    {
+     "nome": "Ministério da Educação",
+     "tipo": "Instituição",
+     "papel": "Execução",
+     "cargo": "",
+     "partido_na_epoca": "",
+     "atribuido": false
+    }
+   ],
+   "fontes": [
+    {
+     "veiculo": "Federal FM · UFPel (via Agência Brasil)",
+     "titulo": "Ministro da Educação, Mendonça Filho, decide recolher das escolas o livro Enquanto o sono não vem",
+     "data": "2017-06-08",
+     "url": "https://wp.ufpel.edu.br/federalfm/2017/06/08/ministro-da-educacao-mendonca-filho-decide-recolher-das-escolas-o-livro-enquanto-o-sono-nao-vem/"
+    },
+    {
+     "veiculo": "Agência Pública · Truco",
+     "titulo": "Mensagem falsa diz que Haddad autorizou livro infantil que trata de incesto",
+     "data": "2018-10-09",
+     "url": "https://apublica.org/checagem/2018/10/truco-mensagem-falsa-diz-que-haddad-autorizou-livro-infantil-que-trata-de-incesto/"
+    }
+   ]
+  },
+  {
+   "id": "EL-040",
+   "url": "https://estante-livre-br.vercel.app/casos/el-040.html",
+   "data": "2017-01-23",
+   "ato": "ARQ-2017",
+   "ato_nome": "Supressão de páginas de livros didáticos (Ariquemes)",
+   "obra": "Livros didáticos das escolas municipais de Ariquemes (títulos não identificados)",
+   "titulo_registro": "Livros didáticos das escolas municipais de Ariquemes (títulos não identificados)",
+   "conjunto": true,
+   "autoria": "",
+   "editora": "",
+   "ano_publicacao": "",
+   "como_chegou": "Programa federal (PNLD)",
+   "cidade": "Ariquemes",
+   "uf": "RO",
+   "tipo_biblioteca": "Escolar",
+   "rede": "Municipal",
+   "governo_na_epoca": "Thiago Flores, partido na data não confirmado · prefeitura de Ariquemes",
+   "instancia_registrada": "Prefeito Thiago Flores, a pedido de vereadores",
+   "mecanismo": "Retirada",
+   "estagio": "Decisão ou ordem",
+   "situacao": "Em aberto",
+   "desfecho": "Supressão de páginas anunciada em 23/01/2017; reportagem do dia seguinte fala em audiência pública antes da execução; artigo de 2018 registra páginas retiradas e comissões de revisão nas escolas",
+   "eixo_tematico": "Sexualidade e gênero",
+   "justificativa_declarada": "Vereadores pediram a suspensão e o recolhimento para evitar o debate sobre “ideologia de gênero”; a prefeitura mirou páginas sobre diversidade sexual, casamento homoafetivo e uso de preservativos.",
+   "pressao_ou_pedido": "Oito vereadores protocolaram ofício pedindo a suspensão e o recolhimento; Amalec da Costa (PSDB) defendeu a medida em entrevista.",
+   "decisao": "Prefeito Thiago Flores.",
+   "assinatura": "",
+   "execucao": "Secretaria Municipal de Educação e comissão de fiscalização anunciada pela prefeitura.",
+   "resposta_ou_reversao": "O Sintero, sindicato dos trabalhadores em educação, pediu por ofício que a solicitação não fosse atendida.",
+   "ato_ou_documento": "Ofício dos vereadores e ato da prefeitura citados pela imprensa; nenhum dos dois foi localizado em fonte pública.",
+   "reversao_via": "",
+   "reversao_data": "",
+   "verificado": "Parcialmente",
+   "nivel_verificacao": "Parcial",
+   "documento_primario": "",
+   "pendencia": "Identificar os títulos e as páginas atingidas; confirmar se a supressão foi executada depois da audiência pública anunciada; confirmar o partido do prefeito em janeiro de 2017.",
+   "nota": "Oito dos doze vereadores presentes a uma reunião com o prefeito protocolaram ofício pedindo a suspensão e o recolhimento dos livros didáticos distribuídos pelo MEC em 2016. Em 23 de janeiro de 2017, a prefeitura proibiu a entrega dos livros e anunciou que as páginas sobre diversidade sexual, casamento homoafetivo e preservativos seriam suprimidas, com comissão de fiscalização. O Portal Amazônia, no dia seguinte, registrou que o sindicato dos professores pediu que a solicitação não fosse atendida e que a prefeitura, depois de ouvir a Procuradoria Municipal, propôs audiência pública e enquete. Souza (Em Questão, 2018) registra as páginas retiradas e comissões de revisão em todas as escolas; segundo o mesmo artigo, num primeiro recolhimento, em 2016, os alunos já tinham ficado cerca de seis meses sem livro didático. As fontes divergem sobre a execução, por isso o registro fica como decisão.",
+   "agentes": [
+    {
+     "nome": "Vereadores de Ariquemes signatários do ofício (oito, não identificados)",
+     "tipo": "Instituição",
+     "papel": "Pedido",
+     "cargo": "",
+     "partido_na_epoca": "",
+     "atribuido": false
+    },
+    {
+     "nome": "Amalec da Costa",
+     "tipo": "Pessoa",
+     "papel": "Pressão",
+     "cargo": "vereador (PSDB)",
+     "partido_na_epoca": "PSDB",
+     "atribuido": false
+    },
+    {
+     "nome": "Thiago Flores",
+     "tipo": "Pessoa",
+     "papel": "Decisão",
+     "cargo": "prefeito de Ariquemes",
+     "partido_na_epoca": "",
+     "atribuido": false
+    },
+    {
+     "nome": "Sintero · sindicato dos trabalhadores em educação de Rondônia",
+     "tipo": "Instituição",
+     "papel": "Denúncia ou fiscalização",
+     "cargo": "",
+     "partido_na_epoca": "",
+     "atribuido": false
+    }
+   ],
+   "fontes": [
+    {
+     "veiculo": "Bahia Notícias (a partir do G1)",
+     "titulo": "Prefeitura manda retirar páginas sobre casamento gay e camisinha de livros escolares",
+     "data": "2017-01-24",
+     "url": "https://www.bahianoticias.com.br/noticia/201985-prefeitura-manda-retirar-paginas-sobre-casamento-gay-e-camisinha-de-livros-escolares"
+    },
+    {
+     "veiculo": "Portal Amazônia",
+     "titulo": "Município de Rondônia quer proibir livros didáticos que contenham “ideologia de gênero”",
+     "data": "2017-01-24",
+     "url": "https://portalamazonia.com/cidades/municipio-de-rondonia-quer-proibir-livros-didaticos-que-contenham-ideologia-de-genero/"
+    },
+    {
+     "veiculo": "Em Questão (UFRGS) · Willian Eduardo Righini de Souza",
+     "titulo": "Em nome da moral e dos bons costumes: censura a livros com temática de gênero no Brasil do século XXI",
+     "data": "2018-01-01",
+     "url": "https://seer.ufrgs.br/index.php/EmQuestao/article/view/71150"
+    }
+   ]
+  },
+  {
+   "id": "EL-041",
+   "url": "https://estante-livre-br.vercel.app/casos/el-041.html",
+   "data": "2016-03-01",
+   "ato": "REC-2016",
+   "ato_nome": "Requerimentos e projeto de lei contra Juntos Nessa 5 (Recife)",
+   "obra": "Juntos Nessa 5",
+   "titulo_registro": "Juntos Nessa 5",
+   "conjunto": false,
+   "autoria": "",
+   "editora": "Leya",
+   "ano_publicacao": "",
+   "como_chegou": "Programa federal (PNLD)",
+   "cidade": "Recife",
+   "uf": "PE",
+   "tipo_biblioteca": "Escolar",
+   "rede": "Municipal",
+   "governo_na_epoca": "Geraldo Julio (PSB) · prefeitura do Recife",
+   "instancia_registrada": "Vereadores Luiz Eustáquio (Rede) e Carlos Gueiros (PSB)",
+   "mecanismo": "Retirada",
+   "estagio": "Pedido formal",
+   "situacao": "Em aberto",
+   "desfecho": "A prefeitura defendeu o uso do livro; o desfecho do requerimento e do projeto de lei não foi localizado",
+   "eixo_tematico": "Sexualidade e gênero",
+   "justificativa_declarada": "Vereadores contestaram dois parágrafos do capítulo sobre sexualidade que tratam de identidade sexual e de casais do mesmo sexo.",
+   "pressao_ou_pedido": "Carlos Gueiros (PSB) apresentou projeto de lei para proibir o livro.",
+   "decisao": "Não houve decisão de retirada registrada.",
+   "assinatura": "",
+   "execucao": "",
+   "resposta_ou_reversao": "A prefeitura defendeu o uso do livro.",
+   "ato_ou_documento": "Requerimentos de Luiz Eustáquio e Projeto de Lei nº 26/2016, citados pela Agência Brasil; íntegras não localizadas.",
+   "reversao_via": "",
+   "reversao_data": "",
+   "verificado": "Parcialmente",
+   "nivel_verificacao": "Parcial",
+   "documento_primario": "",
+   "pendencia": "Segunda fonte independente; resposta formal ao requerimento e tramitação do Projeto de Lei nº 26/2016 na Câmara do Recife.",
+   "nota": "Livro de ciências do 5º ano, da Leya, distribuído pelo MEC: 623 exemplares do aluno e 23 manuais do professor em dez escolas municipais. Luiz Eustáquio (Rede) apresentou requerimentos pedindo informações sobre os livros e a retirada de material que mencionasse gênero; Carlos Gueiros (PSB) apresentou projeto de lei para proibir a obra. A prefeitura de Geraldo Julio (PSB) defendeu o livro e avisou que não pagaria reposição. Na Assembleia Legislativa, Joel da Harpa (PROS) apresentou o PL 709/2016, com o mesmo objetivo. Uma reportagem do Jornal Opção traz o mesmo conteúdo da Agência Brasil e por isso não conta como segunda fonte.",
+   "agentes": [
+    {
+     "nome": "Luiz Eustáquio",
+     "tipo": "Pessoa",
+     "papel": "Pedido",
+     "cargo": "vereador (Rede)",
+     "partido_na_epoca": "Rede",
+     "atribuido": false
+    },
+    {
+     "nome": "Carlos Gueiros",
+     "tipo": "Pessoa",
+     "papel": "Pressão",
+     "cargo": "vereador (PSB)",
+     "partido_na_epoca": "PSB",
+     "atribuido": false
+    },
+    {
+     "nome": "Prefeitura do Recife",
+     "tipo": "Instituição",
+     "papel": "Resposta ou reversão",
+     "cargo": "",
+     "partido_na_epoca": "",
+     "atribuido": false
+    }
+   ],
+   "fontes": [
+    {
+     "veiculo": "Agência Brasil",
+     "titulo": "Polêmica sobre questões de gênero pode deixar alunos do Recife sem livros",
+     "data": "2016-03-27",
+     "url": "https://agenciabrasil.ebc.com.br/educacao/noticia/2016-03/polemica-sobre-questoes-de-genero-pode-deixar-alunos-do-recife-sem-livros"
+    }
+   ]
+  },
+  {
+   "id": "EL-042",
+   "url": "https://estante-livre-br.vercel.app/casos/el-042.html",
+   "data": "2015-05-01",
+   "ato": "GRU-2015",
+   "ato_nome": "Pedido de recolhimento de Menina não entra (Guarulhos)",
+   "obra": "Menina não entra",
+   "titulo_registro": "Menina não entra",
+   "conjunto": false,
+   "autoria": "Telma Guimarães Castro Andrade",
+   "editora": "Editora do Brasil",
+   "ano_publicacao": "",
+   "como_chegou": "Acervo, origem não informada",
+   "cidade": "Guarulhos",
+   "uf": "SP",
+   "tipo_biblioteca": "Escolar",
+   "rede": "Municipal",
+   "governo_na_epoca": "Prefeitura de Guarulhos · gestão municipal em 2015",
+   "instancia_registrada": "Vereador Romildo Santos (PSDB), presidente da Comissão de Direitos Humanos",
+   "mecanismo": "Retirada",
+   "estagio": "Pedido formal",
+   "situacao": "Sem efeito",
+   "desfecho": "Sem retirada: a Secretaria de Educação manteve e distribuiu os livros em 139 escolas",
+   "eixo_tematico": "Sexualidade e gênero",
+   "justificativa_declarada": "O presidente da Comissão de Direitos Humanos da Câmara chamou a abordagem de “ideologia de gênero” e pediu o recolhimento das bibliotecas escolares.",
+   "pressao_ou_pedido": "Romildo Santos (PSDB) pediu o recolhimento do livro das bibliotecas escolares.",
+   "decisao": "Não houve decisão de retirada.",
+   "assinatura": "",
+   "execucao": "",
+   "resposta_ou_reversao": "O secretário de Educação, Moacir de Souza, manteve a distribuição em 139 escolas.",
+   "ato_ou_documento": "Pedido citado por Souza (Em Questão, 2018) e debate relatado pela Folha via A Capa; documento formal não localizado.",
+   "reversao_via": "",
+   "reversao_data": "",
+   "verificado": "Sim",
+   "nivel_verificacao": "Confirmado",
+   "documento_primario": "",
+   "pendencia": "",
+   "nota": "Livro sobre uma menina que, excluída pelos meninos, consegue jogar futebol. Fazia parte de um lote de livros contra o preconceito de gênero e a homofobia que a rede municipal distribuía em 2015. O debate na Câmara reuniu grupos religiosos e vereadores, e a Guarda Civil precisou intervir, segundo a Folha citada pelo portal A Capa. O secretário de Educação, Moacir de Souza, afirmou que os livros já estavam sendo distribuídos em 139 escolas.",
+   "agentes": [
+    {
+     "nome": "Romildo Santos",
+     "tipo": "Pessoa",
+     "papel": "Pedido",
+     "cargo": "vereador (PSDB), presidente da Comissão de Direitos Humanos",
+     "partido_na_epoca": "PSDB",
+     "atribuido": false
+    },
+    {
+     "nome": "Moacir de Souza",
+     "tipo": "Pessoa",
+     "papel": "Resposta ou reversão",
+     "cargo": "secretário municipal de Educação",
+     "partido_na_epoca": "",
+     "atribuido": false
+    }
+   ],
+   "fontes": [
+    {
+     "veiculo": "A Capa (a partir da Folha de S.Paulo)",
+     "titulo": "Após tentativa de veto, livros contra homofobia são distribuídos em escolas da Grande SP",
+     "data": "2015-05-29",
+     "url": "https://acapa.com.br/en/apos-tentativa-de-veto-livros-contra-homofobia-sao-distribuidos-em-escolas-da-grande-sp/"
+    },
+    {
+     "veiculo": "Em Questão (UFRGS) · Willian Eduardo Righini de Souza",
+     "titulo": "Em nome da moral e dos bons costumes: censura a livros com temática de gênero no Brasil do século XXI",
+     "data": "2018-01-01",
+     "url": "https://seer.ufrgs.br/index.php/EmQuestao/article/view/71150"
+    }
+   ]
   }
  ]
 }
