@@ -58,7 +58,7 @@
     <div class="bignum"><div class="n" id="im-regs">–</div><div class="l">REGISTROS</div></div>
     <div class="bignum"><div class="n" id="im-atos">–</div><div class="l">ATOS</div></div>
     <div class="bignum"><div class="n" id="im-ufs">–</div><div class="l">UNIDADES DA FEDERAÇÃO</div></div>
-    <div class="bignum"><div class="n" id="im-normas">–</div><div class="l">NORMAS RESTRITIVAS</div></div>
+    <div class="bignum"><div class="n" id="im-normas">–</div><div class="l">LEIS E PROJETOS CONTRA LIVROS</div></div>
     <div class="bignum"><div class="n" id="im-cump">–</div><div class="l">DECISÕES SEM CUMPRIMENTO CONFIRMADO</div></div>
   </div>
 </div>
@@ -123,7 +123,7 @@ const cumps = atos.filter(([k,a])=>a.cumprimento);
 $("im-regs").textContent = CASOS.length;
 $("im-atos").textContent = atos.length;
 $("im-ufs").textContent = ufs;
-$("im-normas").textContent = NORMAS.length;
+$("im-normas").textContent = NORMAS.filter(n=>n.alvo==="Material").length;
 $("im-cump").textContent = cumps.length;
 $("im-atual").textContent = `Base atualizada em ${dataCurta(ATUALIZADO)}.`;
 $("im-doi").href = "https://doi.org/"+DOI; $("im-doi").textContent = DOI;

@@ -104,7 +104,7 @@
 
   <section>
     <div class="sechead"><span class="kicker">05</span><h2>O que incomoda</h2></div>
-    <p class="note">Na pesquisa <a href="https://seer.ufrgs.br/index.php/EmQuestao/article/view/138667" target="_blank" rel="noopener">Páginas proibidas</a> (UFRGS, 2024), feita com relatos de quem presenciou censura, os motivos mais citados são “impróprio para crianças e adolescentes”, conteúdo sexual e gênero. Aqui, sexualidade e gênero lidera, com política e ideologia logo atrás. A diferença sugere um filtro: a imprensa cobre melhor a ordem de governo do que a queixa que chega à biblioteca.</p>
+    <p class="note">Na pesquisa <a href="https://seer.ufrgs.br/index.php/EmQuestao/article/view/138667" target="_blank" rel="noopener">Páginas proibidas</a> (UFRGS, 2024), feita com relatos de quem presenciou censura, os motivos mais citados são “impróprio para crianças e adolescentes”, conteúdo sexual e gênero. <span id="txt-eixo"></span> As definições e a regra estão no <a href="glossario.html#eixos">Glossário</a>.</p>
     <div class="eixos" id="eixos"></div>
   </section>
 
@@ -270,6 +270,12 @@ montarRodape();
 
 { const n = CASOS.filter(c=>["RO-2020","SC-2023"].includes(c.ato)).length, e = document.getElementById("conc-painel");
   if(e) e.textContent = `${n} de ${CASOS.length}`; }
+
+{ const ord = EIXOS.map(e=>[e, T.filter(c=>c.eixo===e).length]).sort((a,b)=>b[1]-a[1]);
+  const inf = T.filter(c=>c.eixoBase==="Inferido").length, dec = T.length-inf;
+  const decl = EIXOS.map(e=>[e, T.filter(c=>c.eixo===e && c.eixoBase==="Declarado").length]).sort((a,b)=>b[1]-a[1]);
+  const el = document.getElementById("txt-eixo");
+  if(el) el.textContent = `Aqui, ${ord[0][0].toLowerCase()} lidera (${ord[0][1]}), seguida de ${ord[1][0].toLowerCase()} (${ord[1][1]}). Em ${inf} dos ${T.length} registros a medida não declarou motivo e o tema foi inferido pelo observatório; entre os ${dec} com motivo declarado, ${decl[0][0].toLowerCase()} aparece em ${decl[0][1]}.`; }
 </script>
 </body>
 </html>

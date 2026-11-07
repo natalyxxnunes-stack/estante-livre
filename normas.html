@@ -70,16 +70,22 @@
   </section>
 
   <section>
-    <div class="sechead"><span class="kicker">02</span><h2>As normas</h2><span class="count" id="count-normas"></span></div>
+    <div class="sechead"><span class="kicker">02</span><h2>Leis contra livros e material escolar</h2><span class="count" id="count-normas"></span></div>
     <p class="note" id="partidos"></p>
     <div class="normas" id="lista-normas"></div>
-    <p><a class="btn ghost" href="dados/estante-livre-normas.csv">Baixar as normas em CSV</a></p>
+  </section>
+
+  <section>
+    <div class="sechead"><span class="kicker">03</span><h2>Leis contra o tema no currículo</h2><span class="count" id="count-curriculo"></span></div>
+    <p class="note">Leis de 2015 e 2016 que proibiram o tema gênero no ensino ou no plano municipal de educação sem citar livro ou material. Entram nesta trilha porque são do mesmo ciclo dos primeiros pedidos de recolhimento de livros e usam o mesmo argumento. Ficam fora das contagens de leis contra livros.</p>
+    <div class="normas" id="lista-curriculo"></div>
+    <p><a class="btn ghost" href="dados/estante-livre-normas.csv">Baixar todas as normas em CSV</a></p>
   </section>
 
   <section style="border-bottom:0">
-    <div class="sechead"><span class="kicker">03</span><h2>Como ler esta página</h2></div>
+    <div class="sechead"><span class="kicker">04</span><h2>Como ler esta página</h2></div>
     <div class="gloss">
-      <div class="gterm"><h3>Duas frentes</h3><div class="gdef">As normas vêm em duas ondas. A de 2015 e 2016 proibiu a “ideologia de gênero” em planos municipais de educação; a partir de 2024, os projetos passaram a proibir livros com “conteúdo erótico”. Cada ficha indica a frente e o alvo: “material” quando o texto mira livros ou material didático, “currículo” quando mira o ensino ou o plano de educação sem citar material. A maior parte das leis da primeira onda listadas aqui foi derrubada pelo STF entre 2020 e 2025, por invadir a competência da União sobre diretrizes da educação e por discriminar.</div></div>
+      <div class="gterm"><h3>Duas frentes</h3><div class="gdef">As normas vêm em duas ondas. A de 2015 e 2016 proibiu a “ideologia de gênero” em planos municipais de educação; a partir de 2024, os projetos passaram a proibir livros com “conteúdo erótico”. Uma lei entra na seção de material quando o texto cita livros ou material didático; entra na de currículo quando mira o ensino ou o plano de educação sem citar material, e só se for do mesmo ciclo dos pedidos de retirada de livros. A maior parte das leis da primeira onda listadas aqui foi derrubada pelo STF entre 2020 e 2025, por invadir a competência da União sobre diretrizes da educação e por discriminar.</div></div>
       <div class="gterm"><h3>Levantamento inicial</h3><div class="gdef">A lista reúne normas localizadas em fontes abertas a partir dos casos do catálogo. Câmaras municipais publicam pouco e de forma irregular, então há certamente mais normas do que as listadas aqui.</div></div>
       <div class="gterm"><h3>Situação com data</h3><div class="gdef">A situação de cada norma vale para a data indicada, segundo a fonte mais recente localizada. “Situação não confirmada” quer dizer que a fonte mostra a apresentação do projeto e nada depois dela.</div></div>
       <div class="gterm"><h3>Fora da contagem de casos</h3><div class="gdef">Uma norma restringe uma categoria de conteúdo e raramente nomeia um livro. Por isso ela fica nesta trilha própria e entra no catálogo de casos só quando for aplicada a uma obra identificável.</div></div>
@@ -115,11 +121,13 @@ $("nn-vigor").textContent = N.filter(n=>n.situacao==="Em vigor").length;
 $("nn-trami").textContent = N.filter(n=>["Aprovada, sanção a confirmar","Em tramitação"].includes(n.situacao)).length;
 $("nn-livro").textContent = N.filter(n=>n.citaLivro || n.ato).length;
 $("nn-uf").textContent = new Set(N.filter(n=>n.esfera!=="Federal").map(n=>n.uf)).size;
-$("count-normas").innerHTML = `<b>${N.length}</b> normas`;
+const NM = N.filter(n=>n.alvo==="Material"), NC = N.filter(n=>n.alvo==="Currículo");
+$("count-normas").innerHTML = `<b>${NM.length}</b> normas`;
+$("count-curriculo").innerHTML = `<b>${NC.length}</b> normas`;
 
 /* linha do tempo da difusão: o caso que dispara e as normas em ordem */
 const marcos = [{data:"2024-03-04", txt:"Começa o recolhimento de O avesso da pele no Paraná; Goiás segue no dia 7", href:"casos/el-002.html", caso:true}]
-  .concat(N.map(n=>({data:n.data, n})));
+  .concat(N.filter(n=>n.frente==="Conteúdo erótico").map(n=>({data:n.data, n})));
 marcos.sort((a,b)=>a.data.localeCompare(b.data));
 $("difusao").innerHTML = marcos.map(m=>{
   if(m.caso) return `<li class="dif-caso"><span class="dif-data">${dataCurta(m.data)}</span><span class="dif-txt"><a href="${m.href}">${esc(m.txt)}</a></span></li>`;
@@ -127,12 +135,12 @@ $("difusao").innerHTML = marcos.map(m=>{
   return `<li><span class="dif-data">${dataCurta(n.data)}</span><span class="dif-txt"><a href="#${n.id.toLowerCase()}">${esc(local(n))}</a> · ${esc(n.tipo.toLowerCase())}${liga?` <b>${esc(liga)}</b>`:""}</span></li>`;
 }).join("");
 
-const comPartido = N.map(n=>n.partido).filter(Boolean);
+const comPartido = NM.map(n=>n.partido).filter(Boolean);
 const cont = {}; comPartido.forEach(p=>cont[p]=(cont[p]||0)+1);
-$("partidos").textContent = `Em ${comPartido.length} das ${N.length} normas o partido de quem propôs ou relatou está na fonte: ${Object.entries(cont).sort((a,b)=>b[1]-a[1]).map(([p,k])=>`${k} do ${p}`).join(" e ")}. Nas demais, a fonte não informa o partido, e o observatório registra só o nome.`;
+$("partidos").textContent = `Em ${comPartido.length} das ${NM.length} normas o partido de quem propôs ou relatou está na fonte: ${Object.entries(cont).sort((a,b)=>b[1]-a[1]).map(([p,k])=>`${k} do ${p}`).join(" e ")}. Nas demais, a fonte não informa o partido, e o observatório registra só o nome.`;
 
 const clsSit = s => s==="Em vigor" ? "s-vigor" : (s==="Derrubada na Justiça"||s==="Arquivada") ? "s-caiu" : s==="Situação não confirmada" ? "s-incerta" : "s-trami";
-$("lista-normas").innerHTML = [...N].reverse().map(n=>`
+const cartao = n=>`
 <article class="norma" id="${n.id.toLowerCase()}">
   <div class="norma-top"><span class="caso-id">${n.id}</span><span class="tag ${clsSit(n.situacao)}">${esc(n.situacao)}</span><span class="norma-em">em ${dataCurta(n.situacaoEm)}</span></div>
   <h3>${esc(n.numero)}</h3>
@@ -142,7 +150,9 @@ $("lista-normas").innerHTML = [...N].reverse().map(n=>`
   ${n.nota?`<p class="note">${esc(n.nota)}</p>`:""}
   <div class="norma-liga">${n.citaLivro?`<span>Livro citado na justificativa: <b>${esc(n.citaLivro)}</b></span>`:""}${n.ato?`<span>Caso ligado: <a href="atos/${n.ato.toLowerCase()}.html">${esc(ATOS[n.ato].nome)}</a></span>`:""}${n.precedente?`<span>Modelo citado: <a href="#${n.precedente.toLowerCase()}">${esc(N.find(x=>x.id===n.precedente).numero)}</a></span>`:""}</div>
   <div class="norma-fontes">${n.fontes.map(f=>FONTES[f]).map(f=>`<a href="${f.url}" target="_blank" rel="noopener">${esc(f.veic)}</a>`).join(" · ")}</div>
-</article>`).join("");
+</article>`;
+$("lista-normas").innerHTML = [...NM].reverse().map(cartao).join("");
+$("lista-curriculo").innerHTML = [...NC].reverse().map(cartao).join("");
 montarRodape();
 </script>
 </body>

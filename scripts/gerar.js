@@ -58,6 +58,7 @@ for(const c of CASOS){
   if(!ESTAGIOS.includes(c.estagio)) erros.push(`${c.id}: estágio fora da lista: ${c.estagio}`);
   if(!SITUACOES.includes(c.situacao)) erros.push(`${c.id}: situação fora da lista: ${c.situacao}`);
   if(!EIXOS.includes(c.eixo)) erros.push(`${c.id}: eixo fora da lista: ${c.eixo}`);
+  if(!["Declarado","Inferido"].includes(c.eixoBase)) erros.push(`${c.id}: eixoBase deve ser Declarado ou Inferido`);
   if(!["Sim","Parcialmente"].includes(c.verificado)) erros.push(`${c.id}: verificado deve ser "Sim" ou "Parcialmente"`);
   for(const f of c.fontes||[]) if(!FONTES[f]) erros.push(`${c.id}: fonte inexistente: ${f}`);
   if(c.capa && !fs.existsSync(path.join(RAIZ_REPO,"assets/capas",c.capa+".jpg"))) erros.push(`${c.id}: capa inexistente: ${c.capa}.jpg`);
@@ -467,7 +468,7 @@ const linhas = R.ordenar(CASOS,"id").map(c=>{
     conjunto:!!c.conjunto, autoria:c.autoria||"", editora:c.editora||"", ano_publicacao:(LIVROS[obraDe(c)]||{}).ano||"", como_chegou:(LIVROS[obraDe(c)]||{}).chegada||"",
     cidade:c.cidade||"", uf:c.uf, tipo_biblioteca:c.tipo, rede:c.rede, governo_na_epoca:c.governo||"",
     instancia_registrada:c.quem, mecanismo:c.modalidade, estagio:c.estagio, situacao:c.situacao, desfecho:c.desfecho,
-    eixo_tematico:c.eixo, justificativa_declarada:c.alegacao,
+    eixo_tematico:c.eixo, eixo_base:c.eixoBase, justificativa_declarada:c.alegacao,
     pressao_ou_pedido:r.pressao||c.pressao||"", decisao:r.decisor||"", assinatura:r.assinantes||"", execucao:r.executor||"",
     resposta_ou_reversao:r.resposta||"", ato_ou_documento:DOC[c.id]||"", reversao_via:(ATOS[c.ato].reversao||{}).via||"", reversao_data:(ATOS[c.ato].reversao||{}).data||"", verificado:c.verificado, nivel_verificacao:R.nivelVerif(c),
     documento_primario:(ATOS[c.ato].docPrimario||[]).filter(k=>(c.fontes||[]).includes(k)).map(k=>FONTES[k].url).join("; "),

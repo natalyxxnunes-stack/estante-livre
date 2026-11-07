@@ -122,7 +122,7 @@
  </section>
  <section id="sensibilidade">
   <div class="sechead"><span class="kicker">09</span><h2>O recorte muda o resultado?</h2></div>
-  <p>Até novembro de 2026, a contagem começava em 2019. Hoje começa em <span id="sens-ini">2014</span>, pelo motivo explicado na <a href="metodologia.html">Metodologia</a>. Um recorte só se sustenta se as conclusões não dependerem dele, então esta tabela refaz as contas com os dois inícios. As diferenças em pontos percentuais aparecem na última coluna.</p>
+  <p>Até novembro de 2026, a contagem começava em 2019. Hoje começa em <span id="sens-ini">2014</span>, pelo motivo explicado na <a href="metodologia.html">Metodologia</a>. Um recorte só se sustenta se as conclusões não dependerem dele, então esta tabela refaz as contas com os dois inícios. A pergunta é se alguma maioria vira minoria; a última coluna mostra quantos casos entram em cada conta.</p>
   <div class="tab-wrap"><table class="tab"><thead><tr><th>MEDIDA</th><th id="sens-h1">DESDE 2014</th><th id="sens-h2">DESDE 2019</th><th>DIFERENÇA</th></tr></thead><tbody id="sens-rows"></tbody></table></div>
   <p id="sens-lead"></p>
   <p class="note" id="sens-nota"></p>
@@ -297,21 +297,31 @@ montarRodape();
  const A = medir(y0), B = medir(y1);
  el("sens-ini").textContent = y0;
  el("sens-h1").textContent = "DESDE "+y0; el("sens-h2").textContent = "DESDE "+y1;
- const fmt = (v,p) => p==null ? String(v) : v+" ("+p+"%)";
- const mudam = [], ficam = [];
+ const num = l => typeof l[1]==="string" ? l[1].split(" de ").map(Number) : [l[1]];
+ const fmt = (v,p) => p==null ? String(v) : v+' <small>('+p+'%)</small>';
+ const lado = p => p>50 ? "maioria" : p<50 ? "minoria" : "metade";
+ const viram = [];
  el("sens-rows").innerHTML = A.linhas.map((l,i)=>{
-   const m = B.linhas[i];
-   let d = "";
-   if(l[2]!=null){ const dp = l[2]-m[2]; d = (dp>0?"+":"")+dp+" p.p."; (Math.abs(dp)>=10 ? mudam : ficam).push(l[0].toLowerCase()); }
-   else d = "+"+(l[1]-m[1]);
+   const m = B.linhas[i]; let d;
+   if(l[2]!=null){
+     const [a1,a2]=num(l), [b1,b2]=num(m);
+     d = `${a1-b1>=0?"+":""}${a1-b1} no grupo, +${a2-b2} no total`;
+     if(lado(l[2])!==lado(m[2])) viram.push(l[0].toLowerCase());
+   } else d = "+"+(l[1]-m[1]);
    return '<tr><td>'+esc(l[0])+'</td><td>'+fmt(l[1],l[2])+'</td><td>'+fmt(m[1],m[2])+'</td><td>'+d+'</td></tr>';
  }).join("");
+ /* quem entra com o recorte novo: pessoas com mandato que pressionaram ou pediram */
+ const pessoasDe = ks => { const mp = new Map(); PAPEIS.filter(p=>ks.includes(p.ato) && p.partido && /vereador|deputad|prefeit|governador|senador/i.test(p.cargo||"") && ["Pressão","Pedido"].includes(p.papel)).forEach(p=>mp.set(p.agente,p.partido)); return mp; };
+ const pA = pessoasDe(A.ks), pB = pessoasDe(B.ks);
+ const novasP = [...pA.entries()].filter(([k])=>!pB.has(k)).map(([,sg])=>sg);
+ const novasDir = novasP.filter(sg=>DIR.includes(campoDe(sg))).length;
+ const sigl = [...new Set(novasP)].join(", ");
+ el("sens-lead").textContent = (viram.length
+   ? `Com o recorte novo, muda de lado: ${viram.join("; ")}. `
+   : "Nenhuma proporção muda de lado: o que era maioria continua maioria nos dois recortes. ")
+   + (novasP.length ? `O que muda é o tamanho de algumas maiorias. Os casos de ${y0} a ${y1-1} acrescentam ${novasP.length} ${novasP.length===1?"pessoa":"pessoas"} com mandato que pressionaram ou pediram retirada (${sigl}); ${novasDir===0?"nenhuma":novasDir} de partido de direita ou extrema direita. A troca de escala de PSB e Rede para a rodada de 2022 não altera essa conta, porque nenhum dos dois fica no grupo de direita em nenhuma rodada.` : "");
  const novos = A.ks.filter(k=>!B.ks.includes(k)).length;
- el("sens-lead").textContent = (mudam.length
-   ? `Com o recorte novo, mudam em dez pontos percentuais ou mais: ${mudam.join("; ")}. `
-   : "Nenhuma proporção muda em dez pontos percentuais ou mais. ")
-   + (ficam.length ? `Ficam estáveis: ${ficam.join("; ")}.` : "");
- el("sens-nota").textContent = `O período de ${y0} a ${y1-1} acrescenta ${novos} ${novos===1?"ato":"atos"} e ${A.cs.length-B.cs.length} registros. É uma amostra pequena e, por construção, mais fraca em cobertura: reportagens antigas saem do ar e a busca por esse tipo de caso ficou mais comum depois de 2019. Diferenças grandes aqui podem vir da cobertura tanto quanto dos casos. O limiar de dez pontos é uma convenção do catálogo para separar oscilação de mudança.`;
+ el("sens-nota").textContent = `O período de ${y0} a ${y1-1} acrescenta ${novos} ${novos===1?"ato":"atos"} e ${A.cs.length-B.cs.length} registros. Com denominadores tão pequenos, um caso a mais ou a menos move as proporções em vários pontos, por isso a tabela mostra as contagens primeiro e a porcentagem só como apoio. Os anos anteriores a 2019 também têm cobertura mais fraca: reportagens antigas saem do ar e a busca por esse tipo de caso ficou mais comum depois de 2019.`;
 }
 {
  /* concentração em listas extensas, calculada */

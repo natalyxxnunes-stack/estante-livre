@@ -204,6 +204,7 @@ function casoHTML(c, q, nivel){
       '<div class="caso-body">'+
         '<div class="pront-grade">'+
           campo("MECANISMO", '<span class="tag t-mod">'+esc(c.modalidade)+'</span>')+
+          campo("TEMA", esc(c.eixo)+(c.eixoBase==="Inferido"?' <small>inferido pelo observatório; a medida não declarou motivo</small>':''))+
           campo("ATÉ ONDE CHEGOU", '<span class="tag t-est '+clsEstagio(c.estagio)+'">'+esc(c.estagio)+'</span>')+
           campo("SITUAÇÃO", '<span class="tag t-des '+clsSituacao(c.situacao)+'">'+esc(c.situacao)+'</span>')+
           campo("ONDE", m([c.cidade,c.uf].filter(Boolean).join(", ")))+
