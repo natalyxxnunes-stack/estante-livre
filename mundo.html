@@ -67,7 +67,7 @@
       <div class="gterm"><h3>3. Regime classificado</h3><div class="gdef">O país precisa ter classificação no V-Dem para o ano do caso, para que a página mostre que tipo de regime tomou a medida.</div></div>
     </div>
     <p class="note"><b>De onde vêm os candidatos.</b> A lista de países a apurar parte da base aberta da <a href="https://www.banned-books.org/countries" target="_blank" rel="noopener">banned-books.org</a> e dos relatórios anuais da PEN International. A banned-books.org serve só como ponto de partida: a cobertura dela depende de quanto cada país documenta, e o próprio projeto avisa que o ranking reflete documentação e não intensidade de censura. O Brasil aparece lá com 26 registros, quase todos históricos.</p>
-    <p class="note"><b>Equilíbrio.</b> A página não escolhe países para equilibrar governos de direita e de esquerda. A orientação de quem governava aparece em cada caso como consequência da regra. Hoje só dois dos seis casos cumprem a segunda condição; os outros quatro ficam na página, marcados, até ganharem fonte de monitoramento ou saírem na próxima revisão.</p>
+    <p class="note"><b>Equilíbrio.</b> A página não escolhe países para equilibrar governos de direita e de esquerda. A orientação de quem governava aparece em cada caso como consequência da regra. Os casos que ainda não cumprem a segunda condição ficam na página, marcados, até ganharem fonte de monitoramento ou saírem na próxima revisão.</p>
   </section>
   <section>
     <div class="sechead"><span class="kicker">03</span><h2>Casos documentados</h2><span class="count" id="count"></span></div>
@@ -110,7 +110,7 @@ document.getElementById("paises").innerHTML = MUNDO.map(m=>`
       <div><span class="k">GOVERNO NA ÉPOCA</span>${esc(m.governo)}</div>
       <div><span class="k">AUTORIDADES / INSTITUIÇÕES IDENTIFICADAS</span>${esc(m.agentes)}</div>
       <div><span class="k">JUSTIFICATIVA DOCUMENTADA</span>${esc(m.justificativa)}</div>
-      <div><span class="k">FONTE DE MONITORAMENTO</span>${m.monitor?esc(m.monitor):"Pendente. O caso se apoia em reportagem; falta relatório de organização que acompanhe o país."}</div>
+      <div><span class="k">FONTE DE MONITORAMENTO</span>${m.monitor?esc(m.monitor):"Pendente. O caso se apoia em reportagem; falta relatório de organização que acompanhe o país."+(m.monitorNota?" "+esc(m.monitorNota):"")}</div>
     </div>
     <div class="pais-fontes">${m.fontes.map(([t,u])=>`<a href="${esc(u)}" target="_blank" rel="noopener">${esc(t)}</a>`).join(" · ")}</div>
   </article>`).join("");
