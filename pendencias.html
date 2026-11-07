@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>O que falta apurar · Estante Livre</title>
-<meta name="description" content="As lacunas de cada registro do Estante Livre: 17 de 34 registros parcialmente verificados, o tipo de obstáculo e o caminho para fechar cada um.">
+<meta name="description" content="As lacunas de cada registro do Estante Livre: 18 de 37 registros parcialmente verificados, o tipo de obstáculo e o caminho para fechar cada um.">
 <link rel="icon" href="favicon.ico" sizes="32x32">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -14,10 +14,11 @@
 <meta property="og:locale" content="pt_BR">
 <meta property="og:site_name" content="Estante Livre">
 <meta property="og:title" content="O que falta apurar · Estante Livre">
-<meta property="og:description" content="As lacunas de cada registro do Estante Livre: 17 de 34 registros parcialmente verificados, o tipo de obstáculo e o caminho para fechar cada um.">
+<meta property="og:description" content="As lacunas de cada registro do Estante Livre: 18 de 37 registros parcialmente verificados, o tipo de obstáculo e o caminho para fechar cada um.">
 <meta property="og:url" content="https://estante-livre-br.vercel.app/pendencias.html">
 <meta property="og:image" content="https://estante-livre-br.vercel.app/og-estante-livre.jpg">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="assets/fontes/Fraunces.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/estilo.css">
 
 </head>
@@ -26,13 +27,13 @@
 <header class="topo">
   <div class="topo-in">
     <a class="logo" href="index.html" aria-label="Estante Livre, página inicial">Estante <span class="redact">Livre<span class="bar" aria-hidden="true"></span></span></a>
-    <div class="tagline">Observatório de censura de livros · quem mandou tirar da estante, com qual ato, e o que aconteceu depois</div>
-    <nav class="nav" aria-label="Seções">
-      <a href="index.html">Painel</a>
+    <button class="menu-bt" type="button" aria-expanded="false" aria-controls="nav-principal">Menu</button>
+    <nav class="nav" id="nav-principal" aria-label="Seções">
       <a href="casos.html">Casos</a>
       <a href="livros.html">Livros</a>
       <a href="atos.html">Atos</a>
       <a href="normas.html">Normas</a>
+      <a href="painel.html">Dados</a>
       <a href="analises.html">Análises</a>
       <a href="historia.html">História</a>
       <a href="mundo.html">Mundo</a>
@@ -46,102 +47,114 @@
 <div class="wrap">
   <div class="hero-pg">
     <h1>O que falta apurar</h1>
-    <p class="lede">O catálogo publica o que está documentado e também o que ainda não conseguiu comprovar. Esta página reúne as lacunas de todos os registros, o tipo de obstáculo de cada uma e o caminho para fechá-la. Quando uma lacuna é fechada, a mudança entra no <a href="metodologia.html">registro público de correções</a>.</p>
+    <p class="lede">O catálogo publica o que está documentado e também o que ainda não conseguiu comprovar. Esta página reúne as lacunas de todos os registros, o tipo de obstáculo de cada uma e o documento que a fecharia. O observatório trabalha só com fontes públicas; quem obtiver um desses documentos pode enviá-lo. Quando uma lacuna é fechada, a mudança entra no <a href="metodologia.html">registro público de correções</a>.</p>
   </div>
   <div class="lac-nums">
-    <div><b>17</b><span>de 34 registros parcialmente verificados</span></div>
-    <div><b>30</b><span>registros com alguma pendência</span></div>
-    <div><b>13</b><span>de 17 atos com lacuna aberta</span></div>
+    <div><b>18</b><span>de 37 registros parcialmente verificados</span></div>
+    <div><b>33</b><span>registros com alguma pendência</span></div>
+    <div><b>15</b><span>de 19 atos com lacuna aberta</span></div>
   </div>
-  <div class="lac-resumo"><span class="k">OBSTÁCULOS MAIS FREQUENTES</span><span class="lac-tag">Documento interno não publicado <b>9</b></span><span class="lac-tag">Cumprimento não confirmado <b>6</b></span><span class="lac-tag">Responsável não identificado <b>2</b></span><span class="lac-tag">Divergência entre fontes <b>2</b></span><span class="lac-tag">Fonte única <b>1</b></span><span class="lac-tag">Sigilo judicial <b>1</b></span><span class="lac-tag">Lista de títulos incompleta <b>1</b></span></div>
+  <div class="lac-resumo"><span class="k">OBSTÁCULOS MAIS FREQUENTES</span><span class="lac-tag">Documento interno não publicado <b>11</b></span><span class="lac-tag">Cumprimento não confirmado <b>8</b></span><span class="lac-tag">Responsável não identificado <b>3</b></span><span class="lac-tag">Divergência entre fontes <b>2</b></span><span class="lac-tag">Fonte única <b>1</b></span><span class="lac-tag">Sigilo judicial <b>1</b></span><span class="lac-tag">Lista de títulos incompleta <b>1</b></span></div>
 </div>
 <div class="wrap">
   <section>
-    <div class="sechead"><span class="kicker">01</span><h2>Atos com registros parcialmente verificados</h2><span class="count"><b>8</b> atos</span></div>
+    <div class="sechead"><span class="kicker">01</span><h2>Atos com registros parcialmente verificados</h2><span class="count"><b>9</b> atos</span></div>
     <p class="note">“Parcialmente verificado” quer dizer que o registro tem documentação pública, mas falta uma segunda fonte, um documento original ou a confirmação do desfecho. Esses registros entram nos totais do painel e aparecem sempre com essa marcação.</p>
     <article class="lac" id="df-2026">
       <div class="lac-cab"><h3><a href="atos/df-2026.html">Controvérsia sobre atividade no Colégio Militar Dom Pedro II (DF)</a></h3>
         <span class="lac-meta">Brasília, DF · 2026 · 1 registro · <b>1 parcialmente verificado</b></span></div>
       <div class="lac-tags"><span class="lac-tag">Documento interno não publicado</span></div>
       <div class="lac-bloco"><span class="k">O QUE FALTA</span><p>A íntegra da nota oficial e o material complementar original não foram localizados em fonte pública. A cobertura contemporânea reproduz os principais esclarecimentos do colégio: o link foi retirado preventivamente para avaliação e não foi reinserido porque a atividade semanal já havia terminado.</p></div>
-      <div class="lac-bloco"><span class="k">CAMINHO PARA FECHAR</span><p>Pedido via Lei de Acesso à Informação ao Governo do Distrito Federal, por meio do Corpo de Bombeiros Militar, que administra o colégio, da nota oficial integral.</p></div>
+      <div class="lac-bloco"><span class="k">COMO QUALQUER PESSOA PODE FECHAR</span><p>Pedido via Lei de Acesso à Informação ao Governo do Distrito Federal, por meio do Corpo de Bombeiros Militar, que administra o colégio, da nota oficial integral.</p></div>
+    </article><article class="lac" id="lon-2026">
+      <div class="lac-cab"><h3><a href="atos/lon-2026.html">Levantamento e recolhimento para análise de O bebê vem com a cegonha?!? (Londrina)</a></h3>
+        <span class="lac-meta">Londrina, PR · 2026 · 1 registro · <b>1 parcialmente verificado</b></span></div>
+      <div class="lac-tags"><span class="lac-tag">Documento interno não publicado</span><span class="lac-tag">Responsável não identificado</span><span class="lac-tag">Cumprimento não confirmado</span></div>
+      <div class="lac-bloco"><span class="k">O QUE FALTA</span><p>Localizar o número SEI, a íntegra do pedido de providências, o despacho da SME, o quantitativo recolhido, a avaliação técnica e a decisão final em repositórios públicos. A Folha informa que teve acesso ao pedido, mas o documento integral e os nomes dos signatários não foram localizados em fonte pública.</p></div>
+      <div class="lac-bloco"><span class="k">COMO QUALQUER PESSOA PODE FECHAR</span><p>O relatório do OGPL registra 15 processos Pedido de Providências públicos e 19.588 restritos após 18/02/2025, embora a Portaria SMGP-GAB nº 28/2020 preveja publicidade como regra. O processo específico não foi identificado nas fontes públicas consultadas; não se presume que esteja aberto nem se afirma que tenha sido protocolado pedido de acesso.</p></div>
     </article><article class="lac" id="tau-2025">
       <div class="lac-cab"><h3><a href="atos/tau-2025.html">Recolhimento de Pipoca e Picolé (Taubaté)</a></h3>
         <span class="lac-meta">Taubaté, SP · 2025 · 1 registro · <b>1 parcialmente verificado</b></span></div>
       <div class="lac-tags"><span class="lac-tag">Documento interno não publicado</span><span class="lac-tag">Cumprimento não confirmado</span></div>
       <div class="lac-bloco"><span class="k">O QUE FALTA</span><p>Obter cópia integral do parecer técnico favorável e registros administrativos que demonstrem a devolução/redistribuição dos exemplares às unidades, identificando escolas e turmas contempladas. A notícia de 14/07/2026 confirma a decisão de inclusão no plano de ensino das turmas adequadas, mas não comprova a execução material.</p></div>
-      <div class="lac-bloco"><span class="k">CAMINHO PARA FECHAR</span><p>Pedido via Lei de Acesso à Informação à Prefeitura de Taubaté do parecer técnico e da lista de escolas que receberam os exemplares; consulta à Câmara Municipal pelo requerimento.</p></div>
+      <div class="lac-bloco"><span class="k">COMO QUALQUER PESSOA PODE FECHAR</span><p>Pedido via Lei de Acesso à Informação à Prefeitura de Taubaté do parecer técnico e da lista de escolas que receberam os exemplares; consulta à Câmara Municipal pelo requerimento.</p></div>
     </article><article class="lac" id="sjc-2024">
       <div class="lac-cab"><h3><a href="atos/sjc-2024.html">Recolhimento de Meninas sonhadoras, mulheres cientistas (São José dos Campos)</a></h3>
         <span class="lac-meta">São José dos Campos, SP · 2024 · 1 registro · <b>1 parcialmente verificado</b></span></div>
       <div class="lac-tags"><span class="lac-tag">Sigilo judicial</span><span class="lac-tag">Cumprimento não confirmado</span></div>
       <div class="lac-bloco"><span class="k">O QUE FALTA</span><p>Obter cópia integral da sentença e certidão de intimação; comprovar a restituição e disponibilidade efetiva dos exemplares nas unidades; verificar eventual recurso contra a sentença e seu efeito. As reportagens de 28 a 30/07/2026 registraram que a Prefeitura não havia confirmado o cumprimento.</p></div>
-      <div class="lac-bloco"><span class="k">CAMINHO PARA FECHAR</span><p>Pedido via Lei de Acesso à Informação à Prefeitura de São José dos Campos sobre a devolução dos exemplares às escolas. A sentença tramita em segredo de Justiça e fica fora do alcance desse caminho.</p></div>
+      <div class="lac-bloco"><span class="k">COMO QUALQUER PESSOA PODE FECHAR</span><p>Pedido via Lei de Acesso à Informação à Prefeitura de São José dos Campos sobre a devolução dos exemplares às escolas. A sentença tramita em segredo de Justiça e fica fora do alcance desse caminho.</p></div>
     </article><article class="lac" id="unirv-2023">
       <div class="lac-cab"><h3><a href="atos/unirv-2023.html">Exclusão da lista do vestibular da UniRV</a></h3>
         <span class="lac-meta">Rio Verde, GO · 2023 · 1 registro · <b>1 parcialmente verificado</b></span></div>
       <div class="lac-tags"><span class="lac-tag">Responsável não identificado</span></div>
       <div class="lac-bloco"><span class="k">O QUE FALTA</span><p>Identificar nominalmente quem compunha a Coordenação do Vestibular e quem formalizou a decisão; a nota pública identifica o órgão decisor, mas não traz ata ou despacho nominal.</p></div>
-      <div class="lac-bloco"><span class="k">CAMINHO PARA FECHAR</span><p>Pedido via Lei de Acesso à Informação à Universidade de Rio Verde da ata ou do despacho que excluiu a obra da lista do vestibular.</p></div>
+      <div class="lac-bloco"><span class="k">COMO QUALQUER PESSOA PODE FECHAR</span><p>Pedido via Lei de Acesso à Informação à Universidade de Rio Verde da ata ou do despacho que excluiu a obra da lista do vestibular.</p></div>
     </article><article class="lac" id="palm-2021-08">
       <div class="lac-cab"><h3><a href="atos/palm-2021-08.html">Anúncio do “Acervo da Vergonha” (Fundação Palmares)</a></h3>
         <span class="lac-meta">Brasília, DF · 2021 · 1 registro · <b>1 parcialmente verificado</b></span></div>
       <div class="lac-tags"><span class="lac-tag">Documento interno não publicado</span><span class="lac-tag">Lista de títulos incompleta</span></div>
       <div class="lac-bloco"><span class="k">O QUE FALTA</span><p>Obter inventário dos cerca de 300 livros, comprovar se foram fisicamente separados, por quanto tempo e quando voltaram à consulta pública.</p></div>
-      <div class="lac-bloco"><span class="k">CAMINHO PARA FECHAR</span><p>Pedido via Fala.BR à Fundação Cultural Palmares do inventário da seção separada e de registros sobre o acesso a esse acervo.</p></div>
+      <div class="lac-bloco"><span class="k">COMO QUALQUER PESSOA PODE FECHAR</span><p>Pedido via Fala.BR à Fundação Cultural Palmares do inventário da seção separada e de registros sobre o acesso a esse acervo.</p></div>
     </article><article class="lac" id="palm-2021-06">
       <div class="lac-cab"><h3><a href="atos/palm-2021-06.html">Relatório “Retrato do Acervo” e anúncio de descarte (Fundação Palmares)</a></h3>
         <span class="lac-meta">Brasília, DF · 2021 · 1 registro · <b>1 parcialmente verificado</b></span></div>
       <div class="lac-tags"><span class="lac-tag">Documento interno não publicado</span><span class="lac-tag">Divergência entre fontes</span></div>
       <div class="lac-bloco"><span class="k">O QUE FALTA</span><p>A divergência 9.565/9.546 foi esclarecida em favor do número 9.565 pelo Relatório de Gestão 2021 da própria FCP, que decompõe o total em 8.035 títulos diferentes e 1.530 folders/catálogos. Permanecem sem reconciliação as versões posteriores do inventário (9.665 em 2023 e 9.696 em 2024) e, sobretudo, a lista integral dos 5.165 itens classificados como de temática alheia à negra e a comprovação de seu destino final. A ação relativa aos cerca de 300 livros do EL-026 é tratada separadamente, sem afirmar que os conjuntos sejam mutuamente exclusivos.</p></div>
-      <div class="lac-bloco"><span class="k">CAMINHO PARA FECHAR</span><p>Manter a divergência das versões do inventário explicitada; buscar em fontes públicas a relação individual dos 5.165 itens e documentos sobre sua destinação. Sem lista ou prova de destino, preservar a lacuna sem presumir descarte.</p></div>
+      <div class="lac-bloco"><span class="k">COMO QUALQUER PESSOA PODE FECHAR</span><p>Manter a divergência das versões do inventário explicitada; buscar em fontes públicas a relação individual dos 5.165 itens e documentos sobre sua destinação. Sem lista ou prova de destino, preservar a lacuna sem presumir descarte.</p></div>
     </article><article class="lac" id="funap-2020">
       <div class="lac-cab"><h3><a href="atos/funap-2020.html">Veto à lista do projeto Remição em Rede (Funap)</a></h3>
         <span class="lac-meta">São Paulo, SP · 2020 · 1 registro · <b>1 parcialmente verificado</b></span></div>
       <div class="lac-tags"><span class="lac-tag">Documento interno não publicado</span><span class="lac-tag">Cumprimento não confirmado</span><span class="lac-tag">Divergência entre fontes</span></div>
       <div class="lac-bloco"><span class="k">O QUE FALTA</span><p>Obter a mensagem original de Reginaldo Caetano da Silva, a ata da reunião de 13/02/2020 e a nota integral da Funap; identificar as três obras questionadas; localizar comprovante de eventual nova doação/envio após a devolução de dezembro de 2019; esclarecer a divergência entre 240 exemplares doados (Folha) e 228 cuja circulação teria sido impedida (Benaglia e Heller). Não presumir que a diferença de 12 corresponda a exemplares entregues ou retidos.</p></div>
-      <div class="lac-bloco"><span class="k">CAMINHO PARA FECHAR</span><p>Pedido via Lei de Acesso à Informação à Funap, do governo de São Paulo, da mensagem de 3 de dezembro de 2019, da ata de 13 de fevereiro de 2020 e do registro de envio dos exemplares às unidades.</p></div>
+      <div class="lac-bloco"><span class="k">COMO QUALQUER PESSOA PODE FECHAR</span><p>Pedido via Lei de Acesso à Informação à Funap, do governo de São Paulo, da mensagem de 3 de dezembro de 2019, da ata de 13 de fevereiro de 2020 e do registro de envio dos exemplares às unidades.</p></div>
     </article><article class="lac" id="ro-2020">
       <div class="lac-cab"><h3><a href="atos/ro-2020.html">Memorando-Circular nº 4/2020/SEDUC-DGE (RO)</a></h3>
         <span class="lac-meta">RO · 2020 · 10 registros · <b>10 parcialmente verificados</b></span></div>
       <div class="lac-tags"><span class="lac-tag">Documento interno não publicado</span></div>
       <div class="lac-bloco"><span class="k">O QUE FALTA</span><p>Localizar a íntegra do processo SEI 0029.051300/2020-91, o resultado da sindicância administrativa da Seduc e a íntegra da recomendação do MP-RO. O MPF homologou o arquivamento do inquérito civil em 2021; isso não substitui a apuração administrativa estadual. <span class="lac-ids">(<a href="casos/el-015.html">EL-015</a>, <a href="casos/el-016.html">EL-016</a>, <a href="casos/el-017.html">EL-017</a>, <a href="casos/el-018.html">EL-018</a>, <a href="casos/el-019.html">EL-019</a>, <a href="casos/el-020.html">EL-020</a>, <a href="casos/el-021.html">EL-021</a>)</span></p><p>A lista do Adendo está reconciliada: 19 itens de Rubem Fonseca correspondem a 18 títulos distintos porque O Seminarista aparece duas vezes. A relação está preservada como conjunto documental; não há lacuna de identificação dos títulos neste agrupamento. <span class="lac-ids">(<a href="casos/el-022.html">EL-022</a>)</span></p><p>Sem relação de títulos <span class="lac-ids">(<a href="casos/el-023.html">EL-023</a>)</span></p><p>A lista de títulos do Adendo está reconciliada e registrada em conjunto documental. Permanecem pendentes a obtenção do processo SEI integral e a documentação da sindicância estadual e da recomendação do MP-RO. <span class="lac-ids">(<a href="casos/el-024.html">EL-024</a>)</span></p></div>
-      <div class="lac-bloco"><span class="k">CAMINHO PARA FECHAR</span><p>A cópia pública do Adendo já foi localizada e reconciliada. A busca em fontes abertas não encontrou a íntegra do processo SEI 0029.051300/2020-91, o resultado da sindicância ou a recomendação integral do MP-RO. Se esses documentos não estiverem publicamente disponíveis, manter a lacuna explicitada, sem presumir o conteúdo ou o desfecho.</p></div>
+      <div class="lac-bloco"><span class="k">COMO QUALQUER PESSOA PODE FECHAR</span><p>A cópia pública do Adendo já foi localizada e reconciliada. A busca em fontes abertas não encontrou a íntegra do processo SEI 0029.051300/2020-91, o resultado da sindicância ou a recomendação integral do MP-RO. Se esses documentos não estiverem publicamente disponíveis, manter a lacuna explicitada, sem presumir o conteúdo ou o desfecho.</p></div>
     </article>
   </section>
   <section>
-    <div class="sechead"><span class="kicker">02</span><h2>Registros verificados com detalhe em aberto</h2><span class="count"><b>5</b> atos</span></div>
+    <div class="sechead"><span class="kicker">02</span><h2>Registros verificados com detalhe em aberto</h2><span class="count"><b>6</b> atos</span></div>
     <p class="note">O fato central destes registros tem duas ou mais fontes. Falta um detalhe, como o nome de quem assinou ou a confirmação de que os livros voltaram às escolas.</p>
     <article class="lac" id="lon-2024">
       <div class="lac-cab"><h3><a href="atos/lon-2024.html">Requerimento de recolhimento de A mamãe vai ter um bebê e retirada de exemplar em CMEI (Londrina)</a></h3>
         <span class="lac-meta">Londrina, PR · 2024 · 1 registro · verificado</span></div>
       <div class="lac-tags"><span class="lac-tag">Documento interno não publicado</span><span class="lac-tag">Cumprimento não confirmado</span></div>
       <div class="lac-bloco"><span class="k">O QUE FALTA</span><p>Obter cópia integral do requerimento parlamentar e da nota oficial da Secretaria; confirmar se a revisão do acervo identificou outros exemplares e se houve retirada em outras unidades. Não há comprovação de devolução do exemplar retirado.</p></div>
-      <div class="lac-bloco"><span class="k">CAMINHO PARA FECHAR</span><p>Pedido via Lei de Acesso à Informação à Prefeitura de Londrina da resposta ao requerimento; consulta ao sistema da Câmara Municipal pelo texto do requerimento.</p></div>
+      <div class="lac-bloco"><span class="k">COMO QUALQUER PESSOA PODE FECHAR</span><p>Pedido via Lei de Acesso à Informação à Prefeitura de Londrina da resposta ao requerimento; consulta ao sistema da Câmara Municipal pelo texto do requerimento.</p></div>
     </article><article class="lac" id="mg-2024">
       <div class="lac-cab"><h3><a href="atos/mg-2024.html">Suspensão de atividades com O menino marrom (Conselheiro Lafaiete)</a></h3>
         <span class="lac-meta">Conselheiro Lafaiete, MG · 2024 · 1 registro · verificado</span></div>
       <div class="lac-tags"><span class="lac-tag">Responsável não identificado</span></div>
       <div class="lac-bloco"><span class="k">O QUE FALTA</span><p>Confirmar o trânsito em julgado e identificar, se possível, o agente público que formalizou o ato administrativo original. A sentença de 02/12/2024 anulou o ato, mas a cópia pública consultada não traz certidão de trânsito em julgado.</p></div>
-      <div class="lac-bloco"><span class="k">CAMINHO PARA FECHAR</span><p>Pedido via Lei de Acesso à Informação à Prefeitura de Conselheiro Lafaiete do ato de suspensão; consulta processual ao Tribunal de Justiça de Minas Gerais sobre o trânsito em julgado.</p></div>
+      <div class="lac-bloco"><span class="k">COMO QUALQUER PESSOA PODE FECHAR</span><p>Pedido via Lei de Acesso à Informação à Prefeitura de Conselheiro Lafaiete do ato de suspensão; consulta processual ao Tribunal de Justiça de Minas Gerais sobre o trânsito em julgado.</p></div>
+    </article><article class="lac" id="can-2024">
+      <div class="lac-cab"><h3><a href="atos/can-2024.html">Retirada de livros da biblioteca Mundoteca (Canoinhas)</a></h3>
+        <span class="lac-meta">Canoinhas, SC · 2024 · 2 registros · verificado</span></div>
+      <div class="lac-tags"><span class="lac-tag">Documento interno não publicado</span><span class="lac-tag">Cumprimento não confirmado</span></div>
+      <div class="lac-bloco"><span class="k">O QUE FALTA</span><p>A localização física atual dos dois exemplares e sua eventual reintegração ao acervo permanecem sem comprovação pública. A resposta municipal juntada ao TCE e as fotografias das fls. 14–32 seguem sob sigilo parcial; não foi localizado recibo público de transferência, inventário nominal ou registro posterior de movimentação. O Diário Oficial nº 3698 registra que o Conselho Superior conheceu e negou provimento ao recurso por unanimidade; a fundamentação integral da deliberação não foi recuperada.</p></div>
+      <div class="lac-bloco"><span class="k">COMO QUALQUER PESSOA PODE FECHAR</span><p>O TCE-SC publicou a decisão e o Relatório DGE-328/2024, mas levantou o sigilo apenas desses dois documentos; a resposta da prefeita e as fotos das fls. 14–32 ficaram fora da parte pública. A decisão confirma que os livros foram entregues à Fundação Cultural para análise e não foram descartados. A pendência é o inventário/movimentação posterior e o resultado do MPSC.</p></div>
     </article><article class="lac" id="ms-2024">
       <div class="lac-cab"><h3><a href="atos/ms-2024.html">Recolhimento na rede estadual de Mato Grosso do Sul</a></h3>
         <span class="lac-meta">MS · 2024 · 1 registro · verificado</span></div>
       <div class="lac-tags"><span class="lac-tag">Cumprimento não confirmado</span></div>
       <div class="lac-bloco"><span class="k">O QUE FALTA</span><p>A SED anunciou em 23/04/2024 que os exemplares estavam em processo de devolução às bibliotecas da rede. A reportagem não informa se a devolução alcançou todas as 75 escolas que haviam recebido a obra nem se outras unidades também receberam exemplares; falta comprovação da distribuição final por unidade.</p></div>
-      <div class="lac-bloco"><span class="k">CAMINHO PARA FECHAR</span><p>Pedido via Lei de Acesso à Informação à Secretaria de Estado de Educação de Mato Grosso do Sul sobre a devolução dos exemplares às escolas.</p></div>
+      <div class="lac-bloco"><span class="k">COMO QUALQUER PESSOA PODE FECHAR</span><p>Pedido via Lei de Acesso à Informação à Secretaria de Estado de Educação de Mato Grosso do Sul sobre a devolução dos exemplares às escolas.</p></div>
     </article><article class="lac" id="sc-2024">
       <div class="lac-cab"><h3><a href="atos/sc-2024.html">Orientação de recolhimento e análise pedagógica de O avesso da pele nas bibliotecas estaduais de Santa Catarina</a></h3>
         <span class="lac-meta">SC · 2024 · 1 registro · verificado</span></div>
       <div class="lac-tags"><span class="lac-tag">Fonte única</span><span class="lac-tag">Documento interno não publicado</span></div>
       <div class="lac-bloco"><span class="k">O QUE FALTA</span><p>Confirmar quais escolas recolheram exemplares, por quanto tempo, o resultado da análise pedagógica e se/para quais unidades os livros foram devolvidos ou redistribuídos. Obter eventual ato interno que operacionalizou a orientação.</p></div>
-      <div class="lac-bloco"><span class="k">CAMINHO PARA FECHAR</span><p>Pedido via Lei de Acesso à Informação à Secretaria de Estado da Educação de Santa Catarina do comunicado de revisão de acervo e da lista de unidades que receberam os exemplares.</p></div>
+      <div class="lac-bloco"><span class="k">COMO QUALQUER PESSOA PODE FECHAR</span><p>Pedido via Lei de Acesso à Informação à Secretaria de Estado da Educação de Santa Catarina do comunicado de revisão de acervo e da lista de unidades que receberam os exemplares.</p></div>
     </article><article class="lac" id="sc-2023">
       <div class="lac-cab"><h3><a href="atos/sc-2023.html">Ofício circular de 7 de novembro de 2023 (CRE de Florianópolis)</a></h3>
         <span class="lac-meta">Florianópolis, SC · 2023 · 9 registros · verificado</span></div>
       <div class="lac-tags"><span class="lac-tag">Documento interno não publicado</span><span class="lac-tag">Cumprimento não confirmado</span></div>
       <div class="lac-bloco"><span class="k">O QUE FALTA</span><p>A coordenadoria foi identificada como CRE de Florianópolis por atos de designação publicados no Diário Oficial. Permanecem pendentes a cópia integral e o número do ofício circular, a lista de escolas destinatárias e os registros de execução/recolhimento e eventual devolução das nove obras.</p></div>
-      <div class="lac-bloco"><span class="k">CAMINHO PARA FECHAR</span><p>Pedido via Lei de Acesso à Informação à Secretaria de Estado da Educação de Santa Catarina da íntegra e do número do ofício circular, da lista de escolas destinatárias e dos registros de execução e eventual devolução das nove obras.</p></div>
+      <div class="lac-bloco"><span class="k">COMO QUALQUER PESSOA PODE FECHAR</span><p>Pedido via Lei de Acesso à Informação à Secretaria de Estado da Educação de Santa Catarina da íntegra e do número do ofício circular, da lista de escolas destinatárias e dos registros de execução e eventual devolução das nove obras.</p></div>
     </article>
   </section>
   <section style="border-bottom:0">
@@ -153,10 +166,17 @@
 
 <footer class="foot">
   <div class="foot-in">
-    <span>Estante Livre · um projeto de Nataly Nunes Pinto</span>
-    <span class="foot-links"><a href="glossario.html">Glossário</a><a href="cobertura.html">Cobertura</a><a href="pendencias.html">O que falta apurar</a><a href="guia.html">Guia para escolas</a><a href="imprensa.html">Para jornalistas</a><a href="relate.html">Relate um caso</a><a href="dados/estante-livre-casos.csv">Dados abertos</a><a href="sobre.html">Contato</a></span>
-    <span id="foot-meta"></span>
+    <div class="foot-marca">
+      <a class="logo logo-s" href="index.html" aria-label="Estante Livre, página inicial">Estante <span class="redact">Livre<span class="bar" aria-hidden="true"></span></span></a>
+      <p>Observatório de censura de livros · quem mandou tirar da estante, com qual ato, e o que aconteceu depois.</p>
+      <p>Projeto independente de Nataly Nunes Pinto. Dados e textos sob licença CC BY 4.0.</p>
+      <p class="foot-dados"><a href="dados/estante-livre-casos.csv">Casos em CSV</a> · <a href="dados/estante-livre-casos.json">JSON</a> · <a href="dados/estante-livre-normas.csv">Normas em CSV</a></p>
+    </div>
+    <nav class="foot-col" aria-label="Acervo"><p class="foot-tit">Acervo</p><a href="casos.html">Casos</a><a href="livros.html">Livros</a><a href="atos.html">Atos</a><a href="normas.html">Normas</a><a href="painel.html">Painel de dados</a></nav>
+    <nav class="foot-col" aria-label="Leitura"><p class="foot-tit">Leitura</p><a href="analises.html">Análises</a><a href="historia.html">História</a><a href="mundo.html">Mundo</a><a href="glossario.html">Glossário</a><a href="cobertura.html">Cobertura</a></nav>
+    <nav class="foot-col" aria-label="Projeto"><p class="foot-tit">Projeto</p><a href="metodologia.html">Metodologia</a><a href="pendencias.html">O que falta apurar</a><a href="sobre.html">Sobre e contato</a><a href="imprensa.html">Para jornalistas</a><a href="guia.html">Guia para escolas</a><a href="relate.html">Relate um caso</a></nav>
   </div>
+  <div class="foot-base"><span id="foot-meta"></span></div>
 </footer>
 
 <script>const RAIZ_SITE = "";</script>

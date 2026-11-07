@@ -18,6 +18,7 @@
 <meta property="og:url" content="https://estante-livre-br.vercel.app/analises.html">
 <meta property="og:image" content="https://estante-livre-br.vercel.app/og-estante-livre.jpg">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="assets/fontes/Fraunces.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="assets/estilo.css">
 </head>
 <body>
@@ -25,13 +26,13 @@
 <header class="topo">
   <div class="topo-in">
     <a class="logo" href="index.html" aria-label="Estante Livre, página inicial">Estante <span class="redact">Livre<span class="bar" aria-hidden="true"></span></span></a>
-    <div class="tagline">Observatório de censura de livros · quem mandou tirar da estante, com qual ato, e o que aconteceu depois</div>
-    <nav class="nav" aria-label="Seções">
-      <a href="index.html">Painel</a>
+    <button class="menu-bt" type="button" aria-expanded="false" aria-controls="nav-principal">Menu</button>
+    <nav class="nav" id="nav-principal" aria-label="Seções">
       <a href="casos.html">Casos</a>
       <a href="livros.html">Livros</a>
       <a href="atos.html">Atos</a>
       <a href="normas.html">Normas</a>
+      <a href="painel.html">Dados</a>
       <a href="analises.html" class="on" aria-current="page">Análises</a>
       <a href="historia.html">História</a>
       <a href="mundo.html">Mundo</a>
@@ -86,9 +87,9 @@
   <div class="sechead"><span class="kicker">05</span><h2>Como esses livros chegaram à escola</h2></div>
   <p class="analysis-lead" id="cheg-lead"></p>
   <div id="chart-chegada" class="analysis-bars" aria-label="Obras por forma de chegada"></div>
-  <p>O avesso da pele chegou pelo PNLD, com ata de escolha assinada na própria escola. Pipoca e Picolé foi comprado pela prefeitura de Taubaté um ano antes de ser retirado. O menino marrom estava em trabalho pedagógico da rede de Conselheiro Lafaiete; Eu receberia as piores notícias dos seus lindos lábios foi indicado por uma banca de professores para o vestibular da UniRV; A bolsa amarela estava num clube de leitura municipal em Limeira e numa atividade de 4º ano no DF. Nesses casos, quem mandou tirar desfez uma escolha feita antes por educadores ou pelo próprio poder público.</p>
+  <p>O avesso da pele chegou pelo PNLD, com ata de escolha assinada na própria escola. Pipoca e Picolé foi comprado pela prefeitura de Taubaté um ano antes de ser retirado. O menino marrom estava em trabalho pedagógico da rede de Conselheiro Lafaiete; Eu receberia as piores notícias dos seus lindos lábios foi indicado por uma banca de professores para o vestibular da UniRV; A bolsa amarela estava num clube de leitura municipal em Limeira e numa atividade de 4º ano no DF. As nove obras retiradas em Santa Catarina em 2023 foram, <a href="https://www.correiobraziliense.com.br/diversao-e-arte/2023/11/6652917-quais-historias-sao-contadas-nos-livros-proibidos-em-santa-catarina-conheca.html" target="_blank" rel="noopener">segundo a assessoria do próprio governo</a>, compradas e distribuídas pela rede estadual numa gestão anterior. Nesses casos, quem mandou tirar desfez uma escolha feita antes por educadores ou pelo próprio poder público.</p>
   <p>A bolsa amarela completa 50 anos em 2026, ano em que a Câmara Brasileira do Livro escolheu Lygia Bojunga como <a href="https://www.oliberal.com/cultura/escritora-lygia-bojunga-e-personalidade-literaria-da-68-edicao-do-premio-jabuti-1.1184268" target="_blank" rel="noopener">Personalidade Literária do 68º Prêmio Jabuti</a>. No mesmo ano, o livro saiu de uma atividade do Colégio Militar Dom Pedro II, no Distrito Federal.</p>
-  <p class="note">A origem da maior parte do acervo atingido (as listas de Rondônia e Santa Catarina, o acervo da Palmares) ainda não está documentada. Quando o catálogo souber como esses livros entraram nas bibliotecas, esta conta muda. A forma de chegada aparece em cada ficha de livro e na coluna <code>como_chegou</code> dos dados abertos.</p>
+  <p class="note">Ainda sem origem documentada: as obras de Rondônia, o acervo da Fundação Palmares e <i>Meninas sonhadoras, mulheres cientistas</i>, em São José dos Campos. Nos três casos, a cobertura consultada até 6 de novembro de 2026 registra a retirada, mas não diz como os livros entraram nas bibliotecas; em São José dos Campos, um vereador chegou a perguntar quem os comprou, sem resposta pública. Quando o catálogo souber, esta conta muda. A forma de chegada aparece em cada ficha de livro e na coluna <code>como_chegou</code> dos dados abertos.</p>
  </section>
  <section>
   <div class="sechead"><span class="kicker">06</span><h2>E adianta reagir?</h2></div>
@@ -113,19 +114,27 @@
    <tbody id="cal-rows"></tbody>
   </table></div>
   <p id="cal-texto"></p>
-  <p class="note">Método: para cada ato, contamos os meses até o 1º turno da próxima eleição da esfera que tomou a decisão (municipal para prefeituras e universidades municipais; geral para estados, Distrito Federal e União) e até a próxima eleição de qualquer tipo. Como há eleição a cada dois anos, metade das datas do calendário fica a até 12 meses de alguma eleição, e um quarto fica a até 12 meses da eleição da própria esfera. Com 17 atos, a análise indica um padrão a acompanhar e fica longe de provar causa.</p>
+  <p class="note">Método: para cada ato, contamos os meses até o 1º turno da próxima eleição da esfera que tomou a decisão (municipal para prefeituras e universidades municipais; geral para estados, Distrito Federal e União) e até a próxima eleição de qualquer tipo. Como há eleição a cada dois anos, metade das datas do calendário fica a até 12 meses de alguma eleição, e um quarto fica a até 12 meses da eleição da própria esfera. Com menos de vinte atos, a análise indica um padrão a acompanhar e fica longe de provar causa.</p>
  </section>
  <section>
-  <div class="sechead"><span class="kicker">08</span><h2>O que ainda não podemos concluir</h2></div>
+  <div class="sechead"><span class="kicker">08</span><h2>Março de 2024, dia a dia</h2></div>
+  <p class="analysis-lead" id="onda-lead"></p>
+  <div class="onda-wrap"><svg id="onda-svg" class="onda-svg" role="img" aria-labelledby="onda-tit onda-desc"><title id="onda-tit">Sequência dos atos contra O avesso da pele em março de 2024</title><desc id="onda-desc">Linha do tempo de 1º de março a 30 de abril de 2024 com uma faixa por estado, do dia do ato até a reversão.</desc></svg></div>
+  <p class="onda-legenda"><span class="onda-k onda-k-ato"></span>ato contra o livro <span class="onda-k onda-k-rev"></span>reversão anunciada <span class="onda-k onda-k-pl"></span>projeto de lei <span class="onda-k onda-k-aberto"></span>sem desfecho divulgado</p>
+  <ol class="onda-lista" id="onda-lista"></ol>
+  <p class="note">A sequência mostra os atos de governos estaduais. O catálogo registra o encadeamento no tempo; ele ainda não tem documento que prove que uma secretaria agiu por causa da outra. A difusão entre leis e projetos está na <a href="normas.html">trilha de normas</a>.</p>
+ </section>
+ <section>
+  <div class="sechead"><span class="kicker">09</span><h2>O que ainda não podemos concluir</h2></div>
   <div class="analysis-unknown">
    <div><h3>Não é um retrato de todo o país</h3><p>O catálogo reúne episódios localizados por pesquisa documental e cobertura pública. Não permite estimar a proporção nacional de atos atribuíveis a cada campo político.</p></div>
    <div><h3>Partido do governo não prova autoria</h3><p>O fato de uma medida ocorrer durante determinado governo não prova que o governador ou prefeito a tenha ordenado. É preciso localizar o ato, o signatário e a cadeia de execução.</p></div>
    <div><h3>O agente que pressiona pode não decidir</h3><p>Crítica pública, requerimento parlamentar, decisão administrativa e execução são papéis diferentes. Atribuí-los corretamente é parte central da apuração.</p></div>
-   <div><h3>Há casos com desfecho incompleto</h3><p>Taubaté, São José dos Campos, Funap, Palmares e Rondônia ainda têm lacunas documentais relevantes. Os pedidos de acesso à informação foram preparados para tentar preenchê-las.</p></div>
+   <div><h3>Há casos com desfecho incompleto</h3><p>Taubaté, São José dos Campos, Funap, Palmares e Rondônia ainda têm lacunas documentais relevantes. Os documentos que fechariam cada lacuna estão listados em <a href="pendencias.html">O que falta apurar</a>, e qualquer pessoa pode pedi-los por acesso à informação e enviá-los ao observatório.</p></div>
   </div>
  </section>
  <section>
-  <div class="sechead"><span class="kicker">09</span><h2>Como esta análise será atualizada</h2></div>
+  <div class="sechead"><span class="kicker">10</span><h2>Como esta análise será atualizada</h2></div>
   <p>As conclusões serão revistas quando entrarem novos documentos, respostas de LAI ou correções nas fichas. Se a base mudar, os números e as interpretações também mudam. A data de atualização e a regra de contagem ficam explícitas; nenhuma hipótese será promovida a fato sem fonte.</p>
   <p class="analysis-links"><a href="casos.html">Consultar os casos</a><a href="metodologia.html">Ler a metodologia</a><a href="index.html">Voltar ao painel</a></p>
  </section>
@@ -133,10 +142,17 @@
 </main>
 <footer class="foot">
   <div class="foot-in">
-    <span>Estante Livre · um projeto de Nataly Nunes Pinto</span>
-    <span class="foot-links"><a href="glossario.html">Glossário</a><a href="cobertura.html">Cobertura</a><a href="pendencias.html">O que falta apurar</a><a href="guia.html">Guia para escolas</a><a href="imprensa.html">Para jornalistas</a><a href="relate.html">Relate um caso</a><a href="dados/estante-livre-casos.csv">Dados abertos</a><a href="sobre.html">Contato</a></span>
-    <span id="foot-meta"></span>
+    <div class="foot-marca">
+      <a class="logo logo-s" href="index.html" aria-label="Estante Livre, página inicial">Estante <span class="redact">Livre<span class="bar" aria-hidden="true"></span></span></a>
+      <p>Observatório de censura de livros · quem mandou tirar da estante, com qual ato, e o que aconteceu depois.</p>
+      <p>Projeto independente de Nataly Nunes Pinto. Dados e textos sob licença CC BY 4.0.</p>
+      <p class="foot-dados"><a href="dados/estante-livre-casos.csv">Casos em CSV</a> · <a href="dados/estante-livre-casos.json">JSON</a> · <a href="dados/estante-livre-normas.csv">Normas em CSV</a></p>
+    </div>
+    <nav class="foot-col" aria-label="Acervo"><p class="foot-tit">Acervo</p><a href="casos.html">Casos</a><a href="livros.html">Livros</a><a href="atos.html">Atos</a><a href="normas.html">Normas</a><a href="painel.html">Painel de dados</a></nav>
+    <nav class="foot-col" aria-label="Leitura"><p class="foot-tit">Leitura</p><a href="analises.html">Análises</a><a href="historia.html">História</a><a href="mundo.html">Mundo</a><a href="glossario.html">Glossário</a><a href="cobertura.html">Cobertura</a></nav>
+    <nav class="foot-col" aria-label="Projeto"><p class="foot-tit">Projeto</p><a href="metodologia.html">Metodologia</a><a href="pendencias.html">O que falta apurar</a><a href="sobre.html">Sobre e contato</a><a href="imprensa.html">Para jornalistas</a><a href="guia.html">Guia para escolas</a><a href="relate.html">Relate um caso</a></nav>
   </div>
+  <div class="foot-base"><span id="foot-meta"></span></div>
 </footer>
 <script src="assets/dados.js"></script>
 <script src="assets/comum.js"></script>
@@ -212,6 +228,43 @@ el("politicos-rows").innerHTML=idsPoliticos.map(p=>{
  const fmt = m => m.toFixed(0)+" meses";
  el("cal-rows").innerHTML = linhas.map(l=>'<tr><td><a href="atos/'+l.x.k.toLowerCase()+'.html">'+esc(l.x.a.nome)+'</a></td><td>'+dataCurta(l.x.a.data)+'</td><td>'+(l.esf==="municipal"?"Municipal":"Estadual ou federal")+'</td><td'+(l.me<=12?' class="cal-perto"':'')+'>'+fmt(l.me)+'</td><td'+(l.mq<=12?' class="cal-perto"':'')+'>'+fmt(l.mq)+'</td></tr>').join("");
  el("cal-texto").textContent = `O excesso vem quase todo de um episódio: os ${onda} atos estaduais de março de 2024 contra O avesso da pele, sete meses antes das eleições municipais. Governadores não disputavam aquela eleição; vereadores, sim, e deputados costumam apoiar candidaturas municipais. O catálogo ainda não cruzou os nomes de quem pressionou com as candidaturas registradas. Contando a onda de março como um episódio só, ${nq-onda+1} dos ${n-onda+1} episódios ficam a até 12 meses de alguma eleição. Esse cruzamento com os dados do TSE é o próximo passo para testar a hipótese.`;
+}
+{
+ /* março de 2024: sequência dos atos estaduais contra O avesso da pele */
+ const UFN = {RS:"Rio Grande do Sul",PR:"Paraná",GO:"Goiás",MS:"Mato Grosso do Sul",SC:"Santa Catarina",AM:"Amazonas"};
+ const ids = Object.keys(ATOS).filter(k=>ATOS[k].data>="2024-03-01" && ATOS[k].data<="2024-03-31" && CASOS.some(c=>c.ato===k && obraDe(c)==="O avesso da pele"))
+   .sort((a,b)=>ATOS[a].data.localeCompare(ATOS[b].data) || a.localeCompare(b));
+ const pls = NORMAS.filter(n=>n.data>="2024-03-01" && n.data<="2024-03-31");
+ const ini = new Date("2024-03-01"), fim = new Date("2024-04-30"), dia = d => Math.round((new Date(d)-ini)/864e5);
+ const W = 760, esq = 150, dir = 20, topo = 34, alt = 36, L = ids.length + pls.length, H = topo + L*alt + 12;
+ const x = d => esq + dia(d)/dia("2024-04-30")*(W-esq-dir);
+ let s = "";
+ [["2024-03-01","1 mar"],["2024-03-15","15 mar"],["2024-04-01","1 abr"],["2024-04-15","15 abr"],["2024-04-30","30 abr"]].forEach(([d,t])=>{
+   s += `<line x1="${x(d)}" x2="${x(d)}" y1="${topo-8}" y2="${H-6}" class="onda-grade"/><text x="${x(d)}" y="${topo-14}" class="onda-eixo" text-anchor="middle">${t}</text>`;
+ });
+ ids.forEach((k,i)=>{
+   const a = ATOS[k], y = topo + i*alt + alt/2, r = a.reversao;
+   s += `<text x="0" y="${y+4}" class="onda-uf">${esc(UFN[a.uf]||a.uf)}</text>`;
+   if(r){ s += `<line x1="${x(a.data)}" x2="${x(r.data)}" y1="${y}" y2="${y}" class="onda-faixa"/>`; }
+   else { s += `<line x1="${x(a.data)}" x2="${x(fim)}" y1="${y}" y2="${y}" class="onda-faixa onda-aberta"/>`; }
+   s += `<circle cx="${x(a.data)}" cy="${y}" r="6" class="onda-ato"/>`;
+   if(r) s += `<circle cx="${x(r.data)}" cy="${y}" r="${r.data===a.data?10:6}" class="onda-rev"/>`;
+ });
+ pls.forEach((n,j)=>{
+   const y = topo + (ids.length+j)*alt + alt/2, xx = x(n.data);
+   s += `<text x="0" y="${y+4}" class="onda-uf">${esc(UFN[n.uf]||n.uf)} (projeto)</text><rect x="${xx-6}" y="${y-6}" width="12" height="12" class="onda-pl" transform="rotate(45 ${xx} ${y})"/>`;
+ });
+ const svg = el("onda-svg");
+ svg.setAttribute("viewBox", `0 0 ${W} ${H}`); svg.setAttribute("width", W); svg.setAttribute("height", H);
+ svg.insertAdjacentHTML("beforeend", s);
+ const tempo = (a,b) => { const d = Math.round((new Date(b)-new Date(a))/864e5); return d===0 ? "no mesmo dia" : d===1 ? "1 dia depois" : d+" dias depois"; };
+ const primeira = ATOS[ids[0]].data, ultima = ATOS[ids[ids.length-1]].data;
+ el("onda-lead").textContent = `Em ${dia(ultima)+1} dias, ${ids.length} governos estaduais agiram contra o mesmo livro. A ordem mais rápida também foi a primeira a cair: o Rio Grande do Sul voltou atrás no dia em que a coordenadoria mandou recolher. Os outros levaram de um a dois meses, e Santa Catarina não divulgou o resultado da análise.`;
+ el("onda-lista").innerHTML = ids.map(k=>{
+   const a = ATOS[k], r = a.reversao;
+   const fimTxt = r ? `${esc(r.via)} em ${dataCurta(r.data)}, ${tempo(a.data,r.data)}.` : "Sem desfecho divulgado.";
+   return `<li><strong>${dataCurta(a.data)} · ${esc(UFN[a.uf]||a.uf)}.</strong> <a href="atos/${k.toLowerCase()}.html">${esc(a.nome)}</a>. ${fimTxt}</li>`;
+ }).join("") + pls.map(n=>`<li><strong>${dataCurta(n.data)} · ${esc(UFN[n.uf]||n.uf)}.</strong> ${esc(n.numero)}, de ${esc(n.autoria)}, apresentado com O avesso da pele na justificativa.</li>`).join("");
 }
 montarRodape();
 </script>

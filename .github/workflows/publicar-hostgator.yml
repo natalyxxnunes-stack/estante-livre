@@ -1,0 +1,41 @@
+name: Publicar na HostGator
+
+# Envia o site para a hospedagem por FTP. Só roda depois que os quatro segredos forem cadastrados em
+# Settings > Secrets and variables > Actions: FTP_SERVIDOR, FTP_USUARIO, FTP_SENHA e FTP_PASTA (ex.: /public_html/).
+# Sem os segredos, o fluxo termina sem fazer nada.
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+concurrency:
+  group: publicar-hostgator
+  cancel-in-progress: true
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    env:
+      TEM_FTP: ${{ secrets.FTP_SERVIDOR != '' }}
+    steps:
+      - name: Segredos de FTP cadastrados?
+        run: echo "TEM_FTP=$TEM_FTP"
+      - uses: actions/checkout@v4
+        if: env.TEM_FTP == 'true'
+      - uses: actions/setup-node@v4
+        if: env.TEM_FTP == 'true'
+        with:
+          node-version: 20
+      - name: Montar o pacote
+        if: env.TEM_FTP == 'true'
+        run: bash scripts/empacotar.sh
+      - name: Enviar por FTP
+        if: env.TEM_FTP == 'true'
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVIDOR }}
+          username: ${{ secrets.FTP_USUARIO }}
+          password: ${{ secrets.FTP_SENHA }}
+          local-dir: ./dist/
+          server-dir: ${{ secrets.FTP_PASTA }}

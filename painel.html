@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Painel de dados · Estante Livre</title>
+<meta name="description" content="Os registros do Estante Livre em números: mecanismo, estágio, situação, ano, estado, idade das obras, temas alegados e instâncias que decidiram.">
+<link rel="icon" href="favicon.ico" sizes="32x32">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="theme-color" content="#D62410">
+<link rel="canonical" href="https://estante-livre-br.vercel.app/painel.html">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Estante Livre">
+<meta property="og:title" content="Painel de dados · Estante Livre">
+<meta property="og:description" content="Mecanismo, estágio, situação, ano, estado, tema alegado e instância dos registros do Estante Livre.">
+<meta property="og:url" content="https://estante-livre-br.vercel.app/painel.html">
+<meta property="og:image" content="https://estante-livre-br.vercel.app/og-estante-livre.jpg">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Estante Livre, observatório de censura de livros">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="assets/fontes/Fraunces.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/estilo.css">
+
+</head>
+<body>
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+<header class="topo">
+  <div class="topo-in">
+    <a class="logo" href="index.html" aria-label="Estante Livre, página inicial">Estante <span class="redact">Livre<span class="bar" aria-hidden="true"></span></span></a>
+    <button class="menu-bt" type="button" aria-expanded="false" aria-controls="nav-principal">Menu</button>
+    <nav class="nav" id="nav-principal" aria-label="Seções">
+      <a href="casos.html">Casos</a>
+      <a href="livros.html">Livros</a>
+      <a href="atos.html">Atos</a>
+      <a href="normas.html">Normas</a>
+      <a href="painel.html" class="on" aria-current="page">Dados</a>
+      <a href="analises.html">Análises</a>
+      <a href="historia.html">História</a>
+      <a href="mundo.html">Mundo</a>
+      <a href="metodologia.html">Metodologia</a>
+      <a href="sobre.html">Sobre</a>
+    </nav>
+  </div>
+</header>
+
+
+
+<main id="conteudo" tabindex="-1">
+<div class="wrap">
+  <div class="hero-pg">
+    <p class="kicker">PAINEL DE DADOS</p>
+    <h1>O catálogo em números</h1>
+    <p class="lede">Os registros do Estante Livre organizados por mecanismo, estágio, situação, ano, estado, idade das obras, tema alegado e instância. Clique numa barra para ver os casos por trás dela.</p>
+  </div>
+</div>
+
+<div class="bignums">
+  <div class="bignums-in">
+    <div class="bignum"><div class="n" id="n-casos">–</div><div class="l">REGISTROS</div></div>
+    <div class="bignum"><div class="n" id="n-atos">–</div><div class="l">ATOS</div></div>
+    <div class="bignum"><div class="n" id="n-titulos">–</div><div class="l">OBRAS E CONJUNTOS MENCIONADOS</div></div>
+    <div class="bignum"><div class="n" id="n-estados">–</div><div class="l">UNIDADES DA FEDERAÇÃO</div></div>
+    <div class="bignum"><div class="n" id="n-verif">–</div><div class="l">VERIFICADOS</div></div>
+  </div>
+</div>
+
+<div class="wrap">
+  <p class="note transp" id="transp" style="margin:18px 0 0"></p>
+  <section>
+    <div class="sechead"><span class="kicker">01</span><h2>O que tentaram fazer com os livros, e até onde chegou</h2></div>
+    <p class="note"><span id="txt-mod"></span> Autocensura segue em zero porque depende de relato de quem trabalha na biblioteca. Clique numa barra para ver os casos.</p>
+    <div class="sub-tit">Mecanismo</div>
+    <div class="bars" id="bars-mod"></div>
+    <div class="sub-tit">Até onde chegou</div>
+    <div class="bars" id="bars-est"></div>
+    <div class="sub-tit">Situação hoje</div>
+    <div class="bars" id="bars-sit"></div>
+  </section>
+
+  <section>
+    <div class="sechead"><span class="kicker">02</span><h2>Quando</h2></div>
+    <p class="note">Três episódios concentram boa parte do catálogo: a tentativa de recolhimento em Rondônia, em fevereiro de 2020; a ordem da Secretaria de Educação de Santa Catarina, em novembro de 2023; e a sequência de março de 2024, que começou com o vídeo de uma diretora em Santa Cruz do Sul e foi seguida por medidas em outros estados. Clique num ano para ver os registros.</p>
+    <div class="tl" id="tl"></div>
+    <div id="tl-labels" class="tl-labels"></div>
+  </section>
+
+  <section>
+    <div class="sechead"><span class="kicker">03</span><h2>Onde</h2></div>
+    <p class="note"><span id="txt-onde"></span> Santa Catarina e Rondônia concentram os registros porque em ambos houve lista oficial com vários títulos. Em Rondônia, os 42 títulos distintos da lista oficial ocupam nove registros (sete obras com ficha própria e dois conjuntos documentais), e um décimo registra a ordem genérica sobre os livros de Rubem Alves; por isso, o total de registros não equivale ao número de obras atingidas.</p>
+    <svg class="mapa-br" id="mapa-br" viewBox="0 0 613 639" role="group" aria-labelledby="mapa-tit"><title id="mapa-tit">Casos registrados por unidade da federação</title></svg>
+    <div class="mapa-leg" id="mapa-leg"></div>
+    <p class="mapcap">Contornos dos estados: svg-maps, licença CC BY 4.0.</p>
+  </section>
+
+  <section>
+    <div class="sechead"><span class="kicker">04</span><h2>Quantos anos o livro tinha</h2></div>
+    <p class="note">Anos entre a publicação de cada obra e o primeiro episódio registrado, para os livros com ano de publicação conhecido. Clique para ver a ficha.</p>
+    <div class="idades" id="idades"></div>
+  </section>
+
+  <section>
+    <div class="sechead"><span class="kicker">05</span><h2>O que incomoda</h2></div>
+    <p class="note">Na pesquisa <a href="https://seer.ufrgs.br/index.php/EmQuestao/article/view/138667" target="_blank" rel="noopener">Páginas proibidas</a> (UFRGS, 2024), feita com relatos de quem presenciou censura, os motivos mais citados são “impróprio para crianças e adolescentes”, conteúdo sexual e gênero. Aqui, sexualidade e gênero lidera, com política e ideologia logo atrás. A diferença sugere um filtro: a imprensa cobre melhor a ordem de governo do que a queixa que chega à biblioteca.</p>
+    <div class="eixos" id="eixos"></div>
+  </section>
+
+  <section>
+    <div class="sechead"><span class="kicker">06</span><h2>Que instância aparece em cada ato</h2></div>
+    <p class="note">Contagem por ato, para que uma lista de dez títulos pese o mesmo que uma ordem isolada. Secretarias estaduais e suas coordenadorias aparecem em mais atos que qualquer outra instância. Os nomes de quem pediu, decidiu, assinou e executou estão em cada ficha.</p>
+    <div class="bars" id="bars-quem"></div>
+  </section>
+
+  <section>
+    <div class="sechead"><span class="kicker">07</span><h2>Fora da biblioteca, no mesmo período</h2></div>
+    <p class="note">Episódios que não entram na contagem porque não aconteceram em acervo de biblioteca, mas ajudam a entender o ambiente. Ficam aqui como contexto.</p>
+    <div class="contexto" id="contexto"></div>
+  </section>
+</div>
+
+<div class="alert">
+  <div class="alert-in">
+    <h3>O que o catálogo ainda deixa de fora.</h3>
+    <p><strong>Casos com retaliação: nenhum registrado.</strong> Eles existem. A pesquisa Páginas proibidas registra uma bibliotecária afastada no Rio de Janeiro por liderar leituras sobre gênero e sexualidade. A imprensa cobre o livro; quase ninguém acompanha o que acontece com quem trabalha na biblioteca.</p>
+    <p><strong>Autocensura: zero. Descarte ou destruição: um registro, sem prova de execução.</strong> Deixar de comprar por receio, não expor, não indicar. São práticas que não deixam ofício e por isso raramente viram notícia. Só aparecem se alguém de dentro contar.</p>
+    <p><strong>Dois atos administrativos, Rondônia (2020) e Santa Catarina (2023), respondem por mais da metade dos registros.</strong> O catálogo enxerga bem o que vira lista oficial e mal o caso isolado, municipal, sem documento. Ausência de registro num estado quer dizer ausência de registro.</p>
+  </div>
+</div>
+
+
+</main>
+
+<footer class="foot">
+  <div class="foot-in">
+    <div class="foot-marca">
+      <a class="logo logo-s" href="index.html" aria-label="Estante Livre, página inicial">Estante <span class="redact">Livre<span class="bar" aria-hidden="true"></span></span></a>
+      <p>Observatório de censura de livros · quem mandou tirar da estante, com qual ato, e o que aconteceu depois.</p>
+      <p>Projeto independente de Nataly Nunes Pinto. Dados e textos sob licença CC BY 4.0.</p>
+      <p class="foot-dados"><a href="dados/estante-livre-casos.csv">Casos em CSV</a> · <a href="dados/estante-livre-casos.json">JSON</a> · <a href="dados/estante-livre-normas.csv">Normas em CSV</a></p>
+    </div>
+    <nav class="foot-col" aria-label="Acervo"><p class="foot-tit">Acervo</p><a href="casos.html">Casos</a><a href="livros.html">Livros</a><a href="atos.html">Atos</a><a href="normas.html">Normas</a><a href="painel.html">Painel de dados</a></nav>
+    <nav class="foot-col" aria-label="Leitura"><p class="foot-tit">Leitura</p><a href="analises.html">Análises</a><a href="historia.html">História</a><a href="mundo.html">Mundo</a><a href="glossario.html">Glossário</a><a href="cobertura.html">Cobertura</a></nav>
+    <nav class="foot-col" aria-label="Projeto"><p class="foot-tit">Projeto</p><a href="metodologia.html">Metodologia</a><a href="pendencias.html">O que falta apurar</a><a href="sobre.html">Sobre e contato</a><a href="imprensa.html">Para jornalistas</a><a href="guia.html">Guia para escolas</a><a href="relate.html">Relate um caso</a></nav>
+  </div>
+  <div class="foot-base"><span id="foot-meta"></span></div>
+</footer>
+
+<script src="assets/dados.js"></script>
+<script src="assets/mapa-uf.js"></script>
+<script src="assets/comum.js"></script>
+<script>
+
+const T = CASOS;
+
+document.getElementById("n-casos").textContent = T.length;
+document.getElementById("n-estados").textContent = unicos(T,"uf");
+document.getElementById("n-atos").textContent = new Set(T.map(c=>c.ato)).size;
+document.getElementById("n-titulos").textContent = new Set(T.map(obraDe)).size;
+document.getElementById("n-verif").textContent = T.filter(verificado).length;
+{const np=CASOS.filter(c=>c.verificado!=="Sim").length; const el=document.getElementById("transp");
+ if(el) el.innerHTML = np ? `<b>${np} dos ${CASOS.length} registros estão parcialmente verificados.</b> Eles entram nos totais e trazem essa marcação na ficha. O que falta apurar em cada um, e por quê, está em <a href="pendencias.html">O que falta apurar</a>.` : "";}
+{
+  const ord = MODALIDADES.map(m=>[m,conta(T,"modalidade",m)]).filter(x=>x[1]).sort((a,b)=>b[1]-a[1]);
+  const top = ord.slice(0,2).map(x=>x[0].toLowerCase());
+  const exec = conta(T,"estagio","Execução comprovada");
+  document.getElementById("txt-mod").textContent = `${top[0][0].toUpperCase()+top[0].slice(1)} e ${top[1]} lideram o catálogo. Em ${exec} dos ${T.length} registros a execução está comprovada; nos demais, houve ordem, pedido ou pressão sem prova de que o livro saiu da estante.`;
+}
+
+/* barras clicáveis de um eixo: lista fechada, inclui zeros de propósito */
+function barras(alvo, lista, campo, param, cor){
+  const max = Math.max(...lista.map(v=>conta(T,campo,v)),1);
+  document.getElementById(alvo).innerHTML = lista.map(v=>{
+    const n = conta(T,campo,v);
+    if(n===0) return `<div class="bar-row"><div class="bar-lab zero">${v}</div>
+      <div class="bar-track"><div class="bar-ghost"></div></div><div class="bar-val zero">0</div></div>`;
+    return `<a class="bar-row clic" style="text-decoration:none;color:inherit" href="casos.html?${param}=${encodeURIComponent(v)}">
+      <div class="bar-lab">${v}</div>
+      <div class="bar-track"><div class="bar-fill" style="width:${n/max*100}%;background:${cor}"></div></div>
+      <div class="bar-val">${n}</div></a>`;
+  }).join("");
+}
+barras("bars-mod", MODALIDADES, "modalidade", "mod", "var(--verm)");
+barras("bars-est", ESTAGIOS, "estagio", "est", "var(--vinho)");
+barras("bars-sit", SITUACOES, "situacao", "sit", "var(--azul)");
+
+/* instância por ato: agrupa as expressões do campo "quem" em tipos */
+const instancia = c => {
+  const q = c.quem||"";
+  if(/vereador|deputad|parlamentar/i.test(q)) return "Parlamentar (pressão ou pedido)";
+  if(/Secretaria Municipal|prefeitura/i.test(q)) return "Prefeitura ou secretaria municipal";
+  if(/Secretaria estadual|Governo estadual|Coordenadoria/i.test(q)) return "Governo estadual, secretaria ou coordenadoria";
+  if(/Funda/i.test(q)) return "Fundação pública";
+  return "Instituição de ensino";
+};
+const atosUnicos = Object.values(T.reduce((o,c)=>(o[c.ato] ||= c, o), {}));
+const porInst = {}; atosUnicos.forEach(c=>{ const k=instancia(c); porInst[k]=(porInst[k]||0)+1; });
+const insts = Object.keys(porInst).sort((a,b)=>porInst[b]-porInst[a]);
+const maxQ = Math.max(...Object.values(porInst),1);
+document.getElementById("bars-quem").innerHTML = insts.map(q=>`<div class="bar-row"><div class="bar-lab">${q}</div>
+    <div class="bar-track"><div class="bar-fill" style="width:${porInst[q]/maxQ*100}%;background:var(--azul)"></div></div>
+    <div class="bar-val">${porInst[q]}</div></div>`).join("");
+
+const a0 = 2019, a1 = Math.max(...T.map(c=>+ano(c)), +ATUALIZADO.slice(0,4), a0);
+const anos = Array.from({length:a1-a0+1},(_,i)=>String(a0+i));
+document.getElementById("tl-labels").style.gridTemplateColumns = `repeat(${anos.length},1fr)`;
+document.getElementById("tl").style.gridTemplateColumns = `repeat(${anos.length},1fr)`;
+const nUF = unicos(T.filter(c=>c.uf!=="DF"),"uf"), temDF = T.some(c=>c.uf==="DF");
+document.getElementById("txt-onde").textContent = `${nUF} estados${temDF?" e o Distrito Federal":""}.`;
+const maxA = Math.max(...anos.map(a=>T.filter(c=>ano(c)===a).length),1);
+document.getElementById("tl").innerHTML = anos.map(a=>{
+  const n = T.filter(c=>ano(c)===a).length;
+  const nome = `${a}: ${n} ${n===1?"registro":"registros"}`;
+  const miolo = `<div class="tlnum" aria-hidden="true">${n}</div><div class="tlfill" style="height:${n/maxA*100}%"></div>`;
+  return n ? `<a class="tlbar" style="text-decoration:none" href="casos.html?ano=${a}" aria-label="${nome}">${miolo}</a>`
+           : `<div class="tlbar" role="img" aria-label="${nome}">${miolo}</div>`;
+}).join("");
+document.getElementById("tl-labels").innerHTML = anos.map(a=>`<div class="tlyear">${a}</div>`).join("");
+
+/* mapa real por UF, em escala de azul */
+(function(){
+  const svg=document.getElementById("mapa-br");
+  const porUF={}; T.forEach(c=>porUF[c.uf]=(porUF[c.uf]||0)+1);
+  const max=Math.max(1,...Object.values(porUF));
+  const cor=n=> n===0?"#F1F2FC": n/max>.66?"#1B2BD6": n/max>.33?"#5561E2": "#B9BFF5";
+  let html="";
+  Object.entries(MAPA_BR).forEach(([uf,m])=>{
+    const n=porUF[uf]||0, lab=`${m.n}: ${n} ${n===1?"registro":"registros"}`;
+    const p=`<path d="${m.d}" fill="${cor(n)}"><title>${lab}</title></path>`;
+    html+= n ? `<a href="casos.html?uf=${uf}" aria-label="${lab}">${p}</a>` : `<g aria-hidden="true">${p}</g>`;
+  });
+  Object.entries(MAPA_BR).forEach(([uf,m])=>{
+    const n=porUF[uf]; if(!n) return;
+    const [x,y]=uf==="DF"?[m.c[0]+24,m.c[1]-10]:m.c;
+    html+=`<text x="${x}" y="${y+5}" class="${n/max>.33&&uf!=="DF"?"":"esc"}">${uf} ${n}</text>`;
+  });
+  svg.insertAdjacentHTML("beforeend",html);
+  document.getElementById("mapa-leg").innerHTML=[["#F1F2FC","nenhum registro"],["#B9BFF5","poucos"],["#5561E2","intermediário"],["#1B2BD6",`até ${max}`]]
+    .map(([c,t])=>`<span><i style="background:${c}"></i>${t}</span>`).join("");
+})();
+
+/* idade do livro no dia da ordem */
+{
+  const dataOrdem = t => +T.filter(c=>obraDe(c)===t).map(ano).sort()[0];
+  const idades = Object.entries(LIVROS).filter(([t,L])=>L.ano && T.some(c=>obraDe(c)===t))
+    .map(([t,L])=>({t, a: dataOrdem(t)-L.ano, pub:L.ano})).sort((x,y)=>y.a-x.a);
+  const maxI = Math.max(1,...idades.map(o=>o.a));
+  document.getElementById("idades").innerHTML = idades.map((o,i)=>
+    `<a class="idade-row ${i===0?"destaque":""}" href="${urlLivro(o.t)}" aria-label="${esc(o.t.split(":")[0])} ${o.a} anos entre a publicação de ${esc(o.t)}, em ${o.pub}, e o episódio">
+       <span class="t">${esc(o.t.split(":")[0])}</span><span class="trilho"><span class="barra" style="width:${Math.max(o.a/maxI*100,1)}%;display:block"></span></span>
+       <span class="v">${o.a}</span></a>`).join("");
+}
+
+/* contexto fora do acervo */
+document.getElementById("contexto").innerHTML = [...CONTEXTO].sort((a,b)=>a.data.localeCompare(b.data)).map(x=>`
+  <div class="ctx"><div class="d">${dataLegivel(x)} · ${x.uf}</div>
+    <div><h3>${esc(x.titulo)}</h3><div class="g">${esc(x.governo)}</div><p>${esc(x.texto)}</p>
+    <div class="f">${x.fontes.map(k=>FONTES[k]).filter(Boolean).map(f=>`<a href="${esc(f.url)}" target="_blank" rel="noopener">${esc(f.veic)}</a>`).join(" · ")}</div></div></div>`).join("");
+
+const nivel = n => n>=5?"n5":n>=3?"n3":n>=1?"n1":"n0";
+document.getElementById("eixos").innerHTML = EIXOS.map(e=>{
+  const n = conta(T,"eixo",e);
+  if(n===0) return `<div class="eixo n0"><div class="n">0</div><div class="l">${e}</div></div>`;
+  return `<a class="eixo clic ${nivel(n)}" href="casos.html?eixo=${encodeURIComponent(e)}"><div class="n">${n}</div><div class="l">${e}</div></a>`;
+}).join("");
+
+montarRodape();
+</script>
+</body>
+</html>

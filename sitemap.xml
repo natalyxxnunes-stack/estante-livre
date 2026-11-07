@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://estante-livre-br.vercel.app/</loc><lastmod>2026-11-06</lastmod></url>
+  <url><loc>https://estante-livre-br.vercel.app/painel.html</loc><lastmod>2026-11-06</lastmod></url>
   <url><loc>https://estante-livre-br.vercel.app/casos.html</loc><lastmod>2026-11-06</lastmod></url>
   <url><loc>https://estante-livre-br.vercel.app/livros.html</loc><lastmod>2026-11-06</lastmod></url>
   <url><loc>https://estante-livre-br.vercel.app/normas.html</loc><lastmod>2026-11-06</lastmod></url>
@@ -50,6 +51,9 @@
   <url><loc>https://estante-livre-br.vercel.app/casos/el-032.html</loc><lastmod>2026-11-06</lastmod></url>
   <url><loc>https://estante-livre-br.vercel.app/casos/el-033.html</loc><lastmod>2026-11-06</lastmod></url>
   <url><loc>https://estante-livre-br.vercel.app/casos/el-034.html</loc><lastmod>2026-11-06</lastmod></url>
+  <url><loc>https://estante-livre-br.vercel.app/casos/el-035.html</loc><lastmod>2026-11-06</lastmod></url>
+  <url><loc>https://estante-livre-br.vercel.app/casos/el-036.html</loc><lastmod>2026-11-06</lastmod></url>
+  <url><loc>https://estante-livre-br.vercel.app/casos/el-037.html</loc><lastmod>2026-11-06</lastmod></url>
   <url><loc>https://estante-livre-br.vercel.app/livros/o-avesso-da-pele.html</loc><lastmod>2026-11-06</lastmod></url>
   <url><loc>https://estante-livre-br.vercel.app/livros/it-a-coisa.html</loc><lastmod>2026-11-06</lastmod></url>
   <url><loc>https://estante-livre-br.vercel.app/livros/laranja-mecanica.html</loc><lastmod>2026-11-06</lastmod></url>
@@ -79,6 +83,9 @@
   <url><loc>https://estante-livre-br.vercel.app/livros/a-bolsa-amarela.html</loc><lastmod>2026-11-06</lastmod></url>
   <url><loc>https://estante-livre-br.vercel.app/livros/pipoca-e-picole.html</loc><lastmod>2026-11-06</lastmod></url>
   <url><loc>https://estante-livre-br.vercel.app/livros/veto-a-lista-de-doze-livros-do-projeto-remicao-em-rede.html</loc><lastmod>2026-11-06</lastmod></url>
+  <url><loc>https://estante-livre-br.vercel.app/livros/o-bebe-vem-com-a-cegonha.html</loc><lastmod>2026-11-06</lastmod></url>
+  <url><loc>https://estante-livre-br.vercel.app/livros/aparelho-sexual-e-cia.html</loc><lastmod>2026-11-06</lastmod></url>
+  <url><loc>https://estante-livre-br.vercel.app/livros/as-melhores-do-analista-de-bage.html</loc><lastmod>2026-11-06</lastmod></url>
   <url><loc>https://estante-livre-br.vercel.app/atos/rs-2024.html</loc><lastmod>2026-11-06</lastmod></url>
   <url><loc>https://estante-livre-br.vercel.app/atos/pr-2024.html</loc><lastmod>2026-11-06</lastmod></url>
   <url><loc>https://estante-livre-br.vercel.app/atos/go-2024.html</loc><lastmod>2026-11-06</lastmod></url>
@@ -96,4 +103,6 @@
   <url><loc>https://estante-livre-br.vercel.app/atos/tau-2025.html</loc><lastmod>2026-11-06</lastmod></url>
   <url><loc>https://estante-livre-br.vercel.app/atos/funap-2020.html</loc><lastmod>2026-11-06</lastmod></url>
   <url><loc>https://estante-livre-br.vercel.app/atos/lim-2019.html</loc><lastmod>2026-11-06</lastmod></url>
+  <url><loc>https://estante-livre-br.vercel.app/atos/lon-2026.html</loc><lastmod>2026-11-06</lastmod></url>
+  <url><loc>https://estante-livre-br.vercel.app/atos/can-2024.html</loc><lastmod>2026-11-06</lastmod></url>
 </urlset>

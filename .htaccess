@@ -1,0 +1,66 @@
+# Estante Livre · configuração para hospedagem Apache (HostGator)
+# Cada bloco só vale se o módulo existir no servidor; sem o módulo, a regra é ignorada.
+
+AddDefaultCharset UTF-8
+DirectoryIndex index.html
+
+# Página de erro própria (caminho absoluto a partir da raiz do domínio)
+ErrorDocument 404 /404.html
+
+# Força HTTPS e endereço sem "www". Ative depois que o SSL gratuito estiver emitido:
+# apague o "#" das quatro linhas abaixo.
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  # RewriteCond %{HTTPS} off [OR]
+  # RewriteCond %{HTTP_HOST} ^www\. [NC]
+  # RewriteCond %{HTTP_HOST} ^(?:www\.)?(.+)$ [NC]
+  # RewriteRule ^ https://%1%{REQUEST_URI} [L,R=301]
+</IfModule>
+
+# Tipos de arquivo
+<IfModule mod_mime.c>
+  AddType font/woff2 .woff2
+  AddType application/json .json
+  AddType text/csv .csv
+  AddType image/svg+xml .svg
+  AddType text/plain .txt
+</IfModule>
+
+# Compressão
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css text/plain text/csv application/javascript text/javascript application/json image/svg+xml application/xml
+</IfModule>
+
+# Cache: fontes e capas longas; páginas e dados curtos, para atualizações aparecerem logo
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresDefault "access plus 1 hour"
+  ExpiresByType text/html "access plus 0 seconds"
+  ExpiresByType application/json "access plus 1 hour"
+  ExpiresByType text/csv "access plus 1 hour"
+  ExpiresByType text/css "access plus 1 day"
+  ExpiresByType application/javascript "access plus 1 hour"
+  ExpiresByType text/javascript "access plus 1 hour"
+  ExpiresByType font/woff2 "access plus 1 year"
+  ExpiresByType image/jpeg "access plus 1 month"
+  ExpiresByType image/png "access plus 1 month"
+  ExpiresByType image/svg+xml "access plus 1 month"
+  ExpiresByType application/pdf "access plus 1 week"
+</IfModule>
+
+# Segurança básica
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set X-Frame-Options "SAMEORIGIN"
+  <FilesMatch "\.(woff2)$">
+    Header set Access-Control-Allow-Origin "*"
+  </FilesMatch>
+</IfModule>
+
+# Arquivos internos que não devem ser servidos, caso subam por engano
+<FilesMatch "^(README\.md|CITATION\.cff|vercel\.json|\.zenodo\.json|package(-lock)?\.json)$">
+  <IfModule mod_authz_core.c>
+    Require all denied
+  </IfModule>
+</FilesMatch>

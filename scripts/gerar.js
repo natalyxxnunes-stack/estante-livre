@@ -26,18 +26,22 @@ function contexto(raiz){
     console
   };
   vm.createContext(ctx);
-  vm.runInContext(ler("assets/dados.js") + "\n;this.__D={ATOS,AGENTES,PAPEIS,TIPOS_PAPEL,CASOS,LIVROS,FONTES,MODALIDADES,ESTAGIOS,SITUACOES,EIXOS,CORRECOES,RESPONSABILIDADES,DOCUMENTOS_ATOS,ATUALIZADO,CONTATO,OBSTACULOS,LACUNAS,NIVEIS,CHEGADAS,NORMAS,SITUACOES_NORMA,VIAS_REVERSAO};", ctx);
+  vm.runInContext(ler("assets/dados.js") + "\n;this.__D={ATOS,AGENTES,PAPEIS,TIPOS_PAPEL,CASOS,LIVROS,FONTES,MODALIDADES,ESTAGIOS,SITUACOES,EIXOS,CORRECOES,RESPONSABILIDADES,DOCUMENTOS_ATOS,ATUALIZADO,CONTATO,OBSTACULOS,LACUNAS,NIVEIS,CHEGADAS,NORMAS,SITUACOES_NORMA,VIAS_REVERSAO,CONTEXTO_PARTIDARIO};", ctx);
   vm.runInContext(ler("assets/comum.js") + "\n;this.__F={esc,obraDe,slug,ordenar,casoHTML,livroHTML,casoCardHTML,livroCardHTML,dataLegivel,urlCaso,urlLivro,urlAto,agentesDoAto,nivelVerif};", ctx);
   return Object.assign(ctx.__F, {__D: ctx.__D});
 }
 const R = contexto("");      // páginas na raiz
 const S = contexto("../");   // páginas em casos/ e livros/
 const D = R.__D;
-const { CASOS, LIVROS, FONTES, MODALIDADES, ESTAGIOS, SITUACOES, EIXOS, ATUALIZADO, ATOS, AGENTES, PAPEIS, TIPOS_PAPEL, OBSTACULOS, LACUNAS, CHEGADAS, NORMAS, SITUACOES_NORMA, VIAS_REVERSAO } = D;
+const { CASOS, LIVROS, FONTES, MODALIDADES, ESTAGIOS, SITUACOES, EIXOS, ATUALIZADO, ATOS, AGENTES, PAPEIS, TIPOS_PAPEL, OBSTACULOS, LACUNAS, CHEGADAS, NORMAS, SITUACOES_NORMA, VIAS_REVERSAO, CONTEXTO_PARTIDARIO } = D;
 const esc = R.esc, obraDe = R.obraDe, slug = R.slug;
 
 /* ---------- 1. validação ---------- */
 const erros = [];
+for(const [i,x] of (CONTEXTO_PARTIDARIO||[]).entries()){
+  if(!x.pessoa || !x.partido || !x.cobertura || !x.status || !Array.isArray(x.fontes) || !x.fontes.length) erros.push(`CONTEXTO_PARTIDARIO[${i}]: campos obrigatórios ausentes`);
+  for(const url of x.fontes||[]){ try{ const u=new URL(url); if(!["https:","http:"].includes(u.protocol)) erros.push(`CONTEXTO_PARTIDARIO[${i}]: protocolo inválido`); }catch{ erros.push(`CONTEXTO_PARTIDARIO[${i}]: URL inválida: ${url}`); } }
+}
 const ids = new Set();
 const OBRIG = ["id","data","ato","titulo","uf","tipo","rede","quem","alegacao","eixo","modalidade","estagio","situacao","desfecho","verificado","fontes"];
 for(const c of CASOS){
@@ -61,6 +65,7 @@ for(const n of NORMAS){
   if(n.ato && !ATOS[n.ato]) erros.push(`NORMAS ${n.id}: ato inexistente: ${n.ato}`);
   if(n.precedente && !NORMAS.some(x=>x.id===n.precedente)) erros.push(`NORMAS ${n.id}: precedente inexistente: ${n.precedente}`);
 }
+for(const [t,l] of Object.entries(LIVROS)) if(l.chegadaFonte && !FONTES[l.chegadaFonte]) erros.push(`LIVROS “${t}”: fonte da chegada inexistente: ${l.chegadaFonte}`);
 for(const [t,l] of Object.entries(LIVROS)) if(!CHEGADAS.includes(l.chegada)) erros.push(`LIVROS “${t}”: chegada fora da lista: ${l.chegada}`);
 const obras = [...new Set(CASOS.map(obraDe))];
 const slugs = {};
@@ -94,9 +99,15 @@ for(const [k,L] of Object.entries(LACUNAS)){
 if(erros.length){ console.error("Erros nos dados:\n- " + erros.join("\n- ")); process.exit(1); }
 
 /* ---------- 2. cabeçalho, menu e rodapé ---------- */
-const NAV = [["index.html","Painel"],["casos.html","Casos"],["livros.html","Livros"],["atos.html","Atos"],["normas.html","Normas"],["analises.html","Análises"],
-  ["historia.html","História"],["mundo.html","Mundo"],["metodologia.html","Metodologia"],["sobre.html","Sobre"]];
+const NAV = [["casos.html","Casos"],["livros.html","Livros"],["atos.html","Atos"],["normas.html","Normas"],["painel.html","Dados"],
+  ["analises.html","Análises"],["historia.html","História"],["mundo.html","Mundo"],["metodologia.html","Metodologia"],["sobre.html","Sobre"]];
 const TAGLINE = "Observatório de censura de livros · quem mandou tirar da estante, com qual ato, e o que aconteceu depois";
+/* colunas do rodapé: [título, [[href, nome], ...]] */
+const RODAPE = [
+  ["Acervo", [["casos.html","Casos"],["livros.html","Livros"],["atos.html","Atos"],["normas.html","Normas"],["painel.html","Painel de dados"]]],
+  ["Leitura", [["analises.html","Análises"],["historia.html","História"],["mundo.html","Mundo"],["glossario.html","Glossário"],["cobertura.html","Cobertura"]]],
+  ["Projeto", [["metodologia.html","Metodologia"],["pendencias.html","O que falta apurar"],["sobre.html","Sobre e contato"],["imprensa.html","Para jornalistas"],["guia.html","Guia para escolas"],["relate.html","Relate um caso"]]]
+];
 
 function cabecalho(raiz, atual){
   const links = NAV.map(([href,nome]) => href===atual
@@ -105,20 +116,26 @@ function cabecalho(raiz, atual){
   return `<header class="topo">
   <div class="topo-in">
     <a class="logo" href="${raiz}index.html" aria-label="Estante Livre, página inicial">Estante <span class="redact">Livre<span class="bar" aria-hidden="true"></span></span></a>
-    <div class="tagline">${TAGLINE}</div>
-    <nav class="nav" aria-label="Seções">
+    <button class="menu-bt" type="button" aria-expanded="false" aria-controls="nav-principal">Menu</button>
+    <nav class="nav" id="nav-principal" aria-label="Seções">
       ${links}
     </nav>
   </div>
 </header>`;
 }
 function rodape(raiz){
+  const cols = RODAPE.map(([t,ls]) => `<nav class="foot-col" aria-label="${t}"><p class="foot-tit">${t}</p>${ls.map(([h,n])=>`<a href="${raiz}${h}">${n}</a>`).join("")}</nav>`).join("\n    ");
   return `<footer class="foot">
   <div class="foot-in">
-    <span>Estante Livre · um projeto de Nataly Nunes Pinto</span>
-    <span class="foot-links"><a href="${raiz}glossario.html">Glossário</a><a href="${raiz}cobertura.html">Cobertura</a><a href="${raiz}pendencias.html">O que falta apurar</a><a href="${raiz}guia.html">Guia para escolas</a><a href="${raiz}imprensa.html">Para jornalistas</a><a href="${raiz}relate.html">Relate um caso</a><a href="${raiz}dados/estante-livre-casos.csv">Dados abertos</a><a href="${raiz}sobre.html">Contato</a></span>
-    <span id="foot-meta"></span>
+    <div class="foot-marca">
+      <a class="logo logo-s" href="${raiz}index.html" aria-label="Estante Livre, página inicial">Estante <span class="redact">Livre<span class="bar" aria-hidden="true"></span></span></a>
+      <p>${TAGLINE}.</p>
+      <p>Projeto independente de Nataly Nunes Pinto. Dados e textos sob licença CC BY 4.0.</p>
+      <p class="foot-dados"><a href="${raiz}dados/estante-livre-casos.csv">Casos em CSV</a> · <a href="${raiz}dados/estante-livre-casos.json">JSON</a> · <a href="${raiz}dados/estante-livre-normas.csv">Normas em CSV</a></p>
+    </div>
+    ${cols}
   </div>
+  <div class="foot-base"><span id="foot-meta"></span></div>
 </footer>`;
 }
 const blocoGerado = (html, nome, conteudo) => {
@@ -145,12 +162,13 @@ const DATASET = {"@context":"https://schema.org","@type":"Dataset",
     {"@type":"DataDownload","encodingFormat":"text/csv","contentUrl":SITE+"/dados/estante-livre-casos.csv"},
     {"@type":"DataDownload","encodingFormat":"application/json","contentUrl":SITE+"/dados/estante-livre-casos.json"}]};
 
-const PAGINAS = ["index.html","casos.html","livros.html","normas.html","guia.html","imprensa.html","analises.html","historia.html","mundo.html","glossario.html","metodologia.html","sobre.html","cobertura.html","relate.html"];
+const PAGINAS = ["index.html","painel.html","casos.html","livros.html","normas.html","guia.html","imprensa.html","analises.html","historia.html","mundo.html","glossario.html","metodologia.html","sobre.html","cobertura.html","relate.html"];
 for(const f of PAGINAS){
   let h = ler(f);
   h = h.replace(/<header class="topo">[\s\S]*?<\/header>/, cabecalho("", f));
   h = h.replace(/<footer class="(?:foot|rodape)">[\s\S]*?<\/footer>/, rodape(""));
   h = h.split("https://estante-livre-br.vercel.app").join(SITE);
+  if(!h.includes('rel="preload" href="assets/fontes/Fraunces.woff2"')) h = h.replace('<link rel="stylesheet" href="assets/estilo.css">', '<link rel="preload" href="assets/fontes/Fraunces.woff2" as="font" type="font/woff2" crossorigin>\n<link rel="stylesheet" href="assets/estilo.css">');
   if(f==="index.html") h = comJsonLd(h, {"@context":"https://schema.org","@graph":[
     {"@type":"WebSite","name":"Estante Livre","url":SITE+"/","inLanguage":"pt-BR","publisher":ORG}, ORG]});
   if(f==="casos.html"){
@@ -192,6 +210,7 @@ ${url?`<link rel="canonical" href="${url}">`:`<meta name="robots" content="noind
 ${url?`<meta property="og:url" content="${url}">`:""}
 <meta property="og:image" content="${SITE}/og-estante-livre.jpg">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="${raiz}assets/fontes/Fraunces.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="${raiz}assets/estilo.css">
 ${ld?jsonld(ld):""}
 </head>
@@ -251,7 +270,7 @@ for(const c of CASOS){
     "citation":fontesLd};
   const corpo = `<div class="wrap">
   <div class="hero-pg">
-    <p class="migalha"><a href="../index.html">Painel</a> › <a href="../casos.html">Casos</a> › ${c.id}</p>
+    <nav class="migalha" aria-label="Você está em"><a href="../index.html">Início</a> › <a href="../casos.html">Casos</a> › <span aria-current="page">${c.id}</span></nav>
     <p class="resumo-fato">${esc(resumo)}</p>
   </div>
 </div>
@@ -285,7 +304,7 @@ for(const obra of obras){
     "subjectOf":ocs.map(o=>({"@type":"Article","url":`${SITE}/casos/${o.id.toLowerCase()}.html`,"name":`${o.id} · ${o.uf}, ${o.data.slice(0,4)}`}))};
   const corpo = `<div class="wrap">
   <div class="hero-pg">
-    <p class="migalha"><a href="../index.html">Painel</a> › <a href="../livros.html">Livros</a> › ${esc(curto(obra))}</p>
+    <nav class="migalha" aria-label="Você está em"><a href="../index.html">Início</a> › <a href="../livros.html">Livros</a> › <span aria-current="page">${esc(curto(obra))}</span></nav>
   </div>
 </div>
 <div class="wrap">
@@ -322,7 +341,7 @@ for(const [k,A] of Object.entries(ATOS)){
   const linha = (rot,v)=> v?`<div class="resp-linha"><span class="k">${rot}</span><div>${esc(v)}</div></div>`:"";
   const corpo = `<div class="wrap">
   <div class="hero-pg">
-    <p class="migalha"><a href="../index.html">Painel</a> › <a href="../atos.html">Atos</a> › ${esc(k)}</p>
+    <nav class="migalha" aria-label="Você está em"><a href="../index.html">Início</a> › <a href="../atos.html">Atos</a> › <span aria-current="page">${esc(k)}</span></nav>
     <h1>${esc(A.nome)}</h1>
     <p class="lede">${esc([A.cidade,A.uf].filter(Boolean).join(", "))} · ${R.dataLegivel(A)} · biblioteca ${esc(A.tipo.toLowerCase())}, rede ${esc(A.rede.toLowerCase())}${A.governo?` · ${esc(A.governo)}`:""}</p>
   </div>
@@ -397,7 +416,7 @@ for(const [k,A] of Object.entries(ATOS)){
         <span class="lac-meta">${esc([A.cidade,A.uf].filter(Boolean).join(", "))} · ${A.data.slice(0,4)} · ${regs.length} ${regs.length>1?"registros":"registro"}${nParc?` · <b>${nParc} parcialmente ${nParc>1?"verificados":"verificado"}</b>`:" · verificado"}</span></div>
       <div class="lac-tags">${L.obstaculos.map(o=>`<span class="lac-tag">${esc(o)}</span>`).join("")}</div>
       <div class="lac-bloco"><span class="k">O QUE FALTA</span>${textos.map(t=>`<p>${esc(t)}${textos.length>1||pend.length<regs.length?` <span class="lac-ids">(${porTexto(t)})</span>`:""}</p>`).join("")}</div>
-      <div class="lac-bloco"><span class="k">CAMINHO PARA FECHAR</span><p>${esc(L.caminho)}</p></div>
+      <div class="lac-bloco"><span class="k">COMO QUALQUER PESSOA PODE FECHAR</span><p>${esc(L.caminho)}</p></div>
     </article>`;
   };
   const parc = atosPend.filter(k=>CASOS.some(c=>c.ato===k && c.verificado!=="Sim"));
@@ -405,7 +424,7 @@ for(const [k,A] of Object.entries(ATOS)){
   const corpo = `<div class="wrap">
   <div class="hero-pg">
     <h1>O que falta apurar</h1>
-    <p class="lede">O catálogo publica o que está documentado e também o que ainda não conseguiu comprovar. Esta página reúne as lacunas de todos os registros, o tipo de obstáculo de cada uma e o caminho para fechá-la. Quando uma lacuna é fechada, a mudança entra no <a href="metodologia.html">registro público de correções</a>.</p>
+    <p class="lede">O catálogo publica o que está documentado e também o que ainda não conseguiu comprovar. Esta página reúne as lacunas de todos os registros, o tipo de obstáculo de cada uma e o documento que a fecharia. O observatório trabalha só com fontes públicas; quem obtiver um desses documentos pode enviá-lo. Quando uma lacuna é fechada, a mudança entra no <a href="metodologia.html">registro público de correções</a>.</p>
   </div>
   <div class="lac-nums">
     <div><b>${parciais.length}</b><span>de ${CASOS.length} registros parcialmente verificados</span></div>
@@ -453,6 +472,8 @@ const linhas = R.ordenar(CASOS,"id").map(c=>{
   const cols = ["id","esfera","uf","cidade","tipo","numero","data","autoria","partido","resumo","situacao","situacaoEm","citaLivro","precedente","ato","nota","fontes"];
   const cel = v => `"${(v??"").toString().replace(/"/g,'""')}"`;
   gravar("dados/estante-livre-normas.csv", "\uFEFF" + [cols.join(","), ...NORMAS.map(n=>cols.map(k=>cel(k==="fontes" ? n.fontes.map(f=>FONTES[f].url).join("; ") : n[k])).join(","))].join("\n") + "\n");
+  const cp = ["pessoa","partido","cobertura","status","fontes"];
+  gravar("dados/estante-livre-contexto-partidario.csv", "\uFEFF" + [cp.join(","), ...(CONTEXTO_PARTIDARIO||[]).map(x=>cp.map(k=>cel(k==="fontes" ? x.fontes.join("; ") : x[k])).join(","))].join("\n") + "\n");
 }
 gravar("dados/estante-livre-casos.json", JSON.stringify({
   nome:"Estante Livre: catálogo de censura de livros em bibliotecas e escolas brasileiras",

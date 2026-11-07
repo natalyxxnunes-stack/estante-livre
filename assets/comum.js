@@ -1,3 +1,18 @@
+/* menu do celular: sem JavaScript, a navegação aparece aberta; com JavaScript, recolhe atrás do botão Menu */
+if(typeof document!=="undefined" && document.documentElement && document.documentElement.classList){
+  document.documentElement.classList.add("js");
+  document.addEventListener("click", e=>{
+    const b = e.target.closest && e.target.closest(".menu-bt"); if(!b) return;
+    const topo = b.closest(".topo"), aberto = topo.classList.toggle("aberto");
+    b.setAttribute("aria-expanded", aberto ? "true" : "false");
+    b.textContent = aberto ? "Fechar" : "Menu";
+  });
+  document.addEventListener("keydown", e=>{
+    if(e.key!=="Escape") return;
+    const t = document.querySelector(".topo.aberto"); if(!t) return;
+    t.classList.remove("aberto"); const b=t.querySelector(".menu-bt"); b.setAttribute("aria-expanded","false"); b.textContent="Menu"; b.focus();
+  });
+}
 /* Estante Livre · funções compartilhadas entre as páginas. */
 
 const norm = s => (s||"").toString().toLowerCase()
@@ -235,7 +250,7 @@ function livroHTML(titulo, ocs, q, nivel){
   const m = t => marcar(t, q);
   const H = nivel || "h3";
   const ref = ocs[0], L = LIVROS[titulo] || {};
-  const ficha = [L.ano, L.genero, ref.editora, L.premio, ref.pnld?"No PNLD":null, (L.chegada && L.chegada!=="Acervo, origem não informada" && !ref.pnld)?"Chegou por: "+L.chegada.toLowerCase():null].filter(Boolean).map(esc).join(" · ");
+  const ficha = [L.ano, L.genero, ref.editora, L.premio, ref.pnld?"No PNLD":null, (L.chegada && L.chegada!=="Acervo, origem não informada" && !ref.pnld)?"Chegou por: "+L.chegada.toLowerCase()+(L.chegadaSegundo?", segundo "+L.chegadaSegundo:""):null].filter(Boolean).map(esc).join(" · ");
   const ufs = [...new Set(ocs.map(o=>o.uf))];
   const motivos = [...new Set(ocs.map(o=>o.eixo))];
   const mods = [...new Set(ocs.map(o=>o.modalidade))];
