@@ -1063,3 +1063,9 @@ section > p:not([class]),.wrap > p:not([class]){max-width:70ch;line-height:1.7}
 .onda-k-aberto{border-top:3px dashed var(--linha-forte);height:0;width:18px}
 .onda-lista{font-size:14px;line-height:1.55;max-width:850px;padding-left:20px}
 .onda-lista li{margin:6px 0}
+/* política e censura */
+.pol-table td small{display:block;color:var(--cinza);font-size:11.5px;line-height:1.45;margin-top:3px}
+.pol-table td small.pol-aviso{color:var(--vinho)}
+.pol-table td:first-child{min-width:170px}
+.pol-escala{min-width:520px}
+#pr-campos .analysis-bar-row,#gv-campos .analysis-bar-row{grid-template-columns:120px 1fr 28px 0}

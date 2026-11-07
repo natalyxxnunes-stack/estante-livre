@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política e censura · Estante Livre</title>
+<meta name="description" content="Quem pressiona, quem decide, quem legisla e quem reage: os partidos e os papéis por trás da censura de livros documentada pelo Estante Livre.">
+<link rel="icon" href="favicon.ico" sizes="32x32">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="theme-color" content="#D62410">
+<link rel="canonical" href="https://estante-livre-br.vercel.app/politica.html">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Estante Livre">
+<meta property="og:title" content="Política e censura · Estante Livre">
+<meta property="og:description" content="Quem pressiona, quem decide, quem legisla e quem reage, partido por partido.">
+<meta property="og:url" content="https://estante-livre-br.vercel.app/politica.html">
+<meta property="og:image" content="https://estante-livre-br.vercel.app/og-estante-livre.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="assets/fontes/Fraunces.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/estilo.css">
+</head>
+<body>
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+<header class="topo">
+  <div class="topo-in">
+    <a class="logo" href="index.html" aria-label="Estante Livre, página inicial">Estante <span class="redact">Livre<span class="bar" aria-hidden="true"></span></span></a>
+    <button class="menu-bt" type="button" aria-expanded="false" aria-controls="nav-principal">Menu</button>
+    <nav class="nav" id="nav-principal" aria-label="Seções">
+      <a href="casos.html">Casos</a>
+      <a href="livros.html">Livros</a>
+      <a href="atos.html">Atos</a>
+      <a href="normas.html">Normas</a>
+      <a href="painel.html">Dados</a>
+      <a href="analises.html">Análises</a>
+      <a href="politica.html" class="on" aria-current="page">Política</a>
+      <a href="historia.html">História</a>
+      <a href="mundo.html">Mundo</a>
+      <a href="metodologia.html">Metodologia</a>
+      <a href="sobre.html">Sobre</a>
+    </nav>
+  </div>
+</header>
+<main id="conteudo" tabindex="-1">
+<div class="wrap">
+ <div class="hero-pg">
+  <p class="kicker" id="pol-kicker">POLÍTICA E CENSURA</p>
+  <h1>Quem tira o livro da estante</h1>
+  <p class="lede">Um livro só sai de uma biblioteca pública quando alguém com poder age. Esta página separa os quatro papéis que aparecem nos casos documentados: quem pressiona, quem decide, quem transforma a pressão em lei e quem reage. Para cada pessoa com mandato, mostramos o partido da época e onde a ciência política situa essa sigla.</p>
+ </div>
+ <div class="analysis-alert"><strong>Como ler esta página.</strong> Os números valem para os episódios do catálogo, que reúne casos documentados por pesquisa e pela imprensa desde 2019. O partido de quem governava não prova quem mandou tirar o livro, e a posição de uma sigla na escala ideológica descreve o partido, não cada filiado. Todo número abaixo é calculado da base e muda quando ela muda.</div>
+
+ <section>
+  <div class="sechead"><span class="kicker">01</span><h2>Quem pressiona</h2></div>
+  <p class="analysis-lead" id="pr-lead"></p>
+  <p id="pr-detalhe"></p>
+  <div class="analysis-metrics">
+   <div><strong id="pr-pessoas">—</strong><span>pessoas com mandato que pressionaram ou pediram providências contra um livro</span></div>
+   <div><strong id="pr-atos">—</strong><span>atos em que essa pressão aparece</span></div>
+   <div><strong id="pr-esq">—</strong><span>dessas pessoas em partidos de esquerda ou centro-esquerda</span></div>
+  </div>
+  <div id="pr-campos" class="analysis-bars" aria-label="Pessoas com mandato que pressionaram, por campo ideológico do partido"></div>
+  <div class="table-wrap"><table class="tab analysis-table pol-table">
+   <thead><tr><th>Quem</th><th>Partido à época</th><th>O que o registro documenta</th><th>O que aconteceu com o livro</th></tr></thead>
+   <tbody id="pr-rows"></tbody>
+  </table></div>
+  <p id="pr-texto"></p>
+ </section>
+
+ <section>
+  <div class="sechead"><span class="kicker">02</span><h2>Quem governava e quem decidiu</h2></div>
+  <p class="analysis-lead" id="gv-lead"></p>
+  <div id="gv-campos" class="analysis-bars" aria-label="Atos por campo ideológico do partido de quem governava"></div>
+  <div class="table-wrap"><table class="tab analysis-table pol-table">
+   <thead><tr><th>Ato</th><th>Governo na época</th><th>Quem decidiu</th><th>Nível da decisão</th><th>Desfecho</th></tr></thead>
+   <tbody id="gv-rows"></tbody>
+  </table></div>
+  <p id="gv-texto"></p>
+  <p class="note">Por que não somamos tudo num gráfico por partido do governador ou prefeito: em outubro de 2026, o catálogo retirou um gráfico assim porque ele atribuía a partidos ordens que os próprios governos desautorizaram, como a do Rio Grande do Sul, revogada pela Secretaria no mesmo dia. A tabela mantém o partido à vista e acrescenta o nível de quem decidiu e o desfecho, que mudam a leitura.</p>
+ </section>
+
+ <section>
+  <div class="sechead"><span class="kicker">03</span><h2>Quem transforma a pressão em lei</h2></div>
+  <p class="analysis-lead" id="lg-lead"></p>
+  <div class="table-wrap"><table class="tab analysis-table pol-table">
+   <thead><tr><th>Norma</th><th>Onde</th><th>Autoria</th><th>Partido</th><th>Situação</th></tr></thead>
+   <tbody id="lg-rows"></tbody>
+  </table></div>
+  <p class="note">Detalhes, textos e a difusão entre os projetos estão na <a href="normas.html">trilha de normas</a>. Quando a fonte não informa o partido do autor, a linha fica sem classificação.</p>
+ </section>
+
+ <section>
+  <div class="sechead"><span class="kicker">04</span><h2>Quem reage</h2></div>
+  <p class="analysis-lead" id="rg-lead"></p>
+  <div class="analysis-grid" id="rg-cards"></div>
+  <p id="rg-texto"></p>
+ </section>
+
+ <section>
+  <div class="sechead"><span class="kicker">05</span><h2>O que esses dados permitem dizer</h2></div>
+  <div class="analysis-unknown">
+   <div><h3>Um padrão na iniciativa</h3><p>No conjunto documentado, quem leva um livro ao debate público como problema é, quase sempre, vereador ou deputado de partido classificado à direita da escala. É um achado sobre a iniciativa política, que costuma começar em vídeo nas redes ou em requerimento, e merece acompanhamento a cada caso novo.</p></div>
+   <div><h3>Um padrão na resposta</h3><p>A decisão costuma ficar com uma secretaria, e a reversão costuma vir rápido, pelo próprio governo ou pela Justiça. A pressão é rápida e pública, e o efeito recai sobre quem está na escola: professores, bibliotecários e estudantes ficam semanas, às vezes anos, sem o livro, mesmo quando a ordem cai.</p></div>
+   <div><h3>O que não sustenta</h3><p>O catálogo não permite dizer que toda censura no Brasil venha de um campo, nem medir a proporção nacional. Casos com repercussão chegam mais à imprensa, e a pesquisa pode deixar escapar episódios. O catálogo também procura retiradas motivadas por críticas vindas de outro campo, como acusações de racismo em clássicos; até a data de corte, nenhum episódio desde 2019 reuniu os três elementos da definição, e isso pode refletir os limites da busca.</p></div>
+   <div><h3>Partido não é pessoa</h3><p>A escala mede onde especialistas situam cada sigla. Um vereador de partido de direita pode ter posições próprias, e partidos mudam: a rodada de 2022 mostra o sistema inteiro andando para a direita e o centro esvaziado. Por isso a página mostra o escore e a rodada de cada sigla.</p></div>
+  </div>
+ </section>
+
+ <section>
+  <div class="sechead"><span class="kicker">06</span><h2>Como classificamos os partidos</h2></div>
+  <p>A posição de cada partido vem dos surveys com cientistas políticos coordenados por Bruno Bolognesi, Ednaldo Ribeiro e Adriano Codato. A base principal é a <a href="https://www.scielo.br/j/op/a/hv8GBg9hfCCZLwcWktfYhtC/?lang=pt" target="_blank" rel="noopener">rodada de 2022</a>, publicada na revista Opinião Pública em 2025, que usa a média ponderada com a rodada anterior. Siglas que não aparecem na rodada de 2022, como o PP e o extinto PSL, usam a <a href="https://www.scielo.br/j/dados/a/zzyM3gzHD4P45WWdytXjZWg/abstract/?lang=pt" target="_blank" rel="noopener">rodada de 2018</a>, publicada na revista Dados em 2023. A escala vai de 0 (extrema esquerda) a 10 (extrema direita), com os cortes definidos pelos autores. Segundo eles, "extrema" indica a posição na escala e não um caráter antissistema.</p>
+  <div class="table-wrap"><table class="tab analysis-table pol-escala">
+   <thead><tr><th>Partido</th><th>Escore</th><th>Rodada</th><th>Campo</th><th>Pessoas no catálogo</th></tr></thead>
+   <tbody id="es-rows"></tbody>
+  </table></div>
+  <p class="note" id="es-nota"></p>
+ </section>
+
+ <section>
+  <div class="sechead"><span class="kicker">07</span><h2>Filiação com data</h2></div>
+  <p>Políticos trocam de partido, e um rótulo errado muda a leitura de um caso. Para os nomes centrais do catálogo, a base registra a filiação no período do episódio e as mudanças posteriores, com a fonte e o grau de certeza. A tabela completa também sai nos <a href="dados/estante-livre-contexto-partidario.csv">dados abertos</a>.</p>
+  <div class="table-wrap"><table class="tab analysis-table pol-table">
+   <thead><tr><th>Pessoa</th><th>Filiação</th><th>Observação</th><th>Grau de certeza</th></tr></thead>
+   <tbody id="cp-rows"></tbody>
+  </table></div>
+ </section>
+</div>
+</main>
+<footer class="foot">
+  <div class="foot-in">
+    <div class="foot-marca">
+      <a class="logo logo-s" href="index.html" aria-label="Estante Livre, página inicial">Estante <span class="redact">Livre<span class="bar" aria-hidden="true"></span></span></a>
+      <p>Observatório de censura de livros · quem mandou tirar da estante, com qual ato, e o que aconteceu depois.</p>
+      <p>Projeto independente de Nataly Nunes Pinto. Dados e textos sob licença CC BY 4.0.</p>
+      <p class="foot-dados"><a href="dados/estante-livre-casos.csv">Casos em CSV</a> · <a href="dados/estante-livre-casos.json">JSON</a> · <a href="dados/estante-livre-normas.csv">Normas em CSV</a></p>
+    </div>
+    <nav class="foot-col" aria-label="Acervo"><p class="foot-tit">Acervo</p><a href="casos.html">Casos</a><a href="livros.html">Livros</a><a href="atos.html">Atos</a><a href="normas.html">Normas</a><a href="painel.html">Painel de dados</a></nav>
+    <nav class="foot-col" aria-label="Leitura"><p class="foot-tit">Leitura</p><a href="analises.html">Análises</a><a href="politica.html">Política e censura</a><a href="historia.html">História</a><a href="mundo.html">Mundo</a><a href="glossario.html">Glossário</a><a href="cobertura.html">Cobertura</a></nav>
+    <nav class="foot-col" aria-label="Projeto"><p class="foot-tit">Projeto</p><a href="metodologia.html">Metodologia</a><a href="pendencias.html">O que falta apurar</a><a href="sobre.html">Sobre e contato</a><a href="imprensa.html">Para jornalistas</a><a href="guia.html">Guia para escolas</a><a href="relate.html">Relate um caso</a></nav>
+  </div>
+  <div class="foot-base"><span id="foot-meta"></span></div>
+</footer>
+<script src="assets/dados.js"></script>
+<script src="assets/comum.js"></script>
+<script>
+const el = id => document.getElementById(id);
+const ESQ = ["Extrema esquerda","Esquerda","Centro-esquerda"], DIR = ["Direita","Extrema direita"];
+const ORDEM = [...CAMPOS_ESPECTRO.map(c=>c[0]), "Sem classificação"];
+const fmtEsc = sg => { const e = ESPECTRO[sg]; return e && e.escore!=null ? e.escore.toFixed(2).replace(".",",")+" ("+e.rodada+")" : "sem escore"; };
+const decidiu = k => CASOS.some(c=>c.ato===k && ["Decisão ou ordem","Execução comprovada"].includes(c.estagio));
+const situacoes = k => [...new Set(CASOS.filter(c=>c.ato===k).map(c=>c.situacao))].join(", ");
+const dias = (a,b) => Math.round((new Date(b)-new Date(a))/864e5);
+const tempo = d => d<=1 ? "no mesmo dia" : d<45 ? d+" dias depois" : d<730 ? Math.round(d/30.44)+" meses depois" : (d/365.25).toFixed(1).replace(".",",")+" anos depois";
+const desfecho = k => { const a = ATOS[k]; if(a.reversao) return a.reversao.via+", "+tempo(dias(a.data,a.reversao.data)); return situacoes(k); };
+const lugar = a => [a.cidade, a.uf].filter(Boolean).join(", ");
+const barras = (id, cont, total) => {
+  const mx = Math.max(...Object.values(cont), 1);
+  el(id).innerHTML = ORDEM.map(k=>'<div class="analysis-bar-row"><span>'+esc(k)+'</span><span class="analysis-track"><i style="width:'+((cont[k]||0)/mx*100)+'%"></i></span><b>'+(cont[k]||0)+'</b><small></small></div>').join("");
+};
+const UFN = {AC:"Acre",AL:"Alagoas",AM:"Amazonas",AP:"Amapá",BA:"Bahia",CE:"Ceará",DF:"Distrito Federal",ES:"Espírito Santo",GO:"Goiás",MA:"Maranhão",MG:"Minas Gerais",MS:"Mato Grosso do Sul",MT:"Mato Grosso",PA:"Pará",PB:"Paraíba",PE:"Pernambuco",PI:"Piauí",PR:"Paraná",RJ:"Rio de Janeiro",RN:"Rio Grande do Norte",RO:"Rondônia",RR:"Roraima",RS:"Rio Grande do Sul",SC:"Santa Catarina",SE:"Sergipe",SP:"São Paulo",TO:"Tocantins"};
+const eLista = xs => xs.length<2 ? xs.join("") : xs.slice(0,-1).join(", ")+" e "+xs[xs.length-1];
+const cargoSemPartido = c => (c||"").replace(/\s*\([^)]*\)\s*$/,"");
+const ehMandato = c => /vereador|deputad|prefeit|governador|senador|suplente/i.test(c||"");
+el("pol-kicker").textContent = "POLÍTICA E CENSURA · " + dataCurta(ATUALIZADO).toUpperCase();
+
+/* pessoas por ato, juntando papéis */
+const reg = new Map();
+PAPEIS.forEach(p=>{
+  const g = AGENTES[p.agente]; if(!g) return;
+  const k = p.agente+"|"+p.ato;
+  if(!reg.has(k)) reg.set(k, {agente:p.agente, ato:p.ato, nome:g.nome, tipo:g.tipo, papeis:new Set(), cargo:"", partido:"", partidoNota:"", notas:[]});
+  const r = reg.get(k); r.papeis.add(p.papel);
+  if(p.cargo && !r.cargo) r.cargo = p.cargo;
+  if(p.partido) r.partido = p.partido;
+  if(p.partidoNota) r.partidoNota = p.partidoNota;
+  if(p.nota && !r.notas.includes(p.nota)) r.notas.push(p.nota);
+});
+const todos = [...reg.values()];
+
+/* 01 pressão */
+{
+  const pr = todos.filter(r=>r.partido && ehMandato(r.cargo) && (r.papeis.has("Pressão")||r.papeis.has("Pedido")))
+    .sort((a,b)=>ATOS[a.ato].data.localeCompare(ATOS[b.ato].data) || a.nome.localeCompare(b.nome));
+  const pessoas = new Map(); pr.forEach(r=>pessoas.set(r.agente, r.partido));
+  const cont = {}; pessoas.forEach(sg=>{ const c = campoDe(sg); cont[c]=(cont[c]||0)+1; });
+  const nP = pessoas.size, atosPr = [...new Set(pr.map(r=>r.ato))];
+  const nDir = DIR.reduce((s,k)=>s+(cont[k]||0),0), nCD = cont["Centro-direita"]||0, nSem = cont["Sem classificação"]||0;
+  const nEsq = ESQ.reduce((s,k)=>s+(cont[k]||0),0), nCen = cont["Centro"]||0;
+  const maior = atosPr.map(k=>[k,new Set(pr.filter(r=>r.ato===k).map(r=>r.agente)).size]).sort((x,y)=>y[1]-x[1])[0] || ["",0];
+  const incertos = new Set(pr.filter(r=>/não foi (confirmad|determinad)/.test(r.partidoNota)).map(r=>r.agente)).size;
+  el("pr-pessoas").textContent = nP; el("pr-atos").textContent = atosPr.length; el("pr-esq").textContent = nEsq;
+  const partes = [nDir+" estão em partidos que a escala situa na direita ou na extrema direita"];
+  if(nCD) partes.push(nCD+" na centro-direita"); if(nCen) partes.push(nCen+" no centro"); if(nSem) partes.push(nSem+" em partido ainda sem classificação");
+  el("pr-lead").textContent = `${nP} pessoas com mandato aparecem pressionando ou pedindo providências contra livros em ${atosPr.length} atos. ${partes.join(", ").replace(/, ([^,]*)$/," e $1")}. ${nEsq ? nEsq+" estão em partidos de esquerda ou centro-esquerda." : "Nenhuma está em partido de esquerda ou centro-esquerda."}`;
+  el("pr-detalhe").textContent = `${atosPr.length ? `Como ${maior[1]} pessoas aparecem num único ato, em ${lugar(ATOS[maior[0]])}, vale olhar também por ato: em ${atosPr.filter(k=>pr.some(r=>r.ato===k && DIR.includes(campoDe(r.partido)))).length} dos ${atosPr.length}, ao menos uma das pessoas que pressionaram é de partido de direita ou extrema direita.` : ""}${incertos ? ` Em ${incertos} casos, a filiação na data exata não está confirmada; a tabela indica quais.` : ""}`;
+  barras("pr-campos", cont);
+  el("pr-rows").innerHTML = pr.map(r=>{
+    const a = ATOS[r.ato];
+    return '<tr><td><strong>'+esc(r.nome)+'</strong><small>'+esc(cargoSemPartido(r.cargo))+' · <a href="'+urlAto(r.ato)+'">'+esc(lugar(a))+', '+a.data.slice(0,4)+'</a></small></td>'+
+      '<td><strong>'+esc(r.partido)+'</strong><small>'+esc(campoDe(r.partido))+' · '+fmtEsc(r.partido)+'</small>'+(r.partidoNota?'<small class="pol-aviso">'+esc(r.partidoNota)+'</small>':'')+'</td>'+
+      '<td>'+esc(r.notas[0] || (a.pressao && a.pressao.includes(r.nome.split(" ")[0]) ? a.pressao : [...r.papeis].join(", ")))+'</td>'+
+      '<td>'+esc(desfecho(r.ato))+'</td></tr>';
+  }).join("");
+  const virou = atosPr.filter(decidiu).length;
+  el("pr-texto").textContent = `Em ${virou} dos ${atosPr.length} atos com pressão de quem tem mandato, o livro chegou a ser retirado, suspenso ou mandado recolher. ${atosPr.length-virou===1 ? "No outro, a pressão parou no pedido." : `Nos outros ${atosPr.length-virou}, a pressão parou no pedido.`} O caminho mais comum é o vídeo nas redes ou o requerimento na Câmara, muitas vezes seguido de uma decisão da secretaria em poucos dias. Em Canoinhas, os oito vereadores que assinaram o requerimento pediram revisão e separação do acervo por idade; quem gravou o vídeo jogando os livros no lixo foi a prefeita, e o TCE-SC concluiu depois que eles não chegaram a ser descartados.`;
+}
+
+/* 02 governo e decisão */
+{
+  const nivel = (k,a) => {
+    if(!decidiu(k)) return "Sem decisão de retirada";
+    if(PAPEIS.some(p=>p.ato===k && p.papel==="Decisão" && /governador|prefeit/i.test(p.cargo||""))) return "Chefe do Executivo";
+    if(/regional/i.test(a.quem||"")) return "Órgão regional";
+    if(/Secretaria|Governo estadual|Prefeitura/i.test(a.quem||"")) return "Secretaria";
+    return "Instituição com gestão própria";
+  };
+  const lista = Object.entries(ATOS).sort((x,y)=>x[1].data.localeCompare(y[1].data));
+  const efet = lista.filter(([k])=>decidiu(k));
+  const cont = {}; efet.forEach(([k,a])=>{ const sg = partidoDoGoverno(a.governo); const c = sg ? campoDe(sg) : "Sem classificação"; cont[c]=(cont[c]||0)+1; });
+  barras("gv-campos", cont);
+  const nDir = DIR.reduce((s,k)=>s+(cont[k]||0),0), nCD = cont["Centro-direita"]||0, nEsq = ESQ.reduce((s,k)=>s+(cont[k]||0),0), nSem = cont["Sem classificação"]||0;
+  el("gv-lead").textContent = `Dos ${efet.length} atos que chegaram a uma decisão, ${nDir} aconteceram sob governos de partidos de direita ou extrema direita e ${nCD} sob governos de centro-direita. ${nEsq ? nEsq+" sob governos de esquerda ou centro-esquerda." : "Nenhum aconteceu sob governo de esquerda ou centro-esquerda."} Em ${nSem}, a decisão veio de instituição sem partido identificável no comando, ou o governo não tinha filiação.`;
+  el("gv-rows").innerHTML = lista.map(([k,a])=>{
+    const sg = partidoDoGoverno(a.governo);
+    return '<tr><td><a href="'+urlAto(k)+'">'+esc(a.nome)+'</a><small>'+esc(lugar(a))+' · '+dataCurta(a.data)+'</small></td>'+
+      '<td>'+esc(a.governo||"")+(sg?'<small>'+esc(campoDe(sg))+' · '+fmtEsc(sg)+'</small>':'')+'</td>'+
+      '<td>'+esc(a.quem||"")+'</td><td>'+esc(nivel(k,a))+'</td><td>'+esc(desfecho(k))+'</td></tr>';
+  }).join("");
+  const chefes = efet.filter(([k,a])=>nivel(k,a)==="Chefe do Executivo").map(([k,a])=>{ const p = PAPEIS.find(p=>p.ato===k && p.papel==="Decisão" && /governador|prefeit/i.test(p.cargo||"")); return AGENTES[p.agente].nome+" ("+partidoDoGoverno(a.governo)+", "+lugar(a)+")"; });
+  const desaut = efet.filter(([k,a])=>a.reversao && a.reversao.via==="Recuo da administração" && dias(a.data,a.reversao.data)<=1).map(([k,a])=>UFN[a.uf]||a.uf);
+  el("gv-texto").textContent = `O partido de quem governava conta parte da história. Na maioria dos atos, a ordem saiu de uma secretaria ou de um órgão regional, e o chefe do Executivo só aparece pessoalmente em ${chefes.length}: ${eLista(chefes)}. Em ${desaut.length} (${eLista(desaut)}), o próprio governo desfez a ordem em até um dia, sinal de que ela nasceu num escalão da burocracia sob pressão externa e caiu quando ganhou repercussão.`;
+}
+
+/* 03 normas */
+{
+  const ns = [...NORMAS].sort((a,b)=>a.data.localeCompare(b.data));
+  const cont = {}; ns.forEach(n=>{ const c = n.partido ? campoDe(n.partido) : "Sem classificação"; cont[c]=(cont[c]||0)+1; });
+  const nDir = DIR.reduce((s,k)=>s+(cont[k]||0),0), nEsq = ESQ.reduce((s,k)=>s+(cont[k]||0),0), nSem = cont["Sem classificação"]||0;
+  const vigor = ns.filter(n=>n.situacao==="Em vigor").length;
+  el("lg-lead").textContent = `A pressão virou proposta de lei em ${ns.length} casas legislativas, e ${vigor} dessas normas já estão em vigor. Das ${ns.length}, ${nDir} têm autoria ou relatoria de parlamentares de partidos de direita ou extrema direita; em ${nSem}, a fonte não informa o partido. ${nEsq ? nEsq+" vêm de partidos de esquerda ou centro-esquerda." : "Nenhuma vem de partido de esquerda ou centro-esquerda."}`;
+  el("lg-rows").innerHTML = ns.map(n=>'<tr><td><a href="normas.html#'+n.id+'">'+esc(n.numero)+'</a><small>'+esc(n.tipo)+' · '+dataCurta(n.data)+'</small></td><td>'+esc(n.cidade||n.esfera)+', '+esc(n.uf)+'</td><td>'+esc(n.autoria)+'</td><td>'+(n.partido?'<strong>'+esc(n.partido)+'</strong><small>'+esc(campoDe(n.partido))+'</small>':'<small>não informado</small>')+(n.partidoNota?'<small class="pol-aviso">'+esc(n.partidoNota)+'</small>':'')+'</td><td>'+esc(n.situacao)+'</td></tr>').join("");
+}
+
+/* 04 reação */
+{
+  const efet = Object.entries(ATOS).filter(([k])=>decidiu(k));
+  const rev = efet.filter(([k,a])=>a.reversao), just = rev.filter(([k,a])=>a.reversao.via==="Decisão judicial").length, recuo = rev.length-just;
+  el("rg-lead").textContent = `Das ${efet.length} medidas que saíram do papel, ${rev.length} foram revertidas: ${recuo} pelo próprio governo e ${just} pela Justiça. Nas reversões pela Justiça, quem acionou o tribunal foram cidadãos, Ministério Público, Defensoria e sindicato, e não partidos. Os recuos dos governos vieram, em geral, depois de repercussão na imprensa e de manifestações de editoras e entidades do livro.`;
+  const fisc = todos.filter(r=>r.papeis.has("Denúncia ou fiscalização")||r.papeis.has("Resposta ou reversão"));
+  const grupos = [["Pessoas com mandato", fisc.filter(r=>r.tipo==="Pessoa" && ehMandato(r.cargo))],["Instituições e entidades", fisc.filter(r=>r.tipo!=="Pessoa")],["Juízes e outros agentes públicos", fisc.filter(r=>r.tipo==="Pessoa" && !ehMandato(r.cargo))]];
+  el("rg-cards").innerHTML = grupos.map(([t,rs])=>'<article><h3>'+esc(t)+'</h3><p>'+(rs.length? [...new Map(rs.map(r=>[r.agente,r])).values()].map(r=>esc(r.nome)+(r.partido?' ('+esc(r.partido)+')':'')).join("; ") : "Nenhum registro.")+'</p></article>').join("");
+  el("rg-texto").textContent = "A reação partidária aparece pouco nos documentos: um suplente de vereador do PSOL levou o caso de Santa Catarina ao Ministério Público, e a Câmara de Foz do Iguaçu abriu uma CPI. Na maior parte dos casos, a defesa do livro ficou com quem tem obrigação institucional ou interesse direto, como sindicatos de professores e editoras.";
+}
+
+/* 06 escala */
+{
+  const porSigla = {}; todos.filter(r=>r.partido).forEach(r=>{ (porSigla[r.partido] ||= new Set()).add(r.agente); });
+  const linhas = Object.entries(ESPECTRO).sort((a,b)=>(b[1].escore??-1)-(a[1].escore??-1));
+  el("es-rows").innerHTML = linhas.map(([sg,e])=>'<tr><td><strong>'+esc(sg)+'</strong></td><td>'+(e.escore!=null?e.escore.toFixed(2).replace(".",","):"—")+'</td><td>'+(e.rodada||"—")+'</td><td>'+esc(campoDe(sg))+'</td><td>'+((porSigla[sg]||new Set()).size)+'</td></tr>').join("");
+  el("es-nota").textContent = "PRD: " + ESPECTRO.PRD.nota;
+}
+
+/* 07 filiação */
+el("cp-rows").innerHTML = CONTEXTO_PARTIDARIO.map(x=>'<tr><td><strong>'+esc(x.pessoa)+'</strong></td><td>'+esc(x.partido)+'</td><td>'+esc(x.cobertura)+'<small>'+x.fontes.map((u,i)=>'<a href="'+esc(u)+'" target="_blank" rel="noopener">fonte '+(i+1)+'</a>').join(" · ")+'</small></td><td>'+esc(x.status)+'</td></tr>').join("");
+montarRodape();
+</script>
+</body>
+</html>

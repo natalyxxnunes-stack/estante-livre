@@ -51,6 +51,7 @@
      "tipo": "Pessoa",
      "papel": "Pressão",
      "cargo": "diretora da Escola Estadual Ernesto Alves",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -58,6 +59,7 @@
      "tipo": "Pessoa",
      "papel": "Decisão",
      "cargo": "coordenador da 6ª Coordenadoria Regional de Educação",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -65,6 +67,7 @@
      "tipo": "Pessoa",
      "papel": "Assinatura",
      "cargo": "coordenador da 6ª Coordenadoria Regional de Educação",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -72,6 +75,7 @@
      "tipo": "Instituição",
      "papel": "Execução",
      "cargo": "",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -79,6 +83,7 @@
      "tipo": "Instituição",
      "papel": "Resposta ou reversão",
      "cargo": "",
+     "partido_na_epoca": "",
      "atribuido": false
     }
    ],
@@ -147,6 +152,7 @@
      "tipo": "Instituição",
      "papel": "Decisão",
      "cargo": "",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -154,6 +160,7 @@
      "tipo": "Pessoa",
      "papel": "Assinatura",
      "cargo": "diretor de Educação da Secretaria",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -161,6 +168,7 @@
      "tipo": "Pessoa",
      "papel": "Assinatura",
      "cargo": "chefe do Núcleo Regional de Educação de Curitiba",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -168,6 +176,7 @@
      "tipo": "Instituição",
      "papel": "Execução",
      "cargo": "",
+     "partido_na_epoca": "",
      "atribuido": false
     }
    ],
@@ -242,6 +251,7 @@
      "tipo": "Instituição",
      "papel": "Decisão",
      "cargo": "",
+     "partido_na_epoca": "",
      "atribuido": false
     }
    ],
@@ -304,6 +314,7 @@
      "tipo": "Pessoa",
      "papel": "Pedido",
      "cargo": "deputado estadual (Podemos)",
+     "partido_na_epoca": "Podemos",
      "atribuido": false
     },
     {
@@ -311,6 +322,7 @@
      "tipo": "Pessoa",
      "papel": "Decisão",
      "cargo": "governador de Mato Grosso do Sul",
+     "partido_na_epoca": "PSDB",
      "atribuido": true
     },
     {
@@ -318,6 +330,7 @@
      "tipo": "Instituição",
      "papel": "Execução",
      "cargo": "",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -325,6 +338,7 @@
      "tipo": "Instituição",
      "papel": "Resposta ou reversão",
      "cargo": "",
+     "partido_na_epoca": "",
      "atribuido": false
     }
    ],
@@ -405,6 +419,7 @@
      "tipo": "Instituição",
      "papel": "Decisão",
      "cargo": "",
+     "partido_na_epoca": "",
      "atribuido": false
     }
    ],
@@ -467,6 +482,7 @@
      "tipo": "Instituição",
      "papel": "Decisão",
      "cargo": "",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -474,6 +490,7 @@
      "tipo": "Pessoa",
      "papel": "Assinatura",
      "cargo": "supervisor regional de Educação",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -481,6 +498,7 @@
      "tipo": "Pessoa",
      "papel": "Assinatura",
      "cargo": "integradora regional",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -488,6 +506,7 @@
      "tipo": "Pessoa",
      "papel": "Denúncia ou fiscalização",
      "cargo": "suplente de vereador (PSOL)",
+     "partido_na_epoca": "PSOL",
      "atribuido": false
     }
    ],
@@ -592,6 +611,7 @@
      "tipo": "Instituição",
      "papel": "Decisão",
      "cargo": "",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -599,6 +619,7 @@
      "tipo": "Pessoa",
      "papel": "Assinatura",
      "cargo": "supervisor regional de Educação",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -606,6 +627,7 @@
      "tipo": "Pessoa",
      "papel": "Assinatura",
      "cargo": "integradora regional",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -613,6 +635,7 @@
      "tipo": "Pessoa",
      "papel": "Denúncia ou fiscalização",
      "cargo": "suplente de vereador (PSOL)",
+     "partido_na_epoca": "PSOL",
      "atribuido": false
     }
    ],
@@ -717,6 +740,7 @@
      "tipo": "Instituição",
      "papel": "Decisão",
      "cargo": "",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -724,6 +748,7 @@
      "tipo": "Pessoa",
      "papel": "Assinatura",
      "cargo": "supervisor regional de Educação",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -731,6 +756,7 @@
      "tipo": "Pessoa",
      "papel": "Assinatura",
      "cargo": "integradora regional",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -738,6 +764,7 @@
      "tipo": "Pessoa",
      "papel": "Denúncia ou fiscalização",
      "cargo": "suplente de vereador (PSOL)",
+     "partido_na_epoca": "PSOL",
      "atribuido": false
     }
    ],
@@ -842,6 +869,7 @@
      "tipo": "Instituição",
      "papel": "Decisão",
      "cargo": "",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -849,6 +877,7 @@
      "tipo": "Pessoa",
      "papel": "Assinatura",
      "cargo": "supervisor regional de Educação",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -856,6 +885,7 @@
      "tipo": "Pessoa",
      "papel": "Assinatura",
      "cargo": "integradora regional",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -863,6 +893,7 @@
      "tipo": "Pessoa",
      "papel": "Denúncia ou fiscalização",
      "cargo": "suplente de vereador (PSOL)",
+     "partido_na_epoca": "PSOL",
      "atribuido": false
     }
    ],
@@ -967,6 +998,7 @@
      "tipo": "Instituição",
      "papel": "Decisão",
      "cargo": "",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -974,6 +1006,7 @@
      "tipo": "Pessoa",
      "papel": "Assinatura",
      "cargo": "supervisor regional de Educação",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -981,6 +1014,7 @@
      "tipo": "Pessoa",
      "papel": "Assinatura",
      "cargo": "integradora regional",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -988,6 +1022,7 @@
      "tipo": "Pessoa",
      "papel": "Denúncia ou fiscalização",
      "cargo": "suplente de vereador (PSOL)",
+     "partido_na_epoca": "PSOL",
      "atribuido": false
     }
    ],
@@ -1092,6 +1127,7 @@
      "tipo": "Instituição",
      "papel": "Decisão",
      "cargo": "",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -1099,6 +1135,7 @@
      "tipo": "Pessoa",
      "papel": "Assinatura",
      "cargo": "supervisor regional de Educação",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -1106,6 +1143,7 @@
      "tipo": "Pessoa",
      "papel": "Assinatura",
      "cargo": "integradora regional",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -1113,6 +1151,7 @@
      "tipo": "Pessoa",
      "papel": "Denúncia ou fiscalização",
      "cargo": "suplente de vereador (PSOL)",
+     "partido_na_epoca": "PSOL",
      "atribuido": false
     }
    ],
@@ -1217,6 +1256,7 @@
      "tipo": "Instituição",
      "papel": "Decisão",
      "cargo": "",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -1224,6 +1264,7 @@
      "tipo": "Pessoa",
      "papel": "Assinatura",
      "cargo": "supervisor regional de Educação",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -1231,6 +1272,7 @@
      "tipo": "Pessoa",
      "papel": "Assinatura",
      "cargo": "integradora regional",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -1238,6 +1280,7 @@
      "tipo": "Pessoa",
      "papel": "Denúncia ou fiscalização",
      "cargo": "suplente de vereador (PSOL)",
+     "partido_na_epoca": "PSOL",
      "atribuido": false
     }
    ],
@@ -1342,6 +1385,7 @@
      "tipo": "Instituição",
      "papel": "Decisão",
      "cargo": "",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -1349,6 +1393,7 @@
      "tipo": "Pessoa",
      "papel": "Assinatura",
      "cargo": "supervisor regional de Educação",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -1356,6 +1401,7 @@
      "tipo": "Pessoa",
      "papel": "Assinatura",
      "cargo": "integradora regional",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -1363,6 +1409,7 @@
      "tipo": "Pessoa",
      "papel": "Denúncia ou fiscalização",
      "cargo": "suplente de vereador (PSOL)",
+     "partido_na_epoca": "PSOL",
      "atribuido": false
     }
    ],
@@ -1467,6 +1514,7 @@
      "tipo": "Instituição",
      "papel": "Decisão",
      "cargo": "",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -1474,6 +1522,7 @@
      "tipo": "Pessoa",
      "papel": "Assinatura",
      "cargo": "supervisor regional de Educação",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -1481,6 +1530,7 @@
      "tipo": "Pessoa",
      "papel": "Assinatura",
      "cargo": "integradora regional",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -1488,6 +1538,7 @@
      "tipo": "Pessoa",
      "papel": "Denúncia ou fiscalização",
      "cargo": "suplente de vereador (PSOL)",
+     "partido_na_epoca": "PSOL",
      "atribuido": false
     }
    ],
@@ -1592,6 +1643,7 @@
      "tipo": "Instituição",
      "papel": "Decisão",
      "cargo": "",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -1599,6 +1651,7 @@
      "tipo": "Pessoa",
      "papel": "Decisão",
      "cargo": "secretário de Estado da Educação",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -1606,6 +1659,7 @@
      "tipo": "Pessoa",
      "papel": "Assinatura",
      "cargo": "diretora-geral de Educação",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -1613,6 +1667,7 @@
      "tipo": "Instituição",
      "papel": "Denúncia ou fiscalização",
      "cargo": "",
+     "partido_na_epoca": "",
      "atribuido": false
     }
    ],
@@ -1717,6 +1772,7 @@
      "tipo": "Instituição",
      "papel": "Decisão",
      "cargo": "",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -1724,6 +1780,7 @@
      "tipo": "Pessoa",
      "papel": "Decisão",
      "cargo": "secretário de Estado da Educação",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -1731,6 +1788,7 @@
      "tipo": "Pessoa",
      "papel": "Assinatura",
      "cargo": "diretora-geral de Educação",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -1738,6 +1796,7 @@
      "tipo": "Instituição",
      "papel": "Denúncia ou fiscalização",
      "cargo": "",
+     "partido_na_epoca": "",
      "atribuido": false
     }
    ],
@@ -1842,6 +1901,7 @@
      "tipo": "Instituição",
      "papel": "Decisão",
      "cargo": "",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -1849,6 +1909,7 @@
      "tipo": "Pessoa",
      "papel": "Decisão",
      "cargo": "secretário de Estado da Educação",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -1856,6 +1917,7 @@
      "tipo": "Pessoa",
      "papel": "Assinatura",
      "cargo": "diretora-geral de Educação",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -1863,6 +1925,7 @@
      "tipo": "Instituição",
      "papel": "Denúncia ou fiscalização",
      "cargo": "",
+     "partido_na_epoca": "",
      "atribuido": false
     }
    ],
@@ -1967,6 +2030,7 @@
      "tipo": "Instituição",
      "papel": "Decisão",
      "cargo": "",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -1974,6 +2038,7 @@
      "tipo": "Pessoa",
      "papel": "Decisão",
      "cargo": "secretário de Estado da Educação",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -1981,6 +2046,7 @@
      "tipo": "Pessoa",
      "papel": "Assinatura",
      "cargo": "diretora-geral de Educação",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -1988,6 +2054,7 @@
      "tipo": "Instituição",
      "papel": "Denúncia ou fiscalização",
      "cargo": "",
+     "partido_na_epoca": "",
      "atribuido": false
     }
    ],
@@ -2092,6 +2159,7 @@
      "tipo": "Instituição",
      "papel": "Decisão",
      "cargo": "",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -2099,6 +2167,7 @@
      "tipo": "Pessoa",
      "papel": "Decisão",
      "cargo": "secretário de Estado da Educação",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -2106,6 +2175,7 @@
      "tipo": "Pessoa",
      "papel": "Assinatura",
      "cargo": "diretora-geral de Educação",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -2113,6 +2183,7 @@
      "tipo": "Instituição",
      "papel": "Denúncia ou fiscalização",
      "cargo": "",
+     "partido_na_epoca": "",
      "atribuido": false
     }
    ],
@@ -2217,6 +2288,7 @@
      "tipo": "Instituição",
      "papel": "Decisão",
      "cargo": "",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -2224,6 +2296,7 @@
      "tipo": "Pessoa",
      "papel": "Decisão",
      "cargo": "secretário de Estado da Educação",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -2231,6 +2304,7 @@
      "tipo": "Pessoa",
      "papel": "Assinatura",
      "cargo": "diretora-geral de Educação",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -2238,6 +2312,7 @@
      "tipo": "Instituição",
      "papel": "Denúncia ou fiscalização",
      "cargo": "",
+     "partido_na_epoca": "",
      "atribuido": false
     }
    ],
@@ -2342,6 +2417,7 @@
      "tipo": "Instituição",
      "papel": "Decisão",
      "cargo": "",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -2349,6 +2425,7 @@
      "tipo": "Pessoa",
      "papel": "Decisão",
      "cargo": "secretário de Estado da Educação",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -2356,6 +2433,7 @@
      "tipo": "Pessoa",
      "papel": "Assinatura",
      "cargo": "diretora-geral de Educação",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -2363,6 +2441,7 @@
      "tipo": "Instituição",
      "papel": "Denúncia ou fiscalização",
      "cargo": "",
+     "partido_na_epoca": "",
      "atribuido": false
     }
    ],
@@ -2467,6 +2546,7 @@
      "tipo": "Instituição",
      "papel": "Decisão",
      "cargo": "",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -2474,6 +2554,7 @@
      "tipo": "Pessoa",
      "papel": "Decisão",
      "cargo": "secretário de Estado da Educação",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -2481,6 +2562,7 @@
      "tipo": "Pessoa",
      "papel": "Assinatura",
      "cargo": "diretora-geral de Educação",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -2488,6 +2570,7 @@
      "tipo": "Instituição",
      "papel": "Denúncia ou fiscalização",
      "cargo": "",
+     "partido_na_epoca": "",
      "atribuido": false
     }
    ],
@@ -2592,6 +2675,7 @@
      "tipo": "Instituição",
      "papel": "Decisão",
      "cargo": "",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -2599,6 +2683,7 @@
      "tipo": "Pessoa",
      "papel": "Decisão",
      "cargo": "secretário de Estado da Educação",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -2606,6 +2691,7 @@
      "tipo": "Pessoa",
      "papel": "Assinatura",
      "cargo": "diretora-geral de Educação",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -2613,6 +2699,7 @@
      "tipo": "Instituição",
      "papel": "Denúncia ou fiscalização",
      "cargo": "",
+     "partido_na_epoca": "",
      "atribuido": false
     }
    ],
@@ -2717,6 +2804,7 @@
      "tipo": "Instituição",
      "papel": "Decisão",
      "cargo": "",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -2724,6 +2812,7 @@
      "tipo": "Pessoa",
      "papel": "Decisão",
      "cargo": "secretário de Estado da Educação",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -2731,6 +2820,7 @@
      "tipo": "Pessoa",
      "papel": "Assinatura",
      "cargo": "diretora-geral de Educação",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -2738,6 +2828,7 @@
      "tipo": "Instituição",
      "papel": "Denúncia ou fiscalização",
      "cargo": "",
+     "partido_na_epoca": "",
      "atribuido": false
     }
    ],
@@ -2842,6 +2933,7 @@
      "tipo": "Pessoa",
      "papel": "Decisão",
      "cargo": "presidente da Fundação Cultural Palmares",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -2849,6 +2941,7 @@
      "tipo": "Instituição",
      "papel": "Execução",
      "cargo": "",
+     "partido_na_epoca": "",
      "atribuido": false
     }
    ],
@@ -2965,6 +3058,7 @@
      "tipo": "Pessoa",
      "papel": "Decisão",
      "cargo": "presidente da Fundação Cultural Palmares",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -2972,6 +3066,7 @@
      "tipo": "Instituição",
      "papel": "Execução",
      "cargo": "",
+     "partido_na_epoca": "",
      "atribuido": false
     }
    ],
@@ -3058,6 +3153,7 @@
      "tipo": "Instituição",
      "papel": "Decisão",
      "cargo": "",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -3065,6 +3161,7 @@
      "tipo": "Pessoa",
      "papel": "Resposta ou reversão",
      "cargo": "juiz da 1ª Vara Cível de Conselheiro Lafaiete",
+     "partido_na_epoca": "",
      "atribuido": false
     }
    ],
@@ -3151,6 +3248,7 @@
      "tipo": "Pessoa",
      "papel": "Pressão",
      "cargo": "vereador (PL)",
+     "partido_na_epoca": "PL",
      "atribuido": false
     },
     {
@@ -3158,6 +3256,7 @@
      "tipo": "Instituição",
      "papel": "Decisão",
      "cargo": "",
+     "partido_na_epoca": "",
      "atribuido": false
     }
    ],
@@ -3256,6 +3355,7 @@
      "tipo": "Pessoa",
      "papel": "Pressão",
      "cargo": "deputado federal (PL-GO)",
+     "partido_na_epoca": "PL",
      "atribuido": false
     },
     {
@@ -3263,6 +3363,7 @@
      "tipo": "Instituição",
      "papel": "Decisão",
      "cargo": "",
+     "partido_na_epoca": "",
      "atribuido": false
     }
    ],
@@ -3343,6 +3444,7 @@
      "tipo": "Pessoa",
      "papel": "Pedido",
      "cargo": "vereadora (PP)",
+     "partido_na_epoca": "PP",
      "atribuido": false
     },
     {
@@ -3350,6 +3452,23 @@
      "tipo": "Instituição",
      "papel": "Destinatário do pedido",
      "cargo": "",
+     "partido_na_epoca": "",
+     "atribuido": false
+    },
+    {
+     "nome": "Mara Boca Aberta",
+     "tipo": "Pessoa",
+     "papel": "Pressão",
+     "cargo": "vereadora (PMB)",
+     "partido_na_epoca": "PMB",
+     "atribuido": false
+    },
+    {
+     "nome": "Giovani Mattos",
+     "tipo": "Pessoa",
+     "papel": "Pressão",
+     "cargo": "vereador (PSD)",
+     "partido_na_epoca": "PSD",
      "atribuido": false
     }
    ],
@@ -3383,6 +3502,12 @@
      "titulo": "Lei Municipal nº 13.930/2025 · PL 79/2024",
      "data": "2025-03-21",
      "url": "https://portal.londrina.pr.gov.br/images/stories/jornalOficial/Jornal-5446-Assinado.pdf"
+    },
+    {
+     "veiculo": "Câmara Municipal de Londrina",
+     "titulo": "Legislativo em Pauta nº 1.214: Pedido de Informação nº 582/2024 sobre A mamãe vai ter um bebê",
+     "data": "2024-11-28",
+     "url": "https://www.cml.pr.gov.br/imprensa/sala/Legislativo-em-Pauta/1/2024/20238"
     }
    ]
   },
@@ -3430,6 +3555,7 @@
      "tipo": "Instituição",
      "papel": "Resposta ou reversão",
      "cargo": "",
+     "partido_na_epoca": "",
      "atribuido": false
     }
    ],
@@ -3498,6 +3624,7 @@
      "tipo": "Pessoa",
      "papel": "Pedido",
      "cargo": "vereadora (PRD)",
+     "partido_na_epoca": "PRD",
      "atribuido": false
     },
     {
@@ -3505,6 +3632,7 @@
      "tipo": "Pessoa",
      "papel": "Destinatário do pedido",
      "cargo": "secretário municipal de Educação",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -3512,6 +3640,7 @@
      "tipo": "Instituição",
      "papel": "Decisão",
      "cargo": "",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -3519,6 +3648,7 @@
      "tipo": "Instituição",
      "papel": "Resposta ou reversão",
      "cargo": "",
+     "partido_na_epoca": "",
      "atribuido": false
     }
    ],
@@ -3587,6 +3717,7 @@
      "tipo": "Pessoa",
      "papel": "Decisão",
      "cargo": "diretor-executivo da Funap",
+     "partido_na_epoca": "",
      "atribuido": true
     },
     {
@@ -3594,6 +3725,7 @@
      "tipo": "Pessoa",
      "papel": "Pressão",
      "cargo": "superintendente da Diretoria de Atendimento e Promoção Humana",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -3601,6 +3733,7 @@
      "tipo": "Instituição",
      "papel": "Resposta ou reversão",
      "cargo": "",
+     "partido_na_epoca": "",
      "atribuido": false
     }
    ],
@@ -3681,6 +3814,7 @@
      "tipo": "Pessoa",
      "papel": "Pressão",
      "cargo": "vereador (PSC)",
+     "partido_na_epoca": "PSC",
      "atribuido": false
     },
     {
@@ -3688,6 +3822,7 @@
      "tipo": "Instituição",
      "papel": "Resposta ou reversão",
      "cargo": "",
+     "partido_na_epoca": "",
      "atribuido": false
     }
    ],
@@ -3762,6 +3897,7 @@
      "tipo": "Instituição",
      "papel": "Pedido",
      "cargo": "",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -3769,6 +3905,7 @@
      "tipo": "Instituição",
      "papel": "Assinatura",
      "cargo": "",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -3776,6 +3913,7 @@
      "tipo": "Instituição",
      "papel": "Decisão",
      "cargo": "",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -3783,6 +3921,7 @@
      "tipo": "Instituição",
      "papel": "Execução",
      "cargo": "",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -3790,6 +3929,7 @@
      "tipo": "Instituição",
      "papel": "Resposta ou reversão",
      "cargo": "",
+     "partido_na_epoca": "",
      "atribuido": false
     }
    ],
@@ -3876,6 +4016,7 @@
      "tipo": "Pessoa",
      "papel": "Pedido",
      "cargo": "vereadora",
+     "partido_na_epoca": "MDB",
      "atribuido": false
     },
     {
@@ -3883,6 +4024,7 @@
      "tipo": "Pessoa",
      "papel": "Assinatura",
      "cargo": "vereadora",
+     "partido_na_epoca": "MDB",
      "atribuido": false
     },
     {
@@ -3890,6 +4032,7 @@
      "tipo": "Pessoa",
      "papel": "Pedido",
      "cargo": "vereador",
+     "partido_na_epoca": "PSD",
      "atribuido": false
     },
     {
@@ -3897,6 +4040,7 @@
      "tipo": "Pessoa",
      "papel": "Assinatura",
      "cargo": "vereador",
+     "partido_na_epoca": "PSD",
      "atribuido": false
     },
     {
@@ -3904,6 +4048,7 @@
      "tipo": "Pessoa",
      "papel": "Pedido",
      "cargo": "vereador e presidente da Câmara",
+     "partido_na_epoca": "PL",
      "atribuido": false
     },
     {
@@ -3911,6 +4056,7 @@
      "tipo": "Pessoa",
      "papel": "Assinatura",
      "cargo": "vereador e presidente da Câmara",
+     "partido_na_epoca": "PL",
      "atribuido": false
     },
     {
@@ -3918,6 +4064,7 @@
      "tipo": "Pessoa",
      "papel": "Pedido",
      "cargo": "vereador",
+     "partido_na_epoca": "PSD",
      "atribuido": false
     },
     {
@@ -3925,6 +4072,7 @@
      "tipo": "Pessoa",
      "papel": "Assinatura",
      "cargo": "vereador",
+     "partido_na_epoca": "PSD",
      "atribuido": false
     },
     {
@@ -3932,6 +4080,7 @@
      "tipo": "Pessoa",
      "papel": "Pedido",
      "cargo": "vereador",
+     "partido_na_epoca": "PL",
      "atribuido": false
     },
     {
@@ -3939,6 +4088,7 @@
      "tipo": "Pessoa",
      "papel": "Assinatura",
      "cargo": "vereador",
+     "partido_na_epoca": "PL",
      "atribuido": false
     },
     {
@@ -3946,6 +4096,7 @@
      "tipo": "Pessoa",
      "papel": "Pedido",
      "cargo": "vereador",
+     "partido_na_epoca": "PSD",
      "atribuido": false
     },
     {
@@ -3953,6 +4104,7 @@
      "tipo": "Pessoa",
      "papel": "Assinatura",
      "cargo": "vereador",
+     "partido_na_epoca": "PSD",
      "atribuido": false
     },
     {
@@ -3960,6 +4112,7 @@
      "tipo": "Pessoa",
      "papel": "Pedido",
      "cargo": "vereador",
+     "partido_na_epoca": "PL",
      "atribuido": false
     },
     {
@@ -3967,6 +4120,7 @@
      "tipo": "Pessoa",
      "papel": "Assinatura",
      "cargo": "vereador",
+     "partido_na_epoca": "PL",
      "atribuido": false
     },
     {
@@ -3974,6 +4128,7 @@
      "tipo": "Pessoa",
      "papel": "Pedido",
      "cargo": "vereador",
+     "partido_na_epoca": "PL",
      "atribuido": false
     },
     {
@@ -3981,6 +4136,7 @@
      "tipo": "Pessoa",
      "papel": "Assinatura",
      "cargo": "vereador",
+     "partido_na_epoca": "PL",
      "atribuido": false
     },
     {
@@ -3988,6 +4144,7 @@
      "tipo": "Pessoa",
      "papel": "Decisão",
      "cargo": "prefeita de Canoinhas (PL)",
+     "partido_na_epoca": "PL",
      "atribuido": true
     },
     {
@@ -3995,6 +4152,7 @@
      "tipo": "Pessoa",
      "papel": "Execução",
      "cargo": "prefeita de Canoinhas (PL)",
+     "partido_na_epoca": "PL",
      "atribuido": true
     },
     {
@@ -4002,6 +4160,7 @@
      "tipo": "Pessoa",
      "papel": "Destinatário do pedido",
      "cargo": "coordenador de Biblioteca",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -4009,6 +4168,7 @@
      "tipo": "Instituição",
      "papel": "Resposta ou reversão",
      "cargo": "",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -4016,6 +4176,7 @@
      "tipo": "Instituição",
      "papel": "Denúncia ou fiscalização",
      "cargo": "",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -4023,6 +4184,7 @@
      "tipo": "Pessoa",
      "papel": "Pressão",
      "cargo": "vereadora",
+     "partido_na_epoca": "MDB",
      "atribuido": false
     },
     {
@@ -4030,6 +4192,7 @@
      "tipo": "Pessoa",
      "papel": "Pressão",
      "cargo": "vereador",
+     "partido_na_epoca": "PSD",
      "atribuido": false
     },
     {
@@ -4037,6 +4200,7 @@
      "tipo": "Pessoa",
      "papel": "Pressão",
      "cargo": "vereador",
+     "partido_na_epoca": "PSD",
      "atribuido": false
     },
     {
@@ -4044,6 +4208,7 @@
      "tipo": "Instituição",
      "papel": "Execução",
      "cargo": "",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -4051,6 +4216,7 @@
      "tipo": "Instituição",
      "papel": "Denúncia ou fiscalização",
      "cargo": "",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -4058,6 +4224,7 @@
      "tipo": "Pessoa",
      "papel": "Assinatura",
      "cargo": "conselheiro-relator do TCE-SC",
+     "partido_na_epoca": "",
      "atribuido": false
     }
    ],
@@ -4210,6 +4377,7 @@
      "tipo": "Pessoa",
      "papel": "Pedido",
      "cargo": "vereadora",
+     "partido_na_epoca": "MDB",
      "atribuido": false
     },
     {
@@ -4217,6 +4385,7 @@
      "tipo": "Pessoa",
      "papel": "Assinatura",
      "cargo": "vereadora",
+     "partido_na_epoca": "MDB",
      "atribuido": false
     },
     {
@@ -4224,6 +4393,7 @@
      "tipo": "Pessoa",
      "papel": "Pedido",
      "cargo": "vereador",
+     "partido_na_epoca": "PSD",
      "atribuido": false
     },
     {
@@ -4231,6 +4401,7 @@
      "tipo": "Pessoa",
      "papel": "Assinatura",
      "cargo": "vereador",
+     "partido_na_epoca": "PSD",
      "atribuido": false
     },
     {
@@ -4238,6 +4409,7 @@
      "tipo": "Pessoa",
      "papel": "Pedido",
      "cargo": "vereador e presidente da Câmara",
+     "partido_na_epoca": "PL",
      "atribuido": false
     },
     {
@@ -4245,6 +4417,7 @@
      "tipo": "Pessoa",
      "papel": "Assinatura",
      "cargo": "vereador e presidente da Câmara",
+     "partido_na_epoca": "PL",
      "atribuido": false
     },
     {
@@ -4252,6 +4425,7 @@
      "tipo": "Pessoa",
      "papel": "Pedido",
      "cargo": "vereador",
+     "partido_na_epoca": "PSD",
      "atribuido": false
     },
     {
@@ -4259,6 +4433,7 @@
      "tipo": "Pessoa",
      "papel": "Assinatura",
      "cargo": "vereador",
+     "partido_na_epoca": "PSD",
      "atribuido": false
     },
     {
@@ -4266,6 +4441,7 @@
      "tipo": "Pessoa",
      "papel": "Pedido",
      "cargo": "vereador",
+     "partido_na_epoca": "PL",
      "atribuido": false
     },
     {
@@ -4273,6 +4449,7 @@
      "tipo": "Pessoa",
      "papel": "Assinatura",
      "cargo": "vereador",
+     "partido_na_epoca": "PL",
      "atribuido": false
     },
     {
@@ -4280,6 +4457,7 @@
      "tipo": "Pessoa",
      "papel": "Pedido",
      "cargo": "vereador",
+     "partido_na_epoca": "PSD",
      "atribuido": false
     },
     {
@@ -4287,6 +4465,7 @@
      "tipo": "Pessoa",
      "papel": "Assinatura",
      "cargo": "vereador",
+     "partido_na_epoca": "PSD",
      "atribuido": false
     },
     {
@@ -4294,6 +4473,7 @@
      "tipo": "Pessoa",
      "papel": "Pedido",
      "cargo": "vereador",
+     "partido_na_epoca": "PL",
      "atribuido": false
     },
     {
@@ -4301,6 +4481,7 @@
      "tipo": "Pessoa",
      "papel": "Assinatura",
      "cargo": "vereador",
+     "partido_na_epoca": "PL",
      "atribuido": false
     },
     {
@@ -4308,6 +4489,7 @@
      "tipo": "Pessoa",
      "papel": "Pedido",
      "cargo": "vereador",
+     "partido_na_epoca": "PL",
      "atribuido": false
     },
     {
@@ -4315,6 +4497,7 @@
      "tipo": "Pessoa",
      "papel": "Assinatura",
      "cargo": "vereador",
+     "partido_na_epoca": "PL",
      "atribuido": false
     },
     {
@@ -4322,6 +4505,7 @@
      "tipo": "Pessoa",
      "papel": "Decisão",
      "cargo": "prefeita de Canoinhas (PL)",
+     "partido_na_epoca": "PL",
      "atribuido": true
     },
     {
@@ -4329,6 +4513,7 @@
      "tipo": "Pessoa",
      "papel": "Execução",
      "cargo": "prefeita de Canoinhas (PL)",
+     "partido_na_epoca": "PL",
      "atribuido": true
     },
     {
@@ -4336,6 +4521,7 @@
      "tipo": "Pessoa",
      "papel": "Destinatário do pedido",
      "cargo": "coordenador de Biblioteca",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -4343,6 +4529,7 @@
      "tipo": "Instituição",
      "papel": "Resposta ou reversão",
      "cargo": "",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -4350,6 +4537,7 @@
      "tipo": "Instituição",
      "papel": "Denúncia ou fiscalização",
      "cargo": "",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -4357,6 +4545,7 @@
      "tipo": "Pessoa",
      "papel": "Pressão",
      "cargo": "vereadora",
+     "partido_na_epoca": "MDB",
      "atribuido": false
     },
     {
@@ -4364,6 +4553,7 @@
      "tipo": "Pessoa",
      "papel": "Pressão",
      "cargo": "vereador",
+     "partido_na_epoca": "PSD",
      "atribuido": false
     },
     {
@@ -4371,6 +4561,7 @@
      "tipo": "Pessoa",
      "papel": "Pressão",
      "cargo": "vereador",
+     "partido_na_epoca": "PSD",
      "atribuido": false
     },
     {
@@ -4378,6 +4569,7 @@
      "tipo": "Instituição",
      "papel": "Execução",
      "cargo": "",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -4385,6 +4577,7 @@
      "tipo": "Instituição",
      "papel": "Denúncia ou fiscalização",
      "cargo": "",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -4392,6 +4585,7 @@
      "tipo": "Pessoa",
      "papel": "Assinatura",
      "cargo": "conselheiro-relator do TCE-SC",
+     "partido_na_epoca": "",
      "atribuido": false
     }
    ],
@@ -4538,6 +4732,7 @@
      "tipo": "Pessoa",
      "papel": "Pressão",
      "cargo": "vereador (PL)",
+     "partido_na_epoca": "PL",
      "atribuido": false
     },
     {
@@ -4545,6 +4740,7 @@
      "tipo": "Pessoa",
      "papel": "Pressão",
      "cargo": "vereador (Republicanos)",
+     "partido_na_epoca": "Republicanos",
      "atribuido": false
     },
     {
@@ -4552,6 +4748,7 @@
      "tipo": "Pessoa",
      "papel": "Decisão",
      "cargo": "secretária municipal de Educação",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -4559,6 +4756,7 @@
      "tipo": "Instituição",
      "papel": "Execução",
      "cargo": "",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -4566,6 +4764,7 @@
      "tipo": "Instituição",
      "papel": "Denúncia ou fiscalização",
      "cargo": "",
+     "partido_na_epoca": "",
      "atribuido": false
     },
     {
@@ -4573,6 +4772,7 @@
      "tipo": "Instituição",
      "papel": "Denúncia ou fiscalização",
      "cargo": "",
+     "partido_na_epoca": "",
      "atribuido": false
     }
    ],

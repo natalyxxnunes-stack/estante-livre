@@ -34,6 +34,7 @@
       <a href="normas.html">Normas</a>
       <a href="painel.html">Dados</a>
       <a href="analises.html" class="on" aria-current="page">Análises</a>
+      <a href="politica.html">Política</a>
       <a href="historia.html">História</a>
       <a href="mundo.html">Mundo</a>
       <a href="metodologia.html">Metodologia</a>
@@ -61,13 +62,8 @@
  </section>
  <section>
   <div class="sechead"><span class="kicker">02</span><h2>Quem pressiona: o recorte parlamentar</h2></div>
-  <p class="analysis-lead">Nos seis registros em que o catálogo identifica nominalmente um parlamentar como autor de pressão ou pedido relacionado à obra, as seis pessoas pertencem a partidos geralmente posicionados à direita ou à centro-direita.</p>
-  <p>São Rinaldo Modesto (Podemos), Thomaz Henrique (PL), Gustavo Gayer (PL), Jéssica Ramos Moreno (PP), Zelinda Pastora (PRD) e Clayton Silva (PSC). Essa recorrência é um achado relevante do conjunto documentado. Não autoriza, porém, afirmar que toda tentativa de censura no Brasil venha da direita, nem que esses parlamentares tenham sido os responsáveis formais por todas as decisões.</p>
-  <div class="table-wrap"><table class="tab analysis-table">
-   <thead><tr><th>Parlamentar</th><th>Partido à época</th><th>O que o registro documenta</th><th>Quem decidiu — ou o que se sabe</th><th>Ficha</th></tr></thead>
-   <tbody id="politicos-rows"></tbody>
-  </table></div>
-  <p class="note">A classificação partidária é uma leitura editorial ampla, baseada no posicionamento público geralmente atribuído às siglas no período. Não é uma categoria oficial nem substitui a análise das posições individuais. A ficha e suas fontes permitem conferir cada episódio.</p>
+  <p class="analysis-lead" id="pol-resumo"></p>
+  <p>A lista completa, com o partido de cada pessoa à época, a posição da sigla na escala ideológica, quem governava em cada caso e quem transformou a pressão em lei, está em <a href="politica.html">Política e censura</a>.</p>
  </section>
  <section>
   <div class="sechead"><span class="kicker">03</span><h2>Pressão política não é a mesma coisa que decisão</h2></div>
@@ -149,7 +145,7 @@
       <p class="foot-dados"><a href="dados/estante-livre-casos.csv">Casos em CSV</a> · <a href="dados/estante-livre-casos.json">JSON</a> · <a href="dados/estante-livre-normas.csv">Normas em CSV</a></p>
     </div>
     <nav class="foot-col" aria-label="Acervo"><p class="foot-tit">Acervo</p><a href="casos.html">Casos</a><a href="livros.html">Livros</a><a href="atos.html">Atos</a><a href="normas.html">Normas</a><a href="painel.html">Painel de dados</a></nav>
-    <nav class="foot-col" aria-label="Leitura"><p class="foot-tit">Leitura</p><a href="analises.html">Análises</a><a href="historia.html">História</a><a href="mundo.html">Mundo</a><a href="glossario.html">Glossário</a><a href="cobertura.html">Cobertura</a></nav>
+    <nav class="foot-col" aria-label="Leitura"><p class="foot-tit">Leitura</p><a href="analises.html">Análises</a><a href="politica.html">Política e censura</a><a href="historia.html">História</a><a href="mundo.html">Mundo</a><a href="glossario.html">Glossário</a><a href="cobertura.html">Cobertura</a></nav>
     <nav class="foot-col" aria-label="Projeto"><p class="foot-tit">Projeto</p><a href="metodologia.html">Metodologia</a><a href="pendencias.html">O que falta apurar</a><a href="sobre.html">Sobre e contato</a><a href="imprensa.html">Para jornalistas</a><a href="guia.html">Guia para escolas</a><a href="relate.html">Relate um caso</a></nav>
   </div>
   <div class="foot-base"><span id="foot-meta"></span></div>
@@ -157,14 +153,7 @@
 <script src="assets/dados.js"></script>
 <script src="assets/comum.js"></script>
 <script>
-const idsPoliticos = [
- {id:"EL-004",nome:"Rinaldo Modesto",partido:"Podemos",papel:"Pediu a retirada na Assembleia; a ordem foi atribuída ao governador Eduardo Riedel.",decisao:"Governador Eduardo Riedel; signatário formal não identificado."},
- {id:"EL-028",nome:"Thomaz Henrique",partido:"PL",papel:"Contestou publicamente a obra e a acusou de doutrinação.",decisao:"Secretaria Municipal de Educação e Cidadania; agente individual não identificado."},
- {id:"EL-029",nome:"Gustavo Gayer",partido:"PL",papel:"Publicou vídeo chamando a obra de pornográfica.",decisao:"Coordenação do Vestibular da UniRV."},
- {id:"EL-030",nome:"Jéssica Ramos Moreno",partido:"PP",papel:"Apresentou pedido formal de recolhimento.",decisao:"A Secretaria retirou o exemplar encontrado em um CMEI; não há prova de recolhimento geral na rede."},
- {id:"EL-032",nome:"Zelinda Pastora",partido:"PRD",papel:"Disse ter pedido diretamente ao secretário o recolhimento após reclamação de uma mãe.",decisao:"Secretaria Municipal de Educação; ordem escrita e signatário ainda não localizados."},
- {id:"EL-034",nome:"Clayton Silva",partido:"PSC",papel:"Apresentou requerimento questionando a distribuição e a leitura da obra; não pediu formalmente sua retirada.",decisao:"Não houve decisão de retirada; a Secretaria defendeu a obra."}
-];
+
 const el = id => document.getElementById(id);
 const atos = new Map(CASOS.map(c=>[c.ato,c]));
 const porAto = {};
@@ -181,11 +170,13 @@ el("chart-atos").innerHTML=labels.map(([ato,n])=>{
  const c=CASOS.find(x=>x.ato===ato);
  return '<div class="analysis-bar-row"><span>'+ato+'</span><span class="analysis-track"><i style="width:'+(n/max*100)+'%"></i></span><b>'+n+'</b><small>'+(c?c.uf:"")+'</small></div>';
 }).join("");
-function fontes(c){return (c.fontes||[]).map(k=>FONTES[k]).filter(Boolean).slice(0,3).map(f=>'<a href="'+f.url+'" target="_blank" rel="noopener">'+f.veic+'</a>').join(" · ");}
-el("politicos-rows").innerHTML=idsPoliticos.map(p=>{
- const c=CASOS.find(x=>x.id===p.id);
- return '<tr><td><strong>'+p.nome+'</strong></td><td>'+p.partido+'</td><td>'+p.papel+(c?'<div class="analysis-source">'+fontes(c)+'</div>':'')+'</td><td>'+p.decisao+'</td><td><a href="casos.html#'+p.id+'">'+p.id+'</a></td></tr>';
-}).join("");
+{
+ const pr = PAPEIS.filter(p=>p.partido && /vereador|deputad|prefeit|governador|senador/i.test(p.cargo||"") && ["Pressão","Pedido"].includes(p.papel));
+ const pessoas = new Map(); pr.forEach(p=>pessoas.set(p.agente,p.partido));
+ const atosP = new Set(pr.map(p=>p.ato));
+ let dir=0, cd=0, esq=0, sem=0; pessoas.forEach(sg=>{ const c=campoDe(sg); if(c==="Direita"||c==="Extrema direita") dir++; else if(c==="Centro-direita") cd++; else if(/esquerda/i.test(c)) esq++; else if(c==="Sem classificação") sem++; });
+ el("pol-resumo").textContent = `${pessoas.size} pessoas com mandato aparecem pressionando ou pedindo providências contra livros em ${atosP.size} atos. Pela escala de especialistas em ciência política, ${dir} estão em partidos de direita ou extrema direita, ${cd} na centro-direita${sem?` e ${sem} em partido ainda sem classificação`:""}. ${esq?esq+" estão em partidos de esquerda ou centro-esquerda.":"Nenhuma está em partido de esquerda ou centro-esquerda."} O padrão vale para o conjunto documentado e não autoriza conclusões sobre todo o país.`;
+}
 {
  const obras = {}; CASOS.forEach(c=>{ const o=obraDe(c); obras[o]=(LIVROS[o]||{}).chegada||"Acervo, origem não informada"; });
  const cont = {}; Object.values(obras).forEach(v=>cont[v]=(cont[v]||0)+1);

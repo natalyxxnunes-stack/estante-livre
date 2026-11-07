@@ -26,18 +26,23 @@ function contexto(raiz){
     console
   };
   vm.createContext(ctx);
-  vm.runInContext(ler("assets/dados.js") + "\n;this.__D={ATOS,AGENTES,PAPEIS,TIPOS_PAPEL,CASOS,LIVROS,FONTES,MODALIDADES,ESTAGIOS,SITUACOES,EIXOS,CORRECOES,RESPONSABILIDADES,DOCUMENTOS_ATOS,ATUALIZADO,CONTATO,OBSTACULOS,LACUNAS,NIVEIS,CHEGADAS,NORMAS,SITUACOES_NORMA,VIAS_REVERSAO,CONTEXTO_PARTIDARIO};", ctx);
+  vm.runInContext(ler("assets/dados.js") + "\n;this.__D={ATOS,AGENTES,PAPEIS,TIPOS_PAPEL,CASOS,LIVROS,FONTES,MODALIDADES,ESTAGIOS,SITUACOES,EIXOS,CORRECOES,RESPONSABILIDADES,DOCUMENTOS_ATOS,ATUALIZADO,CONTATO,OBSTACULOS,LACUNAS,NIVEIS,CHEGADAS,NORMAS,SITUACOES_NORMA,VIAS_REVERSAO,CONTEXTO_PARTIDARIO,ESPECTRO};", ctx);
   vm.runInContext(ler("assets/comum.js") + "\n;this.__F={esc,obraDe,slug,ordenar,casoHTML,livroHTML,casoCardHTML,livroCardHTML,dataLegivel,urlCaso,urlLivro,urlAto,agentesDoAto,nivelVerif};", ctx);
   return Object.assign(ctx.__F, {__D: ctx.__D});
 }
 const R = contexto("");      // páginas na raiz
 const S = contexto("../");   // páginas em casos/ e livros/
 const D = R.__D;
-const { CASOS, LIVROS, FONTES, MODALIDADES, ESTAGIOS, SITUACOES, EIXOS, ATUALIZADO, ATOS, AGENTES, PAPEIS, TIPOS_PAPEL, OBSTACULOS, LACUNAS, CHEGADAS, NORMAS, SITUACOES_NORMA, VIAS_REVERSAO, CONTEXTO_PARTIDARIO } = D;
+const { CASOS, LIVROS, FONTES, MODALIDADES, ESTAGIOS, SITUACOES, EIXOS, ATUALIZADO, ATOS, AGENTES, PAPEIS, TIPOS_PAPEL, OBSTACULOS, LACUNAS, CHEGADAS, NORMAS, SITUACOES_NORMA, VIAS_REVERSAO, CONTEXTO_PARTIDARIO, ESPECTRO } = D;
 const esc = R.esc, obraDe = R.obraDe, slug = R.slug;
 
 /* ---------- 1. validação ---------- */
 const erros = [];
+for(const p of PAPEIS){
+  if(p.partido && !ESPECTRO[p.partido]) erros.push(`PAPEIS ${p.ato}/${p.agente}: partido sem posição na escala: ${p.partido}`);
+  if(p.partidoFonte && !FONTES[p.partidoFonte]) erros.push(`PAPEIS ${p.ato}/${p.agente}: fonte do partido inexistente`);
+}
+for(const n of NORMAS) if(n.partido && !ESPECTRO[n.partido]) erros.push(`NORMAS ${n.id}: partido sem posição na escala: ${n.partido}`);
 for(const [i,x] of (CONTEXTO_PARTIDARIO||[]).entries()){
   if(!x.pessoa || !x.partido || !x.cobertura || !x.status || !Array.isArray(x.fontes) || !x.fontes.length) erros.push(`CONTEXTO_PARTIDARIO[${i}]: campos obrigatórios ausentes`);
   for(const url of x.fontes||[]){ try{ const u=new URL(url); if(!["https:","http:"].includes(u.protocol)) erros.push(`CONTEXTO_PARTIDARIO[${i}]: protocolo inválido`); }catch{ erros.push(`CONTEXTO_PARTIDARIO[${i}]: URL inválida: ${url}`); } }
@@ -100,12 +105,12 @@ if(erros.length){ console.error("Erros nos dados:\n- " + erros.join("\n- ")); pr
 
 /* ---------- 2. cabeçalho, menu e rodapé ---------- */
 const NAV = [["casos.html","Casos"],["livros.html","Livros"],["atos.html","Atos"],["normas.html","Normas"],["painel.html","Dados"],
-  ["analises.html","Análises"],["historia.html","História"],["mundo.html","Mundo"],["metodologia.html","Metodologia"],["sobre.html","Sobre"]];
+  ["analises.html","Análises"],["politica.html","Política"],["historia.html","História"],["mundo.html","Mundo"],["metodologia.html","Metodologia"],["sobre.html","Sobre"]];
 const TAGLINE = "Observatório de censura de livros · quem mandou tirar da estante, com qual ato, e o que aconteceu depois";
 /* colunas do rodapé: [título, [[href, nome], ...]] */
 const RODAPE = [
   ["Acervo", [["casos.html","Casos"],["livros.html","Livros"],["atos.html","Atos"],["normas.html","Normas"],["painel.html","Painel de dados"]]],
-  ["Leitura", [["analises.html","Análises"],["historia.html","História"],["mundo.html","Mundo"],["glossario.html","Glossário"],["cobertura.html","Cobertura"]]],
+  ["Leitura", [["analises.html","Análises"],["politica.html","Política e censura"],["historia.html","História"],["mundo.html","Mundo"],["glossario.html","Glossário"],["cobertura.html","Cobertura"]]],
   ["Projeto", [["metodologia.html","Metodologia"],["pendencias.html","O que falta apurar"],["sobre.html","Sobre e contato"],["imprensa.html","Para jornalistas"],["guia.html","Guia para escolas"],["relate.html","Relate um caso"]]]
 ];
 
@@ -162,7 +167,7 @@ const DATASET = {"@context":"https://schema.org","@type":"Dataset",
     {"@type":"DataDownload","encodingFormat":"text/csv","contentUrl":SITE+"/dados/estante-livre-casos.csv"},
     {"@type":"DataDownload","encodingFormat":"application/json","contentUrl":SITE+"/dados/estante-livre-casos.json"}]};
 
-const PAGINAS = ["index.html","painel.html","casos.html","livros.html","normas.html","guia.html","imprensa.html","analises.html","historia.html","mundo.html","glossario.html","metodologia.html","sobre.html","cobertura.html","relate.html"];
+const PAGINAS = ["index.html","painel.html","casos.html","livros.html","normas.html","guia.html","imprensa.html","analises.html","politica.html","historia.html","mundo.html","glossario.html","metodologia.html","sobre.html","cobertura.html","relate.html"];
 for(const f of PAGINAS){
   let h = ler(f);
   h = h.replace(/<header class="topo">[\s\S]*?<\/header>/, cabecalho("", f));
@@ -465,7 +470,7 @@ const linhas = R.ordenar(CASOS,"id").map(c=>{
     resposta_ou_reversao:r.resposta||"", ato_ou_documento:DOC[c.id]||"", reversao_via:(ATOS[c.ato].reversao||{}).via||"", reversao_data:(ATOS[c.ato].reversao||{}).data||"", verificado:c.verificado, nivel_verificacao:R.nivelVerif(c),
     documento_primario:(ATOS[c.ato].docPrimario||[]).filter(k=>(c.fontes||[]).includes(k)).map(k=>FONTES[k].url).join("; "),
     pendencia:r.pendencia||c.pendencia||"", nota:c.nota||"",
-    agentes:PAPEIS.filter(p=>p.ato===c.ato).map(p=>({nome:AGENTES[p.agente].nome, tipo:AGENTES[p.agente].tipo, papel:p.papel, cargo:p.cargo||"", atribuido:!!p.atribuido})),
+    agentes:PAPEIS.filter(p=>p.ato===c.ato).map(p=>({nome:AGENTES[p.agente].nome, tipo:AGENTES[p.agente].tipo, papel:p.papel, cargo:p.cargo||"", partido_na_epoca:p.partido||"", atribuido:!!p.atribuido})),
     fontes:(c.fontes||[]).map(k=>FONTES[k]).filter(Boolean).map(f=>({veiculo:f.veic, titulo:f.tit, data:f.data||"", url:f.url}))};
 });
 {
@@ -508,6 +513,7 @@ Registro não equivale a banimento consumado: cada caso traz o estágio (pressã
 - [Metodologia](${SITE}/metodologia.html): critérios, vieses conhecidos e correções
 - [Glossário](${SITE}/glossario.html): definições de mecanismo, estágio e situação
 - [Análises](${SITE}/analises.html): leitura dos dados
+- [Política e censura](${SITE}/politica.html): quem pressiona, decide, legisla e reage, com o partido da época e a escala ideológica
 
 Atualizado em ${ATUALIZADO}. Citação: Estante Livre, observatório de censura de livros, de Nataly Nunes Pinto.
 `);
